@@ -2277,6 +2277,7 @@ public:
 
     void SendEquipmentSetList();
     void SetEquipmentSet(uint32 index, EquipmentSet eqset);
+    EquipmentSets const& GetEquipmentSets() const { return m_EquipmentSets; }
     void DeleteEquipmentSet(uint64 setGuid);
 
     void SendInitWorldStates(uint32 zoneId, uint32 areaId);

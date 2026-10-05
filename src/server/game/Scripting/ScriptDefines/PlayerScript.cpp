@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -821,6 +822,13 @@ void ScriptMgr::OnPlayerResurrect(Player* player, float restore_percent, bool& a
 void ScriptMgr::OnPlayerBeforeChooseGraveyard(Player* player, TeamId teamId, bool nearCorpse, uint32& graveyardOverride)
 {
     CALL_ENABLED_HOOKS(PlayerScript, PLAYERHOOK_ON_BEFORE_CHOOSE_GRAVEYARD, script->OnPlayerBeforeChooseGraveyard(player, teamId, nearCorpse, graveyardOverride));
+}
+
+void ScriptMgr::OnPlayerAfterSendChatMessage(Player* player, uint32 type, uint32 language,
+    std::string const& message, Player* receiver, Channel* channel)
+{
+    CALL_ENABLED_HOOKS(PlayerScript, PLAYERHOOK_ON_AFTER_SEND_CHAT_MESSAGE,
+        script->OnPlayerAfterSendChatMessage(player, type, language, message, receiver, channel));
 }
 
 bool ScriptMgr::OnPlayerCanUseChat(Player* player, uint32 type, uint32 language, std::string& msg)

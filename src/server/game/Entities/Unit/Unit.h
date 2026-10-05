@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -32,6 +33,7 @@
 #include "UnitDefines.h"
 #include "UnitUtils.h"
 #include <boost/container/flat_map.hpp>
+#include <atomic>
 #include <functional>
 #include <utility>
 
@@ -1947,6 +1949,10 @@ public:
     // Emote
     void HandleEmoteCommand(uint32 emoteId);
 
+    // Living Azeroth: generated dialogue can yield to native scripted speech.
+    void RecordScriptedSpeech();
+    bool HasRecentScriptedSpeech(uint32 windowMs = 10000) const;
+
     // Chat
     virtual void Talk(std::string_view text, ChatMsg msgType, Language language, float textRange, WorldObject const* target);
     virtual void Say(std::string_view text, Language language, WorldObject const* target = nullptr);
@@ -2200,6 +2206,7 @@ protected:
     uint32 m_reactiveTimer[MAX_REACTIVE];
     int32 m_regenTimer;
 
+    std::atomic<uint64> _scriptedSpeechMs{0};
     ThreatManager m_threatManager;
     CombatManager m_combatManager;
     typedef std::map<ObjectGuid, float> CharmThreatMap;

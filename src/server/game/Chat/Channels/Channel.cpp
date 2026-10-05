@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -24,6 +25,7 @@
 #include "ObjectMgr.h"
 #include "Player.h"
 #include "RBAC.h"
+#include "ScriptMgr.h"
 #include "SocialMgr.h"
 #include "World.h"
 
@@ -806,6 +808,8 @@ void Channel::Say(ObjectGuid guid, std::string const& what, uint32 lang)
     }
 
     SendToAll(&data, pinfo.IsModerator() ? ObjectGuid::Empty : guid);
+    if (player)
+        sScriptMgr->OnPlayerAfterSendChatMessage(player, CHAT_MSG_CHANNEL, lang, what, nullptr, this);
 }
 
 void Channel::Invite(Player const* player, std::string const& newname)

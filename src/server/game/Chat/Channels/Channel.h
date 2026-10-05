@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -185,6 +186,8 @@ public:
     [[nodiscard]] std::string const& GetPassword() const { return _password; }
     void SetPassword(std::string const& npassword) { _password = npassword; }
     [[nodiscard]] uint32 GetNumPlayers() const { return playersStore.size(); }
+    // Living Azeroth: server-authored dialogue uses the same channel mute/moderator policy.
+    [[nodiscard]] uint8 GetMemberFlags(ObjectGuid guid) const { return GetPlayerFlags(guid); }
     [[nodiscard]] uint8 GetFlags() const { return _flags; }
     [[nodiscard]] bool HasFlag(uint8 flag) const { return _flags & flag; }
 

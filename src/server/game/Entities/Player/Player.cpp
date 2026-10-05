@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -54,6 +55,7 @@
 #include "GuildMgr.h"
 #include "InstanceSaveMgr.h"
 #include "InstanceScript.h"
+#include "ItemRepair.h"
 #include "LFGMgr.h"
 #include "Log.h"
 #include "LootItemStorage.h"
@@ -4942,30 +4944,11 @@ uint32 Player::DurabilityRepair(uint16 pos, bool cost, float discountMod, bool g
         uint32 LostDurability = maxDurability - curDurability;
         if (LostDurability > 0)
         {
-            ItemTemplate const* ditemProto = item->GetTemplate();
-
-            DurabilityCostsEntry const* dcost = sDurabilityCostsStore.LookupEntry(ditemProto->ItemLevel);
-            if (!dcost)
-            {
-                LOG_ERROR("entities.player", "RepairDurability: Wrong item lvl {}", ditemProto->ItemLevel);
+            // Living Azeroth: quotes and execution share the exact native calculation.
+            auto quoted = CalculateItemRepairCost(item, discountMod);
+            if (!quoted)
                 return TotalCost;
-            }
-
-            uint32 dQualitymodEntryId = (ditemProto->Quality + 1) * 2;
-            DurabilityQualityEntry const* dQualitymodEntry = sDurabilityQualityStore.LookupEntry(dQualitymodEntryId);
-            if (!dQualitymodEntry)
-            {
-                LOG_ERROR("entities.player", "RepairDurability: Wrong dQualityModEntry {}", dQualitymodEntryId);
-                return TotalCost;
-            }
-
-            uint32 dmultiplier = dcost->multiplier[ItemSubClassToDurabilityMultiplierId(ditemProto->Class, ditemProto->SubClass)];
-            uint32 costs = uint32(LostDurability * dmultiplier * double(dQualitymodEntry->quality_mod));
-
-            costs = uint32(costs * discountMod * sWorld->getRate(RATE_REPAIRCOST));
-
-            if (costs == 0)                                   //fix for ITEM_QUALITY_ARTIFACT
-                costs = 1;
+            uint32 costs = *quoted;
 
             if (guildBank)
             {
@@ -9594,6 +9577,7 @@ void Player::Say(std::string_view text, Language language, WorldObject const* /*
     // Special handling for messages, do not use visibility map for stealthed units
     Acore::MessageDistDeliverer notifier(this, &data, sWorld->getFloatConfig(CONFIG_LISTEN_RANGE_SAY), Acore::TeamFilter::All, nullptr, true);
     Cell::VisitObjects(this, notifier, sWorld->getFloatConfig(CONFIG_LISTEN_RANGE_SAY));
+    sScriptMgr->OnPlayerAfterSendChatMessage(this, CHAT_MSG_SAY, language, _text);
 }
 
 void Player::Say(uint32 textId, WorldObject const* target /*= nullptr*/)
@@ -9622,6 +9606,7 @@ void Player::Yell(std::string_view text, Language language, WorldObject const* /
     // Special handling for messages, do not use visibility map for stealthed units
     Acore::MessageDistDeliverer notifier(this, &data, sWorld->getFloatConfig(CONFIG_LISTEN_RANGE_YELL), Acore::TeamFilter::All, nullptr, true);
     Cell::VisitObjects(this, notifier, sWorld->getFloatConfig(CONFIG_LISTEN_RANGE_YELL));
+    sScriptMgr->OnPlayerAfterSendChatMessage(this, CHAT_MSG_YELL, language, _text);
 }
 
 void Player::Yell(uint32 textId, WorldObject const* target /*= nullptr*/)
@@ -9669,6 +9654,7 @@ void Player::TextEmote(std::string_view text, WorldObject const* /*= nullptr*/, 
             Cell::VisitObjects(this, notifier, sWorld->getFloatConfig(CONFIG_LISTEN_RANGE_TEXTEMOTE));
         }
     }
+    sScriptMgr->OnPlayerAfterSendChatMessage(this, CHAT_MSG_EMOTE, LANG_UNIVERSAL, _text);
 }
 
 void Player::TextEmote(uint32 textId, WorldObject const* target /*= nullptr*/, bool /*isBossEmote = false*/)
@@ -9697,6 +9683,7 @@ void Player::Whisper(std::string_view text, Language language, Player* target, b
     {
         ChatHandler::BuildChatPacket(data, CHAT_MSG_WHISPER, language, this, this, _text);
         target->SendDirectMessage(&data);
+        sScriptMgr->OnPlayerAfterSendChatMessage(this, CHAT_MSG_WHISPER, language, _text, target);
     }
 
     // rest stuff shouldn't happen in case of addon message

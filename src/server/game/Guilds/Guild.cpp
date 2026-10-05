@@ -2179,6 +2179,9 @@ void Guild::BroadcastToGuild(WorldSession* session, bool officerOnly, std::strin
             if (Player* player = member.FindPlayer())
                 if (HasRankRight(player, officerOnly ? GR_RIGHT_OFFCHATLISTEN : GR_RIGHT_GCHATLISTEN) && !player->GetSocial()->HasIgnore(session->GetPlayer()->GetGUID()))
                     player->SendDirectMessage(&data);
+        // Notify observers only after native guild rights and delivery checks.
+        if (!officerOnly && language != LANG_ADDON)
+            sScriptMgr->OnPlayerAfterSendChatMessage(session->GetPlayer(), CHAT_MSG_GUILD, language, std::string(msg));
     }
 }
 

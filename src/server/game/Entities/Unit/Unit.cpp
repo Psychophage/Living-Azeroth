@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -16755,8 +16756,23 @@ float Unit::GetCollisionHeight() const
     return collisionHeight == 0.0f ? defaultHeight : collisionHeight;
 }
 
+// Living Azeroth: this records native speech only. Generated PBC packets use their
+// own delivery path, so they cannot keep suppressing themselves.
+void Unit::RecordScriptedSpeech()
+{
+    _scriptedSpeechMs.store(GetTimeMS().count() + 1, std::memory_order_relaxed);
+}
+
+bool Unit::HasRecentScriptedSpeech(uint32 windowMs) const
+{
+    auto last = _scriptedSpeechMs.load(std::memory_order_relaxed);
+    auto now = uint64(GetTimeMS().count()) + 1;
+    return last && now >= last && now - last < windowMs;
+}
+
 void Unit::Talk(std::string_view text, ChatMsg msgType, Language language, float textRange, WorldObject const* target)
 {
+    RecordScriptedSpeech();
     Acore::CustomChatTextBuilder builder(this, msgType, text, language, target);
     Acore::LocalizedPacketDo<Acore::CustomChatTextBuilder> localizer(builder);
     Acore::PlayerDistWorker<Acore::LocalizedPacketDo<Acore::CustomChatTextBuilder> > worker(this, textRange, localizer);
@@ -16785,6 +16801,7 @@ void Unit::Whisper(std::string_view text, Language language, Player* target, boo
         return;
     }
 
+    RecordScriptedSpeech();
     LocaleConstant locale = target->GetSession()->GetSessionDbLocaleIndex();
     WorldPacket data;
     ChatHandler::BuildChatPacket(data, isBossWhisper ? CHAT_MSG_RAID_BOSS_WHISPER : CHAT_MSG_MONSTER_WHISPER, language, this, target, text, 0, "", locale);
@@ -16815,6 +16832,7 @@ void Unit::Talk(uint32 textId, ChatMsg msgType, float textRange, WorldObject con
         return;
     }
 
+    RecordScriptedSpeech();
     Acore::BroadcastTextBuilder builder(this, msgType, textId, getGender(), target);
     Acore::LocalizedPacketDo<Acore::BroadcastTextBuilder> localizer(builder);
     Acore::PlayerDistWorker<Acore::LocalizedPacketDo<Acore::BroadcastTextBuilder> > worker(this, textRange, localizer);
@@ -16850,6 +16868,7 @@ void Unit::Whisper(uint32 textId, Player* target, bool isBossWhisper /*= false*/
         return;
     }
 
+    RecordScriptedSpeech();
     LocaleConstant locale = target->GetSession()->GetSessionDbLocaleIndex();
     WorldPacket data;
     ChatHandler::BuildChatPacket(data, isBossWhisper ? CHAT_MSG_RAID_BOSS_WHISPER : CHAT_MSG_MONSTER_WHISPER, LANG_UNIVERSAL, this, target, bct->GetText(locale, getGender()), 0, "", locale);

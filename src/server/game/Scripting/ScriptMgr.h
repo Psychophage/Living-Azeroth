@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -468,6 +469,9 @@ public: /* PlayerScript */
     void OnPlayerSetServerSideVisibilityDetect(Player* player, ServerSideVisibilityType& type, AccountTypes& sec);
     void OnPlayerResurrect(Player* player, float restore_percent, bool& applySickness);
     void OnPlayerBeforeChooseGraveyard(Player* player, TeamId teamId, bool nearCorpse, uint32& graveyardOverride);
+    // Living Azeroth: shared post-delivery observation hook.
+    void OnPlayerAfterSendChatMessage(Player* player, uint32 type, uint32 language,
+        std::string const& message, Player* receiver = nullptr, Channel* channel = nullptr);
     bool OnPlayerCanUseChat(Player* player, uint32 type, uint32 language, std::string& msg);
     bool OnPlayerCanUseChat(Player* player, uint32 type, uint32 language, std::string& msg, Player* receiver);
     bool OnPlayerCanUseChat(Player* player, uint32 type, uint32 language, std::string& msg, Group* group);

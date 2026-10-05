@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -472,6 +473,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, ChatMsg(type), Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false, group->GetMemberGroup(GetPlayer()->GetGUID()));
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_GUILD:
@@ -519,6 +521,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID, Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false);
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_RAID_LEADER:
@@ -538,6 +541,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID_LEADER, Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false);
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_RAID_WARNING:
@@ -553,6 +557,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, CHAT_MSG_RAID_WARNING, Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false);
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_BATTLEGROUND:
@@ -568,6 +573,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, CHAT_MSG_BATTLEGROUND, Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false);
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_BATTLEGROUND_LEADER:
@@ -583,6 +589,7 @@ void WorldSession::HandleMessagechatOpcode(WorldPacket& recvData)
                 WorldPacket data;
                 ChatHandler::BuildChatPacket(data, CHAT_MSG_BATTLEGROUND_LEADER, Language(lang), sender, nullptr, msg);
                 group->BroadcastPacket(&data, false);
+                sScriptMgr->OnPlayerAfterSendChatMessage(sender, type, lang, msg);
             }
             break;
         case CHAT_MSG_CHANNEL:

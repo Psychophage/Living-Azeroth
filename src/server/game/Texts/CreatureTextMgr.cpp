@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -326,6 +327,8 @@ uint32 CreatureTextMgr::SendChat(Creature* source, uint8 textGroup, WorldObject 
     if (iter->emote)
         SendEmote(finalSource, iter->emote);
 
+    // Living Azeroth: native scripted lines take priority over generated banter.
+    finalSource->RecordScriptedSpeech();
     if (srcPlr)
     {
         PlayerTextBuilder builder(source, finalSource, finalSource->getGender(), finalType, iter->group, iter->id, finalLang, target);

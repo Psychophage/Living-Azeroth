@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the AzerothCore Project. See AUTHORS file for Copyright information
  *
@@ -237,6 +238,8 @@ enum PlayerHook
     PLAYERHOOK_ON_BEFORE_RECEIVE_SPELL_LIST_FROM_TRAINER,
     PLAYERHOOK_ON_GET_TRAINER_SPELL_STATE,
     PLAYERHOOK_ON_AFTER_TRAIN_SPELL,
+    // Living Azeroth: observe accepted chat after delivery, without changing admission.
+    PLAYERHOOK_ON_AFTER_SEND_CHAT_MESSAGE,
     PLAYERHOOK_END
 };
 
@@ -336,6 +339,10 @@ public:
     virtual void OnPlayerDuelEnd(Player* /*winner*/, Player* /*loser*/, DuelCompleteType /*type*/) { }
 
     // The following methods are called when a player sends a chat message.
+    // Read-only notification after core filters and all veto hooks have accepted the text.
+    virtual void OnPlayerAfterSendChatMessage(Player* /*player*/, uint32 /*type*/, uint32 /*language*/,
+        std::string const& /*message*/, Player* /*receiver*/, Channel* /*channel*/) { }
+
     virtual void OnPlayerBeforeSendChatMessage(Player* /*player*/, uint32& /*type*/, uint32& /*lang*/, std::string& /*msg*/) { }
 
     // Both of the below are called on emote opcodes.

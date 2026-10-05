@@ -7339,6 +7339,8 @@ void Player::AdditionalSavingAddMask(uint8 mask)
 void Player::SaveInventoryAndGoldToDB(CharacterDatabaseTransaction trans)
 {
     _SaveInventory(trans);
+    // Keep dirty exact equipment sets atomic with inventory changes, including temporary bot outfits.
+    _SaveEquipmentSets(trans);
     SaveGoldToDB(trans);
 }
 
