@@ -1,25 +1,21 @@
 #!/usr/bin/env bash
-# pbc_backup.sh — Backup all PBC tables to a single SQL file.
-# Usage: ./pbc_backup.sh [output_path]
-#        output_path — optional; defaults to pbc_backup_<timestamp>.sql in current dir
-
-TABLES=(
-    mod_pbc_history
-    mod_pbc_history_owners
-    mod_pbc_memories
-    mod_pbc_data
-    mod_pbc_relationships
-)
-
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-OUTFILE="${1:-pbc_backup_${TIMESTAMP}.sql}"
-
-mysqldump --no-tablespaces acore_characters "${TABLES[@]}" 2>/dev/null > "$OUTFILE"
-if [[ $? -eq 0 && -s "$OUTFILE" ]]; then
-    echo "Backup saved to: $OUTFILE"
-    echo "Tables included: ${TABLES[*]}"
-else
-    echo "Backup failed or all tables are empty."
-    rm -f "$OUTFILE"
-    exit 1
+# Backup current and legacy PBC tables; upstream tool history remains in git.
+# This is a character-system backup. Deployment also needs the full realm DBs/config.
+set -euo pipefail
+umask 077
+pbc_database="${PBC_DATABASE:-acore_characters}"
+[[ "$pbc_database" =~ ^[A-Za-z0-9_]+$ ]] || { echo 'Invalid database name.' >&2; exit 1; }
+options=()
+if [[ -n "${PBC_MYSQL_DEFAULTS_FILE:-}" ]]; then
+  options+=("--defaults-extra-file=$PBC_MYSQL_DEFAULTS_FILE")
 fi
+output="${1:-pbc_backup_$(date -u +%Y%m%dT%H%M%SZ).sql}"
+[[ ! -e "$output" ]] || { echo 'Output already exists; refusing to overwrite it.' >&2; exit 1; }
+mapfile -t tables < <(mysql "${options[@]}" --batch --skip-column-names "$pbc_database" -e   "SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE() AND (LEFT(table_name,4)='pbc_' OR LEFT(table_name,8)='mod_pbc_') ORDER BY table_name")
+[[ "${#tables[@]}" -gt 0 ]] || { echo 'No PBC tables found; no backup written.' >&2; exit 1; }
+temporary=$(mktemp "${output}.tmp-XXXXXX")
+trap 'rm -f -- "$temporary"' EXIT
+mysqldump "${options[@]}" --single-transaction --no-tablespaces "$pbc_database" "${tables[@]}" > "$temporary"
+# Link creates the final name atomically and fails if another writer created it.
+ln -- "$temporary" "$output"
+echo "Character-system backup saved: $output (${#tables[@]} current/legacy tables)."

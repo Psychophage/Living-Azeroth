@@ -1,0 +1,14 @@
+# PBC Character System: match the project's documented C++ conventions.
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 120
+UseTab: Never
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+BreakBeforeBraces: Allman
+AccessModifierOffset: -4
+PointerAlignment: Left
+SortIncludes: false
+ReflowComments: false

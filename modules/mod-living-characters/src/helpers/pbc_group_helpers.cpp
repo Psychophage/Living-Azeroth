@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_group_helpers.h"
 #include "pbc_utils.h"
 #include "Player.h"
@@ -6,6 +7,7 @@
 #include "ObjectAccessor.h"
 #include "GridNotifiers.h"
 #include "CellImpl.h"
+#include "Chat.h"
 
 // ---------------------------------------------------------------------------
 // PBC_FindGroupBots
@@ -212,4 +214,15 @@ ChatMsg PBC_GetGroupChatType(Player* player)
     Group* grp = player->GetGroup();
     if (!grp) return CHAT_MSG_SAY;
     return grp->isRaidGroup() ? CHAT_MSG_RAID : CHAT_MSG_PARTY;
+}
+void PBC_SendPartyMessage(Player* speaker, Group* group, std::string const& text)
+{
+    if (!speaker || !group || speaker->GetGroup() != group || text.empty())
+        return;
+
+    ChatMsg msgType = group->IsLeader(speaker->GetGUID())
+        ? CHAT_MSG_PARTY_LEADER : CHAT_MSG_PARTY;
+    WorldPacket packet;
+    ChatHandler::BuildChatPacket(packet, msgType, LANG_UNIVERSAL, speaker, nullptr, text);
+    group->BroadcastPacket(&packet, false, group->GetMemberGroup(speaker->GetGUID()));
 }

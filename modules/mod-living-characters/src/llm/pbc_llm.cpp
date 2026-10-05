@@ -1,4 +1,6 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_llm.h"
+#include "pbc_runtime.h"
 #include "pbc_config.h"
 #include "pbc_http.h"
 #include "pbc_utils.h"
@@ -53,9 +55,12 @@ static bool IEquals(const std::string& a, const std::string& b)
 PBC_LLMResult PBC_CallLLMWithConfig(const PBC_APIConfig& cfg,
                                      const std::string& systemPrompt,
                                      const std::string& userPrompt,
-                                     bool preserveNewlines)
+                                     bool preserveNewlines,
+                                     int maxAttempts)
 {
     PBC_LLMResult result{ false, "", 0 };
+    if (PBC::RuntimeConfigured())
+        return result; // Converted routes cannot fall through to an unmetered legacy caller.
 
     // Clean any unknown {token} placeholders and log warnings.
     std::string sysPrompt  = systemPrompt;
@@ -159,7 +164,7 @@ PBC_LLMResult PBC_CallLLMWithConfig(const PBC_APIConfig& cfg,
     }
 
     // --- Execute request --------------------------------------------------
-    constexpr int MAX_ATTEMPTS = 2;
+    const int MAX_ATTEMPTS = std::clamp(maxAttempts, 1, 2);
     for (int attempt = 1; attempt <= MAX_ATTEMPTS; ++attempt)
     {
         if (attempt > 1)

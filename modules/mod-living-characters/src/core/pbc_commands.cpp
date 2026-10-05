@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_commands.h"
 #include "pbc_config.h"
 #include "pbc_character.h"
@@ -6,6 +7,7 @@
 #include "pbc_http.h"
 #include "pbc_utils.h"
 #include "pbc_event_dispatch.h"
+#include "pbc_runtime.h"
 #include "Chat.h"
 #include "Config.h"
 #include "Player.h"
@@ -636,6 +638,11 @@ static bool HandleCharsNarrate(ChatHandler* handler,
     }
 
     uint64_t targetGuid = target->GetGUID().GetCounter();
+    if (isBot && !DB_ClaimPBCCompanion(targetGuid))
+    {
+        handler->PSendSysMessage("[PBC] Could not record companion ownership; narrator line was not added.");
+        return false;
+    }
     std::vector<uint64_t> owners = {targetGuid};
     PBC_AppendHistoryMessage(0, 0, std::string(messageArg), owners);
 
@@ -745,6 +752,15 @@ static bool HandleCharsNarrateParty(ChatHandler* handler, Tail messageArg)
         ++count;
     }
 
+    for (uint64_t botGuid : owners)
+    {
+        if (!DB_ClaimPBCCompanion(botGuid))
+        {
+            handler->PSendSysMessage("[PBC] Could not record companion ownership; narrator line was not added.");
+            return false;
+        }
+    }
+
     // Also write the narrator line to the calling player's own character history.
     owners.push_back(player->GetGUID().GetCounter());
     PBC_AppendHistoryMessage(0, 0, std::string(messageArg), owners);
@@ -841,8 +857,58 @@ static bool HandleCharsRegenLast(ChatHandler* handler, Optional<std::string_view
 
 PBC_CommandScript::PBC_CommandScript() : CommandScript("PBC_CommandScript") {}
 
+namespace
+{
+bool CharacterCommand(ChatHandler* handler, char const* verb, char const* args)
+{
+    if (!handler->GetSession())
+        return false;
+    return PBC::CharacterCommand(handler->GetSession()->GetPlayer(),
+        std::string(verb) + " " + (args ? args : ""));
+}
+
+bool CharacterHelp(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "help", args); }
+bool CharacterInfo(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "info", args); }
+bool CharacterHistory(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "history", args); }
+bool CharacterNotes(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "notes", args); }
+bool CharacterFact(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "fact", args); }
+bool CharacterEdit(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "edit", args); }
+bool CharacterResolve(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "resolve", args); }
+bool CharacterUsage(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "usage", args); }
+bool CharacterTest(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "test", args); }
+bool CharacterWatch(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "watch", args); }
+bool CharacterKnowledge(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "knowledge", args); }
+bool CharacterGroup(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "group", args); }
+bool CharacterEpisode(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "episode", args); }
+bool CharacterRevise(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "revise", args); }
+bool CharacterExclude(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "exclude", args); }
+}
+
 ChatCommandTable PBC_CommandScript::GetCommands() const
 {
+    if (PBC::RuntimeConfigured())
+    {
+        static ChatCommandTable commands =
+        {
+            { "help", CharacterHelp, SEC_PLAYER, Console::No },
+            { "info", CharacterInfo, SEC_PLAYER, Console::No },
+            { "history", CharacterHistory, SEC_PLAYER, Console::No },
+            { "notes", CharacterNotes, SEC_PLAYER, Console::No },
+            { "fact", CharacterFact, SEC_PLAYER, Console::No },
+            { "edit", CharacterEdit, SEC_PLAYER, Console::No },
+            { "resolve", CharacterResolve, SEC_PLAYER, Console::No },
+            { "usage", CharacterUsage, SEC_GAMEMASTER, Console::No },
+            { "test", CharacterTest, SEC_GAMEMASTER, Console::No },
+            { "watch", CharacterWatch, SEC_GAMEMASTER, Console::No },
+            { "knowledge", CharacterKnowledge, SEC_GAMEMASTER, Console::No },
+            { "group", CharacterGroup, SEC_GAMEMASTER, Console::No },
+            { "episode", CharacterEpisode, SEC_PLAYER, Console::No },
+            { "revise", CharacterRevise, SEC_GAMEMASTER, Console::No },
+            { "exclude", CharacterExclude, SEC_GAMEMASTER, Console::No },
+        };
+        static ChatCommandTable root = { { "chars", commands } };
+        return root;
+    }
     static ChatCommandTable charsSubCommands =
     {
         { "reload",                   HandleCharsReload,                  SEC_GAMEMASTER, Console::Yes },

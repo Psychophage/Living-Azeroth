@@ -1,8 +1,11 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_world.h"
 #include "pbc_config.h"
 #include "pbc_character.h"
 #include "pbc_event_dispatch.h"
 #include "pbc_poll.h"
+#include "pbc_idle.h"
+#include "pbc_runtime.h"
 #include "pbc_event_processor.h"
 #include "pbc_group_helpers.h"
 #include "pbc_database.h"
@@ -19,10 +22,19 @@
 #include "SharedDefines.h"
 #include "GameTime.h"
 
+#include <algorithm>
+
 PBC_WorldScript::PBC_WorldScript() : WorldScript("PBC_WorldScript") {}
 
 void PBC_WorldScript::OnStartup()
 {
+    if (PBC::RuntimeConfigured())
+    {
+        g_PBC_Enable = false;
+        if (!PBC::StartRuntime())
+            PBC_Log(PBC_LogLevel::PBC_ERROR, "Character coordinator could not start; legacy generation remains disabled.");
+        return;
+    }
     PBC_LoadConfig(true);
 
     if (!g_PBC_Enable)
@@ -64,6 +76,11 @@ void PBC_WorldScript::OnStartup()
     }
 
     PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Module started.");
+    PBC_Log(PBC_LogLevel::PBC_DEFAULT,
+        "Autonomous Party chat: enabled={} interval={}-{}m followup={}% quiet={}s hourly-calls={}",
+        g_PBC_IdlePartyEnabled, g_PBC_IdlePartyMinMinutes, g_PBC_IdlePartyMaxMinutes,
+        g_PBC_IdlePartyFollowupChance, g_PBC_IdlePartyQuietSeconds,
+        g_PBC_IdlePartyHourlyCallLimit);
     if (DB_MemoriesTableEmpty() && DB_CardAdditionsTableNotEmpty())
     {
         g_PBC_CardAdditionsMigrationNeeded = true;
@@ -75,6 +92,7 @@ void PBC_WorldScript::OnStartup()
 
 void PBC_WorldScript::OnShutdown()
 {
+    PBC::StopRuntime();
     if (PBC_HttpServerIsRunning())
     {
         PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Stopping HTTP server...");
@@ -89,6 +107,11 @@ void PBC_WorldScript::OnShutdown()
 
 void PBC_WorldScript::OnUpdate(uint32_t diff)
 {
+    if (PBC::RuntimeConfigured())
+    {
+        PBC::UpdateRuntime(diff);
+        return;
+    }
     if (!g_PBC_Enable) return;
 
     static uint32_t s_tickTimer = 0;
@@ -176,6 +199,20 @@ void PBC_WorldScript::OnUpdate(uint32_t diff)
 
             // Collect group bots excluding those in the excluded set.
             auto targets = PBC_FindGroupBotsExcluding(anchor, req.excludedCharGuids);
+
+            // Secondary responders receive copied history before their event
+            // is queued. Claim each one before that first persistent write.
+            targets.erase(std::remove_if(targets.begin(), targets.end(),
+                [](Player* bot)
+                {
+                    uint64_t guid = bot->GetGUID().GetCounter();
+                    if (DB_ClaimPBCCompanion(guid))
+                        return false;
+                    PBC_Log(PBC_LogLevel::PBC_ERROR,
+                        "Secondary event withheld: companion ownership could not be confirmed for GUID {}",
+                        guid);
+                    return true;
+                }), targets.end());
 
             if (!targets.empty())
             {
@@ -338,6 +375,9 @@ void PBC_WorldScript::OnUpdate(uint32_t diff)
         }
     }
 
+    // 2. Commit guarded autonomous Party replies before starting another event.
+    PBC_IdleDrainCompletions();
+
     // 2. Drain completed chat-send actions from event thread
     {
         std::queue<PBC_PendingAction> local;
@@ -379,14 +419,7 @@ void PBC_WorldScript::OnUpdate(uint32_t diff)
                         Group* grp = bot->GetGroup();
                         if (grp)
                         {
-                            // Respect the sender's leader position in the group.
-                            // The sender can be a real player (party leader), not just a bot.
-                            ChatMsg msgType = grp->IsLeader(bot->GetGUID())
-                                ? CHAT_MSG_PARTY_LEADER
-                                : CHAT_MSG_PARTY;
-                            WorldPacket data;
-                            ChatHandler::BuildChatPacket(data, msgType, LANG_UNIVERSAL, bot, nullptr, action.text);
-                            grp->BroadcastPacket(&data, false, grp->GetMemberGroup(bot->GetGUID()));
+                            PBC_SendPartyMessage(bot, grp, action.text);
                         }
                         else
                         {
@@ -427,6 +460,7 @@ void PBC_WorldScript::OnUpdate(uint32_t diff)
 
                     PBC_Log(PBC_LogLevel::PBC_DEBUG, "OnUpdate: sent chat for character={} type={}",
                                  bot->GetName(), ct);
+                    PBC_IdleNoteActivity(bot);
                 }
             }
 

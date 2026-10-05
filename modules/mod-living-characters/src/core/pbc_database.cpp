@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_database.h"
 #include "pbc_config.h"
 #include "pbc_log.h"
@@ -9,6 +10,20 @@
 #include <vector>
 #include <cstdint>
 #include <ctime>
+
+bool DB_ClaimPBCCompanion(uint64_t botGuid)
+{
+    if (!botGuid)
+        return false;
+
+    CharacterDatabase.DirectExecute(
+        "INSERT IGNORE INTO mod_pbc_companion_ownership (bot_guid) VALUES ({})",
+        botGuid);
+    QueryResult confirmed = CharacterDatabase.Query(
+        "SELECT 1 FROM mod_pbc_companion_ownership WHERE bot_guid = {} LIMIT 1",
+        botGuid);
+    return static_cast<bool>(confirmed);
+}
 
 // ---------------------------------------------------------------------------
 // Chat history — normalized schema (mod_pbc_history + mod_pbc_history_owners)

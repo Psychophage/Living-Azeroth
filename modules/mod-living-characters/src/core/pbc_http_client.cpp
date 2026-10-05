@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifdef _WIN32
 #undef _WIN32_WINNT
 #define _WIN32_WINNT 0x0A00
@@ -21,9 +22,15 @@ void PBC_HttpClient::SetTimeoutSeconds(int seconds)
     m_timeoutSec = seconds;
 }
 
-std::string PBC_HttpClient::Post(const std::string& url,
-                                 const std::string& jsonData,
+std::string PBC_HttpClient::Post(const std::string& url, const std::string& jsonData,
                                  const std::vector<std::pair<std::string, std::string>>& extraHeaders)
+{
+    auto response = PostResponse(url, jsonData, extraHeaders);
+    return response.status == 200 ? response.body : std::string{};
+}
+
+PBC_HttpResponse PBC_HttpClient::PostResponse(std::string const& url, std::string const& jsonData,
+                                              std::vector<std::pair<std::string, std::string>> const& extraHeaders)
 {
     try
     {
@@ -33,22 +40,20 @@ std::string PBC_HttpClient::Post(const std::string& url,
         if (!std::regex_match(url, m, urlRe))
         {
             PBC_Log(PBC_LogLevel::PBC_ERROR, "Invalid URL: {}", url);
-            return "";
+            return {};
         }
 
-        std::string proto  = m[1].str();
-        std::string host   = m[2].str();
-        std::string path   = m[4].matched ? m[4].str() : "/";
-        int         port   = proto == "https" ? 443 : 80;
-        if (m[3].matched) port = std::stoi(m[3].str());
+        std::string proto = m[1].str();
+        std::string host = m[2].str();
+        std::string path = m[4].matched ? m[4].str() : "/";
+        int port = proto == "https" ? 443 : 80;
+        if (m[3].matched)
+            port = std::stoi(m[3].str());
 
         PBC_Log(PBC_LogLevel::PBC_DEBUG, "HTTP {} {}:{}{}", proto, host, port, path);
 
-        httplib::Headers headers = {
-            {"Accept",       "application/json"},
-            {"User-Agent",   "AzerothCore-PBC/1.0"}
-        };
-        for (const auto& hdr : extraHeaders)
+        httplib::Headers headers = {{"Accept", "application/json"}, {"User-Agent", "AzerothCore-PBC/1.0"}};
+        for (auto const& hdr : extraHeaders)
             headers.emplace(hdr.first, hdr.second);
 
         httplib::Result res;
@@ -57,14 +62,14 @@ std::string PBC_HttpClient::Post(const std::string& url,
         {
 #ifdef CPPHTTPLIB_OPENSSL_SUPPORT
             httplib::SSLClient cli(host, port);
-            cli.enable_server_certificate_verification(false);
+            cli.enable_server_certificate_verification(true);
             cli.set_connection_timeout(m_timeoutSec);
             cli.set_read_timeout(m_timeoutSec);
             cli.set_write_timeout(m_timeoutSec);
             res = cli.Post(path, headers, jsonData, "application/json");
 #else
             PBC_Log(PBC_LogLevel::PBC_ERROR, "HTTPS requested but OpenSSL not compiled in.");
-            return "";
+            return {};
 #endif
         }
         else
@@ -78,23 +83,23 @@ std::string PBC_HttpClient::Post(const std::string& url,
 
         if (!res)
         {
-            PBC_Log(PBC_LogLevel::PBC_ERROR, "HTTP request failed (no response) for {}:{}{}", host, port, path);
-            return "";
+            PBC_Log(PBC_LogLevel::PBC_ERROR, "HTTP request failed ({}) for {}:{}{}", httplib::to_string(res.error()),
+                    host, port, path);
+            return {};
         }
         if (res->status != 200)
         {
             PBC_Log(PBC_LogLevel::PBC_ERROR, "HTTP {} from {}:{}{}", res->status, host, port, path);
-            PBC_Log(PBC_LogLevel::PBC_DEBUG, "Response body: {}", PBC_SanitizeForFmt(res->body));
-            return "";
+            return {res->status, res->body};
         }
 
         PBC_Log(PBC_LogLevel::PBC_DEBUG, "HTTP OK, body length={}", res->body.size());
 
-        return res->body;
+        return {res->status, res->body};
     }
     catch (const std::exception& ex)
     {
         PBC_Log(PBC_LogLevel::PBC_ERROR, "HTTP exception: {}", ex.what());
-        return "";
+        return {};
     }
 }

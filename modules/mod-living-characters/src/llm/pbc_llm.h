@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifndef MOD_PBC_LLM_H
 #define MOD_PBC_LLM_H
 
@@ -42,7 +43,8 @@ struct PBC_APIConfig
 PBC_LLMResult PBC_CallLLMWithConfig(const PBC_APIConfig& cfg,
                                      const std::string& systemPrompt,
                                      const std::string& userPrompt,
-                                     bool preserveNewlines = false);
+                                     bool preserveNewlines = false,
+                                     int maxAttempts = 2);
 
 // Convenience wrapper — uses the "default" connection from the registry.
 PBC_LLMResult PBC_CallLLM(const std::string& systemPrompt,

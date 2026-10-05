@@ -1,9 +1,12 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_event_dispatch.h"
 #include "pbc_config.h"
 #include "pbc_character.h"
 #include "pbc_utils.h"
 #include "pbc_locales.h"
 #include "pbc_group_helpers.h"
+#include "pbc_database.h"
+#include "pbc_idle.h"
 #include "pbc_log.h"
 
 #include "Player.h"
@@ -16,6 +19,7 @@
 #include <fmt/core.h>
 #include <algorithm>
 #include <random>
+#include <set>
 #include <unordered_set>
 
 // ---------------------------------------------------------------------------
@@ -66,6 +70,49 @@ void PBC_NotifyRealPlayersInGroup(Player* anchor, const std::string& eventLine)
 // ---------------------------------------------------------------------------
 void PBC_PushEvent(PBC_EventItem item)
 {
+    PBC_IdleNoteEvent(item);
+
+    // Only these events admit new bots into persistent chat context. Other
+    // event types operate on an already admitted character or reload state.
+    if (item.type == PBC_EventType::Normal
+        || item.type == PBC_EventType::QuestSummarization
+        || item.type == PBC_EventType::CombatSummarization)
+    {
+        bool hasContext = item.type != PBC_EventType::Normal
+            || item.source.HasSource()
+            || !item.respondingChars.empty();
+        if (hasContext)
+        {
+            std::unordered_set<uint64_t> realPlayers(
+                item.playerCharGuids.begin(),
+                item.playerCharGuids.end());
+            std::set<uint64_t> bots;
+            for (PBC_CharacterSnapshot const& snap : item.respondingChars)
+                if (snap.charGuidRaw && !realPlayers.count(snap.charGuidRaw))
+                    bots.insert(snap.charGuidRaw);
+            for (uint64_t guid : item.silentCharGuids)
+                if (guid && !realPlayers.count(guid))
+                    bots.insert(guid);
+            for (uint64_t guid : item.replyOnlyCharGuids)
+                if (guid && !realPlayers.count(guid))
+                    bots.insert(guid);
+
+            // The table is the durable owner contract shared with Hokken.
+            // Never queue an event if any participant could speak through a
+            // second system before this claim is safely persisted.
+            for (uint64_t guid : bots)
+            {
+                if (!DB_ClaimPBCCompanion(guid))
+                {
+                    PBC_Log(PBC_LogLevel::PBC_ERROR,
+                        "PBC event withheld: companion ownership could not be confirmed for GUID {}",
+                        guid);
+                    return;
+                }
+            }
+        }
+    }
+
     std::lock_guard<std::mutex> lock(g_PBC_EventQueueMutex);
     g_PBC_EventQueue.push(std::move(item));
 }
@@ -273,6 +320,9 @@ void PBC_DispatchWhisperEvent(Player* sender, Player* target, const std::string&
 {
     if (!PBC_PTR_VALID(sender) || !PBC_PTR_VALID(target)) return;
 
+    WorldSession* senderSession = sender->GetSession();
+    if (!PBC_PTR_VALID(senderSession) || senderSession->IsBot()) return;
+
     std::string senderName = sender->GetName();
     std::string targetName = target->GetName();
     std::string eventLine   = PBC_Localize("{0} tells you privately: {1}", senderName, msg);
@@ -443,6 +493,16 @@ void PBC_DispatchTriggerEvent(Player* bot)
     uint32_t chatType = PBC_GetGroupChatType(bot);
 
     uint64_t botGuid = bot->GetGUID().GetCounter();
+
+    // Trigger selection may append a time-gap line before PBC_PushEvent.
+    // Own the bot before that first possible history write.
+    if (!DB_ClaimPBCCompanion(botGuid))
+    {
+        PBC_Log(PBC_LogLevel::PBC_ERROR,
+            "Trigger withheld: companion ownership could not be confirmed for GUID {}",
+            botGuid);
+        return;
+    }
 
     // Insert time-gap narrator line BEFORE picking the trigger event text,
     // so PBC_PickTriggerEventLine sees it and can choose an appropriate

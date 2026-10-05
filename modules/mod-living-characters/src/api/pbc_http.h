@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifndef MOD_PBC_HTTP_H
 #define MOD_PBC_HTTP_H
 
@@ -7,6 +8,12 @@
 #include <cstdint>
 
 struct PBC_HistoryEntry;
+
+struct PBC_HttpResponse
+{
+    int status = 0; // Zero means no HTTP response; billing may still be unknown.
+    std::string body;
+};
 
 // Thin wrapper around cpp-httplib for synchronous HTTP/HTTPS POST requests.
 // Supports custom auth headers (Bearer token, x-api-key, etc.).
@@ -21,6 +28,10 @@ public:
     std::string Post(const std::string& url,
                      const std::string& jsonData,
                      const std::vector<std::pair<std::string, std::string>>& extraHeaders = {});
+
+    // Preserve error envelopes too: a failed reply can still contain billable usage.
+    PBC_HttpResponse PostResponse(std::string const& url, std::string const& jsonData,
+        std::vector<std::pair<std::string, std::string>> const& extraHeaders = {});
 
     void SetTimeoutSeconds(int seconds);
 

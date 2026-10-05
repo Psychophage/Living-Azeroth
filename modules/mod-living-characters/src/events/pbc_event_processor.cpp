@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_event_processor.h"
 #include "pbc_config.h"
 #include "pbc_character.h"
@@ -7,6 +8,7 @@
 #include "pbc_utils.h"
 #include "pbc_locales.h"
 #include "pbc_event_dispatch.h"
+#include "pbc_idle.h"
 #include "pbc_condense.h"
 #include "pbc_log.h"
 
@@ -413,6 +415,7 @@ void ProcessNormal(PBC_EventItem& ev,
                    std::vector<uint64_t>* outCreatedIds = nullptr)
 {
     bool isRegen = (regenRecord != nullptr);
+    bool isIdle = ev.idleGuard.reservation != 0;
 
     PBC_Log(PBC_LogLevel::PBC_DEBUG, "ProcessEvent: type={} isRegen={} respondingChars={} silentChars={} event=\"{}\"",
              static_cast<int>(ev.type), isRegen, ev.respondingChars.size(), ev.silentCharGuids.size(), ev.eventLine);
@@ -454,7 +457,7 @@ void ProcessNormal(PBC_EventItem& ev,
     // -------------------------------------------------------------------
     std::vector<PBC_CharacterSnapshot> preMutationSnapshots;
     std::vector<PBC_HistoryEntry>      seedEventHistory;
-    if (!isRegen && outCreatedIds)
+    if (!isRegen && !isIdle && outCreatedIds)
     {
         preMutationSnapshots = ev.respondingChars;   // deep copy
         seedEventHistory     = ev.eventHistory;      // deep copy (source only)
@@ -469,8 +472,11 @@ void ProcessNormal(PBC_EventItem& ev,
 
     for (PBC_CharacterSnapshot& snap : ev.respondingChars)
     {
+        if (isIdle && !PBC_IdleIsCurrent(ev.idleGuard))
+            break;
+
         // Post deferred "thinks..." notification
-        if (g_PBC_DisplayNarratorEvents)
+        if (!isIdle && g_PBC_DisplayNarratorEvents)
         {
             PBC_PendingAction action;
             action.charGuid          = snap.charObjGuid;
@@ -480,11 +486,15 @@ void ProcessNormal(PBC_EventItem& ev,
             std::lock_guard<std::mutex> lock(g_PBC_PendingActionsMutex);
             g_PBC_PendingActions.push(std::move(action));
         }
-        PBC_WsNotify(snap.charGuidRaw, "thinks");
+        if (!isIdle)
+            PBC_WsNotify(snap.charGuidRaw, "thinks");
 
         // Condense inline if over token budget
         int histTokens = PBC_EstimateHistoryTokens(snap.charGuidRaw);
-        if (histTokens > static_cast<int>(g_PBC_MaxHistoryCtx))
+        if (isIdle && g_PBC_MaxHistoryCtx > 0
+            && histTokens > static_cast<int>(g_PBC_MaxHistoryCtx))
+            break; // maintenance has its own budget; autonomous chat must not trigger it
+        if (!isIdle && histTokens > static_cast<int>(g_PBC_MaxHistoryCtx))
         {
             PBC_PushNarratorSummary(snap.charObjGuid,
                 PBC_MakeEventLine(PBC_Localize("Condensing {0}'s history...", snap.charName)));
@@ -511,16 +521,40 @@ void ProcessNormal(PBC_EventItem& ev,
 
         // Build user prompt from snapshot
         std::string userPrompt = PBC_BuildUserPromptFromSnapshot(snap, currentEvent);
+        if (isIdle)
+            userPrompt += "\nReply with one short, natural in-character Party line. "
+                "Do not invent other speakers or continue the conversation yourself.";
 
         PBC_Log(PBC_LogLevel::PBC_DEBUG, "ProcessEvent: calling LLM for character={} event=\"{}\"",
                  snap.charName, currentEvent);
 
-        PBC_LLMResult res = PBC_CallLLM(sysPrompt, userPrompt);
+        PBC_LLMResult res;
+        if (isIdle)
+        {
+            PBC_APIConfig const* connection = PBC_GetConnection("default");
+            if (!connection)
+                break;
+            PBC_APIConfig limited = *connection;
+            limited.requestTimeoutSec = std::min(limited.requestTimeoutSec, 45);
+            if (!limited.requestParameters.is_object())
+                limited.requestParameters = pbc_json::object();
+            limited.requestParameters["max_tokens"] = 120;
+            res = PBC_CallLLMWithConfig(limited, sysPrompt, userPrompt, false, 1);
+        }
+        else
+            res = PBC_CallLLM(sysPrompt, userPrompt);
 
         if (!res.success || res.text.empty())
         {
             PBC_Log(PBC_LogLevel::PBC_WARNING, "ProcessEvent: LLM failed/empty for character={}", snap.charName);
+            if (isIdle)
+                break;
             continue;
+        }
+        if (isIdle && res.text.size() > 230)
+        {
+            PBC_Log(PBC_LogLevel::PBC_WARNING, "Idle party reply too long for character={}", snap.charName);
+            break;
         }
 
         // Collect structured reply data (no pre-rendering)
@@ -548,6 +582,7 @@ void ProcessNormal(PBC_EventItem& ev,
         // -----------------------------------------------------------------
         // Send immediate WS preview (id=0) — pre-render for each recipient
         // -----------------------------------------------------------------
+        if (!isIdle)
         {
             PBC_HistoryEntry previewEntry;
             previewEntry.id         = 0;
@@ -584,12 +619,14 @@ void ProcessNormal(PBC_EventItem& ev,
         }
 
         // Split reply into narrator/regular segments if narrator events enabled
-        if (g_PBC_DisplayNarratorEvents)
+        // Idle speech and history are staged together until the originating
+        // party is revalidated on the world thread.
+        if (!isIdle && g_PBC_DisplayNarratorEvents)
         {
             auto segments = ParseNarratorSpans(res.text);
             PushReplySegments(snap, ev, segments);
         }
-        else
+        else if (!isIdle)
         {
             if (!res.text.empty())
             {
@@ -611,6 +648,12 @@ void ProcessNormal(PBC_EventItem& ev,
         lastEventLine     = currentEvent;
 
         PBC_Log(PBC_LogLevel::PBC_DEBUG, "ProcessEvent: character={} replied", snap.charName);
+    }
+
+    if (isIdle)
+    {
+        PBC_IdleStageCompletion(std::move(ev.idleGuard), std::move(ev.eventHistory));
+        return;
     }
 
     // -----------------------------------------------------------------------
@@ -908,7 +951,7 @@ void PBC_ProcessEventItem(PBC_EventItem ev)
     // -------------------------------------------------------------------
     bool isRegen = (ev.type == PBC_EventType::Regen);
 
-    if (!isRegen)
+    if (!isRegen && ev.idleGuard.reservation == 0)
     {
         // -------------------------------------------------------------------
         // Insert time-gap narrator lines BEFORE any event-type-specific

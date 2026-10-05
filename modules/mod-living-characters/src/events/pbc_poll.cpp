@@ -1,8 +1,10 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_poll.h"
 #include "pbc_config.h"
 #include "pbc_utils.h"
 #include "pbc_locales.h"
 #include "pbc_event_dispatch.h"
+#include "pbc_idle.h"
 #include "pbc_group_helpers.h"
 #include "pbc_scene_helpers.h"
 #include "pbc_log.h"
@@ -209,7 +211,7 @@ void PBC_PollPartyState()
         groups.push_back(std::move(info));
     }
 
-    std::lock_guard<std::mutex> lock(g_PBC_PartyStateMutex);
+    std::unique_lock<std::mutex> lock(g_PBC_PartyStateMutex);
 
     for (auto const& gi : groups)
     {
@@ -501,5 +503,10 @@ void PBC_PollPartyState()
             tracker = PBC_GroupCombatTracker();
         }
     }
+    lock.unlock();
 
+    time_t now = GameTime::GetGameTime().count();
+    for (auto const& gi : groups)
+        PBC_IdlePollParty(gi.grp, now);
+    PBC_IdleFinishPoll(seenGroups);
 }

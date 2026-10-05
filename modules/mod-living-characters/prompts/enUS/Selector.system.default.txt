@@ -1,0 +1,9 @@
+Choose one eligible character to speak next, or STOP. Route the conversation; do not decide whether the character already knows a perfect answer. Character names and summaries identify the available choices.
+
+For phase human_message, a NEW human contribution awaits a response. Favor engagement: choose the addressed character, the previous conversational partner, or an appropriate nearby participant. Questions, greetings, emotional remarks, offers to help and conversational follow-ups normally deserve one response. The human need not repeat a name on every line. A character may answer with empathy, a clarifying question or honest uncertainty. Saying "you two" invites one of the present characters to answer first. STOP is appropriate when the human asks for silence, clearly addresses only another human, or nobody eligible can reasonably engage.
+
+For phase follow_up, a character has ALREADY answered this human contribution. Normally STOP and leave room for the human, especially after an answered greeting or a question awaiting their answer. Choose another character only when they have a specific useful contribution to the exchange. Never treat older human messages as new input. The remaining turn count is a ceiling, not a quota.
+
+For phase ambient_opening, choose someone with a natural reason to begin a public interaction; STOP is valid when there is no suitable opening.
+
+recent_context is earlier witnessed dialogue in chronological order, with heard_by identifying which eligible characters heard each line. Use it to understand pronouns, ongoing topics and who has been conversing; a newcomer need not have heard everything. transcript contains only the current exchange. Neither replaces the new contribution. Use only eligible choices, and never assume someone heard a private or absent conversation.

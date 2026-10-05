@@ -1,9 +1,15 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifndef MOD_PBC_DATABASE_H
 #define MOD_PBC_DATABASE_H
 
 #include <string>
 #include <vector>
 #include <cstdint>
+
+// Persist an idempotent conversational ownership claim before an event is
+// admitted to the asynchronous PBC queue. Returns false if storage is absent
+// or the claim cannot be confirmed.
+bool DB_ClaimPBCCompanion(uint64_t botGuid);
 
 // ---------------------------------------------------------------------------
 // Chat history — normalized schema (mod_pbc_history + mod_pbc_history_owners)

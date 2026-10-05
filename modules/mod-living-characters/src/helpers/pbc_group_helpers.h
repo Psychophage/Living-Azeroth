@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifndef MOD_PBC_GROUP_HELPERS_H
 #define MOD_PBC_GROUP_HELPERS_H
 
@@ -8,6 +9,7 @@
 #include "SharedDefines.h"
 
 class Player;
+class Group;
 
 // ---------------------------------------------------------------------------
 // Group / bot-finding helpers  (main-thread only)
@@ -66,5 +68,9 @@ bool PBC_IsInRaidGroup(Player* player);
 // replies go to" and should be used by every event dispatcher so that raid
 // members in different sub-groups can all see the responses.
 ChatMsg PBC_GetGroupChatType(Player* player);
+
+// Send a Party line to this exact group; callers must validate group identity.
+// This helper never falls back to Say when the party is gone.
+void PBC_SendPartyMessage(Player* speaker, Group* group, std::string const& text);
 
 #endif // MOD_PBC_GROUP_HELPERS_H

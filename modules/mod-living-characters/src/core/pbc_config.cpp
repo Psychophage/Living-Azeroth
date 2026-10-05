@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_config.h"
 #include "pbc_character.h"
 #include "pbc_database.h"
@@ -48,8 +49,8 @@ std::string g_PBC_CharacterContext;
 std::string g_PBC_RelationshipUpdateSystemPrompt;
 std::string g_PBC_RelationshipUpdateUserPrompt;
 
-std::string g_PBC_PromptsPath = "../../../modules/mod-pbc/prompts";
-std::string g_PBC_CharacterCardsPath = "../../../modules/mod-pbc/characters";
+std::string g_PBC_PromptsPath = "../../../modules/mod-living-characters/prompts";
+std::string g_PBC_CharacterCardsPath = "../../../modules/mod-living-characters/characters";
 
 uint32_t g_PBC_ReplyChanceWhisper   = 100;
 uint32_t g_PBC_ReplyChanceMention   = 100;
@@ -65,6 +66,12 @@ uint32_t g_PBC_ReplyChanceLocationChanged = 15;
 
 uint32_t g_PBC_LocationChangeDebounceCycles = 5;
 uint32_t g_PBC_CombatEndDebounceCycles      = 5;
+bool g_PBC_IdlePartyEnabled = false;
+uint32_t g_PBC_IdlePartyMinMinutes = 20;
+uint32_t g_PBC_IdlePartyMaxMinutes = 40;
+uint32_t g_PBC_IdlePartyFollowupChance = 25;
+uint32_t g_PBC_IdlePartyQuietSeconds = 120;
+uint32_t g_PBC_IdlePartyHourlyCallLimit = 12;
 
 std::string g_PBC_QuestCompletedSystemPrompt;
 std::string g_PBC_QuestCompletedUserPrompt;
@@ -83,7 +90,7 @@ std::string g_PBC_HttpServerBind            = "127.0.0.1";
 int         g_PBC_HttpServerTimeout         = 15;
 std::string g_PBC_HttpServerBaseUrl         = "http://127.0.0.1:8501";
 std::string g_PBC_HttpServerPrivateKey;
-std::string g_PBC_HttpServerFrontendPath    = "../../../modules/mod-pbc/frontend/dist";
+std::string g_PBC_HttpServerFrontendPath    = "../../../modules/mod-living-characters/frontend/dist";
 
 std::queue<PBC_PendingAction> g_PBC_PendingActions;
 std::mutex                    g_PBC_PendingActionsMutex;
@@ -444,6 +451,11 @@ const PBC_APIConfig* PBC_GetConnection(const std::string& name)
 
 void PBC_LoadConfig(bool /*isStartup*/)
 {
+    if (sConfigMgr->GetOption<bool>("PBC.CharacterSystem.Enable", false, false))
+    {
+        g_PBC_Enable = false;
+        return; // The character coordinator owns its configuration and worker lifecycle.
+    }
     g_PBC_Enable              = sConfigMgr->GetOption<bool>("PBC.Enable", true);
     g_PBC_DebugEnabled        = sConfigMgr->GetOption<bool>("PBC.DebugEnabled", false);
     g_PBC_DebugShowFullRequest = sConfigMgr->GetOption<bool>("PBC.DebugShowFullRequest", false);
@@ -453,9 +465,9 @@ void PBC_LoadConfig(bool /*isStartup*/)
     g_PBC_MaxMemoriesCtx             = sConfigMgr->GetOption<uint32_t>("PBC.MaxMemoriesCtx", 8192);
 
     g_PBC_PromptsPath = sConfigMgr->GetOption<std::string>("PBC.PromptsPath",
-                                    "../../../modules/mod-pbc/prompts");
+                                    "../../../modules/mod-living-characters/prompts");
     g_PBC_CharacterCardsPath  = sConfigMgr->GetOption<std::string>("PBC.CharacterCardsPath",
-                                    "../../../modules/mod-pbc/characters");
+                                    "../../../modules/mod-living-characters/characters");
 
     g_PBC_ReplyChanceWhisper   = sConfigMgr->GetOption<uint32_t>("PBC.ReplyChanceWhisper", 100);
     g_PBC_ReplyChanceMention   = sConfigMgr->GetOption<uint32_t>("PBC.ReplyChanceMention", 100);
@@ -472,6 +484,19 @@ void PBC_LoadConfig(bool /*isStartup*/)
     g_PBC_LocationChangeDebounceCycles = sConfigMgr->GetOption<uint32_t>("PBC.LocationChangeDebounceCycles", 5);
     g_PBC_CombatEndDebounceCycles      = sConfigMgr->GetOption<uint32_t>("PBC.CombatEndDebounceCycles", 5);
 
+    g_PBC_IdlePartyEnabled = sConfigMgr->GetOption<bool>("PBC.IdlePartyEnabled", false);
+    g_PBC_IdlePartyMinMinutes = std::clamp(
+        sConfigMgr->GetOption<uint32_t>("PBC.IdlePartyMinMinutes", 20), 5u, 240u);
+    g_PBC_IdlePartyMaxMinutes = std::clamp(
+        sConfigMgr->GetOption<uint32_t>("PBC.IdlePartyMaxMinutes", 40),
+        g_PBC_IdlePartyMinMinutes, 240u);
+    g_PBC_IdlePartyFollowupChance = std::min(
+        sConfigMgr->GetOption<uint32_t>("PBC.IdlePartyFollowupChance", 25), 100u);
+    g_PBC_IdlePartyQuietSeconds = std::clamp(
+        sConfigMgr->GetOption<uint32_t>("PBC.IdlePartyQuietSeconds", 120), 30u, 600u);
+    g_PBC_IdlePartyHourlyCallLimit = std::clamp(
+        sConfigMgr->GetOption<uint32_t>("PBC.IdlePartyHourlyCallLimit", 12), 1u, 60u);
+
     std::string blacklistStr = sConfigMgr->GetOption<std::string>("PBC.Blacklist", "");
     g_PBC_Blacklist = SplitByComma(blacklistStr);
 
@@ -483,7 +508,7 @@ void PBC_LoadConfig(bool /*isStartup*/)
     g_PBC_HttpServerBaseUrl      = sConfigMgr->GetOption<std::string>("PBC.HttpServerBaseUrl", "http://127.0.0.1:8501");
     g_PBC_HttpServerPrivateKey   = sConfigMgr->GetOption<std::string>("PBC.HttpServerPrivateKey", "");
     g_PBC_HttpServerFrontendPath = sConfigMgr->GetOption<std::string>("PBC.HttpServerFrontendPath",
-                                                                       "../../../modules/mod-pbc/frontend/dist");
+                                                                       "../../../modules/mod-living-characters/frontend/dist");
 
     if (g_PBC_Enable)
     {
@@ -748,5 +773,3 @@ uint32_t PBC_GetEffectiveChance(uint64_t botGuid, uint32_t baseChance)
     int32_t effective = static_cast<int32_t>(baseChance) + it->second;
     return static_cast<uint32_t>(std::max(0, std::min(100, effective)));
 }
-
-

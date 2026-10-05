@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #ifndef MOD_PBC_CONFIG_H
 #define MOD_PBC_CONFIG_H
 
@@ -12,6 +13,7 @@
 #include <thread>
 #include <atomic>
 #include <cstdint>
+#include <ctime>
 #include <memory>
 #include "ObjectGuid.h"
 #include "ScriptMgr.h"
@@ -74,6 +76,14 @@ extern uint32_t g_PBC_ReplyChanceLocationChanged;
 
 extern uint32_t g_PBC_LocationChangeDebounceCycles;
 extern uint32_t g_PBC_CombatEndDebounceCycles;
+
+// Optional, bounded autonomous conversation in ordinary parties.
+extern bool g_PBC_IdlePartyEnabled;
+extern uint32_t g_PBC_IdlePartyMinMinutes;
+extern uint32_t g_PBC_IdlePartyMaxMinutes;
+extern uint32_t g_PBC_IdlePartyFollowupChance;
+extern uint32_t g_PBC_IdlePartyQuietSeconds;
+extern uint32_t g_PBC_IdlePartyHourlyCallLimit;
 
 // Quest LLM prompts
 extern std::string g_PBC_QuestCompletedSystemPrompt;
@@ -190,6 +200,19 @@ struct PBC_EventSource
     bool HasSource() const  { return IsNarrator() || IsChat(); }
 };
 
+// Transient identity of an admitted autonomous party exchange. The worker
+// carries this value back to the world thread; it never accesses Group/Player.
+struct PBC_IdleGuard
+{
+    uint32_t groupCounter = 0;
+    uint64_t incarnation = 0;
+    uint64_t revision = 0;
+    uint64_t reservation = 0;
+    time_t expiresAt = 0;
+    std::vector<uint64_t> members;
+    std::vector<uint64_t> speakers;
+};
+
 // ---------------------------------------------------------------------------
 // PBC_LastEventRecord
 //
@@ -275,6 +298,8 @@ struct PBC_EventItem
     // rendered into that character's snapshot so they see the full chain.
     // At the end of processing the buffer is flushed to DB / global memory.
     std::vector<PBC_HistoryEntry> eventHistory;
+
+    PBC_IdleGuard idleGuard;       // reservation=0 for ordinary events
 
     // QuestSummarization extra fields
     std::string questSystemPrompt;

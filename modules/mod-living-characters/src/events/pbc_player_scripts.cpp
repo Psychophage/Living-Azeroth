@@ -1,3 +1,4 @@
+// PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
 #include "pbc_player_scripts.h"
 #include "pbc_config.h"
 #include "pbc_character.h"
@@ -9,6 +10,7 @@
 #include "pbc_group_helpers.h"
 #include "pbc_event_dispatch.h"
 #include "pbc_poll.h"
+#include "pbc_idle.h"
 #include "pbc_http.h"
 #include "pbc_log.h"
 
@@ -56,6 +58,8 @@ static void HandleChatMessage(Player* sender, uint32 type, uint32 lang,
     if (!PBC_PTR_VALID(sender)) return;
     if (type == CHAT_MSG_AFK || type == CHAT_MSG_DND) return;
     if (IsBlacklisted(lang, rawMsg)) return;
+    if (sender->GetSession() && !sender->GetSession()->IsBot())
+        PBC_IdleNoteActivity(sender);
 
     const std::string msg = PBC_SanitizeChatMessage(rawMsg);
 
