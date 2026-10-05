@@ -1,0 +1,303 @@
+[worldserver]
+
+#########################################
+# mod-pbc configuration
+#########################################
+
+# --------------------------------------------
+# CORE MODULE TOGGLES & DEBUGGING
+# --------------------------------------------
+
+# PBC.Enable
+#     Description: Enable or disable the module.
+#     Default:     1 (true)
+PBC.Enable = 1
+
+# PBC.DebugEnabled
+#     Description: Enables DEBUG-level log messages.
+#                  When set to 1 (true), detailed event tracking, LLM request info, and
+#                  other debug messages are printed to the server console.
+#     Default:     0 (false)
+PBC.DebugEnabled = 0
+
+# PBC.DebugShowFullRequest
+#     Description: When enabled (1), logs the request body and response body
+#                  for every LLM API call.  Only active when PBC.DebugEnabled is also enabled.
+#                  Long payloads (>2000 symbols) are truncated to first 500 + " ... " + last 1500 symbols.
+#                  When disabled (0), only standard logging is used.
+#     Default:     0 (false)
+PBC.DebugShowFullRequest = 0
+
+# PBC.DisplayNarratorEvents
+#     Description: When enabled (1), real players in the group will receive a system
+#                  message showing the narrator event text when one of the defined events fire.
+#                  This happens before characters process the event, regardless of whether
+#                  any character rolls to respond.
+#                  Additionally, all *text* blocks in a character's LLM reply are extracted
+#                  and posted as separate narrator system messages, with the remaining text
+#                  posted as regular chat. For example, the reply "*looks around* Hello!
+#                  *waves* Goodbye!" is posted as four messages: two narrator system
+#                  messages (*looks around*, *waves*) and two regular chat messages
+#                  (Hello!, Goodbye!).
+#     Default:     1 (true)
+PBC.DisplayNarratorEvents = 1
+
+# --------------------------------------------
+# LLM API CONNECTIONS
+# --------------------------------------------
+#
+# Each connection is defined in a standalone JSONC file (JSON with comments).
+# Copy one of the *.jsonc.example templates from the connections/ directory
+# (without the .example suffix), fill it in, and point the options below at it.
+# See modules/mod-pbc/docs/CONNECTIONS.md for the full guide.
+# Paths are relative to the server working directory (env/dist/bin/).
+
+# PBC.DefaultConnection
+#     Description: Path to the connection file used for character responses and
+#                  as the fallback for any task that does not have a specific
+#                  connection defined below.
+#                  REQUIRED. The module will be disabled if missing or invalid.
+#     Default:     empty
+PBC.DefaultConnection = ../../../modules/mod-pbc/connections/my-connection.jsonc
+
+# PBC.UtilityConnection
+#     Description: Path to the connection file used for utility requests
+#                  (combat summaries, quest summaries). Typically a fast, cheap model.
+#                  Falls back to PBC.DefaultConnection if empty.
+#     Default:     (empty)
+PBC.UtilityConnection =
+
+# PBC.CondensationConnection
+#     Description: Path to the connection file used for condensation
+#                  (extracting memories from history). Typically a capable model.
+#                  Falls back to PBC.DefaultConnection if empty.
+#     Default:     (empty)
+PBC.CondensationConnection =
+
+# PBC.RelationshipUpdateConnection
+#     Description: Path to the connection file used for relationship updates.
+#                  Typically a capable model.
+#                  Falls back to PBC.DefaultConnection if empty.
+#     Default:     (empty)
+PBC.RelationshipUpdateConnection =
+
+# PBC.MaxHistoryCtx
+#     Description: Maximum context length (in tokens) for chat history before condensation happens.
+#                  REQUIRED (must be > 0). The module will be disabled if missing.
+#                  Recommended to keep it at around 25% of the total model max context.
+#     Example:     PBC.MaxHistoryCtx = 32768
+#     Default:     0
+PBC.MaxHistoryCtx = 32768
+
+# PBC.MaxMemoriesCtx
+#     Description: Token budget for the memories section in the prompt.
+#                  Memories are selected by importance (DESC) then chronologically (ASC),
+#                  and cut when the budget is exceeded. Memories that don't fit remain in
+#                  the database and will surface again if newer memories are deleted or
+#                  the budget is increased.
+#     Default:     8192
+PBC.MaxMemoriesCtx = 8192
+
+
+# --------------------------------------------
+# CHARACTER SETTINGS
+# --------------------------------------------
+
+# PBC.PromptsPath
+#     Description: Path to the directory containing prompt template files.
+#                  This should be a relative path from the server's working directory.
+#                  Prompts are loaded from a locale subdirectory (e.g. prompts/deDE/)
+#                  based on DBC.Locale, falling back to prompts/enUS/.
+#                  To customize a prompt, create a .custom.txt version of it in the
+#                  locale directory — it will be loaded instead of .default.txt.
+#                  REQUIRED. The module will be disabled if prompts fail to load.
+#     Default:     ../../../modules/mod-pbc/prompts
+PBC.PromptsPath = ../../../modules/mod-pbc/prompts
+
+# PBC.CharacterCardsPath
+#     Description: Path to the directory containing character cards.
+#                  This should be a relative path from the server's working directory.
+#                  The module will load all .card.txt files from this directory and
+#                  apply them to the needed characters.
+#     Default:     ../../../modules/mod-pbc/characters
+PBC.CharacterCardsPath = ../../../modules/mod-pbc/characters
+
+# --------------------------------------------
+# REPLY CHANCES
+# --------------------------------------------
+
+# PBC.ReplyChanceWhisper
+#     Description: The percent chance (0-100) that a character would reply to whispers.
+#     Default:     100
+PBC.ReplyChanceWhisper = 100
+
+# PBC.ReplyChanceMention
+#     Description: The percent chance (0-100) that a character would reply when mentioned.
+#     Default:     100
+PBC.ReplyChanceMention = 100
+
+# PBC.ReplyChanceMessage
+#     Description: The initial percent chance (0-100) that a character would reply to a chat message.
+#                  When there are no mentions, characters roll in random order. 
+#                  The first character rolls at this chance. Each subsequent
+#                  character rolls at a reduced chance (see RollPenaltyOnAnswer).
+#     Default:     100
+PBC.ReplyChanceMessage = 100
+
+# PBC.RollPenaltyOnAnswer
+#     Description: The percent penalty applied to the roll chance after a character successfully rolls
+#                  to answer. For example, if ReplyChanceMessage is 100% and RollPenaltyOnAnswer
+#                  is 45%, the first character rolls at 100%, the second at 55%, the third at 10%,
+#                  and the fourth at 0% (no chance). If a character fails its roll, the next character
+#                  rolls at the same chance without penalty.
+#                  When a message mentions specific characters, non-mentioned bystanders roll at
+#                  ReplyChanceMention minus (RollPenaltyOnAnswer * number of mentions). Each
+#                  successful bystander roll further reduces the chance by RollPenaltyOnAnswer.
+#     Default:     45
+PBC.RollPenaltyOnAnswer = 45
+
+# PBC.ReplyChanceItem
+#     Description: The percent chance (0-100) that a character would react when the party
+#                  finds a rare (blue) or higher quality weapon or armor item.
+#     Default:     5
+PBC.ReplyChanceItem = 5
+
+# PBC.ReplyChanceDuel
+#     Description: The percent chance (0-100) that a character would react when a group member
+#                  (or themselves) wins a duel.
+#     Default:     5
+PBC.ReplyChanceDuel = 5
+
+# PBC.ReplyChanceLevelUp
+#     Description: The percent chance (0-100) that a character would react when a group member
+#                  (or themselves) levels up.
+#     Default:     5
+PBC.ReplyChanceLevelUp = 5
+
+# PBC.ReplyChanceHardCombat
+#     Description: The percent chance (0-100) that each character in the party would react
+#                  when a significant combat encounter ends. A combat is considered significant
+#                  if any of the following are true:
+#                  - A notable enemy (boss, named elite) was killed during the fight
+#                  - A party member died (seriously wounded)
+#                  - The party had a close call (average lowest HP dropped below 25%)
+#                  - The party killed 10+ enemies (swarm fight)
+#                  The LLM first generates a short narrative summary of the combat, then each
+#                  character independently rolls this chance to either use the summary as their
+#                  current event (and reply) or write it directly into their history.
+#     Default:     25
+PBC.ReplyChanceHardCombat = 25
+
+# PBC.CombatEndDebounceCycles
+#     Description: Number of consecutive 1-second poll cycles with no alive member in combat
+#                  before the "significant combat ended" event is dispatched. Prevents
+#                  premature triggers when combat briefly pauses between pulls.
+#     Default:     5
+PBC.CombatEndDebounceCycles = 5
+
+# PBC.ReplyChanceQuestCompleted
+#     Description: The percent chance (0-100) that each character in the party would react
+#                  when the party leader completes a quest. The LLM first generates a short
+#                  summary of the quest, then each character independently rolls this chance to
+#                  either use the summary as their current event (and reply) or write it
+#                  directly into their history.
+#     Default:     20
+PBC.ReplyChanceQuestCompleted = 20
+
+# PBC.ReplyChanceQuestTaken
+#     Description: The percent chance (0-100) that each character in the party would react
+#                  when the party leader accepts a new quest. The LLM first generates a
+#                  short summary of the quest, then each character independently rolls this
+#                  chance to either use the summary as their current event (and reply) or
+#                  write it directly into their history.
+#     Default:     10
+PBC.ReplyChanceQuestTaken = 10
+
+# PBC.ReplyChanceLocationChanged
+#     Description: The percent chance (0-100) that each character in the party would react
+#                  when the party starts a flight or arrives in a new zone. Applies to both
+#                  the "party flight started" and "party location changed" events.
+#     Default:     15
+PBC.ReplyChanceLocationChanged = 15
+
+# PBC.LocationChangeDebounceCycles
+#     Description: Number of consecutive 1-second poll cycles the party must remain in the
+#                  same new zone before the "party location changed" event is dispatched.
+#                  Prevents false triggers during zone transitions.
+#     Default:     5
+PBC.LocationChangeDebounceCycles = 5
+
+
+# --------------------------------------------
+# HTTP SERVER
+# --------------------------------------------
+
+# PBC.HttpServerPort
+#     Description: Port for the built-in HTTP/WS server.
+#                  0 = disabled (default). Set to a positive port number to enable.
+#                  The server provides both plain HTTP and WebSocket endpoints.
+#                  When enabled, PBC.HttpServerPrivateKey is required.
+#     Default:     0
+PBC.HttpServerPort = 0
+
+# PBC.HttpServerBind
+#     Description: Bind address for the HTTP server.
+#                  "127.0.0.1" = localhost only (default, recommended for security).
+#                  "0.0.0.0"   = all interfaces (use with caution).
+#     Default:     127.0.0.1
+PBC.HttpServerBind = 127.0.0.1
+
+# PBC.HttpServerTimeout
+#     Description: Read/write timeout in seconds for the HTTP server.
+#     Default:     15
+PBC.HttpServerTimeout = 15
+
+# PBC.HttpServerBaseUrl
+#     Description: Base URL for the HTTP server, used for constructing
+#                  external-facing URLs (e.g. for WebSocket connections).
+#                  Should match the address and port that external clients
+#                  will use to reach the server.
+#     Default:     http://127.0.0.1:8501
+PBC.HttpServerBaseUrl = http://127.0.0.1:8501
+
+# PBC.HttpServerPrivateKey
+#     Description: Secret key used for the authorization layer (token encryption).
+#                  REQUIRED when PBC.HttpServerPort is not 0. The HTTP server will
+#                  not start if this is empty.
+#                  Must be a random string of at least 32 characters. You can generate
+#                  one with: openssl rand -hex 32
+#                  Changing this key invalidates all existing tokens.
+#     Default:     (empty)
+PBC.HttpServerPrivateKey =
+
+# PBC.HttpServerFrontendPath
+#     Description: Path to the directory containing frontend static files (HTML, JS, CSS).
+#                  This should be a relative path from the server's working directory
+#                  (typically env/dist/bin/). The HTTP server will serve these files
+#                  for all non-API, non-WebSocket GET requests. GET / serves index.html.
+#                  Leave empty to disable frontend serving.
+#     Default:     ../../../modules/mod-pbc/frontend/dist
+PBC.HttpServerFrontendPath = ../../../modules/mod-pbc/frontend/dist
+
+
+# --------------------------------------------
+# BLACKLIST
+# --------------------------------------------
+
+# PBC.IgnoreAllAddonMessages
+#     Description: When enabled (1), ALL messages sent by client addons
+#                  are silently dropped before any other filtering.
+#                  When disabled (0), addon messages are treated like regular
+#                  chat and go through PBC.Blacklist below.
+#                  In both cases PBC.Blacklist is always applied to every
+#                  non-addon message, so manually typed commands are filtered
+#                  regardless of this setting.
+#     Default:     1 (true)
+PBC.IgnoreAllAddonMessages = 1
+
+# PBC.Blacklist
+#     Description: A comma-separated list of prefixes that should be ignored by the characters.
+#                  If a message starts with any of these prefixes, the character will not respond.
+#                  Additionally, this message won't be added to the future context.
+#                  Note that `word ` and `word` are two different definitions.
+PBC.Blacklist = t ,c ,items,autogear,talents,reset botAI,summon,release,revive,leave,attack,follow,flee,stay,runaway,grind,disperse,give leader,spells,cast ,quests,accept,drop,talk,reset,ss ,trainer,rti,rtsc,do ,ll ,e ,ue ,nc ,open,destroy,s ,b ,bank,gb ,u ,co ,ELVUI_VERSIONCHK,Asked,DPSMate_,LibGroupTalents,BLT,oRA3,Skada,HealBot,hbComms,questie,pfQuest,DBMv4-Ver,BWVQ3,add,remove,reset ai,report,state,help,log,stats,tank,offtank,healer,cc ,damage,boost,passive,defensive,aggressive,stay,guard,free,follow,assist,pet,stance,formation,rpg,emote,cheer,applaud,drink,eat,dance,attackers,reset instances,home,zone,who ,who,pos ,tele,grind,loot,quest,trainer,travel,teleport,homebind,unfollow,invite,uninvite,join,leave,leader,ready,release,save,update,reset talents,gear,trade,mail,ah ,ahscan,ahbid,ahbuy,ahsell,ahcancel,bag,repair,vendor,train,spells,reset spells,learn,unlearn,cast,uncast,use ,move,go ,look,stop,turn,face,wait,party,followleader,stayleader,moveleader,info,distance,debug,reset path,reset state,reset all,reset dungeon,reset raid,zone info,LHC40,RECOUNT,GTFO_v,Altoholic,DS_,DataStore,Crb,Crb ,maintenance
