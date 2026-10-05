@@ -5,6 +5,8 @@
  */
 
 #include "SellAction.h"
+#include "PlayerbotDialogue.h"
+#include <algorithm>
 #include "ChatHelper.h"
 #include "Event.h"
 #include "ItemPackets.h"
@@ -149,6 +151,12 @@ void SellAction::Sell(FindItemVisitor* visitor)
 
 void SellAction::Sell(Item* item)
 {
+    // Living Azeroth: a temporarily removed outfit remains recoverable.
+    auto saved = PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue());
+    if (std::any_of(saved.begin(), saved.end(), [&](auto const& original)
+                    { return original.guid == item->GetGUID().GetRawValue(); }))
+        return;
+
     std::ostringstream out;
 
     GuidVector vendors = botAI->GetAiObjectContext()->GetValue<GuidVector>("nearest npcs")->Get();

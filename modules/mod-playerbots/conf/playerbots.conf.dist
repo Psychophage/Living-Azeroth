@@ -1,3 +1,4 @@
+# PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 ##################################################
 # PLAYERBOTS CONFIGURATION FILE                  #
 ##################################################
@@ -1405,6 +1406,11 @@ AiPlayerbot.RestrictedHealerDPSMaps = "33,34,36,43,47,48,70,90,109,129,209,229,2
 # Default: 1 (enabled)
 AiPlayerbot.EnableNewRpgStrategy = 1
 
+# In capital cities, bots visiting NPCs go on errands: they pick an NPC some way off and stay
+# 20-60 seconds, instead of hopping between nearby NPCs every 8 seconds.
+# Default: 0 (disabled)
+AiPlayerbot.RpgCityErrands = 0
+
 # Control probability weights for RPG status of bots. Takes effect only when the status meets its premise.​
 # Sum of weights need not be 100. Set to 0 to disable the status.
 #
@@ -2723,3 +2729,70 @@ AiPlayerbot.TargetPosRecalcDistance = 0.1
 
 # Allow bots to be summoned near innkeepers
 AiPlayerbot.SummonAtInnkeepersEnabled = 1
+
+# Living Azeroth: opt in to typed dialogue actions, executed by native bot AI.
+# Networking/persistence remain in the character module; disabled adds no map scans.
+AiPlayerbot.DialogueActions = 0
+
+# Living Azeroth persistent population. Opt-in; replaces native random roster creation,
+# random login/reset scheduling and empty-realm logout while enabled. Existing
+# characters are imported conservatively and never reset. No model calls are made.
+# OnlineTarget controls simulation; ReserveTarget controls gradual creation only.
+# Established characters may exceed ReserveTarget and are retained indefinitely.
+AiPlayerbot.Population.Enabled = 0
+AiPlayerbot.Population.OnlineTarget = 500
+AiPlayerbot.Population.ReserveTarget = 2000
+AiPlayerbot.Population.SeedCharacters = 40
+AiPlayerbot.Population.CreationBatch = 5
+AiPlayerbot.Population.LoginBatch = 10
+AiPlayerbot.Population.UpdateSeconds = 10
+AiPlayerbot.Population.CreationSeconds = 30
+AiPlayerbot.Population.SessionSeconds = 3600
+AiPlayerbot.Population.RestSeconds = 1800
+AiPlayerbot.Population.MinimumResidence = 600
+AiPlayerbot.Population.OfflineOnline = 20
+AiPlayerbot.Population.OfflineAllowance = 900
+AiPlayerbot.Population.SightingInterval = 1800
+AiPlayerbot.Population.SightingSessionCap = 3
+AiPlayerbot.Population.InteractionInterval = 300
+AiPlayerbot.Population.FamiliarityThreshold = 6
+AiPlayerbot.Population.RegionalPercent = 70
+# Seats per place a player is in (faction and zone), preventing one human attracting the whole realm.
+# Places are populated at their own level (zone exploration levels); capitals are hubs with
+# all levels up to the cap. PeerPercent of seats go to characters near a player's level, only
+# when that player's level belongs in the place. Shattrath and Dalaran follow Expansion/MaxPlayerLevel.
+AiPlayerbot.Population.RegionTarget = 50
+AiPlayerbot.Population.FamiliarPercent = 35
+AiPlayerbot.Population.FreshPercent = 20
+AiPlayerbot.Population.MaximumLevelDifference = 5
+AiPlayerbot.Population.PeerPercent = 40
+# A place fills in over RampSeconds after a player arrives and empties over LingerSeconds after
+# they leave; returning before it empties finds the same people.
+AiPlayerbot.Population.RampSeconds = 60
+AiPlayerbot.Population.LingerSeconds = 600
+# While a player is online, each capital of their faction (and Shattrath/Dalaran once their level
+# reaches them) keeps ResidentPercent of RegionTarget seats of settled residents. TownPercent of a
+# zone's arrivals come by way of its towns and inns (service NPCs), out of sight where possible.
+# Below level 10 characters only appear where their race starts or in their race's capital.
+AiPlayerbot.Population.ResidentPercent = 15
+AiPlayerbot.Population.TownPercent = 25
+# Logging in at an inn or bank in view is ordinary but should be a trickle: at most one arrival in a
+# player's view per place this often; the rest arrive just out of sight and wander in.
+AiPlayerbot.Population.InViewArrivalSeconds = 20
+# Arrivals spread out: a spot is skipped when LocalCrowd characters already stand within 50 yards.
+AiPlayerbot.Population.LocalCrowd = 4
+# Young characters gather at a starting zone's few quest givers: once a starting zone holds this many
+# at level 6 or below, newcomers there arrive at level 7 or above.
+AiPlayerbot.Population.StarterCapacity = 16
+# Introduced characters kept before the least valued are deleted, a few per update. Value is
+# RetentionSeconds x (best familiarity score + 1) since last seen: talked-to characters last longer.
+AiPlayerbot.Population.KnownLimit = 20000
+AiPlayerbot.Population.RetentionSeconds = 604800
+AiPlayerbot.Population.CatchupMaximum = 1.5
+# Times above are seconds. Sightings earn one point, meaningful interactions four;
+# scores cap at 100. SightingSessionCap applies to persisted six-hour windows.
+# OfflineAllowance is earned during human play and consumed while nobody is online;
+# shutdowns do not refill it. OfflineOnline characters rest when it is exhausted.
+# Catch-up applies only to familiar, nearby human party members behind that human.
+# RegionalPercent leaves remaining seats distributed across factions/level ranges.
+# FamiliarPercent/FreshPercent are soft selection preferences within regional seats.

@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -10,6 +11,10 @@
 
 bool AcceptDuelAction::Execute(Event event)
 {
+    // Living Azeroth: the initiator also receives the request packet. It cannot
+    // accept its own challenge or reset standing strategies before consent.
+    if (!bot->duel || bot->duel->Initiator == bot)
+        return false;
     WorldPacket p(event.getPacket());
 
     ObjectGuid flagGuid;

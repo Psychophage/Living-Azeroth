@@ -14,6 +14,8 @@
 
 class Player;
 class PlayerbotAI;
+class Unit;
+class Map;
 
 class Formation : public AiNamedObject
 {
@@ -74,5 +76,10 @@ public:
 
     bool Execute(Event event) override;
 };
+
+// Living Azeroth: distinct reachable slots instead of a shared follow destination.
+Formation* CreateDialogueSpreadFormation(PlayerbotAI* botAI, bool hold);
+std::string BenchmarkDialogueSpreadFormation(Player* requester, unsigned rounds);
+bool ValidateTargetContext(Unit* first, Unit* second, Map*& map);
 
 #endif

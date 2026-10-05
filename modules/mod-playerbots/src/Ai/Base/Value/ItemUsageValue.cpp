@@ -5,6 +5,7 @@
  */
 
 #include "ItemUsageValue.h"
+#include "PlayerbotDialoguePerformance.h"
 #include "AiFactory.h"
 #include "ChatHelper.h"
 #include "GuildTaskMgr.h"
@@ -26,6 +27,12 @@ ItemUsage ItemUsageValue::Calculate()
     uint32 randomPropertyId = parsed.randomPropertyId;
     if (!itemId)
         return ITEM_USAGE_NONE;
+
+    // Automatic disposition queries retain temporary originals. Exact native
+    // transfer requests still use their separate consent/ownership boundary.
+    for (auto const& saved : PlayerbotDialogue::SavedPerformanceEquipment(bot))
+        if (saved.entry == itemId)
+            return ITEM_USAGE_KEEP;
 
     ItemTemplate const* proto = sObjectMgr->GetItemTemplate(itemId);
     if (!proto)

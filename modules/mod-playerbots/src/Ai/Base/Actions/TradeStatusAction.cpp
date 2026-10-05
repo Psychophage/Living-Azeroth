@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -14,6 +15,7 @@
 #include "PlayerbotSecurity.h"
 #include "PlayerbotTextMgr.h"
 #include "Playerbots.h"
+#include "PlayerbotDialogueInventory.h"
 #include "RandomPlayerbotMgr.h"
 #include "SetCraftAction.h"
 
@@ -77,7 +79,7 @@ bool TradeStatusAction::Execute(Event event)
         p << status;
 
         uint32 discount = sRandomPlayerbotMgr.GetTradeDiscount(bot, trader);
-        if (CheckTrade())
+        if (PlayerbotDialogue::AllowManagedTrade(bot) && CheckTrade())
         {
             std::map<uint32, uint32> givenItemIds, takenItemIds;
             for (uint32 slot = 0; slot < TRADE_SLOT_TRADED_COUNT; ++slot)

@@ -5,6 +5,7 @@
  */
 
 #include "EquipAction.h"
+#include "PlayerbotDialogue.h"
 #include "Event.h"
 #include "ItemCountValue.h"
 #include "ItemPackets.h"
@@ -368,6 +369,8 @@ ItemIds EquipAction::SelectInventoryItemsToEquip()
 
 bool EquipUpgradesPacketAction::Execute(Event event)
 {
+    if (!PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue()).empty())
+        return false;
     if (!sPlayerbotAIConfig.autoEquipUpgradeLoot && !sRandomPlayerbotMgr.IsRandomBot(bot))
         return false;
     std::string const source = event.GetSource();
@@ -410,6 +413,8 @@ bool EquipUpgradesPacketAction::Execute(Event event)
 
 bool EquipUpgradeAction::Execute(Event /*event*/)
 {
+    if (!PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue()).empty())
+        return false;
     ItemIds items = SelectInventoryItemsToEquip();
     EquipItems(items);
     return true;

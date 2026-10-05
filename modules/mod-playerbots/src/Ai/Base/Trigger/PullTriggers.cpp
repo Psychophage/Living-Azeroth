@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -14,6 +15,7 @@
  */
 
 #include "PullTriggers.h"
+
 #include "Player.h"
 #include "PlayerbotAI.h"
 #include "Playerbots.h"
@@ -40,6 +42,12 @@ bool PullEndTrigger::IsActive()
     time_t const secondsSincePullStarted = time(nullptr) - strategy->GetPullStartTime();
     if (secondsSincePullStarted >= PullStrategy::GetMaxPullTime())
         return true;
+
+    // Living Azeroth: proximity alone cannot finish an unperformed pull.
+    // RequestPull sets its timeout before PullStartAction runs; the higher
+    // priority end trigger must wait for actual engagement, including at melee range.
+    if (strategy->IsPullPendingToStart() || !target->IsInCombat())
+        return false;
 
     float distanceToPullTarget = bot->GetDistance(target);
     if (distanceToPullTarget > ATTACK_DISTANCE && !target->IsNonMeleeSpellCast(false, false, true) &&

@@ -62,34 +62,38 @@ bool RandomPlayerbotFactory::IsValidRaceClassCombination(uint8 race, uint8 cls, 
     return info != nullptr;
 }
 
-Player* RandomPlayerbotFactory::CreateRandomBot(WorldSession* session, uint8 cls, std::unordered_map<NameRaceAndGender, std::vector<std::string>>& nameCache)
+Player* RandomPlayerbotFactory::CreateRandomBot(WorldSession* session, uint8 cls, std::unordered_map<NameRaceAndGender, std::vector<std::string>>& nameCache,
+                                                uint32 raceMask)
 {
     LOG_DEBUG("playerbots", "Creating a new random bot for class: {}", cls);
 
-    const bool alliance = static_cast<bool>(urand(0, 1));
-
-    std::vector<uint8> raceOptions;
+    std::vector<uint8> allianceRaces;
+    std::vector<uint8> hordeRaces;
     for (uint8 race = RACE_HUMAN; race < sRaceMgr->GetMaxRaces(); ++race)
     {
         // skip disabled with config races
         if ((1 << (race - 1)) & sWorld->getIntConfig(CONFIG_CHARACTER_CREATING_DISABLED_RACEMASK))
             continue;
 
-        // Try to get 50/50 faction distribution for random bot population balance.
-        // Without this check, races from the faction with more class options would dominate.
-        if (alliance == IsAlliance(race))
-        {
-            if (IsValidRaceClassCombination(race, cls, sWorld->getIntConfig(CONFIG_EXPANSION)))
-                raceOptions.push_back(race);
-        }
+        if (!IsValidRaceClassCombination(race, cls, sWorld->getIntConfig(CONFIG_EXPANSION)))
+            continue;
+
+        if (raceMask && !(raceMask & (1u << (race - 1))))
+            continue;
+
+        (IsAlliance(race) ? allianceRaces : hordeRaces).push_back(race);
     }
 
-    if (raceOptions.empty())
+    if (allianceRaces.empty() && hordeRaces.empty())
     {
-        LOG_ERROR("playerbots", "No races are available for class: {}", cls);
+        if (!raceMask)
+            LOG_ERROR("playerbots", "No races are available for class: {}", cls);
         return nullptr;
     }
 
+    // Balance factions where both are valid, but allow faction-exclusive classes.
+    std::vector<uint8> const& raceOptions = allianceRaces.empty() ? hordeRaces :
+        (hordeRaces.empty() || urand(0, 1) ? allianceRaces : hordeRaces);
     const uint8 race = raceOptions[urand(0, raceOptions.size() - 1)];
     const uint8 gender = urand(0, 1) ? GENDER_MALE : GENDER_FEMALE;
     const auto raceAndGender = CombineRaceAndGender(race, gender);
@@ -721,10 +725,27 @@ void RandomPlayerbotFactory::CreateRandomBots()
                                                 time_t(0), LOCALE_enUS, 0, false, false, 0, true);
         sessionBots.push_back(session);
 
-        for (uint8 cls = CLASS_WARRIOR; cls < MAX_CLASSES - count; ++cls)
+        uint32 existingClassMask = 0;
+        CharacterDatabasePreparedStatement* charsStmt =
+            CharacterDatabase.GetPreparedStatement(CHAR_SEL_CHARS_BY_ACCOUNT_ID);
+        charsStmt->SetData(0, accountId);
+        if (PreparedQueryResult characters = CharacterDatabase.Query(charsStmt))
+        {
+            do
+            {
+                uint8 existingClass = characters->Fetch()[1].Get<uint8>();
+                if (existingClass > 0 && existingClass < MAX_CLASSES)
+                    existingClassMask |= 1u << (existingClass - 1);
+            } while (characters->NextRow());
+        }
+
+        for (uint8 cls = CLASS_WARRIOR; cls < MAX_CLASSES && count < 10; ++cls)
         {
             // skip nonexistent classes
             if (!((1 << (cls - 1)) & CLASSMASK_ALL_PLAYABLE) || !sChrClassesStore.LookupEntry(cls))
+                continue;
+
+            if (existingClassMask & (1u << (cls - 1)))
                 continue;
 
             // skip disabled with config classes
@@ -745,6 +766,7 @@ void RandomPlayerbotFactory::CreateRandomBots()
             playerBot->CleanupsBeforeDelete();
             delete playerBot;
             bot_creation++;
+            count++;
         }
     }
 

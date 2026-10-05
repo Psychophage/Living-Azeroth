@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -46,24 +47,14 @@ static std::vector<uint32> disabledPetSpells = {
     PET_DEVOUR_MAGIC_4, PET_DEVOUR_MAGIC_5, PET_DEVOUR_MAGIC_6, PET_DEVOUR_MAGIC_7, PET_SPIRIT_WOLF_LEAP
 };
 
-bool PetsAction::Execute(Event event)
+Unit* PetsAction::GetTarget()
 {
-    // Extract the command parameter from the event (e.g., "aggressive", "defensive", "attack", etc.)
-    std::string param = event.getParam();
-    if (param.empty() && !defaultCmd.empty())
-        param = defaultCmd;
+    auto master = botAI->GetMaster();
+    return master ? botAI->GetUnit(master->GetTarget()) : nullptr;
+}
 
-    if (param.empty())
-    {
-        // If no parameter is provided, show usage instructions and return.
-        std::string text = PlayerbotTextMgr::instance().GetBotTextOrDefault(
-            "pet_usage_error", "Usage: pet <aggressive|defensive|passive|stance|attack|follow|stay>", {});
-        botAI->TellError(text);
-        return false;
-    }
-
-    Player* bot = botAI->GetBot();
-
+std::vector<Creature*> PetsAction::ControlledPets(Player* bot)
+{
     // Collect all controlled pets and guardians, except totems, into the targets vector.
     std::vector<Creature*> targets;
     Pet* pet = bot->GetPet();
@@ -83,6 +74,29 @@ bool PetsAction::Execute(Event event)
     }
 
     // If no pets or guardians are found, notify and return.
+    return targets;
+}
+
+bool PetsAction::Execute(Event event)
+{
+    // Extract the command parameter from the event (e.g., "aggressive", "defensive", "attack", etc.)
+    std::string param = event.getParam();
+    if (param.empty() && !defaultCmd.empty())
+        param = defaultCmd;
+
+    if (param.empty())
+    {
+        // If no parameter is provided, show usage instructions and return.
+        std::string text = PlayerbotTextMgr::instance().GetBotTextOrDefault(
+            "pet_usage_error", "Usage: pet <aggressive|defensive|passive|stance|attack|follow|stay>", {});
+        botAI->TellError(text);
+        return false;
+    }
+
+    Player* bot = botAI->GetBot();
+
+    auto targets = ControlledPets(bot);
+
     if (targets.empty())
     {
         std::string text = PlayerbotTextMgr::instance().GetBotTextOrDefault(
@@ -153,15 +167,7 @@ bool PetsAction::Execute(Event event)
     else if (param == "attack")
     {
         // Try to get the master's selected target.
-        Player* master = botAI->GetMaster();
-        Unit* targetUnit = nullptr;
-
-        if (master)
-        {
-            ObjectGuid masterTargetGuid = master->GetTarget();
-            if (!masterTargetGuid.IsEmpty())
-                targetUnit = botAI->GetUnit(masterTargetGuid);
-        }
+        Unit* targetUnit = GetTarget();
 
         // If no valid target is selected, show an error and return.
         if (!targetUnit)

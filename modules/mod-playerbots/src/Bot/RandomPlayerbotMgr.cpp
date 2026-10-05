@@ -4,6 +4,7 @@
  * or (at your option) any later version.
  */
 
+#include "PopulationMgr.h"
 #include "RandomPlayerbotMgr.h"
 #include "PlayerbotsDatabase.h"
 #include "AiFactory.h"
@@ -170,7 +171,12 @@ double botPIDImpl::calculate(double setpoint, double pv)
 
 botPIDImpl::~botPIDImpl() {}
 
-uint32 RandomPlayerbotMgr::GetMaxAllowedBotCount() { return GetEventValue(0, "bot_count"); }
+uint32 RandomPlayerbotMgr::GetMaxAllowedBotCount()
+{
+    if (PlayerbotPopulationMgr::Instance().Enabled())
+        return sPlayerbotAIConfig.population.onlineTarget;
+    return GetEventValue(0, "bot_count");
+}
 
 void RandomPlayerbotMgr::LogPlayerLocation()
 {
@@ -288,6 +294,21 @@ void RandomPlayerbotMgr::UpdateAIInternal(uint32 /*elapsed*/, bool /*minimal*/)
 
     if (!sPlayerbotAIConfig.randomBotAutologin || !sPlayerbotAIConfig.enabled)
         return;
+
+    if (PlayerbotPopulationMgr::Instance().Enabled())
+    {
+        PlayerbotPopulationMgr::Instance().Update();
+        // Population owns admission and retirement; native queue information still serves
+        // ordinary battleground/LFG behaviour for the admitted bots.
+        if (sPlayerbotAIConfig.randomBotJoinBG && time(nullptr) > BgCheckTimer + 35)
+            CheckBgQueue();
+        if (sPlayerbotAIConfig.randomBotJoinLfg && time(nullptr) > LfgCheckTimer + 30)
+            CheckLfgQueue();
+        if (sPlayerbotAIConfig.hasLog("player_location.csv"))
+            LogPlayerLocation();
+        SetNextCheckDelay(sPlayerbotAIConfig.population.updateSeconds * 1000);
+        return;
+    }
 
     /*if (sPlayerbotAIConfig.enablePrototypePerformanceDiff)
     {
@@ -1515,7 +1536,7 @@ bool RandomPlayerbotMgr::ProcessBot(Player* bot)
         idleBot = true;
     }
 
-    if (idleBot)
+    if (idleBot && !PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
     {
         // randomize
         uint32 randomize = GetEventValue(botId, "randomize");
@@ -1600,6 +1621,18 @@ void RandomPlayerbotMgr::RandomTeleport(Player* bot, std::vector<WorldLocation>&
     // ignore when in queue for battle grounds.
     if (bot->InBattlegroundQueue())
         return;
+
+    // Population characters live where players are: never vanish from a player's zone or view.
+    if (PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
+    {
+        WorldLocation here(bot->GetMapId(), bot->GetPositionX(), bot->GetPositionY(), bot->GetPositionZ());
+        if (VisibleToPlayers(here))
+            return;
+        for (Player* player : players)
+            if (player && player->IsInWorld() && player->GetMapId() == bot->GetMapId() &&
+                player->GetZoneId() == bot->GetZoneId())
+                return;
+    }
 
     // ignore when in battle grounds or arena.
     if (bot->InBattleground() || bot->InArena())
@@ -1891,6 +1924,74 @@ std::vector<WorldLocation> RandomPlayerbotMgr::GetPlayerZoneTeleportLocations(st
     return filtered;
 }
 
+// Living Azeroth population: choose an unseen, native destination before the first login.
+// This never moves an established character or bypasses visible-player teleport guards.
+bool RandomPlayerbotMgr::PopulationSpawnLocation(uint8 botRace, uint32 level, uint32 mapId, uint32 zoneId,
+                                                  WorldLocation& location,
+                                                  std::function<bool(WorldLocation const&)> const& acceptable)
+{
+    constexpr int32 LEVEL_FALLBACK = 5;
+    uint32 expansion = sWorld->getIntConfig(CONFIG_EXPANSION);
+    // A zone without spots at this exact level falls back to its nearest levels.
+    for (int32 offset = 0; offset <= LEVEL_FALLBACK; ++offset)
+        for (int32 sign : {1, -1})
+        {
+            if (!offset && sign < 0)
+                continue;
+            int32 candidate = int32(level) + offset * sign;
+            if (candidate < 1 || candidate > int32(sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL)))
+                continue;
+            // The old RandomPlayerbotMgr RPG cache is no longer populated by this upstream.
+            // Use TravelMgr's current native level destinations, and stop at the first safe one.
+            auto locations = sTravelMgr.GetLocsPerLevelCache(uint8(candidate));
+            std::shuffle(locations.begin(), locations.end(), RandomEngine::Instance());
+            for (auto loc : locations)
+            {
+                if (std::find(sPlayerbotAIConfig.randomBotMaps.begin(), sPlayerbotAIConfig.randomBotMaps.end(),
+                              loc.GetMapId()) == sPlayerbotAIConfig.randomBotMaps.end())
+                    continue;
+                if (zoneId && loc.GetMapId() != mapId)
+                    continue;
+                MapEntry const* entry = sMapStore.LookupEntry(loc.GetMapId());
+                if (!entry || entry->Expansion() > expansion)
+                    continue;
+                Map* map = sMapMgr->CreateBaseMap(loc.GetMapId());
+                if (!map || map->Instanceable())
+                    continue;
+                uint32 zone =
+                    map->GetZoneId(PHASEMASK_NORMAL, loc.GetPositionX(), loc.GetPositionY(), loc.GetPositionZ());
+                if (zoneId && zone != zoneId)
+                    continue;
+                auto area = sAreaTableStore.LookupEntry(zone);
+                if (!area || (area->team == 4 && IsAlliance(botRace)) || (area->team == 2 && !IsAlliance(botRace)))
+                    continue;
+                float ground = map->GetHeight(PHASEMASK_NORMAL, loc.GetPositionX(), loc.GetPositionY(),
+                                              loc.GetPositionZ() + 0.5f);
+                if (ground <= INVALID_HEIGHT || map->IsInWater(PHASEMASK_NORMAL, loc.GetPositionX(),
+                                                                loc.GetPositionY(), ground + 0.05f, 2.0f))
+                    continue;
+                loc.Relocate(loc.GetPositionX(), loc.GetPositionY(), ground + 0.05f);
+                if (!VisibleToPlayers(loc) && (!acceptable || acceptable(loc)))
+                {
+                    location = loc;
+                    return true;
+                }
+            }
+        }
+    return false;
+}
+
+bool RandomPlayerbotMgr::VisibleToPlayers(WorldLocation const& location) const
+{
+    constexpr float SIGHT_RANGE = 150.0f;
+    for (Player* observer : players)
+        if (observer && observer->IsInWorld() && observer->GetMapId() == location.GetMapId() &&
+            observer->GetDistance(location.GetPositionX(), location.GetPositionY(), location.GetPositionZ()) <
+                SIGHT_RANGE)
+            return true;
+    return false;
+}
+
 void RandomPlayerbotMgr::RandomTeleportGrindForLevel(Player* bot)
 {
     if (bot->InBattleground())
@@ -1944,6 +2045,9 @@ void RandomPlayerbotMgr::RandomTeleport(Player* bot)
 
 void RandomPlayerbotMgr::Randomize(Player* bot)
 {
+    // Population identities may only be initialized by their own creation checkpoint.
+    if (PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
+        return;
     if (bot->InBattleground())
         return;
 
@@ -1989,6 +2093,9 @@ void RandomPlayerbotMgr::IncreaseLevel(Player* bot)
 
 void RandomPlayerbotMgr::RandomizeFirst(Player* bot)
 {
+    // Population identities may only be initialized by their own creation checkpoint.
+    if (PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
+        return;
     PlayerbotAI* botAI = GET_PLAYERBOT_AI(bot);
     if (!botAI)
         return;
@@ -2084,6 +2191,9 @@ void RandomPlayerbotMgr::RandomizeFirst(Player* bot)
 
 void RandomPlayerbotMgr::RandomizeMin(Player* bot)
 {
+    // Population identities may only be initialized by their own creation checkpoint.
+    if (PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
+        return;
     PlayerbotAI* botAI = GET_PLAYERBOT_AI(bot);
     if (!botAI)
         return;
@@ -2220,6 +2330,8 @@ bool RandomPlayerbotMgr::IsRandomBot(Player* bot)
 
 bool RandomPlayerbotMgr::IsRandomBot(ObjectGuid::LowType bot)
 {
+    if (PlayerbotPopulationMgr::Instance().Enabled())
+        return PlayerbotPopulationMgr::Instance().Contains(bot);
     ObjectGuid guid = ObjectGuid::Create<HighGuid::Player>(bot);
     if (!sPlayerbotAIConfig.IsInRandomAccountList(sCharacterCache->GetCharacterAccountIdByGuid(guid)))
         return false;
@@ -2635,6 +2747,7 @@ void RandomPlayerbotMgr::OnPlayerLogout(Player* player)
 
 void RandomPlayerbotMgr::OnBotLoginInternal(Player* const bot)
 {
+    PlayerbotPopulationMgr::Instance().OnLogin(bot);
     if (_isBotLogging)
     {
         LOG_INFO("playerbots", "{}/{} Bot {} logged in", playerBots.size(),
@@ -3140,17 +3253,18 @@ void RandomPlayerbotMgr::RandomTeleportForRpg(Player* bot)
 void RandomPlayerbotMgr::Remove(Player* bot)
 {
     ObjectGuid owner = bot->GetGUID();
+    Forget(owner.GetCounter());
+    LogoutPlayerBot(owner);
+}
 
+void RandomPlayerbotMgr::Forget(uint32 bot)
+{
     PlayerbotsDatabasePreparedStatement* stmt =
         PlayerbotsDatabase.GetPreparedStatement(PLAYERBOTS_DEL_RANDOM_BOTS_BY_OWNER);
     stmt->SetData(0, 0);
-    stmt->SetData(1, owner.GetCounter());
+    stmt->SetData(1, bot);
     PlayerbotsDatabase.Execute(stmt);
-
-    uint32 botId = owner.GetCounter();
-    eventCache.erase(botId);
-
-    LogoutPlayerBot(owner);
+    eventCache.erase(bot);
 }
 
 CreatureData const* RandomPlayerbotMgr::GetCreatureDataByEntry(uint32 entry)

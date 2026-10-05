@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -10,6 +11,7 @@
 #include "PlayerbotTextMgr.h"
 #include "Playerbots.h"
 #include "PositionValue.h"
+#include "StayActions.h"
 
 void PositionsResetAction::ResetReturnPosition()
 {
@@ -86,8 +88,9 @@ bool FollowChatShortcutAction::Execute(Event /*event*/)
 
         if (moved)
         {
-            botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
-                "following", "Following", {}));
+            if (!_silent)
+                botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
+                    "following", "Following", {}));
             return true;
         }
     }
@@ -110,8 +113,9 @@ bool FollowChatShortcutAction::Execute(Event /*event*/)
     }
     */
 
-    botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
-        "following", "Following", {}));
+    if (!_silent)
+        botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
+            "following", "Following", {}));
     return true;
 }
 
@@ -125,11 +129,15 @@ bool StayChatShortcutAction::Execute(Event /*event*/)
     botAI->ChangeStrategy("+stay,-passive,-move from group", BOT_STATE_NON_COMBAT);
     botAI->ChangeStrategy("+stay,-follow,-passive,-move from group", BOT_STATE_COMBAT);
 
+    // Living Azeroth: clearing a movement generator can leave its spline running.
+    // Stop before recording the position and acknowledging either native or dialogue stay.
+    StayAction(botAI).Execute(Event("stay"));
     SetReturnPosition(bot->GetPositionX(), bot->GetPositionY(), bot->GetPositionZ());
     SetStayPosition(bot->GetPositionX(), bot->GetPositionY(), bot->GetPositionZ());
 
-    botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
-        "staying", "Staying", {}));
+    if (!_silent)
+        botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
+            "staying", "Staying", {}));
     return true;
 }
 
@@ -169,8 +177,9 @@ bool FleeChatShortcutAction::Execute(Event /*event*/)
         return true;
     }
 
-    botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
-        "fleeing", "Fleeing", {}));
+    if (!_silent)
+        botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
+            "fleeing", "Fleeing", {}));
     return true;
 }
 

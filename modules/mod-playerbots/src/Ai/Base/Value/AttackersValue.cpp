@@ -5,6 +5,7 @@
  */
 
 #include "AttackersValue.h"
+
 #include "CellImpl.h"
 #include "GridNotifiers.h"
 #include "GridNotifiersImpl.h"
@@ -26,6 +27,13 @@ GuidVector AttackersValue::Calculate()
         AddAttackersOf(group, targets);
 
     RemoveNonThreating(targets);
+
+    // Living Azeroth character system: a critter does not acquire ordinary threat.
+    // Retain an explicitly started native attack until it dies or is stopped;
+    // idle wildlife must not become automatic grinding targets.
+    if (Unit* victim = bot->GetVictim();
+        victim && victim->GetCreatureType() == CREATURE_TYPE_CRITTER && IsValidTarget(victim, bot))
+        targets.insert(victim);
 
     // prioritized target
     GuidVector prioritizedTargets = AI_VALUE(GuidVector, "prioritized targets");
@@ -98,8 +106,7 @@ void AttackersValue::AddAttackersOf(Player* player, std::unordered_set<Unit*>& t
         if (!attacker)
             continue;
 
-        if (player->IsValidAttackTarget(attacker) &&
-            player->GetDistance2d(attacker) < sPlayerbotAIConfig.sightDistance)
+        if (player->IsValidAttackTarget(attacker) && player->GetDistance2d(attacker) < sPlayerbotAIConfig.sightDistance)
             targets.insert(attacker);
     }
 }
@@ -155,8 +162,7 @@ bool AttackersValue::IsPossibleTarget(Unit* attacker, Player* bot, float /*range
         return false;
 
     // Skip targets that are immune to all damage (e.g., Ice Block, Divine Shield)
-    if (attacker->IsImmunedToDamage(SPELL_SCHOOL_MASK_NORMAL) &&
-        attacker->IsImmunedToDamage(SPELL_SCHOOL_MASK_MAGIC))
+    if (attacker->IsImmunedToDamage(SPELL_SCHOOL_MASK_NORMAL) && attacker->IsImmunedToDamage(SPELL_SCHOOL_MASK_MAGIC))
         return false;
 
     // Relationship checks
@@ -164,7 +170,7 @@ bool AttackersValue::IsPossibleTarget(Unit* attacker, Player* bot, float /*range
         return false;
 
     // Critter exception
-    if (attacker->GetCreatureType() == CREATURE_TYPE_CRITTER && !attacker->IsInCombat())
+    if (attacker->GetCreatureType() == CREATURE_TYPE_CRITTER && !attacker->IsInCombat() && bot->GetVictim() != attacker)
         return false;
 
     // Visibility check
@@ -175,14 +181,13 @@ bool AttackersValue::IsPossibleTarget(Unit* attacker, Player* bot, float /*range
     if ((attacker->GetGUID().IsPlayer() || attacker->GetGUID().IsPet()) &&
         (!bot->duel || bot->duel->Opponent != attacker) &&
         (sPlayerbotAIConfig.IsPvpProhibited(attacker->GetZoneId(), attacker->GetAreaId()) ||
-        sPlayerbotAIConfig.IsPvpProhibited(bot->GetZoneId(), bot->GetAreaId())))
+         sPlayerbotAIConfig.IsPvpProhibited(bot->GetZoneId(), bot->GetAreaId())))
     {
         // This will stop aggresive pets from starting an attack.
         // This will stop currently attacking pets from continuing their attack.
         // This will first require the bot to change from a combat strat. It will
         // not be reached if the bot only switches targets, including NPC targets.
-        for (Unit::ControlSet::const_iterator itr = bot->m_Controlled.begin();
-            itr != bot->m_Controlled.end(); ++itr)
+        for (Unit::ControlSet::const_iterator itr = bot->m_Controlled.begin(); itr != bot->m_Controlled.end(); ++itr)
         {
             Creature* creature = dynamic_cast<Creature*>(*itr);
             if (creature && creature->GetVictim() == attacker)

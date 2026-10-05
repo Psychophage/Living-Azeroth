@@ -1,10 +1,13 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
  * or (at your option) any later version.
  */
 
+#include "PopulationMgr.h"
 #include "PlayerbotAI.h"
+#include "PlayerbotDialogue.h"
 #include "AiFactory.h"
 #include "BudgetValues.h"
 #include "ChannelMgr.h"
@@ -602,6 +605,13 @@ void PlayerbotAI::HandleCommands()
 }
 
 std::map<std::string, ChatMsg> chatMap;
+void PlayerbotAI::SetMaster(Player* newMaster)
+{
+    if (master != newMaster && bot)
+        PlayerbotDialogueBridge::Interrupt(bot->GetGUID().GetRawValue());
+    master = newMaster;
+}
+
 void PlayerbotAI::HandleCommand(uint32 type, std::string const& text, Player& fromPlayer, const uint32 lang)
 {
     if (!bot)
@@ -680,6 +690,9 @@ void PlayerbotAI::HandleCommand(uint32 type, std::string const& text, Player& fr
         !GetSecurity()->CheckLevelFor(PlayerbotSecurityLevel::PLAYERBOT_SECURITY_ALLOW_ALL, type != CHAT_MSG_WHISPER,
                                       &fromPlayer))
         return;
+
+    if (PlayerbotDialogueBridge::Enabled())
+        PlayerbotDialogueBridge::ExplicitCommand(bot->GetGUID().GetRawValue(), filtered);
 
     if (type == CHAT_MSG_RAID_WARNING && filtered.find(bot->GetName()) != std::string::npos &&
         filtered.find("award") == std::string::npos)
@@ -1020,6 +1033,9 @@ void PlayerbotAI::HandleCommand(uint32 type, std::string const text, Player* fro
     if (!IsAllowedCommand(filtered) &&
         (!GetSecurity()->CheckLevelFor(PLAYERBOT_SECURITY_ALLOW_ALL, type != CHAT_MSG_WHISPER, fromPlayer)))
         return;
+
+    if (PlayerbotDialogueBridge::Enabled())
+        PlayerbotDialogueBridge::ExplicitCommand(bot->GetGUID().GetRawValue(), filtered);
 
     if (type == CHAT_MSG_RAID_WARNING && filtered.find(bot->GetName()) != std::string::npos &&
         filtered.find("award") == std::string::npos)
@@ -4604,6 +4620,11 @@ bool PlayerbotAI::AllowActive(ActivityType activityType)
     // always allow packet handling (e.g. group invites, trade, loot, friend requests etc)
     if (activityType == PACKET_ACTIVITY)
         return true;
+
+    // Population scheduling limits autonomous work, while packets and already-started
+    // combat remain responsive. The snapshot is O(1) and never queries the database.
+    if (!bot->IsInCombat() && !PlayerbotPopulationMgr::Instance().AllowsActivity(bot->GetGUID().GetCounter()))
+        return false;
 
     // all bots forced active, no rotation or scaling needed
     if (sPlayerbotAIConfig.botActiveAlone >= 100 && !sPlayerbotAIConfig.botActiveAloneSmartScale)

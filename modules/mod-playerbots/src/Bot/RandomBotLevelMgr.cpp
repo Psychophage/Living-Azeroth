@@ -8,6 +8,7 @@
  * Jered Little (arena-team exclusion).
  */
 
+#include "PopulationMgr.h"
 #include "RandomBotLevelMgr.h"
 #include "ArenaTeamMgr.h"
 #include "DatabaseEnv.h"
@@ -293,6 +294,9 @@ int RandomBotLevelMgr::GetLevelRangeIndex(uint8 level, TeamId team)
 // be resized on a config reload.
 void RandomBotLevelMgr::AdjustBotToRange(Player* bot, int targetRangeIndex, TeamId team)
 {
+    if (bot && PlayerbotPopulationMgr::Instance().Contains(bot->GetGUID().GetCounter()))
+        return;
+
     if (!bot || !bot->IsInWorld() || !bot->GetSession() || bot->GetSession()->IsLoggingOut() ||
         bot->IsDuringRemoveFromWorld())
         return;
@@ -828,6 +832,9 @@ uint8 RandomBotLevelMgr::ComputeResetChance(uint8 level) const
 // whichever is higher) via a full PlayerbotFactory randomize.
 void RandomBotLevelMgr::ResetBot(Player* player, uint8 currentLevel)
 {
+    if (player && PlayerbotPopulationMgr::Instance().Contains(player->GetGUID().GetCounter()))
+        return;
+
     uint8 levelToResetTo = sPlayerbotAIConfig.resetBotLevelResetTo;
 
     uint8 dkMinLevel = static_cast<uint8>(sWorld->getIntConfig(CONFIG_START_HEROIC_PLAYER_LEVEL));
@@ -851,6 +858,9 @@ void RandomBotLevelMgr::ResetBot(Player* player, uint8 currentLevel)
 // level, whichever is higher) via a full PlayerbotFactory randomize.
 void RandomBotLevelMgr::SkipBotLevel(Player* player, uint8 currentLevel)
 {
+    if (player && PlayerbotPopulationMgr::Instance().Contains(player->GetGUID().GetCounter()))
+        return;
+
     uint8 levelToSkipTo = sPlayerbotAIConfig.resetBotLevelSkipTo;
 
     uint8 dkMinLevel = static_cast<uint8>(sWorld->getIntConfig(CONFIG_START_HEROIC_PLAYER_LEVEL));

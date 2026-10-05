@@ -11,6 +11,8 @@
 #include "NewRpgInfo.h"
 #include "ObjectGuid.h"
 #include "PlayerbotCommandServer.h"
+#include <functional>
+
 #include "PlayerbotMgr.h"
 #include <unordered_set>
 
@@ -131,6 +133,11 @@ public:
     uint32 GetTradeDiscount(Player* bot, Player* master);
     void Refresh(Player* bot);
     void RandomTeleportForLevel(Player* bot);
+    // Population newcomers: an unseen, level-appropriate spot in the given zone (any zone when 0).
+    bool PopulationSpawnLocation(uint8 race, uint32 level, uint32 mapId, uint32 zoneId, WorldLocation& location,
+                                 std::function<bool(WorldLocation const&)> const& acceptable = nullptr);
+    // True when a real player could see this spot.
+    bool VisibleToPlayers(WorldLocation const& location) const;
     void RandomTeleportGrindForLevel(Player* bot);
     void RandomTeleportForRpg(Player* bot);
     uint32 GetMaxAllowedBotCount();
@@ -145,6 +152,8 @@ public:
     void SetValue(Player* bot, std::string const& type, uint32 value, std::string const& data = "");
     bool IsSpecPvp(uint32 bot, uint8 cls);
     void Remove(Player* bot);
+    // Drops a deleted or retired bot's random-bot rows and cached events.
+    void Forget(uint32 bot);
     ObjectGuid GetBattleMasterGUID(Player* bot, BattlegroundTypeId bgTypeId);
     CreatureData const* GetCreatureDataByEntry(uint32 entry);
     void LoadBattleMastersCache();

@@ -1,9 +1,14 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
  * or (at your option) any later version.
  */
 
+#include "PopulationMgr.h"
+#include "PlayerbotDialogue.h"
+#include "PlayerbotDialogueSupport.h"
+#include "PlayerbotDialogueInventory.h"
 #include "Playerbots.h"
 #include "BattleGroundTactics.h"
 #include "BattlefieldScript.h"
@@ -213,6 +218,7 @@ public:
 
         if (botAI != nullptr)
         {
+            PlayerbotDialogueBridge::Update(player);
             botAI->UpdateAI(diff);
         }
 
@@ -320,6 +326,9 @@ public:
 
     void OnPlayerGiveXP(Player* player, uint32& amount, Unit* /*victim*/, uint8 /*xpSource*/) override
     {
+        if (player && player->GetSession()->IsBot())
+            amount = static_cast<uint32>(std::round(float(amount) * PlayerbotPopulationMgr::Instance().XpMultiplier(player)));
+
         // early return
         if (sPlayerbotAIConfig.randomBotXPRate == 1.0 || !player)
             return;
@@ -477,6 +486,8 @@ public:
 
     void OnPlayerbotPacketSent(Player* player, WorldPacket const* packet) override
     {
+        PlayerbotDialogue::ObserveSupportPacket(player, packet);
+        PlayerbotDialogue::ObserveInventoryPacket(player, packet);
         if (player == nullptr)
             return;
 
@@ -503,6 +514,7 @@ public:
 
     void OnPlayerbotLogout(Player* player) override
     {
+        PlayerbotDialogueBridge::Release(player);
         if (PlayerbotMgr* playerbotMgr = GET_PLAYERBOT_MGR(player))
         {
             PlayerbotAI* botAI = PlayerbotsMgr::instance().GetPlayerbotAI(player);
@@ -577,6 +589,7 @@ void AddSC_randombot_level_mgr();
 
 void AddPlayerbotsScripts()
 {
+    PlayerbotDialogueBridge::RegisterScripts();
     new PlayerbotsBattlefieldScript();
     new PlayerbotsDatabaseScript();
     new PlayerbotsPlayerScript();

@@ -4,6 +4,7 @@
  * or (at your option) any later version.
  */
 
+#include "PopulationMgr.h"
 #include "BattleGroundTactics.h"
 #include "Chat.h"
 #include "GuildTaskMgr.h"
@@ -37,6 +38,7 @@ public:
             {"gtask", HandleGuildTaskCommand, SEC_GAMEMASTER, Console::Yes},
             {"pmon", HandlePerfMonCommand, SEC_GAMEMASTER, Console::Yes},
             {"rndbot", HandleRandomPlayerbotCommand, SEC_GAMEMASTER, Console::Yes},
+            {"population", HandlePopulationCommand, SEC_GAMEMASTER, Console::Yes},
             {"debug", playerbotsDebugCommandTable},
             {"account", playerbotsAccountCommandTable},
         };
@@ -46,6 +48,12 @@ public:
         };
 
         return commandTable;
+    }
+
+    static bool HandlePopulationCommand(ChatHandler* handler, char const* /*args*/)
+    {
+        handler->SendSysMessage(PlayerbotPopulationMgr::Instance().Status());
+        return true;
     }
 
     static bool HandlePlayerbotCommand(ChatHandler* handler, char const* args)

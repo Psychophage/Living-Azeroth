@@ -34,7 +34,9 @@ float GetPullReachDistance(Player* bot, Unit* target, PullStrategy const* strate
 
 bool IsWithinPullRange(Player* bot, Unit* target, PullStrategy const* strategy)
 {
-    return bot && target && strategy && bot->GetExactDist(target) <= strategy->GetRange();
+    // Living Azeroth: a nearby target behind a wall still requires native travel.
+    return bot && target && strategy && bot->GetExactDist(target) <= strategy->GetRange() &&
+           bot->IsWithinLOSInMap(target);
 }
 }
 
@@ -302,8 +304,11 @@ bool ReachPullAction::Execute(Event /*event*/)
     if (!target || !strategy)
         return false;
 
-    float const reachDistance = GetPullReachDistance(bot, target, strategy);
-    return ReachCombatTo(target, reachDistance);
+    // Follow the native path into sight instead of stopping at ranged distance
+    // on the wrong side of a corner. The next pull tick can cast as soon as visible.
+    if (!bot->IsWithinLOSInMap(target))
+        return MoveToLOS(target, true);
+    return ReachCombatTo(target, GetPullReachDistance(bot, target, strategy));
 }
 
 bool ReachPullAction::isUseful()

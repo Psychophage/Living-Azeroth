@@ -97,6 +97,10 @@ public:
     bool Execute(Event event) override;
 
     const uint32 npcStayTime = 8 * 1000;
+    // City errands (AiPlayerbot.RpgCityErrands): a farther NPC and a longer stay.
+    const uint32 cityStayMinTime = 20 * IN_MILLISECONDS;
+    const uint32 cityStayMaxTime = 60 * IN_MILLISECONDS;
+    const float cityErrandMinDistance = 20.0f;
 };
 
 class NewRpgDoQuestAction : public NewRpgBaseAction

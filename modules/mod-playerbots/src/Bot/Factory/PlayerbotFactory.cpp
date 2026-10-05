@@ -5,6 +5,8 @@
  */
 
 #include "PlayerbotFactory.h"
+#include "PlayerbotDialogue.h"
+#include "PlayerbotDialoguePerformance.h"
 #include "PlayerbotsDatabase.h"
 #include "AccountMgr.h"
 #include "AiFactory.h"
@@ -784,8 +786,24 @@ void PlayerbotFactory::Prepare()
     }
 }
 
+namespace
+{
+// Setup runs synchronously on one thread, and the hooks it triggers fire on that thread.
+thread_local ObjectGuid settingUp;
+
+struct SetupScope
+{
+    explicit SetupScope(ObjectGuid guid) : previous(settingUp) { settingUp = guid; }
+    ~SetupScope() { settingUp = previous; }
+    ObjectGuid previous;
+};
+}  // namespace
+
+bool PlayerbotFactory::IsSettingUp(ObjectGuid guid) { return !guid.IsEmpty() && settingUp == guid; }
+
 void PlayerbotFactory::Randomize(bool incremental)
 {
+    SetupScope setup(bot->GetGUID());
     // if (sPlayerbotAIConfig.disableRandomLevels)
     //     return;
 
@@ -1898,6 +1916,9 @@ public:
 
     bool Visit(Item* item) override
     {
+        // Native refresh must preserve the exact outfit held in owned bags.
+        if (PlayerbotDialogue::IsPerformanceEquipment(bot, item->GetGUID().GetRawValue()))
+            return true;
         uint32 id = item->GetTemplate()->ItemId;
         if (CanKeep(id))
         {
@@ -2280,6 +2301,9 @@ void Shuffle(std::vector<uint32>& items)
 
 void PlayerbotFactory::InitEquipment(bool incremental, bool second_chance)
 {
+    // Suspend equipment replacement only; other native refresh work may continue.
+    if (!PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue()).empty())
+        return;
     if (level < 5)
     {
         // original items
@@ -3861,6 +3885,9 @@ void PlayerbotFactory::ClearInventory()
 
 void PlayerbotFactory::ClearAllItems()
 {
+    // Suspend equipment replacement only; other native refresh work may continue.
+    if (!PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue()).empty())
+        return;
     DestroyItemsVisitor visitor(bot);
     IterateItems(&visitor, ITERATE_ALL_ITEMS);
 }

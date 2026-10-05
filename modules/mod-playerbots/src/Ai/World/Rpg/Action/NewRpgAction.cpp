@@ -382,10 +382,11 @@ bool NewRpgWanderNpcAction::Execute(Event /*event*/)
     if (!dataPtr)
         return false;
     auto& data = *dataPtr;
+    bool errands = sPlayerbotAIConfig.rpgCityErrands && InCapital();
     if (!data.npcOrGo)
     {
         // No npc can be found, switch to IDLE
-        ObjectGuid npcOrGo = ChooseNpcOrGameObjectToInteract();
+        ObjectGuid npcOrGo = ChooseNpcOrGameObjectToInteract(false, 0.0f, errands ? cityErrandMinDistance : 0.0f);
         if (npcOrGo.IsEmpty())
         {
             info.ChangeToIdle();
@@ -407,7 +408,14 @@ bool NewRpgWanderNpcAction::Execute(Event /*event*/)
             return true;
         }
 
-        if (data.lastReach && GetMSTimeDiffToNow(data.lastReach) < npcStayTime)
+        // An errand lasts a while; the length varies with who visits whom.
+        uint32 stayTime = npcStayTime;
+        if (errands)
+        {
+            uint32 mix = bot->GetGUID().GetCounter() * 2654435761u ^ data.npcOrGo.GetCounter();
+            stayTime = cityStayMinTime + mix % (cityStayMaxTime - cityStayMinTime + 1);
+        }
+        if (data.lastReach && GetMSTimeDiffToNow(data.lastReach) < stayTime)
             return false;
 
         // has reached the npc for more than `npcStayTime`, select the next target
@@ -416,6 +424,13 @@ bool NewRpgWanderNpcAction::Execute(Event /*event*/)
     }
     else
     {
+        // Do not trail an NPC walking its patrol; visit someone else instead.
+        if (!object || IsWalkingAway(object))
+        {
+            data.npcOrGo = ObjectGuid();
+            data.lastReach = 0;
+            return true;
+        }
         if (MoveWorldObjectTo(data.npcOrGo))
             return true;
         // NPC pathing failed (random offset in a wall, mmap hiccup, etc).

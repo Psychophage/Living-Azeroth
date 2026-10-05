@@ -5,6 +5,8 @@
  */
 
 #include "DestroyItemAction.h"
+#include "PlayerbotDialogue.h"
+#include <algorithm>
 #include "Event.h"
 #include "ItemCountValue.h"
 #include "Playerbots.h"
@@ -27,8 +29,13 @@ void DestroyItemAction::DestroyItem(FindItemVisitor* visitor)
 {
     IterateItems(visitor);
     std::vector<Item*> items = visitor->GetResult();
+    auto saved = PlayerbotDialogueBridge::SavedEquipment(bot->GetGUID().GetRawValue());
     for (Item* item : items)
     {
+        // Living Azeroth: automatic bag cleanup cannot discard a saved outfit.
+        if (std::any_of(saved.begin(), saved.end(), [&](auto const& original)
+                        { return original.guid == item->GetGUID().GetRawValue(); }))
+            continue;
         std::ostringstream out;
         out << chat->FormatItem(item->GetTemplate()) << " destroyed";
         botAI->TellMaster(out);

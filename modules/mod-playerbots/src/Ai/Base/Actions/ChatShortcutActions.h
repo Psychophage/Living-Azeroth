@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -25,17 +26,25 @@ public:
 class FollowChatShortcutAction : public MovementAction
 {
 public:
-    FollowChatShortcutAction(PlayerbotAI* botAI) : MovementAction(botAI, "follow chat shortcut") {}
+    FollowChatShortcutAction(PlayerbotAI* botAI, bool silent = false)
+        : MovementAction(botAI, "follow chat shortcut"), _silent(silent) {}
 
     bool Execute(Event event) override;
+
+private:
+    bool _silent;
 };
 
 class StayChatShortcutAction : public PositionsResetAction
 {
 public:
-    StayChatShortcutAction(PlayerbotAI* botAI) : PositionsResetAction(botAI, "stay chat shortcut") {}
+    StayChatShortcutAction(PlayerbotAI* botAI, bool silent = false)
+        : PositionsResetAction(botAI, "stay chat shortcut"), _silent(silent) {}
 
     bool Execute(Event event) override;
+
+private:
+    bool _silent;
 };
 
 class MoveFromGroupChatShortcutAction : public Action
@@ -49,9 +58,13 @@ public:
 class FleeChatShortcutAction : public PositionsResetAction
 {
 public:
-    FleeChatShortcutAction(PlayerbotAI* botAI) : PositionsResetAction(botAI, "flee chat shortcut") {}
+    FleeChatShortcutAction(PlayerbotAI* botAI, bool silent = false)
+        : PositionsResetAction(botAI, "flee chat shortcut"), _silent(silent) {}
 
     bool Execute(Event event) override;
+
+private:
+    bool _silent;
 };
 
 class GoawayChatShortcutAction : public PositionsResetAction

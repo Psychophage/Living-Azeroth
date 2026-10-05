@@ -40,11 +40,17 @@ protected:
     bool ForceToWait(uint32 duration, MovementPriority priority = MovementPriority::MOVEMENT_NORMAL);
 
     /* QUEST RELATED CHECK */
-    ObjectGuid ChooseNpcOrGameObjectToInteract(bool questgiverOnly = false, float distanceLimit = 0.0f);
+    // errandDistance (city errands): prefer candidates at least this far, and skip flight
+    // masters, where people come to fly rather than to spend a while.
+    ObjectGuid ChooseNpcOrGameObjectToInteract(bool questgiverOnly = false, float distanceLimit = 0.0f,
+                                               float errandDistance = 0.0f);
     bool HasQuestToAcceptOrReward(WorldObject* object);
     bool InteractWithNpcOrGameObjectForQuest(ObjectGuid guid);
     bool CanInteractWithQuestGiver(Object* questGiver);
     bool IsWithinInteractionDist(Object* object);
+    // A walking NPC out of reach is not a target: bots would trail it along its patrol.
+    bool IsWalkingAway(WorldObject* object);
+    bool InCapital();
     uint32 BestRewardIndex(Quest const* quest);
     bool IsQuestWorthDoing(Quest const* quest);
     bool IsQuestCapableDoing(Quest const* quest);

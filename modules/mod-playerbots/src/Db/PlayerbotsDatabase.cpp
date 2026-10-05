@@ -15,6 +15,16 @@ void PlayerbotsDatabaseConnection::DoPrepareStatements()
     if (!m_reconnecting)
         m_stmts.resize(MAX_PLAYERBOTS_STATEMENTS);
 
+    // Living Azeroth persistent population. Reads run only during world-thread initialization.
+    PrepareStatement(PLAYERBOTS_SEL_POPULATION_CHARACTERS, "SELECT bot, account, planned_level, initialized, introduced, map, zone, session_started, rest_until, last_seen FROM playerbots_population_character", CONNECTION_SYNCH);
+    PrepareStatement(PLAYERBOTS_REP_POPULATION_CHARACTER, "REPLACE INTO playerbots_population_character (bot, account, planned_level, initialized, introduced, map, zone, session_started, rest_until, last_seen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", CONNECTION_BOTH);
+    PrepareStatement(PLAYERBOTS_SEL_POPULATION_FAMILIARITY, "SELECT human, bot, score, sightings, session_sightings, interactions, last_seen, last_sighting, last_interaction, last_session FROM playerbots_population_familiarity", CONNECTION_SYNCH);
+    PrepareStatement(PLAYERBOTS_REP_POPULATION_FAMILIARITY, "REPLACE INTO playerbots_population_familiarity (human, bot, score, sightings, session_sightings, interactions, last_seen, last_sighting, last_interaction, last_session) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", CONNECTION_BOTH);
+    PrepareStatement(PLAYERBOTS_SEL_POPULATION_WORLD, "SELECT offline_remaining, next_creation, last_checkpoint FROM playerbots_population_world WHERE id = 1", CONNECTION_SYNCH);
+    PrepareStatement(PLAYERBOTS_REP_POPULATION_WORLD, "REPLACE INTO playerbots_population_world (id, offline_remaining, next_creation, last_checkpoint) VALUES (1, ?, ?, ?)", CONNECTION_BOTH);
+    PrepareStatement(PLAYERBOTS_DEL_POPULATION_CHARACTER, "DELETE FROM playerbots_population_character WHERE bot = ?", CONNECTION_BOTH);
+    PrepareStatement(PLAYERBOTS_DEL_POPULATION_FAMILIARITY_BOT, "DELETE FROM playerbots_population_familiarity WHERE bot = ?", CONNECTION_BOTH);
+
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER, "SELECT DISTINCT name FROM playerbots_custom_strategy WHERE owner = ?", CONNECTION_SYNCH);
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER_AND_NAME, "SELECT idx, action_line FROM playerbots_custom_strategy WHERE owner = ? AND name = ? ORDER BY idx", CONNECTION_SYNCH);
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER_AND_NAME_AND_IDX, "SELECT action_line FROM playerbots_custom_strategy WHERE owner = ? AND name = ? AND idx = ?", CONNECTION_SYNCH);

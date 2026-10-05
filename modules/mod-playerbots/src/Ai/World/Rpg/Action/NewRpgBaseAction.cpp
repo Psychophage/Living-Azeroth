@@ -707,7 +707,20 @@ bool NewRpgBaseAction::SearchQuestGiverAndAcceptOrReward()
     return false;
 }
 
-ObjectGuid NewRpgBaseAction::ChooseNpcOrGameObjectToInteract(bool questgiverOnly, float distanceLimit)
+bool NewRpgBaseAction::IsWalkingAway(WorldObject* object)
+{
+    Unit* unit = object->ToUnit();
+    return unit && unit->isMoving() && !IsWithinInteractionDist(object);
+}
+
+bool NewRpgBaseAction::InCapital()
+{
+    AreaTableEntry const* zone = sAreaTableStore.LookupEntry(bot->GetZoneId());
+    return zone && (zone->flags & AREA_FLAG_CAPITAL);
+}
+
+ObjectGuid NewRpgBaseAction::ChooseNpcOrGameObjectToInteract(bool questgiverOnly, float distanceLimit,
+                                                             float errandDistance)
 {
     GuidVector possibleTargets = AI_VALUE(GuidVector, "possible new rpg targets");
     GuidVector possibleGameObjects = AI_VALUE(GuidVector, "possible new rpg game objects");
@@ -724,6 +737,9 @@ ObjectGuid NewRpgBaseAction::ChooseNpcOrGameObjectToInteract(bool questgiverOnly
             continue;
 
         if (distanceLimit && bot->GetDistance(object) > distanceLimit)
+            continue;
+
+        if (IsWalkingAway(object))
             continue;
 
         if (CanInteractWithQuestGiver(object) && HasQuestToAcceptOrReward(object))
@@ -762,17 +778,26 @@ ObjectGuid NewRpgBaseAction::ChooseNpcOrGameObjectToInteract(bool questgiverOnly
     if (possibleTargets.empty())
         return ObjectGuid();
 
-    int idx = urand(0, possibleTargets.size() - 1);
-    ObjectGuid guid = possibleTargets[idx];
-    WorldObject* object = ObjectAccessor::GetCreatureOrPetOrVehicle(*bot, guid);
-    if (!object)
-        object = ObjectAccessor::GetGameObject(*bot, guid);
-
-    if (object && object->IsInWorld())
+    std::vector<ObjectGuid> candidates;
+    std::vector<ObjectGuid> farther;
+    for (ObjectGuid const& guid : possibleTargets)
     {
-        return object->GetGUID();
+        WorldObject* object = ObjectAccessor::GetCreatureOrPetOrVehicle(*bot, guid);
+        if (!object)
+            object = ObjectAccessor::GetGameObject(*bot, guid);
+        if (!object || !object->IsInWorld() || IsWalkingAway(object))
+            continue;
+        Creature* creature = object->ToCreature();
+        if (errandDistance && creature && creature->HasNpcFlag(UNIT_NPC_FLAG_FLIGHTMASTER))
+            continue;
+        candidates.push_back(guid);
+        if (errandDistance && bot->GetExactDist(object) >= errandDistance)
+            farther.push_back(guid);
     }
-    return ObjectGuid();
+    std::vector<ObjectGuid> const& pool = farther.empty() ? candidates : farther;
+    if (pool.empty())
+        return ObjectGuid();
+    return pool[urand(0, pool.size() - 1)];
 }
 
 bool NewRpgBaseAction::HasQuestToAcceptOrReward(WorldObject* object)

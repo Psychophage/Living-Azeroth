@@ -1,3 +1,4 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
@@ -5,6 +6,7 @@
  */
 
 #include "PlayerbotRepository.h"
+#include "PlayerbotDialogue.h"
 #include "PlayerbotsDatabase.h"
 #include "AiObjectContext.h"
 
@@ -59,13 +61,16 @@ void PlayerbotRepository::Save(PlayerbotAI* botAI)
     PlayerbotsDatabase.Execute(deleteStatement);
 
     std::vector<std::string> data = botAI->GetAiObjectContext()->Save();
+    auto combat = botAI->GetStrategies(BOT_STATE_COMBAT);
+    auto nonCombat = botAI->GetStrategies(BOT_STATE_NON_COMBAT);
+    PlayerbotDialogueBridge::FilterPersistence(botAI->GetBot(), data, combat, nonCombat);
     for (std::vector<std::string>::iterator i = data.begin(); i != data.end(); ++i)
     {
         SaveValue(guid, "value", *i);
     }
 
-    SaveValue(guid, "co", FormatStrategies("co", botAI->GetStrategies(BOT_STATE_COMBAT)));
-    SaveValue(guid, "nc", FormatStrategies("nc", botAI->GetStrategies(BOT_STATE_NON_COMBAT)));
+    SaveValue(guid, "co", FormatStrategies("co", combat));
+    SaveValue(guid, "nc", FormatStrategies("nc", nonCombat));
     SaveValue(guid, "dead", FormatStrategies("dead", botAI->GetStrategies(BOT_STATE_DEAD)));
 }
 

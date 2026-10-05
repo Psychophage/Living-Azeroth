@@ -1,10 +1,13 @@
+// PBC Character System integration changes, 2026-09-30; upstream notices preserved.
 /*
  * This file is part of the mod-playerbots module for AzerothCore. See AUTHORS file for Copyright
  * information; released under GNU GPL v2 license, redistribute/modify under version 2 of the License,
  * or (at your option) any later version.
  */
 
+#include "PopulationMgr.h"
 #include "PlayerbotAIConfig.h"
+#include "PlayerbotDialogue.h"
 #include "BisListMgr.h"
 #include "Config.h"
 #include "NewRpgInfo.h"
@@ -566,6 +569,7 @@ bool PlayerbotAIConfig::Initialize()
     LoadListString<std::vector<std::string>>(sConfigMgr->GetOption<std::string>("AiPlayerbot.AllowedLogFiles", ""),
                                              allowedLogFiles);
     enableAutoTradeOnItemMention = sConfigMgr->GetOption<bool>("AiPlayerbot.EnableAutoTradeOnItemMention", true);
+    PlayerbotDialogueBridge::Configure(sConfigMgr->GetOption<bool>("AiPlayerbot.DialogueActions", false));
     LoadListString<std::vector<std::string>>(sConfigMgr->GetOption<std::string>("AiPlayerbot.TradeActionExcludedPrefixes", ""),
                                              tradeActionExcludedPrefixes);
 
@@ -726,6 +730,7 @@ bool PlayerbotAIConfig::Initialize()
     autoTeleportForLevel = sConfigMgr->GetOption<bool>("AiPlayerbot.AutoTeleportForLevel", false);
     autoDoQuests = sConfigMgr->GetOption<bool>("AiPlayerbot.AutoDoQuests", true);
     enableNewRpgStrategy = sConfigMgr->GetOption<bool>("AiPlayerbot.EnableNewRpgStrategy", true);
+    rpgCityErrands = sConfigMgr->GetOption<bool>("AiPlayerbot.RpgCityErrands", false);
 
     RpgStatusProbWeight[RPG_WANDER_RANDOM] = sConfigMgr->GetOption<int32>("AiPlayerbot.RpgStatusProbWeight.WanderRandom", 15);
     RpgStatusProbWeight[RPG_WANDER_NPC] = sConfigMgr->GetOption<int32>("AiPlayerbot.RpgStatusProbWeight.WanderNpc", 20);
@@ -751,7 +756,47 @@ bool PlayerbotAIConfig::Initialize()
 
     selfBotLevel = sConfigMgr->GetOption<int32>("AiPlayerbot.SelfBotLevel", 1);
 
-    RandomPlayerbotFactory::CreateRandomBots();
+    // The optional population manager owns creation/login/progression scheduling.
+    population.enabled = sConfigMgr->GetOption<bool>("AiPlayerbot.Population.Enabled", false);
+    population.onlineTarget = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.OnlineTarget", 500), 1u, 10000u);
+    population.reserveTarget = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.ReserveTarget", 2000), 1u, 100000u);
+    population.seedCharacters = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.SeedCharacters", 40), 0u, 10000u);
+    population.creationBatch = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.CreationBatch", 5), 1u, 25u);
+    population.loginBatch = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.LoginBatch", 10), 1u, 100u);
+    population.updateSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.UpdateSeconds", 10), 1u, 60u);
+    population.creationSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.CreationSeconds", 30), 5u, 3600u);
+    population.sessionSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.SessionSeconds", 3600), 60u, 86400u);
+    population.restSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RestSeconds", 1800), 0u, 86400u);
+    population.minimumResidence = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.MinimumResidence", 600), 0u, 86400u);
+    population.offlineOnline = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.OfflineOnline", 20), 0u, 10000u);
+    population.offlineAllowance = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.OfflineAllowance", 900), 0u, 86400u);
+    population.sightingInterval = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.SightingInterval", 1800), 60u, 86400u);
+    population.sightingSessionCap = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.SightingSessionCap", 3), 1u, 100u);
+    population.interactionInterval = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.InteractionInterval", 300), 1u, 3600u);
+    population.familiarityThreshold = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.FamiliarityThreshold", 6), 1u, 100u);
+    population.regionTarget = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RegionTarget", 50), 1u, 250u);
+    population.regionalPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RegionalPercent", 70), 0u, 100u);
+    population.familiarPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.FamiliarPercent", 35), 0u, 100u);
+    population.freshPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.FreshPercent", 20), 0u, 100u);
+    population.maximumLevelDifference = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.MaximumLevelDifference", 5), 1u, 80u);
+    population.peerPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.PeerPercent", 40), 0u, 100u);
+    population.rampSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RampSeconds", 60), 1u, 3600u);
+    population.lingerSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.LingerSeconds", 600), 1u, 86400u);
+    population.knownLimit = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.KnownLimit", 20000), 1u, 1000000u);
+    population.retentionSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RetentionSeconds", 604800), 60u, 31536000u);
+    population.residentPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.ResidentPercent", 15), 0u, 100u);
+    population.townPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.TownPercent", 25), 0u, 100u);
+    population.inViewArrivalSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.InViewArrivalSeconds", 20), 1u, 3600u);
+    population.localCrowd = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.LocalCrowd", 4), 1u, 100u);
+    population.starterCapacity = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.StarterCapacity", 16), 0u, 1000u);
+    population.catchupMaximum = std::clamp(sConfigMgr->GetOption<float>("AiPlayerbot.Population.CatchupMaximum", 1.5f), 1.0f, 2.0f);
+    population.offlineOnline = std::min(population.offlineOnline, population.onlineTarget);
+    population.reserveTarget = std::max(population.reserveTarget, population.onlineTarget);
+    population.minimumResidence = std::min(population.minimumResidence, population.sessionSeconds);
+    population.freshPercent = std::min(population.freshPercent, 100u - population.familiarPercent);
+    PlayerbotPopulationMgr::Instance().Configure();
+    if (!population.enabled)
+        RandomPlayerbotFactory::CreateRandomBots();
     if (World::IsStopped())
     {
         return true;
@@ -781,6 +826,8 @@ bool PlayerbotAIConfig::Initialize()
         PlayerbotDungeonRepository::instance().LoadDungeonSuggestions();
     }
     sTravelMgr.Init();
+    if (population.enabled)
+        PlayerbotPopulationMgr::Instance().Initialize();
 
     excludedHunterPetFamilies.clear();
     LoadList<std::vector<uint32>>(sConfigMgr->GetOption<std::string>("AiPlayerbot.ExcludedHunterPetFamilies", ""), excludedHunterPetFamilies);

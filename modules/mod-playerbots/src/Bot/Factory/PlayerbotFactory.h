@@ -63,6 +63,9 @@ public:
     static void Init();
     void Refresh();
     void Randomize(bool incremental);
+    // True while this thread is setting up the given bot: quest, item and level changes then are
+    // character creation, not gameplay that observers should record.
+    static bool IsSettingUp(ObjectGuid guid);
     static std::list<uint32> classQuestIds;
     void ClearEverything();
     void InitSkills();

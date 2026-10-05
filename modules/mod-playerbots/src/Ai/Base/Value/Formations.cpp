@@ -577,6 +577,11 @@ bool FormationValue::Load(std::string const formation)
 
         value = new NearFormation(botAI);
     }
+    else if (formation == "spread" || formation == "spread_hold")
+    {
+        delete value;
+        value = CreateDialogueSpreadFormation(botAI, formation == "spread_hold");
+    }
     else if (formation == "far")
     {
         if (value)
