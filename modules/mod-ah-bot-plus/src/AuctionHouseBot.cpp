@@ -63,6 +63,7 @@ AuctionHouseBot::AuctionHouseBot() :
     ListingExpireTimeInSecondsMin(900),
     ListingExpireTimeInSecondsMax(86400),
     BuyingBotAcceptablePriceModifier(1),
+    BuyingBotAcceptablePriceModifierTradeGood(1),
     BuyingBotAlwaysBidMaxCalculatedPrice(false),
     BuyingBotWillBidAgainstPlayers(false),
     AHCharactersGUIDsForQuery(""),
@@ -760,6 +761,10 @@ void AuctionHouseBot::PopulateItemCandidatesAndProportions()
     {
         // Never store curBlock zero
         if (itr->second.ItemId == 0)
+            continue;
+
+        // The realm owns release-era eligibility. An empty list fails closed.
+        if (AllowedSellerItems.find(itr->second.ItemId) == AllowedSellerItems.end())
             continue;
 
         // If there is an iLevel exception, honor it
@@ -1721,11 +1726,17 @@ void AuctionHouseBot::AddNewAuctionBuyerBotBid(std::vector<Player*> AHBPlayers, 
             continue;
         }
 
+        // Apply the same realm-phase item policy to player auctions that the seller uses.
+        if (AllowedSellerItems.find(prototype->ItemId) == AllowedSellerItems.end())
+            continue;
+
         // Calculate a potential price for the item
         uint64 willingToSpendPerItemPrice = 0;
         uint64 discardBidPrice = 0;
         CalculateItemValue(prototype, discardBidPrice, willingToSpendPerItemPrice);
-        willingToSpendPerItemPrice = (uint64)((float)willingToSpendPerItemPrice * BuyingBotAcceptablePriceModifier);
+        // Raw materials have their own, usually lower, demand so gathering is not a gold fountain
+        float acceptablePriceModifier = prototype->Class == ITEM_CLASS_TRADE_GOODS ? BuyingBotAcceptablePriceModifierTradeGood : BuyingBotAcceptablePriceModifier;
+        willingToSpendPerItemPrice = (uint64)((float)willingToSpendPerItemPrice * acceptablePriceModifier);
         uint64 willingToPayForStackPrice = willingToSpendPerItemPrice * pItem->GetCount();
 
         // Determine if it's a bid, buyout, or skip
@@ -1759,14 +1770,15 @@ void AuctionHouseBot::AddNewAuctionBuyerBotBid(std::vector<Player*> AHBPlayers, 
         // price table was built) get UINT32_MAX, which behaves the same as "not sold by a vendor"
         bool preventedOverpayingForVendorItem = false;
         uint32 vendorSellPrice = prototype->ItemId < vendorItemsPrices.size() ? vendorItemsPrices[prototype->ItemId] : UINT32_MAX;
-        if (PreventOverpayingForVendorItems && vendorSellPrice > 0)
+        uint64 vendorStackPrice = uint64(vendorSellPrice) * pItem->GetCount();
+        if (PreventOverpayingForVendorItems && vendorSellPrice != UINT32_MAX && vendorSellPrice > 0)
         {
-            if (doBuyout && auction->buyout > vendorSellPrice)
+            if (doBuyout && auction->buyout > vendorStackPrice)
             {
                 doBuyout = false;
                 preventedOverpayingForVendorItem = true;
             }
-            if (doBid && calcBidAmount > vendorSellPrice)
+            if (doBid && calcBidAmount > vendorStackPrice)
             {
                 doBid = false;
                 preventedOverpayingForVendorItem = true;
@@ -2013,6 +2025,7 @@ void AuctionHouseBot::InitializeConfiguration()
     // Buyer Bot
     SetBuyingBotBuyCandidatesPerBuyCycle();
     BuyingBotAcceptablePriceModifier = sConfigMgr->GetOption<float>("AuctionHouseBot.Buyer.AcceptablePriceModifier", 1);
+    BuyingBotAcceptablePriceModifierTradeGood = sConfigMgr->GetOption<float>("AuctionHouseBot.Buyer.AcceptablePriceModifier.TradeGood", BuyingBotAcceptablePriceModifier);
     BuyingBotAlwaysBidMaxCalculatedPrice = sConfigMgr->GetOption<bool>("AuctionHouseBot.Buyer.AlwaysBidMaxCalculatedPrice", false);
     PreventOverpayingForVendorItems = sConfigMgr->GetOption<bool>("AuctionHouseBot.Buyer.PreventOverpayingForVendorItems", true);
     if (PreventOverpayingForVendorItems)
@@ -2219,6 +2232,15 @@ void AuctionHouseBot::InitializeConfiguration()
     DisabledItemTextFilter = sConfigMgr->GetOption<bool>("AuctionHouseBot.DisabledItemTextFilter", true);
     DisabledRecipeProducedItemFilterEnabled = sConfigMgr->GetOption<bool>("AuctionHouseBot.DisabledRecipeProducedItemFilterEnabled", false);
     DisabledItems.clear();
+    AllowedSellerItems.clear();
+    ParseNumberListToSet(AllowedSellerItems,
+        sConfigMgr->GetOption<std::string>("AuctionHouseBot.SellerWhiteList", ""),
+        "AuctionHouseBot.SellerWhiteList");
+    if (SellingBotEnabled && AllowedSellerItems.empty())
+    {
+        LOG_ERROR("module", "AuctionHouseBot: seller disabled because SellerWhiteList is empty");
+        SellingBotEnabled = false;
+    }
     ParseNumberListToSet(DisabledItems, sConfigMgr->GetOption<std::string>("AuctionHouseBot.DisabledInvalidItemIDs", ""), "AuctionHouseBot.DisabledInvalidItemIDs");
     ParseNumberListToSet(DisabledItems, sConfigMgr->GetOption<std::string>("AuctionHouseBot.DisabledCustomItemIDs", ""), "AuctionHouseBot.DisabledCustomItemIDs");
     AddValuesToSetByKeyMap(DisabledRecipeProducedItemClassSubClasses, sConfigMgr->GetOption<std::string>("AuctionHouseBot.DisabledRecipeProducedItemClassSubClasses", ""), 0, 20);

@@ -77,6 +77,8 @@ AuctionHouseBot.MinutesBetweenSellCycle = 1
 AuctionHouseBot.EnableSeller = false
 AuctionHouseBot.ReturnExpiredAuctionItemsToBot = false
 AuctionHouseBot.GUIDs = 0
+# Exact seller stock is supplied by the realm phase policy at launch.
+AuctionHouseBot.SellerWhiteList =
 AuctionHouseBot.ItemsPerCycle = 150
 AuctionHouseBot.ListingExpireTimeInSecondsMin = 900
 AuctionHouseBot.ListingExpireTimeInSecondsMax = 86400
@@ -284,6 +286,11 @@ AuctionHouseBot.Neutral.MaxItems = 15000
 #        of what the seller sells for), but do not go lower than 0
 #    Default: 1
 #
+#    AuctionHouseBot.Buyer.AcceptablePriceModifier.TradeGood
+#        The same modifier, applied only to Trade Goods (ores, herbs, cloth,
+#        leather and other raw materials) instead of the value above.
+#    Default: the value of AuctionHouseBot.Buyer.AcceptablePriceModifier
+#
 #    AuctionHouseBot.Buyer.AlwaysBidMaxCalculatedPrice
 #        When enabled, the buyer bot will use the calculated max price they
 #        were willing to pay as the amount they bid with, instead of minimum
@@ -308,6 +315,7 @@ AuctionHouseBot.Neutral.MaxItems = 15000
 AuctionHouseBot.Buyer.Enabled = false
 AuctionHouseBot.Buyer.BuyCandidatesPerBuyCycle = 1
 AuctionHouseBot.Buyer.AcceptablePriceModifier = 1
+AuctionHouseBot.Buyer.AcceptablePriceModifier.TradeGood = 1
 AuctionHouseBot.Buyer.AlwaysBidMaxCalculatedPrice = false
 AuctionHouseBot.Buyer.PreventOverpayingForVendorItems = true
 AuctionHouseBot.Buyer.BidAgainstPlayers = false

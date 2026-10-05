@@ -9,6 +9,13 @@
 #include "Mail.h"
 #include "Player.h"
 #include "WorldSession.h"
+#include "AccountMgr.h"
+#include "CharacterCache.h"
+#include "ObjectMgr.h"
+#include "World.h"
+#include <iterator>
+#include <set>
+#include <sstream>
 
 class AHBot_WorldScript : public WorldScript
 {
@@ -183,6 +190,7 @@ public:
             {"update", HandleAHBotUpdateCommand, SEC_GAMEMASTER, Acore::ChatCommands::Console::Yes},
             {"reload", HandleAHBotReloadCommand, SEC_GAMEMASTER, Acore::ChatCommands::Console::Yes},
             {"empty",  HandleAHBotEmptyCommand,  SEC_GAMEMASTER, Acore::ChatCommands::Console::Yes},
+            {"create-sellers", HandleCreateSellersCommand, SEC_CONSOLE, Acore::ChatCommands::Console::Yes},
             {"help",  HandleAHBotHelpCommand,  SEC_GAMEMASTER, Acore::ChatCommands::Console::Yes}
         };
 
@@ -241,6 +249,91 @@ public:
         handler->PSendSysMessage("  .ahbot reload - Reloads configuration");
         handler->PSendSysMessage("  .ahbot empty  - Removes all AuctionHouseBot auctions");
         handler->PSendSysMessage("  .ahbot update - Runs an update cycle");
+        return true;
+    }
+
+    static bool HandleCreateSellersCommand(ChatHandler* handler, char const* args)
+    {
+        // Operator path: create complete characters through Player::Create on the dedicated
+        // AHTRADE account. Every name is validated before any character is created, and the
+        // account must start empty, so a retry cannot leave a partial roster.
+        std::vector<std::string> names;
+        std::istringstream input(args ? args : "");
+        for (std::string name; input >> name;)
+            names.push_back(name);
+
+        uint32 const maxSellers = sWorld->getIntConfig(CONFIG_CHARACTERS_PER_REALM);
+        if (names.empty() || names.size() > maxSellers)
+        {
+            handler->PSendSysMessage("Usage: ahbot create-sellers Name1 [Name2 ...] (at most {} names)", maxSellers);
+            return false;
+        }
+
+        uint32 accountId = AccountMgr::GetId("AHTRADE");
+        if (!accountId || AccountMgr::GetCharactersCount(accountId) != 0)
+        {
+            handler->PSendSysMessage("AHTRADE account must exist and contain no characters");
+            return false;
+        }
+
+        std::set<std::string> seen;
+        for (std::string& name : names)
+        {
+            if (!normalizePlayerName(name) || ObjectMgr::CheckPlayerName(name, true) != CHAR_NAME_SUCCESS)
+            {
+                handler->PSendSysMessage("Seller name {} failed validation", name);
+                return false;
+            }
+            if (!seen.insert(name).second)
+            {
+                handler->PSendSysMessage("Seller name {} is listed twice", name);
+                return false;
+            }
+            CharacterDatabasePreparedStatement* stmt = CharacterDatabase.GetPreparedStatement(CHAR_SEL_CHECK_NAME);
+            stmt->SetData(0, name);
+            if (CharacterDatabase.Query(stmt))
+            {
+                handler->PSendSysMessage("Seller name {} already exists", name);
+                return false;
+            }
+        }
+
+        // Only the name shows in the auction house; race and class just need to be valid.
+        struct SellerLook
+        {
+            uint8 race;
+            uint8 playerClass;
+        };
+        SellerLook const looks[] = {
+            {RACE_HUMAN, CLASS_WARRIOR}, {RACE_DWARF, CLASS_HUNTER}, {RACE_GNOME, CLASS_MAGE},
+            {RACE_NIGHTELF, CLASS_DRUID}, {RACE_ORC, CLASS_SHAMAN}, {RACE_TROLL, CLASS_PRIEST},
+            {RACE_TAUREN, CLASS_WARRIOR}, {RACE_UNDEAD_PLAYER, CLASS_ROGUE}
+        };
+
+        WorldSession session(accountId, "AHTRADE", 0, nullptr, SEC_PLAYER,
+            EXPANSION_WRATH_OF_THE_LICH_KING, 0, LOCALE_enUS, 0, false, false, 0, true);
+        for (size_t i = 0; i < names.size(); ++i)
+        {
+            SellerLook const& look = looks[i % std::size(looks)];
+            CharacterCreateInfo info(names[i], look.race, look.playerClass,
+                i % 2 ? GENDER_FEMALE : GENDER_MALE, 0, 0, 0, 0, 0);
+            Player player(&session);
+            player.GetMotionMaster()->Initialize();
+            if (!player.Create(sObjectMgr->GetGenerator<HighGuid::Player>().Generate(), &info))
+            {
+                handler->PSendSysMessage("Seller character creation failed; inspect the partial roster");
+                return false;
+            }
+            player.setCinematic(2);
+            player.SetAtLoginFlag(AT_LOGIN_NONE);
+            player.SaveToDB(true, false);
+            sCharacterCache->AddCharacterCacheEntry(player.GetGUID(), accountId,
+                player.GetName(), player.getGender(), player.getRace(),
+                player.getClass(), player.GetLevel());
+            handler->PSendSysMessage("Created auction seller {} (GUID {})",
+                player.GetName(), player.GetGUID().GetCounter());
+            player.CleanupsBeforeDelete();
+        }
         return true;
     }
 };

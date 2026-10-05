@@ -151,6 +151,7 @@ private:
     uint32 ListingExpireTimeInSecondsMin;
     uint32 ListingExpireTimeInSecondsMax;
     float BuyingBotAcceptablePriceModifier;
+    float BuyingBotAcceptablePriceModifierTradeGood;
     bool BuyingBotAlwaysBidMaxCalculatedPrice;
     bool BuyingBotWillBidAgainstPlayers;
     std::vector<uint32> vendorItemsPrices;
@@ -161,6 +162,7 @@ private:
     std::unordered_set<uint32> ItemIDsProducedByRecipes;
     std::map<uint32, std::unordered_set<uint32>> DisabledRecipeProducedItemClassSubClasses;
     std::set<uint32> DisabledItems;
+    std::set<uint32> AllowedSellerItems;
     bool ListedItemLevelRestrictedEnabled;
     bool ListedItemLevelRestrictedUseCraftedItemForCalculation;
     uint32 ListedItemLevelMin;
