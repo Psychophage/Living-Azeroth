@@ -1,0 +1,149 @@
+-- Ulduar and Emalon at patch 3.1: 10-man drops Emblem of Valor, 25-man drops
+-- Emblem of Conquest. Ulduar 10-man hard modes drop Conquest in place of Valor:
+-- Iron Council past the easy order, the hard-mode caches, Algalon, and (handled
+-- in ulduar_hard_mode_emblems.cpp because their default loot mode stays active)
+-- Flame Leviathan, XT-002, Vezax and Yogg-Saron.
+-- Rows hold Heroism after the Bracket_80_1_2 blanket conversion, or Triumph on
+-- a stock 3.3.5 database. Conquest updates also match Valor so realms that ran
+-- an earlier version of this file are corrected when it is re-applied.
+
+SET @VALOR = 40753,
+@CONQUEST = 45624;
+
+-- 10-man bosses: Valor
+-- Brundir, Ignis, Razorscale, Vezax, Yogg-Saron, XT-002, Auriaya
+UPDATE `creature_loot_template`
+SET `Item` = @VALOR, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` IN (32857, 33118, 33186, 33271, 33288, 33293, 33515)
+AND `Item` IN (40752, 47241);
+
+-- 10-man Iron Council with Steelbreaker or Molgeim last: Conquest
+UPDATE `creature_loot_template`
+SET `Item` = @CONQUEST, `Comment` = REPLACE(REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Conquest'), 'Emblem of Valor', 'Emblem of Conquest')
+WHERE `Entry` IN (32867, 32927)
+AND `Item` IN (40752, 47241, 40753);
+
+-- 25-man bosses: Conquest
+UPDATE `creature_loot_template`
+SET `Item` = @CONQUEST, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Conquest')
+WHERE `Entry` IN (33694, 33693, 33692, 33190, 33724, 33449, 33955, 33885, 34175)
+AND `Item` IN (40752, 47241);
+
+-- 10-man normal-mode caches: Valor
+-- Kologarn 27061, Hodir 27068, Thorim 27073, Mimiron 27085, Freya's Gift without elders 26961
+UPDATE `gameobject_loot_template`
+SET `Item` = @VALOR, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` IN (27061, 27068, 27073, 27085, 26961)
+AND `Item` IN (40752, 47241);
+
+-- 10-man hard-mode caches: Conquest
+-- Thorim 27074, Mimiron 27086, Algalon 27030
+UPDATE `gameobject_loot_template`
+SET `Item` = @CONQUEST, `Comment` = REPLACE(REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Conquest'), 'Emblem of Valor', 'Emblem of Conquest')
+WHERE `Entry` IN (27074, 27086, 27030)
+AND `Item` IN (40752, 47241, 40753);
+
+-- Hodir's 10-man Rare Cache of Winter 27069 has no emblem row at all
+DELETE FROM `gameobject_loot_template` WHERE `Entry` = 27069 AND `Item` IN (40752, 40753, 45624, 47241);
+INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(27069, @CONQUEST, 0, 100, 0, 1, 0, 1, 1, 'Rare Cache of Winter - Emblem of Conquest');
+
+-- 25-man caches: Conquest
+-- Kologarn 26929, Hodir 26946, Thorim 26955/26956, Mimiron 26963/26967,
+-- Algalon 26974, Freya's Gift 26960/26962/27079/27081
+UPDATE `gameobject_loot_template`
+SET `Item` = @CONQUEST, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Conquest')
+WHERE `Entry` IN (26929, 26946, 26955, 26956, 26963, 26967, 26974, 26960, 26962, 27079, 27081)
+AND `Item` IN (40752, 47241);
+
+-- Flame Leviathan, Yogg-Saron (keeper hard modes) and Freya's Gift (elder hard
+-- modes) take their emblems from reference 34349, which is shared with
+-- Sartharion 25 and follows the Obsidian Sanctum brackets. Give Ulduar its own
+-- references so the two raids can be tuned independently.
+SET @REF_VALOR = 80200,
+@REF_CONQUEST = 80201;
+
+DELETE FROM `reference_loot_template` WHERE `Entry` IN (@REF_VALOR, @REF_CONQUEST);
+INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(@REF_VALOR, @VALOR, 0, 100, 0, 1, 0, 1, 1, 'Ulduar - Emblem of Valor'),
+(@REF_CONQUEST, @CONQUEST, 0, 100, 0, 1, 0, 1, 1, 'Ulduar - Emblem of Conquest');
+
+-- Flame Leviathan 33113 / 34003, Yogg-Saron 33288 / 33955
+UPDATE `creature_loot_template` SET `Reference` = @REF_VALOR WHERE `Entry` IN (33113, 33288) AND `Reference` = 34349;
+UPDATE `creature_loot_template` SET `Reference` = @REF_CONQUEST WHERE `Entry` IN (34003, 33955) AND `Reference` = 34349;
+
+-- Freya's Gift with elders alive. 10-man: one Conquest plus one Valor per
+-- elder on top of the normal Valor (1 elder 26959, 2 elders 27080, 3 elders 27078).
+-- Inserted rather than converted, because the stock reference row this used to ride on is
+-- removed upstream by https://github.com/azerothcore/azerothcore-wotlk/pull/27718. On a
+-- reference row `Item` is only an index within the entry; these are the ones the delete frees.
+DELETE FROM `gameobject_loot_template` WHERE `Entry` IN (26959, 27078, 27080) AND `Reference` IN (34349, @REF_VALOR, @REF_CONQUEST);
+INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(26959, 3, @REF_CONQUEST, 100, 0, 1, 0, 1, 1, 'Freya\'s Gift - (ReferenceTable)'),
+(27078, 4, @REF_CONQUEST, 100, 0, 1, 0, 1, 1, 'Freya\'s Gift - (ReferenceTable)'),
+(27080, 4, @REF_CONQUEST, 100, 0, 1, 0, 1, 1, 'Freya\'s Gift - (ReferenceTable)');
+
+UPDATE `gameobject_loot_template`
+SET `Item` = @VALOR, `MinCount` = 2, `MaxCount` = 2, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` = 26959 AND `Item` IN (40752, 47241, 40753);
+
+UPDATE `gameobject_loot_template`
+SET `Item` = @VALOR, `MinCount` = 3, `MaxCount` = 3, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` = 27080 AND `Item` IN (40752, 47241, 40753);
+
+UPDATE `gameobject_loot_template`
+SET `Item` = @VALOR, `MinCount` = 4, `MaxCount` = 4, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` = 27078 AND `Item` IN (40752, 47241, 40753);
+
+-- 25-man Freya's Gift pays one emblem plus one per elder left alive, so the encounter pays four
+-- either way once the elders killed early are counted. The stock rows rolled a second emblem
+-- reference on top of their own: with one elder alive that paid six from the chest and eight for
+-- the encounter, while full hard mode paid three.
+-- https://github.com/azerothcore/azerothcore-wotlk/pull/27718
+DELETE FROM `gameobject_loot_template` WHERE `Entry` IN (26960, 27081) AND `Reference` IN (34349, @REF_VALOR, @REF_CONQUEST);
+
+UPDATE `gameobject_loot_template` SET `MinCount` = 1, `MaxCount` = 1 WHERE `Entry` = 26962 AND `Item` = @CONQUEST;
+UPDATE `gameobject_loot_template` SET `MinCount` = 2, `MaxCount` = 2 WHERE `Entry` = 26960 AND `Item` = @CONQUEST;
+UPDATE `gameobject_loot_template` SET `MinCount` = 3, `MaxCount` = 3 WHERE `Entry` = 27081 AND `Item` = @CONQUEST;
+UPDATE `gameobject_loot_template` SET `MinCount` = 4, `MaxCount` = 4 WHERE `Entry` = 27079 AND `Item` = @CONQUEST;
+
+-- Freya's Elders killed before the encounter pay the emblem the chest then no
+-- longer hands out. The 25-man Ironbranch and Stonebark had no loot id of their
+-- own, and the 25-man Brightleaf pointed at the 10-man table, which cannot hold
+-- Valor and Conquest at once. Core only gives them one shared Emblem of
+-- Triumph, so the rows are rebuilt rather than converted.
+UPDATE `creature_template` SET `lootid` = `entry` WHERE `entry` IN (32913, 32914, 33391, 33392, 33393);
+
+DELETE FROM `creature_loot_template` WHERE `Entry` IN (32913, 32914, 32915, 33391, 33392, 33393) AND `Item` IN (40752, 40753, 45624, 47241, 45912);
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
+(32913, @VALOR, 0, 100, 0, 1, 0, 1, 1, 'Elder Ironbranch - Emblem of Valor'),
+(32914, @VALOR, 0, 100, 0, 1, 0, 1, 1, 'Elder Stonebark - Emblem of Valor'),
+(32915, 45912, 0, 0.1, 0, 1, 0, 1, 1, 'Elder Brightleaf - Book of Glyph Mastery'),
+(32915, @VALOR, 0, 100, 0, 1, 0, 1, 1, 'Elder Brightleaf - Emblem of Valor'),
+(33391, 45912, 0, 0.1, 0, 1, 0, 1, 1, 'Elder Brightleaf (1) - Book of Glyph Mastery'),
+(33391, @CONQUEST, 0, 100, 0, 1, 0, 1, 1, 'Elder Brightleaf (1) - Emblem of Conquest'),
+(33392, @CONQUEST, 0, 100, 0, 1, 0, 1, 1, 'Elder Ironbranch (1) - Emblem of Conquest'),
+(33393, @CONQUEST, 0, 100, 0, 1, 0, 1, 1, 'Elder Stonebark (1) - Emblem of Conquest');
+
+-- Emalon the Storm Watcher: 10-man 33993 Valor, 25-man 33994 Conquest
+UPDATE `creature_loot_template`
+SET `Item` = @VALOR, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Valor')
+WHERE `Entry` = 33993
+AND `Item` IN (40752, 47241);
+
+UPDATE `creature_loot_template`
+SET `Item` = @CONQUEST, `Comment` = REPLACE(`Comment`, 'Emblem of Triumph', 'Emblem of Conquest')
+WHERE `Entry` = 33994
+AND `Item` IN (40752, 47241);
+
+-- Sack of Ulduar Spoils 45875 (10-man) and Large Sack of Ulduar Spoils 45878
+-- (25-man) are the rewards of the Algalon weekly quests 13614 and 13818.
+UPDATE `item_loot_template`
+SET `Item` = @VALOR, `Comment` = 'Sack of Ulduar Spoils - Emblem of Valor'
+WHERE `Entry` = 45875
+AND `Item` IN (40752, 47241);
+
+UPDATE `item_loot_template`
+SET `Item` = @CONQUEST, `Comment` = 'Large Sack of Ulduar Spoils - Emblem of Conquest'
+WHERE `Entry` = 45878
+AND `Item` IN (40752, 47241, 40753);
