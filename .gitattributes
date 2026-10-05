@@ -28,3 +28,18 @@
 
 # Ignore sql/* files
 data/sql/*    linguist-documentation
+
+# Living Azeroth: binary files are stored byte-for-byte (the rule above would treat them as text)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.otf    binary
+*.exe    binary
+*.xlsx   binary
+*.zip    binary
+*.pdf    binary

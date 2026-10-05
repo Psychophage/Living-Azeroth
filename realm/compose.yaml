@@ -1,0 +1,69 @@
+# One Living Azeroth realm. Run it through ./living-azeroth, which supplies these variables
+# from the realm folder; each realm gets its own project name, database volume and ports.
+name: ${LA_PROJECT:?}
+
+x-realm-container: &realm-container
+  image: ${LA_IMAGE:?}
+  user: "${LA_UID:?}:${LA_GID:?}"
+  working_dir: /realm
+  environment:
+    HOME: /realm/.home
+    PYTHONDONTWRITEBYTECODE: "1"
+  networks: [realm]
+
+services:
+  database:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/database-password
+    volumes:
+      - database:/var/lib/mysql
+      - ${LA_REALM:?}/secrets/database-password:/run/secrets/database-password:ro
+    networks: [realm]
+    healthcheck:
+      test: [CMD-SHELL, 'MYSQL_PWD="$$(cat /run/secrets/database-password)" mysql -uroot -e "SELECT 1" >/dev/null']
+      interval: 5s
+      timeout: 5s
+      retries: 60
+
+  # Builds and one-off database work. Started on demand with `compose run`.
+  tool:
+    <<: *realm-container
+    profiles: [tool]
+    environment:
+      HOME: /realm/.home
+      PYTHONDONTWRITEBYTECODE: "1"
+      LA_BUILD_JOBS: ${LA_BUILD_JOBS:-4}
+      LA_SANITIZE: ${LA_SANITIZE:-}
+    volumes:
+      - ${LA_SOURCE:?}:/source:ro
+      - ${LA_REALM:?}:/realm
+      - ${LA_CACHE:?}/ccache:/cache/ccache
+
+  auth:
+    <<: *realm-container
+    command: [/realm/install/bin/authserver, -c, /realm/config/authserver.conf]
+    volumes:
+      - ${LA_SOURCE:?}:/source:ro
+      - ${LA_REALM:?}:/realm
+    ports: ["${LA_BIND:?}:${LA_AUTH_PORT:?}:3724"]
+    depends_on:
+      database: {condition: service_healthy}
+
+  world:
+    <<: *realm-container
+    command: [/realm/install/bin/worldserver, -c, /realm/config/worldserver.conf]
+    volumes:
+      - ${LA_SOURCE:?}:/source:ro
+      - ${LA_REALM:?}:/realm
+      - ${LA_CLIENT_DATA:?}:/client-data:ro
+    ports: ["${LA_BIND:?}:${LA_WORLD_PORT:?}:8085"]
+    depends_on:
+      database: {condition: service_healthy}
+
+volumes:
+  database:
+    name: ${LA_DATABASE_VOLUME:?}
+
+networks:
+  realm:
