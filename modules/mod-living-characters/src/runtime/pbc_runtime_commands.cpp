@@ -73,6 +73,20 @@ bool Runtime::Command(Player* player, std::string const& command)
                 tell("Character scheduling clock advanced.");
             }
         }
+        else if (action == "pacing")
+        {
+            // Same bounds as PBC.CharacterSystem.SpacingMs/ReadingWordsPerMinute; applies to new scenes.
+            uint32_t spacing = 0, wordsPerMinute = 0;
+            if (!(input >> spacing >> wordsPerMinute) || spacing < 250 || spacing > 10000 ||
+                (wordsPerMinute && (wordsPerMinute < 120 || wordsPerMinute > 600)))
+                tell("Use .chars test pacing <250-10000 ms> <0 or 120-600 words per minute>.");
+            else
+            {
+                _spacing = spacing;
+                _readingWordsPerMinute = wordsPerMinute;
+                tell("Recorded playback pacing updated for new scenes.");
+            }
+        }
         else if (action == "formation")
         {
             unsigned rounds = 0;
@@ -204,7 +218,7 @@ bool Runtime::Command(Player* player, std::string const& command)
             }
         }
         else
-            tell("Recorded test controls: advance <milliseconds>, ambient.");
+            tell("Recorded test controls: advance <milliseconds>, ambient, pacing <ms> <words per minute>.");
         return true;
     }
     if (verb == "usage")
