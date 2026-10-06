@@ -1,0 +1,10 @@
+# Added by ./living-azeroth when realm.conf sets `shared_budget`: the world server also joins
+# the budget owner's network, so it can reach that realm's spending ledger.
+services:
+  world:
+    networks: [realm, shared-budget]
+
+networks:
+  shared-budget:
+    external: true
+    name: ${LA_SHARED_BUDGET_NETWORK:?}

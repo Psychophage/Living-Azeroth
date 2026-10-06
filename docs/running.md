@@ -35,6 +35,11 @@ afterwards. When the budget is used up, characters stop generating new dialogue;
 the rest of the game is unaffected. The ceiling is set once at setup
 (`budget_dollars` in `realm.conf`) and is never raised or reset by the tools.
 
+Two realms can share one budget: set `shared_budget` in the second realm's
+`realm.conf` to the first realm's folder. The second realm then spends from the
+first realm's ledger through a database login limited to its budget tables, and
+`budget` on either realm shows the same total.
+
 ## Troubleshooting
 
 - **Nobody can log in:** wait for `ready...` in the log; check `status`. The realm

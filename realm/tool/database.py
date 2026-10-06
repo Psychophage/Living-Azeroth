@@ -158,6 +158,17 @@ def create_account(name, gm_level):
         connection.commit()
 
 
+def grant_ledger(user):
+    """Let a realm that shares this realm's budget use only the two ledger tables it needs."""
+    secret = os.environ.pop("LA_LEDGER_PASSWORD")
+    with connect() as connection, connection.cursor() as cursor:
+        cursor.execute("CREATE USER IF NOT EXISTS %s@'%%' IDENTIFIED BY %s", (user, secret))
+        cursor.execute("ALTER USER %s@'%%' IDENTIFIED BY %s", (user, secret))
+        for table in ("pbc_api_budget", "pbc_api_request"):
+            cursor.execute(f"GRANT SELECT, INSERT, UPDATE ON `{LEDGER_SCHEMA}`.`{table}` TO %s@'%%'", (user,))
+        connection.commit()
+
+
 def show_budget():
     identifier = read_state(REALM).get("budget_id")
     with connect(LEDGER_SCHEMA) as connection, connection.cursor() as cursor:
@@ -182,6 +193,7 @@ def main():
     account.add_argument("name")
     account.add_argument("--gm", type=int)
     commands.add_parser("budget")
+    commands.add_parser("grant-ledger").add_argument("user")
     args = parser.parse_args()
     if args.command == "init":
         init(args.budget_dollars)
@@ -189,6 +201,8 @@ def main():
         sync_realm(args.name, args.address, args.port)
     elif args.command == "account":
         create_account(args.name, args.gm)
+    elif args.command == "grant-ledger":
+        grant_ledger(args.user)
     else:
         show_budget()
 

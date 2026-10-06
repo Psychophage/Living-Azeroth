@@ -13,9 +13,10 @@ import sys
 import urllib.request
 import zipfile
 
-from config import SOURCE, read_settings, read_state, render, write_state
+from config import SOURCE, ledger_user, read_settings, read_state, render, shared_budget, write_state
 
 COMPOSE_FILE = SOURCE / "realm/compose.yaml"
+SHARED_BUDGET_FILE = SOURCE / "realm/compose.shared-budget.yaml"
 USER_CONFIG = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")) / "living-azeroth"
 CACHE = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache")) / "living-azeroth"
 DEFAULT_POINTER = USER_CONFIG / "default-realm"
@@ -61,13 +62,16 @@ def environment(realm):
         "LA_AUTH_PORT": section.get("auth_port", "3724"),
         "LA_WORLD_PORT": section.get("world_port", "8085"),
         "LA_BUILD_JOBS": section.get("build_jobs", "4"),
+        **({"LA_SHARED_BUDGET_NETWORK": read_state(owner)["project"] + "_realm"}
+           if (owner := budget_owner(realm)) else {}),
     }
 
 
 def compose(realm, *args, check=True, extra_env=None):
     env = environment(realm)
     env.update(extra_env or {})
-    command = ["docker", "compose", "-f", str(COMPOSE_FILE), *args]
+    files = [COMPOSE_FILE] + ([SHARED_BUDGET_FILE] if budget_owner(realm) else [])
+    command = ["docker", "compose", *(item for path in files for item in ("-f", str(path))), *args]
     return subprocess.run(command, env=env, check=check)
 
 
@@ -112,7 +116,36 @@ def prepare_folders(realm):
     (CACHE / "ccache").mkdir(parents=True, exist_ok=True)
 
 
+def budget_owner(realm):
+    """The finished realm whose budget this realm spends from, or None for its own budget."""
+    owner = shared_budget(realm)
+    if owner is None:
+        return None
+    if owner == realm:
+        raise SystemExit("shared_budget in realm.conf names this realm itself.")
+    if not read_state(owner).get("ready") or not read_state(owner).get("budget_id"):
+        raise SystemExit(f"shared_budget: {owner} is not a finished realm with a budget.")
+    return owner
+
+
+def prepare_shared_budget(realm):
+    """Start the owner's database and give this realm its limited ledger login there."""
+    owner = budget_owner(realm)
+    if owner is None:
+        return
+    password = realm / "secrets/ledger-password"
+    if not password.exists():
+        write_secret(password, secrets.token_hex(24))
+    compose(owner, "up", "-d", "--wait", "database")
+    database_tool(owner, "grant-ledger", ledger_user(read_state(realm)),
+                  extra_env={"LA_LEDGER_PASSWORD": password.read_text().strip()}, env_names=("LA_LEDGER_PASSWORD",))
+    print(f"Spending from the budget of {owner.name}.")
+
+
 def render_config(realm):
+    owner = budget_owner(realm)
+    if owner and not (realm / "secrets/ledger-password").exists():
+        write_secret(realm / "secrets/ledger-password", secrets.token_hex(24))
     for warning in render(realm):
         print("Note:", warning)
 
@@ -131,6 +164,7 @@ def sync_realm(realm):
 
 def start(realm):
     ensure_image()
+    prepare_shared_budget(realm)
     render_config(realm)
     compose(realm, "up", "-d", "--wait", "database")
     sync_realm(realm)
@@ -300,8 +334,11 @@ def main():
         compose(realm, "up", "-d", "--wait", "database")
         account(realm, args.name, args.gm)
     elif args.command == "budget":
-        compose(realm, "up", "-d", "--wait", "database")
-        database_tool(realm, "budget")
+        owner = budget_owner(realm) or realm
+        if owner != realm:
+            print(f"Shared with {owner}:")
+        compose(owner, "up", "-d", "--wait", "database")
+        database_tool(owner, "budget")
     elif args.command == "backup":
         compose(realm, "up", "-d", "--wait", "database")
         tool(realm, "bash", "-c", 'stamp=$(date -u +%Y%m%dT%H%M%SZ); MYSQL_PWD="$(cat /realm/secrets/database-password)" '

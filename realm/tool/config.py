@@ -42,33 +42,60 @@ def write_state(realm, state):
     path.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
 
 
-def database_info(password, schema):
-    return f'"database;3306;root;{password};{schema}"'
+def database_host(state):
+    """This realm's database container. Its exact name, because a world server that shares
+    another realm's budget is on two networks that both have a service called `database`."""
+    return state["project"] + "-database-1"
+
+
+def database_info(host, password, schema):
+    return f'"{host};3306;root;{password};{schema}"'
+
+
+def shared_budget(realm):
+    """The realm whose spending budget this realm uses (realm.conf `shared_budget`), or None."""
+    settings = read_settings(realm)
+    value = settings["realm"].get("shared_budget", "").strip() if settings.has_section("realm") else ""
+    return (realm / Path(value).expanduser()).resolve() if value else None
+
+
+def ledger_user(state):
+    """The database user a sharing realm uses in the budget owner's database."""
+    return "ledger-" + state["project"].removeprefix("living-azeroth-")
 
 
 def managed_keys(realm, state):
     """Keys owned by the tools: connections, paths and secrets. realm.conf cannot change them."""
     password = (realm / "secrets/database-password").read_text().strip()
-    logins = {name + "DatabaseInfo": database_info(password, schema) for name, schema in SCHEMAS.items()
+    host = database_host(state)
+    logins = {name + "DatabaseInfo": database_info(host, password, schema) for name, schema in SCHEMAS.items()
               if name != "Playerbots"}
     common = {"LogsDir": '"/realm/logs"', "SourceDirectory": '"/source"', "Updates.AutoSetup": "1"}
     key = realm / "secrets/model.key"
     characters = {
         "PBC.CharacterSystem.KeyFile": '"/realm/secrets/model.key"' if key.exists() else '""',
         "PBC.CharacterSystem.BudgetId": json.dumps(state.get("budget_id", "")),
-        "PBC.CharacterSystem.BudgetDatabaseInfo": database_info(password, LEDGER_SCHEMA),
+        "PBC.CharacterSystem.BudgetDatabaseInfo": database_info(host, password, LEDGER_SCHEMA),
         "PBC.CharacterSystem.PromptsPath": '"/realm/prompts/enUS"',
         "PBC.CharacterSystem.RealmPhaseFile": '"/realm/prompts/realm-era.txt"',
         "PBC.CharacterSystem.NpcIdentities": '"/realm/config/npcs.json"',
         "PBC.CharacterSystem.RecordedFixture": '""',
     }
+    owner = shared_budget(realm)
+    if owner:
+        # Spend from the owner's budget, through a user limited to its two ledger tables.
+        secret = (realm / "secrets/ledger-password").read_text().strip()
+        owner_host = database_host(read_state(owner))
+        characters["PBC.CharacterSystem.BudgetId"] = json.dumps(read_state(owner).get("budget_id", ""))
+        characters["PBC.CharacterSystem.BudgetDatabaseInfo"] = \
+            f'"{owner_host};3306;{ledger_user(state)};{secret};{LEDGER_SCHEMA}"'
     return {
         "worldserver": {**logins, **common, "DataDir": '"/client-data"', "WorldServerPort": "8085",
                         "BindIP": '"0.0.0.0"', "RealmID": "1", "Console.Enable": "0",
                         "Updates.EnableDatabases": "7", "Updates.AllowedModules": '"all"'},
         "authserver": {"LoginDatabaseInfo": logins["LoginDatabaseInfo"], **common,
                        "RealmServerPort": "3724", "BindIP": '"0.0.0.0"'},
-        "playerbots": {"PlayerbotsDatabaseInfo": database_info(password, SCHEMAS["Playerbots"]),
+        "playerbots": {"PlayerbotsDatabaseInfo": database_info(host, password, SCHEMAS["Playerbots"]),
                        "Playerbots.Updates.EnableDatabases": "1"},
         "characters": characters,
         "dbimport": {**logins, **common, "Updates.EnableDatabases": "7", "Updates.AllowedModules": '"all"'},
