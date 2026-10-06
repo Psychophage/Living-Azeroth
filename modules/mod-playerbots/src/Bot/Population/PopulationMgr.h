@@ -14,6 +14,7 @@
 #include <string>
 #include <tuple>
 #include <unordered_set>
+#include <vector>
 
 #include "AsyncCallbackProcessor.h"
 #include "PopulationPolicy.h"
@@ -106,6 +107,11 @@ private:
     };
     // Player -> (map << 32 | zone) -> presence, ramping in and lingering out.
     std::unordered_map<uint32_t, std::unordered_map<uint64_t, Presence>> _presence;
+    struct Surroundings
+    {
+        uint32_t map = 0, zone = 0, level = 0, bots = 0;
+    };
+    std::vector<Surroundings> _surroundings;  // per player, from the latest update; for Status()
     uint64_t _lastPresenceUpdate = 0;
     std::unordered_map<uint32_t, ZoneLevels> _zoneLevels;
     std::unordered_map<uint32_t, std::vector<WorldLocation>> _serviceSpots;

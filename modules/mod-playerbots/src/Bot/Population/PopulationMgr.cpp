@@ -763,6 +763,17 @@ void PlayerbotPopulationMgr::Update()
         c.race = record.race;
         candidates.push_back(c);
     }
+    // What each player can actually meet: online bots in their zone within five levels.
+    _surroundings.clear();
+    for (auto const& human : humans)
+    {
+        uint32_t nearby = 0;
+        for (auto const& [id, record] : _bots)
+            nearby += record.character.online && record.character.map == human.map &&
+                      record.character.zone == human.zone && record.character.level + 5 >= human.level &&
+                      record.character.level <= human.level + 5;
+        _surroundings.push_back({human.map, human.zone, human.level, nearby});
+    }
     auto started = std::chrono::steady_clock::now();
     auto selection = Policy::Select(candidates, humans, places, _familiarity, _settings, now);
     _selectionMicros =
@@ -879,5 +890,9 @@ std::string PlayerbotPopulationMgr::Status() const
         << " online_target=" << _settings.onlineTarget << " pending_creations=" << _pendingCreations
         << " relationships=" << _familiarity.size() << " offline_seconds=" << _world.offlineRemaining
         << " selection_us=" << _selectionMicros;
+    // Per player: map/zone/level:online bots within five levels in that zone.
+    out << " nearby=";
+    for (auto const& place : _surroundings)
+        out << place.map << '/' << place.zone << '/' << place.level << ':' << place.bots << ' ';
     return out.str();
 }
