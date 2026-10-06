@@ -677,6 +677,9 @@ void Runtime::Tick(Scene& scene)
         {
             scene.turn = std::move(turn);
             scene.delivered.clear();
+            if (scene.turn->dialogue.repeatedSegments)
+                PBC_Log(PBC_LogLevel::PBC_WARNING, "Character scene {}: dropped {} repeated reply segments from {}.",
+                        scene.id, scene.turn->dialogue.repeatedSegments, scene.turn->actor.id);
             if (!scene.cancelled->load())
             {
                 if (!scene.conversation.Choose(scene.conversation.Version(), scene.turn->actor.id,

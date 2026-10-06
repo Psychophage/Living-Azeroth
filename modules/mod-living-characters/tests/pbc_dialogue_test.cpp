@@ -39,6 +39,49 @@ TEST(PBCDialogue, PreservesSpeechEmoteSpeechAndSilentResponse)
     EXPECT_TRUE(reply->segments.empty());
 }
 
+TEST(PBCDialogue, StopsAtTheFirstRepeatedSegment)
+{
+    PBC::DialoguePermissions permissions;
+    permissions.subjects.insert("player:1");
+    permissions.actionOptions = {"approach:human"};
+    auto reply = PBC::ParseDialogue(R"({"segments":[
+        {"kind":"speech","text":"Greetings, young one.","animation":""},
+        {"kind":"speech","text":"Greetings, young one.","animation":""},
+        {"kind":"speech","text":"Greetings, young one.","animation":""}],"notes":[
+        {"kind":"commitment","text":"I greeted them.","subject":"player:1","scope":"personal","sources":["reply:0"]},
+        {"kind":"commitment","text":"I greeted them again.","subject":"player:1","scope":"personal",
+         "sources":["reply:2"]}],"actions":[{"option":"approach:human","after_segment":-2}]})",
+                                    permissions);
+    ASSERT_TRUE(reply);
+    ASSERT_EQ(reply->segments.size(), 1u);
+    EXPECT_EQ(reply->repeatedSegments, 2u);
+    ASSERT_EQ(reply->notes.size(), 1u);
+    EXPECT_EQ(reply->notes[0].sources[0], "reply:0");
+    ASSERT_EQ(reply->actions.size(), 1u);
+    EXPECT_EQ(reply->actions[0].afterSegment, 0);
+
+    // A loop can come back after a different line; nothing after the repeat is spoken.
+    reply = PBC::ParseDialogue(R"({"segments":[
+        {"kind":"speech","text":"Well met.","animation":""},
+        {"kind":"speech","text":"The glade is quiet today.","animation":""},
+        {"kind":"speech","text":"Well met.","animation":""},
+        {"kind":"speech","text":"Safe travels.","animation":""}],"notes":[]})",
+                               permissions);
+    ASSERT_TRUE(reply);
+    ASSERT_EQ(reply->segments.size(), 2u);
+    EXPECT_EQ(reply->segments[1].text, "The glade is quiet today.");
+    EXPECT_EQ(reply->repeatedSegments, 2u);
+
+    // The same words as speech and as an emote are different segments.
+    permissions.animations.insert("wave");
+    reply = PBC::ParseDialogue(R"({"segments":[
+        {"kind":"speech","text":"waves.","animation":""},
+        {"kind":"emote","text":"waves.","animation":"wave"}],"notes":[]})",
+                               permissions);
+    ASSERT_TRUE(reply);
+    EXPECT_EQ(reply->segments.size(), 2u);
+}
+
 TEST(PBCDialogue, RejectsRawTruncatedOrUnexpectedOutput)
 {
     PBC::DialoguePermissions permissions;

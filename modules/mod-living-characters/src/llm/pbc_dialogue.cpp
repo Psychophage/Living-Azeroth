@@ -62,8 +62,16 @@ std::optional<Dialogue> ParseDialogue(std::string const& text, DialoguePermissio
         if ((kind != "speech" && kind != "emote") || (kind == "emote" && !Text(segment["text"], 253)) ||
             (!animation.empty() && (kind != "emote" || !permissions.animations.contains(animation))))
             return std::nullopt;
-        result.segments.push_back({kind == "speech" ? Segment::Kind::Speech : Segment::Kind::Emote,
-                                   segment["text"].get<std::string>(), animation});
+        // Some models loop and emit the same line again. Everything from the first
+        // repeat on is part of that loop, so later segments are dropped too.
+        Segment parsed{kind == "speech" ? Segment::Kind::Speech : Segment::Kind::Emote,
+                       segment["text"].get<std::string>(), animation};
+        if (!result.repeatedSegments &&
+            std::none_of(result.segments.begin(), result.segments.end(), [&](auto const& earlier)
+                         { return earlier.kind == parsed.kind && earlier.text == parsed.text; }))
+            result.segments.push_back(std::move(parsed));
+        else
+            ++result.repeatedSegments;
     }
 
     static std::set<std::string> const kinds = {"memory", "relationship", "commitment", "report", "fact"};

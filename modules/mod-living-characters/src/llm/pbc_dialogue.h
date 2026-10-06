@@ -38,6 +38,7 @@ struct PersonalActionProposal
 struct Dialogue
 {
     std::vector<Segment> segments;
+    std::size_t repeatedSegments = 0; // Dropped from the first repeated segment on.
     std::vector<NoteProposal> notes;
     std::size_t rejectedNotes = 0;
     std::vector<PersonalActionProposal> actions;
