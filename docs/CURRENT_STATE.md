@@ -36,6 +36,6 @@ Updated 2026-10-06.
 
 ## Next
 
-1. The volunteer-after-duel problem, then the interpretation gaps above.
+1. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
 2. Auction house seller setup and phase-appropriate stock as part of the realm tools.
 3. A client addon for controlling bots (planned; mockups exist).
