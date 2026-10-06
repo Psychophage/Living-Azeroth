@@ -89,8 +89,9 @@ HttpTransport RecordedTransport(std::string const& fixtureJson)
                 if (target.value("selected_at_input", false))
                     variables["${selected_target}"] = target.value("id", "");
         }
-        for (auto const& rule : fixture)
+        for (std::size_t index = 0; index < fixture.size(); ++index)
         {
+            auto const& rule = fixture[index];
             if (rule.at("task") != task || context.dump().find(rule.value("contains", "")) == std::string::npos)
                 continue;
             if (rule.contains("question") &&
@@ -126,7 +127,9 @@ HttpTransport RecordedTransport(std::string const& fixtureJson)
                 return {rule.value("http_status", 200), rule["raw_response"].get<std::string>()};
             auto content = rule.at("content");
             Substitute(content, variables);
-            pbc_json response = {{"id", "recorded-no-network"},
+            // The rule number becomes the journal's provider request id, so a test run can
+            // report which recorded replies it actually used.
+            pbc_json response = {{"id", "recorded-rule-" + std::to_string(index)},
                                  {"provider", "recorded-test"},
                                  {"usage", {{"cost", 0}, {"prompt_tokens", 0}, {"completion_tokens", 0}}}};
             if (selector)
