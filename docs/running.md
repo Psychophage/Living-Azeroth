@@ -44,8 +44,9 @@ first realm's ledger through a database login limited to its budget tables, and
 
 - **Nobody can log in:** wait for `ready...` in the log; check `status`. The realm
   list address must be one the client can reach (`address` in `realm.conf`).
-- **The server stopped unexpectedly:** copy `logs/` from the realm folder before
-  restarting, which starts new logs. Linux keeps crash dumps (`coredumpctl list`).
+- **The server stopped unexpectedly:** each start moves the previous session's logs
+  to `logs/previous/<time>/` (the last ten are kept). Linux keeps crash dumps
+  (`coredumpctl list`).
 - **A build runs out of memory:** lower `build_jobs` in `realm.conf`.
 - **Population numbers look wrong:** the server log's `Population place` lines (debug
   level) are the truth; the database's `online` and `zone` columns lag behind.

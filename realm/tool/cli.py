@@ -1,6 +1,7 @@
 """living-azeroth: set up, build and run a Living Azeroth realm."""
 
 import argparse
+import datetime
 import getpass
 import hashlib
 import os
@@ -162,12 +163,28 @@ def sync_realm(realm):
                   section.get("address", "127.0.0.1"), section.get("world_port", "8085"))
 
 
+def keep_previous_logs(realm, sessions=10):
+    """The servers start new log files. Move the last session's logs to logs/previous/ first."""
+    logs = realm / "logs"
+    current = [path for path in logs.glob("*.log") if path.name != "DBImport.log"]
+    if not any(path.stat().st_size for path in current):
+        return
+    stamp = datetime.datetime.fromtimestamp(max(path.stat().st_mtime for path in current)).strftime("%Y%m%d-%H%M%S")
+    target = logs / "previous" / stamp
+    target.mkdir(parents=True, exist_ok=True)
+    for path in current:
+        path.rename(target / path.name)
+    for old in sorted((logs / "previous").iterdir())[:-sessions]:
+        shutil.rmtree(old)
+
+
 def start(realm):
     ensure_image()
     prepare_shared_budget(realm)
     render_config(realm)
     compose(realm, "up", "-d", "--wait", "database")
     sync_realm(realm)
+    keep_previous_logs(realm)
     compose(realm, "up", "-d", "auth", "world")
     print(f"Started. The server is ready for logins when `ready...` appears in {realm / 'logs/Server.log'}"
           " (`living-azeroth logs`).")
