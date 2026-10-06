@@ -8,7 +8,7 @@ repository. The repository holds only source, defaults and documentation.
 | Path | What it is |
 | --- | --- |
 | `realm.conf` | your settings (edit this) |
-| `secrets/` | `database-password` and, optionally, `model.key` (your API key); readable only by you |
+| `secrets/` | `database-password`, optionally `model.key` (your API key), and `ledger-password` when the realm shares another realm's budget; readable only by you |
 | `realm.state` | facts the tools keep: Docker project name, database volume, budget id |
 | `config/` | server config files generated from `realm.conf` (do not edit; regenerated on start) |
 | `prompts/` | character prompts staged for this realm (regenerated on start) |
@@ -28,7 +28,8 @@ which documents the recommended values. After editing it, run
 `living-azeroth restart`.
 
 - `[realm]`: the realm's name, the address and ports players connect to, the
-  spending ceiling for a new budget, and build parallelism.
+  spending ceiling for a new budget (or `shared_budget` to spend from another
+  realm's budget; see [Running](running.md#the-spending-budget)), and build parallelism.
 - `[worldserver]`, `[authserver]`, `[playerbots]`, `[characters]`, `[auctionhouse]`,
   `[progression]`: any key from that server config file. Each file's `.conf.dist`
   in the source lists every key with a description.
