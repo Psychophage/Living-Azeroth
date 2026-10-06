@@ -26,6 +26,9 @@ Updated 2026-10-06.
   request did not engage.
 - **A volunteer invitation is not offered after a declined duel** earlier in the same
   server session (reproducible in tests; cause not yet found).
+- **A companion sometimes never appears to its player** after being added (about one
+  login in 30-40 in the live tests), even after the player leaves range and returns;
+  Playerbots reports the bot as logged in. Cause not yet found.
 - **Misleading log error**: "World observation could not be stored" when the second step
   of a two-step order never started; nothing is lost.
 - **Auction sellers are not set up automatically.** Switching the auction house on
