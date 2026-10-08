@@ -36,6 +36,9 @@ Updated 2026-10-06.
 
 ## Next
 
-1. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
-2. Auction house seller setup and phase-appropriate stock as part of the realm tools.
-3. A client addon for controlling bots (planned; mockups exist).
+1. A client addon for controlling bots (planned; mockups exist and need refining).
+2. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
+3. Auction house seller setup and phase-appropriate stock as part of the realm tools.
+4. Bots that ride boats and zeppelins: wait at the dock, board when it is in, step off at
+   the other end; population uses rides for some departures and arrivals. Start by proving
+   one bot survives the crossing (the continent change mid-trip) on the test realm.
