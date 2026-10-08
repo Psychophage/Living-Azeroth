@@ -1,6 +1,6 @@
 # Current state
 
-Updated 2026-10-06.
+Updated 2026-10-08.
 
 ## Working
 
@@ -14,6 +14,10 @@ Updated 2026-10-06.
   Wrath content is open. The auction house bot is installed but its seller is off.
 - Realm tools: realms can share one spending budget (`shared_budget`); each start keeps
   the previous session's logs.
+- Bot control, server side (no addon yet): an addon bridge (`mod-bot-control`, off by
+  default) for orders, per-player hearing (`.chars hear`), guild identity (`.chars guild`),
+  guild rumours (`.chars rumours`), "why did they say that" (`.chars why`) and the roster;
+  bots can join in on their leader's auto-attack ("join attack").
 
 ## Open problems
 
@@ -36,9 +40,8 @@ Updated 2026-10-06.
 
 ## Next
 
-1. Bot control, server side first: an addon message bridge, orders and bot state, joining in
-   on the leader's attack, per-player dialogue settings, "why did they say that", guild
-   identity and guild rumour management. Then the client addon on top (mockups done).
+1. Bot control: a guild identity draft from a few words (one model call), then the client
+   addon on top of the server side (mockups done). Raid frames: own or Grid/VuhDo, undecided.
 2. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
 3. Auction house seller setup and phase-appropriate stock as part of the realm tools.
 4. Bots that ride boats and zeppelins: wait at the dock, board when it is in, step off at
