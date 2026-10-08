@@ -36,7 +36,9 @@ Updated 2026-10-06.
 
 ## Next
 
-1. A client addon for controlling bots (planned; mockups exist and need refining).
+1. Bot control, server side first: an addon message bridge, orders and bot state, joining in
+   on the leader's attack, per-player dialogue settings, "why did they say that", guild
+   identity and guild rumour management. Then the client addon on top (mockups done).
 2. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
 3. Auction house seller setup and phase-appropriate stock as part of the realm tools.
 4. Bots that ride boats and zeppelins: wait at the dock, board when it is in, step off at
