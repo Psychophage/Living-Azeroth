@@ -9,6 +9,8 @@ x-realm-container: &realm-container
   environment:
     HOME: /realm/.home
     PYTHONDONTWRITEBYTECODE: "1"
+    # Never stop to ask whether to create a missing database; nobody is there to answer.
+    AC_DISABLE_INTERACTIVE: "1"
   networks: [realm]
 
 services:
@@ -33,6 +35,7 @@ services:
     environment:
       HOME: /realm/.home
       PYTHONDONTWRITEBYTECODE: "1"
+      AC_DISABLE_INTERACTIVE: "1"
       LA_BUILD_JOBS: ${LA_BUILD_JOBS:-4}
       LA_SANITIZE: ${LA_SANITIZE:-}
     volumes:
