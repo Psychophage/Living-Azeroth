@@ -18,6 +18,7 @@ SECTIONS = {
     "auctionhouse": ("modules/mod_ahbot.conf", "modules/mod-ah-bot-plus/conf/mod_ahbot.conf.dist"),
     "progression": ("modules/progression_system.conf",
                     "modules/mod-progression-system/conf/progression_system.conf.dist"),
+    "botcontrol": ("modules/bot_control.conf", "modules/mod-bot-control/conf/bot_control.conf.dist"),
 }
 SCHEMAS = {"Login": "acore_auth", "World": "acore_world", "Character": "acore_characters",
            "Playerbots": "acore_playerbots"}

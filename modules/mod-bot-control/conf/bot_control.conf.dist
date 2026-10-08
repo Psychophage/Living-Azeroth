@@ -1,0 +1,22 @@
+[worldserver]
+
+#########################################
+# mod-bot-control
+#########################################
+#
+# The server side of the bot control addon: an addon-message bridge that lets a
+# player's addon list their bots and give them orders. A request is allowed exactly
+# when Playerbots would allow the same order by whisper.
+
+# BotControl.Enable
+#     Description: Answer the bot control addon. Off, the server ignores its messages
+#                  and the addon reports that server support is missing.
+#     Default:     0 (off)
+BotControl.Enable = 0
+
+# BotControl.OrderTimeoutMs
+#     Description: How long to wait for a bot to act on an order before telling the
+#                  addon it did not. A bot that has just joined can take a few
+#                  seconds to act on its first orders.
+#     Default:     10000
+BotControl.OrderTimeoutMs = 10000

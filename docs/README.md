@@ -15,5 +15,6 @@ Features:
 - [Characters](features/characters/README.md): conversation, memory and actions,
   with the [player field guide](features/characters/guide.html) and
   [prepared knowledge](features/characters/knowledge.md)
+- [Bot control](features/bot-control.md): the server side of the bot control addon (off by default)
 - [Auction house](features/auction-house.md) (off by default)
 - [Progression](features/progression.md) (off by default)

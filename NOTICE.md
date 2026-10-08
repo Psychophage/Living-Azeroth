@@ -10,6 +10,7 @@ keeps its original notices, authors and licence files.
 | `modules/mod-living-characters` | [PBC (mod-pbc)](https://github.com/deseven/mod-pbc) by deseven | `ed15d3c` | Original PBC: Unlicense ([text](modules/mod-living-characters/LICENSES/PBC-Unlicense.txt)); bundled libraries: MIT ([text](modules/mod-living-characters/LICENSES/MIT-dependencies.txt)) |
 | `modules/mod-ah-bot-plus` | [AHBot Plus](https://github.com/NathanHandley/mod-ah-bot-plus) by Nathan Handley | `f685832` | GPL-2.0-or-later (file headers) |
 | `modules/mod-progression-system` | [Progression System](https://github.com/azerothcore/mod-progression-system) | `ae6a53c` | AGPL-3.0 |
+| `modules/mod-bot-control` | Living Azeroth's own | — | GPL-2.0-or-later |
 
 Each upstream project was imported as one snapshot commit at the revision shown,
 keeping the parts Living Azeroth uses (source, build files, database scripts and
