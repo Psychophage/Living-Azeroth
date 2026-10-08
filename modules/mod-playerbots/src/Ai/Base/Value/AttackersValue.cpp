@@ -26,6 +26,15 @@ GuidVector AttackersValue::Calculate()
     if (Group* group = bot->GetGroup())
         AddAttackersOf(group, targets);
 
+    // Living Azeroth: with "join attack", a human master's auto-attack target is an enemy as
+    // soon as the attack starts, so bots move in before the first hit lands.
+    if (botAI->HasStrategy("join attack", BOT_STATE_NON_COMBAT))
+        if (Player* master = botAI->GetMaster(); master && IsRealPlayer(master) && master->IsInWorld() &&
+                                                 master->GetMapId() == bot->GetMapId())
+            if (Unit* victim = master->GetVictim(); victim && master->IsValidAttackTarget(victim) &&
+                                                    master->GetDistance2d(victim) < sPlayerbotAIConfig.sightDistance)
+                targets.insert(victim);
+
     RemoveNonThreating(targets);
 
     // Living Azeroth character system: a critter does not acquire ordinary threat.

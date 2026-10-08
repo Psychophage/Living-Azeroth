@@ -1411,6 +1411,12 @@ AiPlayerbot.EnableNewRpgStrategy = 1
 # Default: 0 (disabled)
 AiPlayerbot.RpgCityErrands = 0
 
+# Bots start with "join attack": when their human leader starts an auto-attack, the target
+# counts as an enemy straight away, so they move in before the first hit lands. Without it,
+# they wait until the leader is actually fighting. Per bot: "nc +join attack" / "nc -join attack".
+# Default: 0 (disabled)
+AiPlayerbot.JoinLeaderAttack = 0
+
 # Control probability weights for RPG status of bots. Takes effect only when the status meets its premise.​
 # Sum of weights need not be 100. Set to 0 to disable the status.
 #

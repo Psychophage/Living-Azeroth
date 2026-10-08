@@ -394,6 +394,7 @@ public:
     bool autoDoQuests;
     bool enableNewRpgStrategy;
     bool rpgCityErrands;
+    bool joinLeaderAttack;
     std::unordered_map<NewRpgStatus, uint32> RpgStatusProbWeight;
     bool syncLevelWithPlayers;
     bool randomBotConcentrateInPlayerZone;

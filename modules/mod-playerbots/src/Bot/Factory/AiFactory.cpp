@@ -590,6 +590,10 @@ void AiFactory::AddDefaultNonCombatStrategies(Player* player, PlayerbotAI* const
     if (sPlayerbotAIConfig.autoSaveMana && PlayerbotAI::IsHeal(player, true))
         nonCombatEngine->addStrategy("save mana", false);
 
+    // Living Azeroth: AiPlayerbot.JoinLeaderAttack starts bots with "join attack" on.
+    if (sPlayerbotAIConfig.joinLeaderAttack)
+        nonCombatEngine->addStrategy("join attack", false);
+
     if ((sRandomPlayerbotMgr.IsRandomBot(player)) && !player->InBattleground())
     {
         Player* master = facade->GetMaster();

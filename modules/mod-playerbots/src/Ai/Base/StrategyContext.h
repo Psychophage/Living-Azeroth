@@ -39,6 +39,7 @@
 #include "NewRpgStrategy.h"
 #include "NonCombatStrategy.h"
 #include "PassiveStrategy.h"
+#include "JoinAttackStrategy.h"
 #include "PullStrategy.h"
 #include "QuestStrategies.h"
 #include "RTSCStrategy.h"
@@ -67,6 +68,7 @@ public:
         creators["gather"] = &StrategyContext::gather;
         creators["emote"] = &StrategyContext::emote;
         creators["passive"] = &StrategyContext::passive;
+        creators["join attack"] = &StrategyContext::join_attack;
         creators["aggressive"] = &StrategyContext::aggressive;
         creators["save mana"] = &StrategyContext::auto_save_mana;
         creators["food"] = &StrategyContext::food;
@@ -155,6 +157,7 @@ private:
     static Strategy* gather(PlayerbotAI* botAI) { return new GatherStrategy(botAI); }
     static Strategy* emote(PlayerbotAI* botAI) { return new EmoteStrategy(botAI); }
     static Strategy* passive(PlayerbotAI* botAI) { return new PassiveStrategy(botAI); }
+    static Strategy* join_attack(PlayerbotAI* botAI) { return new JoinAttackStrategy(botAI); }
     static Strategy* aggressive(PlayerbotAI* botAI) { return new AggressiveStrategy(botAI); }
     // static Strategy* conserve_mana(PlayerbotAI* botAI) { return new ConserveManaStrategy(botAI); }
     static Strategy* auto_save_mana(PlayerbotAI* botAI) { return new HealerAutoSaveManaStrategy(botAI); }
