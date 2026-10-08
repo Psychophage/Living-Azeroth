@@ -18,6 +18,7 @@
 #include "ObjectAccessor.h"
 #include "Player.h"
 #include "Playerbots.h"
+#include "pbc_guild.h"
 #include "World.h"
 #include "WorldSessionMgr.h"
 #include "ScriptMgr.h"
@@ -98,6 +99,11 @@ Channel* ResolveChannel(GameAudience const& audience, Player* player)
 }
 }  // namespace
 
+std::string ZoneName(uint32_t zone)
+{
+    return AreaName(zone);
+}
+
 bool HasHumanConnection(Player* player)
 {
     return Human(player) && !player->GetSession()->IsSocketClosed() && !player->GetSession()->IsLoggingOut();
@@ -135,8 +141,16 @@ GameActor SnapshotActor(Unit* unit, NpcDefinitions const& definitions, std::stri
             facts["guild_rank"] = player->GetRank();
             facts["guild_name"] = guild->GetName();
             if (guild->HasRankRight(player, GR_RIGHT_GCHATLISTEN))
+            {
+                // Living Azeroth: the guild's own identity, when its officers have written one.
+                auto const& identities = GuildIdentities();
+                auto written = identities.find(guild->GetId());
+                bool described = written != identities.end() && !written->second.Empty();
                 actor.informationGroups.push_back({"guild:" + std::to_string(guild->GetId()), guild->GetName(),
-                    "A shared guild notice is reported information, not every member's personal experience.", 259200000, false});
+                    described ? written->second.Describe()
+                              : "A shared guild notice is reported information, not every member's personal experience.",
+                    written != identities.end() ? uint64_t(written->second.reportHours) * 3600000 : 259200000, false});
+            }
         }
         facts["race_id"] = player->getRace();
         facts["class_id"] = player->getClass();

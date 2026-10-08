@@ -62,6 +62,8 @@ struct NpcDefinition
 using NpcDefinitions = std::map<std::tuple<uint32_t, uint32_t, uint32_t>, NpcDefinition>;
 
 bool HasHumanConnection(Player* player);
+// The English name of a zone or area, or "Unknown place".
+std::string ZoneName(uint32_t zone);
 bool Understands(GameActor const& actor, uint32_t language);
 uint32_t SpokenLanguage(GameActor const& actor);
 void FilterLanguage(GameAudience& audience, uint32_t language);

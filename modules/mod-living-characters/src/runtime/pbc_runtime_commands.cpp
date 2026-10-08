@@ -1,4 +1,6 @@
 #include <algorithm>
+#include <cctype>
+#include <cstdio>
 // SPDX-License-Identifier: GPL-2.0-or-later
 // PBC Character System changes, 2026-09-30; upstream attribution in NOTICE.md.
 
@@ -47,7 +49,198 @@ bool Runtime::Command(Player* player, std::string const& command)
             "Source text: .chars episode <id:version>. GM: .chars usage, revise "
             "<id:version> <text>, "
             "exclude <id:version>, knowledge, watch notes/edit/resolve, or group <id> notes/edit/resolve. These commands do "
-            "not spend API credit.");
+            "not spend API credit. What you hear from characters: .chars hear.");
+        return true;
+    }
+    if (verb == "guild" && !groupCommand)
+    {
+        std::string field;
+        input >> field;
+        std::string text;
+        std::getline(input, text);
+        std::string json;
+        std::string error;
+        if (!field.empty())
+        {
+            pbc_json change;
+            if (field == "fade")
+            {
+                auto digits = text.find_first_of("0123456789");
+                change["report_hours"] =
+                    digits == std::string::npos ? pbc_json(text) : pbc_json(std::stoul(text.substr(digits, 6)));
+            }
+            else
+                change[field] = text;
+            if (!ChangeGuildIdentity(player, change.dump(), json, error))
+            {
+                tell("Not changed: " + error + ".");
+                return true;
+            }
+        }
+        else if (!GuildIdentityFor(player, json, error))
+        {
+            tell("No guild identity: " + error + ".");
+            return true;
+        }
+        auto guild = pbc_json::parse(json);
+        auto const& identity = guild["identity"];
+        auto line = [&](char const* label, char const* key)
+        {
+            auto value = identity[key].get<std::string>();
+            tell(std::string(label) + (value.empty() ? "(not written)" : value));
+        };
+        tell("<" + guild["name"].get<std::string>() + ">");
+        line("What the guild is for: ", "purpose");
+        line("What members value: ", "values");
+        line("Traditions: ", "traditions");
+        line("Current ambitions: ", "ambitions");
+        line("How members speak: ", "voice");
+        tell("Rumours fade after " + std::to_string(identity["report_hours"].get<uint64_t>()) + " hours.");
+        if (field.empty())
+            tell(guild["may_edit"].get<bool>()
+                     ? "Change with .chars guild purpose|values|traditions|ambitions|voice <text>, or .chars guild fade <hours>."
+                     : "Only the guild master and officers can change it.");
+        return true;
+    }
+    if (verb == "why")
+    {
+        uint64_t line = 0;
+        input >> line;
+        auto guid = player->GetGUID();
+        Why(player, line, [guid, line](std::string json)
+        {
+            auto asker = ObjectAccessor::FindPlayer(guid);
+            if (!asker)
+                return;
+            ChatHandler chat(asker->GetSession());
+            auto answer = pbc_json::parse(json, nullptr, false);
+            if (answer.is_discarded() || !answer.value("ok", false))
+                return chat.SendSysMessage("Cannot explain that: " + answer.value("error", std::string("unavailable")) + ".");
+            if (!line)
+            {
+                if (answer["lines"].empty())
+                    return chat.SendSysMessage("No character has said anything to you yet.");
+                std::size_t shown = 0;
+                for (auto const& heard : answer["lines"])
+                    if (shown++ < 6)
+                        chat.SendSysMessage("#" + std::to_string(heard["line"].get<uint64_t>()) + " [" +
+                                            heard["channel"].get<std::string>() + "] " + heard["text"].get<std::string>());
+                return chat.SendSysMessage("Why one was said: .chars why <number>.");
+            }
+            chat.SendSysMessage("Why " + answer["speaker"].get<std::string>() + " said: " + answer["text"].get<std::string>());
+            if (answer.contains("started_by"))
+                chat.SendSysMessage("Started by " + answer["started_by"]["who"].get<std::string>() + ": " +
+                                    answer["started_by"]["text"].get<std::string>());
+            if (answer["remembers_you"].empty())
+                chat.SendSysMessage("They remember nothing in particular about you yet.");
+            for (auto const& note : answer["remembers_you"])
+                chat.SendSysMessage("They remember (" + note["kind"].get<std::string>() + "): " + note["text"].get<std::string>());
+            for (auto const& action : answer["actions"])
+                chat.SendSysMessage("Action " + action["action"].get<std::string>() + ": " + action["status"].get<std::string>());
+            char cost[64];
+            std::snprintf(cost, sizeof(cost), "Cost: $%.4f", answer["cost_dollars"].get<double>());
+            chat.SendSysMessage(cost);
+        });
+        return true;
+    }
+    if (verb == "rumours" || verb == "rumour")
+    {
+        auto guid = player->GetGUID();
+        auto say = [guid](std::string const& message)
+        {
+            if (auto asker = ObjectAccessor::FindPlayer(guid))
+                ChatHandler(asker->GetSession()).SendSysMessage(message);
+        };
+        if (verb == "rumours")
+        {
+            std::string group;
+            input >> group;
+            Rumours(player, group, [say](std::string json)
+            {
+                auto answer = pbc_json::parse(json, nullptr, false);
+                if (answer.is_discarded() || !answer.value("ok", false))
+                    return say("No rumours: " + answer.value("error", std::string("unavailable")) + ".");
+                if (answer["rumours"].empty())
+                    return say("No rumours in " + answer["group"].get<std::string>() + ".");
+                for (auto const& rumour : answer["rumours"])
+                {
+                    std::string state = rumour["resolved"].get<bool>() ? "resolved"
+                                      : rumour["fades_in_ms"].is_number()
+                                          ? "fades in " + std::to_string(rumour["fades_in_ms"].get<uint64_t>() / 3600000 + 1) + " h"
+                                          : "current";
+                    std::string by;
+                    for (auto const& name : rumour["by"])
+                        by += (by.empty() ? "" : ", ") + name.get<std::string>();
+                    say("#" + std::to_string(rumour["id"].get<uint64_t>()) + ":" +
+                        std::to_string(rumour["version"].get<uint64_t>()) + " (" + state + (by.empty() ? "" : ", from " + by) +
+                        (rumour["zone"].get<std::string>().empty() ? "" : ", " + rumour["zone"].get<std::string>()) +
+                        "): " + rumour["text"].get<std::string>());
+                }
+                if (answer["may_change"].get<bool>())
+                    say("Officers: .chars rumour <id>:<version> correct <text>, resolve, or forget.");
+            });
+            return true;
+        }
+        std::string reference;
+        std::string action;
+        input >> reference >> action;
+        std::string text;
+        std::getline(input, text);
+        auto colon = reference.find(':');
+        if (colon == std::string::npos || action.empty())
+        {
+            tell("Use .chars rumour <id>:<version> correct <text>, resolve, or forget (from .chars rumours).");
+            return true;
+        }
+        pbc_json request{{"note", std::strtoull(reference.c_str(), nullptr, 10)},
+                         {"version", std::strtoull(reference.c_str() + colon + 1, nullptr, 10)},
+                         {"action", action}};
+        if (auto start = text.find_first_not_of(' '); start != std::string::npos)
+            request["text"] = text.substr(start);
+        ChangeRumour(player, request.dump(), [say](std::string json)
+        {
+            auto answer = pbc_json::parse(json, nullptr, false);
+            say(!answer.is_discarded() && answer.value("ok", false)
+                    ? "Rumour changed."
+                    : "Not changed: " + answer.value("error", std::string("unavailable")) + ".");
+        });
+        return true;
+    }
+    if (verb == "hear")
+    {
+        std::string key;
+        std::string value;
+        input >> key >> value;
+        std::string json;
+        std::string error;
+        if (!key.empty())
+        {
+            pbc_json change;
+            if (!value.empty() && std::all_of(value.begin(), value.end(), [](unsigned char c) { return std::isdigit(c); }))
+                change[key] = std::stoul(value.substr(0, 6));
+            else
+                change[key] = value;
+            if (!ChangeListener(player, change.dump(), json, error))
+            {
+                tell("Not changed: " + error + ".");
+                return true;
+            }
+        }
+        else
+            json = ListenerSettingsJson(player);
+        auto settings = pbc_json::parse(json);
+        auto pace = [](uint64_t value, char const* unit)
+        { return value ? std::to_string(value) + unit : std::string("the realm's"); };
+        tell("You hear: party " + settings["party"].get<std::string>() + ", nearby " +
+             settings["nearby"].get<std::string>() + ", guild " + settings["guild"].get<std::string>() +
+             ", General " + settings["general"].get<std::string>() + "; remarks " +
+             settings["remarks"].get<std::string>() + ", combat banter " + settings["banter"].get<std::string>() +
+             "; reading speed " + pace(settings["reading"].get<uint64_t>(), " words a minute") +
+             ", longest exchange " + pace(settings["turns"].get<uint64_t>(), " replies") + ".");
+        if (key.empty())
+            tell("Change with .chars hear party|nearby|guild|general chatty|spoken|silent, "
+                 ".chars hear remarks often|sometimes|rarely|never, .chars hear banter off|sometimes|often, "
+                 ".chars hear reading 0|60-400, .chars hear turns 0-6 (0 is the realm's).");
         return true;
     }
     bool administrator = player->GetSession()->GetSecurity() >= SEC_GAMEMASTER;
@@ -98,6 +291,8 @@ bool Runtime::Command(Player* player, std::string const& command)
             uint32_t delay = 0;
             input >> delay;
             _nextAmbient = _now + std::min(delay, 30000u);
+            _remarksDueAt = _nextAmbient;
+            _nextRemark.clear();
             _lastHumanActivity = 0;
             tell("The next eligible ambient scheduling tick is due.");
         }

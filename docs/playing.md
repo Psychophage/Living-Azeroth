@@ -24,6 +24,9 @@ through the character system, which uses the language model.
 | Attack your selected target | `/p @attack` |
 | A bot's command list | `/w Name @help` |
 
+To hear less from characters, use `.chars hear`: for example `.chars hear nearby spoken` (only
+replies to you nearby) or `.chars hear remarks rarely`. Each player chooses for themselves.
+
 ## Loot, gear and selling
 
 - With **Group Loot**, bots loot and share drops as normal. Switch to **Free for All**

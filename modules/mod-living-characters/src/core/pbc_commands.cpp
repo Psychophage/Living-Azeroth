@@ -869,6 +869,11 @@ bool CharacterCommand(ChatHandler* handler, char const* verb, char const* args)
 
 bool CharacterHelp(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "help", args); }
 bool CharacterInfo(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "info", args); }
+bool CharacterHear(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "hear", args); }
+bool CharacterGuild(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "guild", args); }
+bool CharacterRumours(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "rumours", args); }
+bool CharacterWhy(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "why", args); }
+bool CharacterRumour(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "rumour", args); }
 bool CharacterHistory(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "history", args); }
 bool CharacterNotes(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "notes", args); }
 bool CharacterFact(ChatHandler* handler, char const* args) { return CharacterCommand(handler, "fact", args); }
@@ -892,6 +897,11 @@ ChatCommandTable PBC_CommandScript::GetCommands() const
         {
             { "help", CharacterHelp, SEC_PLAYER, Console::No },
             { "info", CharacterInfo, SEC_PLAYER, Console::No },
+            { "hear", CharacterHear, SEC_PLAYER, Console::No },
+            { "guild", CharacterGuild, SEC_PLAYER, Console::No },
+            { "rumours", CharacterRumours, SEC_PLAYER, Console::No },
+            { "why", CharacterWhy, SEC_PLAYER, Console::No },
+            { "rumour", CharacterRumour, SEC_PLAYER, Console::No },
             { "history", CharacterHistory, SEC_PLAYER, Console::No },
             { "notes", CharacterNotes, SEC_PLAYER, Console::No },
             { "fact", CharacterFact, SEC_PLAYER, Console::No },

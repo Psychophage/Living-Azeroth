@@ -31,6 +31,42 @@ budgets, language boundaries and the offline content-authoring workflow.
 The [offline field guide](guide.html) explains conversation, explicit
 commands, corrections and gameplay limits. Open it in a browser.
 
+## What you hear
+
+Each player chooses how much characters say to them; the realm's settings are the
+default. `.chars hear` shows the current choice and how to change it.
+
+- Party, nearby, guild and General are each chatty (everything), spoken (only replies to
+  what you said yourself) or silent. Whispers to you always reach you; orders work either way.
+- A conversation nobody present wants to hear is not written, so it costs no dialogue
+  request. When companions are present, the small request that checks for a spoken order
+  still runs, so "follow me" keeps working with party chat silent.
+- Remarks of their own (often, sometimes, rarely, never) and combat banter (off,
+  sometimes, often) come only to players who hear everything nearby.
+- Reading speed and the longest exchange follow the player whose conversation it is.
+
+The choices are stored per character (`pbc_listener`) and survive restarts.
+
+## Why did they say that?
+
+`.chars why` lists the last lines characters said to you, and `.chars why <number>` explains
+one: what started the conversation, what that character currently remembers about you, any
+action it took and what it cost. Only lines you heard can be explained.
+
+## Guild identity
+
+A player guild can describe itself, the way a town watch has a description its guards
+carry: what the guild is for, what its members value, its traditions, its current
+ambitions and how its members speak. Bot members then speak as members of that guild.
+`.chars guild` shows it; the guild master and officers (whoever may set the message of
+the day) change it with `.chars guild purpose|values|traditions|ambitions|voice <text>`,
+and `.chars guild fade <hours>` sets how long its rumours last (72 by default). It is
+stored per guild (`pbc_guild_identity`), separately from the prepared knowledge catalogue.
+
+`.chars rumours` lists the guild's shared reports for its members; officers correct,
+resolve or forget one with `.chars rumour <id>:<version> correct <text>`, `resolve` or
+`forget`. Forgetting stops members using it; the record stays for correction history.
+
 ## Configuration
 
 Set the character system's options in the `[characters]` section of your realm's

@@ -106,7 +106,7 @@ bool Runtime::Start()
                       60000;
     if (auto seed = sConfigMgr->GetOption<uint32_t>("PBC.CharacterSystem.RandomSeed", 0))
         _random.seed(seed);
-    _nextAmbient = std::uniform_int_distribution<uint32_t>(_ambientMinimum, _ambientMaximum)(_random);
+    _nextAmbient = 0;  // each player's first remark comes one interval after they are first seen
     CharacterPrompts prompts{ReadPrompt(path, "Character.system"), ReadPrompt(path, "Foundation.system"),
                              ReadPrompt(path, "Memory.system"), ReadPrompt(path, "Recall.system")};
     ModelSettings settings;
@@ -226,6 +226,18 @@ bool Runtime::Start()
         PBC_Log(PBC_LogLevel::PBC_ERROR,
                 "Dialogue actions are unavailable: the "
                 "native-action journal could not open.");
+    // Living Azeroth: written guild identities, kept on the world thread for members' context.
+    auto& identities = GuildIdentities();
+    identities.clear();
+    for (auto const& [guild, stored] : _storage->Submit([this] { return _store.GuildIdentities(); }).get())
+    {
+        GuildIdentity identity;
+        std::string error;
+        if (ApplyGuildIdentityJson(identity, pbc_json::parse(stored, nullptr, false), error))
+            identities[guild] = identity;
+        else
+            PBC_Log(PBC_LogLevel::PBC_ERROR, "Guild {} identity was not usable: {}.", guild, error);
+    }
     PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Character coordinator started; one shared spending ledger.");
     return true;
 }

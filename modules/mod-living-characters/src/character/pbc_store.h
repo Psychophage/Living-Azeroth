@@ -7,6 +7,8 @@
 #include <memory>
 #include <optional>
 #include <set>
+#include <tuple>
+#include <utility>
 #include <string>
 #include <vector>
 
@@ -115,6 +117,25 @@ public:
         std::string const& text, uint64_t editorGuid, bool administrator, uint64_t nowMs);
     bool ResolveNote(std::string const& actor, uint64_t noteId, uint32_t expectedVersion,
         uint64_t editorGuid, bool administrator);
+    // A group's reports since a time, resolved included, newest first, each with the zone it came from.
+    std::vector<std::pair<NoteRecord, uint32_t>> GroupReports(std::string const& group, uint64_t sinceMs);
+    // Lines others spoke that were delivered to this witness, newest first (id, scene, author, channel, time, text).
+    std::vector<ObservationRecord> HeardBy(std::string const& witness, uint32_t limit);
+    // What started a scene: (author, text) of its first observed input.
+    std::optional<std::pair<std::string, std::string>> Opening(std::string const& sceneId);
+    // An actor's current notes about one subject: (kind, text), newest first.
+    std::vector<std::pair<std::string, std::string>> NotesAboutSubject(std::string const& actor, std::string const& subject);
+    // The native actions a scene asked for: (intent JSON, status, detail).
+    std::vector<std::tuple<std::string, std::string, std::string>> ActionsOfScene(std::string const& sceneId);
+    // Stops a note being used (a rumour the group should forget); its row and sources remain.
+    bool ForgetNote(std::string const& actor, uint64_t noteId, uint32_t expectedVersion,
+        uint64_t editorGuid, bool administrator);
+    // A player's chosen hearing settings as stored JSON; none means the realm's.
+    std::optional<std::string> Listener(uint32_t playerGuid);
+    bool SaveListener(uint32_t playerGuid, std::string const& settings, uint64_t nowMs);
+    // Written guild identities (pbc_guild.h) as stored JSON, by native guild ID.
+    std::vector<std::pair<uint32_t, std::string>> GuildIdentities();
+    bool SaveGuildIdentity(uint32_t guildId, std::string const& identity, uint32_t editorGuid, uint64_t nowMs);
     bool Healthy() const;
 
 private:

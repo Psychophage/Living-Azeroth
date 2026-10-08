@@ -23,6 +23,7 @@ enum Statement : uint32_t
     ChargeBudget,
     RecordUnknown,
     Delivery,
+    SceneCostSelect,
     Count
 };
 
@@ -57,6 +58,10 @@ private:
             "WHERE budget_id=?", CONNECTION_SYNCH);
         PrepareStatement(RecordUnknown, "UPDATE pbc_api_request SET usage_json=?,provider_request_id=?,latency_ms=? "
             "WHERE request_id=?", CONNECTION_SYNCH);
+        // What one scene cost, by kind of request; held amounts count until reconciled.
+        PrepareStatement(SceneCostSelect, "SELECT reason,CAST(SUM(COALESCE(actual_nano,held_nano)) AS UNSIGNED),COUNT(*) "
+            "FROM pbc_api_request WHERE budget_id=? AND scene_id=? AND state<>'cancelled' GROUP BY reason",
+            CONNECTION_SYNCH);
         PrepareStatement(Delivery, "UPDATE pbc_api_request SET delivery=? WHERE request_id=? AND budget_id=?",
             CONNECTION_SYNCH);
     }
@@ -211,6 +216,20 @@ bool BudgetStore::RecordDelivery(std::string const& requestId, std::string const
         return false;
     std::lock_guard lock(_impl->mutex);
     return _impl->Ready() && _impl->connection->Write(Delivery, outcome, requestId, _impl->budgetId);
+}
+
+std::vector<SceneCost> BudgetStore::CostOfScene(std::string const& sceneId)
+{
+    std::vector<SceneCost> costs;
+    std::lock_guard lock(_impl->mutex);
+    if (sceneId.empty() || !_impl->Ready())
+        return costs;
+    if (auto rows = _impl->connection->Read(SceneCostSelect, _impl->budgetId, sceneId))
+        do
+        {
+            costs.push_back({(*rows)[0].Get<std::string>(), (*rows)[1].Get<uint64_t>(), (*rows)[2].Get<uint32_t>()});
+        } while (rows->NextRow());
+    return costs;
 }
 
 std::optional<BudgetTotals> BudgetStore::Totals()

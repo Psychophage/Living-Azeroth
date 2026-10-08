@@ -9,9 +9,12 @@
 #include "pbc_conversation.h"
 #include "pbc_game.h"
 #include "pbc_initiative.h"
+#include "pbc_listener.h"
+#include "pbc_guild.h"
 #include "pbc_service.h"
 #include "pbc_worker.h"
 #include <atomic>
+#include <functional>
 #include <future>
 #include <memory>
 #include <mutex>
@@ -36,6 +39,8 @@ struct Scene
 {
     std::string id = Identifier();
     GameAudience audience;
+    // The player whose own words started this scene; empty for remarks and banter.
+    ObjectGuid prompter;
     Conversation conversation;
     std::string contribution;
     std::string previousSpeaker;
@@ -82,10 +87,28 @@ public:
               bool nativeEmote = false);
     void Cancel(std::string const& actor);
     bool Command(Player* player, std::string const& command);
+    std::string ListenerSettingsJson(Player* player);
+    bool ChangeListener(Player* player, std::string const& changes, std::string& json, std::string& error);
+    bool GuildIdentityFor(Player* player, std::string& json, std::string& error) const;
+    bool ChangeGuildIdentity(Player* player, std::string const& changes, std::string& json, std::string& error);
+    // A group's rumours and changes to them. The answer (JSON) comes to `done` on the world thread.
+    void Rumours(Player* player, std::string const& group, std::function<void(std::string)> done);
+    void ChangeRumour(Player* player, std::string const& request, std::function<void(std::string)> done);
+    // Lines this player heard (line 0), or why one was said; JSON to `done` on the world thread.
+    void Why(Player* player, uint64_t line, std::function<void(std::string)> done);
     void WorldEvent(Player* subject, std::string const& text, bool partyOnly, bool interruptDialogue, Unit* enemy);
 
 private:
     void Enrich(GameAudience& audience) const;
+    // Per-player hearing: a cached copy, loaded from the store the first time a player is seen.
+    ListenerSettings const& Listener(ObjectGuid player) const;
+    void EnsureListener(ObjectGuid player);
+    bool Hears(std::string const& label, ObjectGuid prompter, GameActor const& human) const;
+    uint32_t RemarkInterval(ListenerSettings const& settings);
+    // The rumour group a player may read (or, with `change`, manage): their own guild, or any
+    // group for an administrator. Lifetime is 0 when the catalogue owns it.
+    bool RumourGroup(Player* player, std::string const& requested, bool change, std::string& group,
+                     uint64_t& lifetimeMs, std::string& error) const;
     std::string KnowledgeState(GameActor const& actor, ObjectGuid anchor) const;
     bool StoreActors(GameAudience const& audience);
     std::vector<std::string> Witnesses(GameAudience const& audience) const;
@@ -129,6 +152,17 @@ private:
     bool _delivering = false;
     uint64_t _nextMemoryScan = 0;
     uint64_t _nextAmbient = 0;
+    std::map<uint64_t, uint64_t> _nextRemark;  // per player: when a remark of their own may come
+    uint64_t _remarksDueAt = 0;                // test control: every player's next remark is due then
+    std::map<uint64_t, ListenerSettings> _listeners;
+    std::map<uint64_t, std::future<std::optional<std::string>>> _listenerLoads;
+    std::vector<std::future<bool>> _listenerSaves;
+    struct Answer
+    {
+        std::future<std::string> result;
+        std::function<void(std::string)> done;
+    };
+    std::vector<Answer> _answers;
     uint64_t _lastHumanActivity = 0;
     uint32_t _memoryInactiveMs = 300000;
     uint32_t _memoryTokens = 4096;

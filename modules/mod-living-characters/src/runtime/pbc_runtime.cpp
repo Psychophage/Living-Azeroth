@@ -1,4 +1,6 @@
 // PBC Character System changes, 2026-09-30; see NOTICE.md for upstream attribution.
+#include "Guild.h"
+#include "GuildMgr.h"
 #include "PopulationMgr.h"
 #include "pbc_runtime.h"
 #include "pbc_game.h"
@@ -145,6 +147,16 @@ void Runtime::Chat(Player* sender, uint32_t type, uint32_t language, std::string
     if (!addressed.IsEmpty())
         for (auto& actor : audience.actors)
             actor.addressed = actor.guid == addressed;
+    // A conversation only starts when at least one player present wants to hear it.
+    ObjectGuid prompter = ambient ? ObjectGuid::Empty : sender->GetGUID();
+    bool someoneHears = false;
+    for (auto const& actor : audience.actors)
+        if (actor.human)
+        {
+            EnsureListener(actor.guid);
+            someoneHears |= Hears(audience.label, prompter, actor);
+        }
+    auto const& pace = Listener(sender->GetGUID());
     if (!ambient)
         _lastHumanActivity = _now;
     std::set<std::string> eligible;
@@ -164,6 +176,7 @@ void Runtime::Chat(Player* sender, uint32_t type, uint32_t language, std::string
     }
     auto scene = std::make_unique<Scene>();
     scene->audience = std::move(audience);
+    scene->prompter = prompter;
     scene->contribution = text;
     scene->background = ambient;
     if (!ambient && _actions)
@@ -215,11 +228,13 @@ void Runtime::Chat(Player* sender, uint32_t type, uint32_t language, std::string
     if (!ambient)
         scene->transcript.push_back(sender->GetName() + ": " + text);
     scene->conversation.SetSpacing(_spacing);
-    scene->conversation.SetReadingWordsPerMinute(_readingWordsPerMinute);
-    PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Character scene {}: channel={}, eligible={}, allowance={}.", scene->id,
-            scene->audience.label, eligible.size(), _maxTurns);
-    scene->conversation.Begin(ambient ? Contribution::Ambient : Contribution::Human, true, std::move(eligible),
-                              scene->audience.duringCombat ? std::min<uint8_t>(_maxTurns, 2) : _maxTurns, _now);
+    scene->conversation.SetReadingWordsPerMinute(pace.readingWordsPerMinute ? pace.readingWordsPerMinute
+                                                                            : _readingWordsPerMinute);
+    uint8_t turns = pace.maxTurns ? pace.maxTurns : _maxTurns;
+    PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Character scene {}: channel={}, eligible={}, allowance={}{}.", scene->id,
+            scene->audience.label, eligible.size(), turns, someoneHears ? "" : ", nobody wants to hear");
+    scene->conversation.Begin(ambient ? Contribution::Ambient : Contribution::Human, someoneHears, std::move(eligible),
+                              scene->audience.duringCombat ? std::min<uint8_t>(turns, 2) : turns, _now);
     ObservationRecord event;
     event.eventKey = scene->id + ":incoming";
     event.sceneId = scene->id;
@@ -416,6 +431,8 @@ GameAudience Runtime::DeliveryAudience(Scene const& scene, GameActor const& acto
                                              ResolveActor(actor));
         Enrich(audience);
         FilterLanguage(audience, segment.kind == Segment::Kind::Emote ? LANG_UNIVERSAL : SpokenLanguage(actor));
+        std::erase_if(audience.actors, [&](GameActor const& listener)
+                      { return listener.human && !Hears(scene.audience.label, scene.prompter, listener); });
         return audience;
     }
     Channel* channel = nullptr;
@@ -432,7 +449,298 @@ GameAudience Runtime::DeliveryAudience(Scene const& scene, GameActor const& acto
     audience.duringCombat = scene.audience.duringCombat;
     Enrich(audience);
     FilterLanguage(audience, segment.kind == Segment::Kind::Emote ? LANG_UNIVERSAL : SpokenLanguage(actor));
+    std::erase_if(audience.actors, [&](GameActor const& listener)
+                  { return listener.human && !Hears(scene.audience.label, scene.prompter, listener); });
     return audience;
+}
+
+ListenerSettings const& Runtime::Listener(ObjectGuid player) const
+{
+    static ListenerSettings const realm;
+    auto it = _listeners.find(player.GetRawValue());
+    return it == _listeners.end() ? realm : it->second;
+}
+
+void Runtime::EnsureListener(ObjectGuid player)
+{
+    auto key = player.GetRawValue();
+    if (!player.IsPlayer() || _listeners.contains(key) || _listenerLoads.contains(key))
+        return;
+    auto counter = player.GetCounter();
+    _listenerLoads[key] = _storage->Submit([this, counter] { return _store.Listener(counter); });
+}
+
+bool Runtime::Hears(std::string const& label, ObjectGuid prompter, GameActor const& human) const
+{
+    auto channel = ChannelOfAudience(label);
+    if (!channel)
+        return true;  // A whisper is addressed to them.
+    switch (Listener(human.guid).On(*channel))
+    {
+        case Hearing::Chatty:
+            return true;
+        case Hearing::SpokenTo:
+            return human.guid == prompter;
+        case Hearing::Silent:
+            return false;
+    }
+    return true;
+}
+
+uint32_t Runtime::RemarkInterval(ListenerSettings const& settings)
+{
+    uint32_t interval = std::uniform_int_distribution<uint32_t>(_ambientMinimum, _ambientMaximum)(_random);
+    if (settings.remarks == Remarks::Often)
+        return interval / 2;
+    if (settings.remarks == Remarks::Rarely)
+        return interval * 3;
+    return interval;
+}
+
+std::string Runtime::ListenerSettingsJson(Player* player)
+{
+    EnsureListener(player->GetGUID());
+    return ListenerJson(Listener(player->GetGUID())).dump();
+}
+
+bool Runtime::GuildIdentityFor(Player* player, std::string& json, std::string& error) const
+{
+    auto guild = sGuildMgr->GetGuildById(player->GetGuildId());
+    if (!guild || !guild->GetMember(player->GetGUID()))
+    {
+        error = "not in a guild";
+        return false;
+    }
+    auto const& identities = GuildIdentities();
+    auto written = identities.find(guild->GetId());
+    json = pbc_json{{"guild_id", guild->GetId()},
+                    {"name", guild->GetName()},
+                    {"may_edit", guild->HasRankRight(player, GR_RIGHT_SETMOTD)},
+                    {"identity", GuildIdentityJson(written != identities.end() ? written->second : GuildIdentity{})}}
+               .dump();
+    return true;
+}
+
+bool Runtime::ChangeGuildIdentity(Player* player, std::string const& changes, std::string& json, std::string& error)
+{
+    auto guild = sGuildMgr->GetGuildById(player->GetGuildId());
+    if (!guild || !guild->GetMember(player->GetGUID()))
+    {
+        error = "not in a guild";
+        return false;
+    }
+    // Whoever may set the guild's message of the day may write its identity.
+    if (!guild->HasRankRight(player, GR_RIGHT_SETMOTD))
+    {
+        error = "only the guild master and officers can change it";
+        return false;
+    }
+    auto parsed = pbc_json::parse(changes, nullptr, false);
+    auto& identities = GuildIdentities();
+    GuildIdentity next = identities.contains(guild->GetId()) ? identities[guild->GetId()] : GuildIdentity{};
+    if (parsed.is_discarded() || !ApplyGuildIdentityJson(next, parsed, error))
+    {
+        if (parsed.is_discarded())
+            error = "the identity must be JSON";
+        return false;
+    }
+    identities[guild->GetId()] = next;
+    auto stored = GuildIdentityJson(next).dump();
+    auto guildId = guild->GetId();
+    auto editor = player->GetGUID().GetCounter();
+    auto now = _epochStart + _now;
+    _listenerSaves.push_back(
+        _storage->Submit([this, guildId, stored, editor, now] { return _store.SaveGuildIdentity(guildId, stored, editor, now); }));
+    return GuildIdentityFor(player, json, error);
+}
+
+bool Runtime::RumourGroup(Player* player, std::string const& requested, bool change, std::string& group,
+                          uint64_t& lifetimeMs, std::string& error) const
+{
+    bool administrator = player->GetSession()->GetSecurity() >= SEC_GAMEMASTER;
+    if (!requested.empty())
+    {
+        if (!administrator)
+        {
+            error = "only an administrator can see another group's rumours";
+            return false;
+        }
+        group = requested;
+        lifetimeMs = 0;
+        if (requested.starts_with("guild:"))
+        {
+            auto written = GuildIdentities().find(static_cast<uint32_t>(std::strtoul(requested.c_str() + 6, nullptr, 10)));
+            lifetimeMs = written != GuildIdentities().end() ? uint64_t(written->second.reportHours) * 3600000 : 259200000;
+        }
+        return true;
+    }
+    auto guild = sGuildMgr->GetGuildById(player->GetGuildId());
+    if (!guild || !guild->GetMember(player->GetGUID()) || !guild->HasRankRight(player, GR_RIGHT_GCHATLISTEN))
+    {
+        error = "not in a guild";
+        return false;
+    }
+    if (change && !guild->HasRankRight(player, GR_RIGHT_SETMOTD) && !administrator)
+    {
+        error = "only the guild master and officers can change the guild's rumours";
+        return false;
+    }
+    group = "guild:" + std::to_string(guild->GetId());
+    auto written = GuildIdentities().find(guild->GetId());
+    lifetimeMs = written != GuildIdentities().end() ? uint64_t(written->second.reportHours) * 3600000 : 259200000;
+    return true;
+}
+
+void Runtime::Rumours(Player* player, std::string const& requested, std::function<void(std::string)> done)
+{
+    std::string group;
+    uint64_t lifetime = 0;
+    std::string error;
+    if (!RumourGroup(player, requested, false, group, lifetime, error))
+        return done(pbc_json{{"ok", false}, {"error", error}}.dump());
+    bool mayChange = RumourGroup(player, requested, true, group, lifetime, error);
+    auto now = _epochStart + _now;
+    // Configured groups keep their own lifetimes in the catalogue; show their last week.
+    auto since = now - std::min<uint64_t>(now, lifetime ? lifetime : 7ull * 24 * 3600000);
+    _answers.push_back({_storage->Submit([this, group, lifetime, now, since, mayChange]
+    {
+        pbc_json list = pbc_json::array();
+        std::map<std::string, std::string> names;
+        for (auto const& [note, zone] : _store.GroupReports(group, since))
+        {
+            std::vector<std::string> by;
+            std::istringstream authors(note.reportedBy);
+            for (std::string author; std::getline(authors >> std::ws, author, ',');)
+            {
+                if (!names.contains(author))
+                    names[author] = _store.Actor(author).value_or(ActorRecord{}).name;
+                by.push_back(names[author].empty() ? author : names[author]);
+            }
+            uint64_t age = now > note.createdMs ? now - note.createdMs : 0;
+            list.push_back({{"id", note.id},
+                            {"version", note.version},
+                            {"text", note.text},
+                            {"by", by},
+                            {"zone", zone ? ZoneName(zone) : ""},
+                            {"age_ms", age},
+                            {"fades_in_ms", lifetime && !note.resolved && age < lifetime ? pbc_json(lifetime - age) : pbc_json()},
+                            {"resolved", note.resolved},
+                            {"corrected", note.authority == "owner" && !note.resolved}});
+        }
+        return pbc_json{{"ok", true}, {"group", group}, {"may_change", mayChange}, {"rumours", list}}.dump();
+    }), std::move(done)});
+}
+
+void Runtime::ChangeRumour(Player* player, std::string const& request, std::function<void(std::string)> done)
+{
+    auto parsed = pbc_json::parse(request, nullptr, false);
+    std::string group;
+    uint64_t lifetime = 0;
+    std::string error;
+    if (parsed.is_discarded() || !parsed.is_object() || !parsed.contains("note") || !parsed["note"].is_number_unsigned() ||
+        !parsed.contains("version") || !parsed["version"].is_number_unsigned() || !parsed.contains("action") ||
+        !parsed["action"].is_string())
+        return done(pbc_json{{"ok", false}, {"error", "a rumour change needs note, version and action"}}.dump());
+    auto action = parsed["action"].get<std::string>();
+    auto text = parsed.value("text", std::string());
+    if (action != "correct" && action != "resolve" && action != "forget")
+        return done(pbc_json{{"ok", false}, {"error", "action must be correct, resolve or forget"}}.dump());
+    if (action == "correct" && (text.empty() || text.size() > 4000))
+        return done(pbc_json{{"ok", false}, {"error", "a correction needs its text (at most 4000 characters)"}}.dump());
+    if (!RumourGroup(player, parsed.value("group", std::string()), true, group, lifetime, error))
+        return done(pbc_json{{"ok", false}, {"error", error}}.dump());
+    auto note = parsed["note"].get<uint64_t>();
+    auto version = static_cast<uint32_t>(parsed["version"].get<uint64_t>());
+    auto editor = player->GetGUID().GetCounter();
+    // The rank check above is the authority, so the store is told the change is authorised.
+    _answers.push_back({_storage->Submit([this, group, note, version, action, text, editor]
+    {
+        bool changed = action == "correct" ? _store.EditNote(group, note, version, text, editor, true)
+                     : action == "resolve" ? _store.ResolveNote(group, note, version, editor, true)
+                                           : _store.ForgetNote(group, note, version, editor, true);
+        return changed ? pbc_json{{"ok", true}}.dump()
+                       : pbc_json{{"ok", false}, {"error", "that rumour has changed or is not the group's"}}.dump();
+    }), std::move(done)});
+}
+
+void Runtime::Why(Player* player, uint64_t line, std::function<void(std::string)> done)
+{
+    std::string witness = "player:" + std::to_string(player->GetGUID().GetCounter());
+    _answers.push_back({_storage->Submit([this, witness, line]
+    {
+        std::map<std::string, std::string> names;
+        auto name = [&](std::string const& actor)
+        {
+            if (actor == "world")
+                return std::string("the world");
+            if (!names.contains(actor))
+                names[actor] = _store.Actor(actor).value_or(ActorRecord{}).name;
+            return names[actor].empty() ? actor : names[actor];
+        };
+        if (!line)
+        {
+            pbc_json lines = pbc_json::array();
+            for (auto const& heard : _store.HeardBy(witness, 20))
+                lines.push_back({{"line", heard.source.id},
+                                 {"speaker", name(heard.authorId)},
+                                 {"channel", heard.channel},
+                                 {"time_ms", heard.createdMs},
+                                 {"text", heard.text}});
+            return pbc_json{{"ok", true}, {"lines", lines}}.dump();
+        }
+        // Only a line delivered to this player can be explained to them.
+        auto heard = _store.Source(witness, line);
+        if (!heard || heard->evidence != "delivered" || heard->authorId == witness)
+            return pbc_json{{"ok", false}, {"error", "not a line you heard"}}.dump();
+        pbc_json answer{{"ok", true}, {"line", line}, {"speaker", name(heard->authorId)}, {"text", heard->text},
+                        {"channel", heard->channel}};
+        if (auto opening = _store.Opening(heard->sceneId))
+            answer["started_by"] = {{"who", name(opening->first)}, {"text", opening->second}};
+        pbc_json remembers = pbc_json::array();
+        for (auto const& [kind, text] : _store.NotesAboutSubject(heard->authorId, witness))
+            remembers.push_back({{"kind", kind}, {"text", text}});
+        answer["remembers_you"] = remembers;  // what they remember now, not only what this line used
+        pbc_json actions = pbc_json::array();
+        for (auto const& [intent, status, detail] : _store.ActionsOfScene(heard->sceneId))
+        {
+            auto parsed = pbc_json::parse(intent, nullptr, false);
+            std::string kind = parsed.is_object() ? parsed.value("kind", parsed.value("action", std::string())) : "";
+            actions.push_back({{"action", kind}, {"status", status}, {"detail", detail}});
+        }
+        answer["actions"] = actions;
+        pbc_json cost = pbc_json::array();
+        uint64_t total = 0;
+        for (auto const& part : _ledger.CostOfScene(heard->sceneId))
+        {
+            cost.push_back({{"reason", part.reason}, {"nano", part.nano}, {"requests", part.requests}});
+            total += part.nano;
+        }
+        answer["cost"] = cost;
+        answer["cost_dollars"] = double(total) / 1e9;
+        return answer.dump();
+    }), std::move(done)});
+}
+
+bool Runtime::ChangeListener(Player* player, std::string const& changes, std::string& json, std::string& error)
+{
+    auto parsed = pbc_json::parse(changes, nullptr, false);
+    if (parsed.is_discarded())
+    {
+        error = "settings must be JSON";
+        return false;
+    }
+    ListenerSettings next = Listener(player->GetGUID());
+    if (!ApplyListenerJson(next, parsed, error))
+        return false;
+    auto key = player->GetGUID().GetRawValue();
+    _listeners[key] = next;
+    _listenerLoads.erase(key);  // This choice is newer than whatever was stored.
+    _nextRemark.erase(key);
+    json = ListenerJson(next).dump();
+    auto counter = player->GetGUID().GetCounter();
+    auto now = _epochStart + _now;
+    _listenerSaves.push_back(_storage->Submit([this, counter, json, now] { return _store.SaveListener(counter, json, now); }));
+    return true;
 }
 
 void Runtime::Tick(Scene& scene)
@@ -1239,6 +1547,66 @@ void Runtime::Update(uint32_t diff)
                       auto enemy = ResolveActor(actor);
                       return !enemy || !enemy->IsInCombat() || !PlayerbotDialogueBridge::Matches(enemy, bound);
                   });
+    for (auto it = _listenerLoads.begin(); it != _listenerLoads.end();)
+    {
+        if (!Ready(it->second))
+        {
+            ++it;
+            continue;
+        }
+        ListenerSettings settings;
+        try
+        {
+            std::string error;
+            if (auto stored = it->second.get())
+                if (!ApplyListenerJson(settings, pbc_json::parse(*stored, nullptr, false), error))
+                    PBC_Log(PBC_LogLevel::PBC_ERROR, "Stored hearing settings were not usable: {}.", error);
+        }
+        catch (std::exception const&)
+        {
+            PBC_Log(PBC_LogLevel::PBC_ERROR, "Hearing settings could not be read; the realm's apply.");
+        }
+        _listeners[it->first] = settings;
+        it = _listenerLoads.erase(it);
+    }
+    for (auto it = _answers.begin(); it != _answers.end();)
+    {
+        if (!Ready(it->result))
+        {
+            ++it;
+            continue;
+        }
+        std::string answer;
+        try
+        {
+            answer = it->result.get();
+        }
+        catch (std::exception const&)
+        {
+            answer = pbc_json{{"ok", false}, {"error", "the character store failed"}}.dump();
+        }
+        auto done = std::move(it->done);
+        it = _answers.erase(it);
+        done(answer);
+    }
+    std::erase_if(_listenerSaves,
+                  [](auto& pending)
+                  {
+                      if (!Ready(pending))
+                          return false;
+                      bool saved = false;
+                      try
+                      {
+                          saved = pending.get();
+                      }
+                      catch (std::exception const&)
+                      {
+                      }
+                      if (!saved)
+                          PBC_Log(PBC_LogLevel::PBC_ERROR,
+                                  "A player's saved choice (hearing or guild identity) could not be stored; it applies until restart.");
+                      return true;
+                  });
     std::erase_if(_observations,
                   [](auto& pending)
                   {
@@ -1383,20 +1751,28 @@ void Runtime::CombatOpening(Player* subject, PlayerbotDialogue::Entity const& bo
     if (!enemy || !PlayerbotDialogueBridge::Matches(enemy, bound))
         return;
     GameAudience audience;
+    uint32_t chance = _combatChance;
     for (auto const& [id, session] : sWorldSessionMgr->GetAllSessions())
         if (auto human = session->GetPlayer(); HasHumanConnection(human) && human->IsInWorld() &&
                                                human->IsWithinDistInMap(subject, 40.0f) &&
                                                !_combatOpened.contains(human->GetGUID()))
         {
+            EnsureListener(human->GetGUID());
+            auto const& settings = Listener(human->GetGUID());
+            if (settings.banter == Banter::Off || settings.On(ListenChannel::Nearby) != Hearing::Chatty)
+                continue;  // Banter is unprompted, so it is for players who hear everything nearby.
             audience = CaptureCombatAudience(human, enemy, _definitions, _realmPhase);
             if (!audience.actors.empty())
+            {
+                chance = settings.banter == Banter::Often ? std::min<uint32_t>(100, _combatChance * 5 / 2) : _combatChance;
                 break;
+            }
         }
     Enrich(audience);
     if (audience.actors.empty())
         return;                            // An unobserved simulation fight never starts inference.
     _combatAttempted[bound.guid] = bound;  // One chance per encounter, not per entrant/swing.
-    if (!CombatSpeechQuiet(audience) || std::uniform_int_distribution<uint32_t>(1, 100)(_random) > _combatChance)
+    if (!CombatSpeechQuiet(audience) || std::uniform_int_distribution<uint32_t>(1, 100)(_random) > chance)
         return;
     for (auto const& existing : _scenes)
         if (!existing->cancelled->load() && existing->audience.anchor == audience.anchor)
@@ -1498,19 +1874,38 @@ void Runtime::Background()
                 });
             break;
         }
+    // Each player has their own next remark, at the frequency they chose; a player who
+    // hears only replies, or nothing, nearby gets none.
     if (_ambientEnabled && _now >= _nextAmbient)
     {
-        _nextAmbient = _now + std::uniform_int_distribution<uint32_t>(_ambientMinimum, _ambientMaximum)(_random);
-        if (!_scenes.empty() || _now < _lastHumanActivity + _ambientQuiet)
-            return;
-        std::vector<Player*> humans;
+        _nextAmbient = _now + 5000;
+        // Every present player's timer starts when they are first seen, even mid-conversation;
+        // only the remark itself waits for a quiet moment.
+        bool quiet = _scenes.empty() && _now >= _lastHumanActivity + _ambientQuiet;
+        std::vector<Player*> due;
         for (auto const& [id, session] : sWorldSessionMgr->GetAllSessions())
             if (auto player = session->GetPlayer(); HasHumanConnection(player) && player->IsInWorld() &&
                                                     player->IsAlive() && !player->IsInCombat() && !player->IsFlying())
-                humans.push_back(player);
-        if (!humans.empty())
+            {
+                EnsureListener(player->GetGUID());
+                auto const& settings = Listener(player->GetGUID());
+                auto key = player->GetGUID().GetRawValue();
+                if (settings.remarks == Remarks::Never || settings.On(ListenChannel::Nearby) != Hearing::Chatty)
+                {
+                    _nextRemark.erase(key);
+                    continue;
+                }
+                auto [next, fresh] = _nextRemark.try_emplace(key, 0);
+                if (fresh)
+                    next->second = _remarksDueAt ? _remarksDueAt : _now + RemarkInterval(settings);
+                if (_now >= next->second)
+                    due.push_back(player);
+            }
+        if (quiet && !due.empty())
         {
-            auto anchor = humans[std::uniform_int_distribution<std::size_t>(0, humans.size() - 1)(_random)];
+            auto anchor = due[std::uniform_int_distribution<std::size_t>(0, due.size() - 1)(_random)];
+            _nextRemark[anchor->GetGUID().GetRawValue()] = _now + RemarkInterval(Listener(anchor->GetGUID()));
+            _remarksDueAt = 0;
             Chat(anchor, CHAT_MSG_SAY, LANG_UNIVERSAL,
                  "A quiet moment with nearby travellers. An optional brief public opening may address "
                  "a present traveller or companion. No one has said anything yet.",
@@ -1624,5 +2019,67 @@ void ObserveWorldEvent(Player* subject, std::string const& text, bool partyOnly,
 bool CharacterCommand(Player* player, std::string const& command)
 {
     return runtime && runtime->Command(player, command);
+}
+
+bool ListenerSettingsFor(Player* player, std::string& json)
+{
+    if (!runtime || !player)
+        return false;
+    json = runtime->ListenerSettingsJson(player);
+    return true;
+}
+
+bool GuildIdentityFor(Player* player, std::string& json, std::string& error)
+{
+    if (!runtime || !player)
+    {
+        error = "the character system is off";
+        return false;
+    }
+    return runtime->GuildIdentityFor(player, json, error);
+}
+
+bool ChangeGuildIdentity(Player* player, std::string const& changes, std::string& json, std::string& error)
+{
+    if (!runtime || !player)
+    {
+        error = "the character system is off";
+        return false;
+    }
+    return runtime->ChangeGuildIdentity(player, changes, json, error);
+}
+
+bool GroupRumours(Player* player, std::string const& group, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->Rumours(player, group, std::move(done));
+    return true;
+}
+
+bool ChangeRumour(Player* player, std::string const& request, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->ChangeRumour(player, request, std::move(done));
+    return true;
+}
+
+bool WhyLine(Player* player, uint64_t line, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->Why(player, line, std::move(done));
+    return true;
+}
+
+bool ChangeListenerSettings(Player* player, std::string const& changes, std::string& json, std::string& error)
+{
+    if (!runtime || !player)
+    {
+        error = "the character system is off";
+        return false;
+    }
+    return runtime->ChangeListener(player, changes, json, error);
 }
 }  // namespace PBC

@@ -7,6 +7,7 @@
 #include <memory>
 #include <optional>
 #include <string>
+#include <vector>
 
 namespace PBC
 {
@@ -32,6 +33,13 @@ struct ApiUsage
     std::string providerRequestId;
     std::string usageJson = "null";
     uint32_t latencyMs = 0;
+};
+
+struct SceneCost
+{
+    std::string reason;  // dialogue, selector, memory, ...
+    uint64_t nano = 0;
+    uint32_t requests = 0;
 };
 
 struct BudgetTotals
@@ -69,6 +77,8 @@ public:
     bool Reconcile(std::string const& requestId, ApiUsage const& usage) override;
     bool RecordDelivery(std::string const& requestId, std::string const& outcome) override;
     std::optional<BudgetTotals> Totals() override;
+    // What one scene's model requests cost against this budget, by reason.
+    std::vector<SceneCost> CostOfScene(std::string const& sceneId);
 
 private:
     class Impl;

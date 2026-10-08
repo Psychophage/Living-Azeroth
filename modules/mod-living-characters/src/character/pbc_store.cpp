@@ -20,7 +20,8 @@ enum Statement : uint32
     NoteById, NoteEdit, ActorEdited, RecallInvalidate, NotesReopen, DueActors,
     OwnerUpdate, NpcInsert, NpcSelect, OwnerFactInsert, NoteResolve, NoteSources, ActiveNoteSelect, ActiveNoteSources,
     DeliveryInsert, DeliveryClose, SourceById, SourceArchive, SourceRevise, SourceNotes,
-    NoteInvalidate, WitnessActorsEdited, PlayerRoleUpdate, ReportSelect, GroupSourceCheck, ReportDuplicate, Count
+    NoteInvalidate, WitnessActorsEdited, PlayerRoleUpdate, ReportSelect, GroupSourceCheck, ReportDuplicate,
+    ListenerSelect, ListenerUpsert, GuildIdentitySelect, GuildIdentityUpsert, GroupReportList, HeardLines, SceneOpening, NotesAbout, SceneActions, Count
 };
 
 class Connection final : public SqlConnection
@@ -124,6 +125,31 @@ private:
             "AND o.channel IN ('say','yell','emote','event','guild') AND EXISTS "
             "(SELECT 1 FROM pbc_witness g WHERE g.observation_id=o.id AND g.actor_id=?) FOR UPDATE",
             CONNECTION_SYNCH);
+        PrepareStatement(ListenerSelect, "SELECT settings FROM pbc_listener WHERE player_guid=?", CONNECTION_SYNCH);
+        PrepareStatement(ListenerUpsert, "INSERT INTO pbc_listener (player_guid,settings,updated_ms) VALUES (?,?,?) "
+            "ON DUPLICATE KEY UPDATE settings=VALUES(settings),updated_ms=VALUES(updated_ms)", CONNECTION_SYNCH);
+        PrepareStatement(GuildIdentitySelect, "SELECT guild_id,identity FROM pbc_guild_identity", CONNECTION_SYNCH);
+        PrepareStatement(GuildIdentityUpsert, "INSERT INTO pbc_guild_identity (guild_id,identity,updated_by,updated_ms) "
+            "VALUES (?,?,?,?) ON DUPLICATE KEY UPDATE identity=VALUES(identity),updated_by=VALUES(updated_by),"
+            "updated_ms=VALUES(updated_ms)", CONNECTION_SYNCH);
+        // Every report a group holds, resolved ones included, for its officers to manage.
+        PrepareStatement(GroupReportList, "SELECT id,version,operation_id,actor_id,subject_id,kind,content,authority,"
+            "resolved,compacted_version,created_ms,COALESCE((SELECT GROUP_CONCAT(DISTINCT o.author_id ORDER BY o.author_id SEPARATOR ', ') "
+            "FROM pbc_note_source s JOIN pbc_observation o ON o.id=s.observation_id WHERE s.note_id=pbc_note.id),''),"
+            "COALESCE((SELECT o.zone_id FROM pbc_note_source s JOIN pbc_observation o ON o.id=s.observation_id "
+            "WHERE s.note_id=pbc_note.id ORDER BY o.id LIMIT 1),0) "
+            "FROM pbc_note WHERE actor_id=? AND kind='report' AND valid=1 AND created_ms>=? ORDER BY id DESC LIMIT 50",
+            CONNECTION_SYNCH);
+        // "Why did they say that?": only what this witness was actually sent.
+        PrepareStatement(HeardLines, "SELECT o.id,o.scene_id,o.author_id,o.channel,o.created_ms,o.payload "
+            "FROM pbc_observation o JOIN pbc_witness w ON w.observation_id=o.id WHERE w.actor_id=? "
+            "AND o.evidence='delivered' AND o.excluded=0 AND o.author_id<>? ORDER BY o.id DESC LIMIT ?", CONNECTION_SYNCH);
+        PrepareStatement(SceneOpening, "SELECT author_id,payload FROM pbc_observation WHERE scene_id=? "
+            "AND evidence='observed' ORDER BY id LIMIT 1", CONNECTION_SYNCH);
+        PrepareStatement(NotesAbout, "SELECT kind,content FROM pbc_note WHERE actor_id=? AND subject_id=? AND valid=1 "
+            "AND resolved=0 ORDER BY id DESC LIMIT 5", CONNECTION_SYNCH);
+        PrepareStatement(SceneActions, "SELECT intent_json,status,detail FROM pbc_action WHERE scene_id=? "
+            "ORDER BY created_ms LIMIT 8", CONNECTION_SYNCH);
         PrepareStatement(ReportDuplicate, "SELECT n.id FROM pbc_note n JOIN pbc_note_source s ON s.note_id=n.id "
             "WHERE n.actor_id=? AND n.kind='report' AND n.subject_id=? AND n.valid=1 "
             "AND s.observation_id=? AND s.source_version=? LIMIT 1", CONNECTION_SYNCH);
@@ -288,6 +314,46 @@ std::optional<NpcIdentity> CharacterStore::Npc(uint32_t spawnId, uint32_t mapId,
     if (!row)
         return std::nullopt;
     return NpcIdentity{spawnId, mapId, instanceId, (*row)[0].Get<std::string>(), (*row)[1].Get<std::string>()};
+}
+
+std::optional<std::string> CharacterStore::Listener(uint32_t playerGuid)
+{
+    std::lock_guard lock(_impl->mutex);
+    if (!_impl->Ready())
+        return std::nullopt;
+    auto row = _impl->connection->Read(ListenerSelect, playerGuid);
+    return row ? std::optional<std::string>((*row)[0].Get<std::string>()) : std::nullopt;
+}
+
+bool CharacterStore::SaveListener(uint32_t playerGuid, std::string const& settings, uint64_t nowMs)
+{
+    if (settings.empty() || settings.size() > 1024)
+        return false;
+    std::lock_guard lock(_impl->mutex);
+    return _impl->Ready() && _impl->connection->Write(ListenerUpsert, playerGuid, settings, nowMs);
+}
+
+std::vector<std::pair<uint32_t, std::string>> CharacterStore::GuildIdentities()
+{
+    std::vector<std::pair<uint32_t, std::string>> identities;
+    std::lock_guard lock(_impl->mutex);
+    if (!_impl->Ready())
+        return identities;
+    if (auto rows = _impl->connection->Read(GuildIdentitySelect))
+        do
+        {
+            identities.emplace_back((*rows)[0].Get<uint32>(), (*rows)[1].Get<std::string>());
+        } while (rows->NextRow());
+    return identities;
+}
+
+bool CharacterStore::SaveGuildIdentity(uint32_t guildId, std::string const& identity, uint32_t editorGuid,
+    uint64_t nowMs)
+{
+    if (identity.size() > 4096)
+        return false;
+    std::lock_guard lock(_impl->mutex);
+    return _impl->Ready() && _impl->connection->Write(GuildIdentityUpsert, guildId, identity, editorGuid, nowMs);
 }
 
 std::optional<ActorRecord> CharacterStore::Actor(std::string const& id)
@@ -522,6 +588,106 @@ std::vector<NoteRecord> CharacterStore::Reports(std::string const& watch, std::s
         } while (rows->NextRow());
     std::reverse(result.begin(), result.end());
     return result;
+}
+
+std::vector<std::pair<NoteRecord, uint32_t>> CharacterStore::GroupReports(std::string const& group, uint64_t sinceMs)
+{
+    std::lock_guard lock(_impl->mutex);
+    std::vector<std::pair<NoteRecord, uint32_t>> result;
+    if (!_impl->Ready())
+        return result;
+    if (auto rows = _impl->connection->Read(GroupReportList, group, sinceMs))
+        do
+        {
+            auto const& row = *rows;
+            result.push_back({{row[0].Get<uint64>(), row[1].Get<uint32>(), row[2].Get<std::string>(),
+                row[3].Get<std::string>(), row[4].Get<std::string>(), row[5].Get<std::string>(),
+                row[6].Get<std::string>(), row[7].Get<std::string>(), row[8].Get<uint8>() != 0,
+                row[9].Get<uint64>() != 0, row[10].Get<uint64>(), {}, row[11].Get<std::string>()},
+                row[12].Get<uint32>()});
+        } while (rows->NextRow());
+    return result;
+}
+
+bool CharacterStore::ForgetNote(std::string const& actor, uint64_t noteId, uint32_t expectedVersion,
+    uint64_t editorGuid, bool administrator)
+{
+    std::lock_guard lock(_impl->mutex);
+    if (!_impl->Ready())
+        return false;
+    auto& db = *_impl->connection;
+    SqlTransaction transaction(db);
+    if (!transaction)
+        return false;
+    auto owner = db.Read(ActorSelect, actor);
+    if (!owner || (!administrator && (!editorGuid || (*owner)[2].Get<uint64>() != editorGuid)))
+        return false;
+    auto note = db.Read(NoteById, noteId);
+    if (!note || (*note)[0].Get<uint32>() != expectedVersion || (*note)[1].Get<std::string>() != actor)
+        return false;
+    // Recall built from it is rebuilt; the note itself stays in the database, no longer used.
+    return db.Write(RecallInvalidate, noteId) && db.Write(NotesReopen, noteId) && db.Write(NoteInvalidate, noteId) &&
+        db.Write(ActorEdited, actor) && transaction.Commit();
+}
+
+std::vector<ObservationRecord> CharacterStore::HeardBy(std::string const& witness, uint32_t limit)
+{
+    std::lock_guard lock(_impl->mutex);
+    std::vector<ObservationRecord> lines;
+    if (!_impl->Ready())
+        return lines;
+    if (auto rows = _impl->connection->Read(HeardLines, witness, witness, limit))
+        do
+        {
+            ObservationRecord line;
+            line.source.id = (*rows)[0].Get<uint64>();
+            line.sceneId = (*rows)[1].Get<std::string>();
+            line.authorId = (*rows)[2].Get<std::string>();
+            line.channel = (*rows)[3].Get<std::string>();
+            line.createdMs = (*rows)[4].Get<uint64>();
+            line.text = (*rows)[5].Get<std::string>();
+            lines.push_back(std::move(line));
+        } while (rows->NextRow());
+    return lines;
+}
+
+std::optional<std::pair<std::string, std::string>> CharacterStore::Opening(std::string const& sceneId)
+{
+    std::lock_guard lock(_impl->mutex);
+    if (!_impl->Ready())
+        return std::nullopt;
+    auto row = _impl->connection->Read(SceneOpening, sceneId);
+    return row ? std::optional<std::pair<std::string, std::string>>({(*row)[0].Get<std::string>(), (*row)[1].Get<std::string>()})
+               : std::nullopt;
+}
+
+std::vector<std::pair<std::string, std::string>> CharacterStore::NotesAboutSubject(std::string const& actor,
+    std::string const& subject)
+{
+    std::lock_guard lock(_impl->mutex);
+    std::vector<std::pair<std::string, std::string>> notes;
+    if (!_impl->Ready())
+        return notes;
+    if (auto rows = _impl->connection->Read(NotesAbout, actor, subject))
+        do
+        {
+            notes.emplace_back((*rows)[0].Get<std::string>(), (*rows)[1].Get<std::string>());
+        } while (rows->NextRow());
+    return notes;
+}
+
+std::vector<std::tuple<std::string, std::string, std::string>> CharacterStore::ActionsOfScene(std::string const& sceneId)
+{
+    std::lock_guard lock(_impl->mutex);
+    std::vector<std::tuple<std::string, std::string, std::string>> actions;
+    if (!_impl->Ready())
+        return actions;
+    if (auto rows = _impl->connection->Read(SceneActions, sceneId))
+        do
+        {
+            actions.emplace_back((*rows)[0].Get<std::string>(), (*rows)[1].Get<std::string>(), (*rows)[2].Get<std::string>());
+        } while (rows->NextRow());
+    return actions;
 }
 
 std::vector<std::string> CharacterStore::PendingActors(uint64_t nowMs, uint32_t inactiveMs,

@@ -12,7 +12,9 @@ if(BUILD_TESTING)
         "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_store_test.cpp"
         "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_service_test.cpp"
         "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_context_test.cpp"
-        "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_knowledge_test.cpp")
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_knowledge_test.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_listener_test.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/pbc_guild_test.cpp")
     set_property(GLOBAL APPEND PROPERTY ACORE_MODULE_TEST_INCLUDES
         "${CMAKE_CURRENT_SOURCE_DIR}/src/llm"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/api"
