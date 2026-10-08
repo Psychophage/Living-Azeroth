@@ -60,7 +60,9 @@ carry: what the guild is for, what its members value, its traditions, its curren
 ambitions and how its members speak. Bot members then speak as members of that guild.
 `.chars guild` shows it; the guild master and officers (whoever may set the message of
 the day) change it with `.chars guild purpose|values|traditions|ambitions|voice <text>`,
-and `.chars guild fade <hours>` sets how long its rumours last (72 by default). It is
+and `.chars guild fade <hours>` sets how long its rumours last (72 by default).
+`.chars guild draft <a few words>` writes a first version with one model call; nothing is
+saved until `.chars guild accept`, after which each part can still be changed. It is
 stored per guild (`pbc_guild_identity`), separately from the prepared knowledge catalogue.
 
 `.chars rumours` lists the guild's shared reports for its members; officers correct,

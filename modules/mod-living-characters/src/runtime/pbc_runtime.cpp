@@ -721,6 +721,55 @@ void Runtime::Why(Player* player, uint64_t line, std::function<void(std::string)
     }), std::move(done)});
 }
 
+void Runtime::DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done)
+{
+    auto refuse = [&](std::string const& error) { done(pbc_json{{"ok", false}, {"error", error}}.dump()); };
+    auto guild = sGuildMgr->GetGuildById(player->GetGuildId());
+    if (!guild || !guild->GetMember(player->GetGUID()))
+        return refuse("not in a guild");
+    if (!guild->HasRankRight(player, GR_RIGHT_SETMOTD))
+        return refuse("only the guild master and officers can draft it");
+    if (seed.size() < 3 || seed.size() > 300)
+        return refuse("describe the guild in 3-300 characters");
+    if (_guildPrompt.empty() || !_model)
+        return refuse("drafting is unavailable");
+    auto const& identities = GuildIdentities();
+    auto written = identities.find(guild->GetId());
+    pbc_json context = {{"task", "guild_identity"},
+                        {"guild_name", guild->GetName()},
+                        {"faction", player->GetTeamId() == TEAM_ALLIANCE ? "Alliance" : "Horde"},
+                        {"realm_phase", _realmPhase},
+                        {"officers_words", seed},
+                        {"current", GuildIdentityJson(written != identities.end() ? written->second : GuildIdentity{})}};
+    ApiReservation request;
+    request.reason = "guild_identity";
+    request.actorId = "guild:" + std::to_string(guild->GetId());
+    request.mapId = player->GetMapId();
+    request.zoneId = player->GetZoneId();
+    _answers.push_back({_inference->Submit([this, context = context.dump(), request]
+    {
+        pbc_json schema = {{"type", "object"}, {"additionalProperties", false}, {"properties", pbc_json::object()},
+                           {"required", pbc_json::array()}};
+        for (auto const& field : {"purpose", "values", "traditions", "ambitions", "voice"})
+        {
+            schema["properties"][field] = {{"type", "string"}};
+            schema["required"].push_back(field);
+        }
+        auto reply = _model->Generate(_guildPrompt, context, schema.dump(), request, 600);
+        if (!reply.success)
+            return pbc_json{{"ok", false}, {"error", "the draft could not be written (" + reply.error + ")"}}.dump();
+        GuildIdentity draft;
+        std::string error;
+        bool usable = ApplyGuildIdentityJson(draft, pbc_json::parse(reply.text, nullptr, false), error);
+        _ledger.RecordDelivery(reply.requestId, usable ? "drafted" : "discarded");
+        if (!usable)
+            return pbc_json{{"ok", false}, {"error", "the draft was not usable: " + error}}.dump();
+        auto fields = GuildIdentityJson(draft);
+        fields.erase("report_hours");
+        return pbc_json{{"ok", true}, {"draft", fields}}.dump();
+    }), std::move(done)});
+}
+
 bool Runtime::ChangeListener(Player* player, std::string const& changes, std::string& json, std::string& error)
 {
     auto parsed = pbc_json::parse(changes, nullptr, false);
@@ -2062,6 +2111,14 @@ bool ChangeRumour(Player* player, std::string const& request, std::function<void
     if (!runtime || !player)
         return false;
     runtime->ChangeRumour(player, request, std::move(done));
+    return true;
+}
+
+bool DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->DraftGuildIdentity(player, seed, std::move(done));
     return true;
 }
 

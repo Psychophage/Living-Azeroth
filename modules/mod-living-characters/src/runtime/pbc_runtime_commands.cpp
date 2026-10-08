@@ -60,7 +60,44 @@ bool Runtime::Command(Player* player, std::string const& command)
         std::getline(input, text);
         std::string json;
         std::string error;
-        if (!field.empty())
+        auto key = player->GetGUID().GetRawValue();
+        if (field == "draft")
+        {
+            auto seed = text.substr(std::min(text.size(), text.find_first_not_of(' ')));
+            auto guid = player->GetGUID();
+            DraftGuildIdentity(player, seed, [this, guid, key](std::string answer)
+            {
+                auto asker = ObjectAccessor::FindPlayer(guid);
+                if (!asker)
+                    return;
+                ChatHandler chat(asker->GetSession());
+                auto result = pbc_json::parse(answer, nullptr, false);
+                if (result.is_discarded() || !result.value("ok", false))
+                    return chat.SendSysMessage("No draft: " + result.value("error", std::string("unavailable")) + ".");
+                _guildDrafts[key] = result["draft"];
+                for (auto const& [name, value] : result["draft"].items())
+                    chat.SendSysMessage("Draft " + name + ": " + value.get<std::string>());
+                chat.SendSysMessage("Nothing is saved yet: .chars guild accept keeps it, then change any part.");
+            });
+            return true;
+        }
+        if (field == "accept")
+        {
+            auto draft = _guildDrafts.find(key);
+            if (draft == _guildDrafts.end())
+            {
+                tell("There is no draft to accept; use .chars guild draft <a few words> first.");
+                return true;
+            }
+            if (!ChangeGuildIdentity(player, draft->second.dump(), json, error))
+            {
+                tell("Not changed: " + error + ".");
+                return true;
+            }
+            _guildDrafts.erase(draft);
+            field.clear();
+        }
+        else if (!field.empty())
         {
             pbc_json change;
             if (field == "fade")
@@ -98,7 +135,8 @@ bool Runtime::Command(Player* player, std::string const& command)
         tell("Rumours fade after " + std::to_string(identity["report_hours"].get<uint64_t>()) + " hours.");
         if (field.empty())
             tell(guild["may_edit"].get<bool>()
-                     ? "Change with .chars guild purpose|values|traditions|ambitions|voice <text>, or .chars guild fade <hours>."
+                     ? "Change with .chars guild purpose|values|traditions|ambitions|voice <text>, .chars guild fade <hours>, "
+                       "or start from .chars guild draft <a few words>."
                      : "Only the guild master and officers can change it.");
         return true;
     }

@@ -96,6 +96,8 @@ public:
     void ChangeRumour(Player* player, std::string const& request, std::function<void(std::string)> done);
     // Lines this player heard (line 0), or why one was said; JSON to `done` on the world thread.
     void Why(Player* player, uint64_t line, std::function<void(std::string)> done);
+    // A draft identity for the officer's guild from a few words: one model call; nothing saved.
+    void DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done);
     void WorldEvent(Player* subject, std::string const& text, bool partyOnly, bool interruptDialogue, Unit* enemy);
 
 private:
@@ -163,6 +165,8 @@ private:
         std::function<void(std::string)> done;
     };
     std::vector<Answer> _answers;
+    std::string _guildPrompt;
+    std::map<uint64_t, pbc_json> _guildDrafts;  // per officer: the last draft, until accepted
     uint64_t _lastHumanActivity = 0;
     uint32_t _memoryInactiveMs = 300000;
     uint32_t _memoryTokens = 4096;

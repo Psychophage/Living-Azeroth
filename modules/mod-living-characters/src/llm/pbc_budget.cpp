@@ -121,7 +121,8 @@ bool BudgetStore::Open(std::string const& connectionInfo, std::string const& bud
 bool BudgetStore::Reserve(ApiReservation const& request)
 {
     static std::set<std::string> const reasons =
-        {"selector", "direct", "ambient", "combat_banter", "biography", "memory", "compaction", "evaluation"};
+        {"selector", "direct", "ambient", "combat_banter", "biography", "memory", "compaction", "evaluation",
+         "guild_identity"};
     if ((!request.maximumNano && request.provider != "self_hosted") || request.requestId.empty() || request.model.empty() ||
         !reasons.contains(request.reason) || request.attempt < 1 || request.attempt > 2)
         return false;

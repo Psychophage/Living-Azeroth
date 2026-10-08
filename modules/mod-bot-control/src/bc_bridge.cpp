@@ -334,6 +334,27 @@ void Bridge::Guild(Player* player, pbc_json const& request)
     std::string json;
     std::string error;
     bool done;
+    if (request.contains("draft"))
+    {
+        if (!request["draft"].is_string())
+            return Fail(player, id, "bad_request");
+        // One model call; the reply carries the draft for the officer to edit, nothing saved.
+        ObjectGuid guid = player->GetGUID();
+        bool started = PBC::DraftGuildIdentity(player, request["draft"].get<std::string>(), [this, guid, id](std::string answer)
+        {
+            Player* asker = ObjectAccessor::FindConnectedPlayer(guid);
+            if (!asker)
+                return;
+            auto body = pbc_json::parse(answer, nullptr, false);
+            if (body.is_discarded() || !body.value("ok", false))
+                return Send(asker, {{"re", id}, {"ok", false}, {"error", "refused"},
+                                    {"reason", body.is_discarded() ? "" : body.value("error", "")}});
+            Reply(asker, id, {{"draft", body["draft"]}});
+        });
+        if (!started)
+            Fail(player, id, "unavailable");
+        return;
+    }
     if (request.contains("change"))
     {
         if (!request["change"].is_object())

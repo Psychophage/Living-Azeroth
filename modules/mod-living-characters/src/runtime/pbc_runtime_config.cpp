@@ -125,6 +125,7 @@ bool Runtime::Start()
     settings.selectorNanoPerToken =
         sConfigMgr->GetOption<uint64_t>("PBC.CharacterSystem.SelectorNanoPerToken", settings.selectorNanoPerToken);
     settings.selectorInstructions = ReadPrompt(path, "Selector.system");
+    _guildPrompt = ReadPrompt(path, "GuildIdentity.system");
     settings.selectorCapturePath =
         sConfigMgr->GetOption<std::string>("PBC.CharacterSystem.SelectorCapturePath", "", false);
     settings.selectorCaptureMaxRecords =

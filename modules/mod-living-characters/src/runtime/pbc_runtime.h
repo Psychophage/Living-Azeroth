@@ -40,6 +40,9 @@ bool ChangeRumour(Player* player, std::string const& request, std::function<void
 // With line 0, the last lines characters said to this player (`lines`); otherwise why that line
 // was said: `started_by`, `remembers_you`, `actions`, `cost`. Only lines the player heard.
 bool WhyLine(Player* player, uint64_t line, std::function<void(std::string)> done);
+// A draft identity for the officer's guild from a few words (one model call, nothing saved):
+// `done` gets {"ok", "draft": {purpose, values, traditions, ambitions, voice}} or an error.
+bool DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done);
 }
 
 #endif

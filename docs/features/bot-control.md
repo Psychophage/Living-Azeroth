@@ -64,6 +64,9 @@ exchange, 0 for the realm's). `change` carries only the fields to change.
 [Characters](characters/README.md#guild-identity)): `purpose`, `values`, `traditions`,
 `ambitions`, `voice` (each up to 400 characters) and `report_hours` (how long its rumours
 last, 1-720). Only ranks that may set the guild's message of the day may change it.
+`{"op":"guild","draft":"a few words"}` asks for a draft of the five fields (one model call
+from the dialogue budget); the reply's `draft` is for the officer to edit and then send as
+a `change`; nothing is saved by drafting.
 
 `rumours` lists the guild's reports, resolved ones included: `id`, `version`, `text`,
 `by` (who witnessed it), `zone`, `age_ms`, `fades_in_ms`, `resolved`, `corrected`. A
