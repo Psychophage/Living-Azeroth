@@ -871,6 +871,18 @@ void PlayerbotPopulationMgr::Update()
     Publish(humans, now, offlineKept);
 }
 
+std::vector<std::pair<uint32_t, uint32_t>> PlayerbotPopulationMgr::FamiliarTo(uint32_t human, std::size_t limit) const
+{
+    std::vector<std::pair<uint32_t, uint32_t>> known;
+    for (auto const& [key, value] : _familiarity)
+        if (uint32_t(key >> 32) == human && value.score > 0)
+            known.emplace_back(uint32_t(key & 0xffffffff), value.score);
+    std::sort(known.begin(), known.end(), [](auto const& a, auto const& b) { return a.second > b.second; });
+    if (known.size() > limit)
+        known.resize(limit);
+    return known;
+}
+
 std::string PlayerbotPopulationMgr::Status() const
 {
     std::ostringstream out;

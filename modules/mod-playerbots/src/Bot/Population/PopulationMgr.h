@@ -39,6 +39,9 @@ public:
     void Interaction(uint32_t human, uint32_t bot);  // Queue from any map thread; no SQL.
     bool Protected(uint32_t bot) const;
     std::string Status() const;
+    // The characters a player has come to know best, best first: (bot GUID counter, familiarity
+    // score). World thread only.
+    std::vector<std::pair<uint32_t, uint32_t>> FamiliarTo(uint32_t human, std::size_t limit) const;
     RealmPopulation::Settings const& GetSettings() const { return _settings; }
 
 private:
