@@ -42,6 +42,8 @@ local function Pip(index)
     pip.border:SetVertexColor(1, 0.82, 0)
     pip.border:Hide()
     pip:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+    pip.flags = LA.Markers.Flags(pip, 12)
+    pip.flags:SetPoint("LEFT", pip, "RIGHT", 4, 0)
     pip.tick = pip:CreateTexture(nil, "OVERLAY")
     pip.tick:SetTexture(TICK)
     pip.tick:SetSize(14, 14)
@@ -51,7 +53,7 @@ local function Pip(index)
     pip:SetScript("OnClick", function(self)
         if self.guid then
             GameTooltip:Hide() -- it would cover the ring
-            LA.Ring.Toggle(self.guid, self)
+            LA.Ring.Toggle({ key = "bot:" .. self.guid, guids = { self.guid } }, self)
         end
     end)
     pip:SetScript("OnEnter", function(self)
@@ -74,7 +76,7 @@ local function Pip(index)
         if guid and LA.Orders.Pending(guid) then
             self.border:SetAlpha(0.45 + 0.45 * math.sin(GetTime() * 9))
             self.border:Show()
-        elseif guid and LA.Ring.OpenFor() == guid then
+        elseif guid and LA.Ring.OpenFor() == "bot:" .. guid then
             self.border:SetAlpha(1)
             self.border:Show()
         else
@@ -95,6 +97,7 @@ function Party.Update()
             if bot and bot.commandable then
                 pip.guid = guid
                 pip.icon:SetTexture(LA.Orders.Standing(bot).icon)
+                pip.flags:Update(bot)
                 pip:Show()
             else
                 pip.guid = nil
@@ -174,7 +177,8 @@ function Party.Unlock(unlocked)
         LA.Print("frames can't be moved during combat.")
         return
     end
-    LA.SetShown(Mover(), unlocked)
+    -- In a raid the game hides the party frames; the raid frames have their own mover.
+    LA.SetShown(Mover(), unlocked and GetNumRaidMembers() == 0)
 end
 
 function LA.UsesDragonUI()

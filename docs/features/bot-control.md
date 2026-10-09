@@ -17,10 +17,18 @@ it says so once and stays quiet.
   has actually done it, then shows a tick. The ring stays open for more orders; clicking
   anywhere else, Escape, or the same icon closes it, and clicking another bot's icon moves
   it there. Out of combat, the numbers 1-8 give the ring's orders.
+- **Raid frames** (in a raid): compact cells by group with class-coloured health, power,
+  role and the bot medal; clicking a cell targets that player, right-click gives the usual
+  menu. Your bots' cells carry the order icon, with small marks for passive and not
+  looting. A group's name or "All my bots" opens the ring for several bots, and
+  shift-clicking order icons picks a selection ("Orders for N selected"). Someone else's
+  bots show a grey medal and no order icon. With the CompactRaidFrame addon installed, its
+  frames are hidden while these are in use (`LivingAzerothDB.raid.hideCompact = false`
+  keeps them).
 - `/la ring`: where the ring opens (beside the frame, at the mouse, or a fixed spot), its
   size, and which orders it holds (up to eight).
-- `/la unlock` and `/la lock`: drag the party frames (with DragonUI, use its `/duiedit`)
-  and the ring's fixed spot.
+- `/la unlock` and `/la lock`: drag the party frames (with DragonUI, use its `/duiedit`),
+  the raid frames and the ring's fixed spot, out of combat.
 - `/la` shows the connection; `/la debug` prints what the addon does.
 
 The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.

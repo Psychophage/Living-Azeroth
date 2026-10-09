@@ -11,7 +11,11 @@ local PLACEMENTS = {
     { id = "cursor", label = "At the mouse", hint = "Centred where you click" },
     { id = "fixed", label = "A fixed spot", hint = "Drag it after /la unlock" },
 }
-local SIZES = { { id = "small", label = "Small" }, { id = "normal", label = "Normal" }, { id = "large", label = "Large" } }
+local SIZES = {
+    { id = "small", label = "Small" },
+    { id = "normal", label = "Normal" },
+    { id = "large", label = "Large" },
+}
 
 local window
 

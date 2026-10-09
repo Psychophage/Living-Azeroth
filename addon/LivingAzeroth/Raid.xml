@@ -1,0 +1,16 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+    <!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+    <!-- One raid member's cell. The game's secure raid headers create these, so clicking a cell targets its
+         player even in combat; everything drawn on it is set up in Raid.lua. -->
+    <Button name="LivingAzerothRaidCellTemplate" inherits="SecureUnitButtonTemplate" virtual="true">
+        <Size x="112" y="40"/>
+        <Attributes>
+            <Attribute name="*type1" type="string" value="target"/>
+            <Attribute name="*type2" type="string" value="menu"/>
+        </Attributes>
+        <Scripts>
+            <OnLoad>LivingAzeroth.Raid.SetUpCell(self)</OnLoad>
+        </Scripts>
+    </Button>
+</Ui>

@@ -1,8 +1,8 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The orders ring: a bot's orders around a disc that names the bot and what it is doing. It stays open while
--- orders are given; clicking anywhere else, Escape, or the same order icon again closes it, and clicking another
--- bot's order icon moves it there. Number keys pick orders while it is open (out of combat; the game does not
--- let addons change key bindings during combat).
+-- The orders ring: orders around a disc that names who they are for (one bot, a raid group, all the player's
+-- bots, or a selection) and what they are doing. It stays open while orders are given; clicking anywhere else,
+-- Escape, or what opened it again closes it, and opening it for someone else moves it there. Number keys pick
+-- orders while it is open (out of combat; the game does not let addons change key bindings during combat).
 local _, LA = ...
 
 local Ring = {}
@@ -55,40 +55,81 @@ hint:SetHeight(28)
 hint:SetJustifyV("TOP")
 
 local buttons = {}
-local current -- { guid, anchor }
+local current -- { key, label, guids }
 local hovered
 
 local function Settings()
     return LivingAzerothDB.ring
 end
 
-local function Bot()
-    return current and LA.Bots.Mine()[current.guid]
+-- The bots the ring is for that are still here and commandable.
+local function Bots()
+    local bots = {}
+    for _, guid in ipairs(current and current.guids or {}) do
+        local bot = LA.Bots.Mine()[guid]
+        if bot and bot.commandable then
+            bots[#bots + 1] = bot
+        end
+    end
+    return bots
+end
+
+local function For(guid)
+    for _, candidate in ipairs(current and current.guids or {}) do
+        if candidate == guid then
+            return true
+        end
+    end
+    return false
+end
+
+-- What the bots are doing: their shared standing order, or "Mixed orders".
+local function State(bots)
+    local first = LA.Orders.Standing(bots[1])
+    for i = 2, #bots do
+        if LA.Orders.Standing(bots[i]) ~= first then
+            return "Mixed orders"
+        end
+    end
+    return first.state
 end
 
 local function Refresh()
-    local bot = Bot()
-    if not bot then
+    local bots = Bots()
+    if #bots == 0 then
         frame:Hide()
         return
     end
-    name:SetText(bot.name)
-    local waiting = LA.Orders.Pending(bot.guid)
+    name:SetText(current.label or bots[1].name)
+    local waiting = {}
+    for _, bot in ipairs(bots) do
+        local id = LA.Orders.Pending(bot.guid)
+        if id then
+            waiting[id] = true
+            waiting.any = true
+        end
+    end
     if hovered then
         hint:SetText(LA.Orders.byId[hovered].label)
-    elseif waiting then
-        hint:SetText("Waiting for " .. bot.name .. "...")
+    elseif waiting.any then
+        hint:SetText("Waiting for " .. (#bots == 1 and bots[1].name or #bots .. " bots") .. "...")
     else
-        hint:SetText(LA.Orders.Standing(bot).state)
+        hint:SetText(State(bots))
     end
     for _, button in ipairs(buttons) do
         if button:IsShown() then
             local id = button.order
-            local offered = LA.Orders.Offered(bot, id)
-            button:SetChecked(offered and LA.Orders.IsOn(bot, id))
+            local offered, on = false, true
+            for _, bot in ipairs(bots) do
+                if LA.Orders.Offered(bot, id) then
+                    offered = true
+                    on = on and LA.Orders.IsOn(bot, id)
+                end
+            end
+            button:SetChecked(offered and on)
             button.icon:SetDesaturated(not offered)
             button:SetAlpha(offered and 1 or 0.45)
-            button.waiting = waiting == id
+            button.waiting = waiting[id] or false
         end
     end
 end
@@ -136,9 +177,10 @@ for i = 1, LA.Orders.MAX_RING do
     button.glow:Hide()
     button:RegisterForClicks("AnyUp")
     button:SetScript("OnClick", function(self)
-        local bot = Bot()
-        if bot and LA.Orders.Offered(bot, self.order) then
-            LA.Orders.Give(bot, self.order)
+        for _, bot in ipairs(Bots()) do
+            if LA.Orders.Offered(bot, self.order) then
+                LA.Orders.Give(bot, self.order)
+            end
         end
         Refresh() -- a click toggles the check; the bot's real state decides it
     end)
@@ -178,13 +220,14 @@ local function Place(anchor)
     end
 end
 
--- Opens the ring for a bot beside anchor (its order icon); the same bot again closes it.
-function Ring.Toggle(guid, anchor)
-    if frame:IsShown() and current and current.guid == guid then
+-- Opens the ring beside anchor for target = { key, label, guids }; the same key again closes it. Without a label
+-- it is named after its only bot.
+function Ring.Toggle(target, anchor)
+    if frame:IsShown() and current and current.key == target.key then
         frame:Hide()
         return
     end
-    current = { guid = guid }
+    current = target
     hovered = nil
     Layout()
     Place(anchor)
@@ -198,8 +241,9 @@ function Ring.Close()
     frame:Hide()
 end
 
+-- The key of what the ring is open for, if it is open.
 function Ring.OpenFor()
-    return frame:IsShown() and current and current.guid
+    return frame:IsShown() and current and current.key
 end
 
 function Ring.Relayout()
@@ -245,12 +289,12 @@ events:SetScript("OnEvent", function(_, event)
 end)
 
 LA.On("orders:changed", function(guid)
-    if current and current.guid == guid then
+    if For(guid) then
         Refresh()
     end
 end)
 LA.On("bots:changed", function(guid)
-    if current and current.guid == guid then
+    if For(guid) then
         Refresh()
     end
 end)

@@ -30,6 +30,37 @@ function Markers.Medal(parent, size)
     return medal
 end
 
+-- Small marks for switches that change how a bot behaves: passive, and not picking up loot.
+function Markers.Flags(parent, size)
+    local flags = CreateFrame("Frame", nil, parent)
+    flags:SetSize(size * 2 + 2, size)
+    flags.passive = flags:CreateTexture(nil, "OVERLAY")
+    flags.passive:SetTexture("Interface\\Icons\\Spell_Nature_Sleep")
+    flags.passive:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    flags.passive:SetSize(size, size)
+    flags.noLoot = flags:CreateTexture(nil, "OVERLAY")
+    flags.noLoot:SetTexture("Interface\\Icons\\INV_Misc_Bag_10")
+    flags.noLoot:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    flags.noLoot:SetDesaturated(true)
+    flags.noLoot:SetVertexColor(0.8, 0.5, 0.5)
+    flags.noLoot:SetSize(size, size)
+    function flags:Update(bot)
+        local switches = bot and bot.switches or {}
+        local passive, noLoot = switches.passive == true, switches.loot == false
+        self.passive:ClearAllPoints()
+        self.noLoot:ClearAllPoints()
+        self.passive:SetPoint("RIGHT")
+        if passive then
+            self.noLoot:SetPoint("RIGHT", self.passive, "LEFT", -2, 0)
+        else
+            self.noLoot:SetPoint("RIGHT")
+        end
+        LA.SetShown(self.passive, passive)
+        LA.SetShown(self.noLoot, noLoot)
+    end
+    return flags
+end
+
 -- Tooltip
 
 local function TooltipLine(bot)

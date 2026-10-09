@@ -84,6 +84,7 @@ SlashCmdList.LIVINGAZEROTH = function(text)
         LA.Bridge.Connect()
     elseif command == "unlock" or command == "lock" then
         LA.Party.Unlock(command == "unlock")
+        LA.Raid.Unlock(command == "unlock")
         LA.RingSettings.Unlock(command == "unlock")
     elseif command == "ring" then
         LA.RingSettings.Toggle()
