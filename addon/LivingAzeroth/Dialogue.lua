@@ -19,7 +19,6 @@ local BANTER = { { "off", "Off" }, { "sometimes", "Sometimes" }, { "often", "Oft
 local page
 local settings -- the server's copy, once it has answered
 local radios = {} -- setting -> { value -> radio }
-local lines = {}
 local chosenLine
 
 local function Status(text, r, g, b)
@@ -58,32 +57,42 @@ local function Change(fields)
     end)
 end
 
-local function RadioRow(parent, key, options, x, y, width)
+local function Radio(parent, key, value, label)
     radios[key] = radios[key] or {}
-    for i, option in ipairs(options) do
-        local radio = CreateFrame("CheckButton", nil, parent, "UIRadioButtonTemplate")
-        radio:SetPoint("TOPLEFT", x + (i - 1) * width, y)
-        local label = radio:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        label:SetPoint("LEFT", radio, "RIGHT", 2, 0)
-        label:SetText(option[2])
-        radio:SetScript("OnClick", function()
-            ShowSettings() -- the dot moves once the server has it
-            Change({ [key] = option[1] })
-        end)
-        radios[key][option[1]] = radio
+    local radio = CreateFrame("CheckButton", nil, parent, "UIRadioButtonTemplate")
+    if label then
+        local text = radio:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+        text:SetPoint("LEFT", radio, "RIGHT", 2, 0)
+        text:SetText(label)
+        radio:SetHitRectInsets(0, -text:GetStringWidth() - 4, 0, 0)
     end
+    radio:SetScript("OnClick", function()
+        ShowSettings() -- the dot moves once the server has it
+        Change({ [key] = value })
+    end)
+    radios[key][value] = radio
+    return radio
 end
 
-local function Slider(parent, name, low, high, step, x, y)
+local function Slider(parent, name, low, high, step)
     local slider = CreateFrame("Slider", "LivingAzerothDialogue" .. name, parent, "OptionsSliderTemplate")
-    slider:SetPoint("TOPLEFT", x, y)
-    slider:SetWidth(200)
+    slider:SetWidth(220)
     slider:SetMinMaxValues(low, high)
     slider:SetValueStep(step)
     _G[slider:GetName() .. "Low"]:SetText("")
     _G[slider:GetName() .. "High"]:SetText("")
     _G[slider:GetName() .. "Text"]:SetText("")
     return slider
+end
+
+local function Explained(slider, title, text)
+    slider:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine(title, 1, 1, 1)
+        GameTooltip:AddLine(text, nil, nil, nil, true)
+        GameTooltip:Show()
+    end)
+    slider:SetScript("OnLeave", GameTooltip_Hide)
 end
 
 -- Why did they say that?
@@ -97,15 +106,12 @@ local function Spoken(text, speaker)
     return text
 end
 
+local CHANNEL_NAMES = { whisper = "Whisper", party = "Party", raid = "Raid", say = "Say", yell = "Yell",
+    guild = "Guild", general = "General", emote = "Emote" }
+
 local function Explain(line)
     chosenLine = line
-    for _, row in ipairs(page.rows) do
-        if row.line == line then
-            row:LockHighlight()
-        else
-            row:UnlockHighlight()
-        end
-    end
+    page.lines:Choose(line)
     page.why:SetText("Asking...")
     LA.Bridge.Request({ op = "why", line = line }, function(reply)
         if chosenLine ~= line then
@@ -115,7 +121,10 @@ local function Explain(line)
             page.why:SetText("|cffff5040" .. (reply.reason or reply.error or "?") .. "|r")
             return
         end
-        local text = { "|cffffd100" .. (reply.speaker or "?") .. "|r said: " .. Spoken(reply.text, reply.speaker) }
+        local speaker = "|cffffd100" .. (reply.speaker or "?") .. "|r"
+        local spoken = Spoken(reply.text, reply.speaker)
+        -- An emote is an action ("grips his staff"), not a quote.
+        local text = { reply.channel == "emote" and (speaker .. " " .. spoken) or (speaker .. " said: " .. spoken) }
         if reply.started_by then
             local who = reply.started_by.who
             text[#text + 1] = "\n|cffffd100What started it|r\n" .. who .. ": " .. Spoken(reply.started_by.text, who)
@@ -139,53 +148,82 @@ local function Explain(line)
     end)
 end
 
-local function ShowLines()
-    for i, row in ipairs(page.rows) do
-        local line = lines[i]
-        if line then
-            row.line = line.line
-            row.text:SetText("|cffffd100" .. (line.speaker or "?") .. "|r " .. Spoken(line.text, line.speaker))
-            row:Show()
-        else
-            row.line = nil
-            row:Hide()
-        end
-    end
-    LA.SetShown(page.noLines, #lines == 0)
-end
-
 local function LoadLines()
     LA.Bridge.Request({ op = "why" }, function(reply)
-        lines = reply.ok and reply.lines or {}
-        ShowLines()
+        local items = {}
+        for _, line in ipairs(reply.ok and reply.lines or {}) do
+            line.key = line.line
+            items[#items + 1] = line
+        end
+        page.lines:SetItems(items)
+        LA.SetShown(page.noLines, #items == 0)
     end)
 end
 
-local function Build(self)
-    page = self
-    local inset = LA.Manager.Inset(page)
-    inset:SetPoint("TOPLEFT", 0, -2)
-    inset:SetPoint("BOTTOMLEFT", 0, 0)
-    inset:SetWidth(390)
-
-    LA.Manager.Heading(page, "Who talks to you", 12, -12)
-    local y = -34
-    for _, channel in ipairs(CHANNELS) do
-        local label = page:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-        label:SetPoint("TOPLEFT", 14, y - 2)
-        label:SetText(channel[2])
-        RadioRow(page, channel[1], HEARING, 96, y, 110)
-        y = y - 24
+local function ShowPart(index)
+    LA.SetShown(page.settingsPart, index == 1)
+    LA.SetShown(page.whyPart, index == 2)
+    LA.SetShown(page.refresh, index == 2)
+    if index == 2 then
+        LoadLines()
     end
-    LA.Manager.Heading(page, "Remarks on their own", 12, y - 10)
-    RadioRow(page, "remarks", REMARKS, 14, y - 30, 90)
-    LA.Manager.Heading(page, "Combat banter", 12, y - 60)
-    RadioRow(page, "banter", BANTER, 14, y - 80, 90)
+end
 
-    LA.Manager.Heading(page, "Reading speed", 12, y - 116)
-    page.reading = Slider(page, "Reading", 0, 400, 20, 16, y - 138)
-    page.readingValue = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.readingValue:SetPoint("LEFT", page.reading, "RIGHT", 10, 0)
+local function BuildSettings(part)
+    local UI = LA.UI
+    local heading = UI.Heading(part, "Who talks to you")
+    heading:SetPoint("TOPLEFT", 10, -8)
+    local columns = { 300, 390, 500 }
+    -- Each column's heading is centred over its buttons (a radio button is 16 wide, its dot in the middle).
+    for i, option in ipairs(HEARING) do
+        local label = part:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        label:SetPoint("BOTTOM", part, "TOPLEFT", columns[i] + 8, -46)
+        label:SetText(option[2])
+    end
+    for row, channel in ipairs(CHANNELS) do
+        local y = -48 - (row - 1) * 24
+        local name = part:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+        name:SetPoint("TOPLEFT", 14, y - 4)
+        name:SetWidth(80)
+        name:SetJustifyH("LEFT")
+        name:SetText(channel[2])
+        local hint = part:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        hint:SetPoint("LEFT", name, "RIGHT", 4, 0)
+        hint:SetTextColor(0.75, 0.7, 0.6)
+        hint:SetText(channel[3])
+        for i, option in ipairs(HEARING) do
+            local radio = Radio(part, channel[1], option[1])
+            radio:SetSize(16, 16)
+            radio:SetPoint("TOPLEFT", columns[i], y - 2)
+        end
+    end
+    local note = UI.Text(part, 600, "GameFontDisableSmall")
+    note:SetPoint("TOPLEFT", 14, -148)
+    note:SetTextColor(0.75, 0.7, 0.6)
+    note:SetText("Your own choice; other players keep theirs. Whispers always reach you.")
+
+    local pace = UI.Heading(part, "Pace")
+    pace:SetPoint("TOPLEFT", 10, -170)
+    local remarks = part:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    remarks:SetPoint("TOPLEFT", 14, -198)
+    remarks:SetText("Remarks on their own")
+    for i, option in ipairs(REMARKS) do
+        Radio(part, "remarks", option[1], option[2]):SetPoint("TOPLEFT", 180 + (i - 1) * 100, -194)
+    end
+    local banter = part:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    banter:SetPoint("TOPLEFT", 14, -224)
+    banter:SetText("Combat banter")
+    for i, option in ipairs(BANTER) do
+        Radio(part, "banter", option[1], option[2]):SetPoint("TOPLEFT", 180 + (i - 1) * 100, -220)
+    end
+
+    local reading = part:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    reading:SetPoint("TOPLEFT", 14, -260)
+    reading:SetText("Reading speed")
+    page.reading = Slider(part, "Reading", 0, 400, 20)
+    page.reading:SetPoint("TOPLEFT", 184, -258)
+    page.readingValue = part:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.readingValue:SetPoint("LEFT", page.reading, "RIGHT", 12, 0)
     page.reading:SetScript("OnValueChanged", function(slider, value)
         if slider.updating then
             return
@@ -200,14 +238,15 @@ local function Build(self)
         local value = math.floor(slider:GetValue() + 0.5)
         Change({ reading = (value > 0 and value < 60) and 60 or value })
     end)
-    local readingHint = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    readingHint:SetPoint("TOPLEFT", page.reading, "BOTTOMLEFT", 0, -4)
-    readingHint:SetText("The pause before the next line, so you can read each one.")
+    Explained(page.reading, "Reading speed", "Sets the pause before the next line, so you can read each one.")
 
-    LA.Manager.Heading(page, "Longest exchange", 12, y - 182)
-    page.turns = Slider(page, "Turns", 0, 6, 1, 16, y - 204)
-    page.turnsValue = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.turnsValue:SetPoint("LEFT", page.turns, "RIGHT", 10, 0)
+    local turns = part:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    turns:SetPoint("TOPLEFT", 14, -294)
+    turns:SetText("Longest exchange")
+    page.turns = Slider(part, "Turns", 0, 6, 1)
+    page.turns:SetPoint("TOPLEFT", 184, -292)
+    page.turnsValue = part:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.turnsValue:SetPoint("LEFT", page.turns, "RIGHT", 12, 0)
     page.turns:SetScript("OnValueChanged", function(slider, value)
         if slider.updating then
             return
@@ -218,46 +257,80 @@ local function Build(self)
     page.turns:SetScript("OnMouseUp", function(slider)
         Change({ turns = math.floor(slider:GetValue() + 0.5) })
     end)
-    local turnsHint = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    turnsHint:SetPoint("TOPLEFT", page.turns, "BOTTOMLEFT", 0, -4)
-    turnsHint:SetText("How many characters may answer one another before they stop.")
+    Explained(page.turns, "Longest exchange", "How many characters may answer one another before they stop.")
+end
 
-    page.status = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.status:SetPoint("BOTTOMLEFT", 14, 10)
-    page.budget = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    page.budget:SetPoint("BOTTOMRIGHT", inset, "BOTTOMRIGHT", -12, 10)
-
-    LA.Manager.Heading(page, "Why did they say that?", 406, -4)
-    local list = LA.Manager.Inset(page)
-    list:SetPoint("TOPLEFT", 400, -22)
-    list:SetPoint("TOPRIGHT", 0, -22)
-    list:SetHeight(190)
-    page.rows = {}
-    for i = 1, 10 do
-        local row = CreateFrame("Button", nil, list)
-        row:SetSize(270, 17)
-        row:SetPoint("TOPLEFT", 6, -6 - (i - 1) * 18)
+local function BuildWhy(part)
+    local UI = LA.UI
+    local heading = UI.Heading(part, "Lines said to you")
+    heading:SetPoint("TOPLEFT", 10, -8)
+    page.lines = UI.List(part, 12, 24, function(row)
+        row.channel = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        row.channel:SetPoint("LEFT", 4, 0)
+        row.channel:SetWidth(50)
+        row.channel:SetJustifyH("LEFT")
+        row.channel:SetTextColor(0.75, 0.7, 0.6)
         row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        row.text:SetAllPoints()
+        row.text:SetPoint("LEFT", row.channel, "RIGHT", 2, 0)
+        row.text:SetPoint("RIGHT", -4, 0)
         row.text:SetJustifyH("LEFT")
-        row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
-        row:SetScript("OnClick", function(self)
-            Explain(self.line)
-        end)
-        page.rows[i] = row
-    end
-    page.noLines = list:CreateFontString(nil, "OVERLAY", "GameFontDisable")
-    page.noLines:SetPoint("CENTER")
+    end, function(row, line)
+        row.channel:SetText(CHANNEL_NAMES[line.channel] or line.channel or "")
+        row.text:SetText("|cffffd100" .. (line.speaker or "?") .. ":|r " .. Spoken(line.text, line.speaker))
+    end, function(line)
+        Explain(line.line)
+    end)
+    page.lines.frame:SetPoint("TOPLEFT", 4, -30)
+    page.lines.frame:SetSize(330, 12 * 24)
+    page.noLines = UI.Text(part, 300, "GameFontDisable")
+    page.noLines:SetPoint("TOPLEFT", 12, -36)
     page.noLines:SetText("No lines said to you yet.")
-    local explanation = LA.Manager.Inset(page)
-    explanation:SetPoint("TOPLEFT", list, "BOTTOMLEFT", 0, -6)
-    explanation:SetPoint("BOTTOMRIGHT", 0, 0)
-    page.why = explanation:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.why:SetPoint("TOPLEFT", 10, -10)
-    page.why:SetPoint("BOTTOMRIGHT", -10, 10)
-    page.why:SetJustifyH("LEFT")
-    page.why:SetJustifyV("TOP")
+
+    local explanation = UI.Heading(part, "Why did they say that?")
+    explanation:SetPoint("TOPLEFT", 360, -8)
+    page.why = UI.Text(part, 270)
+    page.why:SetPoint("TOPLEFT", explanation, "BOTTOMLEFT", 0, -6)
     page.why:SetText("Pick a line to see what started it, what the speaker remembers about you, and what it cost.")
+end
+
+local function Build(self)
+    page = self
+    local UI = LA.UI
+
+    -- Header: what this is, and the budget for administrators.
+    local intro = UI.Text(page.header, 360)
+    intro:SetPoint("TOPLEFT", 64, -12)
+    intro:SetText("Choose how much characters say to you, and see why they said what they did.")
+    page.budget = page.header:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    page.budget:SetPoint("TOPRIGHT", -20, -14)
+    page.budgetBar = CreateFrame("StatusBar", nil, page.header)
+    page.budgetBar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
+    page.budgetBar:SetStatusBarColor(0.9, 0.7, 0.1)
+    page.budgetBar:SetSize(190, 12)
+    page.budgetBar:SetPoint("TOPRIGHT", page.budget, "BOTTOMRIGHT", 0, -6)
+    page.budgetBar:SetMinMaxValues(0, 1)
+    local barBack = page.budgetBar:CreateTexture(nil, "BACKGROUND")
+    barBack:SetTexture(0, 0, 0, 0.6)
+    barBack:SetAllPoints()
+    page.budgetBar:Hide()
+
+    page.parts = UI.SubTabs(page.bar, { "What you hear", "Why did they say that?" }, ShowPart)
+    page.parts:Select(1)
+
+    page.settingsPart = CreateFrame("Frame", nil, page.content)
+    page.settingsPart:SetAllPoints()
+    BuildSettings(page.settingsPart)
+    page.whyPart = CreateFrame("Frame", nil, page.content)
+    page.whyPart:SetAllPoints()
+    BuildWhy(page.whyPart)
+
+    page.refresh = UI.Button(page.footer, "Refresh", 100)
+    page.refresh:SetPoint("LEFT", 0, 0)
+    page.refresh:SetScript("OnClick", LoadLines)
+    page.status = page.footer:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.status:SetPoint("LEFT", 110, 0)
+    LA.Manager.CloseButton(page)
+    ShowPart(1)
 end
 
 local function Show()
@@ -273,11 +346,16 @@ local function Show()
         if reply.ok then
             page.budget:SetText(string.format("Dialogue budget: $%.2f of $%.2f", reply.spent_dollars,
                 reply.ceiling_dollars))
+            page.budgetBar:SetValue(reply.ceiling_dollars > 0 and reply.spent_dollars / reply.ceiling_dollars or 0)
+            page.budgetBar:Show()
         else
             page.budget:SetText("")
+            page.budgetBar:Hide()
         end
     end)
-    LoadLines()
+    if page.parts.selected == 2 then
+        LoadLines()
+    end
 end
 
 LA.On("loaded", function()

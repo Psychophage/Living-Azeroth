@@ -8,7 +8,10 @@ The Living Azeroth addon (`addon/LivingAzeroth`) and the server side it talks to
 
 Copy `addon/LivingAzeroth` into the game's `Interface/AddOns` folder. It works with the
 game's own interface and with DragonUI; it needs neither. On a server without bot control
-it says so once and stays quiet.
+it says so once and stays quiet. Its windows are built from the Dungeon Finder's own art.
+
+A round button on the minimap's edge opens the manager (right-click: the orders ring's
+settings); drag it around the minimap.
 
 - **Bots at a glance**: a gold medal on a bot's party frame portrait, and "Bot · you can
   give orders" (or a grey "Bot" for someone else's) in its tooltip.
@@ -19,30 +22,39 @@ it says so once and stays quiet.
   it there. Out of combat, the numbers 1-8 give the ring's orders.
 - **Raid frames** (in a raid): compact cells by group with class-coloured health, power,
   role and the bot medal; clicking a cell targets that player, right-click gives the usual
-  menu. Your bots' cells carry the order icon, with small marks for passive and not
-  looting. A group's name or "All my bots" opens the ring for several bots, and
+  menu. Your bots' cells carry the order icon (on every bot, or only on those not simply
+  following you), with small marks for passive and not looting. A group's name or "All my bots" opens the ring for several bots, and
   shift-clicking order icons picks a selection ("Orders for N selected"). Someone else's
   bots show a grey medal and no order icon. With the CompactRaidFrame addon installed, its
   frames are hidden while these are in use (`LivingAzerothDB.raid.hideCompact = false`
   keeps them).
-- **The manager window** (`/la`), with tabs along the bottom:
+- **The manager window** (`/la` or the minimap button), with tabs along the bottom:
   - *Roster*: your other characters (bring one in as a bot, which joins your party, or send
-    it home), the characters you know best (invite the ones online), and for a bot in your
-    group its talents, item level, free bag slots, money and what it is doing.
-  - *Tactics*: for all your bots or one of them, the tactic switches (each box shows the
-    bots' real state, "(some)" when they differ), tactic sets that set many switches at once
-    (Questing, Dungeon, Raid, Grinding, Quietly, Guard me, and your own: "Save as a set"),
-    and the formation.
-  - *Dialogue*: who talks to you on each channel, remarks, combat banter, reading speed and
-    the longest exchange (your own settings, kept by the server), and "Why did they say
-    that?" for the lines said to you. Administrators also see the dialogue budget.
-  - *Guild*: your guild's identity (officers edit it; "Write a draft" costs one model call
-    from the dialogue budget and saves nothing until you press Save), how long its rumours
-    last, and its rumours (officers correct, resolve or forget them).
-- `/la ring`: where the ring opens (beside the frame, at the mouse, or a fixed spot), its
-  size, and which orders it holds (up to eight).
-- `/la unlock` and `/la lock`: drag the party frames (with DragonUI, use its `/duiedit`),
-  the raid frames and the ring's fixed spot, out of combat.
+    it home) and the characters you know best (invite the ones online). The chosen one's
+    portrait, and for a bot in your group its talents, item level, free bag slots, money
+    and what it is doing; for anyone, what they remember of you.
+  - *Tactics*: "Apply to" all your bots or one of them (their portraits). Tactic sets
+    (Questing, Dungeon, Raid, Grinding, Quietly, Guard me, and your own: "Save as a set";
+    right-click your own in the list to forget it) set many switches at once, and the set
+    the bots match is named with what it does. Each box shows the bots' real state,
+    "(some)" when they differ, greyed out when their class lacks it. "Undo changes" puts
+    back what they had. "Formation..." opens the formation window: pick one to preview
+    where your bots stand by role, and "Use" it to move them.
+  - *Dialogue*: "What you hear" (who talks to you on each channel, remarks, combat banter,
+    reading speed and the longest exchange; your own settings, kept by the server) and
+    "Why did they say that?" for the lines said to you. Administrators also see the
+    dialogue budget.
+  - *Guild*: your guild's name, members and bots online, and a button for the game's own
+    guild window. "Who we are" is the guild's identity to read; officers press Edit to
+    change it, or start from a few words ("Write a draft" costs one model call from the
+    dialogue budget and saves nothing until you press Save). "Rumours" lists what members
+    have seen, with who, where and when it fades; officers correct, resolve or forget them,
+    and set how long rumours last.
+- The orders ring's settings (`/la ring` or right-click the minimap button): where it opens
+  (beside the frame, at the mouse, or a fixed spot), its size, which orders it holds (up to
+  eight), and whether every bot in a raid shows its order icon. "Move frames" (or
+  `/la unlock` and `/la lock`) lets you drag the party frames (with DragonUI, use its
+  `/duiedit`), the raid frames and the ring's fixed spot, out of combat.
 - `/la status` shows the connection; `/la debug` prints what the addon does.
 
 The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.

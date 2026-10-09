@@ -55,6 +55,16 @@ function Orders.Offered(bot, id)
 end
 
 -- An order still waiting for this bot (any one), or nil.
+-- Whether a bot's order icon shows on the raid frames: always, or (if the player chose) only when it is doing
+-- something other than following, is waiting for an order, or has its ring open. Party frames always show it;
+-- in a raid, a group's name or "All my bots" still reaches the bots without one.
+function Orders.IconShown(bot)
+    if LivingAzerothDB.iconsAlways ~= false then
+        return true
+    end
+    return bot.order ~= "follow" or pending[bot.guid] ~= nil or LA.Ring.OpenFor() == "bot:" .. bot.guid
+end
+
 function Orders.Pending(guid)
     return pending[guid] and next(pending[guid])
 end

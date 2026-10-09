@@ -233,7 +233,7 @@ local function UpdateCell(cell)
     else
         cell.medal:Hide()
     end
-    if mine and mine.commandable then
+    if mine and mine.commandable and LA.Orders.IconShown(mine) then
         cell.guid = guid
         cell.pip.icon:SetTexture(LA.Orders.Standing(mine).icon)
         cell.pip:Show()

@@ -83,6 +83,7 @@ SlashCmdList.LIVINGAZEROTH = function(text)
     elseif command == "reconnect" then
         LA.Bridge.Connect()
     elseif command == "unlock" or command == "lock" then
+        LA.unlocked = command == "unlock"
         LA.Party.Unlock(command == "unlock")
         LA.Raid.Unlock(command == "unlock")
         LA.RingSettings.Unlock(command == "unlock")

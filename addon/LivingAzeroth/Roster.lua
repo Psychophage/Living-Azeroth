@@ -1,82 +1,41 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The Roster tab: the player's other characters (bring one in as a bot to join the party, or send it home), the
--- characters they have come to know best, and a read-only look at a bot in their group: talents, gear, bags,
--- money and where it is.
+-- The Roster tab: the player's other characters (bring one in as a bot to join the party, or send it home) and
+-- the characters they have come to know best (invite the ones online). The chosen character shows in the header;
+-- for a bot in the player's group, its talents, gear, bags and money, and for anyone, what they remember of you.
 local _, LA = ...
 
 local Roster = {}
 LA.Roster = Roster
 
-local CLASSES = { "WARRIOR", "PALADIN", "HUNTER", "ROGUE", "PRIEST", "DEATHKNIGHT", "SHAMAN", "MAGE", "WARLOCK",
-    nil, "DRUID" }
-local ROWS = 8
+local ROWS = 11
+local ROW_HEIGHT = 26
 
 local page
 local roster = { characters = {}, companions = {} }
-local chosen -- a row's entry
+local section = 1 -- 1: your characters, 2: known characters
+local chosen -- an entry
 
 local function Status(text, r, g, b)
     page.status:SetText(text or "")
     page.status:SetTextColor(r or 0.8, g or 0.8, b or 0.8)
 end
 
-local function Coloured(entry)
-    local class = CLASSES[entry.class or 0]
-    local color = class and RAID_CLASS_COLORS[class] or NORMAL_FONT_COLOR
-    return string.format("|cff%02x%02x%02x%s|r", color.r * 255, color.g * 255, color.b * 255, entry.name or "?")
-end
-
-local function ClassName(entry)
-    local class = CLASSES[entry.class or 0]
-    return class and LOCALIZED_CLASS_NAMES_MALE[class] or ""
-end
-
 local function Money(copper)
     copper = copper or 0
-    return string.format("%dg %ds %dc", math.floor(copper / 10000), math.floor(copper / 100) % 100, copper % 100)
+    return GetCoinTextureString and GetCoinTextureString(copper) or
+        string.format("%dg %ds %dc", math.floor(copper / 10000), math.floor(copper / 100) % 100, copper % 100)
+end
+
+local function Where(entry)
+    if entry.in_party then
+        return "In your party"
+    elseif entry.in_world or entry.online then
+        return entry.zone ~= "" and entry.zone or "In the world"
+    end
+    return entry.isCharacter and "At rest" or "Away"
 end
 
 local Load
-
-local function ShowDetail()
-    local entry = chosen
-    for _, row in ipairs(page.rowsAll) do
-        if row.entry and entry and row.entry.guid == entry.guid then
-            row:LockHighlight()
-        else
-            row:UnlockHighlight()
-        end
-    end
-    if not entry then
-        page.detailName:SetText("")
-        page.detail:SetText("Pick a character.")
-        page.whisper:Hide()
-        return
-    end
-    page.detailName:SetText(Coloured(entry))
-    local lines = { "Level " .. (entry.level or "?") .. " " .. ClassName(entry) }
-    if entry.zone and entry.zone ~= "" then
-        lines[#lines + 1] = entry.zone
-    end
-    page.detail:SetText(table.concat(lines, "\n"))
-    LA.SetShown(page.whisper, entry.in_world or entry.online)
-    local bot = LA.Bots.Mine()[entry.guid]
-    if not (bot and bot.commandable) then
-        return
-    end
-    LA.Bridge.Request({ op = "inspect", bot = entry.guid }, function(reply)
-        if chosen ~= entry or not reply.ok then
-            return
-        end
-        lines[#lines + 1] = ""
-        lines[#lines + 1] = "|cffffd100Talents|r " .. (reply.spec ~= "" and reply.spec or "none chosen")
-        lines[#lines + 1] = "|cffffd100Gear|r item level " .. (reply.item_level or 0)
-        lines[#lines + 1] = "|cffffd100Bags|r " .. (reply.free_slots or 0) .. " free slots"
-        lines[#lines + 1] = "|cffffd100Money|r " .. Money(reply.money)
-        lines[#lines + 1] = "|cffffd100Doing|r " .. LA.Orders.Standing(reply.bot or bot).state
-        page.detail:SetText(table.concat(lines, "\n"))
-    end)
-end
 
 local function Act(entry)
     if entry.isCharacter then
@@ -84,81 +43,112 @@ local function Act(entry)
         Status(bring and ("Bringing " .. entry.name .. "...") or ("Sending " .. entry.name .. " home..."))
         LA.Bridge.Request({ op = bring and "bring" or "dismiss", name = entry.name }, function(reply)
             if reply.ok then
-                Status(bring and (entry.name .. " is on the way.") or (entry.name .. " has gone home."), 0.5, 0.9,
-                    0.5)
+                Status(bring and (entry.name .. " is on the way.") or (entry.name .. " has gone home."), 0.5, 0.9, 0.5)
             else
-                Status((reply.messages and reply.messages[1]) or reply.reason or reply.error or "?", 1, 0.3, 0.2)
+                Status(reply.reason or reply.error or "?", 1, 0.3, 0.2)
             end
             Load()
         end)
     else
         InviteUnit(entry.name)
+        Status("Invited " .. entry.name .. ".", 0.5, 0.9, 0.5)
     end
 end
 
-local function Row(parent, index, y)
-    local row = CreateFrame("Button", nil, parent)
-    row:SetSize(400, 22)
-    row:SetPoint("TOPLEFT", 6, y - (index - 1) * 22)
-    row.name = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    row.name:SetPoint("LEFT", 4, 0)
-    row.name:SetWidth(120)
-    row.name:SetJustifyH("LEFT")
-    row.info = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    row.info:SetPoint("LEFT", 128, 0)
-    row.info:SetWidth(170)
-    row.info:SetJustifyH("LEFT")
-    row.action = LA.Manager.Button(row, "", 92)
-    row.action:SetHeight(20)
-    row.action:SetPoint("RIGHT", -2, 0)
-    row.action:SetScript("OnClick", function()
-        Act(row.entry)
-    end)
-    row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
-    row:SetScript("OnClick", function(self)
-        chosen = self.entry
-        ShowDetail()
-    end)
-    page.rowsAll[#page.rowsAll + 1] = row
-    return row
+local function ActionFor(entry)
+    if entry.isCharacter then
+        return entry.in_world and "Send home" or "Bring"
+    end
+    return (entry.online and not entry.in_party) and "Invite" or nil
 end
 
-local function Fill(rows, entries, describe)
-    for i, row in ipairs(rows) do
-        local entry = entries[i]
-        row.entry = entry
-        if entry then
-            row.name:SetText(Coloured(entry))
-            local info, action = describe(entry)
-            row.info:SetText(info)
-            if action then
-                row.action:SetText(action)
-                row.action:Show()
-            else
-                row.action:Hide()
+local function ShowDetail()
+    local entry = chosen
+    page.list:Choose(entry and entry.guid)
+    if not entry then
+        page.card:Hide()
+        page.cardHint:Show()
+        page.details:SetText("")
+        page.memory:SetText("")
+        page.whisper:Disable()
+        page.act:Hide()
+        return
+    end
+    page.cardHint:Hide()
+    page.card:Show()
+    page.card.button:SetCharacter(entry.guid, entry.class)
+    page.card.name:SetText(LA.UI.Coloured(entry.name, entry.class))
+    local class = LA.UI.ClassToken(entry.class)
+    local className = class and LOCALIZED_CLASS_NAMES_MALE[class] or ""
+    page.card.line:SetText("Level " .. (entry.level or "?") .. " " .. className)
+    page.card.where:SetText(Where(entry))
+    if entry.in_world or entry.online then
+        page.whisper:Enable()
+    else
+        page.whisper:Disable()
+    end
+    local action = ActionFor(entry)
+    page.act:SetText(action or "")
+    LA.SetShown(page.act, action ~= nil)
+
+    page.details:SetText("")
+    local bot = LA.Bots.Mine()[entry.guid]
+    if bot and bot.commandable then
+        page.details:SetText("Asking...")
+        LA.Bridge.Request({ op = "inspect", bot = entry.guid }, function(reply)
+            if chosen ~= entry then
+                return
             end
-            row:Show()
-        else
-            row:Hide()
-        end
+            if not reply.ok then
+                page.details:SetText("")
+                return
+            end
+            page.details:SetText(table.concat({
+                "|cffffd100Talents|r  " .. (reply.spec ~= "" and reply.spec or "none chosen"),
+                "|cffffd100Gear|r  item level " .. (reply.item_level or 0),
+                "|cffffd100Bags|r  " .. (reply.free_slots or 0) .. " free slots",
+                "|cffffd100Money|r  " .. Money(reply.money),
+                "|cffffd100Doing|r  " .. LA.Orders.Standing(reply.bot or bot).state,
+            }, "\n"))
+        end)
+    elseif not entry.isCharacter then
+        -- Familiarity grows by seeing them around (1) and doing things together (4), up to 100.
+        local familiarity = entry.familiarity or 0
+        local how = familiarity >= 60 and "Old friends" or familiarity >= 25 and "Well known to you" or
+            familiarity >= 8 and "Seen about often" or "A familiar face"
+        page.details:SetText("|cffffd100How well you know them|r  " .. how)
     end
+
+    page.memory:SetText("Asking...")
+    LA.Bridge.Request({ op = "memory", character = entry.guid }, function(reply)
+        if chosen ~= entry then
+            return
+        end
+        local notes = reply.ok and reply.remembers_you or {}
+        if #notes == 0 then
+            page.memory:SetText(entry.isCharacter and "Your own character: nothing to remember." or
+                "Nothing yet. They remember what you do together and what you tell them.")
+            return
+        end
+        local lines = {}
+        for _, note in ipairs(notes) do
+            lines[#lines + 1] = "- " .. note.text
+        end
+        page.memory:SetText(table.concat(lines, "\n"))
+    end)
 end
 
-local function ShowRoster()
-    for _, entry in ipairs(roster.characters) do
-        entry.isCharacter = true
+local function ShowList()
+    local entries = section == 1 and roster.characters or roster.companions
+    local items = {}
+    for _, entry in ipairs(entries) do
+        entry.key = entry.guid
+        items[#items + 1] = entry
     end
-    Fill(page.characterRows, roster.characters, function(entry)
-        local where = entry.in_party and "In your party" or entry.in_world and "In the world" or "At rest"
-        return "Level " .. entry.level .. " - " .. where, entry.in_world and "Send home" or "Bring"
-    end)
-    Fill(page.companionRows, roster.companions, function(entry)
-        local where = entry.in_party and "In your party" or entry.online and (entry.zone ~= "" and entry.zone or
-            "Online") or "Offline"
-        return "Level " .. entry.level .. " - " .. where, (entry.online and not entry.in_party) and "Invite" or nil
-    end)
-    LA.SetShown(page.noCharacters, #roster.characters == 0)
-    LA.SetShown(page.noCompanions, #roster.companions == 0)
+    page.list:SetItems(items)
+    page.empty:SetText(#items > 0 and "" or (section == 1 and
+        "This account has no other characters on this realm." or
+        "Nobody yet. Spend time with characters and they show here."))
     if chosen then
         for _, entry in ipairs(roster.characters) do
             if entry.guid == chosen.guid then
@@ -179,7 +169,10 @@ function Load()
         if reply.ok then
             roster.characters = reply.characters or {}
             roster.companions = reply.companions or {}
-            ShowRoster()
+            for _, entry in ipairs(roster.characters) do
+                entry.isCharacter = true
+            end
+            ShowList()
         else
             Status("Not available: " .. (reply.reason or reply.error or "?"), 1, 0.3, 0.2)
         end
@@ -188,51 +181,94 @@ end
 
 local function Build(self)
     page = self
-    page.rowsAll = {}
-    page.status = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.status:SetPoint("BOTTOMLEFT", 4, 4)
+    local UI = LA.UI
 
-    LA.Manager.Heading(page, "Your other characters", 0, -4)
-    local mine = LA.Manager.Inset(page)
-    mine:SetPoint("TOPLEFT", 0, -22)
-    mine:SetSize(416, ROWS * 22 + 12)
-    page.characterRows = {}
-    for i = 1, ROWS do
-        page.characterRows[i] = Row(mine, i, -6)
-    end
-    page.noCharacters = mine:CreateFontString(nil, "OVERLAY", "GameFontDisable")
-    page.noCharacters:SetPoint("CENTER")
-    page.noCharacters:SetText("This account has no other characters on this realm.")
+    -- Header: the chosen character.
+    page.cardHint = page.header:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    page.cardHint:SetPoint("LEFT", 64, 0)
+    page.cardHint:SetText("Pick a character below.")
+    page.card = CreateFrame("Frame", nil, page.header)
+    page.card:SetAllPoints()
+    page.card.button = UI.RoundButton(page.card, 58)
+    page.card.button:SetPoint("LEFT", 60, 0)
+    page.card.button:EnableMouse(false)
+    page.card.name = page.card:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    page.card.name:SetPoint("TOPLEFT", page.card.button, "TOPRIGHT", 12, -6)
+    page.card.line = page.card:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    page.card.line:SetPoint("TOPLEFT", page.card.name, "BOTTOMLEFT", 0, -4)
+    page.card.where = page.card:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.card.where:SetPoint("TOPLEFT", page.card.line, "BOTTOMLEFT", 0, -3)
+    page.card.where:SetTextColor(0.8, 0.8, 0.8)
 
-    LA.Manager.Heading(page, "Characters you know best", 0, -218)
-    local known = LA.Manager.Inset(page)
-    known:SetPoint("TOPLEFT", 0, -236)
-    known:SetSize(416, ROWS * 22 + 12)
-    page.companionRows = {}
-    for i = 1, ROWS do
-        page.companionRows[i] = Row(known, i, -6)
-    end
-    page.noCompanions = known:CreateFontString(nil, "OVERLAY", "GameFontDisable")
-    page.noCompanions:SetPoint("CENTER")
-    page.noCompanions:SetText("Nobody yet. Spend time with characters and they will show here.")
+    -- Bar: which list.
+    page.sections = UI.SubTabs(page.bar, { "Your characters", "Characters you know" }, function(index)
+        section = index
+        chosen = nil
+        ShowList()
+    end)
+    page.sections:Select(1)
 
-    local detail = LA.Manager.Inset(page)
-    detail:SetPoint("TOPLEFT", 428, -22)
-    detail:SetPoint("BOTTOMRIGHT", 0, 24)
-    page.detailName = detail:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    page.detailName:SetPoint("TOPLEFT", 12, -12)
-    page.detail = detail:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    page.detail:SetPoint("TOPLEFT", 12, -38)
-    page.detail:SetPoint("TOPRIGHT", -12, -38)
-    page.detail:SetJustifyH("LEFT")
-    page.detail:SetSpacing(3)
-    page.whisper = LA.Manager.Button(detail, "Whisper", 100)
-    page.whisper:SetPoint("BOTTOMLEFT", 12, 12)
+    -- Paper: the list on the left, the details on the right.
+    page.list = UI.List(page.content, ROWS, ROW_HEIGHT, function(row)
+        row.icon = row:CreateTexture(nil, "ARTWORK")
+        row.icon:SetSize(18, 18)
+        row.icon:SetPoint("LEFT", 4, 0)
+        row.name = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        row.name:SetPoint("LEFT", row.icon, "RIGHT", 6, 0)
+        row.name:SetWidth(110)
+        row.name:SetJustifyH("LEFT")
+        row.info = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        row.info:SetPoint("LEFT", row.name, "RIGHT", 4, 0)
+        row.info:SetWidth(150)
+        row.info:SetJustifyH("LEFT")
+    end, function(row, entry)
+        UI.SetClassIcon(row.icon, entry.class)
+        row.name:SetText(UI.Coloured(entry.name, entry.class))
+        row.info:SetText("Level " .. (entry.level or "?") .. " - " .. Where(entry))
+    end, function(entry)
+        chosen = entry
+        ShowDetail()
+    end)
+    page.list.frame:SetPoint("TOPLEFT", 4, -6)
+    page.list.frame:SetSize(330, ROWS * ROW_HEIGHT)
+    page.empty = UI.Text(page.content, 300, "GameFontDisable")
+    page.empty:SetPoint("TOPLEFT", 12, -14)
+
+    local divider = page.content:CreateTexture(nil, "ARTWORK")
+    divider:SetTexture("Interface\\Buttons\\WHITE8X8")
+    divider:SetVertexColor(0, 0, 0, 0.35)
+    divider:SetSize(1, ROWS * ROW_HEIGHT)
+    divider:SetPoint("TOPLEFT", 346, -6)
+
+    local detailsHeading = UI.Heading(page.content, "About them")
+    detailsHeading:SetPoint("TOPLEFT", 360, -8)
+    page.details = UI.Text(page.content, 270)
+    page.details:SetPoint("TOPLEFT", detailsHeading, "BOTTOMLEFT", 0, -6)
+    page.details:SetSpacing(3)
+    local memoryHeading = UI.Heading(page.content, "What they remember of you")
+    memoryHeading:SetPoint("TOPLEFT", 360, -132)
+    page.memory = UI.Text(page.content, 270)
+    page.memory:SetPoint("TOPLEFT", memoryHeading, "BOTTOMLEFT", 0, -6)
+    page.memory:SetSpacing(2)
+
+    -- Bottom bar.
+    page.act = UI.Button(page.footer, "", 120)
+    page.act:SetPoint("LEFT", 0, 0)
+    page.act:SetScript("OnClick", function()
+        if chosen then
+            Act(chosen)
+        end
+    end)
+    page.whisper = UI.Button(page.footer, WHISPER, 100)
+    page.whisper:SetPoint("LEFT", page.act, "RIGHT", 4, 0)
     page.whisper:SetScript("OnClick", function()
         if chosen then
             ChatFrame_SendTell(chosen.name)
         end
     end)
+    page.status = page.footer:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.status:SetPoint("LEFT", page.whisper, "RIGHT", 10, 0)
+    LA.Manager.CloseButton(page)
 end
 
 LA.On("loaded", function()

@@ -1,7 +1,7 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The Tactics tab: the tactic switches of all the player's bots or one of them, tactic sets that set many
--- switches at once (the player can save their own), and the formation. Every box shows the bots' real state:
--- a change shows once the server says the bots have made it.
+-- The Tactics tab: who the changes are for (all the player's bots or one), tactic sets that set many switches
+-- at once (the player can save their own), the switches themselves, and Undo. Every box shows the bots' real
+-- state: a change shows once the server says the bots have made it.
 local _, LA = ...
 
 local Tactics = {}
@@ -15,15 +15,13 @@ local GROUPS = {
         { "threat", "Wait for the tank", "Hold damage until it has threat" },
         { "passive", "Stay out of fights", "Follow, but never fight" },
     } },
-    { title = "Staying alive", column = 1, items = {
+    { title = "Staying alive", column = 2, items = {
         { "avoid_aoe", "Avoid area damage", "Step out of fire and void zones" },
         { "potions", "Use potions", "Healing and mana potions when low" },
         { "run", "Run when outmatched", "Fall back instead of dying" },
+        { "save_mana", "Save mana", "Healers skip small heals" },
     } },
-    { title = "Healing", column = 2, items = {
-        { "save_mana", "Save mana", "Skip small heals; keep a reserve" },
-    } },
-    { title = "Out of combat", column = 2, items = {
+    { title = "Out of combat", column = 3, items = {
         { "loot", "Pick up loot", "After fights" },
         { "gather", "Gather herbs and ore", "When their professions allow" },
         { "food", "Eat and drink", "Rest after fights" },
@@ -32,62 +30,46 @@ local GROUPS = {
 }
 
 local SETS = {
-    { name = "Questing", text = "Keep up, help out, pick things up.",
+    { name = "Questing", icon = "Interface\\Icons\\INV_Misc_Map_01", text = "Keep up, help out, pick things up.",
         on = { "join", "aoe", "behind", "avoid_aoe", "potions", "run", "loot", "gather", "food", "mount" } },
-    { name = "Dungeon", text = "Let the tank lead; mind the threat.",
+    { name = "Dungeon", icon = "Interface\\Icons\\INV_Shield_06", text = "Let the tank lead; mind the threat.",
         on = { "aoe", "behind", "threat", "avoid_aoe", "potions", "save_mana", "loot", "food" } },
-    { name = "Raid", text = "Threat and mana discipline.",
+    { name = "Raid", icon = "Interface\\Icons\\INV_Misc_Head_Dragon_Black", text = "Threat and mana discipline.",
         on = { "behind", "threat", "avoid_aoe", "potions", "save_mana", "food" } },
-    { name = "Grinding", text = "Fight everything nearby, loot it all.",
+    { name = "Grinding", icon = "Interface\\Icons\\Ability_Warrior_Rampage",
+        text = "Fight everything nearby, loot it all.",
         on = { "join", "aoe", "avoid_aoe", "potions", "save_mana", "loot", "gather", "food" } },
-    { name = "Quietly", text = "Follow and stay out of fights.",
+    { name = "Quietly", icon = "Interface\\Icons\\Spell_Nature_Sleep", text = "Follow and stay out of fights.",
         on = { "passive", "avoid_aoe", "potions", "run", "food", "mount" } },
-    { name = "Guard me", text = "Defend me; fight anything that comes.",
+    { name = "Guard me", icon = "Interface\\Icons\\Ability_Defend", text = "Defend me; fight anything that comes.",
         on = { "join", "aoe", "avoid_aoe", "potions", "food" } },
 }
 
-local FORMATIONS = {
-    { id = "near", name = "Near", text = "Close around you at follow distance." },
-    { id = "far", name = "Far", text = "Hang back at a distance and keep out of the way.",
-        pos = { { 0, 86 }, { -44, 118 }, { 44, 118 }, { -90, 100 }, { 90, 100 } } },
-    { id = "arrow", name = "Arrow", text = "Tanks in front, damage in the middle, healers behind.",
-        pos = { { 0, -96 }, { 0, 58 }, { -50, -50 }, { 50, -50 }, { 0, -54 } } },
-    { id = "queue", name = "Queue", text = "Single file behind you.",
-        pos = { { 0, 30 }, { 0, 58 }, { 0, 86 }, { 0, 114 }, { 0, 142 } } },
-    { id = "circle", name = "Circle", text = "A ring around your target, or around you when there is none." },
-    { id = "line", name = "Line", text = "Side by side, with you in the middle.",
-        pos = { { -116, 0 }, { -58, 0 }, { 58, 0 }, { 116, 0 }, { 150, 0 } } },
-    { id = "shield", name = "Shield", text = "An arc in front of you." },
-    { id = "melee", name = "Melee", text = "Stay tight on the group leader for melee fights." },
-    { id = "chaos", name = "Chaos", text = "Loosely scattered around you.",
-        pos = { { -104, -66 }, { 84, -82 }, { 126, 40 }, { -90, 78 }, { 28, 116 } } },
-}
-
--- Five places on a circle or an arc around the player (x right, y towards the back), as in the mockups.
-local function Arc(radius, start, span)
-    local places = {}
-    for i = 0, 4 do
-        local angle = math.rad(start + span * i / (span >= 360 and 5 or 4))
-        places[#places + 1] = { radius * math.cos(angle), radius * math.sin(angle) }
-    end
-    return places
-end
-FORMATIONS[1].pos = Arc(48, -90, 360)
-FORMATIONS[5].pos = Arc(84, -90, 360)
-FORMATIONS[7].pos = Arc(84, -160, 140)
-FORMATIONS[8].pos = Arc(28, -90, 360)
+local MAX_TARGETS = 8
 
 local page
 local target = "all" -- "all" or a bot's guid
 local checks = {}
-local setButtons = {}
-local formationButtons = {}
+local targetButtons = {}
+local before -- the switches when the page was opened or a set was used, for Undo: guid -> { id -> on }
 
--- The bots the tab is changing.
-local function Targets()
+-- The bots the tab is changing, by name.
+function Tactics.Targets()
     local bots = {}
     for guid, bot in pairs(LA.Bots.Mine()) do
         if bot.commandable and (target == "all" or target == guid) then
+            bots[#bots + 1] = bot
+        end
+    end
+    table.sort(bots, function(a, b) return a.name < b.name end)
+    return bots
+end
+local Targets = Tactics.Targets
+
+local function AllBots()
+    local bots = {}
+    for _, bot in pairs(LA.Bots.Mine()) do
+        if bot.commandable then
             bots[#bots + 1] = bot
         end
     end
@@ -106,9 +88,19 @@ local function Sets()
     return sets
 end
 
--- Turns a switch on or off for every target bot whose class has it and that is not already that way.
-local function SetSwitch(id, on)
+local function Remember()
+    before = {}
     for _, bot in ipairs(Targets()) do
+        before[bot.guid] = {}
+        for id, on in pairs(bot.switches or {}) do
+            before[bot.guid][id] = on
+        end
+    end
+end
+
+-- Turns a switch on or off for every target bot whose class has it and that is not already that way.
+local function SetSwitch(id, on, bots)
+    for _, bot in ipairs(bots or Targets()) do
         local now = bot.switches and bot.switches[id]
         if now ~= nil and now ~= on and not LA.Orders.IsPending(bot.guid, id) then
             LA.Orders.Give(bot, id, on)
@@ -117,13 +109,20 @@ local function SetSwitch(id, on)
 end
 
 local function UseSet(set)
+    Remember()
     local wanted = {}
     for _, id in ipairs(set.on) do
         wanted[id] = true
     end
-    for _, group in ipairs(GROUPS) do
-        for _, item in ipairs(group.items) do
-            SetSwitch(item[1], wanted[item[1]] == true)
+    for id in pairs(checks) do
+        SetSwitch(id, wanted[id] == true)
+    end
+end
+
+local function Undo()
+    for _, bot in ipairs(Targets()) do
+        for id, on in pairs(before and before[bot.guid] or {}) do
+            SetSwitch(id, on, { bot })
         end
     end
 end
@@ -145,6 +144,37 @@ local function State(id)
     return off == 0 or (on > 0 and "some")
 end
 
+-- The set the targets' switches match, if any.
+local function Matching()
+    for _, set in ipairs(Sets()) do
+        local wanted = {}
+        for _, id in ipairs(set.on) do
+            wanted[id] = true
+        end
+        local matches = true
+        for id in pairs(checks) do
+            local state = State(id)
+            if state ~= nil and state ~= (wanted[id] == true) then
+                matches = false
+            end
+        end
+        if matches then
+            return set
+        end
+    end
+end
+
+local function Changed()
+    for _, bot in ipairs(Targets()) do
+        for id, on in pairs(before and before[bot.guid] or {}) do
+            if bot.switches and bot.switches[id] ~= on then
+                return true
+            end
+        end
+    end
+    return false
+end
+
 local function Waiting()
     local count = 0
     for _, bot in ipairs(Targets()) do
@@ -155,12 +185,33 @@ local function Waiting()
     return count
 end
 
+local function RefreshTargets()
+    local bots = AllBots()
+    if target ~= "all" and not LA.Bots.Mine()[target] then
+        target = "all"
+    end
+    targetButtons[1]:SetChosen(target == "all")
+    for i = 2, MAX_TARGETS do
+        local button, bot = targetButtons[i], bots[i - 1]
+        if bot then
+            button.guid = bot.guid
+            button:SetCharacter(bot.guid, bot.class)
+            button.label:SetText(bot.name)
+            button:SetChosen(target == bot.guid)
+            button:Show()
+        else
+            button.guid = nil
+            button:Hide()
+        end
+    end
+end
+
 local function Refresh()
-    if not page or not page:IsVisible() then
+    if not page or not page.content:IsVisible() then
         return
     end
+    RefreshTargets()
     local bots = Targets()
-    UIDropDownMenu_SetText(page.target, target == "all" and "All my bots" or (bots[1] and bots[1].name or "?"))
     for id, check in pairs(checks) do
         local state = State(id)
         check:SetChecked(state == true or state == "some")
@@ -169,91 +220,37 @@ local function Refresh()
             check.label:SetFontObject("GameFontDisable")
         else
             check:Enable()
-            check.label:SetFontObject(state == "some" and "GameFontNormal" or "GameFontHighlight")
+            check.label:SetFontObject("GameFontHighlight")
         end
         LA.SetShown(check.some, state == "some")
     end
-    for _, button in ipairs(setButtons) do
-        local set = button.set
-        local matches = set ~= nil and #bots > 0
-        if set then
-            local wanted = {}
-            for _, id in ipairs(set.on) do
-                wanted[id] = true
-            end
-            for id in pairs(checks) do
-                local state = State(id)
-                if state ~= nil and state ~= (wanted[id] == true) then
-                    matches = false
-                end
-            end
-        end
-        if matches then
-            button:LockHighlight()
-        else
-            button:UnlockHighlight()
-        end
-    end
-    local formation = bots[1] and bots[1].formation
-    for _, bot in ipairs(bots) do
-        if bot.formation ~= formation then
-            formation = nil
-        end
-    end
-    for _, button in ipairs(formationButtons) do
-        LA.SetShown(button.chosen, button.formation.id == formation)
-    end
-    local waiting = Waiting()
+    local set = Matching()
     if #bots == 0 then
-        page.status:SetText("You have no bots here to command.")
-    elseif waiting > 0 then
-        page.status:SetText("Waiting for " .. waiting .. (waiting == 1 and " bot..." or " bots..."))
+        page.heading:SetText("No bots to command")
+        page.description:SetText("Bring one of your characters in from the Roster tab, or invite a bot to your " ..
+            "party. Their tactics show here.")
+    elseif set then
+        page.heading:SetText(set.name)
+        page.description:SetText(set.text or "Your own set.")
     else
-        page.status:SetText("")
+        page.heading:SetText("Your own mix")
+        page.description:SetText("These switches match none of the sets. Save them as a set to use them again.")
+    end
+    UIDropDownMenu_SetText(page.sets, set and set.name or "Choose a set")
+    local waiting = Waiting()
+    page.status:SetText(waiting > 0 and ("Waiting for " .. waiting .. (waiting == 1 and " bot..." or " bots...")) or "")
+    if Changed() then
+        page.undo:Enable()
+    else
+        page.undo:Disable()
+    end
+    if #bots > 0 then
+        page.save:Enable()
+    else
+        page.save:Disable()
     end
 end
-
-local function LayoutSets()
-    local sets = Sets()
-    for i, set in ipairs(sets) do
-        local button = setButtons[i]
-        if not button then
-            button = LA.Manager.Button(page, "", 180)
-            button:SetPoint("TOPLEFT", 0, -62 - (i - 1) * 26)
-            button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
-            button:SetScript("OnClick", function(self, mouse)
-                if mouse == "RightButton" and self.custom then
-                    StaticPopup_Show("LIVINGAZEROTH_FORGET_SET", self.set.name, nil, self.set)
-                    return
-                end
-                UseSet(self.set)
-                Refresh()
-            end)
-            button:SetScript("OnEnter", function(self)
-                GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-                GameTooltip:AddLine(self.set.name, 1, 0.82, 0)
-                GameTooltip:AddLine(self.set.text or "Your own set.", 1, 1, 1, true)
-                GameTooltip:AddLine(self.custom and "Click to use; right-click to forget." or "Click to use.",
-                    0.6, 0.6, 0.6)
-                GameTooltip:Show()
-            end)
-            button:SetScript("OnLeave", function()
-                GameTooltip:Hide()
-            end)
-            setButtons[i] = button
-        end
-        button.set = set
-        button.custom = i > #SETS
-        button:SetText(set.name)
-        button:Show()
-    end
-    for i = #sets + 1, #setButtons do
-        setButtons[i].set = nil
-        setButtons[i]:Hide()
-    end
-    page.save:ClearAllPoints()
-    page.save:SetPoint("TOPLEFT", 0, -62 - #sets * 26 - 8)
-end
+Tactics.Refresh = Refresh
 
 StaticPopupDialogs.LIVINGAZEROTH_SAVE_SET = {
     text = "Name this tactic set:",
@@ -279,7 +276,6 @@ StaticPopupDialogs.LIVINGAZEROTH_SAVE_SET = {
             end
         end
         table.insert(sets, { name = name, on = on })
-        LayoutSets()
         Refresh()
     end,
     EditBoxOnEnterPressed = function(self)
@@ -302,7 +298,6 @@ StaticPopupDialogs.LIVINGAZEROTH_FORGET_SET = {
                 table.remove(sets, i)
             end
         end
-        LayoutSets()
         Refresh()
     end,
     timeout = 0,
@@ -310,135 +305,134 @@ StaticPopupDialogs.LIVINGAZEROTH_FORGET_SET = {
     hideOnEscape = true,
 }
 
-local function FormationButton(parent, formation)
-    local button = CreateFrame("Button", nil, parent)
-    button:SetSize(54, 54)
-    local background = button:CreateTexture(nil, "BACKGROUND")
-    background:SetAllPoints()
-    background:SetTexture("Interface\\Buttons\\WHITE8X8")
-    background:SetVertexColor(0.08, 0.07, 0.05, 0.9)
-    local edge = button:CreateTexture(nil, "BORDER")
-    edge:SetPoint("TOPLEFT", -1, 1)
-    edge:SetPoint("BOTTOMRIGHT", 1, -1)
-    edge:SetTexture("Interface\\Buttons\\WHITE8X8")
-    edge:SetVertexColor(0.35, 0.29, 0.17)
-    local scale = 22 / 150
-    local you = button:CreateTexture(nil, "ARTWORK")
-    you:SetTexture("Interface\\CharacterFrame\\TempPortraitAlphaMask")
-    you:SetVertexColor(1, 0.82, 0)
-    you:SetSize(8, 8)
-    you:SetPoint("CENTER")
-    for _, place in ipairs(formation.pos) do
-        local dot = button:CreateTexture(nil, "ARTWORK")
-        dot:SetTexture("Interface\\CharacterFrame\\TempPortraitAlphaMask")
-        dot:SetVertexColor(0.85, 0.85, 0.85)
-        dot:SetSize(6, 6)
-        dot:SetPoint("CENTER", place[1] * scale, -place[2] * scale)
-    end
-    button.chosen = button:CreateTexture(nil, "OVERLAY")
-    button.chosen:SetTexture("Interface\\Buttons\\CheckButtonHilight")
-    button.chosen:SetBlendMode("ADD")
-    button.chosen:SetAllPoints()
-    button:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
-    local label = button:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    label:SetPoint("TOP", button, "BOTTOM", 0, -3)
-    label:SetText(formation.name)
-    button.formation = formation
-    button:SetScript("OnClick", function()
-        for _, bot in ipairs(Targets()) do
-            if bot.formation ~= formation.id then
-                LA.Orders.Give(bot, "formation", nil, { formation = formation.id })
-            end
-        end
-        Refresh()
-    end)
-    button:SetScript("OnEnter", function(self)
-        GameTooltip:SetOwner(self, "ANCHOR_TOP")
-        GameTooltip:AddLine(formation.name, 1, 0.82, 0)
-        GameTooltip:AddLine(formation.text, 1, 1, 1, true)
-        GameTooltip:AddLine("You are the gold dot, facing up.", 0.6, 0.6, 0.6)
-        GameTooltip:Show()
-    end)
-    button:SetScript("OnLeave", function()
-        GameTooltip:Hide()
-    end)
-    return button
+local function ChooseTarget(value)
+    target = value
+    Remember()
+    Refresh()
 end
 
 local function Build(self)
     page = self
-    local label = page:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    label:SetPoint("TOPLEFT", 0, -6)
-    label:SetText("Apply to")
-    page.target = CreateFrame("Frame", "LivingAzerothTacticsTarget", page, "UIDropDownMenuTemplate")
-    page.target:SetPoint("LEFT", label, "RIGHT", -6, -2)
-    UIDropDownMenu_SetWidth(page.target, 150)
-    UIDropDownMenu_Initialize(page.target, function()
-        local function Add(text, value)
+    local UI = LA.UI
+
+    -- Header: who the changes are for.
+    local applyTo = page.header:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    applyTo:SetPoint("TOPLEFT", 64, -6)
+    applyTo:SetText("Apply to")
+    for i = 1, MAX_TARGETS do
+        local button = UI.RoundButton(page.header, 42, i == 1 and "All my bots" or "")
+        button:SetPoint("TOPLEFT", 66 + (i - 1) * 70, -22)
+        if i == 1 then
+            button:SetIcon("Interface\\Icons\\INV_Misc_Gear_01")
+            button:SetScript("OnClick", function() ChooseTarget("all") end)
+        else
+            button:SetScript("OnClick", function(b) ChooseTarget(b.guid) end)
+        end
+        targetButtons[i] = button
+    end
+
+    -- Bar: the tactic sets.
+    local setLabel = page.bar:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    setLabel:SetPoint("LEFT", 64, 0)
+    setLabel:SetText("Tactic set:")
+    page.sets = CreateFrame("Frame", "LivingAzerothTacticSets", page.bar, "UIDropDownMenuTemplate")
+    page.sets:SetPoint("LEFT", setLabel, "RIGHT", -6, -2)
+    UIDropDownMenu_SetWidth(page.sets, 180)
+    UIDropDownMenu_Initialize(page.sets, function(_, level, menu)
+        if level == 2 then
             local info = UIDropDownMenu_CreateInfo()
-            info.text, info.checked = text, target == value
+            info.text, info.notCheckable = "Forget this set", true
             info.func = function()
-                target = value
+                CloseDropDownMenus()
+                StaticPopup_Show("LIVINGAZEROTH_FORGET_SET", menu.name, nil, menu)
+            end
+            UIDropDownMenu_AddButton(info, 2)
+            return
+        end
+        local current = Matching()
+        for i, set in ipairs(Sets()) do
+            local info = UIDropDownMenu_CreateInfo()
+            info.text, info.icon = set.name, set.icon or "Interface\\Icons\\INV_Misc_Note_01"
+            info.checked = current == set
+            info.tooltipTitle, info.tooltipText = set.name, set.text or "Your own set."
+            info.func = function()
+                UseSet(set)
                 Refresh()
             end
-            UIDropDownMenu_AddButton(info)
-        end
-        Add("All my bots", "all")
-        local bots = {}
-        for guid, bot in pairs(LA.Bots.Mine()) do
-            if bot.commandable then
-                bots[#bots + 1] = bot
+            if i > #SETS then
+                info.hasArrow, info.value = true, set
             end
-        end
-        table.sort(bots, function(a, b) return a.name < b.name end)
-        for _, bot in ipairs(bots) do
-            Add(bot.name, bot.guid)
+            UIDropDownMenu_AddButton(info, 1)
         end
     end)
-    page.status = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.status:SetPoint("LEFT", page.target, "RIGHT", 4, 2)
+    page.status = page.bar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.status:SetPoint("RIGHT", -16, 0)
 
-    LA.Manager.Heading(page, "Tactic sets", 0, -42)
-    page.save = LA.Manager.Button(page, "Save as a set...", 180)
-    page.save:SetScript("OnClick", function()
-        StaticPopup_Show("LIVINGAZEROTH_SAVE_SET")
-    end)
-    LayoutSets()
+    -- Paper: the set's name and what it does, then the switches in three columns.
+    page.heading = UI.Heading(page.content)
+    page.heading:SetPoint("TOPLEFT", 10, -8)
+    page.description = UI.Text(page.content, 620)
+    page.description:SetPoint("TOPLEFT", page.heading, "BOTTOMLEFT", 0, -4)
 
-    local columns = { { x = 210, y = -42 }, { x = 450, y = -42 } }
+    local columns = { { x = 10, y = -66 }, { x = 220, y = -66 }, { x = 430, y = -66 } }
     for _, group in ipairs(GROUPS) do
         local column = columns[group.column]
-        LA.Manager.Heading(page, group.title, column.x, column.y)
-        column.y = column.y - 20
+        local title = page.content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        title:SetPoint("TOPLEFT", column.x, column.y)
+        title:SetText(group.title)
+        column.y = column.y - 18
         for _, item in ipairs(group.items) do
             local id = item[1]
-            local check = LA.Manager.Check(page, item[2], item[3])
-            check:SetPoint("TOPLEFT", column.x, column.y)
+            local check = UI.Check(page.content, item[2], item[3])
+            check:SetPoint("TOPLEFT", column.x - 4, column.y)
             check.some = check:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
             check.some:SetPoint("LEFT", check.label, "RIGHT", 4, 0)
             check.some:SetText("(some)")
-            check:SetScript("OnClick", function(self)
+            check:SetScript("OnClick", function()
                 SetSwitch(id, State(id) ~= true)
                 Refresh() -- the box shows the bots' state, not the click
             end)
+            check:SetScript("OnEnter", function(c)
+                GameTooltip:SetOwner(c, "ANCHOR_RIGHT")
+                GameTooltip:AddLine(item[2], 1, 1, 1)
+                GameTooltip:AddLine(item[3], nil, nil, nil, true)
+                if State(id) == nil then
+                    GameTooltip:AddLine("None of these bots' classes can do this.", 0.6, 0.6, 0.6, true)
+                end
+                GameTooltip:Show()
+            end)
+            check:SetScript("OnLeave", GameTooltip_Hide)
             checks[id] = check
-            column.y = column.y - 32
+            column.y = column.y - 34
         end
-        column.y = column.y - 6
+        column.y = column.y - 8
     end
 
-    LA.Manager.Heading(page, "Formation", 0, -352)
-    for i, formation in ipairs(FORMATIONS) do
-        local button = FormationButton(page, formation)
-        button:SetPoint("TOPLEFT", (i - 1) * 74, -374)
-        formationButtons[i] = button
-    end
+    -- Bottom bar.
+    local formation = UI.Button(page.footer, "Formation...", 120)
+    formation:SetPoint("LEFT", 0, 0)
+    formation:SetScript("OnClick", function() LA.Formation.Toggle() end)
+    page.save = UI.Button(page.footer, "Save as a set...", 120)
+    page.save:SetPoint("LEFT", formation, "RIGHT", 4, 0)
+    page.save:SetScript("OnClick", function() StaticPopup_Show("LIVINGAZEROTH_SAVE_SET") end)
+    page.undo = UI.Button(page.footer, "Undo changes", 120)
+    page.undo:SetPoint("LEFT", page.save, "RIGHT", 4, 0)
+    page.undo:SetScript("OnClick", function()
+        Undo()
+        Refresh()
+    end)
+    LA.Manager.CloseButton(page)
+end
+
+local function Show()
+    Remember()
+    Refresh()
 end
 
 LA.On("loaded", function()
     LivingAzerothDB.tactics = LivingAzerothDB.tactics or {}
     LivingAzerothDB.tactics.sets = LivingAzerothDB.tactics.sets or {}
-    LA.Manager.AddPage("Tactics", Build, Refresh)
+    LA.Manager.AddPage("Tactics", Build, Show)
 end)
 LA.On("bots:changed", Refresh)
 LA.On("orders:changed", Refresh)

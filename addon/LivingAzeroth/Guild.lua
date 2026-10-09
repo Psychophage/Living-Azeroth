@@ -18,6 +18,7 @@ local FADES = { { 6, "6 hours" }, { 24, "1 day" }, { 72, "3 days" }, { 168, "1 w
 
 local page
 local guild -- the server's last answer
+local editing = false
 local rumours = {}
 local chosen -- the rumour shown
 
@@ -27,79 +28,100 @@ local function Status(text, r, g, b)
 end
 
 -- A text box of a fixed size: a multi-line edit box inside a frame (the edit box itself grows with its text).
--- Returns the edit box; place it with box.frame.
-local function Box(parent, height)
+local function Box(parent, height, letters)
     local frame = CreateFrame("Frame", nil, parent)
     frame:SetHeight(height)
     frame:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10,
         insets = { left = 2, right = 2, top = 2, bottom = 2 } })
-    frame:SetBackdropColor(0, 0, 0, 0.6)
-    frame:SetBackdropBorderColor(0.4, 0.4, 0.4)
-    local box = CreateFrame("EditBox", nil, frame)
+    frame:SetBackdropColor(0, 0, 0, 0.55)
+    frame:SetBackdropBorderColor(0.5, 0.42, 0.25)
+    local scroll = CreateFrame("ScrollFrame", nil, frame)
+    scroll:SetPoint("TOPLEFT", 6, -5)
+    scroll:SetPoint("BOTTOMRIGHT", -6, 5)
+    local box = CreateFrame("EditBox", nil, scroll)
     box:SetMultiLine(true)
-    box:SetMaxLetters(400)
+    box:SetMaxLetters(letters or 400)
     box:SetAutoFocus(false)
     box:SetFontObject("GameFontHighlightSmall")
-    box:SetPoint("TOPLEFT", 6, -5)
-    box:SetPoint("TOPRIGHT", -6, -5)
-    box:SetHeight(height - 10)
-    box:SetScript("OnEscapePressed", box.ClearFocus)
-    frame:EnableMouse(true)
-    frame:SetScript("OnMouseDown", function()
-        if box:IsMouseEnabled() then
-            box:SetFocus()
+    box:SetWidth(1)
+    scroll:SetScrollChild(box)
+    frame:SetScript("OnSizeChanged", function(self, width) box:SetWidth(width - 12) end)
+    -- Keep the line being typed in view.
+    box:SetScript("OnCursorChanged", function(_, _, y, _, lineHeight)
+        local top = scroll:GetVerticalScroll()
+        local visible = scroll:GetHeight()
+        if -y < top then
+            scroll:SetVerticalScroll(-y)
+        elseif -y + lineHeight > top + visible then
+            scroll:SetVerticalScroll(-y + lineHeight - visible)
         end
     end)
+    scroll:EnableMouseWheel(true)
+    scroll:SetScript("OnMouseWheel", function(self, delta)
+        local range = math.max(0, box:GetHeight() - self:GetHeight())
+        self:SetVerticalScroll(math.min(range, math.max(0, self:GetVerticalScroll() - delta * 14)))
+    end)
+    box:SetScript("OnEscapePressed", box.ClearFocus)
+    frame:EnableMouse(true)
+    frame:SetScript("OnMouseDown", function() box:SetFocus() end)
     box.frame = frame
     return box
+end
+
+local function FadeText(hours)
+    for _, fade in ipairs(FADES) do
+        if fade[1] == hours then
+            return fade[2]
+        end
+    end
+    return (hours or "?") .. " hours"
 end
 
 local function ShowIdentity()
     if not guild then
         return
     end
-    page.name:SetText("<" .. (guild.name or "?") .. ">")
     local identity = guild.identity or {}
-    for _, field in ipairs(FIELDS) do
-        local box = page.boxes[field[1]]
-        if not box:HasFocus() then
-            box:SetText(identity[field[1]] or "")
+    LA.SetShown(page.reading, not editing)
+    LA.SetShown(page.editing, editing)
+    if editing then
+        for _, field in ipairs(FIELDS) do
+            local box = page.boxes[field[1]]
+            if not box:HasFocus() and not box.dirty then
+                box:SetText(identity[field[1]] or "")
+            end
         end
-        if guild.may_edit then
-            box:EnableMouse(true)
-            box:SetTextColor(1, 1, 1)
-        else
-            box:EnableMouse(false)
-            box:ClearFocus()
-            box:SetTextColor(0.85, 0.82, 0.75)
+    else
+        local empty = true
+        for _, field in ipairs(FIELDS) do
+            local text = identity[field[1]] or ""
+            page.texts[field[1]]:SetText(text ~= "" and text or "|cff9a8f7aNot written yet.|r")
+            empty = empty and text == ""
         end
+        LA.SetShown(page.emptyHint, empty)
     end
-    UIDropDownMenu_SetText(page.fade, "?")
-    for _, fade in ipairs(FADES) do
-        if fade[1] == identity.report_hours then
-            UIDropDownMenu_SetText(page.fade, fade[2])
-        end
-    end
-    if not UIDropDownMenu_GetText(page.fade) or UIDropDownMenu_GetText(page.fade) == "?" then
-        UIDropDownMenu_SetText(page.fade, (identity.report_hours or "?") .. " hours")
-    end
-    LA.SetShown(page.save, guild.may_edit)
-    LA.SetShown(page.draftArea, guild.may_edit)
+    UIDropDownMenu_SetText(page.fade, FadeText(identity.report_hours))
+    page.edit:SetText(editing and SAVE or "Edit")
+    LA.SetShown(page.edit, guild.may_edit)
+    LA.SetShown(page.cancel, editing)
     page.who:SetText(guild.may_edit and "You may change it; every member reads it." or
         "Its officers write it; you can read it.")
 end
 
-local function Save(changes)
+local function Save(changes, done)
     Status("Saving...")
     LA.Bridge.Request({ op = "guild", change = changes }, function(reply)
         if reply.ok then
             guild = reply
             Status("Saved. Members carry it into their next conversation.", 0.5, 0.9, 0.5)
-            ShowIdentity()
+            if done then
+                done()
+            end
         else
             Status("Not saved: " .. (reply.reason or reply.error or "?"), 1, 0.3, 0.2)
         end
+        ShowIdentity()
     end)
 end
 
@@ -122,78 +144,49 @@ local function ShowRumour()
             rumour = candidate
         end
     end
-    for _, row in ipairs(page.rows) do
-        if row.id and row.id == chosen then
-            row:LockHighlight()
-        else
-            row:UnlockHighlight()
-        end
-    end
-    if not rumour then
-        page.rumour:SetText(#rumours == 0 and "No rumours yet. Only what a member saw for themselves becomes a " ..
-            "rumour; private chat never does." or "Pick a rumour.")
-        page.correction.frame:Hide()
-        for _, button in pairs(page.actions) do
-            button:Hide()
-        end
-        return
-    end
-    local lines = { rumour.text or "" }
-    local by = type(rumour.by) == "table" and table.concat(rumour.by, ", ") or rumour.by
-    lines[#lines + 1] = "\n|cffffd100Witnessed by|r " .. (by ~= "" and by or "?")
-    if rumour.zone and rumour.zone ~= "" then
-        lines[#lines + 1] = "|cffffd100Where|r " .. rumour.zone
-    end
-    lines[#lines + 1] = "|cffffd100Seen|r " .. Age(rumour.age_ms) .. " ago"
-    if rumour.resolved then
-        lines[#lines + 1] = "|cff80c080Resolved|r"
-    else
-        lines[#lines + 1] = "|cffffd100Fades in|r " .. Age(rumour.fades_in_ms)
-    end
-    if rumour.corrected then
-        lines[#lines + 1] = "|cff80c0ffCorrected by an officer|r"
-    end
-    page.rumour:SetText(table.concat(lines, "\n"))
-    local mayChange = page.mayChange
+    page.rumourList:Choose(chosen)
+    page.chosenRumour = rumour
+    local mayChange = page.mayChange and rumour ~= nil
     for _, button in pairs(page.actions) do
         LA.SetShown(button, mayChange)
     end
     LA.SetShown(page.correction.frame, mayChange)
+    LA.SetShown(page.correctionLabel, mayChange)
+    if not rumour then
+        page.rumour:SetText(#rumours == 0 and
+            "No rumours yet. Only what a member saw for themselves becomes a rumour; private chat never does." or
+            "Pick a rumour.")
+        return
+    end
+    local by = type(rumour.by) == "table" and table.concat(rumour.by, ", ") or rumour.by
+    local lines = { rumour.text or "", "" }
+    lines[#lines + 1] = "|cffffd100Witnessed by|r  " .. ((by and by ~= "") and by or "?")
+    if rumour.zone and rumour.zone ~= "" then
+        lines[#lines + 1] = "|cffffd100Where|r  " .. rumour.zone
+    end
+    lines[#lines + 1] = "|cffffd100Seen|r  " .. Age(rumour.age_ms) .. " ago"
+    lines[#lines + 1] = rumour.resolved and "|cff80c080Resolved|r" or ("|cffffd100Fades in|r  " ..
+        Age(rumour.fades_in_ms))
+    if rumour.corrected then
+        lines[#lines + 1] = "|cff80c0ffCorrected by an officer|r"
+    end
+    page.rumour:SetText(table.concat(lines, "\n"))
     if mayChange and not page.correction:HasFocus() then
         page.correction:SetText(rumour.text or "")
     end
-    page.chosenRumour = rumour
-end
-
-local function ShowRumours()
-    for i, row in ipairs(page.rows) do
-        local rumour = rumours[i]
-        if rumour then
-            row.id = rumour.id
-            local text = rumour.text or ""
-            if #text > 48 then
-                text = text:sub(1, 46) .. "..."
-            end
-            row.text:SetText((rumour.resolved and "|cff808080" or "") .. text)
-            row:Show()
-        else
-            row.id = nil
-            row:Hide()
-        end
-    end
-    ShowRumour()
 end
 
 local function LoadRumours()
     LA.Bridge.Request({ op = "rumours" }, function(reply)
-        if reply.ok then
-            rumours = reply.rumours or {}
-            page.mayChange = reply.may_change
-        else
-            rumours = {}
-            page.mayChange = false
+        rumours = reply.ok and reply.rumours or {}
+        page.mayChange = reply.ok and reply.may_change
+        local items = {}
+        for _, rumour in ipairs(rumours) do
+            rumour.key = rumour.id
+            items[#items + 1] = rumour
         end
-        ShowRumours()
+        page.rumourList:SetItems(items)
+        ShowRumour()
     end)
 end
 
@@ -217,88 +210,73 @@ local function ChangeRumour(action, text)
     end)
 end
 
-local function Build(self)
-    page = self
-    page.name = page:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    page.name:SetPoint("TOPLEFT", 0, -4)
-    page.status = page:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.status:SetPoint("TOPRIGHT", 0, -8)
-
-    page.none = page:CreateFontString(nil, "OVERLAY", "GameFontDisable")
-    page.none:SetPoint("CENTER")
-    page.none:SetText("You are not in a guild.")
-
-    page.body = CreateFrame("Frame", nil, page)
-    page.body:SetAllPoints()
-    local body = page.body
-
-    LA.Manager.Heading(body, "Who we are", 0, -30)
-    page.who = body:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    page.who:SetPoint("TOPLEFT", 90, -32)
-    page.boxes = {}
-    local y = -48
-    for _, field in ipairs(FIELDS) do
-        local label = body:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-        label:SetPoint("TOPLEFT", 2, y)
-        label:SetText(field[2])
-        local box = Box(body, 40)
-        box.frame:SetPoint("TOPLEFT", 0, y - 12)
-        box.frame:SetWidth(340)
-        page.boxes[field[1]] = box
-        y = y - 58
+local function ShowPart(index)
+    LA.SetShown(page.identityPart, index == 1)
+    LA.SetShown(page.rumourPart, index == 2)
+    LA.SetShown(page.edit, index == 1 and guild and guild.may_edit)
+    LA.SetShown(page.cancel, index == 1 and editing)
+    if index == 2 then
+        LoadRumours()
     end
-    local fadeLabel = body:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    fadeLabel:SetPoint("TOPLEFT", 2, y - 6)
-    fadeLabel:SetText("Rumours fade after")
-    page.fade = CreateFrame("Frame", "LivingAzerothGuildFade", body, "UIDropDownMenuTemplate")
-    page.fade:SetPoint("LEFT", fadeLabel, "RIGHT", -8, -2)
-    UIDropDownMenu_SetWidth(page.fade, 90)
-    UIDropDownMenu_Initialize(page.fade, function()
-        for _, fade in ipairs(FADES) do
-            local info = UIDropDownMenu_CreateInfo()
-            info.text = fade[2]
-            info.checked = guild and guild.identity and guild.identity.report_hours == fade[1]
-            info.disabled = not (guild and guild.may_edit)
-            info.func = function()
-                Save({ report_hours = fade[1] })
-            end
-            UIDropDownMenu_AddButton(info)
-        end
-    end)
-    page.save = LA.Manager.Button(body, "Save", 90)
-    page.save:SetPoint("TOPRIGHT", body, "TOPLEFT", 340, y - 6)
-    page.save:SetScript("OnClick", function()
-        local changes = {}
-        for _, field in ipairs(FIELDS) do
-            changes[field[1]] = page.boxes[field[1]]:GetText()
-            page.boxes[field[1]]:ClearFocus()
-        end
-        Save(changes)
-    end)
+end
 
-    page.draftArea = CreateFrame("Frame", nil, body)
-    page.draftArea:SetPoint("TOPLEFT", 0, y - 34)
-    page.draftArea:SetSize(340, 40)
-    local seedLabel = page.draftArea:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    seedLabel:SetPoint("TOPLEFT", 2, 0)
+local function BuildIdentity(part)
+    local UI = LA.UI
+    page.reading = CreateFrame("Frame", nil, part)
+    page.reading:SetAllPoints()
+    page.texts = {}
+    local y = -8
+    for i, field in ipairs(FIELDS) do
+        local column, row = (i - 1) % 2, math.floor((i - 1) / 2)
+        local heading = UI.Heading(page.reading, field[2])
+        heading:SetPoint("TOPLEFT", 10 + column * 320, -8 - row * 92)
+        local text = UI.Text(page.reading, 300)
+        text:SetPoint("TOPLEFT", heading, "BOTTOMLEFT", 0, -4)
+        text:SetHeight(64)
+        page.texts[field[1]] = text
+    end
+    page.emptyHint = UI.Text(page.reading, 300, "GameFontNormal")
+    page.emptyHint:SetPoint("TOPLEFT", 330, -196)
+    page.emptyHint:SetText("Officers can write it with Edit, or start from a few words.")
+    local carry = UI.Text(page.reading, 300, "GameFontDisableSmall")
+    carry:SetPoint("BOTTOMLEFT", 330, 8)
+    carry:SetTextColor(0.75, 0.7, 0.6)
+    carry:SetText("Members carry this into conversation, the way a guard carries the Watch's description.")
+
+    page.editing = CreateFrame("Frame", nil, part)
+    page.editing:SetAllPoints()
+    page.boxes = {}
+    for i, field in ipairs(FIELDS) do
+        local column, row = (i - 1) % 2, math.floor((i - 1) / 2)
+        local label = page.editing:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        label:SetPoint("TOPLEFT", 10 + column * 320, -8 - row * 82)
+        label:SetText(field[2])
+        local box = Box(page.editing, 58)
+        box.frame:SetPoint("TOPLEFT", label, "BOTTOMLEFT", -2, -3)
+        box.frame:SetWidth(300)
+        box:SetWidth(288)
+        box:SetScript("OnTextChanged", function(self, typed)
+            if typed then
+                self.dirty = true
+            end
+        end)
+        page.boxes[field[1]] = box
+    end
+    local seedLabel = page.editing:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    seedLabel:SetPoint("TOPLEFT", 330, -172)
     seedLabel:SetText("Start from a few words")
-    page.seed = CreateFrame("EditBox", nil, page.draftArea, "InputBoxTemplate")
-    page.seed:SetSize(200, 20)
-    page.seed:SetPoint("TOPLEFT", 6, -14)
+    page.seed = CreateFrame("EditBox", nil, page.editing, "InputBoxTemplate")
+    page.seed:SetSize(180, 20)
+    page.seed:SetPoint("TOPLEFT", seedLabel, "BOTTOMLEFT", 6, -4)
     page.seed:SetAutoFocus(false)
     page.seed:SetMaxLetters(120)
-    page.draft = LA.Manager.Button(page.draftArea, "Write a draft", 120)
-    page.draft:SetPoint("LEFT", page.seed, "RIGHT", 8, 0)
-    page.draft:SetScript("OnEnter", function(self)
-        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-        GameTooltip:AddLine("Write a draft", 1, 0.82, 0)
-        GameTooltip:AddLine("One model call from the dialogue budget. The draft fills the boxes; nothing is " ..
-            "saved until you press Save.", 1, 1, 1, true)
-        GameTooltip:Show()
-    end)
-    page.draft:SetScript("OnLeave", function()
-        GameTooltip:Hide()
-    end)
+    page.draft = UI.Button(page.editing, "Write a draft", 110)
+    page.draft:SetPoint("LEFT", page.seed, "RIGHT", 6, 0)
+    local draftHint = UI.Text(page.editing, 300, "GameFontDisableSmall")
+    draftHint:SetPoint("TOPLEFT", page.seed, "BOTTOMLEFT", -6, -6)
+    draftHint:SetTextColor(0.75, 0.7, 0.6)
+    draftHint:SetText("One model call from the dialogue budget. The draft fills the boxes; nothing is saved until " ..
+        "you press Save.")
     page.draft:SetScript("OnClick", function()
         local seed = strtrim(page.seed:GetText())
         if seed == "" then
@@ -312,6 +290,7 @@ local function Build(self)
             if reply.ok and reply.draft then
                 for _, field in ipairs(FIELDS) do
                     page.boxes[field[1]]:SetText(reply.draft[field[1]] or "")
+                    page.boxes[field[1]].dirty = true
                 end
                 Status("A draft is in the boxes. Change it, then Save.", 0.5, 0.9, 0.5)
             else
@@ -319,54 +298,127 @@ local function Build(self)
             end
         end, 60)
     end)
+end
 
-    LA.Manager.Heading(body, "Rumours", 360, -30)
-    local list = LA.Manager.Inset(body)
-    list:SetPoint("TOPLEFT", 356, -48)
-    list:SetPoint("TOPRIGHT", 0, -48)
-    list:SetHeight(150)
-    page.rows = {}
-    for i = 1, 8 do
-        local row = CreateFrame("Button", nil, list)
-        row:SetSize(300, 17)
-        row:SetPoint("TOPLEFT", 6, -6 - (i - 1) * 17)
+local function BuildRumours(part)
+    local UI = LA.UI
+    local heading = UI.Heading(part, "What members have seen")
+    heading:SetPoint("TOPLEFT", 10, -8)
+    page.rumourList = UI.List(part, 8, 34, function(row)
         row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        row.text:SetAllPoints()
+        row.text:SetPoint("TOPLEFT", 6, -3)
+        row.text:SetPoint("BOTTOMRIGHT", -60, 3)
         row.text:SetJustifyH("LEFT")
-        row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
-        row:SetScript("OnClick", function(self)
-            chosen = self.id
-            ShowRumour()
-        end)
-        page.rows[i] = row
-    end
-    local detail = LA.Manager.Inset(body)
-    detail:SetPoint("TOPLEFT", list, "BOTTOMLEFT", 0, -6)
-    detail:SetPoint("BOTTOMRIGHT", 0, 0)
-    page.rumour = detail:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    page.rumour:SetPoint("TOPLEFT", 10, -10)
-    page.rumour:SetPoint("BOTTOMRIGHT", -10, 84)
-    page.rumour:SetJustifyH("LEFT")
-    page.rumour:SetJustifyV("TOP")
-    page.correction = Box(detail, 40)
-    page.correction.frame:SetPoint("BOTTOMLEFT", 8, 36)
-    page.correction.frame:SetPoint("BOTTOMRIGHT", -8, 36)
+        row.text:SetJustifyV("TOP")
+        row.state = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+        row.state:SetPoint("RIGHT", -4, 0)
+    end, function(row, rumour)
+        row.text:SetText((rumour.resolved and "|cff9a8f7a" or "") .. (rumour.text or ""))
+        row.state:SetText(rumour.resolved and "Resolved" or (rumour.corrected and "Corrected" or ""))
+    end, function(rumour)
+        chosen = rumour.id
+        ShowRumour()
+    end)
+    page.rumourList.frame:SetPoint("TOPLEFT", 4, -30)
+    page.rumourList.frame:SetSize(330, 8 * 34)
+
+    local detail = UI.Heading(part, "The rumour")
+    detail:SetPoint("TOPLEFT", 360, -8)
+    page.rumour = UI.Text(part, 270)
+    page.rumour:SetPoint("TOPLEFT", detail, "BOTTOMLEFT", 0, -6)
+    page.rumour:SetPoint("BOTTOM", part, "BOTTOM", 0, 118)
+    page.correction = Box(part, 64, 4000)
+    page.correction.frame:SetPoint("BOTTOMLEFT", part, "BOTTOMLEFT", 356, 34)
+    page.correction.frame:SetWidth(280)
+    page.correction:SetWidth(268)
+    local correctionLabel = part:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    correctionLabel:SetPoint("BOTTOMLEFT", page.correction.frame, "TOPLEFT", 2, 2)
+    correctionLabel:SetText("Correct it to")
+    page.correctionLabel = correctionLabel
     page.actions = {}
-    local function Action(name, text, x)
-        local button = LA.Manager.Button(detail, text, 96)
-        button:SetPoint("BOTTOMLEFT", x, 8)
+    local function Action(name, text, x, run)
+        local button = UI.Button(part, text, 90)
+        button:SetPoint("BOTTOMLEFT", part, "BOTTOMLEFT", x, 6)
+        button:SetScript("OnClick", run)
         page.actions[name] = button
-        return button
     end
-    Action("correct", "Correct", 8):SetScript("OnClick", function()
-        ChangeRumour("correct", page.correction:GetText())
+    Action("correct", "Correct", 356, function() ChangeRumour("correct", page.correction:GetText()) end)
+    Action("resolve", "Resolve", 450, function() ChangeRumour("resolve") end)
+    Action("forget", "Forget", 544, function() ChangeRumour("forget") end)
+end
+
+local function Build(self)
+    page = self
+    local UI = LA.UI
+
+    -- Header: the guild's name and who is in it.
+    page.name = page.header:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    page.name:SetPoint("TOPLEFT", 64, -12)
+    page.members = page.header:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    page.members:SetPoint("TOPLEFT", page.name, "BOTTOMLEFT", 0, -6)
+    page.who = page.header:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.who:SetPoint("TOPLEFT", page.members, "BOTTOMLEFT", 0, -4)
+    page.who:SetTextColor(0.8, 0.8, 0.8)
+    local guildWindow = UI.Button(page.header, "Guild window", 120)
+    guildWindow:SetPoint("TOPRIGHT", -20, -12)
+    guildWindow:SetScript("OnClick", function() ToggleFriendsFrame(3) end)
+
+    page.parts = UI.SubTabs(page.bar, { "Who we are", "Rumours" }, ShowPart)
+    page.parts:Select(1)
+    local fadeLabel = page.bar:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    fadeLabel:SetPoint("RIGHT", -170, 0)
+    fadeLabel:SetText("Rumours fade after")
+    page.fade = CreateFrame("Frame", "LivingAzerothGuildFade", page.bar, "UIDropDownMenuTemplate")
+    page.fade:SetPoint("LEFT", fadeLabel, "RIGHT", -10, -2)
+    UIDropDownMenu_SetWidth(page.fade, 90)
+    UIDropDownMenu_Initialize(page.fade, function()
+        for _, fade in ipairs(FADES) do
+            local info = UIDropDownMenu_CreateInfo()
+            info.text = fade[2]
+            info.checked = guild and guild.identity and guild.identity.report_hours == fade[1]
+            info.disabled = not (guild and guild.may_edit)
+            info.func = function() Save({ report_hours = fade[1] }) end
+            UIDropDownMenu_AddButton(info)
+        end
     end)
-    Action("resolve", "Resolve", 108):SetScript("OnClick", function()
-        ChangeRumour("resolve")
+
+    page.none = UI.Text(page.content, 600, "GameFontNormal")
+    page.none:SetPoint("TOPLEFT", 10, -10)
+    page.identityPart = CreateFrame("Frame", nil, page.content)
+    page.identityPart:SetAllPoints()
+    BuildIdentity(page.identityPart)
+    page.rumourPart = CreateFrame("Frame", nil, page.content)
+    page.rumourPart:SetAllPoints()
+    BuildRumours(page.rumourPart)
+
+    page.edit = UI.Button(page.footer, "Edit", 100)
+    page.edit:SetPoint("LEFT", 0, 0)
+    page.edit:SetScript("OnClick", function()
+        if not editing then
+            editing = true
+            for _, field in ipairs(FIELDS) do
+                page.boxes[field[1]].dirty = false
+            end
+            ShowIdentity()
+            return
+        end
+        local changes = {}
+        for _, field in ipairs(FIELDS) do
+            changes[field[1]] = page.boxes[field[1]]:GetText()
+            page.boxes[field[1]]:ClearFocus()
+        end
+        Save(changes, function() editing = false end)
     end)
-    Action("forget", "Forget", 208):SetScript("OnClick", function()
-        ChangeRumour("forget")
+    page.cancel = UI.Button(page.footer, CANCEL, 100)
+    page.cancel:SetPoint("LEFT", page.edit, "RIGHT", 4, 0)
+    page.cancel:SetScript("OnClick", function()
+        editing = false
+        Status("")
+        ShowIdentity()
     end)
+    page.status = page.footer:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    page.status:SetPoint("LEFT", page.cancel, "RIGHT", 10, 0)
+    LA.Manager.CloseButton(page)
 end
 
 local function Show()
@@ -374,13 +426,22 @@ local function Show()
         if reply.ok then
             guild = reply
             page.none:Hide()
-            page.body:Show()
+            page.name:SetText("<" .. (reply.name or "?") .. ">")
+            local members = reply.members or 0
+            local bots = reply.bots_online or 0
+            page.members:SetText(members .. (members == 1 and " member" or " members") .. (bots > 0 and
+                (" - " .. bots .. (bots == 1 and " bot" or " bots") .. " online now") or ""))
             ShowIdentity()
-            LoadRumours()
+            ShowPart(page.parts.selected or 1)
         else
             guild = nil
             page.name:SetText("")
-            page.body:Hide()
+            page.members:SetText("")
+            page.who:SetText("")
+            page.identityPart:Hide()
+            page.rumourPart:Hide()
+            page.edit:Hide()
+            page.cancel:Hide()
             page.none:Show()
             page.none:SetText(reply.reason == "not in a guild" and "You are not in a guild." or
                 ("Not available: " .. (reply.reason or reply.error or "?")))
