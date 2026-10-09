@@ -118,6 +118,7 @@ The tactic switches are orders too, with `on` true or false (without it, the swi
 | `gather` | gather | herbs and ore |
 | `food` | food | eat and drink after fights |
 | `mount` | mount | mount when the player mounts |
+| `buffs` | buff | keep their own and the group's buffs up (classes that buff) |
 
 A bot whose class lacks a switch's strategy leaves it out of its `switches` and refuses it
 with `unsupported`.

@@ -63,6 +63,7 @@ std::vector<Switch> const Switches = {
     {"gather", "gather", false, true},      // herbs and ore
     {"food", "food", false, true},          // eat and drink after fights
     {"mount", "mount", false, true},        // mount when the master mounts
+    {"buffs", "buff", false, true},         // keep their own and the group's buffs up (classes that buff)
 };
 
 std::vector<std::string> const Formations = {"near", "far", "arrow", "queue", "circle", "line", "shield", "melee",
