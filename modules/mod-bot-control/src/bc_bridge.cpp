@@ -85,17 +85,27 @@ bool Commandable(Player* viewer, Player* bot)
     return ai && ai->GetSecurity()->LevelFor(viewer, nullptr, false) >= PLAYERBOT_SECURITY_ALLOW_ALL;
 }
 
+// The name a switch's strategy goes by once added: a class may build it under another name (a priest's "aoe" is
+// its "shadow aoe"), and the engine knows it by that name.
+std::string StrategyName(PlayerbotAI* ai, char const* strategy)
+{
+    Strategy* built = ai->GetAiObjectContext()->GetStrategy(strategy);
+    return built ? built->getName() : strategy;
+}
+
 // A switch is on when every engine it belongs to has its strategy, off when none has.
 bool SwitchOn(PlayerbotAI* ai, Switch const& switch_)
 {
-    return (!switch_.combat || ai->HasStrategy(switch_.strategy, BOT_STATE_COMBAT)) &&
-           (!switch_.nonCombat || ai->HasStrategy(switch_.strategy, BOT_STATE_NON_COMBAT));
+    std::string name = StrategyName(ai, switch_.strategy);
+    return (!switch_.combat || ai->HasStrategy(name, BOT_STATE_COMBAT)) &&
+           (!switch_.nonCombat || ai->HasStrategy(name, BOT_STATE_NON_COMBAT));
 }
 
 bool SwitchOff(PlayerbotAI* ai, Switch const& switch_)
 {
-    return (!switch_.combat || !ai->HasStrategy(switch_.strategy, BOT_STATE_COMBAT)) &&
-           (!switch_.nonCombat || !ai->HasStrategy(switch_.strategy, BOT_STATE_NON_COMBAT));
+    std::string name = StrategyName(ai, switch_.strategy);
+    return (!switch_.combat || !ai->HasStrategy(name, BOT_STATE_COMBAT)) &&
+           (!switch_.nonCombat || !ai->HasStrategy(name, BOT_STATE_NON_COMBAT));
 }
 
 // The strategies a class has do not change, so they are asked for once per class.
@@ -407,7 +417,7 @@ void Bridge::Order(Player* player, pbc_json const& request)
     {
         // Directly, as the co and nc commands would: queued as chat commands, a second change waiting behind
         // the first replaces it, and a tactic set sends many at once.
-        std::string change = std::string(on ? "+" : "-") + switch_->strategy;
+        std::string change = std::string(on ? "+" : "-") + StrategyName(ai, switch_->strategy);
         std::string refusal;
         if ((switch_->combat && !ApplyStrategyChange(ai, change, BOT_STATE_COMBAT, refusal)) ||
             (switch_->nonCombat && !ApplyStrategyChange(ai, change, BOT_STATE_NON_COMBAT, refusal)))
