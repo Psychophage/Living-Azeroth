@@ -33,6 +33,22 @@ static void HandleStrategyCommon(PlayerbotAI* botAI, std::string const& text, Bo
     }
 }
 
+bool ApplyStrategyChange(PlayerbotAI* botAI, std::string const& change, BotState state, std::string& refusal,
+                         bool save)
+{
+    uint32 account = botAI->GetBot()->GetSession()->GetAccountId();
+    if (state == BOT_STATE_NON_COMBAT && sPlayerbotAIConfig.IsInRandomAccountList(account) && botAI->GetMaster() &&
+        !botAI->GetMaster()->CanBeGameMaster() && change.find("loot") != std::string::npos)
+    {
+        refusal = "You can change any strategy except loot";
+        return false;
+    }
+    botAI->ChangeStrategy(change, state);
+    if (save)
+        HandleStrategyCommon(botAI, change, state);
+    return true;
+}
+
 bool ChangeCombatStrategyAction::Execute(Event event)
 {
     std::string const text = event.getParam();
@@ -46,22 +62,12 @@ bool ChangeCombatStrategyAction::Execute(Event event)
 bool ChangeNonCombatStrategyAction::Execute(Event event)
 {
     std::string const text = event.getParam();
-
-    uint32 account = bot->GetSession()->GetAccountId();
-    if (sPlayerbotAIConfig.IsInRandomAccountList(account) && botAI->GetMaster() &&
-        !botAI->GetMaster()->CanBeGameMaster())
+    std::string refusal;
+    if (!ApplyStrategyChange(botAI, text, BOT_STATE_NON_COMBAT, refusal, event.GetSource() == "nc"))
     {
-        if (text.find("loot") != std::string::npos)
-        {
-            botAI->TellError("You can change any strategy except loot");
-            return false;
-        }
+        botAI->TellError(refusal);
+        return false;
     }
-
-    botAI->ChangeStrategy(text, BOT_STATE_NON_COMBAT);
-    if (event.GetSource() == "nc")
-        HandleStrategyCommon(botAI, text, BOT_STATE_NON_COMBAT);
-
     return true;
 }
 

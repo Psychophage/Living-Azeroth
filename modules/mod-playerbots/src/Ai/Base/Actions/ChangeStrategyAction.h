@@ -8,8 +8,13 @@
 #define PLAYERBOTS_CHANGESTRATEGYACTION_H
 
 #include "Action.h"
+#include "PlayerbotAI.h"
 
-class PlayerbotAI;
+// Living Azeroth: a strategy change exactly as the "co" and "nc" chat commands make it (their rule for random
+// bots' looting, and saving the result), for callers that must not go through the chat command queue, where a
+// second change waiting behind the first would replace it. False with a refusal when it is not allowed.
+bool ApplyStrategyChange(PlayerbotAI* botAI, std::string const& change, BotState state, std::string& refusal,
+                         bool save = true);
 
 class ChangeCombatStrategyAction : public Action
 {
