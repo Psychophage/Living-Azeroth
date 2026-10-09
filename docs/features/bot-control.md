@@ -1,8 +1,29 @@
 # Bot control
 
-The server side of the bot control addon (`modules/mod-bot-control`). The addon itself
-has not shipped yet; this page describes what the server offers it. Off by default:
-set `BotControl.Enable = 1` in the realm's `[botcontrol]` section.
+The Living Azeroth addon (`addon/LivingAzeroth`) and the server side it talks to
+(`modules/mod-bot-control`). The server side is off by default: set
+`BotControl.Enable = 1` in the realm's `[botcontrol]` section.
+
+## The addon
+
+Copy `addon/LivingAzeroth` into the game's `Interface/AddOns` folder. It works with the
+game's own interface and with DragonUI; it needs neither. On a server without bot control
+it says so once and stays quiet.
+
+- **Bots at a glance**: a gold medal on a bot's party frame portrait, and "Bot · you can
+  give orders" (or a grey "Bot" for someone else's) in its tooltip.
+- **Orders**: a small icon beside each of your bots' party frames shows what the bot is
+  doing. Click it for the orders ring; click an order and the icon pulses until the bot
+  has actually done it, then shows a tick. The ring stays open for more orders; clicking
+  anywhere else, Escape, or the same icon closes it, and clicking another bot's icon moves
+  it there. Out of combat, the numbers 1-8 give the ring's orders.
+- `/la ring`: where the ring opens (beside the frame, at the mouse, or a fixed spot), its
+  size, and which orders it holds (up to eight).
+- `/la unlock` and `/la lock`: drag the party frames (with DragonUI, use its `/duiedit`)
+  and the ring's fixed spot.
+- `/la` shows the connection; `/la debug` prints what the addon does.
+
+The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.
 
 ## Who may do what
 
