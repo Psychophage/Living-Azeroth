@@ -103,10 +103,11 @@ local function Refresh()
     name:SetText(current.label or bots[1].name)
     local waiting = {}
     for _, bot in ipairs(bots) do
-        local id = LA.Orders.Pending(bot.guid)
-        if id then
-            waiting[id] = true
-            waiting.any = true
+        for _, order in ipairs(LA.Orders.catalog) do
+            if LA.Orders.IsPending(bot.guid, order.id) then
+                waiting[order.id] = true
+                waiting.any = true
+            end
         end
     end
     if hovered then

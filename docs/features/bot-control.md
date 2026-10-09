@@ -25,11 +25,25 @@ it says so once and stays quiet.
   bots show a grey medal and no order icon. With the CompactRaidFrame addon installed, its
   frames are hidden while these are in use (`LivingAzerothDB.raid.hideCompact = false`
   keeps them).
+- **The manager window** (`/la`), with tabs along the bottom:
+  - *Roster*: your other characters (bring one in as a bot, which joins your party, or send
+    it home), the characters you know best (invite the ones online), and for a bot in your
+    group its talents, item level, free bag slots, money and what it is doing.
+  - *Tactics*: for all your bots or one of them, the tactic switches (each box shows the
+    bots' real state, "(some)" when they differ), tactic sets that set many switches at once
+    (Questing, Dungeon, Raid, Grinding, Quietly, Guard me, and your own: "Save as a set"),
+    and the formation.
+  - *Dialogue*: who talks to you on each channel, remarks, combat banter, reading speed and
+    the longest exchange (your own settings, kept by the server), and "Why did they say
+    that?" for the lines said to you. Administrators also see the dialogue budget.
+  - *Guild*: your guild's identity (officers edit it; "Write a draft" costs one model call
+    from the dialogue budget and saves nothing until you press Save), how long its rumours
+    last, and its rumours (officers correct, resolve or forget them).
 - `/la ring`: where the ring opens (beside the frame, at the mouse, or a fixed spot), its
   size, and which orders it holds (up to eight).
 - `/la unlock` and `/la lock`: drag the party frames (with DragonUI, use its `/duiedit`),
   the raid frames and the ring's fixed spot, out of combat.
-- `/la` shows the connection; `/la debug` prints what the addon does.
+- `/la status` shows the connection; `/la debug` prints what the addon does.
 
 The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.
 

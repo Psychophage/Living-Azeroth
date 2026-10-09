@@ -31,7 +31,7 @@ Orders.free = { icon = ICONS .. "Ability_Hunter_Pet_Wolf", state = "Doing as it 
 Orders.defaultRing = { "follow", "stay", "attack", "guard", "passive", "loot" }
 Orders.MAX_RING = 8
 
-local pending = {} -- guid -> order id being waited for
+local pending = {} -- guid -> { order id = true } being waited for
 local done = {} -- guid -> time the last order was confirmed
 
 -- What a bot is doing, for its order icon: the catalog entry of its standing order.
@@ -54,8 +54,14 @@ function Orders.Offered(bot, id)
     return not order.switch or (bot.switches and bot.switches[id] ~= nil)
 end
 
+-- An order still waiting for this bot (any one), or nil.
 function Orders.Pending(guid)
-    return pending[guid]
+    return pending[guid] and next(pending[guid])
+end
+
+-- Whether this order is waiting for this bot.
+function Orders.IsPending(guid, id)
+    return pending[guid] ~= nil and pending[guid][id] == true
 end
 
 function Orders.RecentlyDone(guid)
@@ -70,12 +76,24 @@ local REASONS = {
     no_answer = "the server didn't answer",
 }
 
-function Orders.Give(bot, id)
+-- Gives an order; for a switch, on says which way (without it, the switch flips). extra adds request fields
+-- (a formation's name).
+function Orders.Give(bot, id, on, extra)
     local guid = bot.guid
-    pending[guid] = id
+    pending[guid] = pending[guid] or {}
+    pending[guid][id] = true
     LA.Fire("orders:changed", guid)
-    LA.Bridge.Request({ op = "order", bot = guid, order = id }, function(reply)
-        pending[guid] = nil
+    local request = { op = "order", bot = guid, order = id, on = on }
+    for key, value in pairs(extra or {}) do
+        request[key] = value
+    end
+    LA.Bridge.Request(request, function(reply)
+        if pending[guid] then
+            pending[guid][id] = nil
+            if not next(pending[guid]) then
+                pending[guid] = nil
+            end
+        end
         if reply.bot then
             LA.Bots.Update(reply.bot)
         end

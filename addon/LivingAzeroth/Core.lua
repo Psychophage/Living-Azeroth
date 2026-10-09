@@ -88,6 +88,8 @@ SlashCmdList.LIVINGAZEROTH = function(text)
         LA.RingSettings.Unlock(command == "unlock")
     elseif command == "ring" then
         LA.RingSettings.Toggle()
+    elseif command == "" then
+        LA.Manager.Toggle()
     else
         local state = ({ ready = "connected", connecting = "connecting...", missing = "no bot control on this server" })
         LA.Print(state[LA.Bridge.state] .. "; " .. LA.Bots.Count() .. " bots of yours known.")
