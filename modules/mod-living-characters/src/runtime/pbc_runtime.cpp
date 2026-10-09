@@ -721,6 +721,20 @@ void Runtime::Why(Player* player, uint64_t line, std::function<void(std::string)
     }), std::move(done)});
 }
 
+void Runtime::Memory(Player* player, uint32_t character, std::function<void(std::string)> done)
+{
+    // Only what that character remembers about the asking player: nobody else's memories.
+    std::string subject = "player:" + std::to_string(player->GetGUID().GetCounter());
+    std::string holder = "player:" + std::to_string(character);
+    _answers.push_back({_storage->Submit([this, subject, holder]
+    {
+        pbc_json notes = pbc_json::array();
+        for (auto const& [kind, text] : _store.NotesAboutSubject(holder, subject))
+            notes.push_back({{"kind", kind}, {"text", text}});
+        return pbc_json{{"ok", true}, {"remembers_you", notes}}.dump();
+    }), std::move(done)});
+}
+
 void Runtime::Budget(Player* player, std::function<void(std::string)> done)
 {
     // The same rule as `.chars usage`: the realm's spending is for its administrators.
@@ -2144,6 +2158,14 @@ bool WhyLine(Player* player, uint64_t line, std::function<void(std::string)> don
     if (!runtime || !player)
         return false;
     runtime->Why(player, line, std::move(done));
+    return true;
+}
+
+bool MemoryOfPlayer(Player* player, uint32_t character, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->Memory(player, character, std::move(done));
     return true;
 }
 

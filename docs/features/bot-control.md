@@ -72,9 +72,10 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | `who` | `guids` (up to 40) | `bots`: those that are bots, each `guid`, `yours`, `commandable` |
 | `order` | `bot`, `order`, optional `on` or `formation` | `bot` once it has acted |
 | `hearing` | optional `change` | `hearing`: what the player hears from characters |
-| `guild` | optional `change` | `guild_id`, `name`, `may_edit`, `identity` of the player's guild |
+| `guild` | optional `change` | `guild_id`, `name`, `may_edit`, `identity`, `members`, `bots_online` of the player's guild |
 | `rumours` | optional `group` (administrators) or `change` | `group`, `may_change`, `rumours` |
 | `why` | optional `line` | `lines` heard, or for one line `started_by`, `remembers_you`, `actions`, `cost` |
+| `memory` | `character` (a low guid) | `remembers_you`: that character's notes about the player (nothing about anyone else) |
 | `budget` | | `spent_dollars`, `held_dollars`, `ceiling_dollars` of the dialogue budget (administrators only; read-only) |
 | `roster` | | `characters` (the player's others), `companions` (best known) |
 | `inspect` | `bot` | `bot`, `spec`, `item_level`, `free_slots`, `money`, `zone` |

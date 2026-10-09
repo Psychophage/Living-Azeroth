@@ -46,6 +46,9 @@ bool DraftGuildIdentity(Player* player, std::string const& seed, std::function<v
 // The realm's dialogue spending, read-only and for administrators: `done` gets {"ok", "spent_dollars",
 // "held_dollars", "ceiling_dollars"} or an error.
 bool DialogueBudget(Player* player, std::function<void(std::string)> done);
+// What one character (by low guid) remembers about this player, and nothing else: `done` gets
+// {"ok", "remembers_you": [{"kind", "text"}]}.
+bool MemoryOfPlayer(Player* player, uint32_t character, std::function<void(std::string)> done);
 }
 
 #endif

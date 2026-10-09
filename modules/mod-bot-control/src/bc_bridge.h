@@ -52,6 +52,7 @@ private:
     void Rumours(Player* player, pbc_json const& request);
     void Why(Player* player, pbc_json const& request);
     void Budget(Player* player, pbc_json const& request);
+    void Memory(Player* player, pbc_json const& request);
     void Roster(Player* player, pbc_json const& request);
     void Inspect(Player* player, pbc_json const& request);
     void Bring(Player* player, pbc_json const& request, bool bring);

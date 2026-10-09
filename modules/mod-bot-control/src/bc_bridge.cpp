@@ -4,6 +4,8 @@
 #include "Chat.h"
 #include "Config.h"
 #include "Group.h"
+#include "Guild.h"
+#include "GuildMgr.h"
 #include "Log.h"
 #include "ObjectAccessor.h"
 #include "Player.h"
@@ -316,6 +318,8 @@ void Bridge::Handle(Player* player, pbc_json const& request)
         return Why(player, request);
     if (op == "budget")
         return Budget(player, request);
+    if (op == "memory")
+        return Memory(player, request);
     if (op == "roster")
         return Roster(player, request);
     if (op == "inspect")
@@ -484,7 +488,20 @@ void Bridge::Guild(Player* player, pbc_json const& request)
         done = PBC::GuildIdentityFor(player, json, error);
     if (!done)
         return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", error}});
-    Reply(player, id, pbc_json::parse(json));
+    pbc_json body = pbc_json::parse(json);
+    if (::Guild* guild = sGuildMgr->GetGuildById(player->GetGuildId()))
+    {
+        uint32 botsOnline = 0;
+        auto count = [&](Player* member)
+        {
+            if (IsBot(member))
+                ++botsOnline;
+        };
+        guild->BroadcastWorker(count);
+        body["members"] = guild->GetMemberCount();
+        body["bots_online"] = botsOnline;
+    }
+    Reply(player, id, body);
 }
 
 // A guild's rumours: listed for members, corrected, resolved or forgotten by officers. The
@@ -519,6 +536,28 @@ void Bridge::Rumours(Player* player, pbc_json const& request)
             return Fail(player, id, "bad_request");
         started = PBC::GroupRumours(player, request.value("group", std::string()), answer);
     }
+    if (!started)
+        Fail(player, id, "unavailable");
+}
+
+// What one character remembers about the asking player; the character system answers from its store.
+void Bridge::Memory(Player* player, pbc_json const& request)
+{
+    pbc_json id = request.contains("id") ? request["id"] : pbc_json();
+    if (!request.contains("character") || !request["character"].is_number_unsigned())
+        return Fail(player, id, "bad_request");
+    ObjectGuid guid = player->GetGUID();
+    bool started = PBC::MemoryOfPlayer(player, request["character"].get<uint32>(), [this, guid, id](std::string json)
+    {
+        Player* asker = ObjectAccessor::FindConnectedPlayer(guid);
+        if (!asker)
+            return;
+        auto body = pbc_json::parse(json, nullptr, false);
+        if (body.is_discarded() || !body.is_object() || !body.value("ok", false))
+            return Fail(asker, id, "unavailable");
+        body.erase("ok");
+        Reply(asker, id, body);
+    });
     if (!started)
         Fail(player, id, "unavailable");
 }
