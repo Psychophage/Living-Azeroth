@@ -1,6 +1,6 @@
 # Current state
 
-Updated 2026-10-08.
+Updated 2026-10-09.
 
 ## Working
 
@@ -14,10 +14,12 @@ Updated 2026-10-08.
   Wrath content is open. The auction house bot is installed but its seller is off.
 - Realm tools: realms can share one spending budget (`shared_budget`); each start keeps
   the previous session's logs.
-- Bot control, server side (no addon yet): an addon bridge (`mod-bot-control`, off by
-  default) for orders, per-player hearing (`.chars hear`), guild identity (`.chars guild`),
-  guild rumours (`.chars rumours`), "why did they say that" (`.chars why`) and the roster;
-  bots can join in on their leader's auto-attack ("join attack").
+- Bot control: the Living Azeroth addon (`addon/LivingAzeroth`) with bot markers, party
+  order icons and the orders ring, raid frames (orders per bot, group, all bots or a
+  selection), and a manager window (roster with bringing alts, tactics and tactic sets,
+  formations, dialogue settings and "why did they say that", guild identity and rumours).
+  Tested in the real client with the default UI and with DragonUI; the server side
+  (`mod-bot-control`, off by default) has live tests.
 
 ## Open problems
 
@@ -40,8 +42,8 @@ Updated 2026-10-08.
 
 ## Next
 
-1. Bot control: a guild identity draft from a few words (one model call), then the client
-   addon on top of the server side (mockups done). Raid frames: own or Grid/VuhDo, undecided.
+1. Bot control: Steven plays with the addon; how friends install it is undecided. Guild
+   rumours have not been seen in the client with real reports yet.
 2. The unseen companion and volunteer-after-duel problems, then the interpretation gaps above.
 3. Auction house seller setup and phase-appropriate stock as part of the realm tools.
 4. Bots that ride boats and zeppelins: wait at the dock, board when it is in, step off at
