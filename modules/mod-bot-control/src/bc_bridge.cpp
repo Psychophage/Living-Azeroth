@@ -642,8 +642,9 @@ void Bridge::Bring(Player* player, pbc_json const& request, bool bring)
     if (!entry || entry->AccountId != player->GetSession()->GetAccountId() || guid == player->GetGUID())
         return Fail(player, id, "not_yours");
     auto messages = BotCommand(player, std::string(bring ? "add " : "remove ") + entry->Name);
+    // Playerbots reports each character as "<command>: <name> - <result>", the result "ok" when it worked.
     bool done = std::any_of(messages.begin(), messages.end(),
-                            [](std::string const& line) { return line.find(": ok") != std::string::npos; });
+                            [](std::string const& line) { return line.ends_with(" - ok"); });
     pbc_json body = {{"messages", messages}};
     if (!done)
         return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", messages.empty() ? "" : messages.front()}});
