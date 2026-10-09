@@ -14,6 +14,7 @@
 #include "Playerbots.h"
 #include "AiFactory.h"
 #include "CharacterCache.h"
+#include "ChangeStrategyAction.h"
 #include "DatabaseEnv.h"
 #include "DBCStores.h"
 #include "Formations.h"
@@ -176,26 +177,17 @@ std::vector<Player*> BotsFor(Player* player)
     return bots;
 }
 
-// The Playerbots chat commands for an order; "formation:<name>" sets a formation.
-std::vector<std::string> Commands(Player* player, std::string const& order, bool on)
+// The Playerbots chat commands for an order (switches change strategies directly, see Order);
+// "formation:<name>" sets a formation.
+std::vector<std::string> Commands(Player* player, std::string const& order)
 {
-    if (Switch const* switch_ = FindSwitch(order))
-    {
-        std::string change = std::string(on ? "+" : "-") + switch_->strategy;
-        std::vector<std::string> commands;
-        if (switch_->combat)
-            commands.push_back("co " + change);
-        if (switch_->nonCombat)
-            commands.push_back("nc " + change);
-        return commands;
-    }
     if (order == "guard")
         return {"position guard " + std::to_string(int32(player->GetPositionX())) + "," +
                     std::to_string(int32(player->GetPositionY())) + "," + std::to_string(int32(player->GetPositionZ())),
                 "nc +guard,-follow,-stay"};
     if (order.starts_with("formation:"))
         return {"formation " + order.substr(10)};
-    if (order == "rest")
+    if (order == "rest" || FindSwitch(order))
         return {};
     return {order};
 }
@@ -411,7 +403,17 @@ void Bridge::Order(Player* player, pbc_json const& request)
         if (!started)
             return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", why}});
     }
-    for (auto const& command : Commands(player, order, on))
+    if (switch_)
+    {
+        // Directly, as the co and nc commands would: queued as chat commands, a second change waiting behind
+        // the first replaces it, and a tactic set sends many at once.
+        std::string change = std::string(on ? "+" : "-") + switch_->strategy;
+        std::string refusal;
+        if ((switch_->combat && !ApplyStrategyChange(ai, change, BOT_STATE_COMBAT, refusal)) ||
+            (switch_->nonCombat && !ApplyStrategyChange(ai, change, BOT_STATE_NON_COMBAT, refusal)))
+            return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", refusal}});
+    }
+    for (auto const& command : Commands(player, order))
         ai->HandleCommand(CHAT_MSG_WHISPER, sPlayerbotAIConfig.commandPrefix + command, player);
     _pending.push_back({player->GetGUID(), bot->GetGUID(), id, order, on, 0});
 }
