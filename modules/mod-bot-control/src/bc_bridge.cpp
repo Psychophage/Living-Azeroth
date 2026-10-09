@@ -16,6 +16,7 @@
 #include "CharacterCache.h"
 #include "DatabaseEnv.h"
 #include "DBCStores.h"
+#include "Formations.h"
 #include "PopulationMgr.h"
 #include "WorldPacket.h"
 #include "WorldSession.h"
@@ -32,9 +33,45 @@ constexpr int Protocol = 1;
 constexpr uint32 WatchIntervalMs = 1000;
 constexpr std::size_t MaxWho = 40;
 
-// Orders the addon can give, each a Playerbots chat command. Passive, loot and join
-// (join in when the master starts attacking) are switches; the others are given as they are.
-std::vector<std::string> const Orders = {"follow", "stay", "attack", "pull", "flee", "passive", "loot", "join"};
+// Orders the addon can give, each one or more Playerbots chat commands. "guard" holds the
+// player's current spot; "rest" eats and drinks when the bot needs it.
+std::vector<std::string> const Actions = {"follow", "stay", "guard", "attack", "pull", "flee", "rest"};
+
+// Tactic switches, each a Playerbots strategy in combat, out of combat, or both. A bot only
+// offers the switches its class has (not every class has area attacks).
+struct Switch
+{
+    char const* name;
+    char const* strategy;
+    bool combat;
+    bool nonCombat;
+};
+std::vector<Switch> const Switches = {
+    {"passive", "passive", true, true},     // stay out of fights
+    {"loot", "loot", false, true},          // pick up loot after fights
+    {"join", "join attack", false, true},   // join in when the master starts attacking
+    {"aoe", "aoe", true, false},            // area attacks
+    {"behind", "behind", true, false},      // melee keeps out of the frontal arc
+    {"threat", "threat", true, false},      // hold damage while the tank builds threat
+    {"avoid_aoe", "avoid aoe", true, false},
+    {"potions", "potions", true, false},
+    {"run", "flee", true, false},           // run when outmatched or nearly dead
+    {"save_mana", "save mana", true, false},
+    {"gather", "gather", false, true},      // herbs and ore
+    {"food", "food", false, true},          // eat and drink after fights
+    {"mount", "mount", false, true},        // mount when the master mounts
+};
+
+std::vector<std::string> const Formations = {"near", "far", "arrow", "queue", "circle", "line", "shield", "melee",
+                                             "chaos"};
+
+Switch const* FindSwitch(std::string const& name)
+{
+    for (Switch const& candidate : Switches)
+        if (name == candidate.name)
+            return &candidate;
+    return nullptr;
+}
 
 bool IsBot(Player* player)
 {
@@ -47,29 +84,47 @@ bool Commandable(Player* viewer, Player* bot)
     return ai && ai->GetSecurity()->LevelFor(viewer, nullptr, false) >= PLAYERBOT_SECURITY_ALLOW_ALL;
 }
 
-bool Passive(PlayerbotAI* ai)
+// A switch is on when every engine it belongs to has its strategy, off when none has.
+bool SwitchOn(PlayerbotAI* ai, Switch const& switch_)
 {
-    return ai->HasStrategy("passive", BOT_STATE_COMBAT);
+    return (!switch_.combat || ai->HasStrategy(switch_.strategy, BOT_STATE_COMBAT)) &&
+           (!switch_.nonCombat || ai->HasStrategy(switch_.strategy, BOT_STATE_NON_COMBAT));
 }
 
-// Passive is two switches, in and out of combat; an order is done when both agree.
-bool PassiveEverywhere(PlayerbotAI* ai, bool on)
+bool SwitchOff(PlayerbotAI* ai, Switch const& switch_)
 {
-    return Passive(ai) == on && ai->HasStrategy("passive", BOT_STATE_NON_COMBAT) == on;
+    return (!switch_.combat || !ai->HasStrategy(switch_.strategy, BOT_STATE_COMBAT)) &&
+           (!switch_.nonCombat || !ai->HasStrategy(switch_.strategy, BOT_STATE_NON_COMBAT));
 }
 
-bool Looting(PlayerbotAI* ai)
+// The strategies a class has do not change, so they are asked for once per class.
+bool Supports(Player* bot, char const* strategy)
 {
-    return ai->HasStrategy("loot", BOT_STATE_NON_COMBAT);
+    static std::unordered_map<uint8, std::set<std::string>> byClass;
+    auto found = byClass.find(bot->getClass());
+    if (found == byClass.end())
+        found = byClass.emplace(bot->getClass(),
+                                GET_PLAYERBOT_AI(bot)->GetAiObjectContext()->GetSupportedStrategies()).first;
+    return found->second.count(strategy) != 0;
 }
 
-bool Joining(PlayerbotAI* ai)
+std::string FormationOf(PlayerbotAI* ai)
 {
-    return ai->HasStrategy("join attack", BOT_STATE_NON_COMBAT);
+    Formation* formation = ai->GetAiObjectContext()->GetValue<Formation*>("formation")->Get();
+    return formation ? formation->getName() : "";
+}
+
+// Whether eating or drinking would do anything: below full health, or a mana user below full mana.
+bool NeedsRest(Player* bot)
+{
+    return bot->GetHealthPct() < 100.0f ||
+           (bot->getPowerType() == POWER_MANA && bot->GetPower(POWER_MANA) < bot->GetMaxPower(POWER_MANA));
 }
 
 std::string Standing(PlayerbotAI* ai)
 {
+    if (ai->HasStrategy("guard", BOT_STATE_NON_COMBAT))
+        return "guard";
     if (ai->HasStrategy("stay", BOT_STATE_NON_COMBAT))
         return "stay";
     if (ai->HasStrategy("follow", BOT_STATE_NON_COMBAT))
@@ -81,6 +136,10 @@ pbc_json Describe(Player* viewer, Player* bot)
 {
     PlayerbotAI* ai = GET_PLAYERBOT_AI(bot);
     std::string role = PlayerbotAI::IsTank(bot) ? "tank" : PlayerbotAI::IsHeal(bot) ? "healer" : "damage";
+    pbc_json switches = pbc_json::object();
+    for (Switch const& switch_ : Switches)
+        if (Supports(bot, switch_.strategy))
+            switches[switch_.name] = SwitchOn(ai, switch_);
     return {
         {"guid", bot->GetGUID().GetCounter()},
         {"name", bot->GetName()},
@@ -88,9 +147,9 @@ pbc_json Describe(Player* viewer, Player* bot)
         {"level", bot->GetLevel()},
         {"role", role},
         {"order", Standing(ai)},
-        {"passive", Passive(ai)},
-        {"loot", Looting(ai)},
-        {"join", Joining(ai)},
+        {"switches", switches},
+        {"formation", FormationOf(ai)},
+        {"resting", bot->IsSitState()},
         {"combat", bot->IsInCombat()},
         {"yours", ai->GetMaster() == viewer},
         {"commandable", Commandable(viewer, bot)},
@@ -117,15 +176,27 @@ std::vector<Player*> BotsFor(Player* player)
     return bots;
 }
 
-std::vector<std::string> Commands(std::string const& order, bool on)
+// The Playerbots chat commands for an order; "formation:<name>" sets a formation.
+std::vector<std::string> Commands(Player* player, std::string const& order, bool on)
 {
-    if (order == "passive")
-        return on ? std::vector<std::string>{"co +passive", "nc +passive"}
-                  : std::vector<std::string>{"co -passive", "nc -passive"};
-    if (order == "loot")
-        return {on ? "nc +loot" : "nc -loot"};
-    if (order == "join")
-        return {on ? "nc +join attack" : "nc -join attack"};
+    if (Switch const* switch_ = FindSwitch(order))
+    {
+        std::string change = std::string(on ? "+" : "-") + switch_->strategy;
+        std::vector<std::string> commands;
+        if (switch_->combat)
+            commands.push_back("co " + change);
+        if (switch_->nonCombat)
+            commands.push_back("nc " + change);
+        return commands;
+    }
+    if (order == "guard")
+        return {"position guard " + std::to_string(int32(player->GetPositionX())) + "," +
+                    std::to_string(int32(player->GetPositionY())) + "," + std::to_string(int32(player->GetPositionZ())),
+                "nc +guard,-follow,-stay"};
+    if (order.starts_with("formation:"))
+        return {"formation " + order.substr(10)};
+    if (order == "rest")
+        return {};
     return {order};
 }
 
@@ -133,18 +204,16 @@ std::vector<std::string> Commands(std::string const& order, bool on)
 bool Done(Player* bot, std::string const& order, bool on)
 {
     PlayerbotAI* ai = GET_PLAYERBOT_AI(bot);
-    if (order == "follow")
-        return Standing(ai) == "follow";
-    if (order == "stay")
-        return Standing(ai) == "stay";
+    if (order == "follow" || order == "stay" || order == "guard")
+        return Standing(ai) == order;
     if (order == "flee")
-        return Standing(ai) == "follow" && PassiveEverywhere(ai, true);
-    if (order == "passive")
-        return PassiveEverywhere(ai, on);
-    if (order == "loot")
-        return Looting(ai) == on;
-    if (order == "join")
-        return Joining(ai) == on;
+        return Standing(ai) == "follow" && SwitchOn(ai, *FindSwitch("passive"));
+    if (order == "rest")
+        return bot->IsSitState();
+    if (order.starts_with("formation:"))
+        return FormationOf(ai) == order.substr(10);
+    if (Switch const* switch_ = FindSwitch(order))
+        return on ? SwitchOn(ai, *switch_) : SwitchOff(ai, *switch_);
     return bot->IsInCombat() || bot->GetVictim();
 }
 
@@ -256,7 +325,10 @@ void Bridge::Hello(Player* player, pbc_json const& id)
 {
     // From now on this player hears about changes to their bots.
     _watching[player->GetGUID()].clear();
-    Reply(player, id, {{"protocol", Protocol}, {"orders", Orders}});
+    pbc_json switches = pbc_json::array();
+    for (Switch const& switch_ : Switches)
+        switches.push_back(switch_.name);
+    Reply(player, id, {{"protocol", Protocol}, {"orders", Actions}, {"switches", switches}, {"formations", Formations}});
 }
 
 void Bridge::Bots(Player* player, pbc_json const& id)
@@ -292,22 +364,52 @@ void Bridge::Order(Player* player, pbc_json const& request)
     if (!request.contains("bot") || !request["bot"].is_number_unsigned() || !request.contains("order") ||
         !request["order"].is_string() || (request.contains("on") && !request["on"].is_boolean()))
         return Fail(player, id, "bad_request");
-    std::string const order = request["order"].get<std::string>();
-    if (std::find(Orders.begin(), Orders.end(), order) == Orders.end())
+    std::string order = request["order"].get<std::string>();
+    Switch const* switch_ = FindSwitch(order);
+    if (order == "formation")
+    {
+        if (!request.contains("formation") || !request["formation"].is_string() ||
+            std::find(Formations.begin(), Formations.end(), request["formation"].get<std::string>()) == Formations.end())
+            return Fail(player, id, "unknown_formation");
+        order += ":" + request["formation"].get<std::string>();
+    }
+    else if (!switch_ && std::find(Actions.begin(), Actions.end(), order) == Actions.end())
         return Fail(player, id, "unknown_order");
     Player* bot = ObjectAccessor::FindPlayerByLowGUID(request["bot"].get<ObjectGuid::LowType>());
     if (!IsBot(bot) || !bot->IsInWorld())
         return Fail(player, id, "unknown_bot");
     if (!Commandable(player, bot))
         return Fail(player, id, "not_yours");
+    if (switch_ && !Supports(bot, switch_->strategy))
+        return Fail(player, id, "unsupported");
 
     PlayerbotAI* ai = GET_PLAYERBOT_AI(bot);
-    bool on = request.contains("on") ? request["on"].get<bool>()
-            : order == "passive"     ? !Passive(ai)
-            : order == "loot"        ? !Looting(ai)
-            : order == "join"        ? !Joining(ai)
-                                     : true;
-    for (auto const& command : Commands(order, on))
+    bool on = request.contains("on") ? request["on"].get<bool>() : switch_ ? !SwitchOn(ai, *switch_) : true;
+    if (order == "rest")
+    {
+        if (bot->IsInCombat())
+            return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", "in combat"}});
+        if (!NeedsRest(bot))
+            return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", "not needed"}});
+        // Eating and drinking have no chat command of their own; they are the actions the food strategy uses.
+        std::string why;
+        bool started = false;
+        auto act = [&](char const* name, char const* verb)
+        {
+            Action* action = ai->GetAiObjectContext()->GetAction(name);
+            if (action && action->isUseful() && action->isPossible() && action->Execute(Event()))
+                started = true;
+            else
+                why = std::string("couldn't ") + verb;
+        };
+        if (bot->GetHealthPct() < 100.0f)
+            act("food", "eat");
+        if (bot->getPowerType() == POWER_MANA && bot->GetPower(POWER_MANA) < bot->GetMaxPower(POWER_MANA))
+            act("drink", "drink");
+        if (!started)
+            return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", why}});
+    }
+    for (auto const& command : Commands(player, order, on))
         ai->HandleCommand(CHAT_MSG_WHISPER, sPlayerbotAIConfig.commandPrefix + command, player);
     _pending.push_back({player->GetGUID(), bot->GetGUID(), id, order, on, 0});
 }

@@ -24,10 +24,10 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 
 | `op` | Fields | Reply |
 | --- | --- | --- |
-| `hello` | | `protocol`, `orders`; from now on the player is sent changes |
+| `hello` | | `protocol`, `orders`, `switches`, `formations`; from now on the player is sent changes |
 | `bots` | | `bots`: the player's group bots and own bots |
 | `who` | `guids` (up to 40) | `bots`: those that are bots, each `guid`, `yours`, `commandable` |
-| `order` | `bot`, `order`, optional `on` | `bot` once it has acted |
+| `order` | `bot`, `order`, optional `on` or `formation` | `bot` once it has acted |
 | `hearing` | optional `change` | `hearing`: what the player hears from characters |
 | `guild` | optional `change` | `guild_id`, `name`, `may_edit`, `identity` of the player's guild |
 | `rumours` | optional `group` (administrators) or `change` | `group`, `may_change`, `rumours` |
@@ -36,18 +36,42 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | `inspect` | `bot` | `bot`, `spec`, `item_level`, `free_slots`, `money`, `zone` |
 | `bring`, `dismiss` | `name` (one of the player's own characters) | Playerbots' `messages` |
 
-Orders are `follow`, `stay`, `attack`, `pull`, `flee`, and the switches `passive`, `loot`
-and `join` (`on` true or false; without it, the switch flips). They go to Playerbots as
-its chat commands. The reply comes when the bot's own state shows the order, or with
-`error: timeout` after `BotControl.OrderTimeoutMs` (10 seconds).
+Orders are `follow`, `stay`, `guard` (hold the spot where the player stands; following,
+staying or falling back ends it, typed or from the addon), `attack`, `pull`, `flee` (fall
+back to the player, passive), `rest` (eat and drink; refused with `reason` "not needed" at
+full health and mana, or "in combat"), and `formation` with `formation` one of `near`,
+`far`, `arrow`, `queue`, `circle`, `line`, `shield`, `melee`, `chaos`. They go to Playerbots
+as its chat commands. The reply comes when the bot's own state shows the order (for `rest`,
+when it sits down), or with `error: timeout` after `BotControl.OrderTimeoutMs` (10 seconds).
+
+The tactic switches are orders too, with `on` true or false (without it, the switch flips):
+
+| Switch | Playerbots strategy | Meaning |
+| --- | --- | --- |
+| `passive` | passive (in and out of combat) | stay out of fights |
+| `loot` | loot | pick up loot after fights |
+| `join` | join attack | join in when the player starts attacking |
+| `aoe` | aoe | area attacks (not every class has them) |
+| `behind` | behind | melee keeps out of the frontal arc |
+| `threat` | threat | hold damage while the tank builds threat |
+| `avoid_aoe` | avoid aoe | step out of area damage |
+| `potions` | potions | use potions when low |
+| `run` | flee | run when outmatched or nearly dead |
+| `save_mana` | save mana | skip small heals, keep a reserve |
+| `gather` | gather | herbs and ore |
+| `food` | food | eat and drink after fights |
+| `mount` | mount | mount when the player mounts |
+
+A bot whose class lacks a switch's strategy leaves it out of its `switches` and refuses it
+with `unsupported`.
 
 `join` is Playerbots' "join attack": the bot treats its master's auto-attack target as an
 enemy as soon as the attack starts, instead of after the first hit lands.
 `AiPlayerbot.JoinLeaderAttack = 1` (in `[playerbots]`) starts every bot with it on.
 
 A bot is described as `guid`, `name`, `class`, `level`, `role` (tank, healer,
-damage), `order` (follow, stay or free), `passive`, `loot`, `join`, `combat`, `yours` and
-`commandable`.
+damage), `order` (follow, stay, guard or free), `switches` (each switch its class has, on or
+off), `formation`, `resting` (sitting to eat or drink), `combat`, `yours` and `commandable`.
 
 After `hello`, the server sends `{"ev":"bot","bot":{...}}` whenever one of the
 player's bots changes, however it changed, and `{"ev":"gone","guid":N}` when one
@@ -86,5 +110,6 @@ up to twelve characters the player has come to know (population familiarity, bes
 the player's own characters as their bot, which joins their party, and `dismiss` sends it
 home, through Playerbots' `.playerbots bot add/remove`.
 
-Errors: `bad_request`, `too_large`, `unknown_op`, `unknown_order`, `unknown_bot`,
-`not_yours`, `timeout`, `refused` (with a `reason`), `unavailable` (character system off).
+Errors: `bad_request`, `too_large`, `unknown_op`, `unknown_order`, `unknown_formation`,
+`unknown_bot`, `unsupported`, `not_yours`, `timeout`, `refused` (with a `reason`),
+`unavailable` (character system off).
