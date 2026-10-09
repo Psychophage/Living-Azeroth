@@ -52,7 +52,8 @@ bool FollowChatShortcutAction::Execute(Event /*event*/)
         return false;
 
     // botAI->Reset();
-    botAI->ChangeStrategy("+follow,-passive,-grind,-move from group", BOT_STATE_NON_COMBAT);
+    // Living Azeroth: following, staying or falling back ends guarding a spot.
+    botAI->ChangeStrategy("+follow,-passive,-grind,-move from group,-guard", BOT_STATE_NON_COMBAT);
     botAI->ChangeStrategy("-stay,-follow,-passive,-grind,-move from group", BOT_STATE_COMBAT);
     botAI->GetAiObjectContext()->GetValue<GuidVector>("prioritized targets")->Reset();
 
@@ -126,7 +127,7 @@ bool StayChatShortcutAction::Execute(Event /*event*/)
         return false;
 
     botAI->Reset();
-    botAI->ChangeStrategy("+stay,-passive,-move from group", BOT_STATE_NON_COMBAT);
+    botAI->ChangeStrategy("+stay,-passive,-move from group,-guard", BOT_STATE_NON_COMBAT);
     botAI->ChangeStrategy("+stay,-follow,-passive,-move from group", BOT_STATE_COMBAT);
 
     // Living Azeroth: clearing a movement generator can leave its spline running.
@@ -164,7 +165,7 @@ bool FleeChatShortcutAction::Execute(Event /*event*/)
         return false;
 
     botAI->Reset();
-    botAI->ChangeStrategy("+follow,-stay,+passive", BOT_STATE_NON_COMBAT);
+    botAI->ChangeStrategy("+follow,-stay,+passive,-guard", BOT_STATE_NON_COMBAT);
     botAI->ChangeStrategy("+follow,-stay,+passive", BOT_STATE_COMBAT);
 
     ResetReturnPosition();
