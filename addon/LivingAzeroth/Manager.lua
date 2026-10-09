@@ -1,28 +1,38 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The manager window, in the style of the Dungeon Finder, with tabs along the bottom as in the game's own
--- windows. Each tab is a page another file adds (roster, tactics, dialogue, guild); a page draws into the
--- window's header band, its metal bar, the paper and the bottom bar.
+-- The manager window: the Quest Log's two-pane frame, with tabs along the bottom as in the game's own windows.
+-- Each tab is a page another file adds (roster, tactics, dialogue, guild). A page has a strip under the title
+-- (page.top), the left pane for a list (page.left), a parchment page on the right (page.detail, which scrolls),
+-- buttons under the list (page.controls) and under the parchment (page.actions).
 local _, LA = ...
 
 local Manager = {}
 LA.Manager = Manager
 
-local WIDTH, HEIGHT = 700, 560
-
-local window = LA.Window.Create("LivingAzerothManager", WIDTH, HEIGHT, LA.name, "Interface\\Icons\\INV_Misc_Gear_01")
+local window = LA.Window.DualPane("LivingAzerothManager", LA.name, "Interface\\Icons\\INV_Misc_Gear_01")
 
 local pages = {}
 local tabs = {}
 
--- Adds a tab. build(page) makes its contents once, into page.header, page.bar, page.content and page.footer;
--- show(page) refreshes it each time it is shown.
+local close = LA.UI.Button(window.actions, CLOSE, 80)
+close:SetPoint("RIGHT", 0, 1)
+close:SetScript("OnClick", function() window:Hide() end)
+
+-- Adds a tab. build(page) makes its contents once; show(page) refreshes it each time it is shown.
 function Manager.AddPage(name, build, show)
     local index = #pages + 1
     local page = { tabName = name, build = build, show = show }
-    for _, part in ipairs({ "header", "bar", "content", "footer" }) do
-        page[part] = CreateFrame("Frame", nil, window[part])
+    for part, area in pairs({ top = "top", left = "list", controls = "controls", actions = "actions" }) do
+        page[part] = CreateFrame("Frame", nil, window[area])
         page[part]:SetAllPoints()
         page[part]:Hide()
+    end
+    page.detail = CreateFrame("Frame", nil, window.detail)
+    page.detail:SetSize(298, 333)
+    page.detail:Hide()
+    -- The parchment page's height, once its contents are laid out, so it scrolls when it is long.
+    function page:SetDetailHeight(height)
+        self.detail:SetHeight(math.max(height, 333))
+        window.detail:UpdateScrollChildRect()
     end
     pages[index] = page
 
@@ -31,7 +41,7 @@ function Manager.AddPage(name, build, show)
     tab:SetText(name)
     PanelTemplates_TabResize(tab, 0)
     if index == 1 then
-        tab:SetPoint("TOPLEFT", window, "BOTTOMLEFT", 12, 4)
+        tab:SetPoint("TOPLEFT", window, "BOTTOMLEFT", 11, 2)
     else
         tab:SetPoint("LEFT", tabs[index - 1], "RIGHT", -15, 0)
     end
@@ -58,11 +68,13 @@ function Manager.Show(index)
             page.built = true
             page.build(page)
         end
-        for _, part in ipairs({ "header", "bar", "content", "footer" }) do
+        for _, part in ipairs({ "top", "left", "controls", "actions", "detail" }) do
             LA.SetShown(page[part], shown)
         end
         if shown then
             window.title:SetText(LA.name .. " - " .. page.tabName)
+            window.detail:SetScrollChild(page.detail)
+            window.detail:SetVerticalScroll(0)
             if page.show then
                 page.show(page)
             end
@@ -80,19 +92,14 @@ function Manager.Toggle()
 end
 
 function Manager.IsShown(page)
-    return window:IsShown() and page.content:IsShown()
+    return window:IsShown() and page.left:IsShown()
+end
+
+-- Back to the top of the parchment, when what it shows changes.
+function Manager.ScrollToTop()
+    window.detail:SetVerticalScroll(0)
 end
 
 window:SetScript("OnHide", function()
     PlaySound("igCharacterInfoClose")
 end)
-
--- A Close button at the right of a page's bottom bar, as the Dungeon Finder has.
-function Manager.CloseButton(page)
-    local close = LA.UI.Button(page.footer, CLOSE, 100)
-    close:SetPoint("RIGHT", 0, 0)
-    close:SetScript("OnClick", function()
-        window:Hide()
-    end)
-    return close
-end

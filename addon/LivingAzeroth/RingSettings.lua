@@ -1,15 +1,15 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
 -- The orders ring's settings: where it opens, its size, and which orders it holds (up to eight, in ring order).
--- With "a fixed spot", unlocking frames shows the spot to drag.
+-- "Move frames" unlocks the party and raid frames and, with "a fixed spot", shows the ring itself to drag.
 local _, LA = ...
 
 local RingSettings = {}
 LA.RingSettings = RingSettings
 
 local PLACEMENTS = {
-    { id = "beside", label = "Beside the frame", hint = "Next to the bot's frame" },
+    { id = "beside", label = "Beside the frame", hint = "Next to the bot you clicked" },
     { id = "cursor", label = "At the mouse", hint = "Centred where you click" },
-    { id = "fixed", label = "A fixed spot", hint = "Drag it after Move frames" },
+    { id = "fixed", label = "A fixed spot", hint = "Press Move frames to place it" },
 }
 local SIZES = {
     { id = "small", label = "Small" },
@@ -25,8 +25,13 @@ end
 
 local function Changed()
     LA.Ring.Relayout()
+    RingSettings.Unlock(LA.unlocked)
     RingSettings.Refresh()
-    LA.Fire("ring:settings")
+end
+
+local function ShowPart(index)
+    LA.SetShown(window.where, index == 1)
+    LA.SetShown(window.orderPart, index == 2)
 end
 
 local function Window()
@@ -34,33 +39,29 @@ local function Window()
         return window
     end
     local UI = LA.UI
-    window = LA.Window.Create("LivingAzerothRingSettings", 470, 550, "Orders ring",
-        "Interface\\Icons\\Ability_Tracking")
+    window = LA.Window.Finder("LivingAzerothRingSettings", "Orders ring", "Interface\\Icons\\Ability_Tracking")
     window:SetFrameStrata("DIALOG")
 
-    local intro = UI.Text(window.header, 360)
-    intro:SetPoint("TOPLEFT", 64, -10)
-    intro:SetText("Click a bot's order icon to open its ring. Choose where it opens, its size, and what it holds.")
+    local intro = UI.Text(window.header, 250)
+    intro:SetPoint("TOPLEFT", 58, -10)
+    intro:SetText("Click a bot's order icon to open its ring. Choose where it opens, how big it is, and what it " ..
+        "holds.")
 
-    local where = window.bar:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    where:SetPoint("LEFT", 12, 0)
-    where:SetText("Where it opens")
+    window.parts = UI.SubTabs(window.bar, { "Where it opens", "Orders" }, ShowPart)
 
-    local content = window.content
+    -- Where it opens, and its size.
+    window.where = CreateFrame("Frame", nil, window.content)
+    window.where:SetAllPoints()
+    local whereTitle = UI.Dark(window.where, "title", 290)
+    whereTitle:SetPoint("TOPLEFT", 8, -8)
+    whereTitle:SetText("Where it opens")
     window.placements = {}
     for i, placement in ipairs(PLACEMENTS) do
-        local radio = CreateFrame("CheckButton", nil, content, "UIRadioButtonTemplate")
-        radio:SetPoint("TOPLEFT", 8 + (i - 1) * 140, -8)
-        local label = radio:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-        label:SetPoint("LEFT", radio, "RIGHT", 2, 0)
-        label:SetText(placement.label)
-        local hint = radio:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-        hint:SetPoint("TOPLEFT", label, "BOTTOMLEFT", 0, -2)
-        hint:SetWidth(122)
-        hint:SetJustifyH("LEFT")
-        hint:SetTextColor(0.75, 0.7, 0.6)
+        local radio = UI.Radio(window.where, placement.label)
+        radio:SetPoint("TOPLEFT", 12, -32 - (i - 1) * 34)
+        local hint = UI.Dark(window.where, "small", 240)
+        hint:SetPoint("TOPLEFT", radio.label, "BOTTOMLEFT", 0, -1)
         hint:SetText(placement.hint)
-        radio:SetHitRectInsets(0, -label:GetStringWidth() - 4, 0, 0)
         radio:SetScript("OnClick", function()
             Settings().placement = placement.id
             Changed()
@@ -68,17 +69,13 @@ local function Window()
         radio.id = placement.id
         window.placements[i] = radio
     end
-
-    local size = UI.Heading(content, "Size")
-    size:SetPoint("TOPLEFT", 8, -70)
+    local sizeTitle = UI.Dark(window.where, "title", 290)
+    sizeTitle:SetPoint("TOPLEFT", 8, -140)
+    sizeTitle:SetText("Size")
     window.sizes = {}
     for i, choice in ipairs(SIZES) do
-        local radio = CreateFrame("CheckButton", nil, content, "UIRadioButtonTemplate")
-        radio:SetPoint("TOPLEFT", 90 + (i - 1) * 90, -72)
-        local label = radio:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-        label:SetPoint("LEFT", radio, "RIGHT", 2, 0)
-        label:SetText(choice.label)
-        radio:SetHitRectInsets(0, -label:GetStringWidth() - 4, 0, 0)
+        local radio = UI.Radio(window.where, choice.label)
+        radio:SetPoint("TOPLEFT", 12 + (i - 1) * 96, -164)
         radio:SetScript("OnClick", function()
             Settings().size = choice.id
             Changed()
@@ -86,21 +83,34 @@ local function Window()
         radio.id = choice.id
         window.sizes[i] = radio
     end
+    window.always = UI.Check(window.where, "Order icons on every bot in a raid",
+        "Otherwise only on bots not simply following you", true)
+    window.always:SetPoint("TOPLEFT", 8, -194)
+    window.always:SetScript("OnClick", function(self)
+        LivingAzerothDB.iconsAlways = self:GetChecked() and true or false
+        LA.Fire("bots:changed")
+    end)
 
-    local orders = UI.Heading(content, "Orders in the ring")
-    orders:SetPoint("TOPLEFT", 8, -104)
-    window.count = content:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    window.count:SetPoint("TOPRIGHT", -8, -108)
+    -- Which orders it holds.
+    window.orderPart = CreateFrame("Frame", nil, window.content)
+    window.orderPart:SetAllPoints()
+    local ordersTitle = UI.Dark(window.orderPart, "title", 200)
+    ordersTitle:SetPoint("TOPLEFT", 8, -8)
+    ordersTitle:SetText("Orders in the ring")
+    window.count = UI.Dark(window.orderPart, "small", 120)
+    window.count:SetPoint("TOPRIGHT", -8, -12)
+    window.count:SetJustifyH("RIGHT")
     window.orders = {}
     for i, order in ipairs(LA.Orders.catalog) do
-        local button = CreateFrame("CheckButton", "LivingAzerothRingChoice" .. i, content, "ActionButtonTemplate")
-        local column, row = (i - 1) % 5, math.floor((i - 1) / 5)
-        button:SetPoint("TOPLEFT", 22 + column * 82, -132 - row * 70)
+        local button = CreateFrame("CheckButton", "LivingAzerothRingChoice" .. i, window.orderPart,
+            "ActionButtonTemplate")
+        local column, row = (i - 1) % 4, math.floor((i - 1) / 4)
+        button:SetPoint("TOPLEFT", 22 + column * 76, -34 - row * 70)
         _G[button:GetName() .. "Icon"]:SetTexture(order.icon)
         button.slot = _G[button:GetName() .. "HotKey"]
-        local label = button:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-        label:SetPoint("TOP", button, "BOTTOM", 0, -3)
-        label:SetWidth(80)
+        local label = UI.Dark(window.orderPart, "small", 74)
+        label:SetPoint("TOP", button, "BOTTOM", 0, -2)
+        label:SetJustifyH("CENTER")
         label:SetText(order.label)
         button:SetScript("OnClick", function()
             local list = Settings().orders
@@ -121,7 +131,7 @@ local function Window()
         button:SetScript("OnEnter", function(self)
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             GameTooltip:AddLine(order.label, 1, 1, 1)
-            GameTooltip:AddLine("Click to add to or take out of the ring.", 0.6, 0.6, 0.6)
+            GameTooltip:AddLine("Click to add it to the ring or take it out.", nil, nil, nil, true)
             GameTooltip:Show()
         end)
         button:SetScript("OnLeave", GameTooltip_Hide)
@@ -129,26 +139,16 @@ local function Window()
         window.orders[i] = button
     end
 
-    window.always = UI.Check(content, "Order icons on every bot in a raid",
-        "Otherwise only on bots that are not simply following you")
-    window.always:SetPoint("TOPLEFT", 4, -284)
-    window.always:SetScript("OnClick", function(self)
-        LivingAzerothDB.iconsAlways = self:GetChecked() and true or false
-        LA.Fire("bots:changed")
-    end)
-
-    window.move = UI.Button(window.footer, "Move frames", 120)
-    window.move:SetPoint("LEFT", 0, 0)
+    window.move = UI.Button(window.footer, "Move frames", 110)
+    window.move:SetPoint("LEFT", 0, 1)
     window.move:SetScript("OnClick", function()
-        LA.unlocked = not LA.unlocked
-        LA.Party.Unlock(LA.unlocked)
-        LA.Raid.Unlock(LA.unlocked)
-        RingSettings.Unlock(LA.unlocked)
-        window.move:SetText(LA.unlocked and "Lock frames" or "Move frames")
+        LA.SetUnlocked(not LA.unlocked)
     end)
-    local okay = UI.Button(window.footer, OKAY, 100)
-    okay:SetPoint("RIGHT", 0, 0)
+    local okay = UI.Button(window.footer, OKAY, 80)
+    okay:SetPoint("RIGHT", -8, 1)
     okay:SetScript("OnClick", function() window:Hide() end)
+    window.parts:Select(1)
+    ShowPart(1)
     return window
 end
 
@@ -174,8 +174,9 @@ function RingSettings.Refresh()
         _G[button:GetName() .. "Icon"]:SetDesaturated(slot == nil)
         button.slot:SetText(slot or "")
     end
-    window.count:SetText(#settings.orders .. " of " .. LA.Orders.MAX_RING .. " - their numbers are the keys")
+    window.count:SetText(#settings.orders .. " of " .. LA.Orders.MAX_RING .. "; numbers are keys")
     window.always:SetChecked(LivingAzerothDB.iconsAlways ~= false)
+    window.move:SetText(LA.unlocked and "Lock frames" or "Move frames")
 end
 
 function RingSettings.Toggle()
@@ -184,48 +185,7 @@ function RingSettings.Toggle()
     RingSettings.Refresh()
 end
 
--- The fixed spot, shown to drag while frames are unlocked.
-
-local spot
-
-local function Spot()
-    if spot then
-        return spot
-    end
-    spot = CreateFrame("Frame", nil, UIParent)
-    spot:SetSize(180, 180)
-    spot:SetFrameStrata("DIALOG")
-    spot:SetClampedToScreen(true)
-    local disc = spot:CreateTexture(nil, "BACKGROUND")
-    disc:SetTexture("Interface\\CharacterFrame\\TempPortraitAlphaMask")
-    disc:SetVertexColor(0.16, 0.12, 0.04, 0.55)
-    disc:SetAllPoints()
-    local text = spot:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    text:SetPoint("CENTER", 0, 6)
-    text:SetText("Orders ring")
-    local hint = spot:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    hint:SetPoint("TOP", text, "BOTTOM", 0, -2)
-    hint:SetText("drag to place")
-    spot:EnableMouse(true)
-    spot:SetMovable(true)
-    spot:RegisterForDrag("LeftButton")
-    spot:SetScript("OnDragStart", spot.StartMoving)
-    spot:SetScript("OnDragStop", function(self)
-        self:StopMovingOrSizing()
-        local x, y = self:GetCenter()
-        Settings().x, Settings().y = x, y
-    end)
-    return spot
-end
-
+-- While frames are unlocked and the ring opens at a fixed spot, the ring itself shows there to be dragged.
 function RingSettings.Unlock(unlocked)
-    local show = unlocked and Settings().placement == "fixed"
-    if show then
-        local frame = Spot()
-        frame:ClearAllPoints()
-        frame:SetPoint("CENTER", UIParent, "BOTTOMLEFT", Settings().x, Settings().y)
-    end
-    if spot or show then
-        LA.SetShown(Spot(), show)
-    end
+    LA.Ring.Preview(unlocked and Settings().placement == "fixed")
 end

@@ -32,7 +32,8 @@ border:SetPoint("TOPLEFT")
 
 local function Place()
     local angle = math.rad(LivingAzerothDB.minimapAngle or 200)
-    local radius = Minimap:GetWidth() / 2 + 5
+    -- DragonUI shrinks addon buttons and seats them on the map's rim, as it does LibDBIcon's.
+    local radius = Minimap:GetWidth() / 2 + (button.DragonUI_SkinActive and -5 or 10)
     button:ClearAllPoints()
     button:SetPoint("CENTER", Minimap, "CENTER", radius * math.cos(angle), radius * math.sin(angle))
 end
@@ -45,21 +46,22 @@ local function FollowCursor()
     Place()
 end
 
+-- Pressing and dragging dim the icon rather than move it: DragonUI re-anchors the icon of the buttons it reskins,
+-- and moving it here would pull it out of DragonUI's ring.
 button:SetScript("OnDragStart", function(self)
     self:LockHighlight()
-    icon:SetTexCoord(0, 1, 0, 1)
     self:SetScript("OnUpdate", FollowCursor)
 end)
 button:SetScript("OnDragStop", function(self)
     self:UnlockHighlight()
-    icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
     self:SetScript("OnUpdate", nil)
+    icon:SetVertexColor(1, 1, 1) -- OnMouseUp does not come when the mouse is let go after a drag
 end)
 button:SetScript("OnMouseDown", function()
-    icon:SetPoint("TOPLEFT", 8, -7)
+    icon:SetVertexColor(0.7, 0.7, 0.7)
 end)
 button:SetScript("OnMouseUp", function()
-    icon:SetPoint("TOPLEFT", 7, -6)
+    icon:SetVertexColor(1, 1, 1)
 end)
 button:SetScript("OnClick", function(_, mouse)
     GameTooltip:Hide()
@@ -85,6 +87,20 @@ end)
 LA.On("loaded", function()
     LA.SetShown(button, not LivingAzerothDB.hideMinimapButton)
     Place()
+end)
+
+-- DragonUI reskins minimap buttons shortly after login; place the button again once it has.
+local placer = CreateFrame("Frame")
+placer:RegisterEvent("PLAYER_ENTERING_WORLD")
+placer:SetScript("OnEvent", function(self)
+    local waited = 0
+    self:SetScript("OnUpdate", function(frame, delta)
+        waited = waited + delta
+        if waited > 2 then
+            frame:SetScript("OnUpdate", nil)
+            Place()
+        end
+    end)
 end)
 
 function MinimapButton.SetShown(shown)

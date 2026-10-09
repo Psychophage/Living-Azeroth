@@ -17,8 +17,9 @@ local CIRCLE = "Interface\\CharacterFrame\\TempPortraitAlphaMask"
 
 local frame = CreateFrame("Frame", "LivingAzerothRing", UIParent)
 frame:SetSize(BOX, BOX)
-frame:SetFrameStrata("DIALOG")
+frame:SetFrameStrata("FULLSCREEN_DIALOG") -- above the windows it is opened from
 frame:SetClampedToScreen(true)
+frame:SetMovable(true)
 frame:EnableMouse(false) -- only the disc and the buttons take the mouse
 frame:Hide()
 table.insert(UISpecialFrames, "LivingAzerothRing") -- Escape closes it
@@ -57,6 +58,8 @@ hint:SetJustifyV("TOP")
 local buttons = {}
 local current -- { key, label, guids }
 local hovered
+local anchorFrame -- what the ring opened beside
+local previewing = false -- shown where it opens, to be dragged, while frames are unlocked
 
 local function Settings()
     return LivingAzerothDB.ring
@@ -95,6 +98,9 @@ local function State(bots)
 end
 
 local function Refresh()
+    if previewing then
+        return
+    end
     local bots = Bots()
     if #bots == 0 then
         frame:Hide()
@@ -228,8 +234,10 @@ function Ring.Toggle(target, anchor)
         frame:Hide()
         return
     end
+    previewing = false
     current = target
     hovered = nil
+    anchorFrame = anchor
     Layout()
     Place(anchor)
     frame:Show()
@@ -247,16 +255,70 @@ function Ring.OpenFor()
     return frame:IsShown() and current and current.key
 end
 
+-- After a settings change: the ring, open or previewed, takes its new orders, size and place at once.
 function Ring.Relayout()
-    if frame:IsShown() then
-        Layout()
-        Bind()
-        Refresh()
+    if not frame:IsShown() then
+        return
     end
+    Layout()
+    if previewing then
+        if Settings().placement ~= "fixed" then
+            Ring.Preview(false)
+            return
+        end
+        Place(nil)
+        return
+    end
+    Place(anchorFrame)
+    Bind()
+    Refresh()
 end
+
+-- The ring itself at its fixed spot and size, to be dragged into place (frames unlocked, placement "fixed").
+function Ring.Preview(show)
+    if not show then
+        if previewing then
+            previewing = false
+            frame:Hide()
+        end
+        return
+    end
+    frame:Hide()
+    previewing = true
+    current = nil
+    hovered = nil
+    Layout()
+    Place(nil)
+    name:SetText("Orders ring")
+    hint:SetText("Drag to place it")
+    for _, button in ipairs(buttons) do
+        button:SetChecked(false)
+        button.icon:SetDesaturated(false)
+        button:SetAlpha(1)
+        button.waiting = false
+    end
+    frame:Show()
+end
+
+discButton:RegisterForDrag("LeftButton")
+discButton:SetScript("OnDragStart", function()
+    if previewing then
+        frame:StartMoving()
+    end
+end)
+discButton:SetScript("OnDragStop", function()
+    if previewing then
+        frame:StopMovingOrSizing()
+        local x, y = frame:GetCenter()
+        local scale = frame:GetScale()
+        Settings().x, Settings().y = x * scale, y * scale
+        Place(nil)
+    end
+end)
 
 frame:SetScript("OnHide", function()
     ClearOverrideBindings(frame)
+    previewing = false
     current = nil
     LA.Fire("ring:changed")
 end)
@@ -266,7 +328,7 @@ end)
 local wasDown = false
 frame:SetScript("OnUpdate", function()
     local down = IsMouseButtonDown("LeftButton") or IsMouseButtonDown("RightButton")
-    if down and not wasDown then
+    if down and not wasDown and not previewing then
         local focus = GetMouseFocus()
         local ours = focus and (focus.livingAzerothPip or focus:GetParent() == frame)
         if not ours then

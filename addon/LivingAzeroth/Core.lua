@@ -32,6 +32,19 @@ function LA.SetShown(region, shown)
     end
 end
 
+-- "Move frames": the party and raid frames, and the orders ring at a fixed spot, show movers while unlocked.
+function LA.SetUnlocked(unlocked)
+    if unlocked and InCombatLockdown() then
+        LA.Print("frames can't be moved during combat.")
+        return
+    end
+    LA.unlocked = unlocked
+    LA.Party.Unlock(unlocked)
+    LA.Raid.Unlock(unlocked)
+    LA.RingSettings.Unlock(unlocked)
+    LA.RingSettings.Refresh()
+end
+
 function LA.Print(text)
     DEFAULT_CHAT_FRAME:AddMessage("|cffffd100Living Azeroth:|r " .. text)
 end
@@ -83,10 +96,7 @@ SlashCmdList.LIVINGAZEROTH = function(text)
     elseif command == "reconnect" then
         LA.Bridge.Connect()
     elseif command == "unlock" or command == "lock" then
-        LA.unlocked = command == "unlock"
-        LA.Party.Unlock(command == "unlock")
-        LA.Raid.Unlock(command == "unlock")
-        LA.RingSettings.Unlock(command == "unlock")
+        LA.SetUnlocked(command == "unlock")
     elseif command == "ring" then
         LA.RingSettings.Toggle()
     elseif command == "" then

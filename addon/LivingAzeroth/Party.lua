@@ -136,35 +136,13 @@ local function ApplyPosition()
 end
 
 local function Mover()
-    if mover then
-        return mover
+    if not mover then
+        -- Four party frames and their gaps.
+        mover = LA.UI.Mover(PartyMemberFrame1, "Party frames", 190, 4 * 64, function()
+            PartyMemberFrame1:SetUserPlaced(false) -- the addon keeps the position, not the game's layout cache
+            SavePosition()
+        end)
     end
-    mover = CreateFrame("Frame", nil, UIParent)
-    mover:SetFrameStrata("DIALOG")
-    mover:SetSize(170, 20)
-    mover:SetPoint("BOTTOMLEFT", PartyMemberFrame1, "TOPLEFT", 0, 4)
-    mover:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10,
-        insets = { left = 2, right = 2, top = 2, bottom = 2 } })
-    mover:SetBackdropColor(0.16, 0.12, 0.04, 0.92)
-    mover:SetBackdropBorderColor(0.79, 0.64, 0.29)
-    local text = mover:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    text:SetPoint("CENTER")
-    text:SetText("Party frames - drag to move")
-    mover:EnableMouse(true)
-    mover:RegisterForDrag("LeftButton")
-    mover:SetScript("OnDragStart", function()
-        if InCombatLockdown() then
-            return
-        end
-        PartyMemberFrame1:SetMovable(true)
-        PartyMemberFrame1:StartMoving()
-    end)
-    mover:SetScript("OnDragStop", function()
-        PartyMemberFrame1:StopMovingOrSizing()
-        PartyMemberFrame1:SetUserPlaced(false) -- the addon keeps the position, not the game's layout cache
-        SavePosition()
-    end)
     return mover
 end
 

@@ -380,31 +380,10 @@ local function Place()
     anchor:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", saved.x, saved.y)
 end
 
--- Moving (out of combat): a bar above the raid frames while frames are unlocked.
-local mover = CreateFrame("Frame", nil, UIParent)
-mover:SetFrameStrata("DIALOG")
-mover:SetSize(200, 20)
-mover:SetPoint("BOTTOMLEFT", anchor, "TOPLEFT", 0, 4)
-mover:SetBackdrop({ bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10,
-    insets = { left = 2, right = 2, top = 2, bottom = 2 } })
-mover:SetBackdropColor(0.16, 0.12, 0.04, 0.92)
-mover:SetBackdropBorderColor(0.79, 0.64, 0.29)
-local moverText = mover:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-moverText:SetPoint("CENTER")
-moverText:SetText("Raid frames - drag to move")
-mover:EnableMouse(true)
-mover:RegisterForDrag("LeftButton")
-mover:SetScript("OnDragStart", function()
-    if not InCombatLockdown() then
-        anchor:StartMoving()
-    end
-end)
-mover:SetScript("OnDragStop", function()
-    anchor:StopMovingOrSizing()
+-- Moving (out of combat), even when not in a raid: the mover covers where all eight groups would be.
+local mover = LA.UI.Mover(anchor, "Raid frames", raid:GetWidth(), raid:GetHeight(), function()
     LivingAzerothDB.raid.x, LivingAzerothDB.raid.y = anchor:GetLeft(), anchor:GetTop()
 end)
-mover:Hide()
 
 function Raid.Unlock(unlocked)
     if unlocked and InCombatLockdown() then

@@ -8,7 +8,9 @@ The Living Azeroth addon (`addon/LivingAzeroth`) and the server side it talks to
 
 Copy `addon/LivingAzeroth` into the game's `Interface/AddOns` folder. It works with the
 game's own interface and with DragonUI; it needs neither. On a server without bot control
-it says so once and stays quiet. Its windows are built from the Dungeon Finder's own art.
+it says so once and stays quiet. Its windows use the game's own art at its own size: the
+manager is the Quest Log's two-pane window, the ring's settings and formations the Dungeon
+Finder's.
 
 A round button on the minimap's edge opens the manager (right-click: the orders ring's
 settings); drag it around the minimap.
@@ -28,18 +30,20 @@ settings); drag it around the minimap.
   bots show a grey medal and no order icon. With the CompactRaidFrame addon installed, its
   frames are hidden while these are in use (`LivingAzerothDB.raid.hideCompact = false`
   keeps them).
-- **The manager window** (`/la` or the minimap button), with tabs along the bottom:
-  - *Roster*: your other characters (bring one in as a bot, which joins your party, or send
+- **The manager window** (`/la` or the minimap button), with tabs along the bottom. Each
+  tab has a list on the left (folding headers, a scroll bar) and the chosen entry on the
+  parchment on the right, with its buttons under the list:
+  - *Roster*: your other characters (bring one in as a bot, which joins your group, or send
     it home) and the characters you know best (invite the ones online). The chosen one's
     portrait, and for a bot in your group its talents, item level, free bag slots, money
     and what it is doing; for anyone, what they remember of you.
-  - *Tactics*: "Apply to" all your bots or one of them (their portraits). Tactic sets
-    (Questing, Dungeon, Raid, Grinding, Quietly, Guard me, and your own: "Save as a set";
-    right-click your own in the list to forget it) set many switches at once, and the set
+  - *Tactics*: "Apply to" all your bots or one of them. Tactic sets (Questing, Dungeon,
+    Raid, Grinding, Quietly, Guard me, Night watch, and your own: "Save set"; right-click
+    your own in the list to forget it) set many switches at once, and the set
     the bots match is named with what it does. Each box shows the bots' real state,
-    "(some)" when they differ, greyed out when their class lacks it. "Undo changes" puts
-    back what they had. "Formation..." opens the formation window: pick one to preview
-    where your bots stand by role, and "Use" it to move them.
+    "(some)" when they differ, greyed out when their class lacks it. "Undo" puts back what
+    they had. "Formation" opens the formation window: pick one and the preview's bots glide
+    to where they would stand by role; "Use" it to move them.
   - *Dialogue*: "What you hear" (who talks to you on each channel, remarks, combat banter,
     reading speed and the longest exchange; your own settings, kept by the server) and
     "Why did they say that?" for the lines said to you. Administrators also see the
@@ -53,8 +57,9 @@ settings); drag it around the minimap.
 - The orders ring's settings (`/la ring` or right-click the minimap button): where it opens
   (beside the frame, at the mouse, or a fixed spot), its size, which orders it holds (up to
   eight), and whether every bot in a raid shows its order icon. "Move frames" (or
-  `/la unlock` and `/la lock`) lets you drag the party frames (with DragonUI, use its
-  `/duiedit`), the raid frames and the ring's fixed spot, out of combat.
+  `/la unlock` and `/la lock`) puts a box over the party frames (with DragonUI, use its
+  `/duiedit`) and the raid frames' whole area to drag, and with "a fixed spot" shows the
+  ring itself at its size to drag into place, out of combat.
 - `/la status` shows the connection; `/la debug` prints what the addon does.
 
 The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.

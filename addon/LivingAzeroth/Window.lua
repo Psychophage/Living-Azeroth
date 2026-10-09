@@ -1,38 +1,12 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- Windows in the style of the game's Dungeon Finder, at any size: its frame art cut into pieces (corners kept,
--- edges stretched), with the round portrait, title bar, close box, a dark header band, a metal bar for controls,
--- the brown paper for content, and a bottom bar for buttons.
+-- Windows built from the game's own frame art at its native size, never stretched: the Quest Log's two-pane frame
+-- for the manager (a list on the left, parchment on the right), and the Dungeon Finder's frame for small windows.
 local _, LA = ...
 
 local Window = {}
 LA.Window = Window
 
-local FRAME = "Interface\\LFGFrame\\UI-LFG-FRAME" -- 512x512, laid out in its top-left 355x440
-local PAPER = "Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER"
-
--- Where the art's bands are, in texture pixels.
-local TOP = 163 -- portrait, title bar, header band and the metal bar
-local BOTTOM = 32 -- the button bar
-local LEFT, RIGHT = 25, 14 -- side borders
-local TOP_LEFT, TOP_RIGHT = 80, 35 -- the portrait corner and the close-box corner
-local ART_W, ART_H = 355, 440
-
--- Heights inside the top band, from the window's top edge.
-Window.HEADER_TOP, Window.HEADER_BOTTOM = 38, 120 -- the dark blue header
-Window.BAR_TOP, Window.BAR_BOTTOM = 122, 156 -- the metal bar under it
-Window.CONTENT_TOP = TOP + 4
-
-local function Piece(frame, layer, left, top, right, bottom)
-    local texture = frame:CreateTexture(nil, layer)
-    texture:SetTexture(FRAME)
-    texture:SetTexCoord(left / 512, right / 512, top / 512, bottom / 512)
-    return texture
-end
-
--- A window of width x height with a title and a portrait texture; it is movable by its title bar and closes
--- with Escape. window.content is the paper area; window.header and window.bar are the bands above it;
--- window:Buttons(...) fills the bottom bar.
-function Window.Create(name, width, height, title, portrait)
+local function Base(name, width, height, title, portrait)
     local window = CreateFrame("Frame", name, UIParent)
     window:SetSize(width, height)
     window:SetPoint("CENTER", 0, 40)
@@ -44,86 +18,99 @@ function Window.Create(name, width, height, title, portrait)
     window:Hide()
     table.insert(UISpecialFrames, name)
 
-    -- The paper first, under the frame, which is see-through where the paper shows.
-    local paper = window:CreateTexture(nil, "BACKGROUND", nil, -1)
-    paper:SetTexture(PAPER)
-    paper:SetTexCoord(0, 325 / 512, 0, 1)
-    paper:SetPoint("TOPLEFT", LEFT - 4, -TOP + 6)
-    paper:SetPoint("BOTTOMRIGHT", -RIGHT + 4, BOTTOM - 6)
-
-    local middleW = width - TOP_LEFT - TOP_RIGHT
-    local middleH = height - TOP - BOTTOM
-    -- { art left, top, right, bottom; anchor point, x, y; width, height }
-    local pieces = {
-        -- top band: the portrait corner, a plain stretch of the bands (clear of the art's one streak), the close box
-        { 0, 0, TOP_LEFT, TOP, "TOPLEFT", 0, 0, TOP_LEFT, TOP },
-        { 90, 0, 260, TOP, "TOPLEFT", TOP_LEFT, 0, middleW, TOP },
-        { ART_W - TOP_RIGHT, 0, ART_W, TOP, "TOPRIGHT", 0, 0, TOP_RIGHT, TOP },
-        -- the sides
-        { 0, TOP, LEFT, 408, "TOPLEFT", 0, -TOP, LEFT, middleH },
-        { ART_W - RIGHT, TOP, ART_W, 408, "TOPRIGHT", 0, -TOP, RIGHT, middleH },
-        -- the bottom bar: its two ends (each with a whole slot end), and a plain slot middle stretched between
-        { 0, 408, 30, ART_H, "BOTTOMLEFT", 0, 0, 30, BOTTOM },
-        { 30, 408, 125, ART_H, "BOTTOMLEFT", 30, 0, width - 30 - 20, BOTTOM },
-        { ART_W - 20, 408, ART_W, ART_H, "BOTTOMRIGHT", 0, 0, 20, BOTTOM },
-    }
-    for _, p in ipairs(pieces) do
-        local texture = Piece(window, "BORDER", p[1], p[2], p[3], p[4])
-        texture:SetPoint(p[5], p[6], p[7])
-        texture:SetSize(p[8], p[9])
-    end
-
     window.portrait = window:CreateTexture(nil, "BACKGROUND")
     window.portrait:SetSize(60, 60)
-    window.portrait:SetPoint("TOPLEFT", 10, -5)
     if portrait then
         SetPortraitToTexture(window.portrait, portrait)
     end
-
     window.title = window:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-    window.title:SetPoint("TOP", TOP_LEFT / 2 - 4, -17)
     window.title:SetText(title)
-
     local close = CreateFrame("Button", nil, window, "UIPanelCloseButton")
     close:SetPoint("TOPRIGHT", 2, -8)
 
-    -- Dragging by the title bar.
     local drag = CreateFrame("Frame", nil, window)
-    drag:SetPoint("TOPLEFT", TOP_LEFT, -10)
-    drag:SetPoint("TOPRIGHT", -TOP_RIGHT, -10)
-    drag:SetHeight(26)
+    drag:SetPoint("TOPLEFT", 70, -10)
+    drag:SetPoint("TOPRIGHT", -30, -10)
+    drag:SetHeight(24)
     drag:EnableMouse(true)
     drag:RegisterForDrag("LeftButton")
     drag:SetScript("OnDragStart", function() window:StartMoving() end)
     drag:SetScript("OnDragStop", function() window:StopMovingOrSizing() end)
-
-    window.header = CreateFrame("Frame", nil, window)
-    window.header:SetPoint("TOPLEFT", LEFT, -Window.HEADER_TOP)
-    window.header:SetPoint("BOTTOMRIGHT", window, "TOPRIGHT", -RIGHT, -Window.HEADER_BOTTOM)
-    window.bar = CreateFrame("Frame", nil, window)
-    window.bar:SetPoint("TOPLEFT", LEFT, -Window.BAR_TOP)
-    window.bar:SetPoint("BOTTOMRIGHT", window, "TOPRIGHT", -RIGHT, -Window.BAR_BOTTOM)
-    window.content = CreateFrame("Frame", nil, window)
-    window.content:SetPoint("TOPLEFT", LEFT + 6, -Window.CONTENT_TOP)
-    window.content:SetPoint("BOTTOMRIGHT", -RIGHT - 6, BOTTOM + 4)
-    window.footer = CreateFrame("Frame", nil, window)
-    window.footer:SetPoint("BOTTOMLEFT", 16, 8)
-    window.footer:SetPoint("TOPRIGHT", window, "BOTTOMRIGHT", -8, BOTTOM - 6)
     return window
 end
 
--- A button that sits in a bottom bar, sized like the Dungeon Finder's.
-function Window.FooterButton(parent, text, width)
-    local button = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
-    button:SetSize(width or 112, 22)
-    button:SetText(text)
-    return button
+-- The Quest Log's two-pane window, 682 x 447: window.top is the strip under the title, window.list the left pane
+-- (305 x 335, its scroll track in the art beside it), window.detail a scroll frame over the parchment (298 x 333),
+-- window.controls the three slots under the list and window.actions the bar under the parchment.
+function Window.DualPane(name, title, portrait)
+    local window = Base(name, 682, 447, title, portrait)
+    window.portrait:SetPoint("TOPLEFT", 5, -6)
+    window.title:SetPoint("TOP", 0, -15)
+
+    local left = window:CreateTexture(nil, "BORDER")
+    left:SetTexture("Interface\\QuestFrame\\UI-QuestLogDualPane-Left")
+    left:SetSize(512, 445)
+    left:SetPoint("TOPLEFT")
+    left:SetTexCoord(0, 1, 0, 0.86914)
+    local right = window:CreateTexture(nil, "BORDER")
+    right:SetTexture("Interface\\QuestFrame\\UI-QuestLogDualPane-RIGHT")
+    right:SetSize(170, 445)
+    right:SetPoint("TOPRIGHT")
+    right:SetTexCoord(0, 0.6640625, 0, 0.86914)
+
+    window.top = CreateFrame("Frame", nil, window)
+    window.top:SetPoint("TOPLEFT", 76, -38)
+    window.top:SetPoint("TOPRIGHT", -32, -38)
+    window.top:SetHeight(30)
+
+    window.list = CreateFrame("Frame", nil, window)
+    window.list:SetPoint("TOPLEFT", 19, -75)
+    window.list:SetSize(305, 335)
+
+    window.detail = CreateFrame("ScrollFrame", name .. "Detail", window, "UIPanelScrollFrameTemplate")
+    window.detail:SetPoint("TOPRIGHT", -32, -77)
+    window.detail:SetSize(298, 333)
+    local bar = _G[name .. "DetailScrollBar"]
+    bar:ClearAllPoints()
+    bar:SetPoint("TOPLEFT", window.detail, "TOPRIGHT", 6, -13)
+    bar:SetPoint("BOTTOMLEFT", window.detail, "BOTTOMRIGHT", 6, 14)
+
+    window.controls = CreateFrame("Frame", nil, window)
+    window.controls:SetPoint("BOTTOMLEFT", 18, 9)
+    window.controls:SetSize(304, 26)
+    window.actions = CreateFrame("Frame", nil, window)
+    window.actions:SetPoint("BOTTOMRIGHT", -7, 9)
+    window.actions:SetSize(340, 26)
+    return window
 end
 
--- A heading in the Dungeon Finder's gold title font.
-function Window.Heading(parent, text)
-    local heading = parent:CreateFontString(nil, "OVERLAY", "QuestTitleFontBlackShadow")
-    heading:SetText(text)
-    heading:SetJustifyH("LEFT")
-    return heading
+-- The Dungeon Finder's window, 355 x 440: window.header is the dark band under the title (316 x 82), window.bar
+-- the metal strip under it, window.content the paper (316 x 245) and window.footer the bottom bar.
+function Window.Finder(name, title, portrait)
+    local window = Base(name, 355, 440, title, portrait)
+    window.portrait:SetPoint("TOPLEFT", 12, -7)
+    window.title:SetPoint("TOP", 12, -17)
+
+    local layout = window:CreateTexture(nil, "BACKGROUND", nil, 1)
+    layout:SetTexture("Interface\\LFGFrame\\UI-LFG-FRAME")
+    layout:SetSize(512, 512)
+    layout:SetPoint("TOPLEFT")
+    local paper = window:CreateTexture(nil, "BORDER")
+    paper:SetTexture("Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER")
+    paper:SetSize(512, 256)
+    paper:SetPoint("LEFT", 21, -64)
+
+    window.header = CreateFrame("Frame", nil, window)
+    window.header:SetPoint("TOPLEFT", 25, -38)
+    window.header:SetSize(316, 82)
+    window.bar = CreateFrame("Frame", nil, window)
+    window.bar:SetPoint("TOPLEFT", 25, -122)
+    window.bar:SetSize(316, 34)
+    window.content = CreateFrame("Frame", nil, window)
+    window.content:SetPoint("TOPLEFT", 25, -163)
+    window.content:SetSize(316, 245)
+    window.footer = CreateFrame("Frame", nil, window)
+    window.footer:SetPoint("BOTTOMLEFT", 19, 9)
+    window.footer:SetSize(326, 26)
+    return window
 end

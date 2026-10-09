@@ -18,7 +18,8 @@ Updated 2026-10-09.
   order icons and the orders ring, raid frames (orders per bot, group, all bots or a
   selection), and a manager window (roster with bringing alts, tactics and tactic sets,
   formations, dialogue settings and "why did they say that", guild identity and rumours).
-  Tested in the real client with the default UI and with DragonUI; the server side
+  Tested in the real client with the default UI and with DragonUI; the windows were
+  rebuilt on the game's own art and checked at 2560x1440. The server side
   (`mod-bot-control`, off by default) has live tests.
 
 ## Open problems
