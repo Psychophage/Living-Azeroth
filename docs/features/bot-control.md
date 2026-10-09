@@ -61,6 +61,7 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | `guild` | optional `change` | `guild_id`, `name`, `may_edit`, `identity` of the player's guild |
 | `rumours` | optional `group` (administrators) or `change` | `group`, `may_change`, `rumours` |
 | `why` | optional `line` | `lines` heard, or for one line `started_by`, `remembers_you`, `actions`, `cost` |
+| `budget` | | `spent_dollars`, `held_dollars`, `ceiling_dollars` of the dialogue budget (administrators only; read-only) |
 | `roster` | | `characters` (the player's others), `companions` (best known) |
 | `inspect` | `bot` | `bot`, `spec`, `item_level`, `free_slots`, `money`, `zone` |
 | `bring`, `dismiss` | `name` (one of the player's own characters) | Playerbots' `messages` |

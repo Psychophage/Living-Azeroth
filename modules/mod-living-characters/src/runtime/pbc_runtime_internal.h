@@ -96,6 +96,7 @@ public:
     void ChangeRumour(Player* player, std::string const& request, std::function<void(std::string)> done);
     // Lines this player heard (line 0), or why one was said; JSON to `done` on the world thread.
     void Why(Player* player, uint64_t line, std::function<void(std::string)> done);
+    void Budget(Player* player, std::function<void(std::string)> done);
     // A draft identity for the officer's guild from a few words: one model call; nothing saved.
     void DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done);
     void WorldEvent(Player* subject, std::string const& text, bool partyOnly, bool interruptDialogue, Unit* enemy);

@@ -312,6 +312,8 @@ void Bridge::Handle(Player* player, pbc_json const& request)
         return Rumours(player, request);
     if (op == "why")
         return Why(player, request);
+    if (op == "budget")
+        return Budget(player, request);
     if (op == "roster")
         return Roster(player, request);
     if (op == "inspect")
@@ -505,6 +507,28 @@ void Bridge::Rumours(Player* player, pbc_json const& request)
             return Fail(player, id, "bad_request");
         started = PBC::GroupRumours(player, request.value("group", std::string()), answer);
     }
+    if (!started)
+        Fail(player, id, "unavailable");
+}
+
+// The realm's dialogue spending, read-only; the character system decides who may see it.
+void Bridge::Budget(Player* player, pbc_json const& request)
+{
+    pbc_json id = request.contains("id") ? request["id"] : pbc_json();
+    ObjectGuid guid = player->GetGUID();
+    bool started = PBC::DialogueBudget(player, [this, guid, id](std::string json)
+    {
+        Player* asker = ObjectAccessor::FindConnectedPlayer(guid);
+        if (!asker)
+            return;
+        auto body = pbc_json::parse(json, nullptr, false);
+        if (body.is_discarded() || !body.is_object())
+            return Fail(asker, id, "unavailable");
+        if (!body.value("ok", false))
+            return Send(asker, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", body.value("error", "")}});
+        body.erase("ok");
+        Reply(asker, id, body);
+    });
     if (!started)
         Fail(player, id, "unavailable");
 }

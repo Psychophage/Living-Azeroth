@@ -721,6 +721,23 @@ void Runtime::Why(Player* player, uint64_t line, std::function<void(std::string)
     }), std::move(done)});
 }
 
+void Runtime::Budget(Player* player, std::function<void(std::string)> done)
+{
+    // The same rule as `.chars usage`: the realm's spending is for its administrators.
+    if (player->GetSession()->GetSecurity() < SEC_GAMEMASTER)
+        return done(pbc_json{{"ok", false}, {"error", "administrators only"}}.dump());
+    _answers.push_back({_storage->Submit([this]
+    {
+        auto totals = _ledger.Totals();
+        if (!totals)
+            return pbc_json{{"ok", false}, {"error", "budget unavailable"}}.dump();
+        return pbc_json{{"ok", true},
+                        {"spent_dollars", totals->spentNano / 1e9},
+                        {"held_dollars", totals->heldNano / 1e9},
+                        {"ceiling_dollars", totals->ceilingNano / 1e9}}.dump();
+    }), std::move(done)});
+}
+
 void Runtime::DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done)
 {
     auto refuse = [&](std::string const& error) { done(pbc_json{{"ok", false}, {"error", error}}.dump()); };
@@ -2127,6 +2144,14 @@ bool WhyLine(Player* player, uint64_t line, std::function<void(std::string)> don
     if (!runtime || !player)
         return false;
     runtime->Why(player, line, std::move(done));
+    return true;
+}
+
+bool DialogueBudget(Player* player, std::function<void(std::string)> done)
+{
+    if (!runtime || !player)
+        return false;
+    runtime->Budget(player, std::move(done));
     return true;
 }
 

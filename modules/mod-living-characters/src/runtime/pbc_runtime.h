@@ -43,6 +43,9 @@ bool WhyLine(Player* player, uint64_t line, std::function<void(std::string)> don
 // A draft identity for the officer's guild from a few words (one model call, nothing saved):
 // `done` gets {"ok", "draft": {purpose, values, traditions, ambitions, voice}} or an error.
 bool DraftGuildIdentity(Player* player, std::string const& seed, std::function<void(std::string)> done);
+// The realm's dialogue spending, read-only and for administrators: `done` gets {"ok", "spent_dollars",
+// "held_dollars", "ceiling_dollars"} or an error.
+bool DialogueBudget(Player* player, std::function<void(std::string)> done);
 }
 
 #endif
