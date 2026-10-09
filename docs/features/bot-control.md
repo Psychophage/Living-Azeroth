@@ -26,7 +26,7 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | --- | --- | --- |
 | `hello` | | `protocol`, `orders`; from now on the player is sent changes |
 | `bots` | | `bots`: the player's group bots and own bots |
-| `who` | `guids` (up to 40) | `bots`: those that are bots |
+| `who` | `guids` (up to 40) | `bots`: those that are bots, each `guid`, `yours`, `commandable` |
 | `order` | `bot`, `order`, optional `on` | `bot` once it has acted |
 | `hearing` | optional `change` | `hearing`: what the player hears from characters |
 | `guild` | optional `change` | `guild_id`, `name`, `may_edit`, `identity` of the player's guild |

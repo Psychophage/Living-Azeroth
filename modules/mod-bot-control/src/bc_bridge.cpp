@@ -277,8 +277,11 @@ void Bridge::Who(Player* player, pbc_json const& request)
     {
         if (!value.is_number_unsigned())
             return Fail(player, id, "bad_request");
-        if (IsBot(ObjectAccessor::FindPlayerByLowGUID(value.get<ObjectGuid::LowType>())))
-            bots.push_back(value);
+        Player* bot = ObjectAccessor::FindPlayerByLowGUID(value.get<ObjectGuid::LowType>());
+        if (IsBot(bot))
+            bots.push_back({{"guid", value},
+                            {"yours", GET_PLAYERBOT_AI(bot)->GetMaster() == player},
+                            {"commandable", Commandable(player, bot)}});
     }
     Reply(player, id, {{"bots", bots}});
 }
