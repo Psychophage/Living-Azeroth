@@ -8,15 +8,74 @@ and selection continue to use the existing shared budget.
 
 ## Author and preview
 
-`knowledge/northshire.json` is a small WotLK example, grounded in the installed
-quest/creature database and AreaTable DBC. Personality and organisation policy
-are explicitly authored. It is a pilot, not a researched world catalogue.
+Paths and commands below are relative to `modules/mod-living-characters`.
+
+`knowledge/authoring/wotlk/` contains the completed NPC dataset. It is the editable
+source; runtime packs are generated from it. Set `[realm] prepared_knowledge = true`
+in the realm's `realm.conf`, then restart through `living-azeroth`. The tools build
+`<realm>/knowledge/wotlk/` and configure its index automatically.
+
+`knowledge/northshire-context.json` retains the pilot's quest stages, locations,
+report group and explicit Common-language policy. Completed summaries replace its
+NPC identities and invented personality instructions. Language records are marked
+as authored realm policy. The original `northshire.json` is retained as a standalone
+pilot example; the maintained realm configuration does not load it.
+
+The authoring layout separates content from evidence and historical decisions:
+
+| Path | Purpose |
+| --- | --- |
+| `manifest.json` | Format version, era, installed native IDs and verified archive identity |
+| `npcs/000000-000999.json`, etc. | NPCs in fixed native-ID ranges: name/title, accepted records, coverage, classification, notes and provenance |
+| `sources/xx.json` | Citation IDs, source revisions, evidence hashes and original archive file/hash/JSON-pointer locators |
+| `evidence/xx.json` | Deduplicated factual excerpts, keyed by their SHA-256 content hashes |
+| `import.json` | Frozen import baseline for proving that conversion preserved accepted work |
+
+NPC records retain the production schema described below. Their `authored` boolean
+distinguishes invented personality/policy from sourced facts; it does not mean
+that a sourced summary is unfinished. Classification uncertainty stays separate
+from summary notes. No-profile and excluded entries remain explicit authoring
+decisions and produce no runtime records. Original packets, reviews and withdrawals
+remain in the verified archive; they are not repackaged as runtime content.
+
+To edit an NPC, find its ID in the corresponding thousand-ID file, make the
+supported change, and retain or update its citation IDs. Names, classifications
+and notes are authoring metadata; only `records` enter the generated catalogue.
+Sources use `evidence:sha256:<hash>` references at runtime, resolved to the matching
+authoring `evidence/xx.json` for inspection. The complete original artifact and
+locator remain traceable through `sources/xx.json` and the archive manifest.
+Adding factual evidence requires a new content hash and an explicit source origin;
+existing evidence values must not be edited under an unchanged hash.
+
+```sh
+python3 tools/npc_content.py check --source knowledge/authoring/wotlk
+python3 tools/npc_content.py build --source knowledge/authoring/wotlk \
+  --supplement knowledge/northshire-context.json --output knowledge/generated/wotlk
+python3 tests/npc_content_test.py
+```
+
+Use `--replace` to rebuild an existing generated output directory. Validation runs
+before replacement; unrelated directories and the authoring tree cannot be replaced.
+Generated packs are ignored by Git. Commit authoring changes and tooling; rebuild
+the same runtime output from a clean checkout. Stable IDs, file ranges and sorted
+serialization keep ordinary edits local and repeated builds byte-identical.
+
+`verify-import --source knowledge/authoring/wotlk` additionally compares records,
+classification, coverage, notes, source provenance and evidence with the frozen
+import baseline. It is a migration check and will correctly report differences
+after deliberate authoring changes. Do not regenerate the import baseline to hide
+an edit; review the normal Git diff instead.
+
+`import-final` is the one-time migration command. It requires a fresh, verified
+completed-run backup and a new destination, checks source files against that backup,
+and copies accepted records and decisions without reauthoring. The maintained
+dataset and normal builds do not require the private recovery workspace.
 
 Build the offline preview using the production parser/resolver:
 
 ```sh
-g++ -std=c++20 -O1 -Isrc/character -Isrc/llm -Ideps tools/knowledge_check.cpp src/character/pbc_knowledge.cpp -o /tmp/pbc-knowledge-check
-/tmp/pbc-knowledge-check knowledge/northshire.json wotlk facts.json
+g++ -std=c++20 -O1 -Isrc/character -Isrc/llm -Ideps tools/knowledge_check.cpp src/character/pbc_knowledge.cpp -lcrypto -o /tmp/pbc-knowledge-check
+/tmp/pbc-knowledge-check knowledge/generated/wotlk/index.json wotlk facts.json
 ```
 
 The optional facts file can contain:
@@ -28,15 +87,23 @@ The optional facts file can contain:
 Preview reports selected record IDs, exact serialized bytes, omitted records and
 NPC groups. It cannot prove native quest state, model quality or in-game delivery.
 No services or models are contacted. Loader failure leaves the old validated
-catalogue untouched; a configured invalid file prevents runtime startup.
+catalogue untouched; a configured invalid file prevents character-system startup.
+Single-file catalogues remain supported. Pack indexes validate era, every file's
+SHA-256, byte/record counts, contained relative paths, and global record/group/source
+identity. Group references must resolve within their own pack. Limits are 1,024 packs,
+128 MiB total, 100,000 records and 2,000 groups; each pack retains the 16 MiB and
+20,000-record limit. Loading is all-or-nothing. Selection still uses native indexes
+and the existing per-dialogue byte/record budget.
 
 ## Content contract for future Luna assignments
 
-Assign one coherent location/quest cluster. Target 4–12 authored NPCs per packet;
-up to 32 entries is appropriate only for a bounded review with measured output. Supply the
-exact era, native IDs, exported evidence, existing parent records and this
-contract. Do not ask agents to invent IDs, progression rules or missing canon.
-No bulk agents have been launched by this implementation.
+Assign a coherent location/quest cluster using exact era, native IDs, factual
+evidence and accepted shared grounding. The completed run used compact author
+responses expanded by the host: at most 24 KiB input, one focused follow-up of at
+most 8 KiB within that total, 12 KiB expanded output and 24 records. Typical batches
+contain up to twelve routine, six normal or four complex entries. Do not invent
+IDs, progression rules or missing canon. Preserve recorded historical contracts
+when continuing older work.
 
 `tools/export_knowledge.py` exports creature records, linked quest text and
 quest-template/addon fields, giver/ender relations and scripted speech in a read-only world
@@ -124,7 +191,7 @@ No autonomous recruitment, banking, inter-group rumor forwarding, reputation
 penalties or global rumor simulation is implemented. Those require explicit
 gameplay and information-sharing policy, not more generated lore.
 
-## Validation and next step
+## Validation and remaining scope
 
 The Northshire pilot has passed native recorded-server checks for quest accept,
 objective completion and reward; per-player quest isolation; current guild
@@ -136,22 +203,38 @@ ledger and preserved the complete/rewarded distinction. The pilot selected about
 1.1–1.4 KB of knowledge per NPC reply. This is limited validation, not a broad
 lore or language-quality evaluation.
 
-The next step is a bounded Alliance/Horde authoring comparison: prepared evidence
-packets per region, unique NPC and quest ownership, and fixed source and context budgets.
+NPC authoring is complete under the recorded relaxed review standard: 25,530
+summaries, 3,489 no-profile decisions and 928 exclusions cover all 29,947 native IDs.
+The format conversion preserves 25,532 runtime records and the separate authoring
+decisions. Some entries intentionally have very short supported descriptions;
+nonblocking questions remain recorded rather than filled with invented detail.
 
 The inventory covers 29,947 templates, 9,464 quests and 2,307 areas; many entries
 need review rather than profiles. Offline production-resolver probes measured
 1.2–2.2 KB for ordinary/complex examples, but 41 matching quest overlays crowded
 out all geography despite fitting the byte cap. Broad quest production therefore
-needs relevance selection and protected context room; full-world import also
-needs catalogue scaling beyond the current 20,000-record/16 MiB single-file limit.
+needs relevance selection and protected context room. The generated NPC output has
+207 regional packs within the existing 20,000-record/16 MiB per-file limit. Its
+compact, versioned `index.json` lists pack paths, hashes, sizes and counts.
+The runtime loads these packs together, plus one Northshire context pack: 208 packs
+and 25,554 records. The full source/evidence tree stays outside dialogue requests.
+The October 11 conversion passed exact comparison of all accepted runtime records,
+classification, coverage, notes, sources and factual excerpts. All 207 exported
+packs passed the production parser; 18 representative selections matched the
+original output and rejected an unrelated entry. Two full exports produced 208
+byte-identical files. Seven workflow tests cover context supplements, editing, replacement, invalid
+references, duplicate IDs, missing coverage and evidence tampering.
 The current exporter does not include complete condition graphs, geographic
 evidence, gossip, scripts or item/object starter relations; packet preparation
-must supply these where relevant. No runtime changes were made by this planning.
+must supply these where relevant. NPC conversion does not complete standalone quest
+or zone authoring.
 See the plan for unsupported eligibility/reset/phase cases and staged validation.
-No bulk content agents have been started. The feature was exercised on a separate
-recorded realm; it has not been enabled on the human playtest.
-
-The integration patches include the population branch. The combined build passes
-the 92 PBC unit tests, the four knowledge tests and population arrival. It has
-not been deployed to the human playtest.
+The October 11 integration passed all seven recorded knowledge tests on Steven's
+existing `Realms/main`: accepted NPC text reached dialogue, changing targets selected
+the correct NPC, native quest accept/complete/reward and per-player isolation worked,
+and language boundaries, location changes and guild/report access remained intact.
+The server logged 25,554 records from 208 packs. The realm test command passed
+6,028 unit tests (5,499 skipped, one disabled) and 550 population checks. All seven
+offline content workflow tests also passed. No paid model calls were used for this integration.
+Recorded responses prove context delivery and game-state handling, not model prose
+quality across the full world. Broader quest and zone authoring remains separate.

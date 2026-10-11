@@ -4,6 +4,8 @@ import configparser
 import json
 import os
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 SOURCE = Path(__file__).resolve().parents[2]
@@ -82,6 +84,10 @@ def managed_keys(realm, state):
         "PBC.CharacterSystem.NpcIdentities": '"/realm/config/npcs.json"',
         "PBC.CharacterSystem.RecordedFixture": '""',
     }
+    settings = read_settings(realm)
+    if settings.getboolean("realm", "prepared_knowledge", fallback=False):
+        characters.update({"PBC.CharacterSystem.KnowledgePath": '"/realm/knowledge/wotlk/index.json"',
+                           "PBC.CharacterSystem.KnowledgeEra": '"wotlk"'})
     owner = shared_budget(realm)
     if owner:
         # Spend from the owner's budget, through a user limited to its two ledger tables.
@@ -135,9 +141,20 @@ def stage_prompts(realm):
     (realm / "prompts/realm-era.txt").write_text((SOURCE / "realm/prompts/realm-era.txt").read_text())
 
 
+def stage_knowledge(realm):
+    """Generate portable runtime packs for an opted-in realm or recorded test."""
+    module = SOURCE / "modules/mod-living-characters"
+    subprocess.run([sys.executable, str(module / "tools/npc_content.py"), "build",
+                    "--source", str(module / "knowledge/authoring/wotlk"),
+                    "--supplement", str(module / "knowledge/northshire-context.json"),
+                    "--output", str(realm / "knowledge/wotlk"), "--replace"], check=True)
+
+
 def render(realm):
     """Write every server config file for this realm. Returns warnings for the user."""
     settings, state = read_settings(realm), read_state(realm)
+    if settings.getboolean("realm", "prepared_knowledge", fallback=False):
+        stage_knowledge(realm)
     managed = managed_keys(realm, state)
     warnings = []
     config = realm / "config"

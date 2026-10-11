@@ -11,6 +11,7 @@ repository. The repository holds only source, defaults and documentation.
 | `secrets/` | `database-password`, optionally `model.key` (your API key), and `ledger-password` when the realm shares another realm's budget; readable only by you |
 | `realm.state` | facts the tools keep: Docker project name, database volume, budget id |
 | `config/` | server config files generated from `realm.conf` (do not edit; regenerated on start) |
+| `knowledge/wotlk/` | generated NPC and local context packs when `prepared_knowledge` is enabled |
 | `prompts/` | character prompts staged for this realm (regenerated on start) |
 | `logs/` | `Server.log`, `Auth.log` and the other server logs |
 | `build/`, `install/` | the compiled server for this realm |
@@ -29,7 +30,8 @@ which documents the recommended values. After editing it, run
 
 - `[realm]`: the realm's name, the address and ports players connect to, the
   spending ceiling for a new budget (or `shared_budget` to spend from another
-  realm's budget; see [Running](running.md#the-spending-budget)), and build parallelism.
+  realm's budget; see [Running](running.md#the-spending-budget)), build parallelism, and `prepared_knowledge = true` to build and load the maintained
+  WotLK NPC catalogue. This manages KnowledgePath/KnowledgeEra and rebuilds on start.
 - `[worldserver]`, `[authserver]`, `[playerbots]`, `[characters]`, `[auctionhouse]`,
   `[progression]`: any key from that server config file. Each file's `.conf.dist`
   in the source lists every key with a description.

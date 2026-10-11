@@ -346,6 +346,7 @@ def main():
     elif args.command == "test":
         build(realm, targets=["unit_tests"])
         tool(realm, "/realm/build/src/test/unit_tests", "--gtest_brief=1")
+        tool(realm, "python3", "/source/modules/mod-living-characters/tests/npc_content_test.py")
         tool(realm, "env", "CXX=clang++-18", "python3", "/source/modules/mod-playerbots/tests/population/run.py")
     elif args.command == "account":
         compose(realm, "up", "-d", "--wait", "database")
