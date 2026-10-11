@@ -76,13 +76,16 @@ bool Runtime::Start()
     if (!knowledgePath.empty())
     {
         std::string error;
-        if (!_knowledge.Load(ReadText(knowledgePath),
+        if (!_knowledge.LoadFile(knowledgePath,
             sConfigMgr->GetOption<std::string>("PBC.CharacterSystem.KnowledgeEra", ""), error))
         {
             PBC_Log(PBC_LogLevel::PBC_ERROR, "Character knowledge rejected: {}", error);
             return false;
         }
     }
+    if (!_knowledge.Empty())
+        PBC_Log(PBC_LogLevel::PBC_DEFAULT, "Character knowledge loaded: {} records from {} packs",
+            _knowledge.RecordCount(), _knowledge.PackCount());
     _spacing = std::clamp(sConfigMgr->GetOption<uint32_t>("PBC.CharacterSystem.SpacingMs", 2000), 250u, 10000u);
     _readingWordsPerMinute = sConfigMgr->GetOption<uint32_t>("PBC.CharacterSystem.ReadingWordsPerMinute", 150);
     if (_readingWordsPerMinute || fixturePath.empty())

@@ -370,6 +370,7 @@ PBC.CharacterSystem.RealmPhaseFile = ""
 # JSON array of explicit {spawn_id,map_id,instance_id,actor_id,canon,watch_id} mappings.
 PBC.CharacterSystem.NpcIdentities = ""
 # Offline validated catalogue; explicit era must match the catalogue exactly.
+# A single catalogue or a generated pack index.json; invalid packs reject the entire load.
 PBC.CharacterSystem.KnowledgePath = ""
 PBC.CharacterSystem.KnowledgeEra = ""
 # Serialized selected records, not the whole prompt. Whole facts are omitted, never cut.

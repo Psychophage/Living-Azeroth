@@ -33,6 +33,7 @@ class KnowledgeCatalogue
 {
 public:
     bool Load(std::string const& document, std::string const& era, std::string& error);
+    bool LoadFile(std::string const& path, std::string const& era, std::string& error);
     KnowledgeSelection Select(pbc_json const& facts, std::set<std::string> const& groups,
                               std::size_t byteBudget = 3600) const;
     std::vector<InformationGroup> Groups(pbc_json const& facts) const;
@@ -40,9 +41,12 @@ public:
     std::optional<uint32_t> Language(uint32_t entry) const;
     bool Empty() const { return _records.empty(); }
     std::string const& Era() const { return _era; }
+    std::size_t RecordCount() const { return _records.size(); }
+    std::size_t PackCount() const { return _packCount; }
 
 private:
     std::string _era;
+    std::size_t _packCount = 0;
     std::vector<pbc_json> _records;
     std::vector<pbc_json> _groups;
     std::map<std::string, std::vector<std::size_t>> _index;

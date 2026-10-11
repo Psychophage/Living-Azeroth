@@ -25,14 +25,15 @@ int main(int argc, char** argv)
     {
         PBC::KnowledgeCatalogue catalogue;
         std::string error;
-        if (!catalogue.Load(read(argv[1]), argv[2], error))
+        if (!catalogue.LoadFile(argv[1], argv[2], error))
             throw std::runtime_error(error);
         pbc_json facts = argc == 4 ? pbc_json::parse(read(argv[3])) : pbc_json::object();
         std::set<std::string> groups;
         for (auto const& group : catalogue.Groups(facts))
             groups.insert(group.id);
         auto selection = catalogue.Select(facts, groups);
-        std::cout << pbc_json({{"valid", true}, {"era", catalogue.Era()}, {"bytes", selection.bytes},
+        std::cout << pbc_json({{"valid", true}, {"era", catalogue.Era()},
+                              {"catalogue_records", catalogue.RecordCount()}, {"packs", catalogue.PackCount()}, {"bytes", selection.bytes},
                               {"records", selection.records}, {"omitted", selection.omitted},
                               {"groups", groups}}).dump(2) << '\n';
         return 0;

@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "pbc_knowledge.h"
 #include <algorithm>
+#include <filesystem>
+#include <fstream>
+#include <openssl/evp.h>
 #include <stdexcept>
 
 namespace PBC
@@ -11,6 +14,33 @@ void Require(bool valid, std::string const& message)
 {
     if (!valid)
         throw std::runtime_error(message);
+}
+
+std::string ReadCatalogue(std::filesystem::path const& path)
+{
+    std::ifstream file(path, std::ios::binary | std::ios::ate);
+    Require(bool(file), "cannot open catalogue: " + path.string());
+    auto size = file.tellg();
+    Require(size >= 0 && size <= 16 * 1024 * 1024, "catalogue exceeds 16 MiB");
+    std::string bytes(static_cast<std::size_t>(size), '\0');
+    file.seekg(0);
+    Require(bool(file.read(bytes.data(), bytes.size())), "cannot read catalogue: " + path.string());
+    return bytes;
+}
+
+std::string Sha256(std::string const& bytes)
+{
+    unsigned char digest[EVP_MAX_MD_SIZE];
+    unsigned length = 0;
+    Require(EVP_Digest(bytes.data(), bytes.size(), digest, &length, EVP_sha256(), nullptr) == 1,
+            "cannot hash knowledge pack");
+    std::string result;
+    for (unsigned i = 0; i < length; ++i)
+    {
+        result += "0123456789abcdef"[digest[i] >> 4];
+        result += "0123456789abcdef"[digest[i] & 15];
+    }
+    return result;
 }
 
 bool Text(pbc_json const& value, std::size_t limit)
@@ -192,6 +222,88 @@ bool KnowledgeCatalogue::Load(std::string const& document, std::string const& er
             if (record["when"].contains("groups"))
                 for (auto const& id : record["when"]["groups"])
                     Require(groupIds.contains(id.get<std::string>()), "record references undefined group");
+        next._packCount = 1;
+        *this = std::move(next);
+        error.clear();
+        return true;
+    }
+    catch (std::exception const& exception)
+    {
+        error = exception.what();
+        return false;
+    }
+}
+
+bool KnowledgeCatalogue::LoadFile(std::string const& path, std::string const& era, std::string& error)
+{
+    try
+    {
+        auto document = ReadCatalogue(path);
+        auto root = pbc_json::parse(document);
+        if (!root.contains("format"))
+            return Load(document, era, error);
+        Keys(root, {"format", "version", "era", "packs", "native_entries", "runtime_records", "dispositions"});
+        Require(root.at("format") == "living-azeroth-knowledge-packs" && root.at("version") == 1,
+                "unsupported knowledge pack index");
+        Require(!era.empty() && root.at("era") == era, "pack index era does not match KnowledgeEra");
+        auto const& packs = root.at("packs");
+        Require(packs.is_array() && !packs.empty() && packs.size() <= 1024, "invalid pack collection");
+        KnowledgeCatalogue next;
+        next._era = era;
+        auto base = std::filesystem::canonical(std::filesystem::absolute(path).parent_path());
+        std::set<std::filesystem::path> paths;
+        std::set<std::string> recordIds, groupIds;
+        pbc_json sources = pbc_json::object();
+        std::size_t totalBytes = document.size();
+        for (auto const& pack : packs)
+        {
+            Keys(pack, {"path", "sha256", "records", "bytes"});
+            Require(Text(pack.at("path"), 1024), "invalid pack path");
+            std::filesystem::path relative(pack["path"].get<std::string>());
+            Require(!relative.is_absolute(), "pack path must be relative");
+            for (auto const& part : relative)
+                Require(part != ".." && part != ".", "pack path must stay inside its index directory");
+            auto file = std::filesystem::canonical(base / relative);
+            auto within = file.lexically_relative(base);
+            Require(!within.empty() && *within.begin() != "..", "pack symlink escapes index directory");
+            Require(paths.insert(file).second, "duplicate knowledge pack");
+            auto bytes = ReadCatalogue(file);
+            totalBytes += bytes.size();
+            Require(totalBytes <= 128 * 1024 * 1024, "knowledge packs exceed 128 MiB");
+            Require(pack.at("bytes").is_number_unsigned() && pack["bytes"] == bytes.size(), "pack size mismatch");
+            Require(pack.at("sha256") == Sha256(bytes), "pack hash mismatch: " + relative.string());
+            KnowledgeCatalogue part;
+            std::string problem;
+            if (!part.Load(bytes, era, problem))
+                throw std::runtime_error("invalid pack " + relative.string() + ": " + problem);
+            Require(pack.at("records").is_number_unsigned() && pack["records"] == part.RecordCount(),
+                    "pack record count mismatch");
+            auto metadata = pbc_json::parse(bytes).at("sources");
+            for (auto const& [id, source] : metadata.items())
+            {
+                Require(!sources.contains(id) || sources[id] == source, "conflicting source ID: " + id);
+                sources[id] = source;
+            }
+            for (auto const& record : part._records)
+            {
+                Require(recordIds.insert(record["id"].get<std::string>()).second, "duplicate record across packs");
+                next._index[IndexKey(record["when"])].push_back(next._records.size());
+                next._records.push_back(record);
+            }
+            for (auto const& group : part._groups)
+            {
+                Require(groupIds.insert(group["id"].get<std::string>()).second, "duplicate group across packs");
+                next._groups.push_back(group);
+            }
+            for (auto const& [entry, quests] : part._quests)
+                next._quests[entry].insert(quests.begin(), quests.end());
+            for (auto const& [entry, language] : part._languages)
+                Require(next._languages.emplace(entry, language).second, "duplicate NPC language across packs");
+            Require(next._records.size() <= 100000 && next._groups.size() <= 2000, "combined catalogue limit exceeded");
+            ++next._packCount;
+        }
+        Require(root.at("runtime_records").is_number_unsigned() && root["runtime_records"] == next.RecordCount(),
+                "index record count mismatch");
         *this = std::move(next);
         error.clear();
         return true;

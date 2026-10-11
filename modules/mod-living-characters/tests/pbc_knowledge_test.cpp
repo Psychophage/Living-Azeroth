@@ -2,6 +2,10 @@
 #include "pbc_knowledge.h"
 #include "pbc_context.h"
 #include <gtest/gtest.h>
+#include <chrono>
+#include <filesystem>
+#include <fstream>
+#include <openssl/evp.h>
 
 namespace
 {
@@ -120,4 +124,146 @@ TEST(PBCKnowledge, SharedReportsNeedCurrentReadAccessAndBoundTheirContext)
     context = PBC::BuildCharacterContext(input);
     ASSERT_TRUE(context.success);
     EXPECT_TRUE(pbc_json::parse(context.user)["group_reports"].empty());
+}
+
+namespace
+{
+class PackFiles : public ::testing::Test
+{
+protected:
+    void SetUp() override
+    {
+        directory = std::filesystem::temp_directory_path() /
+            ("pbc-knowledge-" + std::to_string(std::chrono::steady_clock::now().time_since_epoch().count()));
+        std::filesystem::create_directory(directory);
+        index = {{"format", "living-azeroth-knowledge-packs"}, {"version", 1}, {"era", "wotlk"},
+                 {"packs", pbc_json::array()}, {"runtime_records", 0u}};
+    }
+    void TearDown() override { std::filesystem::remove_all(directory); }
+    void Write(std::string const& path, std::string const& data)
+    {
+        std::ofstream(directory / path, std::ios::binary) << data;
+    }
+    void Add(std::string const& path, pbc_json const& data)
+    {
+        auto bytes = data.dump();
+        Write(path, bytes);
+        unsigned char digest[EVP_MAX_MD_SIZE];
+        unsigned size = 0;
+        ASSERT_EQ(EVP_Digest(bytes.data(), bytes.size(), digest, &size, EVP_sha256(), nullptr), 1);
+        std::string hash;
+        for (unsigned i = 0; i < size; ++i)
+        {
+            hash += "0123456789abcdef"[digest[i] >> 4];
+            hash += "0123456789abcdef"[digest[i] & 15];
+        }
+        index["packs"].push_back({{"path", path}, {"sha256", hash}, {"bytes", bytes.size()},
+                                  {"records", data["records"].size()}});
+        index["runtime_records"] = index["runtime_records"].get<std::size_t>() + data["records"].size();
+        Save();
+    }
+    void Save() { Write("index.json", index.dump()); }
+    bool Load() { return catalogue.LoadFile((directory / "index.json").string(), "wotlk", error); }
+    std::filesystem::path directory;
+    pbc_json index;
+    PBC::KnowledgeCatalogue catalogue;
+    std::string error;
+};
+}
+
+TEST_F(PackFiles, CombinesNpcSelectionWithQuestTransitionsGroupsAndLanguage)
+{
+    auto first = Catalogue();
+    first["records"][2]["language_id"] = 7u;
+    Add("first.json", first);
+    auto second = Catalogue();
+    second["groups"] = pbc_json::array();
+    second["records"] = pbc_json::array({second["records"][2]});
+    second["records"][0].update({{"id", "willem"}, {"text", "Deputy Willem."}, {"when", {{"entry", 823u}}}});
+    Add("second.json", second);
+    ASSERT_TRUE(Load()) << error;
+    EXPECT_EQ(catalogue.PackCount(), 2u);
+    EXPECT_EQ(catalogue.RecordCount(), 8u);
+    EXPECT_EQ(catalogue.Language(197), 7u);
+    EXPECT_EQ(catalogue.QuestIds(197), std::set<uint32_t>{7});
+    auto facts = pbc_json::parse(R"({"entry":197,"zone_id":12,"interaction_quests":{"7":"complete"}})");
+    EXPECT_EQ(catalogue.Groups(facts).size(), 1u);
+    EXPECT_NE(catalogue.Select(facts, {}).records.dump().find("reward not given"), std::string::npos);
+    facts["entry"] = 823u;
+    auto selected = catalogue.Select(facts, {}).records.dump();
+    EXPECT_NE(selected.find("Deputy Willem"), std::string::npos);
+    EXPECT_EQ(selected.find("McBride"), std::string::npos);
+    EXPECT_EQ(selected.find("reward not given"), std::string::npos);
+    facts["entry"] = 999999u;
+    EXPECT_TRUE(catalogue.Select(facts, {}).records.empty());
+}
+
+TEST_F(PackFiles, RejectsBrokenBundlesWithoutReplacingCurrentCatalogue)
+{
+    Add("first.json", Catalogue());
+    ASSERT_TRUE(Load()) << error;
+    auto good = index;
+    auto reject = [&]
+    {
+        Save();
+        EXPECT_FALSE(Load());
+        EXPECT_FALSE(error.empty());
+        EXPECT_EQ(catalogue.RecordCount(), 7u);
+        index = good;
+    };
+    index["packs"][0]["sha256"] = std::string(64, '0');
+    reject();
+    index["packs"][0]["path"] = "missing.json";
+    reject();
+    index["packs"][0]["path"] = "../first.json";
+    reject();
+    index["packs"][0]["path"] = (directory / "first.json").string();
+    reject();
+    index["packs"][0]["bytes"] = 0u;
+    reject();
+    index["runtime_records"] = 99u;
+    reject();
+    index["era"] = "vanilla";
+    reject();
+    index["packs"].push_back(index["packs"][0]);
+    reject();
+    Add("duplicate.json", Catalogue()); // Separate file, repeated IDs.
+    reject();
+    auto wrongEra = Catalogue();
+    wrongEra["era"] = "vanilla";
+    Add("era.json", wrongEra);
+    reject();
+    auto invalid = Catalogue();
+    invalid["records"][0]["sources"] = {"missing"};
+    Add("invalid.json", invalid); // Correct hash cannot make invalid content acceptable.
+    reject();
+    Write("first.json", Catalogue().dump() + " ");
+    reject();
+    Write("first.json", Catalogue().dump());
+    Save();
+    EXPECT_TRUE(Load()) << error;
+}
+
+TEST_F(PackFiles, SupportsMoreRecordsThanSingleDocumentLimit)
+{
+    auto data = Catalogue();
+    auto record = data["records"][2];
+    data["groups"] = pbc_json::array();
+    data["records"] = pbc_json::array();
+    for (unsigned i = 1; i <= 20000; ++i)
+    {
+        record["id"] = "npc:" + std::to_string(i);
+        record["when"]["entry"] = i;
+        data["records"].push_back(record);
+    }
+    Add("large.json", data);
+    record["id"] = "npc:20001";
+    record["when"]["entry"] = 20001u;
+    data["records"] = pbc_json::array({record});
+    Add("last.json", data);
+    ASSERT_TRUE(Load()) << error;
+    EXPECT_EQ(catalogue.RecordCount(), 20001u);
+    auto selected = catalogue.Select({{"entry", 20001u}}, {});
+    ASSERT_EQ(selected.records.size(), 1u);
+    EXPECT_EQ(selected.records[0]["id"], "npc:20001");
 }
