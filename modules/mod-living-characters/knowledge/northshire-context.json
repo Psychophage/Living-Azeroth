@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "era": "wotlk",
+  "sources": {
+    "quests": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template IDs 7 and 18; creature_queststarter and creature_questender IDs 197 and 823",
+      "revision": "installed database inspected 2026-10-02"
+    },
+    "areas": {
+      "kind": "world_db",
+      "reference": "client AreaTable.dbc entries 9, 12, 24, 59, 87, 1519 (map and parent zone fields)",
+      "revision": "installed 3.3.5a DBC inspected 2026-10-02"
+    },
+    "authored": {
+      "kind": "authored",
+      "reference": "Conservative example personality and organisation policy for Living Azeroth; not canonical biography",
+      "revision": "2026-10-02"
+    }
+  },
+  "records": [
+    {
+      "id": "world-era",
+      "layer": "world",
+      "text": "Use the supplied realm phase. Do not claim future events or another person’s private experiences. Ordinary people have local concerns and incomplete knowledge.",
+      "when": {},
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 100
+    },
+    {
+      "id": "elwynn",
+      "layer": "zone",
+      "text": "You are in Elwynn Forest. Northshire is part of this region; Stormwind City is a separate area.",
+      "when": {
+        "zone_id": 12
+      },
+      "sources": [
+        "areas"
+      ],
+      "authored": false,
+      "priority": 40
+    },
+    {
+      "id": "northshire",
+      "layer": "location",
+      "text": "Northshire Valley lies within Elwynn Forest.",
+      "when": {
+        "area_id": 9
+      },
+      "sources": [
+        "areas"
+      ],
+      "authored": false,
+      "priority": 60
+    },
+    {
+      "id": "abbey",
+      "layer": "location",
+      "text": "You are at Northshire Abbey, in Elwynn Forest.",
+      "when": {
+        "area_id": 24
+      },
+      "sources": [
+        "areas"
+      ],
+      "authored": false,
+      "priority": 60
+    },
+    {
+      "id": "vineyards",
+      "layer": "location",
+      "text": "You are at Northshire Vineyards, in Elwynn Forest.",
+      "when": {
+        "area_id": 59
+      },
+      "sources": [
+        "areas"
+      ],
+      "authored": false,
+      "priority": 60
+    },
+    {
+      "id": "goldshire",
+      "layer": "location",
+      "text": "You are in Goldshire, in Elwynn Forest.",
+      "when": {
+        "area_id": 87
+      },
+      "sources": [
+        "areas"
+      ],
+      "authored": false,
+      "priority": 60
+    },
+    {
+      "id": "language:common:197",
+      "layer": "npc",
+      "text": "You speak Common.",
+      "when": {
+        "entry": 197
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 10,
+      "language_id": 7
+    },
+    {
+      "id": "language:common:823",
+      "layer": "npc",
+      "text": "You speak Common.",
+      "when": {
+        "entry": 823
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 10,
+      "language_id": 7
+    },
+    {
+      "id": "language:common:68",
+      "layer": "npc",
+      "text": "You speak Common.",
+      "when": {
+        "entry": 68
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 10,
+      "language_id": 7
+    },
+    {
+      "id": "language:common:1423",
+      "layer": "npc",
+      "text": "You speak Common.",
+      "when": {
+        "entry": 1423
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 10,
+      "language_id": 7
+    },
+    {
+      "id": "language:common:38",
+      "layer": "npc",
+      "text": "You speak Common.",
+      "when": {
+        "entry": 38
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 10,
+      "language_id": 7
+    },
+    {
+      "id": "quest-7-none",
+      "layer": "quest",
+      "text": "The adventurer has no current or rewarded record of Kobold Camp Cleanup. Do not claim prior help or promise that quest prerequisites are met.",
+      "when": {
+        "entry": 197,
+        "quest_id": 7,
+        "quest_states": [
+          "none"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-7-incomplete",
+      "layer": "quest",
+      "text": "This adventurer is working on Kobold Camp Cleanup. The objectives are not yet fulfilled. Do not claim a reward has been given.",
+      "when": {
+        "entry": 197,
+        "quest_id": 7,
+        "quest_states": [
+          "incomplete"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-7-complete",
+      "layer": "quest",
+      "text": "This adventurer has fulfilled the objectives of Kobold Camp Cleanup, but has not received the turn-in reward. Acknowledge readiness without narrating a handover.",
+      "when": {
+        "entry": 197,
+        "quest_id": 7,
+        "quest_states": [
+          "complete"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-7-rewarded",
+      "layer": "quest",
+      "text": "This adventurer has turned in Kobold Camp Cleanup and received its reward. You can acknowledge that specific help; no later accomplishments are established.",
+      "when": {
+        "entry": 197,
+        "quest_id": 7,
+        "quest_states": [
+          "rewarded"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-7-failed",
+      "layer": "quest",
+      "text": "This adventurer’s current attempt at Kobold Camp Cleanup has failed. Do not describe it as completed.",
+      "when": {
+        "entry": 197,
+        "quest_id": 7,
+        "quest_states": [
+          "failed"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-18-none",
+      "layer": "quest",
+      "text": "The adventurer has no current or rewarded record of Brotherhood of Thieves. Do not claim prior help or promise that quest prerequisites are met.",
+      "when": {
+        "entry": 823,
+        "quest_id": 18,
+        "quest_states": [
+          "none"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-18-incomplete",
+      "layer": "quest",
+      "text": "This adventurer is working on Brotherhood of Thieves. The objectives are not yet fulfilled. Do not claim a reward has been given.",
+      "when": {
+        "entry": 823,
+        "quest_id": 18,
+        "quest_states": [
+          "incomplete"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-18-complete",
+      "layer": "quest",
+      "text": "This adventurer has fulfilled the objectives of Brotherhood of Thieves, but has not received the turn-in reward. Acknowledge readiness without narrating a handover.",
+      "when": {
+        "entry": 823,
+        "quest_id": 18,
+        "quest_states": [
+          "complete"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-18-rewarded",
+      "layer": "quest",
+      "text": "This adventurer has turned in Brotherhood of Thieves and received its reward. You can acknowledge that specific help; no later accomplishments are established.",
+      "when": {
+        "entry": 823,
+        "quest_id": 18,
+        "quest_states": [
+          "rewarded"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "quest-18-failed",
+      "layer": "quest",
+      "text": "This adventurer’s current attempt at Brotherhood of Thieves has failed. Do not describe it as completed.",
+      "when": {
+        "entry": 823,
+        "quest_id": 18,
+        "quest_states": [
+          "failed"
+        ]
+      },
+      "sources": [
+        "quests"
+      ],
+      "authored": false,
+      "priority": 95
+    },
+    {
+      "id": "stormwind-watch",
+      "layer": "group",
+      "text": "You can consult Stormwind watch reports. They are attributed, fallible reports, not your own eyewitness memories. You do not know unrelated groups’ private information.",
+      "when": {
+        "groups": [
+          "watch:stormwind"
+        ]
+      },
+      "sources": [
+        "authored"
+      ],
+      "authored": true,
+      "priority": 70
+    }
+  ],
+  "groups": [
+    {
+      "id": "watch:stormwind",
+      "name": "Stormwind watch",
+      "description": "Local guards and assigned officers share public safety reports. Allegations alone do not establish guilt.",
+      "when": {
+        "map_id": 0,
+        "entries": [
+          68,
+          1423,
+          197
+        ]
+      },
+      "report_lifetime_hours": 72,
+      "public_reports": true
+    }
+  ]
+}

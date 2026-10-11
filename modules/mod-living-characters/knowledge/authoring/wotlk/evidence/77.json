@@ -1,0 +1,3640 @@
+{
+  "7700003ac3adf7a66dc5dd7ae80426930399af890436a0d267e9b18be95ac9d7": {
+    "CreatureID": 9818,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "%s begins to summon in a Blackhand Veteran!",
+    "comment": "Blackhand Summoner"
+  },
+  "770319886178a641a5d40e97cae1c77af6d4d3c1951497b43b146ac13aac9e89": {
+    "areas": [],
+    "entry": 18611,
+    "name": "Laughing Skull Warden (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      17624
+    ]
+  },
+  "770325f40d6859413bb9831db0f3b60c2434686a4aff51a64bb371c4581cd003": {
+    "action_type": 11,
+    "comment": "Wyrmrest Guardian - In Combat - Cast 'Flame Breath'",
+    "entryorguid": 26933,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "7704785fc9f0e1631a8bab7a120d37aea90f712b5942687114c61f49499c2b26": {
+    "areas": [],
+    "entry": 33753,
+    "name": "Desecrated Ground IV",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "7705339000fd3b8d918b4014c10bf5141836d51cf83fbd548b1efc71c5645e76": {
+    "areas": [
+      221
+    ],
+    "entry": 3075,
+    "name": "Bronk Steelrage",
+    "region": "map-1-zone-215",
+    "regions": [
+      "map-1-zone-215"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Armorer & Shieldcrafter",
+    "variant_of": []
+  },
+  "770718f9c8ecb018bf59f783bd66a20f6cbf5acc3bb96c75e06ce7de57dc194a": {
+    "areas": [
+      3581
+    ],
+    "entry": 16708,
+    "name": "Dekin",
+    "region": "map-530-zone-3524",
+    "regions": [
+      "map-530-zone-3524"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Fishing Supplies",
+    "variant_of": []
+  },
+  "7708081b70accb54a0cfa4ed14c965e12b1e9a088efea3189b6b3aef2375cbb5": {
+    "areas": [],
+    "entry": 15254,
+    "name": "[UNUSED] Qiraji Captain",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77085997e7b2d60e901a881f63f87b8ccb53d50b438a6dd5f868aad3695a77f1": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 27214,
+    "faction": 190,
+    "gossip_menu_id": 0,
+    "maxlevel": 72,
+    "minlevel": 71,
+    "name": "Onslaught Horse",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 1
+  },
+  "7709300402e0ff0fbaa6c113911ce3afdbe0e426a53fe48009539ca95ec191fa": {
+    "areas": [],
+    "entry": 28950,
+    "name": "Spell Performance Test Target",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "possible_helper_not_person",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "QA Punching Bag",
+    "variant_of": []
+  },
+  "770a75a70ba1b37c855ff312399c4344217389dd03f6d5ef228d4c25704e4d1d": {
+    "CreatureID": 9453,
+    "GroupID": 3,
+    "ID": 0,
+    "Language": 0,
+    "Text": "%s transforms the items into a totem.",
+    "comment": "Aquementas"
+  },
+  "770ae2c13a09392fa4ca75bac2ee93831d6f23702878f435b97fca103ff904dc": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 1954,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 17,
+    "minlevel": 16,
+    "name": "Elder Lake Skulker",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 4
+  },
+  "770b279ed566e04f75c21627f875eebf0530114adcbf4b8b19ad75b0ea29b847": {
+    "action_type": 11,
+    "comment": "When in combat and timer at the begining between 4000 and 4000 ms (and later repeats every 5000 and 8000 ms) - Self: Cast spell Frostbolt (20806) on Random hostile",
+    "entryorguid": 3986,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "770b552a9da2a3e67a0f3dfe39a7cd34e2e0f2ca3ba3be00539c8e6da7a7ae0e": {
+    "action_type": 12,
+    "comment": "Faldorf Bitterchill - On Aggro - Summon Creature 'Enraged Wyvern'",
+    "entryorguid": 29750,
+    "event_type": 61,
+    "id": 1,
+    "source_type": 0
+  },
+  "770cd852993dec958a41279b907fd9954c27042a48db4dfd434af5f78497f1c0": {
+    "areas": [
+      4275
+    ],
+    "entry": 28176,
+    "name": "Rimblat Earthshatter",
+    "region": "map-571-zone-66",
+    "regions": [
+      "map-571-zone-66"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "The Earthen Ring",
+    "variant_of": []
+  },
+  "770de8042aec468be05744d1e5d94e843f86faaeeef1879bb1c2677452115b35": {
+    "CreatureID": 30899,
+    "GroupID": 2,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Alert: security fail-safes deactivated. Beginning memory purge and...",
+    "comment": "abedneum SAY_FAILSAFE"
+  },
+  "770e0178afd92cbd295bf1e3fcfed0337fe86d3aac14a03cedd66c25fbad5c3d": {
+    "action_type": 11,
+    "comment": "Ironjaw Basilisk - In Combat - Cast 'Crystal Flash' (No Repeat)",
+    "entryorguid": 1551,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "770e39a84f8bab1ce5cb8776be5fb50d80b26f79c36f8a97de5e7828ffb132da": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 6035,
+    "faction": 152,
+    "gossip_menu_id": 0,
+    "maxlevel": 26,
+    "minlevel": 25,
+    "name": "Razorfen Stalker",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": null,
+    "type": 7
+  },
+  "770f1f82e4d17e7d3a3defac6fb1cf31cc5806d1f2337d6866cf952ced755837": {
+    "ID": 655,
+    "LogDescription": "Speak with Tor'gan in Hammerfall.",
+    "LogTitle": "Hammerfall",
+    "QuestDescription": "It is still clear to me, like yesterday... So many years without hope, with wood and steel to bind me to this terrible place. Then finally, finally! There was the Warchief. Doomhammer in his midnight plate, his warhammer held high.$b$bIt was... too terrible... That the blow of a coward would strike down our greatest hero. From behind he charged on his horse, and then his lance ran him through... I fell to my knees. What hope was there? What hope is there...",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "770fa7d8b7838612ec7b86edfb2e26766dab351304ed7ca6240b4e5469019218": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 24463,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 2,
+    "minlevel": 1,
+    "name": "Swift Racing Ram",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 1
+  },
+  "771003844f41f1c75a1ce7bfdcec26ca1ae0c0793ed02ede79cff9cf3f7e0720": {
+    "CreatureID": 28078,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "%s goes into a frenzy!",
+    "comment": "Frenzyheart Ravager"
+  },
+  "7711e97dde8e66fc68474c767fc007d1c8250522aac5416d487c5ee9e8316bc1": {
+    "CreatureID": 36948,
+    "GroupID": 6,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Not me battle? I dunnae who ye think ye are, mister, but I got a score to settle with Arthas and yer not gettin' in me way! FIRE ALL GUNS! FIRE! FIRE!",
+    "comment": "Muradin Bronzebeard - SAY_MURADIN_INTRO_7"
+  },
+  "7712b63fc93857c5ba8b31c7c04ea4b4cfb03c9f825adb335ed10343182011fd": {
+    "areas": [],
+    "entry": 18184,
+    "name": "Mo'arg Engineer Transform (Magnetic Mode)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "771384426c727bd111593fe0948ed2dc49c7f0ebb1cbd2f4095187a9fd6954d9": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 36087,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 80,
+    "name": "Lana Stouthammer (1)",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "Grand Champion of Ironforge",
+    "type": 7
+  },
+  "7715f02e15b4efa3bb6c5880092ff0d9ced876902136ed106ab7f5f94c293b69": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 5769,
+    "faction": 104,
+    "gossip_menu_id": 1629,
+    "maxlevel": 62,
+    "minlevel": 62,
+    "name": "Arch Druid Hamuul Runetotem",
+    "npcflag": 3,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77167f5a3c70465581e79bcaf748f0a8d7834d423a694d81e13aea345103685c": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 22033,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 72,
+    "minlevel": 72,
+    "name": "Nether Drakonid Boss (Blue)",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 2
+  },
+  "7717f2835fd563816bb030cca8d0fef9feee38fe3e755136c603e4c70048be35": {
+    "AIName": "",
+    "ScriptName": "npc_oculus_drakegiver",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 27657,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 80,
+    "name": "Verdisa",
+    "npcflag": 2,
+    "rank": 1,
+    "subname": "",
+    "type": 2
+  },
+  "7719897a7b0e5700640f2866fc0804aa2bf2fda24f209cd7b9c90a00d68e2db8": [
+    {
+      "id": 3294,
+      "quest": 1506
+    }
+  ],
+  "7719eb198d745e74e88c458ca21a01013149d1f13d323a11211a3d3d6fe8d954": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 4678,
+    "faction": 90,
+    "gossip_menu_id": 0,
+    "maxlevel": 38,
+    "minlevel": 37,
+    "name": "Mana Eater",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 3
+  },
+  "771b7f764ade524e6aedbf152e7a31b142d1fad6a14a5d6383afc66c83a65584": {
+    "areas": [],
+    "entry": 28984,
+    "name": "[Chapter II] Scarlet Crusader Proxy",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "771bd016f42bae54903f9a5a093d6177da67dac02a362a3b31786e4812f4ae0a": {
+    "areas": [],
+    "entry": 36609,
+    "name": "Val'kyr Shadowguard",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "cpp_script",
+      "no_static_spawn",
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "771ca7f40b3e7976357af19a5e953f78eba9cd642f7a6cb5a9b30eecbe039719": {
+    "action_type": 11,
+    "comment": "Rotting Ghoul - In Combat - Cast 'Contagion of Rot' (No Repeat)",
+    "entryorguid": 1793,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "771e1050cc97e9cb64b4629b30d65203f294a588d71e5feb01fb80a6a7535602": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 29106,
+    "faction": 2084,
+    "gossip_menu_id": 0,
+    "maxlevel": 56,
+    "minlevel": 56,
+    "name": "Death Knight Champion",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 6
+  },
+  "7723a35cf9fc31497f7c96200054221e5dc2a37ac3f5046dce296ca565ce3dfc": {
+    "CreatureID": 5391,
+    "GroupID": 4,
+    "ID": 0,
+    "Language": 0,
+    "Text": "%s whispers to $n the secret to opening his strongbox.",
+    "comment": "Galen Goodward"
+  },
+  "77248540dc923cf0e1973e71d379ee610650aadf19ee4a6748f3a261e97a4b0a": {
+    "areas": [
+      3899
+    ],
+    "entry": 19187,
+    "name": "Darmari",
+    "region": "map-530-zone-3703",
+    "regions": [
+      "map-530-zone-3703"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Master Leatherworking Trainer",
+    "variant_of": []
+  },
+  "7725a88b4abcb50b236010a83959a4728da7d30a5ff42fc244a4803b823a4edd": {
+    "ID": 8258,
+    "LogDescription": "Use the Divination Scryer in the heart of the Great Ossuary's basement in the Scholomance.  Doing so will bring forth spirits you must fight.  Defeating these spirits will summon forth Death Knight Darkreaver; defeat him.$B$BBring Darkreaver's Head to Sagorne Creststrider in the Valley of Wisdom, Orgrimmar.",
+    "LogTitle": "The Darkreaver Menace",
+    "QuestDescription": "Death Knight Darkreaver lords over the Great Ossuary in the Scholomance.  He threatens to twist the spirit realm to do his own bidding, and he must be stopped!  This is where the scryer you helped make comes into play.$B$BUse the divination scryer in the heart of the Great Ossuary's basement to call forth Darkreaver's spirit minions.  Defeat the spirits and the death knight himself will appear.  $N, bring me his head!  Only his demise will reverse the damage done to the spirit realm!",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77263cd4e65adff7265a001776aa765cdb483282bd2af4ab0964f6ffb7bbe331": {
+    "action_type": 39,
+    "comment": "High General Abbendis - On Aggro - Call For Help",
+    "entryorguid": 10828,
+    "event_type": 4,
+    "id": 0,
+    "source_type": 0
+  },
+  "7726dc141d6d96900b1b7a3e3f223b38d887aa844ddbc7dc452f9f8179250315": {
+    "areas": [
+      4196
+    ],
+    "entry": 27871,
+    "name": "Flesheating Ghoul",
+    "region": "map-600-zone-4196",
+    "regions": [
+      "map-600-zone-4196"
+    ],
+    "review_reasons": [
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 3,
+    "subname": "",
+    "variant_of": []
+  },
+  "7729ee8082546a07b20a1b640039e0f48caad038df0042580f1fd252a0fa6056": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 28048,
+    "faction": 35,
+    "gossip_menu_id": 9647,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Dread Captain DeMeza",
+    "npcflag": 1,
+    "rank": 1,
+    "subname": "Scourge of the South Seas",
+    "type": 7
+  },
+  "772a1e304aba50d687921b5c8ac8b432c234b2da99ce385ec34b53be21ee8043": {
+    "action_type": 27,
+    "comment": "Korfax, Champion of the Light - Between 0-3% Health - Stop Combat",
+    "entryorguid": 29176,
+    "event_type": 2,
+    "id": 0,
+    "source_type": 0
+  },
+  "772b3cbbbb2150cd88c610f16c64fb4f816f0de38c24329730995e6a94bd2731": {
+    "areas": [
+      3851
+    ],
+    "entry": 20194,
+    "name": "Dealer Dunar",
+    "region": "map-530-zone-3523",
+    "regions": [
+      "map-530-zone-3523"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "General Provisioner",
+    "variant_of": []
+  },
+  "772c9a5c6ce0d8f960079530ef4184ec95a161fd6e8b0c02baac31661f39a582": {
+    "areas": [
+      33
+    ],
+    "entry": 677,
+    "name": "Venture Co. Tinkerer",
+    "region": "map-0-zone-33",
+    "regions": [
+      "map-0-zone-33"
+    ],
+    "review_reasons": [],
+    "spawns": 4,
+    "subname": null,
+    "variant_of": []
+  },
+  "772cd631b41ab117c68135f4d06f0c8d3743d1166698296f2036f4ca1d263b4b": {
+    "CreatureID": 35004,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Entering the arena, a paladin who is no stranger to the battlefield or tournament ground, the Grand Champion of the Argent Crusade, Eadric the Pure!",
+    "comment": "Jaeren Sunsworn - SAY_JAEREN_INTRO"
+  },
+  "772cf1661ed32457a80f93574206444cc9e491179f8bbdb62a5de1443bad4f1c": {
+    "action_type": 11,
+    "comment": "Darkmist Recluse - In Combat - Cast '43133'",
+    "entryorguid": 4378,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "772e9b1584e356b31a3eb011e21d3c3c21b9570684e71bbd32821071c0571977": {
+    "CreatureID": 28120,
+    "GroupID": 0,
+    "ID": 1,
+    "Language": 0,
+    "Text": "Maybe more shiny bugs! We like bugs!",
+    "comment": "Lafoo"
+  },
+  "772fb31a315a2be1b219a85c4bcc78fcbb1cd99aff3d68328628817dd3cb7055": {
+    "ID": 25445,
+    "LogDescription": "Help Vol'jin take back the Echo Isles and kill Zalazane.",
+    "LogTitle": "Zalazane's Fall",
+    "QuestDescription": "De time for battle is now!  We'd be headin' ova to da islands soon,so you'd betta be ready.$B$BZalazane doesn't have much time left."
+  },
+  "7730bbd99c37526fe9a371f03b34e3cf5b12dcffd36eb2cc86dd5ca596703091": {
+    "MenuID": 7379,
+    "OptionID": 1,
+    "OptionNpcFlag": 1,
+    "OptionText": "Take me to Eastwall Tower.",
+    "OptionType": 1
+  },
+  "7730cc00ffe653008718b0cf7b0b2b47ea9a812fa9e2d17128d0144aeb7adb91": {
+    "areas": [],
+    "entry": 32050,
+    "name": "Primalist Thurloga (2)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      13236
+    ]
+  },
+  "77324b8ee2aaa55f84a53d905fe81f0c171b842fb65a908d53ba087d18e25399": {
+    "action_type": 21,
+    "comment": "Blight Slinger - On Just Summoned - Disable Combat Movement",
+    "entryorguid": 31526,
+    "event_type": 54,
+    "id": 0,
+    "source_type": 0
+  },
+  "77326b5d136db3cb38fb435bbe073ce0f20b0dc6676411a4ed5436487a81a190": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 35673,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 83,
+    "minlevel": 83,
+    "name": "Birana Stormhoof (3)",
+    "npcflag": 0,
+    "rank": 3,
+    "subname": "Druid",
+    "type": 7
+  },
+  "773297b8b363e146cf1d17c5bda2f32a8ddf79e6eb52da95cb47e0cb6decd4b6": {
+    "CreatureID": 16524,
+    "GroupID": 0,
+    "ID": 1,
+    "Language": 0,
+    "Text": "I'll not be tortured again!",
+    "comment": "aran SAY_AGGRO2"
+  },
+  "77335eefda5b3e55be68e2563a56a367e5764f4a464d6accd80bc9b6d2035b18": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 19242,
+    "faction": 1744,
+    "gossip_menu_id": 0,
+    "maxlevel": 64,
+    "minlevel": 64,
+    "name": "Olodam Farhollow",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77337537369b4bf5dc2a235e690ba5b0c8c946d1a1fd175e4d715a9b6569a51e": {
+    "areas": [],
+    "entry": 31749,
+    "name": "Hover Disk (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn",
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      30248
+    ]
+  },
+  "7735d87ec8749279682297770da7183186651993c61a40e1fa0e6e61c75e0522": {
+    "CreatureID": 15989,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Sapphiron resumes his attacks!",
+    "comment": "Sapphiron EMOTE_GROUND_PHASE"
+  },
+  "77368a146810e90c2204cf0a854d150cac15bfc857b82bbdd7287d9c4b374c79": {
+    "ID": 10236,
+    "MenuID": 8233,
+    "conditional": true,
+    "texts": {
+      "text0_1": "If you're going to come out here, make yourself useful because the shadowstalker over there isn't doing much."
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "7738e8615f593a776941c0f43cd6af5a8f0b90183408565f1e3ea99b59b1e8c8": {
+    "CreatureID": 26566,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 1,
+    "Text": "Guards!",
+    "comment": "Narzun Skybreaker"
+  },
+  "7739767a55ed037771bfe284a54bdf9c6362d3dd2dfcb1e5815642a7e8d5a52a": {
+    "CompletionText": "You not a real mon til you killed a dragon... mon.",
+    "ID": 12145
+  },
+  "773b983c8b0614835a6552014a29dc15e69314f5a65532bc543c2653e4d2b15b": {
+    "CreatureID": 23035,
+    "GroupID": 1,
+    "ID": 1,
+    "Language": 0,
+    "Text": "Yes... cast your precious little spells, ak-a-ak!",
+    "comment": "Anzu - Spell Bomb"
+  },
+  "773c8e4dda446097db45f093a49c9e5cf671c80009a94bf94977adcdc7317514": {
+    "areas": [
+      3656,
+      3658
+    ],
+    "entry": 20710,
+    "name": "Bogstrok Hatchling",
+    "region": "map-530-zone-3521",
+    "regions": [
+      "map-530-zone-3521"
+    ],
+    "review_reasons": [],
+    "spawns": 85,
+    "subname": "",
+    "variant_of": []
+  },
+  "773f0599fee80b9875a2856ef03784278ad84fcabd47815229602d7adbf7bac7": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 212,
+    "faction": 45,
+    "gossip_menu_id": 0,
+    "maxlevel": 30,
+    "minlevel": 29,
+    "name": "Splinter Fist Warrior",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "773f3b194747997d44271f7b09d738d11475b9532b024d016393ee94231673e8": {
+    "action_type": 11,
+    "comment": "Negaton Warp-Master - In Combat - Cast 'Summon Negaton Field'",
+    "entryorguid": 20873,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "773f5115ae622b3aaf137512dcf621fab6de434decd0b4c95c7095b1e33b2166": {
+    "action_param1": 6533,
+    "action_param2": 1,
+    "action_param3": 0,
+    "action_param4": 0,
+    "action_param5": 0,
+    "action_param6": 0,
+    "action_type": 11,
+    "comment": "Thauris Balgarr - In Combat - Cast 'Net'",
+    "entryorguid": 8978,
+    "event_chance": 100,
+    "event_flags": 0,
+    "event_param1": 7000,
+    "event_param2": 11000,
+    "event_param3": 21700,
+    "event_param4": 35200,
+    "event_param5": 0,
+    "event_param6": 0,
+    "event_phase_mask": 0,
+    "event_type": 0,
+    "id": 1,
+    "link": 0,
+    "source_type": 0,
+    "target_o": 0,
+    "target_param1": 0,
+    "target_param2": 0,
+    "target_param3": 0,
+    "target_param4": 0,
+    "target_type": 2,
+    "target_x": 0,
+    "target_y": 0,
+    "target_z": 0
+  },
+  "774047263eaedf1c9d1f0b8d6be02fea761788e3881c0807c9f996b34b41b2b1": {
+    "areas": [],
+    "entry": 21078,
+    "name": "Farahlon Shardling",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": null,
+    "variant_of": []
+  },
+  "77405374b1739d67be41330efe4365f3d1c525265990bf7cb5e0035162cd66f1": {
+    "action_type": 11,
+    "comment": "Mojo the Twisted - In Combat CMC - Cast 'Shadow Bolt'",
+    "entryorguid": 8296,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "774053d5083afba7ff08c7cfbe0daec428c417d2d9a6e7cd874b561fc0408f24": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 19049,
+    "faction": 1818,
+    "gossip_menu_id": 0,
+    "maxlevel": 60,
+    "minlevel": 60,
+    "name": "Karokka",
+    "npcflag": 1152,
+    "rank": 0,
+    "subname": "Poison Supplies",
+    "type": 7
+  },
+  "77414bc6abbb2041ae790387429754ca77f06901e3e89bed9c8c86ae7949adb9": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 22300,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 22299,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Spore Strider",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 1
+  },
+  "7741b5518d0d27af93404b45761230ce5adab942b4d017248540d3ca98ff6aa3": {
+    "CompletionText": "Let's not waste more of my precious time with jibber jabber, $r. It's time to focus on replenishing our dwindling fiery flux supply.$B$BWhat I'm gonna need from you is the following:$B$B*Incendosaur scales.$B$B*Kingsblood.$B$B*Coal.$B$BI'll take all that you can offer!$B$BAnd you'll do it fast if you wanna get in good with the Brotherhood.",
+    "ID": 7736
+  },
+  "7741fbe7e24c8fa3c4b7b6298f2922238c02bf0245676b884a45e76c43d35838": {
+    "CreatureID": 27227,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Wait a minute here! You promised to spare me if I helped you. I held up my end o' the bargain!",
+    "comment": "Prospector Rokar"
+  },
+  "77424bb06abe4984bb6b9bfe3461a37486b188dcc01f201000e344166a0e58cd": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 21256,
+    "faction": 1668,
+    "gossip_menu_id": 0,
+    "maxlevel": 65,
+    "minlevel": 65,
+    "name": "Vurtok Axebreaker",
+    "npcflag": 2,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "7744fab4b31f3fc1478c0d80dcc7827c26937ab9816c001194ca7a27ad6e89cc": {
+    "ID": 12444,
+    "LogDescription": "Scout Captain Carter wants you to kill 10 Horde units or players in the Blackriver Logging Camp.",
+    "LogTitle": "Blackriver Skirmish",
+    "QuestDescription": "The Venture Company's on its way out of Grizzly Hills.  They used to run logging operations here, but things got a little too dangerous for them.$B$BTheir abandoned sites are up for grabs and we sure as hell can't let the Horde get their hands on them.$B$BThe Blackriver Logging Camp is the smallest of the three logging sites in this zone, but we still need it.  Do your part and fend off the Horde forces.  Any lumber they get here will be made into weapons to be used against us elsewhere.",
+    "RequiredNpcOrGo1": 27121,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "774559088d4d46abfaf351864bd387bb86c369ca7bd5dd8c708f628b725b240e": {
+    "ID": 11187,
+    "RewardText": "<Malister beckons you closer and speaks in whispered tones.>$B$BI was worried that something like this might happen. I tried to dissuade the captain from this course of action, but he is a dwarf of action with a definite outlook on how things should proceed.$B$BLet us speak of the options left to us."
+  },
+  "7745af6099b47dedce08cfb38158c32cc360125767ae046e76f76bf271c4a3c7": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 21451,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 60,
+    "minlevel": 60,
+    "name": "Bone Wastes - Event Trigger A",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 10
+  },
+  "77461c7e363c545d4e2480963f25e0785d02024b7a0c0c05447b78c62c706838": {
+    "action_type": 11,
+    "comment": "Tormented Drakkari - Between 0-50% Health - Cast 'Cannibalize' (Phase 1) (No Repeat)",
+    "entryorguid": 26965,
+    "event_type": 2,
+    "id": 2,
+    "source_type": 0
+  },
+  "77464641c656ee2085c251f94feb0c4074649e635671d658a738dd955869b606": {
+    "action_type": 11,
+    "comment": "Netherweb Victim - On Timed Event - Cast Terokkar Free Webbed Creature",
+    "entryorguid": 22355,
+    "event_type": 59,
+    "id": 6,
+    "source_type": 0
+  },
+  "774887bb366aa66551d19d54a13d133f9f290e3c2a2119649bcbf78fe0f0c81b": {
+    "areas": [
+      159
+    ],
+    "entry": 34238,
+    "name": "Black Skeletal Horse",
+    "region": "map-0-zone-85",
+    "regions": [
+      "map-0-zone-85"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "",
+    "variant_of": []
+  },
+  "77490383a2aff23af858be5ba6dccfa1ced07c86862189ddd7a1e7e398d1d9d0": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 25845,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Northwest Crash",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "7749e84e9f0a65cf747e77a381ad1ac3f8e85507733c45fec5a94d9745b5458c": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 24701,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Large Vrykul Harpoon Gun",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "774bc16ec0f8849b8d1c859535854b64ea95612c21499a20e1f482451471038f": {
+    "ID": 8585,
+    "MenuID": 7262,
+    "conditional": true,
+    "texts": {
+      "text0_0": "You come in search of training, hunter?",
+      "text0_1": "You come in search of training, hunter?"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "774bca6e7178c45b5297a2849c79313fd07a430114928f48cdd298614bf394c0": {
+    "binding_field": "difficulty_entry_1",
+    "creature_entry": 22546,
+    "kind": "explicit_native_difficulty_variant",
+    "native_identity": {
+      "AIName": "",
+      "ScriptName": "",
+      "difficulty_entry_1": 0,
+      "difficulty_entry_2": 0,
+      "difficulty_entry_3": 0,
+      "entry": 22546,
+      "name": "Duros (1)",
+      "subname": "",
+      "type": 1
+    },
+    "parent_entry": 12122,
+    "parent_native": {
+      "AIName": "SmartAI",
+      "ScriptName": "",
+      "difficulty_entry_1": 22546,
+      "difficulty_entry_2": 31970,
+      "difficulty_entry_3": 37289,
+      "entry": 12122,
+      "name": "Duros",
+      "subname": null,
+      "type": 1
+    },
+    "parent_quest_roles": [],
+    "parent_quests": [],
+    "parent_speech": [
+      {
+        "CreatureID": 12122,
+        "GroupID": 0,
+        "ID": 0,
+        "Language": 0,
+        "Text": "%s becomes enraged!",
+        "Type": 16
+      }
+    ],
+    "scope": "Exact native parent difficulty field establishes this variant link, independently of matching names. Parent facts provide shared grounding only; preserve variant-specific native identity and separate entry coverage. Speech belongs to the displayed parent, not automatically to this variant. Do not transfer private memories, current quest state, script execution, spell effects, allegiance from combat faction or a completed outcome. Later SQL updates are not applied."
+  },
+  "774d29649f342e277d21186dafa2098db73c69109af9d38531c20d0b0e4a4107": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 16343,
+    "faction": 1643,
+    "gossip_menu_id": 0,
+    "maxlevel": 16,
+    "minlevel": 15,
+    "name": "Shadowpine Oracle",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "774d50b8211dea12e67fadf28a56f2579b662caf9c41f6e70de177a284514472": {
+    "ID": 5454,
+    "MenuID": 4307,
+    "conditional": true,
+    "texts": {
+      "text0_0": "How may I be of service?"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "774e48e6cb610de5f96d40c81361f9a6bb6becf740d2ea926889f099ab818e26": {
+    "areas": [
+      415
+    ],
+    "entry": 3969,
+    "name": "Fahran Silentblade",
+    "region": "map-1-zone-331",
+    "regions": [
+      "map-1-zone-331"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Tools & Supplies",
+    "variant_of": []
+  },
+  "774fa10cb1bf214a459c0ece7e5b5960f8652a86d3eaed4bd871758da5c64476": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 8562,
+    "faction": 37,
+    "gossip_menu_id": 0,
+    "maxlevel": 59,
+    "minlevel": 57,
+    "name": "Mossflayer Cannibal",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "7750476b03606847cb55142aae77ad4cb4035dff64edd1693cd7eba84d40e2a3": {
+    "areas": [
+      3752
+    ],
+    "entry": 21656,
+    "name": "Illidari Satyr",
+    "region": "map-530-zone-3520",
+    "regions": [
+      "map-530-zone-3520"
+    ],
+    "review_reasons": [],
+    "spawns": 6,
+    "subname": "Servant of Illidan",
+    "variant_of": []
+  },
+  "775326690888f92b2ff1d6c614b066ab271b7650e14f05d603cea7f6ebe192bc": {
+    "CreatureID": 36948,
+    "GroupID": 3,
+    "ID": 0,
+    "Language": 0,
+    "Text": "By me own beard! HORDE SAILIN' IN FAST 'N HOT!",
+    "comment": "Muradin Bronzebeard - SAY_MURADIN_INTRO_4"
+  },
+  "77535f372dd8f13432e166aa0b7405a79fae3d6ddfd14e03da7a6c45dc1da00b": {
+    "CreatureID": 29043,
+    "GroupID": 6,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Rejek and $n will teach the enemies of the Frenzyheart to fear us!",
+    "comment": "Rejek"
+  },
+  "7753eca34251371b648cd692b1a2364a75314270e7aa5cfbb39f96a928a633bd": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 22558,
+    "faction": 83,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Horde Spirit Guide (1)",
+    "npcflag": 32768,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "7753ed7320601c855ca735ea639ffcdb28464a9fec00e4cc0d29e5992310f720": {
+    "areas": [
+      4372
+    ],
+    "entry": 28916,
+    "name": "Tiri",
+    "region": "map-571-zone-66",
+    "regions": [
+      "map-571-zone-66"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Warlord Zol'Maz's Wife",
+    "variant_of": []
+  },
+  "775428243d1d0c2fdde114af9ad3d992388cbf8752f393ffb9b0bb9816e91013": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 31590,
+    "faction": 1814,
+    "gossip_menu_id": 0,
+    "maxlevel": 81,
+    "minlevel": 81,
+    "name": "Anub'ar Champion (1)",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 6
+  },
+  "77545ab0c5722914e38a97e7e19eea36d2ea86de3ae2476f445b59546148f4a4": {
+    "action_type": 11,
+    "comment": "Shattered Hand Sentry - In Combat - Cast 'Hamstring'",
+    "entryorguid": 16507,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "775529b6a2cdbec2bf4591a9d4ae7d3d0fcc4a34c15af548ae98d3bf0dbd73c0": {
+    "action_type": 3,
+    "comment": "Honor Hold Scout Archery Target - On Respawn - Morph To Model 16925 - Temporary modelid Workaround",
+    "entryorguid": 20251,
+    "event_type": 11,
+    "id": 0,
+    "source_type": 0
+  },
+  "77555eb7a0d9cecac24aedc4f29e1b547f72c88140dd8ea5a3780090c36501dc": {
+    "action_type": 11,
+    "comment": "Snorts - On Aggro - Cast 'Boar Charge' (Phase 1) (No Repeat)",
+    "entryorguid": 29996,
+    "event_type": 4,
+    "id": 0,
+    "source_type": 0
+  },
+  "7755eaa8bd112ac68520778aa817db09e2336c31ee4012ba6feb53086559fb6f": {
+    "ID": 1042,
+    "LogDescription": "Speak with Jonathan Carevin in Darkshire.",
+    "LogTitle": "The Carevin Family",
+    "QuestDescription": "No, I don't have any records of a Velinde Starsong staying in Darkshire... though, if you don't mind me saying, I can hardly imagine a night elf priestess taking a room in the inn, if you get my meaning?$b$bThese wolf-men you mentioned though, that's something I've heard about. Just the other day, Calor came into town with a string of their heads. He works with the Carevin family. Hunters of demons, undead, and other monstrosities. Speak with Jonathan, he's the head of the household.",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "775673d763d783c289105a4d4a4d3ce0c4a07ad50b5db60d71db3f4359f019f9": {
+    "areas": [],
+    "entry": 22665,
+    "name": "Frostwolf Legionnaire (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      12051
+    ]
+  },
+  "7757225f533b4ced630f0c9ab6410a02e38ee522fc07bc2921f1c95fe1c38eab": {
+    "areas": [
+      2100
+    ],
+    "entry": 12217,
+    "name": "Corruptor",
+    "region": "map-349-zone-2100",
+    "regions": [
+      "map-349-zone-2100"
+    ],
+    "review_reasons": [
+      "location_unresolved"
+    ],
+    "spawns": 27,
+    "subname": "",
+    "variant_of": []
+  },
+  "775781db625f21294170cd431b36b2862649480fcd9d174a782e7736b55ddbfe": {
+    "AIName": "",
+    "ScriptName": "npc_toc_boomkin",
+    "difficulty_entry_1": 35702,
+    "difficulty_entry_2": 35703,
+    "difficulty_entry_3": 35704,
+    "entry": 34460,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 83,
+    "minlevel": 83,
+    "name": "Kavina Grovesong",
+    "npcflag": 0,
+    "rank": 3,
+    "subname": "Druid",
+    "type": 7
+  },
+  "7757882e3f1d6fa503a12a310c2f8579371e37b09d13b9cab6c4065f22f1adb9": {
+    "areas": [],
+    "entry": 5050,
+    "name": "[UNUSED] Rallus",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "Guild Tabard Designer",
+    "variant_of": []
+  },
+  "7758838a441bfcf70eff804961a3ec24151f25b6aed24ab2ed7df1a7ec5825ff": {
+    "CreatureID": 37763,
+    "GroupID": 3,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Let Quel'Delar be a sign that we will never give up, that we will face any enemy without fear.",
+    "comment": "Grand Magister Rommath"
+  },
+  "7758d527c91c230a6df692ef65e8cc85dcf53f34f5ff59c10f6c2b0911734bde": {
+    "ID": 214,
+    "RewardText": "Well done, $N! On behalf of The People's Militia I salute you for your efforts. Soon we will return this land to the people with help from brave souls like you."
+  },
+  "775d407efa8efb368f42f9dd6d59423cbfb438eb67073e39f9c8e8a02b4b2a9c": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 1883,
+    "faction": 67,
+    "gossip_menu_id": 0,
+    "maxlevel": 57,
+    "minlevel": 55,
+    "name": "Scarlet Worker",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "775df82a0e478f55332640292d8ac457719de2ea369025469db738d72d6ea83b": {
+    "areas": [
+      3457
+    ],
+    "entry": 16424,
+    "name": "Spectral Sentry",
+    "region": "map-532-zone-3457",
+    "regions": [
+      "map-532-zone-3457"
+    ],
+    "review_reasons": [
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 18,
+    "subname": null,
+    "variant_of": []
+  },
+  "775e9d027b40697c57ac7ca07167655ab1d2a50dd37540c309a572d875e76f29": {
+    "CreatureID": 26923,
+    "GroupID": 0,
+    "ID": 1,
+    "Language": 0,
+    "Text": "Fool! You'll never get away with this!",
+    "comment": "Overseer Brunon"
+  },
+  "7760483be4d81347e25e14097ea0ac1eaa9d23ddd608c83df71b47f1d526eaec": {
+    "areas": [
+      41
+    ],
+    "entry": 18161,
+    "name": "Underground Well Credit Marker",
+    "region": "map-0-zone-41",
+    "regions": [
+      "map-0-zone-41"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "7761e48238482abdf1cbd247577761dc2bcc497b6da00db7a6cd967f526af571": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 11707,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 59,
+    "minlevel": 59,
+    "name": "Joy Ar'nareth",
+    "npcflag": 2,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "7762c32f52f6494e1deb8d9f73154c257f19f697fb475041e02aceceb011200e": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 21753,
+    "faction": 90,
+    "gossip_menu_id": 0,
+    "maxlevel": 67,
+    "minlevel": 67,
+    "name": "Shadow Council Felsworn",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77651f4945cf6336e212d6b2fa78ef04d596de155e944ec2d55e6984487a13da": {
+    "MenuID": 4092,
+    "OptionID": 1,
+    "OptionNpcFlag": 16,
+    "OptionText": "I wish to unlearn my talents.",
+    "OptionType": 16
+  },
+  "7766de60d7baaa64beb39ece51d90bb800f5559976aeb718e56bacd9ef5ec135": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 32079,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 1,
+    "minlevel": 1,
+    "name": "Slidore's Gryphon (2)",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 1
+  },
+  "77692021c6551bf0c26c89a24ba0b73629d17f4b07cb6b098ad2247338b2bcd4": {
+    "MenuID": 6470,
+    "OptionID": 0,
+    "OptionNpcFlag": 1048576,
+    "OptionText": "I would like to go to the battleground.",
+    "OptionType": 12
+  },
+  "776b592b63039d06a0e322320ec34656fbdf34cfc8bf4d0e7adebfd677983c7a": {
+    "areas": [
+      44
+    ],
+    "entry": 14273,
+    "name": "Boulderheart",
+    "region": "map-0-zone-44",
+    "regions": [
+      "map-0-zone-44"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "",
+    "variant_of": []
+  },
+  "776b660db38113c8f8e82505753cfc6b3ac823922c27b8dcab52229cfb9a99d5": {
+    "areas": [
+      4658
+    ],
+    "entry": 33477,
+    "name": "Stormwind Champion",
+    "region": "map-571-zone-210",
+    "regions": [
+      "map-571-zone-210"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "",
+    "variant_of": []
+  },
+  "776b7e744952be485e5c1112e88863a9a33f70174abd7a61217f1d3b5a84184a": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 10662,
+    "faction": 103,
+    "gossip_menu_id": 0,
+    "maxlevel": 56,
+    "minlevel": 56,
+    "name": "Spellmaw",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": null,
+    "type": 2
+  },
+  "776d7626d0c2e558504b35ef07acc167552864f1b7f12107aac0806a072ee9c7": {
+    "areas": [
+      3520
+    ],
+    "entry": 21205,
+    "name": "Ravenous Flayer Matriarch",
+    "region": "map-530-zone-3520",
+    "regions": [
+      "map-530-zone-3520"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "776ea0a679ddf6002bc6cc9ab46d8fa3925d6af28680ce3af48629b501d2023f": {
+    "CreatureID": 7267,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Feel the fury of the sands!",
+    "comment": "Chief Ukorz Sandscalp"
+  },
+  "776ec673aa0500201256dae9ac11568fdd9cd2956d1bea8ce2761dd6e0a9300a": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 2368,
+    "faction": 74,
+    "gossip_menu_id": 0,
+    "maxlevel": 29,
+    "minlevel": 28,
+    "name": "Daggerspine Shorestalker",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "776f9fc77a82c057a31c5a81be36c70a864d0a4d318599cc19fba55dec2393a9": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 30244,
+    "faction": 2025,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 80,
+    "name": "Miura Brightweaver",
+    "npcflag": 3200,
+    "rank": 0,
+    "subname": "Poisons & Reagents",
+    "type": 7
+  },
+  "77707e635558e42ac1a91fd99b7d566d48f91bde297ab966ae71f7f06e6a6dae": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 29274,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 16506,
+    "faction": 312,
+    "gossip_menu_id": 0,
+    "maxlevel": 81,
+    "minlevel": 81,
+    "name": "Naxxramas Worshipper",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "7771244f3f278f11303160cc7629a9078cb82fc0be3e7d9476328b3ea14c3ad2": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 20598,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 1,
+    "minlevel": 1,
+    "name": "Wild Shadow Fissure (1)",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "777255c784929e9569ea6f46cd22e4655f5bab5a92602d1e798e7bf575a05288": {
+    "CompletionText": "You appear to have uncovered the wreckage of... a robotic chicken?  The voice from within the egg crackles to life again:$B$B\"Yes, excellent work!  This is indeed my homing robot, though my sensors indicate that it needs a jump start before it can fly back to Booty Bay for repairs.  Go ahead and place the beacon inside the rover.  The beacon will take care of the rest!\"",
+    "ID": 351
+  },
+  "7773495ce7bca68f25e74b8741456ddf471751b97c2f195a98c6fdf714de7509": {
+    "ID": 8593,
+    "RewardText": "Yes... the worm's skin will make for an excellent protective layer.  Combined with the strongest parts from the Qiraji we've destroyed on our way here, this should make for a formidable piece of armor.  May it aid you in facing the unspeakable horrors that await inside!"
+  },
+  "777443127eb583d23094eb835419e7e4ff7f8c30096e9665ac0c7f3b52c1a28f": {
+    "CreatureID": 27756,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Welcome Friend.  Keep your head down and hold on tight!",
+    "comment": "Ruby - On welcome"
+  },
+  "77745671305f9ecf3544a73041980b3a77968bc8a3278d9b985d90422129d3a7": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 23560,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Provisioner Ameenah",
+    "npcflag": 2176,
+    "rank": 0,
+    "subname": "Reagents",
+    "type": 7
+  },
+  "7774b3b1cf87662a8e1d734368014fbf289f2c175dcad764f70aca1b75c95e8c": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 32453,
+    "faction": 2007,
+    "gossip_menu_id": 0,
+    "maxlevel": 75,
+    "minlevel": 75,
+    "name": "Dalaran Citizen",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77753c14dc28b83a44b77784fe7672de87db318629b78466b30c172051b5193d": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 5823,
+    "faction": 413,
+    "gossip_menu_id": 0,
+    "maxlevel": 11,
+    "minlevel": 11,
+    "name": "Death Flayer",
+    "npcflag": 0,
+    "rank": 4,
+    "subname": null,
+    "type": 1
+  },
+  "777741ab3c42eff2ad2b61fbbfe68107408ec37c2f7d4bd73cf8bb7580fd0434": {
+    "ID": 4287,
+    "MenuID": 3533,
+    "conditional": true,
+    "texts": {
+      "text0_0": "What do ye need directions to?",
+      "text0_1": "What do ye need directions to?"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "77779fcfd4b656c4abde5dcd01ff031580c7b28ca9b651600c4ee38ec596b305": {
+    "ID": 9866,
+    "LogDescription": "Deliver the news to Farseer Corhuk at Garadar.",
+    "LogTitle": "He Will Walk The Earth...",
+    "QuestDescription": "Will you do me one last honor, $N? I do not wish to return to Garadar. I believe that my destiny lies elsewhere - that I will serve a greater purpose someday.$B$BPlease, return to Farseer Corhuk and tell him that I will not be returning. That I cannot return. I must walk the earth... He will understand.",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "7779ed89620bc6e84955d6e98f0e4430796b2f3fa15f11a8a8f9c661afe240af": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 25455,
+    "faction": 1981,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Snarlfang's Totem",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 11
+  },
+  "777a326466a70df7a38a43773e6dd797b575444c87660a006e73c0132739837b": {
+    "areas": [],
+    "entry": 22741,
+    "name": "Irondeep Explorer (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      13099
+    ]
+  },
+  "777a8d6291e1e030728e302ee104f4cb97632725691b47080779839196ebc2e7": {
+    "ID": 12733,
+    "MenuID": 9475,
+    "conditional": true,
+    "texts": {
+      "text0_0": "Scourge aberrations... They'll get what's coming to them soon enough."
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "777abefb4387d29b2559aaf8172999f1e5a19c6af27f5733f9fc23b171df3284": {
+    "areas": [],
+    "entry": 37530,
+    "name": "Slimy Tentacle",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn",
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "777cbb00b59738a771557cd711970ddff50a0482ca5fb2d97be46d990755de97": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 22608,
+    "difficulty_entry_2": 31932,
+    "difficulty_entry_3": 37250,
+    "entry": 13422,
+    "faction": 1216,
+    "gossip_menu_id": 0,
+    "maxlevel": 61,
+    "minlevel": 61,
+    "name": "Champion Defender",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "777d42804d69d01db8851423dd9113859f4e8d087c5bd18c281999c68822b6e2": {
+    "CompletionText": "Ya have the sapta, $G brotha:sista;?$B$BI know another that had trouble after defeating da corrupt water spirit--seems he waited too long and he came out of the spirit world too quick fer his taste. Hate to see dat happen to another, so I'll just wait here fer a bit to make sure no one else be needin' me help.",
+    "ID": 1103
+  },
+  "777e9f7fca9adc405443d8ec154ca87c49ed3d79d416142557b9810ca80fe7ac": {
+    "areas": [
+      2522
+    ],
+    "entry": 5241,
+    "name": "Gordunni Warlord",
+    "region": "map-1-zone-357",
+    "regions": [
+      "map-1-zone-357"
+    ],
+    "review_reasons": [],
+    "spawns": 16,
+    "subname": null,
+    "variant_of": []
+  },
+  "777ec052f5753f06308acf133f5c1ca49ae0d11d38d5d72626cc85d59a80057e": {
+    "CreatureID": 1368,
+    "GroupID": 0,
+    "ID": 4,
+    "Language": 7,
+    "Text": "You know there are crocolisks in the Canals. They were brought from the swamp as pets, but got thrown in the canals.",
+    "comment": "Justin - Talk"
+  },
+  "777eff9e16f4033cf9cf64504eea97540573a6de77043393d49fb34d1f76b7b1": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 29966,
+    "faction": 1949,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Kamagua Turtle Rider",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "777fbd0e6d2a6bb3fa7582660d1e9099c4c69071091013a521d4cc96f6c50041": {
+    "ID": 4862,
+    "MenuID": 4006,
+    "conditional": true,
+    "texts": {
+      "text0_0": "Kodo beasts, my friend!  Trained from a young age and raised on the Golden Plains of Mulgore, these fine animals will make even finer steeds!  Please, browse my selection, and see for yourself why we taurens have come to rely on these magnificant creatures!",
+      "text0_1": "Kodo beasts, my friend!  Trained from a young age and raised on the Golden Plains of Mulgore, these fine animals will make even finer steeds!  Please, browse my selection, and see for yourself why we taurens have come to rely on these magnificant creatures!"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "7788112c3538e6fa2bf491c7660ac01dee8c372056150e54416a38369e8e6dc1": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 31132,
+    "faction": 58,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 1,
+    "name": "Flametongue Totem VI",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 11
+  },
+  "77882f9fb5dc32f346ed99bacf4d02f946426bdccd4a7adbed208a2649093b30": {
+    "areas": [],
+    "entry": 33784,
+    "name": "[ph] test tournament charger",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "possible_helper_not_person",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "7788781e7201902f9e8afd44613084cb5b126f65c42cf51e3b6d8c896bb202ef": {
+    "AIName": "",
+    "ScriptName": "npc_injured_patient",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 12936,
+    "faction": 12,
+    "gossip_menu_id": 0,
+    "maxlevel": 48,
+    "minlevel": 44,
+    "name": "Badly Injured Alliance Soldier",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "778a52217a56e1acf75b43f37599fa88507344924d61088c68df9c552fd61662": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 35008,
+    "faction": 83,
+    "gossip_menu_id": 0,
+    "maxlevel": 81,
+    "minlevel": 81,
+    "name": "Sawemba",
+    "npcflag": 1048576,
+    "rank": 1,
+    "subname": "Battlemaster",
+    "type": 7
+  },
+  "778b2c9e814a36dd9584da82fad6a16b66a22ec7f51f2fa2a09229c5f5f17b56": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 25958,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 71,
+    "minlevel": 71,
+    "name": "Volatile Felfire Fiend Sunwell",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 3
+  },
+  "778bd97ee17028c40b26c46a9724c49127a23d51eb46441bdb5fe434388e5194": {
+    "AIName": "NullCreatureAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 30413,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 74,
+    "minlevel": 74,
+    "name": "Channel Image Target",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 10
+  },
+  "778fdb433052079281bc4d38804b6e84a4789c44f4e00beb8ccd515c1b21d557": {
+    "action_type": 2,
+    "comment": "Horizon Scout Crewman - On Data Set 1 1 - Set Faction 250",
+    "entryorguid": 8386,
+    "event_type": 38,
+    "id": 0,
+    "source_type": 0
+  },
+  "77910702066a8a676e8c7d24794cf38e2d5c4e56dd2afc39108a104e56f778d6": {
+    "action_type": 11,
+    "comment": "Whirlwind Stormwalker - In Combat - Cast '11824'",
+    "entryorguid": 11577,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "77918429650b14924ea6c8dc012984e6f3111ae26bdc1a3660503dc087577751": {
+    "action_type": 11,
+    "comment": "Ramstein the Gorger - In Combat - Cast Knockout",
+    "entryorguid": 10439,
+    "event_type": 0,
+    "id": 2,
+    "source_type": 0
+  },
+  "7792685b5cfb7cdf887406166a0433062f3142747ac58b6fc9d8bf1062f48371": {
+    "CreatureID": 3582,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Ah, I see you toil with relics of the past.",
+    "comment": "Aman"
+  },
+  "77937895b78403dad5b21275baf74f0aab14c6cdf9344a965d5351e83338011e": {
+    "ID": 2980,
+    "LogDescription": "Rok Orhan in Camp Mojache wants you to kill 10 Gordunni Shaman, 10 Gordunni Warlocks, and 5 Gordunni Maulers.",
+    "LogTitle": "The Ogres of Feralas",
+    "QuestDescription": "Now that you have proven that you are a true fighter, I trust that you possess the courage to continue with the task at hand.$B$BTravel to the High Wilderness, southwest of here. There lie some abandoned and destroyed structures, on land that once belonged to the night elves. Look for these ruins, and when you see the withered trees and desecrated terrain, you will find the Gordunni. Push them back.$B$BThese ogres are much stronger than the ones you faced previously, $N. Be aware.",
+    "RequiredNpcOrGo1": 5236,
+    "RequiredNpcOrGo2": 5240,
+    "RequiredNpcOrGo3": 5234,
+    "RequiredNpcOrGo4": 0
+  },
+  "7793de5b301918b37f3df448cb8cae25bda28a21204f7486563d94a5b102068d": {
+    "areas": [
+      4100
+    ],
+    "entry": 31017,
+    "name": "Mal Corricks",
+    "region": "map-595-zone-4100",
+    "regions": [
+      "map-595-zone-4100"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Barkeep",
+    "variant_of": []
+  },
+  "7796ac7a693172e69c1d47e9079acab011a37515f07c6c6f4133f45a7e256b90": {
+    "areas": [],
+    "entry": 23544,
+    "name": "Kyle Radue",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77978476c7c8aa37cd9ae9f342a73c9004fe281057bdb09b184d6593be5a1539": {
+    "CreatureID": 17801,
+    "GroupID": 0,
+    "ID": 4,
+    "Language": 0,
+    "Text": "My blood is like venom!",
+    "comment": "Coilfang Siren"
+  },
+  "77991918981fe9f9448ee77ac02f1729a91f2c0a22747d09772c14a446ec89d8": {
+    "areas": [
+      0
+    ],
+    "entry": 31706,
+    "name": "Crewman Stembolt",
+    "region": "map-610-zone-0",
+    "regions": [
+      "map-610-zone-0"
+    ],
+    "review_reasons": [
+      "location_unresolved"
+    ],
+    "spawns": 1,
+    "subname": "The Cloudkisser",
+    "variant_of": []
+  },
+  "779964ce703e9117db4973dd6ea787c0f9582c635b0b72d71fe6696ce9d37da3": {
+    "areas": [],
+    "entry": 17641,
+    "name": "Sunhawk Ambusher",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "7799f59b5b13001cdceb64d2f21d49322128aa2b22bbda83b14e864215c2e0e9": {
+    "CreatureID": 30396,
+    "GroupID": 2,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Looks like you can still best me in a fair fight, little brother.",
+    "comment": "Loken"
+  },
+  "779b0952dd61676a8b4f34a81d92602a34ec330a21c2bc4dba9ebe3862b02405": {
+    "areas": [
+      0
+    ],
+    "entry": 25083,
+    "name": "Deathguard Lawson",
+    "region": "map-591-zone-0",
+    "regions": [
+      "map-591-zone-0"
+    ],
+    "review_reasons": [
+      "location_unresolved"
+    ],
+    "spawns": 1,
+    "subname": "The Thundercaller",
+    "variant_of": []
+  },
+  "779bc4db34bbb310fff872f1e2737a8db600613b27dec8f1f42ae01910d9f01f": {
+    "areas": [],
+    "entry": 26688,
+    "name": "Statis orb",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "779d53605bd5f6cd5e2aa68fa03028b624e70e0efc63fa692cdf72f596b257bd": {
+    "CreatureID": 16152,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Such easy sport.",
+    "comment": "attumen SAY_RANDOM1"
+  },
+  "779e334339e48c21418417513cba43316887f7c088cffa9a5a61ebfebb4b5b91": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 20961,
+    "faction": 45,
+    "gossip_menu_id": 0,
+    "maxlevel": 63,
+    "minlevel": 62,
+    "name": "TestOgreRed03",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "779e9c36f65812a20f8262ac9c56442070488b45f20a05a99b35b9d19c9c9e08": {
+    "areas": [],
+    "entry": 22413,
+    "name": "Ethereal Caster, Type A (Purple)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "779ea5ec551d6ebbdbd1c2f8bc7f448d0b024c2119c21596b954da00102c5cdb": {
+    "areas": [],
+    "entry": 7704,
+    "name": "Mottled Red Raptor",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": null,
+    "variant_of": []
+  },
+  "779eaaa22d8e91cfbfcaa97ad3fdc80f499adb82a4927f4c29f53b84ec121bdb": {
+    "areas": [
+      189
+    ],
+    "entry": 14553,
+    "name": "Swift Green Mechanostrider",
+    "region": "map-0-zone-1",
+    "regions": [
+      "map-0-zone-1"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "779f7afd7ca38b650fed985a5f80504bd9476eca921062adb47131db27a100a3": {
+    "action_type": 25,
+    "comment": "Bleakheart Satyr - Between 0-15% Health - Flee For Assist (No Repeat)",
+    "entryorguid": 3765,
+    "event_type": 2,
+    "id": 0,
+    "source_type": 0
+  },
+  "779fb84cea035855ad400be52a78831aa4db4d3d679455935734fd8bbfb00956": {
+    "action_type": 11,
+    "comment": "Grunter - In Combat - Cast 'Tendon Rip'",
+    "entryorguid": 8303,
+    "event_type": 0,
+    "id": 2,
+    "source_type": 0
+  },
+  "779fc8651b436b5c46ee2f2200d5432fc9be3d92aca5b267a4c987b7332f8d8c": {
+    "ID": 11876,
+    "RewardText": "<Arch Druid Lathorius wipes away his tears.>$B$BThey never stood a chance. Now orphaned, they will surely die on their own."
+  },
+  "77a0b6e01e05d55bf93f1c9c339afe96e0d4985e718743b7a1f1fc1bcdfb741d": {
+    "CreatureID": 17969,
+    "GroupID": 4,
+    "ID": 0,
+    "Language": 0,
+    "Text": "We're almost to the refuge!  Let's go.",
+    "comment": "Kayra Longmane"
+  },
+  "77a2fdbb0bd62d0cb5e6f92ac72095fac1e4a0c4a1025bc2da60a0c5c02bdac8": {
+    "areas": [
+      1584
+    ],
+    "entry": 8915,
+    "name": "Twilight's Hammer Ambassador",
+    "region": "map-230-zone-1584",
+    "regions": [
+      "map-230-zone-1584"
+    ],
+    "review_reasons": [
+      "location_unresolved"
+    ],
+    "spawns": 12,
+    "subname": null,
+    "variant_of": []
+  },
+  "77a59c65bc8effc494ae3f7d8b0f2532a5ea550f1bc5f3c696c1fc88a824dec5": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 18535,
+    "faction": 90,
+    "gossip_menu_id": 0,
+    "maxlevel": 68,
+    "minlevel": 68,
+    "name": "Demos, Overseer of Hate",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": null,
+    "type": 3
+  },
+  "77a5c5dd3a5f114ff5436d83614e5de078e12d527f27a831025393b8c5e64e8a": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 11620,
+    "faction": 43,
+    "gossip_menu_id": 0,
+    "maxlevel": 58,
+    "minlevel": 57,
+    "name": "Spectral Marauder",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 6
+  },
+  "77a7c766ad52c5a3037a3827823ca407704437d20d0f55ff74580f3012227c93": {
+    "areas": [
+      925
+    ],
+    "entry": 1277,
+    "name": "Mountaineer Ganin",
+    "region": "map-0-zone-38",
+    "regions": [
+      "map-0-zone-38"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "77a7da5caa12a547328c71970ad071a17847d9c2aedc94156a0ca3f56b26f4fe": {
+    "CreatureID": 16518,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "The %s seems overjoyed.",
+    "comment": "Inoculated Nestlewood Owlkin"
+  },
+  "77a7e8651ac7c3092b5ee774b73b3214089ec8d11b91fb707ba7c7d2c64efd5d": {
+    "areas": [
+      17
+    ],
+    "entry": 3652,
+    "name": "Trigore the Lasher",
+    "region": "map-1-zone-17",
+    "regions": [
+      "map-1-zone-17"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "77a869cdb36eb4ea102f2afef0d1b2aee82768301886e7baceb4e0187acfc430": {
+    "areas": [],
+    "entry": 34784,
+    "name": "Legion Flame",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77a975c3d97908a579696699cc720164e61189f6b7b22e7c397c352ac1dbab95": {
+    "action_type": 11,
+    "comment": "Baelok - In Combat - Cast 'Draw Soul'",
+    "entryorguid": 31159,
+    "event_type": 0,
+    "id": 1,
+    "source_type": 0
+  },
+  "77aa36cef8a1769b37f7a1025ee3c5dd73a07c371502850ec0337a9b903fabb5": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 30019,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 76,
+    "minlevel": 76,
+    "name": "Duke Singen",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "The New Hotness",
+    "type": 4
+  },
+  "77ab8bc05e0fdddbb2a4acf3a24ae3589e1b2ca7df468bca62a2417325477bf6": {
+    "CreatureID": 15491,
+    "GroupID": 7,
+    "ID": 7,
+    "Language": 0,
+    "Text": "Remulos, look how easy they fall before me? You can stop this, fool. Turn the druid over to me and it will all be over...",
+    "comment": "Eranikus Say 7"
+  },
+  "77ab9573c2c68f318f58488c091f45447513c2862a377d8caa126a40f01ae537": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 706,
+    "faction": 190,
+    "gossip_menu_id": 0,
+    "maxlevel": 4,
+    "minlevel": 3,
+    "name": "Frostmane Troll Whelp",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77acd26c12fa1fcdfef8c95e26816764ed3d524f5f79c083d860684fc126152f": {
+    "action_type": 11,
+    "comment": "Felhound - In Combat - Cast 'Mana Burn'",
+    "entryorguid": 6010,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "77ad636f43db65438eadb45c1d77a16bc64bd5136449d34c1c7eaff060711bca": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 31501,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 30660,
+    "faction": 1720,
+    "gossip_menu_id": 0,
+    "maxlevel": 76,
+    "minlevel": 76,
+    "name": "Portal Guardian",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 2
+  },
+  "77ae55ceb8ee316fea70870be1b41d3f66a5ff0f5c7d1cfef50468eef7ec50f7": {
+    "areas": [],
+    "entry": 40043,
+    "name": "Meteor Strike",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77af7a0d7569e4dd98153380aeccb8dbb7796737ce7fc3ba0442eb45fd50c9cc": {
+    "action_type": 11,
+    "comment": "Vim gols Circle Bunny - On Update OOC  - Cast Vim gol: Summon Circle Popluation Tester D",
+    "entryorguid": 23040,
+    "event_type": 1,
+    "id": 0,
+    "source_type": 0
+  },
+  "77b07265191146cdbb0edb58f7863700927598f8555c2a055157cec7653c87e3": {
+    "areas": [],
+    "entry": 16449,
+    "name": "Spirit of Naxxramas",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": null,
+    "variant_of": []
+  },
+  "77b0db243b03cc8740d9f683552e59797102ef5f0ac3820d7f2f8f92be7619b4": {
+    "CompletionText": "Well, well, well, glad to see you made it out here, $N. Did you get the rubbings for Tymor?$B$BAs dangerous as this place is, there hasn't been too much action along the coast. That might be on account of the naga swimming underwater, but that's not my problem... I patrol the skies.",
+    "ID": 3449
+  },
+  "77b0fc86d53e4fb3c3a188d6a0f1f811d86d293974cf6d54630501a826199256": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 22318,
+    "faction": 58,
+    "gossip_menu_id": 0,
+    "maxlevel": 65,
+    "minlevel": 65,
+    "name": "Spirit Calling Totem",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 11
+  },
+  "77b25c5bef2279c3ea10328c4fa9da32f36c8419d122460bb35b1fadca136ca6": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 27537,
+    "faction": 2053,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 69,
+    "name": "Fordragon Lumberjack",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "77b29c8549ee8f441bb1ee80d168c527afc47b23342216648d9049e1c8c03d7a": {
+    "ID": 11297,
+    "LogDescription": "Speak to Apothecary Malthus at the Apothecary Camp.",
+    "LogTitle": "Keeping Watch on the Interlopers",
+    "QuestDescription": "Even the earth cannot hold back the tide of death washing over it. Corpses walk the land, spreading their putrefaction with alarming speed.$B$BA small expedition has made its way up the western cliffs and rests near Whisper Gulch. Take a look for yourself, $N. See if you can learn their purpose and dissuade them from bringing their poisons into our lands. Travel southwest from the post, toward the cliffs overlooking the western beach. Their camp will be west of the excavation at Steel Gate.",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77b2b73d7e3653687e9a2490b9d2233d6436925efd3a95f8e26b36bb131dcc20": {
+    "ID": 10902,
+    "LogDescription": "Go to the Black Morass in the Caverns of Time and obtain 10 Essences of Infinity from Rift Lords and Rift Keepers.  Bring these along with  5 Elixirs of Major Defense, 5 Elixirs of Mastery and 5 Elixirs of Major Agility to Lorokeem in Shattrath's Lower City.$B$B*WARNING!* You can only select one alchemy specialization.",
+    "LogTitle": "Master of Elixirs",
+    "QuestDescription": "I've devoted my life to perfecting my elixirs.  Despite my success, I haven't been able to create an elixir of eternal life.$B$BI think I know the reagent I'm missing.  I've heard of a place called the Caverns of Time in Azeroth where intruders known as rift lords and rift keepers phase in and out of the timeline.$B$BThis intrusive time-shifting creates tears in time itself, twisting it infinitely into crystallized essences.  Bring these to me along with samples of your work and I'll teach you all I know.",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77b3daaa6948020399a1d2b13f637674cef4a9a16c2cd5bf95d22f92fe26f44c": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 20241,
+    "faction": 1653,
+    "gossip_menu_id": 0,
+    "maxlevel": 65,
+    "minlevel": 65,
+    "name": "Provisioner Nasela",
+    "npcflag": 128,
+    "rank": 0,
+    "subname": "Mag'har Quartermaster",
+    "type": 7
+  },
+  "77b4125bc63f805b8ee67b4b885b5310d27a72fc29f34bf6c57ffaaedb4e37a5": {
+    "CreatureID": 21148,
+    "GroupID": 0,
+    "ID": 2,
+    "Language": 0,
+    "Text": "Let the siege begin!",
+    "comment": "Rift Keeper"
+  },
+  "77b4bd76ecff049c4eae9e6dbf6fd4365b316e630f5e229e0740a7680d46d977": {
+    "ID": 5250,
+    "LogDescription": "Find Starfall in Winterspring and speak with Wynd Nightchaser.",
+    "LogTitle": "Starfall",
+    "QuestDescription": "In Winterspring, to the north of Felwood, there are many ancient elven ruins. It's a harsh land, but it holds many secrets and places to explore.$B$BMy studies here keep me so busy that I have not had the opportunity to travel to Winterspring for some time. But there's no reason why you shouldn't travel there and study the ruins.$B$BWhile you're there, look for Wynd Nightchaser. He spends most of his time in Starfall and he knows a lot about the area.$B$BTell him that you are a student of mine...",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77b6404886896d7bf9cd62729ea06a26dc3ed40de081f123bd7b95667daad0ba": {
+    "areas": [
+      3683
+    ],
+    "entry": 19607,
+    "name": "Grek's Riding Wolf",
+    "region": "map-530-zone-3519",
+    "regions": [
+      "map-530-zone-3519"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "77b666cf0665bf2e688f5944daf6fecdcf7c5c90253f93c9d9567aeb45ebf5c7": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 1310,
+    "faction": 12,
+    "gossip_menu_id": 681,
+    "maxlevel": 30,
+    "minlevel": 30,
+    "name": "Evan Larson",
+    "npcflag": 4225,
+    "rank": 0,
+    "subname": "Hatter",
+    "type": 7
+  },
+  "77b9153608e223cd4ccdc90415d54c8a7529c309857f5bb4de65c3c7ec7055d2": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 33880,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 82,
+    "minlevel": 82,
+    "name": "Mimiron Image",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 5
+  },
+  "77bb399c524baa0852d480d0703d6eed19d21cb2ec79a8a53221e2caf81bd8bc": {
+    "action_type": 11,
+    "comment": "Goremaw - In Combat - Cast 'Carnivorous Bite' (Phase 1)",
+    "entryorguid": 27578,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "77bc9212ee95140845077fdef575aff42153f885b5ebd708d555f22c3078cb2b": {
+    "ID": 10753,
+    "RewardText": "I do not pride myself knowing we destroyed what Elune has created, but the corruption needed to be stopped. You have done well $c."
+  },
+  "77bd8d22d049d9b501de8a895bca152dab9eb2f5681b3ee675b2222529b005a0": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 20718,
+    "faction": 7,
+    "gossip_menu_id": 0,
+    "maxlevel": 1,
+    "minlevel": 1,
+    "name": "Outland Raptor, Green",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 1
+  },
+  "77bf3d27390194fa114bf8b693df5e41a6fcdee7d49ed4509181bcd848442b1c": {
+    "ID": 14108,
+    "LogDescription": "Crusader Silverdawn wants you to mount an Argent Hippogryph, throw 6 Flaming Spears at the North Sea Kraken and take out 3 Vrykul Deepcallers.$B$BYou can find the Argent Hippogryphs right outside the Argent Crusade tent at the Tournament Grounds.",
+    "LogTitle": "Get Kraken!",
+    "QuestDescription": "The Sunreavers and Silver Covenant sent ships north to engage the Kvaldir at Hrothgar's Landing, but were intercepted and detained by a Kvaldir Raiding vessel.  To make matters worse, the Kvaldir have found a way to call forth the dreaded Kraken that lives beneath the North Sea.  If anyone on board is to get out alive, that Kraken must be driven away and the Kvaldir's summoning ritual ... disrupted.$B$BCrusader, take these spears and an Argent Hippogryph will take you to the battle.",
+    "RequiredNpcOrGo1": 35009,
+    "RequiredNpcOrGo2": 35092,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77bfaaa91c01ce1a4812f525a04ecb40a3e186657e807f52ab74b7d781195f96": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 19075,
+    "faction": 1818,
+    "gossip_menu_id": 0,
+    "maxlevel": 60,
+    "minlevel": 60,
+    "name": "Skettis Outcast",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77c0229e8476c1a366f5b3d7d90f9fbbf8ba3c23cd636bb38d7937fbded25a1c": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 39744,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "[DND] GT Bomber Bunny 2",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 9
+  },
+  "77c03792470de5011def1b9bc5c020974028a0f10b9ee2c20ee1553878e8cf4c": {
+    "areas": [],
+    "entry": 5904,
+    "name": "[UNUSED] Hurll Kans",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77c1a370087ab486ddfb85188bd26076c517c54029d075cbde7f2a51df1fbb1f": {
+    "areas": [
+      3521,
+      3538,
+      3552,
+      3626,
+      3644,
+      3684,
+      3745,
+      3766,
+      3772,
+      3918
+    ],
+    "entry": 2614,
+    "name": "Air Force Alarm Bot (Alliance)",
+    "region": "map-530-zone-3483",
+    "regions": [
+      "map-530-zone-3483",
+      "map-530-zone-3518",
+      "map-530-zone-3519",
+      "map-530-zone-3520",
+      "map-530-zone-3521",
+      "map-530-zone-3522"
+    ],
+    "review_reasons": [
+      "multiple_regions",
+      "cpp_script"
+    ],
+    "spawns": 101,
+    "subname": null,
+    "variant_of": []
+  },
+  "77c237d98dcbb5da434263b0e542cdc8f38d343730f97b7f4550936a453add05": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 10388,
+    "faction": 21,
+    "gossip_menu_id": 0,
+    "maxlevel": 59,
+    "minlevel": 58,
+    "name": "Spiteful Phantom",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 6
+  },
+  "77c2816a326a2341a985bd4ae3495bbdb9c96b9269bd58a2c4a8182d40d14a5e": {
+    "areas": [],
+    "entry": 7119,
+    "name": "Jaedenar Summoner",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77c2d779426418b249f22cac4649a21005a2dcbcbd9cf79c2940195e9abd293d": {
+    "action_type": 11,
+    "comment": "On Update - Cast Emerge",
+    "entryorguid": 36840,
+    "event_type": 60,
+    "id": 0,
+    "source_type": 0
+  },
+  "77c3b918d45a6cec5037104653c75204ba9a07d4612152c5c2436efb15be387e": {
+    "ID": 9970,
+    "MenuID": 8070,
+    "conditional": true,
+    "texts": {
+      "text0_0": "If you have come all the way out here, then it must be that you dare to venture near Manaforge Ara.$B$BCare to buy or sell before you head over?"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "77c5523033455a787c3ca98db33c41d7336986d430c6ce59a5ac1df90f5c1db1": {
+    "ID": 33,
+    "LogDescription": "Bring 8 Diseased Wolf Pelts to Eagan Peltskinner outside Northshire Abbey.",
+    "LogTitle": "Wolves Across the Border",
+    "QuestDescription": "Whatever is affecting these wolves isn't going away. Each day that passes brings forth more sick wolves. It pains me to ask anyone to kill nature's beasts, but we must destroy the diseased young wolves before this little outbreak turns into an epidemic.$B$BKill diseased young wolves in the valley and bring me their diseased wolf pelts as proof of your deed.$B"
+  },
+  "77c5a8e99e42f1467321c28aa5f8274e662d1837bbe1bc73ff6144148c8d341b": {
+    "areas": [],
+    "entry": 19897,
+    "name": "Tainted Earthgrab Totem (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      18176
+    ]
+  },
+  "77c5f01d254d8472930a1b178992d17ebd367ecef0157bfce7a478acc736d80f": {
+    "areas": [
+      4193
+    ],
+    "entry": 27357,
+    "name": "Onslaught Raven Archon",
+    "region": "map-571-zone-65",
+    "regions": [
+      "map-571-zone-65"
+    ],
+    "review_reasons": [],
+    "spawns": 5,
+    "subname": "",
+    "variant_of": []
+  },
+  "77c5f9bede9a9bf4167c81d3f8f3a355e4a3611ddb3a2758820d2e767804d770": {
+    "areas": [
+      139,
+      2264,
+      2622,
+      2623,
+      2624
+    ],
+    "entry": 8597,
+    "name": "Plaguehound",
+    "region": "map-0-zone-139",
+    "regions": [
+      "map-0-zone-139"
+    ],
+    "review_reasons": [],
+    "spawns": 34,
+    "subname": null,
+    "variant_of": []
+  },
+  "77c66a16beb97fdfeaa0151ec47f977259a04b22c01c5ae6ff0961f2e5d0f0f6": {
+    "ID": 299,
+    "RewardText": "Ah the Goaz Stone is complete! Fine work, $N. Fine work indeed. Now I can continue with the delicate translation of this Titan script. I can make out new words already! Hmm. . .it says here, \"Old Gods. . .Chained Beneath the Land.\" This is the beginning of something epic."
+  },
+  "77c692c499288445095cf8d950186dc0cc57f1a3c2b69e02e962b4b08254f3fe": {
+    "areas": [
+      3991
+    ],
+    "entry": 24148,
+    "name": "David Marks",
+    "region": "map-571-zone-495",
+    "regions": [
+      "map-571-zone-495"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Poison Vendor",
+    "variant_of": []
+  },
+  "77c76b15fa45258b7148d8af1759e23068c9ad3b8d19cbdfe5a86030bef02084": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 4669,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 36,
+    "minlevel": 36,
+    "name": "Burning Blade Conjuror",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77c925917be14b35a7a55f13b511906a5c8282a3bb4dbd94453d66a318dc392d": {
+    "CreatureID": 1370,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 7,
+    "Text": "My father says that's just a story.",
+    "comment": "Brandon - Talk"
+  },
+  "77ca91b24d66c9d63b9400ea6959c273af8c5db487af8e549e4482037330ddc4": {
+    "CreatureID": 23355,
+    "GroupID": 0,
+    "ID": 2,
+    "Language": 0,
+    "Text": "I will make your death a quick one, $n.",
+    "comment": "Zarcsin - Random Yell on Spawn"
+  },
+  "77cae24c2f26a595e2c1c389379db8b2cde6e4f6a381f57095c10b0666e20215": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 4391,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 37,
+    "minlevel": 37,
+    "name": "Swamp Ooze",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 10
+  },
+  "77cbf3b456da4b0416226b0fd825a755bfdee9bc37cb38d8a18f53e78cb22943": {
+    "CreatureID": 16118,
+    "GroupID": 1,
+    "ID": 0,
+    "Language": 0,
+    "Text": "You so little and puny... you no make good servants for Kormok!",
+    "comment": "Kormok - Talk Aggro"
+  },
+  "77cc48ef351ed7c7b65293efdcc6e5deb28766560bd74a2eae61d3435171efca": {
+    "ID": 9516,
+    "RewardText": "You have my respect and thanks, $c. Perhaps we'll be able to create a new home here without having to worry about the Burning Legion yet again."
+  },
+  "77cca7fdd69314862412d955262baed61e94dc9d0850c2dbaa65155648f197f0": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 38289,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 60,
+    "minlevel": 60,
+    "name": "Unholy Infusion KC Bunny",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "77ccad6af8bdb3ba6695447d931da938ce69d3d48ff8601bd0544697fa1a1c41": {
+    "ID": 4763,
+    "LogDescription": "Fill the Empty Cleansing Bowl at the Auberdine Moonwell.$B$BGather a sample of fruit, nut, and grain from the northern Blackwood furbolg camps.$B$BMix the bowl and place it near the bonfire closest to the Cliffspring River at the northern camp, thus summoning the satyr corruptor.$B$BTake the Talisman of Corruption and bring it to Thundris Windweaver in Auberdine.",
+    "LogTitle": "The Blackwood Corrupted",
+    "QuestDescription": "We've learned that a source of furbolg corruption is from the satyr.  They hold sway via talismans that they channel magic through.  If the furbolg have a chance at salvation, we must lure out the satyr corruptor and take that talisman!$B$BFill this bowl at our moonwell and take samples of the furbolgs' food from their northern camp.  Mix them and place it near the bonfire by the river; any furbolgs who eat will be cleansed just long enough to lure out the satyr corruptor... who then you must slay!",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77cd2222e67139b1284cb68f19c5f2dd8c699bc3f116b7ac53207353b1f5530e": {
+    "CreatureID": 2716,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Raaar!!! Me smash $r!",
+    "comment": "Dustbelcher Wyrmhunter"
+  },
+  "77cec103a0e001a4ddf3b41076cf4cdeaa6792706b55255c173b911995d3443d": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 8406,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 50,
+    "minlevel": 50,
+    "name": "Or'lin Oakenfist",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77cf7115dbd0f7305b4a813c5f491d5a95f88334e41cdb2794fcb8954efa4ecb": {
+    "AIName": "",
+    "ScriptName": "npc_stable_master",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 22469,
+    "faction": 1732,
+    "gossip_menu_id": 9821,
+    "maxlevel": 65,
+    "minlevel": 65,
+    "name": "Fiskal Shadowsong",
+    "npcflag": 4194305,
+    "rank": 0,
+    "subname": "Stable Master",
+    "type": 7
+  },
+  "77d00a2efabe3ec5e79aaa94ea57bcd6dc17ff311c8a42ca11ab78d8fa4e5adb": {
+    "areas": [
+      3994
+    ],
+    "entry": 23922,
+    "name": "Halgrind Torch Bunny 02",
+    "region": "map-571-zone-495",
+    "regions": [
+      "map-571-zone-495"
+    ],
+    "review_reasons": [
+      "possible_helper_not_person"
+    ],
+    "spawns": 1,
+    "subname": "",
+    "variant_of": []
+  },
+  "77d04948b17b5f5013858192232f2e265129db2670d900ddd14ba277d413b3a8": {
+    "ID": 11432,
+    "LogDescription": "Mage-Lieutenant Malister has tasked you with slaying 5 Dormant Vrykul. Return to him at Westguard Keep when you have done so.",
+    "LogTitle": "Sleeping Giants",
+    "QuestDescription": "I've overheard what you've had to say with Father Levariol. Allow me to suggest that he's not having you go far enough.$B$BYou must also deal with the vrykul that lie dormant in the Waking Halls beneath Gjalerbron!$B$BI have no doubt that the rituals involved with awakening them are the key to their downfall. Most likely the necrolords have some device that you can use to bring the vrykul out of their dormant state prematurely.$B$BSurely such a disruption will prove fatal to the vrykul.",
+    "RequiredNpcOrGo1": 24669,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77d12545db1f8868ec42f60bbe208eb4c466304eb25cda2f4785795382e37c34": {
+    "MenuID": 7468,
+    "OptionID": 1,
+    "OptionNpcFlag": 65536,
+    "OptionText": "Make this inn your home.",
+    "OptionType": 8
+  },
+  "77d36472c5fa0cbdae09d9d7272aa9b61eb82483befa5f61a09b406d94932b21": {
+    "areas": [
+      3584
+    ],
+    "entry": 17666,
+    "name": "Astur",
+    "region": "map-530-zone-3525",
+    "regions": [
+      "map-530-zone-3525"
+    ],
+    "review_reasons": [
+      "cpp_script"
+    ],
+    "spawns": 1,
+    "subname": "Stable Master",
+    "variant_of": []
+  },
+  "77d3c6f200a1659e7bc4e63d5ad5a3c4af44d3621e54d30393ad3aa616877b92": {
+    "areas": [],
+    "entry": 28957,
+    "name": "[Chapter II] Scarlet Crusader Test Dummy Guy",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "possible_helper_not_person",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77d4c2d33743cc66ec5153f844cad8b25f590c442767c2a54f9d955b2846078e": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 2721,
+    "faction": 83,
+    "gossip_menu_id": 0,
+    "maxlevel": 35,
+    "minlevel": 35,
+    "name": "Forsaken Bodyguard",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77d4c679b4dabfdc98f63813db0c121e96fb446a1b84652290175c1f35f226f6": {
+    "areas": [],
+    "entry": 55,
+    "name": "Mean Ed the Blacksmith",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77d515f1afaa7060ab02116313bfa8da43e8743f07e56883c1e53bef0d8263a6": {
+    "areas": [
+      2557
+    ],
+    "entry": 11456,
+    "name": "Wildspawn Shadowstalker",
+    "region": "map-429-zone-2557",
+    "regions": [
+      "map-429-zone-2557"
+    ],
+    "review_reasons": [
+      "location_unresolved"
+    ],
+    "spawns": 8,
+    "subname": null,
+    "variant_of": []
+  },
+  "77d6491337846fe873f7333c5d02f615ed28a8dd165094c294d9f8523cd2e1de": {
+    "ID": 10843,
+    "RewardText": "<Leoroxx appraises you with a keen eye, seemingly trying to take your measure.>$B$BThe death of Gnosh Brognat is a boon to all of the Mok'Nathal.  This is a good thing for you.$B$BLet us see if we can push the boundaries of your prowess just a bit more."
+  },
+  "77d6bf541221119c1d63a359f7f240abc3ba5888f830e1ad74ef547bc1775f96": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 32145,
+    "faction": 39,
+    "gossip_menu_id": 0,
+    "maxlevel": 77,
+    "minlevel": 76,
+    "name": "Wildpaw Brute (2)",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77d854eaf81f2caee531c1c731e4b6b02c1d9a3b8b08f1e9d46cae4fab3aa221": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 11753,
+    "faction": 855,
+    "gossip_menu_id": 0,
+    "maxlevel": 58,
+    "minlevel": 58,
+    "name": "Gogo",
+    "npcflag": 2,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77d8db1cb00480f107557244ec9fc0661330d8884d4f2bc80b255e5f5a65423a": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 24956,
+    "faction": 35,
+    "gossip_menu_id": 9053,
+    "maxlevel": 66,
+    "minlevel": 66,
+    "name": "Juniper",
+    "npcflag": 1,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "77dbc825184d57af9350fcb14ad6e7ca76245d56e2307e257e6b2cdaa6acae60": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 11026,
+    "faction": 875,
+    "gossip_menu_id": 4139,
+    "maxlevel": 24,
+    "minlevel": 24,
+    "name": "Sprite Jumpsprocket",
+    "npcflag": 1,
+    "rank": 0,
+    "subname": "Apprentice Engineer",
+    "type": 7
+  },
+  "77dd18fd431bb1b781531d5b5c048f8ee640d948e9ad5ec48d513d8e9fa044e6": {
+    "AIName": "",
+    "ScriptName": "npc_mr_bigglesworth",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 16998,
+    "faction": 32,
+    "gossip_menu_id": 0,
+    "maxlevel": 5,
+    "minlevel": 5,
+    "name": "Mr. Bigglesworth",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 8
+  },
+  "77dd2af03096a8135f936dc337e3e6ea47e206b62bfa75ebd840038aacfdcfb1": {
+    "areas": [],
+    "entry": 33218,
+    "name": "Pyrite Safety Container",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "cpp_script",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77dd4ff948bbf7b6d55741ff775dc6c9b75e7e608abc22070945b2758af0f454": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 11287,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 37,
+    "minlevel": 37,
+    "name": "Baker Masterson",
+    "npcflag": 130,
+    "rank": 0,
+    "subname": null,
+    "type": 6
+  },
+  "77de999713148cba86ac6bbadf7111d7de6f5923aaf34547d05231bbbde23a3a": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 7341,
+    "faction": 152,
+    "gossip_menu_id": 0,
+    "maxlevel": 36,
+    "minlevel": 35,
+    "name": "Skeletal Frostweaver",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": null,
+    "type": 6
+  },
+  "77dfebf851912434783ae554e3b21ad291320e6c2fb54bb1c803f8a05122491f": {
+    "CreatureID": 22366,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "Thank you for allowing me to visit, $n.  You have a very colorful soul, but it's a little brighter than I prefer... or I might have stayed longer!",
+    "comment": "Demoniac Visitation"
+  },
+  "77e004078defd3c6d3c6d5e6561c63372591ec94c576c833d5b51fc760f56379": {
+    "areas": [
+      3641
+    ],
+    "entry": 18077,
+    "name": "Umbrafen Oracle",
+    "region": "map-530-zone-3521",
+    "regions": [
+      "map-530-zone-3521"
+    ],
+    "review_reasons": [],
+    "spawns": 15,
+    "subname": null,
+    "variant_of": []
+  },
+  "77e01de476755178a181a905cfb126307ad93a1672d61b03eedcfdf8dc3fa36a": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 28301,
+    "faction": 2023,
+    "gossip_menu_id": 0,
+    "maxlevel": 1,
+    "minlevel": 1,
+    "name": "ZP - Retch! Bunny",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "77e054d8a2fad6a98670af2e7c74ecba34f6aa4630a8d3bdae7d5c4ef125b56f": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 35405,
+    "faction": 83,
+    "gossip_menu_id": 0,
+    "maxlevel": 81,
+    "minlevel": 81,
+    "name": "Overlord Agmar (1)",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "77e0de3dbc20199c4b7e59180e3c7d292820fc48688a8d5488c3cac4b518f781": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 4296,
+    "faction": 67,
+    "gossip_menu_id": 0,
+    "maxlevel": 34,
+    "minlevel": 33,
+    "name": "Scarlet Adept",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "77e16dd481b5e210ee110e6d37bbe39df7f12498a2f50eab7b8fdf3a736cc560": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 15840,
+    "faction": 777,
+    "gossip_menu_id": 0,
+    "maxlevel": 17,
+    "minlevel": 15,
+    "name": "Might of Kalimdor Sergeant",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 7
+  },
+  "77e1c6402342d7f0d555bb8be8df398fb9f6f4a3a989fd076eff1870436e88df": {
+    "CreatureID": 23602,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 7,
+    "Text": "It's good to see you defending Theramore with pride, friend.",
+    "comment": "Deserter Agitator"
+  },
+  "77e1c642e2d3b1160bdf82e093540ba3d1980ab05d25213e4732af64bcc16969": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 23308,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Dragonmaw Peon Work Node",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "77e2c9020871e7e1a07e728a42df06aa99fd6fc386c71a23d0cb871db8bfd408": {
+    "ID": 14777,
+    "MenuID": 10666,
+    "conditional": true,
+    "texts": {
+      "text0_0": "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the battle has begun.  Hurry to Wintergrasp and support our forces!",
+      "text0_1": "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the battle has begun.  Hurry to Wintergrasp and support our forces!"
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "77e3de227cded0e9e0414022c2ad509f4fab658d2a57dcca20912274540957c9": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 19089,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 1,
+    "minlevel": 1,
+    "name": "[PH] Gossip NPC Tauren Male, Christmas",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77e483934324d65d132a8fa0313bd669359015585cc85dfb1edde473b044348a": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 3933,
+    "faction": 126,
+    "gossip_menu_id": 0,
+    "maxlevel": 14,
+    "minlevel": 14,
+    "name": "Hai'zan",
+    "npcflag": 642,
+    "rank": 0,
+    "subname": "Butcher",
+    "type": 7
+  },
+  "77e4b6cd4e41f45f0c09a599646656b9455635bbabb241267fbd5e65069d7a9b": {
+    "areas": [],
+    "entry": 22511,
+    "name": "Dark Riding Talbuk",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77e557a48a5d8f8f000082ee89a789cddeeaba69c97577c85b4abea71267a1f4": {
+    "ID": 8540,
+    "LogDescription": "Bring 3 Ornate Mithril Boots to Vish Kozus, Captain of the Guard at Cenarion Hold in Silithus.  You must also bring Logistics Task Briefing II in order to complete this quest.",
+    "LogTitle": "Boots for the Guard",
+    "QuestDescription": "The mounted division of the Cenarion Hold guard is in short supply of ornate mithril boots.  Procure a batch and deliver them immediately to Captain Vish Kozus in Cenarion Hold.",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77e592a9ad61351bf892f87cadb2d7317e309a398aca17393922ef6b9d5c7ee9": {
+    "action_type": 11,
+    "comment": "Irondeep Shaman - Combat - Cast 'Earthbind Totem' (Normal Dungeon)",
+    "entryorguid": 11600,
+    "event_type": 0,
+    "id": 1,
+    "source_type": 0
+  },
+  "77e6223430d70c2f1e9124cfc243212811725b7d0f0df5cddf90f6d0c5e53a2c": {
+    "areas": [
+      4350
+    ],
+    "entry": 28606,
+    "name": "Havenshire Mare",
+    "region": "map-609-zone-4298",
+    "regions": [
+      "map-609-zone-4298"
+    ],
+    "review_reasons": [
+      "phase_mask",
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 17,
+    "subname": "",
+    "variant_of": []
+  },
+  "77e7dbcf66259b1b1cf5e073a40e832a04287218aad9d7ce2ba15c1952cd022d": {
+    "CreatureID": 28683,
+    "GroupID": 1,
+    "ID": 1,
+    "Language": 0,
+    "Text": "Perhaps you'll think twice about stealin' one of Kitrik's horses next time, eh?",
+    "comment": "Stable Master Kitrik"
+  },
+  "77e8e0420b06ff93ae0c37d4ea5282b26b04b26f9c9ec78ba353bf45d064c069": {
+    "CreatureID": 18146,
+    "GroupID": 3,
+    "ID": 0,
+    "Language": 0,
+    "Text": "%s surveys the small ranger practice ground with a condescending smirk.",
+    "comment": "Champion Vranesh"
+  },
+  "77ea2639569b9fcaeae8b6d9adc3ad302684870ed96201a3de0ac3dbb40b4030": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 18029,
+    "faction": 1700,
+    "gossip_menu_id": 0,
+    "maxlevel": 20,
+    "minlevel": 20,
+    "name": "Defender Kajad",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "Hand of Argus",
+    "type": 7
+  },
+  "77eab67f3b92c33a1d1b5ec22f035d7b6500a1d7eb08b69b393c200d92269db1": {
+    "CreatureID": 3518,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 7,
+    "Text": "Freshly baked bread for sale!",
+    "comment": "Thomas Miller"
+  },
+  "77ee36425567f2f7a9dfaa11af0de8a34855620d965082544f3521c7a6c13415": {
+    "CreatureID": 24405,
+    "GroupID": 3,
+    "ID": 1,
+    "Language": 0,
+    "Text": "I hope it helps. These vile beasts simply must be stopped!",
+    "comment": "SAY_ADARRAH_2"
+  },
+  "77ee82c0b45be72ba216b6e39b818189376232e594ceb7460ca84169ec5693ea": {
+    "areas": [
+      3745
+    ],
+    "entry": 20504,
+    "name": "Golden Gryphon",
+    "region": "map-530-zone-3520",
+    "regions": [
+      "map-530-zone-3520"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": null,
+    "variant_of": []
+  },
+  "77ee83de661bd024658d902f53204ae0beb5a4b4ea8f9de690c80a2baf41141e": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 32089,
+    "faction": 1216,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 79,
+    "name": "Stormpike Bowman (2)",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77ee94faad441cd3ff92e8645beb7daf8579c891e417afbf792341d691b15341": {
+    "areas": [
+      3674
+    ],
+    "entry": 18492,
+    "name": "Tavgren's Kodo",
+    "region": "map-530-zone-3519",
+    "regions": [
+      "map-530-zone-3519"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "",
+    "variant_of": []
+  },
+  "77eedd6ba10e8fa86cfb54eb38136af729711b45c51e7aa87bc8f0fd8c53080a": {
+    "AIName": "",
+    "ScriptName": "boss_flame_leviathan",
+    "difficulty_entry_1": 34003,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 33113,
+    "faction": 1965,
+    "gossip_menu_id": 0,
+    "maxlevel": 83,
+    "minlevel": 83,
+    "name": "Flame Leviathan",
+    "npcflag": 0,
+    "rank": 3,
+    "subname": "",
+    "type": 9
+  },
+  "77ef3ca6c7235001f3fa9c0439c38513fe36632404e05b75b8fc0d620d2f32d8": {
+    "MenuID": 9219,
+    "OptionID": 0,
+    "OptionNpcFlag": 1,
+    "OptionText": "How long have you worked for the Cult of the Damned?",
+    "OptionType": 1
+  },
+  "77f1eb86359ec21927d6138b7fe261e4f79fb69087f595ec4235a38c6f654d6b": {
+    "CreatureID": 16795,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 35,
+    "Text": "I pity you, Forsaken.  Your soul is devoid of light.",
+    "comment": "Draenei Prisoner"
+  },
+  "77f279259933f1bc3760896d233bccfbc8f3f675875ec557be567360a31352f3": {
+    "areas": [],
+    "entry": 23692,
+    "name": "Shaghide Boar",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77f2eee6fb113d8978096cc6c3ca11a1acd252b9ae0a5caedf9ca40345628279": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 29257,
+    "faction": 1965,
+    "gossip_menu_id": 0,
+    "maxlevel": 70,
+    "minlevel": 70,
+    "name": "Omar the Test Dragon Gen2",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 2
+  },
+  "77f301e77fdde90812927a0f0d72d11416d01905ce9402a5662b81a46ffb62db": {
+    "ID": 7003,
+    "LogDescription": "Use Zorbin's Ultra-Shrinker to zap any kind of giant found in Feralas into a more manageable form.  Bring 15 Miniaturization Residues found on the zapped versions of these giants to Zorbin Fandazzle at the docks of the Forgotten Coast, Feralas.",
+    "LogTitle": "Zapped Giants",
+    "QuestDescription": "I'm going to have to do something about the giants if I stay out here!  They're certainly not good for business, now are they?$B$BI've been working on a variant of a gnomish shrinking ray, but I'm using superior GOBLIN technological advances in its construction!  In an effort to avoid inconveniences for myself such as death, I'd like for you to try it out on any of the giants in Feralas.  You should find miniaturization residue on them after you shrink them - bring me back some!",
+    "RequiredNpcOrGo1": 0,
+    "RequiredNpcOrGo2": 0,
+    "RequiredNpcOrGo3": 0,
+    "RequiredNpcOrGo4": 0
+  },
+  "77f309cfe4aa7c34563c941753781b01f32c5ceea21d1d343a543c0e51d81b17": {
+    "areas": [],
+    "entry": 17813,
+    "name": "[UNUSED] Lost Goblin [PH]",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  },
+  "77f347f696e17d5d10c8246fdb62307f83b2bbc201927749f23f71c44b5bca98": {
+    "CreatureID": 26861,
+    "GroupID": 0,
+    "ID": 0,
+    "Language": 0,
+    "Text": "You invade my home and then dare to challenge me?  I will tear the hearts from your chests and offer them as gifts to the death god! Rualg nja gaborr!",
+    "comment": "King Ymirom SAY_AGGRO"
+  },
+  "77f39278da0832a5eec276535b3885f23f024f0f211076abdccf300236691692": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 10438,
+    "faction": 21,
+    "gossip_menu_id": 0,
+    "maxlevel": 61,
+    "minlevel": 61,
+    "name": "Maleki the Pallid",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": null,
+    "type": 7
+  },
+  "77f439d53e1e8bd8a5ddb3fe68a3f44664de6a2546d5e9cd8b3410a26479ecbe": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 21423,
+    "faction": 14,
+    "gossip_menu_id": 0,
+    "maxlevel": 63,
+    "minlevel": 63,
+    "name": "Gore-Scythe Ravager",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": null,
+    "type": 1
+  },
+  "77f4436240886e4220b369332bd18aa6185f8ba66e023f6c44ced5b73acb8796": {
+    "areas": [
+      3703
+    ],
+    "entry": 21432,
+    "name": "Almaador",
+    "region": "map-530-zone-3703",
+    "regions": [
+      "map-530-zone-3703"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Sha'tari Quartermaster",
+    "variant_of": []
+  },
+  "77f4d3ca465903f2089c5a95f53d747fd877d9459309d5a71b4ab3be6c6a1900": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 37814,
+    "faction": 35,
+    "gossip_menu_id": 0,
+    "maxlevel": 60,
+    "minlevel": 60,
+    "name": "Shadow's Edge Axe Bunny",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 10
+  },
+  "77f609148929c9fe18fb3a33d58321ec1505d0a8d019998b29f51c94aa16d832": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 38900,
+    "faction": 714,
+    "gossip_menu_id": 0,
+    "maxlevel": 80,
+    "minlevel": 80,
+    "name": "Auctioneer Kavarn",
+    "npcflag": 0,
+    "rank": 0,
+    "subname": "",
+    "type": 7
+  },
+  "77f625670007bce880dab40404463114612f351ac6a11db8f7621cd6645ed6e3": {
+    "areas": [],
+    "entry": 30966,
+    "name": "Hardened Steel Berserker (1)",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "difficulty_alias",
+      "no_static_spawn"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": [
+      28579
+    ]
+  },
+  "77f9d06ae031d7edcd67c379a7d40c6bb2cafe129c125b222b3dc2d87d939dc8": {
+    "action_type": 11,
+    "comment": "Rabid Cannibal - In Combat - Cast 'Carnivorous Bite'",
+    "entryorguid": 29722,
+    "event_type": 0,
+    "id": 0,
+    "source_type": 0
+  },
+  "77fa346460766231bb250e62fcb3f8876c76b4548d34d5a3b6aa0ce4478275a2": {
+    "ID": 9680,
+    "MenuID": 10247,
+    "conditional": true,
+    "texts": {
+      "text0_0": "Enjoying the Midsummer Fire Festival, $c?",
+      "text0_1": "Enjoying the Midsummer Fire Festival, $c?",
+      "text1_0": "Festive Midsummer, $c!",
+      "text1_1": "Festive Midsummer, $c!",
+      "text2_0": "Midsummer Fire Festival is a great time to adventure, but it's also a great time to shop!",
+      "text2_1": "Midsummer Fire Festival is a great time to adventure, but it's also a great time to shop!",
+      "text3_0": "Midsummer Fire Festival is a great time to celebrate the summer!",
+      "text3_1": "Midsummer Fire Festival is a great time to celebrate the summer!",
+      "text4_0": "I love the firework show at the end of Midsummer Firefestival.",
+      "text4_1": "I love the firework show at the end of Midsummer Firefestival."
+    },
+    "warning": "Context/conditions not assigned; use only stable supported identity, never infer availability."
+  },
+  "77fa4b7436dd43518c0dd62a5e3e42b0902df5f18bc840d53d6b770bbbe27d47": {
+    "ID": 11911,
+    "LogDescription": "Archmage Berinand in the Transitus Shield wants you to enter the Nexus and collect 5 Arcane Splinters from Crystalline Protectors.",
+    "LogTitle": "Quickening",
+    "QuestDescription": "Though we may be witnessing the end of our existence, I can't help but marvel. I've learned more in my short time here than in decades of studies.$b$bThese Ancients are being exposed to incredible levels of arcane energy. It's literally transforming them into something... different.$b$bI'm confident that there's another stage in their metamorphosis. I'll need you to actually enter the Nexus, $n, and find me some evidence of their final state.$b$bDo be careful....",
+    "RequiredItemId1": 35490,
+    "RequiredItemId2": 0,
+    "RequiredItemId3": 0,
+    "RequiredItemId4": 0,
+    "RequiredItemId5": 0,
+    "RequiredItemId6": 0
+  },
+  "77fa6c9c5cd78ed56ae722a2d7eddc0ac30daa054e41056633e044a609cf22d4": {
+    "areas": [
+      88
+    ],
+    "entry": 1103,
+    "name": "Eldrin",
+    "region": "map-0-zone-12",
+    "regions": [
+      "map-0-zone-12"
+    ],
+    "review_reasons": [],
+    "spawns": 1,
+    "subname": "Tailoring Trainer",
+    "variant_of": []
+  },
+  "77fae7b787a26e08d9d106c0ac4b8ff9fb1941d6518a6d6e7f746566b1fd73bb": {
+    "AIName": "",
+    "ScriptName": "",
+    "difficulty_entry_1": 0,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 28901,
+    "faction": 2082,
+    "gossip_menu_id": 0,
+    "maxlevel": 55,
+    "minlevel": 55,
+    "name": "Acherus Deathcharger",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 6
+  },
+  "77fdea242f0c0e598a3843ccbad77bb1dc0379912062da7af9860121a6dc0716": {
+    "action_type": 11,
+    "comment": "Blackrock Sentry - In Combat - Cast 'Frenzy'",
+    "entryorguid": 4065,
+    "event_type": 0,
+    "id": 1,
+    "source_type": 0
+  },
+  "77fe69936faf56896253d8a83e9273086f7674b9fcace53d96898617e9af3b2b": {
+    "action_type": 11,
+    "comment": "Dark Rune Worker - Within 0-5 Range - Cast 'Pierce Armor' (No Repeat)",
+    "entryorguid": 27961,
+    "event_type": 9,
+    "id": 0,
+    "source_type": 0
+  },
+  "77fe876faab68337ed847b7dac3a3aed3f2700368a782eab71f1f16d13974205": {
+    "AIName": "SmartAI",
+    "ScriptName": "",
+    "difficulty_entry_1": 30509,
+    "difficulty_entry_2": 0,
+    "difficulty_entry_3": 0,
+    "entry": 26802,
+    "faction": 16,
+    "gossip_menu_id": 0,
+    "maxlevel": 71,
+    "minlevel": 71,
+    "name": "Alliance Ranger",
+    "npcflag": 0,
+    "rank": 1,
+    "subname": "",
+    "type": 7
+  },
+  "77fec770edaf08d5d5fba0c23fc509f766ce272098666a826235cd6266d4e3a2": {
+    "end_line": 1918,
+    "file": "/home/steven/Games/World of Warcraft/Living-Azeroth/src/server/shared/SharedDefines.h",
+    "sha256": "cb95cb990c20135ea0f7b708562d58ce9a7b358e014ceda4eafe3fd5741f8f3e",
+    "start_line": 1918,
+    "text": "    EMOTE_ONESHOT_SHOUT                 = 22,"
+  },
+  "77ff88c5aadd4dd98eeb51c69280945988fa1e94c165296986b0c33ac58bd5cd": {
+    "areas": [],
+    "entry": 32445,
+    "name": "Summoned Plague Cauldron Bunny 02",
+    "region": "map--1-zone-0",
+    "regions": [],
+    "review_reasons": [
+      "possible_helper_not_person",
+      "no_static_spawn",
+      "non_humanoid_speech_review"
+    ],
+    "spawns": 0,
+    "subname": "",
+    "variant_of": []
+  }
+}

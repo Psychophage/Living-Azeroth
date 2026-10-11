@@ -1,0 +1,164 @@
+[
+  {
+    "classification": {
+      "baseline": {
+        "confidence": "low",
+        "tier": 1,
+        "uncertainty": "Is Frost Sphere (2) merely an animal population label or a named creature?"
+      },
+      "confidence": "low",
+      "tier": 1,
+      "uncertainty": "Is Frost Sphere (2) merely an animal population label or a named creature?"
+    },
+    "coverage": {
+      "change_evidence": [],
+      "disposition": "authored",
+      "entry": 3460602,
+      "evidence": [
+        "packet.json#/review_new_author_facts/0",
+        "packet.json#/review_new_author_facts/1",
+        "packet.json#/review_new_author_facts/2"
+      ],
+      "proposed_confidence": "low",
+      "proposed_tier": 1,
+      "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "starting_confidence": "low",
+      "starting_tier": 1,
+      "uncertainty": "Is Frost Sphere (2) merely an animal population label or a named creature?"
+    },
+    "entry": 3460602,
+    "name": "Frost Sphere (2)",
+    "notes": [
+      {
+        "artifact": "restored-run/main-sol-high-review/review-04558/decisions.json",
+        "content_disposition": "authored",
+        "items": [
+          {
+            "entries": [
+              3460602
+            ],
+            "kind": "classification_baseline",
+            "question": "Is Frost Sphere (2) merely an animal population label or a named creature?"
+          }
+        ],
+        "kind": "uncertainties"
+      },
+      {
+        "artifact": "restored-run/main-sol-high-review/review-04558/decisions.json",
+        "kind": "classification_baseline",
+        "question": "Is Frost Sphere (2) merely an animal population label or a named creature?"
+      }
+    ],
+    "provenance": {
+      "accepted_artifact": "recovery-20261007/restored-run/main-sol-high-review/review-04558/decisions.json",
+      "accepted_artifact_sha256": "13f2b9405224d31d9dccb7c2c3bf4b8a2212b94224c71b90184dbcd0746b0281",
+      "owner": "review-04558",
+      "projection": "main_sol_review"
+    },
+    "records": [
+      {
+        "authored": false,
+        "id": "npc:3460602:identity",
+        "layer": "npc",
+        "priority": 80,
+        "sources": [
+          "source:15b1ddc28210ecaccad80d5f",
+          "source:f2f714e667f7b23f2b149d17",
+          "source:710abe5f266e2977fdb36305"
+        ],
+        "text": "A Frost Sphere critter.",
+        "when": {
+          "entry": 3460602
+        }
+      }
+    ],
+    "region": "map--1-zone-0",
+    "sources": [
+      "source:15b1ddc28210ecaccad80d5f",
+      "source:710abe5f266e2977fdb36305",
+      "source:f2f714e667f7b23f2b149d17"
+    ],
+    "title": ""
+  },
+  {
+    "classification": {
+      "baseline": {
+        "confidence": "low",
+        "tier": 1,
+        "uncertainty": "Is Frost Sphere (3) merely an animal population label or a named creature?"
+      },
+      "confidence": "low",
+      "tier": 1,
+      "uncertainty": "Is Frost Sphere (3) merely an animal population label or a named creature?"
+    },
+    "coverage": {
+      "change_evidence": [],
+      "disposition": "authored",
+      "entry": 3460603,
+      "evidence": [
+        "packet.json#/review_new_author_facts/0",
+        "packet.json#/review_new_author_facts/1",
+        "packet.json#/review_new_author_facts/2"
+      ],
+      "proposed_confidence": "low",
+      "proposed_tier": 1,
+      "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "starting_confidence": "low",
+      "starting_tier": 1,
+      "uncertainty": "Is Frost Sphere (3) merely an animal population label or a named creature?"
+    },
+    "entry": 3460603,
+    "name": "Frost Sphere (3)",
+    "notes": [
+      {
+        "artifact": "restored-run/main-sol-high-review/review-04559/decisions.json",
+        "content_disposition": "authored",
+        "items": [
+          {
+            "entries": [
+              3460603
+            ],
+            "kind": "classification_baseline",
+            "question": "Is Frost Sphere (3) merely an animal population label or a named creature?"
+          }
+        ],
+        "kind": "uncertainties"
+      },
+      {
+        "artifact": "restored-run/main-sol-high-review/review-04559/decisions.json",
+        "kind": "classification_baseline",
+        "question": "Is Frost Sphere (3) merely an animal population label or a named creature?"
+      }
+    ],
+    "provenance": {
+      "accepted_artifact": "recovery-20261007/restored-run/main-sol-high-review/review-04559/decisions.json",
+      "accepted_artifact_sha256": "7308eb6b4bcd3657bb33318539fcf291ec2f21fbe953b0fe6646762ae8181c29",
+      "owner": "review-04559",
+      "projection": "main_sol_review"
+    },
+    "records": [
+      {
+        "authored": false,
+        "id": "npc:3460603:identity",
+        "layer": "npc",
+        "priority": 80,
+        "sources": [
+          "source:80e14b70e459512a13526fc8",
+          "source:1e514576fff1fc6782942d7f",
+          "source:710abe5f266e2977fdb36305"
+        ],
+        "text": "A Frost Sphere critter.",
+        "when": {
+          "entry": 3460603
+        }
+      }
+    ],
+    "region": "map--1-zone-0",
+    "sources": [
+      "source:1e514576fff1fc6782942d7f",
+      "source:710abe5f266e2977fdb36305",
+      "source:80e14b70e459512a13526fc8"
+    ],
+    "title": ""
+  }
+]

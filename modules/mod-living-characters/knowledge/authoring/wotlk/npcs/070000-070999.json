@@ -1,0 +1,45 @@
+[
+  {
+    "classification": {
+      "baseline": {
+        "confidence": "high",
+        "tier": 1,
+        "uncertainty": null
+      },
+      "confidence": "high",
+      "tier": 1,
+      "uncertainty": null
+    },
+    "coverage": {
+      "change_evidence": [],
+      "disposition": "excluded",
+      "entry": 70100,
+      "evidence": [
+        "packet.json#/recovered_facts/e0034",
+        "packet.json#/recovered_facts/e0035"
+      ],
+      "proposed_confidence": "high",
+      "proposed_tier": 1,
+      "reason": "This entry is a named C++ script trigger with no NPC flags or dialogue; its supplied evidence identifies a technical trigger, not an individual character.",
+      "starting_confidence": "high",
+      "starting_tier": 1,
+      "uncertainty": null
+    },
+    "entry": 70100,
+    "name": "Conversing With the Depths Trigger",
+    "notes": [],
+    "provenance": {
+      "accepted_artifact": "recovery-20261007/restored-run/main-sol-high-review/screen-00474-70100/decisions.json",
+      "accepted_artifact_sha256": "54c3e9ef381c0c01c3220499031e1d3891ba6e613a4521ea4ea8699da7e378be",
+      "owner": "screen-00474-70100",
+      "projection": "main_sol_review"
+    },
+    "records": [],
+    "region": "map-571-zone-65",
+    "sources": [
+      "source:30aa547bdbf0798b507bb4b2",
+      "source:f88c4fcaa54f70c98efb198c"
+    ],
+    "title": ""
+  }
+]
