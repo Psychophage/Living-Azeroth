@@ -1,6 +1,6 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- Telling bots from players at a glance: a line in the unit tooltip and a small medal on party frames
--- (the game's own party frames, which DragonUI restyles in place).
+-- Telling bots from players at a glance: a line in the unit tooltip (the party and raid frames mark bots
+-- themselves), and the small marks for switches that change how a bot behaves.
 local _, LA = ...
 
 local Markers = {}
@@ -8,17 +8,6 @@ LA.Markers = Markers
 
 -- The bot glyph, gold, for a line of tooltip text.
 local ICON = "|T" .. LA.Style.ART .. "glyph-bot:14:14:0:0:64:64:0:64:0:64:255:211:107|t"
-
--- The bot mark: a gold-rimmed medal with the bot glyph, size across; grey for someone else's bot.
-function Markers.Medal(parent, size)
-    local medal = LA.UI.Icon(parent, size, "medal")
-    medal:Set("bot", "gold")
-    function medal:SetCommandable(commandable)
-        self:Set("bot", commandable and "gold" or "stone")
-        self.base:SetDesaturated(not commandable)
-    end
-    return medal
-end
 
 -- Small marks for switches that change how a bot behaves: passive, and not picking up loot.
 function Markers.Flags(parent, size)
@@ -68,42 +57,7 @@ end
 
 GameTooltip:HookScript("OnTooltipSetUnit", DescribeTooltip)
 
--- Party frames
-
-local medals = {}
-
-local function PartyMedal(index)
-    local frame = _G["PartyMemberFrame" .. index]
-    if not frame then
-        return nil
-    end
-    if not medals[index] then
-        local medal = Markers.Medal(frame, 18)
-        local portrait = _G["PartyMemberFrame" .. index .. "Portrait"] or frame
-        medal:SetPoint("CENTER", portrait, "BOTTOMLEFT", 4, 4)
-        medal:SetFrameLevel(frame:GetFrameLevel() + 5)
-        medals[index] = medal
-    end
-    return medals[index]
-end
-
-function Markers.UpdateParty()
-    for index = 1, MAX_PARTY_MEMBERS do
-        local medal = PartyMedal(index)
-        if medal then
-            local bot = LA.Bots.ForUnit("party" .. index)
-            if bot then
-                medal:SetCommandable(bot.commandable)
-                medal:Show()
-            else
-                medal:Hide()
-            end
-        end
-    end
-end
-
 LA.On("bots:changed", function(guid)
-    Markers.UpdateParty()
     -- Refresh an open tooltip that was waiting for this answer.
     if GameTooltip:IsShown() and GameTooltip.livingAzerothGuid == guid then
         local _, unit = GameTooltip:GetUnit()
@@ -112,9 +66,3 @@ LA.On("bots:changed", function(guid)
         end
     end
 end)
-LA.On("bridge:state", Markers.UpdateParty)
-
-local events = CreateFrame("Frame")
-events:RegisterEvent("PARTY_MEMBERS_CHANGED")
-events:RegisterEvent("PLAYER_ENTERING_WORLD")
-events:SetScript("OnEvent", Markers.UpdateParty)

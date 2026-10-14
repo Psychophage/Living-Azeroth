@@ -194,6 +194,47 @@ def disc(size=256):
     save(s, "disc")
 
 
+# The orders ring's segments, in units of the ring (Ring.lua uses the same numbers): an annulus from RING_INNER to
+# RING_OUTER cut into equal parts with RING_GAP between them and corners rounded by RING_ROUND. Drawn at
+# RING_SCALE texels per unit with the ring's centre at (width / 2, RING_CENTRE_Y) of a texture RING_HEIGHT tall,
+# 512 wide for up to four parts and 256 for more.
+RING_INNER, RING_OUTER, RING_GAP, RING_ROUND = 43, 75, 3, 3
+RING_SCALE, RING_CENTRE_Y, RING_HEIGHT = 2.56, 194, 256
+
+
+def ring_segment(count):
+    """One part of the ring, pointing up: ring-<count>-fill (white, with a dark outline) and ring-<count>-edge (the
+    white band inside the outline). The game tints both and turns them to each part's place with texture
+    coordinates."""
+    width = 512 if count <= 4 else 256
+    k = RING_SCALE
+    ys, xs = np.mgrid[0:RING_HEIGHT, 0:width] + 0.5
+    x, y = (xs - width / 2) / k, (RING_CENTRE_Y - ys) / k
+    half = math.pi / count
+    r = np.hypot(x, y)
+    annulus = np.maximum(RING_INNER - r, r - RING_OUTER)
+    # The two sides, each RING_GAP / 2 in from the line between neighbouring parts.
+    side_a = x * math.cos(half) - y * math.sin(half) + RING_GAP / 2
+    side_b = -(x * math.cos(half) + y * math.sin(half)) + RING_GAP / 2
+    cone = np.maximum(side_a, side_b)
+    # Rounded where the sides meet the arcs (hg_sdf's rounded intersection), in texels.
+    c = RING_ROUND
+    u = np.hypot(np.maximum(annulus + c, 0), np.maximum(cone + c, 0))
+    depth = -(np.minimum(-c, np.maximum(annulus, cone)) + u) * k
+
+    def cover(inset):
+        return np.clip(depth - inset + 0.5, 0, 1)
+
+    outline, band = 1.3, 1.6
+    alpha = cover(0)
+    light = cover(outline)
+    fill = np.dstack([light, light, light, alpha])
+    edge = np.dstack([np.ones_like(alpha)] * 3 + [cover(outline) - cover(outline + band)])
+    for name, layers in (("fill", fill), ("edge", edge)):
+        image = Image.fromarray((layers * 255 + 0.5).astype(np.uint8), "RGBA")
+        save(image, "ring-%d-%s" % (count, name))
+
+
 def portrait_ring(size=128):
     """Rings around a round portrait: dark, gold, dark. The portrait fills the middle 104/128."""
     s, cr = canvas(size, size)
@@ -293,6 +334,8 @@ def main():
     tile_glow()
     medal()
     disc()
+    for count in range(2, 9):
+        ring_segment(count)
     portrait_ring()
     corners()
     grain()

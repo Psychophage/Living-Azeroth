@@ -41,8 +41,8 @@ function LA.SetUnlocked(unlocked)
     LA.unlocked = unlocked
     LA.Party.Unlock(unlocked)
     LA.Raid.Unlock(unlocked)
-    LA.RingSettings.Unlock(unlocked)
-    LA.RingSettings.Refresh()
+    LA.Settings.Unlock(unlocked)
+    LA.Settings.Refresh()
 end
 
 function LA.Print(text)
@@ -97,8 +97,8 @@ SlashCmdList.LIVINGAZEROTH = function(text)
         LA.Bridge.Connect()
     elseif command == "unlock" or command == "lock" then
         LA.SetUnlocked(command == "unlock")
-    elseif command == "ring" then
-        LA.RingSettings.Toggle()
+    elseif command == "settings" or command == "ring" then
+        LA.Settings.Toggle()
     elseif command == "" then
         LA.Manager.Toggle()
     else

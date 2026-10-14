@@ -328,7 +328,10 @@ function Refresh()
     local _, height = LA.Manager.BodySize()
     page.switches:SetHeight(height - y)
     for id, check in pairs(checks) do
-        local state = usable and State(id) or nil
+        local state -- false (all off) must stay false, not become "no bot can"
+        if usable then
+            state = State(id)
+        end
         check:SetChecked(state == true or state == "some")
         check:SetMixed(state == "some")
         check:SetUsable(state ~= nil)
@@ -452,10 +455,13 @@ local function Build(self)
                 Refresh() -- the box shows the bots' state, not the click
             end
             check:SetScript("OnEnter", function(c)
-                if #AllBots() > 0 and State(id) == nil then
+                local state = State(id)
+                local why = state == nil and "None of these bots' classes can do this."
+                    or state == "some" and "Some of these bots have this on. Click to turn it on for all of them."
+                if #AllBots() > 0 and why then
                     GameTooltip:SetOwner(c, "ANCHOR_RIGHT")
                     GameTooltip:AddLine(item[2], 1, 1, 1)
-                    GameTooltip:AddLine("None of these bots' classes can do this.", nil, nil, nil, true)
+                    GameTooltip:AddLine(why, nil, nil, nil, true)
                     GameTooltip:Show()
                 end
             end)

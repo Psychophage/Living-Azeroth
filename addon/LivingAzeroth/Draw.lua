@@ -70,11 +70,61 @@ function Draw.Settle(frame)
     end
 end
 
+-- Frames that follow another frame on whole pixels: frame -> { target, point, relative, x, y, left, top }.
+local following = {}
+
+-- Anchors frame's point to target's relative point (offset x, y units of frame) on whole pixels, and keeps it
+-- there as the target moves. For fitted frames beside the game's own (party frames), which sit anywhere.
+function Draw.Follow(frame, target, point, relative, x, y)
+    following[frame] = { target = target, point = point, relative = relative or point, x = x or 0, y = y or 0 }
+end
+
+local function Place(frame, follow)
+    local target = follow.target
+    local left, top = target:GetLeft(), target:GetTop()
+    if not left or (left == follow.left and top == follow.top and frame:GetScale() == follow.scale) then
+        return
+    end
+    follow.left, follow.top, follow.scale = left, top, frame:GetScale()
+    -- The target's point in screen pixels, rounded, then in the frame's units.
+    local ratio = target:GetEffectiveScale() / frame:GetEffectiveScale()
+    local width, height = target:GetWidth(), target:GetHeight()
+    local fx = follow.relative:find("LEFT") and 0 or follow.relative:find("RIGHT") and 1 or 0.5
+    local fy = follow.relative:find("TOP") and 1 or follow.relative:find("BOTTOM") and 0 or 0.5
+    local x = (left + width * fx) * ratio + follow.x
+    local y = (target:GetBottom() + height * fy) * ratio + follow.y
+    frame:ClearAllPoints()
+    frame:SetPoint(follow.point, UIParent, "BOTTOMLEFT", math.floor(x / px + 0.5) * px, math.floor(y / px + 0.5) * px)
+end
+
+local follower = CreateFrame("Frame")
+follower:SetScript("OnUpdate", function()
+    for frame, follow in pairs(following) do
+        if frame:IsShown() then
+            Place(frame, follow)
+        end
+    end
+end)
+
+-- Fitted frames that are protected (the raid frames) can only be scaled out of combat.
+local refitAfterCombat = false
+
 local function Refit()
     local scale = FitScale()
     for frame in pairs(fitted) do
-        frame:SetScale(scale)
-        Draw.Settle(frame)
+        if frame:IsProtected() and InCombatLockdown() then
+            refitAfterCombat = true
+        else
+            frame:SetScale(scale)
+            -- Frames placed on the screen go back onto whole pixels; frames hung from another keep their anchor.
+            local _, relative = frame:GetPoint()
+            if not following[frame] and frame:GetNumPoints() > 0 and (relative == nil or relative == UIParent) then
+                Draw.Settle(frame)
+            end
+        end
+    end
+    for _, follow in pairs(following) do
+        follow.left = nil
     end
     for box in pairs(boxes) do
         box:Layout()
@@ -83,7 +133,13 @@ end
 local watcher = CreateFrame("Frame")
 watcher:RegisterEvent("UI_SCALE_CHANGED")
 watcher:RegisterEvent("DISPLAY_SIZE_CHANGED")
-watcher:SetScript("OnEvent", Refit)
+watcher:RegisterEvent("PLAYER_REGEN_ENABLED")
+watcher:SetScript("OnEvent", function(_, event)
+    if event ~= "PLAYER_REGEN_ENABLED" or refitAfterCombat then
+        refitAfterCombat = false
+        Refit()
+    end
+end)
 hooksecurefunc(UIParent, "SetScale", Refit)
 
 -- Colours

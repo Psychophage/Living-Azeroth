@@ -1,6 +1,6 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
 -- A round button on the minimap's edge, like the game's own: click for the manager window, right-click for the
--- orders ring's settings, drag to move it around the minimap.
+-- settings, drag to move it around the minimap.
 local _, LA = ...
 
 local MinimapButton = {}
@@ -29,10 +29,27 @@ border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
 border:SetSize(53, 53)
 border:SetPoint("TOPLEFT")
 
+-- How far from the map's centre the button sits, in its own units: as far out as other addons' buttons (LibDBIcon's,
+-- which DragonUI reskins and may scale), so they line up; without them just outside the map's edge.
+local function Radius()
+    local icons = LibStub and LibStub("LibDBIcon-1.0", true)
+    local mapX, mapY = Minimap:GetCenter()
+    local mapScale = Minimap:GetEffectiveScale()
+    for _, other in pairs(icons and icons.objects or {}) do
+        local x, y = other:GetCenter()
+        if x and other:IsShown() then
+            local ratio = other:GetEffectiveScale() / mapScale
+            local distance = math.sqrt((x * ratio - mapX) ^ 2 + (y * ratio - mapY) ^ 2)
+            return distance * mapScale / button:GetEffectiveScale()
+        end
+    end
+    local offset = button.DragonUI_SkinActive and -5 or 10
+    return (Minimap:GetWidth() / 2 + offset) * mapScale / button:GetEffectiveScale()
+end
+
 local function Place()
     local angle = math.rad(LivingAzerothDB.minimapAngle or 200)
-    -- DragonUI shrinks addon buttons and seats them on the map's rim, as it does LibDBIcon's.
-    local radius = Minimap:GetWidth() / 2 + (button.DragonUI_SkinActive and -5 or 10)
+    local radius = Radius()
     button:ClearAllPoints()
     button:SetPoint("CENTER", Minimap, "CENTER", radius * math.cos(angle), radius * math.sin(angle))
 end
@@ -65,7 +82,7 @@ end)
 button:SetScript("OnClick", function(_, mouse)
     GameTooltip:Hide()
     if mouse == "RightButton" then
-        LA.RingSettings.Toggle()
+        LA.Settings.Toggle()
     else
         LA.Manager.Toggle()
     end
@@ -75,7 +92,7 @@ button:SetScript("OnEnter", function(self)
     GameTooltip:AddLine(LA.name)
     local states = { ready = "Connected", connecting = "Connecting...", missing = "No bot control on this server" }
     GameTooltip:AddLine(states[LA.Bridge.state] or "", 1, 1, 1)
-    GameTooltip:AddLine("Click for the manager, right-click for the orders ring.", 0.6, 0.6, 0.6)
+    GameTooltip:AddLine("Click for the manager, right-click for the settings.", 0.6, 0.6, 0.6)
     GameTooltip:AddLine("Drag to move this button.", 0.6, 0.6, 0.6)
     GameTooltip:Show()
 end)

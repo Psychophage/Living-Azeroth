@@ -102,6 +102,13 @@ function Window.Panel(name, width, height, title, glyph)
     window.body:SetPoint("BOTTOMRIGHT", -Window.PAD, Window.PAD)
 
     window:SetScript("OnShow", function(self)
+        -- In front of the window it was opened from. A window shown the moment it is made is only raised a frame
+        -- later.
+        self:Raise()
+        self:SetScript("OnUpdate", function()
+            self:SetScript("OnUpdate", nil)
+            self:Raise()
+        end)
         if not self.placed then
             self.placed = true
             Restore(self)

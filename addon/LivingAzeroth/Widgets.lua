@@ -168,11 +168,6 @@ end
 -- Icons
 
 local CREAM = Style.C("#f7e8c2")
-local TONE_LIGHT = {
-    gold = Style.C("#ffd36b"), bronze = Style.C("#e8b27a"), steel = Style.C("#9fc2ff"), green = Style.C("#8ee27c"),
-    red = Style.C("#ff8a6a"), violet = Style.C("#d2a8ff"), blue = Style.C("#8fd0ff"), teal = Style.C("#8fe8dc"),
-    stone = Style.C("#d8d0c0"),
-}
 
 -- An icon from the addon's glyphs: "tile" (a coloured tile with a cream glyph, for orders and sets), "medal"
 -- (a gold-rimmed coin, for roles and the bot mark) or "plain" (the glyph alone, in a colour).
@@ -198,7 +193,7 @@ function UI.Icon(parent, size, look)
             self.base:SetTexture(ART .. "tile-" .. (tone or "gold"))
             Tint(self.glyph, CREAM)
         elseif self.look == "medal" then
-            Tint(self.glyph, TONE_LIGHT[tone or "gold"] or TONE_LIGHT.gold)
+            Tint(self.glyph, (Style.TONES[tone] or Style.TONES.gold).light)
         else
             Tint(self.glyph, type(tone) == "table" and tone or Style.gold)
         end
@@ -452,7 +447,7 @@ end
 local BOX = 11 -- a check box's side
 
 -- A check box with a label and a grey hint under it, width wide; its height follows the text.
--- SetMixed shows "(some)" when the bots it covers differ. onToggle(self, checked) after a click.
+-- SetMixed shows a dash in the box when the bots it covers differ. onToggle(self, checked) after a click.
 function UI.Check(parent, label, hint, width)
     width = width or 240
     local check = CreateFrame("Button", nil, parent)
@@ -479,21 +474,28 @@ function UI.Check(parent, label, hint, width)
         check.hint:SetPoint("TOPLEFT", check.label, "BOTTOMLEFT", 0, -2)
         check.hint:SetText(hint)
     end
-    check.some = UI.Text(check, "small")
-    check.some:SetPoint("BOTTOMLEFT", check.label, "BOTTOMRIGHT", 4, 0)
-    check.some:SetText("(some)")
-    check.some:Hide()
+    -- A dash in the box when the things it covers differ.
+    check.dash = box:CreateTexture(nil, "OVERLAY")
+    check.dash:SetTexture(WHITE)
+    check.dash:SetSize(Draw.Px(10), Draw.Px(2))
+    check.dash:SetPoint("CENTER")
+    Tint(check.dash, Style.gold)
     local height = 1 + check.label:GetStringHeight() + (hint and check.hint:GetStringHeight() + 2 or 0)
     check:SetHeight(Draw.Ceil(math.max(BOX + 2, height)))
+    local function Mark(self)
+        LA.SetShown(self.mark, self.checked and not self.mixed)
+        LA.SetShown(self.dash, self.mixed)
+    end
     function check:SetChecked(on)
         self.checked = on and true or false
-        LA.SetShown(self.mark, self.checked)
+        Mark(self)
     end
     function check:GetChecked()
         return self.checked
     end
     function check:SetMixed(mixed)
-        LA.SetShown(self.some, mixed)
+        self.mixed = mixed and true or false
+        Mark(self)
     end
     Usable(check, function(self, usable)
         self:SetAlpha(usable and 1 or 0.45)
@@ -571,11 +573,18 @@ function UI.Slider(parent, low, high, step, width, onChange)
     local thumbTexture = slider:GetThumbTexture()
     thumbTexture:SetSize(7, 14)
     thumbTexture:SetAlpha(0)
+    -- The handle drawn over the game's (invisible) thumb, on whole pixels.
     local thumb = CreateFrame("Frame", nil, slider)
-    thumb:SetAllPoints(thumbTexture)
+    thumb:SetSize(7, 14)
     thumb:SetFrameLevel(track:GetFrameLevel() + 2)
     UI.Surface(thumb, "thumb")
+    local function Place(value)
+        local share = high > low and (value - low) / (high - low) or 0
+        thumb:SetPoint("LEFT", Draw.Round(share * (width - 7)), 0)
+    end
+    Place(low)
     slider:SetScript("OnValueChanged", function(self, value)
+        Place(value)
         value = math.floor(value / step + 0.5) * step
         if value ~= self.last then
             self.last = value
@@ -951,12 +960,19 @@ function UI.TopTabs(parent, names, onSelect)
     return tabs
 end
 
--- A gold-rimmed box over a frame that can be dragged to move it while frames are unlocked.
+-- A gold-rimmed box over a frame that can be dragged to move it while frames are unlocked. width and height are in
+-- the target's units; mover:SetArea(width, height) changes them.
 function UI.Mover(target, label, width, height, onMoved)
     local mover = CreateFrame("Frame", nil, UIParent)
-    mover:SetFrameStrata("DIALOG")
-    mover:SetPoint("TOPLEFT", target, "TOPLEFT", -4, 4)
-    mover:SetSize(width + 8, height + 8)
+    Draw.Fit(mover)
+    mover:SetFrameStrata("MEDIUM") -- over the party and raid frames, under the addon's windows
+    mover:SetFrameLevel(60)
+    Draw.Follow(mover, target, "TOPLEFT", "TOPLEFT", -4, 4)
+    function mover:SetArea(w, h)
+        local ratio = target:GetEffectiveScale() / self:GetEffectiveScale()
+        self:SetSize(Draw.Round(w * ratio) + 8, Draw.Round(h * ratio) + 8)
+    end
+    mover:SetArea(width, height)
     UI.Surface(mover, "mover")
     local bar = CreateFrame("Frame", nil, mover)
     bar:SetPoint("BOTTOMLEFT", mover, "TOPLEFT", 0, 2)

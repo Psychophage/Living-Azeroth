@@ -58,6 +58,7 @@ local THEMES = {
         tab = { C("#18130e"), C("#0d0b08") }, tabOn = { C("#3a2d1a"), C("#1d170f") },
         tabRim = { C("#5e4a2a"), C("#3e311c") },
         field = { C("#060504"), C("#0f0d0b") }, fieldRim = { Black(0.9), C("#5e4c2c") },
+        cell = C("#0c0a08", 0.92), cellEmpty = C("#1c1813"),
     },
     dragon = {
         text = C("#ece8e0"), muted = C("#9c9a94"), faint = C("#6c6b67"), label = C("#e2cf98"), title = C("#efe9dc"),
@@ -73,6 +74,7 @@ local THEMES = {
         tab = { C("#1d1e23"), C("#121317") }, tabOn = { C("#34302a"), C("#1f1d1a") },
         tabRim = { C("#4a4c54"), C("#33353b") },
         field = { C("#08090b"), C("#111216") }, fieldRim = { Black(0.9), C("#4a4c54") },
+        cell = C("#0b0c0e", 0.92), cellEmpty = C("#1a1b20"),
     },
 }
 
@@ -138,6 +140,7 @@ local RECIPES = {
     dot = function() return { radius = "round", fill = { C("#fff1a8"), C("#d9a520") } } end,
     rim = function() return { edges = { Sunken(0.7) } } end,
     mover = function(T) return { radius = 3, edges = { Outline(), { 1, T.rim } }, fill = C("#2a200c", 0.6) } end,
+    cell = function(T) return { edges = { { 1, Black(1) } }, fill = T.cell } end,
 }
 local recipes = {}
 
@@ -163,6 +166,8 @@ local FONTS = {
     small = { NARROW, 10, "muted" },
     button = { FRIZ, 9.5, Style.gold },
     tab = { FRIZ, 10, "muted" },
+    cell = { NARROW, 10.5, C("#ffffff") },
+    cellSmall = { NARROW, 9, "text" },
 }
 local fonts = {}
 
@@ -180,6 +185,20 @@ function Style.Font(kind)
     end
     return fonts[kind]
 end
+
+-- The tones orders and roles come in: a light colour for a glyph on a dark ground, and the middle of the tile's
+-- gradient (make_art.py), for a ground in that tone.
+Style.TONES = {
+    gold = { light = C("#ffd36b"), middle = C("#82571a") },
+    bronze = { light = C("#e8b27a"), middle = C("#5f3a17") },
+    steel = { light = C("#9fc2ff"), middle = C("#33507a") },
+    green = { light = C("#8ee27c"), middle = C("#2f6d2b") },
+    red = { light = C("#ff8a6a"), middle = C("#7d2116") },
+    violet = { light = C("#d2a8ff"), middle = C("#52307c") },
+    blue = { light = C("#8fd0ff"), middle = C("#215f92") },
+    teal = { light = C("#8fe8dc"), middle = C("#216f66") },
+    stone = { light = C("#d8d0c0"), middle = C("#4c4840") },
+}
 
 -- Order and tactic glyphs with their tile colours, as the mockups drew them.
 Style.ORDER_LOOK = {

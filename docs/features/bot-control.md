@@ -13,26 +13,30 @@ on whole screen pixels (`Draw.lua`): each window is scaled so one unit is a whol
 pixels (two on a 1440 screen), and frames, buttons and corners are built from one-pixel
 strips and a corner atlas shown 1:1, so edges stay sharp at any UI scale. The look (colours,
 fonts, every surface's recipe) is in `Style.lua`, in bronze or, with DragonUI on, graphite.
-Icons, the ring disc and the corner atlas come from `addon/tools/make_art.py`.
+Icons, the ring's disc and parts, and the corner atlas come from `addon/tools/make_art.py`.
 
-A round button on the minimap's edge opens the manager (right-click: the orders ring's
-settings); drag it around the minimap.
+A round button on the minimap's edge opens the manager (right-click: the settings); drag
+it around the minimap. It sits as far out as other addons' minimap buttons.
 
-- **Bots at a glance**: a gold medal on a bot's party frame portrait, and "Bot · you can
-  give orders" (or a grey "Bot" for someone else's) in its tooltip.
-- **Orders**: a small icon beside each of your bots' party frames shows what the bot is
-  doing. Click it for the orders ring; click an order and the icon pulses until the bot
-  has actually done it, then shows a tick. The ring stays open for more orders; clicking
-  anywhere else, Escape, or the same icon closes it, and clicking another bot's icon moves
-  it there. Out of combat, the numbers 1-8 give the ring's orders.
-- **Raid frames** (in a raid): compact cells by group with class-coloured health, power,
-  role and the bot medal; clicking a cell targets that player, right-click gives the usual
-  menu. Your bots' cells carry the order icon (on every bot, or only on those not simply
-  following you), with small marks for passive and not looting. A group's name or "All my bots" opens the ring for several bots, and
-  shift-clicking order icons picks a selection ("Orders for N selected"). Someone else's
-  bots show a grey medal and no order icon. With the CompactRaidFrame addon installed, its
-  frames are hidden while these are in use (`LivingAzerothDB.raid.hideCompact = false`
-  keeps them).
+- **Bots at a glance**: "Bot · you can give orders" (or a grey "Bot" for someone else's)
+  in a bot's tooltip, and a round mark on its party frame portrait: grey for someone
+  else's bot.
+- **Orders**: on your own bots the portrait mark shows what the bot is doing. Click it for
+  the orders ring: the orders are the parts of a ring around a disc that names the bot and
+  what it is doing, the current order lit in its colour. Click an order and the mark
+  pulses until the bot has actually done it, then shows a tick. The ring stays open for
+  more orders; clicking anywhere else, Escape, or the same mark closes it, and clicking
+  another bot's mark moves it there. Out of combat, the numbers 1-8 give the ring's
+  orders. With two or more of your bots in the party, "All my bots" over the party frames
+  opens the ring for all of them.
+- **Raid frames** (in a raid): compact cells by group with class-coloured health, a thin
+  power bar and tank and healer marks; clicking a cell targets that player, right-click
+  gives the usual menu. Your bots' cells carry the order mark (on every bot, or the bot
+  mark on those simply following you), with a moon when a bot stays out of fights. A
+  group's name or "All my bots" opens the ring for several bots, and shift-clicking order
+  marks picks a selection ("Orders for N selected"). Someone else's bots show a small grey
+  bot mark. With the CompactRaidFrame addon installed, its frames are hidden while these
+  are in use (a setting keeps them).
 - **The manager window** (`/la` or the minimap button), with tabs along the bottom. Each
   tab has a list on the left (folding headers, a scroll bar) and the chosen entry on the
   parchment on the right, with its buttons under the list:
@@ -43,8 +47,8 @@ settings); drag it around the minimap.
   - *Tactics*: "Apply to" all your bots or one of them. Tactic sets (Questing, Dungeon,
     Raid, Grinding, Quietly, Guard me, Night watch, and your own: "Save set"; right-click
     your own in the list to forget it) set many switches at once, and the set
-    the bots match is named with what it does. Each box shows the bots' real state,
-    "(some)" when they differ, greyed out when their class lacks it. "Undo" puts back what
+    the bots match is named with what it does. Each box shows the bots' real state, a
+    dash when they differ, greyed out when their class lacks it. "Undo" puts back what
     they had. "Formation" opens the formation window: pick one and the preview's bots glide
     to where they would stand by role; "Use" it to move them.
   - *Dialogue*: "What you hear" (who talks to you on each channel, remarks, combat banter,
@@ -57,11 +61,13 @@ settings); drag it around the minimap.
     dialogue budget and saves nothing until you press Save). "Rumours" lists what members
     have seen, with who, where and when it fades; officers correct, resolve or forget them,
     and set how long rumours last.
-- The orders ring's settings (`/la ring` or right-click the minimap button): where it opens
-  (beside the frame, at the mouse, or a fixed spot), its size, which orders it holds (up to
-  eight), and whether every bot in a raid shows its order icon. "Move frames" (or
+- The settings (`/la settings` or right-click the minimap button), in two tabs. *Orders
+  ring*: where it opens (beside the frame, at the mouse, or a fixed spot), its size (70% to
+  130%), and which orders it holds (up to eight). *Raid frames*: groups side by side or in
+  rows, the cells' width and height, power bars, order marks on every bot, and hiding the
+  CompactRaidFrame addon's frames, with a cell drawn as it will look. "Move frames" (or
   `/la unlock` and `/la lock`) puts a box over the party frames (with DragonUI, use its
-  `/duiedit`) and the raid frames' whole area to drag, and with "a fixed spot" shows the
+  `/duiedit`) and over the raid groups in use to drag, and with "a fixed spot" shows the
   ring itself at its size to drag into place, out of combat.
 - `/la status` shows the connection; `/la debug` prints what the addon does.
 

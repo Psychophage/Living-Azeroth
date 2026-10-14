@@ -4,7 +4,7 @@
     <!-- One raid member's cell. The game's secure raid headers create these, so clicking a cell targets its
          player even in combat; everything drawn on it is set up in Raid.lua. -->
     <Button name="LivingAzerothRaidCellTemplate" inherits="SecureUnitButtonTemplate" virtual="true">
-        <Size x="112" y="40"/>
+        <Size x="72" y="36"/>
         <Attributes>
             <Attribute name="*type1" type="string" value="target"/>
             <Attribute name="*type2" type="string" value="menu"/>

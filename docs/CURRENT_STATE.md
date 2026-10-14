@@ -15,8 +15,8 @@ Updated 2026-10-09.
 - Realm tools: realms can share one spending budget (`shared_budget`); each start keeps
   the previous session's logs.
 - Bot control: the Living Azeroth addon (`addon/LivingAzeroth`) with bot markers, party
-  order icons and the orders ring, raid frames (orders per bot, group, all bots or a
-  selection), and a manager window (roster with bringing alts, tactics and tactic sets,
+  order marks and the orders ring (one bot or all of them), raid frames of the player's
+  size and layout (orders per bot, group, all bots or a selection), and a manager window (roster with bringing alts, tactics and tactic sets,
   formations, dialogue settings and "why did they say that", guild identity and rumours).
   Tested in the real client with the default UI and with DragonUI; the windows are drawn
   on whole pixels in the addon's own style, checked at 2560x1440 with a layout check
