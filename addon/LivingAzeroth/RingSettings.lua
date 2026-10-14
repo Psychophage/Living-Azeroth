@@ -6,16 +6,17 @@ local _, LA = ...
 local RingSettings = {}
 LA.RingSettings = RingSettings
 
+local UI, Style = LA.UI, LA.Style
+
 local PLACEMENTS = {
     { id = "beside", label = "Beside the frame", hint = "Next to the bot you clicked" },
     { id = "cursor", label = "At the mouse", hint = "Centred where you click" },
     { id = "fixed", label = "A fixed spot", hint = "Press Move frames to place it" },
 }
 local SIZES = {
-    { id = "small", label = "Small" },
-    { id = "normal", label = "Normal" },
-    { id = "large", label = "Large" },
+    { id = "small", label = "Small" }, { id = "normal", label = "Normal" }, { id = "large", label = "Large" },
 }
+local WIDTH, HEIGHT = 480, 300
 
 local window
 
@@ -29,39 +30,29 @@ local function Changed()
     RingSettings.Refresh()
 end
 
-local function ShowPart(index)
-    LA.SetShown(window.where, index == 1)
-    LA.SetShown(window.orderPart, index == 2)
-end
-
 local function Window()
     if window then
         return window
     end
-    local UI = LA.UI
-    window = LA.Window.Finder("LivingAzerothRingSettings", "Orders ring", "Interface\\Icons\\Ability_Tracking")
+    window = LA.Window.Panel("LivingAzerothRingSettings", WIDTH, HEIGHT, "Orders ring", "settings")
     window:SetFrameStrata("DIALOG")
+    local width, height = LA.Window.BodySize(WIDTH, HEIGHT)
+    local footer = UI.BUTTON_HEIGHT + 8
+    local leftWidth = 210
+    local inner = leftWidth - 20
 
-    local intro = UI.Text(window.header, 250)
-    intro:SetPoint("TOPLEFT", 58, -10)
-    intro:SetText("Click a bot's order icon to open its ring. Choose where it opens, how big it is, and what it " ..
-        "holds.")
-
-    window.parts = UI.SubTabs(window.bar, { "Where it opens", "Orders" }, ShowPart)
-
-    -- Where it opens, and its size.
-    window.where = CreateFrame("Frame", nil, window.content)
-    window.where:SetAllPoints()
-    local whereTitle = UI.Dark(window.where, "title", 290)
-    whereTitle:SetPoint("TOPLEFT", 8, -8)
-    whereTitle:SetText("Where it opens")
+    -- Where it opens, its size, and the raid icons.
+    local left = UI.Inset(window.body)
+    left:SetPoint("TOPLEFT")
+    left:SetSize(leftWidth, height - footer)
+    local stack = UI.Stack(left)
+    local where = UI.Heading(left, "Where it opens")
+    where:SetWidth(inner)
+    stack:Add(where, 8, 10)
     window.placements = {}
     for i, placement in ipairs(PLACEMENTS) do
-        local radio = UI.Radio(window.where, placement.label)
-        radio:SetPoint("TOPLEFT", 12, -32 - (i - 1) * 34)
-        local hint = UI.Dark(window.where, "small", 240)
-        hint:SetPoint("TOPLEFT", radio.label, "BOTTOMLEFT", 0, -1)
-        hint:SetText(placement.hint)
+        local radio = UI.Radio(left, placement.label, placement.hint, inner)
+        stack:Add(radio, i == 1 and 8 or 6, 10)
         radio:SetScript("OnClick", function()
             Settings().placement = placement.id
             Changed()
@@ -69,49 +60,52 @@ local function Window()
         radio.id = placement.id
         window.placements[i] = radio
     end
-    local sizeTitle = UI.Dark(window.where, "title", 290)
-    sizeTitle:SetPoint("TOPLEFT", 8, -140)
-    sizeTitle:SetText("Size")
-    window.sizes = {}
-    for i, choice in ipairs(SIZES) do
-        local radio = UI.Radio(window.where, choice.label)
-        radio:SetPoint("TOPLEFT", 12 + (i - 1) * 96, -164)
-        radio:SetScript("OnClick", function()
-            Settings().size = choice.id
-            Changed()
-        end)
-        radio.id = choice.id
-        window.sizes[i] = radio
-    end
-    window.always = UI.Check(window.where, "Order icons on every bot in a raid",
-        "Otherwise only on bots not simply following you", true)
-    window.always:SetPoint("TOPLEFT", 8, -194)
-    window.always:SetScript("OnClick", function(self)
-        LivingAzerothDB.iconsAlways = self:GetChecked() and true or false
-        LA.Fire("bots:changed")
+    local size = UI.Heading(left, "Size")
+    size:SetWidth(inner)
+    stack:Add(size, 12, 10)
+    window.sizes = UI.Segment(left, SIZES, inner, function(id)
+        Settings().size = id
+        Changed()
     end)
+    stack:Add(window.sizes, 8, 10)
+    window.always = UI.Check(left, "Order icons on every bot in a raid",
+        "Otherwise only on bots not simply following you", inner)
+    stack:Add(window.always, 12, 10)
+    window.always.onToggle = function(_, on)
+        LivingAzerothDB.iconsAlways = on
+        LA.Fire("bots:changed")
+    end
 
     -- Which orders it holds.
-    window.orderPart = CreateFrame("Frame", nil, window.content)
-    window.orderPart:SetAllPoints()
-    local ordersTitle = UI.Dark(window.orderPart, "title", 200)
-    ordersTitle:SetPoint("TOPLEFT", 8, -8)
-    ordersTitle:SetText("Orders in the ring")
-    window.count = UI.Dark(window.orderPart, "small", 120)
-    window.count:SetPoint("TOPRIGHT", -8, -12)
-    window.count:SetJustifyH("RIGHT")
+    local right = UI.Inset(window.body)
+    right:SetPoint("TOPRIGHT")
+    local rightWidth = width - leftWidth - 10
+    right:SetSize(rightWidth, height - footer)
+    local ordersTitle = UI.Heading(right, "Orders in the ring")
+    ordersTitle:SetPoint("TOPLEFT", 10, -8)
+    ordersTitle:SetWidth(rightWidth - 20)
+    window.count = ordersTitle.note
+    local columns, gap = 4, 4
+    local cell = math.floor((rightWidth - 20 - (columns - 1) * gap) / columns)
     window.orders = {}
     for i, order in ipairs(LA.Orders.catalog) do
-        local button = CreateFrame("CheckButton", "LivingAzerothRingChoice" .. i, window.orderPart,
-            "ActionButtonTemplate")
-        local column, row = (i - 1) % 4, math.floor((i - 1) / 4)
-        button:SetPoint("TOPLEFT", 22 + column * 76, -34 - row * 70)
-        _G[button:GetName() .. "Icon"]:SetTexture(order.icon)
-        button.slot = _G[button:GetName() .. "HotKey"]
-        local label = UI.Dark(window.orderPart, "small", 74)
-        label:SetPoint("TOP", button, "BOTTOM", 0, -2)
-        label:SetJustifyH("CENTER")
-        label:SetText(order.label)
+        local button = CreateFrame("Button", nil, right)
+        button:SetSize(cell, 48)
+        local column, row = (i - 1) % columns, math.floor((i - 1) / columns)
+        button:SetPoint("TOPLEFT", 10 + column * (cell + gap), -32 - row * (48 + gap))
+        UI.Surface(button, "row")
+        UI.HoverLight(button)
+        button.tile = UI.Icon(button, 24, "tile")
+        button.tile:SetPoint("TOP", 0, -4)
+        button.tile:Set(order.glyph, order.tone)
+        button.slot = UI.Text(button.tile, "small")
+        button.slot:SetPoint("TOPRIGHT", -1, 0)
+        button.slot:SetTextColor(0.95, 0.95, 0.95)
+        button.label = UI.Text(button, "small", cell - 4)
+        button.label:SetJustifyH("CENTER")
+        button.label:SetWordWrap(false)
+        button.label:SetPoint("BOTTOM", 0, 4)
+        button.label:SetText(order.short)
         button:SetScript("OnClick", function()
             local list = Settings().orders
             for slot, id in ipairs(list) do
@@ -130,8 +124,9 @@ local function Window()
         end)
         button:SetScript("OnEnter", function(self)
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            GameTooltip:AddLine(order.label, 1, 1, 1)
-            GameTooltip:AddLine("Click to add it to the ring or take it out.", nil, nil, nil, true)
+            GameTooltip:AddLine(order.label, 1, 0.82, 0)
+            GameTooltip:AddLine("Click to add it to the ring or take it out. The number is its key while the " ..
+                "ring is open.", 1, 1, 1, true)
             GameTooltip:Show()
         end)
         button:SetScript("OnLeave", GameTooltip_Hide)
@@ -139,16 +134,14 @@ local function Window()
         window.orders[i] = button
     end
 
-    window.move = UI.Button(window.footer, "Move frames", 110)
-    window.move:SetPoint("LEFT", 0, 1)
+    window.move = UI.Button(window.body, "Move frames", 100, "plain", "move")
+    window.move:SetPoint("BOTTOMLEFT")
     window.move:SetScript("OnClick", function()
         LA.SetUnlocked(not LA.unlocked)
     end)
-    local okay = UI.Button(window.footer, OKAY, 80)
-    okay:SetPoint("RIGHT", -8, 1)
-    okay:SetScript("OnClick", function() window:Hide() end)
-    window.parts:Select(1)
-    ShowPart(1)
+    local done = UI.Button(window.body, "Done", 70)
+    done:SetPoint("BOTTOMRIGHT")
+    done:SetScript("OnClick", function() window:Hide() end)
     return window
 end
 
@@ -160,9 +153,7 @@ function RingSettings.Refresh()
     for _, radio in ipairs(window.placements) do
         radio:SetChecked(radio.id == settings.placement)
     end
-    for _, radio in ipairs(window.sizes) do
-        radio:SetChecked(radio.id == settings.size)
-    end
+    window.sizes:Select(settings.size)
     for _, button in ipairs(window.orders) do
         local slot
         for i, id in ipairs(settings.orders) do
@@ -170,13 +161,16 @@ function RingSettings.Refresh()
                 slot = i
             end
         end
-        button:SetChecked(slot ~= nil)
-        _G[button:GetName() .. "Icon"]:SetDesaturated(slot == nil)
+        button.surface:Set(slot and "rowOn" or "row")
+        button.tile:SetDim(slot == nil)
         button.slot:SetText(slot or "")
+        local colour = slot and Style.gold or Style.T().muted
+        button.label:SetTextColor(colour[1], colour[2], colour[3])
     end
-    window.count:SetText(#settings.orders .. " of " .. LA.Orders.MAX_RING .. "; numbers are keys")
+    window.count:SetText(#settings.orders .. " of " .. LA.Orders.MAX_RING)
     window.always:SetChecked(LivingAzerothDB.iconsAlways ~= false)
     window.move:SetText(LA.unlocked and "Lock frames" or "Move frames")
+    window.move.glyphIcon:Set(LA.unlocked and "lock" or "move", Style.gold)
 end
 
 function RingSettings.Toggle()

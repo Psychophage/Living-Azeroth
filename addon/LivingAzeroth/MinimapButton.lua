@@ -6,8 +6,6 @@ local _, LA = ...
 local MinimapButton = {}
 LA.MinimapButton = MinimapButton
 
-local ICON = "Interface\\Icons\\INV_Misc_Gear_01"
-
 local button = CreateFrame("Button", "LivingAzerothMinimapButton", Minimap)
 button:SetSize(31, 31)
 button:SetFrameStrata("MEDIUM")
@@ -21,10 +19,11 @@ background:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
 background:SetSize(20, 20)
 background:SetPoint("TOPLEFT", 7, -5)
 local icon = button:CreateTexture(nil, "ARTWORK")
-icon:SetTexture(ICON)
-icon:SetSize(17, 17)
-icon:SetPoint("TOPLEFT", 7, -6)
-icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+icon:SetTexture(LA.Style.ART .. "glyph-bot")
+icon:SetSize(19, 19)
+icon:SetPoint("TOPLEFT", 6, -5)
+local GOLD = LA.Style.C("#ffd36b")
+icon:SetVertexColor(GOLD[1], GOLD[2], GOLD[3])
 local border = button:CreateTexture(nil, "OVERLAY")
 border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
 border:SetSize(53, 53)
@@ -55,13 +54,13 @@ end)
 button:SetScript("OnDragStop", function(self)
     self:UnlockHighlight()
     self:SetScript("OnUpdate", nil)
-    icon:SetVertexColor(1, 1, 1) -- OnMouseUp does not come when the mouse is let go after a drag
+    icon:SetVertexColor(GOLD[1], GOLD[2], GOLD[3]) -- OnMouseUp does not come when the mouse is let go after a drag
 end)
 button:SetScript("OnMouseDown", function()
-    icon:SetVertexColor(0.7, 0.7, 0.7)
+    icon:SetVertexColor(GOLD[1] * 0.7, GOLD[2] * 0.7, GOLD[3] * 0.7)
 end)
 button:SetScript("OnMouseUp", function()
-    icon:SetVertexColor(1, 1, 1)
+    icon:SetVertexColor(GOLD[1], GOLD[2], GOLD[3])
 end)
 button:SetScript("OnClick", function(_, mouse)
     GameTooltip:Hide()

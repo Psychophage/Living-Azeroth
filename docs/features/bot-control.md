@@ -8,9 +8,12 @@ The Living Azeroth addon (`addon/LivingAzeroth`) and the server side it talks to
 
 Copy `addon/LivingAzeroth` into the game's `Interface/AddOns` folder. It works with the
 game's own interface and with DragonUI; it needs neither. On a server without bot control
-it says so once and stays quiet. Its windows use the game's own art at its own size: the
-manager is the Quest Log's two-pane window, the ring's settings and formations the Dungeon
-Finder's.
+it says so once and stays quiet. Its windows are its own design, drawn from plain textures
+on whole screen pixels (`Draw.lua`): each window is scaled so one unit is a whole number of
+pixels (two on a 1440 screen), and frames, buttons and corners are built from one-pixel
+strips and a corner atlas shown 1:1, so edges stay sharp at any UI scale. The look (colours,
+fonts, every surface's recipe) is in `Style.lua`, in bronze or, with DragonUI on, graphite.
+Icons, the ring disc and the corner atlas come from `addon/tools/make_art.py`.
 
 A round button on the minimap's edge opens the manager (right-click: the orders ring's
 settings); drag it around the minimap.

@@ -31,18 +31,17 @@ local GROUPS = {
 }
 
 local SETS = {
-    { name = "Questing", icon = "Interface\\Icons\\INV_Misc_Map_01", text = "Keep up, help out, pick things up.",
+    { name = "Questing", glyph = "follow", tone = "gold", text = "Keep up, help out, pick things up.",
         on = { "join", "aoe", "behind", "avoid_aoe", "potions", "run", "loot", "gather", "food", "buffs", "mount" } },
-    { name = "Dungeon", icon = "Interface\\Icons\\INV_Shield_06", text = "Let the tank lead; mind the threat.",
+    { name = "Dungeon", glyph = "tank", tone = "steel", text = "Let the tank lead; mind the threat.",
         on = { "aoe", "behind", "threat", "avoid_aoe", "potions", "save_mana", "loot", "food", "buffs" } },
-    { name = "Raid", icon = "Interface\\Icons\\INV_Misc_Head_Dragon_Black", text = "Threat and mana discipline.",
+    { name = "Raid", glyph = "leader", tone = "violet", text = "Threat and mana discipline.",
         on = { "behind", "threat", "avoid_aoe", "potions", "save_mana", "food", "buffs" } },
-    { name = "Grinding", icon = "Interface\\Icons\\Ability_Warrior_Rampage",
-        text = "Fight everything nearby, loot it all.",
+    { name = "Grinding", glyph = "attack", tone = "red", text = "Fight everything nearby, loot it all.",
         on = { "join", "aoe", "avoid_aoe", "potions", "save_mana", "loot", "gather", "food", "buffs" } },
-    { name = "Quietly", icon = "Interface\\Icons\\Spell_Nature_Sleep", text = "Follow and stay out of fights.",
+    { name = "Quietly", glyph = "passive", tone = "violet", text = "Follow and stay out of fights.",
         on = { "passive", "avoid_aoe", "potions", "run", "food", "mount" } },
-    { name = "Guard me", icon = "Interface\\Icons\\Ability_Defend", text = "Defend me; fight anything that comes.",
+    { name = "Guard me", glyph = "guard", tone = "steel", text = "Defend me; fight anything that comes.",
         on = { "join", "aoe", "avoid_aoe", "potions", "food", "buffs" } },
 }
 
@@ -182,91 +181,157 @@ local function Waiting()
     return count
 end
 
-local function ShowList()
-    local bots = AllBots()
+
+local UI, Style = LA.UI, LA.Style
+local Refresh
+
+-- The "Apply to" chips: all the player's bots, then each bot with its role. They wrap onto a second line.
+local function ShowTargets(bots)
+    local chips, row = page.targets, page.targetRow
+    local width = row:GetWidth()
+    local entries = { { key = "all", label = "All my bots", glyph = "bot" } }
+    for _, bot in ipairs(bots) do
+        entries[#entries + 1] = { key = bot.guid, label = bot.name, bot = bot }
+    end
+    local x, y = 0, 0
+    for i, entry in ipairs(entries) do
+        local chip = chips[i]
+        if not chip then
+            chip = UI.Chip(row, "", 70)
+            chip.glyphIcon = UI.Icon(chip, 12, "medal")
+            chip:SetScript("OnClick", function(self)
+                target = self.key
+                Remember()
+                Refresh()
+            end)
+            chips[i] = chip
+        end
+        chip.key = entry.key
+        local role = entry.bot and Style.ROLE_LOOK[entry.bot.role or "damage"] or nil
+        chip.glyphIcon:Set(role and role[1] or "bot", role and role[2] or "gold")
+        chip:SetText(entry.label)
+        chip:FitText(16)
+        chip:SetOn(target == entry.key)
+        if entry.bot then
+            local colour = UI.ClassColor(entry.bot.class)
+            chip.text:SetTextColor(colour.r, colour.g, colour.b)
+        end
+        if x > 0 and x + chip:GetWidth() > width then
+            x, y = 0, y + UI.BUTTON_HEIGHT + 4
+        end
+        chip:ClearAllPoints()
+        chip:SetPoint("TOPLEFT", x, -y)
+        chip:Show()
+        x = x + chip:GetWidth() + 4
+    end
+    for i = #entries + 1, #chips do
+        chips[i]:Hide()
+    end
+    LA.SetShown(page.noBots, #bots == 0)
+    LA.SetShown(page.toRoster, #bots == 0)
+    row:SetHeight(y + UI.BUTTON_HEIGHT)
+    return y + UI.BUTTON_HEIGHT
+end
+
+-- The set tiles: the standard sets, then the player's own (right-click one of those to forget it).
+local function ShowSets(current, usable)
+    local tiles = page.sets
+    local sets = Sets()
+    local columns, gap, height = 8, 4, 44
+    local each = math.floor((page.setRow:GetWidth() - (columns - 1) * gap) / columns)
+    for i, set in ipairs(sets) do
+        local tile = tiles[i]
+        if not tile then
+            tile = CreateFrame("Button", nil, page.setRow)
+            tile:SetSize(each, height)
+            tile:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+            UI.Surface(tile, "row")
+            UI.HoverLight(tile)
+            tile.icon = UI.Icon(tile, 22, "tile")
+            tile.icon:SetPoint("TOP", 0, -4)
+            tile.name = UI.Text(tile, "label", each - 4)
+            tile.name:SetJustifyH("CENTER")
+            tile.name:SetWordWrap(false)
+            tile.name:SetPoint("BOTTOM", 0, 4)
+            tile:SetScript("OnClick", function(self, mouse)
+                if mouse == "RightButton" and self.own then
+                    StaticPopup_Show("LIVINGAZEROTH_FORGET_SET", self.set.name, nil, self.set)
+                elseif #AllBots() > 0 then
+                    UseSet(self.set)
+                    Refresh()
+                end
+            end)
+            tile:SetScript("OnEnter", function(self)
+                GameTooltip:SetOwner(self, "ANCHOR_TOP")
+                GameTooltip:AddLine(self.set.name, 1, 0.82, 0)
+                GameTooltip:AddLine(self.set.text or "Your own set.", 1, 1, 1, true)
+                GameTooltip:AddLine(self.own and "Click to use it; right-click to forget it." or "Click to use it.",
+                    0.6, 0.6, 0.6)
+                GameTooltip:Show()
+            end)
+            tile:SetScript("OnLeave", GameTooltip_Hide)
+            tiles[i] = tile
+        end
+        tile.set, tile.own = set, i > #SETS
+        tile.icon:Set(set.glyph or "tactics", set.tone or "bronze")
+        tile.name:SetText(set.name)
+        local on = current == set
+        tile.surface:Set(on and "rowOn" or "row")
+        tile.icon:SetActive(on)
+        tile.icon:SetDim(not usable)
+        local colour = on and Style.gold or Style.T().text
+        tile.name:SetTextColor(colour[1], colour[2], colour[3])
+        tile:ClearAllPoints()
+        tile:SetPoint("TOPLEFT", ((i - 1) % columns) * (each + gap), -math.floor((i - 1) / columns) * (height + gap))
+        tile:Show()
+    end
+    for i = #sets + 1, #tiles do
+        tiles[i]:Hide()
+    end
+    local rows = math.ceil(#sets / columns)
+    page.setRow:SetHeight(rows * (height + gap) - gap)
+    return rows * (height + gap) - gap
+end
+
+function Refresh()
+    if not page or not LA.Manager.IsShown(page) then
+        return
+    end
+    local all = AllBots()
     if target ~= "all" and not LA.Bots.Mine()[target] then
         target = "all"
     end
-    local items = { { header = true, key = "who", text = "Apply to" } }
-    items[#items + 1] = { key = "all", under = "who", text = "All my bots", tag = #bots > 0 and tostring(#bots) or "",
-        icon = "Interface\\Icons\\INV_Misc_Gear_01" }
-    for _, bot in ipairs(bots) do
-        items[#items + 1] = { key = bot.guid, under = "who", text = LA.UI.Coloured(bot.name, bot.class),
-            tag = LA.Orders.Pending(bot.guid) and "..." or "",
-            icon = function(texture) LA.UI.SetClassIcon(texture, bot.class) end }
-    end
-    items[#items + 1] = { header = true, key = "sets", text = "Tactic sets" }
-    local current = #bots > 0 and Matching()
-    for i, set in ipairs(Sets()) do
-        items[#items + 1] = { key = "set:" .. i, set = set, own = i > #SETS, under = "sets", text = set.name,
-            tag = current == set and "In use" or "", icon = set.icon or "Interface\\Icons\\INV_Misc_Note_01",
-            tooltip = { set.name, set.text or "Your own set.",
-                i > #SETS and "|cff999999Click to use it; right-click to forget it.|r" or
-                    "|cff999999Click to use it.|r" } }
-    end
-    page.list:SetItems(items)
-    page.list:Choose(target)
-end
+    local usable = #all > 0
+    local y = ShowTargets(all) + 10
+    page.setRow:SetPoint("TOPLEFT", 0, -y)
+    local current = usable and Matching() or nil
+    y = y + ShowSets(current, usable) + 8
 
-local function Refresh()
-    if not page or not page.left:IsVisible() then
-        return
-    end
-    ShowList()
-    local bots = Targets()
-    local d, stack = page.parts, page.stack
-    stack:Reset()
-    for _, region in pairs(d) do
-        region:Hide()
-    end
-    for _, check in pairs(checks) do
-        check:Hide()
-    end
-
-    if #AllBots() == 0 then
-        d.heading:SetText("No bots with you")
-        stack:Add(d.heading)
-        d.description:SetText("Bring one of your characters in from the Roster tab, or invite a bot to your " ..
-            "party. Their tactics are set here.")
-        stack:Add(d.description, 6)
-        page:SetDetailHeight(stack:Height())
-        page.save:Disable()
-        page.undo:Disable()
-        page.formation:Disable()
-        page.who:SetText("")
-        return
-    end
-
-    local set = Matching()
-    d.heading:SetText(set and set.name or "Your own mix")
-    stack:Add(d.heading)
-    d.description:SetText(set and (set.text or "Your own set.") or
-        "These switches match none of the sets. Save them as a set to use them again.")
-    stack:Add(d.description, 4)
-    for _, group in ipairs(GROUPS) do
-        local title = d["group:" .. group.title]
-        stack:Add(title, 12)
-        for _, item in ipairs(group.items) do
-            local id = item[1]
-            local check = checks[id]
-            local state = State(id)
-            check:SetChecked(state == true or state == "some")
-            check:SetUsable(state ~= nil)
-            LA.SetShown(check.some, state == "some")
-            stack:Add(check, 2, -4, 32)
-        end
-    end
-    page:SetDetailHeight(stack:Height())
-
-    local names = target == "all" and "all your bots" or bots[1] and bots[1].name or "?"
+    page.lineRow:SetPoint("TOPLEFT", 0, -y)
     local waiting = Waiting()
-    page.who:SetText("For " .. names .. (waiting > 0 and (" - waiting for " .. waiting .. "...") or ""))
-    page.save:Enable()
-    page.formation:Enable()
-    if Changed() then
-        page.undo:Enable()
+    if not usable then
+        page.line:SetText("The switches show and change your bots' tactics once one is with you.")
+    elseif current then
+        page.line:SetText("|cffffd100" .. current.name .. ":|r " .. (current.text or "your own set."))
     else
-        page.undo:Disable()
+        page.line:SetText("|cffffd100Your own mix:|r these switches match none of the sets.")
+    end
+    if waiting > 0 then
+        page.line:SetText(page.line:GetText() .. "  |cffa89f8cWaiting for " .. waiting .. "...|r")
+    end
+    page.save:SetUsable(usable)
+    page.undo:SetUsable(usable and Changed())
+    page.formation:SetUsable(usable)
+    y = y + UI.BUTTON_HEIGHT + 8
+
+    page.switches:SetPoint("TOPLEFT", 0, -y)
+    local _, height = LA.Manager.BodySize()
+    page.switches:SetHeight(height - y)
+    for id, check in pairs(checks) do
+        local state = usable and State(id) or nil
+        check:SetChecked(state == true or state == "some")
+        check:SetMixed(state == "some")
+        check:SetUsable(state ~= nil)
     end
 end
 Tactics.Refresh = Refresh
@@ -326,45 +391,68 @@ StaticPopupDialogs.LIVINGAZEROTH_FORGET_SET = {
 
 local function Build(self)
     page = self
-    local UI = LA.UI
+    local width = LA.Manager.BodySize()
 
-    page.who = page.top:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    page.who:SetPoint("LEFT", 4, 0)
+    local applyTo = UI.Text(page.frame, "heading")
+    applyTo:SetPoint("TOPLEFT", 0, -4)
+    applyTo:SetText("Apply to")
+    local indent = math.ceil(applyTo:GetStringWidth()) + 10
+    page.targetRow = CreateFrame("Frame", nil, page.frame)
+    page.targetRow:SetPoint("TOPLEFT", indent, 0)
+    page.targetRow:SetWidth(width - indent)
+    page.targets = {}
+    page.noBots = UI.Text(page.targetRow, "small")
+    page.noBots:SetPoint("LEFT", 100, 0)
+    page.noBots:SetText("No bots with you yet.")
+    page.toRoster = UI.Button(page.targetRow, "Bring one in", nil, "plain", "roster")
+    page.toRoster:SetPoint("LEFT", page.noBots, "RIGHT", 10, 0)
+    page.toRoster:SetScript("OnClick", function() LA.Manager.Show(1) end)
 
-    page.list = UI.List(page.left, function(item, mouse)
-        if item.set then
-            if mouse == "RightButton" and item.own then
-                StaticPopup_Show("LIVINGAZEROTH_FORGET_SET", item.set.name, nil, item.set)
-            elseif #AllBots() > 0 then
-                UseSet(item.set)
-            end
-        else
-            target = item.key
-            Remember()
-            LA.Manager.ScrollToTop()
-        end
+    page.setRow = CreateFrame("Frame", nil, page.frame)
+    page.setRow:SetWidth(width)
+    page.sets = {}
+
+    page.lineRow = CreateFrame("Frame", nil, page.frame)
+    page.lineRow:SetSize(width, UI.BUTTON_HEIGHT)
+    page.formation = UI.Button(page.lineRow, "Formation", nil, "plain", "formation")
+    page.formation:SetPoint("RIGHT")
+    page.formation:SetScript("OnClick", function() LA.Formation.Toggle() end)
+    page.undo = UI.Button(page.lineRow, "Undo", 56, "plain")
+    page.undo:SetPoint("RIGHT", page.formation, "LEFT", -4, 0)
+    page.undo:SetScript("OnClick", function()
+        Undo()
         Refresh()
     end)
+    page.save = UI.Button(page.lineRow, "Save as a set")
+    page.save:SetPoint("RIGHT", page.undo, "LEFT", -4, 0)
+    page.save:SetScript("OnClick", function() StaticPopup_Show("LIVINGAZEROTH_SAVE_SET") end)
+    page.line = UI.Text(page.lineRow, "body")
+    page.line:SetPoint("LEFT", 2, 0)
+    page.line:SetPoint("RIGHT", page.save, "LEFT", -10, 0)
+    page.line:SetWordWrap(false)
 
-    local d = {}
-    d.heading = UI.Paper(page.detail, "title", 280)
-    d.description = UI.Paper(page.detail, "body", 280)
-    for _, group in ipairs(GROUPS) do
-        local title = UI.Paper(page.detail, "title", 280)
-        title:SetText(group.title)
-        d["group:" .. group.title] = title
+    -- The switches, one group to a column.
+    page.switches = UI.Inset(page.frame)
+    page.switches:SetWidth(width)
+    local gap = 14
+    local column = math.floor((width - 20 - (#GROUPS - 1) * gap) / #GROUPS)
+    for g, group in ipairs(GROUPS) do
+        local x = 10 + (g - 1) * (column + gap)
+        local title = UI.Heading(page.switches, group.title)
+        title:SetPoint("TOPLEFT", x, -8)
+        title:SetWidth(column)
+        local y = 32
         for _, item in ipairs(group.items) do
             local id = item[1]
-            local check = UI.Check(page.detail, item[2], item[3])
-            check.some = check:CreateFontString(nil, "OVERLAY", "QuestFontNormalSmall")
-            check.some:SetPoint("LEFT", check.label, "RIGHT", 4, 0)
-            check.some:SetText("(some)")
-            check:SetScript("OnClick", function()
+            local check = UI.Check(page.switches, item[2], item[3], column)
+            check:SetPoint("TOPLEFT", x, -y)
+            y = y + check:GetHeight() + 8
+            check.onToggle = function()
                 SetSwitch(id, State(id) ~= true)
                 Refresh() -- the box shows the bots' state, not the click
-            end)
+            end
             check:SetScript("OnEnter", function(c)
-                if State(id) == nil then
+                if #AllBots() > 0 and State(id) == nil then
                     GameTooltip:SetOwner(c, "ANCHOR_RIGHT")
                     GameTooltip:AddLine(item[2], 1, 1, 1)
                     GameTooltip:AddLine("None of these bots' classes can do this.", nil, nil, nil, true)
@@ -375,21 +463,6 @@ local function Build(self)
             checks[id] = check
         end
     end
-    page.parts = d
-    page.stack = UI.Stack(page.detail)
-
-    page.save = UI.Button(page.controls, "Save set", 100)
-    page.save:SetPoint("LEFT", 0, 1)
-    page.save:SetScript("OnClick", function() StaticPopup_Show("LIVINGAZEROTH_SAVE_SET") end)
-    page.undo = UI.Button(page.controls, "Undo", 100)
-    page.undo:SetPoint("LEFT", page.save, "RIGHT", 0, 0)
-    page.undo:SetScript("OnClick", function()
-        Undo()
-        Refresh()
-    end)
-    page.formation = UI.Button(page.controls, "Formation", 100)
-    page.formation:SetPoint("RIGHT", -3, 1)
-    page.formation:SetScript("OnClick", function() LA.Formation.Toggle() end)
 end
 
 local function Show()
@@ -400,7 +473,7 @@ end
 LA.On("loaded", function()
     LivingAzerothDB.tactics = LivingAzerothDB.tactics or {}
     LivingAzerothDB.tactics.sets = LivingAzerothDB.tactics.sets or {}
-    LA.Manager.AddPage("Tactics", Build, Show)
+    LA.Manager.AddPage("Tactics", "tactics", Build, Show)
 end)
-LA.On("bots:changed", Refresh)
-LA.On("orders:changed", Refresh)
+LA.On("bots:changed", function() Refresh() end)
+LA.On("orders:changed", function() Refresh() end)

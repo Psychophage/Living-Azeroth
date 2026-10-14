@@ -11,7 +11,6 @@ LA.Raid = Raid
 local WIDTH, HEIGHT, GAP = 112, 40, 4
 local GROUPS = 8
 local BAR = "Interface\\TargetingFrame\\UI-StatusBar"
-local ROLES = "Interface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES"
 
 local cells = {} -- every cell the headers made
 local selected = {} -- guid -> true
@@ -30,10 +29,8 @@ local title = raid:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 title:SetPoint("TOPLEFT", 8, -10)
 
 local function SmallButton(text, width)
-    local button = CreateFrame("Button", nil, raid, "UIPanelButtonTemplate")
-    button:SetSize(width, 20)
-    button:SetText(text)
-    button:GetFontString():SetFontObject("GameFontNormalSmall")
+    local button = LA.UI.Button(raid, text, width, "plain")
+    button:SetHeight(20)
     return button
 end
 
@@ -109,9 +106,7 @@ function Raid.SetUpCell(cell)
     cell.sub = text:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     cell.sub:SetPoint("BOTTOMLEFT", 5, 8)
     cell.sub:SetTextColor(0.85, 0.82, 0.75)
-    cell.role = text:CreateTexture(nil, "OVERLAY")
-    cell.role:SetTexture(ROLES)
-    cell.role:SetSize(14, 14)
+    cell.role = LA.UI.Icon(text, 14, "medal")
     cell.role:SetPoint("TOPLEFT", 3, -4)
     cell.medal = LA.Markers.Medal(text, 13)
     cell.medal:SetPoint("BOTTOMRIGHT", -3, 6)
@@ -119,21 +114,23 @@ function Raid.SetUpCell(cell)
     cell.pip.livingAzerothPip = true
     cell.pip:SetSize(15, 15)
     cell.pip:SetPoint("TOPRIGHT", -3, -3)
-    cell.pip.icon = cell.pip:CreateTexture(nil, "ARTWORK")
-    cell.pip.icon:SetAllPoints()
-    cell.pip.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    cell.pip.tile = LA.UI.Icon(cell.pip, 15, "tile")
+    cell.pip.tile:SetPoint("CENTER")
     cell.pip.glow = cell.pip:CreateTexture(nil, "OVERLAY")
-    cell.pip.glow:SetTexture("Interface\\Buttons\\UI-ActionButton-Border")
+    cell.pip.glow:SetTexture(LA.Style.ART .. "tile-glow")
     cell.pip.glow:SetBlendMode("ADD")
     cell.pip.glow:SetPoint("CENTER")
     cell.pip.glow:SetSize(30, 30)
-    cell.pip.glow:SetVertexColor(1, 0.82, 0)
-    cell.pip:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+    local hover = cell.pip:CreateTexture(nil, "HIGHLIGHT")
+    hover:SetTexture(LA.Style.ART .. "tile-glow")
+    hover:SetBlendMode("ADD")
+    hover:SetPoint("CENTER")
+    hover:SetSize(30, 30)
+    hover:SetAlpha(0.35)
     cell.flags = LA.Markers.Flags(text, 11)
     cell.flags:SetPoint("RIGHT", cell.pip, "LEFT", -2, 0)
-    cell.pip.tick = cell.pip:CreateTexture(nil, "OVERLAY")
-    cell.pip.tick:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
-    cell.pip.tick:SetSize(12, 12)
+    cell.pip.tick = LA.UI.Icon(cell.pip, 12, "plain")
+    cell.pip.tick:Set("check", LA.Style.green)
     cell.pip.tick:SetPoint("CENTER", cell.pip, "LEFT", -5, 0)
     cell.pip:RegisterForClicks("AnyUp")
     cell.pip:SetScript("OnClick", function(self)
@@ -180,7 +177,7 @@ local function RoleOf(unit, bot)
         local tank, healer = UnitGroupRolesAssigned(unit)
         role = tank and "tank" or healer and "healer" or nil
     end
-    return role == "tank" and "TANK" or role == "healer" and "HEALER" or role == "damage" and "DAMAGER" or nil
+    return role
 end
 
 local function UpdateCell(cell)
@@ -221,8 +218,9 @@ local function UpdateCell(cell)
     local bot = LA.Bots.ForUnit(unit)
     local mine = guid and LA.Bots.Mine()[guid]
     local role = RoleOf(unit, mine)
-    if role then
-        cell.role:SetTexCoord(GetTexCoordsForRoleSmallCircle(role))
+    if role and LA.Style.ROLE_LOOK[role] then
+        local look = LA.Style.ROLE_LOOK[role]
+        cell.role:Set(look[1], look[2])
         cell.role:Show()
     else
         cell.role:Hide()
@@ -235,7 +233,8 @@ local function UpdateCell(cell)
     end
     if mine and mine.commandable and LA.Orders.IconShown(mine) then
         cell.guid = guid
-        cell.pip.icon:SetTexture(LA.Orders.Standing(mine).icon)
+        local order = LA.Orders.Standing(mine)
+        cell.pip.tile:Set(order.glyph, order.tone)
         cell.pip:Show()
         cell.flags:Update(mine)
         cell.flags:Show()
@@ -285,7 +284,7 @@ for group = 1, GROUPS do
     label.livingAzerothPip = true
     label:SetSize(WIDTH, 14)
     label:SetPoint("BOTTOMLEFT", header, "TOPLEFT", 0, 2)
-    label.text = label:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    label.text = LA.UI.Text(label, "button")
     label.text:SetPoint("LEFT", 2, 0)
     label.text:SetText("Group " .. group)
     label:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")

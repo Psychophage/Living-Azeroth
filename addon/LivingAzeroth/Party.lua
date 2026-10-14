@@ -7,8 +7,6 @@ local _, LA = ...
 local Party = {}
 LA.Party = Party
 
-local TICK = "Interface\\RaidFrame\\ReadyCheck-Ready"
-
 local pips = {}
 
 local function UnitOf(index)
@@ -28,26 +26,26 @@ local function Pip(index)
     pip:SetSize(20, 20)
     pip:SetPoint("LEFT", _G["PartyMemberFrame" .. index .. "HealthBar"] or frame, "RIGHT", 6, 4)
     pip:SetFrameLevel(frame:GetFrameLevel() + 6)
-    pip:SetBackdrop({ edgeFile = "Interface\\Buttons\\WHITE8X8", edgeSize = 1 })
-    pip:SetBackdropBorderColor(0, 0, 0, 1)
-    pip.icon = pip:CreateTexture(nil, "ARTWORK")
-    pip.icon:SetPoint("TOPLEFT", 1, -1)
-    pip.icon:SetPoint("BOTTOMRIGHT", -1, 1)
-    pip.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-    pip.border = pip:CreateTexture(nil, "OVERLAY")
-    pip.border:SetTexture("Interface\\Buttons\\UI-ActionButton-Border")
-    pip.border:SetBlendMode("ADD")
-    pip.border:SetPoint("CENTER")
-    pip.border:SetSize(38, 38)
-    pip.border:SetVertexColor(1, 0.82, 0)
-    pip.border:Hide()
-    pip:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+    pip.tile = LA.UI.Icon(pip, 20, "tile")
+    pip.tile:SetPoint("CENTER")
+    pip.glow = pip:CreateTexture(nil, "OVERLAY")
+    pip.glow:SetTexture(LA.Style.ART .. "tile-glow")
+    pip.glow:SetBlendMode("ADD")
+    pip.glow:SetSize(40, 40)
+    pip.glow:SetPoint("CENTER")
+    pip.glow:Hide()
+    local hover = pip:CreateTexture(nil, "HIGHLIGHT")
+    hover:SetTexture(LA.Style.ART .. "tile-glow")
+    hover:SetBlendMode("ADD")
+    hover:SetSize(40, 40)
+    hover:SetPoint("CENTER")
+    hover:SetAlpha(0.35)
     pip.flags = LA.Markers.Flags(pip, 12)
     pip.flags:SetPoint("LEFT", pip, "RIGHT", 4, 0)
-    pip.tick = pip:CreateTexture(nil, "OVERLAY")
-    pip.tick:SetTexture(TICK)
-    pip.tick:SetSize(14, 14)
+    pip.tick = LA.UI.Icon(pip, 13, "plain")
+    pip.tick:Set("check", LA.Style.green)
     pip.tick:SetPoint("CENTER", pip, "TOPRIGHT", -1, -1)
+    pip.tick:SetFrameLevel(pip:GetFrameLevel() + 3)
     pip.tick:Hide()
     pip:RegisterForClicks("AnyUp")
     pip:SetScript("OnClick", function(self)
@@ -74,13 +72,13 @@ local function Pip(index)
     pip:SetScript("OnUpdate", function(self)
         local guid = self.guid
         if guid and LA.Orders.Pending(guid) then
-            self.border:SetAlpha(0.45 + 0.45 * math.sin(GetTime() * 9))
-            self.border:Show()
+            self.glow:SetAlpha(0.45 + 0.45 * math.sin(GetTime() * 9))
+            self.glow:Show()
         elseif guid and LA.Ring.OpenFor() == "bot:" .. guid then
-            self.border:SetAlpha(1)
-            self.border:Show()
+            self.glow:SetAlpha(1)
+            self.glow:Show()
         else
-            self.border:Hide()
+            self.glow:Hide()
         end
         LA.SetShown(self.tick, guid and LA.Orders.RecentlyDone(guid))
     end)
@@ -96,7 +94,8 @@ function Party.Update()
             local bot = guid and LA.Bots.Mine()[guid]
             if bot and bot.commandable then
                 pip.guid = guid
-                pip.icon:SetTexture(LA.Orders.Standing(bot).icon)
+                local order = LA.Orders.Standing(bot)
+                pip.tile:Set(order.glyph, order.tone)
                 pip.flags:Update(bot)
                 pip:Show()
             else

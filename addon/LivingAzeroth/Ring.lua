@@ -11,9 +11,8 @@ LA.Ring = Ring
 local SIZES = { small = 0.82, normal = 1, large = 1.22 }
 local TILE = 36
 local RADIUS = 68
-local DISC = 98
+local DISC = 100
 local BOX = 2 * RADIUS + TILE + 8
-local CIRCLE = "Interface\\CharacterFrame\\TempPortraitAlphaMask"
 
 local frame = CreateFrame("Frame", "LivingAzerothRing", UIParent)
 frame:SetSize(BOX, BOX)
@@ -24,20 +23,10 @@ frame:EnableMouse(false) -- only the disc and the buttons take the mouse
 frame:Hide()
 table.insert(UISpecialFrames, "LivingAzerothRing") -- Escape closes it
 
-local rim = frame:CreateTexture(nil, "BACKGROUND")
-rim:SetTexture(CIRCLE)
-rim:SetVertexColor(0.79, 0.64, 0.29)
-rim:SetSize(DISC + 6, DISC + 6)
-rim:SetPoint("CENTER")
-local shadow = frame:CreateTexture(nil, "BACKGROUND", nil, -1)
-shadow:SetTexture(CIRCLE)
-shadow:SetVertexColor(0, 0, 0, 0.6)
-shadow:SetSize(DISC + 16, DISC + 16)
-shadow:SetPoint("CENTER", 0, -3)
-local disc = frame:CreateTexture(nil, "BORDER")
-disc:SetTexture(CIRCLE)
-disc:SetVertexColor(0.07, 0.055, 0.03, 0.96)
-disc:SetSize(DISC, DISC)
+-- The disc's art has room for its shadow around it: the disc itself is 0.88 of the texture.
+local disc = frame:CreateTexture(nil, "BACKGROUND")
+disc:SetTexture(LA.Style.ART .. "disc")
+disc:SetSize(DISC / 0.88, DISC / 0.88)
 disc:SetPoint("CENTER")
 
 -- The disc takes clicks so that clicking it does not count as clicking elsewhere.
@@ -46,13 +35,16 @@ discButton:SetSize(DISC, DISC)
 discButton:SetPoint("CENTER")
 discButton:EnableMouse(true)
 
-local name = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-name:SetPoint("BOTTOM", frame, "CENTER", 0, 4)
+local name = frame:CreateFontString(nil, "OVERLAY")
+name:SetFontObject(LA.Style.Font("heading"))
+name:SetPoint("BOTTOM", frame, "CENTER", 0, 3)
 name:SetWidth(DISC - 14)
-local hint = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+local hint = frame:CreateFontString(nil, "OVERLAY")
+hint:SetFontObject(LA.Style.Font("body"))
+hint:SetTextColor(1, 1, 1)
 hint:SetPoint("TOP", frame, "CENTER", 0, -2)
 hint:SetWidth(DISC - 16)
-hint:SetHeight(28)
+hint:SetHeight(30)
 hint:SetJustifyV("TOP")
 
 local buttons = {}
@@ -133,10 +125,29 @@ local function Refresh()
                     on = on and LA.Orders.IsOn(bot, id)
                 end
             end
-            button:SetChecked(offered and on)
-            button.icon:SetDesaturated(not offered)
-            button:SetAlpha(offered and 1 or 0.45)
+            button.on = offered and on
+            button.tile:SetActive(button.on)
+            button.tile:SetDim(not offered)
             button.waiting = waiting[id] or false
+        end
+    end
+end
+
+-- Where each order sits: around the disc, the first at the top. spread runs 0.7 to 1 as the ring opens.
+local spread = 1
+local function Position()
+    local count = 0
+    for _, button in ipairs(buttons) do
+        if button:IsShown() then
+            count = count + 1
+        end
+    end
+    for i, button in ipairs(buttons) do
+        if button:IsShown() then
+            local angle = (i - 1) / count * 2 * math.pi
+            local radius = RADIUS * spread
+            button:ClearAllPoints()
+            button:SetPoint("CENTER", frame, "CENTER", radius * math.sin(angle), radius * math.cos(angle))
         end
     end
 end
@@ -147,17 +158,34 @@ local function Layout()
         local button = buttons[i]
         local id = orders[i]
         if id and LA.Orders.byId[id] then
-            local angle = (i - 1) / #orders * 2 * math.pi
-            button:ClearAllPoints()
-            button:SetPoint("CENTER", frame, "CENTER", RADIUS * math.sin(angle), RADIUS * math.cos(angle))
+            local order = LA.Orders.byId[id]
             button.order = id
-            button.icon:SetTexture(LA.Orders.byId[id].icon)
+            button.tile:Set(order.glyph, order.tone)
             button.hotkey:SetText(i)
             button:Show()
         else
             button:Hide()
         end
     end
+    Position()
+end
+
+-- Opening: the orders spread out from the disc and fade in, as in the mockup.
+local opening = CreateFrame("Frame")
+local function Open()
+    local started = GetTime()
+    spread = 0.7
+    frame:SetAlpha(0)
+    opening:SetScript("OnUpdate", function(self)
+        local t = math.min(1, (GetTime() - started) / 0.14)
+        local eased = 1 - (1 - t) * (1 - t)
+        spread = 0.7 + 0.3 * eased
+        frame:SetAlpha(eased)
+        Position()
+        if t >= 1 then
+            self:SetScript("OnUpdate", nil)
+        end
+    end)
 end
 
 local function Bind()
@@ -173,14 +201,26 @@ local function Bind()
 end
 
 for i = 1, LA.Orders.MAX_RING do
-    local button = CreateFrame("CheckButton", "LivingAzerothRingButton" .. i, frame, "ActionButtonTemplate")
-    button.icon = _G[button:GetName() .. "Icon"]
-    button.hotkey = _G[button:GetName() .. "HotKey"]
-    button.hotkey:SetVertexColor(0.9, 0.9, 0.9)
+    local button = CreateFrame("Button", "LivingAzerothRingButton" .. i, frame)
+    button:SetSize(TILE, TILE)
+    button.tile = LA.UI.Icon(button, TILE, "tile")
+    button.tile:SetPoint("CENTER")
+    button.hotkey = button:CreateFontString(nil, "OVERLAY")
+    button.hotkey:SetFontObject(LA.Style.Font("small"))
+    button.hotkey:SetTextColor(0.92, 0.92, 0.92)
+    button.hotkey:SetPoint("TOPRIGHT", -3, -2)
+    button.hotkey:SetParent(button.tile)
+    local hover = button:CreateTexture(nil, "HIGHLIGHT")
+    hover:SetTexture(LA.Style.ART .. "tile-glow")
+    hover:SetBlendMode("ADD")
+    hover:SetSize(TILE * 2, TILE * 2)
+    hover:SetPoint("CENTER")
+    hover:SetAlpha(0.35)
     button.glow = button:CreateTexture(nil, "OVERLAY")
-    button.glow:SetTexture("Interface\\Buttons\\CheckButtonHilight")
+    button.glow:SetTexture(LA.Style.ART .. "tile-glow")
     button.glow:SetBlendMode("ADD")
-    button.glow:SetAllPoints()
+    button.glow:SetSize(TILE * 2, TILE * 2)
+    button.glow:SetPoint("CENTER")
     button.glow:Hide()
     button:RegisterForClicks("AnyUp")
     button:SetScript("OnClick", function(self)
@@ -189,7 +229,7 @@ for i = 1, LA.Orders.MAX_RING do
                 LA.Orders.Give(bot, self.order)
             end
         end
-        Refresh() -- a click toggles the check; the bot's real state decides it
+        Refresh() -- the bot's real state decides how it shows
     end)
     button:SetScript("OnEnter", function(self)
         hovered = self.order
@@ -201,12 +241,14 @@ for i = 1, LA.Orders.MAX_RING do
     end)
     button:SetScript("OnUpdate", function(self)
         if self.waiting then
-            self.glow:SetAlpha(0.35 + 0.35 * math.sin(GetTime() * 9))
+            self.glow:SetAlpha(0.45 + 0.45 * math.sin(GetTime() * 9))
             self.glow:Show()
         else
             self.glow:Hide()
         end
     end)
+    button:SetScript("OnMouseDown", function(self) self.tile:SetPoint("CENTER", 0, -1) end)
+    button:SetScript("OnMouseUp", function(self) self.tile:SetPoint("CENTER", 0, 0) end)
     buttons[i] = button
 end
 
@@ -240,6 +282,7 @@ function Ring.Toggle(target, anchor)
     anchorFrame = anchor
     Layout()
     Place(anchor)
+    Open()
     frame:Show()
     Bind()
     Refresh()
@@ -292,9 +335,9 @@ function Ring.Preview(show)
     name:SetText("Orders ring")
     hint:SetText("Drag to place it")
     for _, button in ipairs(buttons) do
-        button:SetChecked(false)
-        button.icon:SetDesaturated(false)
-        button:SetAlpha(1)
+        button.on = false
+        button.tile:SetActive(false)
+        button.tile:SetDim(false)
         button.waiting = false
     end
     frame:Show()

@@ -6,8 +6,6 @@ local _, LA = ...
 local Formation = {}
 LA.Formation = Formation
 
-local ROLES = "Interface\\LFGFrame\\UI-LFG-ICON-ROLES"
-
 local FORMATIONS = {
     { id = "near", name = "Near", text = "Close around you at follow distance." },
     { id = "far", name = "Far", text = "Hang back at a distance and keep out of the way.",
@@ -39,8 +37,10 @@ FORMATIONS[5].pos = Arc(84, -90, 360)
 FORMATIONS[7].pos = Arc(84, -160, 140)
 FORMATIONS[8].pos = Arc(28, -90, 360)
 
-local PREVIEW = 150 -- the preview's size; formations span about 300 units
-local SCALE = PREVIEW / 330
+local UI, Style = LA.UI, LA.Style
+
+local WIDTH, HEIGHT = 480, 330
+local CARD, MINI = 0.13, 0.5 -- yards to the card's and the preview's units
 
 local window
 local chosen = "near"
@@ -68,11 +68,7 @@ local function Current()
     return current
 end
 
-local function RoleCoords(role)
-    return GetTexCoordsForRole(role == "tank" and "TANK" or role == "healer" and "HEALER" or "DAMAGER")
-end
-
--- Each dot glides from where it is to its place in the chosen formation.
+-- Each medal glides from where it is to its place in the chosen formation.
 local function Animate(self, elapsed)
     local moving = false
     for _, dot in ipairs(dots) do
@@ -102,16 +98,20 @@ local function Refresh()
     window.name:SetText(formation.name)
     window.text:SetText(formation.text)
     for _, card in ipairs(cards) do
-        LA.SetShown(card.chosen, card.formation.id == chosen)
+        local on = card.formation.id == chosen
+        card.surface:Set(on and "rowOn" or "row")
+        local colour = on and Style.gold or Style.T().text
+        card.label:SetTextColor(colour[1], colour[2], colour[3])
         LA.SetShown(card.current, card.formation.id == current)
     end
     local bots = LA.Tactics.Targets()
     for i, dot in ipairs(dots) do
         local place, bot = formation.pos[i], bots[i]
         if place and (bot or #bots == 0) then
-            dot.tx, dot.ty = place[1] * SCALE, -place[2] * SCALE
+            dot.tx, dot.ty = LA.Draw.Round(place[1] * MINI), LA.Draw.Round(-place[2] * MINI)
             dot.x, dot.y = dot.x or 0, dot.y or 0
-            dot:SetTexCoord(RoleCoords(bot and bot.role))
+            local look = Style.ROLE_LOOK[bot and bot.role or (i == 1 and "tank" or i == 2 and "healer" or "damage")]
+            dot:Set(look[1], look[2])
             dot:Show()
         else
             dot:Hide()
@@ -124,50 +124,55 @@ local function Refresh()
         waiting = waiting or LA.Orders.IsPending(bot.guid, "formation")
     end
     window.use:SetText("Use " .. formation.name)
+    window.use:FitText(24)
+    local status, colour = "", Style.T().muted
     if #bots == 0 then
-        window.status:SetText("No bots to move.")
+        status = "No bots with you to move."
         window.use:Disable()
     elseif waiting then
-        window.status:SetText("Moving...")
+        status, colour = "Moving...", Style.gold
         window.use:Disable()
     elseif current == chosen then
-        window.status:SetText("Your bots are in " .. formation.name .. ".")
+        status, colour = "Your bots are in " .. formation.name .. ".", Style.green
         window.use:Disable()
     else
-        window.status:SetText(current and ("Now in " .. Find(current).name .. ".") or "")
+        status = current and ("Now in " .. Find(current).name .. ".") or ""
         window.use:Enable()
     end
+    window.status:SetText(status)
+    window.status:SetTextColor(colour[1], colour[2], colour[3])
+    LA.SetShown(window.done, current == chosen and #bots > 0 and not waiting)
 end
 
-local function Card(parent, formation)
+local function Card(parent, formation, width)
     local card = CreateFrame("Button", nil, parent)
-    card:SetSize(46, 46)
-    local background = card:CreateTexture(nil, "BACKGROUND")
-    background:SetTexture(0, 0, 0, 0.35)
-    background:SetAllPoints()
-    local function Dot(x, y, size, r, g, b)
-        local dot = card:CreateTexture(nil, "ARTWORK")
-        dot:SetTexture("Interface\\CharacterFrame\\TempPortraitAlphaMask")
-        dot:SetVertexColor(r, g, b)
+    card:SetSize(width, 58)
+    UI.Surface(card, "row")
+    UI.HoverLight(card)
+    local mini = card:CreateTexture(nil, "ARTWORK")
+    mini:SetTexture(Style.ART .. "field")
+    mini:SetSize(width - 10, 36)
+    mini:SetPoint("TOP", 0, -5)
+    local function Dot(x, y, size, colour)
+        local dot = card:CreateTexture(nil, "OVERLAY")
+        dot:SetTexture(Style.ART .. "dot")
+        UI.Tint(dot, colour)
         dot:SetSize(size, size)
-        dot:SetPoint("CENTER", x, y)
+        dot:SetPoint("CENTER", mini, "CENTER", LA.Draw.Round(x), LA.Draw.Round(y))
     end
-    Dot(0, 0, 8, 1, 0.82, 0)
-    for _, place in ipairs(formation.pos) do
-        Dot(place[1] * 0.13, -place[2] * 0.13, 6, 0.9, 0.9, 0.9)
+    Dot(0, 0, 6, Style.gold)
+    for i, place in ipairs(formation.pos) do
+        local look = Style.ROLE_LOOK[i == 1 and "tank" or i == 2 and "healer" or "damage"]
+        Dot(place[1] * CARD, -place[2] * CARD, 5, look[3])
     end
-    card.chosen = card:CreateTexture(nil, "OVERLAY")
-    card.chosen:SetTexture("Interface\\Buttons\\CheckButtonHilight")
-    card.chosen:SetBlendMode("ADD")
-    card.chosen:SetAllPoints()
-    card.current = card:CreateTexture(nil, "OVERLAY")
-    card.current:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
-    card.current:SetSize(12, 12)
-    card.current:SetPoint("TOPRIGHT", -1, -1)
-    card:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
-    local label = card:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    label:SetPoint("TOP", card, "BOTTOM", 0, -1)
-    label:SetText(formation.name)
+    card.label = UI.Text(card, "label", width - 4)
+    card.label:SetJustifyH("CENTER")
+    card.label:SetWordWrap(false)
+    card.label:SetPoint("BOTTOM", 0, 4)
+    card.label:SetText(formation.name)
+    card.current = UI.Icon(card, 10, "plain")
+    card.current:SetPoint("TOPRIGHT", -3, -3)
+    card.current:Set("check", Style.green)
     card.formation = formation
     card:SetScript("OnClick", function()
         chosen = formation.id
@@ -177,48 +182,53 @@ local function Card(parent, formation)
 end
 
 local function Build()
-    local UI = LA.UI
-    window = LA.Window.Finder("LivingAzerothFormation", "Formation", "Interface\\Icons\\Ability_Warrior_BattleShout")
-    window:SetPoint("CENTER", 420, 40)
-
-    window.name = window.header:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    window.name:SetPoint("TOPLEFT", 58, -10)
-    window.text = UI.Text(window.header, 250)
-    window.text:SetPoint("TOPLEFT", window.name, "BOTTOMLEFT", 0, -6)
-
-    local hint = window.bar:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    hint:SetPoint("CENTER", 0, 0)
-    hint:SetText("Pick one to see it; your bots move when you use it.")
-
-    -- The preview: the player in the middle facing up, and each bot by its role.
-    window.preview = CreateFrame("Frame", nil, window.content)
-    window.preview:SetSize(PREVIEW, PREVIEW)
-    window.preview:SetPoint("TOPLEFT", 4, -40)
-    local facing = UI.Dark(window.preview, "small")
-    facing:SetPoint("BOTTOM", window.preview, "TOP", 0, 6)
-    facing:SetText("You, facing up")
-    local you = window.preview:CreateTexture(nil, "ARTWORK")
-    you:SetTexture(ROLES)
-    you:SetTexCoord(GetTexCoordsForRole("GUIDE"))
-    you:SetSize(24, 24)
-    you:SetPoint("CENTER")
-    for i = 1, 5 do
-        local dot = window.preview:CreateTexture(nil, "OVERLAY")
-        dot:SetTexture(ROLES)
-        dot:SetSize(20, 20)
-        dot:SetPoint("CENTER")
-        dots[i] = dot
-    end
-
+    window = LA.Window.Panel("LivingAzerothFormation", WIDTH, HEIGHT, "Formation", "formation")
+    local body = window.body
+    local width, height = LA.Window.BodySize(WIDTH, HEIGHT)
+    local cardWidth, gap = 66, 4
     for i, formation in ipairs(FORMATIONS) do
-        local card = Card(window.content, formation)
+        local card = Card(body, formation, cardWidth)
         local column, row = (i - 1) % 3, math.floor((i - 1) / 3)
-        card:SetPoint("TOPLEFT", 164 + column * 50, -8 - row * 76)
+        card:SetPoint("TOPLEFT", column * (cardWidth + gap), -row * (card:GetHeight() + gap))
         cards[i] = card
     end
 
-    window.use = UI.Button(window.footer, "Use", 110)
-    window.use:SetPoint("LEFT", 0, 1)
+    local left = 3 * cardWidth + 2 * gap + 12
+    local field = CreateFrame("Frame", nil, body)
+    field:SetPoint("TOPLEFT", left, 0)
+    field:SetSize(width - left, 182)
+    local ground = field:CreateTexture(nil, "BACKGROUND")
+    ground:SetTexture(Style.ART .. "field")
+    ground:SetAllPoints()
+    local rim = CreateFrame("Frame", nil, field)
+    rim:SetAllPoints()
+    UI.Surface(rim, "rim")
+    local facing = UI.Text(field, "small")
+    facing:SetPoint("TOPLEFT", 6, -5)
+    facing:SetText("Facing up")
+    window.preview = CreateFrame("Frame", nil, field)
+    window.preview:SetAllPoints()
+    local you = UI.Icon(window.preview, 22, "medal")
+    you:SetPoint("CENTER")
+    you:Set("leader", "gold")
+    local youText = UI.Text(window.preview, "small")
+    youText:SetPoint("TOP", you, "BOTTOM", 0, -1)
+    youText:SetTextColor(1, 0.82, 0)
+    youText:SetText("You")
+    for i = 1, 5 do
+        local dot = UI.Icon(window.preview, 18, "medal")
+        dot:SetPoint("CENTER")
+        dot:SetFrameLevel(you:GetFrameLevel() + 1)
+        dots[i] = dot
+    end
+
+    window.name = UI.Text(body, "name")
+    window.name:SetPoint("TOPLEFT", field, "BOTTOMLEFT", 0, -8)
+    window.text = UI.Text(body, "label", width - left)
+    window.text:SetPoint("TOPLEFT", window.name, "BOTTOMLEFT", 0, -3)
+
+    window.use = UI.Button(body, "Use", 90)
+    window.use:SetPoint("BOTTOMLEFT", left, 0)
     window.use:SetScript("OnClick", function()
         for _, bot in ipairs(LA.Tactics.Targets()) do
             if bot.formation ~= chosen then
@@ -227,14 +237,14 @@ local function Build()
         end
         Refresh()
     end)
-    window.status = window.footer:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    window.status:SetPoint("LEFT", window.use, "RIGHT", 8, 0)
-    window.status:SetWidth(120)
-    window.status:SetJustifyH("LEFT")
-    local close = UI.Button(window.footer, CLOSE, 80)
-    close:SetPoint("RIGHT", -8, 1)
-    close:SetScript("OnClick", function() window:Hide() end)
-    window:SetScript("OnShow", Refresh)
+    window.done = UI.Icon(body, 12, "plain")
+    window.done:SetPoint("LEFT", window.use, "RIGHT", 8, 0)
+    window.done:Set("check", Style.green)
+    window.status = UI.Text(body, "small")
+    window.status:SetPoint("LEFT", window.use, "RIGHT", 26, 0)
+    window.status:SetPoint("RIGHT", body, "RIGHT")
+    window.status:SetWordWrap(false)
+    window:HookScript("OnShow", Refresh)
 end
 
 function Formation.Toggle()

@@ -6,26 +6,16 @@ local _, LA = ...
 local Markers = {}
 LA.Markers = Markers
 
-local ICON = "Interface\\Icons\\INV_Misc_Gear_01"
-local RING = "Interface\\Minimap\\MiniMap-TrackingBorder"
+-- The bot glyph, gold, for a line of tooltip text.
+local ICON = "|T" .. LA.Style.ART .. "glyph-bot:14:14:0:0:64:64:0:64:0:64:255:211:107|t"
 
--- A round gold-ringed medal like the minimap's tracking button, size pixels across.
+-- The bot mark: a gold-rimmed medal with the bot glyph, size across; grey for someone else's bot.
 function Markers.Medal(parent, size)
-    local medal = CreateFrame("Frame", nil, parent)
-    medal:SetSize(size, size)
-    medal.icon = medal:CreateTexture(nil, "ARTWORK")
-    medal.icon:SetTexture(ICON)
-    medal.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-    medal.icon:SetPoint("CENTER")
-    medal.icon:SetSize(size * 0.62, size * 0.62)
-    medal.ring = medal:CreateTexture(nil, "OVERLAY")
-    medal.ring:SetTexture(RING)
-    -- The ring sits in the top left of its texture, which is 54/31 of the button it frames.
-    medal.ring:SetSize(size * 54 / 31, size * 54 / 31)
-    medal.ring:SetPoint("TOPLEFT", medal, "TOPLEFT", 0, 0)
+    local medal = LA.UI.Icon(parent, size, "medal")
+    medal:Set("bot", "gold")
     function medal:SetCommandable(commandable)
-        self.icon:SetDesaturated(not commandable)
-        self.ring:SetVertexColor(commandable and 1 or 0.6, commandable and 1 or 0.6, commandable and 1 or 0.6)
+        self:Set("bot", commandable and "gold" or "stone")
+        self.base:SetDesaturated(not commandable)
     end
     return medal
 end
@@ -34,16 +24,11 @@ end
 function Markers.Flags(parent, size)
     local flags = CreateFrame("Frame", nil, parent)
     flags:SetSize(size * 2 + 2, size)
-    flags.passive = flags:CreateTexture(nil, "OVERLAY")
-    flags.passive:SetTexture("Interface\\Icons\\Spell_Nature_Sleep")
-    flags.passive:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-    flags.passive:SetSize(size, size)
-    flags.noLoot = flags:CreateTexture(nil, "OVERLAY")
-    flags.noLoot:SetTexture("Interface\\Icons\\INV_Misc_Bag_10")
-    flags.noLoot:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-    flags.noLoot:SetDesaturated(true)
-    flags.noLoot:SetVertexColor(0.8, 0.5, 0.5)
-    flags.noLoot:SetSize(size, size)
+    flags.passive = LA.UI.Icon(flags, size, "plain")
+    flags.passive:Set("passive", LA.Style.C("#c7c0ff"))
+    flags.noLoot = LA.UI.Icon(flags, size, "plain")
+    flags.noLoot:Set("loot", LA.Style.C("#8a8170"))
+    flags.noLoot:SetAlpha(0.8)
     function flags:Update(bot)
         local switches = bot and bot.switches or {}
         local passive, noLoot = switches.passive == true, switches.loot == false
@@ -76,7 +61,7 @@ local function DescribeTooltip(tooltip)
     tooltip.livingAzerothGuid = LA.Bots.Guid(unit)
     if bot then
         local text, r, g, b = TooltipLine(bot)
-        tooltip:AddLine("|T" .. ICON .. ":14:14:0:0:64:64:5:59:5:59|t " .. text, r, g, b)
+        tooltip:AddLine(ICON .. " " .. text, r, g, b)
         tooltip:Show()
     end
 end

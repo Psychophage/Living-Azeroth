@@ -6,27 +6,25 @@ local _, LA = ...
 local Orders = {}
 LA.Orders = Orders
 
-local ICONS = "Interface\\Icons\\"
-
 -- Every order the ring can hold. Switches flip; the others are given as they are.
 Orders.catalog = {
-    { id = "follow", icon = "Ability_Tracking", label = "Follow me", state = "Following you" },
-    { id = "stay", icon = "Spell_Nature_TimeStop", label = "Stay here", state = "Holding position" },
-    { id = "guard", icon = "Ability_Defend", label = "Guard this spot", state = "Guarding a spot" },
-    { id = "attack", icon = "Ability_SteelMelee", label = "Attack my target" },
-    { id = "pull", icon = "INV_ThrowingAxe_01", label = "Pull my target" },
-    { id = "flee", icon = "Ability_Rogue_Sprint", label = "Fall back to me" },
-    { id = "rest", icon = "Spell_Misc_Drink", label = "Eat and drink" },
-    { id = "passive", icon = "Spell_Nature_Sleep", label = "Stay out of fights", switch = true },
-    { id = "loot", icon = "INV_Misc_Bag_10", label = "Pick up loot", switch = true },
-    { id = "join", icon = "Ability_Warrior_BattleShout", label = "Join in when I attack", switch = true },
+    { id = "follow", short = "Follow", label = "Follow me", state = "Following you" },
+    { id = "stay", short = "Stay", label = "Stay here", state = "Holding position" },
+    { id = "guard", short = "Guard", label = "Guard this spot", state = "Guarding a spot" },
+    { id = "attack", short = "Attack", label = "Attack my target" },
+    { id = "pull", short = "Pull", label = "Pull my target" },
+    { id = "flee", short = "Fall back", label = "Fall back to me" },
+    { id = "rest", short = "Eat, drink", label = "Eat and drink" },
+    { id = "passive", short = "Passive", label = "Stay out of fights", switch = true },
+    { id = "loot", short = "Loot", label = "Pick up loot", switch = true },
+    { id = "join", short = "Join in", label = "Join in when I attack", switch = true },
 }
 Orders.byId = {}
 for _, order in ipairs(Orders.catalog) do
-    order.icon = ICONS .. order.icon
+    order.glyph, order.tone = unpack(LA.Style.ORDER_LOOK[order.id])
     Orders.byId[order.id] = order
 end
-Orders.free = { icon = ICONS .. "Ability_Hunter_Pet_Wolf", state = "Doing as it likes" }
+Orders.free = { glyph = "bot", tone = "stone", state = "Doing as it likes" }
 
 Orders.defaultRing = { "follow", "stay", "attack", "guard", "passive", "loot" }
 Orders.MAX_RING = 8

@@ -1,80 +1,88 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The manager window: the Quest Log's two-pane frame, with tabs along the bottom as in the game's own windows.
--- Each tab is a page another file adds (roster, tactics, dialogue, guild). A page has a strip under the title
--- (page.top), the left pane for a list (page.left), a parchment page on the right (page.detail, which scrolls),
--- buttons under the list (page.controls) and under the parchment (page.actions).
+-- The manager window, with tabs along the bottom as in the game's own windows. Each tab is a page another file
+-- adds (roster, tactics, dialogue, guild); a page lays out its own contents in page.frame.
 local _, LA = ...
 
 local Manager = {}
 LA.Manager = Manager
 
-local window = LA.Window.DualPane("LivingAzerothManager", LA.name, "Interface\\Icons\\INV_Misc_Gear_01")
+local UI, Style = LA.UI, LA.Style
 
+Manager.WIDTH, Manager.HEIGHT = 620, 420
+local TAB_HEIGHT, TUCK = 22, 4 -- tabs hang under the window, their top tucked behind its frame
+local window
 local pages = {}
 local tabs = {}
 
-local close = LA.UI.Button(window.actions, CLOSE, 80)
-close:SetPoint("RIGHT", 0, 1)
-close:SetScript("OnClick", function() window:Hide() end)
+local function Tab(index, page)
+    local tab = CreateFrame("Button", nil, window)
+    tab:SetFrameLevel(math.max(0, window:GetFrameLevel() - 1))
+    UI.Surface(tab, "tab")
+    UI.HoverLight(tab)
+    tab.icon = UI.Icon(tab, 11, "plain")
+    tab.text = UI.Text(tab, "tab")
+    tab.text:SetText(page.tabName)
+    tab.icon:SetPoint("LEFT", 10, -TUCK / 2)
+    tab.text:SetPoint("LEFT", tab.icon, "RIGHT", 5, 0)
+    tab:SetSize(math.ceil(tab.text:GetStringWidth()) + 36, TAB_HEIGHT + TUCK)
+    if index == 1 then
+        tab:SetPoint("TOPLEFT", window, "BOTTOMLEFT", 16, TUCK)
+    else
+        tab:SetPoint("TOPLEFT", tabs[index - 1], "TOPRIGHT", 2, 0)
+    end
+    tab:SetScript("OnClick", function()
+        PlaySound("igCharacterInfoTab")
+        Manager.Show(index)
+    end)
+    function tab:SetChosen(chosen)
+        self.surface:Set(chosen and "tabOn" or "tab")
+        local colour = chosen and Style.gold or Style.T().muted
+        self.text:SetTextColor(colour[1], colour[2], colour[3])
+        self.icon:Set(page.glyph, colour)
+        self:SetHeight(TAB_HEIGHT + TUCK + (chosen and 3 or 0))
+    end
+    return tab
+end
+
+local function Window()
+    if window then
+        return window
+    end
+    window = LA.Window.Panel("LivingAzerothManager", Manager.WIDTH, Manager.HEIGHT, LA.name)
+    for index, page in ipairs(pages) do
+        page.frame = CreateFrame("Frame", nil, window.body)
+        page.frame:SetAllPoints()
+        page.frame:Hide()
+        tabs[index] = Tab(index, page)
+    end
+    return window
+end
 
 -- Adds a tab. build(page) makes its contents once; show(page) refreshes it each time it is shown.
-function Manager.AddPage(name, build, show)
-    local index = #pages + 1
-    local page = { tabName = name, build = build, show = show }
-    for part, area in pairs({ top = "top", left = "list", controls = "controls", actions = "actions" }) do
-        page[part] = CreateFrame("Frame", nil, window[area])
-        page[part]:SetAllPoints()
-        page[part]:Hide()
-    end
-    page.detail = CreateFrame("Frame", nil, window.detail)
-    page.detail:SetSize(298, 333)
-    page.detail:Hide()
-    -- The parchment page's height, once its contents are laid out, so it scrolls when it is long.
-    function page:SetDetailHeight(height)
-        self.detail:SetHeight(math.max(height, 333))
-        window.detail:UpdateScrollChildRect()
-    end
-    pages[index] = page
-
-    local tab = CreateFrame("Button", "LivingAzerothManagerTab" .. index, window, "CharacterFrameTabButtonTemplate")
-    tab:SetID(index)
-    tab:SetText(name)
-    PanelTemplates_TabResize(tab, 0)
-    if index == 1 then
-        tab:SetPoint("TOPLEFT", window, "BOTTOMLEFT", 11, 2)
-    else
-        tab:SetPoint("LEFT", tabs[index - 1], "RIGHT", -15, 0)
-    end
-    tab:SetScript("OnClick", function(self)
-        PlaySound("igCharacterInfoTab")
-        Manager.Show(self:GetID())
-    end)
-    tabs[index] = tab
-    PanelTemplates_SetNumTabs(window, #pages)
+function Manager.AddPage(name, glyph, build, show)
+    local page = { tabName = name, glyph = glyph, build = build, show = show }
+    pages[#pages + 1] = page
     return page
 end
 
 function Manager.Show(index)
+    Window()
     index = index or LivingAzerothDB.managerTab or 1
     if not pages[index] then
         index = 1
     end
     LivingAzerothDB.managerTab = index
-    PanelTemplates_SetTab(window, index)
-    window:Show() -- before the page refreshes, which only work on a visible page
+    window:Show() -- before the page refreshes, which only works on a visible page
     for i, page in ipairs(pages) do
         local shown = i == index
+        tabs[i]:SetChosen(shown)
         if shown and not page.built then
             page.built = true
             page.build(page)
         end
-        for _, part in ipairs({ "top", "left", "controls", "actions", "detail" }) do
-            LA.SetShown(page[part], shown)
-        end
+        LA.SetShown(page.frame, shown)
         if shown then
-            window.title:SetText(LA.name .. " - " .. page.tabName)
-            window.detail:SetScrollChild(page.detail)
-            window.detail:SetVerticalScroll(0)
+            window.title:SetText(LA.name .. " · " .. page.tabName)
             if page.show then
                 page.show(page)
             end
@@ -83,23 +91,18 @@ function Manager.Show(index)
 end
 
 function Manager.Toggle()
-    if window:IsShown() then
+    if window and window:IsShown() then
         window:Hide()
     else
-        PlaySound("igCharacterInfoOpen")
         Manager.Show()
     end
 end
 
 function Manager.IsShown(page)
-    return window:IsShown() and page.left:IsShown()
+    return window ~= nil and window:IsShown() and page.frame ~= nil and page.frame:IsShown()
 end
 
--- Back to the top of the parchment, when what it shows changes.
-function Manager.ScrollToTop()
-    window.detail:SetVerticalScroll(0)
+-- The page's area, width x height.
+function Manager.BodySize()
+    return LA.Window.BodySize(Manager.WIDTH, Manager.HEIGHT)
 end
-
-window:SetScript("OnHide", function()
-    PlaySound("igCharacterInfoClose")
-end)
