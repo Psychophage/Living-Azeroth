@@ -41,6 +41,7 @@ CLASSES = {1: "Warrior", 2: "Paladin", 3: "Hunter", 4: "Rogue", 5: "Priest", 6: 
 LOG_NOISE = re.compile(r"^(\|-|Last \d+ diffs|Update time diff|\s*$)")
 TICK = re.compile(r"Update time diff: (\d+)ms with (\d+) players online")
 REFRESH_SECONDS = 2.0
+LOG_KEPT = 2000  # server log lines the console can scroll back through
 
 
 # ---------------------------------------------------------------- reading the realm
@@ -97,11 +98,11 @@ def containers(project):
     return states
 
 
-def tail(path, lines=400):
+def tail(path, lines=4000):
     try:
         with open(path, "rb") as log:
             log.seek(0, os.SEEK_END)
-            log.seek(max(0, log.tell() - 64 * 1024))
+            log.seek(max(0, log.tell() - 1024 * 1024))
             return log.read().decode("utf-8", "replace").splitlines()[-lines:]
     except OSError:
         return []
@@ -126,7 +127,7 @@ class Snapshot:
         ticks = [TICK.search(line) for line in log]
         ticks = [tick for tick in ticks if tick]
         self.tick = int(ticks[-1].group(1)) if ticks and self.ready else None
-        self.events = [line for line in log if not LOG_NOISE.match(line)][-200:]
+        self.events = [line for line in log if not LOG_NOISE.match(line)][-LOG_KEPT:]
         self.players, self.bots, self.roster, self.spending = [], None, None, None
         self.unreadable = False  # the database is up but a query failed: say so rather than show nobody
         if self.services["database"][0] != "running":
@@ -264,15 +265,49 @@ def players(snap):
     return Panel(table, title="Players online", title_align="left", border_style=DIM, padding=(0, 1))
 
 
-def events(snap, rows):
+class LogView:
+    """The server log panel: follows the newest lines, or holds still while it is read back."""
+
+    STEPS = {"up": 1, "down": -1}
+
+    def __init__(self):
+        self.held = None  # the lines being read back; None follows the log
+        self.offset = 0   # lines above the newest
+
+    def lines(self, snap):
+        return snap.events if self.held is None else self.held
+
+    def scroll(self, key, snap, rows):
+        if key == "end":
+            self.held, self.offset = None, 0
+            return
+        if self.held is None:
+            self.held = list(snap.events)
+        page = max(1, rows - 1)
+        step = {"up": 1, "down": -1, "page up": page, "page down": -page, "home": len(self.held)}[key]
+        self.offset = max(0, min(self.offset + step, len(self.held) - rows))
+        if self.offset == 0 and step < 0:
+            self.held = None  # back at the newest line: follow again
+
+
+def events(snap, rows, view):
+    lines = view.lines(snap)
+    end = len(lines) - view.offset
     text = Text(no_wrap=True, overflow="ellipsis")
-    for line in snap.events[-rows:]:
+    for line in lines[max(0, end - rows):end]:
         style = BAD if re.search(r"\berror\b|crash|assert|segmentation fault|exception", line, re.I) else \
             GOOD if "ready..." in line else ""
         text.append(line + "\n", style=style)
-    if not snap.events:
+    if not lines:
         text.append("No server log for this session yet.", DIM)
-    return Panel(text, title="Server log", title_align="left", border_style=DIM, padding=(0, 1))
+    if view.held is None:
+        title = Text("Server log")
+        hint = Text("↑ ↓  PgUp PgDn  scroll", DIM)
+    else:
+        title = Text.assemble("Server log", (f"  ·  held, {view.offset} lines up", BUSY))
+        hint = Text("End  back to the newest lines", BUSY)
+    return Panel(text, title=title, title_align="left", subtitle=hint, subtitle_align="right",
+                 border_style=DIM, padding=(0, 1))
 
 
 def commands(play):
@@ -288,13 +323,17 @@ def commands(play):
     return Panel(table, title="Commands", title_align="left", border_style=DIM, padding=(0, 1))
 
 
-def screen(snap, play, height, message):
+def log_rows(snap, height):
+    used = 4 + 10 + (min(len(snap.players), 13) + 5 if snap.players else 3) + 3
+    return max(3, height - used)
+
+
+def screen(snap, play, height, message, view):
     top = Table.grid(expand=True, padding=(0, 1))
     top.add_column(ratio=3)
     top.add_column(ratio=2)
     top.add_row(Group(services(snap), world(snap)), commands(play))
-    used = 4 + 10 + (min(len(snap.players), 13) + 5 if snap.players else 3) + 3
-    parts = [header(snap), top, players(snap), events(snap, max(3, height - used))]
+    parts = [header(snap), top, players(snap), events(snap, log_rows(snap, height), view)]
     if message:
         parts.append(Text(message, style=BUSY))
     return Group(*parts)
@@ -302,8 +341,25 @@ def screen(snap, play, height, message):
 
 # ---------------------------------------------------------------- running
 
-# Escape sequences: arrow keys, and the scroll wheel in terminals that turn it into arrow keys. None is a command.
+# Escape sequences: arrow and paging keys, and the scroll wheel in terminals that turn it into arrow keys.
+# Those that scroll the log become their names; the rest are dropped.
 ESCAPES = re.compile(r"\x1b(\[[0-9;?<>=]*[ -/]*[@-~]|O.|.)?", re.S)
+NAMED_KEYS = {"\x1b[A": "up", "\x1bOA": "up", "\x1b[B": "down", "\x1bOB": "down",
+              "\x1b[5~": "page up", "\x1b[6~": "page down",
+              "\x1b[H": "home", "\x1bOH": "home", "\x1b[1~": "home",
+              "\x1b[F": "end", "\x1bOF": "end", "\x1b[4~": "end"}
+
+
+def tokens(data):
+    """Typed characters, with known escape sequences as their names."""
+    keys, position = [], 0
+    for match in ESCAPES.finditer(data):
+        keys.extend(data[position:match.start()])
+        if match.group(0) in NAMED_KEYS:
+            keys.append(NAMED_KEYS[match.group(0)])
+        position = match.end()
+    keys.extend(data[position:])
+    return keys
 
 
 class Keys:
@@ -324,7 +380,7 @@ class Keys:
         if not self.pending:
             ready, _, _ = select.select([self.fd], [], [], timeout)
             if ready:
-                self.pending.extend(ESCAPES.sub("", os.read(self.fd, 1024).decode("utf-8", "ignore")))
+                self.pending.extend(tokens(os.read(self.fd, 1024).decode("utf-8", "ignore")))
         return self.pending.pop(0) if self.pending else None
 
     def forget(self):
@@ -403,15 +459,21 @@ def main(realm, start=False, stop=False, play=None):
     reader = threading.Thread(target=refresh, daemon=True)
     reader.start()
     message = ""
+    view = LogView()
     try:
         with Keys() as keys:
             keys.forget()  # scrolling while the realm started is not a command
             while True:
                 with Live(console=console, screen=True, auto_refresh=False, transient=True) as live:
                     while True:
-                        live.update(screen(latest["snap"], play, console.size.height, message), refresh=True)
+                        live.update(screen(latest["snap"], play, console.size.height, message, view),
+                                    refresh=True)
                         key = keys.read(1.0)
                         if key is None:
+                            continue
+                        if key in NAMED_KEYS.values():
+                            snap = latest["snap"]
+                            view.scroll(key, snap, log_rows(snap, console.size.height))
                             continue
                         key = key.lower()
                         if key == "q":
