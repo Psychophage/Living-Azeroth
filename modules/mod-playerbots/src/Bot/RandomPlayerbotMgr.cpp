@@ -1926,7 +1926,7 @@ std::vector<WorldLocation> RandomPlayerbotMgr::GetPlayerZoneTeleportLocations(st
 
 // Living Azeroth population: choose an unseen, native destination before the first login.
 // This never moves an established character or bypasses visible-player teleport guards.
-bool RandomPlayerbotMgr::PopulationSpawnLocation(uint8 botRace, uint32 level, uint32 mapId, uint32 zoneId,
+bool RandomPlayerbotMgr::PopulationSpawnLocation(uint32 level, uint32 mapId, uint32 zoneId,
                                                   WorldLocation& location,
                                                   std::function<bool(WorldLocation const&)> const& acceptable)
 {
@@ -1961,9 +1961,6 @@ bool RandomPlayerbotMgr::PopulationSpawnLocation(uint8 botRace, uint32 level, ui
                 uint32 zone =
                     map->GetZoneId(PHASEMASK_NORMAL, loc.GetPositionX(), loc.GetPositionY(), loc.GetPositionZ());
                 if (zoneId && zone != zoneId)
-                    continue;
-                auto area = sAreaTableStore.LookupEntry(zone);
-                if (!area || (area->team == 4 && IsAlliance(botRace)) || (area->team == 2 && !IsAlliance(botRace)))
                     continue;
                 float ground = map->GetHeight(PHASEMASK_NORMAL, loc.GetPositionX(), loc.GetPositionY(),
                                               loc.GetPositionZ() + 0.5f);

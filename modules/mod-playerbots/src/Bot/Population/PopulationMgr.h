@@ -7,6 +7,7 @@
 #ifndef PLAYERBOTS_POPULATION_MGR_H
 #define PLAYERBOTS_POPULATION_MGR_H
 
+#include <array>
 #include <atomic>
 #include <memory>
 #include <mutex>
@@ -74,8 +75,19 @@ private:
                  std::unordered_set<uint32_t> const& offlineKept = {});
     std::vector<RealmPopulation::Place> BuildPlaces(std::vector<RealmPopulation::Human> const& humans, uint64_t now);
     void LoadZoneLevels();
-    // Where people gather in a zone: service NPCs (inns, flight masters, vendors, banks), collected once.
-    std::vector<WorldLocation> const& ServiceSpots(uint32_t map, uint32_t zone);
+    // Where people gather in a zone: service NPCs (inns, flight masters, vendors, banks), collected once,
+    // each with the factions it serves (bit 0 Alliance, bit 1 Horde).
+    struct ServiceSpot
+    {
+        WorldLocation where;
+        uint8_t sides = 0;
+    };
+    std::vector<ServiceSpot> const& ServiceSpots(uint32_t map, uint32_t zone);
+    // How a zone's people divide between Alliance and Horde: a faction's own land is all its own;
+    // elsewhere each side's share follows the towns that serve it, evenly when there are none.
+    std::array<float, 2> Shares(uint32_t map, uint32_t zone);
+    // The zone is the other faction's own land (Elwynn Forest for the Horde, Durotar for the Alliance).
+    static bool EnemyLand(uint32_t zone, uint32_t faction);
     // A gathering spot just out of players' sight; allowInView lets one arrival appear in view.
     bool ServiceArrival(uint32_t map, uint32_t zone, bool allowInView, Record const& record, WorldLocation& location);
     // A race's starting area (Northshire Valley, Sunstrider Isle, ...) only receives its own young characters.
@@ -83,7 +95,7 @@ private:
     // Arrivals spread out: no new character where LocalCrowd characters already stand within reach.
     bool Crowded(WorldLocation const& location) const;
     std::vector<WorldLocation> _crowd;  // where online population characters stand this update
-    std::set<std::tuple<uint32_t, uint32_t, uint32_t>> _occupied;  // faction, map, zone players are in
+    std::set<std::pair<uint32_t, uint32_t>> _occupied;  // map, zone players are in
     std::unordered_map<uint32_t, uint64_t> _lastInViewArrival;  // zone -> time
     bool PlaceNewcomer(Record const& record, RealmPopulation::Assignment const& assignment, WorldLocation& location);
     void Cull(uint64_t now);
@@ -117,7 +129,8 @@ private:
     std::vector<Surroundings> _surroundings;  // per player, from the latest update; for Status()
     uint64_t _lastPresenceUpdate = 0;
     std::unordered_map<uint32_t, ZoneLevels> _zoneLevels;
-    std::unordered_map<uint32_t, std::vector<WorldLocation>> _serviceSpots;
+    std::unordered_map<uint32_t, std::vector<ServiceSpot>> _serviceSpots;
+    std::unordered_map<uint32_t, std::array<float, 2>> _shares;  // zone -> Alliance, Horde share of its people
     std::unordered_map<uint32_t, uint32_t> _homeZones;  // zone -> races that start there (bit race-1)
     std::unordered_map<uint32_t, uint32_t> _starterAreas;  // starting area -> races that start in it
     std::unordered_map<uint32_t, std::unordered_set<uint32_t>> _accountClasses;

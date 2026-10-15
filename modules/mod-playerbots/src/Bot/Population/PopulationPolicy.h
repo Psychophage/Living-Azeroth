@@ -50,6 +50,7 @@ struct Settings
     uint32_t inViewArrivalSeconds = 20;  // at most one arrival in a player's view per place this often
     uint32_t localCrowd = 4;  // arrivals avoid spots where this many characters already stand nearby
     uint32_t starterCapacity = 16;  // young characters (level 6 or below) a starting zone holds before arrivals are older
+    uint32_t visitorPercent = 0;    // of a faction's own land's seats given to the other faction, near players' levels
     float catchupMaximum = 1.5f;
 };
 
@@ -62,11 +63,12 @@ struct Human
     uint32_t level = 1;
 };
 
-// A populated location derived from players' recent presence. Natural levels come from the
+// A populated location derived from players' recent presence: one faction's share of a zone. Who
+// lives there comes from the land, not from the player visiting it. Natural levels come from the
 // zone's own level data; capitals (hubs) use a mixed spread up to the realm's level cap.
 struct Place
 {
-    uint32_t faction = 0;
+    uint32_t faction = 0;  // 0 Alliance, 1 Horde
     uint32_t map = 0;
     uint32_t zone = 0;
     uint32_t minLevel = 1;
@@ -77,6 +79,7 @@ struct Place
     bool hub = false;
     bool accepting = true;  // a player is here now; a lingering place only keeps its residents
     bool resident = false;  // kept only as a capital's standing population; served after players' places
+    bool visitors = false;  // the other faction passing through its enemy's land, at the players' levels
     float weight = 1.0f;    // presence, 0..1
     std::vector<Human> humans;
 };

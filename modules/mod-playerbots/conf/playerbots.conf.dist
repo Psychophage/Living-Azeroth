@@ -2780,8 +2780,14 @@ AiPlayerbot.Population.LingerSeconds = 600
 # reaches them) keeps ResidentPercent of RegionTarget seats of settled residents. TownPercent of a
 # zone's arrivals come by way of its towns and inns (service NPCs), out of sight where possible.
 # Below level 10 characters only appear where their race starts or in their race's capital.
+# Who lives in a zone comes from the land, not from the player visiting it: a faction's own land
+# (Elwynn Forest, Durotar, its capitals) holds that faction; contested zones and neutral cities hold
+# both, in proportion to the towns that serve each side. Arrivals only use towns that serve them.
 AiPlayerbot.Population.ResidentPercent = 15
 AiPlayerbot.Population.TownPercent = 25
+# Share of a faction's own land's seats (capitals excepted) given to the other faction, passing
+# through at the levels of the players there and never arriving at its towns. 0 = none.
+AiPlayerbot.Population.VisitorPercent = 0
 # Logging in at an inn or bank in view is ordinary but should be a trickle: at most one arrival in a
 # player's view per place this often; the rest arrive just out of sight and wander in.
 AiPlayerbot.Population.InViewArrivalSeconds = 20

@@ -10,6 +10,11 @@ residents. It makes no model calls.
   seats (40 on this realm), filled over a minute and emptied over ten minutes after the
   player leaves; coming back before it empties finds the same people. Characters are
   the zone's level; capitals host all levels.
+- **The land decides who lives there.** A faction's own land (Elwynn Forest, Durotar, the
+  capitals) holds that faction, whoever visits it. Contested zones and neutral cities hold both,
+  in proportion to the towns that serve each side, and arrivals only use towns that serve them.
+  `VisitorPercent` gives some of a faction's land's seats to the other side, at the levels of the
+  players there and away from the towns (0 by default).
 - **Familiar faces.** Characters a player sees and talks to earn familiarity and return
   more often; strangers fill the rest. Introduced characters are kept, and the least
   valued are retired only beyond `KnownLimit`.

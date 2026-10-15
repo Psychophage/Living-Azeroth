@@ -133,8 +133,9 @@ public:
     uint32 GetTradeDiscount(Player* bot, Player* master);
     void Refresh(Player* bot);
     void RandomTeleportForLevel(Player* bot);
-    // Population newcomers: an unseen, level-appropriate spot in the given zone (any zone when 0).
-    bool PopulationSpawnLocation(uint8 race, uint32 level, uint32 mapId, uint32 zoneId, WorldLocation& location,
+    // Population newcomers: an unseen, level-appropriate spot in the given zone (any zone when 0). Whose
+    // land a spot may be in is the caller's decision (acceptable).
+    bool PopulationSpawnLocation(uint32 level, uint32 mapId, uint32 zoneId, WorldLocation& location,
                                  std::function<bool(WorldLocation const&)> const& acceptable = nullptr);
     // True when a real player could see this spot.
     bool VisibleToPlayers(WorldLocation const& location) const;

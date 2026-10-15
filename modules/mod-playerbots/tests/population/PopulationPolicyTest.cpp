@@ -351,6 +351,41 @@ int main()
     auto topped = Policy::Select(crowd, busy.humans, {busy}, {}, capped, 10000);
     Check(topped.size() == capped.regionTarget, "baseline seats never add people to a place a player is in");
 
+    // Nor do they bring the other faction into it: Horde characters left in Elwynn stay offline while
+    // a player is there, whatever the player's faction.
+    for (auto& bot : crowd)
+    {
+        bot.map = 0;
+        bot.zone = 12;
+    }
+    Place elwynnLocals;
+    elwynnLocals.map = 0;
+    elwynnLocals.zone = 12;
+    elwynnLocals.minLevel = 1;
+    elwynnLocals.maxLevel = 12;
+    elwynnLocals.humans = {Human{20002, 1, 0, 12, 45}};
+    Check(Policy::Select(crowd, elwynnLocals.humans, {elwynnLocals}, {}, capped, 10000).empty(),
+          "the other faction's characters are not seated in a place a player is in");
+
+    // Visitors from the other side are a match for the players they meet.
+    Place visitors;
+    visitors.faction = 1;
+    visitors.map = 0;
+    visitors.zone = 12;
+    visitors.minLevel = 1;
+    visitors.maxLevel = 80;
+    visitors.visitors = true;
+    visitors.humans = {Human{20003, 0, 0, 12, 40}};
+    for (uint32_t seat = 0; seat < 20; ++seat)
+        Check(Policy::PeerSeat(visitors, seat, zoneSettings), "every visitor seat is at the players' levels");
+    for (uint32_t hash = 0; hash < 100; ++hash)
+    {
+        uint32_t level = Policy::PlanLevel(visitors, true, hash, 80, zoneSettings);
+        Check(level >= 38 && level <= 42, "a visitor arrives near the player's level");
+    }
+    Check(Policy::Fits(visitors, 44, true, zoneSettings) && !Policy::Fits(visitors, 60, true, zoneSettings),
+          "a much stronger character is not a visitor");
+
     // Capitals follow the realm phase.
     uint32_t vanillaHubs = 0, wrathHubs = 0;
     for (auto const& hub : Policy::Hubs())

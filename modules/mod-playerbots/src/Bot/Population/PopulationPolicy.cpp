@@ -152,6 +152,9 @@ std::vector<uint32_t> Policy::Peers(Place const& place, Settings const& settings
 
 bool Policy::PeerSeat(Place const& place, uint32_t seat, Settings const& settings)
 {
+    // Visitors from the other side are a match for the players they meet, never far above or below.
+    if (place.visitors)
+        return !Peers(place, settings).empty();
     // A capital is shared by every level evenly; peers matter in the zones people level in.
     return !place.hub && !Peers(place, settings).empty() && (seat * 37) % 100 < settings.peerPercent;
 }
@@ -382,18 +385,19 @@ std::vector<Assignment> Policy::Select(std::vector<Character> const& bots, std::
     for (auto const& bot : bots)
         if (used.count(bot.id))
             ++counts[{bot.faction, (bot.level - 1) / 10}];
-    // A place a player is in has its own seats; baseline seats never add to it, so its size holds.
-    std::set<std::tuple<uint32_t, uint32_t, uint32_t>> occupied;
+    // A place a player is in has its own seats, for either faction; baseline seats never add to it,
+    // so its size and its mix hold.
+    std::set<std::pair<uint32_t, uint32_t>> occupied;
     for (auto const& place : places)
         if (place.accepting && !place.resident)
-            occupied.insert({place.faction, place.map, place.zone});
+            occupied.insert({place.map, place.zone});
     while (selected.size() < target)
     {
         Character const* best = nullptr;
         float bestScore = -std::numeric_limits<float>::infinity();
         for (auto const& bot : bots)
         {
-            if (!available(bot) || (bot.initialized && occupied.count({bot.faction, bot.map, bot.zone})))
+            if (!available(bot) || (bot.initialized && occupied.count({bot.map, bot.zone})))
                 continue;
             float score = float(Mix(bot.id ^ uint32_t(now / settings.sessionSeconds)) % 1000) / 1000.0f;
             score -= float(counts[{bot.faction, (bot.level - 1) / 10}]) * 10.0f;

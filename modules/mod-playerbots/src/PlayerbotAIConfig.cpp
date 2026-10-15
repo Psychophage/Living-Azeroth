@@ -787,6 +787,7 @@ bool PlayerbotAIConfig::Initialize()
     population.retentionSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.RetentionSeconds", 604800), 60u, 31536000u);
     population.residentPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.ResidentPercent", 15), 0u, 100u);
     population.townPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.TownPercent", 25), 0u, 100u);
+    population.visitorPercent = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.VisitorPercent", 0), 0u, 100u);
     population.inViewArrivalSeconds = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.InViewArrivalSeconds", 20), 1u, 3600u);
     population.localCrowd = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.LocalCrowd", 4), 1u, 100u);
     population.starterCapacity = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.Population.StarterCapacity", 16), 0u, 1000u);

@@ -190,8 +190,21 @@ void PlayerbotPopulationMgr::CreateBatch(std::vector<Place> const& places, bool 
                 for (auto const& place : places)
                     if (place.accepting && place.resident == residents)
                         open.push_back(&place);
-        if (!open.empty() && urand(0, 99) < _settings.regionalPercent)
-            regional = open[urand(0, open.size() - 1)];
+        // By each place's seats: a zone's few visitors from the other side get few of its newcomers.
+        uint32_t seats = 0;
+        for (Place const* place : open)
+            seats += Policy::Quota(*place, _settings);
+        if (seats && urand(0, 99) < _settings.regionalPercent)
+            for (uint32_t pick = urand(0, seats - 1); Place const* place : open)
+            {
+                uint32_t quota = Policy::Quota(*place, _settings);
+                if (pick < quota)
+                {
+                    regional = place;
+                    break;
+                }
+                pick -= quota;
+            }
         // Plan the newcomer's level first: below the starter level only the place's own races belong.
         uint32_t cap = sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL);
         uint32_t seed = urand(0, std::numeric_limits<int32>::max());

@@ -221,7 +221,8 @@ std::vector<Place> PlayerbotPopulationMgr::BuildPlaces(std::vector<Human> const&
     }
     uint32_t expansion = sWorld->getIntConfig(CONFIG_EXPANSION);
     uint32_t cap = sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL);
-    std::map<std::tuple<uint32_t, uint32_t, uint32_t>, Place> merged;
+    // Places by map and zone; each is divided between the factions that live there afterwards.
+    std::map<std::pair<uint32_t, uint32_t>, Place> merged;
     // While someone plays, their faction's capitals (and the neutral cities their level reaches)
     // keep a few settled residents, so a city is already alive when they arrive.
     float residentWeight = float(_settings.residentPercent) / 100.0f;
@@ -234,8 +235,7 @@ std::vector<Place> PlayerbotPopulationMgr::BuildPlaces(std::vector<Human> const&
                 if (!Policy::HubAvailable(hub, expansion, cap) || !friendly ||
                     (!hub.raceMask && human.level + _settings.maximumLevelDifference < hub.minLevel))
                     continue;
-                Place& place = merged[{human.faction, hub.map, hub.zone}];
-                place.faction = human.faction;
+                Place& place = merged[{hub.map, hub.zone}];
                 place.map = hub.map;
                 place.zone = hub.zone;
                 place.weight = std::max(place.weight * !place.humans.empty(), residentWeight);
@@ -247,8 +247,7 @@ std::vector<Place> PlayerbotPopulationMgr::BuildPlaces(std::vector<Human> const&
         for (auto const& [key, presence] : places)
         {
             Human const& human = presence.human;
-            Place& place = merged[{human.faction, human.map, human.zone}];
-            place.faction = human.faction;
+            Place& place = merged[{human.map, human.zone}];
             place.map = human.map;
             place.zone = human.zone;
             place.weight = place.humans.empty() ? presence.weight : std::max(place.weight, presence.weight);
@@ -316,12 +315,70 @@ std::vector<Place> PlayerbotPopulationMgr::BuildPlaces(std::vector<Human> const&
                 place.naturalLevels.push_back(human.level);
             }
         }
-        places.push_back(std::move(place));
+        // The land decides who lives here, not the visiting player's faction. Someone from the other
+        // side may pass through a faction's own land now and then (VisitorPercent of its seats).
+        auto shares = Shares(place.map, place.zone);
+        bool owned = EnemyLand(place.zone, 0) || EnemyLand(place.zone, 1);
+        float visiting = owned && !place.hub ? float(_settings.visitorPercent) / 100.0f : 0.0f;
+        for (uint32_t faction : {0u, 1u})
+        {
+            Place part = place;
+            part.faction = faction;
+            if (EnemyLand(place.zone, faction))
+            {
+                if (visiting <= 0.0f)
+                    continue;
+                // A match for the players they meet, at any level the realm allows.
+                part.visitors = true;
+                part.weight *= visiting;
+                part.minLevel = 1;
+                part.maxLevel = cap;
+                part.arrivalMinLevel = 0;
+                part.naturalLevels.clear();
+                for (auto const& human : place.humans)
+                    part.naturalLevels.push_back(human.level);
+            }
+            else
+                part.weight *= shares[faction] * (1.0f - visiting);
+            if (part.weight > 0.0f)
+                places.push_back(std::move(part));
+        }
     }
     return places;
 }
 
-std::vector<WorldLocation> const& PlayerbotPopulationMgr::ServiceSpots(uint32_t mapId, uint32_t zone)
+bool PlayerbotPopulationMgr::EnemyLand(uint32_t zone, uint32_t faction)
+{
+    AreaTableEntry const* area = sAreaTableStore.LookupEntry(zone);
+    return area && area->team == (faction ? AREATEAM_ALLY : AREATEAM_HORDE);
+}
+
+std::array<float, 2> PlayerbotPopulationMgr::Shares(uint32_t map, uint32_t zone)
+{
+    if (EnemyLand(zone, 1))
+        return {1.0f, 0.0f};
+    if (EnemyLand(zone, 0))
+        return {0.0f, 1.0f};
+    auto [it, inserted] = _shares.try_emplace(zone, std::array<float, 2>{0.5f, 0.5f});
+    if (inserted)
+    {
+        // Contested land and neutral cities: each side in proportion to the towns that serve it
+        // (Grom'gol and the rebel camp in Stranglethorn; Booty Bay serves both).
+        float alliance = 0.0f, horde = 0.0f;
+        for (auto const& spot : ServiceSpots(map, zone))
+        {
+            alliance += spot.sides & 1;
+            horde += (spot.sides >> 1) & 1;
+        }
+        if (alliance + horde > 0.0f)
+            it->second = {alliance / (alliance + horde), horde / (alliance + horde)};
+        LOG_INFO("playerbots", "Population zone {}: {:.0f}% Alliance, {:.0f}% Horde", zone, it->second[0] * 100.0f,
+                 it->second[1] * 100.0f);
+    }
+    return it->second;
+}
+
+std::vector<PlayerbotPopulationMgr::ServiceSpot> const& PlayerbotPopulationMgr::ServiceSpots(uint32_t mapId, uint32_t zone)
 {
     auto [it, inserted] = _serviceSpots.try_emplace(zone);
     if (!inserted)
@@ -331,6 +388,10 @@ std::vector<WorldLocation> const& PlayerbotPopulationMgr::ServiceSpots(uint32_t 
         return it->second;
     auto hub = std::find_if(Policy::Hubs().begin(), Policy::Hubs().end(),
                             [&](Hub const& h) { return h.zone == zone && h.map == mapId; });
+    // Whom a spot serves: each faction its NPC is not hostile to, by the game's own reaction rules.
+    FactionTemplateEntry const* players[2] = {
+        sFactionTemplateStore.LookupEntry(sChrRacesStore.LookupEntry(RACE_HUMAN)->FactionID),
+        sFactionTemplateStore.LookupEntry(sChrRacesStore.LookupEntry(RACE_ORC)->FactionID)};
     for (auto const& [spawnId, data] : sObjectMgr->GetAllCreatureData())
     {
         if (data.mapid != mapId || it->second.size() >= SERVICE_SPOT_LIMIT)
@@ -347,8 +408,13 @@ std::vector<WorldLocation> const& PlayerbotPopulationMgr::ServiceSpots(uint32_t 
             continue;
         if (map->GetZoneId(PHASEMASK_NORMAL, data.posX, data.posY, data.posZ) != zone)
             continue;
+        FactionTemplateEntry const* faction = creature ? sFactionTemplateStore.LookupEntry(creature->faction) : nullptr;
+        uint8_t sides = 0;
+        for (uint8_t side : {0, 1})
+            if (!faction || !players[side] || !faction->IsHostileTo(*players[side]))
+                sides |= 1u << side;
         it->second.insert(it->second.end(), flags & HUB_BUSY_FLAGS ? HUB_BUSY_WEIGHT : 1,
-                          WorldLocation(mapId, data.posX, data.posY, data.posZ, 0.0f));
+                          ServiceSpot{WorldLocation(mapId, data.posX, data.posY, data.posZ, 0.0f), sides});
     }
     LOG_INFO("playerbots", "Population zone {}: {} gathering spots", zone, it->second.size());
     return it->second;
@@ -378,7 +444,11 @@ bool PlayerbotPopulationMgr::Crowded(WorldLocation const& location) const
 bool PlayerbotPopulationMgr::ServiceArrival(uint32_t mapId, uint32_t zone, bool allowInView, Record const& record,
                                             WorldLocation& location)
 {
-    auto const& spots = ServiceSpots(mapId, zone);
+    // Only towns that serve the newcomer's faction: no Horde arriving at the Goldshire inn.
+    std::vector<WorldLocation const*> spots;
+    for (auto const& spot : ServiceSpots(mapId, zone))
+        if (spot.sides & (1u << record.character.faction))
+            spots.push_back(&spot.where);
     if (spots.empty())
         return false;
     // Logging in at an inn or bank in view is ordinary, but only now and then: a trickle in view,
@@ -387,7 +457,7 @@ bool PlayerbotPopulationMgr::ServiceArrival(uint32_t mapId, uint32_t zone, bool 
     bool haveNearby = false, haveDistant = false;
     for (uint32_t attempt = 0; attempt < UNSEEN_SPOT_ATTEMPTS; ++attempt)
     {
-        WorldLocation spot = spots[urand(0, spots.size() - 1)];
+        WorldLocation spot = *spots[urand(0, spots.size() - 1)];
         Map* map = sMapMgr->CreateBaseMap(spot.GetMapId());
         float x = spot.GetPositionX() + frand(-SERVICE_SPOT_SPREAD, SERVICE_SPOT_SPREAD);
         float y = spot.GetPositionY() + frand(-SERVICE_SPOT_SPREAD, SERVICE_SPOT_SPREAD);
@@ -446,20 +516,28 @@ bool PlayerbotPopulationMgr::PlaceNewcomer(Record const& record, Assignment cons
     // Some of a zone's arrivals come by way of its towns and inns.
     if (assignment.zone && urand(0, 99) < _settings.townPercent && arrive())
         return true;
+    // Spots are found by level; a visitor well above the zone still arrives at one of the zone's own.
+    uint32_t spotLevel = record.plannedLevel;
+    if (auto profile = _zoneLevels.find(assignment.zone); assignment.zone && profile != _zoneLevels.end())
+        spotLevel = std::clamp(spotLevel, profile->second.minLevel,
+                               std::max(profile->second.minLevel, profile->second.maxLevel));
     return sRandomPlayerbotMgr.PopulationSpawnLocation(
-        record.race, record.plannedLevel, assignment.map, assignment.zone, location,
+        spotLevel, assignment.map, assignment.zone, location,
         [&](WorldLocation const& spot)
         {
             if (!StarterAreaAllows(spot, record.race, record.plannedLevel) || Crowded(spot))
                 return false;
-            if (assignment.zone)
-                return true;
-            // A general arrival is not added to a place a player is in; that place has its own seats.
             Map* map = sMapMgr->CreateBaseMap(spot.GetMapId());
             uint32_t zone = map ? map->GetZoneId(PHASEMASK_NORMAL, spot.GetPositionX(), spot.GetPositionY(),
                                                  spot.GetPositionZ())
                                 : 0;
-            return !_occupied.count({record.character.faction, spot.GetMapId(), zone});
+            // Never in the other faction's own land, unless sent there as a visitor.
+            if (EnemyLand(zone, record.character.faction) && zone != assignment.zone)
+                return false;
+            if (assignment.zone)
+                return true;
+            // A general arrival is not added to a place a player is in; that place has its own seats.
+            return !_occupied.count({spot.GetMapId(), zone});
         });
 }
 
@@ -686,7 +764,7 @@ void PlayerbotPopulationMgr::Update()
     _occupied.clear();
     for (auto const& place : places)
         if (place.accepting && !place.resident)
-            _occupied.insert({place.faction, place.map, place.zone});
+            _occupied.insert({place.map, place.zone});
     Policy::Advance(_world, _settings, now, !players.empty());
     if (!SaveWorld())
     {
@@ -794,7 +872,8 @@ void PlayerbotPopulationMgr::Update()
             continue;
         uint32_t seats = 0, present = 0, fitting = 0;
         for (auto const& assignment : selection)
-            seats += assignment.map == place.map && assignment.zone == place.zone;
+            seats += assignment.map == place.map && assignment.zone == place.zone &&
+                     _bots.at(assignment.bot).character.faction == place.faction;
         for (auto const& c : candidates)
         {
             bool here = c.faction == place.faction && c.map == place.map && c.zone == place.zone;
@@ -803,9 +882,9 @@ void PlayerbotPopulationMgr::Update()
                        Policy::Fits(place, c.level, false, _settings) && Policy::CanBePresent(c, _settings, now);
         }
         LOG_DEBUG("playerbots",
-                  "Population place {}/{}/{}: weight {:.2f} quota {} seats {} online here {} fitting available {} "
+                  "Population place {}/{}/{}{}: weight {:.2f} quota {} seats {} online here {} fitting available {} "
                   "levels {}-{} arrivals from {}",
-                  place.faction, place.map, place.zone, place.weight, Policy::Quota(place, _settings), seats, present,
+                  place.faction, place.map, place.zone, place.visitors ? " (visitors)" : "", place.weight, Policy::Quota(place, _settings), seats, present,
                   fitting, place.minLevel, place.maxLevel, place.arrivalMinLevel);
     }
     uint32_t changes = 0;
