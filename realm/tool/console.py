@@ -128,19 +128,21 @@ class Snapshot:
         self.tick = int(ticks[-1].group(1)) if ticks and self.ready else None
         self.events = [line for line in log if not LOG_NOISE.match(line)][-200:]
         self.players, self.bots, self.roster, self.spending = [], None, None, None
+        self.unreadable = False  # the database is up but a query failed: say so rather than show nobody
         if self.services["database"][0] != "running":
             return
         host = database_host(state)
         rows = query(host,
                      "SELECT a.username, c.name, c.level, c.class, c.zone FROM acore_characters.characters c "
                      "JOIN acore_auth.account a ON a.id = c.account WHERE c.online = 1 AND c.account NOT IN "
-                     "(SELECT id FROM acore_playerbots.playerbots_account_type) ORDER BY a.username, c.name")
+                     "(SELECT account_id FROM acore_playerbots.playerbots_account_type) ORDER BY a.username, c.name")
+        self.unreadable = rows is None
         if rows is not None:
             self.players = [(user, name, int(level), CLASSES.get(int(cls), "?"), names.get(int(zone), ""))
                             for user, name, level, cls, zone in rows]
         rows = query(host,
                      "SELECT SUM(c.online), COUNT(*) FROM acore_characters.characters c WHERE c.account IN "
-                     "(SELECT id FROM acore_playerbots.playerbots_account_type)")
+                     "(SELECT account_id FROM acore_playerbots.playerbots_account_type)")
         if rows and rows[0][1] != "0":
             self.bots, self.roster = int(rows[0][0] or 0), int(rows[0][1])
         # The budget may live in another realm's database (shared_budget).
@@ -249,7 +251,8 @@ def world(snap):
 
 def players(snap):
     if not snap.players:
-        note = "Nobody is logged in." if snap.services["database"][0] == "running" else "The database is stopped."
+        note = "The database is stopped." if snap.services["database"][0] != "running" else \
+            "The database could not be read." if snap.unreadable else "Nobody is logged in."
         return Panel(Text(note, DIM), title="Players online", title_align="left", border_style=DIM, padding=(0, 1))
     table = Table(box=box.SIMPLE_HEAD, expand=True, header_style=DIM, pad_edge=False, padding=(0, 1))
     for column, ratio in (("Account", 2), ("Character", 3), ("Level", 1), ("Class", 2), ("Zone", 4)):
@@ -299,20 +302,35 @@ def screen(snap, play, height, message):
 
 # ---------------------------------------------------------------- running
 
+# Escape sequences: arrow keys, and the scroll wheel in terminals that turn it into arrow keys. None is a command.
+ESCAPES = re.compile(r"\x1b(\[[0-9;?<>=]*[ -/]*[@-~]|O.|.)?", re.S)
+
+
 class Keys:
-    """Single key presses from the terminal, without echo."""
+    """Single key presses from the terminal, without echo. Escape sequences are dropped."""
 
     def __enter__(self):
-        self.saved = termios.tcgetattr(sys.stdin)
-        tty.setcbreak(sys.stdin.fileno())
+        self.fd = sys.stdin.fileno()
+        self.saved = termios.tcgetattr(self.fd)
+        self.pending = []
+        tty.setcbreak(self.fd)
         return self
 
     def __exit__(self, *_):
-        termios.tcsetattr(sys.stdin, termios.TCSADRAIN, self.saved)
+        termios.tcsetattr(self.fd, termios.TCSADRAIN, self.saved)
 
     def read(self, timeout):
-        ready, _, _ = select.select([sys.stdin], [], [], timeout)
-        return sys.stdin.read(1) if ready else None
+        """The next key, or None when there was none within timeout (None waits)."""
+        if not self.pending:
+            ready, _, _ = select.select([self.fd], [], [], timeout)
+            if ready:
+                self.pending.extend(ESCAPES.sub("", os.read(self.fd, 1024).decode("utf-8", "ignore")))
+        return self.pending.pop(0) if self.pending else None
+
+    def forget(self):
+        """Drop anything typed or scrolled while a command ran, so it is not taken as a choice."""
+        termios.tcflush(self.fd, termios.TCIFLUSH)
+        self.pending.clear()
 
 
 def run_command(console, realm, command, title):
@@ -337,12 +355,15 @@ def run_command(console, realm, command, title):
 
 
 def confirm(console, keys, question):
+    keys.forget()
     console.print(Text.assemble(("\n" + question + " ", f"bold {BUSY}"), ("y/n", DIM)))
     while True:
         key = keys.read(None)
+        if key is None:
+            continue
         if key in ("y", "Y"):
             return True
-        if key in ("n", "N", "q", "\x1b"):
+        if key in ("n", "N", "q"):
             return False
 
 
@@ -384,6 +405,7 @@ def main(realm, start=False, stop=False, play=None):
     message = ""
     try:
         with Keys() as keys:
+            keys.forget()  # scrolling while the realm started is not a command
             while True:
                 with Live(console=console, screen=True, auto_refresh=False, transient=True) as live:
                     while True:
@@ -392,7 +414,7 @@ def main(realm, start=False, stop=False, play=None):
                         if key is None:
                             continue
                         key = key.lower()
-                        if key in ("q", "\x1b"):
+                        if key == "q":
                             return 0
                         action = next((a for a in ACTIONS if a[0] == key), None)
                         if action or (key == "p" and play):
@@ -425,6 +447,7 @@ def main(realm, start=False, stop=False, play=None):
                           "restart": "Restarting Living Azeroth", "update": "Updating Living Azeroth",
                           "logs": "Server log", "backup": "Backing up the databases"}
                 ok = run_command(console, realm, command, titles[command])
+                keys.forget()
                 if command != "logs":
                     _pause(console, 2 if ok else None, keys)
                 message = "" if ok else f"{label} failed; run it again to see why."
