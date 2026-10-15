@@ -3316,7 +3316,493 @@
     }
   ],
   "place": "Wetlands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:11",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:11",
+        "dbc:area:150",
+        "dbc:area:1024",
+        "dbc:area:205",
+        "world:creature:1242",
+        "world:creature:1007",
+        "world:creature:1020",
+        "world:creature:1400"
+      ],
+      "text": "You are in Wetlands, Eastern Kingdoms land held in places by the Alliance, with no settlement of the other side. Menethil Harbor and Sundown Marsh are its main settlements. Mosshide gnolls, crocolisks and mottled raptors haunt its fens and marshes, murlocs threaten Menethil's merchants along the coast, and Dark Iron dwarves have overrun Dun Modr.",
+      "when": {
+        "zone_id": 11
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:118",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:118",
+        "world:creature:1078",
+        "world:creature:1076",
+        "world:creature:1077",
+        "world:creature:1022",
+        "world:creature:1023",
+        "world:creature:1353"
+      ],
+      "text": "You are in Whelgar's Excavation Site, a dig in the Wetlands run by Explorers' League researchers. Mottled raptors overran it after the team uncovered large bones, and Ormer Ironbraid, who is bound to protect the survivors Merrin Rockweaver and Prospector Whelgar, vows revenge on the raptors. Mottled Scytheclaws, Mottled Razormaws and a raptor named Sarltooth, whom Ormer suspects led the attack, still prowl the site.",
+      "when": {
+        "area_id": 118
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:150",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:150",
+        "world:creature:2094",
+        "world:creature:1242",
+        "world:creature:2104",
+        "world:creature:1417",
+        "world:creature:1418"
+      ],
+      "text": "You are in Menethil Harbor, the Alliance harbor of the Wetlands, with its inn and flight master. Tanner James Halloran ships cured crocolisk skins to ports around the world, while Karl Boran coordinates protection for the merchants threatened by murlocs along the coast. Captain Stoutfist directs the harbor's defense against the Dragonmaw, and bluegill raiders and young crocolisks still lurk nearby.",
+      "when": {
+        "area_id": 150
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:205",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:205",
+        "world:creature:1071",
+        "world:creature:1075",
+        "world:creature:1053",
+        "world:creature:1052",
+        "world:creature:1054"
+      ],
+      "text": "You are in Dun Modr, an Alliance hold in the Wetlands. Longbraid the Grim commands what remains of its regiment, while Rhag Garmason holds the defenses and waits for Ironforge reinforcements. Dark Iron tunnelers, saboteurs and demolitionists are the dangers here.",
+      "when": {
+        "area_id": 205
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:298",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:298",
+        "world:creature:26546",
+        "world:creature:12658",
+        "world:creature:1024",
+        "world:creature:2089"
+      ],
+      "text": "You are in Baradin Bay, a bay in the Wetlands where the dockmaster Ludin Farrow points travelers bound for Northrend to the icebreaker Northspear, which sails to Valgarde in the Howling Fjord. Murlocs and giant crocolisks lurk in the water. Adam Lind, a guide at the dock, warns that the way to Theramore is rarely safe for Alliance people.",
+      "when": {
+        "area_id": 298
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:299",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:299",
+        "world:creature:1418",
+        "world:creature:1417",
+        "world:creature:1400",
+        "world:creature:1217",
+        "world:quest:324"
+      ],
+      "text": "You are in Menethil Bay, a stretch of water in the Wetlands where bluegill raiders, Wetlands crocolisks and young crocolisks hunt. Murlocs have stolen the rest of the Lightforge Ingots from a waterlogged chest near the Flying Osprey wreck, and Glorin Steelbrow is searching the Wetlands for more Lightforge iron.",
+      "when": {
+        "area_id": 299
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:309",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:309",
+        "world:quest:470",
+        "world:creature:1032",
+        "world:creature:1033",
+        "world:creature:1031",
+        "world:creature:1015",
+        "world:creature:1040"
+      ],
+      "text": "You are in Ironbeard's Tomb, northeast of Menethil Harbor in the Wetlands. Black oozes, monstrous oozes and crimson oozes are the dangers here, and one ooze swallowed a visitor's bag whole. Highland raptors and fen creepers lurk nearby.",
+      "when": {
+        "area_id": 309
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:836",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:836",
+        "world:creature:2105",
+        "world:creature:2466",
+        "world:creature:2468",
+        "world:creature:2086",
+        "world:creature:2103",
+        "world:creature:2102",
+        "world:creature:2090"
+      ],
+      "text": "You are in Dun Algaz, where four Alliance mountaineers stand against the Dragonmaw. Dragonmaw scouts and grunts gather here, and Ma'ruk Wyrmscale is a notable threat. Valstag Ironjaw in Menethil Harbor directs the response to Dragonmaw activity around Algaz.",
+      "when": {
+        "area_id": 836
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:881",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:881",
+        "world:creature:1074",
+        "world:creature:1052",
+        "world:creature:5683"
+      ],
+      "text": "You are in Thandol Span, a bridge in the Wetlands that Dark Iron forces devastated. Dark Iron saboteurs still lurk around it. Comar Villard roams this area, faithful to his lost love and hoping to find his wife.",
+      "when": {
+        "area_id": 881
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1016",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1016",
+        "world:quest:304",
+        "world:creature:1071",
+        "world:creature:1051",
+        "world:creature:1053",
+        "world:creature:1052",
+        "world:creature:1069",
+        "world:creature:1017"
+      ],
+      "text": "You are in Direforge Hill, southeast of Dun Modr in the Wetlands. Balgaras the Foul, the warlock who leads the Dark Iron here, hides in his camp on the hill. Dark Iron dwarves, tunnelers and saboteurs share the slopes with highland lashtails, crimson whelps and highland scytheclaws.",
+      "when": {
+        "area_id": 1016
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1017",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1017",
+        "world:creature:6491",
+        "world:creature:1018",
+        "world:creature:1019"
+      ],
+      "text": "You are in Raptor Ridge, a ridge in the Wetlands where highland razormaws and elder razormaws are the dangers. A spirit healer here offers a return to the living for a price, while cautioning that it may not yet be the traveler's time.",
+      "when": {
+        "area_id": 1017
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1018",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1018",
+        "world:creature:1020",
+        "world:creature:1021",
+        "world:creature:1417",
+        "world:creature:1039",
+        "world:creature:1032"
+      ],
+      "text": "You are in Black Channel Marsh, a marsh in the Wetlands where mottled raptors and mottled screechers hunt among young crocolisks, fen dwellers and black oozes.",
+      "when": {
+        "area_id": 1018
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1020",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1020",
+        "world:creature:1007",
+        "world:creature:1008",
+        "world:creature:1010",
+        "world:creature:1417",
+        "world:creature:1030",
+        "world:creature:1039"
+      ],
+      "text": "You are in Mosshide Fen, a fen in the Wetlands where mosshide gnolls, mongrels and fenrunners roam among young crocolisks, black slimes and fen dwellers.",
+      "when": {
+        "area_id": 1020
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1021",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1021",
+        "world:creature:1111",
+        "world:creature:1030"
+      ],
+      "text": "You are in Thelgen Rock, part of the Wetlands. Leech Stalkers and Black Slimes are the dangers here.",
+      "when": {
+        "area_id": 1021
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1022",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1022",
+        "world:creature:1024",
+        "world:creature:14424",
+        "world:quest:284",
+        "world:quest:285",
+        "world:quest:286"
+      ],
+      "text": "You are in Bluegill Marsh, part of the Wetlands, where Bluegill murlocs swarm the hovels. Mirelow is also a danger here. Searches for the lost Menethil Statuette are still going on among the murloc hovels.",
+      "when": {
+        "area_id": 1022
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1023",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1023",
+        "world:creature:1400",
+        "world:creature:1016",
+        "world:creature:1017",
+        "world:creature:1018",
+        "world:creature:1040",
+        "world:creature:1041"
+      ],
+      "text": "You are in Saltspray Glen, part of the Wetlands. Wetlands crocolisks, highland lashtails, highland scytheclaws and highland razormaws roam it, and fen creepers and fen lords lurk among them.",
+      "when": {
+        "area_id": 1023
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1024",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1024",
+        "world:creature:2679",
+        "world:creature:2682",
+        "world:creature:6491",
+        "world:creature:1011",
+        "world:creature:1012",
+        "world:creature:1400"
+      ],
+      "text": "You are in Sundown Marsh, a part of the Wetlands held by the Alliance. Wenna Silkbeard deals in special goods here, and Fradd Swiftgear in engineering supplies. A spirit healer is on hand for the dead, and mosshide trappers, brutes and crocolisks roam the marsh.",
+      "when": {
+        "area_id": 1024
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1025",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1025",
+        "world:creature:1244",
+        "world:quest:275",
+        "world:quest:276",
+        "world:quest:277",
+        "world:creature:1069",
+        "world:creature:1015",
+        "world:creature:1044"
+      ],
+      "text": "You are in The Green Belt, part of the Wetlands where Rethiel the Greenwarden watches over the plants and creatures. Rethiel is opposed to the mosshide gnolls, who cut the trees for their fires, and to the fen creepers that have risen as diseased blisters on the land. Whelps and highland raptors roam the area.",
+      "when": {
+        "area_id": 1025
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1036",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1036",
+        "world:creature:1034",
+        "world:creature:1057",
+        "world:creature:1035",
+        "world:creature:2091"
+      ],
+      "text": "You are in Angerfang Encampment, a Dragonmaw camp in the Wetlands. Dragonmaw raiders, bonewarders, swamprunners and centurions fill it, and Chieftain Nek'rosh is still at large here.",
+      "when": {
+        "area_id": 1036
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1038",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1038",
+        "world:creature:1050",
+        "world:creature:1049",
+        "world:creature:1045"
+      ],
+      "text": "You are in Dragonmaw Gates, a place in the Wetlands where Scalebane royal guards, Wyrmkin firebrands and red dragonspawn are found in numbers.",
+      "when": {
+        "area_id": 1038
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1039",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1039",
+        "world:creature:1158",
+        "world:creature:1157",
+        "world:creature:1160",
+        "world:quest:292"
+      ],
+      "text": "You are in The Lost Fleet, an area of the Wetlands haunted by Cursed Marines and Cursed Sailors, with Captain Halyndor among them. A cursed Eye of Paleth was found in a chest here, and its curse is not yet removed.",
+      "when": {
+        "area_id": 1039
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1016": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1016 (Direforge Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1017": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1017 (Raptor Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1018": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1018 (Black Channel Marsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1020": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1020 (Mosshide Fen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1021": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1021 (Thelgen Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1022": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1022 (Bluegill Marsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1023": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1023 (Saltspray Glen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1024": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1024 (Sundown Marsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1025": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1025 (The Green Belt)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1036": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1036 (Angerfang Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1038": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1038 (Dragonmaw Gates)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1039": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1039 (The Lost Fleet)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:11": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 11 (Wetlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:118": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 118 (Whelgar's Excavation Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:150": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 150 (Menethil Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:205": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 205 (Dun Modr)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:298": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 298 (Baradin Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:299": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 299 (Menethil Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:309": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 309 (Ironbeard's Tomb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:836": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 836 (Dun Algaz)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:881": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 881 (Thandol Span)",
+      "revision": "3.3.5a client data"
+    },
     "source:00116ee786ac627b36075545": {
       "kind": "research",
       "reference": "evidence:sha256:b6351b7aac853c20c8cb024cfef1df79ceb76417f197a18bb44c6fd19cafbb23",
@@ -5896,6 +6382,401 @@
       "kind": "research",
       "reference": "evidence:sha256:6827306ce0402722b1f0fde6f5026a528ef3e880c6c8bbbf58820df7bdb5c193",
       "revision": "4b13ab0c68c39631a69d834c11e866bc1a699f5e7b7970bedb944b6c70ec6c7a"
+    },
+    "world:creature:1007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1007 (Mosshide Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1008": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1008 (Mosshide Mongrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1010": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1010 (Mosshide Fenrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1011": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1011 (Mosshide Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1012": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1012 (Mosshide Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1015": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1015 (Highland Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1016 (Highland Lashtail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1017": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1017 (Highland Scytheclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1018": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1018 (Highland Razormaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1019": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1019 (Elder Razormaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1020 (Mottled Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1021": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1021 (Mottled Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1022": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1022 (Mottled Scytheclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1023": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1023 (Mottled Razormaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1024": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1024 (Bluegill Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1030": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1030 (Black Slime), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1031": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1031 (Crimson Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1032 (Black Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1033 (Monstrous Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1034 (Dragonmaw Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1035 (Dragonmaw Swamprunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1039": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1039 (Fen Dweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1040": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1040 (Fen Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1041": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1041 (Fen Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1044 (Flamesnorting Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1045": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1045 (Red Dragonspawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1049": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1049 (Wyrmkin Firebrand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1050": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1050 (Scalebane Royal Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1051": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1051 (Dark Iron Dwarf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1052": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1052 (Dark Iron Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1053": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1053 (Dark Iron Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1054": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1054 (Dark Iron Demolitionist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1057": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1057 (Dragonmaw Bonewarder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1069": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1069 (Crimson Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1071": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1071 (Longbraid the Grim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1074": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1074 (Motley Garmason), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1075": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1075 (Rhag Garmason), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1076": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1076 (Merrin Rockweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1077 (Prospector Whelgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1078": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1078 (Ormer Ironbraid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1111 (Leech Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1157 (Cursed Sailor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1158 (Cursed Marine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1160 (Captain Halyndor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1217 (Glorin Steelbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1242": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1242 (Karl Boran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1244 (Rethiel the Greenwarden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12658": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12658 (Adam Lind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1353 (Sarltooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1400": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1400 (Wetlands Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1417 (Young Wetlands Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1418": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1418 (Bluegill Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14424 (Mirelow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2086 (Valstag Ironjaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2089 (Giant Wetlands Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2090": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2090 (Ma'ruk Wyrmscale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2091": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2091 (Chieftain Nek'rosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2094 (James Halloran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2102": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2102 (Dragonmaw Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2103": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2103 (Dragonmaw Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2104": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2104 (Captain Stoutfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2105": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2105 (Mountaineer Dokkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2466 (Mountaineer Grugelm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2468 (Mountaineer Thar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26546 (Ludin Farrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2679 (Wenna Silkbeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2682 (Fradd Swiftgear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5683": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5683 (Comar Villard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:275": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 275 (Blisters on The Land)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:276": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 276 (Tramping Paws)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:277": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 277 (Fire Taboo)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:284": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 284 (The Search Continues)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:285": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 285 (Search More Hovels)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:286": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 286 (Return the Statuette)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:292": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 292 (The Eye of Paleth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:304": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 304 (A Grim Task)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:324": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 324 (The Lost Ingots)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:470": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 470 (Digging Through the Ooze)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

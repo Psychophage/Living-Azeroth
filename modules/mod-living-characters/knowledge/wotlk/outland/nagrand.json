@@ -4979,7 +4979,707 @@
     }
   ],
   "place": "Nagrand",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3518",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3518",
+        "dbc:area:3613",
+        "dbc:area:3626",
+        "dbc:area:3628",
+        "dbc:area:3622",
+        "dbc:area:3624",
+        "world:creature:17132",
+        "world:creature:17157"
+      ],
+      "text": "You are in Nagrand, a contested part of Outland where the Alliance and the Horde both hold settlements. Garadar is Horde, Telaar is Alliance, and the abandoned city of Halaa belongs to neither side. Ogres are the main danger, from Boulderfist and Warmaul ogres to the Murkblood who sacked Sunspring Post. Legion forge camps, rumblers, clefthoofs and windrocs also roam the plains.",
+      "when": {
+        "zone_id": 3518
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3610",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3610",
+        "world:creature:18261",
+        "world:creature:18369",
+        "world:creature:17135",
+        "world:creature:17134"
+      ],
+      "text": "You are in Burning Blade Ruins, a ruin in Nagrand where Boulderfist mystics and crushers roam. Lantresor of the Burning Blade is a calculating leader who schemes to turn the Kil'sorrow and the Warmaul against each other. Corki, son of Arechron, is held captive by the Boulderfist ogres here.",
+      "when": {
+        "area_id": 3610
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3613",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3613",
+        "world:creature:18063",
+        "world:creature:18141",
+        "world:creature:18066",
+        "dbc:taxi:120"
+      ],
+      "text": "You are in Garadar, the Mag'har town in Nagrand held by the Horde. Chieftain Garrosh Hellscream, son of Grom, fears his cursed bloodline and doubts his fitness to lead, while Greatmother Geyah, an elder, keeps watch over the town. Farseer Kurkush of the Lightning Sons presses resistance against the Murkblood raiders who took Sunspring Post. Its flight master and inn serve travelers.",
+      "when": {
+        "area_id": 3613
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3614",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3614",
+        "world:creature:17153",
+        "world:creature:17144"
+      ],
+      "text": "You are in Skysong Lake, a lake in Nagrand where the water spirits have been agitated. Lake spirits roam its waters, and a goretooth lurks here among them.",
+      "when": {
+        "area_id": 3614
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3615",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3615",
+        "world:creature:18072",
+        "world:creature:18073",
+        "world:creature:18071",
+        "world:creature:18099"
+      ],
+      "text": "You are in Throne of the Elements, the Earthen Ring's seat in Nagrand, held by the Alliance. Elementalists Sharvak, Lo'ap and Untrag work here to calm the disturbed elements, and Gordawg, Fury of Earth, reads the land through the earth itself. Untrag says a pounding beneath the ground is making the earth reel, and Sharvak worries that her people cannot fight while the elements are in turmoil.",
+      "when": {
+        "area_id": 3615
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3616",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3616",
+        "world:creature:17138",
+        "world:creature:18064",
+        "world:creature:18413"
+      ],
+      "text": "You are in Laughing Skull Ruins, a Warmaul ogre site in Nagrand. Warmaul reavers and shamans hold the ruins, and Zorbo the Advisor is among the ogres here.",
+      "when": {
+        "area_id": 3616
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3617",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3617",
+        "world:creature:18445",
+        "world:creature:18428",
+        "world:creature:18037",
+        "world:creature:18065",
+        "world:creature:18440"
+      ],
+      "text": "You are in Warmaul Hill, a Warmaul ogre hill in Nagrand where many prisoners are kept. Corki, son of Arechron, is caged here, and Cho'war holds the key to his cage. Warmaul warlocks, brutes and a chef named Bufferlo guard the hill, and a Mag'har captive is among the prisoners.",
+      "when": {
+        "area_id": 3617
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3621",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3621",
+        "world:creature:17155",
+        "world:creature:18145",
+        "world:quest:9874"
+      ],
+      "text": "You are in Lake Sunspring, the region's main water source in Nagrand. Lake surgers and Watoosun's Polluted Essence roam its waters, and the Murkblood have begun dumping the slain from Sunspring Post into it.",
+      "when": {
+        "area_id": 3621
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3622",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3622",
+        "world:creature:18209",
+        "world:creature:18210",
+        "world:creature:18203",
+        "world:creature:18211",
+        "world:creature:18204",
+        "world:quest:9867"
+      ],
+      "text": "You are in Sunspring Post, a fishing village in Nagrand that the Murkblood drove its orcs out of. Murkblood raiders, brutes and Ortor of the Murkblood still hold the post, and captives from the Kurenai and the Mag'har have been held here while the Murkblood search for the totem of Kar'dash.",
+      "when": {
+        "area_id": 3622
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3623",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3623",
+        "world:creature:18265",
+        "world:creature:18276",
+        "world:creature:18333",
+        "world:quest:9882"
+      ],
+      "text": "You are in Aeris Landing, a Consortium outpost in Nagrand. Gezhe represents the Consortium here and has turned the Oshu'gun operation toward smuggled gems, while his security officer Zerid treats the voidspawn and the rogue ethereals led by the thief Gava'xi as threats. Shadrek trades in wild elekk ivory, and the outpost offers repairs and a vendor.",
+      "when": {
+        "area_id": 3623
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3624",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3624",
+        "world:creature:17151",
+        "world:creature:16945",
+        "world:creature:17152",
+        "world:creature:21233",
+        "world:creature:18536",
+        "world:quest:9999"
+      ],
+      "text": "You are in Forge Camp: Fear, a Legion camp in Nagrand. Gan'arg tinkerers, Mo'arg engineers and Felguard legionnaires work here around the fel cannons, and Xirkos, Overseer of Fear, commands the camp. The overseers are extremely dangerous.",
+      "when": {
+        "area_id": 3624
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3625",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3625",
+        "world:creature:17151",
+        "world:creature:16945",
+        "world:creature:17152",
+        "world:creature:21233",
+        "world:creature:18535",
+        "world:creature:18334"
+      ],
+      "text": "You are in Forge Camp: Hate, a Legion camp in Nagrand with fel cannons and the same mix of tinkerers, engineers and legionnaires as the camp of Fear. Demos, Overseer of Hate, leads them, and wild elekks wander nearby.",
+      "when": {
+        "area_id": 3625
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3626",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3626",
+        "world:creature:18369",
+        "world:creature:18223",
+        "world:creature:18353",
+        "dbc:taxi:119"
+      ],
+      "text": "You are in Telaar, the Alliance town in Nagrand, led by Arechron. Mo'mor the Breaker directs the response to the Boulderfist threat, and Huntress Bintook worries that ogres have appeared east of town with too few people to answer every danger. Its inn and flight master serve travelers.",
+      "when": {
+        "area_id": 3626
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3627",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3627",
+        "world:creature:20812",
+        "world:creature:17136",
+        "world:creature:17137",
+        "world:creature:18062",
+        "world:creature:6491"
+      ],
+      "text": "You are in Northwind Cleft, a cleft in Nagrand where Boulderfist warriors, Boulderfist mages and enraged crushers roam. Corki, Arechron's curious son, is an Alliance man who keeps getting caught up in trouble with the Boulderfist ogres. A spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 3627
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3628",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3628",
+        "world:creature:18816",
+        "world:creature:18817",
+        "world:quest:10074",
+        "world:creature:17154"
+      ],
+      "text": "You are in Halaa, a draenei research base in Nagrand that belongs to neither side, though Horde and Alliance both keep people here. Chief Researcher Amereldine for the Horde and Chief Researcher Kartos for the Alliance each study the naaru crystals of Oshu'gun and want samples of its crystal powder. Its vendors, repairs and a spirit healer serve travelers, though muck creatures roam the area.",
+      "when": {
+        "area_id": 3628
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3629",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3629",
+        "world:creature:17136",
+        "world:creature:17137",
+        "world:creature:18062"
+      ],
+      "text": "You are in Southwind Cleft, a cleft in Nagrand where Boulderfist warriors, Boulderfist mages and enraged crushers roam.",
+      "when": {
+        "area_id": 3629
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3630",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3630",
+        "world:creature:18688",
+        "world:quest:10101",
+        "world:creature:17149",
+        "world:creature:17150",
+        "world:creature:18661",
+        "world:creature:18658",
+        "world:creature:17981"
+      ],
+      "text": "You are in Oshu'gun, a mountain of crystal in Nagrand. Ancient orc ancestors here offer protection to kind visitors, yet they cry out in torment. Vir'aani raiders and arcanists, Terrorguards, Kil'sorrow ritualists and void creatures make the mountain dangerous.",
+      "when": {
+        "area_id": 3630
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3631",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3631",
+        "world:creature:17545",
+        "world:creature:17981",
+        "world:creature:17150",
+        "world:creature:17149",
+        "world:creature:18658"
+      ],
+      "text": "You are in Spirit Fields, a part of Nagrand where K'ure, a naaru trapped in the wreck of the draenei vessel Oshu'gun, speaks to visitors. He explains that his failing energy drew orc ancestral spirits into a void, and he is still searching for a way to free them. Void creatures, Vir'aani raiders and arcanists, and Kil'sorrow ritualists make the fields dangerous.",
+      "when": {
+        "area_id": 3631
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3633",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3633",
+        "world:creature:18687",
+        "world:creature:18043",
+        "world:quest:10082"
+      ],
+      "text": "You are in Ancestral Grounds, one of the villages of the orc ancestors in Nagrand, where Mother Kashur, a Horde figure, seeks peace for the spirits and safety for the Mag'har. Agitated orc spirits walk the grounds, and Kashur explains they are the ancestors' troubled state rather than the ancestors themselves.",
+      "when": {
+        "area_id": 3633
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3634",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3634",
+        "world:creature:18109",
+        "world:creature:17139",
+        "world:creature:17141"
+      ],
+      "text": "You are in Windyreed Village, a village in Nagrand where Living Fire, a flame drawn from the essence of Incineratus, is set loose on the huts. Windyreed scavengers and wretches are the other troubles here.",
+      "when": {
+        "area_id": 3634
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3636",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3636",
+        "world:creature:22311",
+        "world:creature:22309",
+        "world:creature:22310",
+        "world:creature:22313",
+        "world:creature:6491"
+      ],
+      "text": "You are in Elemental Plateau, a part of Nagrand where raging fire-souls, crashing wave-spirits, storming wind-rippers and rumbling earth-hearts roam. A spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 3636
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3637",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3637",
+        "world:creature:17148",
+        "world:creature:17147",
+        "world:creature:17146",
+        "world:creature:18033",
+        "world:creature:18391"
+      ],
+      "text": "You are in Kil'sorrow Fortress, a stronghold in Nagrand held by Kil'sorrow deathsworn, cultists and spellbinders, with dark worgs roaming nearby. Giselda the Crone is a notable foe here.",
+      "when": {
+        "area_id": 3637
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3638",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3638",
+        "world:creature:18439",
+        "world:creature:18895",
+        "world:creature:18897"
+      ],
+      "text": "You are in The Ring of Trials, an arena in Nagrand that the Steamwheedle Fighting Circuit now runs. Garokk, its former master, remembers the ring's glory before the Steamwheedle Cartel arrived. Ear-Biter challenges would-be fighters, and King Dond organizes the circuit and sells charters for arena teams.",
+      "when": {
+        "area_id": 3638
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3666",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3666",
+        "world:creature:17154",
+        "world:creature:18062",
+        "world:creature:17144"
+      ],
+      "text": "You are in Halaani Basin, a basin in Nagrand where muck creatures and enraged crushers roam, and Goretooth is among the dangers.",
+      "when": {
+        "area_id": 3666
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3672",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3672",
+        "world:creature:18414",
+        "world:creature:18415",
+        "world:creature:18229",
+        "world:quest:9945",
+        "world:quest:9865"
+      ],
+      "text": "You are in Mag'hari Procession, a stretch of Nagrand where Horde Mag'har grieve. Elder Yorley and Elder Ungriz are two survivors of a thirty-orc funeral procession ambushed by Warmaul on its way to the Ancestral Grounds. Saurfang the Younger, the last survivor of a Murkblood attack on his war party, is consumed by a rage he cannot explain.",
+      "when": {
+        "area_id": 3672
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3673",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3673",
+        "world:creature:18180",
+        "world:creature:18278",
+        "world:creature:17156",
+        "world:quest:9850",
+        "world:quest:9851"
+      ],
+      "text": "You are in Nesingwary Safari in Nagrand, a hunting safari run by Hemet Nesingwary, an old dwarf hunter. He makes aspiring hunters prove themselves against clefthoof, from the ordinary herd up to bulls and the elusive Banthar. Pilot Marsha is repairing her crashed aircraft here, blaming Hemet for shooting through its ailerons. Tortured earth spirits roam the area.",
+      "when": {
+        "area_id": 3673
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3700",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3700",
+        "world:creature:18471",
+        "world:creature:18069",
+        "world:creature:22893"
+      ],
+      "text": "You are in the Ring of Blood in Nagrand, an arena where ogres stage fights. Gurgthock announces the bouts, and Mogor, the Warmaul Hero, is the boastful ogre champion who taunts fighters. Wodin the Troll-Servant lines up the next match and takes a cut of the championship.",
+      "when": {
+        "area_id": 3700
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3705",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3705",
+        "world:creature:18334",
+        "world:creature:17156",
+        "world:creature:18062"
+      ],
+      "text": "You are in Telaari Basin in Nagrand, where wild elekks roam and are sought for their high-quality ivory tusks. Tortured earth spirits and enraged crushers roam here too.",
+      "when": {
+        "area_id": 3705
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3762",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3762",
+        "world:creature:18294"
+      ],
+      "text": "You are in Windyreed Pass in Nagrand. Kristen Dipswitch is here, carrying a bundle of skins she collected in Zangarmarsh for Harold Lane at the Nesingwary Safari.",
+      "when": {
+        "area_id": 3762
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3764",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3764",
+        "world:creature:22981",
+        "world:creature:6491",
+        "world:creature:22342",
+        "world:creature:22363",
+        "world:quest:10987"
+      ],
+      "text": "You are in The Twilight Ridge in Nagrand, where most of the sparrowhawks nest. Watcher Elaira is training a captured sparrowhawk to find pieces of the Book of the Raven. The spirit healer here offers a return to life for a price. Deathshadow spellbinders, warlocks and archons haunt the ridge.",
+      "when": {
+        "area_id": 3764
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3839",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3839",
+        "world:creature:19844",
+        "world:quest:10253",
+        "world:creature:17137",
+        "world:creature:17136"
+      ],
+      "text": "You are in the Abandoned Armory in Nagrand. Nitrin the Learned works here against Levixus, the Soul Caller who threatens Auchindoun and binds the dead to his will. Boulderfist mages and warriors roam the area.",
+      "when": {
+        "area_id": 3839
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3518": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3518 (Nagrand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3610": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3610 (Burning Blade Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3613": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3613 (Garadar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3614": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3614 (Skysong Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3615": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3615 (Throne of the Elements)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3616": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3616 (Laughing Skull Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3617": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3617 (Warmaul Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3621": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3621 (Lake Sunspring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3622": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3622 (Sunspring Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3623": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3623 (Aeris Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3624": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3624 (Forge Camp: Fear)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3625": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3625 (Forge Camp: Hate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3626": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3626 (Telaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3627": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3627 (Northwind Cleft)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3628": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3628 (Halaa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3629": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3629 (Southwind Cleft)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3630": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3630 (Oshu'gun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3631": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3631 (Spirit Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3633": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3633 (Ancestral Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3634": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3634 (Windyreed Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3636": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3636 (Elemental Plateau)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3637": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3637 (Kil'sorrow Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3638": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3638 (The Ring of Trials)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3666": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3666 (Halaani Basin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3672": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3672 (Mag'hari Procession)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3673": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3673 (Nesingwary Safari)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3700": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3700 (The Ring of Blood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3705": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3705 (Telaari Basin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3762": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3762 (Windyreed Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3764": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3764 (The Twilight Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3839": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3839 (Abandoned Armory)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:119": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 119 (Telaar, Nagrand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:120": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 120 (Garadar, Nagrand)",
+      "revision": "3.3.5a client data"
+    },
     "source:00126f0cd69afb5b5e6e3673": {
       "kind": "research",
       "reference": "evidence:sha256:cd4f7dbe928691bd8d291d51164dbe004ba25ff823f5b09f1c955b5f6b68e9eb",
@@ -8804,6 +9504,511 @@
       "kind": "research",
       "reference": "evidence:sha256:968677273d9839c09c04df31b3f5d17a0b56c9e1e9091e39c68399ebd85eccfd",
       "revision": "2468d337f09321a9194ea1c2bea01aae4a8b08e95ae7fa810dfcf66a2eaa5594"
+    },
+    "world:creature:16945": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16945 (Mo'arg Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17132": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17132 (Clefthoof Bull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17134": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17134 (Boulderfist Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17135 (Boulderfist Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17136 (Boulderfist Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17137": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17137 (Boulderfist Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17138": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17138 (Warmaul Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17139 (Windyreed Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17141": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17141 (Windyreed Wretch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17144 (Goretooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17146": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17146 (Kil'sorrow Spellbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17147 (Kil'sorrow Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17148": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17148 (Kil'sorrow Deathsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17149": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17149 (Vir'aani Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17150 (Vir'aani Arcanist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17151": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17151 (Gan'arg Tinkerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17152": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17152 (Felguard Legionnaire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17153": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17153 (Lake Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17154 (Muck Spawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17155": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17155 (Lake Surger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17156 (Tortured Earth Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17157 (Shattered Rumbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17545": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17545 (K'ure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17981 (Voidspawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18033 (Dark Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18037": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18037 (Warmaul Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18043": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18043 (Agitated Orc Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18062": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18062 (Enraged Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18063 (Garrosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18064": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18064 (Warmaul Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18065": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18065 (Warmaul Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18066": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18066 (Farseer Kurkush), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18069": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18069 (Mogor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18071": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18071 (Elementalist Untrag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18072": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18072 (Elementalist Sharvak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18073 (Elementalist Lo'ap), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18099": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18099 (Gordawg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18109 (Living Fire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18141": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18141 (Greatmother Geyah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18145": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18145 (Watoosun's Polluted Essence), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18180 (Hemet Nesingwary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18203 (Murkblood Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18204 (Ortor of Murkblood), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18209": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18209 (Kurenai Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18210": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18210 (Mag'har Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18211": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18211 (Murkblood Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18223": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18223 (Mo'mor the Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18229 (Saurfang the Younger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18261 (Lantresor of the Blade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18265": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18265 (Gezhe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18276 (Zerid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18278 (Pilot Marsha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18294": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18294 (Kristen Dipswitch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18333 (Shadrek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18334 (Wild Elekk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18353 (Huntress Bintook), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18369 (Corki), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18391": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18391 (Giselda the Crone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18413 (Zorbo the Advisor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18414": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18414 (Elder Yorley), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18415 (Elder Ungriz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18428 (Mag'har Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18439": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18439 (Garokk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18440 (Warmaul Chef Bufferlo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18445 (Corki), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18471": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18471 (Gurgthock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18535": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18535 (Demos, Overseer of Hate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18536": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18536 (Xirkos, Overseer of Fear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18658": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18658 (Kil'sorrow Ritualist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18661 (Terrorguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18687 (Mother Kashur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18688": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18688 (Ancient Orc Ancestor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18816": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18816 (Chief Researcher Amereldine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18817": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18817 (Chief Researcher Kartos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18895": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18895 (Ear-Biter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18897": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18897 (\"King\" Dond), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19844 (Nitrin the Learned), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20812": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20812 (Corki), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21233 (Legion Fel Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22309": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22309 (Crashing Wave-Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22310": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22310 (Storming Wind-Ripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22311": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22311 (Raging Fire-Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22313 (Rumbling Earth-Heart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22342 (Deathshadow Spellbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22363": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22363 (Deathshadow Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22893": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22893 (Wodin the Troll-Servant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22981 (Watcher Elaira), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10074": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10074 (Oshu'gun Crystal Powder)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10082": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10082 (The Agitated Ancestors)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10101": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10101 (When Spirits Speak)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10253": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10253 (Levixus the Soul Caller)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10987": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10987 (To Catch A Sparrowhawk)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9850": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9850 (Clefthoof Mastery)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9851": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9851 (Clefthoof Mastery)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9865": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9865 (Once Were Warriors)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9867": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9867 (Murkblood Leaders...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9874": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9874 (Stopping the Spread)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9882": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9882 (Stealing from Thieves)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9945": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9945 (War on the Warmaul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9999": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9999 (Buying Time)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

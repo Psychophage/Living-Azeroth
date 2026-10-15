@@ -2247,7 +2247,344 @@
     }
   ],
   "place": "Western Plaguelands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:28",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:28",
+        "dbc:area:3197",
+        "dbc:area:2298",
+        "dbc:area:2620",
+        "dbc:area:190",
+        "world:creature:1816",
+        "world:creature:1812",
+        "world:creature:1833"
+      ],
+      "text": "You are in the Western Plaguelands, a plague-scarred land in the Eastern Kingdoms, held in places by the Alliance and in others by no one. Chillwind Camp is an Alliance stronghold, while Caer Darrow and the Thondroril River belong to no side. Diseased grizzlies, plague lurkers and rotting behemoths roam the land, and Scarlet Crusade forces hold the town of Hearthglen.",
+      "when": {
+        "zone_id": 28
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:190",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:190",
+        "world:creature:1834",
+        "world:creature:1827",
+        "world:creature:1832"
+      ],
+      "text": "You are in Hearthglen, a town in the Western Plaguelands held by the Scarlet Crusade. Scarlet paladins, sentinels and magi are the dangers within its streets.",
+      "when": {
+        "area_id": 190
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:192",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:192",
+        "world:creature:11610",
+        "world:creature:6491",
+        "world:creature:1884",
+        "world:creature:1817"
+      ],
+      "text": "You are in Northridge Lumber Camp, a logging camp in the Western Plaguelands. Kirsta Deepshadow, a wounded scout, is recovering here and seeks help against the Scarlet Crusade's leaders outside Hearthglen. A spirit healer is here too, and Scarlet lumberjacks and diseased wolves are the dangers.",
+      "when": {
+        "area_id": 192
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:193",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:193",
+        "world:creature:10667",
+        "world:creature:10976",
+        "world:creature:1789",
+        "world:creature:1795",
+        "world:quest:4971"
+      ],
+      "text": "You are in the Ruins of Andorhal, a town in the Western Plaguelands. Skeletal acolytes, searing ghouls and skeletal executioners roam the streets. Chromie, a bronze dragon, works here to mend the timeline she believes Scourge meddling has damaged, and temporal parasites infest the silos. Jeziba, the Sculptor, forges armor here.",
+      "when": {
+        "area_id": 193
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:196",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:196",
+        "world:creature:1854"
+      ],
+      "text": "You are in Uther's Tomb, a holy site in the Western Plaguelands. High Priest Thel'danis, an Alliance priest, guards it and purges evil from scourgestones to use against the Scourge. His cleansing can draw undead attention.",
+      "when": {
+        "area_id": 196
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:197",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:197",
+        "world:creature:10927",
+        "world:creature:11872",
+        "world:creature:1791",
+        "world:creature:1783"
+      ],
+      "text": "You are in Sorrow Hill, a hill in the Western Plaguelands. Marlene Redpath, a wandering spirit of Darrowshire, is still grieving here for her brother Joseph. Myranda the Hag, an illusionist, can disguise travelers for entry into Hearthglen, but her magic fails when the wearer goes too far. Slavering ghouls and skeletal flayers roam the hill.",
+      "when": {
+        "area_id": 197
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:198",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:198",
+        "world:creature:1806",
+        "world:creature:1808",
+        "world:creature:1824"
+      ],
+      "text": "You are in The Weeping Cave, a cave in the Western Plaguelands. Vile slimes, devouring oozes and plague lurkers haunt it, with diseased grizzlies and rotting behemoths as well.",
+      "when": {
+        "area_id": 198
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:199",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:199",
+        "world:creature:10778",
+        "world:quest:5217",
+        "world:creature:1783",
+        "world:creature:1791",
+        "world:creature:10605"
+      ],
+      "text": "You are in Felstone Field, a farm in the Western Plaguelands. Janice Felstone, a frightened ghost, still haunts the house and calls for her husband John. A cauldron of poison stands on the farm. Skeletal flayers, slavering ghouls and Scarlet medics roam the fields.",
+      "when": {
+        "area_id": 199
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:200",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:200",
+        "world:creature:4474",
+        "world:creature:4475",
+        "world:creature:1785",
+        "world:quest:5220"
+      ],
+      "text": "You are in Dalson's Tears, a place in the Western Plaguelands. Rotting cadavers, blighted zombies and skeletal terrors roam it, along with diseased wolves and carrion lurkers. A cauldron of ichors stands here.",
+      "when": {
+        "area_id": 200
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:201",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:201",
+        "world:creature:1802",
+        "world:creature:1804",
+        "world:creature:4472",
+        "world:quest:5226"
+      ],
+      "text": "You are in Gahrron's Withering, a place in the Western Plaguelands. Hungering wraiths, wailing deaths and haunting visions drift through it, with diseased grizzlies and plague lurkers as well. A cauldron of putrid ichors stands here.",
+      "when": {
+        "area_id": 201
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:202",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:202",
+        "world:creature:10739",
+        "world:creature:1793",
+        "world:creature:1796",
+        "world:creature:1824"
+      ],
+      "text": "You are in The Writhing Haunt, a place in the Western Plaguelands. Mulgris Deepriver, a tauren druid, came here to heal the land the plague damaged, and he caught the disease himself. Rotting and freezing ghouls, plague lurkers and diseased grizzlies are the dangers here.",
+      "when": {
+        "area_id": 202
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:813",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:813",
+        "world:creature:1815",
+        "world:creature:1822",
+        "world:creature:1809"
+      ],
+      "text": "You are in The Bulwark, a place in the Western Plaguelands. Diseased black bears, venom mist lurkers and carrion vultures roam it.",
+      "when": {
+        "area_id": 813
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2298",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2298",
+        "world:creature:11216",
+        "world:creature:11286",
+        "world:creature:6491",
+        "world:creature:11279",
+        "world:quest:5461"
+      ],
+      "text": "You are in Caer Darrow, an island town in the Western Plaguelands that no side holds. It has repairs, a spirit healer and goods for sale. Eva Sarkhoff, a lost soul, lingers here, and Magistrate Marduke seeks a way to restore the lich Ras Frostwhisper to mortal life. Town guards forbid loitering, panhandling and fighting.",
+      "when": {
+        "area_id": 2298
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2620",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2620",
+        "world:creature:37888",
+        "dbc:taxi:383",
+        "world:creature:1812",
+        "world:creature:1808"
+      ],
+      "text": "You are in Thondroril River, a spot in Western Plaguelands. Frax Bucketdrop keeps the flight master's perch here and offers fast travel onward. Rotting behemoths and devouring oozes roam the area.",
+      "when": {
+        "area_id": 2620
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3197",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3197",
+        "world:creature:10838",
+        "world:creature:11053",
+        "world:creature:10840",
+        "world:quest:5216"
+      ],
+      "text": "You are in Chillwind Camp, an Alliance camp in Western Plaguelands. Commander Ashlam Valorfist leads the Alliance here and organizes the advance toward Andorhal against the Scourge. High Priestess MacDonnell directs agents working to turn the plague cauldrons against the Scourge, and the camp has a flight master, repairs, a vendor and a spirit healer. Members of the Argent Dawn are here too.",
+      "when": {
+        "area_id": 3197
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:190": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 190 (Hearthglen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:192": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 192 (Northridge Lumber Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:193": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 193 (Ruins of Andorhal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:196": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 196 (Uther's Tomb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:197": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 197 (Sorrow Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:198": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 198 (The Weeping Cave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:199": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 199 (Felstone Field)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:200": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 200 (Dalson's Tears)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:201": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 201 (Gahrron's Withering)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:202": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 202 (The Writhing Haunt)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2298": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2298 (Caer Darrow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2620": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2620 (Thondroril River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:28": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 28 (Western Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3197": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3197 (Chillwind Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:813": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 813 (The Bulwark)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:383": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 383 (Thondoril River, Western Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
     "source:0093509643d54522591f72a0": {
       "kind": "research",
       "reference": "evidence:sha256:dbb5b896ce1ad4874d4ebde2bba090c9831b0a5de4883269b14f144ef72bbe99",
@@ -4117,6 +4454,251 @@
       "kind": "research",
       "reference": "evidence:sha256:3642f6a634b930cfe9ccf6985212551ae8a3a70fdf407d9d07e9219fd11674f7",
       "revision": "1c07044d06f710a3775de3a15577aee1ad3a0b445e5ffbffa7c71e3829d64566"
+    },
+    "world:creature:10605": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10605 (Scarlet Medic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10667": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10667 (Chromie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10739 (Mulgris Deepriver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10778": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10778 (Janice Felstone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10838": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10838 (Commander Ashlam Valorfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10840": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10840 (Argent Officer Pureheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10927 (Marlene Redpath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10976 (Jeziba), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11053": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11053 (High Priestess MacDonnell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11216": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11216 (Eva Sarkhoff), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11279 (Caer Darrow Guardsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11286 (Magistrate Marduke), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11610 (Kirsta Deepshadow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11872 (Myranda the Hag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1783": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1783 (Skeletal Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1785": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1785 (Skeletal Terror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1789": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1789 (Skeletal Acolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1791": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1791 (Slavering Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1793": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1793 (Rotting Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1795": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1795 (Searing Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1796 (Freezing Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1802": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1802 (Hungering Wraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1804 (Wailing Death), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1806": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1806 (Vile Slime), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1808 (Devouring Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1809 (Carrion Vulture), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1812": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1812 (Rotting Behemoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1815": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1815 (Diseased Black Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1816": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1816 (Diseased Grizzly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1817": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1817 (Diseased Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1822 (Venom Mist Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1824 (Plague Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1827": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1827 (Scarlet Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1832": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1832 (Scarlet Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1833 (Scarlet Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1834 (Scarlet Paladin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1854": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1854 (High Priest Thel'danis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1884": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1884 (Scarlet Lumberjack), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:37888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37888 (Frax Bucketdrop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4472": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4472 (Haunting Vision), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4474 (Rotting Cadaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4475 (Blighted Zombie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4971": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4971 (A Matter of Time)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5216": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5216 (Target: Felstone Field)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5217": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5217 (Return to Chillwind Camp)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5220": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5220 (Return to Chillwind Camp)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5226": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5226 (Return to Chillwind Camp)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5461": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5461 (The Human, Ras Frostwhisper)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -8427,7 +8427,230 @@
     }
   ],
   "place": "Crystalsong Forest",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2817",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2817",
+        "dbc:area:4551",
+        "dbc:area:4553",
+        "dbc:area:4558",
+        "dbc:area:4559",
+        "world:creature:31233",
+        "world:creature:30862",
+        "world:creature:31401"
+      ],
+      "text": "You are in Crystalsong Forest, a contested land in Northrend where both the Alliance and the Horde hold settlements. The Alliance keeps The Twilight Rivulet and Windrunner's Overlook, and the Horde keeps Forlorn Woods and Sunreaver's Command. Wolves, ents and azure manashapers are the main hostile creatures, and unbound creatures and spirits roam the wilds.",
+      "when": {
+        "zone_id": 2817
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4551",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4551",
+        "world:creature:16128",
+        "world:quest:13158",
+        "world:creature:28705",
+        "world:creature:31231",
+        "world:creature:33499"
+      ],
+      "text": "You are in The Twilight Rivulet, an Alliance settlement in Crystalsong Forest with an inn, a bank, a vendor and repairs. Rhonin, leader of the Kirin Tor in Dalaran, wants a reported invasion at the Violet Hold kept quiet. Katherine Lee, a grand master cooking trainer, is among the Alliance folk here, and lost spirits and skeletal woodcutters are hostile nearby.",
+      "when": {
+        "area_id": 4551
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4553",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4553",
+        "world:creature:28160",
+        "world:quest:12521",
+        "world:creature:31228",
+        "world:creature:31233",
+        "world:creature:31231",
+        "world:creature:33422"
+      ],
+      "text": "You are in Forlorn Woods, a Horde settlement in Crystalsong Forest with a flight master, an inn, an auction house and a stable master. Archmage Pentarus has heard nothing from Hemet Nesingwary, who set sail for the Sholazar Basin, so he offers his flying machine to investigators. Grove walkers, sinewy wolves, lost spirits and unbound seers roam the woods.",
+      "when": {
+        "area_id": 4553
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4554",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4554",
+        "world:creature:30865",
+        "world:creature:30863",
+        "world:creature:30864",
+        "world:creature:30868",
+        "world:creature:30856",
+        "world:creature:30862"
+      ],
+      "text": "You are in the Ruins of Shandaral, a ruined corner of Crystalsong Forest. Spirits of Shandaral warriors, druids and hunters haunt it, alongside unbound corrupters, tricksters and ents.",
+      "when": {
+        "area_id": 4554
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4555",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4555",
+        "world:creature:31401",
+        "world:creature:31402",
+        "world:creature:31393",
+        "world:creature:31228"
+      ],
+      "text": "You are in The Azure Front, a stretch of Crystalsong Forest. Azure manashapers, azure scalebanes and crystal wyrms are hostile here, with grove walkers as well.",
+      "when": {
+        "area_id": 4555
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4556",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4556",
+        "world:creature:19481",
+        "world:quest:10257",
+        "world:creature:32373",
+        "world:creature:31848",
+        "world:creature:31402",
+        "world:creature:31233"
+      ],
+      "text": "You are in Violet Stand, a neutral post in Crystalsong Forest where warmages are stationed under a gatekeeper. Archmage Vargoth is under Kael'thas's curse on the Violet Tower and says he will regain his freedom only once the keystone is destroyed. Zidormi claims she can send visitors to the Caverns of Time in Tanaris. Azure scalebanes and sinewy wolves are the hostile creatures here.",
+      "when": {
+        "area_id": 4556
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4557",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4557",
+        "world:creature:30238",
+        "world:creature:30862",
+        "world:creature:31041",
+        "world:creature:30860",
+        "world:creature:30856",
+        "world:creature:30868",
+        "world:creature:30864"
+      ],
+      "text": "You are in The Unbound Thicket, a wood of Crystalsong Forest. Unbound ents and dryads, dispirited ents, unbound tricksters and corrupters, and shandaral hunter spirits are hostile here. A Silver Covenant scout of the Alliance is the only friendly person in the wood.",
+      "when": {
+        "area_id": 4557
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4558",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4558",
+        "world:creature:30269",
+        "world:creature:30253",
+        "world:creature:30239",
+        "dbc:taxi:337"
+      ],
+      "text": "You are in Sunreaver's Command, a Horde settlement in Crystalsong Forest. Skymaster Baeric, a dragonhawk master, offers air travel from here. Felindel Sunhammer sells blacksmithing supplies, and Alanura Firecloud trades in poisons and reagents.",
+      "when": {
+        "area_id": 4558
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4559",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4559",
+        "world:creature:30271",
+        "world:creature:30241",
+        "world:creature:30244",
+        "dbc:taxi:336"
+      ],
+      "text": "You are in Windrunner's Overlook, an Alliance settlement in Crystalsong Forest. Galendror Whitewing, a hippogryph master, offers air travel from here and calls for guards when attacked. Lanudal Silverhart sells blacksmithing supplies, and Miura Brightweaver trades in poisons and reagents.",
+      "when": {
+        "area_id": 4559
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2817": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2817 (Crystalsong Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4551": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4551 (The Twilight Rivulet)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4553": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4553 (Forlorn Woods)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4554": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4554 (Ruins of Shandaral)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4555": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4555 (The Azure Front)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4556": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4556 (Violet Stand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4557": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4557 (The Unbound Thicket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4558": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4558 (Sunreaver's Command)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4559": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4559 (Windrunner's Overlook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:336": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 336 (Windrunner's Overlook, Crystalsong Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:337": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 337 (Sunreaver's Command, Crystalsong Forest)",
+      "revision": "3.3.5a client data"
+    },
     "source:000353540ffaedd9b6ce3f8c": {
       "kind": "research",
       "reference": "evidence:sha256:a7d87554825d7c3094670b7470780cbeca05780a8189b3d1e20f09fe322c2c11",
@@ -14402,6 +14625,166 @@
       "kind": "research",
       "reference": "evidence:sha256:1566dbc93c5ffd79e900e5716ee1cdf31003c046d0591accbe4a68bfda0068dd",
       "revision": "5d5762851553807210d3f685efb5de27d70bcf28b9b0ff111cb970d22381b40d"
+    },
+    "world:creature:16128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16128 (Rhonin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19481": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19481 (Archmage Vargoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28160 (Archmage Pentarus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28705": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28705 (Katherine Lee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30238 (Silver Covenant Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30239 (Alanura Firecloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30241 (Lanudal Silverhart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30244 (Miura Brightweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30253": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30253 (Felindel Sunhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30269": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30269 (Skymaster Baeric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30271 (Galendror Whitewing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30856 (Unbound Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30860 (Unbound Dryad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30862": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30862 (Unbound Ent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30863 (Shandaral Druid Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30864": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30864 (Shandaral Hunter Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30865": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30865 (Shandaral Warrior Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30868": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30868 (Unbound Corrupter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31041": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31041 (Dispirited Ent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31228 (Grove Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31231": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31231 (Lost Shandaral Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31233 (Sinewy Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31393 (Crystal Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31401 (Azure Manashaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31402 (Azure Scalebane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31848": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31848 (Zidormi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32373 (Gatekeeper Melindra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33422 (Unbound Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33499": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33499 (Skeletal Woodcutter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10257": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10257 (Capturing the Keystone)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12521": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12521 (Where in the World is Hemet Nesingwary?)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13158": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13158 (Discretion is Key)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

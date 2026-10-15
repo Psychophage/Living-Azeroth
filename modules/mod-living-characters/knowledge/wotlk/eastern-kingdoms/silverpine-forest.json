@@ -2628,7 +2628,472 @@
     }
   ],
   "place": "Silverpine Forest",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:130",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:130",
+        "dbc:area:228",
+        "dbc:area:204",
+        "world:creature:1778",
+        "world:creature:1766",
+        "world:quest:438"
+      ],
+      "text": "You are in Silverpine Forest, Horde land in the Eastern Kingdoms. Its main settlement is The Sepulcher, a Horde base, while Alliance folk keep watch in Pyrewood Village and Dalaran's wizards are active in the north. Grizzled bears and worgs roam the woods, rot hide gnolls and Ravenclaw raiders are a constant trouble, and the Scourge has made a hive of the Decrepit Ferry.",
+      "when": {
+        "zone_id": 130
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:172",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:172",
+        "world:quest:442",
+        "world:creature:1939",
+        "world:creature:1940",
+        "world:creature:1909"
+      ],
+      "text": "You are in Fenris Isle, an island in Silverpine Forest that the Scourge uses as its place of strength. Rot Hide brutes, plague weavers and raging rot hides patrol it, and Vile Fin lakestalkers and lake skulkers are among its hostile creatures.",
+      "when": {
+        "area_id": 172
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:204",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:204",
+        "world:creature:1891",
+        "world:creature:1894",
+        "world:creature:2058",
+        "world:quest:452"
+      ],
+      "text": "You are in Pyrewood Village, a village in Silverpine Forest where Alliance watchers and sentries keep watch. Arugal uses the Pyrewood Council as his puppets, and the Deathstalker Faerleia plans an ambush on the Council to weaken Arugal and help the Forsaken take the town.",
+      "when": {
+        "area_id": 204
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:213",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:213",
+        "world:creature:1779",
+        "world:creature:1782",
+        "world:creature:1778"
+      ],
+      "text": "You are in Deep Elem Mine, a mine in Silverpine Forest where Moonrage gluttons and Moonrage darksouls are found, with grizzled bears in the area.",
+      "when": {
+        "area_id": 213
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:226",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:226",
+        "world:creature:1780",
+        "world:creature:1797",
+        "world:creature:2529"
+      ],
+      "text": "You are in The Skittering Dark, an area of Silverpine Forest where moss stalkers and mist creepers lurk and giant grizzled bears roam. Sons of Arugal are among its dangers.",
+      "when": {
+        "area_id": 226
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:227",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:227",
+        "world:creature:1769",
+        "world:creature:1770",
+        "world:creature:1767",
+        "world:creature:1768"
+      ],
+      "text": "You are in Valgan's Field, an area of Silverpine Forest where Moonrage whitescalps and darkrunners roam, along with Vile Fin shredders and tidehunters.",
+      "when": {
+        "area_id": 227
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:228",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:228",
+        "world:creature:1952",
+        "world:creature:1937",
+        "world:creature:2226",
+        "dbc:taxi:10"
+      ],
+      "text": "You are in The Sepulcher, a Horde base in Silverpine Forest run by the Forsaken. High Executor Hadrec directs operations against the Scourge and other threats in the forest from here, and Apothecary Renferrel of the Royal Apothecary Society studies rot hide ichor. Karos Razok arranges bat rides to the Undercity, and the flight master, inn and armorers serve travelers.",
+      "when": {
+        "area_id": 228
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:229",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:229",
+        "world:creature:1865",
+        "world:creature:1866"
+      ],
+      "text": "You are in Olsen's Farthing, an area of Silverpine Forest where Ravenclaw raiders and Ravenclaw slaves are the hostile presence.",
+      "when": {
+        "area_id": 229
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:230",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:230",
+        "world:creature:5682",
+        "world:creature:3534",
+        "world:creature:1923",
+        "world:creature:1924"
+      ],
+      "text": "You are in The Greymane Wall, a barrier in Silverpine Forest where Lordaeron refugees have been turned away by their own kin. Dalin Forgewright cares for them, and Wallace the Blind, a weaponsmith, works here. Bloodsnout worgs and Moonrage bloodhowlers are hostile.",
+      "when": {
+        "area_id": 230
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:231",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:231",
+        "world:creature:1888",
+        "world:creature:1889",
+        "world:creature:1914",
+        "world:creature:1973",
+        "world:creature:1974"
+      ],
+      "text": "You are in Beren's Peril, a place in Silverpine Forest where Dalaran watchers, wizards and mages keep an Alliance presence. Ravenclaw guardians and drudgers are hostile here.",
+      "when": {
+        "area_id": 231
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:232",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:232",
+        "world:creature:1958",
+        "world:creature:1908",
+        "world:creature:1956",
+        "world:creature:1957"
+      ],
+      "text": "You are in The Dawning Isles, a set of isles in Silverpine Forest where Vile Fin tidecallers and oracles are the hostile presence, with lake creepers and Vile Fin shorecreepers also about.",
+      "when": {
+        "area_id": 232
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:233",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:233",
+        "world:creature:2120",
+        "world:creature:2121",
+        "world:creature:1912",
+        "world:creature:1973"
+      ],
+      "text": "You are in Ambermill, where Dalaran's mages, protectors and warders are stationed among the Alliance folk. Archmage Ataeric is a named mage here, and the Horde shadow priest Allister investigates the Dalaran wizards' activity in the area. Ravenclaw guardians and drudgers are hostile.",
+      "when": {
+        "area_id": 233
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:237",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:237",
+        "world:quest:438",
+        "world:creature:1869",
+        "world:creature:1870"
+      ],
+      "text": "You are in The Decrepit Ferry, a ferry east of the Sepulcher in Silverpine Forest that the Scourge has made a hive. Rot hides and other undead patrol it, and Ravenclaw champions and the Hand of Ravenclaw are hostile here.",
+      "when": {
+        "area_id": 237
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:238",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:238",
+        "world:creature:1978",
+        "world:creature:1765",
+        "world:creature:1766",
+        "world:creature:12431"
+      ],
+      "text": "You are in Malden's Orchard, an orchard in Silverpine Forest. Deathstalker Erland is holed up here, afraid of the wolves outside, and worgs roam the trees with a worg called Gorefang among them.",
+      "when": {
+        "area_id": 238
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:239",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:239",
+        "world:creature:1950",
+        "world:creature:1951",
+        "world:creature:1971",
+        "world:creature:1866",
+        "world:quest:425"
+      ],
+      "text": "You are in The Ivar Patch, a farm in Silverpine Forest. Deathstalker brothers Rane and Quinn Yorick are here, and Quinn is still recovering from wounds the ghoul Ivar the Foul gave him, with Ivar usually lurking in the barn. Ravenclaw slaves, grizzled bears and worgs roam the fields around them.",
+      "when": {
+        "area_id": 239
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:240",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:240",
+        "world:creature:1772",
+        "world:creature:1773",
+        "world:creature:1766",
+        "world:creature:1983"
+      ],
+      "text": "You are in The Dead Field, an open stretch of Silverpine Forest with no settlement. Rot Hide gladerunners and mystics roam it with grizzled bears and worgs, and a nightlash is reported here too.",
+      "when": {
+        "area_id": 240
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:305",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:305",
+        "world:creature:7007",
+        "world:creature:5748",
+        "world:creature:5897",
+        "world:creature:2173"
+      ],
+      "text": "You are in North Tide's Run, a shoreline in Silverpine Forest where Horde folk work and a vendor trades. Tiev Mordune has just defeated a corrupt water spirit here and is preparing ritual materials at a brazier. Fisherman Killian Sanatha works nearby, and corrupt water spirits and reef frenzies haunt the water.",
+      "when": {
+        "area_id": 305
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:306",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:306",
+        "world:creature:2173"
+      ],
+      "text": "You are in South Tide's Run, a stretch of shoreline in Silverpine Forest. Reef frenzies prowl the water here.",
+      "when": {
+        "area_id": 306
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:927",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:927",
+        "world:creature:36213",
+        "world:creature:13839",
+        "world:creature:1767",
+        "world:creature:1768",
+        "world:creature:1765"
+      ],
+      "text": "You are in The Shining Strand, a Horde place in Silverpine Forest. A Kor'kron overseer watches the Forsaken and apothecaries here, mistrusting both since the Wrath Gate, and a royal dreadguard is also on hand. Vile fin shredders and tidehunters roam the area with worgs.",
+      "when": {
+        "area_id": 927
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:928",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:928",
+        "world:creature:1779",
+        "world:creature:1782"
+      ],
+      "text": "You are in North Tide's Hollow, a place in Silverpine Forest. Moonrage gluttons are common here, and moonrage darksouls roam with them.",
+      "when": {
+        "area_id": 928
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1338",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1338",
+        "world:creature:10181",
+        "world:creature:20406",
+        "world:creature:6033",
+        "world:creature:1767",
+        "world:creature:1909",
+        "world:creature:1768"
+      ],
+      "text": "You are in Lordamere Lake, a lake in Silverpine Forest where Horde folk gather. Lady Sylvanas Windrunner, the Banshee Queen who rules the Forsaken, is among them, and Champion Cyssa Dawnrose, a paladin trainer, is here. Lake frenzies and vile fin shredders, lakestalkers and tidehunters make the water dangerous.",
+      "when": {
+        "area_id": 1338
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:130": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 130 (Silverpine Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1338": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1338 (Lordamere Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:172": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 172 (Fenris Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:204": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 204 (Pyrewood Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:213": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 213 (Deep Elem Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:226": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 226 (The Skittering Dark)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:227": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 227 (Valgan's Field)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:228": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 228 (The Sepulcher)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:229": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 229 (Olsen's Farthing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:230": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 230 (The Greymane Wall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:231": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 231 (Beren's Peril)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:232": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 232 (The Dawning Isles)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:233": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 233 (Ambermill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:237": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 237 (The Decrepit Ferry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:238": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 238 (Malden's Orchard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:239": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 239 (The Ivar Patch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:240": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 240 (The Dead Field)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:305": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 305 (North Tide's Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:306": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 306 (South Tide's Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:927": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 927 (The Shining Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:928": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 928 (North Tide's Hollow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:10": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 10 (The Sepulcher, Silverpine Forest)",
+      "revision": "3.3.5a client data"
+    },
     "source:01b86df77dc6c9f94f19174d": {
       "kind": "research",
       "reference": "evidence:sha256:e3cb467a48c92e97b7849d124fdcf9aedb62e1f867c0754e43632c9799cb025e",
@@ -4608,6 +5073,316 @@
       "kind": "research",
       "reference": "evidence:sha256:66bacef46ddb19edf76624e54d625407cb54d7d3594c9d22c4fab6c5cb201fce",
       "revision": "3cf99b06f2b8d312aca09e164253a63b60a5e90db0475f3722ae238d0835def0"
+    },
+    "world:creature:10181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10181 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12431 (Gorefang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13839 (Royal Dreadguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1765 (Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1766": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1766 (Mottled Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1767": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1767 (Vile Fin Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1768": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1768 (Vile Fin Tidehunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1769": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1769 (Moonrage Whitescalp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1770": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1770 (Moonrage Darkrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1772 (Rot Hide Gladerunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1773": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1773 (Rot Hide Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1778": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1778 (Ferocious Grizzled Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1779 (Moonrage Glutton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1780 (Moss Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1782": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1782 (Moonrage Darksoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1797 (Giant Grizzled Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1865": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1865 (Ravenclaw Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1866": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1866 (Ravenclaw Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1869": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1869 (Ravenclaw Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1870 (Hand of Ravenclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1888 (Dalaran Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1889": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1889 (Dalaran Wizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1891 (Pyrewood Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1894": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1894 (Pyrewood Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1908": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1908 (Vile Fin Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1909": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1909 (Vile Fin Lakestalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1912 (Dalaran Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1914": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1914 (Dalaran Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1923": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1923 (Bloodsnout Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1924 (Moonrage Bloodhowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1937 (Apothecary Renferrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1939 (Rot Hide Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1940": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1940 (Rot Hide Plague Weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1950 (Rane Yorick), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1951": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1951 (Quinn Yorick), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1952 (High Executor Hadrec), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1956 (Elder Lake Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1957 (Vile Fin Shorecreeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1958 (Vile Fin Tidecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1971": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1971 (Ivar the Foul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1973": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1973 (Ravenclaw Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1974": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1974 (Ravenclaw Drudger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1978 (Deathstalker Erland), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1983": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1983 (Nightlash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20406": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20406 (Champion Cyssa Dawnrose), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2058": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2058 (Deathstalker Faerleia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2120 (Archmage Ataeric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2121 (Shadow Priest Allister), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2173 (Reef Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2226": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2226 (Karos Razok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2529": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2529 (Son of Arugal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3534 (Wallace the Blind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36213 (Kor'kron Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5682 (Dalin Forgewright), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5748": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5748 (Killian Sanatha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5897": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5897 (Corrupt Water Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6033 (Lake Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7007 (Tiev Mordune), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:425": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 425 (Ivar the Foul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:438": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 438 (The Decrepit Ferry)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:442": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 442 (Assault on Fenris Isle)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:452": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 452 (Pyrewood Ambush)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

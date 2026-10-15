@@ -2497,7 +2497,365 @@
     }
   ],
   "place": "Darkshore",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:148",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:148",
+        "dbc:area:442",
+        "world:creature:2930",
+        "world:creature:2163",
+        "world:quest:4725",
+        "world:creature:2181",
+        "world:quest:4762",
+        "world:quest:944"
+      ],
+      "text": "You are in Darkshore, Alliance land on the coast of Kalimdor. Auberdine is its main settlement, and Sentinel Glynda Nal'Shea guards it and the forest around it. Thistle bears prowl the woods, Greymist murlocs roam the coast, Stormscale creatures haunt the ruins, and Blackwood furbolgs trouble the river. Twilight's Hammer cultists also gather in the south at the Master's Glaive.",
+      "when": {
+        "zone_id": 148
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:442",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:442",
+        "world:creature:3657",
+        "world:creature:3649",
+        "world:quest:4762"
+      ],
+      "text": "You are in Auberdine, an Alliance village in Darkshore. It has an inn, a flight master, trainers, repairs and a stable. Sentinel Elissa Starbreeze keeps watch over it, and the scholar Thundris Windweaver is troubled by a taint in the Cliffspring River.",
+      "when": {
+        "area_id": 442
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:443",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:443",
+        "world:creature:2181",
+        "world:creature:2182",
+        "world:creature:2183"
+      ],
+      "text": "You are in the Ruins of Mathystra, a ruined site in Darkshore. Stormscale myrmidons, sorceresses and warriors are the dangers there.",
+      "when": {
+        "area_id": 443
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:444",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:444",
+        "world:quest:966",
+        "world:creature:2336",
+        "world:creature:2337",
+        "world:quest:1143"
+      ],
+      "text": "You are in the Tower of Althalaxx, a tower in Darkshore that Dark Strand cultists have filled. Warlocks gather around and inside it, with Dark Strand fanatics and voidcallers among them. Athrikus Narassin is believed to be at its top.",
+      "when": {
+        "area_id": 444
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:445",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:445",
+        "world:creature:2179",
+        "world:creature:2180",
+        "world:creature:3583"
+      ],
+      "text": "You are in Cliffspring Falls, where Stormscale wave riders and sirens are the dangers. The Grove of the Ancients senses a new evil in the cave behind the falls.",
+      "when": {
+        "area_id": 445
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:446",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:446",
+        "world:creature:2190",
+        "world:creature:2189",
+        "world:creature:2212",
+        "world:creature:3650"
+      ],
+      "text": "You are in Bashal'Aran, a ruin of the Highborne in Darkshore, where wild grells, vile sprites and satyrs feed on the magic of the place. The spectral Highborne Asterion is held here by a magical seal that he wants destroyed.",
+      "when": {
+        "area_id": 446
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:447",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:447",
+        "world:creature:2177",
+        "world:creature:2178",
+        "world:creature:2176",
+        "world:creature:3667"
+      ],
+      "text": "You are in Ameth'Aran, a ruined Highborne city in Darkshore haunted by the spirits of its dead. Writhing, wailing and cursed Highborne roam the ruins, and the restless night elf spirit Anaya Dawnrunner lingers there.",
+      "when": {
+        "area_id": 447
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:448",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:448",
+        "world:creature:3616",
+        "world:creature:4194",
+        "world:creature:4195",
+        "world:creature:2237"
+      ],
+      "text": "You are in the Grove of the Ancients, a Darkshore grove where the Ancient of Lore Onu studies the old powers the Twilight's Hammer cult reveres. Ullanna and Tiyani sell trade goods and food and drink, and moonstalker sires prowl close by.",
+      "when": {
+        "area_id": 448
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:449",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:449",
+        "world:quest:944",
+        "world:creature:2339",
+        "world:creature:2338",
+        "world:creature:2192",
+        "world:creature:3584"
+      ],
+      "text": "You are in the Master's Glaive, a Darkshore site to the south where an old lord of the earth fell. Twilight's Hammer thugs and disciples gather here, and the firecaller Radison is among them. The young elf Therylune was caught here by them.",
+      "when": {
+        "area_id": 449
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:450",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:450",
+        "world:creature:2917",
+        "world:creature:2913",
+        "world:creature:2156",
+        "world:creature:2157"
+      ],
+      "text": "You are in Remtravel's Excavation, an Explorers' League dig in Darkshore. The prospector Remtravel, famed for discoveries at Ironforge's academy, is working here while cracked golems and stone behemoths overrun the site.",
+      "when": {
+        "area_id": 450
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:452",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:452",
+        "world:quest:4762",
+        "world:creature:6667",
+        "world:creature:6669",
+        "world:creature:2185",
+        "world:quest:4725",
+        "world:creature:12656"
+      ],
+      "text": "You are in Mist's Edge, a stretch of Darkshore coast where the Cliffspring River empties into the sea. The pirate Gelkak Gyromast is stranded here after his ship sank offshore, and his mechanical first mate is broken. Threshers and Greymist murlocs roam the coast, and the transport guide Thamarian directs ship passage to Darnassus and Stormwind Harbor.",
+      "when": {
+        "area_id": 452
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:453",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:453",
+        "world:creature:2185",
+        "world:creature:2202",
+        "world:creature:2201",
+        "world:creature:6133"
+      ],
+      "text": "You are in The Long Wash, an area of Darkshore. Darkshore threshers, Greymist coastrunners and raiders are the dangers there, and the shade of Elura lingers.",
+      "when": {
+        "area_id": 453
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:455",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:455",
+        "world:quest:4762",
+        "world:creature:2170",
+        "world:creature:2171",
+        "world:creature:3692"
+      ],
+      "text": "You are in Blackwood Den, a cave in Darkshore where Blackwood furbolgs dwell. Blackwood ursas and shamans roam within, and the wounded Volcor was found here after evading the furbolgs.",
+      "when": {
+        "area_id": 455
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:456",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:456",
+        "world:creature:2168",
+        "world:creature:2164",
+        "world:creature:2169",
+        "world:creature:2069"
+      ],
+      "text": "You are in Cliffspring River, a river in Darkshore. Blackwood warriors, Moonstalkers and rabid thistle bears haunt the river, and Blackwood totemics are among its dangers.",
+      "when": {
+        "area_id": 456
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2077",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2077",
+        "world:creature:3639",
+        "world:quest:953",
+        "world:creature:2069",
+        "world:creature:2165",
+        "world:creature:6491"
+      ],
+      "text": "You are in Twilight Vale, a part of Darkshore where Alliance sentinels are at work. Sentinel Tysha Moonblade is studying the ruins of Ameth'Aran to the east, though she once fled from restless spirits there while reading the tablets. Moonstalkers and Grizzled thistle bears roam the vale, and a spirit healer offers a return to the living for a price.",
+      "when": {
+        "area_id": 2077
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2078",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2078",
+        "world:quest:4731",
+        "world:quest:4732",
+        "world:creature:2185",
+        "world:creature:2208"
+      ],
+      "text": "You are in Twilight Shore, a rocky inlet on the Darkshore coast. Greymist murlocs have made camp around several beached sea creatures, and Darkshore threshers and Greymist tidehunters are among the dangers, with a vendor here.",
+      "when": {
+        "area_id": 2078
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:148": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 148 (Darkshore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2077": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2077 (Twilight Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2078": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2078 (Twilight Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:442": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 442 (Auberdine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:443": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 443 (Ruins of Mathystra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:444": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 444 (Tower of Althalaxx)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:445": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 445 (Cliffspring Falls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:446": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 446 (Bashal'Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:447": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 447 (Ameth'Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:448": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 448 (Grove of the Ancients)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:449": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 449 (The Master's Glaive)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:450": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 450 (Remtravel's Excavation)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:452": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 452 (Mist's Edge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:453": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 453 (The Long Wash)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:455": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 455 (Blackwood Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:456": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 456 (Cliffspring River)",
+      "revision": "3.3.5a client data"
+    },
     "source:00739c531c8dcbbd954d8bce": {
       "kind": "research",
       "reference": "evidence:sha256:793208590c8757439047e4fb5963cad9214d11d1f8a1a3809648d9d586439e65",
@@ -4487,6 +4845,296 @@
       "kind": "research",
       "reference": "evidence:sha256:3633e2ca9d0f3ed33098c45dd7f570878f012c911c9e21000053ad2ed8e2df6c",
       "revision": "92b2e14885286c2a1a14b40642cb2d079e0a15727fa1f0928d34a016a0fa4795"
+    },
+    "world:creature:12656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12656 (Thamarian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2069": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2069 (Moonstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2156 (Cracked Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2157 (Stone Behemoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2163": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2163 (Thistle Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2164 (Rabid Thistle Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2165": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2165 (Grizzled Thistle Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2168": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2168 (Blackwood Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2169 (Blackwood Totemic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2170": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2170 (Blackwood Ursa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2171": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2171 (Blackwood Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2176": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2176 (Cursed Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2177 (Writhing Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2178": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2178 (Wailing Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2179 (Stormscale Wave Rider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2180 (Stormscale Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2181 (Stormscale Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2182": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2182 (Stormscale Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2183": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2183 (Stormscale Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2185": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2185 (Darkshore Thresher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2189 (Vile Sprite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2190 (Wild Grell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2192 (Firecaller Radison), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2201 (Greymist Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2202 (Greymist Coastrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2208": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2208 (Greymist Tidehunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2212 (Deth'ryll Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2237 (Moonstalker Sire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2336": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2336 (Dark Strand Fanatic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2337 (Dark Strand Voidcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2338 (Twilight Disciple), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2339 (Twilight Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2913": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2913 (Archaeologist Hollee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2917 (Prospector Remtravel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2930": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2930 (Sentinel Glynda Nal'Shea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3583": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3583 (Barithras Moonshade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3584": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3584 (Therylune), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3616": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3616 (Onu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3639 (Sentinel Tysha Moonblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3649 (Thundris Windweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3650 (Asterion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3657 (Sentinel Elissa Starbreeze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3667": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3667 (Anaya Dawnrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3692": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3692 (Volcor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4194 (Ullanna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4195": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4195 (Tiyani), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6133 (Shade of Elura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6667": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6667 (Gelkak Gyromast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6669": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6669 (The Threshwackonator 4100), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1143": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1143 (The Tower of Althalaxx)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4725": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4725 (Beached Sea Turtle)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4731": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4731 (Beached Sea Turtle)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4732": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4732 (Beached Sea Turtle)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4762": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4762 (The Cliffspring River)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:944": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 944 (The Master's Glaive)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:953": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 953 (The Fall of Ameth'Aran)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:966": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 966 (The Tower of Althalaxx)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

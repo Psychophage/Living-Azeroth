@@ -1,0 +1,37 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 530,
+  "npcs": [],
+  "place": "Twisting Nether",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3540",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3540",
+        "world:creature:20925"
+      ],
+      "text": "You are in Twisting Nether, a region of Outland held by neither the Alliance nor the Horde. No settlements are known here. Scalded basilisks are the danger known in this land.",
+      "when": {
+        "zone_id": 3540
+      }
+    }
+  ],
+  "sources": {
+    "dbc:area:3540": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3540 (Twisting Nether)",
+      "revision": "3.3.5a client data"
+    },
+    "world:creature:20925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20925 (Scalded Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    }
+  },
+  "version": 1,
+  "zone": 3540
+}

@@ -4175,7 +4175,451 @@
     }
   ],
   "place": "Elwynn Forest",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:12",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:12",
+        "dbc:area:9",
+        "dbc:area:87",
+        "dbc:area:88",
+        "dbc:area:91",
+        "world:creature:732",
+        "world:creature:94",
+        "world:creature:197"
+      ],
+      "text": "You are in Elwynn Forest, Alliance land in the Eastern Kingdoms. Northshire Valley, Goldshire, the Eastvale Logging Camp and the Tower of Azora are Alliance settlements. Murlocs gather on the rivers and lakes to the east, Defias thieves are a threat across the land, and kobolds have been spreading through the northern woods.",
+      "when": {
+        "zone_id": 12
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:9",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:9",
+        "world:creature:823",
+        "world:creature:197",
+        "world:creature:196",
+        "world:creature:9296",
+        "world:creature:375",
+        "world:creature:78"
+      ],
+      "text": "You are in Northshire Valley, a farming valley in Elwynn Forest. Deputy Willem keeps the peace while many Stormwind guards are away, and Marshal McBride is fighting a growing kobold infestation in the northern woods. Diseased wolves roam the valley, Defias brigands threaten Milly Osworth's grape harvest, and a priestess teaches priests here while a weaponsmith sells arms.",
+      "when": {
+        "area_id": 9
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:18",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:18",
+        "world:creature:1651",
+        "world:creature:383",
+        "world:creature:285",
+        "world:creature:525",
+        "world:creature:116"
+      ],
+      "text": "You are in Crystal Lake, a fishing spot in Elwynn Forest. Lee Brown teaches fishing here and sends the more experienced anglers on to other teachers, while Jason Mathers sells fish. Murlocs and mangy wolves share the shore with a few Defias bandits.",
+      "when": {
+        "area_id": 18
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:34",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:34",
+        "world:creature:257",
+        "world:creature:80",
+        "world:creature:69",
+        "world:creature:197"
+      ],
+      "text": "You are in Echo Ridge Mine, a mine in Elwynn Forest worked by kobolds. Kobold workers guard their candles and beg not to be killed, and diseased timber wolves roam nearby. Marshal McBride wants the larger kobold camp near the mine investigated.",
+      "when": {
+        "area_id": 34
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:54",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:54",
+        "world:creature:40",
+        "world:creature:476",
+        "world:creature:60"
+      ],
+      "text": "You are in Jasperlode Mine, a mine in Elwynn Forest. Kobold miners and geomancers hold its tunnels, and Ruklar the Trapper lurks here too.",
+      "when": {
+        "area_id": 54
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:56",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:56",
+        "world:creature:474",
+        "world:quest:1787"
+      ],
+      "text": "You are in Heroes' Vigil, a spot in Elwynn Forest. Defias rogue wizards have infiltrated the area and were seen going over papers, and Gazin Tenorm in Stormwind wants to know what those Defias plan.",
+      "when": {
+        "area_id": 56
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:57",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:57",
+        "world:creature:475",
+        "world:creature:40",
+        "world:creature:822"
+      ],
+      "text": "You are in Fargodeep Mine, a mine in Elwynn Forest. Kobolds infest Fargodeep Mine, with kobold tunnelers and miners digging its passages, and a young forest bear sometimes wanders in.",
+      "when": {
+        "area_id": 57
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:59",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:59",
+        "world:creature:103",
+        "world:creature:38",
+        "world:quest:6"
+      ],
+      "text": "You are in Northshire Vineyards, the grape land east of Northshire Abbey in Elwynn Forest. Garrick Padfoot claims this land for the Defias Brotherhood, and Defias thugs threaten anyone who opposes them with freshly sharpened blades.",
+      "when": {
+        "area_id": 59
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:60",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:60",
+        "world:creature:1423",
+        "world:creature:478",
+        "world:creature:97",
+        "world:creature:448"
+      ],
+      "text": "You are in Forest's Edge, a place at the edge of Elwynn Forest. A Stormwind guard directs visitors to the city's services. Riverpaw outrunners and runts roam the area, and Hogger lurks nearby.",
+      "when": {
+        "area_id": 60
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:62",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:62",
+        "world:creature:330",
+        "world:creature:116",
+        "world:creature:46"
+      ],
+      "text": "You are in Brackwell Pumpkin Patch, a farm in Elwynn Forest. The Brackwells' prize-winning sow, Princess, sneaks onto the Stonefield Farm to eat vegetables. Defias bandits and murloc foragers also roam here.",
+      "when": {
+        "area_id": 62
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:63",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:63",
+        "world:creature:244",
+        "world:creature:330",
+        "world:creature:252",
+        "world:creature:97",
+        "world:creature:894"
+      ],
+      "text": "You are in the Stonefield Farm, a family farm in Elwynn Forest. Ma Stonefield's vegetables are being raided by the Brackwells' prize sow, and the family is locked in a bitter feud with the Maclures. Riverpaw runts prowl the fields, and Homer Stonefield sells fruit here.",
+      "when": {
+        "area_id": 63
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:64",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:64",
+        "world:creature:258",
+        "world:creature:255",
+        "world:creature:247",
+        "world:creature:251"
+      ],
+      "text": "You are in the Maclure Vineyards, a vineyard in Elwynn Forest. Joshua Maclure is the vintner here and sells his wares, and Gerard Tiller trades refreshing spring water to thirsty workers. Billy Maclure is accused of stealing an old widow's necklace, and the Maclures are bitter enemies of the Stonefields.",
+      "when": {
+        "area_id": 64
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:86",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:86",
+        "world:quest:46",
+        "world:creature:46",
+        "world:creature:732",
+        "world:creature:474"
+      ],
+      "text": "You are in Stone Cairn Lake, a lake in Elwynn Forest where murlocs have built a village. Murloc foragers and lurkers roam its shores, along with riverpaw outrunners and Defias rogue wizards.",
+      "when": {
+        "area_id": 86
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:87",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:87",
+        "world:creature:240",
+        "world:creature:241",
+        "world:quest:40",
+        "world:creature:525"
+      ],
+      "text": "You are in Goldshire, a village in Elwynn Forest. Its inn, smithy and trainers serve Alliance travelers. Marshal Dughan keeps order here, but he is not convinced by reports of murlocs at the eastern bridge, which a newcomer named Remy Two Times has warned him about. Mangy wolves roam nearby.",
+      "when": {
+        "area_id": 87
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:88",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:88",
+        "world:creature:10616",
+        "world:quest:5545",
+        "world:creature:278",
+        "world:quest:83"
+      ],
+      "text": "You are in Eastvale Logging Camp, an Alliance lumber camp in Elwynn Forest. Loggers cut wood here under Supervisor Raelen, who presses them to fill the wagon before each day's deadline. Wolves and bears north of the camp have chased the workers away from wood they already chopped. Sara Timberlain turns the red linen bandanas of Elwynn's Defias into fine goods.",
+      "when": {
+        "area_id": 88
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:91",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:91",
+        "world:creature:313",
+        "world:quest:94",
+        "world:quest:249",
+        "world:creature:1922",
+        "world:creature:822"
+      ],
+      "text": "You are in the Tower of Azora, a tower in Elwynn Forest where Alliance mages work. The high mage Theocritus watches his rival Morganth through the Eye of Azora from afar. Morganth is a vicious mage who lives in the Tower of Ilgalar in Redridge. Gray Forest Wolves and bears roam the woods around the tower.",
+      "when": {
+        "area_id": 91
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:92",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:92",
+        "world:creature:116",
+        "world:creature:474",
+        "world:creature:525",
+        "world:creature:30"
+      ],
+      "text": "You are in Mirror Lake, a lake in Elwynn Forest. Defias bandits and a Defias rogue wizard prowl its shores, and mangy wolves and forest spiders roam nearby.",
+      "when": {
+        "area_id": 92
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:120",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:120",
+        "world:creature:963",
+        "world:quest:176",
+        "world:creature:1249",
+        "world:creature:1645"
+      ],
+      "text": "You are in Westbrook Garrison, an Alliance post in Elwynn Forest. Deputy Rainer helps defend the forest against gnolls, and he resents Stormwind officials for sending much of the army abroad while thieves and gnolls threaten home. Hogger, a huge gnoll, prowls the woods of southwestern Elwynn. Its armorers and weaponsmiths sell and repair gear.",
+      "when": {
+        "area_id": 120
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:797",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:797",
+        "world:creature:116",
+        "world:creature:6927",
+        "world:creature:6846",
+        "world:creature:61"
+      ],
+      "text": "You are in Jerod's Landing, a waterside spot in Elwynn Forest. Defias bandits, Defias dockworkers and a Defias dockmaster haunt the shore, and Thuros Lightfingers prowls among them.",
+      "when": {
+        "area_id": 797
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:798",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:798",
+        "world:creature:1423",
+        "world:creature:118",
+        "world:creature:822",
+        "world:creature:116"
+      ],
+      "text": "You are in Ridgepoint Tower, an Alliance post in Elwynn Forest. A Stormwind guard greets visitors here, and he remembers Antonio giving his wife a hat she adored. Prowlers and young bears roam the ground around the tower, and a Defias bandit lurks there too.",
+      "when": {
+        "area_id": 798
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:12": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 12 (Elwynn Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 120 (Westbrook Garrison)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:18": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 18 (Crystal Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:34": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 34 (Echo Ridge Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:54": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 54 (Jasperlode Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:56": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 56 (Heroes' Vigil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:57": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 57 (Fargodeep Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:59": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 59 (Northshire Vineyards)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:60": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 60 (Forest's Edge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:62": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 62 (Brackwell Pumpkin Patch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:63": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 63 (The Stonefield Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:64": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 64 (The Maclure Vineyards)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:797": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 797 (Jerod's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:798": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 798 (Ridgepoint Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:86": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 86 (Stone Cairn Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:87": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 87 (Goldshire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:88": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 88 (Eastvale Logging Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:9": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 9 (Northshire Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:91": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 91 (Tower of Azora)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:92": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 92 (Mirror Lake)",
+      "revision": "3.3.5a client data"
+    },
     "source:00044e71191640bcd4f4db72": {
       "kind": "research",
       "reference": "evidence:sha256:6793c27236d9ea5d8cb0c6fc49cbd3d911ada3bce81ea7967864a6307d877b8b",
@@ -6925,6 +7369,306 @@
       "kind": "research",
       "reference": "evidence:sha256:9005e008a77b3b04b37e6245c28020e9cfc6ba507f98a2d935048c7fbb39bcca",
       "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
+    },
+    "world:creature:103": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 103 (Garrick Padfoot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10616": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10616 (Supervisor Raelen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:116": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 116 (Defias Bandit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 118 (Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1249 (Quartermaster Hudson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1423 (Stormwind Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1645": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1645 (Quartermaster Hicks), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1651 (Lee Brown), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1922": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1922 (Gray Forest Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 196 (Eagan Peltskinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 197 (Marshal McBride), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 240 (Marshal Dughan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 241 (Remy \"Two Times\"), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 244 (Ma Stonefield), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 247 (Billy Maclure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:251": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 251 (Maybell Maclure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 252 (Tommy Joe Stonefield), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 255 (Gerard Tiller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 257 (Kobold Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 258 (Joshua Maclure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 278 (Sara Timberlain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 285 (Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30 (Forest Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 313 (Theocritus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 330 (Princess), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 375 (Priestess Anetta), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:38": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38 (Defias Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 383 (Jason Mathers), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:40": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 40 (Kobold Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 448 (Hogger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:46": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 46 (Murloc Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 474 (Defias Rogue Wizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 475 (Kobold Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:476": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 476 (Kobold Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:478": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 478 (Riverpaw Outrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 525 (Mangy Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:60": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 60 (Ruklar the Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:61": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 61 (Thuros Lightfingers), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6846 (Defias Dockmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:69": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 69 (Diseased Timber Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6927 (Defias Dockworker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 732 (Murloc Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:78": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 78 (Janos Hammerknuckle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:80": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 80 (Kobold Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 822 (Young Forest Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 823 (Deputy Willem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:894": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 894 (Homer Stonefield), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9296 (Milly Osworth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:94": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 94 (Defias Cutpurse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 963 (Deputy Rainer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:97": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 97 (Riverpaw Runt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:176": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 176 (Wanted:  \"Hogger\")",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1787": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1787 (The Tome of Divinity)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:249": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 249 (Morganth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:40": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 40 (A Fishy Peril)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:46": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 46 (Bounty on Murlocs)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5545": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5545 (A Bundle of Trouble)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6 (Bounty on Garrick Padfoot)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:83": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 83 (Red Linen Goods)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:94": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 94 (A Watchful Eye)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

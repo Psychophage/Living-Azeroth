@@ -2561,7 +2561,544 @@
     }
   ],
   "place": "Azshara",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:16",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:16",
+        "dbc:area:1237",
+        "dbc:area:3137",
+        "world:quest:3602",
+        "world:creature:6377",
+        "world:creature:6190",
+        "world:creature:6185"
+      ],
+      "text": "You are in Azshara, a contested land on Kalimdor where both the Alliance and the Horde keep settlements. The Horde holds Valormok and the Alliance holds Talrendis Point. Cliff giants, Thunderhead and Spitelash creatures, and Timbermaw warriors make much of the land dangerous.",
+      "when": {
+        "zone_id": 16
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1216",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1216",
+        "world:creature:6185",
+        "world:creature:6184",
+        "world:creature:6188",
+        "world:creature:6187",
+        "world:creature:8762"
+      ],
+      "text": "You are in Timbermaw Hold in Azshara. Timbermaw warriors, pathfinders, shamans and den watchers are the main dangers, with timberweb recluses and thunderhead stagwings nearby.",
+      "when": {
+        "area_id": 1216
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1219",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1219",
+        "world:creature:6491",
+        "world:creature:8420",
+        "world:creature:6201",
+        "world:creature:6200",
+        "world:creature:6202",
+        "world:creature:6378"
+      ],
+      "text": "You are in Legash Encampment in Azshara, where a spirit healer offers a return to life for a price. Kim'jael, a goblin betrayed by the Blood Elves, is still bitter and turns their lost equipment and rune hunt into a chance to profit. Legashi rogues, satyrs and hellcallers, with thunderhead skystormers nearby, are the dangers.",
+      "when": {
+        "area_id": 1219
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1220",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1220",
+        "world:creature:6199",
+        "world:creature:6198",
+        "world:creature:6378",
+        "world:creature:6647",
+        "world:quest:3506"
+      ],
+      "text": "You are in Thalassian Base Camp in Azshara. Blood elf reclaimers and surveyors, thunderhead skystormers and Magister Hawkhelm are its dangers. Arcane focusing crystals tied to a magus named Rimtori still stand in the camp.",
+      "when": {
+        "area_id": 1220
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1221",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1221",
+        "world:creature:7866",
+        "world:creature:6194",
+        "world:creature:6195",
+        "world:creature:6193",
+        "world:creature:6190",
+        "world:quest:8256"
+      ],
+      "text": "You are in the Ruins of Eldarath in Azshara, where Peter Galen, the dragonscale leatherworking trainer, is found. Spitelash serpent guards, sirens, screamers and warriors fill the ruins, and lingering highborne wander them.",
+      "when": {
+        "area_id": 1221
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1222",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1222",
+        "world:creature:6140",
+        "world:creature:6134",
+        "world:creature:6144",
+        "world:creature:6143",
+        "world:creature:12125"
+      ],
+      "text": "You are in Hetaera's Clutch in Azshara, where Hetaera roams. Lord Arkkoroc calls her a false god. Sons and servants of Arkkoroc and mammoth sharks are also dangerous here.",
+      "when": {
+        "area_id": 1222
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1223",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1223",
+        "world:creature:6194",
+        "world:creature:6195",
+        "world:creature:6196",
+        "world:creature:8408",
+        "world:creature:6650",
+        "world:creature:7864"
+      ],
+      "text": "You are in the Temple of Zin-Malor in Azshara, where spitelash serpent guards, sirens and myrmidons gather. Warlord Krellian and General Fangferror are among its dangers, and lingering highborne haunt it too.",
+      "when": {
+        "area_id": 1223
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1224",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1224",
+        "world:creature:8379",
+        "world:creature:6185",
+        "world:creature:6184",
+        "world:creature:6186",
+        "world:creature:8762",
+        "world:creature:6377",
+        "world:quest:8253"
+      ],
+      "text": "You are in Bear's Head in Azshara, where Archmage Xylem researches with rare components and magical materials. Timbermaw warriors, pathfinders and totemics, with timberweb recluses and thunderhead stagwings, are the dangers. Xylem's apprentice was consumed by the green drake Morphaz in the sunken temple of Atal'Hakkar.",
+      "when": {
+        "area_id": 1224
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1225",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1225",
+        "world:creature:6491",
+        "world:creature:6189",
+        "world:creature:6188",
+        "world:creature:6187",
+        "world:creature:6378",
+        "world:creature:6377"
+      ],
+      "text": "You are in Ursolan in Azshara, where a spirit healer offers a return to life for a price. Timbermaw ursas, shamans and den watchers roam here, with thunderhead skystormers and stagwings close by.",
+      "when": {
+        "area_id": 1225
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1226",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1226",
+        "world:creature:6134",
+        "world:creature:6137",
+        "world:creature:6138",
+        "world:creature:6135",
+        "world:creature:6136",
+        "world:creature:6370"
+      ],
+      "text": "You are in the Temple of Arkkoran in Azshara, where Lord Arkkoroc, a gigantic lesser deity, bargains with mortals for Hetaera's heads. Arkkoran pincers, oracles, clackers and muckdwellers guard the temple, and makrinni scrabblers are also here.",
+      "when": {
+        "area_id": 1226
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1227",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1227",
+        "world:creature:7783",
+        "world:creature:13278",
+        "world:creature:13322",
+        "world:creature:6351",
+        "world:creature:6350",
+        "world:creature:6349"
+      ],
+      "text": "You are in the Bay of Storms in Azshara, where the demon hunter Loramus Thalipedes tells his story to those facing demons. Duke Hydraxis leads the Hydraxian Waterlords' war against the elemental lords, and the Hydraxian Honor Guard turns away visitors it judges unworthy. Storm Bay oracles, makrinni razorclaws and great wavethrashers are the dangers.",
+      "when": {
+        "area_id": 1227
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1228",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1228",
+        "world:creature:8405",
+        "world:quest:8232",
+        "world:creature:6196",
+        "world:creature:6195",
+        "world:creature:6370",
+        "world:creature:6371",
+        "world:creature:6348"
+      ],
+      "text": "You are in The Shattered Strand in Azshara, where Ogtinc, who turned from hunting to teaching, runs trials using coursers, wavethrashers and the green drake Morphaz. Spitelash myrmidons and sirens, makrinni scrabblers and storm bay warriors are the dangers.",
+      "when": {
+        "area_id": 1228
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1229",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1229",
+        "world:creature:6348",
+        "world:creature:6371",
+        "world:creature:6370",
+        "world:creature:6352"
+      ],
+      "text": "You are in the Tower of Eldara in Azshara. Wavethrashers, storm bay warriors and makrinni scrabblers are the dangers here, and coralshell lurkers are found in the area.",
+      "when": {
+        "area_id": 1229
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1230",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1230",
+        "world:creature:6371",
+        "world:creature:6348",
+        "world:creature:6372",
+        "world:creature:12125",
+        "world:creature:6352",
+        "world:creature:6369"
+      ],
+      "text": "You are in Jagged Reef, a stretch of Azshara's coast. Storm Bay warriors and wavethrashers, along with Makrinni snapclaws and a mammoth shark, make its waters dangerous. Coralshell lurkers and tortoises live among the reefs.",
+      "when": {
+        "area_id": 1230
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1231",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1231",
+        "world:creature:6491",
+        "world:creature:6196",
+        "world:creature:6195",
+        "world:creature:6350"
+      ],
+      "text": "You are in Southridge Beach, a coast in Azshara where a spirit healer offers a return to the living for a price, though it may not yet be your time. Spitelash myrmidons and sirens, and Makrinni razorclaws, prowl the shore.",
+      "when": {
+        "area_id": 1231
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1232",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1232",
+        "world:creature:7885",
+        "world:creature:7886"
+      ],
+      "text": "You are in Ravencrest Monument, a place in Azshara. Spitelash battlemasters and enchantresses patrol the ground here.",
+      "when": {
+        "area_id": 1232
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1233",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1233",
+        "world:creature:6491",
+        "world:creature:8766"
+      ],
+      "text": "You are in Forlorn Ridge, a ridge in Azshara where a spirit healer offers a return to life for a price, though it may not yet be your time. Forest oozes are found here too.",
+      "when": {
+        "area_id": 1233
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1234",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1234",
+        "world:creature:6131",
+        "world:creature:6129",
+        "world:creature:6130",
+        "world:creature:193",
+        "world:creature:6377",
+        "world:creature:8760"
+      ],
+      "text": "You are in Lake Mennar, a lake in Azshara. Draconic mageweavers and magelords, blue scalebanes and dragonspawn, and thunderhead stagwings make the lake dangerous. Mosshoof stags, a beast of the region, are found here as well.",
+      "when": {
+        "area_id": 1234
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1236",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1236",
+        "world:creature:8397",
+        "world:creature:6125",
+        "world:creature:6126",
+        "world:creature:6127",
+        "world:creature:6375"
+      ],
+      "text": "You are in Haldarr Encampment, an Azshara camp where Alliance sentinels keep watch. Sentinel Keldara Sunblade is one of them. Haldarr satyrs, tricksters and felsworn, along with thunderhead hippogryphs, make the surrounding land dangerous.",
+      "when": {
+        "area_id": 1236
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1237",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1237",
+        "world:creature:8576",
+        "world:creature:8587",
+        "world:creature:8762",
+        "world:creature:6375"
+      ],
+      "text": "You are in Valormok, a Horde outpost in Azshara with a flight master and vendors. Ag'tor Bloodfist leads a campaign against Magus Rimtori, who killed a dozen warriors stationed with him and betrayed Belgrom. Forsaken Jediga gathers Highborne tablets to sell through her contacts, and timberweb recluses and thunderhead hippogryphs prowl the edges.",
+      "when": {
+        "area_id": 1237
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1256",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1256",
+        "world:creature:8380",
+        "world:creature:8678",
+        "world:creature:12957",
+        "world:creature:6351",
+        "world:creature:6349"
+      ],
+      "text": "You are in The Ruined Reaches, an area of Azshara where the Horizon Scout was wrecked. Captain Vanessa Beltis, whose ship was wrecked, prepares to defend her survivors from another naga attack. Jubie and Blimo Gadgetspring sell engineering and trade supplies, and storm bay oracles and great wavethrashers make the area dangerous.",
+      "when": {
+        "area_id": 1256
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2497",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2497",
+        "world:creature:6380",
+        "world:creature:6379",
+        "world:creature:6148",
+        "world:creature:6146",
+        "world:creature:6147",
+        "world:creature:8766"
+      ],
+      "text": "You are in Bitter Reaches, an area of Azshara. Thunderhead consorts and patriarchs, cliff walkers, cliff breakers and cliff thunderers, and forest oozes make the ground dangerous.",
+      "when": {
+        "area_id": 2497
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3137",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3137",
+        "world:creature:12577",
+        "world:creature:14301",
+        "world:creature:11276",
+        "world:creature:11548",
+        "world:quest:5536",
+        "world:quest:5535"
+      ],
+      "text": "You are in Talrendis Point, an Alliance settlement in Azshara with a hippogryph master, a bowyer and Azshara sentinels. Loh'atu has sworn to the Earthmother to rid the sacred lands of satyrs and to release troubled Highborne spirits.",
+      "when": {
+        "area_id": 3137
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1216": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1216 (Timbermaw Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1219": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1219 (Legash Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1220": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1220 (Thalassian Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1221": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1221 (Ruins of Eldarath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1222": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1222 (Hetaera's Clutch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1223": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1223 (Temple of Zin-Malor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1224": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1224 (Bear's Head)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1225": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1225 (Ursolan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1226": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1226 (Temple of Arkkoran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1227": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1227 (Bay of Storms)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1228": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1228 (The Shattered Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1229": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1229 (Tower of Eldara)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1230": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1230 (Jagged Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1231": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1231 (Southridge Beach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1232": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1232 (Ravencrest Monument)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1233": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1233 (Forlorn Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1234": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1234 (Lake Mennar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1236": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1236 (Haldarr Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1237": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1237 (Valormok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1256": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1256 (The Ruined Reaches)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:16": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 16 (Azshara)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2497": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2497 (Bitter Reaches)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3137": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3137 (Talrendis Point)",
+      "revision": "3.3.5a client data"
+    },
     "source:0031230d957d2dca2094f544": {
       "kind": "research",
       "reference": "evidence:sha256:2185051e92c554f79ac3b067b18a51c86f41f579377b1a4e5ee8495b0e982c69",
@@ -4381,6 +4918,421 @@
       "kind": "research",
       "reference": "evidence:sha256:cd447646ec9407c4fcca2d2cdf0651d8c8ad3acb439bd195397b07a8f0d290c8",
       "revision": "073ca3751c49e7d0cd9c0e6ea16f4ae5e0afe70181fe703544ca487898e6d130"
+    },
+    "world:creature:11276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11276 (Azshara Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11548 (Loh'atu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12125 (Mammoth Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12577": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12577 (Jarrodenus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12957 (Blimo Gadgetspring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13278 (Duke Hydraxis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13322 (Hydraxian Honor Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14301": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14301 (Brinna Valanaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:193": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 193 (Blue Dragonspawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6125 (Haldarr Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6126": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6126 (Haldarr Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6127 (Haldarr Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6129 (Draconic Magelord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6130 (Blue Scalebane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6131 (Draconic Mageweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6134": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6134 (Lord Arkkoroc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6135 (Arkkoran Clacker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6136 (Arkkoran Muckdweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6137": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6137 (Arkkoran Pincer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6138": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6138 (Arkkoran Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6140": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6140 (Hetaera), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6143": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6143 (Servant of Arkkoroc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6144 (Son of Arkkoroc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6146": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6146 (Cliff Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6147 (Cliff Thunderer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6148": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6148 (Cliff Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6184": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6184 (Timbermaw Pathfinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6185": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6185 (Timbermaw Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6186 (Timbermaw Totemic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6187 (Timbermaw Den Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6188": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6188 (Timbermaw Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6189 (Timbermaw Ursa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6190 (Spitelash Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6193": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6193 (Spitelash Screamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6194 (Spitelash Serpent Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6195": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6195 (Spitelash Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6196 (Spitelash Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6198": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6198 (Blood Elf Surveyor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6199 (Blood Elf Reclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6200 (Legashi Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6201 (Legashi Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6202 (Legashi Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6348": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6348 (Wavethrasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6349 (Great Wavethrasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6350 (Makrinni Razorclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6351 (Storm Bay Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6352": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6352 (Coralshell Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6369 (Coralshell Tortoise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6370 (Makrinni Scrabbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6371 (Storm Bay Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6372 (Makrinni Snapclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6375 (Thunderhead Hippogryph), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6377 (Thunderhead Stagwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6378 (Thunderhead Skystormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6379 (Thunderhead Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6380 (Thunderhead Consort), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6647 (Magister Hawkhelm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6650 (General Fangferror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7783": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7783 (Loramus Thalipedes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7864": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7864 (Lingering Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7866": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7866 (Peter Galen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7885 (Spitelash Battlemaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7886": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7886 (Spitelash Enchantress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8379 (Archmage Xylem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8380 (Captain Vanessa Beltis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8397 (Sentinel Keldara Sunblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8405 (Ogtinc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8408 (Warlord Krellian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8420 (Kim'jael), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8576": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8576 (Ag'tor Bloodfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8587": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8587 (Jediga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8678 (Jubie Gadgetspring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8760 (Mosshoof Stag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8762 (Timberweb Recluse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8766": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8766 (Forest Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:3506": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3506 (Betrayed)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:3602": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3602 (Azsharite)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5535": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5535 (Spiritual Unrest)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5536": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5536 (A Land Filled with Hatred)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8232": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8232 (The Green Drake)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8253": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8253 (Destroy Morphaz)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8256": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8256 (The Ichor of Undeath)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

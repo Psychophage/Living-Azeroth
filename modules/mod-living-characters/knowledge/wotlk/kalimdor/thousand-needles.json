@@ -2505,7 +2505,342 @@
     }
   ],
   "place": "Thousand Needles",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:400",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:400",
+        "dbc:area:484",
+        "dbc:area:2240",
+        "world:creature:4095",
+        "world:creature:4140",
+        "world:creature:4147",
+        "world:creature:4118",
+        "world:creature:4131"
+      ],
+      "text": "You are in Thousand Needles, a contested zone of Kalimdor where both sides hold ground. Freewind Post is Horde land, and the Mirage Raceway on the Shimmering Flats is held by the Alliance. Galak centaur raiders prowl the crags, scorpids and basilisks roam the salt flats, cloud serpents lurk along the cliffs, and silithids swarm around the Rustmaul dig site.",
+      "when": {
+        "zone_id": 400
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:439",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:439",
+        "world:creature:4629",
+        "world:creature:4140",
+        "world:creature:4147"
+      ],
+      "text": "You are in The Shimmering Flats, a stretch of salt flats in Thousand Needles. Racers run a course across it, and the large basilisks here are feared to wander onto the track during races. Scorpid reavers and scorpid terrors stalk the flats, with saltstone basilisks, crystalhides, gazers and scavengers roaming beside them.",
+      "when": {
+        "area_id": 439
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:479",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:479",
+        "world:creature:4130",
+        "world:creature:4131",
+        "world:creature:4132",
+        "world:creature:4133"
+      ],
+      "text": "You are in The Rustmaul Dig Site, a dig in Thousand Needles overrun by silithids. Silithid searchers, invaders and ravagers swarm over the diggings, and hive drones of the same swarm are found across several areas of Thousand Needles.",
+      "when": {
+        "area_id": 479
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:480",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:480",
+        "world:creature:4097",
+        "world:creature:4095",
+        "world:creature:4099",
+        "world:creature:4249",
+        "world:creature:4124"
+      ],
+      "text": "You are in Camp E'thok, a Galak centaur camp in Thousand Needles. Galak stormers, maulers and marauders are its main danger, with pesterhide snarlers and cougars prowling nearby.",
+      "when": {
+        "area_id": 480
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:481",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:481",
+        "world:creature:4096",
+        "world:creature:4093",
+        "world:creature:4094",
+        "world:quest:1197"
+      ],
+      "text": "You are in Splithoof Crag, the stronghold of the Galak centaurs in Thousand Needles. Galak windchasers, wranglers and scouts roam the crag, with maulers, stormers and marauders beside them. A flame guards a relic in Splithoof Hold, a heavily guarded part of the crag.",
+      "when": {
+        "area_id": 481
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:482",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:482",
+        "world:creature:10427",
+        "world:creature:4107",
+        "world:creature:4109",
+        "world:creature:4110",
+        "world:creature:5934"
+      ],
+      "text": "You are in Highperch, a wyvern haunt in Thousand Needles. Highperch wyverns, consorts and patriarchs nest here, and a heartrazor is known to prowl. A Horde researcher, Pao'ka Swiftmountain, is lost here after wyverns chased him from a nest.",
+      "when": {
+        "area_id": 482
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:483",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:483",
+        "world:creature:4100",
+        "world:creature:4101",
+        "world:creature:4104",
+        "world:creature:4248",
+        "world:creature:4114"
+      ],
+      "text": "You are in The Screeching Canyon, a canyon in Thousand Needles. Screeching harpies, roguefeathers and windcallers haunt it, and pesterhide hyenas, cougars and gravelsnout foragers prowl alongside them.",
+      "when": {
+        "area_id": 483
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:484",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:484",
+        "world:creature:10537",
+        "world:creature:10377",
+        "world:creature:10539"
+      ],
+      "text": "You are in Freewind Post, a Horde post in Thousand Needles with a flight master, an inn and a stable. Cliffwatcher Longhorn, a tauren, calls for force against the Galak centaurs threatening the area. Elu, a wind rider apprentice, recruits wyverns for the master wind riders, and Hagar Lightninghoof is curious about a strange egg reported in nearby serpent dens.",
+      "when": {
+        "area_id": 484
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:485",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:485",
+        "world:creature:12576",
+        "world:creature:10079"
+      ],
+      "text": "You are in The Great Lift, a lift in Thousand Needles. Horde guard Grish Longrunner keeps watch over it. Brave Moonhorn warns that centaur attacks have increased and that the nearby Grimtotem Clan has been acting strangely.",
+      "when": {
+        "area_id": 485
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2097",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2097",
+        "world:creature:10646",
+        "world:creature:10759",
+        "world:creature:10760",
+        "world:creature:10761",
+        "world:creature:10758",
+        "world:creature:10757"
+      ],
+      "text": "You are in Darkcloud Pinnacle, a Grimtotem-held pinnacle in Thousand Needles. Grimtotem stompers, geomancers, reavers and bandits roam it, along with boiling elementals. Lakota Windsong, a Horde woman, was kidnapped here by Arnak, and during her escape she warned that he has a strange power over the Grimtotem.",
+      "when": {
+        "area_id": 2097
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2237",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2237",
+        "world:creature:10428",
+        "world:creature:10638",
+        "world:creature:10941"
+      ],
+      "text": "You are in Whitereach Post, a Horde post in Thousand Needles with a vendor. Motega Firemane, a tauren, takes the return of Arikara as an urgent threat, and Kanati Greycloud calls for help defending the post against centaur assassins. Wizlo Bearingshiner, a stranded tinkerer who survived a centaur attack on his caravan, arranges unusual jobs for clients.",
+      "when": {
+        "area_id": 2237
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2240",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2240",
+        "world:creature:4630",
+        "world:creature:4453",
+        "world:creature:4454",
+        "world:creature:4629",
+        "world:creature:4147",
+        "world:creature:4140"
+      ],
+      "text": "You are in Mirage Raceway, the Alliance-held racetrack on the Shimmering Flats in Thousand Needles. Pozzik leads the racing crew's engineering, and the Brassbolts brothers build a rocket car there, with Fizzle testing a very hot fuel. Trackmaster Zherin is left clearing wreckage after crashes, and scorpids and basilisks threaten the course.",
+      "when": {
+        "area_id": 2240
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2303",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2303",
+        "world:creature:2986",
+        "world:creature:5905",
+        "world:creature:4119",
+        "world:creature:4124",
+        "world:creature:4249"
+      ],
+      "text": "You are in Windbreak Canyon, a canyon in Thousand Needles with Horde teachers. Dorn Plainstalker leads visitors through trials of spirit, body and mind, and Prate Cloudseer guides shamans through the air totem rite. Elder cloud serpents, cougars and pesterhide snarlers roam the canyon.",
+      "when": {
+        "area_id": 2303
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3037",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3037",
+        "world:creature:4483",
+        "world:quest:1147"
+      ],
+      "text": "You are in Ironstone Camp, a Horde war camp in Thousand Needles. Moktar Krin leads its war party, which is badly weakened after silithids attacked the dwarven dig site to the south. Silithids remain a threat to the camp, and Moktar Krin is still waiting on word from Belgrom.",
+      "when": {
+        "area_id": 3037
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3039",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3039",
+        "world:creature:4151",
+        "world:creature:4150",
+        "world:creature:4158"
+      ],
+      "text": "You are in Tahonda Ruins, in Thousand Needles. Saltstone crystalhides and gazers haunt the ruins, and Salt Flats vultures are found here too.",
+      "when": {
+        "area_id": 3039
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2097": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2097 (Darkcloud Pinnacle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2237": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2237 (Whitereach Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2240": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2240 (Mirage Raceway)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2303": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2303 (Windbreak Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3037": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3037 (Ironstone Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3039": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3039 (Tahonda Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:400": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 400 (Thousand Needles)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:439": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 439 (The Shimmering Flats)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:479": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 479 (The Rustmaul Dig Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:480": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 480 (Camp E'thok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:481": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 481 (Splithoof Crag)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:482": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 482 (Highperch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:483": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 483 (The Screeching Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:484": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 484 (Freewind Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:485": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 485 (The Great Lift)",
+      "revision": "3.3.5a client data"
+    },
     "source:0025a39de791f2fc71aa53af": {
       "kind": "research",
       "reference": "evidence:sha256:30d1ab77f536901f236b0a2379bf1a8c72877adcd9fedbd353c06d0b80155bd5",
@@ -4430,6 +4765,266 @@
       "kind": "research",
       "reference": "evidence:sha256:0d74b5f8d6ce76707dbc898a4177a88d877975b3a68423b6707cb709f783aa40",
       "revision": "3ff5cd663bdac7884cf68bc6196a6cd10a6b6d24d83050569632b2767c1f3d3b"
+    },
+    "world:creature:10079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10079 (Brave Moonhorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10377 (Elu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10427": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10427 (Pao'ka Swiftmountain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10428 (Motega Firemane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10537": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10537 (Cliffwatcher Longhorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10539": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10539 (Hagar Lightninghoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10638": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10638 (Kanati Greycloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10646 (Lakota Windsong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10757": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10757 (Boiling Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10758": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10758 (Grimtotem Bandit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10759 (Grimtotem Stomper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10760 (Grimtotem Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10761": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10761 (Grimtotem Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10941 (Wizlo Bearingshiner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12576": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12576 (Grish Longrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2986 (Dorn Plainstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4093 (Galak Wrangler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4094 (Galak Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4095": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4095 (Galak Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4096": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4096 (Galak Windchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4097": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4097 (Galak Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4099": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4099 (Galak Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4100": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4100 (Screeching Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4101": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4101 (Screeching Roguefeather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4104": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4104 (Screeching Windcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4107 (Highperch Wyvern), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4109 (Highperch Consort), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4110 (Highperch Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4114 (Gravelsnout Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4118 (Venomous Cloud Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4119": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4119 (Elder Cloud Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4124 (Needles Cougar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4130 (Silithid Searcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4131 (Silithid Invader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4132": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4132 (Silithid Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4133 (Silithid Hive Drone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4140": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4140 (Scorpid Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4147 (Saltstone Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4150 (Saltstone Gazer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4151": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4151 (Saltstone Crystalhide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4158 (Salt Flats Vulture), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4248 (Pesterhide Hyena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4249 (Pesterhide Snarler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4453 (Wizzle Brassbolts), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4454 (Fizzle Brassbolts), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4483": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4483 (Moktar Krin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4629": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4629 (Trackmaster Zherin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4630": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4630 (Pozzik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5905": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5905 (Prate Cloudseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5934": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5934 (Heartrazor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1147": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1147 (The Swarm Grows)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1197": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1197 (The Sacred Flame)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

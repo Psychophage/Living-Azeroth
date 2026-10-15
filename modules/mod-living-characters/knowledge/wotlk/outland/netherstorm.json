@@ -6885,7 +6885,864 @@
     }
   ],
   "place": "Netherstorm",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3523",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3523",
+        "dbc:area:3712",
+        "dbc:area:3738",
+        "dbc:area:3724",
+        "world:creature:18853",
+        "world:creature:18875",
+        "world:creature:18864",
+        "world:quest:10310"
+      ],
+      "text": "You are in Netherstorm, a region of Outland held by neither the Alliance nor the Horde. Its main settlements, Area 52, Cosmowrench and The Stormspire, answer to no side. Sunfury blood elves work the manaforges, while Zaxxis raiders, mana wraiths and warp chasers roam the land, and Burning Legion demons come through warp-gates.",
+      "when": {
+        "zone_id": 3523
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3712",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3712",
+        "world:creature:19570",
+        "world:creature:19466",
+        "world:creature:19467"
+      ],
+      "text": "You are in Area 52, a base in Netherstorm that neither side holds. Rocket-Chief Fuselage and the engineers of B.O.O.M. are building the X-52 Nether-Rocket here, while Exarch Orelis of the Aldor and Anchorite Karja of the Sha'tar investigate Kael'thas's manaforges. It has an inn and a bank.",
+      "when": {
+        "area_id": 3712
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3721",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3721",
+        "world:creature:18879",
+        "world:creature:19731",
+        "world:creature:18880",
+        "world:creature:18883"
+      ],
+      "text": "You are in the Crumbling Waste, an area of Netherstorm. Phase hunters, nether beasts, nether rays and mana snappers roam its ground.",
+      "when": {
+        "area_id": 3721
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3722",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3722",
+        "world:creature:20920",
+        "world:creature:20393",
+        "world:creature:20248",
+        "world:quest:10432"
+      ],
+      "text": "You are in Manaforge Ara, a Sunfury manaforge in Netherstorm. Sunfury nethermancers and Burning Legion servants are found inside it, and Magister Theledorn there offers information to the Scryers. Foreman Sundown, demoted from the Trelleum Mine, is trying to persuade his fellow blood elves to leave.",
+      "when": {
+        "area_id": 3722
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3723",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3723",
+        "world:creature:19852",
+        "world:creature:19853",
+        "world:quest:10173"
+      ],
+      "text": "You are in Arklon Ruins, a hotbed of Burning Legion activity in Netherstorm. Artifact seekers and felblade doomguards are among its dangers, and Ekkorash, the Legion's leader in the ruins, holds Archmage Vargoth's staff.",
+      "when": {
+        "area_id": 3723
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3724",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3724",
+        "world:creature:22479",
+        "world:creature:22491",
+        "world:creature:20515"
+      ],
+      "text": "You are in Cosmowrench, a settlement in Netherstorm that neither side holds. Sab'aoth runs a reagent and poison supply business here, Kerpow Blastwrench sells weapons, and Harpax keeps the flight master's post.",
+      "when": {
+        "area_id": 3724
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3725",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3725",
+        "world:creature:19578",
+        "world:creature:19589",
+        "world:creature:18872",
+        "world:creature:18873"
+      ],
+      "text": "You are in the Ruins of Enkaat, a draenei ruin in Netherstorm where B.O.O.M. is recovering draenei machinery. Bot-Specialist Alley keeps her charged machines at work, Maxx A. Million Mk. V among them, while disembodied vindicators and protectors haunt the ruins.",
+      "when": {
+        "area_id": 3725
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3726",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3726",
+        "world:creature:18853",
+        "world:creature:18852",
+        "world:creature:18855"
+      ],
+      "text": "You are in Manaforge B'naar, a Sunfury manaforge in Netherstorm. Sunfury bloodwarders, warp-engineers and magisters are the threat there, and the Aldor and the Scryers both take an interest in what the manaforge is doing.",
+      "when": {
+        "area_id": 3726
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3727",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3727",
+        "world:quest:10310",
+        "world:creature:16948",
+        "world:creature:16944"
+      ],
+      "text": "You are in the Scrap Field, a fel reaver scrap field in Netherstorm where the Burning Legion is nearby. Gan'arg engineers, Mo'arg doomsmiths and doomclaws are the dangers there.",
+      "when": {
+        "area_id": 3727
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3728",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3728",
+        "world:creature:18884",
+        "world:creature:18883",
+        "world:creature:20207",
+        "world:creature:22484"
+      ],
+      "text": "You are in the Vortex Fields, a part of Netherstorm where warp chasers, mana snappers and nether beasts roam, and Sunfury bowmen are among the dangers. Zeppit, an imp belonging to the reagent seller Sab'aoth, can handle warp chaser blood safely.",
+      "when": {
+        "area_id": 3728
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3729",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3729",
+        "world:creature:19690",
+        "world:creature:19645",
+        "world:creature:18875",
+        "world:creature:19642"
+      ],
+      "text": "You are in The Heap, a salvage ground in Netherstorm that B.O.O.M. claims as its own. N. D. Meancamp runs B.O.O.M. Salvage here and offers finder's fees for fel reaver parts. Zaxxis raiders and stalkers are the dangers.",
+      "when": {
+        "area_id": 3729
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3730",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3730",
+        "world:creature:19840",
+        "world:creature:20134",
+        "world:creature:18850",
+        "world:quest:10198"
+      ],
+      "text": "You are in Manaforge Coruu, a Sunfury manaforge in Netherstorm. Caledis Brightdawn runs a Scryer operation here, disguising infiltrators with illusion magic, and arcane golems patrol the manaforge. Sunfury arcanists and guardsmen are the dangers.",
+      "when": {
+        "area_id": 3730
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3731",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3731",
+        "world:creature:18884",
+        "world:creature:19731",
+        "world:creature:20673"
+      ],
+      "text": "You are in the Tempest Rift, a part of Netherstorm where warp chasers and nether beasts roam, and swiftwing shredders are also seen.",
+      "when": {
+        "area_id": 3731
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3734",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3734",
+        "world:quest:10267",
+        "world:creature:20139",
+        "world:creature:20207",
+        "world:creature:19731",
+        "world:creature:19686"
+      ],
+      "text": "You are in Manaforge Duro, a manaforge in Netherstorm where blood elves are having trouble with an infestation of mana creatures. Sunfury conjurers, bowmen and centurions are found here, with nether beasts and nether anomalies nearby.",
+      "when": {
+        "area_id": 3734
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3735",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3735",
+        "world:creature:20984",
+        "world:creature:21805",
+        "world:creature:22822",
+        "world:creature:20607",
+        "world:creature:19568"
+      ],
+      "text": "You are in Voidwind Plateau, a Netherstorm plateau that neither side holds. Protectorate defenders and avengers can be found here, and ethereum nullifiers, jailors and shocktroopers, craghide basilisks and unending voidwraiths make it dangerous.",
+      "when": {
+        "area_id": 3735
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3736",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3736",
+        "world:creature:20552",
+        "world:quest:10353",
+        "world:creature:20561",
+        "world:creature:20340",
+        "world:creature:19568"
+      ],
+      "text": "You are in Manaforge Ultris, a manaforge in Netherstorm. Protectorate agent Ya-six is trapped and badly injured in the Ultris mine and asks for help, saying the void lord Arconus has been feeding on the creatures here. Withered corpses, fleshfiends and voidwraiths roam the grounds.",
+      "when": {
+        "area_id": 3736
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3737",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3737",
+        "world:creature:20110",
+        "world:creature:20111",
+        "world:creature:20154",
+        "world:creature:20332",
+        "world:creature:23008",
+        "world:creature:20607"
+      ],
+      "text": "You are in Celestial Ridge, a Netherstorm ridge where the strange nether dragons are studied. Tyri, a blue dragon of the brood of Malygos, and her companion Jorad Mace watch the dragons and their eggs, and Tyri is concerned that outsiders will exploit them. A shrouded figure also observes from a projection. Ethereum jailors and craghide basilisks prowl the ridge.",
+      "when": {
+        "area_id": 3737
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3738",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3738",
+        "world:creature:19531",
+        "world:creature:20811",
+        "world:creature:20067",
+        "world:creature:20084",
+        "world:creature:20777"
+      ],
+      "text": "You are in The Stormspire, a Netherstorm center where the Consortium trades. The innkeeper Eyonix offers rest for a modest fee, and Ghabar, the head Eco-Dome engineer, worries over unexplained generator failures. Zuben Elgenubi is building a farahlite market, and an image of Nexus-Prince Haramad speaks to visitors through an imaging device. Talbuk sires are a danger on the grounds.",
+      "when": {
+        "area_id": 3738
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3739",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3739",
+        "world:creature:16949",
+        "world:creature:21923",
+        "world:creature:21233",
+        "world:creature:22293"
+      ],
+      "text": "You are in Forge Base: Oblivion, a forge base in Netherstorm. Gan'arg mekgineers, terrorguard protectors and Legion fel cannons make it dangerous, and a dormant fel reaver sits among them.",
+      "when": {
+        "area_id": 3739
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3740",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3740",
+        "world:creature:16943",
+        "world:creature:18858",
+        "world:creature:18859",
+        "world:creature:21233"
+      ],
+      "text": "You are in Forge Base: Gehenna, a forge base in Netherstorm. Cyber-rage forgelords, wrathbringers and wrath priestesses make it dangerous, and Legion fel cannons are among them.",
+      "when": {
+        "area_id": 3740
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3741",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3741",
+        "world:creature:20138",
+        "world:creature:20141",
+        "world:creature:20394",
+        "world:creature:20470",
+        "world:quest:10335"
+      ],
+      "text": "You are in Ruins of Farahlon, a ruined site in Netherstorm overrun by demons. Culuthas holds them with hounds and eyes of Culuthas, and the excavator Zephyrion cannot begin work while demonic occupation continues.",
+      "when": {
+        "area_id": 3741
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3742",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3742",
+        "world:creature:20929",
+        "world:creature:20930",
+        "world:creature:20132"
+      ],
+      "text": "You are in Socrethar's Seat, a place in Netherstorm where wrath lords and hatecryers gather. Socrethar himself is among them.",
+      "when": {
+        "area_id": 3742
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3837",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3837",
+        "world:creature:19707",
+        "world:creature:20221",
+        "world:creature:19926",
+        "world:creature:20136",
+        "world:creature:19731"
+      ],
+      "text": "You are in Sunfury Hold, a Netherstorm hold of sunfury archers, flamekeepers and researchers, with nether beasts roaming its halls. Spellreaver Marathelle is among them.",
+      "when": {
+        "area_id": 3837
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3850",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3850",
+        "world:quest:10290",
+        "world:creature:18886",
+        "world:creature:20202",
+        "world:quest:10293"
+      ],
+      "text": "You are in Netherstone, a landmark in Netherstorm where newly exposed formations yield farahlite. Farahlon breakers and Cragskaar, patriarch of the Farahlon giants, make the ground dangerous.",
+      "when": {
+        "area_id": 3850
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3851",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3851",
+        "world:creature:20194",
+        "world:creature:20066",
+        "world:creature:19728",
+        "world:quest:10267",
+        "world:quest:10234",
+        "world:creature:20671"
+      ],
+      "text": "You are in Midrealm Post, a Consortium post in Netherstorm. Dealer Dunar sells goods, and Gahruj, the Consortium representative, is pressing the blood elves of Manaforge Duro for unpaid surveying equipment. Mama Wheeler, a B.O.O.M. mech tech, wants fel reaver parts gathered from the Scrap Field, now overrun by the Burning Legion, and ripfang lynxes roam nearby.",
+      "when": {
+        "area_id": 3851
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3852",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3852",
+        "world:creature:20112",
+        "world:creature:20341",
+        "world:creature:20780"
+      ],
+      "text": "You are in Tuluman's Landing, a trading post in Netherstorm beside the bridge to Manaforge Ara. Wind Trader Tuluman sells weapons here, and the post offers repairs as well. Nether-Stalker Oazul of the Consortium condemns the blood elves' manaforge work, and Kaylaan, a combatant serving Orelis, grows weary of orders against the naaru's enemies.",
+      "when": {
+        "area_id": 3852
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3854",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3854",
+        "world:creature:20448",
+        "world:creature:20092",
+        "world:creature:20449",
+        "world:creature:20907"
+      ],
+      "text": "You are in Protectorate Watch Post, an outpost of the ethereal Protectorate in Netherstorm. Commander Ameer leads here and has little patience for outsiders, while Dealer Hazzin supplies travelers bound for Manaforge Ultris. Researcher Navuud warns that void waste around Ultris can congeal into a void horror. Professor Dabiri focuses on stopping Dimensius.",
+      "when": {
+        "area_id": 3854
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3868",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3868",
+        "world:creature:19569"
+      ],
+      "text": "You are in Gyro-Plank Bridge, a span in Netherstorm where B.O.O.M. netherologist Coppernickels studies the nether away from the town. His second-hand equipment keeps failing, and he fears the nearby blood elves think he is spying.",
+      "when": {
+        "area_id": 3868
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3873",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3873",
+        "world:creature:19832",
+        "world:creature:19849"
+      ],
+      "text": "You are in The Proving Grounds, a B.O.O.M. testing site in Netherstorm where experimentalist Doctor Vomisa, Ph.T. builds and tests inventions for the defense of Area 52. His Scrap Reaver X6000, a mechanical combatant, is put through its trials here.",
+      "when": {
+        "area_id": 3873
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3874",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3874",
+        "world:creature:20913",
+        "world:creature:20634",
+        "world:creature:20931"
+      ],
+      "text": "You are in Eco-Dome Farfield, one of the Eco-Domes in Netherstorm, where Consortium technician Tashar tests a portable generator repair kit designed by Ghabar. Scythetooth raptors and a tyrantus roam the grounds and threaten the test, and Tashar worries about the failing dome.",
+      "when": {
+        "area_id": 3874
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3875",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3875",
+        "world:creature:20610",
+        "world:creature:20774",
+        "world:creature:20777"
+      ],
+      "text": "You are in Eco-Dome Skyperch, one of the Eco-Domes in Netherstorm. Talbuk sires roam here, and Farahlon lashers, dangerous living plants, are found here too. Talbuk does can call a male to their side.",
+      "when": {
+        "area_id": 3875
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3876",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3876",
+        "world:creature:17408",
+        "world:creature:20774",
+        "world:creature:20777",
+        "world:creature:20775"
+      ],
+      "text": "You are in Eco-Dome Sutheron, an Eco-Dome in Netherstorm. Talbuk sires and a markaru threaten the grounds, and Farahlon lashers, dangerous living plants, grow here as well. Arcane vortices are met here too.",
+      "when": {
+        "area_id": 3876
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3877",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3877",
+        "world:creature:20611",
+        "world:creature:20671",
+        "world:creature:20773",
+        "world:creature:18883"
+      ],
+      "text": "You are in Eco-Dome Midrealm, an Eco-Dome in Netherstorm where shimmerwing moths live. Ripfang lynxes and barbscale crocolisks prowl the dome, and mana snappers lurk there too.",
+      "when": {
+        "area_id": 3877
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3878",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3878",
+        "world:creature:20454",
+        "world:creature:20787",
+        "world:creature:20459",
+        "world:creature:20452"
+      ],
+      "text": "You are in Ethereum Staging Grounds, an Ethereum base in Netherstorm directly south of Protectorate Watch Post. Ethereum overlords, assassins, archons and shocktroopers fight here, and Nexus-King Salhadaar is shielded by force fields from three conduits. Captain Tyralius of the Protectorate is believed held in a cell.",
+      "when": {
+        "area_id": 3878
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3879",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3879",
+        "world:creature:20415",
+        "world:creature:20512",
+        "world:creature:21065",
+        "world:creature:20483"
+      ],
+      "text": "You are in Chapel Yard, a yard of Kirin'Var Village in Netherstorm. Tormented souls and tormented citizens haunt the yard, and Naberius is among the spirits that trouble it. Thadell's prize cow, Bessy, is known for her cowbell.",
+      "when": {
+        "area_id": 3879
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3880",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3880",
+        "world:creature:20551",
+        "world:creature:20561",
+        "world:creature:20340",
+        "world:creature:18698"
+      ],
+      "text": "You are in Access Shaft Zeon, a Protectorate post in Netherstorm on the south side of Manaforge Ultris. Agent Araxes stays outside the shaft, and withered corpses and fleshfiends haunt the place, with Ever-Core the Punisher the most notable danger.",
+      "when": {
+        "area_id": 3880
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3921",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3921",
+        "world:creature:17408",
+        "world:creature:18885",
+        "world:creature:20210",
+        "world:creature:21077"
+      ],
+      "text": "You are in Arklonis Ridge, a ridge in Netherstorm. Farahlon giants and farahlon crumblers roam it, along with shaleskin flayers, and arcane vortices are met here too.",
+      "when": {
+        "area_id": 3921
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3934",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3934",
+        "world:creature:19488",
+        "world:creature:19881",
+        "world:creature:20934",
+        "world:quest:10185"
+      ],
+      "text": "You are in Town Square, in the ruins of Kirin'Var Village in Netherstorm. Blood elves destroyed the Kirin Tor village, and its dead mages linger as spirits. Custodian Dieworth, an undead keeper, mourns them here, while Severed Spirits and Severed Defenders wander the square. Repairs and a vendor are on hand.",
+      "when": {
+        "area_id": 3934
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3935",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3935",
+        "world:creature:18867",
+        "world:creature:18866",
+        "world:quest:10185"
+      ],
+      "text": "You are in Wizard Row in Netherstorm. Mana Seekers and Mageslayers haunt its ruins. Ravenous mana elementals are drawn here and keep wrecking what is left.",
+      "when": {
+        "area_id": 3935
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3523": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3523 (Netherstorm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3712": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3712 (Area 52)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3721": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3721 (The Crumbling Waste)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3722": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3722 (Manaforge Ara)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3723": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3723 (Arklon Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3724": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3724 (Cosmowrench)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3725": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3725 (Ruins of Enkaat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3726": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3726 (Manaforge B'naar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3727": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3727 (The Scrap Field)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3728": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3728 (The Vortex Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3729": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3729 (The Heap)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3730": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3730 (Manaforge Coruu)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3731": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3731 (The Tempest Rift)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3734": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3734 (Manaforge Duro)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3735": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3735 (Voidwind Plateau)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3736": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3736 (Manaforge Ultris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3737": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3737 (Celestial Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3738": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3738 (The Stormspire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3739": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3739 (Forge Base: Oblivion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3740": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3740 (Forge Base: Gehenna)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3741": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3741 (Ruins of Farahlon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3742": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3742 (Socrethar's Seat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3837": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3837 (Sunfury Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3850": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3850 (Netherstone)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3851": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3851 (Midrealm Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3852": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3852 (Tuluman's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3854": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3854 (Protectorate Watch Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3868": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3868 (Gyro-Plank Bridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3873": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3873 (The Proving Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3874": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3874 (Eco-Dome Farfield)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3875": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3875 (Eco-Dome Skyperch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3876": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3876 (Eco-Dome Sutheron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3877": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3877 (Eco-Dome Midrealm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3878": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3878 (Ethereum Staging Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3879": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3879 (Chapel Yard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3880": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3880 (Access Shaft Zeon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3921": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3921 (Arklonis Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3934": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3934 (Town Square)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3935": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3935 (Wizard Row)",
+      "revision": "3.3.5a client data"
+    },
     "source:0020a58a258e1e4c8b3c8592": {
       "kind": "research",
       "reference": "evidence:sha256:ac5f54462c0c54c39eca26e587a52bd2c185e7b6be419d8e041b450cdc03fa64",
@@ -12355,6 +13212,646 @@
       "kind": "research",
       "reference": "evidence:sha256:916c7ea63218dcff120b4bada97e182f6f06723d4c4d70eb9715a04aa1dc8efe",
       "revision": "639c1ef84b2b413254501fc910a9fb179fc5e224c9331b49b8bfbfe5715689fc"
+    },
+    "world:creature:16943": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16943 (Cyber-Rage Forgelord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16944 (Mo'arg Doomsmith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16948": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16948 (Gan'arg Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16949": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16949 (Gan'arg Mekgineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17408 (Arcane Vortex), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18698": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18698 (Ever-Core the Punisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18850 (Sunfury Guardsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18852": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18852 (Sunfury Warp-Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18853": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18853 (Sunfury Bloodwarder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18855": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18855 (Sunfury Magister), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18858 (Wrathbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18859": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18859 (Wrath Priestess), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18864": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18864 (Mana Wraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18866": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18866 (Mageslayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18867": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18867 (Mana Seeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18872 (Disembodied Vindicator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18873 (Disembodied Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18875 (Zaxxis Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18879": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18879 (Phase Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18880 (Nether Ray), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18883": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18883 (Mana Snapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18884": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18884 (Warp Chaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18885 (Farahlon Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18886": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18886 (Farahlon Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19466 (Exarch Orelis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19467 (Anchorite Karja), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19488": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19488 (Custodian Dieworth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19531": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19531 (Eyonix), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19568 (Unending Voidwraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19569": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19569 (Netherologist Coppernickels), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19570 (Rocket-Chief Fuselage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19578": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19578 (Bot-Specialist Alley), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19589 (Maxx A. Million Mk. V), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19642 (Zaxxis Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19645": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19645 (Papa Wheeler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19686 (Nether Anomaly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19690 (N. D. Meancamp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19707": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19707 (Sunfury Archer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19728 (Mama Wheeler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19731 (Nether Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19832": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19832 (Doctor Vomisa, Ph.T.), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19840": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19840 (Caledis Brightdawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19849": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19849 (Scrap Reaver X6000), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19852": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19852 (Artifact Seeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19853": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19853 (Felblade Doomguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19881 (Severed Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19926": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19926 (Spellreaver Marathelle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20066": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20066 (Gahruj), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20067": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20067 (Zuben Elgenubi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20084 (Image of Nexus-Prince Haramad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20092": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20092 (Dealer Hazzin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20110 (Tyri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20111 (Jorad Mace), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20112 (Wind Trader Tuluman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20132": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20132 (Socrethar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20134": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20134 (Sunfury Arcanist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20136 (Sunfury Researcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20138": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20138 (Culuthas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20139 (Sunfury Conjurer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20141": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20141 (Hound of Culuthas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20154 (Shrouded Figure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20194 (Dealer Dunar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20202 (Cragskaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20207": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20207 (Sunfury Bowman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20210": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20210 (Shaleskin Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20221 (Sunfury Flamekeeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20248 (Sunfury Nethermancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20332": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20332 (Nether Dragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20340 (Fleshfiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20341 (Nether-Stalker Oazul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20393 (Foreman Sundown), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20394": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20394 (Eye of Culuthas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20415 (Bessy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20448 (Commander Ameer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20449 (Researcher Navuud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20452 (Ethereum Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20454 (Nexus-King Salhadaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20459": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20459 (Ethereum Overlord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20470": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20470 (Zephyrion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20483": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20483 (Naberius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20512": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20512 (Tormented Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20515": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20515 (Harpax), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20551": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20551 (Agent Araxes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20552": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20552 (Agent Ya-six), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20561 (Withered Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20607 (Craghide Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20610 (Talbuk Doe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20611": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20611 (Shimmerwing Moth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20634": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20634 (Scythetooth Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20671": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20671 (Ripfang Lynx), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20673 (Swiftwing Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20773": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20773 (Barbscale Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20774": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20774 (Farahlon Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20775": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20775 (Markaru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20777": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20777 (Talbuk Sire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20780 (Kaylaan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20787": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20787 (Captain Tyralius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20811 (Ghabar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20907": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20907 (Professor Dabiri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20913": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20913 (Tashar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20920 (Magister Theledorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20929": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20929 (Wrath Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20930": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20930 (Hatecryer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20931 (Tyrantus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20934": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20934 (Severed Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20984": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20984 (Protectorate Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21065": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21065 (Tormented Citizen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21077 (Farahlon Crumbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21233 (Legion Fel Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21805": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21805 (Protectorate Avenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21923": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21923 (Terrorguard Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22293 (Inactive Fel Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22479 (Sab'aoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22484": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22484 (Zeppit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22491 (Kerpow Blastwrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22822 (Ethereum Nullifier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23008": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23008 (Ethereum Jailor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10173": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10173 (The Archmage's Staff)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10185": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10185 (A Fate Worse Than Death)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10198": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10198 (Information Gathering)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10234": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10234 (One Demon's Trash...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10267": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10267 (Rightful Repossession)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10290": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10290 (In Search of Farahlite)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10293": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10293 (Hitting the Motherlode)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10310": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10310 (Sabotage the Warp-Gate!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10335": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10335 (Surveying the Ruins)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10353": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10353 (Arconus the Insatiable)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10432": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10432 (Damning Evidence)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

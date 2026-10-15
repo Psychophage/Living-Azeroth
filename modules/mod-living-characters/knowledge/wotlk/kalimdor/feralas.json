@@ -3754,7 +3754,556 @@
     }
   ],
   "place": "Feralas",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:357",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:357",
+        "dbc:area:489",
+        "dbc:area:1116",
+        "dbc:area:1099",
+        "world:creature:7725",
+        "world:creature:5229",
+        "world:creature:5362",
+        "world:creature:5247"
+      ],
+      "text": "You are in Feralas, a contested land on Kalimdor where the Alliance and the Horde both hold settlements. The Alliance keeps Thalanaar and Feathermoon Stronghold, and the Horde keeps Camp Mojache. Grimtotem tauren, Gordunni ogres and Northspring harpies roam the wilds, and Zukk'ash insects hold the Writhing Deep.",
+      "when": {
+        "zone_id": 357
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:489",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:489",
+        "world:creature:7870",
+        "world:creature:4048",
+        "world:quest:5143",
+        "world:quest:1101"
+      ],
+      "text": "You are in Thalanaar, an Alliance settlement in Feralas. Caryssia Moonhunter teaches tribal leatherworking here to wild leather workers who bring her their finest samples, and the druid Falfindel Waywarder calls forest spirits to aid the Charred Vale. He says the campaign against Charlga Razorflank in the Kraul must continue.",
+      "when": {
+        "area_id": 489
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1099",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1099",
+        "world:creature:7777",
+        "world:creature:7875"
+      ],
+      "text": "You are in Camp Mojache, a Horde camp in Feralas. Rok Orhan leads the push against the Gordunni ogres from here, and the veteran Hadoken Swiftstrider treats the Woodpaw gnolls as a direct threat to the camp, since their attacks have grown more frequent and savage. Its inn and stable master serve Horde travelers.",
+      "when": {
+        "area_id": 1099
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1100",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1100",
+        "world:creature:7726",
+        "world:creature:7725",
+        "world:creature:7727",
+        "world:creature:5268",
+        "world:creature:5286"
+      ],
+      "text": "You are in the Grimtotem Compound, a camp of the Grimtotem tauren in Feralas. Its naturalists, raiders and shamans hold the ground, and Ironfur bears and Longtooth runners roam nearby.",
+      "when": {
+        "area_id": 1100
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1101",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1101",
+        "world:creature:5247",
+        "world:creature:5245",
+        "world:creature:5246",
+        "world:creature:5244",
+        "world:quest:4265",
+        "world:creature:5287",
+        "world:creature:5272"
+      ],
+      "text": "You are in The Writhing Deep, a Zukk'ash hive in Feralas. Its tunnelers, wasps, workers and stingers swarm the hive, and a night elf named Raschal was once trapped inside one of its pods. Longtooth howlers and grizzled Ironfur bears prowl its edges.",
+      "when": {
+        "area_id": 1101
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1103",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1103",
+        "world:creature:5232",
+        "world:creature:5229",
+        "world:creature:5237",
+        "world:creature:8021",
+        "world:quest:2987"
+      ],
+      "text": "You are in the Gordunni Outpost, an ogre outpost in Feralas. Gordunni brutes, ogres and ogre mages hold it, and the prospector Orwin Gizzmick wants the cobalt the Gordunni bury.",
+      "when": {
+        "area_id": 1103
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1105",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1105",
+        "world:creature:5292",
+        "world:creature:5346",
+        "world:creature:7807",
+        "world:quest:2767"
+      ],
+      "text": "You are in Feral Scar Vale, where Feral Scar yetis roam and Bloodroar the Stalker prowls. A damaged homing robot, OOX-22/FE, belonging to the gnome Oglethorpe Obnoticus, was brought back to life by its distress beacon and waits to be moved to safety.",
+      "when": {
+        "area_id": 1105
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1106",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1106",
+        "world:creature:5305",
+        "world:creature:5304",
+        "world:creature:5306",
+        "world:creature:5347"
+      ],
+      "text": "You are in the Frayfeather Highlands, high country in Feralas roamed by Frayfeather skystormers, stagwings and patriarchs. Antilus the Soarer is also among the hostile creatures here.",
+      "when": {
+        "area_id": 1106
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1108",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1108",
+        "world:creature:14637",
+        "world:creature:5461",
+        "world:creature:5462",
+        "dbc:taxi:206"
+      ],
+      "text": "You are in the Forgotten Coast, a remote shore of Feralas. The goblin engineer Zorbin Fandazzle keeps a shop here, though he frets that its remote location, with giants and elementals nearby, makes it a poor business choice. Sea elementals and sea sprays roam the coast, and a ship transport runs to Feathermoon.",
+      "when": {
+        "area_id": 1108
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1111",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1111",
+        "world:creature:5317",
+        "world:creature:5319",
+        "world:creature:5320",
+        "world:creature:14889",
+        "world:creature:5312"
+      ],
+      "text": "You are in Dream Bough, in Feralas. Jademir oracles, tree wardens and boughguards are its dangers, and Emeriss and Lethlas are among the hostile creatures.",
+      "when": {
+        "area_id": 1111
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1114",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1114",
+        "world:creature:5362",
+        "world:creature:5366",
+        "world:creature:7774"
+      ],
+      "text": "You are in the Ruins of Ravenwind, ruins in Feralas that Northspring harpies and windcallers haunt. Shay Leafrunner, a wandering night elf, readily loses her way in Feralas, and her friend Rockbiter keeps watch over her.",
+      "when": {
+        "area_id": 1114
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1115",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1115",
+        "world:creature:5299",
+        "world:creature:5296"
+      ],
+      "text": "You are in Rage Scar Hold in Feralas, where ferocious Rage Scars and Rage Scar yetis roam.",
+      "when": {
+        "area_id": 1115
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1116",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1116",
+        "world:creature:3936",
+        "world:creature:7877",
+        "world:creature:7736"
+      ],
+      "text": "You are in Feathermoon Stronghold, an Alliance stronghold in Feralas. General Shandris Feathermoon commands the Sentinel Army from here, and Latronicus Moonspear confronts the Hatecrest naga who threaten it. Its inn and flight master serve travelers.",
+      "when": {
+        "area_id": 1116
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1117",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1117",
+        "world:quest:2866",
+        "world:creature:5337",
+        "world:creature:5331",
+        "world:creature:5335",
+        "world:quest:2867"
+      ],
+      "text": "You are in the Ruins of Solarsal, ancient ruins in Feralas to the south of Feathermoon Stronghold. Hatecrest naga have lately occupied them in large numbers, along with Hatecrest sirens, warriors and screamers. A strange gazebo stands in the heart of the ruins.",
+      "when": {
+        "area_id": 1117
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1119",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1119",
+        "world:creature:7773",
+        "world:creature:7772",
+        "world:creature:5358",
+        "world:creature:5357",
+        "world:creature:5288",
+        "world:creature:7765",
+        "world:quest:2844"
+      ],
+      "text": "You are in The Twin Colossals in Feralas. Marli Wishrunner offers a one-way ride to the summit, and Kalin Windflight helps travelers get back down safely. Cliff giants, land walkers and rabid longtooths roam nearby. Rockbiter fears for a lost night elf girl who wandered off into the ruins to the north. A spirit healer and a vendor are here.",
+      "when": {
+        "area_id": 1119
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1120",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1120",
+        "world:creature:5327",
+        "world:creature:5331",
+        "world:creature:5286"
+      ],
+      "text": "You are in Sardor Isle in Feralas. Coast Crawl Snapclaws and Hatecrest warriors roam the isle, and Longtooth runners are found there too.",
+      "when": {
+        "area_id": 1120
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1121",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1121",
+        "world:creature:5333",
+        "world:creature:5336",
+        "world:creature:12801",
+        "world:creature:12802",
+        "world:quest:2866"
+      ],
+      "text": "You are in the Isle of Dread in Feralas, where Hatecrest serpent guards and sorceresses are found. Arcane Chimaeroks and Chimaerok Devourers roam there as well.",
+      "when": {
+        "area_id": 1121
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1136",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1136",
+        "world:creature:7900",
+        "world:creature:5260",
+        "world:creature:5268",
+        "world:creature:5293",
+        "world:creature:5300",
+        "world:creature:5304",
+        "world:creature:5881"
+      ],
+      "text": "You are in the High Wilderness of Feralas, ground held by ogres. Groddoc apes, ironfur bears and feral scars roam it, and frayfeather hippogryphs and stagwings are found too. A cursed sycamore elemental lives here.",
+      "when": {
+        "area_id": 1136
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1137",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1137",
+        "world:quest:2903",
+        "world:creature:5249",
+        "world:creature:5286",
+        "world:creature:5268",
+        "world:creature:6491"
+      ],
+      "text": "You are in the Lower Wilds of Feralas, where Woodpaw gnolls, longtooth runners and ironfur bears roam. A spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 1137
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2518",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2518",
+        "world:creature:14355",
+        "world:quest:7441",
+        "world:creature:36208"
+      ],
+      "text": "You are in Lariss Pavilion in Feralas. Azj'Tordin, an elder of the Shen'dralar who gave up his immortality to escape a fallen court, lost his book of incantations to the imp Pusillin in Dire Maul. Xerash Fireblade works herbs for Witch Doctor Uzer'i nearby.",
+      "when": {
+        "area_id": 2518
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2519",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2519",
+        "world:creature:5254",
+        "world:creature:5255",
+        "world:creature:5251",
+        "world:creature:5354",
+        "world:quest:4135"
+      ],
+      "text": "You are in the Woodpaw Hills of Feralas, where Woodpaw gnolls such as mystics, reavers and trappers roam. Gnarl Leafbrother, a powerful creature, lashes out with entangling roots. Insidious bug-like creatures are reported in the Writhing Deep, south of the gnoll camps.",
+      "when": {
+        "area_id": 2519
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2520",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2520",
+        "world:creature:5254",
+        "world:creature:5255",
+        "world:creature:5258"
+      ],
+      "text": "You are in Woodpaw Den in Feralas, where Woodpaw mystics, reavers and an alpha roam.",
+      "when": {
+        "area_id": 2520
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2522",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2522",
+        "world:creature:5238",
+        "world:creature:5241",
+        "world:creature:5236",
+        "world:creature:7900",
+        "world:creature:6491"
+      ],
+      "text": "You are in the Ruins of Isildien in Feralas, where Gordunni ogres, including battlemasters, warlords and shamans, are found. A spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 2522
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2577",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2577",
+        "world:creature:6491",
+        "world:creature:11443",
+        "world:creature:11440",
+        "world:creature:12418",
+        "world:creature:5287",
+        "world:creature:5272",
+        "world:creature:5308"
+      ],
+      "text": "You are in Dire Maul, a part of Feralas. The spirit healer here offers a return to life for a price, though cautioning that it may not yet be the traveler's time. Gordok ogre-mages, enforcers and hyenas prowl the area, alongside longtooth howlers, grizzled Ironfur bears and Rogue Vale screechers.",
+      "when": {
+        "area_id": 2577
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1099": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1099 (Camp Mojache)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1100": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1100 (Grimtotem Compound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1101": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1101 (The Writhing Deep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1103": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1103 (Gordunni Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1105": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1105 (Feral Scar Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1106": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1106 (Frayfeather Highlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1108": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1108 (The Forgotten Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1111": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1111 (Dream Bough)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1114": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1114 (Ruins of Ravenwind)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1115": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1115 (Rage Scar Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1116": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1116 (Feathermoon Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1117": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1117 (Ruins of Solarsal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1119": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1119 (The Twin Colossals)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1120 (Sardor Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1121": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1121 (Isle of Dread)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1136": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1136 (High Wilderness)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1137": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1137 (Lower Wilds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2518": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2518 (Lariss Pavilion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2519 (Woodpaw Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2520": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2520 (Woodpaw Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2522": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2522 (Ruins of Isildien)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2577": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2577 (Dire Maul)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:357": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 357 (Feralas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:489": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 489 (Thalanaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:206": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 206 (Transport, Feathermoon (NE Ship))",
+      "revision": "3.3.5a client data"
+    },
     "source:000d770a7b2f2c1ed0169ad7": {
       "kind": "research",
       "reference": "evidence:sha256:7f28c84a081394911dfe0f1f84cc6886b14b27ec4fb9553a17c07c7913253b9a",
@@ -6809,6 +7358,446 @@
       "kind": "research",
       "reference": "evidence:sha256:6b2ee7782da70ea1a63f188215bbc2ea29e7babb928aa502963603ede868a85a",
       "revision": "c0ba2ea5b8c2fa62accc5ac91dba3338c83b02c66d786baa2e7d18828f5d2a42"
+    },
+    "world:creature:11440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11440 (Gordok Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11443": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11443 (Gordok Ogre-Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12418": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12418 (Gordok Hyena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12801 (Arcane Chimaerok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12802": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12802 (Chimaerok Devourer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14355 (Azj'Tordin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14637 (Zorbin Fandazzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14889": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14889 (Emeriss), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36208": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36208 (Xerash Fireblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3936": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3936 (Shandris Feathermoon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4048": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4048 (Falfindel Waywarder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5229 (Gordunni Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5232 (Gordunni Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5236 (Gordunni Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5237 (Gordunni Ogre Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5238 (Gordunni Battlemaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5241 (Gordunni Warlord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5244 (Zukk'ash Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5245": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5245 (Zukk'ash Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5246": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5246 (Zukk'ash Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5247 (Zukk'ash Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5249 (Woodpaw Mongrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5251": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5251 (Woodpaw Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5254 (Woodpaw Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5255 (Woodpaw Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5258 (Woodpaw Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5260": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5260 (Groddoc Ape), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5268": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5268 (Ironfur Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5272": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5272 (Grizzled Ironfur Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5286 (Longtooth Runner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5287 (Longtooth Howler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5288": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5288 (Rabid Longtooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5292": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5292 (Feral Scar Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5293 (Hulking Feral Scar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5296 (Rage Scar Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5299": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5299 (Ferocious Rage Scar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5300": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5300 (Frayfeather Hippogryph), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5304 (Frayfeather Stagwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5305 (Frayfeather Skystormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5306 (Frayfeather Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5308": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5308 (Rogue Vale Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5312": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5312 (Lethlas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5317": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5317 (Jademir Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5319 (Jademir Tree Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5320": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5320 (Jademir Boughguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5327 (Coast Crawl Snapclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5331": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5331 (Hatecrest Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5333 (Hatecrest Serpent Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5335 (Hatecrest Screamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5336": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5336 (Hatecrest Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5337 (Hatecrest Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5346 (Bloodroar the Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5347 (Antilus the Soarer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5354": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5354 (Gnarl Leafbrother), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5357 (Land Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5358 (Cliff Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5362": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5362 (Northspring Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5366 (Northspring Windcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5461 (Sea Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5462 (Sea Spray), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5881 (Cursed Sycamore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7725": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7725 (Grimtotem Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7726": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7726 (Grimtotem Naturalist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7727 (Grimtotem Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7736": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7736 (Innkeeper Shyria), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7765 (Rockbiter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7772 (Kalin Windflight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7773": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7773 (Marli Wishrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7774": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7774 (Shay Leafrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7777": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7777 (Rok Orhan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7807 (Homing Robot OOX-22/FE), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7870 (Caryssia Moonhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7875 (Hadoken Swiftstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7877": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7877 (Latronicus Moonspear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7900 (Angelas Moonbreeze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8021": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8021 (Orwin Gizzmick), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1101": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1101 (The Crone of the Kraul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2767": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2767 (Rescue OOX-22/FE!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2844": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2844 (The Giant Guardian)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2866": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2866 (The Ruins of Solarsal)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2867": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2867 (Return to Feathermoon Stronghold)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2903": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2903 (The Battle Plans)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2987": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2987 (Gordunni Cobalt)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4135": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4135 (The Writhing Deep)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:4265": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4265 (Freed from the Hive)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5143": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5143 (Tribal Leatherworking)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7441": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7441 (Pusillin and the Elder Azj'Tordin)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

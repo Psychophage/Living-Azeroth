@@ -5540,7 +5540,553 @@
     }
   ],
   "place": "Azuremyst Isle",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3524",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3524",
+        "dbc:area:3527",
+        "dbc:area:3573",
+        "dbc:area:3576",
+        "dbc:area:3580",
+        "world:creature:17190",
+        "world:creature:17203",
+        "world:creature:17591"
+      ],
+      "text": "You are in Azuremyst Isle, Alliance land on the continent of Kalimdor. Its settlements are Azure Watch, Odesyus' Landing, Wildwind Peak and the Crash Site, where the draenei ship came down, and the Alliance keeps them all. Murlocs haunt the waters, nightstalkers roam the woods, and blood elf bandits are a menace in the wilds.",
+      "when": {
+        "zone_id": 3524
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3526",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3526",
+        "world:creature:16475",
+        "world:creature:16546",
+        "world:creature:16521",
+        "world:creature:16483",
+        "world:creature:6491"
+      ],
+      "text": "You are in Ammen Vale, a valley around the draenei crash site on Azuremyst Isle. Survivors of the Exodar crash gather here, and wounded draenei ask for help. Blood elf scouts guard Shadow Ridge and threaten survivors who try to leave the valley. A spirit healer can return the dead to life for a price.",
+      "when": {
+        "area_id": 3526
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3527",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3527",
+        "world:creature:16477",
+        "world:creature:16502",
+        "world:creature:16500",
+        "world:creature:16535"
+      ],
+      "text": "You are in the Crash Site, the draenei camp in the wreckage of the ship, where survivors of Ammen Vale gather. Proenitus coordinates their care, and Zalduun tends the wounded in the central chamber. Draenei trainers teach magic, arms and faith here, and a vendor and repairs are available. Vindicator Aldar helps direct the response to the blood elf scouting party.",
+      "when": {
+        "area_id": 3527
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3528",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3528",
+        "world:creature:16514"
+      ],
+      "text": "You are in Silverline Lake, a lake in Ammen Vale fouled by contamination from the crash wreckage. Botanist Taerix is working on a treatment for the lake and sends help to spread his neutralizing agent.",
+      "when": {
+        "area_id": 3528
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3529",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3529",
+        "world:creature:16518",
+        "world:creature:16537"
+      ],
+      "text": "You are in Nestlewood Thicket, a wooded stretch of Ammen Vale where owlkin live. Some owlkin have been inoculated against the crystal's effects and act strangely, while mutated owlkin have turned hostile and are a danger here.",
+      "when": {
+        "area_id": 3529
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3530",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3530",
+        "world:creature:16521",
+        "world:creature:16522"
+      ],
+      "text": "You are in Shadow Ridge, a ridge in Ammen Vale patrolled by blood elf scouts. Surveyor Candress directs the scouting party here. The scouts threaten intruders and vow that survivors will not leave the valley.",
+      "when": {
+        "area_id": 3530
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3560",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3560",
+        "world:creature:16517",
+        "world:creature:16516",
+        "world:creature:16483"
+      ],
+      "text": "You are in Ammen Fields, a part of Ammen Vale where irradiated land has mutated the plants and creatures. Mutated root lashers and volatile mutations live here, and Botanist Taerix wants the volatile ones culled while he seeks a way to help them. Draenei survivors exposed to the crystals wander here and ask for help.",
+      "when": {
+        "area_id": 3560
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3561",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3561",
+        "world:creature:17087",
+        "world:creature:17179",
+        "world:quest:9450"
+      ],
+      "text": "You are in The Sacred Grove, a grove in Ammen Vale where the Spirit of the Vale speaks of earth's steadiness. The spirit is wary of the draenei, whose arrival angered the earth spirits. Restless spirits of earth are a danger in the grove.",
+      "when": {
+        "area_id": 3561
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3564",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3564",
+        "world:creature:17205",
+        "world:creature:17220"
+      ],
+      "text": "You are in Emberglade, a glade on Azuremyst Isle where fire elementals gather. Temper, a powerful fire elemental, opposes his deranged brother Hauteur, who has been reborn and wants to burn brighter than before.",
+      "when": {
+        "area_id": 3564
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3566",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3566",
+        "world:creature:17186",
+        "world:creature:17188",
+        "world:creature:17187"
+      ],
+      "text": "You are in Moonwing Den, a den of owlbeasts on Azuremyst Isle. Deranged, raving and aberrant owlbeasts make the den dangerous.",
+      "when": {
+        "area_id": 3566
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3567",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3567",
+        "world:creature:17201",
+        "world:creature:17196",
+        "world:creature:17202",
+        "world:creature:17591"
+      ],
+      "text": "You are in Pod Cluster on Azuremyst Isle. Moongraze bucks and root trappers live here, while infected nightstalker runts and blood elf bandits make the area dangerous.",
+      "when": {
+        "area_id": 3567
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3568",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3568",
+        "world:creature:17200",
+        "world:creature:17196",
+        "world:creature:17591"
+      ],
+      "text": "You are in Pod Wreckage on Azuremyst Isle. Wild Moongraze stags and root trappers live here, and blood elf bandits are a danger.",
+      "when": {
+        "area_id": 3568
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3570",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3570",
+        "world:creature:17193",
+        "world:creature:17195",
+        "world:creature:17194",
+        "world:creature:17196",
+        "world:creature:17200"
+      ],
+      "text": "You are in Wrathscale Point, a bare stretch of Azuremyst Isle with no settlements. Wrathscale nagas, sirens and myrmidons are the danger here, and root trappers and moongraze stags are the only other creatures about.",
+      "when": {
+        "area_id": 3570
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3571",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3571",
+        "world:creature:17364",
+        "world:creature:17375",
+        "world:creature:17184",
+        "world:creature:17185",
+        "world:creature:17183",
+        "world:creature:17591",
+        "world:quest:9544"
+      ],
+      "text": "You are in Bristlelimb Village, a furbolg settlement on Azuremyst Isle that is home to the Bristlelimb tribe. Bristlelimb windcallers, ursas and furbolgs are hostile, and blood elf bandits are about too. Stillpine captives are caged here, and a carved totem recounts the war between the two tribes.",
+      "when": {
+        "area_id": 3571
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3572",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3572",
+        "world:creature:17440",
+        "world:creature:17441",
+        "world:creature:17442",
+        "world:creature:17438",
+        "world:quest:9562",
+        "world:quest:9570"
+      ],
+      "text": "You are in Stillpine Hold, a furbolg stronghold on Azuremyst Isle kept by the Stillpine tribe, which sides with the Alliance. High Chief Stillpine leads his people through a crisis of corrupted wildkin, and Moordo and Gurf teach crafts here. Siltfin murlocs have raided the food stores, and a beast called the Kurken is feared.",
+      "when": {
+        "area_id": 3572
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3573",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3573",
+        "world:creature:17240",
+        "world:creature:17243",
+        "world:quest:9506"
+      ],
+      "text": "You are in Odesyus' Landing, the camp of a stranded Alliance naval expedition on Azuremyst Isle, under Admiral Odesyus. Engineer Spark Overgrind, a gnome spy who betrayed the Alliance and works for Kael'thas, is among those here. Goblins stole the ships' navigation gear and fled into the thicket to the east, and the camp offers a cook, a smith, a tailor and goods traders.",
+      "when": {
+        "area_id": 3573
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3575",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3575",
+        "world:creature:17190",
+        "world:creature:17191",
+        "world:creature:17192",
+        "world:creature:17197",
+        "world:creature:17475",
+        "world:creature:17612"
+      ],
+      "text": "You are in Silting Shore, a stretch of Azuremyst Isle where Siltfin murlocs hunt along the water. Siltfin murlocs, oracles and hunters are the main threat, with root threshers, a murgurgula and a Quel'dorei magewraith also about.",
+      "when": {
+        "area_id": 3575
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3576",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3576",
+        "world:creature:17110",
+        "world:creature:17212",
+        "world:creature:17214",
+        "world:creature:17114"
+      ],
+      "text": "You are in Azure Watch, a draenei settlement on Azuremyst Isle held by the Alliance. It has an inn, a stable, repairs, and trainers in arms, magic, healing and crafts. Many injured draenei are here and supplies are scarce, the healer Fateema warns, while Acteon sends hunters after moongraze stags.",
+      "when": {
+        "area_id": 3576
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3577",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3577",
+        "world:creature:17278",
+        "world:creature:17279",
+        "world:creature:17372",
+        "world:quest:9531"
+      ],
+      "text": "You are in Geezle's Camp, a goblin camp on Azuremyst Isle under the goblin leader Geezle, who plots with a traitor in the Alliance ranks. Venture Company saboteurs and gemologists are the danger here, and timberstrider fledglings wander about.",
+      "when": {
+        "area_id": 3577
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3578",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3578",
+        "world:creature:17199",
+        "world:creature:17591"
+      ],
+      "text": "You are in Menagerie Wreckage, a wreck on Azuremyst Isle. Ravager specimens are the main danger here in great numbers, and blood elf bandits also prowl the wreck.",
+      "when": {
+        "area_id": 3578
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3580",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3580",
+        "world:creature:17431",
+        "world:creature:17435"
+      ],
+      "text": "You are in Wildwind Peak, a settlement on a mountain peak of Azuremyst Isle, held by the Alliance. Shamans come here to learn the elements, from air taught by Velaada to the air spirit Susurrus. It also has an inn, a bank, a battlemaster, and trainers in many crafts and arts.",
+      "when": {
+        "area_id": 3580
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3581",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3581",
+        "world:quest:9552",
+        "world:creature:17204",
+        "world:creature:17219",
+        "world:creature:16708"
+      ],
+      "text": "You are in Wildwind Path, the route up the north face of the mountain the Exodar crashed into on Azuremyst Isle. Shaman trainers Farseer Nobundo and Sulaa teach here, and Dekin sells fishing supplies.",
+      "when": {
+        "area_id": 3581
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3639",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3639",
+        "world:creature:17187",
+        "world:creature:17188",
+        "world:creature:17186",
+        "world:creature:17612"
+      ],
+      "text": "You are in Silvermyst Isle, an island where owlbeasts hunt. Aberrant, raving and deranged owlbeasts are the danger here, and a Quel'dorei magewraith also haunts the isle.",
+      "when": {
+        "area_id": 3639
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3857",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3857",
+        "world:creature:17101",
+        "world:quest:9452"
+      ],
+      "text": "You are in Ammen Ford, a river crossing on Azuremyst Isle where draenei fish for red snapper. Diktynna gives fishing instruction and keeps supplies, but a murloc attack injured her while she was netting and she can no longer fish.",
+      "when": {
+        "area_id": 3857
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3916",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3916",
+        "world:creature:17361",
+        "world:creature:17551",
+        "world:creature:17202",
+        "world:creature:17373",
+        "world:creature:17372",
+        "dbc:area:3576"
+      ],
+      "text": "You are in Moongraze Woods, a wooded part of Azuremyst Isle in Kalimdor, on Alliance land. Wild Moongraze stags and bucks roam the trees, and a carved furbolg totem stands here with markings that read as Coo. Tavara, an herbalist who left Azure Watch, has gone searching for herbs near the hot springs. Infected nightstalker runts and timberstriders prowl the woods.",
+      "when": {
+        "area_id": 3916
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3524": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3524 (Azuremyst Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3526": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3526 (Ammen Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3527": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3527 (Crash Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3528": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3528 (Silverline Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3529": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3529 (Nestlewood Thicket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3530": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3530 (Shadow Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3560": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3560 (Ammen Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3561": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3561 (The Sacred Grove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3564": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3564 (Emberglade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3566": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3566 (Moonwing Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3567": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3567 (Pod Cluster)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3568": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3568 (Pod Wreckage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3570": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3570 (Wrathscale Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3571": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3571 (Bristlelimb Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3572": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3572 (Stillpine Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3573": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3573 (Odesyus' Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3575": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3575 (Silting Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3576": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3576 (Azure Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3577": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3577 (Geezle's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3578": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3578 (Menagerie Wreckage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3580": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3580 (Wildwind Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3581": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3581 (Wildwind Path)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3639": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3639 (Silvermyst Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3857": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3857 (Ammen Ford)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3916": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3916 (Moongraze Woods)",
+      "revision": "3.3.5a client data"
+    },
     "source:001c10e9d713459cd3b391cf": {
       "kind": "research",
       "reference": "evidence:sha256:8743f3265b584bc49a520d10a7538725d2a40e2d0011551ff59d5440a27f5d1c",
@@ -9980,6 +10526,371 @@
       "kind": "research",
       "reference": "evidence:sha256:5bb58c88f31de6a87e0e3380980a1797d43862fc31a4c0c4493f847fa381303b",
       "revision": "2e99a70ec246f9c39514d3ab5a81c29d12c6f9fa1bdc728aa8b10e507cb31812"
+    },
+    "world:creature:16475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16475 (Megelon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16477 (Proenitus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16483": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16483 (Draenei Survivor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16500 (Valaatu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16502 (Zalduun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16514": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16514 (Botanist Taerix), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16516 (Volatile Mutation), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16517": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16517 (Mutated Root Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16518 (Nestlewood Owlkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16521": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16521 (Blood Elf Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16522 (Surveyor Candress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16535": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16535 (Vindicator Aldar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16537": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16537 (Mutated Owlkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16546 (Tolaan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16708": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16708 (Dekin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17087 (Spirit of the Vale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17101": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17101 (Diktynna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17110 (Acteon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17114 (Arugoo of the Stillpine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17179 (Restless Spirit of Earth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17183": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17183 (Bristlelimb Furbolg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17184": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17184 (Bristlelimb Windcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17185": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17185 (Bristlelimb Ursa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17186 (Deranged Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17187 (Aberrant Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17188": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17188 (Raving Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17190 (Siltfin Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17191": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17191 (Siltfin Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17192 (Siltfin Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17193": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17193 (Wrathscale Naga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17194 (Wrathscale Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17195": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17195 (Wrathscale Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17196 (Root Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17197 (Root Thresher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17199 (Ravager Specimen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17200 (Moongraze Stag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17201 (Moongraze Buck), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17202 (Infected Nightstalker Runt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17203 (Nightstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17204 (Farseer Nobundo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17205": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17205 (Temper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17212 (Tuluun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17214 (Anchorite Fateema), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17219": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17219 (Sulaa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17220 (Hauteur Reborn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17240 (Admiral Odesyus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17243": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17243 (Engineer \"Spark\" Overgrind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17278 (Venture Co. Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17279 (Venture Co. Gemologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17361 (Totem of Coo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17364": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17364 (Totem of Vark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17372 (Timberstrider Fledgling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17373 (Timberstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17375 (Stillpine Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17431 (Velaada), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17435 (Susurrus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17438 (Crazed Wildkin Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17440 (High Chief Stillpine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17441": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17441 (Gurf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17442": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17442 (Moordo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17475 (Murgurgula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17551": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17551 (Tavara), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17591": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17591 (Blood Elf Bandit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17612": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17612 (Quel'dorei Magewraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9450": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9450 (Call of Earth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9452": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9452 (Red Snapper - Very Tasty!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9506": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9506 (A Small Start)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9531": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9531 (Tree's Company)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9544": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9544 (The Prophecy of Akida)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9552": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9552 (Call of Air)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9562": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9562 (Murlocs... Why Here? Why Now?)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9570": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9570 (The Kurken is Lurkin')",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -9337,7 +9337,535 @@
     }
   ],
   "place": "Tirisfal Glades",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:85",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:85",
+        "dbc:area:152",
+        "dbc:area:153",
+        "dbc:area:154",
+        "dbc:area:159",
+        "world:quest:356",
+        "world:quest:365",
+        "world:creature:1548"
+      ],
+      "text": "You are in Tirisfal Glades, Horde land in the Eastern Kingdoms. Its main settlements are Brill, Deathknell, the Ruins of Lordaeron and the Bulwark, all held by the Horde, and the Bulwark guards the border with the Plaguelands. Scourge slip past its defenders now and then, Scarlet Crusade patrols press in from the north, and darkhounds roam the countryside.",
+      "when": {
+        "zone_id": 85
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:152",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:152",
+        "world:creature:10837",
+        "world:creature:11055",
+        "world:creature:10839",
+        "world:creature:10856",
+        "dbc:taxi:384"
+      ],
+      "text": "You are in The Bulwark, a Horde outpost on the edge of the Western Plaguelands. High Executor Derrington commands the Horde's operations here and directs the campaign against the Scourge in Andorhal, while Shadow Priestess Vandis works to subvert the Plaguelands cauldrons and turn their plague against the Scourge. Argent Dawn officers and quartermasters, who welcome both Horde and Alliance as allies, are posted here too.",
+      "when": {
+        "area_id": 152
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:153",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:153",
+        "world:creature:4568",
+        "world:quest:1885",
+        "world:quest:1978",
+        "dbc:taxi:11"
+      ],
+      "text": "You are in the Ruins of Lordaeron, where the Undercity of the Forsaken stands. In its Magic Quarter Anastasia Hartwell studies how far the Plaguelands' taint has spread into Tirisfal, and she investigates a magical disturbance in the city. Mennet Carkad is in the Rogues' Quarter, and Lord Varimathras is in the Hall of the Dark Lady.",
+      "when": {
+        "area_id": 153
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:154",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:154",
+        "world:creature:1569",
+        "world:quest:364",
+        "world:creature:1570",
+        "world:creature:1740"
+      ],
+      "text": "You are in Deathknell, a Forsaken village in Tirisfal Glades. Shadow Priest Sarvis directs new Forsaken against the Mindless Ones, which have overrun the north side of the village, and Executor Arren watches the Scarlet Crusade, which he calls a danger to all undead. Deathguard Saltain sends the newly risen to search the stacked boxes for gear.",
+      "when": {
+        "area_id": 154
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:155",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:155",
+        "world:creature:1504",
+        "world:creature:1505"
+      ],
+      "text": "You are in Night Web's Hollow, a spider-infested stretch around a gold mine northwest of the Forsaken village. The Night Web spiders there keep the Forsaken from getting the mine's gold.",
+      "when": {
+        "area_id": 155
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:156",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:156",
+        "world:creature:1535",
+        "world:creature:1935",
+        "world:creature:1936"
+      ],
+      "text": "You are in Solliden Farmstead, a farm in Tirisfal Glades. Scarlet Warriors and hostile farmhands threaten it, and Farmer Solliden himself is among the dangers.",
+      "when": {
+        "area_id": 156
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:157",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:157",
+        "world:creature:1496",
+        "world:creature:1522",
+        "world:creature:1523",
+        "world:creature:1520",
+        "world:creature:1530",
+        "world:creature:1534"
+      ],
+      "text": "You are in Agamand Mills, a place near Brill that Deathguard Dillinger fears the Scourge will use as a foothold for attacks into Tirisfal. Darkeye Bonecasters, Cracked Skull Soldiers and Rattlecage Soldiers are its main dangers, along with rotting and wailing ancestors.",
+      "when": {
+        "area_id": 157
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:159",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:159",
+        "world:creature:1515",
+        "world:creature:1499",
+        "world:quest:5482",
+        "world:creature:1525"
+      ],
+      "text": "You are in Brill, a Horde town in Tirisfal Glades. Executor Zygand directs the Forsaken campaign against the Scarlet Crusade from here, and Magistrate Sevren wants reports on Scourge crossing the border. Gnolls roam the area north of Brill's graveyard, near the mass gravesite, and rotting dead wander the outskirts.",
+      "when": {
+        "area_id": 159
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:160",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:160",
+        "world:creature:4282",
+        "world:creature:4281",
+        "world:creature:4283",
+        "world:creature:4284",
+        "world:creature:4285"
+      ],
+      "text": "You are in Whispering Gardens, in Tirisfal Glades. Scarlet Crusade magicians, scouts, sentries, augurs and disciples are the dangers here.",
+      "when": {
+        "area_id": 160
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:161",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:161",
+        "world:creature:4280",
+        "world:creature:4282",
+        "world:creature:4281",
+        "world:creature:4283"
+      ],
+      "text": "You are in Terrace of Repose, in Tirisfal Glades. Scarlet Magicians, scouts and preservers are the dangers here, along with sentries, augurs and disciples.",
+      "when": {
+        "area_id": 161
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:162",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:162",
+        "world:creature:5690",
+        "world:creature:1548",
+        "world:creature:1554",
+        "world:creature:1528"
+      ],
+      "text": "You are in Brightwater Lake, in Tirisfal Glades, where Clyde Kellen teaches fishing. Cursed darkhounds, vampiric duskbats and shambling horrors haunt the lake.",
+      "when": {
+        "area_id": 162
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:163",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:163",
+        "world:creature:1497",
+        "world:creature:1527",
+        "world:creature:1528",
+        "world:quest:409"
+      ],
+      "text": "You are in Gunther's Retreat, an island that is home to Gunther Arcanus, a free-willed Forsaken necromancer. Hungering dead and shambling horrors roam it, and Gunther is wary of strangers until they prove they oppose the Scourge. A Scourge agent, Lillith Nefara, uses an altar off the island's southern coast.",
+      "when": {
+        "area_id": 163
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:164",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:164",
+        "world:creature:1674",
+        "world:creature:1675",
+        "world:creature:1941",
+        "world:creature:1753"
+      ],
+      "text": "You are in Garren's Haunt, in Tirisfal Glades. Rot Hide gnolls and mongrels roam it, and Rot Hide graverobbers and a maggot eye are among its dangers.",
+      "when": {
+        "area_id": 164
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:165",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:165",
+        "world:creature:1529",
+        "world:creature:1532",
+        "world:creature:1554",
+        "world:creature:1548",
+        "world:creature:10358"
+      ],
+      "text": "You are in Balnir Farmstead, a farmstead in Tirisfal Glades. Bleeding horrors and wandering spirits haunt its fields, and vampiric duskbats and cursed darkhounds range through it. Fellicent's Shade still walks here.",
+      "when": {
+        "area_id": 165
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:166",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:166",
+        "world:creature:3522",
+        "world:creature:3523",
+        "world:creature:1525",
+        "world:creature:1526"
+      ],
+      "text": "You are in Cold Hearth Manor, a Horde settlement in Tirisfal Glades. Constance Brisboise, an apprentice clothier, sells goods here, and Bowen Brisboise teaches tailoring. Rotting dead and ravaged corpses still shamble through its grounds.",
+      "when": {
+        "area_id": 166
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:167",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:167",
+        "world:creature:1537",
+        "world:creature:1538",
+        "world:creature:1548",
+        "world:creature:1554",
+        "world:creature:1664"
+      ],
+      "text": "You are in Crusader Outpost in Tirisfal Glades. Scarlet zealots and friars, cursed darkhounds and vampiric duskbats trouble the outpost, and Captain Vachon is the most notable of its enemies.",
+      "when": {
+        "area_id": 167
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:168",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:168",
+        "world:creature:1545",
+        "world:creature:1544",
+        "world:creature:1543",
+        "world:creature:1548",
+        "world:creature:1911"
+      ],
+      "text": "You are in The North Coast, a stretch of shore in Tirisfal Glades. Vile fin muckdwellers, minor oracles and puddlejumpers crowd its shore, while cursed darkhounds and vampiric duskbats roam the sand. Deeb is a hostile figure here.",
+      "when": {
+        "area_id": 168
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:169",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:169",
+        "world:creature:1544",
+        "world:creature:1545",
+        "world:creature:1543",
+        "world:creature:1547",
+        "world:creature:1910",
+        "world:creature:5435"
+      ],
+      "text": "You are in Whispering Shore, a shore in Tirisfal Glades. Vile fin oracles, muckdwellers and puddlejumpers haunt it, along with decrepit darkhounds, and sand sharks swim its waters. Muad is a hostile figure here.",
+      "when": {
+        "area_id": 169
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:173",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:173",
+        "world:creature:6491"
+      ],
+      "text": "You are in Faol's Rest, a place in Tirisfal Glades where a spirit healer offers a return to the living, presented as a choice.",
+      "when": {
+        "area_id": 173
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:459",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:459",
+        "world:creature:1540",
+        "world:creature:1539",
+        "world:creature:1538",
+        "world:creature:1660",
+        "world:creature:1548",
+        "world:creature:1554"
+      ],
+      "text": "You are in Scarlet Watch Post, a post in Tirisfal Glades. Scarlet vanguards and neophytes stand watch, with scarlet friars and bodyguards, and cursed darkhounds and vampiric duskbats prowl around it.",
+      "when": {
+        "area_id": 459
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:810",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:810",
+        "world:creature:1526",
+        "world:creature:1525",
+        "world:creature:1548",
+        "world:creature:1547"
+      ],
+      "text": "You are in Stillwater Pond, a pond in Tirisfal Glades. Ravaged corpses and rotting dead wander its banks, and cursed and decrepit darkhounds hunt there.",
+      "when": {
+        "area_id": 810
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:811",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:811",
+        "world:creature:1548",
+        "world:creature:1547",
+        "world:creature:1554",
+        "world:creature:1536",
+        "world:creature:10357"
+      ],
+      "text": "You are in Nightmare Vale, a vale in Tirisfal Glades. Cursed and decrepit darkhounds, vampiric duskbats and scarlet missionaries roam it, and Ressan the Needler is a hostile figure here.",
+      "when": {
+        "area_id": 811
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:812",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:812",
+        "world:creature:13158",
+        "world:creature:1555",
+        "world:creature:1549",
+        "world:creature:1554",
+        "world:creature:1537"
+      ],
+      "text": "You are in Venomweb Vale, a vale in Tirisfal Glades. Vicious night web spiders and ravenous darkhounds fill it, with vampiric duskbats, scarlet zealots and friars among its dangers. Lieutenant Sanders serves here as a lieutenant.",
+      "when": {
+        "area_id": 812
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:152": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 152 (The Bulwark)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:153": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 153 (Ruins of Lordaeron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:154": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 154 (Deathknell)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:155": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 155 (Night Web's Hollow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:156": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 156 (Solliden Farmstead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:157": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 157 (Agamand Mills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:159": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 159 (Brill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:160": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 160 (Whispering Gardens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:161": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 161 (Terrace of Repose)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:162": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 162 (Brightwater Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:163": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 163 (Gunther's Retreat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:164": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 164 (Garren's Haunt)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:165": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 165 (Balnir Farmstead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:166": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 166 (Cold Hearth Manor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:167": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 167 (Crusader Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:168": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 168 (The North Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:169": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 169 (Whispering Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:173": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 173 (Faol's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:459": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 459 (Scarlet Watch Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:810": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 810 (Stillwater Pond)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:811": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 811 (Nightmare Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:812": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 812 (Venomweb Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:85": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 85 (Tirisfal Glades)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:11": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 11 (Undercity, Tirisfal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:384": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 384 (The Bulwark, Tirisfal)",
+      "revision": "3.3.5a client data"
+    },
     "source:0015bc1e6e8a7e27fb2cd727": {
       "kind": "research",
       "reference": "evidence:sha256:a6b837f77b4ffa1a8c943b369d6ee139c156189b85dce0667445419321314bba",
@@ -16567,6 +17095,356 @@
       "kind": "research",
       "reference": "evidence:sha256:41bf62fdcd7f03a5ea203b9f0904b20c473a57b8e7e45840a97189d7d3573eaa",
       "revision": "6b27dc234f9c69d21250b949d18e1248639aa59396034e4267b05bdb9fb7ebef"
+    },
+    "world:creature:10357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10357 (Ressan the Needler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10358 (Fellicent's Shade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10837": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10837 (High Executor Derrington), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10839 (Argent Officer Garush), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10856 (Argent Quartermaster Hasana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11055": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11055 (Shadow Priestess Vandis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13158 (Lieutenant Sanders), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1496": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1496 (Deathguard Dillinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1497 (Gunther Arcanus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1499": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1499 (Magistrate Sevren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1504 (Young Night Web Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1505 (Night Web Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1515": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1515 (Executor Zygand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1520 (Rattlecage Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1522 (Darkeye Bonecaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1523 (Cracked Skull Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1525 (Rotting Dead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1526": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1526 (Ravaged Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1527": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1527 (Hungering Dead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1528": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1528 (Shambling Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1529": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1529 (Bleeding Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1530": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1530 (Rotting Ancestor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1532 (Wandering Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1534 (Wailing Ancestor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1535": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1535 (Scarlet Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1536": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1536 (Scarlet Missionary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1537": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1537 (Scarlet Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1538": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1538 (Scarlet Friar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1539": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1539 (Scarlet Neophyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1540": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1540 (Scarlet Vanguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1543": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1543 (Vile Fin Puddlejumper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1544": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1544 (Vile Fin Minor Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1545": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1545 (Vile Fin Muckdweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1547": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1547 (Decrepit Darkhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1548 (Cursed Darkhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1549": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1549 (Ravenous Darkhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1554 (Vampiric Duskbat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1555 (Vicious Night Web Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1569": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1569 (Shadow Priest Sarvis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1570 (Executor Arren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1660 (Scarlet Bodyguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1664 (Captain Vachon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1674 (Rot Hide Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1675": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1675 (Rot Hide Mongrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1740 (Deathguard Saltain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1753": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1753 (Maggot Eye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1910": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1910 (Muad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1911": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1911 (Deeb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1935": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1935 (Tirisfal Farmhand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1936": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1936 (Farmer Solliden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1941 (Rot Hide Graverobber), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3522 (Constance Brisboise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3523 (Bowen Brisboise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4280 (Scarlet Preserver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4281": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4281 (Scarlet Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4282": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4282 (Scarlet Magician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4283 (Scarlet Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4284 (Scarlet Augur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4285 (Scarlet Disciple), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4568 (Anastasia Hartwell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5435 (Sand Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5690 (Clyde Kellen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1885": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1885 (Mennet Carkad)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1978": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1978 (The Deathstalkers)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:356": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 356 (Rear Guard Patrol)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:364": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 364 (The Mindless Ones)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:365": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 365 (Fields of Grief)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:409": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 409 (Proving Allegiance)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5482": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5482 (Doom Weed)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

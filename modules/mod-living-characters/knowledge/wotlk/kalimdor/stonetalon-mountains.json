@@ -2492,7 +2492,389 @@
     }
   ],
   "place": "Stonetalon Mountains",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:406",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:406",
+        "dbc:area:460",
+        "dbc:area:467",
+        "dbc:area:461",
+        "world:creature:4022",
+        "world:creature:4012",
+        "world:creature:3989"
+      ],
+      "text": "You are in Stonetalon Mountains, contested land in Kalimdor where both the Alliance and the Horde hold settlements. The Horde keeps Sun Rock Retreat, the Alliance keeps Stonetalon Peak, and Windshear Crag belongs to neither side. Bloodfury harpies, pridewing wyverns and basilisks roam the mountains, and Venture Company goblins log and dig at Windshear Crag.",
+      "when": {
+        "zone_id": 406
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:460",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:460",
+        "dbc:taxi:29",
+        "world:creature:7731",
+        "world:creature:11860",
+        "world:creature:11861",
+        "world:creature:11862"
+      ],
+      "text": "You are in Sun Rock Retreat, a Horde settlement in the Stonetalon Mountains. Its inn and flight master serve travelers, and Maggran Earthbinder, a veteran Tauren protector, watches the Bloodfuries' growing threat from here. Mor'rogal, a Tauren shaman, studies the danger beneath the mountains, and Tsunaman of the Tribunal of the Tides wages war on the fire elementals of the Charred Vale.",
+      "when": {
+        "area_id": 460
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:461",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:461",
+        "world:creature:4276",
+        "world:creature:4201",
+        "world:quest:1090",
+        "world:creature:3999",
+        "world:creature:3989"
+      ],
+      "text": "You are in Windshear Crag, a Venture Company mining site in the Stonetalon Mountains that neither side holds. Venture Co. loggers, diggers and operators work its mines and lumber mill. Piznik, a demoted miner, secretly gathers information for Ziz Fizziks, a gnome engineer expelled from the company.",
+      "when": {
+        "area_id": 461
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:463",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:463",
+        "world:creature:4085",
+        "world:creature:4202",
+        "world:quest:1096",
+        "world:creature:3992",
+        "world:creature:4070"
+      ],
+      "text": "You are in Cragpool Lake, a Venture Company works site in the Stonetalon Mountains that neither side holds. Venture Co. engineers, machine smiths and builders work beside the lake under Gerenzo Wrenchwhistle, who watches over the entire site from high above the lake near a water wheel. Nizzik, a Venture armor salesman, sells armor and repairs equipment.",
+      "when": {
+        "area_id": 463
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:464",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:464",
+        "world:creature:6491",
+        "world:creature:4012",
+        "world:creature:6141",
+        "world:creature:4044",
+        "world:creature:4009",
+        "world:creature:4007"
+      ],
+      "text": "You are in Mirkfallon Lake, in the Stonetalon Mountains, where a spirit healer offers a return to life for a price. Pridewing wyverns and soarers, blackened basilisks, raging cliff stormers and deepmoss venomspitters are found around its shores. Antlered coursers charge when attacked.",
+      "when": {
+        "area_id": 464
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:465",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:465",
+        "world:quest:1057",
+        "world:creature:4080",
+        "world:quest:6393",
+        "world:creature:4022",
+        "world:creature:4026",
+        "world:creature:4041"
+      ],
+      "text": "You are in the Charred Vale, a scorched valley in the Stonetalon Mountains that the Venture Company's machines set afire. Bloodfury harpies and windcallers hold its ground, and scorched basilisks lurk nearby. Fire elementals and corrupted treants still threaten the land.",
+      "when": {
+        "area_id": 465
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:467",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:467",
+        "dbc:taxi:33",
+        "world:creature:3994",
+        "world:creature:4407",
+        "world:creature:4020",
+        "world:creature:4067",
+        "world:creature:4016"
+      ],
+      "text": "You are in Stonetalon Peak, an Alliance settlement in the Stonetalon Mountains. Keeper Albagorm, a protector of the forest spirits, is alarmed by the ruin of the Charred Vale and the Bloodfury harpies blocking efforts to restore it. Teloren, a hippogryph master, arranges flights from here. Sap beasts, twilight runners and fey dragons roam the slopes nearby.",
+      "when": {
+        "area_id": 467
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:468",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:468",
+        "world:creature:4052",
+        "world:creature:4409",
+        "world:creature:8518",
+        "world:creature:4067",
+        "world:creature:4020"
+      ],
+      "text": "You are in the Talon Den, a place in the Stonetalon Mountains where Alliance druids and dryads are found. Gatekeeper Kordurus guards it with combat magic, and Rynthariel the Keymaster, a dryad, is said to lead it according to a Horde account. Twilight runners and sap beasts roam its approaches.",
+      "when": {
+        "area_id": 468
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:469",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:469",
+        "world:creature:4072",
+        "world:creature:11911",
+        "world:creature:11910",
+        "world:creature:11912",
+        "world:creature:11913",
+        "world:creature:4008"
+      ],
+      "text": "You are in Greatwood Vale, in the Stonetalon Mountains, where Grimtotem mercenaries, ruffians, brutes and sorcerers range the valley. Cliff stormers roam among them. An Alliance prisoner of Jin'Zil is held here.",
+      "when": {
+        "area_id": 469
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:636",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:636",
+        "world:creature:3989",
+        "world:creature:3991",
+        "world:creature:3988",
+        "world:creature:5931"
+      ],
+      "text": "You are in Blackwolf River, in the Stonetalon Mountains, where Venture Co. loggers, deforesters and operators are at work. A Venture Co. foreman rigger is among the goblins there.",
+      "when": {
+        "area_id": 636
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1076",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1076",
+        "world:creature:4077",
+        "world:creature:4080",
+        "world:creature:4005",
+        "world:creature:4007",
+        "world:creature:4008"
+      ],
+      "text": "You are in Webwinder Path, a path in the Stonetalon Mountains where Alliance people work. Gaxim Rustfizzle, a member of the Enlightened Assembly of Arcanology, Alchemy and Engineering Sciences, designs explosives and distractions, and Kaela Shadowspear, a Sentinel from Ashenvale, works with him. Deepmoss creepers, venomspitters and cliff stormers lurk here.",
+      "when": {
+        "area_id": 1076
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1277",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1277",
+        "world:creature:4489",
+        "world:creature:4006",
+        "world:creature:4011"
+      ],
+      "text": "You are in the Talondeep Path in the Stonetalon Mountains, where Horde people are found. Braug Dimspirit questions students sent by Dorn about The Legacy of the Aspects, and then points them on to Parqual Fintallas. Deepmoss webspinners and young pridewings are found here.",
+      "when": {
+        "area_id": 1277
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2537",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2537",
+        "world:creature:11856",
+        "world:creature:11912",
+        "world:creature:11913",
+        "world:creature:4008",
+        "world:creature:11858"
+      ],
+      "text": "You are in Grimtotem Post, a post in the Stonetalon Mountains where Grimtotem brutes and sorcerers roam, with cliff stormers and Grundig Darkcloud nearby. Kaya Flathoof, a Horde woman rescued from captivity, is eager to escape before her captors discover she is free. She worries her father, Makaba Flathoof, will be desperate to learn she is safe.",
+      "when": {
+        "area_id": 2537
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2539",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2539",
+        "world:creature:3995",
+        "world:creature:12816",
+        "world:creature:3411",
+        "world:creature:11821",
+        "world:quest:6461",
+        "world:quest:6542"
+      ],
+      "text": "You are in Malaka'jin, a Horde troll camp in Stonetalon Mountains, where the trolls live off the mountain hunting and a butcher and a vendor serve them. Witch Doctor Jin'Zil is here with his plans for three captured elves, and Xen'Zilla warns that spiders raid the camps at night to steal their game. Darn Talongrip recruits here for the Horde's new Ashenvale front.",
+      "when": {
+        "area_id": 2539
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2540",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2540",
+        "world:creature:11915",
+        "world:creature:11917",
+        "world:creature:11918",
+        "world:creature:4005",
+        "world:creature:4008"
+      ],
+      "text": "You are in Boulderslide Ravine, a ravine in Stonetalon Mountains. Gogger rock keepers, geomancers and stonepounders roam the ravine, along with Deepmoss creepers and cliff stormers.",
+      "when": {
+        "area_id": 2540
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2541",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2541",
+        "world:creature:4007",
+        "world:creature:4005",
+        "world:creature:4006",
+        "world:creature:11921"
+      ],
+      "text": "You are in Sishir Canyon, a canyon in Stonetalon Mountains. Deepmoss venomspitters, creepers and webspinners infest the canyon, and the creature Besseleth prowls it too.",
+      "when": {
+        "area_id": 2541
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1076": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1076 (Webwinder Path)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1277": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1277 (The Talondeep Path)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2537 (Grimtotem Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2539": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2539 (Malaka'jin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2540": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2540 (Boulderslide Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2541": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2541 (Sishir Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:406": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 406 (Stonetalon Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:460": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 460 (Sun Rock Retreat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:461": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 461 (Windshear Crag)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:463": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 463 (Cragpool Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:464": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 464 (Mirkfallon Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:465": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 465 (The Charred Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:467": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 467 (Stonetalon Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:468": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 468 (The Talon Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:469": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 469 (Greatwood Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:636": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 636 (Blackwolf River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:29": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 29 (Sun Rock Retreat, Stonetalon Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:33": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 33 (Stonetalon Peak, Stonetalon Mountains)",
+      "revision": "3.3.5a client data"
+    },
     "source:00ce542b20211e6ae719a66c": {
       "kind": "research",
       "reference": "evidence:sha256:9d2e9f17cfbfbb436466bb26b981a63ebce5bf27e8913c100751785b9152ae98",
@@ -4347,6 +4729,306 @@
       "kind": "research",
       "reference": "evidence:sha256:8d2df599e10f76d195966cc62bc237e69f2d9273b3f65f25ebb590e326170eb8",
       "revision": "e827756f0e1bcb177a439bd52f5ffa7d382642360122623eeb5b65d1cc2f699d"
+    },
+    "world:creature:11821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11821 (Darn Talongrip), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11856 (Kaya Flathoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11858 (Grundig Darkcloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11860 (Maggran Earthbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11861": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11861 (Mor'rogal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11862": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11862 (Tsunaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11910": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11910 (Grimtotem Ruffian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11911": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11911 (Grimtotem Mercenary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11912 (Grimtotem Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11913": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11913 (Grimtotem Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11915": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11915 (Gogger Rock Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11917 (Gogger Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11918": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11918 (Gogger Stonepounder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11921 (Besseleth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12816": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12816 (Xen'Zilla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3411": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3411 (Denni'ka), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3988": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3988 (Venture Co. Operator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3989": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3989 (Venture Co. Logger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3991 (Venture Co. Deforester), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3992": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3992 (Venture Co. Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3994": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3994 (Keeper Albagorm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3995": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3995 (Witch Doctor Jin'Zil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3999": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3999 (Windshear Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4005": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4005 (Deepmoss Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4006": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4006 (Deepmoss Webspinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4007 (Deepmoss Venomspitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4008": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4008 (Cliff Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4009": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4009 (Raging Cliff Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4011": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4011 (Young Pridewing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4012": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4012 (Pridewing Wyvern), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4016 (Fey Dragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4020 (Sap Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4022": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4022 (Bloodfury Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4026": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4026 (Bloodfury Windcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4041": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4041 (Scorched Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4044 (Blackened Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4052": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4052 (Cenarion Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4067": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4067 (Twilight Runner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4070": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4070 (Venture Co. Builder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4072": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4072 (Prisoner of Jin'Zil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4077 (Gaxim Rustfizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4080 (Kaela Shadowspear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4085": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4085 (Nizzik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4201 (Ziz Fizziks), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4202 (Gerenzo Wrenchwhistle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4276 (Piznik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4407 (Teloren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4409": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4409 (Gatekeeper Kordurus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4489": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4489 (Braug Dimspirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5931 (Foreman Rigger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6141": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6141 (Pridewing Soarer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7731 (Innkeeper Jayka), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8518 (Rynthariel the Keymaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1057": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1057 (Reclaiming the Charred Vale)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1090": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1090 (Gerenzo's Orders)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1096": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1096 (Gerenzo Wrenchwhistle)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6393": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6393 (Elemental War)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6461": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6461 (Blood Feeders)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6542": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6542 (Report to Kadrak)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

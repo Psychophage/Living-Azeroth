@@ -7396,7 +7396,1096 @@
     }
   ],
   "place": "Blade's Edge Mountains",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3522",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3522",
+        "dbc:area:3769",
+        "dbc:area:3844",
+        "dbc:area:3772",
+        "dbc:area:3918",
+        "dbc:area:3951",
+        "world:creature:19995",
+        "world:creature:19948"
+      ],
+      "text": "You are in Blade's Edge Mountains, contested land in Outland where both the Alliance and the Horde hold settlements. The Horde keeps Thunderlord Stronghold and Mok'Nathal Village, while the Alliance holds Sylvanaar, Toshley's Station and Evergrove. Bladespire and Bloodmaul ogre clans fight over the ravines and ridges between these camps, so the mountains stay dangerous.",
+      "when": {
+        "zone_id": 3522
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3767",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3767",
+        "world:creature:22489",
+        "world:creature:22044"
+      ],
+      "text": "You are in Blades' Run, a Horde tunnel post in Blade's Edge Mountains. Grunt Grahk keeps the post and wants the Cavern Crawlers in the tunnel cleared so that trade with Swamp Rat can flow. Cavern Crawlers still infest the passage.",
+      "when": {
+        "area_id": 3767
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3768",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3768",
+        "world:creature:21956",
+        "world:creature:20748",
+        "world:creature:21033",
+        "world:creature:21690"
+      ],
+      "text": "You are in Jagged Ridge, where Rema, the den mother, defends the southern edge from a tunnel. Thunderlord dire wolves are found here, and Bladewing bloodletters roam the ridge. The Alliance remote sentry R-3D0 gives loud, deliberately misleading warnings about Toshley's Station.",
+      "when": {
+        "area_id": 3768
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3769",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3769",
+        "world:quest:10486",
+        "world:creature:21950",
+        "world:creature:21147",
+        "world:creature:21117",
+        "world:creature:18953"
+      ],
+      "text": "You are in Thunderlord Stronghold, a Horde fortress in Blade's Edge Mountains that the Horde recently took back from ogres. Chieftain Garm Wolfbrother leads the Thunderlord clan here, and Tor'chunk Twoclaws urges attacks on the nearby ogre clans. Gor'drek directs efforts against bloodletters and Alliance defenses. Its inn and wind rider master, Unoke Tenderhoof, serve visitors.",
+      "when": {
+        "area_id": 3769
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3771",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3771",
+        "world:creature:21066",
+        "world:creature:20713",
+        "world:quest:10456",
+        "world:creature:21022",
+        "world:quest:10455"
+      ],
+      "text": "You are in The Living Grove, an Alliance grove beside Sylvanaar in Blade's Edge Mountains. Rina Moonspring tends it, using a nature-imbued bough to call treant defenders. Fey drakes pollinate the grove. Grovestalker lynxes have slipped out of control and now encroach on Sylvanaar.",
+      "when": {
+        "area_id": 3771
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3772",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3772",
+        "world:creature:21158",
+        "world:creature:21151",
+        "world:creature:21197",
+        "world:creature:21469",
+        "world:creature:18937"
+      ],
+      "text": "You are in Sylvanaar, an Alliance settlement in Blade's Edge Mountains. Commander Skyshadow speaks for it and warns that surrounding forces threaten it. Borgrim and Bronwyn Stouthammer of the Explorers' League are studying the mountains, and Daranelle studies arakkoa magic in Veil Lashh. Visitors find an inn and a hippogryph master.",
+      "when": {
+        "area_id": 3772
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3773",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3773",
+        "world:creature:19995",
+        "world:creature:19998",
+        "world:creature:20728",
+        "world:creature:21277",
+        "world:quest:10516",
+        "world:quest:10503"
+      ],
+      "text": "You are in Bladespire Hold, where Bladespire ogres keep their brutes, shamans and raptors. Vindicator Vuuleen is a captive here by choice, gathering information for Sylvanaar. She wants her sword and shield back from the Bladespire leaders who took them.",
+      "when": {
+        "area_id": 3773
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3774",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3774",
+        "world:creature:22268",
+        "world:creature:19997",
+        "world:creature:20729",
+        "world:creature:19996"
+      ],
+      "text": "You are in Gruul's Lair, a lair where Bladespire ogres keep a captive wyvern, Leokk, in a cage. Bladespire enforcers, ravagers and battlemages guard it, and a key and Spirit's Whistle are part of a plan to free him.",
+      "when": {
+        "area_id": 3774
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3775",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3775",
+        "world:creature:19856",
+        "world:creature:19858",
+        "world:creature:22103",
+        "world:creature:22941"
+      ],
+      "text": "You are in Circle of Blood, a neutral arena in Blade's Edge Mountains run by the Steamwheedle Fighting Circuit, where Steamwheedle Sam organizes bouts and Lefty Puddemup is the arena battlemaster. Baron Sablemane recruits help against the Bladespire ogres, and Mog'dorg the Wizened, a Bloodmaul ogre, seeks a home where ogres choose their own fate.",
+      "when": {
+        "area_id": 3775
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3776",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3776",
+        "world:creature:19948",
+        "world:creature:19952",
+        "world:creature:19991",
+        "world:creature:20058",
+        "world:creature:19957",
+        "world:quest:10511"
+      ],
+      "text": "You are in Bloodmaul Outpost, an ogre outpost in Blade's Edge Mountains. Bloodmaul skirmishers, geomancers, brutes and dire wolves hold it, and Bloodmaul brewmasters keep barrels of brutebane brew here.",
+      "when": {
+        "area_id": 3776
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3777",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3777",
+        "world:creature:19993",
+        "world:creature:19994",
+        "world:creature:20330",
+        "world:creature:18693"
+      ],
+      "text": "You are in Bloodmaul Camp, an ogre camp in Blade's Edge Mountains. Bloodmaul maulers and warlocks gather here, with battle worgs at their side, and Speaker Mar'grom is among its ogres.",
+      "when": {
+        "area_id": 3777
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3779",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3779",
+        "world:creature:19983",
+        "world:creature:19984",
+        "world:creature:21254",
+        "world:creature:21640"
+      ],
+      "text": "You are in Trogma's Claim, in Blade's Edge Mountains, where Vekh'nir stormcallers and dreadhawks hunt alongside Dullgrom dredgers. Trogma is among the foes here.",
+      "when": {
+        "area_id": 3779
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3780",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3780",
+        "world:creature:22108",
+        "world:creature:21637",
+        "world:creature:21382",
+        "world:creature:21383",
+        "world:creature:21497"
+      ],
+      "text": "You are in Blackwing Coven, in Blade's Edge Mountains, where the Wyrmcult raises its brood of blackwhelps. Wyrmcult scouts, zealots and acolytes lurk here, and a blackscale is among the threats.",
+      "when": {
+        "area_id": 3780
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3781",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3781",
+        "world:creature:22215",
+        "world:creature:6491",
+        "world:creature:22799",
+        "world:creature:21042",
+        "world:creature:19989",
+        "world:creature:20924",
+        "world:quest:10830"
+      ],
+      "text": "You are in Grishnath, a neutral ground in the Blade's Edge Mountains that neither side holds. A spirit healer here offers a return to the living for a price, and four prophecy shrines carry the Oracles of the Raven's messages to the arakkoa. Treebole, an ancient of lore, works to free the Raven's Wood trees from possession, while Grishna harbingers and basilisks roam the ground and dire ravens use a spell when wounded.",
+      "when": {
+        "area_id": 3781
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3782",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3782",
+        "world:creature:19945",
+        "world:creature:19944",
+        "world:creature:19943",
+        "world:creature:20113",
+        "world:quest:10556",
+        "world:creature:21023"
+      ],
+      "text": "You are in Veil Lashh, a part of the Blade's Edge Mountains where the Alliance keeps a small presence. Lashh'an windwalkers, wing guards and talonites roam here, and a Lashh'an matriarch is among them, while Lashh'an spell circles stand here with pictograms that remain confusing to those who read them. Stronglimb Deeproot, an ancient of war, is chief defender of the Living Grove south of Sylvanaar.",
+      "when": {
+        "area_id": 3782
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3783",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3783",
+        "world:creature:19982",
+        "world:creature:19984",
+        "world:creature:19983",
+        "world:creature:20161",
+        "world:creature:20214",
+        "world:creature:20747"
+      ],
+      "text": "You are in Veil Vekh, a stretch of the Blade's Edge Mountains that neither side keeps. Vekh'nir keeneyes, dreadhawks and stormcallers haunt the ground, a Vekh'nir matriarch among them, and arakkoa eggs lie about. Silkwing larvae change form as they are wounded.",
+      "when": {
+        "area_id": 3783
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3784",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3784",
+        "world:creature:19973",
+        "world:creature:22202",
+        "world:creature:22204",
+        "world:creature:22327",
+        "world:creature:22298",
+        "world:creature:22451"
+      ],
+      "text": "You are in Forge Camp: Terror, a camp of the Legion in the Blade's Edge Mountains. Abyssal flamebringers, nightmare imps and fear fiends fill its ground, along with terror-fire guardians and vile fire-souls. Legion fel cannons stand here among them.",
+      "when": {
+        "area_id": 3784
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3785",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3785",
+        "world:creature:20557",
+        "world:creature:22286",
+        "world:creature:22291",
+        "world:creature:22195",
+        "world:creature:21387",
+        "world:creature:23076"
+      ],
+      "text": "You are in Forge Camp: Wrath, a camp of the Legion in the Blade's Edge Mountains. Wrath hounds, fel ragers and furnace guards roam it, and wrath speakers and wyrmcult blackwhelps are found here too. Legion flak cannons are set up in the camp as well.",
+      "when": {
+        "area_id": 3785
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3786",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3786",
+        "world:creature:23233",
+        "world:creature:23316",
+        "world:creature:22264",
+        "world:creature:22266",
+        "world:creature:22270",
+        "world:creature:23110",
+        "world:quest:11057"
+      ],
+      "text": "You are in Ogri'la, a crystal-enhanced community of ogres in the Blade's Edge Mountains that seeks peace. Chu'a'lor, a two-headed ogre, speaks for it and studies the Apexis relics, while Torkus, a two-headed father, has ten sons who pester him to join the Sha'tari Skyguard. Its merchants sell smithing supplies, food, goods and drinks, but ogres down below remain enslaved by the Sons of Gruul.",
+      "when": {
+        "area_id": 3786
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3787",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3787",
+        "world:creature:16952",
+        "world:creature:19961",
+        "world:creature:19960",
+        "world:creature:21233",
+        "world:quest:10820"
+      ],
+      "text": "You are in Forge Camp: Anger, a camp of the Legion in the Blade's Edge Mountains. Anger guards, doomforge attendants and doomforge engineers hold its ground, with legion fel cannons among them. The camp has reportedly revolted against its commander.",
+      "when": {
+        "area_id": 3787
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3824",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3824",
+        "world:creature:21349",
+        "world:creature:19948",
+        "world:creature:19991",
+        "world:creature:19952",
+        "world:creature:19957",
+        "world:creature:20058",
+        "world:quest:10543"
+      ],
+      "text": "You are in Bloodmaul Ravine, a place in the Blade's Edge Mountains where the Horde keeps a presence. T'chali the Witch Doctor, a troll who taught the Bloodmaul to brew, was buried here by the Bloodmaul and still wants his hookah back and revenge on Grimnok and Korgaah. Bloodmaul skirmishers, brutes, geomancers and brewmasters roam the ravine, with dire wolves among them.",
+      "when": {
+        "area_id": 3824
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3826",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3826",
+        "world:creature:17855",
+        "world:creature:22410",
+        "world:creature:19993",
+        "world:creature:19994",
+        "world:creature:22160",
+        "world:creature:22384",
+        "world:creature:22130"
+      ],
+      "text": "You are in Daggermaw Canyon, neutral ground in the Blade's Edge Mountains where Expedition wardens and outriders keep order. Bloodmaul maulers, warlocks, taskmasters and soothsayers roam it. A black dragon whelp associated with Baron Sablemane is found here as well.",
+      "when": {
+        "area_id": 3826
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3827",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3827",
+        "world:creature:21839",
+        "world:creature:21840",
+        "world:creature:19983",
+        "world:creature:19984",
+        "world:creature:21254",
+        "world:creature:19979",
+        "world:creature:20747"
+      ],
+      "text": "You are in Vekhaar Stand, a stretch of the Blade's Edge Mountains that neither side keeps. Mature and cosmetic silkwings fill the ground, with Vekh'nir stormcallers and dreadhawks among them. Dullgrom dredgers and Deathforge technicians are found here too, and silkwing larvae change form as they are wounded.",
+      "when": {
+        "area_id": 3827
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3828",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3828",
+        "world:creature:21981",
+        "world:creature:21809",
+        "world:creature:21810",
+        "world:creature:19986",
+        "world:creature:21040"
+      ],
+      "text": "You are in Ruuan Weald, a part of the Blade's Edge Mountains where neither side keeps a settlement. Wyrmcult poachers and hewers roam its ground under Overseer Nuaar, who leads the wyrmcultists here and resents the Cenarion Expedition's objections to exploiting the region. Ruuan'ok skyfuries are dangerous, and outraged Raven's Wood saplings use a spell as their health falls.",
+      "when": {
+        "area_id": 3828
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3829",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3829",
+        "world:creature:19987",
+        "world:creature:19985",
+        "world:creature:19986",
+        "world:creature:20987",
+        "world:creature:21809",
+        "world:creature:20214"
+      ],
+      "text": "You are in Veil Ruuan, a stretch of the Blade's Edge Mountains that neither side keeps. Ruuan'ok ravenguards, cloudgazers and skyfuries prowl it, along with a Ruuan Weald basilisk, wyrmcult poachers and arakkoa eggs.",
+      "when": {
+        "area_id": 3829
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3830",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3830",
+        "world:creature:21040",
+        "world:creature:21042",
+        "world:creature:21637",
+        "world:creature:21325"
+      ],
+      "text": "You are in Raven's Wood, an area of Blade's Edge Mountains in Outland. Outraged Raven's Wood Saplings are hostile plant creatures here that use a spell as their health falls. Dire Ravens are dangerous wild birds that also use a spell when badly wounded. Wyrmcult Scouts and Raven's Wood Stonebarks are hostile here too.",
+      "when": {
+        "area_id": 3830
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3831",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3831",
+        "world:creature:22423",
+        "world:quest:10912",
+        "world:creature:21519",
+        "world:creature:19979"
+      ],
+      "text": "You are in Death's Door, a place in Blade's Edge Mountains in Outland where the Burning Legion has a portal. An Evergrove druid warns that the Legion uses it to summon fel hounds and other creatures. Baelmon the Hound-Master maintains the ritual that keeps the portal working, and Death's Might and Deathforge technicians fight here.",
+      "when": {
+        "area_id": 3831
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3832",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3832",
+        "world:creature:6491",
+        "world:creature:22932",
+        "world:creature:23386",
+        "world:creature:22254"
+      ],
+      "text": "You are in Vortex Pinnacle, an area of Blade's Edge Mountains in Outland. Its spirit healer offers a return to life for a price. Sai'kkal the Elder, an arakkoa ghost, is sought out for information about the Book of the Raven, and he says he cannot see clearly. Gan'arg Analyzers and Wrath Corruptors are hostile here.",
+      "when": {
+        "area_id": 3832
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3833",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3833",
+        "world:creature:22123",
+        "world:creature:21423",
+        "world:creature:20751",
+        "world:creature:20714",
+        "world:creature:20749",
+        "world:creature:21413"
+      ],
+      "text": "You are in Razor Ridge, an area of Blade's Edge Mountains in Outland. A profession trainer is among its services. Rip-Blade Ravagers, Gore-Scythe Ravagers and Daggermaw Lashtails are hostile here, along with Ridgespine Stalkers and Scalewing Serpents. Gnome cannon shooters work the cannon operation in Blade's Edge.",
+      "when": {
+        "area_id": 3833
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3844",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3844",
+        "world:creature:21088",
+        "world:creature:22312",
+        "world:creature:21496",
+        "world:creature:21839"
+      ],
+      "text": "You are in Mok'Nathal Village, a Horde settlement in Blade's Edge Mountains in Outland. It has an inn, a flight master and vendors, and Matron Varah keeps the inn. Spiritcaller Dohgar honors ancestral spirits and condemns the Bladespire ogres' use of totems, while Dertrok researches the arakkoa's new rituals. Mature Silkwings are hostile here.",
+      "when": {
+        "area_id": 3844
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3862",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3862",
+        "world:creature:21381",
+        "world:creature:21380",
+        "world:creature:22052"
+      ],
+      "text": "You are in Churning Gulch, a gulch in Blade's Edge Mountains in Outland. Young and greater Crust Bursters are the main dangers here, along with Daggermaw Blackhides.",
+      "when": {
+        "area_id": 3862
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3864",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3864",
+        "world:creature:22919",
+        "world:creature:20889",
+        "world:creature:22921",
+        "world:creature:22241",
+        "world:creature:22243",
+        "world:creature:22182"
+      ],
+      "text": "You are in Bash'ir Landing, an area of Blade's Edge Mountains in Outland where Commander Ameer speaks for the Protectorate. His image says the Ethereum's stasis prisons hold ferocious beasts and urges their destruction. Ethereum prisoners are held in stasis chambers here, and Bash'ir raiders, arcanists and spell-thieves are hostile, along with lightning wasps.",
+      "when": {
+        "area_id": 3864
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3865",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3865",
+        "world:creature:6491",
+        "world:creature:22181",
+        "world:creature:22217",
+        "world:creature:22289",
+        "world:creature:22180",
+        "world:creature:22451"
+      ],
+      "text": "You are in Crystal Spine, an area of Blade's Edge Mountains in Outland. Its spirit healer offers a return to life for a price. Felstorm Corruptors, Darkflame Infernals and Shard-Hide Boars are hostile here, and Legion fel cannons are too. Aether Rays appear ready to be wrangled.",
+      "when": {
+        "area_id": 3865
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3866",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3866",
+        "world:creature:20514",
+        "world:creature:21021",
+        "world:creature:20925",
+        "world:creature:21124",
+        "world:creature:22123"
+      ],
+      "text": "You are in Skald, an area of Blade's Edge Mountains in Outland. Searing Elementals, Scorch Imps and Scalded Basilisks are hostile here, along with Felsworn Daggermaws and Rip-Blade Ravagers.",
+      "when": {
+        "area_id": 3866
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3867",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3867",
+        "world:creature:6491",
+        "world:creature:21124",
+        "world:creature:21300",
+        "world:creature:21123",
+        "world:creature:20998"
+      ],
+      "text": "You are in Bladed Gulch, a gulch in Blade's Edge Mountains in Outland. A spirit healer offers a return to life for a price here. Felsworn Daggermaws and Fel Corrupters are the main dangers, with Felsworn Scalewings and Ridgespine Horrors.",
+      "when": {
+        "area_id": 3867
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3903",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3903",
+        "world:creature:21046",
+        "world:creature:21047",
+        "world:creature:21048"
+      ],
+      "text": "You are in Boulder'mok, an area of Blade's Edge Mountains in Outland. Boulder'mok brutes, shamans and a chieftain are hostile here.",
+      "when": {
+        "area_id": 3903
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3918",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3918",
+        "world:creature:21691",
+        "world:creature:21118",
+        "world:creature:21423",
+        "world:creature:22123",
+        "world:creature:21460"
+      ],
+      "text": "You are in Toshley's Station, an Alliance settlement in Blade's Edge Mountains in Outland. It has an inn, a flight master and repairs, and Toshley takes pride in the station's experiments. Razak Ironsides commands the defenders against ravager attacks from Gore-Scythe and Rip-Blade Ravagers. Tally Zapnabber tests unusual power sources and sends volunteers on hazardous flights.",
+      "when": {
+        "area_id": 3918
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3919",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3919",
+        "world:creature:21189",
+        "world:creature:21796",
+        "world:creature:21032",
+        "world:creature:21004",
+        "world:creature:21944"
+      ],
+      "text": "You are in Singing Ridge, a ridge in Blade's Edge Mountains. Crystal flayers and wyrms from beyond roam it, and a dreadwing hunts above. Lesser nether drakes are found here, and a gnome cannon shooter tied to Ruuan.",
+      "when": {
+        "area_id": 3919
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3922",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3922",
+        "world:creature:20765",
+        "world:creature:20766",
+        "world:creature:21516",
+        "world:creature:21519",
+        "world:creature:20600",
+        "world:creature:21737"
+      ],
+      "text": "You are in Bladespire Outpost, a site in Blade's Edge Mountains. Bladespire crushers and mystics roam it with Death's Watch and Death's Might, and a hostile named Maggoc is among the threats. A small electromental, Mini-Electromental Flavor, is found here too.",
+      "when": {
+        "area_id": 3922
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3931",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3931",
+        "world:creature:19995",
+        "world:creature:19998",
+        "world:creature:20728",
+        "world:creature:21296",
+        "world:creature:22052",
+        "world:creature:19948"
+      ],
+      "text": "You are in Bladespire Grounds, an area of Blade's Edge Mountains. Bladespire brutes, shamans, raptors and champions roam it, along with Daggermaw blackhides and Bloodmaul skirmishers.",
+      "when": {
+        "area_id": 3931
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3942",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3942",
+        "world:creature:20601",
+        "world:creature:20609",
+        "world:creature:20851",
+        "world:creature:20635",
+        "world:creature:20668"
+      ],
+      "text": "You are in Razaan's Landing, a site in Blade's Edge Mountains where Razaani raiders and nexus stalkers roam, along with Deadsoul orb flights. A Razaani light orb, which reacts when struck by Magnetic Pull, and a fiendling flesh beast, whose ether-energized flesh is collected for study, are found here too.",
+      "when": {
+        "area_id": 3942
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3951",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3951",
+        "world:creature:21782",
+        "world:creature:22924",
+        "world:creature:22150",
+        "world:creature:21809",
+        "world:creature:22232"
+      ],
+      "text": "You are in Evergrove, an Alliance settlement in Blade's Edge Mountains with an inn and repairs. Timeon and Arthorn Windsong, both Cenarion researchers, are troubled by the Raven cult's growing influence. Lieutenant Fairweather urges direct action against the mountain ogres, and Wyrmcult poachers and Grishna arakkoa are the dangers around it.",
+      "when": {
+        "area_id": 3951
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3952",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3952",
+        "world:creature:22386",
+        "world:quest:10893",
+        "world:creature:17855"
+      ],
+      "text": "You are in Wyrmskull Bridge, a crossing in Blade's Edge Mountains that leads west toward the Wyrmskull Tunnel. Watcher Moonshade leads the defense at the tunnel, where wyrmcultists are massing under Draaca Longtail, their leader there. Expedition Wardens enforce conduct on the neutral ground here.",
+      "when": {
+        "area_id": 3952
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3953",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3953",
+        "world:creature:20749",
+        "world:creature:19979",
+        "world:creature:20751",
+        "world:creature:20714",
+        "world:creature:21796",
+        "world:creature:6491"
+      ],
+      "text": "You are in Scalewing Shelf, a ledge in Blade's Edge Mountains. Scalewing serpents, Deathforge technicians, Daggermaw lashtails and Ridgespine stalkers roam it, and a Wyrm from Beyond is among them. A spirit healer offers a return to life here, for a price.",
+      "when": {
+        "area_id": 3953
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3963",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3963",
+        "world:creature:21810",
+        "world:creature:21809",
+        "world:creature:22308",
+        "world:creature:22396",
+        "world:creature:22206",
+        "world:creature:17855"
+      ],
+      "text": "You are in Dragonspine Ridge, a ridge in Blade's Edge Mountains where wyrmcultists roam. Wyrmcult hewers, poachers and hunters are among the dangers here, with Draaca Longtail, the cult's leader in Wyrmskull Tunnel, among them. Expedition druids and Expedition Wardens are found here too.",
+      "when": {
+        "area_id": 3963
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3964",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3964",
+        "world:creature:23334",
+        "world:creature:23120",
+        "world:creature:23335",
+        "world:creature:23392"
+      ],
+      "text": "You are in Skyguard Outpost, a Skyguard post in Blade's Edge Mountains, and its stable master keeps pets. Sky Commander Keller leads it. Sky Sergeant Vanderlip directs bombing runs on fel cannonball stacks that threaten Ogri'la, and those runs and missions to Bash'ir Landing have worn down the Skyguard's mounts, so Skyguard Khatie is organizing the capture of aether rays to replace them.",
+      "when": {
+        "area_id": 3964
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4008",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4008",
+        "world:creature:22254",
+        "world:creature:22187",
+        "world:creature:22196",
+        "world:creature:22181"
+      ],
+      "text": "You are in Shartuul's Transporter, a site in Blade's Edge Mountains. Wrath corruptors, Bladespine basilisks and Wrath reavers are its dangers, and aether rays, which swipe with their tails when attacked, are found here too.",
+      "when": {
+        "area_id": 4008
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3522": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3522 (Blade's Edge Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3767": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3767 (Blades' Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3768": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3768 (Jagged Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3769": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3769 (Thunderlord Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3771": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3771 (The Living Grove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3772": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3772 (Sylvanaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3773": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3773 (Bladespire Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3774": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3774 (Gruul's Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3775": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3775 (Circle of Blood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3776": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3776 (Bloodmaul Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3777": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3777 (Bloodmaul Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3779": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3779 (Trogma's Claim)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3780": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3780 (Blackwing Coven)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3781": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3781 (Grishnath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3782": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3782 (Veil Lashh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3783": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3783 (Veil Vekh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3784": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3784 (Forge Camp: Terror)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3785": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3785 (Forge Camp: Wrath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3786": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3786 (Ogri'la)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3787": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3787 (Forge Camp: Anger)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3824": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3824 (Bloodmaul Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3826": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3826 (Daggermaw Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3827": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3827 (Vekhaar Stand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3828": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3828 (Ruuan Weald)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3829": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3829 (Veil Ruuan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3830": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3830 (Raven's Wood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3831": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3831 (Death's Door)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3832": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3832 (Vortex Pinnacle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3833": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3833 (Razor Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3844": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3844 (Mok'Nathal Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3862": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3862 (Churning Gulch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3864": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3864 (Bash'ir Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3865": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3865 (Crystal Spine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3866": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3866 (Skald)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3867": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3867 (Bladed Gulch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3903": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3903 (Boulder'mok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3918": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3918 (Toshley's Station)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3919": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3919 (Singing Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3922": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3922 (Bladespire Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3931": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3931 (Bladespire Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3942": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3942 (Razaan's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3951": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3951 (Evergrove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3952": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3952 (Wyrmskull Bridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3953": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3953 (Scalewing Shelf)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3963": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3963 (Dragonspine Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3964": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3964 (Skyguard Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4008": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4008 (Shartuul's Transporter)",
+      "revision": "3.3.5a client data"
+    },
     "source:002b835d82566d0345831bd6": {
       "kind": "research",
       "reference": "evidence:sha256:cb0c17ca607c9efc39748af3c57825c1d6c265292d439c4e51a16ae7f36bca02",
@@ -13261,6 +14350,936 @@
       "kind": "research",
       "reference": "evidence:sha256:c2a2bca071c3be70b0120bd1453eac7f8789e9e61d31b866d960bfad0d186c7f",
       "revision": "083588c652ce9a8335f2363f64df607c2f5cd12ce0fb453a4c0bd8a3e6497740"
+    },
+    "world:creature:16952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16952 (Anger Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17855": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17855 (Expedition Warden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18693 (Speaker Mar'grom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18937 (Amerun Leafshade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18953": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18953 (Unoke Tenderhoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19856 (Steamwheedle Sam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19858 (\"Lefty\" Puddemup), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19943": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19943 (Lashh'an Talonite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19944 (Lashh'an Wing Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19945": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19945 (Lashh'an Windwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19948": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19948 (Bloodmaul Skirmisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19952 (Bloodmaul Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19957 (Bloodmaul Brewmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19960 (Doomforge Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19961": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19961 (Doomforge Attendant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19973": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19973 (Abyssal Flamebringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19979 (Deathforge Technician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19982": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19982 (Vekh'nir Keeneye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19983": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19983 (Vekh'nir Stormcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19984": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19984 (Vekh'nir Dreadhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19985": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19985 (Ruuan'ok Cloudgazer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19986 (Ruuan'ok Skyfury), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19987": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19987 (Ruuan'ok Ravenguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19989": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19989 (Grishna Harbinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19991 (Bloodmaul Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19993 (Bloodmaul Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19994": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19994 (Bloodmaul Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19995": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19995 (Bladespire Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19996": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19996 (Bladespire Battlemage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19997": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19997 (Bladespire Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19998": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19998 (Bladespire Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20058": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20058 (Bloodmaul Dire Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20113 (Lashh'an Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20161 (Vekh'nir Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20214 (Arakkoa Egg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20330 (Bloodmaul Battle Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20514": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20514 (Searing Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20557 (Wrath Hound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20600 (Maggoc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20601": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20601 (Razaani Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20609": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20609 (Razaani Nexus Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20635 (Razaani Light Orb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20668 (Fiendling Flesh Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20713 (Fey Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20714 (Ridgespine Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20728 (Bladespire Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20729": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20729 (Bladespire Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20747": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20747 (Silkwing Larva), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20748": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20748 (Thunderlord Dire Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20749": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20749 (Scalewing Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20751": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20751 (Daggermaw Lashtail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20765 (Bladespire Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20766": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20766 (Bladespire Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20851": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20851 (Blade's Edge - Deadsoul Orb Flight 01), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20889": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20889 (Ethereum Prisoner (Group Energy Ball)), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20924 (Grishnath Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20925 (Scalded Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20987": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20987 (Ruuan Weald Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20998": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20998 (Ridgespine Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21004": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21004 (Lesser Nether Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21021": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21021 (Scorch Imp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21022": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21022 (Grovestalker Lynx), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21023": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21023 (Stronglimb Deeproot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21032 (Dreadwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21033 (Bladewing Bloodletter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21040": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21040 (Outraged Raven's Wood Sapling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21042": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21042 (Dire Raven), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21046 (Boulder'mok Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21047": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21047 (Boulder'mok Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21048": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21048 (Boulder'mok Chieftain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21066": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21066 (Rina Moonspring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21088": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21088 (Matron Varah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21117 (Gor'drek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21118 (Razak Ironsides), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21123 (Felsworn Scalewing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21124 (Felsworn Daggermaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21147 (Tor'chunk Twoclaws), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21151": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21151 (Borgrim Stouthammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21158 (Commander Skyshadow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21189 (Crystal Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21197 (Bronwyn Stouthammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21233 (Legion Fel Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21254 (Dullgrom Dredger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21277 (Vindicator Vuuleen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21296 (Bladespire Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21300": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21300 (Fel Corrupter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21325": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21325 (Raven's Wood Stonebark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21349 (T'chali the Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21380 (Greater Crust Burster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21381 (Young Crust Burster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21382 (Wyrmcult Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21383 (Wyrmcult Acolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21387 (Wyrmcult Blackwhelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21413 (Gnome Cannon Shooter #1), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21423 (Gore-Scythe Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21460 (Tally Zapnabber), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21469 (Daranelle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21496": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21496 (Dertrok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21497 (Blackscale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21516 (Death's Watch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21519 (Death's Might), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21637 (Wyrmcult Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21640": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21640 (Trogma), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21690 (R-3D0), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21691 (Toshley), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21737 (Mini-Electromental Flavor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21782": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21782 (Timeon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21796 (Wyrm from Beyond), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21809 (Wyrmcult Poacher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21810": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21810 (Wyrmcult Hewer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21839 (Mature Silkwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21840": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21840 (Cosmetic Silkwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21944 (Gnome Cannon Shooter #Ruuan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21950 (Garm Wolfbrother), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21956 (Rema), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21981 (Overseer Nuaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22044 (Cavern Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22052": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22052 (Daggermaw Blackhide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22103": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22103 (Baron Sablemane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22108": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22108 (Blackwhelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22123 (Rip-Blade Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22130 (Baron Sablemane's Blackwhelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22150 (Lieutenant Fairweather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22160 (Bloodmaul Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22180 (Shard-Hide Boar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22181 (Aether Ray), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22182": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22182 (Lightning Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22187 (Bladespine Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22195": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22195 (Wrath Speaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22196 (Wrath Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22202 (Nightmare Imp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22204 (Fear Fiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22206 (Expedition Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22215": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22215 (Treebole), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22217 (Felstorm Corruptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22232 (Grishna Arakkoa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22241 (Bash'ir Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22243": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22243 (Bash'ir Arcanist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22254 (Wrath Corruptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22264": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22264 (Ogri'la Steelshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22266": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22266 (Ogri'la Grubgiver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22268": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22268 (Leokk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22270 (Ogri'la Merchant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22286 (Fel Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22289": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22289 (Darkflame Infernal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22291 (Furnace Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22298": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22298 (Vile Fire-Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22308": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22308 (Wyrmcult Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22312": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22312 (Spiritcaller Dohgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22327 (Terror-Fire Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22384 (Bloodmaul Soothsayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22386 (Watcher Moonshade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22396": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22396 (Draaca Longtail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22410": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22410 (Expedition Outrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22423 (Evergrove Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22451 (Legion Fel Cannon MKII), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22489": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22489 (Grunt Grahk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22799": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22799 (Second Prophecy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22919 (Image of Commander Ameer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22921 (Ethereum Prisoner (Stasis Chamber Alpha)), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22924 (Arthorn Windsong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22932": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22932 (Sai'kkal the Elder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22941 (Mog'dorg the Wizened), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23076": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23076 (Legion Flak Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23110 (Ogri'la Keg King), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23120 (Sky Sergeant Vanderlip), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23233 (Chu'a'lor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23316 (Torkus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23334 (Sky Commander Keller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23335 (Skyguard Khatie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23386 (Gan'arg Analyzer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23392 (Skyguard Stable Master), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10455": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10455 (The Encroaching Wilderness)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10456": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10456 (Marauding Wolves)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10486": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10486 (The Encroaching Wilderness)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10503": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10503 (The Bladespire Threat)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10511": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10511 (Strange Brew)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10516": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10516 (The Trappings of a Vindicator)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10543": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10543 (Grimnok and Korgaah, I Am For You!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10556": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10556 (Scratches)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10820": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10820 (Deceive thy Enemy)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10830": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10830 (Exorcising the Trees)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10893": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10893 (Longtail is the Lynchpin)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10912": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10912 (The Hound-Master)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11057": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11057 (The Trouble Below)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

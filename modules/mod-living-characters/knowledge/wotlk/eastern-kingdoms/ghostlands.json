@@ -2926,7 +2926,557 @@
     }
   ],
   "place": "Ghostlands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3433",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3433",
+        "dbc:area:3488",
+        "dbc:area:3507",
+        "world:creature:16354",
+        "world:creature:16213",
+        "dbc:area:3500",
+        "world:creature:16200",
+        "world:creature:16320"
+      ],
+      "text": "You are in Ghostlands, Horde land in the Eastern Kingdoms. Tranquillien is the main Horde town, and Hatchet Hills is held by neither side. The Scourge holds Deatholme and roams the Dead Scar, while mistbats, lynxes and plagued beasts prowl the wilds, and Shadowpine trolls make trouble at Zeb'Sora across the lake.",
+      "when": {
+        "zone_id": 3433
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3488",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3488",
+        "world:creature:16189",
+        "world:creature:16187",
+        "world:creature:16200"
+      ],
+      "text": "You are in Tranquillien, a Horde town in the Ghostlands. It has an inn, a flight master and a dragonhawk master, Skymaster Sunwing, who offers fast flights to Silvermoon. Quartermaster Lymel keeps the supply stores, and Deathstalker Rathiel recruits capable visitors to thin the mindless Scourge on the Dead Scar.",
+      "when": {
+        "area_id": 3488
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3489",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3489",
+        "world:creature:16313",
+        "world:creature:16357",
+        "world:creature:16201",
+        "world:creature:16197"
+      ],
+      "text": "You are in Suncrown Village in the Ghostlands, a village the Scourge occupies. Nerubians guard its ruins, and their leader Anok'suten is said to wander here. The spirit of Geranis Whitemorn, a Suncrown elf, still lingers among the ruins, and Arcanist Vandril of Tranquillien is working to take the village back.",
+      "when": {
+        "area_id": 3489
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3490",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3490",
+        "world:creature:16326",
+        "world:creature:16325",
+        "world:creature:16197"
+      ],
+      "text": "You are in Goldenmist Village, a Scourge-occupied village in the Ghostlands. Quel'dorei wraiths and ghosts haunt its ruins, and Arcanist Vandril in Tranquillien is directing efforts to reclaim it.",
+      "when": {
+        "area_id": 3490
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3491",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3491",
+        "world:creature:16323",
+        "world:creature:16324",
+        "world:creature:16197"
+      ],
+      "text": "You are in Windrunner Village, one of the Scourge-occupied villages in the Ghostlands. Phantasmal seekers and stonewing slayers prowl among its ruins, and Arcanist Vandril in Tranquillien is directing efforts to reclaim it.",
+      "when": {
+        "area_id": 3491
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3493",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3493",
+        "world:creature:16204",
+        "world:creature:16239",
+        "world:quest:9176"
+      ],
+      "text": "You are in the Sanctum of the Sun, a rebuilt Horde arcane sanctum in the Ghostlands. Magister Idonis presses an offensive against the Scourge at Deatholme, and Magister Kaendris studies the traitor Dar'Khan's journal and seeks the Stones of Light and Flame.",
+      "when": {
+        "area_id": 3493
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3494",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3494",
+        "world:creature:16304",
+        "world:creature:16310",
+        "world:creature:16199",
+        "world:quest:9150"
+      ],
+      "text": "You are in the Sanctum of the Moon, a ruined arcane sanctum west of Tranquillien. Arcane devourers and mana shifters inhabit it, and Magister Darenis in Tranquillien sends for the crystallized essences its energies have produced.",
+      "when": {
+        "area_id": 3494
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3495",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3495",
+        "world:creature:16339",
+        "world:quest:9161",
+        "world:quest:9162"
+      ],
+      "text": "You are in Dawnstar Spire, a tower in the Ghostlands northeast of the Farstrider Enclave where Dar'Khan once hid and schemed. Arcane reavers haunt it, and searches here have turned up Dar'Khan's journal.",
+      "when": {
+        "area_id": 3495
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3496",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3496",
+        "world:creature:16202",
+        "world:creature:16203",
+        "world:quest:9146",
+        "world:creature:16354"
+      ],
+      "text": "You are in the Farstrider Enclave, on the southern shore of Lake Elrendar in the Ghostlands. Farstrider Sedina recruits help against the plague in the region's wildlife, and Ranger Vynna investigates Dar'Khan's past. It has repairs and a vendor. Vampiric mistbats still fly nearby.",
+      "when": {
+        "area_id": 3496
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3497",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3497",
+        "world:creature:16330",
+        "world:creature:17210"
+      ],
+      "text": "You are in An'daroth, the old high elf ley-line nexus in the Ghostlands, where Alliance night elves have camped. A Sentinel spy works here among them, and a Sentinel leader is also present.",
+      "when": {
+        "area_id": 3497
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3498",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3498",
+        "world:creature:16237",
+        "world:quest:9169"
+      ],
+      "text": "You are in An'telas, a ley-line nexus in the Ghostlands that Horde magisters study. Magister Sylastor is working to shut down the night elf moon crystal at An'owyn, which he sees as a scrying threat.",
+      "when": {
+        "area_id": 3498
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3500",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3500",
+        "world:creature:16320",
+        "world:creature:16319",
+        "world:creature:16317",
+        "world:creature:16206"
+      ],
+      "text": "You are in Deatholme, the Scourge fortress of the traitor Dar'Khan in the Ghostlands. Eyes of Dar'Khan, nerubis centurions and necromancers fill its halls, and the Scourge keeps prisoners there in a drugged stupor.",
+      "when": {
+        "area_id": 3500
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3502",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3502",
+        "world:creature:16318",
+        "world:creature:16316",
+        "world:creature:16246",
+        "world:creature:16200",
+        "world:quest:9176"
+      ],
+      "text": "You are in the Howling Ziggurat, one of the twin ziggurats in the middle of the Dead Scar, where the Stone of Light and the Stone of Flame were once thought to be held. Deatholme darkmages and stonewing trackers guard it, and Knucklerot, whom Tranquillien has put a bounty on, has been seen here.",
+      "when": {
+        "area_id": 3502
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3503",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3503",
+        "world:creature:16331",
+        "world:creature:16332"
+      ],
+      "text": "You are in Shalandis Isle, a Ghostlands island where Alliance night elves keep a presence. A Darnassian druid and a Darnassian huntress are stationed here, and the druid mends injured allies with healing magic.",
+      "when": {
+        "area_id": 3503
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3505",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3505",
+        "world:creature:16293",
+        "world:creature:16334",
+        "world:creature:16337",
+        "world:creature:16335",
+        "world:quest:9207"
+      ],
+      "text": "You are in Underlight Mines, a Horde mining site in the Ghostlands. Magisters send apprentices here for Underlight ore, but Blackpaw gnolls have overrun the mines. Apprentice Shatharia is gathering the ore and fears failing to get her samples to Magister Quallestis at the Sanctum of the Sun in time. Blackpaw gnolls, shamans and scavengers still roam the tunnels.",
+      "when": {
+        "area_id": 3505
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3506",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3506",
+        "world:creature:16480",
+        "world:creature:16354"
+      ],
+      "text": "You are in Andilien Estate, a Horde holding in the Ghostlands where the magisters plan an advance outpost against the Scourge. Apprentice Vor'el was sent here by Magister Kaendris to clear the hostile wildlife, and vampiric mistbats are among the dangers.",
+      "when": {
+        "area_id": 3506
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3507",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3507",
+        "world:creature:23559",
+        "world:creature:23858",
+        "world:creature:23761",
+        "dbc:taxi:205"
+      ],
+      "text": "You are in Hatchet Hills, a neutral camp in the Ghostlands where Budd Nedreck is gathering a crew to search Zul'Aman for treasure. Donna Brascoe, an undercover Shattrath Peacekeeper, is infiltrating his crew, and the skinner Prigmon is working on a forest-troll disguise for them. The camp has a flight master, repairs and a vendor, and there is a flight point at Zul'Aman.",
+      "when": {
+        "area_id": 3507
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3509",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3509",
+        "world:creature:16295",
+        "world:creature:16342",
+        "world:creature:16347",
+        "world:creature:16343",
+        "world:creature:16353"
+      ],
+      "text": "You are in Sungraze Peak, a Horde-held ridge in the Ghostlands. Trolls captured the Farstrider ranger Lilatha in the Amani Catacombs. Mummified headhunters, starving ghostclaws, Shadowpine oracles and mistbats roam the peak.",
+      "when": {
+        "area_id": 3509
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3512",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3512",
+        "world:creature:16340",
+        "world:creature:16341"
+      ],
+      "text": "You are in Zeb'Sora, a stretch of the Ghostlands. Shadowpine rippers and witches are the danger here.",
+      "when": {
+        "area_id": 3512
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3513",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3513",
+        "dbc:area:3496",
+        "world:creature:16220",
+        "world:creature:16463",
+        "world:creature:16462",
+        "world:creature:16464",
+        "world:creature:16327",
+        "world:creature:16328"
+      ],
+      "text": "You are in Lake Elrendar, Horde ground in the Ghostlands. Captain Helios directs the Farstriders' campaign against the Shadowpine trolls from the Farstrider Enclave, and Farstrider Solanna oversees the harassment of their camps. Apparitions haunt the northern lake, which Ranger Krenn'an sees as the drowned spirits of his ancestors. Apothecary Venustus, loaned from the Royal Apothecary Society, is developing poisons for the troll campaign.",
+      "when": {
+        "area_id": 3513
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3514",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3514",
+        "world:creature:16301",
+        "world:creature:16302",
+        "world:creature:16305",
+        "world:creature:16309",
+        "world:creature:16303"
+      ],
+      "text": "You are in The Dead Scar, a Ghostlands area where risen hungerers, risen stalkers and dreadbone sentinels roam, along with gangled cannibals and dreadbone skeletons.",
+      "when": {
+        "area_id": 3514
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3515",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3515",
+        "dbc:area:3497",
+        "world:creature:17224",
+        "world:creature:17314",
+        "world:creature:16304",
+        "world:creature:16310",
+        "world:creature:16353"
+      ],
+      "text": "You are in Elrendar River, a Horde-held stretch of the Ghostlands near the night elf settlement of An'daroth. The Horde scout Keltus Darkleaf works undercover here, surveying the night elves, with his faithful animal companion Whisper. Arcane devourers, mana shifters and mistbats are the dangers.",
+      "when": {
+        "area_id": 3515
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3516",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3516",
+        "world:creature:16344",
+        "world:creature:16469"
+      ],
+      "text": "You are in Zeb'Tela, a Ghostlands area where Shadowpine trolls keep camps. Headhunters and shadowcasters are the main danger.",
+      "when": {
+        "area_id": 3516
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3517",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3517",
+        "world:quest:9277",
+        "world:quest:9215",
+        "world:creature:16345",
+        "world:creature:16346",
+        "world:creature:16358"
+      ],
+      "text": "You are in Zeb'Nowa, in the south of the Ghostlands, where the stronger Shadowpine trolls make their home. Catlords and hexxers are the main danger, and their chieftain Kel'gash the Wicked is said to dwell here.",
+      "when": {
+        "area_id": 3517
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3823",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3823",
+        "world:creature:16313"
+      ],
+      "text": "You are in the Isle of Tribulations, a Ghostlands island where nerubis guards are the danger.",
+      "when": {
+        "area_id": 3823
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3433": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3433 (Ghostlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3488": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3488 (Tranquillien)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3489": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3489 (Suncrown Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3490": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3490 (Goldenmist Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3491": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3491 (Windrunner Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3493": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3493 (Sanctum of the Sun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3494": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3494 (Sanctum of the Moon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3495": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3495 (Dawnstar Spire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3496": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3496 (Farstrider Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3497": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3497 (An'daroth)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3498": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3498 (An'telas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3500": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3500 (Deatholme)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3502": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3502 (Howling Ziggurat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3503": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3503 (Shalandis Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3505": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3505 (Underlight Mines)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3506": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3506 (Andilien Estate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3507": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3507 (Hatchet Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3509": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3509 (Sungraze Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3512": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3512 (Zeb'Sora)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3513": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3513 (Lake Elrendar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3514": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3514 (The Dead Scar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3515": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3515 (Elrendar River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3516": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3516 (Zeb'Tela)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3517": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3517 (Zeb'Nowa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3823": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3823 (Isle of Tribulations)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:205": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 205 (Zul'Aman, Ghostlands)",
+      "revision": "3.3.5a client data"
+    },
     "source:01e7b7ccaa2332015e8faf22": {
       "kind": "research",
       "reference": "evidence:sha256:16d6622ff2aedbe303d09f4e21f613ea1e15ffc3633a7cf2d710bfabe04a3f8c",
@@ -5176,6 +5726,381 @@
       "kind": "research",
       "reference": "evidence:sha256:d754a56fd7d23abf283a1648e59750db09de98959cf987ce5c71d7da3993a30b",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "world:creature:16187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16187 (Quartermaster Lymel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16189 (Skymaster Sunwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16197 (Arcanist Vandril), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16199 (Magister Darenis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16200 (Deathstalker Rathiel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16201 (Geranis Whitemorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16202 (Farstrider Sedina), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16203 (Ranger Vynna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16204 (Magister Idonis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16206 (Apprentice Varnis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16213 (Ranger Lethvalin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16220 (Captain Helios), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16237 (Magister Sylastor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16239 (Magister Kaendris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16246": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16246 (Knucklerot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16293 (Apprentice Shatharia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16295": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16295 (Ranger Lilatha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16301": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16301 (Risen Hungerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16302": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16302 (Risen Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16303": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16303 (Dreadbone Skeleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16304 (Arcane Devourer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16305 (Dreadbone Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16309": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16309 (Gangled Cannibal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16310": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16310 (Mana Shifter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16313 (Nerubis Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16316 (Stonewing Tracker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16317": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16317 (Deatholme Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16318 (Deatholme Darkmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16319 (Nerubis Centurion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16320": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16320 (Eye of Dar'Khan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16323 (Phantasmal Seeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16324 (Stonewing Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16325": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16325 (Quel'dorei Ghost), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16326": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16326 (Quel'dorei Wraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16327 (Ravening Apparition), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16328 (Vengeful Apparition), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16330 (Sentinel Spy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16331": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16331 (Darnassian Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16332": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16332 (Darnassian Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16334 (Blackpaw Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16335 (Blackpaw Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16337 (Blackpaw Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16339 (Arcane Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16340 (Shadowpine Ripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16341 (Shadowpine Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16342 (Mummified Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16343 (Shadowpine Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16344 (Shadowpine Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16345 (Shadowpine Catlord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16346 (Shadowpine Hexxer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16347 (Starving Ghostclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16353 (Mistbat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16354": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16354 (Vampiric Mistbat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16357 (Anok'suten), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16358 (Kel'gash the Wicked), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16462 (Ranger Krenn'an), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16463 (Farstrider Solanna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16464 (Apothecary Venustus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16469 (Shadowpine Shadowcaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16480 (Apprentice Vor'el), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17210": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17210 (Sentinel Leader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17224": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17224 (Keltus Darkleaf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17314 (Whisper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23559": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23559 (Budd Nedreck), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23761": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23761 (Prigmon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23858 (Donna Brascoe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9146": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9146 (Report to Captain Helios)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9150": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9150 (Salvaging the Past)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9161": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9161 (The Traitor's Shadow)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9162": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9162 (Hints of the Past)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9169": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9169 (Deactivate An'owyn)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9176": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9176 (The Twin Ziggurats)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9207": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9207 (Underlight Ore Samples)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9215": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9215 (Bring Me Kel'gash's Head!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9277": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9277 (Assault on Zeb'Nowa)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

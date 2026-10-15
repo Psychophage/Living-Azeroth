@@ -11110,7 +11110,455 @@
     }
   ],
   "place": "Dun Morogh",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1",
+        "dbc:area:131",
+        "dbc:area:132",
+        "dbc:area:134",
+        "dbc:area:211",
+        "world:creature:1117",
+        "world:creature:1120",
+        "world:creature:1201"
+      ],
+      "text": "You are in Dun Morogh, Alliance land in the Eastern Kingdoms. Kharanos, Coldridge Valley, Gol'Bolar Quarry and Iceflow Lake are its Alliance settlements, and mining keeps many of its people busy. Rockjaw troggs break into the quarries and passes, Frostmane trolls keep their own hold, and snow leopards prowl the land.",
+      "when": {
+        "zone_id": 1
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:131",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:131",
+        "world:creature:1252",
+        "world:creature:1268",
+        "world:creature:1269",
+        "world:creature:1226",
+        "world:creature:1228",
+        "world:creature:1229"
+      ],
+      "text": "You are in Kharanos, a town in Dun Morogh held by the Alliance. Its inn serves travelers, and trainers of arms, magic and the Light teach here. Field investigator Senir Whitebeard tracks Frostmane trolls, and Ozzie Togglevolt and Razzle Sprysprocket are working on a cure for the sickness that plagues Gnomeregan.",
+      "when": {
+        "area_id": 131
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:132",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:132",
+        "world:creature:713",
+        "world:creature:8416"
+      ],
+      "text": "You are in Coldridge Valley, an Alliance valley in Dun Morogh. Troggs keep attacking it, and Balir Frosthammer is short of hands to drive them back after an attack overran the western camp. Gnomeregan refugees have come here too, and Felix Whindlebolt is anxious to recover the tools that trolls took to camps southwest of Anvilmar.",
+      "when": {
+        "area_id": 132
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:133",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:133",
+        "world:creature:1211",
+        "world:creature:6221",
+        "world:creature:6886",
+        "world:creature:7843",
+        "world:creature:8416"
+      ],
+      "text": "You are in Gnomeregan, a gnomish city made uninhabitable by radiation. Leper gnomes and addled lepers roam the city, and Onin MacHammar, a dwarf informant, works near it while hidden among the lepers. Evacuees are still seeking a way out, anguished at how close they came.",
+      "when": {
+        "area_id": 133
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:134",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:134",
+        "world:creature:1254",
+        "world:creature:1977",
+        "world:creature:1115",
+        "world:creature:1117"
+      ],
+      "text": "You are in Gol'Bolar Quarry, a mining site in Dun Morogh held by the Alliance. Rockjaw troggs have wrecked the work here, and Foreman Stonebrow is furious about it. Senator Mehr Stonehallow has taken charge of the trogg threat at the quarry, and Rockjaw Skullthumpers and Bonesnappers still prowl it.",
+      "when": {
+        "area_id": 134
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:135",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:135",
+        "world:creature:1120",
+        "world:creature:1121",
+        "world:creature:1122",
+        "world:creature:1123",
+        "world:creature:1196",
+        "world:creature:1201"
+      ],
+      "text": "You are in Frostmane Hold, where the Frostmane trolls live. Headhunters, snowstriders and hideskinners are among them, and ice claw bears and snow leopards prowl the area too.",
+      "when": {
+        "area_id": 135
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:136",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:136",
+        "world:creature:1134",
+        "world:creature:1135",
+        "world:creature:1128",
+        "world:creature:1199",
+        "world:creature:1694"
+      ],
+      "text": "You are in The Grizzled Den, a den in Dun Morogh where wendigos roam. Wendigos and their young hunt here alongside juvenile snow leopards and young black bears. A courier was chased off by wendigos near here and lost a crate of ammunition.",
+      "when": {
+        "area_id": 136
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:137",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:137",
+        "world:creature:1374",
+        "world:creature:1375",
+        "world:creature:1267",
+        "world:creature:1196",
+        "world:creature:1201"
+      ],
+      "text": "You are in Brewnall Village, a village in Dun Morogh held by the Alliance. Its brewers are the Barleybrews, and Rejold Barleybrew wants shimmerweed from the Frostmane trolls for an experimental stout. Marleth Barleybrew keeps up a rivalry with the Thunderbrew family in Kharanos, and ice claw bears and snow leopards wander close.",
+      "when": {
+        "area_id": 137
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:189",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:189",
+        "world:creature:1377",
+        "world:creature:1378",
+        "world:creature:7955",
+        "world:creature:1694",
+        "world:creature:1128"
+      ],
+      "text": "You are in Steelgrill's Depot, a depot in Dun Morogh where Siege Brigade pilots prepare their vehicles. Pilot Stonegear wants to outfit the siege engine Trollplow, and Pilot Bellowfiz is readying Jetsteam for long missions. Milli Featherwhistle sells mechanostriders, and Loslor Rudge runs an engineering-supplies shop here. Young black bears wander close by.",
+      "when": {
+        "area_id": 189
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:211",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:211",
+        "world:creature:11807",
+        "world:creature:1131",
+        "world:creature:1133",
+        "world:creature:1196",
+        "world:creature:1201"
+      ],
+      "text": "You are in Iceflow Lake, an Alliance area of Dun Morogh. Tristane Shadowstone sends young hunters on to taming teachers so they can earn a companion. Winter wolves, starving winter wolves, ice claw bears and snow leopards roam the area.",
+      "when": {
+        "area_id": 211
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:212",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:212",
+        "world:creature:1115",
+        "world:creature:1116",
+        "world:creature:1117",
+        "world:creature:1118",
+        "world:creature:1689"
+      ],
+      "text": "You are in Helm's Bed Lake, an area of Dun Morogh where Rockjaw troggs lurk. Rockjaw ambushers, bonesnappers, skullthumpers and backbreakers are all about, and wild Scarred Crag Boars charge at anyone who engages them.",
+      "when": {
+        "area_id": 212
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:716",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:716",
+        "world:creature:6123",
+        "world:creature:6124",
+        "world:creature:6177"
+      ],
+      "text": "You are in Ironband's Compound, a compound in Dun Morogh where Dark Iron dwarves are about. Dark Iron spies and Captain Beld are the dangers here. Narm Faulk fell holding off the Dark Iron dwarves so Muiredon Battleforge could escape, before the captain's orders were secured.",
+      "when": {
+        "area_id": 716
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:800",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:800",
+        "world:creature:1965",
+        "world:creature:6782",
+        "world:creature:1718",
+        "world:creature:724"
+      ],
+      "text": "You are in Coldridge Pass, a mountain pass in Dun Morogh leading toward Kharanos. Troggs infest the tunnel through it, and Rockjaw raiders are about. Mountaineer Thalos warns travelers that they may be asked to wait in Anvilmar until it is safer, and Hands Springsprocket cannot get through it himself and needs a package carried to the inn in Kharanos.",
+      "when": {
+        "area_id": 800
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:801",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:801",
+        "world:creature:1266",
+        "world:creature:1271",
+        "world:creature:1135",
+        "world:quest:312"
+      ],
+      "text": "You are in Chill Breeze Valley, a valley in Dun Morogh. Wendigos roam it, and the hunter Tundra MacGrann has lost his winter supply of dried meat to Old Icebeard, a beast who carried off the locked meat locker to his cave. MacGrann is too hurt to go after it himself.",
+      "when": {
+        "area_id": 801
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:802",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:802",
+        "world:creature:1397",
+        "world:creature:1121",
+        "world:creature:1123",
+        "world:creature:1135"
+      ],
+      "text": "You are in Shimmer Ridge, a ridge in Dun Morogh. Frostmane seers, snowstriders and headhunters roam it, and wendigos prowl alongside them.",
+      "when": {
+        "area_id": 802
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:803",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:803",
+        "world:creature:1261",
+        "world:creature:1265",
+        "world:creature:1388",
+        "world:creature:1196",
+        "world:creature:3177"
+      ],
+      "text": "You are in Amberstill Ranch, a ranch in Dun Morogh where Veron Amberstill breeds rams and trades in them. Rudra Amberstill fears for the herd, since a beast called Vagash has been taking rams from it, and Ice Claw bears roam the grounds. Turuk Amberstill, a dwarven weaponsmith, works here too.",
+      "when": {
+        "area_id": 803
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:804",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:804",
+        "world:creature:1201",
+        "world:creature:1196",
+        "world:creature:1130"
+      ],
+      "text": "You are in The Tundrid Hills, hill country in Dun Morogh. Snow leopards and ice claw bears hunt here, and a beast called Bjarn roams the hills as well.",
+      "when": {
+        "area_id": 804
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:806",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:806",
+        "world:creature:1959"
+      ],
+      "text": "You are in South Gate Outpost, an Alliance post in Dun Morogh. Mountaineer Barleybrew keeps watch from the southern guard tower near the Loch Modan border, and he likes to share his brother's Shimmer Stout with fellow mountaineers.",
+      "when": {
+        "area_id": 806
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:808",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:808",
+        "world:creature:1960",
+        "world:creature:1201",
+        "world:creature:1961",
+        "world:quest:417"
+      ],
+      "text": "You are in North Gate Outpost, an Alliance post in Dun Morogh. Pilot Hammerfoot guards the siege engines here and grieves for his friend Mori Hildelve, a fellow pilot who was killed in the hills while searching for ore. Snow leopards prowl nearby, and Mangeclaw, a huge ice claw bear, roams the hills.",
+      "when": {
+        "area_id": 808
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:809",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:809",
+        "world:creature:5595",
+        "world:creature:6491",
+        "world:creature:6181"
+      ],
+      "text": "You are in the Gates of Ironforge, an area of Dun Morogh. Ironforge Guards send visitors on toward the auction house and the bank, and a spirit healer offers a return to life for a price. Jordan Stilwell, a smith and faithful friend of the paladins, is among those here.",
+      "when": {
+        "area_id": 809
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1 (Dun Morogh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:131": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 131 (Kharanos)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:132": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 132 (Coldridge Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:133": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 133 (Gnomeregan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:134": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 134 (Gol'Bolar Quarry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:135": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 135 (Frostmane Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:136": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 136 (The Grizzled Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:137": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 137 (Brewnall Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:189": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 189 (Steelgrill's Depot)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:211": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 211 (Iceflow Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:212": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 212 (Helm's Bed Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:716": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 716 (Ironband's Compound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:800": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 800 (Coldridge Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:801": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 801 (Chill Breeze Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:802": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 802 (Shimmer Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:803": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 803 (Amberstill Ranch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:804": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 804 (The Tundrid Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:806": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 806 (South Gate Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:808": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 808 (North Gate Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:809": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 809 (Gates of Ironforge)",
+      "revision": "3.3.5a client data"
+    },
     "source:000e2862fddf199ad496a299": {
       "kind": "research",
       "reference": "evidence:sha256:f8fb9582c00cb8c25a7df08029a8e81e8b9edae0360cbe37f50a6837635e04a3",
@@ -20120,6 +20568,316 @@
       "kind": "research",
       "reference": "evidence:sha256:c2334ff643e841861c54e0b6b03f2d5a62e586f1ef1dbd370a4d15fbace9ef37",
       "revision": "a1dcb9975ae1359744c40b011a78a2e80f997ffc047e6368352d842b571b08d6"
+    },
+    "world:creature:1115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1115 (Rockjaw Skullthumper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1116": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1116 (Rockjaw Ambusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1117 (Rockjaw Bonesnapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1118 (Rockjaw Backbreaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1120 (Frostmane Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1121 (Frostmane Snowstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1122": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1122 (Frostmane Hideskinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1123 (Frostmane Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1128 (Young Black Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1130 (Bjarn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1131 (Winter Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1133 (Starving Winter Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1134": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1134 (Young Wendigo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1135 (Wendigo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11807 (Tristane Shadowstone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1196 (Ice Claw Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1199 (Juvenile Snow Leopard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1201 (Snow Leopard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1211": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1211 (Leper Gnome), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1226": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1226 (Maxan Anvol), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1228 (Magis Sparkmantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1229 (Granis Swiftaxe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1252 (Senir Whitebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1254 (Foreman Stonebrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1261 (Veron Amberstill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1265": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1265 (Rudra Amberstill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1266": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1266 (Tundra MacGrann), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1267": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1267 (Ragnar Thunderbrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1268": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1268 (Ozzie Togglevolt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1269": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1269 (Razzle Sprysprocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1271 (Old Icebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1374 (Rejold Barleybrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1375 (Marleth Barleybrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1377 (Pilot Stonegear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1378 (Pilot Bellowfiz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1388 (Vagash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1397 (Frostmane Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1689": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1689 (Scarred Crag Boar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1694": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1694 (Loslor Rudge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1718 (Rockjaw Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1959 (Mountaineer Barleybrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1960 (Pilot Hammerfoot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1961": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1961 (Mangeclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1965": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1965 (Mountaineer Thalos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1977 (Senator Mehr Stonehallow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3177 (Turuk Amberstill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5595": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5595 (Ironforge Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6123 (Dark Iron Spy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6124 (Captain Beld), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6177 (Narm Faulk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6181 (Jordan Stilwell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6221 (Addled Leper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6782": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6782 (Hands Springsprocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6886": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6886 (Onin MacHammar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 713 (Balir Frosthammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:724": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 724 (Burly Rockjaw Trogg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7843 (Gnomeregan Evacuee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7955": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7955 (Milli Featherwhistle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8416 (Felix Whindlebolt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:312": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 312 (Tundra MacGrann's Stolen Stash)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:417": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 417 (A Pilot's Revenge)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

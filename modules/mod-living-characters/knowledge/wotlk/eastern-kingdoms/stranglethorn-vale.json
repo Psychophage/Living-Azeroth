@@ -6246,7 +6246,836 @@
     }
   ],
   "place": "Stranglethorn Vale",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:33",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:33",
+        "dbc:area:35",
+        "dbc:area:99",
+        "dbc:area:117",
+        "dbc:area:102",
+        "dbc:area:103",
+        "dbc:area:43"
+      ],
+      "text": "You are in Stranglethorn Vale, a jungle land in the Eastern Kingdoms where both the Alliance and the Horde hold settlements. The Horde keeps Grom'gol Base Camp, the Alliance holds Rebel Camp, and Booty Bay, a harbor of pirates and traders, is held by neither side. Trolls of the Bloodscalp and Skullsplitter tribes haunt the ruins, Bloodsail pirates raid the coast, and tigers and raptors roam the jungle.",
+      "when": {
+        "zone_id": 33
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:19",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:19",
+        "world:creature:11355",
+        "world:creature:11346",
+        "world:creature:11383",
+        "world:quest:581"
+      ],
+      "text": "You are in Zul'Gurub, the city of the Gurubashi trolls in Stranglethorn Vale. Gurubashi warriors and Hakkari oracles guard it, and High Priestess Hai'watna is its most dangerous named defender.",
+      "when": {
+        "area_id": 19
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:35",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:35",
+        "world:creature:2487",
+        "world:creature:2488",
+        "world:creature:2486"
+      ],
+      "text": "You are in Booty Bay, a harbor town in Stranglethorn Vale that is held by neither side. Fleet Master Seahorn commands the Blackwater Raiders from here and treats the Bloodsail Buccaneers as a serious threat. Bloodsail raiders hijacked a shipment of snuff, and Fin Fizracket lies gravely ill with Stranglethorn Fever in town.",
+      "when": {
+        "area_id": 35
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:37",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:37",
+        "world:creature:1152",
+        "world:creature:905",
+        "world:creature:1108"
+      ],
+      "text": "You are in Lake Nazferiti, a lake in Stranglethorn Vale. Snapjaw crocolisks, sharptooth frenzies and Mistvale gorillas hunt along its shores.",
+      "when": {
+        "area_id": 37
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:43",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:43",
+        "world:creature:2672",
+        "world:creature:4505",
+        "world:creature:1564",
+        "world:creature:1653"
+      ],
+      "text": "You are in Wild Shore, a coast in Stranglethorn Vale where Bloodsail deckhands, warlocks and magi prowl the beach. Cowardly Crosby, one of the Goodstitch brothers, sells tailoring supplies here.",
+      "when": {
+        "area_id": 43
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:99",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:99",
+        "world:creature:469",
+        "world:creature:739",
+        "world:creature:24366",
+        "world:creature:734"
+      ],
+      "text": "You are in Rebel Camp, an Alliance camp in Stranglethorn Vale. Lieutenant Doren leads the rebels, who once served Colonel Kurzen and now suspect a traitor among them. Brother Nimetz blames the ogre mage Mai'Zoth for Kurzen's corruption. Nizzle the gryphon master offers flights, and Corporal Bluth trades goods here.",
+      "when": {
+        "area_id": 99
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:100",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:100",
+        "world:creature:715",
+        "world:creature:717",
+        "world:creature:718",
+        "world:creature:681",
+        "world:creature:1150",
+        "world:creature:716",
+        "world:quest:338"
+      ],
+      "text": "You are in Nesingwary's Expedition, a hunting camp in Stranglethorn Vale. Hemet Nesingwary Jr. leads hunts for big game, and Ajeck Rouack trains hunters in tiger hunting while Sir S. J. Erlgadin teaches panther hunting. Young Stranglethorn tigers and river crocolisks roam the surroundings. Barnil Stonepot is still searching for the scattered pages of the novel The Green Hills of Stranglethorn.",
+      "when": {
+        "area_id": 100
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:101",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:101",
+        "world:creature:939",
+        "world:creature:938",
+        "world:creature:940",
+        "world:creature:942",
+        "world:quest:202"
+      ],
+      "text": "You are in Kurzen's Compound, a camp of Colonel Kurzen's men in Stranglethorn Vale. Kurzen elites, commandos, medicine men and witch doctors guard it, and Colonel Kurzen commands from the Stockpile, the cavern complex at its back.",
+      "when": {
+        "area_id": 101
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:102",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:102",
+        "world:creature:701",
+        "world:creature:588",
+        "world:creature:671"
+      ],
+      "text": "You are in the Ruins of Zul'Kunda in Stranglethorn Vale, ruins where Bloodscalp trolls roam. Bloodscalp mystics, scouts and headhunters are all found among them.",
+      "when": {
+        "area_id": 102
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:103",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:103",
+        "world:creature:667",
+        "world:creature:783",
+        "world:creature:780"
+      ],
+      "text": "You are in the Ruins of Zul'Mamwe in Stranglethorn Vale, territory of the Skullsplitter trolls. Their warriors, berserkers, scouts, axe throwers, hunters and mystics roam the ruins.",
+      "when": {
+        "area_id": 103
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:104",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:104",
+        "world:creature:873",
+        "world:creature:871",
+        "world:creature:875"
+      ],
+      "text": "You are in The Vile Reef, a reef in Stranglethorn Vale. Saltscale oracles, warriors, hunters, foragers and tide lords live among its waters.",
+      "when": {
+        "area_id": 104
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:105",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:105",
+        "world:creature:709",
+        "world:creature:679",
+        "world:creature:710",
+        "world:creature:678",
+        "world:creature:772"
+      ],
+      "text": "You are in the Mosh'Ogg Ogre Mound in Stranglethorn Vale, home of the Mosh'Ogg ogres. Warmongers, shamans, spellcrafters and maulers are among them, and Stranglethorn tigresses roam nearby.",
+      "when": {
+        "area_id": 105
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:117",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:117",
+        "world:creature:2464",
+        "world:creature:2465",
+        "world:creature:2497",
+        "world:creature:2519",
+        "world:creature:17094"
+      ],
+      "text": "You are in Grom'gol Base Camp, the Warchief's base camp in Stranglethorn Vale. Commander Aggro'gosh commands it and sends people to guard the supply route toward Stonard against raptors and ogres. Far Seer Mok'thardin works enchantments here, and Nimboya, a Darkspear from Orgrimmar, searches for his chief's lost son.",
+      "when": {
+        "area_id": 117
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:122",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:122",
+        "world:creature:660",
+        "world:creature:597",
+        "world:creature:671",
+        "world:creature:1151"
+      ],
+      "text": "You are in Zuuldaia Ruins, a ruined site in Stranglethorn Vale. Bloodscalp witch doctors, berserkers and headhunters haunt the ruins, and saltwater crocolisks are among its dangers.",
+      "when": {
+        "area_id": 122
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:123",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:123",
+        "world:creature:697",
+        "world:creature:694",
+        "world:creature:587"
+      ],
+      "text": "You are in Bal'lal Ruins, a ruined site in Stranglethorn Vale. Bloodscalp shamans, axe throwers and warriors haunt the ruins.",
+      "when": {
+        "area_id": 123
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:125",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:125",
+        "world:creature:4461",
+        "world:creature:4458",
+        "world:creature:14487",
+        "world:creature:4459",
+        "world:creature:4460",
+        "world:creature:4457"
+      ],
+      "text": "You are in Kal'ai Ruins, a ruined site in Stranglethorn Vale. Murkgill warriors, hunters, oracles, lords and foragers haunt the ruins, and a creature called Gluggle is among its dangers.",
+      "when": {
+        "area_id": 125
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:126",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:126",
+        "world:creature:694",
+        "world:creature:587",
+        "world:creature:702",
+        "world:creature:681"
+      ],
+      "text": "You are in Tkashi Ruins, a ruined site in Stranglethorn Vale. Bloodscalp axe throwers, warriors and scavengers haunt the ruins, and young Stranglethorn tigers prowl among them.",
+      "when": {
+        "area_id": 126
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:127",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:127",
+        "world:creature:780",
+        "world:creature:667",
+        "world:creature:696",
+        "world:creature:1114",
+        "world:creature:772"
+      ],
+      "text": "You are in Balia'mah Ruins, a ruined site in Stranglethorn Vale. Skullsplitter mystics, warriors and axe throwers haunt the ruins, along with jungle thunderers and Stranglethorn tigers.",
+      "when": {
+        "area_id": 127
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:128",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:128",
+        "world:creature:667",
+        "world:creature:780",
+        "world:creature:696",
+        "world:creature:1114"
+      ],
+      "text": "You are in Ziata'jai Ruins, a ruined site in Stranglethorn Vale. Skullsplitter warriors, mystics and axe throwers haunt the ruins, and jungle thunderers are among them.",
+      "when": {
+        "area_id": 128
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:129",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:129",
+        "world:creature:1144",
+        "world:creature:1142",
+        "world:creature:14488"
+      ],
+      "text": "You are in Mizjah Ruins, a ruined site in Stranglethorn Vale. Mosh'Ogg witch doctors and brutes haunt the ruins, and a creature called Roloch is among its dangers.",
+      "when": {
+        "area_id": 129
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:297",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:297",
+        "world:creature:2634",
+        "world:creature:1559",
+        "world:creature:2521",
+        "world:creature:2522",
+        "world:quest:630"
+      ],
+      "text": "You are in Jaguero Isle, an island in Stranglethorn Vale. Princess Poobah is held captive here by King Mukla, a Skymane king who commands the island's beasts, and skymane gorillas and jaguero stalkers roam the island.",
+      "when": {
+        "area_id": 297
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:301",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:301",
+        "world:creature:6491",
+        "world:creature:1151",
+        "world:creature:2635",
+        "world:creature:689",
+        "world:creature:691",
+        "world:creature:686"
+      ],
+      "text": "You are in The Savage Coast, a coastal area in Stranglethorn Vale. A spirit healer is found here, but saltwater crocolisks, elder saltwater crocolisks, crystal spine basilisks, lesser water elementals, Stranglethorn tigers and lashtail raptors roam the coast.",
+      "when": {
+        "area_id": 301
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:302",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:302",
+        "world:creature:1558",
+        "world:creature:1488",
+        "world:creature:1491",
+        "world:creature:14491",
+        "world:creature:1492"
+      ],
+      "text": "You are in The Crystal Shore, a coastal area in Stranglethorn Vale. Silverback patriarchs, zanzil zombies and zanzil nagas haunt the shore, and Kurmokk and Gorlash are among its dangers.",
+      "when": {
+        "area_id": 302
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:310",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:310",
+        "world:creature:1550",
+        "world:creature:1551",
+        "world:creature:1552"
+      ],
+      "text": "You are in Crystalvein Mine, a mine in Stranglethorn Vale. Thrashtail basilisks and ironjaw basilisks haunt the mine, and a scale belly is among the creatures that live there.",
+      "when": {
+        "area_id": 310
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:311",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:311",
+        "world:creature:1491",
+        "world:creature:1488",
+        "world:creature:1490",
+        "world:creature:2534",
+        "world:creature:2530"
+      ],
+      "text": "You are in the Ruins of Aboraz, a ruined site in Stranglethorn Vale. Zanzil nagas, zombies and witch doctors haunt the ruins, and Zanzil the Outcast and Yenniku are among the notable creatures here.",
+      "when": {
+        "area_id": 311
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:477",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:477",
+        "world:creature:1491",
+        "world:creature:1488",
+        "world:creature:1490",
+        "world:creature:1489",
+        "world:creature:2535",
+        "world:creature:2536"
+      ],
+      "text": "You are in Ruins of Jubuwal, a set of ruins in Stranglethorn Vale. Zanzil nagas, zombies, witch doctors and hunters haunt the ruins, and Maury \"Club Foot\" Wilkins and Jon-Jon the Crow are among the hostile individuals.",
+      "when": {
+        "area_id": 477
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1577",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1577",
+        "world:creature:16399",
+        "world:creature:6491",
+        "world:creature:687",
+        "world:creature:1907",
+        "world:creature:1713",
+        "world:creature:1557",
+        "world:creature:690"
+      ],
+      "text": "You are in The Cape of Stranglethorn, a stretch of coast in Stranglethorn Vale. The Bloodsail Traitor, a former Bloodsail pirate, seeks pardon from Revilgaz and refuses to kill former crewmates. He offers replica bandannas made from silk and red dye instead. A spirit healer is also here, and jungle stalkers, naga explorers, panthers, gorillas and basilisks are hostile.",
+      "when": {
+        "area_id": 1577
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1578",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1578",
+        "world:quest:597",
+        "world:creature:1561",
+        "world:creature:1562",
+        "world:creature:690",
+        "world:creature:687",
+        "world:creature:1907",
+        "world:creature:2545"
+      ],
+      "text": "You are in Southern Savage Coast, a stretch of coastline in Stranglethorn Vale. A map written as orders to Bloodsail men tells them to hold a camp on this coast and wait for a signal from a southern command post before attacking. Bloodsail raiders and mages, along with basilisks, stalkers and naga explorers, are hostile here, and \"Pretty Boy\" Duncan is among them.",
+      "when": {
+        "area_id": 1578
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1737",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1737",
+        "world:creature:1557",
+        "world:creature:14491",
+        "world:creature:1558"
+      ],
+      "text": "You are in Mistvale Valley, a valley in Stranglethorn Vale. Elder mistvale gorillas roam it in numbers, and Kurmokk and the Silverback Patriarch are among its hostile individuals.",
+      "when": {
+        "area_id": 1737
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1738",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1738",
+        "world:creature:1907",
+        "world:creature:2541"
+      ],
+      "text": "You are in Nek'mani Wellspring, a spring in Stranglethorn Vale. Naga explorers are hostile here, and Lord Sakrasis is among the dangers.",
+      "when": {
+        "area_id": 1738
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1739",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1739",
+        "world:creature:1564",
+        "world:creature:1563",
+        "world:creature:687"
+      ],
+      "text": "You are in Bloodsail Compound, a Bloodsail base in Stranglethorn Vale. Bloodsail warlocks and swashbucklers are hostile here, and jungle stalkers are dangerous here too.",
+      "when": {
+        "area_id": 1739
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1740",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1740",
+        "world:creature:1096",
+        "world:creature:4260",
+        "world:creature:709",
+        "world:creature:684",
+        "world:creature:682",
+        "world:creature:772"
+      ],
+      "text": "You are in Venture Co. Base Camp, a base camp in Stranglethorn Vale. Venture Co. geologists are the most common hostile here, along with Venture Co. shredders, mosh'ogg warmongers, shadowmaw panthers, and stranglethorn tigers and tigresses.",
+      "when": {
+        "area_id": 1740
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1741",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1741",
+        "world:creature:687",
+        "world:creature:1653",
+        "world:creature:1565",
+        "world:creature:730",
+        "world:creature:6491"
+      ],
+      "text": "You are in Gurubashi Arena, an arena in Stranglethorn Vale where fights are held. Jungle stalkers, Bloodsail elder magi and Bloodsail sea dogs are hostile here, and Tethis is among the dangers. A spirit healer is also present.",
+      "when": {
+        "area_id": 1741
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1742",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1742",
+        "world:creature:1449",
+        "world:creature:1557",
+        "world:creature:14491"
+      ],
+      "text": "You are in Spirit Den, a den in Stranglethorn Vale. Witch Doctor Unbagwa speaks with spirits here and offers to summon Mokk the Savage once given a gorilla fang. He asks to be guarded from the gorillas while he performs the ritual, and elder mistvale gorillas and Kurmokk are hostile here.",
+      "when": {
+        "area_id": 1742
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1760",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1760",
+        "world:creature:1096",
+        "world:creature:1097",
+        "world:creature:905",
+        "world:creature:1152",
+        "world:creature:4723"
+      ],
+      "text": "You are in Venture Co. Operations Center, a center in Stranglethorn Vale. Venture Co. geologists and mechanics are hostile here, along with sharptooth frenzies and snapjaw crocolisks, and Foreman Cozzle is among the dangers.",
+      "when": {
+        "area_id": 1760
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2177",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2177",
+        "world:creature:14508"
+      ],
+      "text": "You are in Battle Ring, a ring in Stranglethorn Vale. Short John Mithril, a pirate, welcomes visitors to the Gurubashi Arena and delights in watching its fights. He advertises treasure in a chest on the arena floor and invites people to collect it.",
+      "when": {
+        "area_id": 2177
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3357",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3357",
+        "world:creature:14875",
+        "world:creature:14910",
+        "world:creature:14921",
+        "world:creature:14902",
+        "world:creature:14903"
+      ],
+      "text": "You are in Yojamba Isle, an isle in Stranglethorn Vale where a Zandalar contingent is stationed. Molthor, the Hand of Rastakhan, speaks of Hakkar's return and the Soulflayer, and Exzhal, a servitor of Rastakhan, calls for the plans of Hakkar's enthralled high priests to be stopped. Rin'wosho the Trader offers goods and repairs here, and Jin'rokh and Al'tabim speak for the tribe.",
+      "when": {
+        "area_id": 3357
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:100": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 100 (Nesingwary's Expedition)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:101": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 101 (Kurzen's Compound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:102": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 102 (Ruins of Zul'Kunda)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:103": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 103 (Ruins of Zul'Mamwe)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:104": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 104 (The Vile Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:105": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 105 (Mosh'Ogg Ogre Mound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:117": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 117 (Grom'gol Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:122": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 122 (Zuuldaia Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:123": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 123 (Bal'lal Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:125": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 125 (Kal'ai Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:126": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 126 (Tkashi Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:127": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 127 (Balia'mah Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:128": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 128 (Ziata'jai Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:129": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 129 (Mizjah Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1577": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1577 (The Cape of Stranglethorn)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1578": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1578 (Southern Savage Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1737": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1737 (Mistvale Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1738": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1738 (Nek'mani Wellspring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1739": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1739 (Bloodsail Compound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1740": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1740 (Venture Co. Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1741": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1741 (Gurubashi Arena)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1742": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1742 (Spirit Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1760": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1760 (Venture Co. Operations Center)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:19": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 19 (Zul'Gurub)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2177": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2177 (Battle Ring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:297": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 297 (Jaguero Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:301": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 301 (The Savage Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:302": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 302 (The Crystal Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:310": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 310 (Crystalvein Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:311": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 311 (Ruins of Aboraz)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:33": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 33 (Stranglethorn Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3357": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3357 (Yojamba Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:35": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 35 (Booty Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:37": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 37 (Lake Nazferiti)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:43": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 43 (Wild Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:477": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 477 (Ruins of Jubuwal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:99": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 99 (Rebel Camp)",
+      "revision": "3.3.5a client data"
+    },
     "source:00a5a67285722d03c7f07f1d": {
       "kind": "research",
       "reference": "evidence:sha256:22e2c686335c352c1ab1249e9fb811539366e7cc450ca9add1f849f3898e96a5",
@@ -11116,6 +11945,596 @@
       "kind": "research",
       "reference": "evidence:sha256:b7b78afe7cd6f6e9d4e2545a9f5d9961c5f8c25a3536eb8e237f58e16d9ca34e",
       "revision": "45e7ffd18e5714ba27a7f51e3d8fc9d2ab930829f28ad2acb8f77bdad082da96"
+    },
+    "world:creature:1096": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1096 (Venture Co. Geologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1097": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1097 (Venture Co. Mechanic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1108": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1108 (Mistvale Gorilla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1114 (Jungle Thunderer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11346 (Hakkari Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11355 (Gurubashi Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11383 (High Priestess Hai'watna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1142 (Mosh'Ogg Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1144 (Mosh'Ogg Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1150 (River Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1151": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1151 (Saltwater Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1152": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1152 (Snapjaw Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14487": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14487 (Gluggle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14488": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14488 (Roloch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1449 (Witch Doctor Unbagwa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14491 (Kurmokk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14508": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14508 (Short John Mithril), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14875 (Molthor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1488": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1488 (Zanzil Zombie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1489": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1489 (Zanzil Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1490": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1490 (Zanzil Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14902": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14902 (Jin'rokh the Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14903": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14903 (Al'tabim the All-Seeing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1491 (Zanzil Naga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14910": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14910 (Exzhal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1492": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1492 (Gorlash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14921 (Rin'wosho the Trader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1550": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1550 (Thrashtail Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1551": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1551 (Ironjaw Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1552": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1552 (Scale Belly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1557 (Elder Mistvale Gorilla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1558": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1558 (Silverback Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1559": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1559 (King Mukla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1561 (Bloodsail Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1562 (Bloodsail Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1563": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1563 (Bloodsail Swashbuckler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1564 (Bloodsail Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1565": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1565 (Bloodsail Sea Dog), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16399 (Bloodsail Traitor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1653": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1653 (Bloodsail Elder Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17094 (Nemeth Hawkeye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1713 (Elder Shadowmaw Panther), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1907": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1907 (Naga Explorer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24366 (Nizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2464 (Commander Aggro'gosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2465 (Far Seer Mok'thardin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2486": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2486 (Fin Fizracket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2487": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2487 (Fleet Master Seahorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2488": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2488 (Deeg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2497 (Nimboya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2519 (Kin'weelay), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2521": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2521 (Skymane Gorilla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2522 (Jaguero Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2530": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2530 (Yenniku), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2534 (Zanzil the Outcast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2535": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2535 (Maury \"Club Foot\" Wilkins), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2536": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2536 (Jon-Jon the Crow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2541": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2541 (Lord Sakrasis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2545": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2545 (\"Pretty Boy\" Duncan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2634": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2634 (Princess Poobah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2635 (Elder Saltwater Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2672": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2672 (Cowardly Crosby), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4260": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4260 (Venture Co. Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4457": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4457 (Murkgill Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4458": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4458 (Murkgill Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4459": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4459 (Murkgill Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4460 (Murkgill Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4461 (Murkgill Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4505 (Bloodsail Deckhand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 469 (Lieutenant Doren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4723 (Foreman Cozzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:587": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 587 (Bloodscalp Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:588": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 588 (Bloodscalp Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 597 (Bloodscalp Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 660 (Bloodscalp Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:667": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 667 (Skullsplitter Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:671": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 671 (Bloodscalp Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 678 (Mosh'Ogg Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 679 (Mosh'Ogg Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 681 (Young Stranglethorn Tiger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 682 (Stranglethorn Tiger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 684 (Shadowmaw Panther), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 686 (Lashtail Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 687 (Jungle Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:689": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 689 (Crystal Spine Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 690 (Cold Eye Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 691 (Lesser Water Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:694": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 694 (Bloodscalp Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 696 (Skullsplitter Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:697": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 697 (Bloodscalp Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 701 (Bloodscalp Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:702": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 702 (Bloodscalp Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:709": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 709 (Mosh'Ogg Warmonger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:710": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 710 (Mosh'Ogg Spellcrafter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 715 (Hemet Nesingwary Jr.), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:716": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 716 (Barnil Stonepot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 717 (Ajeck Rouack), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 718 (Sir S. J. Erlgadin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:730": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 730 (Tethis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 734 (Corporal Bluth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 739 (Brother Nimetz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 772 (Stranglethorn Tigress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 780 (Skullsplitter Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:783": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 783 (Skullsplitter Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:871": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 871 (Saltscale Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 873 (Saltscale Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 875 (Saltscale Tide Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:905": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 905 (Sharptooth Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:938": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 938 (Kurzen Commando), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 939 (Kurzen Elite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:940": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 940 (Kurzen Medicine Man), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:942": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 942 (Kurzen Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:202": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 202 (Colonel Kurzen)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:338": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 338 (The Green Hills of Stranglethorn)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:581": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 581 (Hunt for Yenniku)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:597": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 597 (The Bloodsail Buccaneers)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:630": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 630 (Message in a Bottle)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

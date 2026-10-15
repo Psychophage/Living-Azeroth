@@ -3344,7 +3344,701 @@
     }
   ],
   "place": "Sholazar Basin",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3711",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3711",
+        "dbc:area:4284",
+        "dbc:area:4383",
+        "world:creature:28078",
+        "world:creature:28111",
+        "world:creature:28001",
+        "world:creature:28009",
+        "world:creature:28086"
+      ],
+      "text": "You are in Sholazar Basin, a Northrend land held by neither the Alliance nor the Horde. It is jungle and lake country, with Nesingwary Base Camp and Lakeside Landing as its main settlements. Frenzyheart wolvar and Sparktouched gorlocs contest the land around their shrines. Dreadsabers, hive wasps, rhinos and crocolisks roam the wilds.",
+      "when": {
+        "zone_id": 3711
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4282",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4282",
+        "world:creature:28220",
+        "world:creature:28218",
+        "world:creature:28170",
+        "world:creature:28242",
+        "world:creature:28207",
+        "world:creature:28208"
+      ],
+      "text": "You are in The Avalanche, an area of Sholazar Basin. Frostbitten corpses and snowblind ghouls are the commonest dangers, with frost screechers and risen reavers also here. Cerberon and Hailscorn are among the notable creatures.",
+      "when": {
+        "area_id": 4282
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4283",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4283",
+        "world:creature:28113",
+        "world:creature:28320",
+        "world:creature:28101",
+        "world:creature:29123",
+        "world:creature:28108"
+      ],
+      "text": "You are in The Lost Lands, a part of Sholazar Basin where the Mosswalkers have been attacked. An injured Mosswalker asks for the undead to go away and for better weather. Blighted corpses, monstrous wights and bonescythe ravagers prowl here, and a servant of Freya is among the elementals.",
+      "when": {
+        "area_id": 4283
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4284",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4284",
+        "world:creature:27986",
+        "world:creature:28033",
+        "world:creature:28037",
+        "dbc:taxi:309"
+      ],
+      "text": "You are in Nesingwary Base Camp, a hunting camp in Sholazar Basin run by Hemet Nesingwary's expedition, with an inn, a flight master and a stable master. Hemet Nesingwary hunts the basin's largest game, and Weslex Quickwrench is restoring the Spirit of Gnomeregan, the expedition's flying machine, after the ship ran aground.",
+      "when": {
+        "area_id": 4284
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4285",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4285",
+        "world:creature:28002",
+        "world:creature:28011",
+        "world:creature:30737"
+      ],
+      "text": "You are in The Seabreach Flow, a stretch of Sholazar Basin where Mangal crocolisks and emperor cobras are the chief dangers. A Nesingwary game warden is assigned to the area.",
+      "when": {
+        "area_id": 4285
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4287",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4287",
+        "world:creature:28078",
+        "world:creature:28079",
+        "world:creature:28106",
+        "world:creature:28111",
+        "world:creature:28112"
+      ],
+      "text": "You are in Kartak's Hold, a part of Sholazar Basin where Frenzyheart wolvar and Sparktouched gorlocs are at war. Frenzyheart ravagers and hunters attack the gorlocs here, and Shaman Jakjek is among the Frenzyheart. Sparktouched warriors and oracles fight back.",
+      "when": {
+        "area_id": 4287
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4288",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4288",
+        "world:creature:28107",
+        "world:creature:28078",
+        "world:creature:28001"
+      ],
+      "text": "You are in Sparktouched Haven, a haven of Sparktouched gorlocs in Sholazar Basin, under attack from Frenzyheart wolvar. Lightningcaller Soo-met, a Sparktouched oracle, says the wolvar have attacked for days but the Great Lightning Stone remains safe. Dreadsabers are a danger here too.",
+      "when": {
+        "area_id": 4288
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4289",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4289",
+        "world:creature:28078",
+        "world:creature:28079",
+        "world:creature:28111",
+        "world:creature:28129"
+      ],
+      "text": "You are in The Path of the Lifewarden, a route in Sholazar Basin where Frenzyheart ravagers and hunters are found alongside Sparktouched warriors. Longneck grazers graze among them.",
+      "when": {
+        "area_id": 4289
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4290",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4290",
+        "world:quest:12651",
+        "world:quest:12735",
+        "world:creature:6491",
+        "world:creature:28010"
+      ],
+      "text": "You are in River's Heart, a spot near the centre of Sholazar Basin where the rivers converge. A spirit healer is here, and stranded threshers are the danger. Evil spirits are said to plague the waters, according to the Rainspeakers.",
+      "when": {
+        "area_id": 4290
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4291",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4291",
+        "world:creature:28027",
+        "world:creature:29006",
+        "world:creature:29035",
+        "world:quest:12571"
+      ],
+      "text": "You are in Rainspeaker Canopy, the sacred village of the Rainspeakers in Sholazar Basin. High-Oracle Soo-say seeks help protecting the village's hatchlings from emperor cobras. Oracle Soo-nee teaches songs of storm and water. The village has a smith and merchants selling food, reagents and goods.",
+      "when": {
+        "area_id": 4291
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4292",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4292",
+        "world:creature:28082",
+        "world:creature:28138",
+        "world:creature:28076",
+        "world:creature:28077"
+      ],
+      "text": "You are in Frenzyheart Hill, the camp of the Frenzyheart wolvar in Sholazar Basin. High-Shaman Rakjak trains outsiders as hunters and treats them as slaves. Elder Harkek worries about food for the tribe and values capable people. The camp has a smith and stalls.",
+      "when": {
+        "area_id": 4292
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4293",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4293",
+        "world:creature:27987",
+        "world:creature:28315",
+        "world:creature:28011",
+        "world:creature:28002"
+      ],
+      "text": "You are in Wildgrowth Mangal, a jungle stretch of Sholazar Basin where emperor cobras and mangal crocolisks are the chief dangers. Monte Muzzleshot, a stranded supply man, warns that the jungle is dangerous with the Venture Company about. Shaman Vekjik, a hostile Frenzyheart shaman, is also here.",
+      "when": {
+        "area_id": 4293
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4295",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4295",
+        "world:creature:29124",
+        "world:creature:28108",
+        "world:creature:28641",
+        "world:creature:28659",
+        "world:creature:28113"
+      ],
+      "text": "You are in The Sundered Shard, a part of Sholazar Basin where lifeblood elementals and bonescythe ravagers attack. Blighted corpses are here too, and Artruis the Heartless is among the dangers. An injured Mosswalker speaks for its people after an attack.",
+      "when": {
+        "area_id": 4295
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4296",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4296",
+        "world:creature:28464",
+        "world:creature:28108",
+        "world:creature:29123",
+        "world:quest:12608"
+      ],
+      "text": "You are in The Lifeblood Pillar, a site in Sholazar Basin where the Lifeblood Pillar has been brought down. A burned Cult of the Damned corpse still marks the cult's presence there, and bonescythe ravagers and a monstrous wight haunt the ground around it.",
+      "when": {
+        "area_id": 4296
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4297",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4297",
+        "world:creature:28113",
+        "world:creature:28108",
+        "world:creature:28641"
+      ],
+      "text": "You are in Mosswalker Village, a Mosswalker settlement in Sholazar Basin that was attacked. A severely injured Mosswalker speaks for its people, wondering why they were harmed after giving shinies to the shrine. Bonescythe ravagers and blighted corpses still roam the village.",
+      "when": {
+        "area_id": 4297
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4303",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4303",
+        "world:creature:28096",
+        "world:creature:28213",
+        "world:creature:28086",
+        "world:creature:28127"
+      ],
+      "text": "You are in Hardknuckle Clearing, a clearing in Sholazar Basin where hardknuckle chargers and a hardknuckle matriarch make the ground dangerous. Sapphire hive wasps fly here too. Softknuckle beasts live in the clearing, and Goregek wants to torment them to draw the matriarch out of hiding.",
+      "when": {
+        "area_id": 4303
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4304",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4304",
+        "world:creature:28085",
+        "world:creature:28086"
+      ],
+      "text": "You are in Sapphire Hive, a hive in Sholazar Basin where sapphire hive drones and wasps are the main dangers.",
+      "when": {
+        "area_id": 4304
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4306",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4306",
+        "world:creature:28114"
+      ],
+      "text": "You are in Mistwhisper Refuge, a refuge in Sholazar Basin where Mistcaller Soo-gan tends the Great Mist Stone. Soo-gan resents the Frenzyheart for damaging the sacred shrines and taking the refuge's treasure.",
+      "when": {
+        "area_id": 4306
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4307",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4307",
+        "world:creature:28320",
+        "world:creature:28538"
+      ],
+      "text": "You are in The Glimmering Pillar, a pillar in Sholazar Basin. A Servant of Freya, an elemental that serves Freya, is found here, and cultist saboteurs are the main danger.",
+      "when": {
+        "area_id": 4307
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4308",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4308",
+        "world:creature:28080",
+        "world:creature:28081",
+        "world:creature:28114"
+      ],
+      "text": "You are in Spearborn Encampment, a camp in the conflict north of Mistwhisper Refuge. Frenzyheart wolvar spearbearers and scavengers fight here, and Mistcaller Soo-gan wants them stopped from disturbing the sacred Great Stones.",
+      "when": {
+        "area_id": 4308
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4368",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4368",
+        "world:creature:28004",
+        "world:creature:29044",
+        "world:creature:28380",
+        "world:quest:12681"
+      ],
+      "text": "You are in The Bonefields, a stretch of Sholazar Basin where goretalon rocs feed on corpses. A goretalon matriarch and Shattertusk bulls are among the dangers here.",
+      "when": {
+        "area_id": 4368
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4369",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4369",
+        "world:creature:28376",
+        "world:creature:28374",
+        "world:creature:28771"
+      ],
+      "text": "You are in Dorian's Outpost, a camp in Sholazar Basin where the hunter Dorian Drakestalker works. His companion Zootfizzle trains and feeds captured baby drakes. Colvin Norrington gathers animal parts here for Archmage Pentarus's research in Dalaran.",
+      "when": {
+        "area_id": 4369
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4376",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4376",
+        "world:creature:28378",
+        "world:creature:28408",
+        "world:creature:28389",
+        "world:creature:28379"
+      ],
+      "text": "You are in The Savage Thicket, a thicket in Sholazar Basin where primordial drakes and their eggs are the main dangers. Primordial hatchlings are found in the caves, and Shattertusk mammoths are found around the thicket.",
+      "when": {
+        "area_id": 4376
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4383",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4383",
+        "world:creature:28574",
+        "world:creature:28568",
+        "world:creature:28746",
+        "dbc:taxi:308",
+        "world:quest:12671"
+      ],
+      "text": "You are in Lakeside Landing, a camp in Sholazar Basin that Marvin and Tamara Wobblesprocket set up to repair flying machines and carry supplies. Marvin is the flight master here, and Pilot Vic, a cold-weather flying trainer, is also here. A strange weather pattern comes from the northeast, and the professor wants it investigated.",
+      "when": {
+        "area_id": 4383
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4385",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4385",
+        "world:creature:28003",
+        "world:creature:28109"
+      ],
+      "text": "You are in Bittertide Lake, a lake in Sholazar Basin where bittertide hydras are the main danger. Mistwhisper warriors are found here as well.",
+      "when": {
+        "area_id": 4385
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4386",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4386",
+        "world:creature:27801",
+        "world:creature:28320",
+        "world:quest:12612",
+        "world:creature:28108",
+        "world:creature:28170"
+      ],
+      "text": "You are in Rainspeaker Rapids, a neutral stretch of Sholazar Basin in Northrend. The Avatar of Freya, who calls itself the Lifewarden, keeps watch over the land against the Scourge, and Servants of Freya, elementals serving her, are about. Scourge undead have pushed into the basin, and Bonescythe Ravagers and Frosthowl Screechers haunt the rapids.",
+      "when": {
+        "area_id": 4386
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4387",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4387",
+        "world:creature:28217",
+        "world:creature:28098",
+        "world:quest:12570",
+        "world:creature:28101",
+        "world:creature:28108",
+        "world:creature:28010"
+      ],
+      "text": "You are in Frenzyheart River, a neutral waterway in Sholazar Basin. An injured Rainspeaker Oracle, a gorloc, waits on its banks for a rescuer to lead it home to the village nearby. Hardknuckle Foragers hunt here under Goregek's direction. Blighted Corpses and Bonescythe Ravagers roam the river, and Stranded Threshers are found in its waters too.",
+      "when": {
+        "area_id": 4387
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4388",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4388",
+        "world:creature:29036",
+        "world:creature:28086",
+        "world:creature:28085",
+        "world:creature:28083",
+        "world:creature:28002",
+        "world:creature:28011"
+      ],
+      "text": "You are in Wintergrasp River, a neutral river in Sholazar Basin, watched over by Servants of Freya, elementals serving her. Sapphire Hive Wasps and Drones swarm its banks, and Serfex the Reaver roams here. Mangal Crocolisks and Emperor Cobras lurk in the water and grass.",
+      "when": {
+        "area_id": 4388
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4391",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4391",
+        "world:creature:28787",
+        "world:creature:28186",
+        "world:creature:28123",
+        "world:creature:28124",
+        "world:quest:12688"
+      ],
+      "text": "You are in Swindlegrin's Dig, a neutral site in Sholazar Basin. Venture Company goblins hold the pillar here under Foreman Swindlegrin, with excavators and ruffians about. Engineer Helice, an explorer who came for the pillar's crystals, was detained here by them.",
+      "when": {
+        "area_id": 4391
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4392",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4392",
+        "world:creature:6491",
+        "world:creature:29079",
+        "world:creature:28858",
+        "world:creature:28862",
+        "world:creature:28877",
+        "world:creature:29013"
+      ],
+      "text": "You are in The Stormwright's Shelf, a neutral ledge in Sholazar Basin. The Shrine of the Tempest stands on its western side, where Rejek sends those carrying essences of wind and water to draw on the tempest's power. Its spirit healer offers a return to life, though not always yet. Storm Revenants and Aqueous Spirits roam the shelf, along with Stormwatchers and Perch Guardians.",
+      "when": {
+        "area_id": 4392
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4393",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4393",
+        "world:creature:28373"
+      ],
+      "text": "You are in Death's Hand Encampment, a place in Sholazar Basin. Cultist Infiltrators prowl here.",
+      "when": {
+        "area_id": 4393
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3711": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3711 (Sholazar Basin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4282": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4282 (The Avalanche)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4283": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4283 (The Lost Lands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4284": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4284 (Nesingwary Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4285": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4285 (The Seabreach Flow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4287": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4287 (Kartak's Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4288": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4288 (Sparktouched Haven)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4289": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4289 (The Path of the Lifewarden)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4290": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4290 (River's Heart)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4291": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4291 (Rainspeaker Canopy)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4292": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4292 (Frenzyheart Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4293": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4293 (Wildgrowth Mangal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4295": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4295 (The Sundered Shard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4296": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4296 (The Lifeblood Pillar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4297": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4297 (Mosswalker Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4303": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4303 (Hardknuckle Clearing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4304": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4304 (Sapphire Hive)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4306": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4306 (Mistwhisper Refuge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4307": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4307 (The Glimmering Pillar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4308": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4308 (Spearborn Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4368": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4368 (The Bonefields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4369": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4369 (Dorian's Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4376": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4376 (The Savage Thicket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4383": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4383 (Lakeside Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4385": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4385 (Bittertide Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4386": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4386 (Rainspeaker Rapids)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4387": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4387 (Frenzyheart River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4388": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4388 (Wintergrasp River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4391": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4391 (Swindlegrin's Dig)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4392": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4392 (The Stormwright's Shelf)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4393": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4393 (Death's Hand Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:308": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 308 (River's Heart, Sholazar Basin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:309": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 309 (Nesingwary Base Camp, Sholazar Basin)",
+      "revision": "3.3.5a client data"
+    },
     "source:0063ba6e277f27dbb3c3f401": {
       "kind": "research",
       "reference": "evidence:sha256:18be4557ec3fead1ee6c9c35b209501a530a654f5f2dbdde9abf831117fcb39a",
@@ -6074,6 +6768,451 @@
       "kind": "research",
       "reference": "evidence:sha256:a02b2bba2b9ae0dd594f1d3e91aaa442765df81fe5f1478da59f4205e14e5e24",
       "revision": "c461817733af17f7a90aac240e1971bdc4448a0404a8224ac218fdebeca94ad6"
+    },
+    "world:creature:27801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27801 (Avatar of Freya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27986 (Hemet Nesingwary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27987": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27987 (Monte Muzzleshot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28001": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28001 (Dreadsaber), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28002": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28002 (Mangal Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28003": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28003 (Bittertide Hydra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28004": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28004 (Goretalon Roc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28009": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28009 (Shardhorn Rhino), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28010": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28010 (Stranded Thresher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28011": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28011 (Emperor Cobra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28027": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28027 (High-Oracle Soo-say), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28033 (Weslex Quickwrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28037": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28037 (The Spirit of Gnomeregan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28076": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28076 (Frenzyheart Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28077 (Frenzyheart Tracker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28078": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28078 (Frenzyheart Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28079 (Frenzyheart Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28080 (Frenzyheart Spearbearer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28081": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28081 (Frenzyheart Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28082": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28082 (High-Shaman Rakjak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28083": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28083 (Serfex the Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28085": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28085 (Sapphire Hive Drone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28086 (Sapphire Hive Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28096": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28096 (Hardknuckle Charger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28098": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28098 (Hardknuckle Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28101": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28101 (Blighted Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28106": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28106 (Shaman Jakjek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28107 (Lightningcaller Soo-met), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28108": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28108 (Bonescythe Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28109 (Mistwhisper Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28111 (Sparktouched Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28112 (Sparktouched Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28113 (Mosswalker Victim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28114 (Mistcaller Soo-gan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28123 (Venture Co. Excavator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28124 (Venture Co. Ruffian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28127 (Softknuckle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28129 (Longneck Grazer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28138": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28138 (Elder Harkek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28170": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28170 (Frosthowl Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28186 (Foreman Swindlegrin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28207": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28207 (Cerberon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28208": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28208 (Hailscorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28213 (Hardknuckle Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28217 (Injured Rainspeaker Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28218": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28218 (Snowblind Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28220 (Frostbitten Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28242": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28242 (Risen Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28315 (Shaman Vekjik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28320": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28320 (Servant of Freya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28373 (Cultist Infiltrator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28374 (Zootfizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28376 (Dorian Drakestalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28378 (Primordial Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28379 (Shattertusk Mammoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28380 (Shattertusk Bull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28389 (Primordial Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28408 (Primordial Drake Egg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28464 (Cultist Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28538": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28538 (Cultist Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28568 (Tamara Wobblesprocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28574": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28574 (Marvin Wobblesprocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28641 (Blighted Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28659": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28659 (Artruis the Heartless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28746 (Pilot Vic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28771 (Colvin Norrington), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28787": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28787 (Engineer Helice), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28858 (Storm Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28862": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28862 (Aqueous Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28877": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28877 (Stormwatcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29006": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29006 (Oracle Soo-nee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29013": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29013 (Perch Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29035 (Loomee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29036": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29036 (Servant of Freya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29044 (Goretalon Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29079 (Shrine of the Tempest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29123 (Monstrous Wight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29124 (Lifeblood Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30737 (Nesingwary Game Warden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12570": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12570 (Fortunate Misunderstandings)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12571": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12571 (Make the Bad Snake Go Away)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12608": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12608 (Cultist Incursion)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12612": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12612 (The Fallen Pillar)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12651": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12651 (Lakeside Landing)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12671": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12671 (Reconnaissance Flight)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12681": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12681 (Reagent Agent)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12688": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12688 (Engineering a Disaster)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12735": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12735 (A Cleansing Song)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

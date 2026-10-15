@@ -2038,7 +2038,432 @@
     }
   ],
   "place": "Alterac Mountains",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:36",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:36",
+        "dbc:area:279",
+        "dbc:area:280",
+        "world:creature:13776",
+        "world:creature:2358",
+        "world:creature:2252",
+        "world:creature:2242",
+        "world:creature:2406"
+      ],
+      "text": "You are in Alterac Mountains, a highland zone in the Eastern Kingdoms that neither the Alliance nor the Horde holds. The Frostwolf and Stormpike sides fight over Alterac Valley, where officers recruit soldiers for the campaign. Dalaran wizards patrol the ruins of their crater, and Syndicate gangs hold Strahnbrad, where Crushridge ogres and Syndicate spies roam the hollows. Mountain lions prowl the slopes.",
+      "when": {
+        "zone_id": 36
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:278",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:278",
+        "world:creature:2415",
+        "world:creature:2349",
+        "world:creature:2356",
+        "dbc:taxi:50",
+        "dbc:taxi:89",
+        "dbc:taxi:241",
+        "dbc:taxi:300"
+      ],
+      "text": "You are in Lordamere Internment Camp, a camp in the Alterac Mountains where Alliance guards keep watch. Warden Belamoore, an Alliance spellcaster, is posted here, and transports run from the camp to Menethil Harbor, Theramore, Valiance Keep and Stormwind. Giant moss creepers and elder gray bears roam the camp's edges.",
+      "when": {
+        "area_id": 278
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:279",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:279",
+        "world:creature:2358",
+        "world:creature:2359",
+        "world:creature:2543",
+        "world:creature:18165",
+        "world:creature:2349",
+        "world:creature:2406",
+        "world:creature:2250"
+      ],
+      "text": "You are in Dalaran Crater, the ruined ground around Dalaran's magical dome in the Alterac Mountains. Dalaran wizards and their elemental servants patrol the outskirts, and Archmage Ansirem Runeweaver, a Kirin Tor scholar, studies the area. Archmage Cedric of the Violet Eye fears the Legion may strike again while Karazhan stays sealed. Giant moss creepers and mountain lions roam the crater, and a mountain yeti is among them.",
+      "when": {
+        "area_id": 279
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:280",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:280",
+        "world:creature:2316",
+        "world:creature:2242",
+        "world:creature:2319",
+        "world:creature:2318",
+        "world:creature:2431"
+      ],
+      "text": "You are in Strahnbrad, a Syndicate camp in the Alterac Mountains that holds the Horde captive Gol'dir, who is forced to haul burdens and dig. Syndicate spies, wizards and Argus shadow mages patrol the camp, and a jailor named Borhuin watches over the prisoners.",
+      "when": {
+        "area_id": 280
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:281",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:281",
+        "world:creature:2480",
+        "world:creature:6491",
+        "world:creature:2287",
+        "world:creature:2251",
+        "world:creature:2255",
+        "world:creature:2250"
+      ],
+      "text": "You are in the Ruins of Alterac, a broken town in the Alterac Mountains where a spirit healer offers a return to the living for a price. Bro'kin sells alchemy supplies here. Crushridge fighters and mages, along with giant and mountain yetis, haunt the ruins.",
+      "when": {
+        "area_id": 281
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:282",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:282",
+        "world:creature:2252",
+        "world:creature:2253",
+        "world:creature:2453"
+      ],
+      "text": "You are in Crushridge Hold, a stronghold of Crushridge ogres and brutes in the Alterac Mountains. Lo'Grosh is among the ogres here.",
+      "when": {
+        "area_id": 282
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:283",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:283",
+        "world:creature:2684",
+        "world:creature:2252",
+        "world:creature:2253"
+      ],
+      "text": "You are in Slaughter Hollow, a hollow in the Alterac Mountains where Rizz Loosebolt sells engineering supplies from his shop. Crushridge ogres and brutes roam the hollow.",
+      "when": {
+        "area_id": 283
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:284",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:284",
+        "world:creature:2243",
+        "world:creature:2245",
+        "world:creature:2407",
+        "world:creature:2252",
+        "world:creature:3985"
+      ],
+      "text": "You are in The Uplands, in the Alterac Mountains, where Syndicate sentries and saboteurs watch the ground. Hulking mountain lions and Crushridge ogres roam it, and Grandpa Vishas is among the hostile creatures here.",
+      "when": {
+        "area_id": 284
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1339",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1339",
+        "world:creature:6033",
+        "world:creature:1958"
+      ],
+      "text": "You are in Lordamere Lake in the Alterac Mountains, where lake frenzies and vile fin tidecallers lurk in the water.",
+      "when": {
+        "area_id": 1339
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1357",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1357",
+        "world:creature:2252",
+        "world:creature:2253"
+      ],
+      "text": "You are in Gallows' Corner in the Alterac Mountains, where Crushridge ogres and brutes roam the ground.",
+      "when": {
+        "area_id": 1357
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1677",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1677",
+        "world:creature:13777",
+        "world:creature:14284",
+        "world:creature:16392",
+        "world:creature:2406"
+      ],
+      "text": "You are in Gavin's Naze, an Alliance post in the Alterac Mountains. Sergeant Durgen Stormpike directs soldiers toward enemy graveyards, towers and mines in Alterac Valley, and Stormpike Battleguards and Captain Armando Ossex stand with him. Mountain lions prowl the outskirts.",
+      "when": {
+        "area_id": 1677
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1678",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1678",
+        "world:creature:2333",
+        "world:creature:2240",
+        "world:creature:2241",
+        "world:creature:14281"
+      ],
+      "text": "You are in Sofera's Naze in the Alterac Mountains, where Henchman Valik, an injured Syndicate member, lies dying and will share what he knows for a mug of Southshore stout. Syndicate footpads and thieves roam the naze, and Jimmy the Bleeder is among the hostile creatures here.",
+      "when": {
+        "area_id": 1678
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1679",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1679",
+        "world:creature:2241",
+        "world:creature:2240",
+        "world:creature:2406"
+      ],
+      "text": "You are in Corrahn's Dagger in the Alterac Mountains, where Syndicate thieves and footpads roam among mountain lions.",
+      "when": {
+        "area_id": 1679
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1680",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1680",
+        "world:creature:13841",
+        "world:creature:13217",
+        "world:creature:13816",
+        "world:creature:2249"
+      ],
+      "text": "You are in The Headland, an Alliance-held spot in the Alterac Mountains. Lieutenant Haggerdin recruits for the Stormpike Guard here and urges the soldiers to fight the Frostwolf orcs. Thanthaldis Snowgleam, the Stormpike supply officer, sells goods and repairs gear, and a prospector of the Explorers' League searches the place for artifacts. Yetis and mountain lions are the dangers around it.",
+      "when": {
+        "area_id": 1680
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1682",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1682",
+        "world:creature:2317",
+        "world:creature:2246",
+        "world:creature:2247",
+        "world:creature:2423"
+      ],
+      "text": "You are in Dandred's Fold, a place that belongs to neither side in the Alterac Mountains. Syndicate assassins and enforcers are the dangers here, along with mountain lions. Elysa, who was kept against her will by Lord Aliden Perenolde, is found here and asks only to be left in peace.",
+      "when": {
+        "area_id": 1682
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1683",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1683",
+        "world:creature:19907",
+        "world:creature:14284",
+        "world:creature:2251",
+        "world:creature:2250"
+      ],
+      "text": "You are in Growless Cave, an Alliance-held cave in the Alterac Mountains. The Alterac Valley battlemaster Grumbol Grimhammer directs visitors toward the fighting, and Stormpike Battleguards stand with him. Giant and mountain yetis are the dangers here.",
+      "when": {
+        "area_id": 1683
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1684",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1684",
+        "world:creature:6176",
+        "world:quest:1712",
+        "world:quest:8412",
+        "world:creature:2406",
+        "world:creature:2407"
+      ],
+      "text": "You are in Chillwind Point, a neutral site in the Alterac Mountains. Bath'rah the Windwatcher has watched for ages the place where the wind lord Cyclonian may be summoned, and he seeks a champion to face him. He says the elemental spirits here no longer favor him. Mountain lions are the dangers around the point.",
+      "when": {
+        "area_id": 1684
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3486",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3486",
+        "world:creature:6707",
+        "world:creature:6768",
+        "world:creature:6771",
+        "world:creature:6779"
+      ],
+      "text": "You are in Ravenholdt Manor, the home of Lord Jorach Ravenholdt, who leads the Assassin's League. Fahrad, a grand master rogue, teaches rogues and recruits promising thieves for the League. Assassins guard the manor with blades and poison, and its vendors sell poisons and other goods.",
+      "when": {
+        "area_id": 3486
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1339": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1339 (Lordamere Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1357": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1357 (Gallows' Corner)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1677": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1677 (Gavin's Naze)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1678": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1678 (Sofera's Naze)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1679": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1679 (Corrahn's Dagger)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1680": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1680 (The Headland)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1682": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1682 (Dandred's Fold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1683": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1683 (Growless Cave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1684": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1684 (Chillwind Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:278": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 278 (Lordamere Internment Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:279": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 279 (Dalaran Crater)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:280": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 280 (Strahnbrad)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:281": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 281 (Ruins of Alterac)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:282": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 282 (Crushridge Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:283": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 283 (Slaughter Hollow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:284": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 284 (The Uplands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3486": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3486 (Ravenholdt Manor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:36": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 36 (Alterac Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:241": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 241 (Transport, Valiance Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:300": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 300 (Transport, Stormwind)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:50": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 50 (Transport, Menethil Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:89": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 89 (Transport, Theramore)",
+      "revision": "3.3.5a client data"
+    },
     "source:00676f8e69d68390aecb4004": {
       "kind": "research",
       "reference": "evidence:sha256:3ee2f6289bf5739c7c2ef90b8462258f4cb65b3f37e170756e96449a7ffeb41b",
@@ -3668,6 +4093,271 @@
       "kind": "research",
       "reference": "evidence:sha256:7d6ff45ec594f323b6e187fbdf74b99fd8d03d5f0cc29f0fa91ed9ba1260d6dd",
       "revision": "27e8fa6d5179a342121c2cb910417f035d56290a9dfdaf92fd74f5f34777658f"
+    },
+    "world:creature:13217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13217 (Thanthaldis Snowgleam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13776": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13776 (Corporal Teeka Bloodsnarl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13777": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13777 (Sergeant Durgen Stormpike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13816": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13816 (Prospector Stonehewer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13841 (Lieutenant Haggerdin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14281": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14281 (Jimmy the Bleeder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14284 (Stormpike Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16392 (Captain Armando Ossex), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18165": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18165 (Archmage Cedric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1958 (Vile Fin Tidecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19907": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19907 (Grumbol Grimhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2240 (Syndicate Footpad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2241 (Syndicate Thief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2242": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2242 (Syndicate Spy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2243": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2243 (Syndicate Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2245": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2245 (Syndicate Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2246": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2246 (Syndicate Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2247 (Syndicate Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2249 (Ferocious Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2250": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2250 (Mountain Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2251": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2251 (Giant Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2252 (Crushridge Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2253": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2253 (Crushridge Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2255 (Crushridge Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2287 (Crushridge Warmonger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2316 (Gol'dir), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2317": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2317 (Elysa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2318 (Argus Shadow Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2319 (Syndicate Wizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2333 (Henchman Valik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2349 (Giant Moss Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2356 (Elder Gray Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2358 (Dalaran Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2359": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2359 (Elemental Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2406": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2406 (Mountain Lion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2407 (Hulking Mountain Lion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2415 (Warden Belamoore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2423 (Lord Aliden Perenolde), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2431 (Jailor Borhuin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2453 (Lo'Grosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2480 (Bro'kin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2543": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2543 (Archmage Ansirem Runeweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2684 (Rizz Loosebolt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3985": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3985 (Grandpa Vishas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6033 (Lake Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6176": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6176 (Bath'rah the Windwatcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6707": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6707 (Fahrad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6768": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6768 (Lord Jorach Ravenholdt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6771 (Ravenholdt Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6779 (Smudge Thunderwood), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1712": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1712 (Cyclonian)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8412": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8412 (Spirit Totem)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -123,7 +123,37 @@
     }
   ],
   "place": "The Veiled Sea",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3479",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3479",
+        "world:creature:17190",
+        "world:creature:17191",
+        "world:creature:17192",
+        "dbc:taxi:88",
+        "world:creature:17311"
+      ],
+      "text": "You are in The Veiled Sea, Alliance land in Outland. Siltfin murlocs, including oracles and hunters, prowl its waters and are the main danger to anyone who ventures out. A transport to Exodar runs from here. On Silvermyst Isle, the night elf fisherman Cowlen is stranded and grieving, believing that the island's creatures killed his family.",
+      "when": {
+        "zone_id": 3479
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3479": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3479 (The Veiled Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:88": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 88 (Transport, Exodar)",
+      "revision": "3.3.5a client data"
+    },
     "source:06db25166b54896cc015057e": {
       "kind": "research",
       "reference": "evidence:sha256:ee31f23ef68028e325d9cf95d7245dfcba31c9a1a03e4597a8222b78e5f0d223",
@@ -238,6 +268,26 @@
       "kind": "research",
       "reference": "evidence:sha256:bde8eacd6db0101267a694c8a7b2adb366f24cd5f300eaae563af2a9d7d0d65d",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "world:creature:17190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17190 (Siltfin Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17191": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17191 (Siltfin Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17192 (Siltfin Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17311": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17311 (Cowlen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

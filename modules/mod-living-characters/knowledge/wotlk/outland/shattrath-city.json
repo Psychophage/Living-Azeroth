@@ -6041,7 +6041,104 @@
     }
   ],
   "place": "Shattrath City",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3703",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3703",
+        "dbc:area:3896",
+        "dbc:area:3898",
+        "dbc:area:3899",
+        "world:creature:22373",
+        "world:creature:22429"
+      ],
+      "text": "You are in Shattrath City, a sanctuary for both sides in Outland. Aldor Rise and the Lower City count as Alliance ground, and Scryer's Tier belongs to neither side. The Aldor and the Scryers each keep their own districts here. Its dangers come from Skettis, where Terokk's minions and loyalists threaten the city and leaving its walls is risky.",
+      "when": {
+        "zone_id": 3703
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3896",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3896",
+        "world:creature:18538",
+        "world:creature:18537",
+        "world:creature:23271",
+        "world:creature:19046",
+        "world:creature:21518",
+        "world:creature:19063"
+      ],
+      "text": "You are in Aldor Rise, a quarter of Shattrath City counted as Alliance ground. High Priestess Ishanah of the Aldor welcomes outsiders here, and Adyen the Lightwarden guards the priesthood against the Burning Legion. Vindicator Kaan fears the force sent after Kael'thas in Netherstorm is too weak. The district has an inn, stables and a jewelcrafting trainer.",
+      "when": {
+        "area_id": 3896
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3898",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3898",
+        "world:creature:18531",
+        "world:creature:18530",
+        "world:creature:18594",
+        "world:creature:19236",
+        "world:creature:19238",
+        "world:creature:19239",
+        "world:creature:19240"
+      ],
+      "text": "You are in Scryer's Tier, a district of Shattrath City that belongs to neither side. Its Scryers are at odds with Kael'thas's forces, and the seer Voren'thal studies how to condense the power of arcane tomes into runes. Dathris Sunstriker sends able people to Larethor at the Sunwell Plateau, a mission that needs the Scryers and Aldor to set aside their differences. Its vendors sell swords, daggers, staves and wands, and it has a class trainer.",
+      "when": {
+        "area_id": 3898
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3899",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3899",
+        "world:creature:22373",
+        "world:creature:22429",
+        "world:creature:23462",
+        "world:creature:23463",
+        "world:creature:19720"
+      ],
+      "text": "You are in Lower City, a busy quarter of Shattrath City counted as Alliance ground. Skettis arakkoa are the trouble here: Defender Grashna rallies defenders against Terokk's minions, and the outcast Vekax says Skettis loyalists mark outcasts for death. Netherwing drakes wait here to carry travelers around Outland if chosen, and a ruffian called Dirty Larry threatens visitors.",
+      "when": {
+        "area_id": 3899
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3703": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3703 (Shattrath City)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3896": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3896 (Aldor Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3898": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3898 (Scryer's Tier)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3899": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3899 (Lower City)",
+      "revision": "3.3.5a client data"
+    },
     "source:00775172baa179439a5a7f74": {
       "kind": "research",
       "reference": "evidence:sha256:98d0791917864549ec2bf2982d9211e061dc2cf8345654cb18f05cb0c5d8b982",
@@ -10551,6 +10648,96 @@
       "kind": "research",
       "reference": "evidence:sha256:7591d2053a9fba62ae37adcd0c973f3ffd3bd3a4eedc9f7d52bd366f316cc46e",
       "revision": "b7366cb4875e9c494f4c7fa141964d4745fc11c8257e04e2e95ee49fcb6d7c06"
+    },
+    "world:creature:18530": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18530 (Voren'thal the Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18531": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18531 (Magistrix Fyalenn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18537": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18537 (Adyen the Lightwarden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18538": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18538 (Ishanah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18594": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18594 (Dathris Sunstriker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19046 (Minalei), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19063 (Hamanar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19236 (Quelama Lightblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19238 (Urumir Stavebright), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19239 (Mahir Redstroke), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19240 (Selanam the Blade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19720": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19720 (\"Dirty\" Larry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21518 (Oruhe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22373 (Defender Grashna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22429 (Vekax), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23271 (Vindicator Kaan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23462 (Jorus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23463 (Onyxien), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

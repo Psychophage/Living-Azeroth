@@ -1552,7 +1552,268 @@
     }
   ],
   "place": "Isle of Quel'Danas",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4080",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4080",
+        "dbc:area:4087",
+        "world:creature:24813",
+        "world:creature:24966"
+      ],
+      "text": "You are in the Isle of Quel'Danas in the Eastern Kingdoms, land held by neither the Alliance nor the Horde. Sun's Reach Harbor is its one settlement, and the Shattered Sun Offensive works from a staging area and a sanctum against the Legion. Its main dangers are Dawnblade fighters, wretched fiends, ghouls and ravagers, Darkspine myrmidons, and Legion hellions and demons.",
+      "when": {
+        "zone_id": 4080
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4081",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4081",
+        "world:creature:25087"
+      ],
+      "text": "You are in The Dawnchaser on the Isle of Quel'Danas, where Dawnblade reservists are the danger.",
+      "when": {
+        "area_id": 4081
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4082",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4082",
+        "world:creature:25236",
+        "world:creature:25087"
+      ],
+      "text": "You are in The Sin'loren on the Isle of Quel'Danas, where Dawnblade reservists are a danger. An unrestrained dragonhawk here can carry a traveler back to Sun's Reach, though the animal seems unsettled by commotion nearby.",
+      "when": {
+        "area_id": 4082
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4084",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4084",
+        "world:creature:25087"
+      ],
+      "text": "You are in The Bloodoath on the Isle of Quel'Danas, where Dawnblade reservists are a danger.",
+      "when": {
+        "area_id": 4084
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4085",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4085",
+        "world:creature:25032",
+        "world:creature:24965",
+        "world:creature:24813"
+      ],
+      "text": "You are in the Shattered Sun Staging Area on the Isle of Quel'Danas, where the Shattered Sun Offensive gathers against the Legion. A vendor works here, and Quartermaster Eldara Dawnrunner oversees supplies for the offensive. Vindicator Xayann devised replacement crystal cores for malfunctioning sentries, and Exarch Larethor, an Aldor draenei, insists that the Aldor and the Scryers must cooperate because neither can face the threat alone.",
+      "when": {
+        "area_id": 4085
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4086",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4086",
+        "world:creature:24967",
+        "world:creature:24980",
+        "world:creature:6491"
+      ],
+      "text": "You are in Sun's Reach Sanctum on the Isle of Quel'Danas, where Captain Theris Dawnhearth directs efforts to secure the sanctum and restore its wards. Hostile crystal wards are a danger here, and a spirit healer offers a return to life for a price, presented as a choice.",
+      "when": {
+        "area_id": 4086
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4087",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4087",
+        "world:creature:25059",
+        "world:creature:26560",
+        "world:creature:25063",
+        "world:creature:24980"
+      ],
+      "text": "You are in Sun's Reach Harbor on the Isle of Quel'Danas, where dragonhawks work close to the front. Ayren Cloudbreaker, a veteran dragonhawk pilot, supports air strikes against the Legion from here, and Ohura, a dragonhawk master, handles the flights out. Dawnblade hawkriders and crystal wards are dangers in the harbor.",
+      "when": {
+        "area_id": 4087
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4089",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4089",
+        "world:creature:24978",
+        "world:creature:24976",
+        "world:creature:24979",
+        "world:creature:24966",
+        "world:creature:25049",
+        "world:creature:24972"
+      ],
+      "text": "You are in Dawnstar Village on the Isle of Quel'Danas, where Dawnblade summoners, blood knights and marksmen are the main danger. Wretched fiends and Dawnstar chargers are dangers here too, and an Erratic Sentry, a malfunctioning guard near Sun's Reach, reports a core overload.",
+      "when": {
+        "area_id": 4089
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4090",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4090",
+        "world:quest:11526",
+        "world:creature:25002",
+        "world:creature:25001",
+        "world:creature:24980"
+      ],
+      "text": "You are in The Dawning Square on the Isle of Quel'Danas, where a fel portal stands in the middle of the square. Unleashed hellions and abyssal flamewalkers are dangers here, and crystal wards are dangers too.",
+      "when": {
+        "area_id": 4090
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4091",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4091",
+        "world:creature:25060",
+        "world:creature:25073",
+        "world:creature:25028",
+        "world:creature:25027",
+        "world:creature:25132",
+        "world:creature:25084"
+      ],
+      "text": "You are in Greengill Coast on the Isle of Quel'Danas, where Darkspine myrmidons and sirens are the main dangers. Skeletal ravagers, frenzied ghouls and Sunblade lookouts are dangers too, and Greengill slaves are numerous here.",
+      "when": {
+        "area_id": 4091
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4092",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4092",
+        "world:creature:37552",
+        "world:creature:37205",
+        "world:creature:25028",
+        "world:creature:25027",
+        "world:creature:25030",
+        "world:creature:25033"
+      ],
+      "text": "You are in The Dead Scar on the Isle of Quel'Danas, where skeletal ravagers, frenzied ghouls, wrath enforcers and eredar sorcerers are the dangers. Thalorien Dawnseeker, the last wielder of Quel'Delar, fell here defending the Sunwell, and his remains lie near the southern end of the Dead Scar.",
+      "when": {
+        "area_id": 4092
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4094",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4094",
+        "world:creature:37527",
+        "world:creature:37523",
+        "world:creature:25132",
+        "world:creature:25001"
+      ],
+      "text": "You are in Sunwell Plateau on the Isle of Quel'Danas, where Ranger General Halduron Brightwing, a sin'dorei, is protective of the Sunwell's sacred status and wary of unproven claims about Quel'Delar. A Warden of the Sunwell acts as gatekeeper and offers to escort visitors inside. Sunblade lookouts and abyssal flamewalkers are dangers here.",
+      "when": {
+        "area_id": 4094
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4080": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4080 (Isle of Quel'Danas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4081": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4081 (The Dawnchaser)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4082": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4082 (The Sin'loren)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4084": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4084 (The Bloodoath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4085": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4085 (Shattered Sun Staging Area)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4086": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4086 (Sun's Reach Sanctum)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4087": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4087 (Sun's Reach Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4089": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4089 (Dawnstar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4090": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4090 (The Dawning Square)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4091": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4091 (Greengill Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4092": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4092 (The Dead Scar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4094": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4094 (Sunwell Plateau)",
+      "revision": "3.3.5a client data"
+    },
     "source:0130d69f4530c908feae70a0": {
       "kind": "research",
       "reference": "evidence:sha256:29734d01e2663491180739f530c402661bb2dd6d4ae917df57ce0daff7e37110",
@@ -2762,6 +3023,166 @@
       "kind": "research",
       "reference": "evidence:sha256:17603e3d3ebeacb53eeb743507c3dd9dae17e5854a06b14863dfd7b1b3bb475a",
       "revision": "3bf3d262d9aa375a75549f2f541f3399f886443c1a762029ec07e7e422c69ff2"
+    },
+    "world:creature:24813": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24813 (Exarch Larethor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24965": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24965 (Vindicator Xayann), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24966": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24966 (Wretched Fiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24967": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24967 (Captain Theris Dawnhearth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24972": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24972 (Erratic Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24976 (Dawnblade Blood Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24978 (Dawnblade Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24979 (Dawnblade Marksman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24980": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24980 (Crystal Ward), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25001": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25001 (Abyssal Flamewalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25002": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25002 (Unleashed Hellion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25027": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25027 (Frenzied Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25028": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25028 (Skeletal Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25030": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25030 (Wrath Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25032 (Eldara Dawnrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25033 (Eredar Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25049": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25049 (Dawnstar Charger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25059": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25059 (Ayren Cloudbreaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25060": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25060 (Darkspine Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25063 (Dawnblade Hawkrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25073 (Darkspine Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25084 (Greengill Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25087 (Dawnblade Reservist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25132": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25132 (Sunblade Lookout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25236 (Unrestrained Dragonhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26560": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26560 (Ohura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:37205": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37205 (Thalorien Dawnseeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:37523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37523 (Warden of the Sunwell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:37527": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37527 (Halduron Brightwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:37552": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37552 (Thalorien Dawnseeker's Remains), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11526": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11526 (The Missing Magistrix)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -4279,7 +4279,513 @@
     }
   ],
   "place": "Durotar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:14",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:14",
+        "dbc:area:362",
+        "dbc:area:363",
+        "dbc:area:367",
+        "dbc:area:366",
+        "dbc:area:372",
+        "world:creature:3125",
+        "world:creature:3199"
+      ],
+      "text": "You are in Durotar, Horde land on the continent of Kalimdor. Razor Hill, Valley of Trials and Sen'jin Village are its main settlements, all held by the Horde. Scorpids roam the wilds, Kolkar centaurs gather over the ridge in Kolkar Crag, and Burning Blade cultists stir up trouble in the ridges and ravines. Kul Tiras soldiers have retaken Tiragarde Keep on the coast, which the Horde sees as a renewed threat to the land.",
+      "when": {
+        "zone_id": 14
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:362",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:362",
+        "world:creature:3139",
+        "world:creature:3142",
+        "world:creature:3203"
+      ],
+      "text": "You are in Razor Hill, a Horde settlement in Durotar. Gar'Thok commands its defense against renewed Kul Tiras aggression, and Orgnil Soulscar is leading a hunt for the Burning Blade warlock Fizzle Darkstorm. Its inn and stable master serve travelers.",
+      "when": {
+        "area_id": 362
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:363",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:363",
+        "world:creature:3145",
+        "world:creature:5765",
+        "world:creature:3143",
+        "world:quest:6394"
+      ],
+      "text": "You are in Valley of Trials, a Horde settlement in Durotar. Zureetha Fargaze leads the fight against a Burning Blade coven and its spreading taint in the caves to the north, and Ruzan sends novices to help cull the cave creatures. Gornek sends newcomers to test themselves against mottled boars first.",
+      "when": {
+        "area_id": 363
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:366",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:366",
+        "dbc:area:367",
+        "world:creature:3119",
+        "world:creature:3120",
+        "world:creature:5808",
+        "world:creature:3140"
+      ],
+      "text": "You are in Kolkar Crag, where Kolkar centaurs gather just over the ridge west of Sen'jin Village. Kolkar drudges and outrunners roam the crag under Warlord Kolkanis. Lar Prowltusk has discovered their three-part attack plan against the trolls and orcs of Durotar.",
+      "when": {
+        "area_id": 366
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:367",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:367",
+        "world:creature:5880",
+        "world:quest:1884",
+        "world:creature:6408",
+        "world:creature:7952"
+      ],
+      "text": "You are in Sen'jin Village, a Horde settlement in Durotar kept by the Darkspear trolls. Un'Thuwa, its tribal mage, senses a disturbance in the land's magic from Zalazane's tainted ju-ju heaps, which corrupt wildlife and empower warlocks. Ula'elek, a Darkspear smith, crafts gauntlets from satyr hooves.",
+      "when": {
+        "area_id": 367
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:368",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:368",
+        "world:quest:1884",
+        "world:creature:3206",
+        "world:creature:3207",
+        "world:creature:3103",
+        "world:creature:3121"
+      ],
+      "text": "You are in Echo Isles, where the warlock Zalazane has placed tainted ju-ju heaps among his huts on the main isle. Hexed trolls and voodoo trolls are dangers here, along with makrura and Durotar tigers.",
+      "when": {
+        "area_id": 368
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:369",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:369",
+        "world:quest:806",
+        "world:creature:3203",
+        "world:creature:3197",
+        "world:creature:3198",
+        "world:creature:3130",
+        "world:creature:3131"
+      ],
+      "text": "You are in Thunder Ridge, northwest of Razor Hill, where the Burning Blade warlock Fizzle Darkstorm has camped with his cultist minions. Burning Blade fanatics and apprentices spread chaos here, and thunder lizards and lightning hides roam the ridge.",
+      "when": {
+        "area_id": 369
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:370",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:370",
+        "world:creature:3118",
+        "world:creature:3117",
+        "world:creature:3199",
+        "world:creature:3195",
+        "world:creature:3126"
+      ],
+      "text": "You are in Drygulch Ravine, where Dustwind storm witches and savages roam alongside Burning Blade cultists and thugs. Armored scorpids are a danger here too.",
+      "when": {
+        "area_id": 370
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:372",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:372",
+        "world:creature:3192",
+        "world:creature:3128",
+        "world:creature:3129",
+        "world:creature:3125"
+      ],
+      "text": "You are in Tiragarde Keep, Alliance ground on the Durotar coast, retaken by Kul Tiras soldiers under Lieutenant Benedict. Sailors and marines hold it, and the Horde regards them as a renewed threat to Durotar. A marine warns others away from a lieutenant's belongings.",
+      "when": {
+        "area_id": 372
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:373",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:373",
+        "world:creature:3128",
+        "world:creature:3129",
+        "world:creature:3103",
+        "world:creature:3104",
+        "world:creature:3141",
+        "world:creature:5435"
+      ],
+      "text": "You are in Scuttle Coast, a shore where Kul Tiras sailors and marines are found alongside makrura. Makrura clackers, shellhides and elders, sand sharks and clattering scorpids are the dangers here.",
+      "when": {
+        "area_id": 373
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:374",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:374",
+        "world:creature:3107",
+        "world:creature:3108",
+        "world:creature:3105",
+        "world:creature:3228",
+        "world:creature:5435",
+        "world:creature:3127"
+      ],
+      "text": "You are in Bladefist Bay, a coast where surf crawlers live among makrura snapclaws and elders, sand sharks and corrupted surf crawlers. Venomtail scorpids and Bloodtalon scythemaws also come here.",
+      "when": {
+        "area_id": 374
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:375",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:375",
+        "world:creature:3107",
+        "world:creature:3105",
+        "world:creature:3126",
+        "world:creature:3228",
+        "world:creature:5435"
+      ],
+      "text": "You are in Deadeye Shore, a stretch of Durotar's coast where surf crawlers share the sand with makrura snapclaws, armored scorpids and sand sharks.",
+      "when": {
+        "area_id": 375
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:393",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:393",
+        "world:creature:5941",
+        "world:creature:3103",
+        "world:creature:3104",
+        "world:creature:3125",
+        "world:creature:13157",
+        "world:creature:3119"
+      ],
+      "text": "You are in Darkspear Strand, a shore where Lau'Tiki teaches fishing. Makrura clackers and shellhides, clattering scorpids and kolkar drudges are the dangers here, and Makasgar is a notable one.",
+      "when": {
+        "area_id": 393
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:410",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:410",
+        "world:creature:3115",
+        "world:creature:3116",
+        "world:creature:3126",
+        "world:creature:3196"
+      ],
+      "text": "You are in Razorwind Canyon, a stretch of Durotar. Dustwind harpies and Dustwind pillagers haunt the canyon, along with armored scorpids and Burning Blade neophytes.",
+      "when": {
+        "area_id": 410
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:639",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:639",
+        "world:creature:5891",
+        "world:creature:5890",
+        "world:quest:1518",
+        "world:quest:1521"
+      ],
+      "text": "You are in Spirit Rock, a neutral place in Durotar where earth spirits appear to visitors. A minor manifestation of earth hands out rough quartz to carry to Canaga Earthcaller in the Valley of Trials or to Seer Ravenfeather in Camp Narache. A Redrock Earth Spirit lingers here as well.",
+      "when": {
+        "area_id": 639
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:640",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:640",
+        "world:creature:5900",
+        "world:creature:5893",
+        "world:quest:1525",
+        "world:quest:1526"
+      ],
+      "text": "You are in Shrine of the Dormant Flame, a shrine in Durotar. Telf Joolam teaches fire totem initiates to make fire saptas, asking for fire tar and reagent pouches taken from Burning Blade cultists. A minor manifestation of fire waits at the top of the mountain, and its embers are placed in a brazier there.",
+      "when": {
+        "area_id": 640
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:814",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:814",
+        "world:creature:3296",
+        "world:creature:3110",
+        "world:creature:3127",
+        "world:creature:3123",
+        "world:creature:3126"
+      ],
+      "text": "You are in Southfury River, a stretch of Horde-held Durotar. Dreadmaw crocolisks are the chief danger along its banks, with venomtail scorpids, bloodtalon scythemaws and armored scorpids as well. Orgrimmar guards here can point visitors to the inn.",
+      "when": {
+        "area_id": 814
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:816",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:816",
+        "world:creature:3111",
+        "world:creature:3112",
+        "world:creature:3114",
+        "world:creature:3113",
+        "world:creature:3122",
+        "world:creature:3102"
+      ],
+      "text": "You are in Razormane Grounds, a Durotar area where Razormane quilboar, scouts, battleguards and dustrunners roam. Bloodtalon taillashers and armored scorpids are dangerous here too. Felstalkers wander the grounds, and aspiring shamans are sent to collect their hooves for Canaga Earthcaller.",
+      "when": {
+        "area_id": 816
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:817",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:817",
+        "world:creature:3197",
+        "world:creature:3198",
+        "world:creature:3123",
+        "world:creature:3127",
+        "world:creature:5822"
+      ],
+      "text": "You are in Skull Rock, a stretch of Durotar. Burning Blade fanatics and apprentices make it dangerous, along with bloodtalon scythemaws and venomtail scorpids. The felweaver Scornn is among them.",
+      "when": {
+        "area_id": 817
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1296",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1296",
+        "world:creature:3190",
+        "world:creature:3127",
+        "world:creature:3123",
+        "world:quest:812"
+      ],
+      "text": "You are in Rocktusk Farm, a Horde farm near the northwestern border of Durotar. Rhinag, a hunter, has fought venomtail scorpids nearby and speaks plainly about the danger. A venomtail sting has left him weakened by poison.",
+      "when": {
+        "area_id": 1296
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1297",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1297",
+        "world:creature:31437",
+        "world:creature:31467",
+        "world:creature:31564",
+        "world:creature:3127",
+        "world:creature:3126"
+      ],
+      "text": "You are in Jaggedswine Farm, a Horde farm in Durotar. Forsaken refugees who fled Undercity are here, homeless and frightened, and fear the Dark Lady may not have survived. A Warsong battleguard is also present, and venomtail and armored scorpids are nearby.",
+      "when": {
+        "area_id": 1297
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2979",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2979",
+        "world:creature:3193",
+        "dbc:area:362",
+        "world:quest:816",
+        "world:creature:3126",
+        "world:creature:3227"
+      ],
+      "text": "You are in Tor'kren Farm, a Horde farm in Durotar northwest of Razor Hill. Misha Tor'kren is a worried mother whose son Kron went hunting crocolisks along the Southfury River and has not come back. Armored scorpids and a corrupted bloodtalon scythemaw are nearby.",
+      "when": {
+        "area_id": 2979
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1296": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1296 (Rocktusk Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1297": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1297 (Jaggedswine Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:14": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 14 (Durotar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2979": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2979 (Tor'kren Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:362": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 362 (Razor Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:363": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 363 (Valley of Trials)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:366": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 366 (Kolkar Crag)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:367": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 367 (Sen'jin Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:368": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 368 (Echo Isles)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:369": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 369 (Thunder Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:370": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 370 (Drygulch Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:372": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 372 (Tiragarde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:373": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 373 (Scuttle Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:374": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 374 (Bladefist Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:375": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 375 (Deadeye Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:393": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 393 (Darkspear Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:410": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 410 (Razorwind Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:639": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 639 (Spirit Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:640": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 640 (Shrine of the Dormant Flame)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:814": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 814 (Southfury River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:816": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 816 (Razormane Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:817": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 817 (Skull Rock)",
+      "revision": "3.3.5a client data"
+    },
     "source:00ad6c5e25e26d724965603e": {
       "kind": "research",
       "reference": "evidence:sha256:dfe2a1558eca840f1ab872fb0d07f2c12dc94fa1aad835f8e0ad2b52ed9d5580",
@@ -6769,6 +7275,366 @@
       "kind": "research",
       "reference": "evidence:sha256:eaf527d961700f564a5a258983be2c29647f61eaac499f77310e88001f842ca5",
       "revision": "a1c5e7893bc89dc5771dfa33420b05b4e828a3cef11a522c5eba3830d6f18137"
+    },
+    "world:creature:13157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13157 (Makasgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3102": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3102 (Felstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3103": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3103 (Makrura Clacker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3104": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3104 (Makrura Shellhide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3105": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3105 (Makrura Snapclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3107 (Surf Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3108": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3108 (Encrusted Surf Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3110 (Dreadmaw Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3111 (Razormane Quilboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3112 (Razormane Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3113 (Razormane Dustrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3114 (Razormane Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3115 (Dustwind Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3116": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3116 (Dustwind Pillager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3117 (Dustwind Savage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3118 (Dustwind Storm Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3119": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3119 (Kolkar Drudge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3120 (Kolkar Outrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3121 (Durotar Tiger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3122": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3122 (Bloodtalon Taillasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3123 (Bloodtalon Scythemaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3125 (Clattering Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3126": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3126 (Armored Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3127 (Venomtail Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3128 (Kul Tiras Sailor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3129 (Kul Tiras Marine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3130 (Thunder Lizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3131 (Lightning Hide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3139 (Gar'Thok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3140": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3140 (Lar Prowltusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3141": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3141 (Makrura Elder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3142 (Orgnil Soulscar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3143": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3143 (Gornek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31437 (Forsaken Refugee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3145": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3145 (Zureetha Fargaze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31467 (Forsaken Refugee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31564 (Warsong Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3190 (Rhinag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3192 (Lieutenant Benedict), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3193": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3193 (Misha Tor'kren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3195": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3195 (Burning Blade Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3196 (Burning Blade Neophyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3197 (Burning Blade Fanatic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3198": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3198 (Burning Blade Apprentice), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3199 (Burning Blade Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3203 (Fizzle Darkstorm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3206 (Voodoo Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3207": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3207 (Hexed Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3227": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3227 (Corrupted Bloodtalon Scythemaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3228 (Corrupted Surf Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3296 (Orgrimmar Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5435 (Sand Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5765 (Ruzan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5808 (Warlord Kolkanis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5822 (Felweaver Scornn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5880 (Un'Thuwa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5890": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5890 (Redrock Earth Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5891 (Minor Manifestation of Earth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5893": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5893 (Minor Manifestation of Fire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5900 (Telf Joolam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5941 (Lau'Tiki), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6408 (Ula'elek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7952 (Zjolnir), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1518": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1518 (Call of Earth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1521": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1521 (Call of Earth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1525": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1525 (Call of Fire)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1526": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1526 (Call of Fire)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1884": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1884 (Ju-Ju Heaps)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6394": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6394 (Thazz'ril's Pick)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:806": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 806 (Dark Storms)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:812": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 812 (Need for a Cure)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:816": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 816 (Lost But Not Forgotten)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

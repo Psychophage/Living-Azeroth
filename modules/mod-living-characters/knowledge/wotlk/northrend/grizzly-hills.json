@@ -6333,7 +6333,897 @@
     }
   ],
   "place": "Grizzly Hills",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:394",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:394",
+        "dbc:area:4159",
+        "dbc:area:4204",
+        "dbc:area:4206",
+        "dbc:area:4211",
+        "world:creature:26570",
+        "world:creature:27259",
+        "world:creature:26282"
+      ],
+      "text": "You are in Grizzly Hills, a contested land in Northrend where both the Alliance and the Horde hold settlements. The Alliance keeps the Westfall Brigade Encampment and Amberpine Lodge, and the Horde holds Conquest Hold and Camp Oneqwah. Scourge trolls haunt the ground, dragonflayers hold Voldrune, and iron dwarf constructs fight around Thor Modan.",
+      "when": {
+        "zone_id": 394
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:395",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:395",
+        "world:creature:26357",
+        "world:creature:26428",
+        "world:creature:26356",
+        "world:creature:26436",
+        "world:creature:26369"
+      ],
+      "text": "You are in Grizzlemaw, a wild part of Grizzly Hills. Frostpaw warriors and shamans and Redfang hunters and elders roam it, and Imperial Eagles soar overhead.",
+      "when": {
+        "area_id": 395
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4159",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4159",
+        "world:creature:26212",
+        "world:creature:26226",
+        "world:creature:26361"
+      ],
+      "text": "You are in Westfall Brigade Encampment, an Alliance camp in Grizzly Hills. Captain Gryan Stoutmantle commands the Westfall Brigade here, holding ground between the Horde to the west and iron dwarves to the east. Explorers' League surveyor Brugar Stoneshear pulled his men out of Thor Modan when fighting made digging impossible, and Torthen Deepdig keeps the runic plates and Brann Bronzebeard's journal.",
+      "when": {
+        "area_id": 4159
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4199",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4199",
+        "world:creature:27486",
+        "world:creature:26821",
+        "world:creature:26679"
+      ],
+      "text": "You are in Silverbrook, a village in Grizzly Hills. Sergei urges visitors to hunt Conquest Hold marauders as part of a pact against the Horde. Trappers and villagers have turned on each other here, and Envoy Ducal is trying to negotiate with the trappers.",
+      "when": {
+        "area_id": 4199
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4200",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4200",
+        "world:creature:26366",
+        "world:creature:26646"
+      ],
+      "text": "You are in Vordrassil's Heart, a corrupted area of Grizzly Hills named for Vordrassil. Entropic oozes and Saronite horrors lurk here.",
+      "when": {
+        "area_id": 4200
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4202",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4202",
+        "world:creature:26366"
+      ],
+      "text": "You are in Vordrassil's Tears, a corrupted area of Grizzly Hills named for Vordrassil. Entropic oozes lurk here.",
+      "when": {
+        "area_id": 4202
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4203",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4203",
+        "world:creature:26366",
+        "world:creature:26369"
+      ],
+      "text": "You are in Vordrassil's Limb, a corrupted area of Grizzly Hills named for Vordrassil. Entropic oozes lurk here, and Imperial Eagles soar overhead.",
+      "when": {
+        "area_id": 4203
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4204",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4204",
+        "world:creature:26875",
+        "world:creature:27277"
+      ],
+      "text": "You are in Amberpine Lodge, an Alliance camp in Grizzly Hills. Lieutenant Dumont directs the push through the land and wants routes and a passage toward Zul'Drak. A Horde raid left its storehouse short of food, and Master Woodsman Anderhol is calling for hunters to restock it.",
+      "when": {
+        "area_id": 4204
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4205",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4205",
+        "world:creature:27646",
+        "world:creature:26416",
+        "world:creature:27408"
+      ],
+      "text": "You are in Solstice Village, in Grizzly Hills. Worgen-men took a girl's father and hold her younger sister Anya here; she fears being eaten or changed. Wolfcult initiates and Duskhowl prowlers haunt the village.",
+      "when": {
+        "area_id": 4205
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4206",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4206",
+        "world:creature:26860",
+        "world:creature:27388",
+        "world:creature:27719"
+      ],
+      "text": "You are in Conquest Hold, a Horde settlement in Grizzly Hills where Conqueror Krenna is determined to crush the Alliance. Sergeant Nazgrim directs the campaign against the Dragonflayers of Voldrune, and Grennix Shivwiggle promotes bouts at the Conquest Pit.",
+      "when": {
+        "area_id": 4206
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4207",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4207",
+        "world:creature:27377",
+        "world:creature:27259",
+        "world:creature:27260",
+        "world:creature:27292"
+      ],
+      "text": "You are in Voldrune, a Dragonflayer holding in Grizzly Hills where Thane Torvald Eriksson rules. Dragonflayer flamebinders and huscarls fight here, and a ferocious proto-drake called Flamebringer is kept in chains in the western part.",
+      "when": {
+        "area_id": 4207
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4208",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4208",
+        "world:creature:26424",
+        "world:creature:26423",
+        "world:creature:26519",
+        "world:quest:11989"
+      ],
+      "text": "You are in Granite Springs, a camp in Grizzly Hills where captured trolls are sold. Samir directs hunters to its live ice troll bounty, where Budd mingles with local trolls to trap them. Drakuru, a troll held in a cage here, claims to know things about the ruins, and Prigmon handles the dead trolls from the surrounding ruins.",
+      "when": {
+        "area_id": 4208
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4209",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4209",
+        "world:creature:26543",
+        "world:creature:26457",
+        "world:creature:27615",
+        "world:creature:26461"
+      ],
+      "text": "You are in Zeb'Halak, a Drakkari area in Grizzly Hills where diseased Drakkari, Scourge deathspeakers and corpserenders are found. An image of Drakuru speaks here through the Eye of the Prophets, directing people to recover artifacts.",
+      "when": {
+        "area_id": 4209
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4211",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4211",
+        "world:creature:27221",
+        "world:creature:26584",
+        "world:creature:26853",
+        "world:quest:12201"
+      ],
+      "text": "You are in Camp Oneqwah, a Horde camp in Grizzly Hills. Tormak the Scarred, a Taunka chieftain, directs the camp's fight against the iron dwarves at Dun Argol to the southeast, and Sage Paluna investigates Brann Bronzebeard's journal. Travellers find an inn, a stable and a wind rider master here.",
+      "when": {
+        "area_id": 4211
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4212",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4212",
+        "world:creature:27408",
+        "world:creature:26820",
+        "world:creature:26417",
+        "world:creature:26797",
+        "world:creature:32438"
+      ],
+      "text": "You are in Eastwind Shore, a stretch of Grizzly Hills with no settlement of either side. Duskhowl Prowlers, Drakkari Protectors, Iron Rune-Weavers and Runed Giants roam here, and Syreian the Bonecarver is one of the foes.",
+      "when": {
+        "area_id": 4212
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4214",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4214",
+        "world:creature:26260",
+        "world:creature:26261",
+        "world:creature:26282",
+        "world:creature:26270",
+        "world:creature:26268",
+        "world:quest:12070"
+      ],
+      "text": "You are in Boulder Hills, a battleground in Grizzly Hills. Kurun, a stone giant commander, directs the giants and Earthen here against the iron dwarves at Thor Modan. Iron Rune-Shapers and Rune Reavers are the main dangers, and many of the Grizzly Hills giants fighting here were enthralled by the iron dwarves' runes.",
+      "when": {
+        "area_id": 4214
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4215",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4215",
+        "world:creature:27274",
+        "world:creature:26357",
+        "world:creature:26428"
+      ],
+      "text": "You are in Rage Fang Shrine, a place in Grizzly Hills. Orsonn, a son of Ursoc, lives here and says he is doomed to spend the rest of his life in a cave, and local leaders want his account of the corruption among the furbolg. Frostpaw Warriors and Frostpaw Shamans are the dangers here.",
+      "when": {
+        "area_id": 4215
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4216",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4216",
+        "world:creature:26787",
+        "world:creature:26811",
+        "world:creature:26812",
+        "world:creature:26797",
+        "world:creature:26795",
+        "world:creature:26806"
+      ],
+      "text": "You are in Drakil'jin Ruins, a Drakkari ruin in Grizzly Hills. Ancient Drakkari fighters here sound weary and long for endless sleep, and an image of Drakuru promises to cleanse Drak'Tharon Keep. Drakkari Protectors, Drakkari Oracles and a Guardian Serpent are the dangers.",
+      "when": {
+        "area_id": 4216
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4218",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4218",
+        "world:creature:26356",
+        "world:creature:26436",
+        "world:creature:26681",
+        "world:creature:23740"
+      ],
+      "text": "You are in Heart's Blood Shrine, a site in Grizzly Hills. Redfang Hunters and Redfang Elders are the main dangers here, along with Grumbald One-Eye and a Frosthorn Ram.",
+      "when": {
+        "area_id": 4218
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4220",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4220",
+        "world:creature:26405",
+        "world:creature:26408",
+        "world:creature:26407",
+        "world:creature:27113",
+        "world:creature:27114",
+        "world:quest:12129",
+        "world:quest:12138"
+      ],
+      "text": "You are in Dun Argol, an iron dwarf stronghold in Grizzly Hills. Iron Thane Furyhammer leads it, rune-smiths there build war golems, and lightning sentries guard its edges. Explorers' League prospectors taken here are still held on its upper tiers.",
+      "when": {
+        "area_id": 4220
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4221",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4221",
+        "world:creature:26282",
+        "world:creature:26284",
+        "world:creature:26268",
+        "world:creature:26334",
+        "world:quest:12074"
+      ],
+      "text": "You are in Thor Modan, the old iron dwarf capital in Grizzly Hills. Stone giants and Earthen are besieging it, and the iron dwarves' constructs fight them around its walls. Runic Battle Golems and Rune Reavers are the main dangers, and Forgemaster Damrath is among the foes.",
+      "when": {
+        "area_id": 4221
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4222",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4222",
+        "world:creature:27451",
+        "world:creature:27468",
+        "world:creature:27464",
+        "world:creature:27484",
+        "world:creature:27416",
+        "world:creature:27422"
+      ],
+      "text": "You are in Blue Sky Logging Grounds, a contested camp in Grizzly Hills where Alliance and Horde troops fight over the sawmill. Commander Bargok holds the ground for the Horde amid heavy losses, and Sergeant Hartsman leads the Alliance troops, with much of each side's force committed to Venture Bay. Healers Aumana and Rheanna tend the wounded, and repairers work on broken shredders here.",
+      "when": {
+        "area_id": 4222
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4229",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4229",
+        "world:creature:26883",
+        "world:creature:26885",
+        "world:quest:12129"
+      ],
+      "text": "You are in Prospector's Point, a place in Grizzly Hills where Alliance explorers work. Raegar Breakbrow, an Explorers' League researcher, plans to assemble and power a war golem from parts taken at Dun Argol to hinder the iron dwarves, and Mountaineer Kilian directs a rescue of the prospectors held at Dun Argol.",
+      "when": {
+        "area_id": 4229
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4231",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4231",
+        "world:creature:26484",
+        "world:creature:26494"
+      ],
+      "text": "You are in Redwood Trading Post, a trading post in Grizzly Hills. Its merchant Hugh Glass knows about Loken and the iron dwarves, and he keeps a picky pet, Griselda, who favors fish from the Eastwind Shore.",
+      "when": {
+        "area_id": 4231
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4235",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4235",
+        "world:creature:26588",
+        "world:creature:26589"
+      ],
+      "text": "You are in Heartwood Trading Post, a neutral post in Grizzly Hills. A young girl named Emily, whose brother Walter is a squire with the Westfall Brigade, has wandered lost into the woods with her pet rabbit, Mr. Floppy. She is frightened and worried for him.",
+      "when": {
+        "area_id": 4235
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4238",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4238",
+        "world:creature:26935",
+        "world:creature:26971",
+        "world:quest:12134"
+      ],
+      "text": "You are in White Pine Trading Post, a neutral post in Grizzly Hills. Sasha hunts the wolfcult, which took her sister, and the curse it spreads is turning the people of Silverbrook and Solstice Village into beasts. Her father is dead, and her anger is fierce. Anatoly, who taunts her, knows where a prisoner is held in a wolf den.",
+      "when": {
+        "area_id": 4238
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4239",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4239",
+        "world:creature:27469",
+        "world:quest:12294",
+        "world:creature:29270"
+      ],
+      "text": "You are in Aspen Grove Post, an Alliance post in Grizzly Hills. Its traders sell trade goods and food and drink. The trapper Ivan has made a deal with Lieutenant Dumont at Amberpine Lodge to bring local woodsmen in as scouts for the Alliance effort, and he says his people will honor it.",
+      "when": {
+        "area_id": 4239
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4240",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4240",
+        "world:creature:27546",
+        "world:creature:27547"
+      ],
+      "text": "You are in Forest's Edge Post in Grizzly Hills, where a number of Silverbrook hunters roam. Vladek is also among its dangers.",
+      "when": {
+        "area_id": 4240
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4242",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4242",
+        "world:creature:27520",
+        "world:creature:27532",
+        "world:quest:12314",
+        "world:quest:12315",
+        "world:creature:27606"
+      ],
+      "text": "You are in Venture Bay, a contested port in Grizzly Hills. Baron Freeman leads the Westfall Brigade here and General Khazgar directs the Horde, and each side fights for the port. Captain Zorna leads the Horde in the port, while Captain Brightwater commands from an Alliance destroyer in the bay. Venture Company stragglers still hold buildings around it.",
+      "when": {
+        "area_id": 4242
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4244",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4244",
+        "world:creature:27020",
+        "world:creature:27024",
+        "world:creature:27579",
+        "world:creature:27580",
+        "world:quest:12164",
+        "world:creature:26935"
+      ],
+      "text": "You are in Bloodmoon Isle, an island just off the coast of Grizzly Hills. Bloodmoon worgen and cultists roam it, and the lieutenants Varlam and Selas, who serve Arugal, are among its dangers. Sasha, who hunts the wolfcult, is found here as well.",
+      "when": {
+        "area_id": 4244
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4245",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4245",
+        "world:creature:27024",
+        "world:creature:27020",
+        "world:creature:27018",
+        "world:creature:27578",
+        "world:creature:26935"
+      ],
+      "text": "You are in Shadowfang Tower in Grizzly Hills. Bloodmoon cultists and worgen gather here, and the Shade of Arugal and Goremaw are among its dangers. Sasha, who hunts the wolfcult, is found here as well.",
+      "when": {
+        "area_id": 4245
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4248",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4248",
+        "dbc:area:4206",
+        "world:creature:26868",
+        "world:creature:26869"
+      ],
+      "text": "You are in The Conquest Pit, the fighting pit at Conquest Hold in Grizzly Hills, which the Horde holds. Spectators crowd around to watch the fights. Provisioner Lorkran sells general goods and complains that Krenna dictates what the hold buys and sells.",
+      "when": {
+        "area_id": 4248
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4250",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4250",
+        "world:creature:26420"
+      ],
+      "text": "You are in Ruins of Tethys in Grizzly Hills. The stone giant Gavrock is here, trying to free his bound brothers from the iron dwarves. He names Loken as the dwarves' commander and says Loken plans to exterminate the stone giants.",
+      "when": {
+        "area_id": 4250
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4251",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4251",
+        "world:creature:27424",
+        "world:creature:27676"
+      ],
+      "text": "You are in Silverbrook Hills, a contested area of Grizzly Hills. Horde marauders from Conquest Hold clash here with the Silverbrook Defenders, former trappers who fight for the Alliance. Conqueror Krenna calls the defenders an uncertain threat and orders them crushed.",
+      "when": {
+        "area_id": 4251
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4255",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4255",
+        "world:creature:26500",
+        "world:creature:26447",
+        "world:creature:26446",
+        "world:creature:26425"
+      ],
+      "text": "You are in Ruins of Drak'Zin in Grizzly Hills. Drakkari shamans, warriors and ice serpents attack travelers here. Drakuru speaks through a summoned image, asking for help recovering artifacts tied to the defenses of Drak'Tharon Keep so the keep can be cleansed of the undead.",
+      "when": {
+        "area_id": 4255
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4266",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4266",
+        "world:creature:26884",
+        "world:creature:26886",
+        "world:creature:27408"
+      ],
+      "text": "You are in Harkor's Camp, a dwarven camp near Drakil'jin in Grizzly Hills. Harkor, a dwarf waiting on an associate, is bitter toward trolls after they captured him. Kraz, who listens for spirits, says many voices from the ruins seek peace. Duskhowl prowlers roam nearby.",
+      "when": {
+        "area_id": 4266
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4268",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4268",
+        "world:creature:27581",
+        "world:quest:12328"
+      ],
+      "text": "You are in Ruuna's Camp, a camp in Grizzly Hills. Ruuna the Blind is a clairvoyant who lost her sight and prefers visions of the past to visions of the future. Once she has gossamer dust from the fern feeder moths to the northeast, she will brew a potion that carries people to past events.",
+      "when": {
+        "area_id": 4268
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4270",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4270",
+        "world:creature:26701",
+        "world:creature:26369",
+        "world:creature:26704",
+        "world:creature:29693",
+        "world:creature:27555",
+        "world:creature:26461",
+        "world:quest:12068"
+      ],
+      "text": "You are in Drak'atal Passage, a passage in Grizzly Hills where drakkari defenders, serpent defenders, witch doctors and scourge corpserenders are the dangers. An image of Drakuru, summoned at a brazier, wants the Drakkari Tablets from the ruins of Drakil'jin to the east so he can read them. Imperial eagles soar overhead, and local investigators found the Horde binding its sight to them to spy on a camp.",
+      "when": {
+        "area_id": 4270
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4366",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4366",
+        "world:creature:27328",
+        "world:creature:26891",
+        "world:creature:26644"
+      ],
+      "text": "You are in Ursoc's Den, a den in Grizzly Hills. Tur Ragepaw, a furbolg who came north to find his kin, found their tribes at war and has lost hope since Ursoc was tainted, though he still fights to save him. Undead miners and ursus maulers are the dangers here.",
+      "when": {
+        "area_id": 4366
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4480",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4480",
+        "world:creature:23740",
+        "world:creature:24228"
+      ],
+      "text": "You are in The Forgotten Overlook, an overlook in Grizzly Hills. Frosthorn rams and iceshard elementals are the dangers here.",
+      "when": {
+        "area_id": 4480
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4491",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4491",
+        "world:creature:27497",
+        "world:creature:27493",
+        "world:creature:27424"
+      ],
+      "text": "You are in Bonesnap's Camp, a Horde camp in Grizzly Hills. Marauders from Conquest Hold, who answer to Sergeant Bonesnap, are attacking Silverbrook, and a captured trapper named Sasha is held in the camp. She distrusts the people she once called her own and warns that they want to turn newcomers into one of them.",
+      "when": {
+        "area_id": 4491
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:394": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 394 (Grizzly Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:395": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 395 (Grizzlemaw)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4159": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4159 (Westfall Brigade Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4199": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4199 (Silverbrook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4200": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4200 (Vordrassil's Heart)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4202": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4202 (Vordrassil's Tears)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4203": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4203 (Vordrassil's Limb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4204": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4204 (Amberpine Lodge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4205": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4205 (Solstice Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4206": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4206 (Conquest Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4207": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4207 (Voldrune)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4208": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4208 (Granite Springs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4209": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4209 (Zeb'Halak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4211": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4211 (Camp Oneqwah)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4212": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4212 (Eastwind Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4214": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4214 (Boulder Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4215": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4215 (Rage Fang Shrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4216": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4216 (Drakil'jin Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4218": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4218 (Heart's Blood Shrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4220": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4220 (Dun Argol)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4221": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4221 (Thor Modan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4222": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4222 (Blue Sky Logging Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4229": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4229 (Prospector's Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4231": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4231 (Redwood Trading Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4235": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4235 (Heartwood Trading Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4238": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4238 (White Pine Trading Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4239": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4239 (Aspen Grove Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4240": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4240 (Forest's Edge Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4242": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4242 (Venture Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4244": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4244 (Bloodmoon Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4245": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4245 (Shadowfang Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4248": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4248 (The Conquest Pit)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4250": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4250 (Ruins of Tethys)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4251": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4251 (Silverbrook Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4255": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4255 (Ruins of Drak'Zin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4266": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4266 (Harkor's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4268": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4268 (Ruuna's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4270": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4270 (Drak'atal Passage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4366": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4366 (Ursoc's Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4480": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4480 (The Forgotten Overlook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4491": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4491 (Bonesnap's Camp)",
+      "revision": "3.3.5a client data"
+    },
     "source:0033f8b49fd7239e1fd73752": {
       "kind": "research",
       "reference": "evidence:sha256:8e53e574ba7b977edc5e6d90a73c06e243079ffa935eb4c0e9be059896751560",
@@ -11388,6 +12278,616 @@
       "kind": "research",
       "reference": "evidence:sha256:19b8321c9d3e260281b22f1367904c935ea9fb84d88caab32e104788f7309912",
       "revision": "5efb9f7a744e983bfeafdd6b12457fdfc8a600abab4591e91467b4cb12f55d82"
+    },
+    "world:creature:23740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23740 (Frosthorn Ram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24228 (Iceshard Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26212 (Captain Gryan Stoutmantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26226": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26226 (Brugar Stoneshear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26260": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26260 (Kurun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26261 (Grizzly Hills Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26268": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26268 (Rune Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26270 (Iron Rune-Shaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26282": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26282 (Earthen Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26284 (Runic Battle Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26334 (Forgemaster Damrath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26356 (Redfang Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26357 (Frostpaw Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26361 (Torthen Deepdig), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26366 (Entropic Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26369 (Imperial Eagle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26405 (Iron Thane Furyhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26407 (Lightning Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26408 (Iron Rune-Smith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26416 (Wolfcult Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26417 (Runed Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26420 (Gavrock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26423 (Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26424 (Samir), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26425": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26425 (Drakkari Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26428 (Frostpaw Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26436": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26436 (Redfang Elder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26446 (Ice Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26447 (Drakkari Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26457": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26457 (Diseased Drakkari), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26461 (Scourge Corpserender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26484": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26484 (Hugh Glass), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26494": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26494 (Griselda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26500 (Image of Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26519 (Prigmon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26543": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26543 (Image of Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26570 (Famished Scourge Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26584": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26584 (Sage Paluna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26588": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26588 (Emily), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26589 (Mr. Floppy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26644 (Ursus Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26646 (Saronite Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26679 (Silverbrook Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26681 (Grumbald One-Eye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26701 (Image of Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26704": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26704 (Drakkari Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26787": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26787 (Image of Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26795": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26795 (Drakkari Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26797 (Drakkari Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26806": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26806 (Guardian Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26811 (Ancient Drakkari Warmonger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26812": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26812 (Ancient Drakkari Soothsayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26820": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26820 (Iron Rune-Weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26821 (Envoy Ducal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26853": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26853 (Makki Wintergale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26860 (Conqueror Krenna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26868": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26868 (Provisioner Lorkran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26869": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26869 (Pit-Fighting Spectator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26875 (Lieutenant Dumont), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26883": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26883 (Raegar Breakbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26884": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26884 (Harkor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26885 (Mountaineer Kilian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26886": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26886 (Kraz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26891 (Undead Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26935": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26935 (Sasha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26971": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26971 (Anatoly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27018": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27018 (Shade of Arugal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27020 (Bloodmoon Worgen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27024": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27024 (Bloodmoon Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27113 (Prospector Gann), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27114 (Prospector Torgan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27221 (Tormak the Scarred), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27259": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27259 (Dragonflayer Flamebinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27260": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27260 (Dragonflayer Huscarl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27274": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27274 (Orsonn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27277 (Master Woodsman Anderhol), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27292": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27292 (Flamebringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27328 (Tur Ragepaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27377 (Thane Torvald Eriksson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27388 (Sergeant Nazgrim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27408 (Duskhowl Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27416 (Pipthwack), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27422 (Lurz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27424 (Conquest Hold Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27451 (Commander Bargok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27464 (Aumana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27468 (Sergeant Hartsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27469 (Ivan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27484": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27484 (Rheanna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27486": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27486 (Sergei), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27493": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27493 (Sergeant Bonesnap), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27497 (Captured Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27520 (Baron Freeman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27532 (General Khazgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27546 (Silverbrook Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27547": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27547 (Vladek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27555 (Drakkari Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27578": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27578 (Goremaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27579": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27579 (Varlam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27580": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27580 (Selas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27581": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27581 (Ruuna the Blind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27606": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27606 (Stone Guard Ragetotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27615 (Scourge Deathspeaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27646 (Anya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27676 (Silverbrook Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27719 (Grennix Shivwiggle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29270 (Aspen Grove Trader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29693 (Serpent Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32438 (Syreian the Bonecarver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11989": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11989 (Truce?)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12068": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12068 (Voices From the Dust)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12070": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12070 (Rallying the Troops)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12074": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12074 (An Expedient Ally)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12129": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12129 (The Perfect Plan)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12134": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12134 (Sasha's Hunt)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12138": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12138 (... Or Maybe We Don't)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12164": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12164 (Hour of the Worg)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12201": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12201 (The Overseer's Shadow)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12294": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12294 (A Tentative Pact)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12314": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12314 (Down With Captain Zorna!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12315": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12315 (Crush Captain Brightwater!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12328": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12328 (Ruuna's Request)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

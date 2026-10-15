@@ -6722,7 +6722,764 @@
     }
   ],
   "place": "The Barrens",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:17",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:17",
+        "dbc:area:378",
+        "dbc:area:380",
+        "dbc:area:392",
+        "dbc:area:1599",
+        "world:quest:850",
+        "world:creature:3429",
+        "world:creature:3425"
+      ],
+      "text": "You are in The Barrens, Horde land in Kalimdor. It is dry savannah dotted with oases, and the Horde holds its main settlements here: Camp Taurajo, The Crossroads, Ratchet and Mor'shan Base Camp. Kolkar centaurs threaten the Horde's holdings, Razormane quilboar attack the supply lines, and Sunscale raptors, prowlers, hyenas and plainstriders roam the open country.",
+      "when": {
+        "zone_id": 17
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:359",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:359",
+        "world:creature:3392",
+        "world:creature:5851",
+        "world:creature:3421",
+        "world:quest:857"
+      ],
+      "text": "You are in Bael Modan, an excavation site in the Barrens where Bael'dun excavators dig under Alliance guard. Prospector Khazgorm of the Explorers' League sells goods there, and Captain Gerogg Hammertoe commands the guard. Feegly the Exiled still demands the Tear of the Moons, which General Twinbraid locked away in the Keep.",
+      "when": {
+        "area_id": 359
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:378",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:378",
+        "world:creature:3387",
+        "world:creature:3430",
+        "world:creature:3703",
+        "world:creature:3704",
+        "world:creature:3240"
+      ],
+      "text": "You are in Camp Taurajo, a Horde camp in the Barrens with a flight master, an inn, a stable, and trainers of leatherworking and tailoring. Jorn Skyseer guides hunters through trials against the beasts of the Barrens, and the captive Razormane Mangletooth bargains with the Horde for help against rival quilboar. Stormsnout thunder lizards roam the plains nearby.",
+      "when": {
+        "area_id": 378
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:379",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:379",
+        "world:creature:3337",
+        "world:creature:3521",
+        "world:quest:924"
+      ],
+      "text": "You are in Far Watch Post, a Horde outpost in the Barrens. Kargal Battlescar handles recruitment for Barrens duty here, and Ak'Zeloth, who assists Neeru, prepares power stones against the Demon Seed, a Burning Legion tool on Dreadmist Peak.",
+      "when": {
+        "area_id": 379
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:380",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:380",
+        "world:creature:3429",
+        "world:creature:3432",
+        "world:creature:3615",
+        "world:creature:3338"
+      ],
+      "text": "You are in the Crossroads, a Horde settlement in the Barrens where Thork leads the defenses in the Warchief's name. Razormane attacks have put its supply lines under pressure, and Mankrik remains here, grieving his missing wife and seeking revenge against the quilboars. Devrak runs the wind rider service to Orgrimmar and Thunder Bluff, and Sergra Darkthorn trains hunters on the surrounding plains.",
+      "when": {
+        "area_id": 380
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:381",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:381",
+        "world:creature:3283",
+        "world:creature:3286"
+      ],
+      "text": "You are in Boulder Lode Mine, a mine in the Barrens where Venture Company enforcers and overseers are the danger.",
+      "when": {
+        "area_id": 381
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:382",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:382",
+        "world:creature:3439",
+        "world:creature:3284",
+        "world:creature:3282",
+        "world:creature:3445"
+      ],
+      "text": "You are in The Sludge Fen, where Wizzlecrank sits in a stolen goblin shredder he is still learning to operate. Venture Company drudgers and mercenaries are the dangers here, and Supervisor Lugwizzle is a notable hostile overseer.",
+      "when": {
+        "area_id": 382
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:383",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:383",
+        "world:creature:3276",
+        "world:creature:3278",
+        "world:creature:3280",
+        "world:creature:3277"
+      ],
+      "text": "You are in The Dry Hills, a dry stretch of the Barrens haunted by Witchwing harpies. Witchwing slayers, windcallers and roguefeathers attack travelers alongside plainstriders and prowlers.",
+      "when": {
+        "area_id": 383
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:384",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:384",
+        "world:quest:924",
+        "world:creature:3986",
+        "world:creature:3379",
+        "world:creature:3380"
+      ],
+      "text": "You are in Dreadmist Peak, a peak in the Barrens where the Demon Seed rests in a cave above a demonic altar of fire. Burning Blade bruisers and acolytes are the dangers here, and Sarilus Foulborne, an undead mage whom Sentinel Velene Starstrike accuses of defiling water elementals, is found here.",
+      "when": {
+        "area_id": 384
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:385",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:385",
+        "world:creature:3393",
+        "world:creature:3454",
+        "world:creature:3465",
+        "world:creature:3385",
+        "world:creature:6020"
+      ],
+      "text": "You are in Northwatch Hold, an Alliance fort on the Barrens coast, where Captain Fairmount commands Theramore Marines and Preservers. Cannoneer Smythe fires at the slightest sighting, and Gilthares Firebough, a Ratchet deckhand whose ship sank, is held here and asks to be taken back to Ratchet.",
+      "when": {
+        "area_id": 385
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:386",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:386",
+        "world:creature:3272",
+        "world:creature:3273",
+        "world:quest:850",
+        "world:creature:4127",
+        "world:creature:3255"
+      ],
+      "text": "You are in The Forgotten Pools, a Barrens oasis where Kolkar centaur wranglers and stormers are the dangers. Barak Kodobane, a Kolkar leader, camps nearby, and Hecklefang hyenas and Sunscale screechers roam the pools.",
+      "when": {
+        "area_id": 386
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:387",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:387",
+        "world:quest:852",
+        "world:creature:3396",
+        "world:creature:3461",
+        "world:creature:3272",
+        "world:creature:3273"
+      ],
+      "text": "You are in Lushwater Oasis, where the Kolkar centaur leader Hezrul Bloodmark leads his people. Oasis snapjaws, Kolkar wranglers, stormers and bloodchargers, and hecklefang hyenas add to the danger.",
+      "when": {
+        "area_id": 387
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:388",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:388",
+        "world:quest:851",
+        "world:creature:3275",
+        "world:creature:3274",
+        "world:creature:3397",
+        "world:creature:3461"
+      ],
+      "text": "You are in The Stagnant Oasis, where the centaur Verog the Dervish is based at a command tent. Kolkar marauders, pack runners and bloodchargers, along with oasis snapjaws, are the dangers here.",
+      "when": {
+        "area_id": 388
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:390",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:390",
+        "world:creature:3252",
+        "world:creature:3250",
+        "world:creature:3251",
+        "world:creature:4128",
+        "world:creature:3466"
+      ],
+      "text": "You are in Field of Giants, grassland in the Barrens. Silithid swarmers, creepers and grubs roam its open ground, with stormhides and hecklefang stalkers among them. A zhevra courser ranges the grasslands here and can lash out when threatened.",
+      "when": {
+        "area_id": 390
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:391",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:391",
+        "world:creature:3381",
+        "world:creature:3382",
+        "world:creature:3467",
+        "world:creature:6020",
+        "world:creature:5435"
+      ],
+      "text": "You are in The Merchant Coast, a stretch of Barrens shoreline. Southsea brigands and cannoneers raid along the shore, and Baron Longshore is a notable threat here. Slimeshell makrura and sand sharks are dangerous to travelers as well.",
+      "when": {
+        "area_id": 391
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:392",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:392",
+        "world:creature:3391",
+        "world:quest:887"
+      ],
+      "text": "You are in Ratchet, a goblin port on the Barrens coast that the Horde counts among its settlements. Most of its people are neutral, a mix of tinkers and traders. Gazlowe runs a trading operation here and is angry that Southsea Freebooters keep raiding his ships. Its inn and bank serve travelers.",
+      "when": {
+        "area_id": 392
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:401",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:401",
+        "world:creature:3388",
+        "world:creature:5901"
+      ],
+      "text": "You are in The Tidus Stair, a stretch of Barrens coast. Mahren Skyseer hunts the great water beasts along this coast and calls them worthy prey. Islen Waterseer teaches water rites to shaman trainees.",
+      "when": {
+        "area_id": 401
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:458",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:458",
+        "world:creature:4127",
+        "world:creature:3415",
+        "world:creature:3255",
+        "world:creature:3501"
+      ],
+      "text": "You are in Gold Road, a Barrens road. Hecklefang hyenas, savannah huntresses and sunscale screechers roam along it. Horde guards are posted here.",
+      "when": {
+        "area_id": 458
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:720",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:720",
+        "world:creature:6236",
+        "world:creature:6248",
+        "world:creature:8236"
+      ],
+      "text": "You are in Fray Island, a warriors' island. Klannoc Macleod, called the Islander, teaches rising warriors and sets them a challenge called the Affray. Twiggy Flathead announces the bouts. Muck frenzies also haunt the island.",
+      "when": {
+        "area_id": 720
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:815",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:815",
+        "world:creature:3296",
+        "world:creature:3501",
+        "world:creature:3110",
+        "world:creature:3231",
+        "world:creature:4127"
+      ],
+      "text": "You are in Southfury River, a Barrens waterway that the Horde keeps watch over. Dreadmaw crocolisks, some of them corrupted, haunt its banks, and hecklefang hyenas roam nearby. An Orgrimmar grunt helps visitors find the bank and inn.",
+      "when": {
+        "area_id": 815
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1156",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1156",
+        "world:creature:5797",
+        "world:creature:3235",
+        "world:creature:3239",
+        "world:creature:3238",
+        "world:creature:4128",
+        "world:creature:6247",
+        "world:creature:6244"
+      ],
+      "text": "You are in Southern Barrens, a broad stretch of the Barrens where Alliance outrunners work alongside neutral kodos. Thunderheads, stormhides and hecklefang stalkers roam its grass. Doan Karhan studies the orbs of the Burning Legion here, and Takar the Seer uses his sight to guide a warlock.",
+      "when": {
+        "area_id": 1156
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1157",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1157",
+        "world:creature:3341"
+      ],
+      "text": "You are in Southern Gold Road, a Barrens road where Gann Stonespire walks alone. He regards the dwarven excavation at Bael Modan as a violation of his tribe's land, and he works to halt its destruction.",
+      "when": {
+        "area_id": 1157
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1316",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1316",
+        "world:creature:12866",
+        "world:creature:7873",
+        "world:creature:7874",
+        "world:creature:7872",
+        "world:creature:4099"
+      ],
+      "text": "You are in Razorfen Downs, where quilboar and Death's Head cultists gather in growing numbers. Myriam Moonsinger, a Forsaken scout, studies them and is troubled by an undead diplomat she suspects belongs to the Scourge. Razorfen battleguards, thornweavers and galak marauders are the dangers here.",
+      "when": {
+        "area_id": 1316
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1599",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1599",
+        "world:creature:19910",
+        "world:creature:14754"
+      ],
+      "text": "You are in Mor'shan Base Camp, a Horde camp in the Barrens with a Warsong battlemaster and repairs. Kelm Hargunth, the Warsong supply officer, hands out rations and bandages here.",
+      "when": {
+        "area_id": 1599
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1697",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1697",
+        "world:creature:3256",
+        "world:creature:3245"
+      ],
+      "text": "You are in Raptor Grounds, a stretch of the Barrens where sunscale scytheclaws and ornery plainstriders roam.",
+      "when": {
+        "area_id": 1697
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1698",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1698",
+        "world:creature:3463",
+        "world:creature:3261",
+        "world:creature:3263",
+        "world:creature:3256"
+      ],
+      "text": "You are in Bramblescar, a stretch of the Barrens. Wandering giraffes roam its grasslands and lash out when threatened. Bristleback thornweavers, geomancers and hunters, along with Sunscale scytheclaws, roam the area and make it dangerous.",
+      "when": {
+        "area_id": 1698
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1699",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1699",
+        "world:creature:3246",
+        "world:creature:3248",
+        "world:creature:3266",
+        "world:creature:3269",
+        "world:creature:3265",
+        "world:creature:3271"
+      ],
+      "text": "You are in Thorn Hill, a hill in the Barrens. Fleeting plainstriders and Barrens giraffes roam it, and both can answer an attack with a spell. Razormane defenders, geomancers, hunters and mystics make the hill dangerous.",
+      "when": {
+        "area_id": 1699
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1700",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1700",
+        "world:creature:5908",
+        "world:creature:2978",
+        "world:creature:2979",
+        "world:creature:3258",
+        "world:creature:3263",
+        "world:creature:3240"
+      ],
+      "text": "You are in Agama'gor, a place in the Barrens. Grunt Dogran, of the Horde, is devoted to his mate Zankaja and fears his injuries will leave her caring for an invalid, so he asks that she not be told of his despair. Venture Co. workers and supervisors, Bristleback hunters and geomancers, and Stormsnouts make it dangerous.",
+      "when": {
+        "area_id": 1700
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1701",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1701",
+        "world:creature:5899",
+        "world:creature:6491",
+        "world:creature:3457",
+        "world:creature:3458",
+        "world:creature:3249",
+        "world:creature:3238",
+        "world:creature:3235"
+      ],
+      "text": "You are in Blackthorn Ridge, a ridge in the Barrens with a spirit healer. Brine, a Horde woman who studies water, lives alone in a hut deep in the Barrens and treasures the scarce pond below her hut. Razormane seers and stalkers, greater thunderhawks and stormhides make the ridge dangerous, and kodos charge in combat.",
+      "when": {
+        "area_id": 1701
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1702",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1702",
+        "world:creature:8016",
+        "world:creature:3234",
+        "world:creature:3248",
+        "world:creature:3245",
+        "world:creature:3256",
+        "world:creature:3255"
+      ],
+      "text": "You are in Honor's Stand, a spot in the Barrens. A Barrens Guard, a Horde sentry posted around the Crossroads, is among the people here, and kodos and giraffes wander the area. Ornery plainstriders, Sunscale scytheclaws and Sunscale screechers are its dangers.",
+      "when": {
+        "area_id": 1702
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1703",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1703",
+        "world:creature:8582",
+        "world:creature:3809"
+      ],
+      "text": "You are in The Mor'shan Rampart, a place in the Barrens where Horde people are stationed. Kadrak directs Horde operations, gathering reports from scouts and outriders in Ashenvale. Ashenvale bears are the local danger.",
+      "when": {
+        "area_id": 1703
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1704",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1704",
+        "world:creature:5907",
+        "world:creature:14872",
+        "world:creature:14894",
+        "world:creature:3255"
+      ],
+      "text": "You are in Grol'dom Farm, a farm in the Barrens where several Horde people are. Kranal Fiss teaches the ways of fire and oversees the fire-sapta rite, warning that power comes easily but patience must guide it. Trok runs from a swarm of bees here, and Sunscale screechers are a danger.",
+      "when": {
+        "area_id": 1704
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2319",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2319",
+        "dbc:taxi:34"
+      ],
+      "text": "You are in The Great Sea. A transport here runs to Booty Bay.",
+      "when": {
+        "area_id": 2319
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2757",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2757",
+        "world:creature:3246",
+        "world:creature:12034"
+      ],
+      "text": "You are in the Shrine of the Fallen Warrior, a shrine in the Barrens. Fleeting plainstriders range through it and can answer a threat with a spell. A humanoid named Koiter is also here.",
+      "when": {
+        "area_id": 2757
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1156": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1156 (Southern Barrens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1157": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1157 (Southern Gold Road)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1316": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1316 (Razorfen Downs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1599": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1599 (Mor'shan Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1697": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1697 (Raptor Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1698": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1698 (Bramblescar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1699": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1699 (Thorn Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:17": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 17 (The Barrens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1700": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1700 (Agama'gor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1701": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1701 (Blackthorn Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1702": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1702 (Honor's Stand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1703": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1703 (The Mor'shan Rampart)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1704": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1704 (Grol'dom Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2319": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2319 (The Great Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2757": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2757 (Shrine of the Fallen Warrior)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:359": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 359 (Bael Modan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:378": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 378 (Camp Taurajo)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:379": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 379 (Far Watch Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:380": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 380 (The Crossroads)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:381": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 381 (Boulder Lode Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:382": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 382 (The Sludge Fen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:383": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 383 (The Dry Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:384": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 384 (Dreadmist Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:385": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 385 (Northwatch Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:386": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 386 (The Forgotten Pools)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:387": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 387 (Lushwater Oasis)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:388": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 388 (The Stagnant Oasis)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:390": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 390 (Field of Giants)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:391": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 391 (The Merchant Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:392": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 392 (Ratchet)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:401": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 401 (The Tidus Stair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:458": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 458 (Gold Road)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:720": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 720 (Fray Island)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:815": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 815 (Southfury River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:34": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 34 (Transport, Booty Bay)",
+      "revision": "3.3.5a client data"
+    },
     "source:000d4d776248c71e5a33b421": {
       "kind": "research",
       "reference": "evidence:sha256:baea412c875e81bc893e1aee980c9349f1398ab7821981c1a8924656474921e2",
@@ -11917,6 +12674,556 @@
       "kind": "research",
       "reference": "evidence:sha256:095c63dba2f9763957feb4517ed4ed3439d07f1c922641fecdef0f55456255e6",
       "revision": "8ee629ee1c1dee6481dec12614c8f942b3607753660d626e445dee742f56cd6a"
+    },
+    "world:creature:12034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12034 (Koiter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12866": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12866 (Myriam Moonsinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14754 (Kelm Hargunth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14872 (Trok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14894": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14894 (Swarm of bees), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19910": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19910 (Gargok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2978 (Venture Co. Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2979 (Venture Co. Supervisor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3110 (Dreadmaw Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3231": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3231 (Corrupted Dreadmaw Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3234": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3234 (Lost Barrens Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3235 (Greater Barrens Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3238 (Stormhide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3239 (Thunderhead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3240 (Stormsnout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3245": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3245 (Ornery Plainstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3246": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3246 (Fleeting Plainstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3248 (Barrens Giraffe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3249 (Greater Thunderhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3250": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3250 (Silithid Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3251": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3251 (Silithid Grub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3252 (Silithid Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3255 (Sunscale Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3256": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3256 (Sunscale Scytheclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3258 (Bristleback Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3261 (Bristleback Thornweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3263 (Bristleback Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3265": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3265 (Razormane Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3266": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3266 (Razormane Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3269": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3269 (Razormane Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3271 (Razormane Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3272": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3272 (Kolkar Wrangler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3273": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3273 (Kolkar Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3274": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3274 (Kolkar Pack Runner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3275": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3275 (Kolkar Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3276 (Witchwing Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3277 (Witchwing Roguefeather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3278 (Witchwing Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3280 (Witchwing Windcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3282": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3282 (Venture Co. Mercenary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3283 (Venture Co. Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3284 (Venture Co. Drudger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3286 (Venture Co. Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3296 (Orgrimmar Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3337 (Kargal Battlescar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3338 (Sergra Darkthorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3341 (Gann Stonespire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3379 (Burning Blade Bruiser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3380 (Burning Blade Acolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3381 (Southsea Brigand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3382 (Southsea Cannoneer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3385 (Theramore Marine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3387 (Jorn Skyseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3388 (Mahren Skyseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3391": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3391 (Gazlowe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3392 (Prospector Khazgorm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3393 (Captain Fairmount), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3396": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3396 (Hezrul Bloodmark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3397 (Kolkar Bloodcharger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3415 (Savannah Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3421": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3421 (Feegly the Exiled), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3425": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3425 (Savannah Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3429 (Thork), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3430 (Mangletooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3432": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3432 (Mankrik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3439": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3439 (Wizzlecrank's Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3445 (Supervisor Lugwizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3454 (Cannoneer Smythe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3457": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3457 (Razormane Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3458": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3458 (Razormane Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3461 (Oasis Snapjaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3463 (Wandering Barrens Giraffe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3465 (Gilthares Firebough), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3466 (Zhevra Courser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3467 (Baron Longshore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3501 (Horde Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3521": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3521 (Ak'Zeloth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3615 (Devrak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3703": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3703 (Krulmoo Fullmoon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3704": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3704 (Mahani), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3809 (Ashenvale Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3986 (Sarilus Foulborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4099": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4099 (Galak Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4127 (Hecklefang Hyena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4128 (Hecklefang Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5435 (Sand Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5797 (Aean Swiftriver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5851": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5851 (Captain Gerogg Hammertoe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5899": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5899 (Brine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5901 (Islen Waterseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5907": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5907 (Kranal Fiss), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5908": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5908 (Grunt Dogran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6020 (Slimeshell Makrura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6236 (Klannoc Macleod), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6244 (Takar the Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6247 (Doan Karhan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6248 (Twiggy Flathead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7872 (Death's Head Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7873 (Razorfen Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7874": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7874 (Razorfen Thornweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8016 (Barrens Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8236 (Muck Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8582": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8582 (Kadrak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:850": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 850 (Kolkar Leaders)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:851": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 851 (Verog the Dervish)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:852": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 852 (Hezrul Bloodmark)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:857": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 857 (The Tear of the Moons)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:887": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 887 (Southsea Freebooters)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:924": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 924 (The Demon Seed)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -2744,7 +2744,410 @@
     }
   ],
   "place": "Mulgore",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:215",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:215",
+        "dbc:area:221",
+        "dbc:area:222",
+        "world:creature:2958",
+        "world:creature:2978",
+        "dbc:area:360",
+        "dbc:area:358"
+      ],
+      "text": "You are in Mulgore, Horde land on the Kalimdor continent. Tauren keep it from Camp Narache and Bloodhoof Village, and its plains are home to prairie wolves, stalkers and cougars. Venture Co. goblins run a mine here, and bristleback quilboars live in Brambleblade Ravine.",
+      "when": {
+        "zone_id": 215
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:220",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:220",
+        "world:creature:2982",
+        "world:creature:2952"
+      ],
+      "text": "You are in Red Cloud Mesa, a tauren mesa in Mulgore. Seer Graytongue oversees the Rite of Strength, a tribal test of bravery against the bristleback quilboars who encroach on tauren land. A spirit healer serves the mesa.",
+      "when": {
+        "area_id": 220
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:221",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:221",
+        "world:creature:2981",
+        "world:creature:3059",
+        "world:creature:3073",
+        "world:creature:3209",
+        "world:quest:24857"
+      ],
+      "text": "You are in Camp Narache, a tauren camp in Mulgore. Chief Hawkwind leads its tauren, and it has trainers of magic and arms, a weaponsmith and repairs. Bristleback quilboars plan a siege on the camp, and Brave Windfeather urges newcomers to help defend it.",
+      "when": {
+        "area_id": 221
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:222",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:222",
+        "world:creature:2993",
+        "world:creature:2988",
+        "world:creature:3063",
+        "world:creature:3065"
+      ],
+      "text": "You are in Bloodhoof Village, a tauren village in Mulgore with an inn, a stable master, and trainers of magic, arms and professions. Baine Bloodhoof wants Mulgore's wildlife protected from the Palemane gnolls, who kill it and reject talks, and he opposes a dwarven dig he sees as defiling the land. Morin Cloudstalker directs resistance against the Venture Co. mine.",
+      "when": {
+        "area_id": 222
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:223",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:223",
+        "world:creature:5938",
+        "world:creature:2958",
+        "world:creature:2959",
+        "world:creature:23618",
+        "world:quest:11129"
+      ],
+      "text": "You are in Stonebull Lake, a lake in Mulgore. Uthan Stillwater, a Horde fishing trainer, teaches here, and prairie wolves and stalkers prowl its shore. The old rancher Ahab Wheathoof is missing his puppy Kyle, which ran off hungry.",
+      "when": {
+        "area_id": 223
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:224",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:224",
+        "world:quest:749",
+        "world:quest:751",
+        "world:creature:2976",
+        "world:creature:2977"
+      ],
+      "text": "You are in the Ravaged Caravan, a burned caravan site on the northern shore of Stonebull Lake. Venture Co. laborers and taskmasters roam the wreckage, and a cougar or swoop may be near. Ore and papers from the caravan still lie here.",
+      "when": {
+        "area_id": 224
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:225",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:225",
+        "world:creature:3233",
+        "world:creature:3232",
+        "world:quest:773",
+        "world:quest:833"
+      ],
+      "text": "You are in Red Rocks, the sacred burial ground of the tauren, east of Thunder Bluff. Lorekeeper Raintotem keeps watch over it, and a spirit healer serves here. He is too old to drive off the Bristleback Interlopers ravaging the graves.",
+      "when": {
+        "area_id": 225
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:358",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:358",
+        "world:creature:8554",
+        "world:creature:2953",
+        "world:creature:2952",
+        "world:quest:757"
+      ],
+      "text": "You are in Brambleblade Ravine, a ravine east of Red Cloud Mesa in Mulgore. Bristleback quilboars live here under Chief Sharptusk Thornmantle, in an ongoing conflict with the tauren. Their shamans cast lightning, and they ambush tauren hunting parties.",
+      "when": {
+        "area_id": 358
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:360",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:360",
+        "world:creature:2978",
+        "world:creature:2979",
+        "world:creature:2988",
+        "world:quest:764"
+      ],
+      "text": "You are in The Venture Co. Mine, a goblin mining site in Mulgore. Venture Co. workers and supervisors dig here, and Morin Cloudstalker of Bloodhoof Village directs resistance against it.",
+      "when": {
+        "area_id": 360
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:396",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:396",
+        "world:creature:2975",
+        "world:creature:2958",
+        "world:quest:748"
+      ],
+      "text": "You are in Winterhoof Water Well, a water well in Mulgore. Venture Co. hirelings guard it, and prairie wolves roam nearby. Tauren say goblins have tainted the sacred water wells.",
+      "when": {
+        "area_id": 396
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:397",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:397",
+        "world:creature:2976",
+        "world:creature:2977",
+        "world:creature:2959",
+        "world:creature:3035",
+        "world:creature:2970"
+      ],
+      "text": "You are in Thunderhorn Water Well, a water well in Mulgore. Venture Co. laborers and taskmasters work near it, while prairie stalkers, flatland cougars and swoops prowl the grass.",
+      "when": {
+        "area_id": 397
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:398",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:398",
+        "world:creature:2978",
+        "world:creature:2979",
+        "world:creature:3566",
+        "world:creature:2960"
+      ],
+      "text": "You are in Wildmane Water Well, a water well in Mulgore. Venture Co. workers and supervisors are here, along with flatland prowlers and prairie wolf alphas.",
+      "when": {
+        "area_id": 398
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:404",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:404",
+        "world:creature:2989",
+        "world:creature:2990",
+        "world:creature:2970"
+      ],
+      "text": "You are in Bael'dun Digsite, a dig in Mulgore where two Alliance diggers and appraisers bearing the Bael'dun name work. A swoop is known to hunt nearby.",
+      "when": {
+        "area_id": 404
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:637",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:637",
+        "world:creature:5891",
+        "world:creature:5890",
+        "world:creature:2966"
+      ],
+      "text": "You are in Kodo Rock, a rocky part of Horde-held Mulgore. Earth spirits keep to the rock here, among them a Minor Manifestation of Earth and a Redrock Earth Spirit. Battleboars, boars trained by Bristleback quilboars to be malicious, encroach on the tauren hunting grounds around Brambleblade Ravine.",
+      "when": {
+        "area_id": 637
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:818",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:818",
+        "world:creature:2958",
+        "world:creature:2949",
+        "world:creature:2950"
+      ],
+      "text": "You are in Palemane Rock, a rocky part of Mulgore haunted by prairie wolves and by Palemane tanners and skinners.",
+      "when": {
+        "area_id": 818
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:819",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:819",
+        "world:creature:3058",
+        "world:creature:2965",
+        "world:creature:2964",
+        "world:creature:2960",
+        "world:creature:2971"
+      ],
+      "text": "You are in Windfury Ridge, a high part of Mulgore where Windfury matriarchs and sorceresses, prairie wolves and taloned swoops are the trouble. Arra'chea, a mighty kodo, is hunted here for its horn as a test of tracking and hunting skill.",
+      "when": {
+        "area_id": 819
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:820",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:820",
+        "world:creature:3035",
+        "world:creature:3566",
+        "world:creature:2959",
+        "world:creature:2960",
+        "world:creature:2970",
+        "world:creature:2971"
+      ],
+      "text": "You are in The Golden Plains, open grassland in Mulgore where flatland cougars, flatland prowlers, prairie stalkers, prairie wolves and swoops roam.",
+      "when": {
+        "area_id": 820
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:821",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:821",
+        "world:creature:6491",
+        "world:creature:2962",
+        "world:creature:2963",
+        "world:creature:2960",
+        "world:creature:2959",
+        "world:creature:2967",
+        "world:creature:2968"
+      ],
+      "text": "You are in The Rolling Plains, grassland in Mulgore where a spirit healer offers a return to the living for a price. Windfury harpies, wind witches, prairie wolves, prairie stalkers and Galak centaurs roam here.",
+      "when": {
+        "area_id": 821
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:215": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 215 (Mulgore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:220": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 220 (Red Cloud Mesa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:221": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 221 (Camp Narache)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:222": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 222 (Bloodhoof Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:223": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 223 (Stonebull Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:224": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 224 (Ravaged Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:225": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 225 (Red Rocks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:358": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 358 (Brambleblade Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:360": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 360 (The Venture Co. Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:396": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 396 (Winterhoof Water Well)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:397": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 397 (Thunderhorn Water Well)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:398": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 398 (Wildmane Water Well)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:404": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 404 (Bael'dun Digsite)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:637": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 637 (Kodo Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:818": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 818 (Palemane Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:819": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 819 (Windfury Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:820": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 820 (The Golden Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:821": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 821 (The Rolling Plains)",
+      "revision": "3.3.5a client data"
+    },
     "source:000f26e4cde5a179c57894ad": {
       "kind": "research",
       "reference": "evidence:sha256:d95bb1fc82ecb4a284ed07e85688a8791f7a7833661b7966da7c1bcbcd7cda45",
@@ -4709,6 +5112,266 @@
       "kind": "research",
       "reference": "evidence:sha256:0431022ba9f4f12a2b5fa8b2583ca6426cbf6471bddce91306b21fc49222dc42",
       "revision": "1690139ff28a7ad445c32ce91ee9bdeddb50d2fc4161f7aa8ad78f296902b58a"
+    },
+    "world:creature:23618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23618 (Ahab Wheathoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2949": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2949 (Palemane Tanner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2950 (Palemane Skinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2952 (Bristleback Quilboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2953": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2953 (Bristleback Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2958 (Prairie Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2959 (Prairie Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2960 (Prairie Wolf Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2962": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2962 (Windfury Harpy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2963 (Windfury Wind Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2964": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2964 (Windfury Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2965": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2965 (Windfury Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2966": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2966 (Battleboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2967": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2967 (Galak Centaur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2968": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2968 (Galak Outrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2970": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2970 (Swoop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2971": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2971 (Taloned Swoop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2975 (Venture Co. Hireling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2976 (Venture Co. Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2977 (Venture Co. Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2978 (Venture Co. Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2979 (Venture Co. Supervisor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2981 (Chief Hawkwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2982": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2982 (Seer Graytongue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2988": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2988 (Morin Cloudstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2989": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2989 (Bael'dun Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2990": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2990 (Bael'dun Appraiser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2993 (Baine Bloodhoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3035 (Flatland Cougar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3058": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3058 (Arra'chea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3059": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3059 (Harutt Thunderhorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3063 (Krang Stonehoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3065": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3065 (Yaw Sharpmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3073 (Marjak Keenblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3209": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3209 (Brave Windfeather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3232 (Bristleback Interloper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3233 (Lorekeeper Raintotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3566 (Flatland Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5890": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5890 (Redrock Earth Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5891 (Minor Manifestation of Earth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5938": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5938 (Uthan Stillwater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8554 (Chief Sharptusk Thornmantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11129": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11129 (Kyle's Gone Missing!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:24857": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24857 (Attack on Camp Narache)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:748": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 748 (Poison Water)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:749": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 749 (The Ravaged Caravan)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:751": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 751 (The Ravaged Caravan)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:757": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 757 (Rite of Strength)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:764": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 764 (The Venture Co.)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:773": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 773 (Rite of Wisdom)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:833": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 833 (A Sacred Burial)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

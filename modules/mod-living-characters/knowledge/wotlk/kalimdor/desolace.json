@@ -3886,7 +3886,495 @@
     }
   ],
   "place": "Desolace",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:405",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:405",
+        "dbc:area:597",
+        "dbc:area:2408",
+        "dbc:area:608",
+        "world:quest:1365",
+        "world:creature:4670",
+        "world:creature:4663",
+        "world:creature:4711"
+      ],
+      "text": "You are in Desolace, a dry land in Kalimdor where both the Alliance and the Horde hold settlements. The Horde keeps Ghost Walker Post and Shadowprey Village, and the Alliance keeps Nijel's Point. Centaur clans fight one another over the dry plains, Hatefury satyrs and Burning Blade cultists haunt the land, and Slitherblade nagas hold sunken ruins off the northern coast.",
+      "when": {
+        "zone_id": 405
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:596",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:596",
+        "world:creature:6019",
+        "world:creature:12277",
+        "world:creature:4700",
+        "world:creature:4701",
+        "world:creature:4702",
+        "world:creature:4695",
+        "world:creature:6491"
+      ],
+      "text": "You are in Kodo Graveyard, a part of Desolace where aged, dying and ancient kodo beasts are found. Hornizz Brimbuzzle schemes to collect ghost-o-plasm from the haunted Valley of Bones and sell it to the Magram, and he worries about his sister Melizza. Carrion Horrors prowl here, and a spirit healer offers a return to life.",
+      "when": {
+        "area_id": 596
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:597",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:597",
+        "world:creature:5395",
+        "world:creature:4498",
+        "world:creature:5412"
+      ],
+      "text": "You are in Ghost Walker Post, a Horde post in Desolace. Felgur Twocuts runs a campaign against the centaur clans, with a bounty on their ears, while Maurin Bonesplitter works to dismantle the Burning Blade sect here. Gurda Wildmane sets the Magram and the Gelkis against each other.",
+      "when": {
+        "area_id": 597
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:598",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:598",
+        "world:creature:13699",
+        "world:quest:7064",
+        "world:creature:4711",
+        "world:creature:11562",
+        "world:creature:4726",
+        "world:creature:6491"
+      ],
+      "text": "You are in Sar'theris Strand, a part of Desolace. Selendra and her sisters are here to settle the ancient tragedy of Zaetar's death, and she turns to outsiders because they cannot finish it alone. The centaur hold Zaetar's remains. Slitherblade nagas, drysnap crawlers and raging thunder lizards are the dangers here, and a spirit healer offers a return to life.",
+      "when": {
+        "area_id": 598
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:599",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:599",
+        "world:creature:5644",
+        "world:creature:4663",
+        "world:creature:4666",
+        "world:creature:4665",
+        "world:creature:4692"
+      ],
+      "text": "You are in Thunder Axe Fortress, a Burning Blade holding in Desolace. Dalinda Malem, a noble of House Malem, is kept here, fearing she may be sacrificed, and she cannot leave until the fate of her brother Tyranis is known. Burning Blade augurs, felsworn and adepts guard the fortress, and dread swoops are found here too.",
+      "when": {
+        "area_id": 599
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:602",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:602",
+        "world:creature:13717",
+        "world:creature:4676",
+        "world:creature:4679",
+        "world:creature:4684",
+        "world:creature:4680",
+        "world:creature:4668",
+        "world:creature:6491"
+      ],
+      "text": "You are in Mannoroc Coven, a part of Desolace where lesser infernals, nether maidens and sorceresses, and doomwarder captains are the dangers. An exiled centaur heretic, the Centaur Pariah, is here, still pressing his cause of uniting the centaur tribes. A spirit healer offers a return to life.",
+      "when": {
+        "area_id": 602
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:603",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:603",
+        "world:quest:1458",
+        "world:creature:4675",
+        "world:creature:4672",
+        "world:creature:4673",
+        "world:creature:4671",
+        "world:creature:4670",
+        "world:creature:4674"
+      ],
+      "text": "You are in Sargeron, a part of Desolace where Hatefury satyrs are the danger: hellcallers, felsworn, betrayers, tricksters, rogues and shadowstalkers roam the ground.",
+      "when": {
+        "area_id": 603
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:604",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:604",
+        "world:creature:5398",
+        "world:creature:4640",
+        "world:creature:4641",
+        "world:creature:4642",
+        "world:creature:6491"
+      ],
+      "text": "You are in Magram Village, a centaur village in Desolace kept by the Magram. Warug leads their campaign against the Gelkis with open contempt for their belief that Theradras protects them, and Magram wranglers, windchasers and stormers are the dangers here. A spirit healer offers a return to life.",
+      "when": {
+        "area_id": 604
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:606",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:606",
+        "world:creature:5397",
+        "world:creature:5398",
+        "world:creature:4649",
+        "world:creature:4648",
+        "world:creature:4651"
+      ],
+      "text": "You are in Gelkis Village, a centaur village in Desolace where the Gelkis believe Theradras protects them. Uthek the Wise, a Gelkis shaman, listens to the earth for magic and seeks draenethyst, and she directs raids on the Magram's meat stores. Gelkis windchasers, stampers and earthcallers are the local dangers.",
+      "when": {
+        "area_id": 606
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:607",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:607",
+        "world:creature:12277",
+        "world:creature:4655",
+        "world:creature:4657",
+        "world:creature:4656",
+        "world:creature:11785",
+        "world:creature:12240"
+      ],
+      "text": "You are in the Valley of Spears, a Maraudine centaur valley in Desolace. Melizza Brimbuzzle, a trader, was taken captive here and asks for help escaping. Maraudine wranglers, windchasers and maulers, and Ambereye basilisks and reavers, are the dangers, and the spirit of Kolk can be made to manifest here.",
+      "when": {
+        "area_id": 607
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:608",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:608",
+        "world:creature:5642",
+        "world:creature:5396",
+        "world:creature:5752",
+        "dbc:taxi:37"
+      ],
+      "text": "You are in Nijel's Point, the Alliance post in Desolace, with its inn and flight master. Vahlarriel Demonslayer, a Darnassian agent, searches for the missing children of House Malem, and Captain Pentigast seeks alliances with the centaur clans. Corporal Melkins has set a bounty on centaur here.",
+      "when": {
+        "area_id": 608
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:609",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:609",
+        "world:creature:4636",
+        "world:creature:4635",
+        "world:creature:4634",
+        "world:creature:4637",
+        "world:quest:5821"
+      ],
+      "text": "You are in Kolkar Village, a centaur village of the Kolkar clan in Desolace. Kolkar battle lords, windchasers, maulers and destroyers are the dangers here, and the Kolkar war drums warn travelers when the centaur are near.",
+      "when": {
+        "area_id": 609
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2198",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2198",
+        "world:creature:13836",
+        "world:creature:13837",
+        "world:creature:4668",
+        "world:creature:4705",
+        "world:creature:4685"
+      ],
+      "text": "You are in Shadowbreak Ravine, a part of Desolace where Burning Blade summoners and invokers, and ley hunters, are the dangers. A Burning Blade nightmare demon and a captured stallion are found here.",
+      "when": {
+        "area_id": 2198
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2324",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2324",
+        "world:creature:11562",
+        "world:creature:11563"
+      ],
+      "text": "You are in The Veiled Sea, an area of Desolace. Drysnap crawlers and drysnap pincers are the dangers here.",
+      "when": {
+        "area_id": 2324
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2404",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2404",
+        "world:creature:4696",
+        "world:creature:4728",
+        "world:creature:11576",
+        "world:creature:4692"
+      ],
+      "text": "You are in Tethris Aran, an area of Desolace. Scorpashi snappers, gritjaw basilisks, whirlwind rippers and dread swoops are the dangers here.",
+      "when": {
+        "area_id": 2404
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2405",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2405",
+        "world:creature:11863",
+        "world:creature:4711",
+        "world:creature:4726",
+        "world:creature:4692",
+        "world:quest:5741"
+      ],
+      "text": "You are in Ethel Rethor, an area of Desolace with a tower and a spirit healer. Azore Aldamort, an Argent Dawn representative, seeks to recover dangerous naga artifacts from the tower. Slitherblade nagas and raging thunder lizards roam the area, along with dread swoops and whirlwind rippers.",
+      "when": {
+        "area_id": 2405
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2406",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2406",
+        "world:creature:4719",
+        "world:creature:4715",
+        "world:quest:6161"
+      ],
+      "text": "You are in Ranazjar Isle, a small island northwest of Ethel Rethor. Slitherblade nagas are the danger here, sea witches and razortails most of all. Rackmore hid a chest on the island, and its two keys were lost.",
+      "when": {
+        "area_id": 2406
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2407",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2407",
+        "world:creature:11438",
+        "world:creature:13656",
+        "world:creature:4726",
+        "world:creature:4728"
+      ],
+      "text": "You are in Kormek's Hut, an area of Desolace. Bibbly F'utzbuckle, a goblin bone collector, sells kodo bones through a caravan to Shadowprey Village and dreams of great wealth and fame from the trade. Willow, of the Twilight's Hammer, is also here, seeking crystal carvings from Maraudon. Raging thunder lizards and gritjaw basilisks are among the dangers here.",
+      "when": {
+        "area_id": 2407
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2408",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2408",
+        "world:creature:6726",
+        "world:creature:11106",
+        "world:creature:11624",
+        "world:creature:12340",
+        "world:creature:11823"
+      ],
+      "text": "You are in Shadowprey Village, a Horde village in Desolace with an inn, a wind rider master and a stable master. Taiga Wisemane works here against the demonic threat around Mannoroc Coven. Drulzegar Skraghook, a fisherman whose crew was killed by nagas near Ranazjar Isle, seeks revenge on the nagas. Vark Battlescar studies the corruption that stunts the plants of Maraudon.",
+      "when": {
+        "area_id": 2408
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2617",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2617",
+        "world:creature:11596",
+        "world:creature:11438",
+        "world:creature:4693",
+        "world:creature:4697",
+        "world:creature:4729"
+      ],
+      "text": "You are in Scrabblescrew's Camp, an area of Desolace. Smeed Scrabblescrew, a shrewd goblin kodo trader, is found here and resents the success of his rival Bibbly. Dread flyers, scorpashi lashers and hulking gritjaw basilisks are the dangers here.",
+      "when": {
+        "area_id": 2617
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2657",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2657",
+        "world:creature:11561",
+        "world:creature:11559",
+        "world:creature:11578"
+      ],
+      "text": "You are in Valley of Bones, an area of Desolace. Undead ravagers are the main danger here, with outcast necromancers and whirlwind shredders also about.",
+      "when": {
+        "area_id": 2657
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2198": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2198 (Shadowbreak Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2324": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2324 (The Veiled Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2404": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2404 (Tethris Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2405": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2405 (Ethel Rethor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2406": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2406 (Ranazjar Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2407": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2407 (Kormek's Hut)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2408": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2408 (Shadowprey Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2617": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2617 (Scrabblescrew's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2657": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2657 (Valley of Bones)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:405": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 405 (Desolace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:596": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 596 (Kodo Graveyard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:597": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 597 (Ghost Walker Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:598": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 598 (Sar'theris Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:599": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 599 (Thunder Axe Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:602": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 602 (Mannoroc Coven)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:603": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 603 (Sargeron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:604": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 604 (Magram Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:606": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 606 (Gelkis Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:607": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 607 (Valley of Spears)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:608": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 608 (Nijel's Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:609": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 609 (Kolkar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:37": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 37 (Nijel's Point, Desolace)",
+      "revision": "3.3.5a client data"
+    },
     "source:004f0ae7201f97055546d0f1": {
       "kind": "research",
       "reference": "evidence:sha256:478131bfd809ec519a95421595a869e0bce0ff5f801ceb161153e7c2c16ecad8",
@@ -6556,6 +7044,416 @@
       "kind": "research",
       "reference": "evidence:sha256:c6d4b1141106f30cf2369d92ee3428bd977c0ee842dc8d54f4abe987da05848b",
       "revision": "9ef8473d58dcf8868e990233ac8c43ccad45d35175b05e4c6a35617a0a99f325"
+    },
+    "world:creature:11106": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11106 (Innkeeper Sikewa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11438 (Bibbly F'utzbuckle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11559": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11559 (Outcast Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11561 (Undead Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11562 (Drysnap Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11563": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11563 (Drysnap Pincer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11576": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11576 (Whirlwind Ripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11578": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11578 (Whirlwind Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11596 (Smeed Scrabblescrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11624": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11624 (Taiga Wisemane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11785": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11785 (Ambereye Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11823 (Vark Battlescar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11863 (Azore Aldamort), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12240 (Spirit of Kolk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12277 (Melizza Brimbuzzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12340 (Drulzegar Skraghook), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13656 (Willow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13699": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13699 (Selendra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13717 (Centaur Pariah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13836": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13836 (Burning Blade Nightmare), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13837": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13837 (Captured Stallion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4498": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4498 (Maurin Bonesplitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4634": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4634 (Kolkar Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4635 (Kolkar Windchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4636 (Kolkar Battle Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4637 (Kolkar Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4640": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4640 (Magram Wrangler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4641 (Magram Windchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4642 (Magram Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4648": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4648 (Gelkis Stamper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4649 (Gelkis Windchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4651 (Gelkis Earthcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4655": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4655 (Maraudine Wrangler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4656 (Maraudine Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4657 (Maraudine Windchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4663 (Burning Blade Augur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4665": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4665 (Burning Blade Adept), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4666": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4666 (Burning Blade Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4668 (Burning Blade Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4670": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4670 (Hatefury Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4671": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4671 (Hatefury Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4672": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4672 (Hatefury Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4673 (Hatefury Betrayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4674 (Hatefury Shadowstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4675": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4675 (Hatefury Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4676 (Lesser Infernal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4679 (Nether Maiden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4680 (Doomwarder Captain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4684 (Nether Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4685": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4685 (Ley Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4692": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4692 (Dread Swoop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4693 (Dread Flyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4695": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4695 (Carrion Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4696 (Scorpashi Snapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4697": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4697 (Scorpashi Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4700": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4700 (Aged Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4701 (Dying Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4702": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4702 (Ancient Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4705": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4705 (Burning Blade Invoker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4711": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4711 (Slitherblade Naga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4715 (Slitherblade Razortail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4719 (Slitherblade Sea Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4726": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4726 (Raging Thunder Lizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4728 (Gritjaw Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4729": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4729 (Hulking Gritjaw Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5395": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5395 (Felgur Twocuts), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5396": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5396 (Captain Pentigast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5397 (Uthek the Wise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5398": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5398 (Warug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5412": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5412 (Gurda Wildmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5642 (Vahlarriel Demonslayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5644 (Dalinda Malem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5752": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5752 (Corporal Melkins), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6019": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6019 (Hornizz Brimbuzzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6726": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6726 (Thalon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1365": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1365 (Khan Dez'hepah)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1458": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1458 (Reagents for Reclaimers Inc.)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5741": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5741 (Sceptre of Light)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5821": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5821 (Bodyguard for Hire)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6161": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6161 (Claim Rackmore's Treasure!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7064": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7064 (Corruption of Earth and Seed)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

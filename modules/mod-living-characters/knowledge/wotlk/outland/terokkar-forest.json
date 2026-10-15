@@ -6487,7 +6487,1069 @@
     }
   ],
   "place": "Terokkar Forest",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3519",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3519",
+        "dbc:area:3683",
+        "dbc:area:3684",
+        "dbc:area:3688",
+        "dbc:area:3958",
+        "world:creature:18477",
+        "world:creature:18464",
+        "world:quest:9986"
+      ],
+      "text": "You are in Terokkar Forest, a contested wood in Outland where both the Alliance and the Horde hold settlements. Stonebreaker Hold is Horde and Allerian Stronghold is Alliance, while Auchindoun and Sha'tari Base Camp belong to neither side. Timber worgs, warp stalkers and warped peons roam the land, and arakkoa raid the roads.",
+      "when": {
+        "zone_id": 3519
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3674",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3674",
+        "world:creature:18446",
+        "world:creature:18424",
+        "world:creature:18468",
+        "world:creature:18437",
+        "world:creature:18438",
+        "world:quest:9951"
+      ],
+      "text": "You are in Cenarion Thicket, a grove in Terokkar Forest where druids were massacred and only two survived. Earthbinder Tavgren investigates the killings, comparing the changed teromoths with unaffected ones, while Warden Treelos is still stationed here, his speech fractured. Vicious teromoths and Naphthal'ar, a creature watching from the tower, make the grove dangerous.",
+      "when": {
+        "area_id": 3674
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3675",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3675",
+        "world:quest:9978",
+        "world:creature:18456",
+        "world:creature:18457",
+        "world:creature:17143",
+        "world:creature:17142",
+        "world:creature:18548"
+      ],
+      "text": "You are in Tuurem, a stretch of Terokkar Forest on the road to Shattrath City. Tuurem scavengers and hunters prowl it, along with wrekt seers and wrekt warriors, and firewing couriers are seen here.",
+      "when": {
+        "area_id": 3675
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3676",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3676",
+        "world:creature:18449",
+        "world:creature:18450",
+        "world:creature:18451",
+        "world:quest:9986"
+      ],
+      "text": "You are in Veil Shienor, an arakkoa settlement in Terokkar Forest. Shienor talonites, sorcerers and wing guards hold it, and Alliance officers want its leader Ayit killed so the roads stay safe.",
+      "when": {
+        "area_id": 3676
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3677",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3677",
+        "world:creature:22314",
+        "world:creature:18453",
+        "world:creature:18452",
+        "world:quest:9986"
+      ],
+      "text": "You are in Veil Skith, an arakkoa settlement in Terokkar Forest where children are held captive. Skithian windrippers and dreadhawks hold the ground, Urdak is its leader and is marked for death, and a captive child there is frightened of the weird bird guys.",
+      "when": {
+        "area_id": 3677
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3678",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3678",
+        "world:creature:18455",
+        "world:creature:18454",
+        "world:creature:18685"
+      ],
+      "text": "You are in Veil Shalas, a place in Terokkar Forest. Shalassi oracles and talonguards are hostile here, and an Okrek roams among them.",
+      "when": {
+        "area_id": 3678
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3679",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3679",
+        "world:creature:21787",
+        "world:creature:21723",
+        "world:creature:21728",
+        "world:creature:23051",
+        "world:creature:6491"
+      ],
+      "text": "You are in Skettis, a time-lost place in Terokkar Forest where an arakkoa high priest casts both shadow and healing magic. Blackwind sabercats, skettis surgers and wing guards are hostile around it, and monstrous kaliri birds are a danger. A spirit healer is here too.",
+      "when": {
+        "area_id": 3679
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3680",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3680",
+        "world:creature:21723",
+        "world:creature:21728",
+        "world:creature:21644",
+        "world:creature:22972"
+      ],
+      "text": "You are in Blackwind Valley, a stretch of Terokkar Forest where Blackwind sabercats, skettis surgers and skettis wing guards roam. A Cenarion sparrowhawk works the ground here, searching for buried raven stones.",
+      "when": {
+        "area_id": 3680
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3681",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3681",
+        "world:creature:18760",
+        "world:creature:16769",
+        "world:creature:1410",
+        "world:creature:5355",
+        "world:quest:10051"
+      ],
+      "text": "You are in Firewing Point, a Terokkar Forest site where firewing warlocks, bloodwarders and defenders are hostile. Isla Starmane, a diplomat from the Cenarion Expedition, was captured here and wants out, carrying information she says is vital to the security of nearby holds.",
+      "when": {
+        "area_id": 3681
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3682",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3682",
+        "world:creature:18714",
+        "world:creature:18715",
+        "world:creature:18713",
+        "world:creature:17088",
+        "world:creature:16519",
+        "world:quest:10043"
+      ],
+      "text": "You are in Grangol'var Village, a Terokkar Forest village where a shadowy group, the Shadow Council, has gathered. Horde scout Neftis and Alliance private Weeks both watch it, and shadowy summoners and executioners are hostile here. Shadowmaster Grieve leads them.",
+      "when": {
+        "area_id": 3682
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3683",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3683",
+        "world:creature:18712",
+        "world:creature:18386",
+        "world:creature:18383",
+        "world:creature:18807"
+      ],
+      "text": "You are in Stonebreaker Hold, a Horde hold in Terokkar Forest. Advisor Faila oversees its security, and Rokag directs its defenses against arakkoa attacks on merchants and couriers. Kurgatok the warlock studies the arakkoa here, and Kerna, a wind rider master, arranges flights from its inn.",
+      "when": {
+        "area_id": 3683
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3684",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3684",
+        "world:creature:15991",
+        "world:creature:18713",
+        "world:creature:18252",
+        "world:creature:18464",
+        "world:creature:18809"
+      ],
+      "text": "You are in Allerian Stronghold, an Alliance hold in Terokkar Forest. Lady Dena Kennedy is worried about arakkoa raids on supply lines, and Lieutenant Gravelhammer plans against surprise attacks. Andarl, a mage, suspects warp stalkers are making his spells fizzle, and Furnan Skysoar, a gryphon master, arranges flights from the hold.",
+      "when": {
+        "area_id": 3684
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3685",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3685",
+        "world:quest:9998",
+        "world:creature:16810",
+        "world:creature:16772",
+        "world:creature:18595",
+        "world:quest:10012"
+      ],
+      "text": "You are in Bonechewer Ruins, a ruin in Terokkar Forest where fel orcs work day and night rebuilding fortifications. Bonechewer backbreakers and devastators and warped peons are hostile here. Plans found here suggest that blood elves at Firewing Point are giving the fel orcs their orders.",
+      "when": {
+        "area_id": 3685
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3686",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3686",
+        "world:creature:18448",
+        "world:creature:22387",
+        "world:creature:22388",
+        "world:creature:18465"
+      ],
+      "text": "You are in Veil Lithic, a district of Terokkar Forest. Kokorek, an elderly arakkoa sage, lives in hiding here. Lithic oracles, talonguards and warp hunters roam the area and are the main dangers.",
+      "when": {
+        "area_id": 3686
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3688",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3688",
+        "world:creature:18933",
+        "world:creature:19542",
+        "world:creature:21284",
+        "world:creature:18470",
+        "world:creature:19503",
+        "world:quest:10094"
+      ],
+      "text": "You are in Auchindoun, the ruined mausoleum of Terokkar Forest, held by neither side. Isfar, an arakkoa, wants to free his sister Lakka from his brother Syth in the Sethekk Halls. Lower City spies and Field Commander Mahfuun's resistance work against the Shadow Council here. Auchenai initiates, bonelashers and cabal agents are the dangers, and there is a spirit healer, repairs and a vendor.",
+      "when": {
+        "area_id": 3688
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3689",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3689",
+        "world:creature:18449",
+        "world:creature:18451",
+        "world:creature:18450",
+        "world:creature:21854",
+        "world:creature:18466",
+        "world:creature:18468"
+      ],
+      "text": "You are in Veil Reskk, a district of Terokkar Forest. Shienor talonites, wing guards and sorcerers are the main dangers, along with ironspine petrifiers and dreadfang lurkers. Teromoths live here too and use Pacifying Dust in combat.",
+      "when": {
+        "area_id": 3689
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3690",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3690",
+        "world:creature:21804",
+        "world:creature:21728",
+        "world:creature:23051",
+        "world:creature:21723",
+        "world:creature:21730"
+      ],
+      "text": "You are in Blackwind Lake, a lake in Terokkar Forest. Skettis kaliri birds swoop at anyone who attacks them. Skettis surgers and monstrous kaliri are the main dangers, with blackwind sabercats and alluvions also about.",
+      "when": {
+        "area_id": 3690
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3692",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3692",
+        "world:creature:23091",
+        "world:creature:23092",
+        "world:creature:23093",
+        "world:creature:23094"
+      ],
+      "text": "You are in Lake Jorune, a lake in Terokkar Forest. Disciples and minions of Sar'this gather here, along with an evoker of Sar'this. Sar'this himself summons arcane elementals.",
+      "when": {
+        "area_id": 3692
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3693",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3693",
+        "world:creature:21723",
+        "world:creature:21728",
+        "world:creature:23219"
+      ],
+      "text": "You are in Skethyl Mountains, a range in Terokkar Forest. Blackwind sabercats and skettis surgers hunt here, and blackwind warp chasers roam with them.",
+      "when": {
+        "area_id": 3693
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3696",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3696",
+        "world:creature:6491",
+        "world:creature:18912",
+        "world:creature:22143",
+        "world:creature:22144",
+        "world:creature:22148",
+        "world:creature:18137"
+      ],
+      "text": "You are in The Barrier Hills, hills in Terokkar Forest with a spirit healer. Gordunni back-breakers, elementalists and head-splitters are the main dangers, with marsh dredgers and marsh lurkers too. Sporelok humanoids are found here.",
+      "when": {
+        "area_id": 3696
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3697",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3697",
+        "world:quest:10031",
+        "world:creature:18460",
+        "world:creature:16805",
+        "world:creature:18467",
+        "world:creature:22095",
+        "world:creature:22100",
+        "world:creature:22462"
+      ],
+      "text": "You are in The Bone Wastes, a battlefield in Terokkar Forest beyond Auchindoun's walls. Lost spirits and broken skeletons wander the field, while dreadfang widows, infested root-walkers and scorpid bonecrawlers are the main dangers. Vindicator Haylen lies gravely poisoned and asks for help avenging his fallen companions.",
+      "when": {
+        "area_id": 3697
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3719",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3719",
+        "world:creature:18260",
+        "world:creature:18262"
+      ],
+      "text": "You are in Bleeding Hollow Ruins, ruins in Terokkar Forest. Boulderfist invaders gather here in numbers, and Unkor the Ruthless lurks among them.",
+      "when": {
+        "area_id": 3719
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3859",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3859",
+        "world:creature:25580",
+        "world:quest:11665",
+        "world:quest:11667",
+        "world:creature:18750",
+        "world:creature:18461"
+      ],
+      "text": "You are in Silmyr Lake, a lake in Terokkar Forest, northeast of Shattrath City. Old Man Barlo, Master of Fishing, fishes here and recalls an enormous mudfish that snapped his line and escaped. Shimmerscale eels and dampscale basilisks are the dangers here.",
+      "when": {
+        "area_id": 3859
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3860",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3860",
+        "world:creature:6491",
+        "world:creature:18469",
+        "world:creature:18477",
+        "world:creature:18464",
+        "world:creature:18463"
+      ],
+      "text": "You are in Raastok Glade, a glade in Terokkar Forest with a spirit healer. Royal teromoths use Pacifying Dust in battle among timber worg alphas, warp stalkers and dampscale devourers, which are the main dangers.",
+      "when": {
+        "area_id": 3860
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3885",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3885",
+        "world:quest:10921",
+        "world:creature:22355",
+        "world:creature:18467",
+        "world:creature:22095",
+        "world:creature:22307",
+        "world:creature:20682"
+      ],
+      "text": "You are in Netherweb Ridge, a ridge in Terokkar Forest where the Terokkarantula, brood-mother of the dreadfang widows, has her lair deep within. Netherweb victims, dreadfang widows, infested root-walkers and rotting forest-ragers are the main dangers.",
+      "when": {
+        "area_id": 3885
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3886",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3886",
+        "world:creature:22045",
+        "world:creature:21941"
+      ],
+      "text": "You are in Derelict Caravan, a place in Terokkar Forest. Vengeful husks and accursed apparitions haunt it.",
+      "when": {
+        "area_id": 3886
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3887",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3887",
+        "world:quest:10839",
+        "world:creature:22272",
+        "world:creature:22278",
+        "world:creature:22365",
+        "world:creature:22370",
+        "world:creature:21313",
+        "world:creature:22420"
+      ],
+      "text": "You are in the Refugee Caravan, a camp of stranded refugees in the Bone Wastes of Terokkar Forest. Kirrik the Awakened, an arakkoa who broke with Skettis, leads them, and High Priest Orglum is among the people here. A night attack halted their journey, and Mekeda fears the Cabal will strike again. Dead clefthoofs wander nearby, and Lakotae says wood mites are ravaging the trees to the east.",
+      "when": {
+        "area_id": 3887
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3888",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3888",
+        "world:creature:21661",
+        "world:creature:21660",
+        "world:creature:21662"
+      ],
+      "text": "You are in Shadow Tomb, a tomb in Terokkar Forest. Cabal skirmishers, abjurists and tomb-raiders haunt it.",
+      "when": {
+        "area_id": 3888
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3889",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3889",
+        "world:quest:10848",
+        "world:creature:21200",
+        "world:creature:21198",
+        "world:creature:21324",
+        "world:creature:18467"
+      ],
+      "text": "You are in Veil Rhaze, a former colony of Skettis in Terokkar Forest. Terokk's influence lingers in its maligned spirits, and screeching spirits, deathtalon spirits, spirit ravens and dreadfang widows prowl there.",
+      "when": {
+        "area_id": 3889
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3890",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3890",
+        "world:creature:21370",
+        "world:creature:21368",
+        "world:creature:21636"
+      ],
+      "text": "You are in Tomb of Lights, a tomb in Terokkar Forest. Ethereal nethermancers and plunderers haunt it, along with a vengeful draenei.",
+      "when": {
+        "area_id": 3890
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3891",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3891",
+        "world:creature:18470",
+        "world:creature:18689",
+        "world:creature:21849",
+        "world:creature:18465"
+      ],
+      "text": "You are in Carrion Hill, a hill in Terokkar Forest. Bonelashers gather there in numbers, with cripplers, bone crawlers and warp hunters.",
+      "when": {
+        "area_id": 3891
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3892",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3892",
+        "world:creature:21285",
+        "world:creature:21242",
+        "world:creature:16805"
+      ],
+      "text": "You are in Writhing Mound, a mound in Terokkar Forest. Auchenai doomsayers and death-speakers roam it, and broken skeletons lie among them.",
+      "when": {
+        "area_id": 3892
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3893",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3893",
+        "world:quest:10030",
+        "world:creature:20986",
+        "world:creature:19718",
+        "world:creature:21242",
+        "world:creature:21902",
+        "world:creature:19847"
+      ],
+      "text": "You are in the Ring of Observance, in Auchindoun in the middle of the Bone Wastes. Dealer Tariq, a Shady Dealer, sells goods here. Provisioner Tsaalt says fighting is underway inside Auchindoun and his compatriots need help. Auchenai death-speakers, a Cabal spell-weaver and Levixus roam the ring.",
+      "when": {
+        "area_id": 3893
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3894",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3894",
+        "world:creature:21846",
+        "world:creature:21869",
+        "world:creature:21284",
+        "world:creature:21285"
+      ],
+      "text": "You are in Auchenai Grounds, a battlefield in the Bone Wastes of Terokkar Forest. Commander Ra'vaj has the Auchenai and Sha'tar dead burned so their bodies cannot be used in Auchenai rituals. Auchenai initiates and doomsayers roam it, and Unliving Guardians patrol the Bone Wastes.",
+      "when": {
+        "area_id": 3894
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3901",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3901",
+        "world:creature:18565",
+        "world:creature:21006"
+      ],
+      "text": "You are in Allerian Post, an Alliance post in Terokkar Forest. Theloria Shadecloak, an exiled high elf, works to contain the fel orc buildup nearby. Lieutenant Meridian is sure Firewing Point is building a mana bomb, and wants to strike the enemies around Allerian Stronghold.",
+      "when": {
+        "area_id": 3901
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3902",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3902",
+        "world:creature:21007",
+        "world:creature:18566"
+      ],
+      "text": "You are in Stonebreaker Camp, a Horde camp in Terokkar Forest. Sergeant Chawni directs attacks on Firewing Point and wants its mana bomb set off to protect Stonebreaker Hold. Shadowstalker Kaide watches the fel orcs near the hold.",
+      "when": {
+        "area_id": 3902
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3946",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3946",
+        "world:creature:21465"
+      ],
+      "text": "You are in Wayne's Refuge, a forge in Terokkar Forest where David Wayne, a human smith, works. He left the Sons of Lothar after joining the Draenor expedition, and he is remaking an anti-demon sword here.",
+      "when": {
+        "area_id": 3946
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3956",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3956",
+        "world:creature:19672",
+        "world:creature:19673",
+        "world:creature:19670",
+        "world:creature:19674",
+        "world:creature:19676",
+        "world:creature:21661",
+        "world:creature:19679"
+      ],
+      "text": "You are in The Shadow Stair, a place in Terokkar Forest. The Consortium's laborers and engineers work here, and Artificer Morphalius and Nexus-Prince Haramad have crews stalled at the Mana-Tombs behind Nexus-Prince Shaffar's ward. Cabal skirmishers and spell-weavers haunt the stair, and a vendor called Slim deals in goods.",
+      "when": {
+        "area_id": 3956
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3958",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3958",
+        "world:creature:22481",
+        "world:creature:22446",
+        "world:creature:22364",
+        "world:creature:22477",
+        "world:creature:22476"
+      ],
+      "text": "You are in Sha'tari Base Camp, a camp in the Bone Wastes of Terokkar Forest. Explorers' League digs are run from here by Dwarfowitz, who sends researchers out to study the creatures of the Bone Wastes. Commander Ra'vaj is strained by losses to the Auchenai, who are trying to seize the dead, and Netherweb Ridge spiders have carried off Sha'tar warriors. The camp has a first aid trainer and a blacksmithing supplier.",
+      "when": {
+        "area_id": 3958
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3961",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3961",
+        "world:creature:22807"
+      ],
+      "text": "You are in Sorrow Wing Point, a place in Terokkar Forest. Lost Torranche are the danger here, and a number of them are about.",
+      "when": {
+        "area_id": 3961
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3973",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3973",
+        "world:creature:23048",
+        "world:creature:23415",
+        "world:creature:23038",
+        "world:creature:23042",
+        "world:creature:23367"
+      ],
+      "text": "You are in Blackwind Landing, a Skyguard post in Terokkar Forest, just outside Skettis. Sky Sergeant Doryn sends recruits against the arakkoa from here, and Skyguard Handler Deesak runs the nether ray flights, which are strained by frequent sorties and short feed. Sky Commander Adaris is seriously wounded and under the care of the medic Severin. A quartermaster, Grella, supplies and repairs the Skyguard's equipment.",
+      "when": {
+        "area_id": 3973
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3974",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3974",
+        "world:creature:21787",
+        "world:creature:21804",
+        "world:creature:21644",
+        "world:creature:21649",
+        "world:creature:21652",
+        "world:creature:23051",
+        "world:creature:21723"
+      ],
+      "text": "You are in Veil Harr'ik, a part of Skettis in Terokkar Forest. Time-Lost Skettis high priests, reavers and worshippers are found here, and wild kaliri birds swoop at anyone who attacks them. Skettis wing guards, windwalkers and time-shifters are dangers, along with monstrous kaliri and blackwind sabercats.",
+      "when": {
+        "area_id": 3974
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3975",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3975",
+        "world:creature:23363",
+        "world:creature:21804",
+        "world:creature:21644",
+        "world:creature:21649",
+        "world:creature:21728",
+        "world:creature:23051"
+      ],
+      "text": "You are in Terokk's Rest, a place in Terokkar Forest where the scribe Sahaak keeps apart from the fighting. He is an old, nearly blind arakkoa and offers exotic texts for sale. Skettis wing guards, windwalkers and surgers haunt the area, and monstrous kaliri are a danger here too.",
+      "when": {
+        "area_id": 3975
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3976",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3976",
+        "world:creature:23066",
+        "world:creature:23067",
+        "world:creature:23068",
+        "world:creature:21911",
+        "world:creature:21985",
+        "world:creature:21644"
+      ],
+      "text": "You are in Veil Ala'rak, a part of Skettis in Terokkar Forest, near Blackwind Lake. Talonpriest Ishaal, Talonpriest Skizzik and Talonpriest Zellek are part of the Skettis chain of command, and this is where they have been sought out. Skettis soulcallers, eviscerators and wing guards make the area dangerous.",
+      "when": {
+        "area_id": 3976
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3977",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3977",
+        "world:creature:21787",
+        "world:creature:21763",
+        "world:creature:21804",
+        "world:creature:21912",
+        "world:creature:21652"
+      ],
+      "text": "You are in Upper Veil Shil'ak, a part of Skettis in Terokkar Forest. Time-Lost Skettis high priests, reavers and worshippers are found here, along with wild kaliri. Skettis sentinels and time-shifters are the dangers, along with windwalkers.",
+      "when": {
+        "area_id": 3977
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3978",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3978",
+        "world:creature:23383",
+        "world:creature:21644",
+        "world:creature:21911",
+        "world:creature:21912",
+        "world:creature:23051"
+      ],
+      "text": "You are in Lower Veil Shil'ak, a part of Skettis in Terokkar Forest. A captured Skyguard scout, knocked from a nether ray over Skettis, is still here and wants to leave. Skettis wing guards, windwalkers and soulcallers haunt the area, along with sentinels and monstrous kaliri.",
+      "when": {
+        "area_id": 3978
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4078",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4078",
+        "world:creature:24922",
+        "world:creature:24920"
+      ],
+      "text": "You are in Razorthorn Rise, a place in Terokkar Forest. Razorthorn ravagers are common here, and razorthorn flayers are a danger too.",
+      "when": {
+        "area_id": 4078
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3519 (Terokkar Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3674": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3674 (Cenarion Thicket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3675": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3675 (Tuurem)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3676": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3676 (Veil Shienor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3677": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3677 (Veil Skith)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3678": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3678 (Veil Shalas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3679": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3679 (Skettis)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3680": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3680 (Blackwind Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3681": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3681 (Firewing Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3682": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3682 (Grangol'var Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3683": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3683 (Stonebreaker Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3684": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3684 (Allerian Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3685": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3685 (Bonechewer Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3686": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3686 (Veil Lithic)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3688": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3688 (Auchindoun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3689": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3689 (Veil Reskk)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3690": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3690 (Blackwind Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3692": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3692 (Lake Jorune)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3693": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3693 (Skethyl Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3696": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3696 (The Barrier Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3697": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3697 (The Bone Wastes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3719": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3719 (Bleeding Hollow Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3859": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3859 (Silmyr Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3860": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3860 (Raastok Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3885": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3885 (Netherweb Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3886": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3886 (Derelict Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3887": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3887 (Refugee Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3888": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3888 (Shadow Tomb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3889": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3889 (Veil Rhaze)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3890": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3890 (Tomb of Lights)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3891": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3891 (Carrion Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3892": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3892 (Writhing Mound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3893": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3893 (Ring of Observance)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3894": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3894 (Auchenai Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3901": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3901 (Allerian Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3902": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3902 (Stonebreaker Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3946": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3946 (Wayne's Refuge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3956": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3956 (The Shadow Stair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3958": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3958 (Sha'tari Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3961": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3961 (Sorrow Wing Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3973": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3973 (Blackwind Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3974": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3974 (Veil Harr'ik)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3975": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3975 (Terokk's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3976": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3976 (Veil Ala'rak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3977": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3977 (Upper Veil Shil'ak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3978": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3978 (Lower Veil Shil'ak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4078": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4078 (Razorthorn Rise)",
+      "revision": "3.3.5a client data"
+    },
     "source:00178d342d85de4dc8ff9149": {
       "kind": "research",
       "reference": "evidence:sha256:2bc92cb0a3f675791a64ee657b7d46e313e419522743801ebc15d889498f80e1",
@@ -11572,6 +12634,821 @@
       "kind": "research",
       "reference": "evidence:sha256:0d70e7062c0a15e177b47dac3d262f3189b64707155f9cfd112bcf753d854ee7",
       "revision": "74fceb4302d98c53ecc44ab670f6332ebd80772705f06d1ae39ff9b824cd87fd"
+    },
+    "world:creature:1410": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1410 (Firewing Bloodwarder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15991 (Lady Dena Kennedy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16519 (Shadowy Executioner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16769": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16769 (Firewing Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16772 (Bonechewer Devastator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16805": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16805 (Broken Skeleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16810": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16810 (Bonechewer Backbreaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17088": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17088 (Shadowy Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17142 (Wrekt Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17143": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17143 (Wrekt Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18137": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18137 (Marsh Dredger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18252 (Andarl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18260": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18260 (Boulderfist Invader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18262": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18262 (Unkor the Ruthless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18383 (Kurgatok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18386 (Rokag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18424 (Warden Treelos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18437 (Vicious Teromoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18438 (Naphthal'ar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18446 (Earthbinder Tavgren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18448 (Kokorek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18449 (Shienor Talonite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18450 (Shienor Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18451 (Shienor Wing Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18452 (Skithian Dreadhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18453 (Skithian Windripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18454 (Shalassi Talonguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18455": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18455 (Shalassi Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18456": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18456 (Tuurem Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18457": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18457 (Tuurem Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18460 (Lost Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18461 (Dampscale Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18463 (Dampscale Devourer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18464 (Warp Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18465 (Warp Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18466 (Dreadfang Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18467 (Dreadfang Widow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18468 (Teromoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18469 (Royal Teromoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18470": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18470 (Bonelasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18477 (Timber Worg Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18548 (Firewing Courier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18565": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18565 (Theloria Shadecloak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18566 (Shadowstalker Kaide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18595": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18595 (Warped Peon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18685": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18685 (Okrek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18689": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18689 (Crippler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18712 (Advisor Faila), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18713 (Lieutenant Gravelhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18714 (Scout Neftis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18715 (Private Weeks), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18750 (Shimmerscale Eel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18760 (Isla Starmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18807 (Kerna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18809 (Furnan Skysoar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18912 (Sporelok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18933": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18933 (Isfar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19503": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19503 (Cabal Agent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19542": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19542 (Field Commander Mahfuun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19670": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19670 (Artificer Morphalius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19672": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19672 (Consortium Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19673 (Consortium Engineer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19674 (Nexus-Prince Haramad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19676 (\"Captain\" Kaftiz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19679 (\"Slim\"), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19718 (Provisioner Tsaalt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19847": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19847 (Levixus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20682 (Terokkarantula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20986 (Dealer Tariq), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21006": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21006 (Lieutenant Meridian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21007 (Sergeant Chawni), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21198": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21198 (Deathtalon Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21200 (Screeching Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21242": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21242 (Auchenai Death-Speaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21284 (Auchenai Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21285 (Auchenai Doomsayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21313 (Dead Clefthoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21324 (Spirit Raven), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21368": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21368 (Ethereal Plunderer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21370 (Ethereal Nethermancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21465 (David Wayne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21636 (Vengeful Draenei), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21644 (Skettis Wing Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21649 (Skettis Windwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21652": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21652 (Skettis Time-Shifter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21660 (Cabal Abjurist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21661 (Cabal Skirmisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21662": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21662 (Cabal Tomb-Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21723 (Blackwind Sabercat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21728 (Skettis Surger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21730": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21730 (Alluvion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21763 (Time-Lost Skettis Worshipper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21787": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21787 (Time-Lost Skettis High Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21804 (Skettis Kaliri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21846 (Slain Auchenai Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21849": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21849 (Bone Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21854": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21854 (Ironspine Petrifier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21869": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21869 (Unliving Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21902": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21902 (Cabal Spell-weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21911": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21911 (Skettis Soulcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21912 (Skettis Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21941 (Accursed Apparition), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21985": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21985 (Skettis Eviscerator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22045": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22045 (Vengeful Husk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22095": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22095 (Infested Root-Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22100": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22100 (Scorpid Bonecrawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22143": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22143 (Gordunni Back-Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22144 (Gordunni Elementalist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22148": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22148 (Gordunni Head-Splitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22272": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22272 (Kirrik the Awakened), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22278 (High Priest Orglum), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22307": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22307 (Rotting Forest-Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22314 (Captive Child), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22355 (Netherweb Victim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22364": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22364 (Scout Navrin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22365": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22365 (Ethan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22370 (Mekeda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22387 (Lithic Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22388 (Lithic Talonguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22420 (Lakotae), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22446 (Commander Ra'vaj), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22462 (Vindicator Haylen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22476": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22476 (Aundro), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22477 (Anchorite Ensham), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22481": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22481 (Dwarfowitz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22807 (Lost Torranche), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22972": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22972 (Cenarion Sparrowhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23038": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23038 (Sky Commander Adaris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23042": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23042 (Severin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23048": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23048 (Sky Sergeant Doryn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23051": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23051 (Monstrous Kaliri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23066": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23066 (Talonpriest Ishaal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23067": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23067 (Talonpriest Skizzik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23068": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23068 (Talonpriest Zellek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23091": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23091 (Disciple of Sar'this), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23092": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23092 (Evoker of Sar'this), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23093 (Sar'this), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23094 (Minion of Sar'this), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23219": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23219 (Blackwind Warp Chaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23363": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23363 (Sahaak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23367": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23367 (Grella), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23383 (Skyguard Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23415 (Skyguard Handler Deesak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24920 (Razorthorn Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24922": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24922 (Razorthorn Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25580": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25580 (Old Man Barlo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5355 (Firewing Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10012": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10012 (Fel Orc Plans)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10030": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10030 (Recover the Bones)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10031": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10031 (Helping the Lost Find Their Way)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10043": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10043 (Kill the Shadow Council!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10051": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10051 (Escape from Firewing Point!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10094": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10094 (The Codex of Blood)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10839": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10839 (Veil Skith: Darkstone of Terokk)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10848": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10848 (Veil Rhaze: Unliving Evil)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10921": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10921 (Terokkarantula)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11665": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11665 (Crocolisks in the City)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11667": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11667 (The One That Got Away)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9951": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9951 (It's Watching You!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9978": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9978 (By Any Means Necessary)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9986": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9986 (Stymying the Arakkoa)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9998": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9998 (Unruly Neighbors)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

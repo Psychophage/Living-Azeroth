@@ -2243,7 +2243,376 @@
     }
   ],
   "place": "Felwood",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:361",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:361",
+        "dbc:area:1997",
+        "dbc:area:1998",
+        "dbc:area:2479",
+        "world:creature:7092",
+        "world:creature:8958",
+        "world:creature:7153",
+        "world:creature:7112"
+      ],
+      "text": "You are in Felwood, a corrupted land in Kalimdor where the Alliance and the Horde both hold settlements. Bloodvenom Post belongs to the Horde and Talonbranch Glade to the Alliance, while Emerald Sanctuary is kept by neither side. Corruption breeds tainted oozes and entropic beasts, Angerclaw and Felpaw creatures roam the wilds, and Deadwood furbolgs and Jaedenar cultists are hostile to travelers.",
+      "when": {
+        "zone_id": 361
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1761",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1761",
+        "world:creature:7153",
+        "world:creature:7154",
+        "world:creature:7155",
+        "world:creature:9464"
+      ],
+      "text": "You are in Deadwood Village, a camp of Deadwood furbolgs where corruption permeates the ground. Its warriors, gardeners and pathfinders are hostile, and Overlord Ror is a notable danger here.",
+      "when": {
+        "area_id": 1761
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1762",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1762",
+        "world:creature:7156",
+        "world:creature:7157",
+        "world:creature:7158",
+        "world:creature:9462",
+        "world:quest:5085"
+      ],
+      "text": "You are in Felpaw Village, where Deadwood den watchers, avengers and shamans are hostile. Chieftain Bloodmaw is a notable hostile here, and a strange gooey substance from a cauldron is being studied for its corruption.",
+      "when": {
+        "area_id": 1762
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1763",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1763",
+        "world:creature:11016",
+        "world:creature:7112",
+        "world:creature:7118",
+        "world:creature:7092",
+        "world:creature:7125"
+      ],
+      "text": "You are in Jaedenar, a place of Shadow Council cultists. Jaedenar cultists, adepts, guardians and darkweavers are hostile, and tainted oozes and hounds roam here. A captive named Arko'narin is held in Jaedenar, fearing the cultists will sacrifice her.",
+      "when": {
+        "area_id": 1763
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1764",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1764",
+        "world:creature:7092",
+        "world:creature:7093",
+        "world:creature:7120",
+        "world:creature:7118",
+        "world:creature:7114"
+      ],
+      "text": "You are in Bloodvenom River, where tainted and vile oozes gather alongside Jaedenar warlocks, darkweavers and enforcers, all hostile to travelers.",
+      "when": {
+        "area_id": 1764
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1765",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1765",
+        "world:creature:7092",
+        "world:creature:14523",
+        "world:creature:14345",
+        "world:creature:7118"
+      ],
+      "text": "You are in Bloodvenom Falls, where tainted oozes gather and the hostile creatures Ulathek and The Ongar are notable dangers. Jaedenar darkweavers are also found here.",
+      "when": {
+        "area_id": 1765
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1766",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1766",
+        "world:creature:14469",
+        "world:creature:14470",
+        "world:creature:14467",
+        "world:creature:9878",
+        "world:creature:9879"
+      ],
+      "text": "You are in Shatter Scar Vale, a valley of craters where entropic beasts and horrors, infernal sentries and tainted oozes are hostile. Niby the Almighty, a boastful warlock, is trying to reanimate the infernal Kroshius here with his imp, Impsy.",
+      "when": {
+        "area_id": 1766
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1767",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1767",
+        "world:creature:14524",
+        "world:creature:14525",
+        "world:creature:14526",
+        "world:creature:7139",
+        "world:creature:7101",
+        "world:creature:8957",
+        "world:creature:6491"
+      ],
+      "text": "You are in Irontree Woods, where Irontree stompers, Warpwood shredders, toxic horrors and Angerclaw grizzlies are hostile. Ancients named Vartrus, Stoma and Hastat dwell here, guarding the forest against demonic corruption. A spirit healer is found here.",
+      "when": {
+        "area_id": 1767
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1769",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1769",
+        "world:creature:15395",
+        "world:creature:11516",
+        "world:creature:11552"
+      ],
+      "text": "You are in Timbermaw Hold, home of the Timbermaw furbolgs at the northern edge of Felwood. Nafien keeps watch near its entrance, troubled by the Deadwood furbolgs he sees as brethren warped by fel. Timbermaw wardens and mystics will attack travelers they consider hostile.",
+      "when": {
+        "area_id": 1769
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1997",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1997",
+        "world:creature:9620",
+        "world:creature:9996",
+        "world:creature:10306",
+        "world:creature:11900",
+        "world:creature:10379",
+        "world:creature:9464"
+      ],
+      "text": "You are in Bloodvenom Post, a Horde post in Felwood with a wind rider master, a weapon merchant and a general-goods vendor. Dreka'Sur, a widow, seeks vengeance on Overlord Ror for her husband's death, and Winna Hazzard, a Forsaken researcher, is working to turn corrupted moonwell water against the Alliance. Trull Failbane leads an investigation into the wildkin of Winterspring.",
+      "when": {
+        "area_id": 1997
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1998",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1998",
+        "world:creature:9465",
+        "world:creature:12578",
+        "world:creature:15315",
+        "world:creature:8957",
+        "world:creature:8961"
+      ],
+      "text": "You are in Talonbranch Glade, an Alliance settlement in Felwood with trainers of magic and arms, a hippogryph master and a weapon merchant. Golhine the Hooded, a druid trainer, speaks of tranquility as something a druid finds by looking inward. Angerclaw grizzlies and Felpaw ravagers roam the glade's edges.",
+      "when": {
+        "area_id": 1998
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2478",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2478",
+        "world:creature:9528",
+        "world:creature:8959",
+        "world:creature:8956",
+        "world:creature:14339",
+        "world:creature:6491"
+      ],
+      "text": "You are in Morlos'Aran, a place where Emerald Circle druids work in Felwood. Arathandris Silversky studies corrupted life, including sap from Warpwood elementals, in hopes of saving other forms of life. Felpaw wolves and Angerclaw bears are hostile, and a spirit healer is near.",
+      "when": {
+        "area_id": 2478
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2479",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2479",
+        "world:creature:9116",
+        "world:creature:10920",
+        "world:creature:22931",
+        "world:creature:8959"
+      ],
+      "text": "You are in Emerald Sanctuary, a neutral sanctuary in Felwood where Emerald Circle druids work to heal the land's corruption. Eridan Bluewind directs efforts against the Jadefire satyrs, and Kelek Skykeeper studies the Winterfall furbolgs. Gorrim, a flight master, serves here, and Felpaw wolves prowl its edges.",
+      "when": {
+        "area_id": 2479
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2480",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2480",
+        "world:creature:7105",
+        "world:creature:7109",
+        "world:creature:14340"
+      ],
+      "text": "You are in Jadefire Glen, a glen in Felwood. Jadefire satyrs and Jadefire felsworn haunt its hollows, and Alshirr Banebreath is among the dangers here.",
+      "when": {
+        "area_id": 2480
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2481",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2481",
+        "world:creature:7086",
+        "world:creature:7110",
+        "world:creature:7109",
+        "world:creature:7106",
+        "world:creature:8956",
+        "world:creature:8959"
+      ],
+      "text": "You are in the Ruins of Constellas, a set of ruins in Felwood. Cursed oozes, Jadefire shadowstalkers and rogues, and Jadefire felsworn roam the ruins, along with Angerclaw bears and Felpaw wolves.",
+      "when": {
+        "area_id": 2481
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2618",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2618",
+        "world:creature:7107",
+        "world:creature:7111",
+        "world:creature:8960",
+        "world:creature:8958",
+        "world:creature:10648"
+      ],
+      "text": "You are in Jadefire Run, a route through Felwood. Jadefire tricksters and hellcallers prowl it, along with Felpaw scavengers and Angerclaw maulers, and Xavaric is among the dangers here.",
+      "when": {
+        "area_id": 2618
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1761": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1761 (Deadwood Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1762": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1762 (Felpaw Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1763": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1763 (Jaedenar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1764": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1764 (Bloodvenom River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1765": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1765 (Bloodvenom Falls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1766": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1766 (Shatter Scar Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1767": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1767 (Irontree Woods)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1769": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1769 (Timbermaw Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1997": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1997 (Bloodvenom Post )",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1998": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1998 (Talonbranch Glade )",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2478": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2478 (Morlos'Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2479": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2479 (Emerald Sanctuary)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2480": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2480 (Jadefire Glen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2481": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2481 (Ruins of Constellas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2618": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2618 (Jadefire Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:361": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 361 (Felwood)",
+      "revision": "3.3.5a client data"
+    },
     "source:006518b4443c605ef925599e": {
       "kind": "research",
       "reference": "evidence:sha256:cde63ffaf13e75865863952a2d72e58c6c158773ef5265925a127bff173e700b",
@@ -3968,6 +4337,311 @@
       "kind": "research",
       "reference": "evidence:sha256:af9ce80318e30fb2d59925b26a7a9df6b74b5fec9d3209b74cf5a5be280dcd16",
       "revision": "48dd54c5ba82b4e96a059de22ebd10517dc9c6841369275a5700e5a959ed899d"
+    },
+    "world:creature:10306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10306 (Trull Failbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10379 (Altsoba Ragetotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10648": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10648 (Xavaric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10920 (Kelek Skykeeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11016 (Captured Arko'narin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11516 (Timbermaw Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11552": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11552 (Timbermaw Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11900 (Brakkar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12578": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12578 (Mishellena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14339 (Death Howl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14340 (Alshirr Banebreath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14345 (The Ongar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14467 (Kroshius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14469 (Niby the Almighty), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14470": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14470 (Impsy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14523 (Ulathek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14524": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14524 (Vartrus the Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14525 (Stoma the Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14526": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14526 (Hastat the Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15315 (Mylini Frostmoon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15395": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15395 (Nafien), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22931 (Gorrim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7086 (Cursed Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7092": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7092 (Tainted Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7093 (Vile Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7101": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7101 (Warpwood Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7105": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7105 (Jadefire Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7106": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7106 (Jadefire Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7107 (Jadefire Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7109 (Jadefire Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7110 (Jadefire Shadowstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7111 (Jadefire Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7112 (Jaedenar Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7114 (Jaedenar Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7118 (Jaedenar Darkweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7120 (Jaedenar Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7125 (Jaedenar Hound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7139 (Irontree Stomper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7153": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7153 (Deadwood Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7154 (Deadwood Gardener), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7155": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7155 (Deadwood Pathfinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7156 (Deadwood Den Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7157 (Deadwood Avenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7158 (Deadwood Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8956 (Angerclaw Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8957 (Angerclaw Grizzly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8958 (Angerclaw Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8959 (Felpaw Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8960 (Felpaw Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8961": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8961 (Felpaw Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9116": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9116 (Eridan Bluewind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9462 (Chieftain Bloodmaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9464 (Overlord Ror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9465 (Golhine the Hooded), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9528": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9528 (Arathandris Silversky), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9620": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9620 (Dreka'Sur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9878": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9878 (Entropic Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9879": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9879 (Entropic Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9996": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9996 (Winna Hazzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5085": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5085 (Mystery Goo)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

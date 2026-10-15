@@ -264,7 +264,52 @@
     }
   ],
   "place": "Hrothgar's Landing",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4742",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4742",
+        "world:creature:34838",
+        "world:creature:34839",
+        "world:creature:34852"
+      ],
+      "text": "You are in Hrothgar's Landing, an island in Northrend held by neither the Alliance nor the Horde. Horde and Alliance mariners keep armed posts along its shore. Kvaldir raiders have taken the island, and a North Sea kraken lives in its waters. The spirits of slain Tualiq villagers linger in the island's mists.",
+      "when": {
+        "zone_id": 4742
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4760",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4760",
+        "world:creature:35090",
+        "world:creature:35102",
+        "world:creature:34947",
+        "world:creature:34925"
+      ],
+      "text": "You are in The Sea Reaver's Run, a stretch of Hrothgar's Landing where Horde and Alliance forces both stand. Captain Aerthas Firehawk, a Sunreaver captain, has been caught here outnumbered by a Kvaldir raiding party, and Captain Elleane Wavecrest leads the Alliance mariners. Kvaldir berserkers, harpooners and deepcallers still prowl these waters, and a North Sea kraken lurks here too.",
+      "when": {
+        "area_id": 4760
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4742": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4742 (Hrothgar's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4760": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4760 (The Sea Reaver's Run)",
+      "revision": "3.3.5a client data"
+    },
     "source:0313248c75c92d8a2bdaef3d": {
       "kind": "research",
       "reference": "evidence:sha256:23ce124d99bcb9bf0b7acc583f6ed3a224e766bc5d310a7ba62d1f2974d8edf9",
@@ -509,6 +554,41 @@
       "kind": "research",
       "reference": "evidence:sha256:2b93a1db0419a5766c4e05e6ff96750c2d0b30cfef60f6b1d38b7b258ee486a9",
       "revision": "f96d73ecee8b566b2f56fd0b8ce744dd96a4fd52c5b38421dc680cb5669d49f0"
+    },
+    "world:creature:34838": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34838 (Kvaldir Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34839 (Kvaldir Mist Binder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34852": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34852 (Slain Tualiq Villager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34925 (North Sea Kraken), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34947 (Kvaldir Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:35090": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 35090 (Captain Aerthas Firehawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:35102": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 35102 (Captain Elleane Wavecrest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

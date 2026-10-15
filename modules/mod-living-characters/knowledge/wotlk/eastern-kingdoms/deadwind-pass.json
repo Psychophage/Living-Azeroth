@@ -303,7 +303,121 @@
     }
   ],
   "place": "Deadwind Pass",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:41",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:41",
+        "world:creature:7376",
+        "dbc:area:2561",
+        "world:creature:7369",
+        "world:creature:7379",
+        "dbc:area:2562",
+        "world:quest:9825"
+      ],
+      "text": "You are in Deadwind Pass, a land of the Eastern Kingdoms held by neither the Alliance nor the Horde. No settlements keep it. Sky Shadows hunt across it, Deadwind ogre mages and brutes prowl The Vice, and ghostly beings crawl the ground outside Karazhan.",
+      "when": {
+        "zone_id": 41
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2558",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2558",
+        "world:creature:7376"
+      ],
+      "text": "You are in Deadwind Ravine, a part of Deadwind Pass. Sky Shadows roam it in numbers.",
+      "when": {
+        "area_id": 2558
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2561",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2561",
+        "world:creature:7369",
+        "world:creature:7379",
+        "world:creature:7371",
+        "world:creature:7372",
+        "world:creature:12377",
+        "world:creature:12378"
+      ],
+      "text": "You are in The Vice, a part of Deadwind Pass. Deadwind brutes, ogre mages, maulers and warlocks prowl here, and wailing spectres and damned souls drift among them.",
+      "when": {
+        "area_id": 2561
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2562",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2562",
+        "world:creature:17613",
+        "world:creature:18255",
+        "world:creature:12380",
+        "world:creature:12377",
+        "world:creature:12378",
+        "world:creature:7370"
+      ],
+      "text": "You are in Karazhan, a tower in Deadwind Pass. Archmage Alturus, an agent of the Kirin Tor's Violet Eye, keeps watch on it from outside, and Apprentice Darius sells goods nearby. Unliving residents, wailing spectres, damned souls and restless shades haunt the tower.",
+      "when": {
+        "area_id": 2562
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2563",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2563",
+        "world:creature:6491",
+        "world:creature:7370",
+        "world:creature:12377"
+      ],
+      "text": "You are in Morgan's Plot, a part of Deadwind Pass where a spirit healer offers a return to life for a price. Restless shades and wailing spectres roam it.",
+      "when": {
+        "area_id": 2563
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2558": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2558 (Deadwind Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2561": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2561 (The Vice)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2562": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2562 (Karazhan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2563": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2563 (Morgan's Plot)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:41": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 41 (Deadwind Pass)",
+      "revision": "3.3.5a client data"
+    },
     "source:0039ef529be6ed023e6a5603": {
       "kind": "research",
       "reference": "evidence:sha256:0ff2948b1f61f51f2ab341ca86c51ef3d4f201a4d84b264b917d49a0c0bc58d2",
@@ -548,6 +662,71 @@
       "kind": "research",
       "reference": "evidence:sha256:e65728b487d1da0d88accb07998a2d3f03f5f1c5b3b9770039ab82e0a27eb2c6",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
+    },
+    "world:creature:12377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12377 (Wailing Spectre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12378 (Damned Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12380 (Unliving Resident), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17613": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17613 (Archmage Alturus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18255 (Apprentice Darius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7369 (Deadwind Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7370 (Restless Shade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7371 (Deadwind Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7372 (Deadwind Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7376 (Sky Shadow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7379 (Deadwind Ogre Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9825": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9825 (Restless Activity)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

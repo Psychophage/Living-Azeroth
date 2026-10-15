@@ -54,7 +54,31 @@
     }
   ],
   "place": "The Frozen Sea",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3979",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3979",
+        "world:creature:24120",
+        "world:creature:25764",
+        "world:creature:25496",
+        "world:creature:27249"
+      ],
+      "text": "You are in The Frozen Sea, open water in Northrend that is held by neither the Alliance nor the Horde. Reservists of the Alliance's North Fleet are among the people who work these waters, and Kaskala defenders, who fight with thrown weapons, are found along the nearby coasts. Kvaldir Mist Lords and Alystros the Verdant Keeper are the dangers out on the water.",
+      "when": {
+        "zone_id": 3979
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3979": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3979 (The Frozen Sea)",
+      "revision": "3.3.5a client data"
+    },
     "source:0c0a3444e0ab76be1dc08859": {
       "kind": "research",
       "reference": "evidence:sha256:aac61a950ca6a2d346aeb723f7c4cca6cffb666f0c6b937f2fc61f1b82249092",
@@ -109,6 +133,26 @@
       "kind": "research",
       "reference": "evidence:sha256:f5a6fd178d9abe6361224805103b2e331564a8f01eb9c7da4808f2d91d716958",
       "revision": "4901eaead5e16d6fe89957d8c9e558ba78ecf95fe3df8d5b8114d76af2cc4dbc"
+    },
+    "world:creature:24120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24120 (North Fleet Reservist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25496": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25496 (Kvaldir Mist Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25764": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25764 (Kaskala Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27249 (Alystros the Verdant Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

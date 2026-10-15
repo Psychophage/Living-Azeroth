@@ -6245,7 +6245,853 @@
     }
   ],
   "place": "The Storm Peaks",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:67",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:67",
+        "dbc:area:4428",
+        "dbc:area:4429",
+        "dbc:area:4418",
+        "world:creature:29801"
+      ],
+      "text": "You are in The Storm Peaks, a frozen, contested land in Northrend where both the Alliance and the Horde hold settlements. Frosthold is Alliance, Grom'arsh Crash-Site and Camp Tunka'lo are Horde, and K3, Dun Niffelem, Ulduar and Bouldercrag's Refuge stand with neither side. Jormungars, icemaw bears, yetis and stormpeak wyrms roam the peaks, and Loken's stormforged fight across the land.",
+      "when": {
+        "zone_id": 67
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4418",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4418",
+        "world:creature:29428",
+        "world:creature:29431",
+        "world:creature:29904",
+        "world:creature:29473",
+        "world:quest:12820"
+      ],
+      "text": "You are in K3, a camp in The Storm Peaks that neither side holds. Ricket coordinates its sapper squad and teleporter, and Jeer Sparksocket lays land mines for her. Its inn serves visitors, while magnataur from the northeast press toward the camp and the goblin Zeev Fizzlespark is still missing in the Forlorn Mine.",
+      "when": {
+        "area_id": 4418
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4419",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4419",
+        "world:creature:29430",
+        "world:creature:29623",
+        "world:creature:29413",
+        "world:creature:29875"
+      ],
+      "text": "You are in Snowblind Hills, a stretch of The Storm Peaks near K3. Savage Hill brutes, snowblind diggers and icemane yetis roam it. Tore Rumblewrench, who heads K3's mining operation, wants the spiders of Crystalweb Cavern cleared before his crews move in.",
+      "when": {
+        "area_id": 4419
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4420",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4420",
+        "world:creature:29875",
+        "world:creature:29412",
+        "world:creature:29411",
+        "world:creature:29554"
+      ],
+      "text": "You are in Snowblind Terrace, a stretch of The Storm Peaks. Icemane yetis, crystalweb spitters and weavers, snowblind diggers and snowblind devotees roam it.",
+      "when": {
+        "area_id": 4420
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4421",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4421",
+        "world:creature:29619",
+        "world:creature:29553",
+        "world:creature:29618",
+        "world:creature:29402"
+      ],
+      "text": "You are in Garm, a stretch of The Storm Peaks where K3's sappers have set up defenses against Garm invaders. Garm watchers and snowblind followers hold the ground, and ironwool mammoths are also here.",
+      "when": {
+        "area_id": 4421
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4422",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4422",
+        "world:creature:29975",
+        "world:creature:29525",
+        "world:creature:29997",
+        "world:creature:29366",
+        "world:creature:29549"
+      ],
+      "text": "You are in Brunnhildar Village, a Hyldnir settlement in The Storm Peaks where the Hyldsmeet, a competition of Hyldnir against Hyldnir, is under way. Brunnhildar challengers and riding bears are its main dangers, and Iva the Vengeful is among them. Lok'lira the Crone, a prisoner, and the goblin Zeev Fizzlespark are caught up in the contest.",
+      "when": {
+        "area_id": 4422
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4423",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4423",
+        "world:creature:29323",
+        "world:creature:29331",
+        "world:creature:29466",
+        "world:quest:12846"
+      ],
+      "text": "You are in Sifreldar Village, a Hyldnir village in The Storm Peaks overlooking K3. Sifreldar storm maidens, runekeepers and crystalweb spiders are its dangers. The Forlorn Mine in its north is where prisoners from K3's expedition are made to work, and Zeev Fizzlespark is still missing there.",
+      "when": {
+        "area_id": 4423
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4424",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4424",
+        "world:creature:29570",
+        "world:creature:29569",
+        "world:creature:30046",
+        "world:creature:29590"
+      ],
+      "text": "You are in Valkyrion, a part of The Storm Peaks haunted by nascent val'kyr and valkyrion aspirants. Yulda the Stormspeaker is among the hostile ones, and blighted proto-drakes prowl the area.",
+      "when": {
+        "area_id": 4424
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4428",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4428",
+        "world:creature:29593",
+        "world:creature:29750",
+        "world:creature:29727",
+        "world:quest:12864",
+        "world:quest:12866"
+      ],
+      "text": "You are in Frosthold, an Alliance settlement in The Storm Peaks led by Yorg Stormheart, king of the Frostborn. Its inn and flight master serve visitors. Harpies keep attacking the Frostborn, and several Frostborn scouts have gone missing in the valleys to the east.",
+      "when": {
+        "area_id": 4428
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4429",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4429",
+        "world:creature:30247",
+        "world:creature:29651",
+        "world:creature:29944"
+      ],
+      "text": "You are in Grom'arsh Crash-Site, a Horde camp in The Storm Peaks built around the wreck of a zeppelin. Bloodguard Lorga keeps the stranded survivors alive through the mountain cold, and Boktar Bloodfury is searching for Brann Bronzebeard, who has vanished. Its inn serves travelers.",
+      "when": {
+        "area_id": 4429
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4430",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4430",
+        "world:creature:29445",
+        "world:creature:29376",
+        "world:creature:29389"
+      ],
+      "text": "You are in Temple of Storms, a temple in The Storm Peaks where Thorim, grieving for Sif, plans to reclaim the Terrace of the Makers from his brother Loken. Stormforged artificers and mechagnome laborers are the hostile forces around it.",
+      "when": {
+        "area_id": 4430
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4431",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4431",
+        "world:creature:30382",
+        "world:creature:30136"
+      ],
+      "text": "You are in Engine of the Makers, a great pit in The Storm Peaks where Brann Bronzebeard seeks to combine Norgannon's keystone. Stormforged soldiers are its danger.",
+      "when": {
+        "area_id": 4431
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4432",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4432",
+        "world:creature:30052",
+        "world:creature:29469",
+        "world:creature:29753",
+        "world:creature:30064",
+        "world:creature:30060"
+      ],
+      "text": "You are in The Foot Steppes, a hard land of The Storm Peaks. The keeper Creteus watches over the Engine of the Makers nearby, and Ice Steppe rhinos roam it. Stormpeak wyrms, iron behemoths and stormforged warmongers are the chief dangers here.",
+      "when": {
+        "area_id": 4432
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4433",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4433",
+        "world:creature:29755",
+        "world:creature:29753"
+      ],
+      "text": "You are in Dragonspine Peaks, a part of the Storm Peaks. Stormpeak hatchlings and Stormpeak wyrms are hostile here and make the ground dangerous.",
+      "when": {
+        "area_id": 4433
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4434",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4434",
+        "world:creature:29370",
+        "world:creature:29374",
+        "world:creature:29368",
+        "world:creature:29384"
+      ],
+      "text": "You are in Nidavelir, a part of the Storm Peaks where Stormforged champions, magi, war golems and taskmasters are hostile. Valduran the Stormborn is among them. A captive mechagnome laborer here is under Stormforged control and still echoes its orders to shut down, return to the Inventor's Library, or help defeat the iron dwarves.",
+      "when": {
+        "area_id": 4434
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4435",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4435",
+        "world:creature:29376",
+        "world:creature:29380",
+        "world:creature:29624",
+        "world:creature:29477"
+      ],
+      "text": "You are in Narvir's Cradle, a part of the Storm Peaks where Stormforged artificers, war golems and stormriders are hostile. An earthen defender, an earthbound guardian whose role is defense, is here too.",
+      "when": {
+        "area_id": 4435
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4436",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4436",
+        "world:creature:6491",
+        "world:creature:30301",
+        "world:creature:30322",
+        "world:creature:29377",
+        "world:creature:29382",
+        "world:creature:29624",
+        "world:creature:29390"
+      ],
+      "text": "You are in Snowdrift Plains, a part of the Storm Peaks with a spirit healer. A tamed jormungar, used against the Iron Colossus on the Snowdrift Plains, is found here, and earthen jormungar handlers nearby can help control it. Stormforged raiders and reavers, stormriders and snowdrift jormungar are hostile here.",
+      "when": {
+        "area_id": 4436
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4437",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4437",
+        "world:creature:30422",
+        "world:creature:29500",
+        "world:creature:29460",
+        "world:creature:30275",
+        "world:creature:29562",
+        "world:creature:29351"
+      ],
+      "text": "You are in the Valley of Ancient Winters, a part of the Storm Peaks. Roaming jormungar, brunnhildar warbears, frigid proto-drakes, wild wyrms and icemaw bears are hostile here. Niffelem frost giants are found here as well.",
+      "when": {
+        "area_id": 4437
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4438",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4438",
+        "dbc:taxi:322",
+        "world:creature:30105",
+        "world:creature:30127",
+        "world:creature:32594"
+      ],
+      "text": "You are in Dun Niffelem, the Sons of Hodir stronghold in the Storm Peaks, with a flight master and a vendor. King Jokkum leads his people here and grieves the apparent loss of Thorim. Njormeld, a smith trusted with the stronghold's work, forges armor and relics, and Calder sells blacksmithing supplies.",
+      "when": {
+        "area_id": 4438
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4439",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4439",
+        "world:creature:29504",
+        "world:creature:30160",
+        "world:creature:29914",
+        "world:creature:29375",
+        "world:creature:29958"
+      ],
+      "text": "You are in Frostfield Lake, a part of the Storm Peaks. Seething revenants, brittle revenants, dead iron giants and stormforged iron giants are hostile here, and tundra rams roam too.",
+      "when": {
+        "area_id": 4439
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4440",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4440",
+        "world:creature:30135",
+        "world:creature:30144",
+        "world:creature:29974",
+        "world:creature:29958",
+        "world:creature:32500"
+      ],
+      "text": "You are in Thunderfall, a part of the Storm Peaks. Restless frostborn warriors and ghosts, niffelem forefathers and tundra rams are hostile here. Dirkee is also hostile here.",
+      "when": {
+        "area_id": 4440
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4441",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4441",
+        "dbc:taxi:324",
+        "world:creature:30381",
+        "world:creature:29762",
+        "world:creature:29969"
+      ],
+      "text": "You are in Camp Tunka'lo, a Horde camp in the Storm Peaks, with an inn, stables and a wind rider master. Xarantaur the Witness, granted immortality by the Bronze Dragonflight, is investigating why the story of the hero Stormhoof is vanishing from the camp's records. Ontak sells blacksmithing supplies.",
+      "when": {
+        "area_id": 4441
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4442",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4442",
+        "world:creature:31693"
+      ],
+      "text": "You are in Brann's Base-Camp, in the Storm Peaks, where Stormforged saboteurs are hostile.",
+      "when": {
+        "area_id": 4442
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4444",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4444",
+        "world:creature:30184",
+        "world:creature:30448",
+        "world:creature:30447",
+        "world:creature:30450",
+        "world:creature:30474",
+        "world:creature:30480"
+      ],
+      "text": "You are in the Plain of Echoes, a part of the Storm Peaks. Scions of storm, plains mammoths, romping rhinos and wailing winds are hostile here, and the North Wind is too. A disturbed taunka ancestor is also found here.",
+      "when": {
+        "area_id": 4444
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4445",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4445",
+        "dbc:taxi:326",
+        "world:creature:32477",
+        "world:creature:30399",
+        "world:creature:30420"
+      ],
+      "text": "You are in Ulduar, a part of the Storm Peaks with a flight master, repairs and a spirit healer. Chester Copperpot sells general and trade supplies. Thorim is here, resolved to destroy his brother Loken and calling him a traitor. Veranus is hostile here.",
+      "when": {
+        "area_id": 4445
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4446",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4446",
+        "world:creature:30295",
+        "world:creature:30469",
+        "world:creature:6491",
+        "world:creature:30148",
+        "world:creature:29978",
+        "world:quest:13035"
+      ],
+      "text": "You are in the Terrace of the Makers, a place in the Storm Peaks. Thorim rallies the earthen defenders here to reclaim the ground from his brother Loken, whose iron dwarves still fight across it. Infesting Jormungar and Iron Dwarf Assailants are the dangers, and a spirit healer offers a return to life for a price. A Horde hunter, Tracker Val'zij, was left badly weakened by a jormungar sting.",
+      "when": {
+        "area_id": 4446
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4451",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4451",
+        "world:creature:29811",
+        "dbc:area:4428",
+        "world:creature:29404",
+        "world:creature:29622",
+        "world:creature:29793",
+        "world:creature:29808"
+      ],
+      "text": "You are in Bor's Fall, a place in the Storm Peaks. A wounded Frostborn Scout, an Alliance scout, lies here struggling to get back to Frosthold. Savage Hill scavengers, mystics and brutes roam the ground with Frostfeather witches, and young stormcrest hatchlings attack with a swoop.",
+      "when": {
+        "area_id": 4451
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4452",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4452",
+        "world:creature:6491",
+        "world:creature:29793",
+        "world:creature:29792",
+        "world:creature:32491",
+        "world:creature:32630"
+      ],
+      "text": "You are in Bor's Breath in the Storm Peaks, where a spirit healer offers a return to life for a price. Frostfeather witches and screechers are the main danger here, along with a time-lost proto drake and Vyragosa.",
+      "when": {
+        "area_id": 4452
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4453",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4453",
+        "world:creature:30013",
+        "world:creature:29808",
+        "world:creature:29792",
+        "world:creature:29793",
+        "world:creature:29843",
+        "world:creature:29586"
+      ],
+      "text": "You are in Rohemdal Pass in the Storm Peaks. Frostfeather screechers and witches, along with Stormforged loreseekers and pillagers, make the pass dangerous. Stormcrest eagles, elite beasts of the Storm Peaks that stand with the Alliance, are found here, and young stormcrest hatchlings attack with a swoop.",
+      "when": {
+        "area_id": 4453
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4458",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4458",
+        "world:creature:29429",
+        "world:creature:29399",
+        "world:creature:29404"
+      ],
+      "text": "You are in Sparksocket Minefield in the Storm Peaks. Sparksocket AA Cannon turrets guard the ground, and Savage Hill scavengers roam here. Janks is stuck watching the turrets, weary and frustrated, and still hopes someone will come to free him.",
+      "when": {
+        "area_id": 4458
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4460",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4460",
+        "world:creature:29618",
+        "world:creature:29619",
+        "world:creature:29475"
+      ],
+      "text": "You are in Garm's Bane in the Storm Peaks, where Snowblind followers and Garm invaders are the danger. Improved land mines, explosive traps that go off when a victim comes close, are hidden in the ground here.",
+      "when": {
+        "area_id": 4460
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4461",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4461",
+        "world:creature:29432",
+        "world:creature:29555",
+        "world:creature:29407",
+        "world:quest:12823"
+      ],
+      "text": "You are in Garm's Rise in the Storm Peaks. Gino, an explosives specialist who delights in his blasts, is planning an assault on Frostgut's cave, and goblin sappers work with him. Snowblind devotees are the danger here.",
+      "when": {
+        "area_id": 4461
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4473",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4473",
+        "world:creature:30065",
+        "world:creature:29844",
+        "world:creature:29849",
+        "world:creature:30060",
+        "world:creature:30063",
+        "world:creature:30502"
+      ],
+      "text": "You are in The Frigid Tomb in the Storm Peaks, where an Alliance Frostborn Axemaster is found. Icebound revenants and frozen orbs are the dangers, along with Stormforged warmongers and decimators and an iron behemoth.",
+      "when": {
+        "area_id": 4473
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4484",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4484",
+        "world:creature:29950",
+        "world:creature:29963",
+        "world:creature:29959",
+        "world:creature:30001",
+        "dbc:taxi:327"
+      ],
+      "text": "You are in Bouldercrag's Refuge in the Storm Peaks. Breck Rockbrow offers fast flights from here, and Magorn keeps the inn. Andurg Slatechest helps travelers stable pets and recover lost companions, and his pet Blackmaw, a named beast, is found nearby.",
+      "when": {
+        "area_id": 4484
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4485",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4485",
+        "world:creature:29724",
+        "world:creature:29752"
+      ],
+      "text": "You are in The Inventor's Library in the Storm Peaks, a place of mechanical devices. Library Guardians are the danger here. Mimir hid information in the databanks, and an Inventor's Disk can retrieve hidden data from the Databank Core.",
+      "when": {
+        "area_id": 4485
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4495",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4495",
+        "world:creature:30099",
+        "world:creature:30123",
+        "world:creature:30387",
+        "world:creature:29375",
+        "world:creature:29503"
+      ],
+      "text": "You are in Fjorn's Anvil in the Storm Peaks. King Jokkum sent Njormeld to recover the anvil, and he is cooling it so it can be taken home. Seething revenants and Stormforged iron giants are the danger, along with the giant Fjorn. The aging giant Snorri still joins every fight he can.",
+      "when": {
+        "area_id": 4495
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4499",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4499",
+        "world:creature:29570",
+        "world:creature:29590",
+        "world:creature:29569"
+      ],
+      "text": "You are in The Blighted Pool in the Storm Peaks, where nascent val'kyr, blighted proto-drakes and Valkyrion aspirants are the danger.",
+      "when": {
+        "area_id": 4499
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4418": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4418 (K3)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4419": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4419 (Snowblind Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4420": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4420 (Snowblind Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4421": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4421 (Garm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4422": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4422 (Brunnhildar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4423": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4423 (Sifreldar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4424": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4424 (Valkyrion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4428": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4428 (Frosthold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4429": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4429 (Grom'arsh Crash-Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4430": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4430 (Temple of Storms)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4431": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4431 (Engine of the Makers)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4432": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4432 (The Foot Steppes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4433": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4433 (Dragonspine Peaks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4434": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4434 (Nidavelir)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4435": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4435 (Narvir's Cradle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4436": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4436 (Snowdrift Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4437": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4437 (Valley of Ancient Winters)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4438": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4438 (Dun Niffelem)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4439": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4439 (Frostfield Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4440 (Thunderfall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4441": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4441 (Camp Tunka'lo)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4442": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4442 (Brann's Base-Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4444": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4444 (Plain of Echoes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4445": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4445 (Ulduar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4446": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4446 (Terrace of the Makers)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4451": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4451 (Bor's Fall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4452": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4452 (Bor's Breath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4453": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4453 (Rohemdal Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4458": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4458 (Sparksocket Minefield)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4460": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4460 (Garm's Bane)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4461": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4461 (Garm's Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4473": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4473 (The Frigid Tomb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4484": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4484 (Bouldercrag's Refuge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4485": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4485 (The Inventor's Library)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4495": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4495 (Fjorn's Anvil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4499": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4499 (The Blighted Pool)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:67": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 67 (The Storm Peaks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:322": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 322 (Dun Nifflelem, The Storm Peaks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:324": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 324 (Camp Tunka'lo, The Storm Peaks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:326": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 326 (Ulduar, The Storm Peaks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:327": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 327 (Bouldercrag's Refuge, The Storm Peaks)",
+      "revision": "3.3.5a client data"
+    },
     "source:001b698fd8696d0e1fe3cbd6": {
       "kind": "research",
       "reference": "evidence:sha256:1575de03b3a3855c1921233d5907c3960daaba43f41997374f5b567ad98097a6",
@@ -11145,6 +11991,661 @@
       "kind": "research",
       "reference": "evidence:sha256:1c99354cfb5adc97ec1885cd48fb8f03741f2ad887d8d3aa09ad5a174a5d7aa0",
       "revision": "4502bb07413bd80077c8e081e188842cacadbceb8581a7e1f6e92424748f2b2a"
+    },
+    "world:creature:29323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29323 (Sifreldar Storm Maiden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29331": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29331 (Sifreldar Runekeeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29351 (Niffelem Frost Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29366 (Brunnhildar Challenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29368": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29368 (Valduran the Stormborn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29370 (Stormforged Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29374 (Stormforged Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29375 (Stormforged Iron Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29376 (Stormforged Artificer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29377 (Stormforged Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29380 (Stormforged War Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29382 (Stormforged Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29384 (Captive Mechagnome), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29389 (Mechagnome Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29390": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29390 (Snowdrift Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29399 (Sparksocket AA Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29402 (Ironwool Mammoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29404 (Savage Hill Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29407 (Snowblind Devotee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29411": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29411 (Crystalweb Weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29412": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29412 (Crystalweb Spitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29413 (Snowblind Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29428 (Ricket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29429 (Janks), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29430 (Tore Rumblewrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29431 (Jeer Sparksocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29432": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29432 (Gino), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29445 (Thorim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29460 (Frigid Proto-Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29466 (Goblin Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29469 (Ice Steppe Rhino), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29473 (Gretchen Fizzlespark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29475 (Improved Land Mine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29477 (Earthen Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29500 (Brunnhildar Warbear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29503": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29503 (Fjorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29504 (Seething Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29525 (Zeev Fizzlespark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29549": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29549 (Brunnhildar Riding Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29553": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29553 (Garm Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29554 (Snowblind Devotee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29555 (Goblin Sapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29562 (Icemaw Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29569": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29569 (Valkyrion Aspirant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29570 (Nascent Val'kyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29586": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29586 (Stormforged Pillager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29590": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29590 (Blighted Proto-Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29593": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29593 (Yorg Stormheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29618 (Snowblind Follower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29619": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29619 (Garm Invader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29622": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29622 (Savage Hill Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29623": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29623 (Savage Hill Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29624": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29624 (Stormrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29651 (Boktar Bloodfury), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29724": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29724 (Library Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29727 (Glorthal Stiffbeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29750 (Faldorf Bitterchill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29752": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29752 (Databank Core), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29753": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29753 (Stormpeak Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29755": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29755 (Stormpeak Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29762 (Hyeyoung Parka), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29792 (Frostfeather Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29793": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29793 (Frostfeather Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29801 (Bouldercrag the Rockshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29808 (Stormcrest Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29811 (Frostborn Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29843 (Stormforged Loreseeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29844 (Icebound Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29849": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29849 (Frozen Orb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29875 (Icemane Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29904": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29904 (Smilin' Slirk Brassknob), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29914": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29914 (Dead Iron Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29944 (Peon Gakra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29950 (Breck Rockbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29958 (Tundra Ram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29959 (Andurg Slatechest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29963 (Magorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29969": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29969 (Ontak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29974": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29974 (Niffelem Forefather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29975 (Lok'lira the Crone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29978 (Iron Dwarf Assailant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29997": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29997 (Iva the Vengeful), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30001": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30001 (Blackmaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30013": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30013 (Stormcrest Eagle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30046 (Yulda the Stormspeaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30052": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30052 (Creteus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30060": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30060 (Stormforged Warmonger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30063 (Stormforged Decimator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30064": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30064 (Iron Behemoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30065": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30065 (Frostborn Axemaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30099": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30099 (Njormeld), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30105": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30105 (King Jokkum), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30123 (Snorri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30127 (Njormeld), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30135 (Restless Frostborn Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30136 (Stormforged Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30144 (Restless Frostborn Ghost), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30148": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30148 (Infesting Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30160 (Brittle Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30184": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30184 (Scion of Storm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30247 (Bloodguard Lorga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30275": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30275 (Wild Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30295": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30295 (Thorim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30301": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30301 (Tamed Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30322 (Earthen Jormungar Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30381 (Xarantaur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30382 (Brann Bronzebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30387 (Seething Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30399 (Thorim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30420 (Veranus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30422 (Roaming Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30447 (Romping Rhino), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30448 (Plains Mammoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30450 (Wailing Winds), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30469 (Tracker Val'zij), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30474 (The North Wind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30480 (Disturbed Taunka Ancestor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30502 (Iron Behemoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31693 (Stormforged Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32477 (Chester Copperpot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32491 (Time-Lost Proto Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32500 (Dirkee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32594": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32594 (Calder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32630": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32630 (Vyragosa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12820": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12820 (A Delicate Touch)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12823": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12823 (A Flawless Plan)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12846": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12846 (Leave No Goblin Behind)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12864": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12864 (Missing Scouts)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12866": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12866 (Stemming the Aggressors)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13035": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13035 (Loken's Lackeys)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -13540,7 +13540,1000 @@
     }
   ],
   "place": "Icecrown",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:210",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:210",
+        "dbc:area:4467",
+        "dbc:area:4477",
+        "dbc:area:4501",
+        "dbc:area:4513",
+        "dbc:area:4580",
+        "world:creature:31746",
+        "world:creature:30224"
+      ],
+      "text": "You are in Icecrown, a land in Northrend that neither the Alliance nor the Horde holds. Death's Rise, the Shadow Vault, the Argent Vanguard, Ymirheim and Crusaders' Pinnacle are its main settlements, and none belongs to a side. Scourge undead and vrykul are the main dangers, and Forgotten Depths nerubians pour through the breach at the Argent Vanguard.",
+      "when": {
+        "zone_id": 210
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4417",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4417",
+        "world:creature:29333",
+        "world:creature:29330",
+        "world:creature:29329",
+        "world:creature:29614",
+        "world:creature:29392"
+      ],
+      "text": "You are in Onslaught Harbor, where Scarlet Onslaught ships rest in the harbor below Death's Rise. Gryphon riders, guards, paladins and darkweavers of the Scarlet Onslaught make it dangerous, and the ravenous jaws of sharks in the water threaten anyone nearby.",
+      "when": {
+        "area_id": 4417
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4467",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4467",
+        "world:creature:29344",
+        "world:creature:29396",
+        "world:creature:29405",
+        "world:creature:29515"
+      ],
+      "text": "You are in Death's Rise, a death knight base in Icecrown with a flight master, repairs and a vendor. Lord-Commander Arete commands the death knights here and pursues the Scarlet Onslaught in the harbor below, while Setaal Darkmender and Uzo Deathcaller work on captured Onslaught gryphons and the dead. Dead vrykul walk the grounds.",
+      "when": {
+        "area_id": 4467
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4477",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4477",
+        "world:creature:29343",
+        "world:creature:30002",
+        "world:creature:30218",
+        "world:creature:29720",
+        "world:creature:29719",
+        "world:creature:29717"
+      ],
+      "text": "You are in The Shadow Vault, an Ebon Blade base in Icecrown with an inn, stables and a flight master. Baron Sliver directs the Ebon Blade fight against the Scourge here, while Duke Lankral leads the campaign against the vrykul of Jotunheim. Vaelen the Flayed returns to recover captured death knights, and vault geists, morbid carcasses and shadow cultists roam the grounds.",
+      "when": {
+        "area_id": 4477
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4496",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4496",
+        "world:creature:30186",
+        "world:creature:30718",
+        "world:creature:30243",
+        "world:creature:30330",
+        "world:creature:29880",
+        "world:quest:13084"
+      ],
+      "text": "You are in Jotunheim, the ancestral home of the vrykul, where Ebon Blade death knights are held in cages. Vrykul spear-sisters, warriors and proto-drakes patrol the land, and sleeping Mjordin are kept in the Halls of the Ancestors. A spirit healer is here.",
+      "when": {
+        "area_id": 4496
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4497",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4497",
+        "world:creature:30081",
+        "world:creature:30086",
+        "world:creature:30037",
+        "world:creature:29880",
+        "world:quest:12939"
+      ],
+      "text": "You are in Savage Ledge, a ledge in Jotunheim where vrykul contenders spar and fight for a place in the Lich King's service. Efrem the Faithful, a former Scarlet Onslaught member, and the contender Sigrid Iceborn meet all who challenge them. Mjordin combatants and Jotunheim warriors are the main danger here.",
+      "when": {
+        "area_id": 4497
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4501",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4501",
+        "world:creature:28179",
+        "world:creature:30223",
+        "world:creature:30657",
+        "world:creature:30224",
+        "world:creature:30206",
+        "world:creature:30674"
+      ],
+      "text": "You are in The Argent Vanguard, the Argent Crusade's base in Icecrown, with a flight master, repairs, a spirit healer and a vendor. Highlord Tirion Fordring leads the crusade's struggle against the Lich King, and Crusade Commander Entari and Siegemaster Fezzik hold the defenses. Forgotten Depths nerubians pour through the breach, and Scourge frost wyrms and Carrion Fleshstrippers attack the walls.",
+      "when": {
+        "area_id": 4501
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4503",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4503",
+        "world:creature:31139"
+      ],
+      "text": "You are in Ironwall Dam in Icecrown, where pustulent horrors are a danger.",
+      "when": {
+        "area_id": 4503
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4504",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4504",
+        "world:creature:30596",
+        "world:creature:30683",
+        "world:creature:30686",
+        "world:creature:31581",
+        "world:creature:30206",
+        "world:creature:30673",
+        "world:quest:13105"
+      ],
+      "text": "You are in the Valley of Echoes, a valley in Icecrown just outside the Breach. The Ebon Watcher, a former servant of the Lich King, gives aid to the Argent Crusade, and Father Gustav and Crusade Architect Silas plan a fortress called Justice Keep on the site of Scourgeholme. Horde emblem quartermasters trade here, and Forgotten Depths nerubians and carrion fleshstrippers roam the valley.",
+      "when": {
+        "area_id": 4504
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4505",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4505",
+        "world:quest:13044",
+        "world:creature:30407",
+        "world:creature:31043",
+        "world:creature:31040"
+      ],
+      "text": "You are in The Breach, the passage between the Valley of Echoes and Scourgeholme in Icecrown. Reanimated crusaders and wrathstrike gargoyles lurk here. A crusader rescued from Scourgeholme warns that an attack is coming.",
+      "when": {
+        "area_id": 4505
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4506",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4506",
+        "world:quest:13044",
+        "world:quest:13125",
+        "world:quest:13008",
+        "world:creature:31037",
+        "world:creature:31043"
+      ],
+      "text": "You are in Scourgeholme, the first Scourge encampment in Icecrown, reached through the Breach. Forgotten Depths high priests and reanimated crusaders fill its tiers, and the Scourge hold captured Argent crusaders as living shields. Salranax the Flesh Render lords over the first tier, and Underking Talonox holds court at the Pit of Fiends.",
+      "when": {
+        "area_id": 4506
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4507",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4507",
+        "world:creature:31273",
+        "world:creature:31304",
+        "world:creature:31177",
+        "world:creature:31205",
+        "world:creature:31142",
+        "world:creature:31147"
+      ],
+      "text": "You are in The Broken Front, a battlefield in Icecrown where wounded Horde and Alliance soldiers lie among the fighting. Dying soldiers of both sides beg for mercy. Risen Alliance soldiers, icy ghouls and vicious geists fight here.",
+      "when": {
+        "area_id": 4507
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4508",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4508",
+        "world:creature:32164",
+        "world:creature:31142",
+        "world:creature:31139",
+        "world:creature:31177",
+        "world:creature:31205"
+      ],
+      "text": "You are in Mord'rethar: The Death Gate in Icecrown, where skeletal craftsmen, icy ghouls and pustulent horrors wander. Slain Alliance soldiers lie here, and risen Alliance soldiers, vicious geists and plagued fiends are the dangers.",
+      "when": {
+        "area_id": 4508
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4509",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4509",
+        "world:creature:31834",
+        "world:creature:32769",
+        "world:creature:32772",
+        "world:creature:32771",
+        "world:creature:32154",
+        "dbc:taxi:329"
+      ],
+      "text": "You are in The Bombardment, a part of Icecrown where Kor'kron troops push toward the gates of Ymirheim under Ground Commander Xutjja. Gargoyle ambushers, skeletal footsoldiers and stitched brutes make the approach dangerous, and scourge war machines are among the dangers. A Horde airship stops here.",
+      "when": {
+        "area_id": 4509
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4510",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4510",
+        "world:creature:32430",
+        "world:creature:32444",
+        "world:creature:32297",
+        "world:creature:32238",
+        "world:creature:32276",
+        "world:creature:32262",
+        "world:creature:32279"
+      ],
+      "text": "You are in Aldur'thar: The Desolation Gate, a part of Icecrown where Horde and Alliance engineers fly bombers against the Scourge. Fringe Engineer Tezzla drives the Horde effort, and Kibli Killohertz directs Alliance bombing runs. Cult researchers, bitter initiates and cult blackguards are the main dangers, with shadow channelers and vile torturers.",
+      "when": {
+        "area_id": 4510
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4513",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4513",
+        "world:creature:31776",
+        "world:creature:31781",
+        "world:creature:31263",
+        "world:creature:31258",
+        "world:creature:31280",
+        "world:creature:31262"
+      ],
+      "text": "You are in Ymirheim, a vrykul city in Icecrown where Frazzle Geargrinder and Blast Thunderbomb are locked in a jumpbot contest over engineering pride. Carrion hunters, Ymirheim chosen warriors and spear guns are the dangers. Repairs, a spirit healer and a vendor are here.",
+      "when": {
+        "area_id": 4513
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4515",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4515",
+        "world:creature:32201",
+        "world:creature:32467",
+        "world:creature:32502",
+        "world:creature:32505",
+        "world:creature:32284",
+        "world:creature:32490",
+        "world:creature:32492"
+      ],
+      "text": "You are in The Conflagration, a part of Icecrown where an Orgrim's Hammer scout is posted. Skeletal reavers, ravaged ghouls and vargul wanderers roam here, with scourge soulbinders, scourge deathchargers and a frostbrood matriarch among the dangers.",
+      "when": {
+        "area_id": 4515
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4517",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4517",
+        "world:creature:30949",
+        "world:creature:30951",
+        "world:creature:31556",
+        "world:creature:31131"
+      ],
+      "text": "You are in Weeping Quarry, a saronite quarry in Icecrown where risen laborers and restless lookouts work. Hungering plaguehounds prowl the base, and Scourge containment crystals are scattered through it.",
+      "when": {
+        "area_id": 4517
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4518",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4518",
+        "world:creature:32349",
+        "world:creature:32278",
+        "world:creature:32280",
+        "world:creature:31747",
+        "world:creature:32479",
+        "world:creature:30988"
+      ],
+      "text": "You are in Corp'rethar: The Horror Gate, a gate in Icecrown where cultist shard watchers and harbingers of horror are the main dangers, with corp'rethar guardians, necrotic webspinners, bone guards and scourgebeak fleshrippers.",
+      "when": {
+        "area_id": 4518
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4519",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4519",
+        "world:creature:32497",
+        "world:creature:34179",
+        "world:creature:34180",
+        "world:creature:33438",
+        "world:creature:33550",
+        "world:creature:34127",
+        "world:creature:31779"
+      ],
+      "text": "You are in The Court of Bones, a court in Icecrown where boneguard footmen, scouts and commanders fight, with skeletal archmages and cruel overseers. Matthias Lehner tells of the prince's near-fatal battle here and says a bloodstained stone on the floor shows what happened. Argent peacekeepers and Crusader Maran are among the Argent forces.",
+      "when": {
+        "area_id": 4519
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4520",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4520",
+        "world:creature:31326",
+        "world:creature:30957",
+        "world:creature:30921",
+        "world:creature:30920"
+      ],
+      "text": "You are in Malykriss: The Vile Hold, a hold in Icecrown where death knight initiates, skeletal runesmiths and a lumbering atrocity are the dangers.",
+      "when": {
+        "area_id": 4520
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4521",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4521",
+        "world:creature:32239",
+        "world:creature:32241",
+        "world:creature:32175",
+        "world:creature:32507",
+        "world:creature:31754"
+      ],
+      "text": "You are in the Cathedral of Darkness, a cathedral in Icecrown where Highlord Tirion Fordring urges his allies to keep their heads down, follow his lead and stand ready against the Lich King. Chosen zealots, cultist acolytes and glacial bonelords are the dangers, and a disguised crusader fights beside Tirion's defenders.",
+      "when": {
+        "area_id": 4521
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4522",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4522",
+        "world:creature:36624",
+        "world:creature:36642",
+        "world:creature:31440",
+        "world:creature:31444",
+        "world:creature:31413",
+        "world:creature:33438",
+        "world:creature:31691"
+      ],
+      "text": "You are in Icecrown Citadel, a fortress in Icecrown where the Silver Covenant and the Sunreavers each work to restore the blade Quel'Delar. Caladis Brightspear leads the Covenant's effort and Myralion Sunblaze the Sunreavers'. Below the citadel, Sergeant Kregga and Captain Kendall lead rival assaults with saronite bombs. Hulking horrors, boneguards and faceless lurkers are the dangers.",
+      "when": {
+        "area_id": 4522
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4523",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4523",
+        "world:creature:32255",
+        "world:creature:31900",
+        "world:creature:32505",
+        "world:creature:32502",
+        "world:creature:32284",
+        "world:creature:32467"
+      ],
+      "text": "You are in Icecrown Glacier, open ice in Icecrown where converted heroes are the most common danger. Scourge banner-bearers, vargul wanderers, ravaged ghouls, scourge soulbinders and skeletal reavers are also here.",
+      "when": {
+        "area_id": 4523
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4524",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4524",
+        "world:creature:31135",
+        "world:creature:31154",
+        "world:creature:30243",
+        "world:creature:29880",
+        "world:creature:30632"
+      ],
+      "text": "You are in Valhalas, the vrykul battle pit of Icecrown, where Geirrvif the val'kyr arranges the bouts. Gjonner the Merciless, a vrykul death knight, oversees them and calls even hard-won victories unimpressive. Njorndar spear-sisters, Jotunheim warriors and Mjordin water magi fight in the ring.",
+      "when": {
+        "area_id": 4524
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4526",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4526",
+        "world:creature:30232",
+        "world:creature:29880",
+        "world:creature:30632",
+        "world:creature:30243"
+      ],
+      "text": "You are in Njorndar Village, a village in Icecrown that neither the Alliance nor the Horde holds. The Bone Witch, a banshee who inhabits a vrykul, lives here and sends people against the vrykul of Jotunheim. Jotunheim warriors, Mjordin water magi and Njorndar spear-sisters roam the land around it.",
+      "when": {
+        "area_id": 4526
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4531",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4531",
+        "world:creature:31130",
+        "world:creature:30597",
+        "world:creature:30687",
+        "world:creature:30696",
+        "world:creature:31306",
+        "world:creature:31279"
+      ],
+      "text": "You are in The Fleshwerks, a Scourge works in Icecrown where the dead are stitched into abominations. Ghouls, skeletal constructors and corpulent horrors work and fight here. Margrave Dhakar of the Ebon Blade rallies his knights here, and Father Kamaros, a Light-devoted survivor, is still trapped among the Scourge.",
+      "when": {
+        "area_id": 4531
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4533",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4533",
+        "world:quest:13359",
+        "world:creature:32423",
+        "world:creature:31718",
+        "world:creature:31731",
+        "world:creature:31738",
+        "world:creature:32501",
+        "dbc:taxi:328"
+      ],
+      "text": "You are in Sindragosa's Fall, a place in Icecrown where a whole brood of blue dragons fell. Matthias Lehner says the Lich King is raising the fallen blue dragons. Frostbrood whelps, wyrm reanimators and cultist corrupters roam here, and High Thane Jorfus is among the vrykul. An Alliance airship stops here.",
+      "when": {
+        "area_id": 4533
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4537",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4537",
+        "world:creature:31808",
+        "world:creature:32154",
+        "world:creature:31813",
+        "world:creature:31812"
+      ],
+      "text": "You are in The Valley of Lost Hope, a valley in Icecrown where Alliance troops push toward Ymirheim. Ground Commander Koup leads them, and repeated vrykul ambushes have cost him men. Scourge war machines, frostskull magi and decomposed ghouls roam the valley.",
+      "when": {
+        "area_id": 4537
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4540",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4540",
+        "world:creature:32255",
+        "world:creature:32149",
+        "world:creature:32257",
+        "world:creature:30951"
+      ],
+      "text": "You are in The Valley of Fallen Heroes, a valley in Icecrown where the fallen are turned against the living. Converted heroes, fallen heroes' spirits and Scourge converters roam it, and restless lookouts keep watch.",
+      "when": {
+        "area_id": 4540
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4580",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4580",
+        "world:creature:31044",
+        "world:creature:31240",
+        "world:creature:31241",
+        "world:creature:31069"
+      ],
+      "text": "You are in Crusaders' Pinnacle, a stronghold in Icecrown where the Argent Crusade brings its wounded. Highlord Tirion Fordring is here, working to save Crusader Bridenbrad from undeath. Warlord Hork Strongbrow and Marshal Ivalius lie dying here after the Broken Front, and the dragonkin Penumbrius offers flights.",
+      "when": {
+        "area_id": 4580
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4588",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4588",
+        "world:creature:30631",
+        "world:creature:30708",
+        "world:creature:31130",
+        "world:creature:30701"
+      ],
+      "text": "You are in Blackwatch, a base in Icecrown where Darkrider Arly pushes for intelligence to disrupt the Fleshwerks. Crusader Olakin Sainrith investigates the Scourge's use of metal and wants the fallen dead burned. Vile creepers lurk nearby.",
+      "when": {
+        "area_id": 4588
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4591",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4591",
+        "world:creature:30562",
+        "world:creature:6491",
+        "world:quest:13068"
+      ],
+      "text": "You are in the Silent Vigil, a place in northeast Icecrown where the plague-stricken crusader Bridenbrad waits for death. He refuses to return to safety for fear of exposing others, and he remains grateful to those who help. A spirit healer here offers a return to life, though it may not yet be the traveler's time.",
+      "when": {
+        "area_id": 4591
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4597",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4597",
+        "world:creature:30944"
+      ],
+      "text": "You are in Rise of Suffering, an Ebon Blade post in Icecrown. Vereth the Cunning, an Ebon Blade agent, directs the fight against death knights still loyal to Arthas at Malykriss. His controlled lithe stalkers scout the citadel and provoke fights among its undead workforce.",
+      "when": {
+        "area_id": 4597
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4622",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4622",
+        "world:creature:32404",
+        "world:creature:31254",
+        "world:creature:31812",
+        "world:creature:31813"
+      ],
+      "text": "You are in the First Legion Forward Camp, a Lordaeron camp in Icecrown where soldiers hold the line against undead assaults. Matthias Lehner says he saw the prince raise the undead, and that fighting the Scourge only swells its ranks. Decomposed ghouls and frostskull magi press the camp.",
+      "when": {
+        "area_id": 4622
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4658",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4658",
+        "world:creature:33225",
+        "world:creature:33361",
+        "world:creature:33222",
+        "world:creature:35482"
+      ],
+      "text": "You are in the Argent Tournament Grounds, a tourney camp in Icecrown where valiants from Stormwind, Ironforge, Orgrimmar and other cities train. Marshal Jacob Alerius, Stormwind's grand champion, welcomes recruits, and Mokra the Skullcrusher does the same for Orgrimmar. Sir Marcus Barlowe, master of arms, drills valiants against converted heroes. Hungry jormungar roam its edges.",
+      "when": {
+        "area_id": 4658
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4669",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4669",
+        "world:creature:33522",
+        "world:creature:33747",
+        "world:creature:33740",
+        "world:creature:33744"
+      ],
+      "text": "You are in The Ring of Champions, a practice ring at the Argent Tournament in Icecrown. Squire Cavin summons knights here for practice bouts. Champions from Stormwind, Gnomeregan and Orgrimmar wait to be challenged, and facing one is no simple task.",
+      "when": {
+        "area_id": 4669
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4670",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4670",
+        "world:creature:33447"
+      ],
+      "text": "You are in The Aspirants' Ring, a tournament ring in Icecrown. Squire David (n33447) asks challengers whether they are ready to fight a valiant of the Argent Crusade, and says he will call forth a member once they are.",
+      "when": {
+        "area_id": 4670
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4671",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4671",
+        "world:creature:33518",
+        "world:creature:33460",
+        "world:creature:33463"
+      ],
+      "text": "You are in The Argent Valiants' Ring, a tournament ring in Icecrown where Horde and Alliance valiants of the Argent Tournament gather. Squire Danny (n33518) summons an Argent Champion as the opponent of any competitor who chooses to fight.",
+      "when": {
+        "area_id": 4671
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4672",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4672",
+        "world:creature:33559",
+        "world:creature:33561",
+        "world:creature:33562",
+        "world:creature:33564"
+      ],
+      "text": "You are in The Alliance Valiants' Ring, a tournament ring in Icecrown. Darnassus, Stormwind, Exodar and Ironforge valiants stand here to challenge others to a joust, warning that the contest is no simple task and wishing a beaten challenger better luck next time.",
+      "when": {
+        "area_id": 4672
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4673",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4673",
+        "world:creature:33285",
+        "world:creature:33306",
+        "world:creature:33382",
+        "world:creature:33383",
+        "world:creature:33384"
+      ],
+      "text": "You are in The Horde Valiants' Ring, a tournament ring in Icecrown where valiants from Sen'jin, Orgrimmar, Silvermoon, Thunder Bluff and Undercity call challengers to prepare for a demanding match. They warn that a valiant is no simple task, and the Undercity valiant wishes a defeated opponent better luck another time.",
+      "when": {
+        "area_id": 4673
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4692",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4692",
+        "world:creature:36624",
+        "world:creature:36642",
+        "world:creature:36656"
+      ],
+      "text": "You are in Quel'Delar's Rest, a place in Icecrown where the Silver Covenant and the Sunreavers both work to restore Quel'Delar, a broken dragonforged blade. Caladis Brightspear (n36624) vows the Covenant will see it restored, while Myralion Sunblaze (n36642) insists the Sunreavers must. A Silver Covenant sentinel (n36656) turns away visitors it takes for minions of the Lich King.",
+      "when": {
+        "area_id": 4692
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4743",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4743",
+        "world:creature:34716",
+        "world:creature:34956",
+        "world:creature:34728",
+        "world:creature:34734",
+        "world:creature:34808"
+      ],
+      "text": "You are in Deathspeaker's Watch, a place in Icecrown held by the Cult of the Damned. Dark Zealots (c34728) and Dark Ritualists (c34734) haunt the grounds, and Deathspeaker Kharos (c34808) leads them. Captive aspirants are kept here, and Kul the Reckless (n34956) is among the prisoners.",
+      "when": {
+        "area_id": 4743
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:210": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 210 (Icecrown)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4417": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4417 (Onslaught Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4467": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4467 (Death's Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4477": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4477 (The Shadow Vault)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4496": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4496 (Jotunheim)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4497": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4497 (Savage Ledge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4501": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4501 (The Argent Vanguard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4503": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4503 (Ironwall Dam)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4504": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4504 (Valley of Echoes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4505": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4505 (The Breach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4506": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4506 (Scourgeholme)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4507": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4507 (The Broken Front)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4508": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4508 (Mord'rethar: The Death Gate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4509": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4509 (The Bombardment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4510": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4510 (Aldur'thar: The Desolation Gate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4513": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4513 (Ymirheim)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4515": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4515 (The Conflagration)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4517": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4517 (Weeping Quarry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4518": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4518 (Corp'rethar: The Horror Gate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4519 (The Court of Bones)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4520": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4520 (Malykriss: The Vile Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4521": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4521 (Cathedral of Darkness)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4522": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4522 (Icecrown Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4523": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4523 (Icecrown Glacier)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4524": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4524 (Valhalas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4526": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4526 (Njorndar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4531": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4531 (The Fleshwerks)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4533": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4533 (Sindragosa's Fall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4537 (The Valley of Lost Hope)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4540": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4540 (The Valley of Fallen Heroes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4580": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4580 (Crusaders' Pinnacle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4588": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4588 (Blackwatch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4591": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4591 (Silent Vigil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4597": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4597 (Rise of Suffering)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4622": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4622 (First Legion Forward Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4658": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4658 (Argent Tournament Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4669": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4669 (The Ring of Champions)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4670": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4670 (The Aspirants' Ring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4671": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4671 (The Argent Valiants' Ring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4672": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4672 (The Alliance Valiants' Ring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4673": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4673 (The Horde Valiants' Ring)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4692": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4692 (Quel'Delar's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4743": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4743 (Deathspeaker's Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:328": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 328 (Transport, Icecrown Airship (A))",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:329": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 329 (Transport, Icecrown Airship (H))",
+      "revision": "3.3.5a client data"
+    },
     "source:001f0978c2e49e6958d1c81b": {
       "kind": "research",
       "reference": "evidence:sha256:40835243047c80371e5d3dcb8de07668372857a6a7895a142fb1550c39ef6fcd",
@@ -23715,6 +24708,871 @@
       "kind": "research",
       "reference": "evidence:sha256:2a87d27408e2c3109d74ac9f4be8fc3dc0888666ff9c4de5199809abaca0c2c5",
       "revision": "e4a13ecb5af1449232d9cbc1b81f0a725d24fb6772daeaeabb47e052a6d88696"
+    },
+    "world:creature:28179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28179 (Highlord Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29329 (Onslaught Paladin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29330 (Onslaught Harbor Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29333 (Onslaught Gryphon Rider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29343 (Baron Sliver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29344 (Lord-Commander Arete), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29392 (Ravenous Jaws), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29396": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29396 (Setaal Darkmender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29405 (Uzo Deathcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29515": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29515 (Dead Death's Rise Vrykul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29614": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29614 (Onslaught Darkweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29717 (Shadow Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29719 (Morbid Carcass), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29720": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29720 (Vault Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29880 (Jotunheim Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30002": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30002 (Duke Lankral), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30037": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30037 (Mjordin Combatant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30081": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30081 (Efrem the Faithful), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30086 (Sigrid Iceborn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30186 (Ebon Blade Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30206 (Carrion Fleshstripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30218": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30218 (Vaelen the Flayed), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30223": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30223 (Crusade Commander Entari), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30224": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30224 (Crusader Lord Dalfors), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30232 (The Bone Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30243": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30243 (Njorndar Spear-Sister), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30330 (Jotunheim Proto-Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30407 (Captured Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30562 (Crusader Bridenbrad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30596 (The Ebon Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30597 (Spiked Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30631": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30631 (Darkrider Arly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30632": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30632 (Mjordin Water Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30657 (Siegemaster Fezzik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30673 (Forgotten Depths Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30674 (Frostbrood Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30683": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30683 (Father Gustav), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30686 (Crusade Architect Silas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30687 (Skeletal Constructor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30696 (Corpulent Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30701 (Vile Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30708": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30708 (Crusader Olakin Sainrith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30718 (Slumbering Mjordin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30920 (Lumbering Atrocity), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30921 (Skeletal Runesmith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30944 (Vereth the Cunning), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30949": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30949 (Risen Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30951": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30951 (Restless Lookout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30957 (Death Knight Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30988": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30988 (Scourgebeak Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31037": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31037 (Forgotten Depths High Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31040": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31040 (Wrathstrike Gargoyle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31043": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31043 (Reanimated Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31044 (Highlord Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31069": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31069 (Penumbrius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31130": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31130 (Festering Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31131 (Containment Crystal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31135 (Geirrvif), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31139 (Pustulent Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31142 (Icy Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31147 (Vicious Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31154 (Gjonner the Merciless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31177 (Slain Alliance Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31205": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31205 (Risen Alliance Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31240": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31240 (Warlord Hork Strongbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31241 (Marshal Ivalius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31254 (Lordaeron Footsoldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31258 (Ymirheim Chosen Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31262": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31262 (Blight Falconer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31263 (Carrion Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31273": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31273 (Dying Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31279 (Father Kamaros), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31280 (Ymirheim Spear Gun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31304 (Dying Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31306 (Margrave Dhakar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31326": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31326 (Death Knight Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31413 (Hulking Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31440 (Sergeant Kregga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31444": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31444 (Captain Kendall), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31556": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31556 (Hungering Plaguehound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31581": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31581 (Magister Brasael), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31691 (Faceless Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31718 (Frostbrood Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31731 (Wyrm Reanimator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31738": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31738 (Cultist Corrupter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31746 (Ymirheim Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31747": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31747 (Necrotic Webspinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31754 (Glacial Bonelord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31776": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31776 (Frazzle Geargrinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31779 (Skeletal Archmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31781": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31781 (Blast Thunderbomb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31808 (Ground Commander Koup), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31812": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31812 (Decomposed Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31813": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31813 (Frostskull Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31834 (Ground Commander Xutjja), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31900 (Scourge Banner-Bearer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32149": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32149 (Fallen Hero's Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32154 (Scourge War Machine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32164 (Skeletal Craftsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32175": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32175 (Chosen Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32201 (Orgrim's Hammer Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32238 (Bitter Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32239 (Highlord Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32241 (Disguised Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32255 (Converted Hero), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32257 (Scourge Converter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32262": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32262 (Shadow Channeler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32276 (Cult Blackguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32278 (Harbinger of Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32279 (Vile Torturer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32280 (Corp'rethar Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32284 (Scourge Soulbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32297": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32297 (Cult Researcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32349 (Cultist Shard Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32404 (Matthias Lehner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32423 (Matthias Lehner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32430 (Fringe Engineer Tezzla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32444": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32444 (Kibli Killohertz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32467 (Skeletal Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32479 (Bone Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32490": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32490 (Scourge Deathcharger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32492": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32492 (Frostbrood Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32497 (Matthias Lehner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32501 (High Thane Jorfus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32502 (Ravaged Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32505 (Vargul Wanderer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32507": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32507 (Cultist Acolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32769": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32769 (Gargoyle Ambusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32771 (Stitched Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32772 (Skeletal Footsoldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33222": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33222 (Sir Marcus Barlowe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33225": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33225 (Marshal Jacob Alerius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33285 (Sen'jin Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33306 (Orgrimmar Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33361 (Mokra the Skullcrusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33382 (Silvermoon Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33383": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33383 (Thunder Bluff Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33384 (Undercity Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33438 (Boneguard Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33447 (Squire David), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33460 (Orgrimmar Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33463 (Gnomeregan Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33518 (Squire Danny), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33522 (Squire Cavin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33550": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33550 (Boneguard Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33559": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33559 (Darnassus Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33561 (Stormwind Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33562 (Exodar Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33564 (Ironforge Valiant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33740 (Gnomeregan Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33744 (Orgrimmar Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33747": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33747 (Stormwind Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34127 (Boneguard Commander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34179 (Argent Peacekeeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34180 (Crusader Maran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34716": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34716 (Captive Aspirant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34728 (Dark Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34734 (Dark Ritualist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34808 (Deathspeaker Kharos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:34956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34956 (Kul the Reckless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:35482": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 35482 (Hungry Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36624": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36624 (Caladis Brightspear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36642 (Myralion Sunblaze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36656 (Silver Covenant Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12939": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12939 (Honor Challenge)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13008": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13008 (Scourge Tactics)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13044": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13044 (If There Are Survivors...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13068": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13068 (A Tale of Valor)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13084": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13084 (Vandalizing Jotunheim)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13105": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13105 (Once More Unto The Breach, Hero)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13125": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13125 (The Air Stands Still)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13359": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13359 (Where Dragons Fell)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

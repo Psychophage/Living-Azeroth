@@ -1802,7 +1802,270 @@
     }
   ],
   "place": "Burning Steppes",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:46",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:46",
+        "dbc:area:251",
+        "dbc:area:2418",
+        "world:creature:9779",
+        "world:creature:7025"
+      ],
+      "text": "You are in the Burning Steppes, a contested land in the Eastern Kingdoms where both the Alliance and the Horde hold settlements. Flame Crest is held by the Horde and Morgan's Vigil by the Alliance. Dragonkin, flamekin, scorpids, ogres and Blackrock soldiers are the main dangers.",
+      "when": {
+        "zone_id": 46
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:249",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:249",
+        "world:creature:9177",
+        "world:creature:7034",
+        "world:creature:8981"
+      ],
+      "text": "You are in Dreadmaul Rock, a rocky part of the Burning Steppes. Firegut ogres, ogre mages and obsidian elementals roam it, and a malfunctioning mechanical reaver still lumbers among the stones. Oralius of Morgan's Vigil calls the Firegut ogres allies of the Blackrock orcs.",
+      "when": {
+        "area_id": 249
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:250",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:250",
+        "world:creature:8887",
+        "world:creature:7036",
+        "world:creature:8978"
+      ],
+      "text": "You are in the Ruins of Thaurissan, a ruined city in the Burning Steppes. Thaurissan agents, spies and firewalkers haunt it, along with War Reavers and Thauris Balgarr. A tormented voice in the ruins warns intruders away and speaks of the city's destruction.",
+      "when": {
+        "area_id": 250
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:251",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:251",
+        "world:creature:10267",
+        "world:creature:13177",
+        "world:creature:9778",
+        "world:creature:9779"
+      ],
+      "text": "You are in Flame Crest, a Horde settlement in the Burning Steppes, with a flight master, a spirit healer and a vendor. Tinkee Steamboil studies the dragonkin here and builds devices to capture broodling essence and freeze dragon eggs. Flamekin torchers and ragers are the troubles nearby.",
+      "when": {
+        "area_id": 251
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:252",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:252",
+        "world:creature:9520",
+        "world:creature:7028",
+        "world:creature:8979"
+      ],
+      "text": "You are in Blackrock Stronghold, a fortified Blackrock orc base in the Burning Steppes. Blackrock warlocks, slayers and battlemasters guard it, and Gruklash is among its most dangerous. A Blackrock informant named Grark Lorkrub is accused of betraying the Thorium Brotherhood.",
+      "when": {
+        "area_id": 252
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:253",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:253",
+        "world:creature:7026",
+        "world:creature:7055",
+        "world:creature:7032"
+      ],
+      "text": "You are in the Pillar of Ash, a stretch of the Burning Steppes where Blackrock sorcerers, soldiers, warlocks and worgs roam. Greater obsidian elementals are among the troubles here.",
+      "when": {
+        "area_id": 253
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:254",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:254",
+        "world:creature:8888",
+        "world:creature:16033",
+        "world:creature:14387",
+        "world:creature:7043",
+        "world:creature:8964"
+      ],
+      "text": "You are in Blackrock Mountain, a fiery mountain in the Burning Steppes full of old Dark Iron works. The ghostly architect Franclorn Forgewright claims the stonewrought design of those works, and Bodley, a ghost and former mercenary, wants to set things right. Lothos Riftwaker studies the rifts around the mountain. Flamescale wyrmkin and Blackrock drakes are the dangers, and a spirit healer is here.",
+      "when": {
+        "area_id": 254
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:255",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:255",
+        "world:creature:14436",
+        "world:creature:14437",
+        "world:creature:7028",
+        "world:creature:8979"
+      ],
+      "text": "You are in the Altar of Storms, a place of summoning rites in the Burning Steppes. Mor'zul Bloodbringer studies here, working to bind a dreadsteed from Xoroth, and his servant Gorzeeki Wildeyes prepares the ink. Blackrock warlocks and Gruklash are the dangers.",
+      "when": {
+        "area_id": 255
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2418",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2418",
+        "world:creature:9560",
+        "world:creature:9177",
+        "world:creature:9561",
+        "world:creature:2299"
+      ],
+      "text": "You are in Morgan's Vigil, an Alliance settlement in the Burning Steppes, with a gryphon master, a weaponsmith and repairs. Marshal Maxwell and Oralius direct the Alliance campaign against Blackrock Spire and the Firegut ogres. Jalinda Sprig is trying to get an expedition into Blackrock Depths, though Overmaster Pyron has badly hurt the mages she sent.",
+      "when": {
+        "area_id": 2418
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2419",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2419",
+        "world:creature:9459",
+        "world:creature:7047"
+      ],
+      "text": "You are in Slither Rock, a place in the Burning Steppes where Cyrus Therepentous, a fire-loving dragonkin, craves the molten heat of Blackrock's depths. He demands proof of worth from anyone seeking the Black Dragonflight and speaks with cutting contempt. Black broodlings are the danger here.",
+      "when": {
+        "area_id": 2419
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2420",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2420",
+        "world:creature:7040",
+        "world:creature:7041",
+        "world:creature:9691",
+        "world:creature:9690",
+        "world:creature:8981"
+      ],
+      "text": "You are in Terror Wing Path, a route in the Burning Steppes where black dragonspawn, black wyrmkin and black broodlings roam. Venomtip scorpids, ember worgs and Firegut ogres are here too. A malfunctioning mechanical reaver is also here.",
+      "when": {
+        "area_id": 2420
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2421",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2421",
+        "world:creature:14529",
+        "world:creature:7049",
+        "world:creature:7046",
+        "world:creature:9698",
+        "world:creature:8976"
+      ],
+      "text": "You are in Draco'dar, a place of lava in the Burning Steppes. Franklin the Friendly keeps a gentle, nature-minded face here, though challengers call him Klinfran the Crazed. Flamescale broodlings, searscale drakes and firetail scorpids are the dangers, and Hematos roams here too.",
+      "when": {
+        "area_id": 2421
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2418": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2418 (Morgan's Vigil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2419": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2419 (Slither Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2420": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2420 (Terror Wing Path)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2421": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2421 (Draco'dar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:249": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 249 (Dreadmaul Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:250": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 250 (Ruins of Thaurissan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:251": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 251 (Flame Crest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:252": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 252 (Blackrock Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:253": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 253 (The Pillar of Ash)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:254": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 254 (Blackrock Mountain)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:255": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 255 (Altar of Storms)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:46": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 46 (Burning Steppes)",
+      "revision": "3.3.5a client data"
+    },
     "source:00b9da39da8c2966aa84fe26": {
       "kind": "research",
       "reference": "evidence:sha256:3f7cf7eaeb59722a11e62deac913a1ff989e733674c05a69c69e949c093b9bf3",
@@ -3257,6 +3520,196 @@
       "kind": "research",
       "reference": "evidence:sha256:8155bb2726eab48ef3d638e87c521531c5552b8c4045a746e9ee8dc5a563afdd",
       "revision": "30d7ea7e8ec95557cbf922d78a4a552bafcb63e0494b063797f5f76e37cad91f"
+    },
+    "world:creature:10267": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10267 (Tinkee Steamboil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13177 (Vahgruk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14387 (Lothos Riftwaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14436": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14436 (Mor'zul Bloodbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14437 (Gorzeeki Wildeyes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14529": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14529 (Franklin the Friendly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16033 (Bodley), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2299": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2299 (Borgus Stoutarm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7025": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7025 (Blackrock Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7026": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7026 (Blackrock Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7028": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7028 (Blackrock Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7032 (Greater Obsidian Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7034 (Firegut Ogre Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7036": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7036 (Thaurissan Spy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7040": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7040 (Black Dragonspawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7041": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7041 (Black Wyrmkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7043": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7043 (Flamescale Wyrmkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7046 (Searscale Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7047": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7047 (Black Broodling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7049": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7049 (Flamescale Broodling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7055": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7055 (Blackrock Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8887": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8887 (A tormented voice), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8888 (Franclorn Forgewright), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8964": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8964 (Blackrock Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8976 (Hematos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8978 (Thauris Balgarr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8979 (Gruklash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8981 (Malfunctioning Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9177 (Oralius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9459": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9459 (Cyrus Therepentous), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9520 (Grark Lorkrub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9560": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9560 (Marshal Maxwell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9561 (Jalinda Sprig), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9690 (Ember Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9691 (Venomtip Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9698": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9698 (Firetail Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9778": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9778 (Flamekin Torcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9779 (Flamekin Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

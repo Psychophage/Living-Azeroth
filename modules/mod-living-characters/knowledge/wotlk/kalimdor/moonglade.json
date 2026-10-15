@@ -905,7 +905,98 @@
     }
   ],
   "place": "Moonglade",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:493",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:493",
+        "dbc:area:2361",
+        "world:creature:11516",
+        "world:creature:30617"
+      ],
+      "text": "You are in Moonglade, a land on Kalimdor held by neither the Alliance nor the Horde. Its main settlement is Nighthaven, a village of druids. Timbermaw warders and mystics roam the wilds, and nightmare aberrations and figments trouble the land.",
+      "when": {
+        "zone_id": 493
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2361",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2361",
+        "world:creature:12042",
+        "world:creature:11939",
+        "world:creature:11801",
+        "world:creature:11798",
+        "world:creature:11800"
+      ],
+      "text": "You are in Nighthaven, a village in Moonglade. Cenarion Circle druids gather here, and Loganaar trains them in druidic mastery while Umber salvages damaged tomes for the Circle. Rabine Saturna suspects a renewed threat in Silithus, where a Reliquary of Purity may remain in Southwind's ruins. The village has a class trainer, a profession trainer, repairs and a vendor, and flight masters for Thunder Bluff and Darnassus.",
+      "when": {
+        "area_id": 2361
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2362",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2362",
+        "world:quest:28",
+        "world:creature:11799",
+        "world:creature:11832",
+        "world:creature:30627"
+      ],
+      "text": "You are in the Shrine of Remulos in northwestern Moonglade. Tajarri, a trusted warden, guards its sanctity and warns visitors to behave. Keeper Remulos works to confront the Nightmare with restraint, studying collected fragments to find its source. Nightmare figments gather about the shrine.",
+      "when": {
+        "area_id": 2362
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2363",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2363",
+        "world:creature:22834",
+        "world:creature:22837",
+        "world:creature:22835",
+        "world:creature:22889",
+        "world:creature:22902"
+      ],
+      "text": "You are in Stormrage Barrow Dens, an area of Moonglade. Clintar Dreamwalker, a druid, is caught in an alien and dangerous Emerald Dream and cannot fully withdraw from it, while Dreamwarden Lurosa and Cenarion dreamwardens watch over him. Manifest Nightmares and Phantasmal Lashes are hostile here.",
+      "when": {
+        "area_id": 2363
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2361": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2361 (Nighthaven)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2362": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2362 (Shrine of Remulos)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2363": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2363 (Stormrage Barrow Dens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:493": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 493 (Moonglade)",
+      "revision": "3.3.5a client data"
+    },
     "source:00b6c9586ff7c6f7265adec2": {
       "kind": "research",
       "reference": "evidence:sha256:bd6fcea5898660db00931db827a9d046dbd030968000a31a46747b4b22103c34",
@@ -1615,6 +1706,86 @@
       "kind": "research",
       "reference": "evidence:sha256:fd55200e94ff4f4bf613200d574d67bd194b0fbb2b768df3cb84eda4b68b6ce5",
       "revision": "ba85edf8a4b2abe2733860f0db3557c3bde192941a6ece314e688b9759e4b139"
+    },
+    "world:creature:11516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11516 (Timbermaw Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11798": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11798 (Bunthen Plainswind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11799": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11799 (Tajarri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11800": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11800 (Silva Fil'naveth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11801 (Rabine Saturna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11832": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11832 (Keeper Remulos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11939 (Umber), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12042": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12042 (Loganaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22834 (Clintar Dreamwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22835": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22835 (Cenarion Dreamwarden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22837": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22837 (Dreamwarden Lurosa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22889": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22889 (Manifest Nightmare), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22902": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22902 (Phantasmal Lash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30617": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30617 (Nightmare Aberration), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30627": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30627 (Nightmare Figment), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:28": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 28 (Trial of the Lake)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

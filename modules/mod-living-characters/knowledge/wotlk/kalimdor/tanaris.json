@@ -3809,7 +3809,513 @@
     }
   ],
   "place": "Tanaris",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:440",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:440",
+        "dbc:area:976",
+        "dbc:area:977",
+        "world:creature:7407",
+        "world:creature:7882",
+        "world:creature:5426",
+        "world:creature:5422",
+        "world:quest:82"
+      ],
+      "text": "You are in Tanaris, a desert in Kalimdor held by neither the Alliance nor the Horde. Its main settlements are Gadgetzan, where engineers and tradesmen run the water company, and Steamwheedle Port, where a security chief keeps the peace against pirates who stopped paying protection money. Blisterpaw hyenas and scorpids roam the sands, Wastewander nomads hold the wells, and silithid insects are spreading across the desert and draining the water pools.",
+      "when": {
+        "zone_id": 440
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:976",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:976",
+        "world:creature:7407",
+        "world:creature:5594",
+        "world:creature:7724"
+      ],
+      "text": "You are in Gadgetzan, a desert town in Tanaris with its own water company. Chief Engineer Bilgewhizzle runs the wells and power sources and urges action against the nomads holding the wells. Alchemist Pestlezugg studies the silithid spreading through the sands, and Senior Surveyor Fizzledowser fears for his missing assistant Scrimshank. It has an inn and a flight master.",
+      "when": {
+        "area_id": 976
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:977",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:977",
+        "world:creature:7882",
+        "world:creature:15165",
+        "world:creature:7881",
+        "world:creature:5422"
+      ],
+      "text": "You are in Steamwheedle Port, a town in Tanaris. Security Chief Bilgewhizzle must stay to keep the peace, so he deputizes help against the Southsea pirates who stopped paying protection money. The fashion designer Haughty Modiste commissions Southsea pirate hats for resale, and Stoley tends the bar. Scorpid hunters roam here too.",
+      "when": {
+        "area_id": 977
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:979",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:979",
+        "world:creature:5647",
+        "world:creature:5646",
+        "world:creature:5645",
+        "world:creature:5419",
+        "world:creature:5425",
+        "world:creature:5423"
+      ],
+      "text": "You are in Sandsorrow Watch, an area of Tanaris. Sandfury firecallers, axe throwers and hideskinners, along with glasshide basilisks, starving blisterpaw hyenas and scorpid tail lashers, are the dangers here.",
+      "when": {
+        "area_id": 979
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:980",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:980",
+        "world:creature:5481",
+        "world:creature:5485",
+        "world:creature:5490"
+      ],
+      "text": "You are in Thistleshrub Valley, an area of Tanaris. Thistleshrub dew collectors and rootshapers are its main dangers, along with gnarled thistleshrubs.",
+      "when": {
+        "area_id": 980
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:981",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:981",
+        "world:quest:10",
+        "world:creature:19950",
+        "world:creature:5441",
+        "world:creature:5451",
+        "world:creature:5450",
+        "world:creature:5454"
+      ],
+      "text": "You are in the Gaping Chasm, a stretch of desert southeast of Gadgetzan. Junior Surveyor Scrimshank went missing here, and a dragonkin custodian of time is found in the chasm. Hazzali wasps, swarmers, stingers and sandreavers infest it.",
+      "when": {
+        "area_id": 981
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:982",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:982",
+        "world:quest:82",
+        "world:creature:5456",
+        "world:creature:5455",
+        "world:creature:5457",
+        "world:creature:5458",
+        "world:creature:5459"
+      ],
+      "text": "You are in the Noxious Lair, where Centipaar insects are draining the water pools that used to be here. Centipaar stingers, wasps, swarmers, workers and tunnelers are its dangers.",
+      "when": {
+        "area_id": 982
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:983",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:983",
+        "world:creature:5474",
+        "world:creature:5472",
+        "world:creature:5475",
+        "world:creature:5427",
+        "world:creature:5424"
+      ],
+      "text": "You are in Dunemaul Compound, an area of Tanaris. Dunemaul brutes, enforcers and warlocks are its dangers, with rabid blisterpaw hyenas and scorpid dunestalkers roaming nearby.",
+      "when": {
+        "area_id": 983
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:984",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:984",
+        "world:creature:5475",
+        "world:creature:5472",
+        "world:creature:5473",
+        "world:creature:5420",
+        "world:creature:5424",
+        "world:creature:5426"
+      ],
+      "text": "You are in Eastmoon Ruins, an area of Tanaris. Dunemaul warlocks, enforcers and ogre mages prowl the ruins, along with glasshide gazers, scorpid dunestalkers and blisterpaw hyenas.",
+      "when": {
+        "area_id": 984
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:985",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:985",
+        "world:creature:5617",
+        "world:creature:5615",
+        "world:creature:5616",
+        "world:creature:5623",
+        "world:creature:5423",
+        "world:creature:5420"
+      ],
+      "text": "You are in Waterspring Field, an area of Tanaris. Wastewander shadow mages, rogues, thieves and assassins are its main dangers, along with scorpid tail lashers and glasshide gazers.",
+      "when": {
+        "area_id": 985
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:987",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:987",
+        "world:creature:15526",
+        "world:creature:5431"
+      ],
+      "text": "You are in Land's End Beach, a shore in Tanaris. Meridith the Mermaiden remembers rescuing a gnome from a crashed flying machine, and she speaks of loving Narain Soothfancy. Surf gliders are the danger here.",
+      "when": {
+        "area_id": 987
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:988",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:988",
+        "world:creature:6491",
+        "world:creature:5615",
+        "world:creature:5617",
+        "world:creature:5616",
+        "world:creature:5618",
+        "world:creature:5623",
+        "world:creature:5422"
+      ],
+      "text": "You are in Wavestrider Beach, a shore in Tanaris with its own spirit healer. Wastewander rogues, shadow mages, thieves, bandits and assassins are the dangers here, along with scorpid hunters.",
+      "when": {
+        "area_id": 988
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:989",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:989",
+        "world:quest:2954",
+        "world:creature:5469"
+      ],
+      "text": "You are in Uldum, a compound in the Tanaris desert whose entry is guarded by a Stone Watcher of Norgannon, who admits no one without the platinum discs. Dune smashers prowl the sands outside.",
+      "when": {
+        "area_id": 989
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:990",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:990",
+        "world:creature:5389",
+        "world:creature:5421",
+        "world:creature:5427",
+        "world:creature:5469",
+        "world:creature:5424"
+      ],
+      "text": "You are in Valley of the Watchers, a part of Tanaris where Prospector Gunstan of the Explorers' League, an Alliance man, is found. Glasshide petrifiers, rabid blisterpaws, dune smashers and scorpid dunestalkers roam the valley.",
+      "when": {
+        "area_id": 990
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:992",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:992",
+        "world:creature:5427",
+        "world:creature:5420",
+        "world:creature:5430",
+        "world:creature:5471",
+        "world:creature:5472",
+        "world:creature:5424"
+      ],
+      "text": "You are in Southmoon Ruins, a crumbled site in the Tanaris desert now home to rabid blisterpaws, glasshide gazers, searing rocs, dunemaul ogres, dunemaul enforcers and scorpid dunestalkers.",
+      "when": {
+        "area_id": 992
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1336",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1336",
+        "world:creature:7858",
+        "world:creature:7856",
+        "world:creature:7855",
+        "world:creature:7857",
+        "world:creature:7883",
+        "world:creature:8203"
+      ],
+      "text": "You are in Lost Rigger Cove, a cove in Tanaris overrun by Southsea swashbucklers, freebooters, pirates and dock workers. Andre Firebeard and Kregg Keelhaul are among the most notable of them.",
+      "when": {
+        "area_id": 1336
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1937",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1937",
+        "world:creature:5616",
+        "world:creature:5618",
+        "world:creature:5422",
+        "world:creature:5425",
+        "world:creature:5419"
+      ],
+      "text": "You are in Noonshade Ruins, a ruined site in Tanaris where wastewander thieves and bandits prowl among scorpid hunters, starving blisterpaws and glasshide basilisks.",
+      "when": {
+        "area_id": 1937
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1938",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1938",
+        "world:creature:7771",
+        "world:quest:3161",
+        "world:creature:5423",
+        "world:creature:5426",
+        "world:creature:5420",
+        "world:creature:5429"
+      ],
+      "text": "You are in Broken Pillar, a stretch of Tanaris where Marvon Rivetseeker, a scientist and treasure hunter, studies Gahz'ridian ornaments that trolls made long ago, modeled after the hydra Gahz'rilla. Scorpid tail lashers, blisterpaw hyenas, glasshide gazers and fire rocs roam here.",
+      "when": {
+        "area_id": 1938
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1939",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1939",
+        "world:creature:6491",
+        "world:creature:5426",
+        "world:creature:5429",
+        "world:creature:5420",
+        "world:creature:5423",
+        "world:creature:5424",
+        "world:creature:5419"
+      ],
+      "text": "You are in Abyssal Sands, a sandy stretch of Tanaris where a spirit healer offers a return to the living for a price, while cautioning that it may not yet be your time. Blisterpaw hyenas, fire rocs, glasshide gazers, scorpid tail lashers, scorpid dunestalkers and glasshide basilisks roam the sands.",
+      "when": {
+        "area_id": 1939
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1940",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1940",
+        "world:creature:20080",
+        "world:creature:5431",
+        "world:creature:5466",
+        "world:creature:5426",
+        "world:creature:5467"
+      ],
+      "text": "You are in Southbreak Shore, a stretch of Tanaris where Galgrom, a provisioner stranded here with his brother, waits for dragons to return them to their own time, fearing that leaving could cause a temporal paradox. Surf gliders, coast striders, blisterpaw hyenas and deep dwellers roam the shore.",
+      "when": {
+        "area_id": 1940
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2300",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2300",
+        "world:creature:20142",
+        "world:creature:15192",
+        "world:creature:8197",
+        "world:creature:8196"
+      ],
+      "text": "You are in Caverns of Time, a hall of the Keepers of Time where the Steward of Time guides visitors toward the master's lair and warns that dangers past the hall are unknown to mortals. Anachronos, who seeks to keep the Scepter of the Shifting Sands from misuse, is found here as well. Chronalis and Occulus haunt the halls.",
+      "when": {
+        "area_id": 2300
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2317",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2317",
+        "world:quest:8598"
+      ],
+      "text": "You are in South Seas, a part of Tanaris where a ransom note demands money from a gnome for the return of a book its writers are holding.",
+      "when": {
+        "area_id": 2317
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1336": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1336 (Lost Rigger Cove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1937": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1937 (Noonshade Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1938": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1938 (Broken Pillar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1939": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1939 (Abyssal Sands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1940": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1940 (Southbreak Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2300": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2300 (Caverns of Time)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2317": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2317 (South Seas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:976": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 976 (Gadgetzan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:977": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 977 (Steamwheedle Port)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:979": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 979 (Sandsorrow Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:980": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 980 (Thistleshrub Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:981": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 981 (The Gaping Chasm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:982": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 982 (The Noxious Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:983": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 983 (Dunemaul Compound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:984": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 984 (Eastmoon Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:985": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 985 (Waterspring Field)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:987": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 987 (Land's End Beach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:988": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 988 (Wavestrider Beach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:989": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 989 (Uldum)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:990": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 990 (Valley of the Watchers)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:992": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 992 (Southmoon Ruins)",
+      "revision": "3.3.5a client data"
+    },
     "source:006d6d0fa13123a4de60ef74": {
       "kind": "research",
       "reference": "evidence:sha256:f1939af77b1045f00d17c2c5ca44dfd2005524d3bfa8551d7078cb7f83b5ed30",
@@ -6569,6 +7075,341 @@
       "kind": "research",
       "reference": "evidence:sha256:330a782af30096ee811b88736117d4bea213e130ae6e736f0669015358abc849",
       "revision": "bf0946f6c3214735e8294bdfe441f946f0ff103bc9e9d5853b5080605c6a15af"
+    },
+    "world:creature:15165": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15165 (Haughty Modiste), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15192 (Anachronos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15526": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15526 (Meridith the Mermaiden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19950 (Custodian of Time), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20080 (Galgrom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20142 (Steward of Time), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5389 (Prospector Gunstan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5419": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5419 (Glasshide Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5420 (Glasshide Gazer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5421": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5421 (Glasshide Petrifier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5422 (Scorpid Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5423 (Scorpid Tail Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5424 (Scorpid Dunestalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5425": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5425 (Starving Blisterpaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5426": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5426 (Blisterpaw Hyena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5427": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5427 (Rabid Blisterpaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5429 (Fire Roc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5430 (Searing Roc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5431 (Surf Glider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5441": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5441 (Hazzali Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5450 (Hazzali Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5451 (Hazzali Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5454 (Hazzali Sandreaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5455": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5455 (Centipaar Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5456": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5456 (Centipaar Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5457": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5457 (Centipaar Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5458": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5458 (Centipaar Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5459": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5459 (Centipaar Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5466 (Coast Strider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5467 (Deep Dweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5469 (Dune Smasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5471": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5471 (Dunemaul Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5472": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5472 (Dunemaul Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5473 (Dunemaul Ogre Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5474 (Dunemaul Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5475 (Dunemaul Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5481": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5481 (Thistleshrub Dew Collector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5485": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5485 (Thistleshrub Rootshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5490": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5490 (Gnarled Thistleshrub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5594": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5594 (Alchemist Pestlezugg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5615 (Wastewander Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5616": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5616 (Wastewander Thief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5617": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5617 (Wastewander Shadow Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5618 (Wastewander Bandit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5623": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5623 (Wastewander Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5645": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5645 (Sandfury Hideskinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5646 (Sandfury Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5647 (Sandfury Firecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7407 (Chief Engineer Bilgewhizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7724": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7724 (Senior Surveyor Fizzledowser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7771 (Marvon Rivetseeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7855": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7855 (Southsea Pirate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7856 (Southsea Freebooter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7857": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7857 (Southsea Dock Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7858 (Southsea Swashbuckler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7881 (Stoley), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7882": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7882 (Security Chief Bilgewhizzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7883": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7883 (Andre Firebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8196 (Occulus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8197 (Chronalis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8203 (Kregg Keelhaul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10 (The Scrimshank Redemption)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2954": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2954 (The Stone Watcher)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:3161": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3161 (Gahz'ridian)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:82": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 82 (Noxious Lair Investigation)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8598": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8598 (rAnS0m)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

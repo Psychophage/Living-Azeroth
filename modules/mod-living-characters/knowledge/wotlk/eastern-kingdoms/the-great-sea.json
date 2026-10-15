@@ -28,7 +28,27 @@
     }
   ],
   "place": "The Great Sea",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:214",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:214"
+      ],
+      "text": "You are in The Great Sea, a sea of the Eastern Kingdoms. Neither the Alliance nor the Horde holds it, and no settlements are recorded on it.",
+      "when": {
+        "zone_id": 214
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:214": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 214 (The Great Sea)",
+      "revision": "3.3.5a client data"
+    },
     "source:16d9170a0a96699359b36941": {
       "kind": "research",
       "reference": "evidence:sha256:78956ac3ccd17b773861f80a7262ff52ca210d2ddd51ffc5705d5c453b8b6a22",

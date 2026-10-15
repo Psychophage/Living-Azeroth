@@ -1661,7 +1661,394 @@
     }
   ],
   "place": "Badlands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3",
+        "dbc:area:340",
+        "world:creature:2727",
+        "world:creature:92",
+        "world:creature:2701",
+        "world:creature:2743"
+      ],
+      "text": "You are in the Badlands, a harsh region of the Eastern Kingdoms. The Horde holds it in places, chiefly at Kargath, its main settlement. Crag coyotes, rock elementals, Dustbelcher ogres and Shadowforge dwarves are the dangers here.",
+      "when": {
+        "zone_id": 3
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:337",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:337",
+        "world:creature:2749",
+        "world:creature:2831",
+        "world:creature:2734",
+        "world:creature:2729"
+      ],
+      "text": "You are in Apocryphan's Rest, a stretch of the Badlands where giant buzzards, ridge stalker patriarchs and elder crag coyotes hunt. A siege golem, a powerful elemental construct, is found here, and it can unleash a spell when badly wounded.",
+      "when": {
+        "area_id": 337
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:338",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:338",
+        "world:creature:2743",
+        "world:creature:2742",
+        "world:creature:2744",
+        "world:creature:2723",
+        "world:creature:2749"
+      ],
+      "text": "You are in Angor Fortress, a Shadowforge stronghold in the Badlands. Shadowforge warriors, chanters and commanders hold its halls, with stone golems and ridge stalkers nearby. A siege golem is found here too, and it can unleash a spell when badly wounded.",
+      "when": {
+        "area_id": 338
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:339",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:339",
+        "world:creature:2725",
+        "world:creature:2726",
+        "world:quest:717",
+        "world:creature:2888"
+      ],
+      "text": "You are in Lethlor Ravine, where scalding whelps and scorched guardians haunt the ground. Black dragons have taken up residence here, and the drakes Blacklash and Hematus are kept imprisoned by runestones that may not hold. Garek, an agent of Krasus of the Kirin Tor, is here on a secret errand.",
+      "when": {
+        "area_id": 339
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:340",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:340",
+        "world:creature:9077",
+        "world:creature:5394",
+        "world:creature:1068",
+        "world:creature:2727",
+        "world:creature:2888"
+      ],
+      "text": "You are in Kargath, the Horde's main settlement in the Badlands, where the Kargath Expeditionary Force is based. Warlord Goretooth commands the force, and Neeka Bloodscar, its head scout, says crag coyotes raid the food stores. Gorn directs the effort to recover the Sign of the Earth, which ogres stole, and it has an inn and a stable.",
+      "when": {
+        "area_id": 340
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:341",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:341",
+        "world:creature:2906",
+        "world:creature:2907",
+        "world:quest:718"
+      ],
+      "text": "You are in Camp Kosh, a Badlands camp where Dustbelcher warriors and mystics gather. Its ogres have been picking over the wagons and crates the Uldaman dig crew abandoned on the road.",
+      "when": {
+        "area_id": 341
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:342",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:342",
+        "world:creature:2701",
+        "world:creature:2715",
+        "world:creature:2728",
+        "world:creature:2732",
+        "world:quest:732"
+      ],
+      "text": "You are in Camp Boff, where Dustbelcher ogres and brutes roam among feral crag coyotes and ridge huntresses. Buzzards circle overhead, and wandering ogres are sometimes seen here.",
+      "when": {
+        "area_id": 342
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:343",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:343",
+        "world:creature:2729",
+        "world:creature:2701",
+        "world:creature:2715",
+        "world:creature:2732"
+      ],
+      "text": "You are in Camp Wurg, a Badlands camp where Dustbelcher ogres and brutes roam with elder crag coyotes and ridge huntresses.",
+      "when": {
+        "area_id": 343
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:344",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:344",
+        "world:creature:2736",
+        "world:creature:2717",
+        "world:creature:2716",
+        "world:creature:2718",
+        "world:creature:2944",
+        "world:creature:1068"
+      ],
+      "text": "You are in Camp Cagg, a Dustbelcher camp where greater rock elementals, maulers, wyrmhunters and shamans gather. Tho'grun, who betrayed the Horde's efforts in Kargath, is among them.",
+      "when": {
+        "area_id": 344
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:345",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:345",
+        "world:creature:2785",
+        "world:creature:2893",
+        "world:creature:2894",
+        "world:creature:2728",
+        "world:creature:92"
+      ],
+      "text": "You are in Agmond's End, where Stonevault bonesnappers and shamans, along with crag coyotes and rock elementals, make the ground dangerous. Theldurin the Lost is here, once tied to the Twilight's Hammer and fearful of what the Scroll of Myzrael could unleash.",
+      "when": {
+        "area_id": 345
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:346",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:346",
+        "world:creature:2739",
+        "world:creature:2740",
+        "world:quest:720"
+      ],
+      "text": "You are in Hammertoe's Digsite, a Badlands dig where Shadowforge tunnelers and darkweavers are the dangers. A chalk message scrawled on the site's map says Hammertoe Grez was being taken to Uldaman.",
+      "when": {
+        "area_id": 346
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:347",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:347",
+        "world:creature:2720",
+        "world:creature:2719",
+        "world:creature:2736"
+      ],
+      "text": "You are in Dustbelch Grotto, a cave in the Badlands where Dustbelcher ogre mages and lords hold ground alongside greater rock elementals.",
+      "when": {
+        "area_id": 347
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1877",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1877",
+        "world:creature:2817",
+        "world:creature:4618",
+        "world:creature:9179",
+        "world:creature:2732",
+        "world:creature:2727"
+      ],
+      "text": "You are in Valley of Fangs, a Badlands valley where crag coyotes and ridge huntresses roam. Rigglefuzz, a goblin tinkerer and cook, makes flash bombs to scare off wildlife and studies power stones. Martek the Exiled, an exiled smith, lives in a camp here, and Jazzrik sells blacksmithing supplies.",
+      "when": {
+        "area_id": 1877
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1878",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1878",
+        "world:creature:2921",
+        "world:creature:2920",
+        "world:creature:2922",
+        "world:creature:2735",
+        "world:creature:2732",
+        "world:creature:2731",
+        "world:creature:2831"
+      ],
+      "text": "You are in The Dustbowl, a Badlands ground where neutral folk work. Lotwil Veriatus, a mage, is researching elemental binding here with his mechanical assistant Servo, while Lucien Tosselwrench makes potions and enchanted bracers beside him. Lesser rock elementals, ridge huntresses, ridge stalkers and giant buzzards roam the area.",
+      "when": {
+        "area_id": 1878
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1879",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1879",
+        "world:creature:14224",
+        "world:creature:2729",
+        "world:creature:92",
+        "world:creature:2732",
+        "world:creature:2831"
+      ],
+      "text": "You are in Mirage Flats, in the Badlands. Crag coyotes, rock elementals and ridge huntresses roam the flats, and a long-distance recovery unit named 7:XT searches the open ground for life forms.",
+      "when": {
+        "area_id": 1879
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1897",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1897",
+        "world:creature:4844",
+        "world:creature:4846",
+        "world:creature:4845",
+        "world:creature:2727",
+        "world:creature:2751"
+      ],
+      "text": "You are in The Maker's Terrace, a terrace in the Badlands. Shadowforge surveyors, diggers and ruffians work the ground here, with crag coyotes and a war golem among them.",
+      "when": {
+        "area_id": 1897
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1898",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1898",
+        "world:creature:2731",
+        "world:creature:2730",
+        "world:creature:2892",
+        "world:creature:6733",
+        "world:creature:2829"
+      ],
+      "text": "You are in Dustwind Gulch, a gulch in the Badlands. Ridge stalkers, rabid crag coyotes and starving buzzards prowl it, and stonevault seers and bashers are found here too.",
+      "when": {
+        "area_id": 1898
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1877": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1877 (Valley of Fangs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1878": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1878 (The Dustbowl)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1879": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1879 (Mirage Flats)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1897": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1897 (The Maker's Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1898": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1898 (Dustwind Gulch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3 (Badlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:337": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 337 (Apocryphan's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:338": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 338 (Angor Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:339": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 339 (Lethlor Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:340": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 340 (Kargath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:341": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 341 (Camp Kosh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:342": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 342 (Camp Boff)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:343": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 343 (Camp Wurg)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:344": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 344 (Camp Cagg)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:345": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 345 (Agmond's End)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:346": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 346 (Hammertoe's Digsite)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:347": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 347 (Dustbelch Grotto)",
+      "revision": "3.3.5a client data"
+    },
     "source:01bf88e44478a5cd60d26e7d": {
       "kind": "research",
       "reference": "evidence:sha256:8d44bed7cb07f174fe937228112b0246ef1c3a87efe4ba7fbf643adef40b69b4",
@@ -3096,6 +3483,281 @@
       "kind": "research",
       "reference": "evidence:sha256:f14bfb9e06d81638daf895645f2f9b4272775a7f934ad7bf448505e073ac524b",
       "revision": "b0d501a1c2799d00d39ccf815e6699897121e8291b34425a8839a73d25569190"
+    },
+    "world:creature:1068": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1068 (Gorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14224": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14224 (7:XT), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2701 (Dustbelcher Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2715 (Dustbelcher Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2716": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2716 (Dustbelcher Wyrmhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2717 (Dustbelcher Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2718 (Dustbelcher Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2719 (Dustbelcher Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2720": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2720 (Dustbelcher Ogre Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2723 (Stone Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2725": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2725 (Scalding Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2726": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2726 (Scorched Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2727 (Crag Coyote), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2728 (Feral Crag Coyote), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2729": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2729 (Elder Crag Coyote), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2730": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2730 (Rabid Crag Coyote), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2731 (Ridge Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2732 (Ridge Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2734 (Ridge Stalker Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2735": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2735 (Lesser Rock Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2736": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2736 (Greater Rock Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2739 (Shadowforge Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2740 (Shadowforge Darkweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2742": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2742 (Shadowforge Chanter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2743": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2743 (Shadowforge Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2744 (Shadowforge Commander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2749": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2749 (Siege Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2751": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2751 (War Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2785": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2785 (Theldurin the Lost), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2817": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2817 (Rigglefuzz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2829": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2829 (Starving Buzzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2831": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2831 (Giant Buzzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2888 (Garek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2892": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2892 (Stonevault Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2893": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2893 (Stonevault Bonesnapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2894": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2894 (Stonevault Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2906 (Dustbelcher Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2907": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2907 (Dustbelcher Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2920 (Lucien Tosselwrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2921 (Lotwil Veriatus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2922": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2922 (Servo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2944 (Boss Tho'grun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4618 (Martek the Exiled), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4844 (Shadowforge Surveyor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4845": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4845 (Shadowforge Ruffian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4846 (Shadowforge Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5394": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5394 (Neeka Bloodscar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6733 (Stonevault Basher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9077 (Warlord Goretooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9179 (Jazzrik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:92": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 92 (Rock Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:717": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 717 (Tremors of the Earth)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:718": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 718 (Mirages)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:720": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 720 (A Sign of Hope)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:732": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 732 (Tremors of the Earth)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

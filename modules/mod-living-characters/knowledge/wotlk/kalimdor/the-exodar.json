@@ -601,7 +601,30 @@
     }
   ],
   "place": "The Exodar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3557",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3557",
+        "world:creature:17555",
+        "world:creature:20604",
+        "world:creature:17584"
+      ],
+      "text": "You are in The Exodar, an Alliance city on Kalimdor. Stephanos, a hippogryph master, offers rides from near its gates, and the auction house, flight master and profession trainers are inside. Dugiru, the cloth quartermaster, is gathering donations to refill the city's dwindling textile supplies, and Torallius breeds and sells elekks just outside the city.",
+      "when": {
+        "zone_id": 3557
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3557": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3557 (The Exodar)",
+      "revision": "3.3.5a client data"
+    },
     "source:04027e381b82262e2c8520e7": {
       "kind": "research",
       "reference": "evidence:sha256:bf9412d7f75a83aacfe73c86c69463ca7a5dc6b40fa4f9e4ae08c37cdf1b0f02",
@@ -1056,6 +1079,21 @@
       "kind": "research",
       "reference": "evidence:sha256:aa4afd86c2c5adf0213e4e25e0d044ea3467970df614744d52ed693378bdb3af",
       "revision": "34d01bede9118efe1e8b0ab9819ab6d0f146c728f3a2e20a055fc0392f5534c6"
+    },
+    "world:creature:17555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17555 (Stephanos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17584": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17584 (Torallius the Pack Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20604": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20604 (Dugiru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -11500,7 +11500,1250 @@
     }
   ],
   "place": "Borean Tundra",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3537",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3537",
+        "dbc:area:4020",
+        "dbc:area:4032",
+        "dbc:area:4108",
+        "dbc:area:4023",
+        "world:creature:24562"
+      ],
+      "text": "You are in Borean Tundra, a contested land of Northrend. The Horde holds Warsong Hold, Bor'gorok Outpost, Taunka'le Village and Mightstone Quarry, the Alliance holds Valiance Keep and Fizzcrank Airstrip, and Amber Ledge and Unu'pe belong to neither side. Scourge and Nerub'ar forces, Kvaldir and Skadir raiders, and magnataur prides are the main dangers, and cultists work near the Alliance keep.",
+      "when": {
+        "zone_id": 3537
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4020",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4020",
+        "world:creature:25242",
+        "world:creature:25379",
+        "world:creature:25328",
+        "world:creature:24566",
+        "world:creature:24562"
+      ],
+      "text": "You are in Mightstone Quarry, a Horde settlement in Borean Tundra. Warsong soldiers keep it, and Warden Nork Bloodfrenzy oversees prisoners at an internment camp southeast of Warsong Hold. Nerub'ar skitterers and invaders haunt the quarry, and Shadowstalker Luther's journal reports a Scourge spawning glade in the farms to the west.",
+      "when": {
+        "area_id": 4020
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4021",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4021",
+        "world:creature:25381",
+        "world:creature:25440",
+        "world:creature:25470",
+        "world:creature:25467",
+        "world:creature:25675",
+        "world:creature:24469"
+      ],
+      "text": "You are in Bloodspore Plains, a Horde post on the southern front of Borean Tundra. Bloodmage Laurith studies the bloodspore plants and moths here, and Scout Tungok clears kobolds from the fields. Bloodspore firestarters and harvesters, tundra wolves and magnataur huntresses are the dangers.",
+      "when": {
+        "area_id": 4021
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4022",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4022",
+        "world:quest:11721",
+        "world:creature:24567",
+        "world:creature:25467",
+        "world:creature:25468",
+        "world:creature:25501",
+        "world:creature:25797"
+      ],
+      "text": "You are in Gammoth, a magnataur den west of Bloodspore Plains where the Horde is hunting the pride's leader, Gammothra. Den vermin, bloodspore harvesters and roasters, and Gammoth Tenders lurk among the magnataur, and Bloodmage Alkor is found here.",
+      "when": {
+        "area_id": 4022
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4023",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4023",
+        "world:creature:25262",
+        "world:creature:25291",
+        "world:creature:25356",
+        "world:creature:24795",
+        "world:creature:25449"
+      ],
+      "text": "You are in Amber Ledge, a neutral outpost in Borean Tundra with a flight master and a vendor. Dalaran's Librarian Donathan is here hunting mages abducted across Azeroth, and Librarian Garren charts energy anomalies. Surristrasz, a dragonkin, watches over his drakes, and Warmage Anzim leads war mages from here to Beryl Point. Beryl Reclaimers are the danger nearby.",
+      "when": {
+        "area_id": 4023
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4024",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4024",
+        "world:creature:6491",
+        "world:creature:29655",
+        "world:creature:25728",
+        "world:creature:25722",
+        "world:creature:25719",
+        "world:creature:25717"
+      ],
+      "text": "You are in Coldarra, a ledge in Borean Tundra where a spirit healer serves. Malygos calls out here in concern over Saragosa's fate. Coldarra wyrmkin, spellweavers and spellbinders haunt the ledge, and Coldarra Scalesworn are found among them.",
+      "when": {
+        "area_id": 4024
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4025",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4025",
+        "world:creature:25208",
+        "world:creature:28375",
+        "world:creature:25217",
+        "world:creature:25215",
+        "world:creature:25216",
+        "world:creature:25204"
+      ],
+      "text": "You are in The Westrift, a stretch of Borean Tundra. Captive Winterfin Lurgglbr and Glrglrglr are held in the Winterfin Caverns, and the captives fear that magic seeping from Coldarra controls their kin. Winterfin warriors, shorestrikers and oracles, and glimmer bay orcas are the dangers.",
+      "when": {
+        "area_id": 4025
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4027",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4027",
+        "dbc:area:4106",
+        "world:creature:25329",
+        "world:creature:25475",
+        "world:creature:25476"
+      ],
+      "text": "You are in Coast of Echoes, a Horde camp on the shore of Borean Tundra. Garrosh's Landing lies across the mist to the north. Gorge the Corpsegrinder commands siege tanks there against the Scourge, and the mechanic Mobu is trying to repair them. Waltor of Pal'ea seeks the relics the Kvaldir took, and the mist is dangerous.",
+      "when": {
+        "area_id": 4027
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4028",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4028",
+        "world:creature:25636",
+        "world:creature:25435",
+        "world:creature:25521",
+        "world:creature:25522",
+        "world:creature:26449"
+      ],
+      "text": "You are in Riplash Strand, a shore of Borean Tundra where Skadir longboatsmen, raiders and mistweavers are the dangers. The Kvaldir forced captured tuskarr to fight other prisoners here, and a young tuskarr survivor named Karuk is said to have arrived here. Gamel the Cruel and Riplash sorceresses are also dangerous.",
+      "when": {
+        "area_id": 4028
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4029",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4029",
+        "world:creature:25244",
+        "world:creature:25523",
+        "world:creature:25520",
+        "world:creature:25613",
+        "world:creature:26451"
+      ],
+      "text": "You are in Riplash Ruins, a ruin in Borean Tundra where Skadir mariners, runecasters and mistweavers are the dangers. A Warsong marksman engages enemies here, and Ragnar Drakkarlund is among the notable hostile creatures.",
+      "when": {
+        "area_id": 4029
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4031",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4031",
+        "world:creature:25476",
+        "world:creature:25496",
+        "world:creature:25479"
+      ],
+      "text": "You are in Pal'ea, a ruined tuskarr village in Borean Tundra. The Kvaldir destroyed it and took the tuskarr relics, and Kvaldir mist lords and mistweavers now haunt the ruins.",
+      "when": {
+        "area_id": 4031
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4032",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4032",
+        "world:creature:25250",
+        "world:creature:25285",
+        "world:creature:25582",
+        "world:creature:25605"
+      ],
+      "text": "You are in Valiance Keep, an Alliance keep in Borean Tundra with an inn. General Arlos receives reports here, and Harbinger Vurenn pursues intelligence on cultists aiding the Scourge near the keep. Scourged flamespitters and clandestine cultists are the dangers around it.",
+      "when": {
+        "area_id": 4032
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4033",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4033",
+        "world:creature:25217",
+        "world:creature:25215",
+        "world:creature:25216",
+        "world:creature:25204"
+      ],
+      "text": "You are in Winterfin Village, a Winterfin settlement in Borean Tundra. Winterfin warriors, shorestrikers and oracles are the dangers here, and glimmer bay orcas roam the shore.",
+      "when": {
+        "area_id": 4033
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4035",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4035",
+        "world:creature:24563",
+        "world:creature:25622",
+        "world:creature:25753",
+        "world:creature:25752",
+        "world:creature:25758"
+      ],
+      "text": "You are in The Geyser Fields, an area of Borean Tundra. Nerub'ar venomspitters, tunnelers and warriors share the ground with sentry bots, scavenge bots and defendo tanks, which make it dangerous to cross.",
+      "when": {
+        "area_id": 4035
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4036",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4036",
+        "world:quest:11890",
+        "world:creature:25758",
+        "world:creature:25752",
+        "world:creature:25753"
+      ],
+      "text": "You are in Fizzcrank Pumping Station, a gnome pumping station in the pools of Borean Tundra, its gnomes now vanished. Defendo tanks, scavenge bots and sentry bots still patrol its grounds.",
+      "when": {
+        "area_id": 4036
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4037",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4037",
+        "world:creature:24703",
+        "world:creature:25602",
+        "world:quest:11899",
+        "dbc:taxi:258"
+      ],
+      "text": "You are in Taunka'le Village, a taunka settlement in Borean Tundra held by the Horde. Chieftain Wintergale leads its defence against Scourge pressure from En'kilah, and Greatmother Taiga sends people to look into the mechagnomes in the pools to the west. Its inn and flight master serve travelers.",
+      "when": {
+        "area_id": 4037
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4039",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4039",
+        "world:creature:25321",
+        "world:creature:25322",
+        "world:creature:25355",
+        "world:creature:25449",
+        "world:creature:25353"
+      ],
+      "text": "You are in Coldrock Quarry, a quarry in Borean Tundra where Kaskala craftsmen and shamans were murdered. Their spirits remain there, held by beryl hounds, and beryl reclaimers and treasure hunters roam the site.",
+      "when": {
+        "area_id": 4039
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4040",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4040",
+        "world:creature:26218",
+        "world:creature:26219",
+        "world:creature:26266",
+        "world:quest:11968"
+      ],
+      "text": "You are in Njord's Breath Bay, a bay in Borean Tundra. Elder Muahit, a tuskarr shaman, is here, and Kvaldir attack from the water under Heigarr the Horrible. Iruk, Muahit's nephew, was killed by the Kvaldir, and his body lies in the water north of the bay.",
+      "when": {
+        "area_id": 4040
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4041",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4041",
+        "world:creature:26213",
+        "world:creature:26169",
+        "world:creature:25760"
+      ],
+      "text": "You are in Kaskala, a tuskarr settlement in Borean Tundra. Its families have been sent to Unu'pe, and the warriors left behind fight Kvaldir raiders who attack out of the mist. Ataika and Utaik are among those still here.",
+      "when": {
+        "area_id": 4041
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4042",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4042",
+        "world:quest:11930",
+        "world:creature:26159",
+        "world:creature:26160",
+        "world:creature:25452",
+        "world:creature:26174",
+        "world:creature:25668",
+        "world:creature:25715"
+      ],
+      "text": "You are in Transborea, the tundra crossed on the only route east to the Dragonblight. Taunka'le evacuees and pack kodos pass through, and scourged mammoths, carrion condors, vengeful taunka spirits and frozen elementals are its dangers.",
+      "when": {
+        "area_id": 4042
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4043",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4043",
+        "world:creature:6491",
+        "world:creature:25687",
+        "world:creature:25686",
+        "world:creature:25701"
+      ],
+      "text": "You are in The Flood Plains, a stretch of Borean Tundra where gorlocs roam, among them steam belchers, gibberers and dredgers. A spirit healer here offers a return to life for a price, though the time may not yet be right.",
+      "when": {
+        "area_id": 4043
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4099",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4099",
+        "world:creature:25197",
+        "world:creature:25206",
+        "world:quest:11561",
+        "world:quest:11560"
+      ],
+      "text": "You are in Winterfin Retreat, a murloc settlement in Borean Tundra. King Mrgl-Mrgl leads the unaffected Winterfin murlocs here, and Ahlurglgr, the surviving clam merchant, trades at the camp. Murlocs across the water are now enemies, and a lobstrok named Claximus controls those in the caverns.",
+      "when": {
+        "area_id": 4099
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4101",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4101",
+        "world:quest:11789",
+        "world:creature:25825",
+        "world:creature:25253",
+        "world:creature:25227",
+        "world:creature:25582",
+        "world:creature:25228"
+      ],
+      "text": "You are in Sands of Nasam, Alliance ground in Borean Tundra near Valiance Keep. Medic Hawthorn is treating a soldier poisoned by cryptfiends, and keep footmen and riflemen guard the nearby ground. Crypt crawlers, scourged flamespitters and risen crypt lords roam the sands.",
+      "when": {
+        "area_id": 4101
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4105",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4105",
+        "world:creature:25585",
+        "world:creature:25316",
+        "world:creature:25584"
+      ],
+      "text": "You are in Beryl Point, a point of land in Borean Tundra. Beryl mage hunters and beryl sorcerers roam it, and Inquisitor Salrand is among them.",
+      "when": {
+        "area_id": 4105
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4106",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4106",
+        "world:creature:25504",
+        "world:creature:25242",
+        "world:creature:25496",
+        "world:creature:25479",
+        "world:quest:11664"
+      ],
+      "text": "You are in Garrosh's Landing, a Horde outpost in Borean Tundra. Warsong battleguards and honor guards are among its people, and Mootoo the Younger is searching the mist for her father. Kvaldir mist lords and mistweavers haunt the fog around it.",
+      "when": {
+        "area_id": 4106
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4108",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4108",
+        "world:creature:25590",
+        "world:creature:25702",
+        "world:creature:25477",
+        "world:quest:11650"
+      ],
+      "text": "You are in Fizzcrank Airstrip, an Alliance base in Borean Tundra run by gnomish pilots and engineers. Fizzcrank Fullthrottle leads its airmen, and Mordle Cogspinner is trying to restore the transmatter's outgoing teleport. A magnataur den lies on the southern border, and Crafty Wobblesprocket is building blasters to shrink the beasts. Its inn, blacksmith and flight master serve visitors.",
+      "when": {
+        "area_id": 4108
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4109",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4109",
+        "world:creature:25467",
+        "world:creature:25836",
+        "world:creature:25979",
+        "world:creature:25464"
+      ],
+      "text": "You are in Lake Kum'uya, a lake in Borean Tundra that neither side holds. Bloodspore harvesters, along with wandering divers and hunters, are the dangers on its shores. Bloodspore moths drift over the water.",
+      "when": {
+        "area_id": 4109
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4111",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4111",
+        "world:creature:26083",
+        "world:creature:26084",
+        "world:creature:26085",
+        "world:creature:25650",
+        "world:creature:25651",
+        "world:creature:25227"
+      ],
+      "text": "You are in Farshire, a settlement in Borean Tundra where Alliance settlers are fighting back against the Scourge. Gerald Green has organized the farmers and miners into a militia, and Jeremiah Hawning is trying to rewire harvest collectors to help defend it. Plagued scavengers, cultist necrolytes and crypt crawlers haunt the settlement, and Wendy Darren fears the plague has reached its grain. A spirit healer is nearby.",
+      "when": {
+        "area_id": 4111
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4113",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4113",
+        "world:creature:26556",
+        "world:creature:27187",
+        "world:creature:27188"
+      ],
+      "text": "You are in Unu'pe, a tuskarr village in Borean Tundra that neither side holds. Agloolik keeps the docks, where the great sea turtle Walker of Waves travels from this dock to Moa'ki Harbor in Dragonblight. Caregiver Poallu keeps the inn, and Tonraq is a spearcrafter.",
+      "when": {
+        "area_id": 4113
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4114",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4114",
+        "world:creature:26187",
+        "world:creature:26186",
+        "world:quest:11944",
+        "world:quest:12157"
+      ],
+      "text": "You are in Death's Stand, an Alliance foothold in Borean Tundra where Corporal Venn's small force is pinned down. Undead keep circling the Wailing Ziggurat to the north, and the expedition had a Cult of the Damned spy among its men. Private Casey is looking for Courier Lanson, who was sent to western Dragonblight and has not returned.",
+      "when": {
+        "area_id": 4114
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4115",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4115",
+        "world:creature:25838",
+        "world:creature:25839",
+        "world:creature:25844",
+        "world:creature:25843",
+        "world:quest:11871"
+      ],
+      "text": "You are in The Abandoned Reach, a stretch of beach in Borean Tundra that neither side holds. Hierophant Liandra of D.E.H.T.A. works here against the animal-part trade she blames on Nesingwary's hunters and the Northsea Freebooters. Northsea mercenaries and thugs are the dangers on the shore, and crates of animal parts still wash up among the flotsam.",
+      "when": {
+        "area_id": 4115
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4116",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4116",
+        "world:creature:25807",
+        "world:creature:25791",
+        "world:creature:25753",
+        "world:creature:25792",
+        "world:creature:25758",
+        "world:creature:25841"
+      ],
+      "text": "You are in Scalding Pools, a wreck field in Borean Tundra where a Fizzcrank squadron went down. Iggy Tailspin Cogtoggle, its injured commander, is stranded among the wreckage. Oil-stained wolves prowl the pools, and sentry-bots, scavenge-bots and defendo-tanks still patrol the wrecks.",
+      "when": {
+        "area_id": 4116
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4117",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4117",
+        "world:creature:24601",
+        "world:creature:25680",
+        "world:creature:26790"
+      ],
+      "text": "You are in Steam Springs, a place in Borean Tundra that neither side holds. Steam ragers are the danger here, while marsh caribou and Taunka'le longrunners graze the ground.",
+      "when": {
+        "area_id": 4117
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4118",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4118",
+        "world:creature:25714",
+        "world:creature:25658",
+        "world:creature:25660",
+        "world:creature:26126",
+        "world:creature:24957",
+        "world:creature:25678",
+        "world:creature:25682"
+      ],
+      "text": "You are in Talramas, a crashed necropolis in Borean Tundra held by Scourge cultists. Tinky Wickwhistle, the airstrip's chief transmatter engineer, is caged here by them. Festering ghouls, bone warriors and cult plaguebringers roam the ruins, and Doctor Razorgrin and Lich-Lord Chillwinter lead them.",
+      "when": {
+        "area_id": 4118
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4119",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4119",
+        "world:creature:26126",
+        "world:creature:25660",
+        "world:creature:24957",
+        "world:creature:25753",
+        "world:creature:24601",
+        "world:creature:25758"
+      ],
+      "text": "You are in Festering Pools, a Scourge-infested place in Borean Tundra. Bone warriors, festering ghouls and cult plaguebringers roam among the pools, with sentry-bots, steam ragers and defendo-tanks also about.",
+      "when": {
+        "area_id": 4119
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4120",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4120",
+        "world:creature:32548",
+        "world:quest:13413",
+        "world:creature:32534",
+        "world:creature:25721",
+        "world:creature:25728"
+      ],
+      "text": "You are in The Nexus, a place in Coldarra on the edge of Malygos' lair. Corastrasza, a red dragonflight drake trainer, teaches her drakes here for the coming war with the blue dragonflight. Scalesworn elites, arcane serpents and Coldarra wyrmkin are the dangers here.",
+      "when": {
+        "area_id": 4120
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4121",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4121",
+        "world:creature:26117",
+        "world:creature:25314",
+        "world:creature:26110",
+        "world:creature:27046",
+        "world:quest:11918"
+      ],
+      "text": "You are in Transitus Shield, a resistance outpost in Coldarra that neither side holds. Raelorasz leads its attacks on Malygos and works to rescue captured allies, while Archmage Berinand studies the rift drawn over the Nexus. Librarian Serrah finds provisions for the warmages, and a flight master and repairs are on hand.",
+      "when": {
+        "area_id": 4121
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4122",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4122",
+        "world:creature:25326",
+        "world:creature:25339",
+        "world:creature:25374",
+        "world:creature:26848"
+      ],
+      "text": "You are in Bor'gorok Outpost, a Horde post in Borean Tundra led by Overlord Bor'gorok. Its inn, flight master and stable master serve travelers, and Spirit Talker Snarlfang works with the spirits here. Overlord Bor'gorok worries how the Horde's conduct will shape relations with the taunka, since Steeljaw's caravan disturbed their burial grounds. The wounded Ortrosh still wants revenge on the magnataur at Magmoth.",
+      "when": {
+        "area_id": 4122
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4123",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4123",
+        "world:creature:25425",
+        "world:creature:25589",
+        "world:creature:25428",
+        "world:creature:25429",
+        "world:creature:25433",
+        "world:creature:25434",
+        "world:creature:25430"
+      ],
+      "text": "You are in Magmoth, a cavern near Bor'gorok Outpost in Borean Tundra. Magmoth shamans, crushers and foragers, along with offspring and mates of Magmothregar, fill its depths, and Magmothregar itself lurks there. The spirit of Farseer Grimwalker is bound inside, and the Alliance captive Bonker Togglevolt is chained up by snobolds.",
+      "when": {
+        "area_id": 4123
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4124",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4124",
+        "world:creature:25615",
+        "world:creature:25452",
+        "world:creature:24957",
+        "world:creature:25454"
+      ],
+      "text": "You are in The Dens of Dying, a part of Borean Tundra where plagued magnataur and scourged mammoths roam. Cult plaguebringers and tundra crawlers are found among them.",
+      "when": {
+        "area_id": 4124
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4125",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4125",
+        "world:creature:25490",
+        "world:creature:25492",
+        "world:creature:25493",
+        "world:creature:26170",
+        "world:creature:25377",
+        "world:creature:25393",
+        "world:creature:25387"
+      ],
+      "text": "You are in the Temple City of En'kilah, a Scourge-held city in Borean Tundra. Three plague cauldrons stand here, treated as Scourge weapons. Ghouls, brittle skeletons, gargoyles and crypt fiends are the dangers here, and Thassarian, an Alliance death knight who now fights the Cult of the Damned, is among those present.",
+      "when": {
+        "area_id": 4125
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4126",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4126",
+        "world:creature:26170",
+        "world:creature:26171",
+        "world:creature:26173",
+        "world:creature:26202",
+        "world:creature:26189",
+        "world:creature:26172"
+      ],
+      "text": "You are in the Wailing Ziggurat, a ziggurat in Borean Tundra. Thassarian, an Alliance death knight, works here against the Cult of the Damned, and High Deathpriest Isidorus of that cult begs for mercy when a death knight confronts him. Ziggurat defenders and fleeing cultists are the dangers here. Thassarian seeks the hidden phylactery of the lich Tanathal.",
+      "when": {
+        "area_id": 4126
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4127",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4127",
+        "world:creature:25335",
+        "world:creature:25336",
+        "world:creature:25342",
+        "world:creature:25343",
+        "world:creature:25351",
+        "world:creature:25350",
+        "world:quest:11592"
+      ],
+      "text": "You are in Steeljaw's Caravan, a ruined supply train on sacred taunka burial ground in Borean Tundra. Taunka ghostly sages and risen longrunners rise from the graves, and the cursed spirit of Force-Commander Steeljaw haunts the wreck. Longrunner Proudhoof leads the taunka mourning their ancestors, while the Horde grunt Ragefist insists that the fallen caravan guards and workers be burned rather than left on sacred ground.",
+      "when": {
+        "area_id": 4127
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4129",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4129",
+        "world:creature:25237",
+        "world:creature:25256",
+        "world:creature:25279",
+        "world:creature:24566",
+        "world:creature:25294"
+      ],
+      "text": "You are in Warsong Hold, a Horde hold in Borean Tundra where Overlord Garrosh Hellscream commands the Warsong Offensive. High Overlord Saurfang frets over the strained supply routes. Overlord Razgor warns that Nerub'ar skitterers and web lords are multiplying after their attack on Mightstone Quarry, with the Scourge massed beyond. Its inn and profession trainers serve its warriors.",
+      "when": {
+        "area_id": 4129
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4130",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4130",
+        "world:creature:25333",
+        "world:creature:25332",
+        "world:creature:25349",
+        "world:creature:25465",
+        "world:creature:27106",
+        "world:creature:27107"
+      ],
+      "text": "You are in the Plains of Nasam, a stretch of Borean Tundra where undying aggressors, stitched Warsong horrors and plague spreaders roam, and wooly rhino bulls wander nearby. Kel'Thuzad is among the dangers. Injured Warsong warriors and a mage are found here, and the mage vows that the beasts will feel the Sunwell's fury.",
+      "when": {
+        "area_id": 4130
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4132",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4132",
+        "world:creature:25376",
+        "world:creature:25415",
+        "world:quest:11624",
+        "world:quest:11627"
+      ],
+      "text": "You are in the Ruins of Eldra'nath, where Imperean, an air elemental, speaks with condescension to mortals. Enraged tempests roam the ruins, their rage fed by the ongoing war between fire and water to the south, and Imperean treats their motes as a resource.",
+      "when": {
+        "area_id": 4132
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4134",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4134",
+        "world:creature:25419",
+        "world:creature:25417",
+        "world:creature:25418",
+        "world:quest:11627"
+      ],
+      "text": "You are in the Blistering Pool, a boiling pool in Borean Tundra. Boiling spirits and raging boilers haunt the Blistering Pool, and the elemental Churn is found here, its pool kept boiling by its rival Simmer.",
+      "when": {
+        "area_id": 4134
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4135",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4135",
+        "world:creature:25472",
+        "world:quest:11659",
+        "world:creature:25516",
+        "world:creature:25534",
+        "world:creature:25392"
+      ],
+      "text": "You are in the Spire of Blood, one of three large spires in the Temple City of En'kilah in Borean Tundra. Captives here are bled into blood globes, and the blood is carried up to a necropolis to feed a blood prince. High Priest Andorath is found here too. Snow Tracker Grumm, a badly weakened taunka, is found here after falling into Scourge hands.",
+      "when": {
+        "area_id": 4135
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4137",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4137",
+        "world:creature:25473",
+        "world:creature:25386",
+        "world:creature:25422",
+        "world:creature:26073"
+      ],
+      "text": "You are in the Spire of Pain, one of three large spires in the Temple City of En'kilah in Borean Tundra. En'kilah crypt fiends lurk here, along with mystical webbing, and High Priest Talet-Kha is found here too.",
+      "when": {
+        "area_id": 4137
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4138",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4138",
+        "world:creature:25680",
+        "world:creature:27189",
+        "world:creature:26174",
+        "world:creature:26202",
+        "world:creature:25699",
+        "world:creature:25701"
+      ],
+      "text": "You are in Frozen Reach, a stretch of the Borean Tundra. Marsh caribou roam it, and Unu'pe spearmen are found here too. Carrion condors, Ziggurat defenders and gorloc mud splashers are the dangers, and gorloc dredgers are about as well.",
+      "when": {
+        "area_id": 4138
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4143",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4143",
+        "world:creature:25596",
+        "world:creature:25610",
+        "world:creature:25600",
+        "world:creature:25609",
+        "world:creature:25611"
+      ],
+      "text": "You are in Warsong Slaughterhouse, a Horde spot in the Borean Tundra. Infected kodo beasts are found here, including one of Torp's, and Scourge prisoners are among the people. Unliving swine, En'kilah necrolords and Warsong aberrations are the dangers.",
+      "when": {
+        "area_id": 4143
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4144",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4144",
+        "world:creature:25607",
+        "world:creature:25437",
+        "world:creature:25438",
+        "world:creature:25600",
+        "world:creature:25611"
+      ],
+      "text": "You are in Warsong Farms Outpost, a Horde post on the Borean Tundra's farmland. Farmer Torp is working on a cure for sick kodos here, while Shadowstalkers Ickoris and Canarius work against the Scourge, which turns captured Horde soldiers into undead in these fields. Unliving swine and warsong aberrations are the dangers.",
+      "when": {
+        "area_id": 4144
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4149",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4149",
+        "world:creature:25809",
+        "world:creature:25810",
+        "world:creature:25811",
+        "world:creature:25808"
+      ],
+      "text": "You are in D.E.H.T.A. Encampment, a neutral druid camp in the Borean Tundra. Arch Druid Lathorius champions the animals here, and Hierophant Cenius fiercely opposes Nesingwary's pearl and hunting trade. Zaza condemns Nesingwary's trappers who harm caribou, and enforcers confront anyone accused of harming animals.",
+      "when": {
+        "area_id": 4149
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4269",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4269",
+        "world:creature:25450",
+        "world:creature:24662",
+        "world:creature:25613",
+        "world:creature:25521",
+        "world:creature:25522"
+      ],
+      "text": "You are in Shrine of Scales, in the Borean Tundra. Veehja, a naga priestess, seeks vengeance on the Kvaldir who occupy Riplash. Riplash sorceresses, Skadir mistweavers, longboatsmen and raiders are the dangers.",
+      "when": {
+        "area_id": 4269
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3537 (Borean Tundra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4020": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4020 (Mightstone Quarry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4021": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4021 (Bloodspore Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4022": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4022 (Gammoth)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4023": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4023 (Amber Ledge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4024": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4024 (Coldarra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4025": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4025 (The Westrift)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4027": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4027 (Coast of Echoes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4028": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4028 (Riplash Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4029": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4029 (Riplash Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4031": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4031 (Pal'ea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4032": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4032 (Valiance Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4033": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4033 (Winterfin Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4035": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4035 (The Geyser Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4036": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4036 (Fizzcrank Pumping Station)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4037": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4037 (Taunka'le Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4039": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4039 (Coldrock Quarry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4040": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4040 (Njord's Breath Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4041": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4041 (Kaskala)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4042": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4042 (Transborea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4043": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4043 (The Flood Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4099": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4099 (Winterfin Retreat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4101": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4101 (Sands of Nasam)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4105": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4105 (Beryl Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4106": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4106 (Garrosh's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4108": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4108 (Fizzcrank Airstrip)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4109": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4109 (Lake Kum'uya)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4111": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4111 (Farshire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4113": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4113 (Unu'pe)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4114": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4114 (Death's Stand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4115": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4115 (The Abandoned Reach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4116": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4116 (Scalding Pools)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4117": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4117 (Steam Springs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4118": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4118 (Talramas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4119": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4119 (Festering Pools)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4120 (The Nexus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4121": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4121 (Transitus Shield)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4122": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4122 (Bor'gorok Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4123": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4123 (Magmoth)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4124": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4124 (The Dens of Dying)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4125": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4125 (Temple City of En'kilah)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4126": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4126 (The Wailing Ziggurat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4127": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4127 (Steeljaw's Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4129": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4129 (Warsong Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4130": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4130 (Plains of Nasam)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4132": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4132 (Ruins of Eldra'nath)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4134": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4134 (Blistering Pool)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4135": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4135 (Spire of Blood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4137": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4137 (Spire of Pain)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4138": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4138 (Frozen Reach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4143": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4143 (Warsong Slaughterhouse)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4144": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4144 (Warsong Farms Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4149": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4149 (D.E.H.T.A. Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4269": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4269 (Shrine of Scales)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:258": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 258 (Taunka'le Village, Borean Tundra)",
+      "revision": "3.3.5a client data"
+    },
     "source:003d5c270c054839549678fe": {
       "kind": "research",
       "reference": "evidence:sha256:e0c8cf77f33ddc3b4ad68c80e1f2317e389def3f3b49990dbbb835ee58fe546b",
@@ -20785,6 +22028,1091 @@
       "kind": "research",
       "reference": "evidence:sha256:57c98c40b2a42fc515fd0462dd965365efe00d9e971867a82bd1a706e6f90196",
       "revision": "543c2e619c3c36d84526e5ba6737c5e9ecafe239af15167ddeee2bf8e6b3ada5"
+    },
+    "world:creature:24469": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24469 (Magnataur Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24562 (Nerub'ar Invader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24563": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24563 (Nerub'ar Venomspitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24566 (Nerub'ar Skitterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24567": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24567 (Den Vermin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24601": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24601 (Steam Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24662": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24662 (Riplash Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24703": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24703 (Chieftain Wintergale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24795": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24795 (Surristrasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24957 (Cult Plaguebringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25197": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25197 (King Mrgl-Mrgl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25204 (Glimmer Bay Orca), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25206 (Ahlurglgr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25208": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25208 (Lurgglbr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25215": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25215 (Winterfin Shorestriker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25216": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25216 (Winterfin Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25217 (Winterfin Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25227": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25227 (Crypt Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25228 (Risen Crypt Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25237 (Garrosh Hellscream), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25242": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25242 (Warsong Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25244 (Warsong Marksman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25250": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25250 (General Arlos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25253": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25253 (Valiance Keep Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25256": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25256 (High Overlord Saurfang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25262": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25262 (Librarian Donathan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25279 (Overlord Razgor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25285 (Harbinger Vurenn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25291 (Librarian Garren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25294": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25294 (Nerub'ar Web Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25314 (Archmage Berinand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25316 (Beryl Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25321": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25321 (Kaskala Craftsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25322 (Kaskala Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25326": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25326 (Overlord Bor'gorok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25328 (Shadowstalker Luther), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25329 (Gorge the Corpsegrinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25332": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25332 (Stitched Warsong Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25333 (Undying Aggressor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25335 (Longrunner Proudhoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25336": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25336 (Grunt Ragefist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25339 (Spirit Talker Snarlfang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25342 (Dead Caravan Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25343 (Dead Caravan Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25349 (Scourge Plague Spreader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25350 (Risen Longrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25351 (Ghostly Sage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25353 (Beryl Treasure Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25355 (Beryl Hound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25356 (Warmage Anzim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25374 (Ortrosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25376 (Imperean), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25377 (Brittle Skeleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25379 (Warden Nork Bloodfrenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25381 (Bloodmage Laurith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25386 (En'kilah Crypt Fiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25387 (En'kilah Gargoyle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25392 (High Priest Andorath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25393 (En'kilah Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25415 (Enraged Tempest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25417 (Raging Boiler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25418": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25418 (Churn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25419": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25419 (Boiling Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25422 (Mystical Webbing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25425": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25425 (Farseer Grimwalker's Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25428 (Magmoth Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25429 (Magmoth Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25430 (Magmothregar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25433": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25433 (Offspring of Magmothregar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25434 (Magmoth Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25435 (Karuk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25437 (Shadowstalker Ickoris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25438 (Shadowstalker Canarius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25440 (Scout Tungok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25449 (Beryl Reclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25450 (Veehja), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25452 (Scourged Mammoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25454 (Tundra Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25464 (Bloodspore Moth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25465 (Kel'Thuzad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25467 (Bloodspore Harvester), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25468 (Bloodspore Roaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25470": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25470 (Bloodspore Firestarter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25472": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25472 (Temple B), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25473 (Temple C), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25475 (Mobu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25476": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25476 (Waltor of Pal'ea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25477 (Crafty Wobblesprocket), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25479 (Kvaldir Mistweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25490": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25490 (East En'kilah Cauldron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25492": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25492 (Central En'kilah Cauldron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25493": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25493 (West En'kilah Cauldron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25496": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25496 (Kvaldir Mist Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25501 (Gammoth Tender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25504 (Mootoo the Younger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25516 (Snow Tracker Grumm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25520 (Skadir Runecaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25521": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25521 (Skadir Longboatsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25522 (Skadir Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25523 (Skadir Mariner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25534 (En'kilah Blood Globe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25582": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25582 (Scourged Flamespitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25584": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25584 (Inquisitor Salrand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25585": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25585 (Beryl Mage Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25589 (Bonker Togglevolt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25590": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25590 (Fizzcrank Fullthrottle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25596 (Infected Kodo Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25600 (Unliving Swine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25602": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25602 (Greatmother Taiga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25605": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25605 (Clandestine Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25607 (Farmer Torp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25609": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25609 (En'kilah Necrolord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25610 (Scourge Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25611": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25611 (Warsong Aberration), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25613": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25613 (Skadir Mistweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25615 (Plagued Magnataur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25622": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25622 (Nerub'ar Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25636 (Captured Tuskarr Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25650 (Plagued Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25651 (Cultist Necrolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25658": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25658 (Longrunner Bristlehorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25660 (Festering Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25668 (Vengeful Taunka Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25675": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25675 (Tundra Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25678 (Doctor Razorgrin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25680 (Marsh Caribou), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25682 (Lich-Lord Chillwinter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25686 (Gorloc Gibberer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25687 (Gorloc Steam Belcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25699": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25699 (Gorloc Mud Splasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25701 (Gorloc Dredger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25702": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25702 (Mordle Cogspinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25714 (Tinky Wickwhistle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25715 (Frozen Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25717 (Coldarra Scalesworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25719 (Coldarra Spellbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25721": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25721 (Arcane Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25722": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25722 (Coldarra Spellweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25728 (Coldarra Wyrmkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25752": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25752 (Scavenge-bot 004-A8), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25753": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25753 (Sentry-bot 57-K), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25758": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25758 (Defendo-tank 66D), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25760 (Kvaldir Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25791": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25791 (Oil-stained Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25792 (Scavenge-bot 005-B6), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25797 (Bloodmage Alkor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25807 (Iggy \"Tailspin\" Cogtoggle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25808 (D.E.H.T.A. Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25809 (Arch Druid Lathorius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25810": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25810 (Hierophant Cenius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25811 (Zaza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25825": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25825 (Medic Hawthorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25836": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25836 (Loot Crazed Diver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25838": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25838 (Hierophant Liandra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25839 (Northsea Mercenary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25841 (Fizzcrank Recon Pilot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25843 (Northsea Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25844 (Northsea Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25979 (Loot Crazed Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26073 (High Priest Talet-Kha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26083": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26083 (Gerald Green), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26084 (Jeremiah Hawning), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26085": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26085 (Wendy Darren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26110": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26110 (Librarian Serrah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26117 (Raelorasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26126": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26126 (Bone Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26159": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26159 (Taunka'le Evacuee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26160 (Taunka'le Pack Kodo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26169 (Ataika), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26170": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26170 (Thassarian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26171": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26171 (High Deathpriest Isidorus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26172": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26172 (Slain Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26173 (Tanathal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26174": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26174 (Carrion Condor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26186 (Private Casey), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26187 (Corporal Venn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26189 (Fleeing Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26202 (Ziggurat Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26213 (Utaik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26218": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26218 (Elder Muahit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26219": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26219 (Iruk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26266": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26266 (Heigarr the Horrible), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26449 (Gamel the Cruel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26451 (Ragnar Drakkarlund), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26556": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26556 (Agloolik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26790": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26790 (Taunka'le Longrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26848": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26848 (Kimbiza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27046 (Warmage Adami), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27106": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27106 (Injured Warsong Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27107 (Injured Warsong Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27187 (Caregiver Poallu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27188": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27188 (Tonraq), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27189 (Unu'pe Spearman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28375 (Glrglrglr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29655": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29655 (Malygos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32534 (Scalesworn Elite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32548 (Corastrasza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11560": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11560 (Oh Noes, the Tadpoles!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11561": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11561 (Them!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11592": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11592 (We Strike!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11624": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11624 (The Sky Will Know)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11627": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11627 (Boiling Point)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11650": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11650 (Just a Few More Things...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11659": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11659 (Shatter the Orbs!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11664": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11664 (Escaping the Mist)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11721": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11721 (Gammothra the Tormentor)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11789": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11789 (A Soldier in Need)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11871": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11871 (Not On Our Watch)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11890": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11890 (What Are They Up To?)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11899": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11899 (Souls of the Decursed)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11918": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11918 (Basic Training)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11930": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11930 (Across Transborea)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11944": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11944 (Surrounded!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11968": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11968 (The Tides Turn)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12157": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12157 (The Lost Courier)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13413": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13413 (Aces High!)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

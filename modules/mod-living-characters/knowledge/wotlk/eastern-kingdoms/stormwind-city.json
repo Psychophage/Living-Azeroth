@@ -7333,7 +7333,75 @@
     }
   ],
   "place": "Stormwind City",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1519",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1519",
+        "world:creature:68",
+        "world:creature:1976",
+        "world:creature:482",
+        "world:creature:3581"
+      ],
+      "text": "You are in Stormwind City, Alliance land in the Eastern Kingdoms. Nearly all of its people are Alliance, and city guards and patrollers keep order in the streets. The Defias are a danger here, and an investigation into them is still going on. Sewer beasts are a danger in the city as well.",
+      "when": {
+        "zone_id": 1519
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1617",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1617",
+        "world:creature:14394",
+        "world:creature:14721",
+        "world:creature:20407",
+        "world:creature:466"
+      ],
+      "text": "You are in the Valley of Heroes in Stormwind City. Officers here address the crowd, celebrating the defeat of Onyxia and rallying citizens around their champions. Farseer Umbrua, a shaman trainer, teaches the elements to new allies. High Commander Marcus Jonathan of Stormwind Defense is waiting on the King's answer to a report from Magistrate Solomon seeking reinforcements for besieged Lakeshire.",
+      "when": {
+        "area_id": 1617
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4411",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4411",
+        "world:creature:26548",
+        "world:creature:28650",
+        "world:creature:29287",
+        "world:creature:29288"
+      ],
+      "text": "You are in Stormwind Harbor, part of Stormwind City. Dockmasters Leesha Tannerby and Nayura work this dock. The steam-powered Kraken sails from here to Valiance Keep in Borean Tundra, and The Bravery sails between Stormwind and Auberdine. Captain Paul Carver is associated with The Assurance, and its engineer, Kurtis Paddock, sells goods and repairs equipment.",
+      "when": {
+        "area_id": 4411
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1519 (Stormwind City)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1617": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1617 (Valley of Heroes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4411": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4411 (Stormwind Harbor)",
+      "revision": "3.3.5a client data"
+    },
     "source:007c281f762a5d2e197f938a": {
       "kind": "research",
       "reference": "evidence:sha256:47bb5dc8095b61f6d8fd4da28b562bb756bfb3948854ac309ba6b32ffdec8dc9",
@@ -12098,6 +12166,66 @@
       "kind": "research",
       "reference": "evidence:sha256:dbd77d5a42ee1f675c902ab07b1a7a471c41df93a8dd0adcd81387020f2c9039",
       "revision": "441b1cfed17d13abd9065122df3a4f744f783e4067274b5432166506dc0e5de4"
+    },
+    "world:creature:14394": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14394 (Major Mattingly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14721": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14721 (Field Marshal Afrasiabi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1976 (Stormwind City Patroller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20407 (Farseer Umbrua), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26548 (Leesha Tannerby), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28650 (Nayura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29287 (Captain Paul Carver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29288": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29288 (Engineer Kurtis Paddock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3581": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3581 (Sewer Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 466 (General Marcus Jonathan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:482": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 482 (Elling Trias), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:68": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 68 (Stormwind City Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

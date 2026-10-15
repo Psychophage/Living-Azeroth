@@ -2331,7 +2331,325 @@
     }
   ],
   "place": "Swamp of Sorrows",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:8",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:8",
+        "dbc:area:75",
+        "world:creature:769",
+        "world:creature:766",
+        "world:creature:759",
+        "world:creature:747",
+        "dbc:area:300"
+      ],
+      "text": "You are in the Swamp of Sorrows, a Horde-held swamp in the Eastern Kingdoms. The Horde holds it in places, with Stonard its only settlement, and no Alliance settlement stands here. Deathstrike tarantulas, swamp jaguars and tangled horrors roam the swamp, and the Lost Ones catch or kill those who wander near Fallow Sanctuary. Murlocs strike the coast, and Atal'ai trolls haunt the sunken temple by the Pool of Tears.",
+      "when": {
+        "zone_id": 8
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:74",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:74",
+        "world:quest:1424",
+        "world:creature:5263",
+        "world:creature:5261",
+        "world:creature:14356",
+        "world:creature:862"
+      ],
+      "text": "You are in Pool of Tears, a sunken-temple area of the Swamp of Sorrows. The Atal'ai temple sank here, and Atal'ai trolls, mummified and enthralled, still prowl its shores with sawfin frenzies in the water. A Horde explorer from Stonard is found here too.",
+      "when": {
+        "area_id": 74
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:75",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:75",
+        "world:creature:986",
+        "world:creature:988",
+        "world:creature:17109",
+        "world:creature:7623",
+        "world:creature:7643"
+      ],
+      "text": "You are in Stonard, the Horde's settlement in the Swamp of Sorrows. Haromm trains shamans and Kartosh trains warlocks here. Cersei Dusksinger, an ambitious warlock, experiments on the Lost Ones, while Dispatch Commander Ruag still grieves a regiment ruined when murlocs took its orders. Its inn serves travellers.",
+      "when": {
+        "area_id": 75
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:76",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:76",
+        "world:creature:17113",
+        "world:creature:17112",
+        "world:creature:759",
+        "world:creature:760",
+        "world:creature:763",
+        "world:quest:1389"
+      ],
+      "text": "You are in Fallow Sanctuary, where the Lost Ones keep captured animals as livestock. Their hunters, muckdwellers and a chieftain roam here and catch or kill those who wander near. Cersei Dusksinger plans to curse the captured crocolisk and other animals with fel-tainted food.",
+      "when": {
+        "area_id": 76
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:116",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:116",
+        "world:creature:764",
+        "world:creature:766",
+        "world:creature:765",
+        "world:creature:1081"
+      ],
+      "text": "You are in Misty Valley, part of the Swamp of Sorrows. Swampwalkers, tangled horrors, a swampwalker elder and a mire lord roam here.",
+      "when": {
+        "area_id": 116
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:300",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:300",
+        "world:creature:5593",
+        "world:creature:747",
+        "world:creature:750",
+        "world:creature:752"
+      ],
+      "text": "You are in Misty Reed Strand, a beach on the Swamp of Sorrows coast. Marsh murlocs, inkspewers and oracles come ashore here. Katar, a Horde figure who despises the sea, rewards those who kill its murlocs and sends fighters to Tok'Kar for weapons.",
+      "when": {
+        "area_id": 300
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:657",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:657",
+        "world:creature:1776",
+        "world:creature:17127",
+        "dbc:area:76",
+        "world:quest:1389"
+      ],
+      "text": "You are in The Harborage, a draenei community in the Swamp of Sorrows. Magtoor leads it, and its people fear being crushed by nearby Stonard while the Lost Ones of Fallow Sanctuary hold their stolen draenethyst crystals. Anchorite Avuun, a draenei scholar, studies those Lost Ones in hope of curing them.",
+      "when": {
+        "area_id": 657
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1777",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1777",
+        "world:creature:5353",
+        "world:creature:740",
+        "world:creature:741",
+        "world:creature:767"
+      ],
+      "text": "You are in Itharius's Cave, where Itharius, an elven ally of Ysera's Dragonflight, works to redeem Eranikus, the dragon held within a gem. Adolescent whelps, dreaming whelps and swamp jaguars haunt the cave.",
+      "when": {
+        "area_id": 1777
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1778",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1778",
+        "world:creature:6491",
+        "world:creature:14445",
+        "world:creature:746",
+        "world:creature:745",
+        "world:creature:5263"
+      ],
+      "text": "You are in Sorrowmurk, where a spirit healer offers a return to life for a price, though it may not yet be the traveller's time. Lord Captain Wyrmak, elder dragonkin, Scalebane captains and mummified Atal'ai roam nearby.",
+      "when": {
+        "area_id": 1778
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1780",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1780",
+        "world:creature:6491",
+        "world:creature:861",
+        "world:creature:858"
+      ],
+      "text": "You are in Splinterspear Junction, a crossroads in the Swamp of Sorrows. A spirit healer and a Horde scout from Stonard are here, and sorrow spinners roam the area.",
+      "when": {
+        "area_id": 1780
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1797",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1797",
+        "world:creature:5996",
+        "world:creature:769",
+        "world:creature:750",
+        "world:creature:751",
+        "world:creature:14446"
+      ],
+      "text": "You are in Stagalbog, where an Alliance Nethergarde miner works. Deathstrike tarantulas, marsh inkspewers, marsh flesheaters, marsh oracles and a fingat roam the area.",
+      "when": {
+        "area_id": 1797
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1798",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1798",
+        "world:creature:862",
+        "world:creature:767",
+        "world:creature:14448",
+        "world:creature:858",
+        "world:creature:755"
+      ],
+      "text": "You are in The Shifting Mire, part of the Swamp of Sorrows. Swamp jaguars, molt thorns, sorrow spinners and Lost Ones roam here, and a Horde explorer from Stonard is found here too.",
+      "when": {
+        "area_id": 1798
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1978",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1978",
+        "world:creature:5592",
+        "world:creature:863",
+        "world:creature:868",
+        "world:creature:769"
+      ],
+      "text": "You are in Misty Reed Post, the Horde's coastal camp in the Swamp of Sorrows that guards against murlocs and warns Stonard of threats too large to face. Tok'Kar, who helps run the camp, crafts weapons from sawtooth snapper claws. A Stonard hunter and shaman are here too.",
+      "when": {
+        "area_id": 1978
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2403",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2403",
+        "world:creature:1087",
+        "world:creature:5434",
+        "world:creature:750",
+        "world:creature:751"
+      ],
+      "text": "You are in The Forbidding Sea, the open water of the Swamp of Sorrows. Sawtooth snappers, coral sharks and marsh inkspewers hunt its waters, and marsh flesheaters prowl here too.",
+      "when": {
+        "area_id": 2403
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:116": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 116 (Misty Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1777": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1777 (Itharius's Cave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1778": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1778 (Sorrowmurk)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1780": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1780 (Splinterspear Junction)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1797": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1797 (Stagalbog)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1798": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1798 (The Shifting Mire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1978": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1978 (Misty Reed Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2403": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2403 (The Forbidding Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:300": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 300 (Misty Reed Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:657": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 657 (The Harborage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:74": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 74 (Pool of Tears)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:75": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 75 (Stonard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:76": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 76 (Fallow Sanctuary)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:8": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 8 (Swamp of Sorrows)",
+      "revision": "3.3.5a client data"
+    },
     "source:00207f920e381cc85082b8e8": {
       "kind": "research",
       "reference": "evidence:sha256:270477bd1c2fdb36a96961bbb77b4a9239395002fafa7333ab69bf4e9175875f",
@@ -4011,6 +4329,241 @@
       "kind": "research",
       "reference": "evidence:sha256:033542d1e461928e99c3782ffc10e196b236cb89477f2bdca8ad97bc0efe4a73",
       "revision": "738f178cb653f717bd1f972b72c9556edf4794d2cd5b23878f55da74d6bc538a"
+    },
+    "world:creature:1081": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1081 (Mire Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1087 (Sawtooth Snapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14356 (Sawfin Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14445 (Lord Captain Wyrmak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14446 (Fingat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14448 (Molt Thorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17109 (Cersei Dusksinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17112 (Captured Tarantula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17113 (Captured Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17127 (Anchorite Avuun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1776": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1776 (Magtoor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5261 (Enthralled Atal'ai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5263 (Mummified Atal'ai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5353 (Itharius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5434 (Coral Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5592": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5592 (Tok'Kar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5593": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5593 (Katar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5996": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5996 (Nethergarde Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 740 (Adolescent Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:741": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 741 (Dreaming Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:745": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 745 (Scalebane Captain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 746 (Elder Dragonkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:747": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 747 (Marsh Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 750 (Marsh Inkspewer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:751": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 751 (Marsh Flesheater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:752": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 752 (Marsh Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:755": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 755 (Lost One Mudlurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 759 (Lost One Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 760 (Lost One Muckdweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7623": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7623 (Dispatch Commander Ruag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 763 (Lost One Chieftain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:764": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 764 (Swampwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7643": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7643 (Bengor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 765 (Swampwalker Elder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:766": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 766 (Tangled Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:767": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 767 (Swamp Jaguar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:769": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 769 (Deathstrike Tarantula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 858 (Sorrow Spinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:861": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 861 (Stonard Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:862": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 862 (Stonard Explorer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 863 (Stonard Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:868": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 868 (Stonard Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 986 (Haromm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:988": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 988 (Kartosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1389": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1389 (Draenethyst Crystals)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1424": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1424 (Pool of Tears)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -3268,7 +3268,107 @@
     }
   ],
   "place": "Thunder Bluff",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1638",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1638",
+        "dbc:area:1639",
+        "dbc:area:1640",
+        "dbc:area:1641",
+        "world:creature:2959",
+        "world:creature:2960",
+        "world:creature:3035",
+        "world:creature:3566"
+      ],
+      "text": "You are in Thunder Bluff, Horde land in Mulgore on Kalimdor. Its main settlements are Elder Rise, Spirit Rise and Hunter Rise, and the city has a bank, an inn and a flight master. Prairie stalkers, flatland prowlers, prairie wolves and flatland cougars roam the land around it.",
+      "when": {
+        "zone_id": 1638
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1639",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1639",
+        "world:creature:3033",
+        "world:creature:3034",
+        "world:creature:9087",
+        "world:creature:11833",
+        "world:creature:4046",
+        "world:quest:5723",
+        "world:creature:3566"
+      ],
+      "text": "You are in Elder Rise, the part of Thunder Bluff where druids train and the Cenarion Circle works. Turak and Sheal Runetotem teach druids here, and Bashana Runetotem coordinates the morrowgrain research on the rise. Magatha Grimtotem's servant Rahauro investigates Ragefire Chasm, and Magatha regards the troggs that have come up from beneath Orgrimmar as a threat to the Horde. Flatland prowlers are about.",
+      "when": {
+        "area_id": 1639
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1640",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1640",
+        "world:creature:3030",
+        "world:creature:3031",
+        "world:creature:3032",
+        "world:creature:3045",
+        "world:creature:3419",
+        "world:quest:1065",
+        "world:creature:2965"
+      ],
+      "text": "You are in Spirit Rise, a Horde settlement in Thunder Bluff where shamans and priests train. Siln, Tigor and Beram Skychaser teach shamans, and Malakai Cross teaches priests that aid matters most when it reaches those in need. Apothecary Zamah of the Royal Apothecary Society studies serpentbloom and grieves for the spirits of Stonetalon, which the Venture Company troubles. A windfury matriarch is about.",
+      "when": {
+        "area_id": 1640
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1641",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1641",
+        "world:creature:3039",
+        "world:creature:3441",
+        "world:quest:1131",
+        "world:creature:4943",
+        "world:creature:20499"
+      ],
+      "text": "You are in Hunter Rise, the Horde part of Thunder Bluff where hunters and warriors train. Holt Thunderhorn teaches that beasts, tauren and the Earthmother are bound together, and Melor Stonehoof sends hunters after Steelsnap, a hyena roaming the Thousand Needles. Mosarn, a blacksmith, has apprentices who make arms and armor, and Fizim Blastwrench is an arena battlemaster for the Steamwheedle Fighting Circuit.",
+      "when": {
+        "area_id": 1641
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1638": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1638 (Thunder Bluff)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1639": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1639 (Elder Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1640": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1640 (Spirit Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1641": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1641 (Hunter Rise)",
+      "revision": "3.3.5a client data"
+    },
     "source:0078c1fa44ee5a353b7a9e8c": {
       "kind": "research",
       "reference": "evidence:sha256:610614cffdc11ef9628f2554136d20c654cf292213904c971c2a407eac28e438",
@@ -5813,6 +5913,116 @@
       "kind": "research",
       "reference": "evidence:sha256:0c9d1d466983fa8b2372f48dc4502a8049b04624c47b5f2c21fd48086a3d47e6",
       "revision": "cadbc8a18eeb9dcc4306b906603df4cd5cd7acdaf34d6e01dcb6cd5185da5798"
+    },
+    "world:creature:11833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11833 (Rahauro), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20499": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20499 (Fizim Blastwrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2959 (Prairie Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2960 (Prairie Wolf Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2965": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2965 (Windfury Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3030": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3030 (Siln Skychaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3031": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3031 (Tigor Skychaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3032 (Beram Skychaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3033": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3033 (Turak Runetotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3034 (Sheal Runetotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3035 (Flatland Cougar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3039": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3039 (Holt Thunderhorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3045": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3045 (Malakai Cross), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3419": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3419 (Apothecary Zamah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3441": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3441 (Melor Stonehoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3566 (Flatland Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4046 (Magatha Grimtotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4943": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4943 (Mosarn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9087 (Bashana Runetotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1065": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1065 (Journey to Tarren Mill)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1131": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1131 (Steelsnap)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5723": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5723 (Testing an Enemy's Strength)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

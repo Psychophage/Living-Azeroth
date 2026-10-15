@@ -3038,7 +3038,298 @@
     }
   ],
   "place": "Loch Modan",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:38",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:38",
+        "dbc:area:144",
+        "dbc:area:146",
+        "dbc:area:147",
+        "world:creature:1166",
+        "world:creature:1178",
+        "world:creature:1202",
+        "world:quest:280"
+      ],
+      "text": "You are in Loch Modan, Alliance land in the Eastern Kingdoms. Thelsamar, Stonewrought Dam and the Farstrider Lodge are its main settlements, all kept by the Alliance. Stonesplinter troggs, Mo'grosh ogres and tunnel rat kobolds trouble the land, and Dark Iron insurgents have been seen swimming toward the Dam.",
+      "when": {
+        "zone_id": 38
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:142",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:142",
+        "world:creature:1344",
+        "world:creature:1345",
+        "world:creature:1167",
+        "world:creature:1165"
+      ],
+      "text": "You are in Ironband's Excavation Site, a dig in Loch Modan that Prospector Ironband leads. Magmar Fellhew manages its details and says the carved idols found here drive troggs berserk. Stonesplinter diggers and geomancers haunt the ruins.",
+      "when": {
+        "area_id": 142
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:143",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:143",
+        "world:creature:1178",
+        "world:creature:1179",
+        "world:creature:1181",
+        "world:creature:1183",
+        "world:creature:6241"
+      ],
+      "text": "You are in Mo'grosh Stronghold, a fortress in Loch Modan held by Mo'grosh ogres, with enforcers, brutes, shamans and mystics among them. Bailor Stonehand reports that Mo'grosh ogres ambushed an ore caravan from the Wetlands.",
+      "when": {
+        "area_id": 143
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:144",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:144",
+        "world:creature:1572",
+        "world:creature:1681",
+        "world:creature:1105",
+        "world:creature:1139"
+      ],
+      "text": "You are in Thelsamar, the Alliance town of Loch Modan, with its inn and a gryphon master, Thorgrum Borrelson, who sends travelers onward to Ironforge. Brock Stoneseeker trains miners here, and Jern Hornhelm handles the excavation's reports. Magistrate Bluntnose coordinates the town's defense, since ogre attacks threaten it while it awaits soldiers from Ironforge.",
+      "when": {
+        "area_id": 144
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:146",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:146",
+        "world:creature:1093",
+        "world:quest:280",
+        "world:creature:1169",
+        "world:creature:1193",
+        "world:creature:1202"
+      ],
+      "text": "You are in Stonewrought Dam, an Alliance works in Loch Modan overseen by Chief Engineer Hinderweir VII. Dark Iron insurgents were seen swimming toward the Dam with a large keg. Loch frenzies and tunnel rat kobolds also trouble the area.",
+      "when": {
+        "area_id": 146
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:147",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:147",
+        "world:creature:10930",
+        "world:creature:1154",
+        "world:creature:1187",
+        "world:creature:1194",
+        "world:creature:1188"
+      ],
+      "text": "You are in The Farstrider Lodge, an Alliance hunting lodge in Loch Modan. Dargh Trueaim trains hunters, and Marek Ironheart trades crocolisk meat and skins for them. Daryl the Youngling turns hunting into a contest, and mountain buzzards and grizzled black bears are hunted here.",
+      "when": {
+        "area_id": 147
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:149",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:149",
+        "world:quest:307",
+        "world:creature:1175",
+        "world:creature:1174"
+      ],
+      "text": "You are in Silver Stream Mine, an old Loch Modan mine that ran dry long ago. The Miners' League turned it into a storage depot, but kobolds have moved in, along with tunnel rat diggers and geomancers.",
+      "when": {
+        "area_id": 149
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:556",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:556",
+        "world:creature:1683",
+        "world:creature:1684",
+        "world:creature:1693",
+        "world:creature:1193",
+        "world:creature:1379"
+      ],
+      "text": "You are in The Loch, the lake of Loch Modan. Warg Deepwater trains fishers, and Khara Deepwater sells fishing supplies. Loch crocolisks and loch frenzies make the water dangerous, and Dark Iron ambushes have hit powder shipments bound for the excavation.",
+      "when": {
+        "area_id": 556
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:837",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:837",
+        "world:quest:455",
+        "world:creature:1342"
+      ],
+      "text": "You are in Dun Algaz, a post on the road from Loch Modan to the Wetlands, where Dragonmaw orcs have pushed in from their haven in the Wetlands. Mountaineer Rockgar runs scouting missions through it.",
+      "when": {
+        "area_id": 837
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:923",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:923",
+        "world:creature:1161",
+        "world:creature:1162",
+        "world:creature:1163",
+        "world:creature:1166",
+        "world:creature:4846",
+        "world:creature:2909"
+      ],
+      "text": "You are in Stonesplinter Valley, where Stonesplinter troggs, seers, skullthumpers and scouts are common. Shadowforge diggers work among them, and the dwarf Hammertoe Grez, wounded, is held in Uldaman.",
+      "when": {
+        "area_id": 923
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:924",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:924",
+        "world:quest:237",
+        "world:creature:1092",
+        "world:creature:3836",
+        "world:creature:1089"
+      ],
+      "text": "You are in Valley of Kings, where Alliance mountaineers hold the southern guard tower. Captain Rugelfuss commands a regiment watching Loch Modan's Gate, and Mountaineer Pebblebitty guards the Searing Gorge gate, fiercely protective of her authority over access. Stonesplinter troggs and scouts press on the defenders.",
+      "when": {
+        "area_id": 924
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:925",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:925",
+        "world:creature:1343",
+        "world:quest:307"
+      ],
+      "text": "You are in Algaz Station, the Alliance post at Loch Modan's northern guard tower. Mountaineer Stormpike keeps watch there, and the Miners' League's gear still lies in the kobold-held Silver Stream Mine.",
+      "when": {
+        "area_id": 925
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:936",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:936",
+        "world:creature:1188",
+        "world:creature:1189",
+        "world:creature:1225"
+      ],
+      "text": "You are in Grizzlepaw Ridge, a rise in Loch Modan. Grizzled black bears and Black Bear Patriarchs roam it, and a bear called Ol' Sooty is known here.",
+      "when": {
+        "area_id": 936
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:142": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 142 (Ironband's Excavation Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:143": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 143 (Mo'grosh Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:144": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 144 (Thelsamar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:146": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 146 (Stonewrought Dam)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:147": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 147 (The Farstrider Lodge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:149": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 149 (Silver Stream Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:38": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 38 (Loch Modan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:556": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 556 (The Loch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:837": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 837 (Dun Algaz)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:923": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 923 (Stonesplinter Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:924": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 924 (Valley of Kings)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:925": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 925 (Algaz Station)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:936": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 936 (Grizzlepaw Ridge)",
+      "revision": "3.3.5a client data"
+    },
     "source:001367eda319ca741e9e8cd1": {
       "kind": "research",
       "reference": "evidence:sha256:55a62e4c7da1704bc9d69e8c0028373924e7a67329d7b5fdf4c903b1768b7173",
@@ -5433,6 +5724,231 @@
       "kind": "research",
       "reference": "evidence:sha256:95fc5ddd78a5e3529c22529934a5a0a86bf9818fbfb659fb3f2ad6c8b0151a37",
       "revision": "a7043b74acf68e5f6394da185bd19a1079de0d48fc9841c67eb52a2874236669"
+    },
+    "world:creature:1089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1089 (Mountaineer Cobbleflint), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1092": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1092 (Captain Rugelfuss), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1093 (Chief Engineer Hinderweir VII), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10930": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10930 (Dargh Trueaim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1105": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1105 (Jern Hornhelm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1139": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1139 (Magistrate Bluntnose), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1154 (Marek Ironheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1161 (Stonesplinter Trogg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1162": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1162 (Stonesplinter Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1163": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1163 (Stonesplinter Skullthumper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1165": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1165 (Stonesplinter Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1166": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1166 (Stonesplinter Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1167": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1167 (Stonesplinter Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1169 (Dark Iron Insurgent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1174": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1174 (Tunnel Rat Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1175": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1175 (Tunnel Rat Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1178": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1178 (Mo'grosh Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1179 (Mo'grosh Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1181 (Mo'grosh Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1183": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1183 (Mo'grosh Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1187": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1187 (Daryl the Youngling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1188": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1188 (Grizzled Black Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1189 (Black Bear Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1193": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1193 (Loch Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1194 (Mountain Buzzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1202 (Tunnel Rat Kobold), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1225": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1225 (Ol' Sooty), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1342 (Mountaineer Rockgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1343 (Mountaineer Stormpike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1344 (Prospector Ironband), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1345 (Magmar Fellhew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1379 (Miran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1572": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1572 (Thorgrum Borrelson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1681 (Brock Stoneseeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1683": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1683 (Warg Deepwater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1684 (Khara Deepwater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1693 (Loch Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2909": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2909 (Hammertoe Grez), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3836": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3836 (Mountaineer Pebblebitty), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4846 (Shadowforge Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6241": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6241 (Bailor Stonehand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:237": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 237 (In Defense of the King's Lands)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:280": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 280 (A Dark Threat Looms)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:307": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 307 (Filthy Paws)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:455": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 455 (The Algaz Gauntlet)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

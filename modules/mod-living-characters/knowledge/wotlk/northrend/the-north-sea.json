@@ -1,0 +1,37 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 571,
+  "npcs": [],
+  "place": "The North Sea",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4258",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4258",
+        "world:creature:24566"
+      ],
+      "text": "You are in The North Sea, open water in Northrend that is held by neither the Alliance nor the Horde. No settlement here answers to either side. Nerub'ar skitterers are the danger known in these waters.",
+      "when": {
+        "zone_id": 4258
+      }
+    }
+  ],
+  "sources": {
+    "dbc:area:4258": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4258 (The North Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "world:creature:24566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24566 (Nerub'ar Skitterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    }
+  },
+  "version": 1,
+  "zone": 4258
+}

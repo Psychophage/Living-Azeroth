@@ -3935,7 +3935,581 @@
     }
   ],
   "place": "Eversong Woods",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3430",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3430",
+        "dbc:area:3431",
+        "dbc:area:3462",
+        "dbc:area:3464",
+        "world:creature:15651",
+        "world:creature:15920",
+        "world:quest:9358",
+        "world:quest:8476"
+      ],
+      "text": "You are in Eversong Woods, Horde land in the Eastern Kingdoms. Its main settlements are Sunstrider Isle, Fairbreeze Village and Farstrider Retreat, all held by the Horde. Springpaw stalkers roam the woods, Grimscale murlocs haunt the shore, and Scourge undead press in from the east while Amani trolls raid from the southeast.",
+      "when": {
+        "zone_id": 3430
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3431",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3431",
+        "world:creature:15279",
+        "world:creature:15283",
+        "world:creature:15284",
+        "world:creature:15285",
+        "world:creature:15278",
+        "world:creature:15281",
+        "world:creature:15296"
+      ],
+      "text": "You are in Sunstrider Isle, a Horde settlement in Eversong Woods. The Sunspire houses the mage, warlock, priest and rogue trainers, and Magistrix Erona directs the recovery after the Scourge invasion disrupted the Burning Crystals. Since the Sunwell's destruction, its tenders have grown aggressive.",
+      "when": {
+        "area_id": 3431
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3460",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3460",
+        "world:creature:15668",
+        "world:creature:15937",
+        "world:quest:8885"
+      ],
+      "text": "You are in Golden Strand, a stretch of coast in Eversong Woods south of the river inlet. Grimscale murlocs are the main trouble here, and their chieftain Mmmrrrggglll wanders the shore wearing a slain companion's ring.",
+      "when": {
+        "area_id": 3460
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3461",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3461",
+        "world:creature:15939",
+        "world:quest:8892",
+        "world:creature:16162",
+        "world:creature:15645",
+        "world:creature:16294"
+      ],
+      "text": "You are in Sunsail Anchorage, a shipyard on the coast west of Fairbreeze Village. The Wretched have taken it, and Wretched hooligans and thugs hold it under their leader, Aldaron the Reckless.",
+      "when": {
+        "area_id": 3461
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3462",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3462",
+        "world:creature:15397",
+        "world:creature:15942",
+        "world:quest:9358",
+        "world:quest:8892"
+      ],
+      "text": "You are in Fairbreeze Village, a Horde village in Eversong Woods. Silvermoon has largely given up on it, but its people refuse to leave, and Marniel Amberlight keeps its inn. Ranger Sareyn helps hold it against Scourge attacks coming through the Dead Scar to the east, while Wretched raiders press in from the west.",
+      "when": {
+        "area_id": 3462
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3464",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3464",
+        "world:quest:9359",
+        "world:creature:15399",
+        "world:creature:15400",
+        "world:creature:15951",
+        "world:creature:16263",
+        "world:quest:8476"
+      ],
+      "text": "You are in Farstrider Retreat, a Farstrider post in Eversong Woods northeast of Fairbreeze Village. Lieutenant Dawnrunner leads its rangers against Amani raids, and the smith Arathel Sunforge works here. Magister Duskwither, who evacuated the Duskwither Spire, is among its people, and the bowyer Paelarin sells supplies for hunting trolls.",
+      "when": {
+        "area_id": 3464
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3465",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3465",
+        "world:creature:15405",
+        "world:creature:18947",
+        "world:creature:15635",
+        "world:creature:15651"
+      ],
+      "text": "You are in North Sanctum, one of the arcane sanctums of Eversong Woods, which draw steady energy from ley-line currents since the Sunwell's destruction. Ley-Keeper Caidanis maintains it, and the bag seller Solanin sells her wares nearby. Tenders and springpaw stalkers are a danger here.",
+      "when": {
+        "area_id": 3465
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3466",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3466",
+        "world:creature:15401",
+        "world:quest:8486",
+        "world:creature:15648",
+        "world:creature:15647",
+        "world:creature:15968"
+      ],
+      "text": "You are in West Sanctum, an arcane sanctum in Eversong Woods where Ley-Keeper Velania keeps the energy running. A destroyed energy converter lets arcane wraiths and mana stalkers pour out of the sanctum. A Darnassian scout, a night elf, is among the suspicious intruders reported near it.",
+      "when": {
+        "area_id": 3466
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3467",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3467",
+        "world:creature:15402",
+        "world:quest:8487",
+        "world:creature:15658",
+        "world:creature:15656"
+      ],
+      "text": "You are in East Sanctum, an arcane sanctum in Eversong Woods that the Scourge overran on its way to Silvermoon. Its soil is tainted and draws undead, and Apprentice Mirveda concludes the taint cannot be reversed. Rotlimb marauders and angershades roam the site.",
+      "when": {
+        "area_id": 3467
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3468",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3468",
+        "world:creature:16144",
+        "world:creature:16160",
+        "world:creature:16161",
+        "world:creature:16366",
+        "world:creature:16367",
+        "world:quest:9067"
+      ],
+      "text": "You are in Saltheril's Haven, a country home in Eversong Woods where Lord Saltheril hosts parties to celebrate Quel'Thalas. He frets over the wine, food and fireworks, and he is absent-minded about his guests. Trainers of enchanting, alchemy, tailoring and herbalism work here.",
+      "when": {
+        "area_id": 3468
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3469",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3469",
+        "world:creature:16264",
+        "world:creature:16280"
+      ],
+      "text": "You are in Thuron's Livery, a stable in Silvermoon. Winaestra breeds and sells hawkstriders and warns that an angry one is dangerous, and Perascamin teaches hawkstrider riding but may require exalted standing with the blood elves first.",
+      "when": {
+        "area_id": 3469
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3470",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3470",
+        "world:creature:15970",
+        "world:creature:15941",
+        "world:creature:15945",
+        "world:quest:9066",
+        "world:quest:9402"
+      ],
+      "text": "You are in Stillwhisper Pond, a spot in Eversong Woods where Instructor Antheol teaches. The sharp-tongued teacher disciplines his apprentices Ralen and Meledor, and he has visitors diving for an azure phial at the bottom of the pond.",
+      "when": {
+        "area_id": 3470
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3471",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3471",
+        "world:creature:15636",
+        "world:quest:9404"
+      ],
+      "text": "You are in The Living Wood, a wooded area of Eversong Woods. Eversong green keepers, gnarled walking trees infused with primal magic, are common here and hostile to visitors.",
+      "when": {
+        "area_id": 3471
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3474",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3474",
+        "world:quest:8473",
+        "world:creature:15637",
+        "world:creature:15650"
+      ],
+      "text": "You are in The Scorched Grove, a stretch of Eversong Woods that the Horde burned to slow the Scourge. The treants who were once Horde allies are trying to regrow it, and Withered Green Keepers haunt the grove. A crazed dragonhawk roams the area too.",
+      "when": {
+        "area_id": 3474
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3475",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3475",
+        "world:creature:15641",
+        "world:creature:15643",
+        "world:creature:15642",
+        "world:creature:15407",
+        "world:quest:8479"
+      ],
+      "text": "You are in Zeb'Watha, an Amani camp across Lake Elrendar from Tor'Watha. Amani axe throwers, berserkers and shadowpriests fill it, and its chieftain, Zul'Marosh, is found there. A crazed dragonhawk roams the area too.",
+      "when": {
+        "area_id": 3475
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3476",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3476",
+        "world:creature:15406",
+        "world:creature:15642",
+        "world:quest:8479",
+        "world:creature:15650"
+      ],
+      "text": "You are in Tor'Watha, an Amani camp across Lake Elrendar from Zeb'Watha. Amani shadowpriests and berserkers keep it, and a Darkspear troll named Ven'jashi is held in a cage here. He says Chieftain Zul'Marosh poisoned him and burned his village, and he will not die in peace until Zul'Marosh is dead. A crazed dragonhawk roams the area too.",
+      "when": {
+        "area_id": 3476
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3480",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3480",
+        "world:creature:15969",
+        "world:creature:15966",
+        "world:creature:15967",
+        "world:quest:8894"
+      ],
+      "text": "You are in Duskwither Grounds, a Horde-kept stretch of Eversong Woods where strange things have happened in the spire since the magister and his apprentices ran off. Mana serpents and ether fiends overran the grounds afterward, and Groundskeeper Wyllithen complains that they abandoned him without warning.",
+      "when": {
+        "area_id": 3480
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3482",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3482",
+        "world:quest:8475",
+        "world:creature:15416",
+        "world:creature:15658",
+        "world:creature:15654",
+        "world:creature:16678"
+      ],
+      "text": "You are in The Dead Scar, a black swath of soil cutting through Eversong Woods. Ranger Jaela helps defend it against Scourge advancing toward Silvermoon, and Rotlimb marauders, plaguebone pillagers and Darkwraiths are the dangers on the ground. Rahein, a blade vendor, also does repairs.",
+      "when": {
+        "area_id": 3482
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3531",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3531",
+        "world:creature:15644",
+        "world:creature:15638"
+      ],
+      "text": "You are in Skulking Row, a part of Eversong Woods. Wretched urchins and arcane patrollers are its main dangers.",
+      "when": {
+        "area_id": 3531
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3532",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3532",
+        "world:creature:15301",
+        "world:quest:9704",
+        "world:creature:15644",
+        "world:creature:15371"
+      ],
+      "text": "You are in Dawning Lane, a Horde-kept lane in Eversong Woods where outrunners carry goods between Sunstrider Isle and Falconwing Square. Outrunner Alarion helps shuttle those goods, and she mourns the outrunners the Wretched have killed on the way. Wretched urchins make the route dangerous, and Sunstrider Guardians keep passersby moving along.",
+      "when": {
+        "area_id": 3532
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3533",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3533",
+        "world:quest:8472",
+        "world:creature:15638",
+        "world:creature:15644",
+        "world:creature:15949",
+        "world:quest:9704"
+      ],
+      "text": "You are in the Ruins of Silvermoon, where arcane patrollers built to guard the city now attack on sight. Wretched urchins swarm the ruins as well, and Thaelis the Hungerer is among the dangers here.",
+      "when": {
+        "area_id": 3533
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3534",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3534",
+        "world:creature:15644",
+        "world:creature:15638"
+      ],
+      "text": "You are in Feth's Way, a part of Eversong Woods. Wretched urchins and arcane patrollers roam it, and they are the main dangers.",
+      "when": {
+        "area_id": 3534
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3665",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3665",
+        "world:creature:15403",
+        "world:quest:8463"
+      ],
+      "text": "You are in Falconwing Square, a Horde town in Eversong Woods. Captain Aeldon Sunbrand commands the Blood Hawks here and warns that Wretched have raided supplies of unstable mana crystals that could blast the city walls. Its inn, trainers and stables serve travelers.",
+      "when": {
+        "area_id": 3665
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3911",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3911",
+        "world:creature:15670",
+        "world:creature:15650",
+        "world:creature:33712"
+      ],
+      "text": "You are in Tranquil Shore, a shoreline stretch of Eversong Woods. Grimscale foragers are its main danger, and a crazed dragonhawk and Golden Crawlers roam the area.",
+      "when": {
+        "area_id": 3911
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3912",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3912",
+        "world:creature:15398",
+        "world:quest:8473",
+        "world:creature:15650"
+      ],
+      "text": "You are in Goldenbough Pass, a Horde-kept pass in Eversong Woods. Larianna Riverwind watches over the Scorched Grove, and she describes burning the border woods to slow the Scourge, a choice that set her people against treants who had been their allies. A crazed dragonhawk roams the pass too.",
+      "when": {
+        "area_id": 3912
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3913",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3913",
+        "world:creature:16362",
+        "world:creature:15650"
+      ],
+      "text": "You are in Runestone Falithas, in Eversong Woods, Horde land in the Eastern Kingdoms. Runewarden Deryan keeps watch here over the protective runestones along the Ghostlands border, and Scourge attacks on them are ongoing. A crazed dragonhawk roams the woods and attacks intruders.",
+      "when": {
+        "area_id": 3913
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3430": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3430 (Eversong Woods)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3431": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3431 (Sunstrider Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3460": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3460 (Golden Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3461": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3461 (Sunsail Anchorage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3462": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3462 (Fairbreeze Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3464": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3464 (Farstrider Retreat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3465": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3465 (North Sanctum)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3466": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3466 (West Sanctum)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3467": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3467 (East Sanctum)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3468": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3468 (Saltheril's Haven)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3469": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3469 (Thuron's Livery)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3470": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3470 (Stillwhisper Pond)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3471": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3471 (The Living Wood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3474": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3474 (The Scorched Grove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3475": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3475 (Zeb'Watha)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3476": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3476 (Tor'Watha)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3480": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3480 (Duskwither Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3482": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3482 (The Dead Scar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3531": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3531 (Skulking Row)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3532": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3532 (Dawning Lane)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3533": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3533 (Ruins of Silvermoon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3534": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3534 (Feth's Way)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3665": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3665 (Falconwing Square)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3911": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3911 (Tranquil Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3912": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3912 (Goldenbough Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3913": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3913 (Runestone Falithas)",
+      "revision": "3.3.5a client data"
+    },
     "source:01d50876588d0ef12bcf236c": {
       "kind": "research",
       "reference": "evidence:sha256:9662c2a3a7608f6df756bc96de545bfeb2bbc12064921799e8cdfc6e14b3b9b3",
@@ -7225,6 +7799,421 @@
       "kind": "research",
       "reference": "evidence:sha256:fc3af795d1aeaa28ee07ae71bdcd381970916b85e37c89acb3c656be1f8eb9b3",
       "revision": "c34035404b18ca68788c46413a08ffa6eea116e33e75cb795ee05d61a2122064"
+    },
+    "world:creature:15278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15278 (Magistrix Erona), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15279 (Julia Sunstriker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15281": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15281 (Lanthan Perilon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15283 (Summoner Teli'Larien), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15284 (Matron Arena), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15285 (Pathstalker Kariel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15296": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15296 (Arcanist Ithanas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15301": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15301 (Outrunner Alarion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15371 (Sunstrider Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15397 (Marniel Amberlight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15398": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15398 (Larianna Riverwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15399 (Lieutenant Dawnrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15400": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15400 (Arathel Sunforge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15401 (Ley-Keeper Velania), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15402 (Apprentice Mirveda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15403": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15403 (Aeldon Sunbrand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15405 (Ley-Keeper Caidanis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15406": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15406 (Ven'jashi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15407 (Chieftain Zul'Marosh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15416 (Ranger Jaela), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15635 (Eversong Tender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15636 (Eversong Green Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15637 (Withered Green Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15638": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15638 (Arcane Patroller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15641 (Amani Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15642 (Amani Shadowpriest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15643": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15643 (Amani Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15644 (Wretched Urchin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15645": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15645 (Wretched Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15647 (Mana Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15648": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15648 (Manawraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15650 (Crazed Dragonhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15651 (Springpaw Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15654": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15654 (Plaguebone Pillager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15656 (Angershade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15658": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15658 (Rotlimb Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15668 (Grimscale Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15670": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15670 (Grimscale Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15920 (Hathvelion Sungaze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15937 (Mmmrrrggglll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15939 (Ranger Degolien), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15941 (Apprentice Ralen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15942": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15942 (Ranger Sareyn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15945": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15945 (Apprentice Meledor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15949": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15949 (Thaelis the Hungerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15951": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15951 (Magister Duskwither), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15966": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15966 (Mana Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15967": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15967 (Ether Fiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15968": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15968 (Darnassian Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15969": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15969 (Groundskeeper Wyllithen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15970": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15970 (Instructor Antheol), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16144 (Lord Saltheril), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16160 (Magistrix Eredania), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16161 (Arcanist Sheynathren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16162": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16162 (Wretched Hooligan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16263 (Paelarin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16264": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16264 (Winaestra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16280 (Perascamin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16294": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16294 (Aldaron the Reckless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16362": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16362 (Runewarden Deryan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16366 (Sempstress Ambershine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16367": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16367 (Botanist Tyniarrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16678 (Rahein), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18947 (Solanin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33712 (Golden Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8463": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8463 (Unstable Mana Crystals)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8472": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8472 (Major Malfunction)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8473": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8473 (A Somber Task)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8475": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8475 (The Dead Scar)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8476": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8476 (Amani Encroachment)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8479": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8479 (Zul'Marosh)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8486": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8486 (Arcane Instability)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8487": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8487 (Corrupted Soil)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8885": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8885 (The Ring of Mmmrrrggglll)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8892": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8892 (Situation at Sunsail Anchorage)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8894": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8894 (Cleaning up the Grounds)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9066": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9066 (Swift Discipline)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9067": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9067 (The Party Never Ends)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9358": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9358 (Ranger Sareyn)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9359": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9359 (Farstrider Retreat)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9402": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9402 (Fetch!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9404": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9404 (Recently Living)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9704": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9704 (Slain by the Wretched)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

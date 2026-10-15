@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""NPC summaries: check them, look one up, and build the game's knowledge packs from them.
+"""NPC and place summaries: check them, look one up, and build the game's knowledge packs from them.
 
-The summaries live in knowledge/wotlk/, one file per place (eastern-kingdoms/elwynn-forest.json, ...).
+The summaries live in knowledge/wotlk/, one file per place (eastern-kingdoms/elwynn-forest.json, ...): the
+place's own records (`place_records`: the zone, and its towns and landmarks by area) and its NPCs.
 NPCs with no fixed spawn are filed by ID under no-fixed-place/; NPCs deliberately left without a
 summary are listed in without-summary.json. This tool contacts no database, model or realm.
 """
@@ -55,11 +56,10 @@ def write(path, value):
     path.write_bytes(encoded(value, pretty=True))
 
 
-def check_record(record, entry, sources, seen, where):
+def check_record(record, about, sources, seen, where):
     require(record["id"] not in seen, f"{where}: record {record['id']} appears twice")
     seen.add(record["id"])
-    require(record["layer"] == "npc" and record["when"].get("entry") == entry,
-            f"{where}: record {record['id']} is not about NPC {entry}")
+    require(about(record), f"{where}: record {record['id']} is not about what its place in the file says")
     require(1 <= len(record["sources"]) <= 8 and all(s in sources for s in record["sources"]),
             f"{where}: record {record['id']} cites a source the file does not list")
     text = record["text"]
@@ -72,7 +72,7 @@ def check_record(record, entry, sources, seen, where):
 def load(root):
     """Every place file and the without-summary list, checked. Returns (places, without)."""
     root = Path(root)
-    places, entries, records = {}, {}, set()
+    places, entries, records, described = {}, {}, set(), {}
     for path in sorted(root.rglob("*.json")):
         relative = path.relative_to(root).as_posix()
         if relative == WITHOUT:
@@ -87,6 +87,14 @@ def load(root):
             require(isinstance(source["revision"], str) and 0 < len(source["revision"].encode()) <= 120,
                     f"{relative}: source {key} revision")
         cited = set()
+        # The place itself: one zone record for the file's zone, and records for areas, each area once.
+        for record in document.get("place_records", []):
+            check_record(record, lambda r: (r["layer"] == "zone" and r["when"] == {"zone_id": document.get("zone")}) or
+                         (r["layer"] == "location" and set(r["when"]) == {"area_id"}), sources, records, relative)
+            key = ("zone", record["when"]["zone_id"]) if record["layer"] == "zone" else ("area", record["when"]["area_id"])
+            require(key not in described, f"{relative}: {key[0]} {key[1]} is also described in {described.get(key)}")
+            described[key] = relative
+            cited.update(record["sources"])
         for npc in document["npcs"]:
             entry = npc["entry"]
             require(type(entry) is int and entry > 0, f"{relative}: invalid NPC entry {entry!r}")
@@ -94,7 +102,8 @@ def load(root):
             entries[entry] = relative
             require(npc["records"], f"{relative}: NPC {entry} has no summary (list it in {WITHOUT} instead)")
             for record in npc["records"]:
-                check_record(record, entry, sources, records, relative)
+                check_record(record, lambda r: r["layer"] == "npc" and r["when"].get("entry") == entry,
+                             sources, records, relative)
                 cited.update(record["sources"])
         require(set(sources) == cited, f"{relative}: lists sources no summary cites: {sorted(set(sources) - cited)[:3]}")
         places[relative] = document
@@ -145,7 +154,7 @@ def build(root, output, replace=False, supplements=()):
 
     try:
         for relative, place in sorted(places.items()):
-            records = [record for npc in place["npcs"] for record in npc["records"]]
+            records = place.get("place_records", []) + [record for npc in place["npcs"] for record in npc["records"]]
             record_ids.update(record["id"] for record in records)
             add(relative, {"version": 1, "era": place["era"], "records": records, "sources": place["sources"],
                            "groups": []})
@@ -183,6 +192,12 @@ def show(root, query, out=sys.stdout):
     needle = query.lower()
     found = 0
     for relative, place in sorted(places.items()):
+        if place.get("place_records") and needle in place["place"].lower():
+            found += 1
+            out.write(f"\n{place['place']}   ({relative})\n")
+            for record in place["place_records"]:
+                out.write(textwrap.fill(record["text"], 100, initial_indent="  • ", subsequent_indent="    ") + "\n")
+                out.write(f"    {record['layer']} · {', '.join(f'{k} {v}' for k, v in record['when'].items())}\n")
         for npc in place["npcs"]:
             if npc["entry"] != number and (number is not None or needle not in npc["name"].lower()):
                 continue
@@ -214,7 +229,8 @@ def main():
                         help="the summaries folder (default: this module's knowledge/wotlk)")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("check", help="check every summary file")
-    lookup = commands.add_parser("show", help="an NPC's summary, by entry number or part of its name")
+    lookup = commands.add_parser("show", help="an NPC's summary by entry number or part of its name, "
+                                               "or a zone's place records by its name")
     lookup.add_argument("query")
     builder = commands.add_parser("build", help="build the game's knowledge packs")
     builder.add_argument("--output", type=Path, required=True)

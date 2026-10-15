@@ -11750,7 +11750,1100 @@
     }
   ],
   "place": "Howling Fjord",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:495",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:495",
+        "dbc:area:3981",
+        "dbc:area:3998",
+        "dbc:area:3991",
+        "dbc:area:4000",
+        "dbc:area:4018",
+        "dbc:area:3988",
+        "world:creature:23652"
+      ],
+      "text": "You are in Howling Fjord, a cold, contested land in Northrend. The Alliance holds Valgarde and Westguard Keep, the Horde holds New Agamand, Vengeance Landing and Camp Winterhoof, and the tuskarr of Kamagua belong to neither side. Dragonflayer vrykul are the main danger, and Northsea pirates work out of Scalawag Point.",
+      "when": {
+        "zone_id": 495
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3980",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3980",
+        "world:creature:23730",
+        "world:creature:26547",
+        "world:creature:23785",
+        "world:creature:23557"
+      ],
+      "text": "You are in Daggercap Bay, a bay of shipwrecks on the Howling Fjord coast. Alliance salvagers search the wrecks for Valgarde's lost supplies, with Harold Lagras working the bottom of the bay. Dockmaster Basil Crowe sends the Northspear, a steam icebreaker, from here to Menethil Harbor, and Daggercap hammerheads and Dragonflayer raiders trouble the water.",
+      "when": {
+        "area_id": 3980
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3981",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3981",
+        "world:creature:23546",
+        "world:creature:26905",
+        "world:creature:26914",
+        "world:creature:26915",
+        "world:creature:23975"
+      ],
+      "text": "You are in Valgarde, the Alliance port in Howling Fjord. Vice Admiral Keller holds it as the Alliance's supply line into Northrend, and he presses for help against the Dragonflayer attackers and for the rescue of captured townsfolk. Cooks, tailors and jewelcrafters teach their crafts here, and Thoralius the Wise, too old to travel, sends others into the spirit world.",
+      "when": {
+        "area_id": 3981
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3982",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3982",
+        "world:creature:24106",
+        "world:creature:24111",
+        "world:creature:23660",
+        "world:creature:24250",
+        "world:creature:24077"
+      ],
+      "text": "You are in Wyrmskull Village, a ruin in Howling Fjord that the vrykul have taken over. Scout Valory and Defender Mordun hold what remains of the Valgarde guard against Dragonflayer thanes, fleshrippers and val'kyr watchers. Captured Valgarde citizens are still held in cages nearby.",
+      "when": {
+        "area_id": 3982
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3984",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3984",
+        "world:creature:23654",
+        "world:creature:23656",
+        "world:creature:23994",
+        "world:creature:32573"
+      ],
+      "text": "You are in Nifflevar, a vrykul village on the bluffs above Howling Fjord. Dragonflayer warriors, rune-seers and hunting hounds, along with the Ancient Citizens of Nifflevar, are the dangers here. A Valgarde captive suffers under a Dragonflayer rune-seer.",
+      "when": {
+        "area_id": 3984
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3987",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3987",
+        "world:creature:24673",
+        "world:creature:24677",
+        "world:creature:24790"
+      ],
+      "text": "You are in the Isle of Spears, a wild island off Howling Fjord. Frostwing chimaeras and spearfang worgs roam it, and the restless dead of Northsea pirates linger here, including the ghost of Black Conrad.",
+      "when": {
+        "area_id": 3987
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3988",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3988",
+        "world:creature:24755",
+        "world:creature:24810",
+        "world:quest:11458",
+        "world:quest:11472"
+      ],
+      "text": "You are in Kamagua, a tuskarr village in Howling Fjord that belongs to neither side. Elder Atuik leads the Kalu'ak here, and he is arming his people against the Northsea slavers who raided Iskaal. Anuniaq worries that pirates killed the alpha sea lion, Big Roy, and the sea lions will not mate.",
+      "when": {
+        "area_id": 3988
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3989",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3989",
+        "world:creature:24956",
+        "world:creature:24637",
+        "world:creature:5936",
+        "world:creature:24742",
+        "world:creature:24633"
+      ],
+      "text": "You are in Garvan's Reef, a reef in the waters off Howling Fjord. Great reef sharks and orcas prowl the water, rabid brown bears roam the shore, and a pirate called Mad Jonah Sterling is among the trouble. Juniper books passage aboard the Sister Mercy.",
+      "when": {
+        "area_id": 3989
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3990",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3990",
+        "world:creature:24639",
+        "world:creature:24788",
+        "world:creature:24642",
+        "world:creature:24714"
+      ],
+      "text": "You are in Scalawag Point, a pirate port in Howling Fjord run by the Northsea Freebooters. Olga the wench serves rum and ale, and Jack Adams is a hard-drinking pirate who runs up a tab. Drunken Northsea pirates, duelists and buccaneers are the dangers here.",
+      "when": {
+        "area_id": 3990
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3991",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3991",
+        "world:creature:24251",
+        "world:creature:24157",
+        "world:creature:24155"
+      ],
+      "text": "You are in New Agamand, a Horde outpost in Howling Fjord where the Royal Apothecary Society works on plague. Chief Plaguebringer Harris tests strains adapted to the vrykul, and Plaguebringer Tillinghast experiments on proto-whelps and proto-drakes. Tobias Sarkhoff, a bat handler, offers flights from here.",
+      "when": {
+        "area_id": 3991
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3992",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3992",
+        "world:creature:23804",
+        "world:quest:11504"
+      ],
+      "text": "You are in the Ancient Lift, a gondola that carries travelers to Kamagua. Orfus of Kamagua waits here, having come to investigate the dead rising near Shield Hill, and he warns travelers away from the danger.",
+      "when": {
+        "area_id": 3992
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3994",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3994",
+        "world:quest:11305",
+        "world:creature:23564",
+        "world:creature:24199",
+        "world:creature:24198",
+        "world:creature:23680"
+      ],
+      "text": "You are in Halgrind, a vrykul village in Howling Fjord that the Horde has spent weeks spraying with plague. Plagued dragonflayer tribesmen, handlers and rune-casters are the dangers here, and a plagued proto-dragon has been seen.",
+      "when": {
+        "area_id": 3994
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3996",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3996",
+        "world:creature:23672",
+        "world:creature:24271",
+        "world:creature:23675",
+        "world:creature:24340"
+      ],
+      "text": "You are in Baelgun's Excavation Site, an old dig in Howling Fjord. Iron rune workers, golems, runemasters and steelguards are the dangers here, and a rampaging earth elemental roams the site.",
+      "when": {
+        "area_id": 3996
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3997",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3997",
+        "world:creature:24717",
+        "world:creature:24807",
+        "world:creature:24750",
+        "world:quest:11474"
+      ],
+      "text": "You are in the Explorers' League Outpost, an Alliance camp in Howling Fjord. Stanwad, a cryptographer, and Walt, an engineer building an Iron Rune Construct to fool the iron dwarves at Baelgun's, both work here, and Hidalgo the Master Falconer trains birds of prey and hunts with them. Iron dwarves are trying to bury the digs around here.",
+      "when": {
+        "area_id": 3997
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3998",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3998",
+        "world:creature:23749",
+        "world:creature:23859",
+        "world:creature:23770",
+        "world:creature:26663",
+        "world:creature:24076",
+        "world:creature:23967"
+      ],
+      "text": "You are in Westguard Keep, an Alliance stronghold in Howling Fjord with a flight master, an inn and a stable master. Captain Adams coordinates its response to the vrykul, and Greer Orehammer runs the gryphon flights that carry urgent Alliance news. Cannoneer Ely is short of the cannonballs the keep's guns need. Winterskorn hunters, worgs and deranged explorers roam outside.",
+      "when": {
+        "area_id": 3998
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3999",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3999",
+        "world:creature:23891",
+        "world:creature:24399",
+        "world:creature:24209",
+        "world:creature:24473"
+      ],
+      "text": "You are in Steel Gate, a dig in Howling Fjord where Alliance explorers work beside a small Horde Winterhoof hunting party. Overseer Irena Stonemantle leads the Explorers' League here, and the chief archaeologist sends pilots out in flying machines to haul relics and patrol the site. Gargoyles attack the dig, and worsening trouble in Rivenwood may force the explorers home before the work is done.",
+      "when": {
+        "area_id": 3999
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4000",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4000",
+        "world:creature:23780",
+        "world:creature:24126",
+        "world:creature:23938"
+      ],
+      "text": "You are in Vengeance Landing, a Horde outpost in Howling Fjord with a flight master and an inn. High Executor Anselm, a Forsaken commander, leads the campaign against Arthas here and treats the Alliance as an obstacle. Apothecary Lysander is researching a plague, and Pontius keeps plaguehounds for scouting.",
+      "when": {
+        "area_id": 4000
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4001",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4001",
+        "world:creature:23655",
+        "world:creature:23657",
+        "world:creature:23653",
+        "world:creature:24238"
+      ],
+      "text": "You are in Baleheim, a place in Howling Fjord where Winterskorn bonegrinders, skalds and spearmen roam. Bjorn Halgurdsson is also here.",
+      "when": {
+        "area_id": 4001
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4002",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4002",
+        "world:creature:23664",
+        "world:creature:23663",
+        "world:creature:23661",
+        "world:creature:23667",
+        "world:creature:23662",
+        "world:creature:23665"
+      ],
+      "text": "You are in Skorn, a place in Howling Fjord where Winterskorn warriors, shield-maidens, tribesmen, rune-seers, woodsmen and raiders gather in large numbers.",
+      "when": {
+        "area_id": 4002
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4003",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4003",
+        "world:creature:24176",
+        "world:creature:24376",
+        "world:creature:24328",
+        "world:creature:24131"
+      ],
+      "text": "You are in Fort Wildervar, an Alliance fort in Howling Fjord with a flight master, an inn and a smithy. Foreman Colbey's mine is blocked by a yeti, and Researcher Aderan studies the runes steering stone giants from Giants' Run. Prospector Belvar believes Iron Dwarf runes can bind and compel, and Trapper Jethan sells the meat and fur from his traps.",
+      "when": {
+        "area_id": 4003
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4005",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4005",
+        "world:creature:24811",
+        "world:creature:23676",
+        "world:creature:23711",
+        "world:creature:23674",
+        "world:creature:23691"
+      ],
+      "text": "You are in Ivald's Ruin, a dig site in Howling Fjord where iron dwarf destroyers, laborers and sages are at work. Donny, an Explorers' League dwarf, watches from the ruin and says the iron dwarves are burying the site rather than excavating it. Shoveltusk stags roam the area.",
+      "when": {
+        "area_id": 4005
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4006",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4006",
+        "world:creature:23991",
+        "world:creature:24014",
+        "world:creature:24013",
+        "world:creature:24035"
+      ],
+      "text": "You are in Gjalerbron, a vrykul holding in Howling Fjord. Gjalerbron warriors, necrolords and deathless watchers are about, and living sacrifices feed an awakening ritual here while captives mourn friends already taken.",
+      "when": {
+        "area_id": 4006
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4018",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4018",
+        "world:creature:24129",
+        "world:creature:24362",
+        "world:creature:24032",
+        "world:creature:24235"
+      ],
+      "text": "You are in Camp Winterhoof, a Horde camp in Howling Fjord with a wind rider master, an inn and a stable master. Chieftain Ashtotem leads its taunka as they prepare to leave for safer lands to the north, and Longrunner Pembe studies Iron Dwarf runes. A cyclothar lurks nearby.",
+      "when": {
+        "area_id": 4018
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4048",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4048",
+        "world:creature:23870",
+        "world:creature:23940",
+        "world:creature:23871",
+        "world:creature:23689"
+      ],
+      "text": "You are in the Ember Clutch, a Howling Fjord forest where magical fires are spreading through the woods. A guardian ancient of the proto-drake brood blames the newly awakened vrykul and their master, Skeld Drakeson, for the burning. Dragonflayer handlers and proto-drakes roam here.",
+      "when": {
+        "area_id": 4048
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4050",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4050",
+        "world:creature:23962",
+        "world:creature:23964",
+        "world:creature:23963",
+        "world:creature:23784"
+      ],
+      "text": "You are in Derelict Strand, a Howling Fjord shore held by Alliance soldiers of the North Fleet. Captain Olster, Lieutenant Celeyne and Sergeant Lorric lead them, and Apothecary Hanes, a Royal Apothecary Society apothecary, is held captive in their camp.",
+      "when": {
+        "area_id": 4050
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4051",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4051",
+        "world:creature:24117",
+        "world:creature:23919",
+        "world:quest:11313"
+      ],
+      "text": "You are in The Frozen Glade, a glade in Howling Fjord in Northrend. Lurielle, a sister here, reaches out to outsiders for help against the decay spreading through the glades. Ice elementals ring the glade, once companions of the sisters and now turned against them.",
+      "when": {
+        "area_id": 4051
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4052",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4052",
+        "world:quest:11314",
+        "world:quest:11315",
+        "world:creature:23763",
+        "world:creature:23678"
+      ],
+      "text": "You are in The Vibrant Glade, a glade in Howling Fjord in Northrend. Its sisters have been driven mad by the sudden change, and the scarlet ivy they tended has been transformed into grasping vines. Chill nymphs and scarlet ivy are the dangers here.",
+      "when": {
+        "area_id": 4052
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4053",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4053",
+        "world:quest:11319",
+        "world:creature:23874",
+        "world:creature:24638",
+        "world:quest:11428"
+      ],
+      "text": "You are in The Twisted Glade, a glade in Howling Fjord in Northrend, transformed into a hideous place where poisonous spores wither the greenery and thornvine creepers lurk among the trees and pools. Keeper Witherleaf, the most powerful of the blacksouled keepers, raises beasts from the water and soil here.",
+      "when": {
+        "area_id": 4053
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4054",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4054",
+        "world:creature:23959",
+        "world:creature:24026",
+        "world:creature:23958",
+        "world:creature:24901",
+        "world:creature:24262",
+        "world:creature:24277"
+      ],
+      "text": "You are in Rivenwood, a wood in Howling Fjord in Northrend. Darkclaw bats, fanggore worgs, riven widows and maddened frosthorns roam it, and vrykul souls haunt its paths. In the west, Garwal, a worg, is the rival that Ulfang is trying to kill to take the alpha place of his pack.",
+      "when": {
+        "area_id": 4054
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4055",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4055",
+        "world:creature:24056",
+        "world:quest:11410",
+        "world:creature:23919",
+        "dbc:area:4003"
+      ],
+      "text": "You are in Caldemere Lake, a lake in Howling Fjord in Northrend, where Alliance fishermen from Fort Wildervar work. Frostfin, a monster with giant teeth and icicles on its fins, still lurks in the water and has nearly pulled one fisherman under. Christopher Sloan fears to fish here, and ice elementals roam the shore.",
+      "when": {
+        "area_id": 4055
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4057",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4057",
+        "world:creature:24872",
+        "world:creature:24871",
+        "world:creature:24874",
+        "world:creature:24875"
+      ],
+      "text": "You are in Shield Hill, a hill in Howling Fjord in Northrend. Blood shades and risen vrykul ancestors roam its slopes, and Fengir the Disgraced and Windan of the Kvaldir are among the hostile ones.",
+      "when": {
+        "area_id": 4057
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4059",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4059",
+        "world:creature:26823",
+        "world:creature:26825",
+        "world:creature:26827",
+        "world:creature:26826",
+        "world:creature:29487",
+        "world:creature:29486"
+      ],
+      "text": "You are in Cauldros Isle, an isle in Howling Fjord in Northrend. Howling wolvar trainers, shamans and lookouts hold it under their chieftain, and wild shoveltusks roam among tamed ones.",
+      "when": {
+        "area_id": 4059
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4060",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4060",
+        "world:creature:23778",
+        "world:creature:23998",
+        "world:creature:24128",
+        "dbc:area:4050"
+      ],
+      "text": "You are in Bleeding Vale, a vale in Howling Fjord in Northrend, held by Forsaken forces. Dark Ranger Lyana directs attacks on Alliance forces at the Derelict Strand, and Deathstalker Razael reports that frozen ground has left the meatwagons immobile. Wild worgs roam the vale, and a spirit healer is here.",
+      "when": {
+        "area_id": 4060
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4061",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4061",
+        "world:creature:24212",
+        "world:creature:24030",
+        "world:creature:24316",
+        "world:creature:23796",
+        "world:creature:23725",
+        "world:creature:24329",
+        "world:creature:6491"
+      ],
+      "text": "You are in Giants' Run, a stretch of Howling Fjord in Northrend. Iron rune guardians, stonecallers, sentinels and binders roam it alongside stone giants and runed stone giants. A spirit healer is here too.",
+      "when": {
+        "area_id": 4061
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4062",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4062",
+        "world:creature:24152",
+        "world:creature:24218",
+        "dbc:area:4071",
+        "dbc:taxi:248"
+      ],
+      "text": "You are in Apothecary Camp, a Horde camp in Howling Fjord in Northrend. Royal apothecaries Malthus and Grick are trying to learn why Explorers' League members in Whisper Gulch have gone mad, and they disagree about the cause. The camp has a flight master, repairs and a vendor.",
+      "when": {
+        "area_id": 4062
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4063",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4063",
+        "world:creature:23906",
+        "dbc:area:3994"
+      ],
+      "text": "You are in Ember Spear Tower, an Alliance tower in Howling Fjord in Northrend. Scout Knowles watches Halgrind from an abandoned Vrykul tower, where he has seen plague tanks and an apothecary taken into the place.",
+      "when": {
+        "area_id": 4063
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4064",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4064",
+        "world:creature:23755",
+        "world:creature:23771"
+      ],
+      "text": "You are in Shattered Straits, a stretch of Howling Fjord in Northrend. Blockade pirates, numerous here, are the main danger, along with blockade cannons.",
+      "when": {
+        "area_id": 4064
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4065",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4065",
+        "world:creature:27699",
+        "world:creature:24014",
+        "world:creature:27701",
+        "world:creature:24023",
+        "world:creature:29393"
+      ],
+      "text": "You are in Gjalerhorn, a part of Howling Fjord. Gjalerhorn scavengers, necrolords and workers roam it in numbers, and Queen Angerboda and King Ymiron are its most dangerous hostile individuals.",
+      "when": {
+        "area_id": 4065
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4066",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4066",
+        "world:creature:24062",
+        "world:creature:23740",
+        "world:creature:24228",
+        "world:creature:24229",
+        "world:creature:23744"
+      ],
+      "text": "You are in Frostblade Peak, part of Howling Fjord. Alliance miners from the Wildervar region are found here. Frosthorn rams, iceshard elementals, howling cyclones and icehollow behemoths make the peak dangerous.",
+      "when": {
+        "area_id": 4066
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4069",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4069",
+        "world:creature:6491",
+        "world:creature:24196"
+      ],
+      "text": "You are in North Spear Tower, in Howling Fjord. A spirit healer here offers a return to the living for a price, cautioning that it may not yet be your time, and the choice is yours. Trapped animals are a danger here.",
+      "when": {
+        "area_id": 4069
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4070",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4070",
+        "world:creature:23833",
+        "world:creature:24544",
+        "world:creature:24485",
+        "world:creature:24540",
+        "world:creature:23643",
+        "world:quest:11396"
+      ],
+      "text": "You are in Chillmere Coast, a shore of Howling Fjord where the Scourge is turning murlocs into mur'ghouls. Explorer Jaren, an Alliance man, hides from danger while he investigates. Old Icefin, an aged murloc, scratches symbols into the rock about his son, who was made a mur'ghoul. Servitor shades, necrotechs and mur'ghouls haunt the coast, and shielded Scourging crystals are still standing.",
+      "when": {
+        "area_id": 4070
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4071",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4071",
+        "world:creature:23840",
+        "world:creature:23844",
+        "world:creature:23977",
+        "world:creature:29881",
+        "world:creature:23967",
+        "world:creature:24026"
+      ],
+      "text": "You are in Whisper Gulch, a keep in Howling Fjord with Westguard crossbowmen and officers among its Alliance defenders. Deranged explorers are the main danger here, with shoveltusk stags and fanggore worgs also about. Abandoned pack mules from the Explorers' League wander the keep, and a disembodied voice heard in several areas of Northrend warns of coming danger.",
+      "when": {
+        "area_id": 4071
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4226",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4226",
+        "world:creature:24676",
+        "world:creature:24900"
+      ],
+      "text": "You are in Iskaal, part of Howling Fjord. Crazed Northsea slavers roam it in numbers, and Abdul the Insane is among its most dangerous.",
+      "when": {
+        "area_id": 4226
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4260",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4260",
+        "world:creature:23690",
+        "world:creature:24791",
+        "world:creature:27927",
+        "world:creature:27926"
+      ],
+      "text": "You are in Thorvald's Camp, part of Howling Fjord. Shoveltusks are hunted here for their meat, and they will headbutt attackers. Dragonflayer guardians and Thorvald are the main dangers.",
+      "when": {
+        "area_id": 4260
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4261",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4261",
+        "world:creature:27922",
+        "world:creature:24548",
+        "dbc:area:3984"
+      ],
+      "text": "You are in Ghostblade Post, a Horde post in Howling Fjord. Ranger Captain Areiel is weakening Nifflevar with attacks on its dragonflayer defenders before reinforcements arrive from Vengeance Landing. Scribe Seguine, a Vengeance Landing scholar, wants the sagas of the vrykul bard Helgus from Nifflevar before the town is razed.",
+      "when": {
+        "area_id": 4261
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4263",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4263",
+        "world:creature:24458",
+        "world:creature:24474",
+        "world:creature:24467",
+        "world:creature:24027"
+      ],
+      "text": "You are in Lydell's Ambush, a Horde ambush site in Howling Fjord. Lydell lays a trap for the vrykul chieftain Bjorn Halgurdsson, provoking him with an insult and luring him here on the orders of Sergeant Gorth. Vengeance Landing assassins wait in the area, and vrykul corpses are about.",
+      "when": {
+        "area_id": 4263
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4402",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4402",
+        "world:creature:24027",
+        "world:creature:28314",
+        "world:creature:28313",
+        "world:creature:24015"
+      ],
+      "text": "You are in Vengeance Lift, a Horde post in Howling Fjord. Sergeant Gorth directs attacks on the Winterskorn across the blockade and in Baleheim, and he proposes burning the town's buildings and bridges. Longrunner Nanik, a Taunka envoy from Camp Winterhoof, seeks allies against the vrykul, and Apothecary Scyllis of the Royal Apothecary Society is also here. Winterskorn defenders are the danger.",
+      "when": {
+        "area_id": 4402
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4403",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4403",
+        "world:creature:24015",
+        "world:creature:24161",
+        "world:creature:24016"
+      ],
+      "text": "You are in Balejar Watch, a Horde post in Howling Fjord. Winterskorn defenders are in great numbers here, and Oric the Baleful and Ulf the Bloodletter are among the most dangerous vrykul.",
+      "when": {
+        "area_id": 4403
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4474",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4474",
+        "world:creature:24786",
+        "world:creature:24797",
+        "world:creature:24633"
+      ],
+      "text": "You are in Twin Shores, part of Howling Fjord. Reef bulls and reef cows are found along its shores, and a rabid brown bear is the danger here.",
+      "when": {
+        "area_id": 4474
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3980": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3980 (Daggercap Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3981": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3981 (Valgarde)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3982": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3982 (Wyrmskull Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3984": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3984 (Nifflevar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3987": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3987 (The Isle of Spears)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3988": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3988 (Kamagua)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3989": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3989 (Garvan's Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3990": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3990 (Scalawag Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3991": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3991 (New Agamand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3992": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3992 (The Ancient Lift)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3994": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3994 (Halgrind)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3996": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3996 (Baelgun's Excavation Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3997": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3997 (Explorers' League Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3998": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3998 (Westguard Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3999": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3999 (Steel Gate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4000": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4000 (Vengeance Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4001": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4001 (Baleheim)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4002": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4002 (Skorn)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4003": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4003 (Fort Wildervar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4005": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4005 (Ivald's Ruin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4006": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4006 (Gjalerbron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4018": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4018 (Camp Winterhoof)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4048": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4048 (Ember Clutch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4050": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4050 (Derelict Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4051": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4051 (The Frozen Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4052": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4052 (The Vibrant Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4053": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4053 (The Twisted Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4054": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4054 (Rivenwood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4055": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4055 (Caldemere Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4057": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4057 (Shield Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4059": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4059 (Cauldros Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4060": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4060 (Bleeding Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4061": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4061 (Giants' Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4062": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4062 (Apothecary Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4063": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4063 (Ember Spear Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4064": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4064 (Shattered Straits)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4065": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4065 (Gjalerhorn)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4066": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4066 (Frostblade Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4069": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4069 (North Spear Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4070": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4070 (Chillmere Coast)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4071": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4071 (Whisper Gulch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4226": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4226 (Iskaal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4260": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4260 (Thorvald's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4261": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4261 (Ghostblade Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4263": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4263 (Lydell's Ambush)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4402": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4402 (Vengeance Lift)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4403": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4403 (Balejar Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4474": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4474 (Twin Shores)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:495": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 495 (Howling Fjord)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:248": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 248 (Apothecary Camp, Howling Fjord)",
+      "revision": "3.3.5a client data"
+    },
     "source:001dee66dbc5a1c573fb94b7": {
       "kind": "research",
       "reference": "evidence:sha256:6cc5d0540e06a965522b3272c533c6e4f4c7a1424ef1b062d0d54d18ee73f42f",
@@ -20745,6 +21838,926 @@
       "kind": "research",
       "reference": "evidence:sha256:3d92b540522635bdfd091f8c84a4131f9612b0b2a47a236663761839a1ba3706",
       "revision": "a4f51a014fee10fec4f2d9b392ebed72028082d349f85b4a14b20b34dff9fd95"
+    },
+    "world:creature:23546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23546 (Vice Admiral Keller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23557 (Dragonflayer Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23564 (Plagued Dragonflayer Tribesman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23643": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23643 (Unstable Mur'ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23652": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23652 (Dragonflayer Vrykul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23653": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23653 (Winterskorn Spearman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23654": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23654 (Dragonflayer Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23655": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23655 (Winterskorn Bonegrinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23656 (Dragonflayer Rune-Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23657 (Winterskorn Skald), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23660 (Dragonflayer Thane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23661 (Winterskorn Tribesman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23662": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23662 (Winterskorn Woodsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23663 (Winterskorn Shield-Maiden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23664 (Winterskorn Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23665": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23665 (Winterskorn Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23667": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23667 (Winterskorn Rune-Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23672": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23672 (Iron Rune Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23674 (Iron Rune Sage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23675": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23675 (Iron Rune Runemaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23676 (Iron Rune Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23678 (Chill Nymph), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23680 (Plagued Proto-Dragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23689": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23689 (Proto-Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23690 (Shoveltusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23691 (Shoveltusk Stag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23711": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23711 (Iron Rune Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23725": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23725 (Stone Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23730": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23730 (Harold Lagras), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23740 (Frosthorn Ram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23744 (Icehollow Behemoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23749": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23749 (Captain Adams), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23755": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23755 (Blockade Pirate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23763 (Scarlet Ivy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23770": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23770 (Cannoneer Ely), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23771 (Blockade Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23778": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23778 (Dark Ranger Lyana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23780 (High Executor Anselm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23784 (Apothecary Hanes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23785": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23785 (Daggercap Hammerhead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23796 (Iron Rune Binder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23804 (Orfus of Kamagua), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23833 (Explorer Jaren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23840": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23840 (Westguard Crossbowman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23844 (Westguard Officer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23859": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23859 (Greer Orehammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23870 (Ember Clutch Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23871": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23871 (Dragonflayer Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23874": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23874 (Thornvine Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23891 (Overseer Irena Stonemantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23906 (Scout Knowles), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23919 (Ice Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23938": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23938 (Pontius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23940": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23940 (Skeld Drakeson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23958": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23958 (Riven Widow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23959": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23959 (Darkclaw Bat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23962": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23962 (Captain Olster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23963 (Sergeant Lorric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23964": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23964 (Lieutenant Celeyne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23967": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23967 (Deranged Explorer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23975 (Thoralius the Wise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23977 (Abandoned Pack Mule), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23991 (Gjalerbron Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23994": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23994 (Dragonflayer Hunting Hound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23998": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23998 (Deathstalker Razael), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24013": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24013 (Deathless Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24014": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24014 (Necrolord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24015": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24015 (Winterskorn Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24016 (Ulf the Bloodletter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24023": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24023 (Queen Angerboda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24026": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24026 (Fanggore Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24027": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24027 (Sergeant Gorth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24030": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24030 (Iron Rune Stonecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24032 (Celea Frozenmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24035 (Gjalerbron Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24056": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24056 (Christopher Sloan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24062": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24062 (Wildervar Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24076": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24076 (Winterskorn Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24077 (Impaled Valgarde Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24106": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24106 (Scout Valory), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24111 (Defender Mordun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24117 (Lurielle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24126": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24126 (Apothecary Lysander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24128 (Wild Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24129 (Chieftain Ashtotem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24131": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24131 (Trapper Jethan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24152": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24152 (Apothecary Malthus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24155": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24155 (Tobias Sarkhoff), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24157 (Plaguebringer Tillinghast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24161 (Oric the Baleful), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24176": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24176 (Foreman Colbey), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24196 (Trapped Animal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24198": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24198 (Plagued Dragonflayer Rune-Caster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24199 (Plagued Dragonflayer Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24209": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24209 (Longrunner Skycloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24212 (Iron Rune Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24218": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24218 (Apothecary Grick), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24228 (Iceshard Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24229 (Howling Cyclone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24235 (Cyclothar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24238 (Bjorn Halgurdsson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24250": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24250 (Dragonflayer Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24251": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24251 (Chief Plaguebringer Harris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24262": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24262 (Vrykul Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24271 (Iron Rune Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24277 (Garwal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24316 (Iron Rune Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24328 (Prospector Belvar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24329 (Runed Stone Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24340 (Rampaging Earth Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24362": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24362 (Longrunner Pembe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24376 (Researcher Aderan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24399 (Steel Gate Chief Archaeologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24458": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24458 (Lydell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24467 (Vrykul Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24473 (Lead Archaeologist Malzie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24474 (Vengeance Landing Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24485": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24485 (Servitor Shade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24540": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24540 (Necrotech), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24544": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24544 (Old Icefin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24548 (Scribe Seguine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24633": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24633 (Rabid Brown Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24637 (Great Reef Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24638": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24638 (Keeper Witherleaf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24639 (Olga, the Scalawag Wench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24642 (Drunken Northsea Pirate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24673 (Frostwing Chimaera), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24676 (Crazed Northsea Slaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24677": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24677 (Spearfang Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24714 (Seasoned Buccaneer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24717 (Stanwad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24742": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24742 (\"Mad\" Jonah Sterling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24750 (Hidalgo the Master Falconer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24755": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24755 (Elder Atuik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24786": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24786 (Reef Bull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24788": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24788 (Jack Adams), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24790": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24790 (Black Conrad's Ghost), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24791": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24791 (Shoveltusk Calf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24797 (Reef Cow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24807 (Walt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24810": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24810 (Anuniaq), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24811 (Donny), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24871": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24871 (Risen Vrykul Ancestor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24872 (Blood Shade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24874": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24874 (Fengir the Disgraced), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24875 (Windan of the Kvaldir), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24900 (Abdul the Insane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24901 (Maddened Frosthorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24956 (Juniper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26547": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26547 (Basil Crowe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26663 (Winterskorn Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26823 (Howling Wolvar Trainer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26825": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26825 (Howling Wolvar Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26826": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26826 (Howling Wolvar Chieftain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26827": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26827 (Howling Wolvar Lookout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26905": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26905 (Brom Brewbaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26914": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26914 (Benjamin Clegg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26915": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26915 (Ounhulo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27699": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27699 (Gjalerhorn Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27701 (Gjalerhorn Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27922": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27922 (Ranger Captain Areiel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27926": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27926 (Thorvald), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27927 (Dragonflayer Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28313 (Apothecary Scyllis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28314 (Longrunner Nanik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29393 (King Ymiron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29486": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29486 (Tamed Shoveltusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29487": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29487 (Wild Shoveltusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29881 (An Unknown Voice), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32573": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32573 (Valgarde Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5936": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5936 (Orca), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11305": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11305 (A Tailor-Made Formula)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11313": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11313 (Spirits of the Ice)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11314": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11314 (The Fallen Sisters)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11315": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11315 (Wild Vines)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11319": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11319 (Seeds of the Blacksouled Keepers)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11396": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11396 (Bring Down Those Shields)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11410": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11410 (The One That Got Away)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11428": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11428 (Keeper Witherleaf)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11458": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11458 (Avenge Iskaal)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11472": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11472 (The Way to His Heart...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11474": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11474 (Problems on the High Bluff)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11504": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11504 (The Dead Rise!)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

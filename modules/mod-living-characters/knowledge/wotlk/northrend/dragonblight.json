@@ -11109,7 +11109,1012 @@
     }
   ],
   "place": "Dragonblight",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:65",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:65",
+        "dbc:area:4158",
+        "dbc:area:4169",
+        "dbc:area:4177",
+        "dbc:area:4165",
+        "dbc:area:4186",
+        "dbc:area:4152",
+        "world:creature:27290"
+      ],
+      "text": "You are in Dragonblight, a land in Northrend where Alliance and Horde both hold settlements. The Alliance keeps Stars' Rest, Fordragon Hold and Wintergarde Keep, the Horde keeps Agmar's Hammer and Venomspite, and Moa'ki Harbor belongs to neither side. The main dangers are undead such as Hungering Dead and wretched ghouls, Anub'ar nerubians, wolvar packs, and mage hunters of the blue dragonflight.",
+      "when": {
+        "zone_id": 65
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4151",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4151",
+        "world:creature:26181",
+        "world:creature:26180",
+        "world:creature:26182",
+        "world:quest:11979"
+      ],
+      "text": "You are in Westwind Refugee Camp, a Horde camp on the western border of Dragonblight. Taunka survivors of the Scourge gather here, and the tauren Emissary Brighthoof works to bring them into the Horde. Horde guards Roh'kill and Tor'zin are still recovering from an Anub'ar ambush on an arms caravan.",
+      "when": {
+        "area_id": 4151
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4152",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4152",
+        "world:creature:26194",
+        "world:creature:26198",
+        "world:quest:11958",
+        "world:creature:26245"
+      ],
+      "text": "You are in Moa'ki Harbor, a Tuskarr and Kalu'ak fishing harbor on the Dragonblight coast that neither side holds. Elder Ko'nani, chieftain of the Dragonblight Kalu'ak, is struggling to protect his people's stores from wolvar raids. The old fisherman Tua'kea fears that his sea enemy Tu'u'gwar has returned.",
+      "when": {
+        "area_id": 4152
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4153",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4153",
+        "world:quest:12031",
+        "world:creature:26411",
+        "world:creature:26344",
+        "world:creature:26336"
+      ],
+      "text": "You are in Indu'le Village, a Kalu'ak village in Dragonblight struck by a surge of magic from the lake. Most of its people died at once, and those who survived were driven mad. Deranged villagers, Indu'le warriors and mystics still roam its ruins.",
+      "when": {
+        "area_id": 4153
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4154",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4154",
+        "world:creature:26198",
+        "world:creature:26199",
+        "world:creature:26196",
+        "world:creature:26200",
+        "world:creature:26228"
+      ],
+      "text": "You are in Snowfall Glade, a den of wolvar north of Moa'ki Harbor. Wolvar reavers, den mothers and shamans hold the glade, and Loguhn leads them as alpha male. Trapper Mau'i wants Snowfall pups captured so the wolvar can survive alongside the Tuskarr.",
+      "when": {
+        "area_id": 4154
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4157",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4157",
+        "world:creature:26501",
+        "world:creature:26257",
+        "world:creature:26370"
+      ],
+      "text": "You are in Moonrest Gardens, the ruined resting place of the Highborne elves in Dragonblight. Mage hunters and surge needle sorcerers hold the ruins, and the spirit Ethenial Moonshadow demands vengeance for the destruction there. Arcanimus, a giant device in the sky, feeds on the spirits of the dead.",
+      "when": {
+        "area_id": 4157
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4158",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4158",
+        "world:creature:26881",
+        "world:creature:26673",
+        "world:creature:26837"
+      ],
+      "text": "You are in Stars' Rest, an Alliance settlement in Dragonblight with a hippogryph master, Palena Silvercloud. The Image of Archmage Modera, a Kirin Tor projection, studies the ley-line power redirected around Moonrest Gardens. Sarendryana urges that those who can be restored be saved, because the blue dragonflight's magic is harming the Lothalor Ancients.",
+      "when": {
+        "area_id": 4158
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4160",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4160",
+        "world:creature:26321",
+        "world:creature:26421",
+        "world:creature:26333",
+        "world:creature:26322"
+      ],
+      "text": "You are in Lothalor Woodlands, a forest in Dragonblight where Lothalor Ancients stand. Some of the ancients have been corrupted, and arcane wyrms and mage hunters roam the trees. A Lothalor Ancient can be strengthened with Bark of the Walkers, which a Woodlands Walker may give away.",
+      "when": {
+        "area_id": 4160
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4163",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4163",
+        "world:creature:26654",
+        "world:creature:26733",
+        "world:creature:26606",
+        "world:creature:26319"
+      ],
+      "text": "You are in Icemist Village, the former taunka capital in Dragonblight, now held by the Scourge and Anub'ar. Anub'ar slayers and cultists are the dangers here. Roanauk Icemist, High Chieftain of the Taunka, is held in Icemist's Prison, and his son Banthok searches the village for him.",
+      "when": {
+        "area_id": 4163
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4165",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4165",
+        "world:creature:26379",
+        "world:creature:26574",
+        "world:creature:26966",
+        "world:creature:26483"
+      ],
+      "text": "You are in Agmar's Hammer, the Horde stronghold in Dragonblight, where Overlord Agmar commands the Kor'kron. Kor'kron Wing Commander Valnok Windrager coordinates air attacks on the Anub'ar threat from here. Shadowy tormentors and dragonbone condors are the dangers around it.",
+      "when": {
+        "area_id": 4165
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4166",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4166",
+        "world:creature:26873",
+        "world:creature:21223",
+        "world:creature:26343",
+        "world:quest:12107"
+      ],
+      "text": "You are in Lake Indu'le, a lake in Dragonblight with a ley-line focus beneath its water. Corrupted ragers and Indu'le fishermen attack along the shore. The corpse of Mage-Commander Evenstar, who led the mage hunters here, lies among his forces, apparently slain by elementals after they summoned the focus.",
+      "when": {
+        "area_id": 4166
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4167",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4167",
+        "world:creature:26593",
+        "world:creature:27360",
+        "world:creature:27356"
+      ],
+      "text": "You are in Obsidian Dragonshrine, a dragon shrine in Dragonblight. Serinar, a black dragon whose bones the Cult of the Damned exploits, despises the cult and shows it no mercy. Smoldering skeletons and Burning Depths necrolytes are the dangers here.",
+      "when": {
+        "area_id": 4167
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4168",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4168",
+        "world:creature:27763",
+        "world:creature:27539",
+        "world:creature:27533"
+      ],
+      "text": "You are in Ruby Dragonshrine, a dragon shrine in Dragonblight. Vargastrasz, a red dragon, defends it as the Scourge turns fallen red wyrms into emberwyrms. Frigid necromancers and geists roam the shrine.",
+      "when": {
+        "area_id": 4168
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4169",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4169",
+        "world:creature:27872",
+        "world:quest:12495",
+        "world:creature:27957",
+        "dbc:taxi:251",
+        "world:creature:6491"
+      ],
+      "text": "You are in Fordragon Hold, an Alliance hold in Dragonblight. Highlord Bolvar Fordragon leads the Alliance here against the Scourge at Angrathar, and he will not defile dragons' bones without Alexstrasza's permission. Frost wyrms strafe the field from overhead, and Angrathar geists are the dangers on the ground. A flight master and a spirit healer serve the hold.",
+      "when": {
+        "area_id": 4169
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4170",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4170",
+        "world:creature:25257",
+        "world:creature:26850",
+        "world:quest:12495",
+        "world:quest:12496"
+      ],
+      "text": "You are in Kor'kron Vanguard, a place in Dragonblight where Alliance and Horde both have people. Saurfang the Younger readies the Kor'kron Vanguard for battle at the Wrathgate beside Highlord Fordragon. Frost wyrms strafing from above keep both sides from advancing on the gate. Numo Spiritbreeze, a Horde wind rider master, offers fast air travel.",
+      "when": {
+        "area_id": 4170
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4171",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4171",
+        "world:creature:27576",
+        "world:creature:27631",
+        "world:creature:27691",
+        "world:creature:27611",
+        "world:creature:27604"
+      ],
+      "text": "You are in The Court of Skulls, an area of Dragonblight where Fordragon sentinels hold their position. Scourge abominations, gargoyles and constructs are the dangers here, including plague eruptors.",
+      "when": {
+        "area_id": 4171
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4172",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4172",
+        "world:creature:31333",
+        "world:creature:31334",
+        "world:creature:27631",
+        "world:creature:27691",
+        "world:creature:27604"
+      ],
+      "text": "You are in Angrathar the Wrathgate, a battlefield in Dragonblight. Alexstrasza, Queen of the Dragons, speaks here in the aftermath and says the fallen paladin's fate must remain undiscovered for now. Her consort Korialstrasz is with her. Scourge abominations, gargoyles and constructs still haunt the field.",
+      "when": {
+        "area_id": 4172
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4173",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4173",
+        "world:creature:28005",
+        "world:creature:27270",
+        "world:creature:26841"
+      ],
+      "text": "You are in Galakrond's Rest, part of Dragonblight. Wastes scavengers are the most common danger here, with rotting storm giants and a reanimated frost wyrm.",
+      "when": {
+        "area_id": 4173
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4175",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4175",
+        "world:creature:27925",
+        "world:creature:26277",
+        "world:creature:32185",
+        "world:creature:32186"
+      ],
+      "text": "You are in the Bronze Dragonshrine, a shrine in Dragonblight. Nozdormu, the Lord of Time, is a dragonkin found here. Bronze shrine wardens fight intruders with Sand Breath and Stop Time. Infinite eradicators and timebreakers are the dangers.",
+      "when": {
+        "area_id": 4175
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4176",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4176",
+        "world:creature:26283",
+        "world:creature:27007",
+        "world:creature:24879"
+      ],
+      "text": "You are in The Mirror of Dawn, a part of Dragonblight. Ice revenants are the main danger here, with iceshatters, and arctic clouds, which are gas clouds, are also found in the area.",
+      "when": {
+        "area_id": 4176
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4177",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4177",
+        "world:creature:27136",
+        "world:creature:27370",
+        "world:creature:27835",
+        "world:quest:12309",
+        "dbc:taxi:244"
+      ],
+      "text": "You are in Wintergarde Keep, an Alliance keep in Dragonblight under siege by the Scourge. High Commander Halford Wyrmbane of the 7th Legion directs rescue efforts as the lower village falls. Vengeful geists and dreadbone constructs roam the ruins, and a necrolord has got into the town crypt. The keep has a flight master, an inn and a stable master.",
+      "when": {
+        "area_id": 4177
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4179",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4179",
+        "world:creature:27255",
+        "world:creature:27254",
+        "world:creature:27244",
+        "world:quest:12456"
+      ],
+      "text": "You are in the Emerald Dragonshrine, a shrine in Dragonblight. Nishera the Garden Keeper tends Ysera's garden and seeks to restore the shrine's balance amid the Emerald Nightmare's confusion. She warns that the garden can deceive. Emerald lashers and skytalons are the dangers, and an immense skytalon named Alystros guards the air from the south end.",
+      "when": {
+        "area_id": 4179
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4180",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4180",
+        "world:creature:27350",
+        "world:creature:27376",
+        "world:creature:27381",
+        "world:creature:27203",
+        "world:creature:27202",
+        "world:creature:27213"
+      ],
+      "text": "You are in New Hearthglen, a village in Dragonblight that the Scarlet Onslaught holds. Captured Horde prisoners are held here, among them Deathguard Schneider and Chancellor Amai. Venomspite spy Agent Skully works here undercover as an Onslaught caretaker. Onslaught footmen, raven priests and warhorses are the dangers.",
+      "when": {
+        "area_id": 4180
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4181",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4181",
+        "world:creature:27233",
+        "world:creature:27213",
+        "world:creature:27203",
+        "world:creature:27232"
+      ],
+      "text": "You are in Crusader's Landing, a place in Dragonblight where Onslaught deckhands are the most common danger, with Onslaught warhorses and footmen. Captain Shely is among the Onslaught forces here.",
+      "when": {
+        "area_id": 4181
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4183",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4183",
+        "world:creature:26816",
+        "world:creature:26280",
+        "world:creature:27682",
+        "world:creature:27608"
+      ],
+      "text": "You are in the Azure Dragonshrine, a shrine in Dragonblight. Focus wizards and Dragonblight mage hunters are the most common dangers, with azure drakes and azure dragons also here.",
+      "when": {
+        "area_id": 4183
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4184",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4184",
+        "world:creature:26290",
+        "world:creature:26925",
+        "world:creature:26933",
+        "world:creature:27682",
+        "world:creature:26280"
+      ],
+      "text": "You are in Path of the Titans, a stretch of Dragonblight. Jotun the Curse Bearer, a giant, is found here, and Wyrmrest Temple drakes and Wyrmrest Guardians, high-ranking dragonkin, fight with Flame Breath. Azure drakes and Dragonblight mage hunters are the dangers here.",
+      "when": {
+        "area_id": 4184
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4185",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4185",
+        "world:creature:27226",
+        "world:creature:27225",
+        "world:creature:27229",
+        "world:creature:27224",
+        "world:creature:27220",
+        "world:creature:26613",
+        "world:creature:26615"
+      ],
+      "text": "You are in The Forgotten Shore, a shore of Dragonblight. Forgotten peasants, riflemen, footmen, knights and captains roam it in numbers, and arctic grizzly cubs prowl the edges. A wild snowfall elk lives here too and will answer a nearby threat with a Puncture attack.",
+      "when": {
+        "area_id": 4185
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4186",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4186",
+        "world:creature:27172",
+        "world:creature:27243",
+        "world:creature:27248",
+        "world:creature:27337"
+      ],
+      "text": "You are in Venomspite, a Horde stronghold in Dragonblight with an inn, repairs and a stable. Chief Plaguebringer Middleton works here on a blight to use against the Scourge, and High Executor Wroth leads the Hand of Vengeance here as the Horde fights the Scarlet Onslaught from this post.",
+      "when": {
+        "area_id": 4186
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4187",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4187",
+        "world:creature:26473",
+        "world:creature:26659",
+        "world:creature:26358",
+        "world:creature:26293",
+        "world:quest:12080"
+      ],
+      "text": "You are in The Crystal Vice, a canyon in Dragonblight that serves as a refuge from dragons. Ko'char the Unbreakable welcomes visitors but warns that goblins cannot be trusted, and the researcher Zort studies the jormungar that have been attacking the giants from the cavern below. Those worms are led by a spawnmother called Rattlebore.",
+      "when": {
+        "area_id": 4187
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4188",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4188",
+        "world:creature:27712",
+        "world:creature:27290",
+        "world:creature:27286",
+        "world:creature:27607",
+        "world:creature:1293"
+      ],
+      "text": "You are in The Carrion Fields, a battlefield in Dragonblight where Alliance soldiers fight the Scourge, and a spirit healer is here. Mindless ghouls, Hungering Dead, Dreadbone Invaders and plague wagons roam the fields. Ambo Cash of the 7th Legion directs the offensive from the Wintergarde Mausoleum and worries about his soldiers.",
+      "when": {
+        "area_id": 4188
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4189",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4189",
+        "world:creature:27330",
+        "world:creature:27333",
+        "world:creature:27329",
+        "world:creature:27334",
+        "world:creature:32417"
+      ],
+      "text": "You are in Onslaught Base Camp, an Onslaught camp in Dragonblight. Onslaught infantry, masons and bloodhounds occupy it. Onslaught Commander Iustus and Scarlet Highlord Daion are the notable enemies here.",
+      "when": {
+        "area_id": 4189
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4190",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4190",
+        "world:creature:27157"
+      ],
+      "text": "You are in Thorson's Post, an Alliance post in Dragonblight. Duke August Foehammer of the 7th Legion commands here, and reinforcements heading east from Wintergarde report to him as the campaign against the Scourge moves on.",
+      "when": {
+        "area_id": 4190
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4191",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4191",
+        "world:creature:28228",
+        "world:quest:12789",
+        "world:quest:12545"
+      ],
+      "text": "You are in Light's Trust, a former Drakkari temple in Dragonblight. Argent Crusaders keep it, and Crusader Valus urges Horde and Alliance to unite against the Lich King. He sends aid to Light's Breach in Zul'Drak, where the Scourge are pushing to take the region.",
+      "when": {
+        "area_id": 4191
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4193",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4193",
+        "world:creature:27330",
+        "world:creature:27333",
+        "world:creature:27367",
+        "world:creature:27357",
+        "world:creature:32417"
+      ],
+      "text": "You are in Scarlet Point, an Onslaught post in Dragonblight. Onslaught infantry, masons, death knights and raven archons are the dangers here, and Scarlet Highlord Daion is the most notable of them.",
+      "when": {
+        "area_id": 4193
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4194",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4194",
+        "world:quest:12545",
+        "world:creature:26965",
+        "world:creature:26948",
+        "world:creature:26942",
+        "world:creature:27122"
+      ],
+      "text": "You are in Jintha'kalar, a ruined Drakkari city in Dragonblight. Scourge necromancers here have turned the surviving Drakkari trolls into their servants, and tormented Drakkari, hulking atrocities and decrepit necromancers roam the ruins. Overseer Deathgaze is the most notable.",
+      "when": {
+        "area_id": 4194
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4225",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4225",
+        "world:creature:26816",
+        "world:creature:26281",
+        "world:creature:26280",
+        "world:creature:32572",
+        "world:creature:26762"
+      ],
+      "text": "You are in Glittering Strand, a shore in Dragonblight. Focus wizards, moonrest stalkers and Dragonblight mage hunters roam it, and Captain Emmy Malin is among the notable enemies.",
+      "when": {
+        "area_id": 4225
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4227",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4227",
+        "world:creature:26859",
+        "world:creature:26979",
+        "world:quest:12144"
+      ],
+      "text": "You are in Dragon's Fall, a Horde camp of Darkspear trolls in Dragonblight. Rokhan, a Darkspear dragon hunter, faces the Scourge frostwyrm Sarathstra and can call the dragon down. Snobolds have raided the camp and stolen supplies, and Kontokanis sends help to hunt them.",
+      "when": {
+        "area_id": 4227
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4230",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4230",
+        "world:creature:26316",
+        "world:creature:26291",
+        "world:creature:26575",
+        "world:creature:26577",
+        "world:creature:26358",
+        "world:quest:12052",
+        "world:creature:26426"
+      ],
+      "text": "You are in Coldwind Heights, a windswept highland in Dragonblight with no settlement of either side. Crystalline ice elementals and giants roam its slopes, and Jormungar feeders wander the snow. Coldwind witches and huntresses are a constant danger, and harpies have been seen in its back country. Arctic rams gore intruders that threaten them.",
+      "when": {
+        "area_id": 4230
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4233",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4233",
+        "world:creature:27347",
+        "world:creature:27348",
+        "world:creature:6491",
+        "world:quest:12290",
+        "world:quest:12542",
+        "world:creature:26616"
+      ],
+      "text": "You are in Dawn's Reach in Dragonblight, where Argent Crusade paladins and priestesses serve beside a spirit healer. Paladin Orik Trueheart investigates the restless dead haunting the Forgotten Shore, believing they were once Alliance soldiers. Priestess Tilda Darathan recruits able soldiers for the Crusade's fight against the Lich King. Blighted elks are the local danger.",
+      "when": {
+        "area_id": 4233
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4241",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4241",
+        "world:creature:27343",
+        "world:creature:27342",
+        "world:creature:27340",
+        "world:creature:27762",
+        "world:creature:26615"
+      ],
+      "text": "You are in Eldritch Heights in Dragonblight, a wild stretch with no settlement of either side. Bloodpaw shamans, warriors and marauders roam it, including High Shaman Bloodpaw. Snowfall elks graze the region and fight back with a puncture attack when threatened.",
+      "when": {
+        "area_id": 4241
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4253",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4253",
+        "world:creature:27844",
+        "world:creature:27843",
+        "world:creature:26779",
+        "world:creature:26780",
+        "world:quest:12467"
+      ],
+      "text": "You are in the 7th Legion Front, an Alliance front in Dragonblight. Legion Commander Tyralion directs the effort to bring down Icestorm, a frostwyrm, and Wyrmbait draws her close enough for the soldiers to strike. Wyrm hunters and clerics serve among the 7th Legion's forces here, which fight the Scourge's frostwyrms.",
+      "when": {
+        "area_id": 4253
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4254",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4254",
+        "dbc:taxi:252",
+        "world:creature:26917",
+        "world:creature:27803",
+        "world:creature:27804",
+        "world:creature:27575",
+        "world:creature:26483",
+        "world:creature:27278"
+      ],
+      "text": "You are in The Dragon Wastes, where Wyrmrest Temple stands in Dragonblight. It offers flight, an inn and a stable. Queen Alexstrasza the Life-Binder rules at Wyrmrest Temple, and Lauriel Trueblade and Golluck Rockfist speak for the Alliance and Horde there. Malygos's blue dragons threaten the temple, while dragonbone condors and snowplain zealots roam the wastes.",
+      "when": {
+        "area_id": 4254
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4396",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4396",
+        "world:creature:26647",
+        "world:creature:26660",
+        "world:creature:26661",
+        "world:creature:26898",
+        "world:quest:12043",
+        "world:quest:12052"
+      ],
+      "text": "You are in Nozzlerust Post in northern Dragonblight, a goblin supply post. Narf protects the operation against undead and harpies that disrupt the work. Xink supplies ore, lumber and Jormungar meat. Zivlix is an inventive but unreliable bomb maker, and Troz is a merchant who sells goods and offers repairs.",
+      "when": {
+        "area_id": 4396
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4478",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4478",
+        "world:creature:26156",
+        "world:creature:25715",
+        "world:quest:11977"
+      ],
+      "text": "You are in Coldwind Pass, a route into Dragonblight from the Borean Tundra where Horde taunka wait for evacuees. Wartook Iceborn waits at the Transborea crossing, where evacuees arrive after a perilous journey across the tundra. Wartook Iceborn warns that the Scourge raises dead taunka to attack caravans, and frozen elementals roam the pass.",
+      "when": {
+        "area_id": 4478
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4151": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4151 (Westwind Refugee Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4152": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4152 (Moa'ki Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4153": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4153 (Indu'le Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4154": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4154 (Snowfall Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4157": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4157 (Moonrest Gardens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4158": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4158 (Stars' Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4160": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4160 (Lothalor Woodlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4163": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4163 (Icemist Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4165": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4165 (Agmar's Hammer)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4166": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4166 (Lake Indu'le)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4167": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4167 (Obsidian Dragonshrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4168": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4168 (Ruby Dragonshrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4169": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4169 (Fordragon Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4170": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4170 (Kor'kron Vanguard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4171": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4171 (The Court of Skulls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4172": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4172 (Angrathar the Wrathgate)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4173": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4173 (Galakrond's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4175": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4175 (Bronze Dragonshrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4176": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4176 (The Mirror of Dawn)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4177": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4177 (Wintergarde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4179": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4179 (Emerald Dragonshrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4180": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4180 (New Hearthglen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4181": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4181 (Crusader's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4183": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4183 (Azure Dragonshrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4184": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4184 (Path of the Titans)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4185": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4185 (The Forgotten Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4186": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4186 (Venomspite)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4187": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4187 (The Crystal Vice)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4188": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4188 (The Carrion Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4189": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4189 (Onslaught Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4190": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4190 (Thorson's Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4191": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4191 (Light's Trust)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4193": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4193 (Scarlet Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4194": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4194 (Jintha'kalar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4225": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4225 (Glittering Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4227": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4227 (Dragon's Fall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4230": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4230 (Coldwind Heights)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4233": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4233 (Dawn's Reach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4241": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4241 (Eldritch Heights)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4253": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4253 (7th Legion Front)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4254": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4254 (The Dragon Wastes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4396": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4396 (Nozzlerust Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4478": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4478 (Coldwind Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:65": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 65 (Dragonblight)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:244": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 244 (Wintergarde Keep, Dragonblight)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:251": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 251 (Fordragon Hold, Dragonblight)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:252": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 252 (Wyrmrest Temple, Dragonblight)",
+      "revision": "3.3.5a client data"
+    },
     "source:001796af45aeebde9d6cb404": {
       "kind": "research",
       "reference": "evidence:sha256:9a6775f212c3b2f7d0673b8cb2bd662676bcf25853fd3ba86681376cbfa7e53c",
@@ -19669,6 +20674,836 @@
       "kind": "research",
       "reference": "evidence:sha256:08c27562fbc7f2b95b6f315a0d417f50a45ec0da1b10abca7842edc67ac191b8",
       "revision": "032919c9445b88bce8f0091dc290fdfef824819bbce82dfa438ecce3773a84c1"
+    },
+    "world:creature:1293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1293 (Ambo Cash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21223": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21223 (Corrupted Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24879": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24879 (Arctic Cloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25257 (Saurfang the Younger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25715 (Frozen Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26156 (Wartook Iceborn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26180 (Blood Guard Roh'kill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26181 (Emissary Brighthoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26182": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26182 (Blood Guard Tor'zin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26194 (Elder Ko'nani), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26196 (Loguhn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26198": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26198 (Snowfall Glade Wolvar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26199 (Snowfall Glade Den Mother), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26200 (Snowfall Glade Pup), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26228 (Trapper Mau'i), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26245": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26245 (Tua'kea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26257 (Surge Needle Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26277 (Bronze Shrine Warden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26280 (Dragonblight Mage Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26281": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26281 (Moonrest Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26283 (Ice Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26290": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26290 (Jotun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26291 (Crystalline Ice Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26293 (Hulking Jormungar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26316 (Crystalline Ice Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26319 (Anub'ar Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26321": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26321 (Lothalor Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26322 (Arcane Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26333 (Corrupted Lothalor Ancient), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26336": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26336 (Indu'le Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26343 (Indu'le Fisherman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26344 (Indu'le Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26358 (Ice Heart Jormungar Feeder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26370 (Arcanimus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26379 (Overlord Agmar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26411": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26411 (Deranged Indu'le Villager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26421": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26421 (Woodlands Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26426": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26426 (Arctic Ram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26473 (Ko'char the Unbreakable), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26483": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26483 (Dragonbone Condor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26501 (Ethenial Moonshadow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26574": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26574 (Valnok Windrager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26575": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26575 (Coldwind Waste Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26577": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26577 (Coldwind Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26593": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26593 (Serinar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26606": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26606 (Anub'ar Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26613": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26613 (Arctic Grizzly Cub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26615 (Snowfall Elk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26616": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26616 (Blighted Elk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26647 (Narf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26654": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26654 (Roanauk Icemist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26659": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26659 (Zort), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26660 (Xink), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26661 (Zivlix), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26673": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26673 (Image of Archmage Modera), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26733 (Banthok Icemist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26762 (Captain Emmy Malin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26779 (7th Legion Wyrm Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26780 (7th Legion Cleric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26816": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26816 (Focus Wizard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26837": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26837 (Sarendryana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26841 (Reanimated Frost Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26850 (Numo Spiritbreeze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26859": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26859 (Rokhan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26873 (Mage-Commander Evenstar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26881 (Palena Silvercloud), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26898": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26898 (Troz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26917 (Alexstrasza the Life-Binder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26925 (Wyrmrest Temple Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26933": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26933 (Wyrmrest Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26942": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26942 (Decrepit Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26948": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26948 (Hulking Atrocity), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26965": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26965 (Tormented Drakkari), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26966": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26966 (Shadowy Tormentor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26979": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26979 (Kontokanis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27007 (Iceshatter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27122": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27122 (Overseer Deathgaze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27136 (High Commander Halford Wyrmbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27157": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27157 (Duke August Foehammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27172": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27172 (Chief Plaguebringer Middleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27202": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27202 (Onslaught Raven Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27203": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27203 (Onslaught Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27213 (Onslaught Warhorse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27220 (Forgotten Captain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27224": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27224 (Forgotten Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27225": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27225 (Forgotten Rifleman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27226": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27226 (Forgotten Peasant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27229 (Forgotten Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27232 (Captain Shely), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27233 (Onslaught Deckhand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27243": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27243 (High Executor Wroth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27244 (Emerald Skytalon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27248 (Apothecary Vicky Levine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27254": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27254 (Emerald Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27255 (Nishera the Garden Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27270 (Rotting Storm Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27278": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27278 (Snowplain Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27286 (Dreadbone Invader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27290": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27290 (Hungering Dead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27329 (Onslaught Bloodhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27330 (Onslaught Infantry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27333 (Onslaught Mason), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27334 (Onslaught Commander Iustus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27337 (Spy Mistress Repine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27340 (Bloodpaw Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27342 (Bloodpaw Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27343 (Bloodpaw Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27347 (Orik Trueheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27348": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27348 (Tilda Darathan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27350 (Agent Skully), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27356 (Burning Depths Necrolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27357 (Onslaught Raven Archon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27360": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27360 (Smoldering Skeleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27367": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27367 (Onslaught Death Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27370 (Vengeful Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27376 (Deathguard Schneider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27381 (Chancellor Amai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27533": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27533 (Frigid Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27539": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27539 (Frigid Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27575": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27575 (Lord Afrasastrasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27576": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27576 (Fordragon Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27604": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27604 (Frail Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27607 (Plague Wagon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27608": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27608 (Azure Dragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27611": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27611 (Plague Eruptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27631": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27631 (Angrathar Aberration), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27682 (Azure Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27691 (Frenzied Gargoyle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27712 (Mindless Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27762 (High Shaman Bloodpaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27763 (Vargastrasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27803": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27803 (Lauriel Trueblade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27804 (Golluck Rockfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27835": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27835 (Dreadbone Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27843 (\"Wyrmbait\"), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27844 (Legion Commander Tyralion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27872 (Highlord Bolvar Fordragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27925 (Nozdormu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27957 (Angrathar Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28005": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28005 (Wastes Scavenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28228": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28228 (Crusader Valus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31333 (Alexstrasza the Life-Binder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31334 (Korialstrasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32185": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32185 (Infinite Eradicator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32186 (Infinite Timebreaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32417 (Scarlet Highlord Daion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32572": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32572 (Dragonblight Mage Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11958": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11958 (Let Nothing Go To Waste)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11977": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11977 (A Tauren Among Taunka)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11979": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11979 (The Taunka and the Tauren)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12031": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12031 (Freedom for the Lingering)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12043": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12043 (Nozzlerust Defense)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12052": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12052 (Harp on This!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12080": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12080 (Really Big Worm)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12107": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12107 (The End of the Line)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12144": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12144 (Pest Control)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12290": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12290 (The Murkweed Elixir)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12309": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12309 (Find Durkon!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12456": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12456 (The Plume of Alystros)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12467": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12467 (Chasing Icestorm: Thel'zan's Phylactery)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12495": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12495 (Audience With The Dragon Queen)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12496": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12496 (Audience With The Dragon Queen)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12542": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12542 (The Call Of The Crusade)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12545": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12545 (The Cleansing Of Jintha'kalar)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12789": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12789 (Into the Breach!)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

@@ -3795,7 +3795,30 @@
     }
   ],
   "place": "Silvermoon City",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3487",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3487",
+        "world:creature:16191",
+        "world:creature:16646",
+        "world:creature:16651"
+      ],
+      "text": "You are in Silvermoon City, Horde land in the Eastern Kingdoms. Its Bazaar has general goods merchant Sathren Azuredawn, and its trainers teach warlock, mage, druid, priest and blacksmithing skills, among them Alamma and Zaedana. Its inn, bank and auction house serve the Horde folk who fill the city.",
+      "when": {
+        "zone_id": 3487
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3487": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3487 (Silvermoon City)",
+      "revision": "3.3.5a client data"
+    },
     "source:021cb90f9182e1e515620b62": {
       "kind": "research",
       "reference": "evidence:sha256:1e969bffee6e3aaace523d728fd60b6207e37fd0c7f78acb532fe6440784aace",
@@ -6600,6 +6623,21 @@
       "kind": "research",
       "reference": "evidence:sha256:9a8923d63b8fd76afdf60cb4ba44c83d0189b8bd34e28da6a26441e51d9289d0",
       "revision": "c50f487d0595ee74b45b31f36b3a4d4679265089a6e0b2096dbe101f2d1befef"
+    },
+    "world:creature:16191": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16191 (Sathren Azuredawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16646 (Alamma), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16651 (Zaedana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

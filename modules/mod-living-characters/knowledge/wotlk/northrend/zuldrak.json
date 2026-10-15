@@ -5588,7 +5588,789 @@
     }
   ],
   "place": "Zul'Drak",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:66",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:66",
+        "dbc:area:4275",
+        "dbc:area:4312",
+        "dbc:area:4317",
+        "dbc:area:4323",
+        "dbc:area:4579",
+        "world:creature:28233"
+      ],
+      "text": "You are in Zul'Drak, a region of Northrend. The Alliance holds a few places here, chiefly The Argent Stand, while Ebon Watch, Light's Breach, Zim'Torga and Dubra'Jin belong to neither side. Scourge undead, Drakkari trolls and the followers of Sseratus fill the land, and Argent Crusade patrols fight them. Zul'Drak bats with fatal bites attack anyone who comes near.",
+      "when": {
+        "zone_id": 66
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4275",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4275",
+        "world:creature:28039",
+        "world:creature:28059",
+        "world:creature:29169"
+      ],
+      "text": "You are in The Argent Stand, an Alliance stronghold in Zul'Drak. Commander Kunz directs Argent Crusade patrols from here, and Commander Falstaav leads the Argent forces through Scourge attacks. Magister Teronus III, a Kirin Tor magister, can send travelers to Dalaran. The stand also has its inn.",
+      "when": {
+        "area_id": 4275
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4276",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4276",
+        "world:creature:28056",
+        "world:creature:28089",
+        "world:creature:28068",
+        "world:creature:28035",
+        "world:creature:28034"
+      ],
+      "text": "You are in the Altar of Sseratus, where Argent soldiers fight followers of the snake god Sseratus. Priests, champions and Drakkari snake handlers hold the ground around the altar. Sergeant Stackhammer worries that the prophet here will become a serious threat, and he is reluctant to leave while the fighting goes on.",
+      "when": {
+        "area_id": 4276
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4278",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4278",
+        "world:creature:16570",
+        "world:creature:28303"
+      ],
+      "text": "You are in Drak'Sotra Fields, an open stretch of Zul'Drak. Crazed water spirits roam it, and Drakkari water binders try to bend the water elementals to their will.",
+      "when": {
+        "area_id": 4278
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4279",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4279",
+        "world:creature:28044",
+        "world:creature:28133",
+        "world:creature:28158",
+        "world:creature:28413",
+        "world:creature:28412"
+      ],
+      "text": "You are in Drak'Sotra, a former Argent Crusade post in Zul'Drak that the Scourge overran. Captain Rupert directs patrols against the Scourge and nerubians here. Wounded veterans are still missing in the ruins, and withered Argent footmen, nerubian cocoons and Hath'ar broodmasters remain.",
+      "when": {
+        "area_id": 4279
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4280",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4280",
+        "world:creature:28043",
+        "world:creature:28323",
+        "world:creature:28145",
+        "world:quest:12594"
+      ],
+      "text": "You are in Drak'Agal, a waterlogged part of Zul'Drak. Captain Grondel holds a post here, where stagnant water and sewage elementals disrupt his sector. Lurking basilisks also roam the district.",
+      "when": {
+        "area_id": 4280
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4294",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4294",
+        "world:creature:28205",
+        "world:creature:28045",
+        "world:creature:28221"
+      ],
+      "text": "You are in Heb'Valok, an Argent Crusade post in Zul'Drak where the alchemist Finklestein has set up a laboratory. Captain Arnath, a seasoned veteran, gathers ingredients for him and resents being kept from the front lines. Trapdoor crawlers lurk in the area.",
+      "when": {
+        "area_id": 4294
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4299",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4299",
+        "world:creature:28255",
+        "world:creature:28274",
+        "world:creature:28258",
+        "world:creature:28257",
+        "world:quest:12554"
+      ],
+      "text": "You are in Kolramas, the crashed necropolis of the Scourge in Zul'Drak. Malas the Corrupter leads the Scourge here, and plague sprayers and Hath'ar skimmers fill the ruin. Necromagi raise fallen Argent footmen from the dead.",
+      "when": {
+        "area_id": 4299
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4311",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4311",
+        "world:creature:28565",
+        "world:creature:28599",
+        "world:creature:28564"
+      ],
+      "text": "You are in the Reliquary of Agony, a site in Zul'Drak where Scourge creatures gather. Decaying ghouls, plagueroaches and putrid abominations roam it.",
+      "when": {
+        "area_id": 4311
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4312",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4312",
+        "world:creature:28518",
+        "world:creature:28532",
+        "world:creature:28870",
+        "world:creature:28871",
+        "world:creature:28869"
+      ],
+      "text": "You are in Ebon Watch, an outpost in Zul'Drak that neither side holds. Stefan Vadu, a death knight researcher, studies the blight on the scourged trolls nearby, and Bloodrose Datura keeps watch and can demonstrate the danger of the Unliving Choker. Its merchants sell reagents, blades and poisons.",
+      "when": {
+        "area_id": 4312
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4313",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4313",
+        "world:creature:29647",
+        "world:creature:29455",
+        "world:creature:29452",
+        "world:creature:29449"
+      ],
+      "text": "You are in Thrym's End, a camp in Zul'Drak where Vargul blighthounds and deathwakers prowl. Gymer, King of the Storm Giants, is held prisoner by the Scourge, and Gerk survived the attack that took his brother.",
+      "when": {
+        "area_id": 4313
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4315",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4315",
+        "world:creature:28759",
+        "world:creature:28750",
+        "world:creature:28888"
+      ],
+      "text": "You are in the Reliquary of Pain, a Scourge-haunted site in Zul'Drak. Flying fiends and blight geists drift through it, and a captured Drakkari chieftain is held here by the Scourge.",
+      "when": {
+        "area_id": 4315
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4316",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4316",
+        "world:creature:29686",
+        "world:creature:29654",
+        "world:creature:29656"
+      ],
+      "text": "You are in Rageclaw Den, where Rageclaw berserkers, primalists and hunters live among the trolls. A captive Rageclaw wolvar is chained here by Drakuru's trolls, and Drakuru Blood Drinkers and berserkers roam the den.",
+      "when": {
+        "area_id": 4316
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4317",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4317",
+        "world:creature:29690",
+        "world:creature:29733",
+        "world:creature:29687",
+        "world:creature:28618",
+        "world:quest:12859"
+      ],
+      "text": "You are in Light's Breach, a settlement in Zul'Drak. Chief Rageclaw is here with his people after Drakuru's trolls drove the Rageclaw from their den and set it ablaze, and Elder Shaman Moky still seeks help putting out the fires. Crusader Lord Lantinga of the Argent Crusade tracks the troll threat from here. There is a flight master, repairs and vendors.",
+      "when": {
+        "area_id": 4317
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4318",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4318",
+        "world:creature:29129",
+        "world:creature:29133"
+      ],
+      "text": "You are in Pools of Zha'Jin, part of Zul'Drak. A lost Drakkari spirit lingers here and periodically manifests spirit particles. Disturbed souls haunt the pools.",
+      "when": {
+        "area_id": 4318
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4319",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4319",
+        "world:creature:29211"
+      ],
+      "text": "You are in Zim'Abwa, part of Zul'Drak, where Drakkari natives are the local danger.",
+      "when": {
+        "area_id": 4319
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4320",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4320",
+        "world:creature:30007",
+        "world:creature:30009",
+        "world:creature:30098",
+        "world:creature:28145",
+        "world:creature:28323",
+        "world:creature:32447"
+      ],
+      "text": "You are in the Amphitheater of Anguish, a fighting arena in Zul'Drak. Its fight promoter, Gurgthock, followed the gold here from Nagrand and stages the bouts, with the troll Wodin as his bodyguard, and a vendor sells snacks to the crowd. Lurking basilisks, mossy rampagers and Zul'drak sentinels are the dangers nearby.",
+      "when": {
+        "area_id": 4320
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4321",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4321",
+        "world:creature:28561",
+        "world:creature:28416",
+        "world:quest:12646",
+        "world:creature:28417",
+        "world:creature:28418",
+        "world:creature:28452"
+      ],
+      "text": "You are in the Altar of Rhunok, in Zul'Drak. The spirit of Rhunok, an arctic bear god, lingers apart from his weakened body while his former priests channel his power into a resurrected prophet. Priests of Rhunok, Drakkari bear trappers and elemental rifts are the dangers here.",
+      "when": {
+        "area_id": 4321
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4322",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4322",
+        "world:creature:28401",
+        "world:creature:28404",
+        "world:creature:28402",
+        "world:creature:28403"
+      ],
+      "text": "You are in the Altar of Har'koa, in Zul'Drak. The snow leopard goddess Har'koa is held here by her subduers, and the Drakkari have turned her offspring into monstrosities. Cursed offspring, claws of Har'koa and Har'koan subduers are the dangers here.",
+      "when": {
+        "area_id": 4322
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4323",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4323",
+        "world:creature:28480",
+        "world:creature:28484",
+        "world:creature:28479",
+        "world:creature:28388"
+      ],
+      "text": "You are in Zim'Torga, a settlement in Zul'Drak that neither side holds. Element-Tamer Dagoda and Scalper Ahunae defend it with captured elementals, and the Drakkari witch doctor Khufu seeks contact with the region's old gods. It has a flight master, an inn, repairs, a stable master and vendors. Jin'Alai warriors are the danger nearby.",
+      "when": {
+        "area_id": 4323
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4324",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4324",
+        "world:creature:28388",
+        "world:creature:28504",
+        "world:creature:29327",
+        "world:creature:28496"
+      ],
+      "text": "You are in the Pools of Jin'Alai, in Zul'Drak. Jin'Alai warriors and medicine men are the main dangers, with frost leopards and the troll Chulo the Mad among the rest.",
+      "when": {
+        "area_id": 4324
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4325",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4325",
+        "world:creature:28030",
+        "world:creature:28672",
+        "world:creature:28747",
+        "world:creature:28784",
+        "world:creature:28748",
+        "world:creature:28754"
+      ],
+      "text": "You are in the Altar of Quetz'lun, in Zul'Drak. The spirit of Quetz'lun, the wind serpent goddess, rules the underworld she made as she died, where she treats mortals as insects and plots revenge on her prophet. Her worshippers, altar wardens and serpent-touched berserkers are the dangers here, with High Priestess Tua-Tua among them.",
+      "when": {
+        "area_id": 4325
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4326",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4326",
+        "world:creature:28465",
+        "world:creature:28600",
+        "world:creature:28779",
+        "world:quest:12684"
+      ],
+      "text": "You are in Heb'Drakkar, in Zul'Drak. Heb'Drakkar strikers and headhunters are the dangers here, and the blood of Mam'toth, a mammoth god who destroyed himself, still lives on in the area.",
+      "when": {
+        "area_id": 4326
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4327",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4327",
+        "world:creature:28717",
+        "world:creature:28417",
+        "world:creature:28442",
+        "world:creature:28411",
+        "world:creature:28452"
+      ],
+      "text": "You are in Drak'Mabwa, in Zul'Drak. Overlord Drakuru is here, a servant of the Lich King who looks toward Gundrak. Priests and prophets of Rhunok, along with frozen earth and elemental rifts, are the dangers here.",
+      "when": {
+        "area_id": 4327
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4328",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4328",
+        "world:creature:28717",
+        "world:creature:28597",
+        "world:creature:28411",
+        "world:creature:28452"
+      ],
+      "text": "You are in Zim'Rhuk, in Zul'Drak. Guardians of Zim'Rhuk are the dangers here, along with frozen earth and elemental rifts. Overlord Drakuru is found in the area.",
+      "when": {
+        "area_id": 4328
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4329",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4329",
+        "world:creature:28852",
+        "world:creature:28861",
+        "world:creature:28851",
+        "world:creature:29334",
+        "world:creature:28233",
+        "world:creature:28717"
+      ],
+      "text": "You are in Altar of Mam'toth, an altar in Zul'Drak. Dead Mam'toth disciples, Mam'toth disciples, enraged mammoths and Gundrak raptors are the dangers, and Zul'Drak bats here bite fatally when engaged. Overlord Drakuru says the Lich King shares power with those who serve him, and looks toward Gundrak as destiny.",
+      "when": {
+        "area_id": 4329
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4371",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4371",
+        "world:creature:28779",
+        "world:creature:28861",
+        "world:creature:33776"
+      ],
+      "text": "You are in Mam'toth Crater, an area of Zul'Drak where Blood of Mam'toth and Mam'toth disciples are the dangers. Gondria, a powerful named beast, is a rare elite creature found in several parts of the region.",
+      "when": {
+        "area_id": 4371
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4372",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4372",
+        "world:creature:28882",
+        "world:creature:28902"
+      ],
+      "text": "You are in Zol'Maz Stronghold, a place in Zul'Drak. Enchanted tiki warriors fill it, and Warlord Zol'Maz is among the foes here.",
+      "when": {
+        "area_id": 4372
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4373",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4373",
+        "world:creature:29237",
+        "world:creature:29236",
+        "world:creature:29235",
+        "world:creature:29334",
+        "world:creature:32475"
+      ],
+      "text": "You are in Zol'Heb, a place in Zul'Drak. Gundrak fire-eaters, brutes, savages and raptors are the dangers here, along with terror spinners.",
+      "when": {
+        "area_id": 4373
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4375",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4375",
+        "world:creature:28952",
+        "world:creature:28717",
+        "world:creature:29237",
+        "world:creature:29236",
+        "world:creature:29235",
+        "world:creature:28988",
+        "world:creature:29332"
+      ],
+      "text": "You are in Gundrak, a place in Zul'Drak. Gundrak fire-eaters, brutes, savages and bat riders are the dangers, along with Akali Subduers. Akali, a captive freed from chains, threatens the Drakkari for their past trespasses, while Overlord Drakuru looks toward Gundrak as destiny.",
+      "when": {
+        "area_id": 4375
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4390",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4390",
+        "world:creature:28844",
+        "world:creature:28843",
+        "world:creature:28802"
+      ],
+      "text": "You are in Frigid Breach, a place in Zul'Drak. Drakkari skullcrushers and bloated abominations are the dangers, and servants of Drakuru are about.",
+      "when": {
+        "area_id": 4390
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4468",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4468",
+        "world:creature:29897",
+        "world:creature:29893",
+        "world:creature:29646",
+        "world:creature:29451",
+        "world:creature:29452",
+        "world:creature:29821"
+      ],
+      "text": "You are in The Dead Fields, a place in Zul'Drak. Reanimated corpses and banshee soulclaimers haunt it, with vargul slayers, vargul blighthounds and Prince Navarius among the dangers.",
+      "when": {
+        "area_id": 4468
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4469",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4469",
+        "world:creature:29468",
+        "world:creature:29451",
+        "world:creature:29646",
+        "world:creature:29893"
+      ],
+      "text": "You are in Dargath's Demise, a place in Zul'Drak where vargul slayers and banshee soulclaimers are the dangers. Crusader Dargath is remembered as a courageous man who charged out of the tank to protect the others.",
+      "when": {
+        "area_id": 4469
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4489",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4489",
+        "world:creature:29688",
+        "world:creature:29689",
+        "world:quest:12901"
+      ],
+      "text": "You are in Crusader Forward Camp, a camp in Zul'Drak with repairs and a merchant. Engineer Reed works here, hoping to repair a tank with Scourge scrap, though he is unsure it will work. Crusader MacKellar survived Prince Navarius's attack and is alarmed by the Scourge around the camp.",
+      "when": {
+        "area_id": 4489
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4579",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4579",
+        "dbc:taxi:331",
+        "world:creature:30569",
+        "world:creature:30676",
+        "world:creature:30671"
+      ],
+      "text": "You are in Dubra'Jin, a troll settlement in Zul'Drak with a flight master, repairs and a merchant. Chronicler Bah'Kini records the Drakkari Empire's collapse, believing that trolls turning on their own gods repeats history. Tol'mar, after Akali's death, calls for Gal'darah to pay.",
+      "when": {
+        "area_id": 4579
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4275": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4275 (The Argent Stand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4276": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4276 (Altar of Sseratus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4278": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4278 (Drak'Sotra Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4279": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4279 (Drak'Sotra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4280": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4280 (Drak'Agal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4294": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4294 (Heb'Valok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4299": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4299 (Kolramas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4311": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4311 (Reliquary of Agony)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4312": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4312 (Ebon Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4313": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4313 (Thrym's End)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4315": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4315 (Reliquary of Pain)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4316": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4316 (Rageclaw Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4317": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4317 (Light's Breach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4318": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4318 (Pools of Zha'Jin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4319": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4319 (Zim'Abwa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4320": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4320 (Amphitheater of Anguish)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4321": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4321 (Altar of Rhunok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4322": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4322 (Altar of Har'koa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4323": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4323 (Zim'Torga)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4324": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4324 (Pools of Jin'Alai)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4325": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4325 (Altar of Quetz'lun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4326": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4326 (Heb'Drakkar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4327": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4327 (Drak'Mabwa)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4328": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4328 (Zim'Rhuk)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4329": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4329 (Altar of Mam'toth)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4371": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4371 (Mam'toth Crater)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4372": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4372 (Zol'Maz Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4373": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4373 (Zol'Heb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4375": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4375 (Gundrak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4390": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4390 (Frigid Breach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4468": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4468 (The Dead Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4469": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4469 (Dargath's Demise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4489": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4489 (Crusader Forward Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4579": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4579 (Dubra'Jin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:66": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 66 (Zul'Drak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:331": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 331 (Gundrak, Zul'Drak)",
+      "revision": "3.3.5a client data"
+    },
     "source:00058d8de35221878ce17860": {
       "kind": "research",
       "reference": "evidence:sha256:28d959310f05acd755aae4e6a68c0b45f6e9e0a41df6c3d6dc3858c32a82eac2",
@@ -9758,6 +10540,596 @@
       "kind": "research",
       "reference": "evidence:sha256:a987a9d31624e0c8bcce4a19a025e4543c654935cfe08559ba231c44470e19f6",
       "revision": "71c5210794db24d863dfb67643f3967dca30302f0dd3499ce589b090f937c7e8"
+    },
+    "world:creature:16570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16570 (Crazed Water Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28030": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28030 (Quetz'lun's Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28034 (Drakkari Snake Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28035 (Priest of Sseratus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28039": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28039 (Commander Kunz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28043": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28043 (Captain Grondel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28044 (Captain Rupert), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28045": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28045 (Captain Arnath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28056": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28056 (Sergeant Stackhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28059": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28059 (Commander Falstaav), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28068": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28068 (Prophet of Sseratus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28089 (Sseratus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28133 (Crusader Jonathan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28145": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28145 (Lurking Basilisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28158": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28158 (Withered Argent Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28205": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28205 (Alchemist Finklestein), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28221 (Trapdoor Crawler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28233 (Zul'Drak Bat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28255 (Malas the Corrupter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28257 (Hath'ar Necromagus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28258 (Hath'ar Skimmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28274": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28274 (Plague Sprayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28303": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28303 (Drakkari Water Binder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28323 (Mossy Rampager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28388 (Jin'Alai Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28401 (Har'koa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28402 (Claw of Har'koa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28403": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28403 (Har'koan Subduer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28404 (Cursed Offspring of Har'koa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28411": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28411 (Frozen Earth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28412": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28412 (Hath'ar Broodmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28413 (Nerubian Cocoon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28416 (Rhunok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28417 (Priest of Rhunok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28418": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28418 (Drakkari Bear Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28442": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28442 (Prophet of Rhunok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28452 (Elemental Rift), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28465": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28465 (Heb'Drakkar Striker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28479 (Witch Doctor Khufu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28480 (Element-Tamer Dagoda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28484": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28484 (Scalper Ahunae), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28496": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28496 (Chulo the Mad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28504 (Jin'Alai Medicine Man), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28518 (Stefan Vadu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28532 (Bloodrose Datura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28561 (Spirit of Rhunok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28564 (Putrid Abomination), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28565": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28565 (Decaying Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28597 (Guardian of Zim'Rhuk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28599": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28599 (Plagueroach), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28600 (Heb'Drakkar Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28618 (Danica Saint), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28672": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28672 (Quetz'lun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28717 (Overlord Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28747": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28747 (Quetz'lun Worshipper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28748": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28748 (Serpent-Touched Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28750 (Blight Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28754 (High Priestess Tua-Tua), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28759 (Flying Fiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28779 (Blood of Mam'toth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28784 (Altar Warden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28802": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28802 (Servant of Drakuru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28843 (Bloated Abomination), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28844 (Drakkari Skullcrusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28851": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28851 (Enraged Mammoth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28852": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28852 (Dead Mam'toth Disciple), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28861": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28861 (Mam'toth Disciple), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28869": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28869 (Deathdrip), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28870 (Corpsedust), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28871": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28871 (Scabbard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28882": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28882 (Enchanted Tiki Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28888 (Captured Drakkari Chieftain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28902": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28902 (Warlord Zol'Maz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28952 (Akali), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28988": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28988 (Akali Subduer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29129 (Lost Drakkari Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29133 (Disturbed Soul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29169 (Magister Teronus III), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29211": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29211 (Drakkari Native), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29235 (Gundrak Savage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29236 (Gundrak Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29237 (Gundrak Fire-eater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29327 (Frost Leopard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29332": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29332 (Gundrak Bat Rider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29334 (Gundrak Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29449 (Vargul Deathwaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29451 (Vargul Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29452 (Vargul Blighthound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29455": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29455 (Gerk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29468 (Crusader Dargath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29646 (Banshee Soulclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29647 (Gymer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29654": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29654 (Drakuru Blood Drinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29656 (Drakuru Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29686 (Captured Rageclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29687 (Crusader Lord Lantinga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29688": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29688 (Engineer Reed), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29689": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29689 (Crusader MacKellar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29690 (Chief Rageclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29733 (Elder Shaman Moky), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29821 (Prince Navarius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29893": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29893 (Banshee Soulclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29897": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29897 (Reanimated Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30007 (Gurgthock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30009": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30009 (Wodin the Troll-Servant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30098": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30098 (Amphitheater Vendor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30569": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30569 (Rafae), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30671": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30671 (Tol'mar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30676": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30676 (Chronicler Bah'Kini), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32447 (Zul'drak Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:32475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32475 (Terror Spinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33776": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33776 (Gondria), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12554": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12554 (Malas the Corrupter)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12594": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12594 (Troll Patrol: Couldn't Care Less)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12646": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12646 (My Prophet, My Enemy)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12684": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12684 (Blood of a Dead God)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12859": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12859 (This Just In: Fire Still Hot!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12901": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12901 (Making Something Out Of Nothing)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

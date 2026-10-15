@@ -2319,7 +2319,398 @@
     }
   ],
   "place": "Westfall",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:40",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:40",
+        "dbc:area:108",
+        "world:creature:504",
+        "world:creature:1109",
+        "world:creature:117",
+        "world:creature:171",
+        "world:creature:834"
+      ],
+      "text": "You are in Westfall, Alliance land in the Eastern Kingdoms. Its farmland is held by the Alliance, with Sentinel Hill the main settlement. Defias thieves drove farm folk off their land and still roam the fields and mines. Fleshrippers, coyotes and gnolls prowl the farms and roads, and murlocs raid the coast.",
+      "when": {
+        "zone_id": 40
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2",
+        "world:creature:4305",
+        "world:creature:6491",
+        "world:creature:171",
+        "world:creature:517",
+        "world:creature:513"
+      ],
+      "text": "You are in Longshore, a coastal place in Westfall with a spirit healer and a vendor. Kriggon Talsone, a fisherman, sells goods to visitors here. Murlocs, including oracles and netters, haunt the shore.",
+      "when": {
+        "area_id": 2
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:20",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:20",
+        "world:creature:1669",
+        "world:creature:824",
+        "world:creature:589",
+        "world:creature:590"
+      ],
+      "text": "You are in Moonbrook, a place in Westfall where the Defias gang is active. A Defias profiteer sells goods and repairs, and Defias diggers, pillagers and looters roam the village.",
+      "when": {
+        "area_id": 20
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:107",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:107",
+        "world:creature:233",
+        "world:creature:235",
+        "world:creature:114",
+        "world:creature:36",
+        "world:creature:199"
+      ],
+      "text": "You are in Saldean's Farm, a Westfall farm where the Saldeans stayed when other farm folk fled. Farmer Saldean keeps it, and his cook Salma Saldean prepares meals there. Harvest Watchers and golems have taken over the fields around it, and young fleshrippers roam nearby.",
+      "when": {
+        "area_id": 107
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:108",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:108",
+        "world:creature:234",
+        "world:creature:523",
+        "world:creature:504"
+      ],
+      "text": "You are in Sentinel Hill, the Alliance stronghold of Westfall, with a stone tower held by the People's Militia. Gryan Stoutmantle leads the militia, which fights the Defias that have overrun the farms. The town has an inn and a gryphon master who flies riders to Stormwind for a fee.",
+      "when": {
+        "area_id": 108
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:109",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:109",
+        "world:quest:64",
+        "world:creature:114",
+        "world:creature:480",
+        "world:creature:504",
+        "world:creature:117"
+      ],
+      "text": "You are in Furlbrow's Pumpkin Farm, a Westfall pumpkin farm. Harvest Watchers and Rusty Harvest Golems have taken over its fields, and Defias trappers and Riverpaw gnolls roam among them.",
+      "when": {
+        "area_id": 109
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:111",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:111",
+        "world:quest:12",
+        "world:creature:95",
+        "world:creature:504",
+        "world:creature:117",
+        "world:creature:500",
+        "world:creature:1236"
+      ],
+      "text": "You are in Jangolode Mine, a mine in northwest Westfall. Defias smugglers and trappers work its tunnels, with Riverpaw gnolls, scouts and kobold diggers alongside them.",
+      "when": {
+        "area_id": 111
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:113",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:113",
+        "world:quest:13",
+        "world:creature:590",
+        "world:creature:589",
+        "world:creature:1426"
+      ],
+      "text": "You are in Gold Coast Quarry, a quarry near the Westfall shore, west of the Sentinel Hill tower. Defias looters and pillagers plunder it, and Riverpaw miners, coyotes and fleshrippers work alongside them.",
+      "when": {
+        "area_id": 113
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:115",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:115",
+        "world:creature:392",
+        "world:quest:104"
+      ],
+      "text": "You are in Westfall Lighthouse, on the rocky coast of Westfall. Captain Grayson, who died on these rocks, keeps its flame lit for passing ships. Murlocs once raided the lighthouse under Old Murk-Eye, who killed the keeper's family.",
+      "when": {
+        "area_id": 115
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:219",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:219",
+        "world:quest:13",
+        "world:creature:589",
+        "world:creature:590",
+        "world:creature:123",
+        "world:creature:573"
+      ],
+      "text": "You are in Alexston Farmstead, a Westfall farm that Defias pillagers and looters raid. Riverpaw mongrels roam its fields, and Foe Reaper 4000 machines work alongside them.",
+      "when": {
+        "area_id": 219
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:916",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:916",
+        "world:creature:237",
+        "world:creature:238",
+        "world:creature:480",
+        "world:creature:834",
+        "world:creature:117"
+      ],
+      "text": "You are in The Jansen Stead, a Westfall farm that Farmer Furlbrow and his wife Verna were driven from by ruffians. They wait here for a repaired wagon so they can leave Westfall. Rusty Harvest Golems, coyotes and Riverpaw gnolls roam the fields.",
+      "when": {
+        "area_id": 916
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:917",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:917",
+        "world:creature:115",
+        "world:creature:154",
+        "world:creature:449",
+        "world:creature:122"
+      ],
+      "text": "You are in The Dead Acre, a Westfall field where Harvest Reapers and greater fleshrippers roam. Defias knuckledusters and highwaymen lurk here too.",
+      "when": {
+        "area_id": 917
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:918",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:918",
+        "world:quest:12",
+        "world:creature:114",
+        "world:creature:36",
+        "world:creature:504",
+        "world:creature:95"
+      ],
+      "text": "You are in The Molsen Farm, a Westfall farm where Defias trappers have been sighted. Harvest Watchers and Harvest Golems work the fields, and young fleshrippers and Defias smugglers hunt here too.",
+      "when": {
+        "area_id": 918
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:919",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:919",
+        "dbc:area:40",
+        "world:creature:452",
+        "world:creature:124",
+        "world:creature:1109",
+        "world:creature:95"
+      ],
+      "text": "You are in Stendel's Pond, a part of Westfall that is Alliance land. Riverpaw bandits and brutes roam its shores, and Fleshrippers and Defias smugglers are among its dangers.",
+      "when": {
+        "area_id": 919
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:920",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:920",
+        "world:creature:239",
+        "world:creature:6182",
+        "world:creature:6491",
+        "world:creature:122",
+        "world:creature:623",
+        "world:creature:625"
+      ],
+      "text": "You are in The Dagger Hills, a part of Westfall that is Alliance land. Grimbooze Thunderbrew, a brewer who speaks in playful rhymes, is working on a lager and an amber brew. Daphne Stilwell keeps her home on the coast while her husband is in Ironforge, and she is ready to defend it with a gun. Defias highwaymen, undead miners and dynamiters trouble the hills, and a spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 920
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:921",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:921",
+        "dbc:area:40",
+        "world:creature:449",
+        "world:creature:501",
+        "world:creature:124",
+        "world:creature:121",
+        "world:creature:123",
+        "world:creature:1109"
+      ],
+      "text": "You are in Demont's Place, a part of Westfall that is Alliance land. Riverpaw brutes, mongrels and herbalists share the ground with Defias knuckledusters and pathstalkers, and Fleshrippers roam here too.",
+      "when": {
+        "area_id": 921
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:922",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:922",
+        "dbc:area:40",
+        "world:creature:7024",
+        "world:creature:98",
+        "world:creature:452",
+        "world:creature:453",
+        "world:creature:462"
+      ],
+      "text": "You are in The Dust Plains, a part of Westfall that is Alliance land. Agent Kearnen keeps a concealed watch on a Defias tower here, and she reports a shipment from Duskwood guarded by creatures she cannot identify. Riverpaw taskmasters, bandits and mystics work the plains, and Vultros is among the dangers.",
+      "when": {
+        "area_id": 922
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:107": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 107 (Saldean's Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:108": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 108 (Sentinel Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:109": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 109 (Furlbrow's Pumpkin Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:111": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 111 (Jangolode Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:113": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 113 (Gold Coast Quarry)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:115": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 115 (Westfall Lighthouse)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2 (Longshore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:20": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 20 (Moonbrook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:219": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 219 (Alexston Farmstead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:40": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 40 (Westfall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:916": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 916 (The Jansen Stead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:917": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 917 (The Dead Acre)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:918": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 918 (The Molsen Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:919": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 919 (Stendel's Pond)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:920": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 920 (The Dagger Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:921": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 921 (Demont's Place)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:922": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 922 (The Dust Plains)",
+      "revision": "3.3.5a client data"
+    },
     "source:000d4d776248c71e5a33b421": {
       "kind": "research",
       "reference": "evidence:sha256:baea412c875e81bc893e1aee980c9349f1398ab7821981c1a8924656474921e2",
@@ -4174,6 +4565,256 @@
       "kind": "research",
       "reference": "evidence:sha256:a556f1359b14eb8033ee8d60f2ae456ab7d8ac4fb2991a62db136227d9bf6fd3",
       "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
+    "world:creature:1109": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1109 (Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 114 (Harvest Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 115 (Harvest Reaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 117 (Riverpaw Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 121 (Defias Pathstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:122": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 122 (Defias Highwayman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 123 (Riverpaw Mongrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1236 (Kobold Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 124 (Riverpaw Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1426": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1426 (Riverpaw Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:154": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 154 (Greater Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1669": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1669 (Defias Profiteer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:171": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 171 (Murloc Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:199": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 199 (Young Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:233": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 233 (Farmer Saldean), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:234": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 234 (Gryan Stoutmantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 235 (Salma Saldean), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 237 (Farmer Furlbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 238 (Verna Furlbrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 239 (Grimbooze Thunderbrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36 (Harvest Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:392": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 392 (Captain Grayson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4305 (Kriggon Talsone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 449 (Defias Knuckleduster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 452 (Riverpaw Bandit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 453 (Riverpaw Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 462 (Vultros), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 480 (Rusty Harvest Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 500 (Riverpaw Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 501 (Riverpaw Herbalist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 504 (Defias Trapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:513": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 513 (Murloc Netter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:517": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 517 (Murloc Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 523 (Thor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:573": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 573 (Foe Reaper 4000), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 589 (Defias Pillager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:590": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 590 (Defias Looter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6182": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6182 (Daphne Stilwell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:623": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 623 (Skeletal Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:625": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 625 (Undead Dynamiter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7024": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7024 (Agent Kearnen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 824 (Defias Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 834 (Coyote), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:95": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 95 (Defias Smuggler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:98": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 98 (Riverpaw Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:104": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 104 (The Coastal Menace)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12 (The People's Militia)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13 (The People's Militia)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:64": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 64 (The Forgotten Heirloom)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

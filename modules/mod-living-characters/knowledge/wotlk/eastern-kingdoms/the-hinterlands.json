@@ -2335,7 +2335,441 @@
     }
   ],
   "place": "The Hinterlands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:47",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:47",
+        "dbc:area:348",
+        "dbc:area:349",
+        "dbc:area:3317",
+        "world:creature:2924",
+        "world:creature:2927",
+        "world:creature:2649",
+        "world:creature:2646"
+      ],
+      "text": "You are in The Hinterlands, a contested land in the Eastern Kingdoms where both the Alliance and the Horde hold settlements. The Alliance keeps Aerie Peak and Wildhammer Keep, and the Horde keeps Revantusk Village. Trolls are the chief danger, with Witherbark and Vilebranch tribes raiding the hills, while silvermane wolves and owlbeasts roam the wilds.",
+      "when": {
+        "zone_id": 47
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:307",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:307",
+        "world:creature:2505",
+        "world:creature:6491",
+        "world:creature:2926",
+        "world:creature:7977",
+        "world:creature:7780"
+      ],
+      "text": "You are in The Overlook Cliffs, a section of the Hinterlands with a spirit healer. Silvermane stalkers roam the cliffs and a Gammerita is also found here. Saltwater snapjaws break the fishing lines of Katoom the Angler from Revantusk Village, and the captive Witherbark troll Rin'ji says he hid a secret on an island at these cliffs.",
+      "when": {
+        "area_id": 307
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:348",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:348",
+        "world:creature:5635",
+        "world:creature:5636",
+        "world:creature:8023"
+      ],
+      "text": "You are in Aerie Peak, an Alliance hold in the Hinterlands where High Thane Falstad Wildhammer is dealing with a troll threat. Gryphon Master Talonaxe handles flight assignments while the High Thane is away. Swiftwing's young heir Sharpbeak was lost while hunting, and Talonaxe fears for him. A flight master, stable master and spirit healer also work here.",
+      "when": {
+        "area_id": 348
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:349",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:349",
+        "world:creature:7884",
+        "world:quest:2877",
+        "world:creature:7744",
+        "world:creature:8161",
+        "world:creature:11097"
+      ],
+      "text": "You are in Wildhammer Keep, an Alliance hold in the Hinterlands. Fraggar Thundermantle insists the Wildhammer are independent of the Alliance and asks newcomers to prove their worth, and he has them clearing sludges and oozes around Skulk Rock. Innkeeper Thulfram keeps the inn, Harggan does repairs, and Drakk Stonehand trains leatherworkers.",
+      "when": {
+        "area_id": 349
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:350",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:350",
+        "world:creature:7780",
+        "world:creature:2693",
+        "world:creature:2694",
+        "world:creature:2924",
+        "world:creature:2927"
+      ],
+      "text": "You are in Quel'Danil Lodge, where high elves of the Highvale keep a captured Witherbark troll. Rin'ji has lost his axe and begs to be helped out, saying he hid a secret at the Overlook Cliffs. Highvale marksmen, rangers, scouts and outrunners serve here, and silvermane wolves and vicious owlbeasts range nearby.",
+      "when": {
+        "area_id": 350
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:351",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:351",
+        "world:quest:2877",
+        "world:creature:2656",
+        "world:creature:2655",
+        "world:creature:2926",
+        "world:creature:2929",
+        "world:creature:8212"
+      ],
+      "text": "You are in Skulk Rock, an abandoned Horde position in the Hinterlands, now overrun by jade oozes and green sludges. Silvermane stalkers and savage owlbeasts roam here, and a creature called The Reak has been seen.",
+      "when": {
+        "area_id": 351
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:352",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:352",
+        "world:creature:2649",
+        "world:creature:2650",
+        "world:creature:2923",
+        "world:creature:8219",
+        "world:quest:2933"
+      ],
+      "text": "You are in Zun'watha, where Witherbark scalpers and zealots are found, with mangy silvermanes and a Zul'arek Hatefowler among the dangers. Bottles of a vile green venom are stored here in great number, which suggests the Witherbark value it greatly.",
+      "when": {
+        "area_id": 352
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:353",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:353",
+        "world:creature:5598",
+        "world:creature:6491",
+        "world:creature:2686",
+        "world:creature:2653",
+        "world:creature:8218"
+      ],
+      "text": "You are in Shadra'Alor, where Witherbark trolls live and fight. The Atal'ai Exile was cast out of the temple for questioning Jammal'an's prophecy to summon Hakkar, and now lives among the Witherbark. Witherbark broodguards, sadists and callers are dangerous here, and Witherheart the Stalker roams near. A spirit healer also works here.",
+      "when": {
+        "area_id": 353
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:354",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:354",
+        "world:creature:14757",
+        "world:quest:2994",
+        "world:creature:2646",
+        "world:creature:2645",
+        "world:creature:2647"
+      ],
+      "text": "You are in Jintha'Alor, Vilebranch troll territory in the Hinterlands. Vilebranch blood drinkers, shadow hunters and soul eaters are dangerous here. Elder Torntusk, taken from Revantusk Village, is held in chains, and Hitah'ya the Keeper holds the key to his bindings. Vile Priestess Hexx holds a key to a gryphon's cage at its top.",
+      "when": {
+        "area_id": 354
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:355",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:355",
+        "world:quest:2989",
+        "world:creature:4467",
+        "world:creature:2639",
+        "world:creature:4466",
+        "world:creature:2680",
+        "world:creature:2925"
+      ],
+      "text": "You are in The Altar of Zul, on the western edge of Vilebranch territory in the Hinterlands. Vilebranch soothsayers, axe throwers, scalpers and wolf pups are found here, and silvermane howlers and primitive owlbeasts range nearby. Sharpbeak, the lost gryphon child, was once sought on the top of the altar.",
+      "when": {
+        "area_id": 355
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:356",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:356",
+        "world:creature:6491",
+        "world:creature:12477",
+        "world:creature:12478",
+        "world:creature:12479",
+        "world:creature:14888",
+        "world:creature:5718"
+      ],
+      "text": "You are in Seradane, where a spirit healer offers a return to life for a price. Verdantine boughguards, oracles and tree warders are hostile here, and Lethon and Rothos are notable among them.",
+      "when": {
+        "area_id": 356
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1880",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1880",
+        "world:quest:9476",
+        "world:creature:2923",
+        "world:creature:8211"
+      ],
+      "text": "You are in Featherbeard's Hovel, where Featherbeard's journal records Witherbark raids on the gryphon aeries and a rash of egg thefts. He suspected a Witherbark witch doctor named Mai'jin. Mangy silvermanes and an old cliff jumper are hostile here.",
+      "when": {
+        "area_id": 1880
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1881",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1881",
+        "world:creature:5634",
+        "world:creature:7801",
+        "world:creature:5635"
+      ],
+      "text": "You are in Shindigger's Camp, a brew camp in the Hinterlands. Rhapsody Shindigger, a former Aerie Peak gryphon pilot whose drinking cost him his place there, now stays at the camp, and Gilveradin Sunchaser is a wine expert who can identify vintages by smell.",
+      "when": {
+        "area_id": 1881
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1883",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1883",
+        "world:creature:2928",
+        "world:creature:2925"
+      ],
+      "text": "You are in Valorwind Lake, part of the Hinterlands. Primitive owlbeasts and Silvermane howlers haunt it.",
+      "when": {
+        "area_id": 1883
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1884",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1884",
+        "world:quest:7839",
+        "world:creature:2655",
+        "world:creature:2656",
+        "world:creature:2928",
+        "world:creature:2925"
+      ],
+      "text": "You are in Agol'watha, a temple in the northeast of the Hinterlands. Green sludges and jade oozes trouble the ground here, along with primitive owlbeasts and Silvermane howlers.",
+      "when": {
+        "area_id": 1884
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1885",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1885",
+        "world:quest:2933",
+        "world:creature:2651",
+        "world:creature:2924",
+        "world:creature:2927"
+      ],
+      "text": "You are in Hiri'watha, a Witherbark village in the Hinterlands. Witherbark trolls live here alongside silvermane wolves and vicious owlbeasts.",
+      "when": {
+        "area_id": 1885
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1886",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1886",
+        "world:creature:2655",
+        "world:creature:2656",
+        "world:creature:2928",
+        "world:creature:2926"
+      ],
+      "text": "You are in The Creeping Ruin, a ruin in the Hinterlands. Green sludges and jade oozes share it with primitive owlbeasts and silvermane stalkers.",
+      "when": {
+        "area_id": 1886
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1887",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1887",
+        "world:creature:2653",
+        "world:creature:2927",
+        "world:creature:2924",
+        "world:creature:17236",
+        "world:creature:17235"
+      ],
+      "text": "You are in Bogen's Ledge, a ledge in the Hinterlands. Witherbark sadists, vicious owlbeasts and silvermane wolves roam it. The hostile Tcha'kaz and Witch Doctor Mai'jin are found here.",
+      "when": {
+        "area_id": 1887
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3317",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3317",
+        "world:creature:14731",
+        "world:creature:4314",
+        "world:creature:14741",
+        "world:creature:14736",
+        "world:quest:7839",
+        "world:quest:7845"
+      ],
+      "text": "You are in Revantusk Village, a Horde troll village in the Hinterlands. Its inn, stable and flight master serve travelers. Lard keeps the inn, Gorkas runs the wind riders, and Huntsman Markhor is the stable master. Vilebranch raiders invade the village, and spies say they hold Elder Torntusk captive at Jintha'alor.",
+      "when": {
+        "area_id": 3317
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1880": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1880 (Featherbeard's Hovel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1881": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1881 (Shindigger's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1883": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1883 (Valorwind Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1884": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1884 (Agol'watha)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1885": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1885 (Hiri'watha)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1886": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1886 (The Creeping Ruin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1887": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1887 (Bogen's Ledge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:307": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 307 (The Overlook Cliffs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3317": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3317 (Revantusk Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:348": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 348 (Aerie Peak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:349": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 349 (Wildhammer Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:350": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 350 (Quel'Danil Lodge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:351": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 351 (Skulk Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:352": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 352 (Zun'watha)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:353": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 353 (Shadra'Alor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:354": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 354 (Jintha'Alor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:355": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 355 (The Altar of Zul)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:356": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 356 (Seradane)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:47": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 47 (The Hinterlands)",
+      "revision": "3.3.5a client data"
+    },
     "source:00d94a99bba9426ea925640c": {
       "kind": "research",
       "reference": "evidence:sha256:b314d5a532d5edb96995f81130be7a9ef74da17267c41e4bac4c244397b5eea2",
@@ -4200,6 +4634,306 @@
       "kind": "research",
       "reference": "evidence:sha256:747d2a4051338c9724c5d5f84c5cd858f07680b1fe2b5f5c122f9870a6ad1428",
       "revision": "f1dcd65b8135b3d95ed181fc5ed1c41a981b1c34202e8affa43b50fcac227777"
+    },
+    "world:creature:11097": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11097 (Drakk Stonehand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12477 (Verdantine Boughguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12478": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12478 (Verdantine Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12479 (Verdantine Tree Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14731 (Lard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14736": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14736 (Primal Torntusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14741": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14741 (Huntsman Markhor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14757": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14757 (Elder Torntusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14888 (Lethon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17235 (Witch Doctor Mai'jin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17236 (Tcha'kaz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2505 (Saltwater Snapjaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2639 (Vilebranch Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2645": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2645 (Vilebranch Shadow Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2646 (Vilebranch Blood Drinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2647 (Vilebranch Soul Eater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2649 (Witherbark Scalper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2650": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2650 (Witherbark Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2651": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2651 (Witherbark Hideskinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2653": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2653 (Witherbark Sadist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2655": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2655 (Green Sludge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2656 (Jade Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2680 (Vilebranch Wolf Pup), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2686 (Witherbark Broodguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2693 (Highvale Marksman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2694": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2694 (Highvale Ranger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2923": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2923 (Mangy Silvermane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2924 (Silvermane Wolf), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2925 (Silvermane Howler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2926": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2926 (Silvermane Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2927 (Vicious Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2928": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2928 (Primitive Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2929": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2929 (Savage Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4314 (Gorkas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4466": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4466 (Vilebranch Scalper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4467": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4467 (Vilebranch Soothsayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5598": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5598 (Atal'ai Exile), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5634": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5634 (Rhapsody Shindigger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5635 (Falstad Wildhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5636 (Gryphon Master Talonaxe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5718 (Rothos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7744 (Innkeeper Thulfram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7780 (Rin'ji), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7801 (Gilveradin Sunchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7884": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7884 (Fraggar Thundermantle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7977 (Gammerita), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8023": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8023 (Sharpbeak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8161 (Harggan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8211": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8211 (Old Cliff Jumper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8212 (The Reak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8218": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8218 (Witherheart the Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8219": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8219 (Zul'arek Hatefowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2877": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2877 (Skulk Rock Clean-up)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2933": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2933 (Venom Bottles)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2989": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2989 (The Altar of Zul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2994": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2994 (Saving Sharpbeak)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7839": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7839 (Vilebranch Hooligans)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7845": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7845 (Kidnapped Elder Torntusk!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9476": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9476 (In Pursuit of Featherbeard)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

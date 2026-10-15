@@ -3642,7 +3642,475 @@
     }
   ],
   "place": "Plaguelands: The Scarlet Enclave",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4298",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4298",
+        "dbc:area:4355",
+        "dbc:area:4356",
+        "world:creature:28529",
+        "world:creature:28891",
+        "world:creature:28850"
+      ],
+      "text": "You are in Plaguelands: The Scarlet Enclave, a land in the Eastern Kingdoms held by neither the Alliance nor the Horde. Its main settlements are the Crypt of Remembrance and Death's Breach, and neither side holds them. Scarlet Crusade soldiers, miners and land cannons hold parts of the land, while Scourge death knights, ghouls and geists press against them.",
+      "when": {
+        "zone_id": 4298
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4343",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4343",
+        "world:creature:28913",
+        "world:creature:29102",
+        "world:creature:28529",
+        "world:quest:12725"
+      ],
+      "text": "You are in New Avalon, a town in the Scarlet Enclave. Thassarian, a Scourge death knight, still hopes that Koltira Deathweaver survived capture by the Scarlet Crusade. Hearthglen and Tirisfal crusaders and Scarlet crusaders patrol the town, and the Scarlet Hold lies northeast of here.",
+      "when": {
+        "area_id": 4343
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4345",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4345",
+        "world:creature:28914",
+        "world:quest:12723",
+        "world:creature:28610",
+        "world:creature:28936"
+      ],
+      "text": "You are in New Avalon Orchard, among the orchards of New Avalon. Orbaz Bloodbane, a calculating Scourge death knight, directs the campaign against the Scarlet Crusade from the Scarlet Tavern behind these orchards, running undercover courier operations. Scarlet marksmen, crusaders and commanders still roam the orchard.",
+      "when": {
+        "area_id": 4345
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4346",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4346",
+        "world:creature:28945",
+        "world:creature:28946",
+        "world:creature:28911",
+        "world:quest:12719"
+      ],
+      "text": "You are in the New Avalon Town Hall, where Mayor Quimby and the town's councilmen work. Prince Keleseth has ordered the mayor killed and the town's registry taken from this building, and the hall is dangerous: Scarlet crusaders and the town's citizens are hostile here.",
+      "when": {
+        "area_id": 4346
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4347",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4347",
+        "world:creature:28890",
+        "world:creature:28709",
+        "world:creature:28889",
+        "world:creature:28557",
+        "world:creature:28769"
+      ],
+      "text": "You are in Havenshire, a settlement in the Scarlet Enclave. Gothik the Harvester, a Scourge figure, examines corpses for what they may yield and curses the geists that interfere with the bodies. Acherus geists and an Acherus necromancer wander here, while Scarlet peasants and shadowy tormentors are the hostile dangers.",
+      "when": {
+        "area_id": 4347
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4348",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4348",
+        "world:creature:28919",
+        "world:quest:12717",
+        "world:creature:28766",
+        "world:creature:28769",
+        "world:creature:28903"
+      ],
+      "text": "You are in Havenshire Farms, a farm in the Scarlet Enclave. Noth the Plaguebringer, a Scourge plague specialist, is building a plague cauldron for New Avalon, a cauldron whose gas is deadly to the living and empowers the Scourge. Scarlet farm hounds and shadowy tormentors roam the fields, and a Scourge plaguehound patrols the grounds.",
+      "when": {
+        "area_id": 4348
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4349",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4349",
+        "world:creature:28905",
+        "world:creature:29136",
+        "world:creature:28557",
+        "world:creature:28609",
+        "world:creature:29103"
+      ],
+      "text": "You are in Havenshire Lumber Mill, a mill in the Scarlet Enclave. Gluttonous geists and volatile ghouls wander the grounds. Scarlet peasants, Scarlet infantrymen and Tirisfal crusaders are the hostile dangers here.",
+      "when": {
+        "area_id": 4349
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4350",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4350",
+        "world:creature:28607",
+        "world:creature:28901",
+        "world:creature:28609",
+        "world:creature:28608"
+      ],
+      "text": "You are in Havenshire Stables, a stable in the Scarlet Enclave where horses are kept for passengers. Havenshire colts and mares carry the passengers who ride them, and an Acherus deathcharger is kept here. Scarlet infantrymen and medics are the hostile dangers nearby.",
+      "when": {
+        "area_id": 4350
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4351",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4351",
+        "world:creature:28912",
+        "world:creature:29011",
+        "world:creature:29000",
+        "world:quest:12727",
+        "world:quest:12724"
+      ],
+      "text": "You are in the Scarlet Hold, the largest building in New Avalon and a Scarlet Crusade keep. Koltira Deathweaver, a badly wounded Scourge death knight, is held here and urges others to strike back and free the prisoners. High Inquisitor Valroth, Scarlet Commander Rodrick and their crusaders make it dangerous, and the alarms have been raised.",
+      "when": {
+        "area_id": 4351
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4352",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4352",
+        "world:creature:29053",
+        "world:creature:29061",
+        "world:creature:29032",
+        "world:creature:29029",
+        "world:quest:12738",
+        "world:quest:12739"
+      ],
+      "text": "You are in the Chapel of the Crimson Flame, a Scarlet chapel west of New Avalon. Knight Commander Plaguefist oversees the Argent Dawn prisoners held in the nearby prison house and singles them out for execution. Ellen Stanbridge and Malar Bravehorn ask to be put out of their misery, and Scarlet inquisitors and crusaders defend the chapel.",
+      "when": {
+        "area_id": 4352
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4353",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4353",
+        "world:creature:28850",
+        "world:creature:28856",
+        "world:creature:28891"
+      ],
+      "text": "You are in Light's Point Tower, a Scarlet stronghold in the Scarlet Enclave. Scarlet land cannons and fleet guardians are posted here, and scarlet miners are among the hostile creatures nearby.",
+      "when": {
+        "area_id": 4353
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4354",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4354",
+        "world:creature:28834",
+        "world:creature:28885",
+        "world:creature:28856",
+        "world:creature:28804",
+        "world:creature:28833"
+      ],
+      "text": "You are in Light's Point, an area of the Scarlet Enclave. Scarlet fleet defenders gather here in great numbers, and scarlet land cannons and fleet guardians add to the danger. A plague spreader, a Scarlet cannon and an Acherus necromancer are among its people.",
+      "when": {
+        "area_id": 4354
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4355",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4355",
+        "world:creature:28910",
+        "world:creature:28911",
+        "world:creature:28943",
+        "world:quest:12722"
+      ],
+      "text": "You are in the Crypt of Remembrance, a Scourge necropolis in the Scarlet Enclave. Baron Rivendare directs Scourge attacks on New Avalon from here and enjoys the recurring battles with the Crusade. Prince Keleseth, the blood lord who serves the Lich King, uses persuaders to extract information from Scarlet soldiers, and Fineous sells goods and repairs.",
+      "when": {
+        "area_id": 4355
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4356",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4356",
+        "world:creature:28377",
+        "world:creature:28510",
+        "world:creature:28385",
+        "world:creature:28609",
+        "world:quest:12670"
+      ],
+      "text": "You are in Death's Breach, a staging point for Scourge attacks in the Scarlet Enclave. Neither side holds it, and Prince Valanar directs the Scourge campaign against the Scarlet Crusade from here. Gryphons bring arriving death knights in, arranged by Scourge Commander Thalanor from Ebon Hold. Scarlet Crusade prisoners and infantrymen are about, and the place has repairs, a spirit healer and a vendor.",
+      "when": {
+        "area_id": 4356
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4357",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4357",
+        "world:creature:29112",
+        "world:creature:29113",
+        "world:creature:29185",
+        "world:creature:29186"
+      ],
+      "text": "You are in The Noxious Glade, part of the Scarlet Enclave. Gothik the Harvester taunts a captive suspended in slime, and Noth the Plaguebringer urges his forces to gather more flesh, warning that a final assault is near. Undead ghouls and abominations are among those here.",
+      "when": {
+        "area_id": 4357
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4359",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4359",
+        "world:creature:29080",
+        "world:creature:28549",
+        "world:creature:28550"
+      ],
+      "text": "You are in King's Harbor in the Scarlet Enclave. Scarlet Champions are about in large numbers, and Captain Shely and Bishop Street are among those about.",
+      "when": {
+        "area_id": 4359
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4360",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4360",
+        "world:creature:29103",
+        "world:creature:28939",
+        "world:creature:28610",
+        "world:creature:29104"
+      ],
+      "text": "You are in Scarlet Overlook in the Scarlet Enclave. Tirisfal Crusaders, Scarlet Preachers and Scarlet Marksmen are about, and Scarlet ballistae are here too.",
+      "when": {
+        "area_id": 4360
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4361",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4361",
+        "world:quest:12801",
+        "world:creature:6491",
+        "world:creature:29173"
+      ],
+      "text": "You are in Light's Hope Chapel in the Scarlet Enclave, where the Argent Dawn stands against the Scourge. A spirit healer here offers a return to life for a price, though it may not yet be the traveler's time.",
+      "when": {
+        "area_id": 4361
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4364",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4364",
+        "world:creature:31082",
+        "world:creature:29173",
+        "world:quest:13165"
+      ],
+      "text": "You are in Browman Mill in the Scarlet Enclave. Scourge Commander Thalanor is a Scourge officer here, and Highlord Darion Mograine, freed of the Lich King's hold at Light's Hope, leads the Knights of the Ebon Blade in an effort to retake Acherus.",
+      "when": {
+        "area_id": 4364
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4365",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4365",
+        "world:creature:28891",
+        "world:creature:28557",
+        "world:creature:28609",
+        "world:creature:28905"
+      ],
+      "text": "You are in Havenshire Mine in the Scarlet Enclave. Scarlet miners, peasants and infantrymen are about the workings, and a Gluttonous Geist, an undead creature, is here too.",
+      "when": {
+        "area_id": 4365
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4636",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4636",
+        "world:creature:28357",
+        "world:creature:28472",
+        "world:creature:28391"
+      ],
+      "text": "You are in The Noxious Pass in the Scarlet Enclave, where death knights are trained. Instructor Razuvious teaches runeforging, and Lord Thorval is headmaster of the blood school in the Hall of Command, one of three dark arts taught there. Newly raised Death Knight Initiates are among the people here.",
+      "when": {
+        "area_id": 4636
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4298": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4298 (Plaguelands: The Scarlet Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4343": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4343 (New Avalon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4345": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4345 (New Avalon Orchard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4346": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4346 (New Avalon Town Hall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4347": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4347 (Havenshire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4348": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4348 (Havenshire Farms)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4349": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4349 (Havenshire Lumber Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4350": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4350 (Havenshire Stables)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4351": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4351 (Scarlet Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4352": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4352 (Chapel of the Crimson Flame)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4353": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4353 (Light's Point Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4354": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4354 (Light's Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4355": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4355 (Crypt of Remembrance)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4356": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4356 (Death's Breach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4357": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4357 (The Noxious Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4359": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4359 (King's Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4360": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4360 (Scarlet Overlook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4361": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4361 (Light's Hope Chapel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4364": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4364 (Browman Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4365": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4365 (Havenshire Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4636": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4636 (The Noxious Pass)",
+      "revision": "3.3.5a client data"
+    },
     "source:00d116f921be80110c37a534": {
       "kind": "research",
       "reference": "evidence:sha256:fc5e827d9b8bd395d2aacc63516013331c2b08f54b83eb2fa879f4befa9c9d01",
@@ -6342,6 +6810,356 @@
       "kind": "research",
       "reference": "evidence:sha256:72f0b3429bc2c3c678618a6d6f09b8144580cee577566d9d81875a64321efdd0",
       "revision": "ddc160f73d8db6b599873e0965464b0f0dbf91eb8a2cd33553fc958cd68f2af2"
+    },
+    "world:creature:28357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28357 (Instructor Razuvious), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28377 (Prince Valanar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28385 (Scarlet Crusade Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28391": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28391 (Death Knight Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28472": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28472 (Lord Thorval), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28510": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28510 (Scourge Commander Thalanor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28529": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28529 (Scarlet Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28549": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28549 (Captain Shely), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28550": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28550 (Bishop Street), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28557 (Scarlet Peasant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28607 (Havenshire Colt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28608": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28608 (Scarlet Medic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28609": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28609 (Scarlet Infantryman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28610 (Scarlet Marksman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28709": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28709 (Acherus Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28766": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28766 (Scarlet Farm Hound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28769": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28769 (Shadowy Tormentor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28804 (Plague Spreader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28833 (Scarlet Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28834 (Scarlet Fleet Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28850 (Scarlet Land Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28856 (Scarlet Fleet Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28885 (Scarlet Land Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28889": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28889 (Acherus Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28890": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28890 (Gothik the Harvester), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28891 (Scarlet Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28901 (Acherus Deathcharger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28903": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28903 (Scourge Plaguehound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28905": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28905 (Gluttonous Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28910": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28910 (Baron Rivendare), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28911": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28911 (Prince Keleseth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28912 (Koltira Deathweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28913": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28913 (Thassarian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28914": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28914 (Orbaz Bloodbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28919 (Noth the Plaguebringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28936": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28936 (Scarlet Commander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28939 (Scarlet Preacher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28943": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28943 (Fineous), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28945": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28945 (Mayor Quimby), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28946": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28946 (New Avalon Councilman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29000": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29000 (Scarlet Commander Rodrick), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29011": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29011 (High Inquisitor Valroth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29029": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29029 (Scarlet Inquisitor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29032": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29032 (Malar Bravehorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29053": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29053 (Knight Commander Plaguefist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29061": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29061 (Ellen Stanbridge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29080 (Scarlet Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29102": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29102 (Hearthglen Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29103": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29103 (Tirisfal Crusader), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29104": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29104 (Scarlet Ballista), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29112 (Gothik the Harvester), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29113 (Noth the Plaguebringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29136 (Volatile Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29173 (Highlord Darion Mograine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29185": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29185 (Volatile Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29186 (Rampaging Abomination), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31082": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31082 (Scourge Commander Thalanor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12670": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12670 (The Scarlet Harvest)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12717": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12717 (Noth's Special Brew)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12719": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12719 (Nowhere To Run And Nowhere To Hide)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12722": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12722 (Lambs To The Slaughter)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12723": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12723 (Behind Scarlet Lines)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12724": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12724 (The Path Of The Righteous Crusader)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12725": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12725 (Brothers In Death)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12727": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12727 (Bloody Breakout)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12738": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12738 (A Cry For Vengeance!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12739": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12739 (A Special Surprise)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12801": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12801 (The Light of Dawn)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13165": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13165 (Taking Back Acherus)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

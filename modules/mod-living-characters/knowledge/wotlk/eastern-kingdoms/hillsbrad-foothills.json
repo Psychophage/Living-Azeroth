@@ -3038,7 +3038,315 @@
     }
   ],
   "place": "Hillsbrad Foothills",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:267",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:267",
+        "dbc:area:271",
+        "dbc:area:272",
+        "dbc:area:286",
+        "world:creature:2356",
+        "world:creature:2384",
+        "world:creature:2377"
+      ],
+      "text": "You are in Hillsbrad Foothills, contested land in the Eastern Kingdoms where the Alliance and the Horde both hold settlements. The Alliance keeps Southshore on the coast and Hillsbrad Fields in the farmland, while the Horde holds Tarren Mill. Gray bears and mountain lions prowl the hills, moss creepers lurk in the woods, murlocs and Daggerspine creatures fill the coastal waters, and Crushridge ogres in the Alterac ruins threaten the foothills. Syndicate watchmen guard Durnholde Keep.",
+      "when": {
+        "zone_id": 267
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:271",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:271",
+        "world:creature:2263",
+        "world:creature:2276",
+        "world:creature:2377"
+      ],
+      "text": "You are in Southshore, an Alliance harbor village in Hillsbrad Foothills. Marshal Redpath keeps watch against murlocs on the coast and ogres from the Alterac ruins, while Magistrate Henry Maleb hunts Syndicate members. Its inn and trainers serve the town.",
+      "when": {
+        "area_id": 271
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:272",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:272",
+        "world:creature:2215",
+        "world:creature:2216",
+        "world:creature:2384"
+      ],
+      "text": "You are in Tarren Mill, a Horde town in Hillsbrad Foothills. High Executor Darthalia commands the Forsaken campaign against Hillsbrad and Dun Garok from here, and Apothecary Lydon gathers mountain lion blood and bear tongues for his plague research.",
+      "when": {
+        "area_id": 272
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:275",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:275",
+        "world:creature:2238",
+        "world:creature:2239",
+        "world:creature:2261",
+        "world:creature:2244"
+      ],
+      "text": "You are in Durnholde Keep, a stronghold in Hillsbrad Foothills held by Syndicate watchmen and rogues. Drull and Tog'thar, orc warriors from the Warchief's expedition, were taken prisoner here. Repairs and a vendor are available.",
+      "when": {
+        "area_id": 275
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:285",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:285",
+        "world:creature:2214",
+        "world:creature:2351",
+        "world:creature:2350"
+      ],
+      "text": "You are in Southpoint Tower in Hillsbrad Foothills. Deathstalker Lesh, a Forsaken scout, watches Hillsbrad from here and sends urgent warnings to Darthalia that the town is ripe for attack. Gray bears and moss creepers roam nearby.",
+      "when": {
+        "area_id": 285
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:286",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:286",
+        "world:creature:232",
+        "world:creature:2403",
+        "world:creature:2335",
+        "world:creature:2349"
+      ],
+      "text": "You are in Hillsbrad Fields, Alliance farmland in Hillsbrad Foothills. A Horde campaign aims to disrupt the town's food supply, and Farmers Ray and Getz are among its targets. Magistrate Burnside leads the people, who rally despite heavy losses. Repairs and a vendor are here.",
+      "when": {
+        "area_id": 286
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:288",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:288",
+        "world:creature:2305",
+        "world:creature:2269",
+        "world:creature:2349",
+        "world:creature:2356"
+      ],
+      "text": "You are in Azurelode Mine, an Alliance iron mine in Hillsbrad Foothills. Foreman Bonds runs it, supplying iron to Alliance armories, and Horde orders target its miners. Giant moss creepers and elder gray bears are the main dangers.",
+      "when": {
+        "area_id": 288
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:289",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:289",
+        "world:creature:2372",
+        "world:creature:2373",
+        "world:creature:2348",
+        "world:creature:2385"
+      ],
+      "text": "You are in Nethander Stead in Hillsbrad Foothills. Mudsnout gnolls and their shamans roam here, along with elder moss creepers and feral mountain lions.",
+      "when": {
+        "area_id": 289
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:290",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:290",
+        "world:creature:2304",
+        "world:creature:2345",
+        "world:creature:2346",
+        "world:creature:2348"
+      ],
+      "text": "You are in Dun Garok, an Alliance stronghold in Hillsbrad Foothills. Captain Ironhill leads its riflemen, mountaineers and priests, and the Battle of Hillsbrad named it a target of the Horde assault. Elder moss creepers and feral mountain lions prowl outside.",
+      "when": {
+        "area_id": 290
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:294",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:294",
+        "world:creature:2371",
+        "world:creature:2369",
+        "world:creature:2370"
+      ],
+      "text": "You are in the Eastern Strand, a stretch of coast in Hillsbrad Foothills. Daggerspine sirens, shorestalkers, shorehunters and screamers haunt the shore.",
+      "when": {
+        "area_id": 294
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:295",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:295",
+        "world:creature:2375",
+        "world:creature:2377",
+        "world:creature:14276"
+      ],
+      "text": "You are in the Western Strand, a coastal stretch in Hillsbrad Foothills. Torn Fin murlocs fill its shallows, coastrunners, oracles and tidehunters among them, and the named creature Scargil roams here.",
+      "when": {
+        "area_id": 295
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:896",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:896",
+        "world:creature:7071",
+        "world:creature:7075",
+        "world:creature:7070",
+        "world:creature:7072"
+      ],
+      "text": "You are in Purgation Isle in Hillsbrad Foothills. Cursed paladins, writhing mages, condemned clerics and cursed justicars haunt its grounds.",
+      "when": {
+        "area_id": 896
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1056",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1056",
+        "world:creature:2354",
+        "world:creature:2384",
+        "world:creature:2248",
+        "world:creature:2249"
+      ],
+      "text": "You are in Darrow Hill in Hillsbrad Foothills. Vicious gray bears and starving mountain lions prowl here, and cave yetis and ferocious yetis are the greater danger.",
+      "when": {
+        "area_id": 1056
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1057",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1057",
+        "dbc:area:267",
+        "world:creature:2698",
+        "world:creature:6491",
+        "world:creature:2356",
+        "world:creature:2349"
+      ],
+      "text": "You are in Thoradin's Wall, in Hillsbrad Foothills, where the Alliance and the Horde both hold settlements. George Candarte sells leatherworking supplies here and invites Horde visitors to browse his goods. A spirit healer offers a return to the living for a price, though it may not yet be your time. Elder gray bears and giant moss creepers roam the area.",
+      "when": {
+        "area_id": 1057
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1056": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1056 (Darrow Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1057": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1057 (Thoradin's Wall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:267": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 267 (Hillsbrad Foothills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:271": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 271 (Southshore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:272": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 272 (Tarren Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:275": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 275 (Durnholde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:285": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 285 (Southpoint Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:286": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 286 (Hillsbrad Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:288": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 288 (Azurelode Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:289": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 289 (Nethander Stead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:290": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 290 (Dun Garok)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:294": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 294 (Eastern Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:295": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 295 (Western Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:896": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 896 (Purgation Isle)",
+      "revision": "3.3.5a client data"
+    },
     "source:0017ec63958accde2553a26f": {
       "kind": "research",
       "reference": "evidence:sha256:816bf876c48d7595c37db5d616136b78f533a198616b2cdedb5991ee334a025d",
@@ -5283,6 +5591,211 @@
       "kind": "research",
       "reference": "evidence:sha256:0bc51c9ed606a80bffa41703e111bcd1062154f3da861d015b204ec82b4e04eb",
       "revision": "d42bc21ad88780f0cd40af24828db8a1749bddea79e0fcaa95354e09dcdc6c4b"
+    },
+    "world:creature:14276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14276 (Scargil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2214 (Deathstalker Lesh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2215": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2215 (High Executor Darthalia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2216": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2216 (Apothecary Lydon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2238": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2238 (Tog'thar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2239 (Drull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2244": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2244 (Syndicate Shadow Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2248": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2248 (Cave Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2249 (Ferocious Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2261 (Syndicate Watchman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2263 (Marshal Redpath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2269": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2269 (Hillsbrad Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2276 (Magistrate Henry Maleb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2304 (Captain Ironhill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2305 (Foreman Bonds), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 232 (Farmer Ray), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2335 (Magistrate Burnside), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2345 (Dun Garok Rifleman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2346 (Dun Garok Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2348": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2348 (Elder Moss Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2349 (Giant Moss Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2350 (Forest Moss Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2351 (Gray Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2354": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2354 (Vicious Gray Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2356 (Elder Gray Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2369 (Daggerspine Shorehunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2370 (Daggerspine Screamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2371 (Daggerspine Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2372 (Mudsnout Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2373 (Mudsnout Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2375": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2375 (Torn Fin Coastrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2377 (Torn Fin Tidehunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2384 (Starving Mountain Lion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2385 (Feral Mountain Lion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2403": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2403 (Farmer Getz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2698": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2698 (George Candarte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7070": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7070 (Condemned Cleric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7071": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7071 (Cursed Paladin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7072": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7072 (Cursed Justicar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7075": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7075 (Writhing Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

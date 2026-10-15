@@ -2994,7 +2994,410 @@
     }
   ],
   "place": "Arathi Highlands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:45",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:45",
+        "dbc:area:320",
+        "dbc:area:321",
+        "world:creature:14983",
+        "world:creature:2556",
+        "world:creature:2566",
+        "world:creature:2572",
+        "world:creature:2588"
+      ],
+      "text": "You are in Arathi Highlands, a contested land in the Eastern Kingdoms where both the Alliance and the Horde hold settlements. Refuge Pointe is the Alliance's stronghold and Hammerfall is the Horde's, and the League of Arathor is fighting to win Arathi back for Stromgarde. Syndicate outlaws, Witherbark trolls, Boulderfist ogres and Drywhisker kobolds roam the hills, and naga attack from the sea.",
+      "when": {
+        "zone_id": 45
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:313",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:313",
+        "world:quest:681",
+        "world:creature:2586",
+        "world:creature:2587"
+      ],
+      "text": "You are in Northfold Manor, a Syndicate base in the Arathi Highlands. Highwaymen, mercenaries and pathstalkers of the Syndicate hold it, and their presence makes supplies hard to bring to Refuge Pointe from Southshore.",
+      "when": {
+        "area_id": 313
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:314",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:314",
+        "world:creature:2712",
+        "world:creature:2713",
+        "world:creature:2733",
+        "world:creature:2714",
+        "world:creature:2565",
+        "world:creature:2563",
+        "world:creature:2560"
+      ],
+      "text": "You are in Go'Shek Farm, a farm in the Arathi Highlands where Horde and Forsaken are stationed alongside Alliance scouts. Apothecary Jorell is said to run deadly experiments here, and Forsaken couriers come and go, while the injured scout Quae and Kinelory watch the farm from nearby. Plains creepers and highland thrashers roam the fields.",
+      "when": {
+        "area_id": 314
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:315",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:315",
+        "world:creature:4481",
+        "world:creature:2581",
+        "world:creature:2582",
+        "world:creature:2563",
+        "world:creature:2559"
+      ],
+      "text": "You are in Dabyrie's Farmstead, an Alliance farm in the Arathi Highlands and home to the Dabyrie family, with militia and laborers working alongside them. Marcel Dabyrie is among the family members that Genavie Callow is hunting in revenge, accusing them of stealing her valuables. Plains creepers and highland striders prowl the farm's edges.",
+      "when": {
+        "area_id": 315
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:316",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:316",
+        "world:creature:2566",
+        "world:creature:2567",
+        "world:creature:2793",
+        "world:creature:2604"
+      ],
+      "text": "You are in Boulderfist Hall, a stronghold of Boulderfist ogres in the Arathi Highlands. Brutes and magi fill its halls, and Kor'gresh Coldrage and Molok the Crusher are among its strongest.",
+      "when": {
+        "area_id": 316
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:317",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:317",
+        "world:creature:2556",
+        "world:creature:2554",
+        "world:creature:2555",
+        "world:creature:2557",
+        "world:creature:2606",
+        "world:creature:2579"
+      ],
+      "text": "You are in Witherbark Village, a troll village in the Arathi Highlands. Witherbark headhunters, axe throwers, witch doctors and shadow hunters live here, and Nimar the Slayer is among them. Mesa buzzards circle the village.",
+      "when": {
+        "area_id": 317
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:318",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:318",
+        "world:creature:2572",
+        "world:creature:2574",
+        "world:creature:2573",
+        "world:creature:2609",
+        "world:quest:642"
+      ],
+      "text": "You are in Drywhisker Gorge, kobold country in the Arathi Highlands, where Drywhisker kobolds dig and survey the ground. Geomancer Flintdagger is among them, and the kobolds guard a crystal shard that Myzrael uses to speak to the surface.",
+      "when": {
+        "area_id": 318
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:320",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:320",
+        "world:creature:14983",
+        "world:creature:2700",
+        "world:creature:15127",
+        "world:creature:2559",
+        "world:creature:2563"
+      ],
+      "text": "You are in Refuge Pointe, the Alliance stronghold in the Arathi Highlands, where Field Marshal Oslight speaks for the League of Arathor in its fight to win Arathi back for Stromgarde. Captain Nials commands Stromgarde's remaining forces from here, and Samuel Hawke is the League's supply officer. It has a flight master, repairs and vendors, and highland striders and plains creepers roam close by.",
+      "when": {
+        "area_id": 320
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:321",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:321",
+        "world:creature:2771",
+        "world:creature:15021",
+        "world:creature:2572",
+        "world:creature:2559",
+        "world:creature:2556"
+      ],
+      "text": "You are in Hammerfall, the Horde stronghold in the Arathi Highlands, where Drum Fel organizes the defense against Witherbark trolls and Boulderfist ogres. Deathmaster Dwire directs the Horde's campaigns against the League of Arathor from here. It has an inn, a stable and a flight master, and kobolds and highland striders still roam the area.",
+      "when": {
+        "area_id": 321
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:324",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:324",
+        "world:creature:2607",
+        "world:creature:2612",
+        "world:creature:2571",
+        "world:creature:2588",
+        "world:creature:24477"
+      ],
+      "text": "You are in Stromgarde Keep, a hold in the Arathi Highlands that Stromgarde's remaining militia still defend. Prince Galen Trollbane is a well-protected warrior here who holds one of the sigils that open his father's tomb, and Lieutenant Valorcall leads the cavalry and holds another. Boulderfist ogres and Syndicate thieves and prowlers roam around the keep.",
+      "when": {
+        "area_id": 324
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:327",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:327",
+        "world:creature:2610",
+        "world:creature:2768",
+        "world:quest:662"
+      ],
+      "text": "You are in Faldir's Cove, a camp of Blackwater Raiders in the Arathi Highlands, stranded after two of their ships ran aground on a reef temple and sank. Captain Shakes O'Breen fears the naga will kill him and his crew, and Professor Phizzlethorpe believes a rune stone in a nearby cave can power goggles for finding lost elven treasure. The naga are coming from the sea.",
+      "when": {
+        "area_id": 327
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:328",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:328",
+        "world:creature:2595",
+        "world:creature:2596",
+        "world:creature:2779"
+      ],
+      "text": "You are in The Drowned Reef, a sunken reef in the sea where the Maiden's Folly and Spirit of Silverpine went down. Daggerspine raiders and sorceresses lurk in its waters, and Prince Nazjak is among them.",
+      "when": {
+        "area_id": 328
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:333",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:333",
+        "world:creature:2611",
+        "world:creature:2765",
+        "world:creature:4063",
+        "world:creature:2761",
+        "world:creature:2559"
+      ],
+      "text": "You are in Circle of East Binding, a kobold post in the Arathi Highlands where defenders devoted to the Great One guard a captive buried beneath the earth. Fozruk is a stone watcher who holds the Rod of Order, which opens the Keystone restraining the captive. Cresting exiles and highland striders are also about.",
+      "when": {
+        "area_id": 333
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:334",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:334",
+        "world:creature:2760",
+        "world:creature:2563"
+      ],
+      "text": "You are in Circle of West Binding, in the Arathi Highlands, a land both the Alliance and the Horde hold settlements in. Burning Exiles roam here in numbers, and Plains Creepers are seen among them.",
+      "when": {
+        "area_id": 334
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:335",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:335",
+        "world:creature:2592",
+        "world:creature:2560",
+        "world:creature:2563",
+        "world:creature:2579",
+        "world:quest:652"
+      ],
+      "text": "You are in Circle of Inner Binding, a ring in the Arathi Highlands where Rumbling Exiles, Highland Thrashers and Plains Creepers roam in numbers. A mesa buzzard lingers here. The captive Myzrael is still held by a Keystone within this circle, and the stone watcher Fozruk is said to hold the key, the Rod of Order.",
+      "when": {
+        "area_id": 335
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:336",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:336",
+        "world:creature:2762",
+        "world:creature:2559"
+      ],
+      "text": "You are in Circle of Outer Binding, in the Arathi Highlands, where both the Alliance and the Horde hold settlements. Thundering Exiles are the main trouble here, with Highland Striders also wandering the ground.",
+      "when": {
+        "area_id": 336
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:880",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:880",
+        "world:creature:2696"
+      ],
+      "text": "You are in Thandol Span in the Arathi Highlands, where Alliance watch is kept. Foggy MacKreel, an Alliance watchman, fears that Longbraid will learn he slept through his watch after drinking the night before.",
+      "when": {
+        "area_id": 880
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1858",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1858",
+        "world:creature:2562",
+        "world:creature:2564",
+        "world:creature:2552",
+        "world:creature:6491"
+      ],
+      "text": "You are in Boulder'gor, in the Arathi Highlands, where Boulderfist ogres and enforcers gather in numbers and Witherbark trolls are also about. A spirit healer offers, for a price, to return the dead to the living, though it may not yet be the traveler's time.",
+      "when": {
+        "area_id": 1858
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1858": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1858 (Boulder'gor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:313": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 313 (Northfold Manor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:314": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 314 (Go'Shek Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:315": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 315 (Dabyrie's Farmstead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:316": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 316 (Boulderfist Hall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:317": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 317 (Witherbark Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:318": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 318 (Drywhisker Gorge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:320": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 320 (Refuge Pointe)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:321": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 321 (Hammerfall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:324": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 324 (Stromgarde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:327": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 327 (Faldir's Cove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:328": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 328 (The Drowned Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:333": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 333 (Circle of East Binding)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:334": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 334 (Circle of West Binding)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:335": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 335 (Circle of Inner Binding)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:336": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 336 (Circle of Outer Binding)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:45": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 45 (Arathi Highlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:880": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 880 (Thandol Span)",
+      "revision": "3.3.5a client data"
+    },
     "source:006d13748bf295922d5be42d": {
       "kind": "research",
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
@@ -5409,6 +5812,296 @@
       "kind": "research",
       "reference": "evidence:sha256:6bdcac3eb2c9e4d0daa421f990f7c5cf76aceaf98b33269e617eec4bf08a94d5",
       "revision": "ea6bc074e1ff403bb478d9772cf63528f9560e56fc95483f0eccc2026bcc52ab"
+    },
+    "world:creature:14983": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14983 (Field Marshal Oslight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15021": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15021 (Deathmaster Dwire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15127 (Samuel Hawke), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24477 (Syndicate Thief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2552": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2552 (Witherbark Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2554 (Witherbark Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2555 (Witherbark Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2556": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2556 (Witherbark Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2557 (Witherbark Shadow Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2559": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2559 (Highland Strider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2560": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2560 (Highland Thrasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2562 (Boulderfist Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2563": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2563 (Plains Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2564 (Boulderfist Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2565": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2565 (Giant Plains Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2566 (Boulderfist Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2567": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2567 (Boulderfist Magus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2571": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2571 (Boulderfist Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2572": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2572 (Drywhisker Kobold), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2573": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2573 (Drywhisker Surveyor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2574": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2574 (Drywhisker Digger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2579": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2579 (Mesa Buzzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2581": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2581 (Dabyrie Militia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2582": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2582 (Dabyrie Laborer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2586": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2586 (Syndicate Highwayman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2587": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2587 (Syndicate Pathstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2588": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2588 (Syndicate Prowler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2592": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2592 (Rumbling Exile), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2595": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2595 (Daggerspine Raider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2596 (Daggerspine Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2604": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2604 (Molok the Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2606": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2606 (Nimar the Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2607 (Prince Galen Trollbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2609": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2609 (Geomancer Flintdagger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2610 (Shakes O'Breen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2611": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2611 (Fozruk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2612": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2612 (Lieutenant Valorcall), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2696 (Foggy MacKreel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2700": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2700 (Captain Nials), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2712 (Quae), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2713 (Kinelory), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2714 (Forsaken Courier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2733 (Apothecary Jorell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2760": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2760 (Burning Exile), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2761": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2761 (Cresting Exile), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2762 (Thundering Exile), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2765 (Znort), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2768": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2768 (Professor Phizzlethorpe), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2771 (Drum Fel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2779 (Prince Nazjak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2793": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2793 (Kor'gresh Coldrage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4063 (Feeboz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4481": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4481 (Marcel Dabyrie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:642": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 642 (The Princess Trapped)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:652": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 652 (Breaking the Keystone)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:662": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 662 (Deep Sea Salvage)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:681": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 681 (Northfold Manor)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

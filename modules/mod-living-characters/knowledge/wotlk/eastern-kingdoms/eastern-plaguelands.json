@@ -3963,7 +3963,609 @@
     }
   ],
   "place": "Eastern Plaguelands",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:139",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:139",
+        "dbc:area:2268",
+        "dbc:area:4544",
+        "world:creature:11034",
+        "world:creature:11038",
+        "world:creature:8600",
+        "world:creature:8598",
+        "world:creature:9447"
+      ],
+      "text": "You are in Eastern Plaguelands, a blighted land in the Eastern Kingdoms that is held by neither the Alliance nor the Horde. Light's Hope Chapel and Death's Breach are its main settlements, and the Argent Dawn works from the chapel. Plaguebats and plaguehounds roam the fields, Scourge ghouls and Scarlet Crusade soldiers add to the danger, and troll raiders steal corpses from the chapel's cemetery.",
+      "when": {
+        "zone_id": 139
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2258",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2258",
+        "world:creature:8546",
+        "world:creature:8542",
+        "world:creature:8550",
+        "world:creature:8532",
+        "world:creature:8529"
+      ],
+      "text": "You are in The Fungal Vale, a vale in the Eastern Plaguelands. Dark adepts, death singers and shadowmages haunt it, along with diseased flayers and Scourge champions.",
+      "when": {
+        "area_id": 2258
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2260",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2260",
+        "world:creature:11878",
+        "world:creature:11885",
+        "world:creature:8600",
+        "world:creature:8596"
+      ],
+      "text": "You are in The Marris Stead, a Horde stead in the Eastern Plaguelands. Nathanos Blightcaller, Champion of the Banshee Queen, trains the Dark Lady's recruits here and keeps blighthounds that cast disease clouds. Plaguebats and plaguehound runts fly and run around it.",
+      "when": {
+        "area_id": 2260
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2261",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2261",
+        "world:creature:11291",
+        "world:creature:11290",
+        "world:creature:12250",
+        "world:creature:8600",
+        "world:creature:8534"
+      ],
+      "text": "You are in The Undercroft, a place in the Eastern Plaguelands. Unliving mossflayers and mossflayer zombies haunt it, and Zaeldarr the Outcast is also here. Plaguebats and putrid gargoyles fly overhead.",
+      "when": {
+        "area_id": 2261
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2262",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2262",
+        "world:creature:11063",
+        "world:creature:10926",
+        "world:creature:8600",
+        "world:creature:10940"
+      ],
+      "text": "You are in Darrowshire, a village in the Eastern Plaguelands that was destroyed in the war. A spirit healer is here among the ruins, and Pamela Redpath, a lonely undead girl, waits in her family's house. Plaguebats and Ghosts of the Past still haunt the streets.",
+      "when": {
+        "area_id": 2262
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2263",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2263",
+        "world:quest:9664",
+        "world:creature:8600",
+        "world:creature:8596",
+        "world:creature:8534"
+      ],
+      "text": "You are in Crown Guard Tower, an old tower in the Eastern Plaguelands from the days of Lordaeron. Plaguebats, plaguehound runts and putrid gargoyles prowl around it.",
+      "when": {
+        "area_id": 2263
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2264",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2264",
+        "world:quest:6022",
+        "world:creature:8541",
+        "world:creature:8548",
+        "world:creature:8526",
+        "world:creature:8531",
+        "world:creature:8551",
+        "world:creature:8601"
+      ],
+      "text": "You are in Corin's Crossing, a town in the Eastern Plaguelands that the Scourge still inhabit. Hate shriekers, vile tutors, dark casters and gibbering ghouls roam it, and dark summoners and noxious plaguebats join them.",
+      "when": {
+        "area_id": 2264
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2265",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2265",
+        "world:creature:11039",
+        "world:creature:9447",
+        "world:creature:9452",
+        "world:creature:9449"
+      ],
+      "text": "You are in Scarlet Base Camp, a Scarlet Crusade camp in the Eastern Plaguelands. Scarlet warders, enchanters and clerics are hostile here, with plaguehound runts and plaguebats at its edges.",
+      "when": {
+        "area_id": 2265
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2266",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2266",
+        "world:creature:9447",
+        "world:creature:9452",
+        "world:creature:9449",
+        "world:creature:9448",
+        "world:creature:9450",
+        "world:creature:9451"
+      ],
+      "text": "You are in Tyr's Hand, a place in the Eastern Plaguelands full of Scarlet Crusade fighters. Scarlet warders, enchanters, clerics, praetorians, curates and archmages are all hostile there, in large numbers.",
+      "when": {
+        "area_id": 2266
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2268",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2268",
+        "world:creature:11034",
+        "world:creature:11039",
+        "world:creature:11038"
+      ],
+      "text": "You are in Light's Hope Chapel, where Argent Dawn officers work in the Eastern Plaguelands. Lord Maxwell Tyrosus and Duke Nicholas Zverenhoff are senior Argent Dawn figures, and Zverenhoff opposes Scarlet Crusade zealotry. Caretaker Alen complains that Zaeldarr's gang keeps stealing corpses from the cemetery pit. The chapel has an inn and repairs.",
+      "when": {
+        "area_id": 2268
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2269",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2269",
+        "world:creature:8542",
+        "world:creature:8528",
+        "world:creature:8529",
+        "world:creature:8532"
+      ],
+      "text": "You are in Browman Mill, a mill in the Eastern Plaguelands. Death singers, dread weavers, Scourge champions and diseased flayers haunt the ground around it.",
+      "when": {
+        "area_id": 2269
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2270",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2270",
+        "world:creature:29196",
+        "world:creature:8529",
+        "world:creature:8550",
+        "world:creature:8546",
+        "world:creature:8528"
+      ],
+      "text": "You are in The Noxious Glade, a glade in the Eastern Plaguelands. Lord Thorval teaches blood mastery here, a way of draining energy from living and fallen foes. Scourge champions, shadowmages, dark adepts and dread weavers haunt the glade.",
+      "when": {
+        "area_id": 2270
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2271",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2271",
+        "world:quest:9664",
+        "world:quest:9665",
+        "world:creature:8598",
+        "world:creature:8602",
+        "world:creature:10821"
+      ],
+      "text": "You are in Eastwall Tower, an old tower in the Eastern Plaguelands from the days of Lordaeron that the Alliance and Horde have each tried to hold. Frenzied plaguehounds and monstrous plaguebats roam it, and Hed'mush the Rotting lurks here.",
+      "when": {
+        "area_id": 2271
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2272",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2272",
+        "world:quest:5845",
+        "world:creature:6491",
+        "world:creature:8542",
+        "world:creature:8539",
+        "world:creature:8521"
+      ],
+      "text": "You are in Northdale, a war-torn hamlet in the northeastern Eastern Plaguelands, held by neither side. A spirit healer there offers a return to life for a price, though the traveler may not yet be ready. Death singers, eyeless watchers and blighted horrors haunt the hamlet.",
+      "when": {
+        "area_id": 2272
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2273",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2273",
+        "world:creature:8561",
+        "world:creature:8562",
+        "world:creature:8560",
+        "world:creature:10822",
+        "world:creature:10823"
+      ],
+      "text": "You are in Zul'Mashar, a part of the Eastern Plaguelands held by neither side. Mossflayer shadowhunters, cannibals and scouts are the main dangers here, and Warlord Thresh'jin and Zul'Brin Warpbranch are among the notable ones.",
+      "when": {
+        "area_id": 2273
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2275",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2275",
+        "dbc:taxi:85",
+        "world:creature:8602",
+        "world:creature:8598"
+      ],
+      "text": "You are in Northpass Tower, a stop in the Eastern Plaguelands held by neither side, where travelers can take to the air. Monstrous plaguebats and frenzied plaguehounds haunt the area around it.",
+      "when": {
+        "area_id": 2275
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2276",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2276",
+        "world:creature:12322",
+        "world:creature:8564",
+        "world:creature:10824",
+        "world:creature:10304",
+        "world:quest:5246"
+      ],
+      "text": "You are in Quel'Lithien Lodge, an Alliance post in the Eastern Plaguelands where Quel'Lithien protectors and rangers keep watch. Ranger Lord Hawkspear is its notable ranger. Aurora Skycaller, a high elf troubled by her people's painful past, has agreed to help restore the Crystal of Zin-Malor, an artifact shattered through evil use.",
+      "when": {
+        "area_id": 2276
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2277",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2277",
+        "world:creature:14494",
+        "world:creature:8543",
+        "world:creature:8530",
+        "world:creature:8524",
+        "world:creature:8540"
+      ],
+      "text": "You are in Plaguewood, a wood in the Eastern Plaguelands held by neither side. Stitched horrors, cannibal ghouls, torn screamers and cursed mages roam it, along with plaguebats and plaguehounds. Eris Havenfire, a cursed spirit, mourns the peasants Eris could not protect as they fled Stratholme.",
+      "when": {
+        "area_id": 2277
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2279",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2279",
+        "world:creature:16016",
+        "world:creature:6491",
+        "world:quest:8945",
+        "world:creature:8553",
+        "world:creature:8543"
+      ],
+      "text": "You are in Stratholme, a place in the Eastern Plaguelands held by neither side. A spirit healer offers a return to life for a price. Anthion Harmon regrets splitting Valthalak's medallion without understanding its curse, and he is still trying to recover the fragments. Necromancers, stitched horrors and scourge warders are the dangers, and Baron Rivendare's undead hold Ysida Harmon prisoner.",
+      "when": {
+        "area_id": 2279
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2619",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2619",
+        "world:creature:1855",
+        "world:creature:8557",
+        "world:creature:8555",
+        "world:creature:16184"
+      ],
+      "text": "You are in Thondroril River, a waterway in the Eastern Plaguelands held by neither side. Tirion Fordring, banished for treason, is here trying to help his son Taelan recover what he has lost. Crypt horrors, crypt stalkers and nerubian overseers are the dangers.",
+      "when": {
+        "area_id": 2619
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2621",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2621",
+        "world:creature:8520",
+        "world:creature:8519",
+        "world:creature:8600",
+        "world:creature:8534",
+        "world:creature:8603"
+      ],
+      "text": "You are in Lake Mereldar, a lake in the Eastern Plaguelands held by neither side. Plague ravagers, blighted surges, plaguebats and putrid gargoyles are the dangers here, and carrion grubs feed on the dead.",
+      "when": {
+        "area_id": 2621
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2622",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2622",
+        "world:creature:8606",
+        "world:creature:8607",
+        "world:creature:8601",
+        "world:creature:8597",
+        "world:creature:6491"
+      ],
+      "text": "You are in Pestilent Scar, a blighted land in the Eastern Plaguelands held by neither side. Living decay, rotting sludge, noxious plaguebats and plaguehounds are the dangers, and a spirit healer offers a return to life for a price.",
+      "when": {
+        "area_id": 2622
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2623",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2623",
+        "world:creature:11620",
+        "world:creature:11621",
+        "world:creature:8606",
+        "world:creature:8601",
+        "world:creature:8607"
+      ],
+      "text": "You are in The Infectis Scar, a scarred land in the Eastern Plaguelands held by neither side. Ghostly spectral marauders and spectral corpses wander among living decay, noxious plaguebats and rotting sludge.",
+      "when": {
+        "area_id": 2623
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2624",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2624",
+        "world:creature:6491",
+        "world:creature:11289",
+        "world:creature:8601",
+        "world:creature:8602",
+        "world:creature:8521"
+      ],
+      "text": "You are in Blackwood Lake, a lake in the Eastern Plaguelands held by neither side. A spirit healer offers a return to life for a price. Noxious and monstrous plaguebats, blighted horrors and plague monstrosities are the dangers, and spectral defenders from Stratholme drift here.",
+      "when": {
+        "area_id": 2624
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2627",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2627",
+        "world:creature:11140",
+        "world:creature:12384",
+        "world:creature:8555",
+        "world:creature:8523",
+        "world:creature:8530"
+      ],
+      "text": "You are in Terrordale, a settlement in the Eastern Plaguelands held by neither side. A merchant trades here. Egan, an inventor, uses his blaster to free the tortured souls haunting Stratholme, and Augustus the Touched once ran a business here before the Scourge came. Crypt stalkers, scourge soldiers and cannibal ghouls are the dangers.",
+      "when": {
+        "area_id": 2627
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4544",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4544",
+        "world:creature:31084",
+        "world:quest:13165",
+        "world:creature:31098",
+        "world:creature:31096",
+        "world:creature:31095",
+        "world:creature:29480",
+        "world:creature:6491"
+      ],
+      "text": "You are in Death's Breach, a settlement in the Eastern Plaguelands held by neither the Alliance nor the Horde. Highlord Darion Mograine leads the Knights of the Ebon Blade here, still fighting to take back Acherus from the Scourge. Terrifying abominations and Scourge necromancers roam nearby, and Val'kyr battle-maidens too. Its gryphon flight master and spirit healer serve travelers.",
+      "when": {
+        "area_id": 4544
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:139": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 139 (Eastern Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2258": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2258 (The Fungal Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2260": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2260 (The Marris Stead)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2261": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2261 (The Undercroft)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2262": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2262 (Darrowshire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2263": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2263 (Crown Guard Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2264": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2264 (Corin's Crossing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2265": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2265 (Scarlet Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2266": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2266 (Tyr's Hand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2268": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2268 (Light's Hope Chapel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2269": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2269 (Browman Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2270": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2270 (The Noxious Glade)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2271": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2271 (Eastwall Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2272": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2272 (Northdale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2273": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2273 (Zul'Mashar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2275": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2275 (Northpass Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2276": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2276 (Quel'Lithien Lodge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2277": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2277 (Plaguewood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2279": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2279 (Stratholme)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2619": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2619 (Thondroril River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2621": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2621 (Lake Mereldar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2622": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2622 (Pestilent Scar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2623": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2623 (The Infectis Scar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2624": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2624 (Blackwood Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2627": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2627 (Terrordale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4544": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4544 (Death's Breach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:85": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 85 (Northpass Tower, Eastern Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
     "source:009e3827ef287ddba591b410": {
       "kind": "research",
       "reference": "evidence:sha256:11492b7b9d8ca095cb3deaf8412a8e0adb8b10c35c422399475f8627a2a9c322",
@@ -7073,6 +7675,421 @@
       "kind": "research",
       "reference": "evidence:sha256:87bb64c5abfa90453cdb4006fd874b62947fd5090e7fdfb4a4a1f5dbc27ea03f",
       "revision": "f99db666978748fd299880fade6e09e5be04e93e6e1ead5d73d1feaad05801ab"
+    },
+    "world:creature:10304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10304 (Aurora Skycaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10821 (Hed'mush the Rotting), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10822 (Warlord Thresh'jin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10823 (Zul'Brin Warpbranch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10824 (Ranger Lord Hawkspear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10926": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10926 (Pamela Redpath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10940": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10940 (Ghost of the Past), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11034": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11034 (Lord Maxwell Tyrosus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11038": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11038 (Caretaker Alen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11039": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11039 (Duke Nicholas Zverenhoff), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11063": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11063 (Carlin Redpath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11140": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11140 (Egan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11289": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11289 (Spectral Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11290": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11290 (Mossflayer Zombie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11291 (Unliving Mossflayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11620": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11620 (Spectral Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11621": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11621 (Spectral Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11878": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11878 (Nathanos Blightcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11885 (Blighthound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12250": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12250 (Zaeldarr the Outcast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12322 (Quel'Lithien Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12384 (Augustus the Touched), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14494": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14494 (Eris Havenfire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16016 (Anthion Harmon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16184": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16184 (Nerubian Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1855": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1855 (Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29196 (Lord Thorval), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29480": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29480 (Grimwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31084 (Highlord Darion Mograine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31095": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31095 (Val'kyr Battle-maiden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31096": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31096 (Scourge Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31098": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31098 (Terrifying Abomination), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8519 (Blighted Surge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8520 (Plague Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8521": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8521 (Blighted Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8523 (Scourge Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8524": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8524 (Cursed Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8526": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8526 (Dark Caster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8528": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8528 (Dread Weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8529": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8529 (Scourge Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8530": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8530 (Cannibal Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8531": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8531 (Gibbering Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8532 (Diseased Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8534": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8534 (Putrid Gargoyle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8539": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8539 (Eyeless Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8540": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8540 (Torn Screamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8541": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8541 (Hate Shrieker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8542": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8542 (Death Singer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8543": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8543 (Stitched Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8546 (Dark Adept), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8548": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8548 (Vile Tutor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8550": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8550 (Shadowmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8551": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8551 (Dark Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8553": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8553 (Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8555 (Crypt Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8557": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8557 (Crypt Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8560": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8560 (Mossflayer Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8561": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8561 (Mossflayer Shadowhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8562": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8562 (Mossflayer Cannibal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8564": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8564 (Ranger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8596 (Plaguehound Runt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8597 (Plaguehound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8598": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8598 (Frenzied Plaguehound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8600 (Plaguebat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8601": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8601 (Noxious Plaguebat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8602": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8602 (Monstrous Plaguebat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8603": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8603 (Carrion Grub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8606": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8606 (Living Decay), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8607": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8607 (Rotting Sludge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9447 (Scarlet Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9448 (Scarlet Praetorian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9449 (Scarlet Cleric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9450 (Scarlet Curate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9451 (Scarlet Archmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9452 (Scarlet Enchanter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13165": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13165 (Taking Back Acherus)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5246": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5246 (Fragments of the Past)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5845": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5845 (Of Lost Honor)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6022": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6022 (To Kill With Purpose)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8945": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8945 (Dead Man's Plea)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9664": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9664 (Establishing New Outposts)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9665": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9665 (Bolstering Our Defenses)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

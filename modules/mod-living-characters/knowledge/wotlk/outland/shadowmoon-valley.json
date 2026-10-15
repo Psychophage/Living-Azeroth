@@ -7958,7 +7958,746 @@
     }
   ],
   "place": "Shadowmoon Valley",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3520",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3520",
+        "dbc:area:3744",
+        "dbc:area:3745",
+        "dbc:area:3754",
+        "dbc:area:3938",
+        "world:creature:21050",
+        "world:creature:19802",
+        "world:creature:21316"
+      ],
+      "text": "You are in Shadowmoon Valley, a contested land in Outland where both the Alliance and the Horde hold settlements. The Horde keeps Shadowmoon Village and the Alliance keeps Wildhammer Stronghold, while the Altar of Sha'tar and the Sanctum of the Stars belong to neither side. Spirits, felboars and serpents roam the open ground, naga and Illidari hold the ruins and cisterns, and Burning Legion infernals strike from Legion Hold.",
+      "when": {
+        "zone_id": 3520
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3743",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3743",
+        "world:creature:21302",
+        "world:creature:21314",
+        "world:creature:21316",
+        "world:quest:10596"
+      ],
+      "text": "You are in Legion Hold, a fortress of the Burning Legion in Shadowmoon Valley. The Legion stocks and prepares its infernals here, and Shadow Council warlocks, terrormasters and deathforged infernals patrol its halls.",
+      "when": {
+        "area_id": 3743
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3744",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3744",
+        "world:creature:21359",
+        "world:creature:21772",
+        "world:creature:19333",
+        "world:quest:10595",
+        "world:creature:19317"
+      ],
+      "text": "You are in Shadowmoon Village, a Horde settlement in Shadowmoon Valley. Blood Guard Gulmok directs its defense against infernals sent from Legion Hold, and Chief Apothecary Hildagard is trying to clear the spirits haunting the village. Grokom Deatheye, a weaponsmith, is working to turn the Legion's anti-demon weapons against their makers. It has a flight master, an inn and a stable.",
+      "when": {
+        "area_id": 3744
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3745",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3745",
+        "world:creature:21357",
+        "world:creature:19370",
+        "world:creature:18939",
+        "world:creature:19352",
+        "world:quest:10562"
+      ],
+      "text": "You are in Wildhammer Stronghold, an Alliance dwarf stronghold in Shadowmoon Valley. Wing Commander Nuainn leads its defense against the Burning Legion's infernal attacks, and his troops are ragged and exhausted. Ordinn Thunderfist, a hammersmith, works to turn captured Legion anti-demon weapons into arms against the Legion. It has a gryphon flight service, an inn and a stable.",
+      "when": {
+        "area_id": 3745
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3747",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3747",
+        "world:creature:21061",
+        "world:creature:21050",
+        "world:creature:21703",
+        "world:quest:10574"
+      ],
+      "text": "You are in The Fel Pits, a place in Shadowmoon Valley where enraged fire and earth spirits and corrupt totems are found. Eykenen and Uylaru, Ashtongue corruptors of earth and fire, were last seen here near the Hand of Gul'dan.",
+      "when": {
+        "area_id": 3747
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3748",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3748",
+        "world:creature:21471",
+        "world:creature:21475",
+        "world:creature:20878",
+        "world:creature:20872",
+        "world:quest:10601"
+      ],
+      "text": "You are in The Deathforge, a Shadow Council forge in Shadowmoon Valley where infernals are launched toward Legion Hold. Deathforge guardians and summoners guard it, and scouts from both sides watch it. Stormer Ewan Wildwing fears for his fellow scout Flanis Swiftwing, and Scout Zagran says a scout named Kagrosh went inside and has not been heard from since.",
+      "when": {
+        "area_id": 3748
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3749",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3749",
+        "world:creature:19765",
+        "world:creature:19784",
+        "world:creature:19767",
+        "world:creature:19788",
+        "world:creature:21059"
+      ],
+      "text": "You are in Coilskar Cistern, a place of the Coilskar naga in Shadowmoon Valley. Coilskar myrmidons, cobras and sorceresses are its main dangers, with enraged water spirits and a muckwatcher among them.",
+      "when": {
+        "area_id": 3749
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3750",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3750",
+        "world:creature:21291",
+        "world:creature:21295",
+        "world:creature:19768",
+        "world:creature:19762",
+        "world:quest:10522"
+      ],
+      "text": "You are in Coilskar Point, a place of the Coilskar naga in Shadowmoon Valley. Grom'tor, son of Oronok, questions the naga here with violence and mocking offers of freedom, seeking a fragment of the Cipher of Damnation. A Coilskar commander among them pleads to be set free. Coilskar sirens, defenders and cobras are the dangers.",
+      "when": {
+        "area_id": 3750
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3752",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3752",
+        "world:creature:21318",
+        "world:creature:21292",
+        "world:creature:19802",
+        "world:creature:19800",
+        "world:quest:10528"
+      ],
+      "text": "You are in Illidari Point, a place of the Illidari in Shadowmoon Valley where shocktroopers, painlashers and shadowstalkers are the dangers. The restless spirit of Ar'tor, son of Oronok, is still bound here, and his body is held by demonic crystals. The succubi who perform rituals at the site are led by Painmistress Gabrissa.",
+      "when": {
+        "area_id": 3752
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3753",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3753",
+        "world:quest:10568",
+        "world:creature:21454",
+        "world:creature:21453",
+        "world:creature:21803",
+        "world:creature:21455",
+        "world:creature:21802"
+      ],
+      "text": "You are in Ruins of Baa'ri, a draenei village buried under lava in Shadowmoon Valley. The Ashtongue, a tribe of the Broken, dig here under Illidan's orders, and Ashtongue warriors, shamans, handlers and workers are the dangers, along with elekk demolishers and greater felfire diemetradons.",
+      "when": {
+        "area_id": 3753
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3754",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3754",
+        "world:creature:23452",
+        "world:creature:21860",
+        "world:creature:19581"
+      ],
+      "text": "You are in Altar of Sha'tar, a post of the Aldor in Shadowmoon Valley. Commander Arcus leads its defense against the Dragonmaw, and Exarch Onaala directs the Aldor's response to Illidan's forces. It has a flight master, an inn and vendors.",
+      "when": {
+        "area_id": 3754
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3756",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3756",
+        "world:creature:21742",
+        "world:creature:21503",
+        "world:creature:21505",
+        "world:creature:21743",
+        "world:creature:21179"
+      ],
+      "text": "You are in Ruins of Karabor, a set of ruins in Shadowmoon Valley. Sunfury eradicators, warlocks, summoners and blood lords roam them, with demon hunter supplicants and initiates.",
+      "when": {
+        "area_id": 3756
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3757",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3757",
+        "world:creature:21822",
+        "world:creature:22082",
+        "world:creature:22084",
+        "world:creature:22081",
+        "world:creature:22061"
+      ],
+      "text": "You are in Ata'mal Terrace, a draenei holy site in Shadowmoon Valley now held by Illidan's fel orcs. Shadowmoon slayers, chosen, darkweavers and soulstealers are the dangers, and the Aldor direct efforts against the fel orcs there.",
+      "when": {
+        "area_id": 3757
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3758",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3758",
+        "world:quest:10481",
+        "world:creature:21657",
+        "world:creature:22113",
+        "world:creature:21060",
+        "world:creature:21478",
+        "world:creature:21477"
+      ],
+      "text": "You are in Netherwing Fields, an open land of gigantic blue crystals in Shadowmoon Valley. Neltharaku, a dragon, seeks to free the enslaved Netherwing drakes from Dragonmaw control, and Mordenai, an Alliance ally, urges help for the exhausted drakes. Enraged air spirits and Rocknail rippers are hostile here, and Rocknail flayers gather near the crystals.",
+      "when": {
+        "area_id": 3758
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3759",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3759",
+        "world:quest:10837",
+        "world:creature:23164",
+        "world:creature:22252",
+        "world:creature:23287",
+        "world:creature:23169",
+        "world:creature:23326"
+      ],
+      "text": "You are in Netherwing Ledge, an island off the broken shelf of Shadowmoon Valley, to the southeast. Dragonmaw peons and Murkblood miners are found in the Netherwing Mines, and nethermine flayers and ravagers are dangerous here. Toranaku, found in the mines, urgently says they must leave, without giving a reason.",
+      "when": {
+        "area_id": 3759
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3821",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3821",
+        "world:creature:21700",
+        "world:creature:21826",
+        "world:creature:21699",
+        "world:creature:21520",
+        "world:creature:19744"
+      ],
+      "text": "You are in Warden's Cage, a stronghold in Shadowmoon Valley where Akama secretly plots against Illidan. His second-in-command Sanoru guards the hidden resistance and tests newcomers before sending proven ones to Akama. Maiev Shadowsong is also here, demanding her release. Illidari jailers and dreadwardens are hostile here.",
+      "when": {
+        "area_id": 3821
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3822",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3822",
+        "world:creature:19792",
+        "world:creature:20502",
+        "world:creature:19796",
+        "world:creature:19806",
+        "world:creature:21639"
+      ],
+      "text": "You are in Eclipse Point, a part of Shadowmoon Valley where Eclipsion centurions, dragonhawks and archmages are hostile. Eclipsion bloodwarders and Illidari slayers are also dangerous here.",
+      "when": {
+        "area_id": 3822
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3926",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3926",
+        "world:quest:10514",
+        "world:creature:21027",
+        "world:creature:21196",
+        "world:creature:19784",
+        "world:creature:19767"
+      ],
+      "text": "You are in Shattered Plains, hardened earth in Shadowmoon Valley. Ravenous flayers are hostile here, and Coilskar cobras and sorceresses are hostile too. Earthmender Wilda of the Earthen Ring, taken prisoner by naga, still seeks escape.",
+      "when": {
+        "area_id": 3926
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3927",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3927",
+        "world:creature:21183",
+        "world:creature:21255",
+        "world:quest:10514",
+        "world:creature:19765",
+        "world:creature:19784",
+        "world:creature:19767"
+      ],
+      "text": "You are in Oronok's Farm, a hermit's holding in Shadowmoon Valley where Oronok Torn-heart, an Alliance trader, poses as a farmer. He offers shelter by his fire, a vendor and repairs, and flayers from a nest to the northeast have been attacking his animals. Coilskar myrmidons, cobras and sorceresses are hostile here.",
+      "when": {
+        "area_id": 3927
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3928",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3928",
+        "world:creature:21024",
+        "world:creature:17008",
+        "world:creature:22094",
+        "world:creature:21049"
+      ],
+      "text": "You are in The Altar of Damnation, an altar in Shadowmoon Valley. Earthen Ring earthmender Torlok asks spirits for wisdom and warns that they may lash out. Gul'dan is here with several Remnants, Aspects of Gul'dan, and he boasts of razing and reforming the land.",
+      "when": {
+        "area_id": 3928
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3929",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3929",
+        "world:creature:22016",
+        "world:creature:22017",
+        "world:creature:22018",
+        "world:creature:19795",
+        "world:creature:19824"
+      ],
+      "text": "You are in The Path of Conquest, an area of Shadowmoon Valley where Eclipsion soldiers are the most common danger. Eclipsion spellbinders, cavaliers and blood knights are hostile here too, along with sons of Corok.",
+      "when": {
+        "area_id": 3929
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3930",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3930",
+        "world:creature:19823"
+      ],
+      "text": "You are in Eclipsion Fields, an area of Shadowmoon Valley where crazed colossi are dangerous.",
+      "when": {
+        "area_id": 3930
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3932",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3932",
+        "world:creature:19825",
+        "world:creature:21385",
+        "world:creature:21384",
+        "world:creature:21450",
+        "world:creature:21408"
+      ],
+      "text": "You are in Sketh'lon Base Camp, a camp in Shadowmoon Valley where Dark Conclave talonites, scorncrows and harbingers are hostile, along with skethyl owls and felfire diemetradons.",
+      "when": {
+        "area_id": 3932
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3933",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3933",
+        "world:creature:19826",
+        "world:creature:21386",
+        "world:creature:19827",
+        "world:creature:22025",
+        "world:creature:21450"
+      ],
+      "text": "You are in Sketh'lon Wreckage, a wreck in Shadowmoon Valley where Dark Conclave shadowmancers, hawkeyes and ravenguards are hostile. Asghar is among the hostile ones here, along with skethyl owls.",
+      "when": {
+        "area_id": 3933
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3938",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3938",
+        "world:creature:23434",
+        "world:creature:21953",
+        "world:creature:21954"
+      ],
+      "text": "You are in Sanctum of the Stars, a Scryer base in Shadowmoon Valley with a flight master and an inn. Commander Hobb commands Scryer forces against the Dragonmaw, and Varen the Reclaimer directs the Scryers' campaigns against the Ashtongue and Shadowmoon orcs. Larissa Sunstrike investigates Illidan's demon hunter training at Karabor.",
+      "when": {
+        "area_id": 3938
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3939",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3939",
+        "world:creature:22112",
+        "world:quest:10866",
+        "world:creature:21717",
+        "world:creature:21718",
+        "world:creature:21720",
+        "world:creature:21722"
+      ],
+      "text": "You are in Dragonmaw Fortress, a Dragonmaw fortress in Shadowmoon Valley where Dragonmaw wranglers, subjugators and shamans hold enslaved netherwing drakes. Karynaku, a netherwing dragon and the mate of Neltharaku, is held in chains here by Zuluhed, an ancient orc.",
+      "when": {
+        "area_id": 3939
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3943",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3943",
+        "world:creature:21789",
+        "world:creature:21790",
+        "world:creature:19353",
+        "world:creature:21753",
+        "world:creature:21754",
+        "world:creature:21961",
+        "world:creature:21949"
+      ],
+      "text": "You are in Invasion Point: Cataclysm, a camp in Shadowmoon Valley where Nakansi, for the Horde, and Plexi, for the Alliance, rig consoles to turn the Legion's fel reavers against its supplies. Wildhammer Guards are posted here, and Shadow Council felsworn and zealots, Cataclysm Overseers and Fel Reaver Sentinels are the dangers. The Legion may notice such stunts.",
+      "when": {
+        "area_id": 3943
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3944",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3944",
+        "world:creature:21797",
+        "world:creature:21872",
+        "world:creature:21060",
+        "world:quest:10634",
+        "world:quest:10635",
+        "world:quest:10636"
+      ],
+      "text": "You are in The Altar of Shadows, in southeast Shadowmoon Valley, where an ancient spirit is bound to the altar. It draws passersby into recovering the armor, cloak and truncheon of Teron Gorefiend, then reveals itself as Gorefiend, imprisoned there. Enraged air spirits are the local danger, and the Voice of Gorefiend urges listeners to kill Karsius.",
+      "when": {
+        "area_id": 3944
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3945",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3945",
+        "world:creature:17407",
+        "world:creature:21462",
+        "world:creature:21060",
+        "world:creature:21705"
+      ],
+      "text": "You are in Netherwing Pass, in Shadowmoon Valley, where felmists, gas clouds, are found. Greater felfire diemetradons and enraged air spirits are the dangers here, and corrupt air totems stand among them.",
+      "when": {
+        "area_id": 3945
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3949",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3949",
+        "world:creature:21736",
+        "world:creature:21749",
+        "world:creature:21408",
+        "world:creature:21878",
+        "world:creature:19756",
+        "world:creature:19754",
+        "world:creature:20878"
+      ],
+      "text": "You are in Magma Fields, in Shadowmoon Valley, where a Wildhammer Defender and a Shadowmoon Scout each serve their own side across the valley. Felfire diemetradons and felboars are the main dangers, and Deathforge smiths, tinkerers and guardians are hostile here too.",
+      "when": {
+        "area_id": 3949
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3950",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3950",
+        "world:creature:22073",
+        "world:creature:22083",
+        "world:quest:10781",
+        "world:creature:22018",
+        "world:creature:22093"
+      ],
+      "text": "You are in Crimson Watch, on the Path of Conquest in Shadowmoon Valley, where Illidan's forces are the threat. Marcus Auralion, High General of the Sha'tar, is held in a crystalline prison here, according to Val'zareq's journal. Lord Illidan Stormrage demands obedience and threatens a fate worse than death for failure, and Eclipsion cavaliers and Illidari watchers are the dangers.",
+      "when": {
+        "area_id": 3950
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3966",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3966",
+        "world:creature:23146",
+        "world:creature:22252",
+        "world:creature:23150",
+        "world:creature:23287",
+        "world:creature:23142",
+        "world:creature:23144"
+      ],
+      "text": "You are in Dragonmaw Base Camp, in Shadowmoon Valley, where Dragonmaw enforcers, peons and pitfighters are the main dangers. Murkblood miners, goblin mercenaries and a creature called Gug are hostile here too.",
+      "when": {
+        "area_id": 3966
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3520": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3520 (Shadowmoon Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3743": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3743 (Legion Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3744": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3744 (Shadowmoon Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3745": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3745 (Wildhammer Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3747": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3747 (The Fel Pits)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3748": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3748 (The Deathforge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3749": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3749 (Coilskar Cistern)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3750": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3750 (Coilskar Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3752": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3752 (Illidari Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3753": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3753 (Ruins of Baa'ri)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3754": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3754 (Altar of Sha'tar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3756": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3756 (Ruins of Karabor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3757": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3757 (Ata'mal Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3758": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3758 (Netherwing Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3759": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3759 (Netherwing Ledge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3821": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3821 (Warden's Cage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3822": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3822 (Eclipse Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3926": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3926 (Shattered Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3927": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3927 (Oronok's Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3928": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3928 (The Altar of Damnation)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3929": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3929 (The Path of Conquest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3930": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3930 (Eclipsion Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3932": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3932 (Sketh'lon Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3933": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3933 (Sketh'lon Wreckage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3938": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3938 (Sanctum of the Stars)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3939": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3939 (Dragonmaw Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3943": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3943 (Invasion Point: Cataclysm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3944": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3944 (The Altar of Shadows)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3945": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3945 (Netherwing Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3949": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3949 (Magma Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3950": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3950 (Crimson Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3966": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3966 (Dragonmaw Base Camp)",
+      "revision": "3.3.5a client data"
+    },
     "source:0024495f9282fbb96f4320ec": {
       "kind": "research",
       "reference": "evidence:sha256:cb35d88b350b9b74d517e62e6d202ab226e91e9ea1b240e42c8a7dfef9557c33",
@@ -13743,6 +14482,706 @@
       "kind": "research",
       "reference": "evidence:sha256:fcade28ebfdd29cef1f4da4ef1da657a51f372010e71ffc1afc06e828be0eebb",
       "revision": "c78285d31f32f02f6540682e7f5ba9bcdba5fb09500362abedeebcaab3d7fc6a"
+    },
+    "world:creature:17008": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17008 (Gul'dan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17407": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17407 (Felmist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18939 (Brubeck Stormfoot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19317": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19317 (Drek'Gol), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19333 (Grokom Deatheye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19352": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19352 (Dreg Cloudsweeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19353 (Wildhammer Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19370 (Ordinn Thunderfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19581": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19581 (Maddix), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19744 (Dreadwarden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19754 (Deathforge Tinkerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19756": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19756 (Deathforge Smith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19762 (Coilskar Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19765 (Coilskar Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19767": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19767 (Coilskar Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19768": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19768 (Coilskar Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19784 (Coilskar Cobra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19788": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19788 (Coilskar Muckwatcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19792 (Eclipsion Centurion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19795": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19795 (Eclipsion Blood Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19796 (Eclipsion Archmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19800": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19800 (Illidari Painlasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19802": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19802 (Illidari Shocktrooper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19806": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19806 (Eclipsion Bloodwarder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19823 (Crazed Colossus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19824 (Son of Corok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19825": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19825 (Dark Conclave Talonite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19826": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19826 (Dark Conclave Shadowmancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19827": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19827 (Dark Conclave Ravenguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20502 (Eclipsion Dragonhawk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20872 (Deathforge Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20878": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20878 (Deathforge Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21024": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21024 (Earthmender Torlok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21027": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21027 (Earthmender Wilda), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21049": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21049 (Spirit of the Past), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21050": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21050 (Enraged Earth Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21059": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21059 (Enraged Water Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21060": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21060 (Enraged Air Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21061": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21061 (Enraged Fire Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21179 (Demon Hunter Supplicant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21183": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21183 (Oronok Torn-heart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21196 (Ravenous Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21255": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21255 (Umberhowl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21291 (Grom'tor, Son of Oronok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21292": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21292 (Ar'tor, Son of Oronok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21295": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21295 (Coilskar Commander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21302": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21302 (Shadow Council Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21314 (Terrormaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21316": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21316 (Deathforged Infernal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21318 (Spirit of Ar'tor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21357 (Wing Commander Nuainn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21359": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21359 (Blood Guard Gulmok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21384": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21384 (Dark Conclave Harbinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21385 (Dark Conclave Scorncrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21386 (Dark Conclave Hawkeye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21408": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21408 (Felfire Diemetradon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21450 (Skethyl Owl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21453 (Ashtongue Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21454 (Ashtongue Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21455": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21455 (Ashtongue Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21462 (Greater Felfire Diemetradon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21471": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21471 (Stormer Ewan Wildwing), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21475 (Scout Zagran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21477": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21477 (Rocknail Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21478": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21478 (Rocknail Ripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21503": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21503 (Sunfury Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21505 (Sunfury Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21520 (Illidari Jailor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21639 (Illidari Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21657 (Neltharaku), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21699": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21699 (Maiev Shadowsong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21700": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21700 (Akama), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21703": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21703 (Corrupt Fire Totem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21705": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21705 (Corrupt Air Totem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21717 (Dragonmaw Wrangler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21718 (Dragonmaw Subjugator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21720": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21720 (Dragonmaw Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21722": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21722 (Enslaved Netherwing Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21736": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21736 (Wildhammer Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21742": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21742 (Sunfury Eradicator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21743": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21743 (Sunfury Blood Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21749": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21749 (Shadowmoon Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21753": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21753 (Shadow Council Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21754 (Shadow Council Zealot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21772 (Chief Apothecary Hildagard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21789": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21789 (Nakansi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21790": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21790 (Plexi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21797 (Ancient Shadowmoon Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21802": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21802 (Elekk Demolisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21803": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21803 (Ashtongue Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21822 (Vindicator Aluumen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21826": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21826 (Sanoru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21860 (Exarch Onaala), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21872": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21872 (The Voice of Gorefiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21878": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21878 (Felboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21949": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21949 (Fel Reaver Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21953": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21953 (Varen the Reclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21954": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21954 (Larissa Sunstrike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21961": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21961 (Cataclysm Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22016": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22016 (Eclipsion Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22017": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22017 (Eclipsion Spellbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22018": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22018 (Eclipsion Cavalier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22025": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22025 (Asghar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22061": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22061 (Shadowmoon Soulstealer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22073 (Marcus Auralion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22081": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22081 (Shadowmoon Darkweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22082": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22082 (Shadowmoon Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22083": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22083 (Lord Illidan Stormrage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22084 (Shadowmoon Chosen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22093 (Illidari Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22094 (Remnant of Hate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22112 (Karynaku), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22113 (Mordenai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22252": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22252 (Dragonmaw Peon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23142": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23142 (Goblin Merc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23144": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23144 (Gug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23146": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23146 (Dragonmaw Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23150 (Dragonmaw Pitfighter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23164 (Toranaku), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23169 (Nethermine Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23287 (Murkblood Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23326": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23326 (Nethermine Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23434 (Commander Hobb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23452 (Commander Arcus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10481": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10481 (Enraged Spirits of Air)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10514": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10514 (I Was A Lot Of Things...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10522": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10522 (The Cipher of Damnation - Grom'tor's Charge)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10528": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10528 (Demonic Crystal Prisons)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10562": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10562 (Besieged!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10568": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10568 (Tablets of Baa'ri)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10574": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10574 (The Ashtongue Corruptors)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10595": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10595 (Besieged!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10596": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10596 (To Legion Hold)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10601": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10601 (The Fate of Kagrosh)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10634": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10634 (Divination: Gorefiend's Armor)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10635": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10635 (Divination: Gorefiend's Cloak)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10636": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10636 (Divination: Gorefiend's Truncheon)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10781": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10781 (Battle of the Crimson Watch)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10837": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10837 (To Netherwing Ledge!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10866": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10866 (Zuluhed the Whacked)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

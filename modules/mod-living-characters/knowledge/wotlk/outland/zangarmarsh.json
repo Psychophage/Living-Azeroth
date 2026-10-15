@@ -3741,7 +3741,652 @@
     }
   ],
   "place": "Zangarmarsh",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3521",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3521",
+        "dbc:area:3644",
+        "dbc:area:3766",
+        "dbc:area:3645",
+        "dbc:area:3565",
+        "world:creature:18089",
+        "world:creature:19734",
+        "world:quest:10118"
+      ],
+      "text": "You are in Zangarmarsh, a contested marsh in Outland where the Alliance and the Horde both hold settlements. Telredor and Orebor Harborage are Alliance towns, Zabra'jin is Horde, and Cenarion Refuge is kept by neither side. It is a land of lakes, bogs and mires. Its main dangers are Bloodscale naga, fungal giants and bog lords, and the Lost One tribes such as the Daggerfen, who fight for control of the roads.",
+      "when": {
+        "zone_id": 3521
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3565",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3565",
+        "world:creature:17841",
+        "world:creature:17834",
+        "world:creature:17900",
+        "world:creature:17901",
+        "world:creature:17896"
+      ],
+      "text": "You are in Cenarion Refuge, the base of the Cenarion Expedition in Zangarmarsh, and neither the Alliance nor the Horde holds it. Expedition leader Ysiel Windsinger studies the marsh as its lakes lose water, while druid Lethyn Moonfire works to keep the marsh in balance. The Ancients Ashyen and Keleth offer their blessings to trusted allies. Its inn and stable are the place to rest and to recover lost pets.",
+      "when": {
+        "area_id": 3565
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3640",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3640",
+        "world:creature:18115",
+        "world:creature:18116",
+        "world:creature:19174",
+        "world:creature:18014",
+        "world:creature:18152"
+      ],
+      "text": "You are in Daggerfen Village, a village of the Daggerfen Lost Ones in Zangarmarsh. Daggerfen muckdwellers and assassins are the dangers here, and Chieftain Mummaki leads them. Witch Doctor Tor'gash of Zabra'jin plans to release murlocs among the Lost Ones here.",
+      "when": {
+        "area_id": 3640
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3641",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3641",
+        "world:creature:18077",
+        "world:creature:18079",
+        "world:creature:20115",
+        "world:creature:18080",
+        "world:creature:17969"
+      ],
+      "text": "You are in Umbrafen Village, a village of the Umbrafen tribe in Zangarmarsh. Umbrafen oracles, seers and witchdoctors haunt it, and Kataru leads them. Druid Kayra Longmane was abducted from near Cenarion Refuge and is trying to escape from here.",
+      "when": {
+        "area_id": 3641
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3642",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3642",
+        "world:creature:18113",
+        "world:creature:18114",
+        "world:creature:20270",
+        "world:creature:18134",
+        "world:quest:9787",
+        "world:creature:18017"
+      ],
+      "text": "You are in Feralfen Village, home of the Feralfen Lost Ones in Zangarmarsh. Feralfen hunters, mystics and druids are the dangers here, and a fen strider and a blacksting roam nearby. The Feralfen have turned back to worship of animal spirits, and Alliance and Horde scholars want their carved idols studied.",
+      "when": {
+        "area_id": 3642
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3643",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3643",
+        "world:creature:18089",
+        "world:creature:18088",
+        "world:creature:18123",
+        "world:creature:20090",
+        "world:quest:9726"
+      ],
+      "text": "You are in Bloodscale Enclave, a naga stronghold in Zangarmarsh. Bloodscale slavedrivers and enchantresses keep wrekt slaves at work here, and sentries watch the approaches. Naga of the enclave are reported to be killing Sporeggar's people.",
+      "when": {
+        "area_id": 3643
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3644",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3644",
+        "world:creature:18003",
+        "world:creature:18004",
+        "world:creature:18007"
+      ],
+      "text": "You are in Telredor, an Alliance refuge of draenei in Zangarmarsh. Anchorite Ahuurn turned an old shrine here into a haven, and he hopes to reunite the Lost Ones with the draenei. Vindicator Idaar tests the depleted soil of the Dead Mire. Its inn and repairs serve the Alliance.",
+      "when": {
+        "area_id": 3644
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3645",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3645",
+        "world:creature:18013",
+        "world:quest:9795",
+        "world:quest:9822"
+      ],
+      "text": "You are in Zabra'jin, a Horde outpost in Zangarmarsh that Shadow Hunter Denjai oversees for the Darkspear forces. Denjai suspects that ogres from the Ango'rosh grounds are staging an attack, and ogres are filtering down from the northern mountains. Its inn, stable and flight point serve Horde travelers.",
+      "when": {
+        "area_id": 3645
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3646",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3646",
+        "world:creature:19734",
+        "world:creature:18127",
+        "world:creature:18125",
+        "world:creature:19519"
+      ],
+      "text": "You are in Quagg Ridge, a ridge in Zangarmarsh where fungal giants and bog lords are the main dangers. Starving fungal giants and starving bog lords roam here as well.",
+      "when": {
+        "area_id": 3646
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3647",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3647",
+        "world:creature:17923",
+        "world:quest:9739",
+        "world:creature:18125",
+        "world:creature:19519",
+        "world:creature:18680"
+      ],
+      "text": "You are in The Spawning Glen, a glen in Zangarmarsh where the Sporelings raise their young. Fahssn speaks for them there, pleading for help as fungal giants devour their spore sacs. Starving fungal giants and starving bog lords roam the glen, and a marticar is also here.",
+      "when": {
+        "area_id": 3647
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3648",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3648",
+        "world:creature:18124",
+        "world:creature:19402",
+        "world:creature:19706",
+        "world:creature:20324",
+        "world:quest:9635",
+        "world:creature:18035"
+      ],
+      "text": "You are in the Dead Mire, a withered stretch of Zangarmarsh where the fungus and the soil are dying. Withered giants, withered bog lords, marshrock threshaliks and parched hydras roam it. A broken steam pump sits in the mire, and Horde scout Jyoba was found dead here with his report missing.",
+      "when": {
+        "area_id": 3648
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3649",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3649",
+        "world:creature:17924",
+        "world:creature:17856",
+        "world:quest:9717",
+        "world:quest:9719",
+        "world:creature:17866"
+      ],
+      "text": "You are in Sporeggar, a village of Sporelings in Zangarmarsh. Its primus Msshi'fn keeps the village supplied, and its people trade glowcap mushrooms for food. Sanguine hibiscus has grown scarce as the marsh dries, and the Sporelings are at war with the spore giants. The marsh walkers are an old enemy, and the Black Stalker is their great mother.",
+      "when": {
+        "area_id": 3649
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3650",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3650",
+        "world:creature:20443",
+        "world:creature:18119",
+        "world:creature:19732",
+        "world:creature:18120",
+        "world:quest:9822"
+      ],
+      "text": "You are in Ango'rosh Grounds, an ogre camp in Zangarmarsh northwest of Zabra'jin. Ango'rosh sentries, brutes, warlocks and maulers keep watch here, and marshlight bleeders drift through the camp. Shadow Hunter Denjai suspects the ogres are preparing an attack on Zabra'jin.",
+      "when": {
+        "area_id": 3650
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3651",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3651",
+        "world:quest:9839",
+        "world:creature:18160",
+        "world:creature:20445",
+        "world:creature:18120",
+        "world:creature:18121",
+        "world:creature:20444"
+      ],
+      "text": "You are in Ango'rosh Stronghold, an ogre hold in a cave on a small island in Zangarmarsh, reached over a fallen mushroom. Ango'rosh ogres led by Overlord Gorefist keep it, and Mal'druk the Soulrender is among them. Maulers, souleaters and shadowmages make the cave dangerous.",
+      "when": {
+        "area_id": 3651
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3652",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3652",
+        "world:creature:18912",
+        "world:creature:18136",
+        "world:creature:18137"
+      ],
+      "text": "You are in Funggor Cavern, a cavern in Zangarmarsh. Marsh lurkers and marsh dredgers are its dangers. Sporelok, a humanoid also found in Terokkar Forest, can be met here.",
+      "when": {
+        "area_id": 3652
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3653",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3653",
+        "world:creature:17884",
+        "world:creature:23373",
+        "world:quest:9738",
+        "world:creature:18212",
+        "world:creature:18214",
+        "world:creature:20088",
+        "world:creature:20089"
+      ],
+      "text": "You are in Serpent Lake, a lake in Zangarmarsh. Cenarion Expedition investigator Watcher Jhang is looking for four missing companions, and Mortog Steamhead, who says the Expedition saved him from the mines, offers repairs and reagents to its allies. Mudfin frenzies, fenclaw thrashers, and Bloodscale overseers and wavecallers are its dangers.",
+      "when": {
+        "area_id": 3653
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3655",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3655",
+        "world:creature:18138",
+        "world:creature:18213",
+        "world:creature:19947",
+        "world:creature:18132",
+        "world:creature:17378"
+      ],
+      "text": "You are in Umbrafen Lake, a lake in Zangarmarsh. Umbrafen eels are its main danger, with mire hydras, darkcrest sorceresses and umbraglow stingers also about. A gas cloud called Swamp Gas is found here.",
+      "when": {
+        "area_id": 3655
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3656",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3656",
+        "world:creature:20295",
+        "world:creature:20294",
+        "world:creature:20710",
+        "world:creature:18088",
+        "world:creature:18089",
+        "world:creature:18133"
+      ],
+      "text": "You are in Marshlight Lake, a lake in Zangarmarsh. Bogstrok crushers, bogstrok razorclaws and bogstrok hatchlings are its dangers, along with bloodscale enchantresses, bloodscale slavedrivers and marshlight bleeders. Swamp Gas, a gas cloud, is found here.",
+      "when": {
+        "area_id": 3656
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3658",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3658",
+        "world:creature:20710",
+        "world:creature:20293"
+      ],
+      "text": "You are in Sporewind Lake, a lake in Zangarmarsh. Bogstrok hatchlings and bogstrok clackers are its main dangers.",
+      "when": {
+        "area_id": 3658
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3659",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3659",
+        "world:creature:20290",
+        "world:creature:20291",
+        "world:creature:18213",
+        "world:creature:20196",
+        "world:creature:20292",
+        "world:creature:20387"
+      ],
+      "text": "You are in The Lagoon, a lagoon in Zangarmarsh. Lagoon eels and lagoon walkers are its main dangers, with mire hydras, bloodthirsty marshfangs and Marsh Baron Brok also about. Young sporebats are found here, and when one dies it releases a burst of spores.",
+      "when": {
+        "area_id": 3659
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3667",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3667",
+        "world:creature:18117",
+        "world:creature:18118",
+        "world:quest:9835",
+        "world:creature:18135",
+        "world:creature:18133"
+      ],
+      "text": "You are in Hewn Bog, a bog in Zangarmarsh. Ango'rosh ogres and their shamans are its main dangers, and the ogres have cleared the bog of its towering mushrooms. Marsh walkers and marshlight bleeders are also about.",
+      "when": {
+        "area_id": 3667
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3718",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3718",
+        "world:creature:18011",
+        "world:creature:20762",
+        "world:quest:9771",
+        "world:quest:9770"
+      ],
+      "text": "You are in Swamprat Post, a Horde outpost in Zangarmarsh. Zurai, a merchant and outpost leader sent by Shadow Hunter Denjai, runs it, and Gur'zil the wind rider master handles flights from here. Scout Jyoba has not returned from the Dead Mire, and marshfang rippers crawl around the post.",
+      "when": {
+        "area_id": 3718
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3720",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3720",
+        "world:creature:6491",
+        "world:creature:18212",
+        "world:creature:20196",
+        "world:creature:18134",
+        "world:creature:18214"
+      ],
+      "text": "You are in Twin Spire Ruins, ruins in Zangarmarsh where a spirit healer offers a return to life for a price. Mudfin frenzies, bloodthirsty marshfangs and fen striders are its dangers, with fenclaw thrashers and marshfang slicers also about.",
+      "when": {
+        "area_id": 3720
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3766",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3766",
+        "world:creature:18008",
+        "world:creature:22485",
+        "world:creature:18019",
+        "world:quest:9835"
+      ],
+      "text": "You are in Orebor Harborage, an Alliance refuge in Zangarmarsh where a Kurenai delegation led by Ikuti defends the place from Ango'rosh ogres. Halu, the hippogryph master, handles flights here, and Timothy Daniels, known as the Specialist, is busy studying Daggerfen poison.",
+      "when": {
+        "area_id": 3766
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3818",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3818",
+        "world:creature:20088",
+        "world:creature:20089",
+        "world:creature:20090",
+        "world:creature:20792",
+        "world:creature:18340",
+        "world:creature:18123",
+        "world:quest:9738"
+      ],
+      "text": "You are in Bloodscale Grounds, a stretch of Zangarmarsh where bloodscale overseers, wavecallers, sentries and elementals are the dangers. Steam pump overseers and wrekt slaves are about too, and the steam pumps here are used to drain the water from the marsh.",
+      "when": {
+        "area_id": 3818
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3819",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3819",
+        "world:creature:18086",
+        "world:creature:18087",
+        "world:creature:18122",
+        "world:creature:20079",
+        "world:creature:18681",
+        "world:creature:18132"
+      ],
+      "text": "You are in Darkcrest Enclave, in Zangarmarsh. Darkcrest taskmasters, sirens and sentries prowl the ground here, Dreghood drudges are common too, and Coilfang emissaries are seen now and then. Umbraglow stingers are a danger here as well.",
+      "when": {
+        "area_id": 3819
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3841",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3841",
+        "world:creature:18122",
+        "world:creature:19946",
+        "world:creature:19947",
+        "world:creature:20079",
+        "world:creature:18132",
+        "world:creature:18213"
+      ],
+      "text": "You are in Darkcrest Shore, on the edge of Zangarmarsh. Dreghood drudges, Darkcrest slavers and Darkcrest sorceresses roam here, with Darkcrest sentries, Umbraglow stingers and Mire hydras as further dangers.",
+      "when": {
+        "area_id": 3841
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3895",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3895",
+        "world:creature:17831",
+        "world:creature:17953",
+        "world:quest:9702"
+      ],
+      "text": "You are in Cenarion Watchpost, in Zangarmarsh. Watcher Leesa'oh studies the sporelings here and watches how they live alongside the marsh's other creatures. Hungry bog lords are eating the sporelings' pods, and she fears they may wipe the sporelings out. Buddy, her animal companion, follows her about.",
+      "when": {
+        "area_id": 3895
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3521": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3521 (Zangarmarsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3565": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3565 (Cenarion Refuge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3640": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3640 (Daggerfen Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3641": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3641 (Umbrafen Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3642": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3642 (Feralfen Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3643": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3643 (Bloodscale Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3644": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3644 (Telredor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3645": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3645 (Zabra'jin)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3646": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3646 (Quagg Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3647": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3647 (The Spawning Glen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3648": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3648 (The Dead Mire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3649": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3649 (Sporeggar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3650": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3650 (Ango'rosh Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3651": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3651 (Ango'rosh Stronghold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3652": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3652 (Funggor Cavern)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3653": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3653 (Serpent Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3655": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3655 (Umbrafen Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3656": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3656 (Marshlight Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3658": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3658 (Sporewind Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3659": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3659 (The Lagoon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3667": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3667 (Hewn Bog)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3718": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3718 (Swamprat Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3720": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3720 (Twin Spire Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3766": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3766 (Orebor Harborage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3818": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3818 (Bloodscale Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3819": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3819 (Darkcrest Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3841": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3841 (Darkcrest Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3895": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3895 (Cenarion Watchpost)",
+      "revision": "3.3.5a client data"
+    },
     "source:006f8b7f0876eb0f62e0e25d": {
       "kind": "research",
       "reference": "evidence:sha256:c28e3a7974b92e8a34f0ad593b04d8eba7fb3bcdbeb6712afae7dbd402debcc1",
@@ -6766,6 +7411,546 @@
       "kind": "research",
       "reference": "evidence:sha256:798eb08fa6e42ed4b1732e94e6c1936ab367ae83b2f7132db5629d9b69414d10",
       "revision": "657ddc205ea4d4663ff2b242e2d3a81e383d4f639664b5860169c4e1d514ea2d"
+    },
+    "world:creature:17378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17378 (Swamp Gas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17831": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17831 (Watcher Leesa'oh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17834 (Lethyn Moonfire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17841 (Ysiel Windsinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17856 (Gzhun'tt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17866": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17866 (Khn'nix), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17884": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17884 (Watcher Jhang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17896": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17896 (Kameel Longstride), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17900": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17900 (Ashyen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17901 (Keleth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17923": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17923 (Fahssn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17924 (Msshi'fn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17953": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17953 (Buddy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17969": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17969 (Kayra Longmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18003": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18003 (Anchorite Ahuurn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18004": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18004 (Vindicator Idaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18007": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18007 (Ruam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18008": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18008 (Ikuti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18011": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18011 (Zurai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18013": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18013 (Shadow Hunter Denjai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18014": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18014 (Witch Doctor Tor'gash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18017": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18017 (Seer Janidi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18019": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18019 (Timothy Daniels), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18035 (Scout Jyoba), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18077": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18077 (Umbrafen Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18079 (Umbrafen Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18080 (Kataru), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18086 (Darkcrest Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18087 (Darkcrest Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18088": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18088 (Bloodscale Enchantress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18089 (Bloodscale Slavedriver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18113 (Feralfen Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18114": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18114 (Feralfen Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18115 (Daggerfen Muckdweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18116": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18116 (Daggerfen Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18117": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18117 (Ango'rosh Ogre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18118 (Ango'rosh Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18119": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18119 (Ango'rosh Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18120 (Ango'rosh Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18121 (Ango'rosh Souleater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18122": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18122 (Dreghood Drudge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18123 (Wrekt Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18124": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18124 (Withered Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18125 (Starving Fungal Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18127 (Bog Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18132": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18132 (Umbraglow Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18133": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18133 (Marshlight Bleeder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18134": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18134 (Fen Strider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18135": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18135 (Marsh Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18136 (Marsh Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18137": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18137 (Marsh Dredger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18138": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18138 (Umbrafen Eel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18152": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18152 (Baby Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18160 (Overlord Gorefist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18212 (Mudfin Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18213 (Mire Hydra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18214 (Fenclaw Thrasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18340 (Steam Pump Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18680 (Marticar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18681 (Coilfang Emissary), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18912 (Sporelok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19174": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19174 (Chieftain Mummaki), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19402 (Withered Bog Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19519 (Starving Bog Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19706": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19706 (Marshrock Threshalisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19732 (Ango'rosh Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19734 (Fungal Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19946": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19946 (Darkcrest Slaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19947 (Darkcrest Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20079 (Darkcrest Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20088": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20088 (Bloodscale Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20089 (Bloodscale Wavecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20090": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20090 (Bloodscale Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20115 (Umbrafen Witchdoctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20196 (Bloodthirsty Marshfang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20270 (Feralfen Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20290": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20290 (Lagoon Eel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20291 (Lagoon Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20292": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20292 (Marsh Baron Brok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20293 (Bogstrok Clacker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20294": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20294 (Bogstrok Razorclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20295": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20295 (Bogstrok Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20324 (Parched Hydra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20387 (Young Sporebat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20443": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20443 (Ango'rosh Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20444": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20444 (Ango'rosh Shadowmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20445 (Mal'druk the Soulrender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20710": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20710 (Bogstrok Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20762 (Gur'zil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20792 (Bloodscale Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22485": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22485 (Halu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23373 (Mortog Steamhead), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10118": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10118 (Message to the Daggerfen)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9635": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9635 (The Zapthrottle Mote Extractor!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9702": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9702 (A Question of Gluttony)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9717": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9717 (Oh, It's On!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9719": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9719 (Stalk the Stalker)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9726": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9726 (Now That We're Friends...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9738": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9738 (Lost in Action)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9739": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9739 (The Sporelings' Plight)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9770": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9770 (Menacing Marshfangs)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9771": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9771 (Searching for Scout Jyoba)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9787": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9787 (Idols of the Feralfen)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9795": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9795 (The Ogre Threat)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9822": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9822 (Impending Attack)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9835": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9835 (Ango'rosh Encroachment)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9839": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9839 (Overlord Gorefist)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

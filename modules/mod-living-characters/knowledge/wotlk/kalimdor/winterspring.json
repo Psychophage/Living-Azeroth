@@ -2497,7 +2497,359 @@
     }
   ],
   "place": "Winterspring",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:618",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:618",
+        "dbc:area:2255",
+        "world:creature:11556",
+        "world:quest:8464",
+        "world:quest:5981",
+        "world:creature:7444",
+        "world:creature:7453",
+        "world:creature:7435"
+      ],
+      "text": "You are in Winterspring, a snowbound land on Kalimdor that neither the Alliance nor the Horde holds. Everlook is its settlement, and the Timbermaw furbolgs guard a hold at its entrance. Winterfall furbolgs, owlbeasts and shardtooth bears roam the wilds, and frostmaul giants hold the large valley to the south. Cobalt dragonkin are a danger around Mazthoril.",
+      "when": {
+        "zone_id": 618
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2241",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2241",
+        "world:creature:10618",
+        "world:creature:7432",
+        "world:creature:7433",
+        "world:creature:6491"
+      ],
+      "text": "You are in Frostsaber Rock in Winterspring, where Rivern Frostwind trains feral frostsabers as mounts and says riders must earn the acceptance of both him and the cats. Frostsaber stalkers and huntresses prowl the rock, and Winterfall furbolgs and Frostmaul giants threaten the trained cats. A spirit healer and a vendor are also here.",
+      "when": {
+        "area_id": 2241
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2243",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2243",
+        "world:creature:7440",
+        "world:creature:7442",
+        "world:creature:7444",
+        "world:creature:7447",
+        "world:creature:7450"
+      ],
+      "text": "You are in Timbermaw Post in Winterspring. Winterfall den watchers and pathfinders roam here, along with shardtooth bears, chillwind fledglings and ragged owlbeasts.",
+      "when": {
+        "area_id": 2243
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2244",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2244",
+        "world:quest:8464",
+        "world:creature:7438",
+        "world:creature:7439",
+        "world:creature:7443",
+        "world:creature:7448",
+        "world:creature:7455"
+      ],
+      "text": "You are in Winterfall Village in Winterspring, home of the Winterfall furbolgs who have turned hostile to the Timbermaw. Winterfall ursa and shamans are the main danger, with shardtooth maulers and chillwind chimaera close behind. Winterspring owls are found here too.",
+      "when": {
+        "area_id": 2244
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2245",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2245",
+        "world:creature:10929",
+        "world:creature:10660",
+        "world:creature:7435",
+        "world:creature:7437",
+        "world:creature:10661"
+      ],
+      "text": "You are in Mazthoril in Winterspring, where Haleh is the matron protectorate of the Blue Flight. Haleh says the flight is bound by the Aspects' edict to stay out of mortal affairs, but Nefarian's threat makes intervention necessary. Cobalt broodlings, wyrmkin and mageweavers are the danger here, and spell eaters prowl too.",
+      "when": {
+        "area_id": 2245
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2246",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2246",
+        "world:creature:9298",
+        "world:quest:5082",
+        "world:creature:7442",
+        "world:creature:7440",
+        "world:creature:7444",
+        "world:creature:7450"
+      ],
+      "text": "You are in Frostfire Hot Springs in Winterspring, where Donova Snowden investigates the strange qualities of the springs. Winterfall pathfinders and den watchers guard the water, and shardtooth bears and ragged owlbeasts roam the surrounding ground.",
+      "when": {
+        "area_id": 2246
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2247",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2247",
+        "world:creature:7458",
+        "world:creature:7448",
+        "world:creature:7443",
+        "world:creature:7459",
+        "world:creature:7460",
+        "world:creature:7455"
+      ],
+      "text": "You are in Ice Thistle Hills in Winterspring, where ice thistle yetis are the main danger. Chillwind chimaera, shardtooth maulers and the ice thistle matriarch and patriarch are also here, and Winterspring owls are found here too.",
+      "when": {
+        "area_id": 2247
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2248",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2248",
+        "world:creature:7452",
+        "world:creature:7453",
+        "world:creature:7454",
+        "world:creature:7445",
+        "world:creature:7456"
+      ],
+      "text": "You are in Dun Mandarr in Winterspring, where crazed, moontouched and berserk owlbeasts roam beside an elder shardtooth. Winterspring screechers are found here too.",
+      "when": {
+        "area_id": 2248
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2249",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2249",
+        "world:creature:10918",
+        "world:creature:7428",
+        "world:creature:7429",
+        "world:creature:7446",
+        "world:creature:7456"
+      ],
+      "text": "You are in Frostwhisper Gorge in Winterspring, where Lorax the satyr paces and talks to himself, and makes deals only with mortals he considers worth his time. Frostmaul giants and preservers and a rabid shardtooth are the danger here. Winterspring screechers are found too.",
+      "when": {
+        "area_id": 2249
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2250",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2250",
+        "world:creature:10300",
+        "world:creature:7453",
+        "world:creature:7452",
+        "world:creature:6491"
+      ],
+      "text": "You are in Owl Wing Thicket in Winterspring, a ridge that Ranshalla, an Alliance investigator of the wildkin, believes the wildkin guard for a reason. Moontouched and crazed owlbeasts prowl the thicket, and there is a spirit healer here.",
+      "when": {
+        "area_id": 2250
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2251",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2251",
+        "world:creature:7523",
+        "world:creature:7524",
+        "world:creature:7443",
+        "world:creature:7444",
+        "world:creature:7450",
+        "world:creature:7447",
+        "world:creature:7455"
+      ],
+      "text": "You are in Lake Kel'Theril in Winterspring, a frozen lake beside the ruins of Kel'Theril. Suffering and anguished highborne spirits haunt the lake, and shardtooth maulers, shardtooth bears, ragged owlbeasts and fledgling chillwinds roam around it. Winterspring owls are also found here.",
+      "when": {
+        "area_id": 2251
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2252",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2252",
+        "world:creature:10684",
+        "world:creature:7523",
+        "world:creature:7524",
+        "world:creature:7443"
+      ],
+      "text": "You are in the Ruins of Kel'Theril in Winterspring, where cursed highborne spirits linger. A remorseful highborne spirit here regrets the harm the Crystal of Zin-Malor caused. Suffering and anguished highborne spirits and shardtooth maulers are the danger.",
+      "when": {
+        "area_id": 2252
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2253",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2253",
+        "world:creature:11079",
+        "world:creature:10301",
+        "world:creature:2084",
+        "world:creature:2303",
+        "world:creature:3779",
+        "world:creature:7458",
+        "world:creature:7431"
+      ],
+      "text": "You are in Starfall Village in Winterspring, where Alliance folk gather. Wynd Nightchaser welcomes travelers and tells the local tale of Kel'Theril, and Jaron Stoneshaper of the Explorers' League hunts magical artifacts here. Its vendors sell general goods, food and drink, and trade supplies. Ice thistle yetis and a frostsaber are the danger nearby.",
+      "when": {
+        "area_id": 2253
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2255",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2255",
+        "world:creature:10431",
+        "world:creature:10637",
+        "world:creature:10303",
+        "world:creature:7451",
+        "world:creature:7443"
+      ],
+      "text": "You are in Everlook, a settlement in Winterspring that neither the Alliance nor the Horde holds. It has an auction house, a bank, a flight master, an inn, repairs, a stable master, a spirit healer and vendors. The Argent Dawn and the Thorium Brotherhood both keep people here, and Storm Shadowhoof tests hunters with demanding trials against the formidable beasts of the wilds around town. Raging owlbeasts and shardtooth maulers roam nearby.",
+      "when": {
+        "area_id": 2255
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2256",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2256",
+        "world:creature:16015",
+        "world:creature:14348",
+        "world:creature:7462",
+        "world:creature:7446"
+      ],
+      "text": "You are in Darkwhisper Gorge, a gorge in Winterspring. Vi'el, a demon, trades exotic reagents here and complains that sales have slowed, and Earthcaller Franzahl studies the elements of the world. Hederine manastalkers, initiates and slayers, along with rabid shardtooths, roam the gorge. A spirit healer and a vendor are here.",
+      "when": {
+        "area_id": 2256
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2241": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2241 (Frostsaber Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2243": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2243 (Timbermaw Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2244": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2244 (Winterfall Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2245": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2245 (Mazthoril)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2246": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2246 (Frostfire Hot Springs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2247": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2247 (Ice Thistle Hills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2248": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2248 (Dun Mandarr)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2249": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2249 (Frostwhisper Gorge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2250": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2250 (Owl Wing Thicket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2251": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2251 (Lake Kel'Theril)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2252": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2252 (The Ruins of Kel'Theril)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2253": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2253 (Starfall Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2255": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2255 (Everlook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2256": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2256 (Darkwhisper Gorge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:618": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 618 (Winterspring)",
+      "revision": "3.3.5a client data"
+    },
     "source:0220039bcbfe34aa6a7f5174": {
       "kind": "research",
       "reference": "evidence:sha256:189c3b29665d2fe670a409ca9e1157c5f7a65ead682304466947a0330075b8cb",
@@ -4442,6 +4794,271 @@
       "kind": "research",
       "reference": "evidence:sha256:67b2561adf50de6c81ad5e80e8bcc621d58a622242bae7899d1019f8017c5467",
       "revision": "36b7707508a49b7a6df907f2e0f379e8f4746f218d9941fae8efdddfb2e2ed0c"
+    },
+    "world:creature:10300": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10300 (Ranshalla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10301": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10301 (Jaron Stoneshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10303": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10303 (Storm Shadowhoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10431 (Gregor Greystone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10618": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10618 (Rivern Frostwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10637 (Malyfous Darkhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10660": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10660 (Cobalt Broodling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10661 (Spell Eater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10684 (Remorseful Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10918": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10918 (Lorax), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10929": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10929 (Haleh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11079": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11079 (Wynd Nightchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11556": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11556 (Salfa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14348": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14348 (Earthcaller Franzahl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16015": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16015 (Vi'el), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2084 (Natheril Raincaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2303": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2303 (Lyranne Feathersong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3779": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3779 (Syurana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7428 (Frostmaul Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7429 (Frostmaul Preserver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7431 (Frostsaber), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7432": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7432 (Frostsaber Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7433": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7433 (Frostsaber Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7435 (Cobalt Wyrmkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7437 (Cobalt Mageweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7438": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7438 (Winterfall Ursa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7439": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7439 (Winterfall Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7440 (Winterfall Den Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7442": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7442 (Winterfall Pathfinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7443": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7443 (Shardtooth Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7444": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7444 (Shardtooth Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7445": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7445 (Elder Shardtooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7446 (Rabid Shardtooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7447 (Fledgling Chillwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7448 (Chillwind Chimaera), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7450": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7450 (Ragged Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7451 (Raging Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7452 (Crazed Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7453": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7453 (Moontouched Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7454": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7454 (Berserk Owlbeast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7455": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7455 (Winterspring Owl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7456": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7456 (Winterspring Screecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7458": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7458 (Ice Thistle Yeti), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7459": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7459 (Ice Thistle Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7460": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7460 (Ice Thistle Patriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7462 (Hederine Manastalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7523 (Suffering Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7524": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7524 (Anguished Highborne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9298": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9298 (Donova Snowden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5082": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5082 (Threat of the Winterfall)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:5981": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5981 (Rampaging Giants)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8464": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8464 (Winterfall Activity)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

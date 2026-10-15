@@ -2528,7 +2528,343 @@
     }
   ],
   "place": "Redridge Mountains",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:44",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:44",
+        "dbc:area:69",
+        "world:creature:435",
+        "world:creature:433",
+        "world:creature:578",
+        "world:creature:441",
+        "world:creature:428"
+      ],
+      "text": "You are in Redridge Mountains, in the Eastern Kingdoms, where the Alliance holds some ground. Lakeshire is its only settlement here and it belongs to the Alliance. Blackrock orcs have attacked across the mountains, and gnolls, murlocs, black dragon whelps and dire condors are also dangerous.",
+      "when": {
+        "zone_id": 44
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:68",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:68",
+        "world:quest:127",
+        "world:quest:150",
+        "world:creature:1680",
+        "world:creature:578",
+        "world:creature:545"
+      ],
+      "text": "You are in Lake Everstill, a lake in the Redridge Mountains famous for its spotted sunfish. Larger murloc groups are fishing its shores and threatening the lake's fish. Matthew Hooper trains fishers here.",
+      "when": {
+        "area_id": 68
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:69",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:69",
+        "world:creature:382",
+        "world:creature:344"
+      ],
+      "text": "You are in Lakeshire, a township under constant siege by Blackrock orcs. Its inn, stable and vendors serve the township, and Marshal Marris directs the response to the Blackrock attacks. Magistrate Solomon is still waiting for the Stormwind army to arrive.",
+      "when": {
+        "area_id": 69
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:70",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:70",
+        "world:creature:4065",
+        "world:creature:436",
+        "world:creature:6491"
+      ],
+      "text": "You are in Stonewatch, in the Redridge Mountains, where Blackrock sentries and shadowcasters are common. A spirit healer here offers a return to life for a price.",
+      "when": {
+        "area_id": 70
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:71",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:71",
+        "world:creature:431",
+        "world:creature:429",
+        "world:creature:437",
+        "world:creature:485",
+        "world:creature:545"
+      ],
+      "text": "You are in Stonewatch Falls, in the Redridge Mountains, where Shadowhide slayers and darkweavers share the ground with Blackrock renegades, outrunners and murlocs.",
+      "when": {
+        "area_id": 71
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:95",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:95",
+        "world:creature:349",
+        "world:creature:446",
+        "world:creature:430",
+        "world:creature:426",
+        "world:creature:435"
+      ],
+      "text": "You are in Redridge Canyons, in the Redridge Mountains, where Corporal Keeshan of the 12th Sabre Regiment is held captive and badly wounded after orcs overwhelmed his regiment. Redridge bashers, mystics and brutes roam here alongside Blackrock champions.",
+      "when": {
+        "area_id": 95
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:96",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:96",
+        "world:creature:819",
+        "world:creature:429",
+        "world:creature:397",
+        "world:quest:249"
+      ],
+      "text": "You are in the Tower of Ilgalar in the Redridge Mountains, where servants of Ilgalar and Shadowhide gnolls wait. Morganth, who is said to be searching for the Scythe of Elune, is among those who make the tower dangerous.",
+      "when": {
+        "area_id": 96
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:97",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:97",
+        "world:creature:505",
+        "world:creature:428",
+        "world:creature:441",
+        "world:creature:440"
+      ],
+      "text": "You are in Alther's Mill, in the Redridge Mountains, where greater tarantulas, dire condors, black dragon whelps and Blackrock grunts roam.",
+      "when": {
+        "area_id": 97
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:996",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:996",
+        "world:creature:615",
+        "world:creature:4463",
+        "world:creature:435"
+      ],
+      "text": "You are in Render's Camp, in the Redridge Mountains, where Blackrock trackers, summoners and champions gather.",
+      "when": {
+        "area_id": 996
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:997",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:997",
+        "world:creature:3096",
+        "world:creature:485",
+        "world:creature:440"
+      ],
+      "text": "You are in Render's Valley, in the Redridge Mountains, where a captured servant of Azora offers tailoring supplies while Blackrock outrunners and grunts roam nearby.",
+      "when": {
+        "area_id": 997
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:998",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:998",
+        "world:creature:435",
+        "world:creature:615",
+        "world:creature:4463",
+        "world:creature:584"
+      ],
+      "text": "You are in Render's Rock, in the Redridge Mountains, where Blackrock champions, trackers and summoners are found, along with the Kazon.",
+      "when": {
+        "area_id": 998
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:999",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:999",
+        "world:creature:4065",
+        "world:creature:4064",
+        "world:creature:440",
+        "world:creature:485"
+      ],
+      "text": "You are in Stonewatch Tower, in the Redridge Mountains, where Blackrock sentries and scouts watch the land alongside grunts and outrunners.",
+      "when": {
+        "area_id": 999
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1000",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1000",
+        "world:creature:568",
+        "world:creature:433",
+        "world:creature:429",
+        "world:creature:947"
+      ],
+      "text": "You are in Galardell Valley, in the Redridge Mountains, where Shadowhide warriors, gnolls and darkweavers are numerous. Rohh the Silent is among the threats, and Shadowhide brutes and rabid gnolls roam too.",
+      "when": {
+        "area_id": 1000
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1001",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1001",
+        "world:creature:424",
+        "world:creature:441",
+        "world:creature:423",
+        "world:creature:14271",
+        "world:creature:428",
+        "world:creature:712"
+      ],
+      "text": "You are in Lakeridge Highway, a stretch of road in Redridge Mountains. Redridge poachers, mongrels and thrashers prowl the road, and Black Dragon Whelps, ribchasers and dire condors range over it.",
+      "when": {
+        "area_id": 1001
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1002",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1002",
+        "world:creature:464",
+        "world:creature:442",
+        "world:creature:712",
+        "world:creature:423",
+        "world:creature:14271",
+        "world:quest:244"
+      ],
+      "text": "You are in Three Corners in Redridge Mountains, where a Stormwind guard named Guard Parker patrols the road from Lakeshire toward Duskwood. Tarantulas, Redridge thrashers, mongrels and ribchasers haunt the area, and gnoll encampments are gathering to the north and east of the road.",
+      "when": {
+        "area_id": 1002
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1000": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1000 (Galardell Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1001": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1001 (Lakeridge Highway)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1002": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1002 (Three Corners)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:44": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 44 (Redridge Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:68": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 68 (Lake Everstill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:69": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 69 (Lakeshire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:70": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 70 (Stonewatch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:71": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 71 (Stonewatch Falls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:95": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 95 (Redridge Canyons)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:96": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 96 (Tower of Ilgalar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:97": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 97 (Alther's Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:996": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 996 (Render's Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:997": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 997 (Render's Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:998": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 998 (Render's Rock)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:999": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 999 (Stonewatch Tower)",
+      "revision": "3.3.5a client data"
+    },
     "source:0090628c378a77c5b813cbbd": {
       "kind": "research",
       "reference": "evidence:sha256:78251fe705eb875c0e31b9d3c1a0fd62e152284aa6fac570668d24878bec6b2a",
@@ -4478,6 +4814,211 @@
       "kind": "research",
       "reference": "evidence:sha256:f4e13049e354ad2b8decaf7eae070af056a533de2aa7f862ab190c80ceaa5c07",
       "revision": "a0c77a9a2617a40791f6e0bfa3aa4ed928590c8250d026a0bcccac69cc80f5ec"
+    },
+    "world:creature:14271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14271 (Ribchaser), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1680": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1680 (Matthew Hooper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3096": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3096 (Captured Servant of Azora), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 344 (Magistrate Solomon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 349 (Corporal Keeshan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 382 (Marshal Marris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 397 (Morganth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4064": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4064 (Blackrock Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4065": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4065 (Blackrock Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 423 (Redridge Mongrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 424 (Redridge Poacher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:426": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 426 (Redridge Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:428": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 428 (Dire Condor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 429 (Shadowhide Darkweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 430 (Redridge Mystic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 431 (Shadowhide Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:433": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 433 (Shadowhide Gnoll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:435": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 435 (Blackrock Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:436": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 436 (Blackrock Shadowcaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 437 (Blackrock Renegade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 440 (Blackrock Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:441": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 441 (Black Dragon Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:442": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 442 (Tarantula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:446": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 446 (Redridge Basher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4463": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4463 (Blackrock Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 464 (Guard Parker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:485": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 485 (Blackrock Outrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:505": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 505 (Greater Tarantula), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:545": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 545 (Murloc Tidecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 568 (Shadowhide Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:578": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 578 (Murloc Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:584": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 584 (Kazon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:615": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 615 (Blackrock Tracker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 712 (Redridge Thrasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 819 (Servant of Ilgalar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 947 (Rohh the Silent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:127": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 127 (Selling Fish)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:150": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 150 (Murloc Poachers)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:244": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 244 (Encroaching Gnolls)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:249": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 249 (Morganth)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

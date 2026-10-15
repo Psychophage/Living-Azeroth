@@ -4534,7 +4534,664 @@
     }
   ],
   "place": "Dustwallow Marsh",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:15",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:15",
+        "dbc:area:496",
+        "dbc:area:513",
+        "dbc:area:4010",
+        "world:creature:4341",
+        "world:creature:4351",
+        "world:quest:11137",
+        "world:quest:11145"
+      ],
+      "text": "You are in Dustwallow Marsh, a contested swamp in Kalimdor where both the Alliance and the Horde hold settlements. Brackenwall Village is Horde ground, Theramore Isle is Alliance, and Mudsprocket belongs to neither side. Crocolisks, bloodfen raptors and darkmist spiders roam the marsh, Grimtotem raiders keep attacking the Alliance tower at North Point, and the Defias have survivors from a shipwreck off the coast.",
+      "when": {
+        "zone_id": 15
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:403",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:403",
+        "world:creature:23567",
+        "world:quest:1284",
+        "world:quest:1253"
+      ],
+      "text": "You are in Shady Rest Inn, a burned ruin in Dustwallow Marsh. Theramore's investigator, Inspector Tarem, is sifting the ashes to learn how the inn was destroyed, using reflective powder to expose suspicious markings. Rows of hoofprints lead away from the still-smoking skeleton, and a blackened iron shield hangs from the crumbling chimney.",
+      "when": {
+        "area_id": 403
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:496",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:496",
+        "world:creature:4500",
+        "world:creature:4501",
+        "world:creature:4791",
+        "world:creature:4341",
+        "world:creature:4414"
+      ],
+      "text": "You are in Brackenwall Village, a Horde settlement in Dustwallow Marsh with an inn, a flight master, and smiths. Overlord Mok'Morokk leads the Stonemaul ogres, and the learned ogre Draz'Zilb openly condemns Mok'Morokk for demanding service. Nazeer Bloodpike directs Horde intelligence work from here, and crocolisks and darkfang venomspitters are the nearby dangers.",
+      "when": {
+        "area_id": 496
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:497",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:497",
+        "world:creature:4792",
+        "world:creature:23843",
+        "world:quest:11225",
+        "world:creature:23554"
+      ],
+      "text": "You are in Swamplight Manor, a house at the eastern edge of Dustwallow Marsh where the eccentric cook Swamp Eye Jarl lives. His friend Mordant Grimsby, an herbalist, came to visit and was alarmed by the horrors at Witch Hill. He studies the risen dead there for clues about what is corrupting the land.",
+      "when": {
+        "area_id": 497
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:498",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:498",
+        "world:creature:4357",
+        "world:creature:4356",
+        "world:creature:23873"
+      ],
+      "text": "You are in Bloodfen Burrow, a den in Dustwallow Marsh where bloodfen lashtails and razormaws lurk. Goreclaw the Ravenous is the one named beast among them.",
+      "when": {
+        "area_id": 498
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:499",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:499",
+        "dbc:area:496",
+        "world:creature:4379",
+        "world:creature:4376",
+        "world:creature:4378",
+        "world:quest:1322"
+      ],
+      "text": "You are in Darkmist Cavern, an old mine northwest of Brackenwall Village that darkmist spiders have taken over. Silkspinners, spiders and recluses hold its tunnels.",
+      "when": {
+        "area_id": 499
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:501",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:501",
+        "world:creature:23797",
+        "world:creature:4393",
+        "world:creature:4394",
+        "world:creature:4415",
+        "world:creature:4345",
+        "dbc:area:4010",
+        "world:quest:11207"
+      ],
+      "text": "You are in Beezil's Wreck, a crash site in Dustwallow Marsh where a zeppelin went down carrying months of supplies for Mudsprocket. Moxie Steelgrille is salvaging what she can and is wary of strangers sent by the hermit mages. Acidic and bubbling swamp oozes threaten to corrode the wreckage, while giant darkfang spiders and drywallow daggermaws roam nearby.",
+      "when": {
+        "area_id": 501
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:502",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:502",
+        "world:creature:23554",
+        "world:creature:23555",
+        "world:creature:4346",
+        "world:creature:4414",
+        "world:creature:4341"
+      ],
+      "text": "You are in Witch Hill, a stretch of Dustwallow Marsh where risen spirits and risen husks shamble about. Noxious flayers, darkfang venomspitters and crocolisks are the other dangers here.",
+      "when": {
+        "area_id": 502
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:503",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:503",
+        "world:creature:5086",
+        "world:creature:5085",
+        "world:quest:11137"
+      ],
+      "text": "You are in Sentry Point, Alliance ground in Dustwallow Marsh, an outpost near the Dreadmurk Shore. Captain Wymor leads Theramore's inquiry into Defias survivors from a shipwreck off the coast, who were all wearing red bandanas. Guards are posted here, and patrols have reported the survivors.",
+      "when": {
+        "area_id": 503
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:504",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:504",
+        "world:creature:23568",
+        "world:creature:23723",
+        "world:creature:17119",
+        "world:quest:11145"
+      ],
+      "text": "You are in North Point Tower, an Alliance tower in Dustwallow Marsh where Captain Darill and Sergeant Lukas hold out against Grimtotem raiders. The raiders keep launching assaults on the tower and have captured patrols, and Lukas plans to turn captured raptors against them. Ithania, first mate of the Dawn Runner, is held here after Theramore forces seized the ship's cargo.",
+      "when": {
+        "area_id": 504
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:506",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:506",
+        "world:creature:5057",
+        "world:creature:23637",
+        "world:creature:5089"
+      ],
+      "text": "You are in Lost Point, a part of Dustwallow Marsh where Theramore deserters roam. A deserter lieutenant and Balos Jacken are among the ones found here.",
+      "when": {
+        "area_id": 506
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:507",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:507",
+        "world:creature:4834",
+        "world:creature:4382",
+        "world:creature:4385",
+        "world:creature:4387",
+        "world:creature:14231",
+        "world:quest:11225"
+      ],
+      "text": "You are in Bluefen, a stretch of Dustwallow Marsh east of Brackenwall Village, where Theramore infiltrators spy on the Horde at Brackenwall Village. Withervine creepers, ragers and mire beasts are the main dangers, and Drogoth the Roamer is a named threat.",
+      "when": {
+        "area_id": 507
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:508",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:508",
+        "world:creature:4502",
+        "world:creature:4331",
+        "world:creature:4329",
+        "world:creature:4323",
+        "world:creature:4324",
+        "world:quest:1170"
+      ],
+      "text": "You are in Stonemaul Ruins, the old home of the Stonemaul ogres, who were driven out by dragons. Firemane scouts and ash tails, and searing whelps and hatchlings, now roam the ruins.",
+      "when": {
+        "area_id": 508
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:509",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:509",
+        "world:quest:11160",
+        "world:creature:4329",
+        "world:creature:4331",
+        "world:creature:4345",
+        "world:creature:4412"
+      ],
+      "text": "You are in The Den of Flame, a former Stonemaul ogre mound in Dustwallow Marsh that is now crawling with dragonkin. Firemane scouts and ash tails patrol it, with drywallow daggermaws and a darkfang creeper among them.",
+      "when": {
+        "area_id": 509
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:510",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:510",
+        "world:creature:4323",
+        "world:creature:4324",
+        "world:creature:4331",
+        "world:creature:4328",
+        "world:creature:4345",
+        "world:creature:4357",
+        "world:quest:11217"
+      ],
+      "text": "You are in The Dragonmurk, an area of Dustwallow Marsh east of Mudsprocket. Searing hatchlings and whelps, Firemane ash tails and scalebanes, and drywallow daggermaws roam here, and bloodfen lashtails are common. Wyrmtail, a herb the Mudsprocket goblins need, grows here.",
+      "when": {
+        "area_id": 510
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:511",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:511",
+        "world:creature:4334",
+        "world:creature:4328",
+        "world:creature:4345",
+        "world:creature:4324",
+        "world:creature:4323",
+        "world:creature:23687",
+        "world:quest:11217"
+      ],
+      "text": "You are in Wyrmbog, an area of Dustwallow Marsh east of Mudsprocket. Firemane flamecallers and scalebanes, drywallow daggermaws, and searing whelps and hatchlings crowd it, and a scorchscale drake has been seen. Wyrmtail grows here as well.",
+      "when": {
+        "area_id": 511
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:512",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:512",
+        "world:creature:23720",
+        "world:creature:23592",
+        "world:creature:23593",
+        "world:creature:23714",
+        "world:creature:4382"
+      ],
+      "text": "You are in Blackhoof Village, a Dustwallow Marsh settlement where Grimtotem breakers, spirit-shifters and elders are a constant danger, with withervine creepers among them. A Theramore patrolman captured by the Grimtotems is here, and he thanks anyone who frees him.",
+      "when": {
+        "area_id": 512
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:513",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:513",
+        "world:creature:4968",
+        "world:creature:4944",
+        "dbc:taxi:32",
+        "world:creature:23620",
+        "world:creature:5434"
+      ],
+      "text": "You are in Theramore Isle, the Alliance town of Theramore in Dustwallow Marsh, ruled by Lady Jaina Proudmoore. Captain Garran Vimes investigates the Shady Rest Inn destruction and the murder of the Hyal family, and watches for suspected Horde spies. Its flight master, inn and stable master serve travelers, though privateers and coral sharks lurk in its waters.",
+      "when": {
+        "area_id": 513
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:516",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:516",
+        "world:creature:4389",
+        "world:creature:4401",
+        "world:creature:4404",
+        "world:creature:4412",
+        "world:creature:4414",
+        "world:creature:4415"
+      ],
+      "text": "You are in Dustwallow Bay, an area of Dustwallow Marsh. Murk threshers, and muckshell clackers and scrabblers, gather here, and darkfang creepers, venomspitters and giant spiders are also here.",
+      "when": {
+        "area_id": 516
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:517",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:517",
+        "world:creature:4403",
+        "world:creature:4404",
+        "world:creature:4401",
+        "world:creature:4415",
+        "world:creature:14234",
+        "world:creature:14236"
+      ],
+      "text": "You are in Tidefury Cove, an area of Dustwallow Marsh. Muckshell pincers, scrabblers and clackers gather here in numbers, with giant darkfang spiders among them. Hayoc and Lord Angler also roam it.",
+      "when": {
+        "area_id": 517
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:518",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:518",
+        "world:creature:23569",
+        "world:creature:4359",
+        "world:creature:23589",
+        "world:creature:23591",
+        "world:quest:11140",
+        "world:creature:4361"
+      ],
+      "text": "You are in Dreadmurk Shore, an area of Dustwallow Marsh where Mirefin murlocs and Defias divers work the water. Renn McGill, an SI:7 salvage diver, repairs diving gear and helps recover cargo from the wreckage. Defias rummagers are picking through the same wreckage.",
+      "when": {
+        "area_id": 518
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2079",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2079",
+        "world:quest:11142",
+        "world:creature:4374",
+        "world:creature:4366",
+        "world:creature:4368",
+        "world:creature:4371",
+        "world:creature:4364",
+        "world:creature:15591"
+      ],
+      "text": "You are in Alcaz Island, an island in Dustwallow Marsh that is believed to hold the key to the Defias' mystery. Strashaz hydras, serpent guards, myrmidons, sirens and warriors are dangerous here, along with minions of Doctor Weavil.",
+      "when": {
+        "area_id": 2079
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2302",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2302",
+        "world:creature:4344",
+        "world:creature:4412",
+        "world:creature:4348",
+        "world:creature:4345",
+        "world:creature:4343",
+        "world:creature:4394"
+      ],
+      "text": "You are in The Quagmire, an area of Dustwallow Marsh. Mottled drywallow crocolisks crowd it, with darkfang creepers, noxious shredders, drywallow daggermaws and snappers, and bubbling swamp oozes.",
+      "when": {
+        "area_id": 2302
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2318",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2318",
+        "world:creature:4403",
+        "world:creature:4404",
+        "world:creature:4401",
+        "world:creature:5057",
+        "world:creature:23637",
+        "world:creature:23941",
+        "world:creature:4388"
+      ],
+      "text": "You are in The Great Sea, an area of Dustwallow Marsh. Muckshell pincers, scrabblers and clackers gather here, and Theramore deserters with a deserter lieutenant are among the dangers, with Gavis Greyshield also present. Young murk threshers are found in these waters too.",
+      "when": {
+        "area_id": 2318
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4010",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4010",
+        "world:creature:23572",
+        "world:creature:23570",
+        "world:creature:23579",
+        "world:creature:23995",
+        "world:creature:23612",
+        "world:quest:11217"
+      ],
+      "text": "You are in Mudsprocket, a goblin settlement in Dustwallow Marsh that belongs to neither side, with an inn, a flight master and repairs. Drazzit Dripvalve helped establish it and depends on zeppelin cargo, and the crash has left its medicines and bandages short. Brogg, a Stonemaul ogre, lives here seeking revenge on the black dragonkin.",
+      "when": {
+        "area_id": 4010
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4046",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4046",
+        "world:creature:23594",
+        "world:creature:23595",
+        "world:creature:4344",
+        "world:creature:4412",
+        "world:creature:4345",
+        "world:creature:4415"
+      ],
+      "text": "You are in Direhorn Post in Dustwallow Marsh. Grimtotem destroyers and earthbinders haunt it, along with crocolisks, darkfang creepers, a drywallow daggermaw and a giant darkfang spider.",
+      "when": {
+        "area_id": 4046
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4047",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4047",
+        "world:creature:12919",
+        "world:quest:6607"
+      ],
+      "text": "You are in Nat's Landing in Dustwallow Marsh. Nat Pagle, a wry fisherman who has worked at it for twenty or thirty years, sells his wares here and knows the sea's monsters well.",
+      "when": {
+        "area_id": 4047
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4049",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4049",
+        "world:creature:6546",
+        "world:creature:23600",
+        "world:creature:23601",
+        "world:creature:6491"
+      ],
+      "text": "You are in Tabetha's Farm in Dustwallow Marsh, where Tabetha mentors spellcasters and her apprentices Morlann and Garion work with her. Grimtotem attacks keep troubling the farm, and Garion is studying a captured Grimtotem totem without yet learning how it works. A spirit healer here offers a return to life for a price.",
+      "when": {
+        "area_id": 4049
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:15": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 15 (Dustwallow Marsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2079": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2079 (Alcaz Island)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2302": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2302 (The Quagmire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2318": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2318 (The Great Sea)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4010": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4010 (Mudsprocket)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:403": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 403 (Shady Rest Inn)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4046": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4046 (Direhorn Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4047": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4047 (Nat's Landing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4049": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4049 (Tabetha's Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:496": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 496 (Brackenwall Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:497": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 497 (Swamplight Manor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:498": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 498 (Bloodfen Burrow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:499": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 499 (Darkmist Cavern)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:501": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 501 (Beezil's Wreck)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:502": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 502 (Witch Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:503": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 503 (Sentry Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:504": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 504 (North Point Tower)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:506": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 506 (Lost Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:507": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 507 (Bluefen)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:508": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 508 (Stonemaul Ruins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:509": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 509 (The Den of Flame)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:510": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 510 (The Dragonmurk)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:511": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 511 (Wyrmbog)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:512": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 512 (Blackhoof Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:513": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 513 (Theramore Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:516": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 516 (Dustwallow Bay)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:517": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 517 (Tidefury Cove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:518": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 518 (Dreadmurk Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:32": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 32 (Theramore, Dustwallow Marsh)",
+      "revision": "3.3.5a client data"
+    },
     "source:0040d23b7478a0b99fbd1b2c": {
       "kind": "research",
       "reference": "evidence:sha256:3c4e144277269cbd135723e3d09d68672103c5abb7cf938855c3aaad917c0245",
@@ -8179,6 +8836,506 @@
       "kind": "research",
       "reference": "evidence:sha256:d3631e89859b26efb3f15b22451bdc3b2af535db1dc08588b8d41ed50dcc59e4",
       "revision": "f8d6688a37e70f9667b2245b4001b95eb1490754f3d201a8c33853b67c94d64c"
+    },
+    "world:creature:12919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12919 (Nat Pagle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14231": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14231 (Drogoth the Roamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14234": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14234 (Hayoc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14236 (Lord Angler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15591": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15591 (Minion of Weavil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17119": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17119 (Ithania), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23554 (Risen Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23555": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23555 (Risen Husk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23567": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23567 (Inspector Tarem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23568 (Captain Darill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23569": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23569 (Renn McGill), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23570": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23570 (Gizzix Grimegurgle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23572": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23572 (Drazzit Dripvalve), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23579": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23579 (Brogg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23589 (Defias Rummager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23591": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23591 (Defias Diver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23592": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23592 (Grimtotem Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23593": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23593 (Grimtotem Spirit-Shifter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23594": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23594 (Grimtotem Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23595": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23595 (Grimtotem Earthbinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23600 (Apprentice Morlann), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23601": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23601 (Apprentice Garion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23612": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23612 (Dyslix Silvergrub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23620": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23620 (Privateer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23637 (Deserter Lieutenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23687 (Scorchscale Drake), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23714 (Grimtotem Elder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23720": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23720 (Theramore Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23723 (Sergeant Lukas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23797 (Moxie Steelgrille), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23843 (Mordant Grimsby), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23873 (Goreclaw the Ravenous), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23941 (Gavis Greyshield), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23995": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23995 (Axle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4323 (Searing Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4324 (Searing Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4328 (Firemane Scalebane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4329 (Firemane Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4331": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4331 (Firemane Ash Tail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4334 (Firemane Flamecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4341 (Drywallow Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4343 (Drywallow Snapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4344 (Mottled Drywallow Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4345 (Drywallow Daggermaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4346 (Noxious Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4348": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4348 (Noxious Shredder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4351 (Bloodfen Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4356 (Bloodfen Razormaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4357 (Bloodfen Lashtail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4359": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4359 (Mirefin Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4361 (Mirefin Muckdweller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4364": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4364 (Strashaz Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4366": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4366 (Strashaz Serpent Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4368": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4368 (Strashaz Myrmidon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4371 (Strashaz Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4374 (Strashaz Hydra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4376 (Darkmist Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4378": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4378 (Darkmist Recluse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4379 (Darkmist Silkspinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4382 (Withervine Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4385 (Withervine Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4387 (Withervine Mire Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4388 (Young Murk Thresher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4389 (Murk Thresher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4393": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4393 (Acidic Swamp Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4394": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4394 (Bubbling Swamp Ooze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4401 (Muckshell Clacker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4403": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4403 (Muckshell Pincer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4404 (Muckshell Scrabbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4412": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4412 (Darkfang Creeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4414": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4414 (Darkfang Venomspitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4415 (Giant Darkfang Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4500": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4500 (Overlord Mok'Morokk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4501": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4501 (Draz'Zilb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4502 (Tharg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4791": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4791 (Nazeer Bloodpike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4792 (\"Swamp Eye\" Jarl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4834 (Theramore Infiltrator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4944 (Captain Garran Vimes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4968": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4968 (Lady Jaina Proudmoore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5057": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5057 (Theramore Deserter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5085": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5085 (Sentry Point Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5086 (Captain Wymor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5089 (Balos Jacken), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5434 (Coral Shark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6546 (Tabetha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11137": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11137 (Defias in Dustwallow?)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11140": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11140 (Recover the Cargo!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11142": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11142 (Survey Alcaz Island)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11145": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11145 (Prisoners of the Grimtotems)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11160": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11160 (Banner of the Stonemaul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11207": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11207 (Secure the Cargo!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11217": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11217 (Catch a Dragon by the Tail)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11225": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11225 (The Hermit of Witch Hill)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1170": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1170 (The Brood of Onyxia)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1253": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1253 (The Black Shield)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1284": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1284 (Suspicious Hoofprints)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1322": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1322 (The Black Shield)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6607": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6607 (Nat Pagle, Angler Extreme)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

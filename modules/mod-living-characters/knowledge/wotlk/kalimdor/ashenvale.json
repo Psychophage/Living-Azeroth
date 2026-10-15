@@ -5485,7 +5485,848 @@
     }
   ],
   "place": "Ashenvale",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:331",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:331",
+        "dbc:area:415",
+        "dbc:area:2358",
+        "dbc:area:3319",
+        "dbc:area:431",
+        "dbc:area:2897",
+        "world:creature:3846",
+        "world:creature:3691"
+      ],
+      "text": "You are in Ashenvale, a forest on Kalimdor where the Alliance and the Horde both hold settlements. The Alliance keeps Astranaar, Forest Song and Silverwing Grove, while the Horde holds Splintertree Post and Zoram'gar Outpost. Naga haunt the coast, and furbolgs threaten the sentinels' lands in the north and east.",
+      "when": {
+        "zone_id": 331
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:411",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:411",
+        "world:creature:3733",
+        "world:creature:3734",
+        "world:creature:3735"
+      ],
+      "text": "You are in Bathran's Haunt, a ruin in Ashenvale where Forsaken of the Horde are found. A Forsaken herbalist and a Forsaken thug are among them, and the Apothecary Falthis, a named elite, can summon a voidwalker out of combat.",
+      "when": {
+        "area_id": 411
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:412",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:412",
+        "world:quest:970",
+        "world:creature:3725",
+        "world:creature:3730",
+        "world:creature:3728",
+        "world:creature:3727",
+        "world:creature:3732"
+      ],
+      "text": "You are in the Ruins of Ordil'Aran, a ruin in Ashenvale where the Cult of the Dark Strand is still at work. Dark Strand cultists, excavators, adepts and enforcers are the danger here, and a few Horde Forsaken seekers are also found.",
+      "when": {
+        "area_id": 412
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:413",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:413",
+        "world:creature:3663",
+        "world:creature:11806",
+        "world:quest:970",
+        "world:creature:3819",
+        "world:creature:3823"
+      ],
+      "text": "You are in Maestra's Post, an Alliance post in Ashenvale. Delgren the Purifier, who works with the night-elf Sentinels against undead and demons, is investigating the Cult of the Dark Strand, and Sentinel Onaeya is stationed here. Wildthorn stalkers and ghostpaw runners are a threat nearby.",
+      "when": {
+        "area_id": 413
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:414",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:414",
+        "world:quest:1008",
+        "world:creature:3717",
+        "world:creature:3944",
+        "world:creature:3715",
+        "world:creature:3845"
+      ],
+      "text": "You are in the Zoram Strand, the northwest coast of Ashenvale, where the city of Zoram lies submerged beneath the sea. Wrathtail sorceresses, priestesses and sea witches make the shore dangerous, and Alliance sentinels report naga here.",
+      "when": {
+        "area_id": 414
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:415",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:415",
+        "world:creature:3691",
+        "world:creature:3845",
+        "world:creature:3894"
+      ],
+      "text": "You are in Astranaar, the Alliance settlement in Ashenvale where the sentinel Raene Wolfrunner directs the fight against the furbolgs. Its inn and flight master serve travelers. Shindrell Swiftfire watches the exposed southern edge while Horde forces gather nearby, and Pelturas Whitemoon is caring for his seriously ill daughter Relara.",
+      "when": {
+        "area_id": 415
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:416",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:416",
+        "world:creature:8308",
+        "world:creature:3698",
+        "world:creature:3772",
+        "world:creature:3774"
+      ],
+      "text": "You are in the Shrine of Aessina, an Alliance shrine in Ashenvale where hunters are taught the ancestral ways. The hunter trainer Alenndaar Lapidaar teaches there, and the pet trainer Bolyun helps only hunters and their pets. Lesser felguards and felslayers are also found here.",
+      "when": {
+        "area_id": 416
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:417",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:417",
+        "world:quest:973",
+        "world:creature:3664",
+        "world:creature:3773",
+        "world:creature:3772",
+        "world:creature:3774"
+      ],
+      "text": "You are in Fire Scar Shrine, a place of great evil in southwestern Ashenvale where the orc warlock Ilkrud Magthrull makes his residence. Akkrilus is also here, and felguards and felslayers prowl the shrine.",
+      "when": {
+        "area_id": 417
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:418",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:418",
+        "world:creature:3783",
+        "world:creature:3781",
+        "world:creature:3809",
+        "world:creature:3817",
+        "world:quest:1034"
+      ],
+      "text": "You are in the Ruins of Stardust, ruins in the south of Ashenvale. Shadethicket raincallers and wood shapers are found among the ruins, and bears and shadowhorn stags roam here too.",
+      "when": {
+        "area_id": 418
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:419",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:419",
+        "world:creature:3789",
+        "world:creature:3791",
+        "world:creature:3792"
+      ],
+      "text": "You are in the Howling Vale, a vale in Ashenvale where Terrowulf fleshrippers and shadow weavers prowl. A Terrowulf packlord is found here too.",
+      "when": {
+        "area_id": 419
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:420",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:420",
+        "world:creature:3885",
+        "world:creature:3917",
+        "world:quest:1017"
+      ],
+      "text": "You are in Silverwind Refuge, an Alliance refuge in Ashenvale. Sentinel Velene Starstrike is investigating why the water elementals here have been corrupted, and she is directing the effort against the undead mage Sarilus Foulborne, who is probably on Dreadmist Peak. Befouled water elementals are still about.",
+      "when": {
+        "area_id": 420
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:421",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:421",
+        "world:creature:3917",
+        "world:creature:10642",
+        "world:creature:12759",
+        "world:creature:3817"
+      ],
+      "text": "You are in Mystral Lake, a lake in Ashenvale where befouled water elementals gather in numbers. Eck'alom and Tideress are named creatures here, and a Shadowhorn stag roams the shore.",
+      "when": {
+        "area_id": 421
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:422",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:422",
+        "world:creature:3782",
+        "world:creature:3784",
+        "world:creature:3931",
+        "world:quest:1035"
+      ],
+      "text": "You are in Fallen Sky Lake, a lake in Ashenvale where Shadethicket stone movers and bark rippers are found. Their leader, the Shadethicket Oracle, has gathered the fallen moonstones that once lay here and keeps them hoarded.",
+      "when": {
+        "area_id": 422
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:424",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:424",
+        "world:creature:3780",
+        "world:creature:3819",
+        "world:creature:3809",
+        "world:creature:10641"
+      ],
+      "text": "You are in Iris Lake, a lake in Ashenvale. Shadethicket moss eaters, wildthorn stalkers, Ashenvale bears and branch snappers roam here.",
+      "when": {
+        "area_id": 424
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:425",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:425",
+        "world:creature:3916",
+        "world:quest:1028",
+        "world:creature:3824"
+      ],
+      "text": "You are in Moonwell, an Ashenvale spot where Shael'dryn, who sides with the Alliance, is helping rebuild Dartol's Rod. She recognizes its design as druidic and knows of a shrine that can recharge it. Ghostpaw howlers prowl the area.",
+      "when": {
+        "area_id": 425
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:426",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:426",
+        "world:creature:3797",
+        "world:creature:3833",
+        "world:creature:8015",
+        "world:creature:4054",
+        "world:creature:3817",
+        "world:creature:3815",
+        "world:creature:3825"
+      ],
+      "text": "You are in Raynewood Retreat, a woodland spot in Ashenvale where Alliance defenders keep watch. Cenarion protectors, vindicators and Ashenvale sentinels stand here, and dryads gather nearby. Shadowhorn stags and a blink dragon roam the woods, and ghostpaws prowl the edges.",
+      "when": {
+        "area_id": 426
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:427",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:427",
+        "world:creature:3810",
+        "world:creature:3820"
+      ],
+      "text": "You are in The Shady Nook, a spot in Ashenvale. Elder Ashenvale bears and wildthorn venomspitters roam here.",
+      "when": {
+        "area_id": 427
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:428",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:428",
+        "world:creature:3758",
+        "world:creature:3759",
+        "world:creature:3763",
+        "world:creature:3762",
+        "world:creature:3810",
+        "world:creature:3820"
+      ],
+      "text": "You are in Night Run, a spot in Ashenvale where felmusk satyrs, rogues, shadowstalkers and felsworn gather. Elder Ashenvale bears and wildthorn venomspitters roam here too.",
+      "when": {
+        "area_id": 428
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:429",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:429",
+        "world:creature:3920",
+        "world:quest:1031",
+        "world:creature:3755",
+        "world:creature:3752",
+        "world:creature:3757",
+        "world:creature:3754"
+      ],
+      "text": "You are in Xavian, a place in Ashenvale where Xavian felsworn, rogues, hellcallers and betrayers roam. Wildthorn venomspitters and elder bears prowl here too. A wounded dryad, Anilia, is dying here, pointing north to Geltharis, whom she names as the one who took the Branch of Cenarius.",
+      "when": {
+        "area_id": 429
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:430",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:430",
+        "world:creature:3770",
+        "world:creature:3767",
+        "world:creature:3771",
+        "world:creature:3765",
+        "world:creature:3811",
+        "world:creature:10647"
+      ],
+      "text": "You are in Satyrnaar, a place in Ashenvale where bleakheart satyrs, shadowstalkers, tricksters and hellcallers roam. Giant Ashenvale bears also prowl here, and Prince Raze is here too.",
+      "when": {
+        "area_id": 430
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:431",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:431",
+        "dbc:taxi:61",
+        "world:creature:12696",
+        "world:creature:12737",
+        "world:creature:17355",
+        "world:creature:12616"
+      ],
+      "text": "You are in Splintertree Post, a Horde post in Ashenvale where travelers find an inn, repairs and a wind rider master. Senani Thunderheart leads the Ashenvale Hunt from here, and Mastok Wrilehiss keeps track of caravans and merchants. Valusha defends the post against the Burning Legion.",
+      "when": {
+        "area_id": 431
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:432",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:432",
+        "world:creature:3804",
+        "world:creature:3806",
+        "world:creature:3807",
+        "world:creature:3928",
+        "world:creature:3801",
+        "world:creature:3803",
+        "world:creature:3819"
+      ],
+      "text": "You are in The Dor'Danil Barrow Den, a den in Ashenvale where Horde Forsaken assassins, intruders and infiltrators work. Rotting slimes, severed sleepers and keepers, and wildthorn stalkers are its dangers.",
+      "when": {
+        "area_id": 432
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:433",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:433",
+        "world:creature:3782",
+        "world:creature:3784",
+        "world:creature:3810",
+        "world:creature:3820",
+        "world:creature:3825",
+        "world:creature:3818"
+      ],
+      "text": "You are in Falfarren River, a river in Ashenvale. Shadethicket stone movers, bark rippers and elder Ashenvale bears roam here, with wildthorn venomspitters and ghostpaws. Elder Shadowhorn stags also live here and charge when threatened.",
+      "when": {
+        "area_id": 433
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:434",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:434",
+        "world:creature:6073",
+        "world:creature:6115",
+        "world:creature:11697",
+        "world:creature:3782"
+      ],
+      "text": "You are in Felfire Hill, a hill in Ashenvale. Searing infernals and roaming felguards are its main dangers, along with mannoroc lashers and Shadethicket stone movers.",
+      "when": {
+        "area_id": 434
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:435",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:435",
+        "world:creature:11697",
+        "world:creature:6073",
+        "world:creature:6115",
+        "world:creature:17300"
+      ],
+      "text": "You are in Demon Fall Canyon, a canyon in Ashenvale. Mannoroc lashers, searing infernals and roaming felguards roam it, and Gorgannon is here too.",
+      "when": {
+        "area_id": 435
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:436",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:436",
+        "world:creature:11697",
+        "world:creature:6073",
+        "world:creature:6115"
+      ],
+      "text": "You are in Demon Fall Ridge, a ridge in Ashenvale. Mannoroc lashers, searing infernals and roaming felguards haunt it, demons of the Legion's kind.",
+      "when": {
+        "area_id": 436
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:437",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:437",
+        "world:creature:17304",
+        "world:creature:17287",
+        "world:creature:3821"
+      ],
+      "text": "You are in Warsong Lumber Camp, a Horde logging camp in Ashenvale. Overseer Gorthak leads the cutting here, and Sentinels say he keeps the orcs at it even as surplus timber rots. Wildthorn lurkers prowl the edges of the clearings.",
+      "when": {
+        "area_id": 437
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:438",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:438",
+        "world:creature:12474",
+        "world:creature:12476",
+        "world:creature:12475",
+        "world:creature:14887",
+        "world:creature:5314",
+        "world:creature:12498"
+      ],
+      "text": "You are in Bough Shadow, a wooded part of Ashenvale. Emeraldon boughguards, oracles and tree wardens are its dangers, along with Ysondre, Phantim and a dreamstalker.",
+      "when": {
+        "area_id": 438
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:441",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:441",
+        "world:creature:3737",
+        "world:creature:3739",
+        "world:creature:3823",
+        "world:quest:1023"
+      ],
+      "text": "You are in Lake Falathim, a lake in Ashenvale. Saltspittle murlocs and ghostpaw runners haunt its shores. A glowing gem that Teronis was seeking is still missing, and Raene Wolfrunner in Astranaar believes the murlocs may have it.",
+      "when": {
+        "area_id": 441
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2301",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2301",
+        "world:creature:3925",
+        "world:creature:3924",
+        "world:creature:12818",
+        "world:quest:6482"
+      ],
+      "text": "You are in Thistlefur Village, a furbolg village in Ashenvale. Thistlefur avengers, shamans, totemics and ursa hold it. Ruul Snowhoof, a Horde captive, is starving in the village, and his sister Yama waits at Splintertree Post.",
+      "when": {
+        "area_id": 2301
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2357",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2357",
+        "world:creature:3932",
+        "world:creature:3820",
+        "world:creature:3824",
+        "world:creature:3696"
+      ],
+      "text": "You are in Bloodtooth Camp, a camp in Ashenvale. Bloodtooth guards, wildthorn venomspitters and ghostpaw howlers haunt the camp, and Ran Bloodtooth is among them.",
+      "when": {
+        "area_id": 2357
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2358",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2358",
+        "world:creature:17303",
+        "world:creature:17291",
+        "world:creature:17287",
+        "world:creature:22935",
+        "world:creature:3848"
+      ],
+      "text": "You are in Forest Song, an Alliance outpost in eastern Ashenvale. Draenei and kaldorei are rebuilding the old settlement under Architect Nemos, and Sentinel Luciel Starwhisper watches the Warsong loggers from here. Hippogryph master Suralais Farwind carries travelers aloft, and Kayneth Stillwind is studying the Forsaken diseases threatening Ashenvale.",
+      "when": {
+        "area_id": 2358
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2359",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2359",
+        "world:creature:3743",
+        "world:creature:3748",
+        "world:creature:3750",
+        "world:creature:3749"
+      ],
+      "text": "You are in Greenpaw Village, a village in Ashenvale. Foulweald warriors, shamans, totemics and ursa roam it.",
+      "when": {
+        "area_id": 2359
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2457",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2457",
+        "world:creature:12718",
+        "world:creature:3825",
+        "world:creature:3928",
+        "world:creature:3782",
+        "world:creature:3784",
+        "world:creature:6491"
+      ],
+      "text": "You are in Nightsong Woods, a woodland in Ashenvale that Warsong lumber workers pass through on their way to the camp. Ghostpaw alphas, rotting slimes, shadethicket stone movers and bark rippers prowl the woods, and a spirit healer is available for those who fall.",
+      "when": {
+        "area_id": 2457
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2897",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2897",
+        "world:creature:12717",
+        "world:quest:6641",
+        "world:creature:12719",
+        "world:creature:11901"
+      ],
+      "text": "You are in Zoram'gar Outpost, a Horde outpost in Ashenvale. Vorsha, a hydra, keeps attacking the outpost, and Muglash is working to stop her. Naga have returned to the ruins of Zoram, and Marukai insists the land must be defended against them. Andruk, a wind rider master, offers flights from here.",
+      "when": {
+        "area_id": 2897
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3177",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3177",
+        "world:creature:11656",
+        "world:creature:11682",
+        "world:creature:11683",
+        "world:creature:3819",
+        "world:creature:3823"
+      ],
+      "text": "You are in Warsong Labor Camp, a Horde camp in Ashenvale. Warsong peons, grunts and shamans work and guard it. Wildthorn stalkers and ghostpaw runners prowl nearby.",
+      "when": {
+        "area_id": 3177
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3319",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3319",
+        "world:creature:14733",
+        "world:creature:14753",
+        "world:creature:19908"
+      ],
+      "text": "You are in Silverwing Grove, an Alliance grove in Ashenvale. Sentinel Farsong directs the Silverwing effort against the Warsong Lumber Camp from here, and supply officer Illiyana Moonblaze hands out rations and bandages for Warsong Gulch. Su'ura Swiftarrow, the Warsong Gulch battlemaster, urges recruits to join the fight.",
+      "when": {
+        "area_id": 3319
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2301": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2301 (Thistlefur Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2357": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2357 (Bloodtooth Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2358": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2358 (Forest Song)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2359": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2359 (Greenpaw Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2457": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2457 (Nightsong Woods)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2897": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2897 (Zoram'gar Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3177": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3177 (Warsong Labor Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:331": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 331 (Ashenvale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3319": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3319 (Silverwing Grove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:411": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 411 (Bathran's Haunt)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:412": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 412 (The Ruins of Ordil'Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:413": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 413 (Maestra's Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:414": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 414 (The Zoram Strand)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:415": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 415 (Astranaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:416": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 416 (The Shrine of Aessina)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:417": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 417 (Fire Scar Shrine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:418": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 418 (The Ruins of Stardust)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:419": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 419 (The Howling Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:420": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 420 (Silverwind Refuge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:421": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 421 (Mystral Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:422": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 422 (Fallen Sky Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:424": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 424 (Iris Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:425": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 425 (Moonwell)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:426": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 426 (Raynewood Retreat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:427": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 427 (The Shady Nook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:428": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 428 (Night Run)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:429": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 429 (Xavian)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:430": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 430 (Satyrnaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:431": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 431 (Splintertree Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:432": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 432 (The Dor'Danil Barrow Den)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:433": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 433 (Falfarren River)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:434": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 434 (Felfire Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:435": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 435 (Demon Fall Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:436": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 436 (Demon Fall Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:437": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 437 (Warsong Lumber Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:438": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 438 (Bough Shadow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:441": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 441 (Lake Falathim)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:61": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 61 (Splintertree Post, Ashenvale)",
+      "revision": "3.3.5a client data"
+    },
     "source:00f62fe6cb6d8d7ef97266c2": {
       "kind": "research",
       "reference": "evidence:sha256:b8e60102e1e8dd318e030ff03e6d0dfab71779fc565909b5247fcf3f2c351842",
@@ -9635,6 +10476,641 @@
       "kind": "research",
       "reference": "evidence:sha256:6f2a7d7c54b344a964a28a52ce49073bfd9220112c15c6fdafc66772c51dcaa6",
       "revision": "0ee92e20f94d663fb459b2b051f98b3b4539ec7b324529f195173470bda06655"
+    },
+    "world:creature:10641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10641 (Branch Snapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10642": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10642 (Eck'alom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:10647": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10647 (Prince Raze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11656 (Warsong Peon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11682 (Warsong Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11683": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11683 (Warsong Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11697": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11697 (Mannoroc Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11806": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11806 (Sentinel Onaeya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11901 (Andruk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12474": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12474 (Emeraldon Boughguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12475 (Emeraldon Tree Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12476": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12476 (Emeraldon Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12498": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12498 (Dreamstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12616": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12616 (Vhulgra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12696 (Senani Thunderheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12717 (Muglash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12718": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12718 (Gurda Ragescar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12719": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12719 (Marukai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12737 (Mastok Wrilehiss), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12759 (Tideress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12818": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12818 (Ruul Snowhoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14733 (Sentinel Farsong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14753": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14753 (Illiyana Moonblaze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14887": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14887 (Ysondre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17287 (Sentinel Luciel Starwhisper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17291": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17291 (Architect Nemos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17300": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17300 (Gorgannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17303": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17303 (Vindicator Vedaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17304 (Overseer Gorthak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17355 (Valusha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19908": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19908 (Su'ura Swiftarrow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22935": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22935 (Suralais Farwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3663 (Delgren the Purifier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3664 (Ilkrud Magthrull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3691": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3691 (Raene Wolfrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3696 (Ran Bloodtooth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3698": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3698 (Bolyun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3715": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3715 (Wrathtail Sea Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3717": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3717 (Wrathtail Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3725": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3725 (Dark Strand Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3727 (Dark Strand Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3728 (Dark Strand Adept), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3730": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3730 (Dark Strand Excavator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3732 (Forsaken Seeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3733 (Forsaken Herbalist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3734 (Forsaken Thug), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3735": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3735 (Apothecary Falthis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3737 (Saltspittle Puddlejumper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3739 (Saltspittle Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3743": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3743 (Foulweald Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3748": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3748 (Foulweald Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3749": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3749 (Foulweald Ursa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3750 (Foulweald Totemic), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3752": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3752 (Xavian Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3754": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3754 (Xavian Betrayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3755": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3755 (Xavian Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3757": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3757 (Xavian Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3758": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3758 (Felmusk Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3759 (Felmusk Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3762": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3762 (Felmusk Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3763 (Felmusk Shadowstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3765 (Bleakheart Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3767": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3767 (Bleakheart Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3770": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3770 (Bleakheart Shadowstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3771 (Bleakheart Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3772 (Lesser Felguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3773": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3773 (Akkrilus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3774": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3774 (Felslayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3780": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3780 (Shadethicket Moss Eater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3781": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3781 (Shadethicket Wood Shaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3782": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3782 (Shadethicket Stone Mover), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3783": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3783 (Shadethicket Raincaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3784 (Shadethicket Bark Ripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3789": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3789 (Terrowulf Fleshripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3791": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3791 (Terrowulf Shadow Weaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3792": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3792 (Terrowulf Packlord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3797 (Cenarion Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3801 (Severed Sleeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3803": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3803 (Severed Keeper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3804 (Forsaken Intruder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3806": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3806 (Forsaken Infiltrator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3807 (Forsaken Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3809": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3809 (Ashenvale Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3810": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3810 (Elder Ashenvale Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3811": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3811 (Giant Ashenvale Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3815": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3815 (Blink Dragon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3817": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3817 (Shadowhorn Stag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3818": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3818 (Elder Shadowhorn Stag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3819 (Wildthorn Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3820": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3820 (Wildthorn Venomspitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3821 (Wildthorn Lurker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3823": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3823 (Ghostpaw Runner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3824 (Ghostpaw Howler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3825": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3825 (Ghostpaw Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3833 (Cenarion Vindicator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3845": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3845 (Shindrell Swiftfire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3846 (Talen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3848": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3848 (Kayneth Stillwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3885 (Sentinel Velene Starstrike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3894": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3894 (Pelturas Whitemoon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3916": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3916 (Shael'dryn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3917 (Befouled Water Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3920 (Anilia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3924": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3924 (Thistlefur Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3925": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3925 (Thistlefur Avenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3928": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3928 (Rotting Slime), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3931 (Shadethicket Oracle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3932": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3932 (Bloodtooth Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3944 (Wrathtail Priestess), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4054": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4054 (Laughing Sister), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5314": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5314 (Phantim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6073": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6073 (Searing Infernal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6115": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6115 (Roaming Felguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8015": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8015 (Ashenvale Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8308": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8308 (Alenndaar Lapidaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1008": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1008 (The Zoram Strand)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1017": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1017 (Mage Summoner)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1023": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1023 (Raene's Cleansing)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1028": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1028 (Raene's Cleansing)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1031": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1031 (The Branch of Cenarius)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1034": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1034 (The Ruins of Stardust)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1035": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1035 (Fallen Sky Lake)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6482": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6482 (Freedom to Ruul)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:6641": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6641 (Vorsha the Lasher)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:970": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 970 (The Tower of Althalaxx)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:973": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 973 (The Tower of Althalaxx)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

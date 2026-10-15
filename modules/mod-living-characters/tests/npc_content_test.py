@@ -115,6 +115,32 @@ class ContentTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "appears twice"):
             content.build(self.source, self.root / "again", supplements=[supplement])
 
+    def place_records(self, zone=12, area=87):
+        cite = {"source": self.cite}
+        return [{"id": f"zone:{zone}", "layer": "zone", "text": "You are in Elwynn Forest.", "authored": False,
+                 "sources": [self.cite], "priority": 40, "when": {"zone_id": zone}},
+                {"id": f"area:{area}", "layer": "location", "text": "You are in Goldshire.", "authored": False,
+                 "sources": [self.cite], "priority": 60, "when": {"area_id": area}}]
+
+    def test_place_records_reach_the_pack_before_its_npcs(self):
+        self.edit(lambda d: d.update(place_records=self.place_records()))
+        content.build(self.source, self.root / "out")
+        pack = content.read(self.root / "out/eastern-kingdoms/elwynn-forest.json")
+        self.assertEqual([r["id"] for r in pack["records"]], ["zone:12", "area:87", "npc:1:identity"])
+
+    def test_zone_record_must_be_this_files_zone(self):
+        self.edit(lambda d: d.update(place_records=self.place_records(zone=33)))
+        with self.assertRaisesRegex(ValueError, "not about what its place in the file says"):
+            content.load(self.source)
+
+    def test_an_area_is_described_once(self):
+        self.edit(lambda d: d.update(place_records=self.place_records()))
+        other = place("Durotar", [], self.sources)
+        other.update(zone=14, place_records=[dict(self.place_records()[1], id="area:87b")])
+        content.write(self.source / "kalimdor/durotar.json", other)
+        with self.assertRaisesRegex(ValueError, "area 87 is also described"):
+            content.load(self.source)
+
     def test_show_finds_by_name_and_number(self):
         out = io.StringIO()
         self.assertEqual(content.show(self.source, "example", out), 1)

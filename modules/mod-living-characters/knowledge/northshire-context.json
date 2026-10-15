@@ -31,63 +31,11 @@
       "priority": 100
     },
     {
-      "id": "elwynn",
-      "layer": "zone",
-      "text": "You are in Elwynn Forest. Northshire is part of this region; Stormwind City is a separate area.",
-      "when": {
-        "zone_id": 12
-      },
-      "sources": [
-        "areas"
-      ],
-      "authored": false,
-      "priority": 40
-    },
-    {
-      "id": "northshire",
-      "layer": "location",
-      "text": "Northshire Valley lies within Elwynn Forest.",
-      "when": {
-        "area_id": 9
-      },
-      "sources": [
-        "areas"
-      ],
-      "authored": false,
-      "priority": 60
-    },
-    {
       "id": "abbey",
       "layer": "location",
       "text": "You are at Northshire Abbey, in Elwynn Forest.",
       "when": {
         "area_id": 24
-      },
-      "sources": [
-        "areas"
-      ],
-      "authored": false,
-      "priority": 60
-    },
-    {
-      "id": "vineyards",
-      "layer": "location",
-      "text": "You are at Northshire Vineyards, in Elwynn Forest.",
-      "when": {
-        "area_id": 59
-      },
-      "sources": [
-        "areas"
-      ],
-      "authored": false,
-      "priority": 60
-    },
-    {
-      "id": "goldshire",
-      "layer": "location",
-      "text": "You are in Goldshire, in Elwynn Forest.",
-      "when": {
-        "area_id": 87
       },
       "sources": [
         "areas"

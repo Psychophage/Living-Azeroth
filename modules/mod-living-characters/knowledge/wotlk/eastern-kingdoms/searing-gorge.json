@@ -1237,7 +1237,240 @@
     }
   ],
   "place": "Searing Gorge",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:51",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:51",
+        "dbc:area:1446",
+        "world:creature:5846",
+        "world:creature:9318",
+        "world:creature:5854",
+        "world:creature:5843",
+        "world:quest:7727"
+      ],
+      "text": "You are in Searing Gorge in the Eastern Kingdoms, land held by neither the Alliance nor the Horde. Its main settlement is Thorium Point. Dark Iron dwarves hold the Slag Pit and keep enslaved workers there, and the region is troubled by Dark Iron taskmasters, spiders, war golems and incendosaurs.",
+      "when": {
+        "zone_id": 51
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:246",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:246",
+        "world:creature:5843",
+        "world:creature:6491",
+        "world:creature:5846",
+        "world:creature:5855",
+        "world:creature:5854"
+      ],
+      "text": "You are in The Cauldron, an area of Searing Gorge where Dark Iron slavers and taskmasters keep enslaved workers. The workers warn strangers to leave before the slavers notice, and some ask whether the visitor has come to rescue them. A spirit healer here offers a return to life for a price, though the healer cautions that the traveler's time may not yet have come. Magma elementals and heavy war golems roam the area.",
+      "when": {
+        "area_id": 246
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:247",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:247",
+        "world:creature:8284",
+        "world:creature:5839",
+        "world:creature:5853",
+        "world:creature:8637",
+        "world:creature:5856"
+      ],
+      "text": "You are in Grimesilt Dig Site, a dig in Searing Gorge. Dark Iron geologists and watchmen, tempered war golems and glassweb spiders trouble the site. Dorius Stonetender, an Alliance dwarf, is badly hurt and wants to get back to Ironforge, and Dorius insists that the location of the Cauldron be remembered.",
+      "when": {
+        "area_id": 247
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1442",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1442",
+        "world:creature:8436",
+        "world:creature:5861",
+        "world:creature:5862",
+        "world:creature:8419",
+        "world:quest:3378"
+      ],
+      "text": "You are in Firewatch Ridge, part of Searing Gorge held by Twilight cultists. Zamael Lunthistle, an Alliance captive, speaks from a cage. He says his faith was rekindled after years of malevolent deeds and that he does not expect absolution, and he asks that his prayer to Elune, etched on a golden tablet, be recovered. Twilight fire guards, geomancers and idolaters are the dangers here.",
+      "when": {
+        "area_id": 1442
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1444",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1444",
+        "world:creature:5857",
+        "world:creature:5855",
+        "world:creature:5850",
+        "world:creature:8566"
+      ],
+      "text": "You are in The Sea of Cinders, a part of Searing Gorge where searing lava spiders are the main danger. Magma elementals and blazing elementals also roam it, and Dark Iron lookouts watch the area.",
+      "when": {
+        "area_id": 1444
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1445",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1445",
+        "world:creature:24819",
+        "world:creature:24818",
+        "world:creature:5855",
+        "world:creature:8917"
+      ],
+      "text": "You are in Blackrock Mountain, part of Searing Gorge. Anvilrage enforcers and taskmasters and magma elementals are the dangers here. Quarry slaves are among the humanoid workers found in the region, and they strike directly when attacked.",
+      "when": {
+        "area_id": 1445
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1446",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1446",
+        "dbc:taxi:74",
+        "world:creature:2941",
+        "world:creature:3305",
+        "world:creature:14624",
+        "world:creature:5846",
+        "world:creature:5844",
+        "world:creature:5858"
+      ],
+      "text": "You are in Thorium Point, the main settlement of Searing Gorge, which is held by neither side. Lanie Reed, a gryphon master, serves the Alliance here, and Grisha, a wind rider master, serves the Horde. The Thorium Brotherhood keeps a compound under Master Smith Burninate, and Lanie Reed is wary of the Dark Iron. Dark Iron taskmasters, slavers and greater lava spiders trouble the ground around it.",
+      "when": {
+        "area_id": 1446
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1957",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1957",
+        "world:creature:24819",
+        "world:creature:24818",
+        "world:creature:5858",
+        "world:creature:9026"
+      ],
+      "text": "You are in Blackchar Cave, a cave in Searing Gorge. Anvilrage enforcers and taskmasters and greater lava spiders are its main dangers, and Overmaster Pyron is a notable one.",
+      "when": {
+        "area_id": 1957
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1958",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1958",
+        "world:creature:7868",
+        "world:creature:5856",
+        "world:creature:8277"
+      ],
+      "text": "You are in Tanner Camp, a camp in Searing Gorge. Sarah Tanner, an Alliance leatherworker, teaches Elemental Leatherworking here and also knows how to undo that specialization. Glassweb spiders and a rekk'tilac roam nearby.",
+      "when": {
+        "area_id": 1958
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1959",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1959",
+        "world:creature:5856",
+        "world:creature:5839",
+        "world:creature:5853"
+      ],
+      "text": "You are in Dustfire Valley, a valley in Searing Gorge where glassweb spiders, Dark Iron geologists and tempered war golems are the dangers.",
+      "when": {
+        "area_id": 1959
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1442": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1442 (Firewatch Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1444": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1444 (The Sea of Cinders)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1445": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1445 (Blackrock Mountain)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1446": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1446 (Thorium Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1957": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1957 (Blackchar Cave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1958": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1958 (Tanner Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1959": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1959 (Dustfire Valley)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:246": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 246 (The Cauldron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:247": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 247 (Grimesilt Dig Site)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:51": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 51 (Searing Gorge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:74": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 74 (Thorium Point, Searing Gorge)",
+      "revision": "3.3.5a client data"
+    },
     "source:003ca0de32c540151a5305f8": {
       "kind": "research",
       "reference": "evidence:sha256:c473f32ed41e32098a07feaf6eb4859c844472169bfa376abcc27603e9f295ea",
@@ -2152,6 +2385,161 @@
       "kind": "research",
       "reference": "evidence:sha256:4b1c578ab6af11bf3aa3ae38ca7f759de2567225a00b72d45da0078b43343827",
       "revision": "73d8447d1a5ca158a4507b38bd7220814536f21d44955ffa97814488da317f19"
+    },
+    "world:creature:14624": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14624 (Master Smith Burninate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24818": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24818 (Anvilrage Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24819 (Anvilrage Enforcer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2941 (Lanie Reed), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3305 (Grisha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5839 (Dark Iron Geologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5843": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5843 (Slave Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5844 (Dark Iron Slaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5846 (Dark Iron Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5850 (Blazing Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5853": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5853 (Tempered War Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5854": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5854 (Heavy War Golem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5855": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5855 (Magma Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5856 (Glassweb Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5857": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5857 (Searing Lava Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5858": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5858 (Greater Lava Spider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5861": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5861 (Twilight Fire Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5862": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5862 (Twilight Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7868": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7868 (Sarah Tanner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8277": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8277 (Rekk'tilac), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8284 (Dorius Stonetender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8419": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8419 (Twilight Idolater), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8436": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8436 (Zamael Lunthistle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8566": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8566 (Dark Iron Lookout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8637 (Dark Iron Watchman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8917 (Quarry Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9026": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9026 (Overmaster Pyron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:9318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9318 (Incendosaur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:3378": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3378 (Prayer to Elune)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7727": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7727 (Incendosaurs? Whateverosaur is More Like It)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

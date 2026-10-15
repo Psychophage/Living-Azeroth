@@ -2571,7 +2571,580 @@
     }
   ],
   "place": "Bloodmyst Isle",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3525",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3525",
+        "dbc:area:3584",
+        "world:creature:17684",
+        "world:quest:9628",
+        "world:creature:17325",
+        "world:creature:17604",
+        "world:quest:10064"
+      ],
+      "text": "You are in Bloodmyst Isle, Alliance land in Kalimdor. Blood Watch is its main settlement, an Alliance outpost where the Triumvirate of the Hand keeps watch. Wrathscale naga, Blacksilt murlocs, Sunhawk agents and mutated wildlife are the main dangers, found across the coasts, the ruins and the wilds.",
+      "when": {
+        "zone_id": 3525
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3584",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3584",
+        "world:creature:17844",
+        "world:creature:17434",
+        "world:creature:17554"
+      ],
+      "text": "You are in Blood Watch, an Alliance outpost on Bloodmyst Isle. Vindicator Aesom of the Triumvirate of the Hand directs the campaign against the Sunhawks, and Morae studies how Exodar crystals are changing the island's wildlife. Laando, the hippogryph master, arranges flights to the Exodar, and the outpost has an inn and a flight master.",
+      "when": {
+        "area_id": 3584
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3585",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3585",
+        "world:quest:9584",
+        "world:creature:17604",
+        "world:creature:17344"
+      ],
+      "text": "You are in Bladewood, an area northwest of Blood Watch where blood elves control the crystals. Sunhawk spies and mutated constrictors are the dangers here.",
+      "when": {
+        "area_id": 3585
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3586",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3586",
+        "world:creature:17610",
+        "world:creature:17609",
+        "world:creature:17664",
+        "world:creature:22060"
+      ],
+      "text": "You are in The Vector Coil, where Sunhawk agents and saboteurs prowl. Matis the Cruel and Fenissa the Assassin are among the dangerous individuals found here.",
+      "when": {
+        "area_id": 3586
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3588",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3588",
+        "world:creature:17508",
+        "world:quest:9706",
+        "world:creature:17606",
+        "world:creature:17527"
+      ],
+      "text": "You are in The Cryo-Core, a crash site on Bloodmyst Isle where the body of Galaen lies in the wreckage. Sunhawk reclaimers and enraged ravagers roam here. Galaen's journal tells of Vindicator Saruan's fate.",
+      "when": {
+        "area_id": 3588
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3589",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3589",
+        "world:quest:9628",
+        "world:creature:17333",
+        "world:creature:17334",
+        "world:creature:17331",
+        "world:creature:17336",
+        "world:creature:17525"
+      ],
+      "text": "You are in The Crimson Reach on Bloodmyst Isle, where Wrathscale naga, screamers, marauders, shorestalkers and sorceresses roam alongside Bloodmyst hatchlings.",
+      "when": {
+        "area_id": 3589
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3590",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3590",
+        "world:quest:9628",
+        "world:creature:17701",
+        "world:creature:17331",
+        "world:creature:17333"
+      ],
+      "text": "You are in Wrathscale Lair on Bloodmyst Isle, a haunt of Wrathscale naga. Lord Xiz is among the hostile creatures here, alongside shorestalkers and screamers.",
+      "when": {
+        "area_id": 3590
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3591",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3591",
+        "world:creature:17600",
+        "world:creature:17336",
+        "world:creature:17334",
+        "world:quest:9628"
+      ],
+      "text": "You are in the Ruins of Loreth'Aran on Bloodmyst Isle, where Wrathscale sorceresses and marauders roam. Harbinger Mikolaas's survey team was killed here, and the naga took its survey data, which may still be in their hands.",
+      "when": {
+        "area_id": 3591
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3592",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3592",
+        "world:creature:17338",
+        "world:creature:17339",
+        "world:creature:17524",
+        "world:creature:17337",
+        "world:creature:17352"
+      ],
+      "text": "You are in Nazzivian on Bloodmyst Isle, where Nazzivus rogues, felsworn, summoners and satyrs roam. Corrupted treants and grizzled brown bears are found here too.",
+      "when": {
+        "area_id": 3592
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3593",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3593",
+        "world:quest:9585",
+        "world:creature:17340",
+        "world:creature:17341",
+        "world:creature:17342",
+        "world:creature:17494"
+      ],
+      "text": "You are in Axxarien, the satyr stronghold on Bloodmyst Isle. Axxarien shadowstalkers, tricksters and hellcallers are common here, and Zevrax is among the hostile creatures.",
+      "when": {
+        "area_id": 3593
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3594",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3594",
+        "world:creature:17325",
+        "world:creature:17326",
+        "world:creature:17327",
+        "world:creature:17434"
+      ],
+      "text": "You are in Blacksilt Shore, a stretch of Bloodmyst Isle where Blacksilt murlocs, including foragers, scouts and tidecallers, are the main danger. Morae at Blood Watch studies their organization.",
+      "when": {
+        "area_id": 3594
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3595",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3595",
+        "world:creature:17358",
+        "world:creature:18020",
+        "world:creature:18024"
+      ],
+      "text": "You are in The Foul Pool on Bloodmyst Isle, where fouled water spirits changed by crystal energy are the main danger. Hand of Argus defenders from Vindicator's Rest contend with them.",
+      "when": {
+        "area_id": 3595
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3596",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3596",
+        "world:creature:17275",
+        "world:creature:17330",
+        "world:creature:17329",
+        "world:creature:17328"
+      ],
+      "text": "You are in The Hidden Reef, a reef on Bloodmyst Isle. Aqueous, a water elemental, welcomes visitors and can speak with them mind to mind. Aqueous warns that the pollution afflicting the island could spread through the ocean. Blacksilt seers, warriors and shorestrikers lurk in the reef's waters.",
+      "when": {
+        "area_id": 3596
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3597",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3597",
+        "world:creature:17686",
+        "world:creature:17522",
+        "world:creature:17523",
+        "world:creature:17683",
+        "world:quest:9670"
+      ],
+      "text": "You are in Amberweb Pass, a pass on Bloodmyst Isle. Researcher Cornelius, an Alliance researcher, escaped a spider ambush that left his expedition wrapped in cocoons, and he asks for help freeing the others before the brood feeds on them. Myst spinners and leechers and a creature named Zarakh roam the pass.",
+      "when": {
+        "area_id": 3597
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3598",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3598",
+        "world:creature:17674",
+        "world:creature:17588",
+        "world:creature:17589",
+        "world:quest:9689"
+      ],
+      "text": "You are in Wyrmscar Island, a sundered island on Bloodmyst Isle. Prince Toreth, a dragon rider of Loreth'Aran, is bound with his people to the land. He says owlkin have been stealing dragon bones and have unsettled Ysera's brood, and that Razormaw, a dead lieutenant of Deathwing, still haunts the skies. Veridian whelps and broodlings wander the island.",
+      "when": {
+        "area_id": 3598
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3600",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3600",
+        "world:creature:17682",
+        "world:creature:17321",
+        "world:creature:17320",
+        "world:creature:17702",
+        "world:quest:9667"
+      ],
+      "text": "You are in Bristlelimb Enclave, a furbolg camp on Bloodmyst Isle. Bristlelimb warriors and shamans hold Princess Stillpine captive and plan to sacrifice her to their gods. High Chief Bristlelimb keeps the key to her cage.",
+      "when": {
+        "area_id": 3600
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3601",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3601",
+        "world:creature:17322",
+        "world:creature:17324",
+        "world:creature:17323"
+      ],
+      "text": "You are in Ragefeather Ridge, a ridge on Bloodmyst Isle. Infected, irradiated and contaminated wildkin roam the ridge.",
+      "when": {
+        "area_id": 3601
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3602",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3602",
+        "world:creature:17649",
+        "world:creature:17586",
+        "world:creature:21145"
+      ],
+      "text": "You are in Kessel's Crossing, an Alliance camp on Bloodmyst Isle where draenei recruits train for the Hand of Argus. Kessel, an Elekk Lord, tests recruits and sends them on to Exarch Admetius for training. Vorkhan the elekk herder warns that ravagers carried from Outland could upset the island's natural balance. Little Azimi sells fresh fruit and water.",
+      "when": {
+        "area_id": 3602
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3604",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3604",
+        "world:creature:17713",
+        "world:creature:17714",
+        "world:creature:17712"
+      ],
+      "text": "You are in The Bloodcursed Reef, a reef on Bloodmyst Isle. Bloodcursed naga live here, and ghosts of people taken by the bloodcurse wander among them. A dead captain, Edward Hanes, wants their cursed shells destroyed so the souls can rest.",
+      "when": {
+        "area_id": 3604
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3608",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3608",
+        "world:creature:17926",
+        "world:creature:17927",
+        "world:creature:17986",
+        "world:creature:17982",
+        "world:creature:17527",
+        "world:quest:10065"
+      ],
+      "text": "You are in Vindicator's Rest, an Alliance camp on Bloodmyst Isle. Scout Loryi and the wounded Scout Jorli are stranded here on consecrated ground, with ravagers waiting outside. Loryi warns that void critters near the Sun Gate portal could grow into void anomalies. Vindicator Corin readies the defenses for Demolitionist Legoso's mission against the Vector Coil.",
+      "when": {
+        "area_id": 3608
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3612",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3612",
+        "world:creature:17713",
+        "world:quest:9683"
+      ],
+      "text": "You are in Bloodcurse Isle, an island where a shrine to Queen Azshara stands and bloodcursed naga follow their leader Atoph. Captain Hanes has asked travelers to burn the statue there and slay Atoph.",
+      "when": {
+        "area_id": 3612
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3906",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3906",
+        "world:creature:17421",
+        "world:creature:17330",
+        "world:creature:17329",
+        "world:creature:17328",
+        "world:creature:17344"
+      ],
+      "text": "You are in The Bloodwash, an area of Bloodmyst Isle. Clopper Wizbang, an Explorers' League gnome, studies the Blacksilt murlocs from a beached turtle shell so his presence does not disturb them. Blacksilt seers, warriors and shorestrikers, and mutated constrictors, are hostile here.",
+      "when": {
+        "area_id": 3906
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3907",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3907",
+        "world:creature:17588",
+        "world:creature:17589",
+        "world:creature:17713",
+        "world:quest:9688"
+      ],
+      "text": "You are in Veridian Point, an area of Bloodmyst Isle. Agitated spirits of the green dragonflight, whelps and broodlings, linger here alongside bloodcursed naga.",
+      "when": {
+        "area_id": 3907
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3908",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3908",
+        "world:creature:17347",
+        "world:creature:17352"
+      ],
+      "text": "You are in Middenvale, an area of Bloodmyst Isle. Grizzled brown bears and corrupted treants are hostile here.",
+      "when": {
+        "area_id": 3908
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3909",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3909",
+        "world:creature:17525",
+        "world:creature:17345",
+        "world:creature:17349"
+      ],
+      "text": "You are in The Lost Fold, a part of Bloodmyst Isle. Bloodmyst hatchlings and brown bears roam here. Blue Flutterers, small neutral creatures, are seen here too.",
+      "when": {
+        "area_id": 3909
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3910",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3910",
+        "world:creature:17347",
+        "world:creature:17352",
+        "world:creature:17343"
+      ],
+      "text": "You are in Mystwood, a part of Bloodmyst Isle. Grizzled brown bears and corrupted treants roam here. A Thistle Lasher, a plant creature, is found here as well.",
+      "when": {
+        "area_id": 3910
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3525": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3525 (Bloodmyst Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3584": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3584 (Blood Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3585": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3585 (Bladewood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3586": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3586 (The Vector Coil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3588": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3588 (The Cryo-Core)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3589": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3589 (The Crimson Reach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3590": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3590 (Wrathscale Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3591": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3591 (Ruins of Loreth'Aran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3592": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3592 (Nazzivian)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3593": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3593 (Axxarien)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3594": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3594 (Blacksilt Shore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3595": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3595 (The Foul Pool)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3596": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3596 (The Hidden Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3597": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3597 (Amberweb Pass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3598": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3598 (Wyrmscar Island)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3600": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3600 (Bristlelimb Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3601": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3601 (Ragefeather Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3602": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3602 (Kessel's Crossing)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3604": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3604 (The Bloodcursed Reef)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3608": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3608 (Vindicator's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3612": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3612 (Bloodcurse Isle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3906": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3906 (The Bloodwash)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3907": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3907 (Veridian Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3908": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3908 (Middenvale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3909": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3909 (The Lost Fold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3910": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3910 (Mystwood)",
+      "revision": "3.3.5a client data"
+    },
     "source:00b2e1b1ce498f433857668f": {
       "kind": "research",
       "reference": "evidence:sha256:f6e480281331366e46c02a902ae0f85fc57ec6ed0e1175510934c745d6c5403e",
@@ -4441,6 +5014,401 @@
       "kind": "research",
       "reference": "evidence:sha256:8306ada05d4c8e435f9d5f25ff9af4cdfe5693372a874d0769ab41798f899c86",
       "revision": "c9c69d2300c97cea2a98cfe923d4e7d4fd45b0b2746f96cdb1c23902cdcd1c85"
+    },
+    "world:creature:17275": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17275 (Aqueous), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17320": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17320 (Bristlelimb Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17321": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17321 (Bristlelimb Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17322 (Infected Wildkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17323 (Contaminated Wildkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17324 (Irradiated Wildkin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17325": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17325 (Blacksilt Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17326": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17326 (Blacksilt Scout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17327 (Blacksilt Tidecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17328": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17328 (Blacksilt Shorestriker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17329 (Blacksilt Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17330 (Blacksilt Seer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17331": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17331 (Wrathscale Shorestalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17333 (Wrathscale Screamer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17334 (Wrathscale Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17336": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17336 (Wrathscale Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17337 (Nazzivus Satyr), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17338 (Nazzivus Rogue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17339 (Nazzivus Felsworn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17340 (Axxarien Shadowstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17341 (Axxarien Trickster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17342 (Axxarien Hellcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17343 (Thistle Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17344 (Mutated Constrictor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17345 (Brown Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17347 (Grizzled Brown Bear), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17349 (Blue Flutterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17352": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17352 (Corrupted Treant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17358 (Fouled Water Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17421": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17421 (Clopper Wizbang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17434 (Morae), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17494": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17494 (Zevrax), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17508": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17508 (Galaen's Corpse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17522 (Myst Spinner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17523": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17523 (Myst Leecher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17524": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17524 (Nazzivus Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17525 (Bloodmyst Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17527": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17527 (Enraged Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17554 (Laando), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17586": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17586 (Vorkhan the Elekk Herder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17588": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17588 (Veridian Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17589": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17589 (Veridian Broodling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17600": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17600 (Draenei Cartographer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17604": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17604 (Sunhawk Spy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17606": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17606 (Sunhawk Reclaimer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17609": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17609 (Sunhawk Saboteur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17610 (Sunhawk Agent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17649 (Kessel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17664 (Matis the Cruel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17674": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17674 (Prince Toreth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17682 (Princess Stillpine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17683": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17683 (Zarakh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17684 (Vindicator Boros), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17686 (Researcher Cornelius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17701 (Lord Xiz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17702": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17702 (High Chief Bristlelimb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17712": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17712 (Captain Edward Hanes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17713": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17713 (Bloodcursed Naga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17714": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17714 (Bloodcursed Voyager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17844 (Vindicator Aesom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17926": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17926 (Scout Loryi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17927 (Scout Jorli), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17982": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17982 (Demolitionist Legoso), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17986": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17986 (Vindicator Corin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18020 (Defender Adrielle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18024": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18024 (Defender Sorli), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21145": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21145 (Little Azimi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22060": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22060 (Fenissa the Assassin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10064": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10064 (Talk to the Hand)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10065": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10065 (Cutting a Path)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9584": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9584 (The Second Sample)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9585": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9585 (The Final Sample)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9628": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9628 (Salvaging the Data)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9667": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9667 (Saving Princess Stillpine)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9670": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9670 (They're Alive! Maybe...)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9683": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9683 (Ending the Bloodcurse)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9688": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9688 (Into the Dream)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9689": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9689 (Razormaw)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9706": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9706 (Galaen's Journal - The Fate of Vindicator Saruan)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

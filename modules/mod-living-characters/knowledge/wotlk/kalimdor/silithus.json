@@ -2773,7 +2773,405 @@
     }
   ],
   "place": "Silithus",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1377",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1377",
+        "dbc:area:3425",
+        "world:quest:9422",
+        "world:creature:15194",
+        "world:creature:11724"
+      ],
+      "text": "You are in Silithus, a desert in Kalimdor that neither the Alliance nor the Horde holds. Cenarion Hold is its one main settlement, and it belongs to neither side. Silithid hives fill the wastes, and Twilight camps and stonelash scorpids roam the sands. The Alliance and the Horde race to take the crystal silithyst from the desert. Twilight's Hammer still hunts Hermit Ortell, a deserter who hides in Silithus.",
+      "when": {
+        "zone_id": 1377
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2737",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2737",
+        "world:creature:6491",
+        "world:creature:11737",
+        "world:creature:14471",
+        "world:quest:8519"
+      ],
+      "text": "You are in The Scarab Wall, a silithid site in Silithus with a spirit healer for the dead. Stonelash flayers and a creature named Setis prowl the sands. A crystal here shows the past to whoever looks into it.",
+      "when": {
+        "area_id": 2737
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2738",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2738",
+        "world:quest:1125",
+        "world:creature:12178",
+        "world:creature:12179",
+        "world:creature:11736",
+        "world:creature:11740"
+      ],
+      "text": "You are in Southwind Village, a ruin in Silithus that was once a night elf base. Silithid hives have overrun it, and the tortured spirits of its druids and sentinels still wander the ruins. Stonelash pincers and dredge strikers roam among them.",
+      "when": {
+        "area_id": 2738
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2739",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2739",
+        "world:creature:11881",
+        "world:creature:11880",
+        "world:creature:11882",
+        "world:creature:11804"
+      ],
+      "text": "You are in Twilight Base Camp, a Twilight camp in Silithus. Twilight geolords, avengers and stonecallers hold it, and a Twilight Keeper named Havunth is among them.",
+      "when": {
+        "area_id": 2739
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2740",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2740",
+        "world:creature:11746",
+        "world:creature:11744",
+        "world:creature:14478"
+      ],
+      "text": "You are in The Crystal Vale, a stretch of Silithus desert where desert rumblers and dust stormers roam. Huricanians are seen here too.",
+      "when": {
+        "area_id": 2740
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2741",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2741",
+        "world:creature:15693",
+        "world:quest:8745"
+      ],
+      "text": "You are in The Scarab Dais, where Jonathan the Revelator keeps the sacred gong and watches over the Bronze Flight, empowered by the Timeless One. He offers aid against C'Thun drawn from a timeless trove.",
+      "when": {
+        "area_id": 2741
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2742",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2742",
+        "world:creature:15611",
+        "world:creature:11724",
+        "world:creature:11722"
+      ],
+      "text": "You are in Hive'Ashi, a silithid hive in Silithus. Hive'Ashi swarmers and defenders fill it. Cenarion Scout Jalia has spent days watching the silithids inside for the Cenarion intelligence effort, and she believes darker powers are behind their activity.",
+      "when": {
+        "area_id": 2742
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2743",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2743",
+        "world:creature:17080",
+        "world:creature:15440",
+        "world:creature:11727",
+        "world:creature:11728",
+        "world:creature:15610"
+      ],
+      "text": "You are in Hive'Zora, a silithid hive in Silithus where the Alliance has camped. The Ironforge Brigade keeps an encampment here, and Marshal Bluewall urges recruits into the desert to gather silithyst. Hive'Zora wasps and reavers fill the tunnels, and Cenarion scouts watch the silithids from within.",
+      "when": {
+        "area_id": 2743
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2744",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2744",
+        "world:creature:15612",
+        "world:creature:15613",
+        "world:creature:11733",
+        "world:creature:11732",
+        "world:creature:11734"
+      ],
+      "text": "You are in Hive'Regal, a silithid hive in Silithus where the Orgrimmar Legion holds ground. Orgrimmar Legion captain Krug Skullsplit is here, and Merok Longstride handles its supply requests. Hive'Regal slavemakers, spitfires and hive lords roam the tunnels, and a spirit healer serves the dead.",
+      "when": {
+        "area_id": 2744
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3077",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3077",
+        "world:creature:13220",
+        "world:creature:12956"
+      ],
+      "text": "You are in Valor's Rest, a graveyard in Silithus where Cenarion Circle investigator Layo Starstrike works. He argues that the dead of both sides should not stay trapped as tortured spirits. Zannok Hidepiercer sells leatherworking supplies here.",
+      "when": {
+        "area_id": 3077
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3097",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3097",
+        "world:creature:11724",
+        "world:creature:11698"
+      ],
+      "text": "You are in The Swarming Pillar, a silithid site in Silithus. Hive'Ashi swarmers and stingers are found here.",
+      "when": {
+        "area_id": 3097
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3098",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3098",
+        "world:creature:11881",
+        "world:creature:11880",
+        "world:creature:11882",
+        "world:creature:15200"
+      ],
+      "text": "You are in Twilight Post, a Twilight camp in Silithus. Twilight geolords, avengers and stonecallers are posted here, along with a Twilight Keeper named Mayna.",
+      "when": {
+        "area_id": 3098
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3099",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3099",
+        "world:creature:11883",
+        "world:creature:14479",
+        "world:creature:11882",
+        "world:creature:11880",
+        "world:creature:11881"
+      ],
+      "text": "You are in Twilight Outpost, a Twilight camp in Silithus. Twilight masters and a Twilight Lord named Everun hold it with stonecallers, avengers and geolords.",
+      "when": {
+        "area_id": 3099
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3100",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3100",
+        "world:creature:14347",
+        "world:quest:7786",
+        "world:creature:11746"
+      ],
+      "text": "You are in Ravaged Twilight Camp, a camp in Silithus. Highlord Demitrian is here, and he is searching for the materials needed to free Thunderaan the Windseeker from his prison. Desert rumblers prowl the ground around the camp.",
+      "when": {
+        "area_id": 3100
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3257",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3257",
+        "world:creature:11741",
+        "world:creature:11736",
+        "world:creature:11745",
+        "world:creature:11746"
+      ],
+      "text": "You are in Bones of Grakkarond, a place in Silithus. Dredge crushers, stonelash pincers, cyclone warriors and desert rumblers are the dangers here.",
+      "when": {
+        "area_id": 3257
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3425",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3425",
+        "world:creature:15174",
+        "world:creature:15176",
+        "world:creature:15191",
+        "world:creature:15270",
+        "world:creature:15181"
+      ],
+      "text": "You are in Cenarion Hold, an outpost in Silithus that neither the Alliance nor the Horde holds. Its inn, smithy and flight master are here, and Windcaller Proudhorn organizes the defense of its supply routes against desert worms and silithid. Huum Wildmane directs the campaign against the Twilight's Hammer, and Commander Mar'alith cannot leave his post to search personally for his missing wife, Natalia.",
+      "when": {
+        "area_id": 3425
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3426",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3426",
+        "world:creature:15169",
+        "world:creature:15213",
+        "world:creature:15201",
+        "world:creature:11880",
+        "world:creature:11883",
+        "world:creature:11735",
+        "world:creature:11740"
+      ],
+      "text": "You are in Staghelm Point, a place in Silithus where Twilight overlords, flamereavers, avengers and masters, stonelash scorpids and dredge strikers are the dangers. Ralo'shan the Eternal Watcher stays stationed here, remembering the Qiraji devastation of nearly a thousand years ago, and he says he does not know why he must stay.",
+      "when": {
+        "area_id": 3426
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3427",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3427",
+        "world:creature:15170",
+        "world:creature:15171",
+        "world:creature:15172",
+        "world:creature:11739",
+        "world:quest:8310"
+      ],
+      "text": "You are in Bronzebeard Encampment, an encampment in Silithus where Rutgar Glyphshaper and Frankal Stonebridge are studying the glyphs on crystals from the silithid hives. Frankal wants brains from each silithid type to make an elixir for deciphering those glyphs, and rock stalkers are the danger here. Glibb, Brann Bronzebeard's pet monkey, is here too.",
+      "when": {
+        "area_id": 3427
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1377": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1377 (Silithus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2737": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2737 (The Scarab Wall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2738": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2738 (Southwind Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2739": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2739 (Twilight Base Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2740": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2740 (The Crystal Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2741": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2741 (The Scarab Dais)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2742": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2742 (Hive'Ashi)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2743": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2743 (Hive'Zora)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2744": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2744 (Hive'Regal)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3077": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3077 (Valor's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3097": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3097 (The Swarming Pillar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3098": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3098 (Twilight Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3099": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3099 (Twilight Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3100": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3100 (Ravaged Twilight Camp)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3257": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3257 (Bones of Grakkarond)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3425": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3425 (Cenarion Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3426": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3426 (Staghelm Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3427": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3427 (Bronzebeard Encampment)",
+      "revision": "3.3.5a client data"
+    },
     "source:00c209cf60a552b90abdd08c": {
       "kind": "research",
       "reference": "evidence:sha256:d779e5e7bf0ee251a3b2bdb28acfcec6cf2ce8958512c45c5dea79c96bce5293",
@@ -4993,6 +5391,291 @@
       "kind": "research",
       "reference": "evidence:sha256:0fe5968e2d0c3069d23be610e9db408295e655942b5af67fe81d268c22e9f921",
       "revision": "cfae60fb50e1c1c628ba86b4478932e468227e8f50ab404ae4999bca6d7df55c"
+    },
+    "world:creature:11698": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11698 (Hive'Ashi Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11722": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11722 (Hive'Ashi Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11724": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11724 (Hive'Ashi Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11727 (Hive'Zora Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11728 (Hive'Zora Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11732 (Hive'Regal Spitfire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11733 (Hive'Regal Slavemaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11734 (Hive'Regal Hive Lord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11735": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11735 (Stonelash Scorpid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11736": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11736 (Stonelash Pincer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11737 (Stonelash Flayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11739 (Rock Stalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11740 (Dredge Striker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11741": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11741 (Dredge Crusher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11744 (Dust Stormer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11745": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11745 (Cyclone Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11746 (Desert Rumbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11804": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11804 (Twilight Keeper Havunth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11880 (Twilight Avenger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11881 (Twilight Geolord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11882": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11882 (Twilight Stonecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:11883": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11883 (Twilight Master), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12178": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12178 (Tortured Druid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12179 (Tortured Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:12956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12956 (Zannok Hidepiercer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:13220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13220 (Layo Starstrike), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14347 (Highlord Demitrian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14471": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14471 (Setis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14478": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14478 (Huricanian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:14479": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14479 (Twilight Lord Everun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15169 (Ralo'shan the Eternal Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15170": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15170 (Rutgar Glyphshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15171": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15171 (Frankal Stonebridge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15172": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15172 (Glibb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15174": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15174 (Calandrath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15176": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15176 (Vargus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15181 (Commander Mar'alith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15191": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15191 (Windcaller Proudhorn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15194 (Hermit Ortell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15200": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15200 (Twilight Keeper Mayna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15201 (Twilight Flamereaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15213 (Twilight Overlord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15270": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15270 (Huum Wildmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15440 (Captain Blackanvil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15610": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15610 (Cenarion Scout Azenel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15611": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15611 (Cenarion Scout Jalia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15612": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15612 (Krug Skullsplit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15613": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15613 (Merok Longstride), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15693 (Jonathan the Revelator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17080": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17080 (Marshal Bluewall), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6491": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1125": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1125 (The Spirits of Southwind)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7786": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7786 (Thunderaan the Windseeker)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8310": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8310 (Breaking the Code)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8519": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8519 (A Pawn on the Eternal Board)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:8745": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8745 (Treasure of the Timeless One)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9422": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9422 (Scouring the Desert)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

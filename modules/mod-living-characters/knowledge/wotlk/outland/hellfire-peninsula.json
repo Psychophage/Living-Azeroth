@@ -8172,7 +8172,1019 @@
     }
   ],
   "place": "Hellfire Peninsula",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3483",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3483",
+        "dbc:area:3536",
+        "dbc:area:3538",
+        "dbc:area:3539",
+        "dbc:area:3554",
+        "dbc:area:3812",
+        "dbc:area:3545",
+        "world:creature:16863"
+      ],
+      "text": "You are in Hellfire Peninsula, contested land in Outland. The Horde holds Thrallmar, Falcon Watch and Spinebreaker Post, while the Alliance keeps Honor Hold and the Stair of Destiny. Fel orcs gather in Hellfire Citadel and threaten both camps, and helboars roam the open ground.",
+      "when": {
+        "zone_id": 3483
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3536",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3536",
+        "world:creature:3230",
+        "world:creature:16575"
+      ],
+      "text": "You are in Thrallmar, the Horde stronghold in Hellfire Peninsula. Nazgrel, Thrall's advisor, directs the response to fel orc threats from here, and Shadow Hunter Ty'jin runs the campaign against the Fel Horde. Its inn, stable and flight master keep travelers moving.",
+      "when": {
+        "area_id": 3536
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3538",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3538",
+        "world:creature:16819",
+        "world:creature:16837",
+        "world:creature:18827"
+      ],
+      "text": "You are in Honor Hold, the Alliance stronghold in Hellfire Peninsula, kept by the Sons of Lothar. Force Commander Danath Trollbane commands it and presses to take the fight to Hellfire Citadel. Gan'arg sappers have driven the miners out of the mine, and Foreman Biggums is anxious to drive them back.",
+      "when": {
+        "area_id": 3538
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3539",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3539",
+        "world:creature:18930",
+        "world:creature:18931",
+        "world:creature:19229",
+        "world:creature:19253"
+      ],
+      "text": "You are in the Stair of Destiny, the platform at the Dark Portal in Hellfire Peninsula. Vlagga Freyfeather arranges Horde wind rider flights to Thrallmar, and Amish Wildhammer runs gryphon flights to Honor Hold. Commander Duron sends newly arrived Alliance soldiers toward Honor Hold, and Lieutenant General Orion says the Legion has cut the Expedition off from its comrades.",
+      "when": {
+        "area_id": 3539
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3541",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3541",
+        "world:creature:16947",
+        "world:creature:16960",
+        "world:creature:22461",
+        "world:creature:16946"
+      ],
+      "text": "You are in Forge Camp: Mageddon in Hellfire Peninsula. Gan'arg servants and Sisters of Grief roam here, and fel cannons and Mo'arg forgefiends make the camp dangerous.",
+      "when": {
+        "area_id": 3541
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3542",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3542",
+        "world:creature:16839",
+        "world:quest:10937",
+        "world:creature:16867",
+        "world:creature:16870",
+        "world:creature:19411",
+        "world:creature:19701",
+        "world:creature:16876"
+      ],
+      "text": "You are in the Path of Glory, the road in Hellfire Peninsula paved with the bones of the tortured dead. Warp-Scryer Kryv wants those bones cleansed so the dead can rest. The road ends at Hellfire Citadel, where Shattered Hand grunts, captains and warlocks guard it along with Bonechewer evokers and mutants.",
+      "when": {
+        "area_id": 3542
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3543",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3543",
+        "world:creature:16927",
+        "world:creature:16929",
+        "world:creature:16968",
+        "world:creature:16967",
+        "world:creature:18678"
+      ],
+      "text": "You are in the Great Fissure in Hellfire Peninsula. Stonescythe whelps and alphas, tunnelers and a Haal'eshi talonguard are the dangers here, and a fulgorge lurks among them.",
+      "when": {
+        "area_id": 3543
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3545",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3545",
+        "world:quest:9495",
+        "world:creature:16867",
+        "world:creature:16870",
+        "world:creature:16878",
+        "world:creature:18677"
+      ],
+      "text": "You are in Hellfire Citadel, the fortress of the Shattered Hand fel orcs in Hellfire Peninsula. Kargath Bladefist has claimed the title of Warchief of the Fel Horde in its Shattered Halls. Shattered Hand grunts, captains and berserkers fill the citadel, and Mekthorg the Wild, a fel orc, is one of the dangers.",
+      "when": {
+        "area_id": 3545
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3546",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3546",
+        "world:creature:19937",
+        "world:quest:10050",
+        "world:creature:16904",
+        "world:creature:16906",
+        "world:creature:16905",
+        "world:creature:16978",
+        "world:creature:16977"
+      ],
+      "text": "You are in the Expedition Armory, the ruined armory of the Expedition in Hellfire Peninsula. Its fallen soldiers, the Unyielding, are trapped between life and death, and the spirits of Arch Mage Xintor and Lieutenant Commander Thalvos linger among them. Commander Hogarth leads the Unyielding, and their footmen, knights and sorcerers are the dangers.",
+      "when": {
+        "area_id": 3546
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3547",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3547",
+        "world:creature:24937",
+        "world:creature:24919",
+        "world:creature:22323",
+        "world:creature:24918",
+        "world:creature:18728"
+      ],
+      "text": "You are in the Throne of Kil'jaeden, where a Legion gateway sends reinforcements toward Quel'Danas. Magistrix Seyla works to shut it down with a living flare, and warns that if demons rebuild it, it will have to be destroyed again. Wrath heralds, felbloods and incandescent fel sparks are the dangers here, and Doom Lord Kazzak is among them.",
+      "when": {
+        "area_id": 3547
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3548",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3548",
+        "world:creature:16947",
+        "world:creature:16954",
+        "world:creature:16946",
+        "world:creature:22461"
+      ],
+      "text": "You are in Forge Camp: Rage in Hellfire Peninsula. Gan'arg servants and Forge Camp Legionnaires are the local dangers, with Mo'arg forgefiends and fel cannons close by.",
+      "when": {
+        "area_id": 3548
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3549",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3549",
+        "world:creature:16947",
+        "world:creature:16954",
+        "world:creature:16960",
+        "world:creature:18827",
+        "world:creature:22461"
+      ],
+      "text": "You are in Invasion Point: Annihilator in Hellfire Peninsula. Gan'arg servants, Forge Camp Legionnaires and Sisters of Grief are its dangers, and gan'arg sappers and fel cannons are here too.",
+      "when": {
+        "area_id": 3549
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3551",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3551",
+        "world:creature:19361",
+        "world:creature:17058",
+        "world:creature:16938",
+        "world:creature:19354"
+      ],
+      "text": "You are in the Ruins of Sha'naar in Hellfire Peninsula, home of the Dreghood tribe. Illidari taskmasters and Dreghood brutes are the dangers, and Arzeth the Merciless is a notable one. Naladu, once Keeper of Earth, is here, and he betrayed the Dreghood elders for power.",
+      "when": {
+        "area_id": 3551
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3552",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3552",
+        "world:creature:16796",
+        "world:creature:16797",
+        "world:creature:18785"
+      ],
+      "text": "You are in the Temple of Telhamat, an Alliance settlement in Hellfire Peninsula. Draenei keep its halls, and it offers an inn, repairs and a hippogryph master named Kuma for flights. Amaan the Wise, a blind draenei, works to cleanse the Pools of Aggonar, while Scout Vanura sends people to thin the rock flayers at the Great Fissure.",
+      "when": {
+        "area_id": 3552
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3553",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3553",
+        "world:creature:16796",
+        "world:creature:16951",
+        "world:creature:16901",
+        "world:creature:19191",
+        "world:creature:19192",
+        "world:creature:16911"
+      ],
+      "text": "You are in the Pools of Aggonar, a fel-tainted stretch of Hellfire Peninsula where demonic blood has fouled the old draenei springs. Terrorfiends and Blistering Rots haunt the pools, and Arazzius the Cruel and the Mistress of Doom are among the notable creatures. A lone Mag'har Watcher stands here for the Horde.",
+      "when": {
+        "area_id": 3553
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3554",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3554",
+        "world:creature:16789",
+        "world:creature:16790"
+      ],
+      "text": "You are in Falcon Watch, a Horde settlement in Hellfire Peninsula. Its inn, repairs and flight master serve Sin'dorei pilgrims, and Ranger Captain Venn'ren works to keep them moving past Alliance pressure by a concealed route through the Great Fissure. Falconer Drenna Riverwind keeps the rangers supplied with feathers for their arrows.",
+      "when": {
+        "area_id": 3554
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3555",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3555",
+        "world:creature:16845",
+        "world:creature:17123"
+      ],
+      "text": "You are in Mag'har Post, a Horde outpost in Hellfire Peninsula where the Mag'har must keep their location secret. Mag'har Captain Gorkan Bloodfist commands here, and Earthcaller Ryga tends grunts sickened by contaminated water.",
+      "when": {
+        "area_id": 3555
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3556",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3556",
+        "world:quest:9397",
+        "world:creature:16967",
+        "world:creature:16966",
+        "world:creature:17053",
+        "world:creature:17035",
+        "world:creature:17084"
+      ],
+      "text": "You are in the Den of Haal'esh, where the Haal'eshi arakkoa have domesticated kaliri birds. Haal'eshi Talonguards and Windwalkers are found among kaliri Swoopers and a Kaliri Matriarch, and Avruu is among the notable ones.",
+      "when": {
+        "area_id": 3556
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3582",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3582",
+        "world:creature:16871",
+        "world:creature:19422",
+        "world:creature:19423",
+        "world:creature:16873"
+      ],
+      "text": "You are in Zeth'Gor, a place in Hellfire Peninsula. Bleeding Hollow grunts and necrolytes haunt it, with worgs and dark shamans among them.",
+      "when": {
+        "area_id": 3582
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3671",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3671",
+        "world:creature:19414",
+        "world:creature:16878",
+        "world:creature:16929",
+        "world:creature:16863"
+      ],
+      "text": "You are in Broken Hill, a place in Hellfire Peninsula. Shattered Hand guards and berserkers haunt it, along with deranged helboars and Stonescythe Alphas.",
+      "when": {
+        "area_id": 3671
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3765",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3765",
+        "world:creature:16932",
+        "world:creature:16933"
+      ],
+      "text": "You are in Razorthorn Trail, a route in Hellfire Peninsula where Razorfang hatchlings gather in large numbers. Razorfang ravagers roam among them.",
+      "when": {
+        "area_id": 3765
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3793",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3793",
+        "world:creature:18978",
+        "world:creature:19261",
+        "world:creature:19136",
+        "world:creature:19434"
+      ],
+      "text": "You are in Felspark Ravine, in Hellfire Peninsula, where heckling fel sprites, infernal warbringers and flamewaker imps are the main dangers. A dreadcaller is also present.",
+      "when": {
+        "area_id": 3793
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3794",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3794",
+        "world:creature:16972"
+      ],
+      "text": "You are in the Valley of Bones, in Hellfire Peninsula, where bonestripper buzzards gather in large numbers.",
+      "when": {
+        "area_id": 3794
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3795",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3795",
+        "world:creature:16938",
+        "world:creature:16937",
+        "world:creature:19349",
+        "world:creature:19350",
+        "world:creature:17058",
+        "world:creature:16880"
+      ],
+      "text": "You are in the Sha'naari Wastes, in Hellfire Peninsula, where Dreghood brutes and geomancers, Thornfang ravagers and venomspitters, and Illidari taskmasters are the dangers. Hulking helboars roam here too.",
+      "when": {
+        "area_id": 3795
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3796",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3796",
+        "world:creature:16974",
+        "world:creature:16975",
+        "world:creature:16904",
+        "world:creature:16905",
+        "world:creature:19681"
+      ],
+      "text": "You are in The Warp Fields, in Hellfire Peninsula, where rogue and uncontrolled voidwalkers are the main dangers. Unyielding footmen and sorcerers roam here as well, and a neutral Void Spawner L casts Nether Charge out of combat.",
+      "when": {
+        "area_id": 3796
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3797",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3797",
+        "world:creature:19188",
+        "world:creature:19349",
+        "world:creature:19293",
+        "world:creature:19294",
+        "world:quest:10132"
+      ],
+      "text": "You are in Fallen Sky Ridge, a ridge in Hellfire Peninsula. Raging Colossi, mountain giants that were not here before a red crystal fell from the sky, roam it in numbers, and Thornfang Ravagers prowl alongside them. The Cenarion Expedition's druids and earthbinders at Cenarion Post still disagree over whether to fight the colossi directly or study the crystal first.",
+      "when": {
+        "area_id": 3797
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3798",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3798",
+        "world:creature:16993",
+        "world:quest:9375",
+        "world:creature:16967",
+        "world:creature:16966",
+        "world:creature:17053",
+        "world:creature:17035",
+        "world:creature:16929"
+      ],
+      "text": "You are in Haal'eshi Gorge, a gorge in Hellfire Peninsula where Horde travelers are attacked. Haal'eshi talonguards and windwalkers, kaliri swoopers and stonescythe alphas all hunt here. A wounded blood elf pilgrim who left Thrallmar ahead of her group is captive in the gorge and trying to reach Falcon Watch.",
+      "when": {
+        "area_id": 3798
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3799",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3799",
+        "world:creature:16863",
+        "world:creature:16844",
+        "world:creature:19414",
+        "world:creature:18733"
+      ],
+      "text": "You are in Stonewall Canyon, a canyon in Hellfire Peninsula with no settlement of either side in it. Deranged helboars are the most common trouble, with crust bursters, Shattered Hand guards and fel reavers also roaming it.",
+      "when": {
+        "area_id": 3799
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3800",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3800",
+        "world:creature:19349",
+        "world:creature:19350",
+        "world:creature:16888",
+        "world:quest:10159"
+      ],
+      "text": "You are in Thornfang Hill, a pass to the west of Cenarion Post in Hellfire Peninsula. Thornfang ravagers and venomspitters attack travelers there, and the attacks are growing more aggressive. Mahuram Stouthoof at Cenarion Post wants the pass kept open, because it is the Cenarion route to the refuge in Zangarmarsh.",
+      "when": {
+        "area_id": 3800
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3801",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3801",
+        "world:creature:16846",
+        "world:creature:16847",
+        "world:creature:16911",
+        "world:creature:16912",
+        "world:creature:16927"
+      ],
+      "text": "You are in Mag'har Grounds, Horde land in Hellfire Peninsula near Mag'har Post. Mag'har grunts, watchers and hunters live and fight here, and a weakened grunt is recovering from Ryga's healing salve. Stonescythe whelps are the trouble.",
+      "when": {
+        "area_id": 3801
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3802",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3802",
+        "world:creature:17014",
+        "world:creature:19527",
+        "world:creature:19681"
+      ],
+      "text": "You are in Void Ridge, a ridge in Hellfire Peninsula that neither side holds. Collapsing voidwalkers are the most common danger, with vacillating voidcallers also here. A void creature called Void Spawner L, which casts Nether Charge, also lives on the ridge.",
+      "when": {
+        "area_id": 3802
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3803",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3803",
+        "world:creature:19398",
+        "world:creature:19397",
+        "world:creature:19399",
+        "world:creature:19400",
+        "world:creature:19401",
+        "world:quest:10347",
+        "world:quest:10162"
+      ],
+      "text": "You are in The Abyssal Shelf, Legion ground in Hellfire Peninsula behind the forge camps to the north. Gan'arg peons, mo'arg overseers, fel cannons and fel reaver sentries hold it, and Horde air officers at Reaver's Fall keep bombing it to stop the demons from strengthening their hold.",
+      "when": {
+        "area_id": 3803
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3804",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3804",
+        "world:quest:10208",
+        "world:creature:18975",
+        "world:creature:19190",
+        "world:creature:16950",
+        "world:creature:18981",
+        "world:creature:18977",
+        "world:creature:18679"
+      ],
+      "text": "You are in The Legion Front, a battle line in Hellfire Peninsula just east of Reaver's Fall. Infernal portals and gateways are spread along it, bringing Burning Legion reinforcements into Outland, and wrathguards, fel handlers, netherhounds and doomwhisperers are among its defenders.",
+      "when": {
+        "area_id": 3804
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3806",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3806",
+        "world:creature:19256",
+        "world:creature:19257",
+        "world:creature:16580",
+        "world:quest:10123"
+      ],
+      "text": "You are in Supply Caravan, a Horde camp outside Thrallmar's southern wall in Hellfire Peninsula. Sergeant Shatterskull directs attacks on dreadlords from here, and Arcanist Torseldori calls defenders to focus their fire when engaged. Dreadlords are stationed in Felspark Ravine to the east.",
+      "when": {
+        "area_id": 3806
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3807",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3807",
+        "world:creature:19273",
+        "world:creature:19401",
+        "world:creature:19315",
+        "world:quest:10129",
+        "world:quest:10124"
+      ],
+      "text": "You are in Reaver's Fall, a Horde forward base in Hellfire Peninsula on the site of an old farm. Forward Commander To'arch directs strikes on Legion gateways and portals from here, and Wing Commander Brack runs windrider flights and bombing sorties over the Abyssal Shelf. Supply Officer Isabel sells general goods and repairs gear.",
+      "when": {
+        "area_id": 3807
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3808",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3808",
+        "world:creature:16991",
+        "world:creature:19293",
+        "world:creature:19294",
+        "world:creature:16888"
+      ],
+      "text": "You are in Cenarion Post, a Cenarion Circle outpost in Hellfire Peninsula that neither side holds. Cenarion Expedition researchers and druids work here: Thiah Redmane studies the mutating wildlife, while Tola'thion and Earthbinder Galandria Nightbreeze watch the mountain giants and the crystal on Fallen Sky Ridge. Mahuram Stouthoof wants the pass through Thornfang Hill kept open.",
+      "when": {
+        "area_id": 3808
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3809",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3809",
+        "world:creature:19414",
+        "world:creature:16878",
+        "world:creature:19413",
+        "world:creature:16975",
+        "world:creature:18677",
+        "world:creature:16870"
+      ],
+      "text": "You are in Southern Rampart, a stretch of Hellfire Peninsula where Shattered Hand fighters gather. Shattered Hand guards, berserkers, mages and captains are the main trouble, along with uncontrolled voidwalkers, and Mekthorg the Wild is a notable one.",
+      "when": {
+        "area_id": 3809
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3810",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3810",
+        "world:creature:19763",
+        "world:creature:19764",
+        "world:creature:19414",
+        "world:creature:19415",
+        "world:creature:16878",
+        "world:creature:19413",
+        "world:creature:19411"
+      ],
+      "text": "You are in Northern Rampart, in Hellfire Peninsula. Shattered Hand guards, acolytes, berserkers, mages and warlocks are the main danger here. Manni and Moh, two peons from Foreman Razelcraz's mine, were taken by fel orcs and have been rescued.",
+      "when": {
+        "area_id": 3810
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3811",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3811",
+        "world:creature:19265",
+        "world:creature:19266",
+        "world:creature:16878"
+      ],
+      "text": "You are in Gor'gaz Outpost in Hellfire Peninsula, where fel orcs keep prisoners in cages. Scout Makha of the Horde and Private Imarion of the Alliance are held here, and orders signed by Warboss Nekrogg send the patrols to take Imarion south for interrogation. Shattered Hand berserkers are the danger.",
+      "when": {
+        "area_id": 3811
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3812",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3812",
+        "dbc:taxi:141",
+        "world:creature:21279",
+        "world:creature:22107"
+      ],
+      "text": "You are in Spinebreaker Post, a Horde post in Hellfire Peninsula with a flight master, repairs and a vendor. Apothecary Albreck studies the fel-orc affliction here, and Captain Darkhowl wants Zeth'Gor burned over the Bleeding Hollow's demonic pact.",
+      "when": {
+        "area_id": 3812
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3813",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3813",
+        "world:creature:18978",
+        "world:creature:19136",
+        "world:creature:19261",
+        "world:creature:19434",
+        "world:creature:19309"
+      ],
+      "text": "You are in The Path of Anguish, in Hellfire Peninsula. Heckling fel sprites, flamewaker imps, infernal warbringers and dreadcallers roam it. The Burning Legion has stationed dreadlords here, and Alliance soldiers blame them for the infernal storms that rain down on the land.",
+      "when": {
+        "area_id": 3813
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3814",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3814",
+        "world:creature:19309",
+        "world:quest:10142"
+      ],
+      "text": "You are in the East Supply Caravan, an Alliance camp in Hellfire Peninsula that is Honor Hold's eastern supply caravan. Sergeant Altumus watches Burning Legion movements from here and sees the infernal storms as a serious escalation.",
+      "when": {
+        "area_id": 3814
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3815",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3815",
+        "world:creature:19310",
+        "world:creature:19409",
+        "world:quest:10143"
+      ],
+      "text": "You are in Expedition Point, an Alliance outpost in Hellfire Peninsula with repairs and a vendor, on the site of a Legion base that used to stand here. Forward Commander Kingston directs the fight against Legion portals from here, and Wing Commander Dabir'ee coordinates gryphon strikes on the Bleeding Hollow stronghold of Zeth'Gor.",
+      "when": {
+        "area_id": 3815
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3816",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3816",
+        "world:creature:19344",
+        "world:creature:19367"
+      ],
+      "text": "You are in Zeppelin Crash, in Hellfire Peninsula, where goblin survivors of a shot-down zeppelin are stranded. Legassi, a chef, is among them and short of food, while Screaming Screed Luckheed, a goblin zeppelin pilot, is working to repair the craft and adapt its engine.",
+      "when": {
+        "area_id": 3816
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3835",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3835",
+        "world:creature:19189",
+        "world:creature:16934"
+      ],
+      "text": "You are in Dustquill Ravine, in Hellfire Peninsula. Quillfang skitterers and quillfang ravagers are the danger here.",
+      "when": {
+        "area_id": 3835
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3483": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3483 (Hellfire Peninsula)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3536": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3536 (Thrallmar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3538": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3538 (Honor Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3539": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3539 (The Stair of Destiny)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3541": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3541 (Forge Camp: Mageddon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3542": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3542 (The Path of Glory)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3543": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3543 (The Great Fissure)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3545": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3545 (Hellfire Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3546": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3546 (Expedition Armory)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3547": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3547 (Throne of Kil'jaeden)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3548": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3548 (Forge Camp: Rage)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3549": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3549 (Invasion Point: Annihilator)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3551": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3551 (Ruins of Sha'naar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3552": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3552 (Temple of Telhamat)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3553": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3553 (Pools of Aggonar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3554": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3554 (Falcon Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3555": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3555 (Mag'har Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3556": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3556 (Den of Haal'esh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3582": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3582 (Zeth'Gor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3671": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3671 (Broken Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3765": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3765 (Razorthorn Trail)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3793": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3793 (Felspark Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3794": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3794 (Valley of Bones)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3795": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3795 (Sha'naari Wastes)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3796": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3796 (The Warp Fields)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3797": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3797 (Fallen Sky Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3798": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3798 (Haal'eshi Gorge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3799": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3799 (Stonewall Canyon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3800": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3800 (Thornfang Hill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3801": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3801 (Mag'har Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3802": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3802 (Void Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3803": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3803 (The Abyssal Shelf)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3804": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3804 (The Legion Front)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3806": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3806 (Supply Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3807": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3807 (Reaver's Fall)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3808": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3808 (Cenarion Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3809": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3809 (Southern Rampart)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3810": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3810 (Northern Rampart)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3811": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3811 (Gor'gaz Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3812": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3812 (Spinebreaker Post)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3813": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3813 (The Path of Anguish)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3814": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3814 (East Supply Caravan)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3815": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3815 (Expedition Point)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3816": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3816 (Zeppelin Crash)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3835": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3835 (Dustquill Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:141": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 141 (Spinebreaker Ridge, Hellfire Peninsula)",
+      "revision": "3.3.5a client data"
+    },
     "source:000fd62e688f07d88a8b7fcc": {
       "kind": "research",
       "reference": "evidence:sha256:2f26163bd52f83140e26b462525c02871b88ab6be20017340b33a2c32b5e3e3f",
@@ -14912,6 +15924,691 @@
       "kind": "research",
       "reference": "evidence:sha256:e1dd9476a3b8e159ae588ef80ab7a0d979b1509e57d65d7dab53d80f37435459",
       "revision": "beb0ccad66b884b458703a0a77f9e89eec0246e8e9c8552ca1972c13882c8470"
+    },
+    "world:creature:16575": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16575 (Shadow Hunter Ty'jin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16580": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16580 (Thrallmar Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16789": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16789 (Ranger Captain Venn'ren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16790": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16790 (Falconer Drenna Riverwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16796 (Amaan the Wise), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16797 (Scout Vanura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16819 (Force Commander Danath Trollbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16837": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16837 (Foreman Biggums), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16839": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16839 (Warp-Scryer Kryv), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16844": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16844 (Crust Burster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16845": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16845 (Gorkan Bloodfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16846": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16846 (Mag'har Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16847": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16847 (Debilitated Mag'har Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16863 (Deranged Helboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16867": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16867 (Shattered Hand Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16870 (Shattered Hand Captain), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16871": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16871 (Bleeding Hollow Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16873": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16873 (Bleeding Hollow Dark Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16876": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16876 (Bonechewer Mutant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16878": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16878 (Shattered Hand Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16880 (Hulking Helboar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16888": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16888 (Mahuram Stouthoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16901": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16901 (Blistering Rot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16904": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16904 (Unyielding Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16905": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16905 (Unyielding Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16906 (Unyielding Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16911": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16911 (Mag'har Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16912 (Mag'har Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16927": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16927 (Stonescythe Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16929": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16929 (Stonescythe Alpha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16932": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16932 (Razorfang Hatchling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16933": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16933 (Razorfang Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16934": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16934 (Quillfang Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16937 (Dreghood Geomancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16938": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16938 (Dreghood Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16946": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16946 (Mo'arg Forgefiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16947 (Gan'arg Servant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16950": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16950 (Netherhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16951": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16951 (Terrorfiend), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16954": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16954 (Forge Camp Legionnaire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16960 (Sister of Grief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16966": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16966 (Haal'eshi Windwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16967": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16967 (Haal'eshi Talonguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16968": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16968 (Tunneler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16972": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16972 (Bonestripper Buzzard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16974": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16974 (Rogue Voidwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16975 (Uncontrolled Voidwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16977 (Arch Mage Xintor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16978 (Lieutenant Commander Thalvos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16991 (Thiah Redmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16993 (Wounded Blood Elf Pilgrim), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17014": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17014 (Collapsing Voidwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17035": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17035 (Kaliri Matriarch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17053": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17053 (Kaliri Swooper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17058": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17058 (Illidari Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17084 (Avruu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17123": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17123 (Earthcaller Ryga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18677": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18677 (Mekthorg the Wild), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18678 (Fulgorge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18679": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18679 (Vorakem Doomspeaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18728": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18728 (Doom Lord Kazzak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18733": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18733 (Fel Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18785": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18785 (Kuma), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18827": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18827 (Gan'arg Sapper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18930": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18930 (Vlagga Freyfeather), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18931 (Amish Wildhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18975 (Wrathguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18977 (Felguard Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18978 (Heckling Fel Sprite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:18981": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18981 (Doomwhisperer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19136": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19136 (Flamewaker Imp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19188": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19188 (Raging Colossus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19189": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19189 (Quillfang Skitterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19190 (Fel Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19191": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19191 (Arazzius the Cruel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19192": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19192 (Mistress of Doom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19229 (Commander Duron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19253": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19253 (Lieutenant General Orion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19256": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19256 (Sergeant Shatterskull), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19257 (Arcanist Torseldori), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19261 (Infernal Warbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19265": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19265 (Scout Makha), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19266": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19266 (Private Imarion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19273": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19273 (Forward Commander To'arch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19293 (Tola'thion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19294": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19294 (Earthbinder Galandria Nightbreeze), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19309": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19309 (Sergeant Altumus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19310": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19310 (Forward Commander Kingston), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19315 (Supply Officer Isabel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19344 (Legassi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19349": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19349 (Thornfang Ravager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19350 (Thornfang Venomspitter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19354": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19354 (Arzeth the Merciless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19361 (Naladu), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19367": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19367 (\"Screaming\" Screed Luckheed), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19397 (Mo'arg Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19398": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19398 (Gan'arg Peon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19399 (Fel Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19400": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19400 (Fel Reaver Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19401 (Wing Commander Brack), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19409": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19409 (Wing Commander Dabir'ee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19411": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19411 (Shattered Hand Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19413": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19413 (Shattered Hand Mage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19414": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19414 (Shattered Hand Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19415": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19415 (Shattered Hand Acolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19422": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19422 (Bleeding Hollow Necrolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19423": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19423 (Bleeding Hollow Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19434 (Dreadcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19527": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19527 (Vacillating Voidcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19681 (Void Spawner L), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19701": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19701 (Bonechewer Evoker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19763 (Manni), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19764": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19764 (Moh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19937 (Commander Hogarth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:21279": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21279 (Apothecary Albreck), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22107": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22107 (Captain Darkhowl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22323 (Incandescent Fel Spark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:22461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22461 (Fel Cannon MKI), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24918": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24918 (Felblood Initiate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24919 (Wrath Herald), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24937 (Magistrix Seyla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3230": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3230 (Nazgrel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10050": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10050 (Unyielding Souls)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10123": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10123 (Felspark Ravine)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10124": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10124 (Forward Base: Reaver's Fall)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10129": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10129 (Mission: Gateways Murketh and Shaadraz)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10132": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10132 (Colossal Menace)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10142": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10142 (The Path of Anguish)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10143": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10143 (Expedition Point)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10159": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10159 (Keep Thornfang Hill Clear!)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10162": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10162 (Mission: The Abyssal Shelf)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10208": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10208 (Disrupt Their Reinforcements)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10347": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10347 (Return to the Abyssal Shelf)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10937": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10937 (Drill the Drillmaster)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9375": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9375 (The Road to Falcon Watch)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9397": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9397 (Birds of a Feather)",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:9495": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9495 (The Will of the Warchief)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

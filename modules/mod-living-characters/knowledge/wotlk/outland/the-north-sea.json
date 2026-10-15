@@ -47,7 +47,31 @@
     }
   ],
   "place": "The North Sea",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3455",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3455",
+        "world:creature:16404",
+        "world:creature:16405",
+        "world:creature:15668",
+        "world:creature:15670"
+      ],
+      "text": "You are in The North Sea, Horde territory in Outland. This is open water, and murlocs are the danger here: Yellowgill and Whitetail frenzies and Grimscale murlocs and foragers swim these waves.",
+      "when": {
+        "zone_id": 3455
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3455": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3455 (The North Sea)",
+      "revision": "3.3.5a client data"
+    },
     "source:3f36d577a4036d5bca155624": {
       "kind": "research",
       "reference": "evidence:sha256:38731307d830f1d76cc8bba4e3d490e6c6c1a49c12526d87a64e35eb533926a7",
@@ -67,6 +91,26 @@
       "kind": "research",
       "reference": "evidence:sha256:1589032de66845b54bbf615a36b606615fef6f19d30bdf9a45f78fe7ebcbc2a7",
       "revision": "0bf9b582c88dbef4a850c93ce1c9bed05660e64a5f01a34da20fa120f6e33415"
+    },
+    "world:creature:15668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15668 (Grimscale Murloc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:15670": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15670 (Grimscale Forager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16404 (Yellowgill Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:16405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16405 (Whitetail Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

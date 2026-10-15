@@ -5979,7 +5979,33 @@
     }
   ],
   "place": "Orgrimmar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1637",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1637",
+        "dbc:taxi:23"
+      ],
+      "text": "You are in Orgrimmar, Horde land on Kalimdor, where nearly all of the friendly people are Horde and a few are neutral. Its services include an inn, a bank, a flight master and a stable master.",
+      "when": {
+        "zone_id": 1637
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1637": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1637 (Orgrimmar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:taxi:23": {
+      "kind": "world_db",
+      "reference": "TaxiNodes.dbc 23 (Orgrimmar, Durotar)",
+      "revision": "3.3.5a client data"
+    },
     "source:017ac410b2081ed50d612a3e": {
       "kind": "research",
       "reference": "evidence:sha256:f095ec63ea655f97248d83e03cb56ef72a71186c413efa9d11d3418d7075f836",

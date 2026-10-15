@@ -17,8 +17,10 @@ API call. Ordinary dialogue, memory processing and selection use the shared budg
 | `no-fixed-place/` | NPCs with no static spawn (summoned, scripted, quest creatures), by entry ID |
 | `without-summary.json` | 4,417 NPCs deliberately left without one (`native only` or `excluded`), with the reason |
 
-Each place file lists its NPCs (entry, name, title and their `records`) and the `sources` those
-records cite. `northshire-context.json` beside the folder adds the Northshire pilot's quest stages,
+Each place file lists its NPCs (entry, name, title and their `records`), the place's own
+`place_records` (one for the zone, one per town or landmark area: what it is, who holds it, who lives
+there and what troubles it) and the `sources` those records cite. NPCs standing in a place hear its
+zone and area records alongside their own summary. 77 zones and 1,443 areas are described. `northshire-context.json` beside the folder adds the Northshire pilot's quest stages,
 locations, report group and Common-language policy.
 
 Look an NPC up by name or entry number, edit its `text` in the file the lookup names, then check:
@@ -26,6 +28,7 @@ Look an NPC up by name or entry number, edit its `text` in the file the lookup n
 ```sh
 cd modules/mod-living-characters
 python3 tools/npc_content.py show "Marshal McBride"
+python3 tools/npc_content.py show "Elwynn Forest"     # a zone's place records
 python3 tools/npc_content.py check
 python3 tests/npc_content_test.py
 ```
@@ -36,8 +39,10 @@ packs from these files (one pack per place file, plus the context file) into
 `python3 tools/npc_content.py build --output knowledge/generated/wotlk --supplement knowledge/northshire-context.json`
 (generated packs are ignored by Git; builds are byte-identical).
 
-The summaries were written and reviewed by models from the world database and recorded research, and
-have not been play-tested broadly. Some are deliberately short where nothing more was supported;
+The NPC summaries were written and reviewed by models from the world database and recorded research;
+the place records were written by Claude Haiku from evidence packets built from the world database and
+map data (2026-10-15), each checked for citations, size, game terms and names not in the evidence.
+Neither has been play-tested broadly. Some are deliberately short where nothing more was supported;
 `authored: true` marks invented personality or policy rather than sourced fact. The research behind
 them (evidence, review decisions, the authoring tools and planning) is archived outside the
 repository; source IDs and revisions stay here because the server ties reports to them.

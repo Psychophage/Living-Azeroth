@@ -3490,7 +3490,144 @@
     }
   ],
   "place": "Darnassus",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1657",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1657",
+        "dbc:area:1658",
+        "dbc:area:1659",
+        "dbc:area:1660",
+        "dbc:area:1661",
+        "dbc:area:1662",
+        "world:creature:3517",
+        "world:creature:4163"
+      ],
+      "text": "You are in Darnassus, Alliance land on the continent of Kalimdor. Its five districts are the Cenarion Enclave, Craftsmen's Terrace, Warrior's Terrace, The Temple Gardens and Tradesmen's Terrace, where druids, warriors, priests and traders work. The forests of Teldrassil are sick, and druids here study the corruption spreading through them.",
+      "when": {
+        "zone_id": 1657
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1658",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1658",
+        "world:creature:3516",
+        "world:creature:4146",
+        "world:creature:3517"
+      ],
+      "text": "You are in the Cenarion Enclave, a district of Darnassus. Arch Druid Fandral Staghelm is among the druids here, and trainers teach hunters, rogues and druids their crafts. Jocaste, a stern hunter trainer, respects hunters who advance and expects respect in return. Rellian Greenspyre, a druid, studies the corruption afflicting the timberlings of Teldrassil.",
+      "when": {
+        "area_id": 1658
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1659",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1659",
+        "world:creature:4784",
+        "world:creature:4786",
+        "world:creature:6735"
+      ],
+      "text": "You are in Craftsmen's Terrace, a district of Darnassus where the Argent Dawn has representatives. Argent Guard Manados runs a campaign against the Twilight's Hammer at Blackfathom Deeps. Dawnwatcher Shaedlass has her other scouts occupied, and Argent Guard Thaelrid has not reported back from investigating activity at Blackfathom Deeps. Innkeeper Saelienne keeps the district's inn.",
+      "when": {
+        "area_id": 1659
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1660",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1660",
+        "world:creature:7315",
+        "world:creature:4087",
+        "world:creature:4089",
+        "world:quest:1683",
+        "world:creature:8026"
+      ],
+      "text": "You are in Warrior's Terrace, a district of Darnassus where warriors learn the art of war. Darnath Bladesinger and Arias'ta Bladesinger teach here, and Sildanair looks for a warrior's spirit in students. A satyr named Vorlus Vilehoof still defiles a remote moonwell southeast of the Ban'ethil Barrow Den. Thyn'tel Bladeweaver, a Sentinel commander, guards what is known of the missing priestess Velinde Starsong's departure.",
+      "when": {
+        "area_id": 1660
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1661",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1661",
+        "world:creature:7313",
+        "world:creature:7740",
+        "world:creature:2912"
+      ],
+      "text": "You are in The Temple Gardens, a district of Darnassus where priests and mages learn their crafts. Priestess A'moora says Lady Sathrah, a spider once beloved of Elune, has fallen into madness. Gracina Spiritmight, a scholar, regards the silithid as a grave threat. Chief Archaeologist Greywhisker worries about a crew he sent to Darkshore, which has gone weeks without word.",
+      "when": {
+        "area_id": 1661
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1662",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1662",
+        "world:creature:4177",
+        "world:creature:4175",
+        "world:creature:4173",
+        "world:creature:4180",
+        "world:creature:4221",
+        "world:creature:4156"
+      ],
+      "text": "You are in Tradesmen's Terrace, a district of Darnassus given over to trade. Merchants offer mail and cloth armor, bows, two-handed weapons, robes and fish, and Astaia teaches fishing. The auction house and repairs are here too.",
+      "when": {
+        "area_id": 1662
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1657": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1657 (Darnassus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1658": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1658 (Cenarion Enclave)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1659": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1659 (Craftsmen's Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1660": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1660 (Warrior's Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1661": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1661 (The Temple Gardens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1662": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1662 (Tradesmen's Terrace)",
+      "revision": "3.3.5a client data"
+    },
     "source:0021be05389614292cb6725c": {
       "kind": "research",
       "reference": "evidence:sha256:61b3301ee219b9da385732d131c1c8d049b1371c1fb9ab31a56fd5fa49affd5a",
@@ -6165,6 +6302,111 @@
       "kind": "research",
       "reference": "evidence:sha256:03ac47c15fb561cf24483cd2df2d236057b50f4cd11d26153241076fb289a93c",
       "revision": "ef377584bf298c7b7b53cb284aaf19b4f21e464213fdb59ee946c73e949502bb"
+    },
+    "world:creature:2912": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2912 (Chief Archaeologist Greywhisker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3516 (Arch Druid Fandral Staghelm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3517": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3517 (Rellian Greenspyre), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4087": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4087 (Arias'ta Bladesinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4089 (Sildanair), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4146": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4146 (Jocaste), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4156 (Astaia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4163": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4163 (Syurna), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4173 (Landria), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4175": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4175 (Vinasia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4177": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4177 (Melea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4180": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4180 (Ealyshia Dewwhisper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4221 (Talaelar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4784 (Argent Guard Manados), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4786": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4786 (Dawnwatcher Shaedlass), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:6735": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6735 (Innkeeper Saelienne), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7313 (Priestess A'moora), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7315 (Darnath Bladesinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7740": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7740 (Gracina Spiritmight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8026": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8026 (Thyn'tel Bladeweaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:1683": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1683 (Vorlus Vilehoof)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,
