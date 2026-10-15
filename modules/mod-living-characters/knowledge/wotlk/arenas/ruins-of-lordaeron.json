@@ -1,0 +1,55 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 572,
+  "npcs": [
+    {
+      "entry": 23193,
+      "name": "Lordaeron Citizen (Jesse)",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:23193:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:56ba6a26252641a7176557f0",
+            "source:a1e20464685c2e67236a9087",
+            "source:ef6c03ca2b32e4ade5001538",
+            "source:886e748cf59c641ea8fc0d46"
+          ],
+          "text": "An undead Lordaeron citizen known as Jesse, found in the Ruins of Lordaeron.",
+          "when": {
+            "entry": 23193
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Ruins of Lordaeron",
+  "sources": {
+    "source:56ba6a26252641a7176557f0": {
+      "kind": "research",
+      "reference": "evidence:sha256:5c658e44d113c067a5c54c349ef690f196e5c8fcb192859eaa3647e92902103a",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:886e748cf59c641ea8fc0d46": {
+      "kind": "research",
+      "reference": "evidence:sha256:aa578422eab27efebaff8a174a86c852ce96cb4fdbb6eb7cdb4399a1d26a45a9",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
+    },
+    "source:a1e20464685c2e67236a9087": {
+      "kind": "research",
+      "reference": "evidence:sha256:c50bda56f3e95e66e0ae231c199afd665f5c9f3e31b072416fc5c528768bc0c1",
+      "revision": "75f2b1046f52e81e9c76414da9a2f01649c6578ebdba159c94f339de44d7e8ab"
+    },
+    "source:ef6c03ca2b32e4ade5001538": {
+      "kind": "research",
+      "reference": "evidence:sha256:1a46473114e063880d466a4db5004ac6d4c0560bd10447c61a52c3404183335f",
+      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
+    }
+  },
+  "version": 1,
+  "zone": 3968
+}

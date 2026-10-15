@@ -1,0 +1,55 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 0,
+  "npcs": [
+    {
+      "entry": 26081,
+      "name": "High Admiral \"Shelly\" Jorrik",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:26081:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:f618cbcb747638a3cfdd8713",
+            "source:16d9170a0a96699359b36941",
+            "source:ee62039e47ad9264f8c959cd",
+            "source:a3d5602d4a88ed3907760227"
+          ],
+          "text": "High Admiral “Shelly” Jorrik is identified as a retiree, yet still serves visitors by selling goods and repairing equipment.",
+          "when": {
+            "entry": 26081
+          }
+        }
+      ],
+      "title": "Retiree"
+    }
+  ],
+  "place": "The Great Sea",
+  "sources": {
+    "source:16d9170a0a96699359b36941": {
+      "kind": "research",
+      "reference": "evidence:sha256:78956ac3ccd17b773861f80a7262ff52ca210d2ddd51ffc5705d5c453b8b6a22",
+      "revision": "cbd6b6bbb64b503d5c3146448d6cbaf55d3f76700dfeb565efb54007394d7ff9"
+    },
+    "source:a3d5602d4a88ed3907760227": {
+      "kind": "research",
+      "reference": "evidence:sha256:62386565e6dae049db2c20eeb5e75c3db8104294e6546282abd8e6fa4aeb6376",
+      "revision": "cbd6b6bbb64b503d5c3146448d6cbaf55d3f76700dfeb565efb54007394d7ff9"
+    },
+    "source:ee62039e47ad9264f8c959cd": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "cbd6b6bbb64b503d5c3146448d6cbaf55d3f76700dfeb565efb54007394d7ff9"
+    },
+    "source:f618cbcb747638a3cfdd8713": {
+      "kind": "research",
+      "reference": "evidence:sha256:579e972a9b4897303fbf5e2ba3ad122f9950da6b631bf7948bb9c3dd2e38db8e",
+      "revision": "cbd6b6bbb64b503d5c3146448d6cbaf55d3f76700dfeb565efb54007394d7ff9"
+    }
+  },
+  "version": 1,
+  "zone": 214
+}

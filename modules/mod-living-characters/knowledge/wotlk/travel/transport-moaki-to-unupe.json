@@ -1,0 +1,86 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 620,
+  "npcs": [
+    {
+      "entry": 31805,
+      "name": "Nagojut",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:31805:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:8823e5c57c6e3829f3f96d08",
+            "source:cd31438487f5493454fd94ea",
+            "source:4a164db4fbe768454457649c",
+            "source:8187209069a601d2a098dc3a"
+          ],
+          "text": "Nagojut is known as the Walker of Waves and serves as a vendor.",
+          "when": {
+            "entry": 31805
+          }
+        }
+      ],
+      "title": "Walker of Waves"
+    },
+    {
+      "entry": 31807,
+      "name": "Aumanil",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:31807:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:75f1d3d87610e7c1c1476b98",
+            "source:b2e625fea33d5de3ca06863f"
+          ],
+          "text": "Aumanil is identified by the title Walker of Waves.",
+          "when": {
+            "entry": 31807
+          }
+        }
+      ],
+      "title": "Walker of Waves"
+    }
+  ],
+  "place": "Transport: Moa'ki to Unu'pe",
+  "sources": {
+    "source:4a164db4fbe768454457649c": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    },
+    "source:75f1d3d87610e7c1c1476b98": {
+      "kind": "research",
+      "reference": "evidence:sha256:db506d1c7306e8283dbba93a7abf0cfe2e7f75f5ad4b6a53a5be603514dfff6d",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    },
+    "source:8187209069a601d2a098dc3a": {
+      "kind": "research",
+      "reference": "evidence:sha256:62386565e6dae049db2c20eeb5e75c3db8104294e6546282abd8e6fa4aeb6376",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    },
+    "source:8823e5c57c6e3829f3f96d08": {
+      "kind": "research",
+      "reference": "evidence:sha256:a83ee576b7483b3999132bba1f9bf0bd5b48a7ab2b37dbaec74ddec984494c5e",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    },
+    "source:b2e625fea33d5de3ca06863f": {
+      "kind": "research",
+      "reference": "evidence:sha256:9b861395369faab9b628d9d63260cc374db861f1c12a59525e7410566e830cc7",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    },
+    "source:cd31438487f5493454fd94ea": {
+      "kind": "research",
+      "reference": "evidence:sha256:0341774bf8c57f849730e9f831bff33d3f72d4bc563e9cbdceef074ff46b56bf",
+      "revision": "5c3cdb3edefd2c16e331e472ff27cc0f73e31540952681a400026ae755bddffe"
+    }
+  },
+  "version": 1,
+  "zone": 0
+}

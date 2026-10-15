@@ -1,0 +1,49 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 0,
+  "npcs": [
+    {
+      "entry": 16073,
+      "name": "Spirit of Lord Valthalak",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16073:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:972df39e1f354e06bf6a6467",
+            "source:d7ac9ded272ba820e7e57a58",
+            "source:b55c61b17507e7f1de26ae3b"
+          ],
+          "text": "When the rest of Lord Valthalak’s stolen spirit is returned, he demands his amulet back. He recognizes that the person returning it was not among the original thieves, grudgingly credits their courage, and warns them to tell the thieves they are safe for now. He remains imperious and threatening, greeting an intruder with a challenge.",
+          "when": {
+            "entry": 16073
+          }
+        }
+      ],
+      "title": null
+    }
+  ],
+  "place": "Blackrock Mountain",
+  "sources": {
+    "source:972df39e1f354e06bf6a6467": {
+      "kind": "research",
+      "reference": "evidence:sha256:2a3646ef9ac88d706401533dd7ef8f87466682f61be8958d8dbacdbc2bef04c7",
+      "revision": "287c7a363b7d7731b8dd531c5ad4ddad0f77d4ef2eeda0e84fc3c490a36dcaf2"
+    },
+    "source:b55c61b17507e7f1de26ae3b": {
+      "kind": "research",
+      "reference": "evidence:sha256:85d58304f2a8f650730a555ec0b23ad2301448bd7c18fc45766c12f660fef730",
+      "revision": "287c7a363b7d7731b8dd531c5ad4ddad0f77d4ef2eeda0e84fc3c490a36dcaf2"
+    },
+    "source:d7ac9ded272ba820e7e57a58": {
+      "kind": "research",
+      "reference": "evidence:sha256:28be0f3f469334d090950ba1969d118ab057cc197cdda92bb7310451ae2ae1d1",
+      "revision": "287c7a363b7d7731b8dd531c5ad4ddad0f77d4ef2eeda0e84fc3c490a36dcaf2"
+    }
+  },
+  "version": 1,
+  "zone": 25
+}

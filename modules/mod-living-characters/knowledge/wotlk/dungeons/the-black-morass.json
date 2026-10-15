@@ -1,0 +1,263 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 269,
+  "npcs": [
+    {
+      "entry": 15608,
+      "name": "Medivh",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:15608:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ea465b2b7279bd26fce1db53",
+            "source:9df3cefdb08fda829074a90a",
+            "source:e358ace6040a7a4315bdaa59",
+            "source:a12365c159e8c8fd33acb7df",
+            "source:5c357302be6287094bbbaa77"
+          ],
+          "text": "Medivh is encountered in the past through the Caverns of Time. When presented with the restored apprentice’s key, he recognizes it as Khadgar’s before having given it to him and speaks of memories of future events. He calls Khadgar an ideal apprentice and can offer his own key.",
+          "when": {
+            "entry": 15608
+          }
+        },
+        {
+          "authored": false,
+          "id": "npc:15608:portal",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:24896bb745295fa7dbefb5c2",
+            "source:9b8a0bc233ebeba39905b352",
+            "source:3c211789d8dad8b1d2e98710",
+            "source:278b841750c89a0a3839ec3d"
+          ],
+          "text": "While concentrating on the portal, Medivh calls for the champions’ aid as his shield weakens. If the portal opens, he welcomes Gul’dan’s Horde into Azeroth, believing its invasion will fulfill his plans.",
+          "when": {
+            "entry": 15608
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 17952,
+      "name": "Darkwater Crocolisk",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:17952:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:7a3b41cd40b064461ddcf8cb",
+            "source:e3afeccfdd7e0b2f7ef5181e",
+            "source:2d8b19eb1c5c5ffe2fb2aef1"
+          ],
+          "text": "Darkwater crocolisks are beasts that attack with a jagged-tooth snap.",
+          "when": {
+            "entry": 17952
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 18982,
+      "name": "Sable Jaguar",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18982:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:42bd81df191f94785fa1b6c0",
+            "source:95b0743f99c3e7714d22cc68"
+          ],
+          "text": "Sable jaguars are beasts.",
+          "when": {
+            "entry": 18982
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 18983,
+      "name": "Blackfang Tarantula",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18983:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:783f6c3067fa1c4429eb22ce",
+            "source:77814c633ca922071357aaaf"
+          ],
+          "text": "A Blackfang tarantula of the Black Morass.",
+          "when": {
+            "entry": 18983
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 20201,
+      "name": "Sa'at",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:20201:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:52b605a65317186947f53f20",
+            "source:17d2d23dfa49fa45bc022ab5",
+            "source:a78e82eb2379e78d27fa135a",
+            "source:92ba6771bf2e3b18e02514b9",
+            "source:3ad285835c94b6e9821cc268",
+            "source:d9006f5379546c4167af7854",
+            "source:ab816131e46c0b73a30261fe",
+            "source:2931a78d4385a852b9368364"
+          ],
+          "text": "Sa'at is a Keeper of Time who guides visitors through the Black Morass timeway and prepares them to defend Medivh during the opening of the Dark Portal. He warns the unprepared and offers chrono-beacons.",
+          "when": {
+            "entry": 20201
+          }
+        }
+      ],
+      "title": "Keepers of Time"
+    }
+  ],
+  "place": "The Black Morass",
+  "sources": {
+    "source:17d2d23dfa49fa45bc022ab5": {
+      "kind": "research",
+      "reference": "evidence:sha256:475605be2fd2e3b7dd29618da0d8a19e176b99748dfeb1ff7639ec1c7faa3664",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:24896bb745295fa7dbefb5c2": {
+      "kind": "research",
+      "reference": "evidence:sha256:20f95d0bf7b89b4feaa9d8d550e3ea4be688ca335f6fcae18ff47f1015f66d45",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:278b841750c89a0a3839ec3d": {
+      "kind": "research",
+      "reference": "evidence:sha256:5010fce83e42dc333cd8a02a0cecab62e93537f8b6c745c4627d048160f6d3b1",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:2931a78d4385a852b9368364": {
+      "kind": "research",
+      "reference": "evidence:sha256:616266f2b5d462385fc1eaf2bce358a3724ed005e0f56d1b13347d3ee15d0b9c",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:2d8b19eb1c5c5ffe2fb2aef1": {
+      "kind": "research",
+      "reference": "evidence:sha256:c2dd827dd82c6435d2ff38f63a104705c557db0832f871e9f00416648ba76a70",
+      "revision": "9677e81e51224068e12e926f924c803407f8ab43deb7287db2d67538ef0369d4"
+    },
+    "source:3ad285835c94b6e9821cc268": {
+      "kind": "research",
+      "reference": "evidence:sha256:21cd59fbefaf95968e76ef7ca7ccb92e35212c45b0440bbf700bfec95dad1ad9",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:3c211789d8dad8b1d2e98710": {
+      "kind": "research",
+      "reference": "evidence:sha256:4e47267049c996df85e38bea63ab59b6f0a96c8128281a562c9944b3be7e577d",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:42bd81df191f94785fa1b6c0": {
+      "kind": "research",
+      "reference": "evidence:sha256:36200ebb898d65791396826d8f2150f3cf29a4f1c631bb8ea5697115ed41f3da",
+      "revision": "9677e81e51224068e12e926f924c803407f8ab43deb7287db2d67538ef0369d4"
+    },
+    "source:52b605a65317186947f53f20": {
+      "kind": "research",
+      "reference": "evidence:sha256:9ad0bcf6ff9daa1e4a01775d269e847ad979c74249f0e7161af1a103668057a1",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:5c357302be6287094bbbaa77": {
+      "kind": "research",
+      "reference": "evidence:sha256:fa0368d0615be2f479e2b9dfadeeb4fa3fb4fc75f08b9a6239005e6cea6c3b5d",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:77814c633ca922071357aaaf": {
+      "kind": "research",
+      "reference": "evidence:sha256:f52ef09b664f445c7879099225b474887c377fee873764fcfb3d6cab364ef911",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:783f6c3067fa1c4429eb22ce": {
+      "kind": "research",
+      "reference": "evidence:sha256:7217a76688f764b91f4ce45424d5b2064bd08f32a40ef8f3551672931a535d4e",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:7a3b41cd40b064461ddcf8cb": {
+      "kind": "research",
+      "reference": "evidence:sha256:d08e292d4ee3bb07528594c109ebb86ab73e7bd0e1adb41387549343a400b09a",
+      "revision": "9677e81e51224068e12e926f924c803407f8ab43deb7287db2d67538ef0369d4"
+    },
+    "source:92ba6771bf2e3b18e02514b9": {
+      "kind": "research",
+      "reference": "evidence:sha256:a3b1c543a4567d0e2d41bfa1ccdca86a647b5aed9a421a694df7a8e0b11516e5",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:95b0743f99c3e7714d22cc68": {
+      "kind": "research",
+      "reference": "evidence:sha256:88b682cfb6657abf3b6f69117d6a019e768bcb6b5b437f06132e406297f74d71",
+      "revision": "9677e81e51224068e12e926f924c803407f8ab43deb7287db2d67538ef0369d4"
+    },
+    "source:9b8a0bc233ebeba39905b352": {
+      "kind": "research",
+      "reference": "evidence:sha256:421c75bf143b05e4a0f474202211a5d3c7866f80efef90dde9424d97255f47e4",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:9df3cefdb08fda829074a90a": {
+      "kind": "research",
+      "reference": "evidence:sha256:d655930a64c8dccc966f610b182b7ddee731e4538e64a0a62d02a18cd2687288",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:a12365c159e8c8fd33acb7df": {
+      "kind": "research",
+      "reference": "evidence:sha256:5b5749d9a4ebe67d0eaca545b8be8387db45ecd82b00344bbd93747b18c5543b",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:a78e82eb2379e78d27fa135a": {
+      "kind": "research",
+      "reference": "evidence:sha256:9debe434b8419c2bd134c9c02257b305d2445c515fd547c59b8462f257d8d65e",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:ab816131e46c0b73a30261fe": {
+      "kind": "research",
+      "reference": "evidence:sha256:2cdae9715255cf947f95bbae94e52ae36577a7aa8b712cb5e79e5bb5db8e68d0",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:d9006f5379546c4167af7854": {
+      "kind": "research",
+      "reference": "evidence:sha256:529714808aea89dccba160a45c45b209e81f70ef74b00173effa193a0f6c5278",
+      "revision": "cd3bd9b9cad6e3c5a8a2edcac9b5c138ceb79cc753d5b80ce44ce73677f35b0a"
+    },
+    "source:e358ace6040a7a4315bdaa59": {
+      "kind": "research",
+      "reference": "evidence:sha256:b405196d9a420701775356706ab8fd935f9018b41e082a9078467a5ac6e1e544",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "source:e3afeccfdd7e0b2f7ef5181e": {
+      "kind": "research",
+      "reference": "evidence:sha256:020b86cd81c4cf8fccc612db8574deb4f48dc05ba1c6964addb87eb2cf4a1df4",
+      "revision": "9677e81e51224068e12e926f924c803407f8ab43deb7287db2d67538ef0369d4"
+    },
+    "source:ea465b2b7279bd26fce1db53": {
+      "kind": "research",
+      "reference": "evidence:sha256:07f1bea5d632984a7329c290476ac244481a70705f8a3b37e1051889a1840157",
+      "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    }
+  },
+  "version": 1,
+  "zone": 2366
+}

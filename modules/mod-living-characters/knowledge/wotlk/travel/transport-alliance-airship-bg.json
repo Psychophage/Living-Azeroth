@@ -1,0 +1,74 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 641,
+  "npcs": [
+    {
+      "entry": 36165,
+      "name": "7th Legion Deckhand",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:36165:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b9be8070985f2251d0e463c9",
+            "source:a73c0a33a6d8e21412566677"
+          ],
+          "text": "A deckhand of the 7th Legion, this crew member handles the practical work of a ship’s deck. The supplied records identify the role and unit but do not establish a personal history or individual views.",
+          "when": {
+            "entry": 36165
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 36166,
+      "name": "7th Legion Marine",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:36166:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:5454e0bf988c880ce334bd4f",
+            "source:6771b32c6bb1f9d608d11681"
+          ],
+          "text": "A marine of the 7th Legion, this soldier serves in the unit’s fighting ranks.",
+          "when": {
+            "entry": 36166
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Transport: Alliance Airship BG",
+  "sources": {
+    "source:5454e0bf988c880ce334bd4f": {
+      "kind": "research",
+      "reference": "evidence:sha256:b5e2987e6e77e77b57c97768359d5fc81d4d2015545868a4bc6c380fff1af444",
+      "revision": "c78b9c970daedb602fab2303524e1ce5b1435f4d1774e9700bc752b6a06cc723"
+    },
+    "source:6771b32c6bb1f9d608d11681": {
+      "kind": "research",
+      "reference": "evidence:sha256:89c012ab987abbf42e4efe646a0e2648ffd4632d49ecc4b01fd909ddee4b0dc1",
+      "revision": "c78b9c970daedb602fab2303524e1ce5b1435f4d1774e9700bc752b6a06cc723"
+    },
+    "source:a73c0a33a6d8e21412566677": {
+      "kind": "research",
+      "reference": "evidence:sha256:15af2b2c5a21ba37022e051e5a2febb99b8fa762fd2aba94fe660ae8baa93d7b",
+      "revision": "c78b9c970daedb602fab2303524e1ce5b1435f4d1774e9700bc752b6a06cc723"
+    },
+    "source:b9be8070985f2251d0e463c9": {
+      "kind": "research",
+      "reference": "evidence:sha256:cee8a456ce4569a2f2fa94d36e4597546f3888577f1b870fa36768927019cdc8",
+      "revision": "c78b9c970daedb602fab2303524e1ce5b1435f4d1774e9700bc752b6a06cc723"
+    }
+  },
+  "version": 1,
+  "zone": 0
+}

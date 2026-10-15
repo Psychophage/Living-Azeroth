@@ -1,0 +1,61 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 109,
+  "npcs": [
+    {
+      "entry": 15362,
+      "name": "Malfurion Stormrage",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:15362:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:e7282c026fffb6c5a7668478",
+            "source:162ab6a86360797f47c8e1ff",
+            "source:5a33b10bb7fb8d07a7a2e6c8",
+            "source:03dbb6e9677da4e50acc1eb7",
+            "source:d69bdfc9e41844f46155d540"
+          ],
+          "text": "Malfurion Stormrage directs a mission to cleanse Eranikus of Old God corruption and recover the green scepter shard. He warns that drawing Eranikus out of the Dream endangers his physical manifestation, yet regards the risk as a righteous cause. He encourages the champion to remain steadfast and sends them to his agent near Darnassus, who is to inform Tyrande without alerting Staghelm.",
+          "when": {
+            "entry": 15362
+          }
+        }
+      ],
+      "title": null
+    }
+  ],
+  "place": "Sunken Temple",
+  "sources": {
+    "source:03dbb6e9677da4e50acc1eb7": {
+      "kind": "research",
+      "reference": "evidence:sha256:f98560ed2eaf76ee84c99e5bcb20930f48c5c2f3b8d990155380c0b68398a8fe",
+      "revision": "60de639a3f0996f01a996ce8ed670a6bd8e8f98be2300b8a49304a3fc38ba878"
+    },
+    "source:162ab6a86360797f47c8e1ff": {
+      "kind": "research",
+      "reference": "evidence:sha256:d98d285f873ec35c61e49ec7c2b80bc9d5c451d9e0afabbaaa250824f25ad823",
+      "revision": "60de639a3f0996f01a996ce8ed670a6bd8e8f98be2300b8a49304a3fc38ba878"
+    },
+    "source:5a33b10bb7fb8d07a7a2e6c8": {
+      "kind": "research",
+      "reference": "evidence:sha256:6c89667916bb9b48096942ecf6f197f96d796ab26e41d848a4647856aabb5d2c",
+      "revision": "60de639a3f0996f01a996ce8ed670a6bd8e8f98be2300b8a49304a3fc38ba878"
+    },
+    "source:d69bdfc9e41844f46155d540": {
+      "kind": "research",
+      "reference": "evidence:sha256:cfeda8198480f437e2bc24d7552ca518faa7a550265a93b060dbf18b2489ec6a",
+      "revision": "60de639a3f0996f01a996ce8ed670a6bd8e8f98be2300b8a49304a3fc38ba878"
+    },
+    "source:e7282c026fffb6c5a7668478": {
+      "kind": "research",
+      "reference": "evidence:sha256:32e385714b1d2dc656eb8f7e27be6b33a8740c35eab7439f4ff4757f47ec3593",
+      "revision": "60de639a3f0996f01a996ce8ed670a6bd8e8f98be2300b8a49304a3fc38ba878"
+    }
+  },
+  "version": 1,
+  "zone": 1417
+}

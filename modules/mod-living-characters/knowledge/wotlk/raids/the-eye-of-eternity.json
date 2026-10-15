@@ -1,0 +1,117 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 616,
+  "npcs": [
+    {
+      "entry": 28859,
+      "name": "Malygos",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28859:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:fbf1227e2b18f1be8beacb09",
+            "source:ff626e5bc0db1a1c511784d1",
+            "source:473b4594e7e09a943929410f",
+            "source:5051fec71807089f3493f0ba",
+            "source:b0ba7846d48662be49910fef"
+          ],
+          "text": "Malygos, the Spell-Weaver, regards mortal intruders as ignorant children who dare to wield magic in his domain, and boasts that his power is infinite. As he dies, he fears the mortals will destroy everything and asks what his sister has done.",
+          "when": {
+            "entry": 28859
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 30090,
+      "name": "Vortex",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:30090:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d786ef8d70fc3ee0e3cfc6fe",
+            "source:d88f287e73caa9fc5bac5c8e"
+          ],
+          "text": "Vortex is a named creature.",
+          "when": {
+            "entry": 30090
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 31253,
+      "name": "Alexstrasza the Life-Binder",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:31253:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:00402d07f34336be17eb7c78"
+          ],
+          "text": "Alexstrasza the Life-Binder.",
+          "when": {
+            "entry": 31253
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "The Eye of Eternity",
+  "sources": {
+    "source:00402d07f34336be17eb7c78": {
+      "kind": "research",
+      "reference": "evidence:sha256:572f79b47c585aeac66e97885bff0026a93d85f5acf031ba52728eed265fabd5",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:473b4594e7e09a943929410f": {
+      "kind": "research",
+      "reference": "evidence:sha256:339be3b02c3aa2ce8c0827ba8c3465ba22e12e87ac65eabb28c4cd5942e15ce1",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:5051fec71807089f3493f0ba": {
+      "kind": "research",
+      "reference": "evidence:sha256:6295ab9cd2b1e275d5355af732e550440b6b8ea291499b352fc23e910817d2eb",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:b0ba7846d48662be49910fef": {
+      "kind": "research",
+      "reference": "evidence:sha256:bfb5da8777808f95e024deea29a2c32d37fd580c7b9988d887531fb58a11faee",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:d786ef8d70fc3ee0e3cfc6fe": {
+      "kind": "research",
+      "reference": "evidence:sha256:9047d5c6d75717bb6949b86800113b2d00810d19b80462cd3f4cb9a608c2b5cc",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:d88f287e73caa9fc5bac5c8e": {
+      "kind": "research",
+      "reference": "evidence:sha256:37a846cfad7f9a73eabcbff4691e5d5bc9e1807eb79617d707e0f1f659c24313",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:fbf1227e2b18f1be8beacb09": {
+      "kind": "research",
+      "reference": "evidence:sha256:2602b5f2b6f14f9d591ed94218ddf218d7b5925189be48793172a8b97283bd37",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "source:ff626e5bc0db1a1c511784d1": {
+      "kind": "research",
+      "reference": "evidence:sha256:386dc0d09b8aec39ba1c22cb07e93fd10d47e2aff457ad32bff03e1f99edf0ec",
+      "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    }
+  },
+  "version": 1,
+  "zone": 4500
+}

@@ -1,0 +1,807 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 599,
+  "npcs": [
+    {
+      "entry": 27960,
+      "name": "Dark Rune Warrior",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27960:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ed7db97b7df6547932131d13",
+            "source:c103308f6f1fe235968407b4",
+            "source:f42759d6e2706268330c6ea9",
+            "source:ba944d75643f7d75f1428f55"
+          ],
+          "text": "A Dark Rune warrior who fights at close range, using Heroic Strike and Cleave against nearby foes. Its role in the Halls of Stone is direct frontline combat.",
+          "when": {
+            "entry": 27960
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27961,
+      "name": "Dark Rune Worker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27961:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:de273932bfea95fdef27cffe",
+            "source:f95bd94727bdb3fc56337dbc"
+          ],
+          "text": "A Dark Rune worker who engages nearby foes with Pierce Armor. Its role in the Halls of Stone centers on close combat.",
+          "when": {
+            "entry": 27961
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27962,
+      "name": "Dark Rune Elementalist",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27962:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:97c52b34ae6f2df6276e1f88",
+            "source:40b1aa5a4d7b50b8b1998188"
+          ],
+          "text": "A Dark Rune elementalist who calls on elemental magic in combat, including summoning an air elemental. This caster brings a summoned ally into the Halls of Stone encounter.",
+          "when": {
+            "entry": 27962
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27963,
+      "name": "Dark Rune Theurgist",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27963:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:45bc408c9a1ef339ea339a42",
+            "source:0075f3d55190ff6409b37b3d"
+          ],
+          "text": "A Dark Rune theurgist encountered in the Halls of Stone.",
+          "when": {
+            "entry": 27963
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27964,
+      "name": "Dark Rune Scholar",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27964:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:bb6fc49f386b6fe0b725dd64",
+            "source:7f15700eeaec98715da31f40"
+          ],
+          "text": "A Dark Rune scholar who answers an attack by casting Runic Intellect. This caster is among the Halls of Stone’s dungeon combatants.",
+          "when": {
+            "entry": 27964
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27965,
+      "name": "Dark Rune Shaper",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27965:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:47b5ba5beebfd9819b61d730",
+            "source:fcfcf3d3a1345add28600f41",
+            "source:ecb6ee9c8f276add577361aa"
+          ],
+          "text": "A Dark Rune Shaper encountered in the Halls of Stone.",
+          "when": {
+            "entry": 27965
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27966,
+      "name": "Dark Rune Controller",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27966:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d56310aea1acc5eed02a62d7",
+            "source:d6e034796b27844933a558c1",
+            "source:88ebfab203a64216e31ccf0a",
+            "source:83aee476282896ffb1b861c7"
+          ],
+          "text": "A Dark Rune Controller in the Storm Peaks dungeon. In combat, it can summon crystalline shardlings and cast Domination.",
+          "when": {
+            "entry": 27966
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27969,
+      "name": "Dark Rune Giant",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27969:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:82f04be7467120fd01cf101b",
+            "source:b64ba2cb6ebb92eda47886b0",
+            "source:6c7215d641de5583a41d1d5a"
+          ],
+          "text": "A Dark Rune Giant encountered in the Storm Peaks dungeon. It uses a powerful Stomp in combat.",
+          "when": {
+            "entry": 27969
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27970,
+      "name": "Raging Construct",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27970:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:1a6cd50eaa79e6830d9698d3",
+            "source:6484b5e9d5de1173de3336d9",
+            "source:2f9a742dbbf668e6bd28d871"
+          ],
+          "text": "A Raging Construct found in the Storm Peaks dungeon. In combat it can strike with a Potent Jolt.",
+          "when": {
+            "entry": 27970
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27971,
+      "name": "Unrelenting Construct",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27971:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:fd2e7e5b85c6e5b8e74731a4",
+            "source:925a75178b0d836b607ebb8a",
+            "source:88c660e1322bf3272b5707f0"
+          ],
+          "text": "An Unrelenting Construct encountered in the Storm Peaks dungeon. It charges in combat.",
+          "when": {
+            "entry": 27971
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27972,
+      "name": "Lightning Construct",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27972:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:1961f977d520ef121755b5b2",
+            "source:f14baf20ac6a072c317ae462",
+            "source:3c1adf43cea08dbe46537a4e"
+          ],
+          "text": "A Lightning Construct found in the Storm Peaks dungeon. It uses Chain Lightning in combat.",
+          "when": {
+            "entry": 27972
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27973,
+      "name": "Crystalline Shardling",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27973:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:dc2185642503a295b497b63a",
+            "source:d8a70a0cc890e1249234afea"
+          ],
+          "text": "A Crystalline Shardling found in the Storm Peaks dungeon.",
+          "when": {
+            "entry": 27973
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27975,
+      "name": "Maiden of Grief",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27975:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:dcfa1a5e97f6daa9fcc263b3",
+            "source:683fad651eca9e03dd41ec45",
+            "source:42cc80d062c963a1c3655e91",
+            "source:1b5b825203b6e7d1dc9cd0b1"
+          ],
+          "text": "The Maiden of Grief is a hostile figure whose taunts turn to grief and regret. She warns intruders that they will die, speaks of her growing burden, and laments at death that she never wanted this.",
+          "when": {
+            "entry": 27975
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27977,
+      "name": "Krystallus",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27977:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d5a520d65dd956d5d46a8c5a",
+            "source:be0f8452afd8135e06a504ca",
+            "source:00096177ff40e141e910dafc",
+            "source:f1bfcbd9eb7219330aedd981",
+            "source:4b5aa55f850de17615d119af"
+          ],
+          "text": "Krystallus speaks in clipped threats—“Crush” and “Break… you…”—then gives a rough laugh after a kill and a drawn-out groan at death. His brief words portray a dangerous, blunt presence.",
+          "when": {
+            "entry": 27977
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 27978,
+      "name": "Sjonnir The Ironshaper",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:27978:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:36dd3e6075246f68278dacfa",
+            "source:1e7e06e3663dd0d3df2a4d96",
+            "source:6ae935acf8bd8df6973dbbce",
+            "source:915087da5711149e79b4fd1b",
+            "source:88cdbba0fb2d2c6dad62d8e1"
+          ],
+          "text": "Sjonnir the Ironshaper condemns the curse of flesh, calling its victims fragile and declaring that flesh cannot match iron. He boasts that iron armies will smother the world; at death, he says Loken will not rest until the forge is retaken.",
+          "when": {
+            "entry": 27978
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 28070,
+      "name": "Brann Bronzebeard",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28070:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:189023f6eeecbea2b3380498",
+            "source:b7fd539b25ae2df55fe600ae",
+            "source:9814293bb32d3e871b103b52",
+            "source:fcc43912e9a8f0ebf6f6bf27",
+            "source:5613a0e84f71b0fc0db2683f",
+            "source:ce3a7dfff00c1308197d9e79"
+          ],
+          "text": "Brann is an eager researcher in the Halls of Stone, pressing for answers about the earthen’s origins, their anomalies, and the history of the dwarves. He works with adventurers through danger and intends to find and stop Loken, while trying to understand what he uncovers.",
+          "when": {
+            "entry": 28070
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 28130,
+      "name": "Invis Lightning Stalker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28130:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:779521db0c7158e6526cd69d",
+            "source:9ec053526c8aca89b13b0de5"
+          ],
+          "text": "An invisible lightning stalker.",
+          "when": {
+            "entry": 28130
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 28149,
+      "name": "Earthen Protector",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28149:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:925ef5f137b84d295f6d2cbe",
+            "source:19ffbd4f3580f4ee5a8e2fb9"
+          ],
+          "text": "An Earthen Protector humanoid.",
+          "when": {
+            "entry": 28149
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 28235,
+      "name": "Dark Matter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28235:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:8affd7a8e9cd6ba123a28e99",
+            "source:9313c96a899b22930a14547d"
+          ],
+          "text": "Dark Matter.",
+          "when": {
+            "entry": 28235
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 28824,
+      "name": "Brann Flying Machine",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28824:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:30b0305e17309d3868a0594b"
+          ],
+          "text": "A flying machine bearing Brann’s name.",
+          "when": {
+            "entry": 28824
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 30535,
+      "name": "Elder Yurauk",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:30535:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:626b4fe596bbd97dad430323",
+            "source:b3aa25f70ce46e90c6be552b",
+            "source:13da145c62e1ddf40840f161",
+            "source:da1d2f12c082d941cb4f328e",
+            "source:97f8f6846c255be3af18946b",
+            "source:65367c56673ecb758999f169"
+          ],
+          "text": "Elder Yurauk is a seasonal elder whose words say that when the year is new and the moon shines bright, the ancients awake. His conversation includes questions about where to find Elders Fargal, Stonebeard, Nurgen and Muraco.",
+          "when": {
+            "entry": 30535
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Halls of Stone",
+  "sources": {
+    "source:00096177ff40e141e910dafc": {
+      "kind": "research",
+      "reference": "evidence:sha256:18a122570c6f3a138ac4a96caeb021c438277fc4bcc6bb9c93e81f5471cf0fd3",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:0075f3d55190ff6409b37b3d": {
+      "kind": "research",
+      "reference": "evidence:sha256:f0a3ecc98f4c2d00429910cc93c5be674827b05da530c7cfee5dbcc965dd20f2",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:13da145c62e1ddf40840f161": {
+      "kind": "research",
+      "reference": "evidence:sha256:06bc0bcfda9f733b5ac312fee4df64dbfbf576868273ae63937d90ed85c8b210",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:189023f6eeecbea2b3380498": {
+      "kind": "research",
+      "reference": "evidence:sha256:9d0a15735e14e713d261e9643601ce0f89b9d7039e87f1fa2902b4c389841b07",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:1961f977d520ef121755b5b2": {
+      "kind": "research",
+      "reference": "evidence:sha256:2097257aad41c6a464216671219361fdbe1df6055bd7ace8a8eb4122c6ba1b37",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:19ffbd4f3580f4ee5a8e2fb9": {
+      "kind": "research",
+      "reference": "evidence:sha256:df4ead21fb905e5730e9da0a24cfc7d3c50bb991f4923a2ccf622e92fe86e78a",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
+    },
+    "source:1a6cd50eaa79e6830d9698d3": {
+      "kind": "research",
+      "reference": "evidence:sha256:a39760dd22283ff811bc58e2a90d795c371cc713d720bfd9d24935b5755d7510",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:1b5b825203b6e7d1dc9cd0b1": {
+      "kind": "research",
+      "reference": "evidence:sha256:2e54867a3466d14811d982c260be769a9517d3cb410da0028d74e6382e89a970",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:1e7e06e3663dd0d3df2a4d96": {
+      "kind": "research",
+      "reference": "evidence:sha256:140e6caaf0bc041d4ff546b78fa0eccccfdb57160ec8e533e8ea0764f4b4611e",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:2f9a742dbbf668e6bd28d871": {
+      "kind": "research",
+      "reference": "evidence:sha256:e06b5065e935493cfe40880d458c1a606808b1c702eb3911e951faf13dd04aac",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:30b0305e17309d3868a0594b": {
+      "kind": "research",
+      "reference": "evidence:sha256:8b883330c15e79e9d54f328ac1adf16dd7b1339adcb74397770112ee4db06670",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:36dd3e6075246f68278dacfa": {
+      "kind": "research",
+      "reference": "evidence:sha256:60444cbe9e8a745645af30e690e43928e52d9a258da30e233ecacd5e5e3e5b71",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:3c1adf43cea08dbe46537a4e": {
+      "kind": "research",
+      "reference": "evidence:sha256:dabb4139fab282f31d6ba1e739494d7408f6be1ac646a34e38301a5b45fcf471",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:40b1aa5a4d7b50b8b1998188": {
+      "kind": "research",
+      "reference": "evidence:sha256:7b990186f3b72aad9653e7517f4ec77e4dd8cd0c7fc4741f2090bff294226d04",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:42cc80d062c963a1c3655e91": {
+      "kind": "research",
+      "reference": "evidence:sha256:1954b6e38ad21e5c3d91ee68a15e0dcbcc1d33a15064917aecc8e605f2dd040f",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:45bc408c9a1ef339ea339a42": {
+      "kind": "research",
+      "reference": "evidence:sha256:2536de4c45dfdc36d9ac31d5422927e1aa59dc5cd480de2d281fdcb86d317a1e",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:47b5ba5beebfd9819b61d730": {
+      "kind": "research",
+      "reference": "evidence:sha256:059f3fab49f98fa61e02406881aee740b69334ad8c5d7a9b3cfaf15818f51726",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:4b5aa55f850de17615d119af": {
+      "kind": "research",
+      "reference": "evidence:sha256:191ba77c220621ab3cc4d9dcbacf3b1d03da242c27cea9444b4e7b1347bc9b00",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:5613a0e84f71b0fc0db2683f": {
+      "kind": "research",
+      "reference": "evidence:sha256:f48d22d45c80c3c51ae486096098e42478a3d9997e3f704e7c21577a70e9a6f2",
+      "revision": "a972a67c5902e4764554df2fefdc2eb297da10f2dc3f6e10e56b81ee905b0209"
+    },
+    "source:626b4fe596bbd97dad430323": {
+      "kind": "research",
+      "reference": "evidence:sha256:b8c272a05efabc9c3bd08c348d9486ffec2070ee6b8fe16137a5afcce6bf3bfd",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:6484b5e9d5de1173de3336d9": {
+      "kind": "research",
+      "reference": "evidence:sha256:541b10b4bf8e5e2de6ef0984bf8c651c0130e4df3494692ba85a374f65cfa4ca",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:65367c56673ecb758999f169": {
+      "kind": "research",
+      "reference": "evidence:sha256:5864fd7235af40886dbc1f8c667477c171d1f53c62a908ade58cae00651cf457",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:683fad651eca9e03dd41ec45": {
+      "kind": "research",
+      "reference": "evidence:sha256:c30f1bff0a91983e6e60038bb897c5e06b89e912b00253ec9eecb59b0cf6758d",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:6ae935acf8bd8df6973dbbce": {
+      "kind": "research",
+      "reference": "evidence:sha256:bf6670a39f255777a9c29ce954e72c511a9fbb04cb826bdf27019a2d293d9aa1",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:6c7215d641de5583a41d1d5a": {
+      "kind": "research",
+      "reference": "evidence:sha256:18a7d837d53e4d6a009481d7edebe139ae1f0892be40bb88257aba3911556c5f",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:779521db0c7158e6526cd69d": {
+      "kind": "research",
+      "reference": "evidence:sha256:6baec4ed2c885847f1812154dc4a2a202b9c9675d4feb76bd9c94daee636ff62",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:7f15700eeaec98715da31f40": {
+      "kind": "research",
+      "reference": "evidence:sha256:159c32d45e98dcd19132b7eab380e0a3ea4a3845f2c428e02472e1f5618abd12",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:82f04be7467120fd01cf101b": {
+      "kind": "research",
+      "reference": "evidence:sha256:dd4f7375c9b28e19cca9c81bc9b99b7de04e08cc79ba71ed8217ffeb8509d995",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:83aee476282896ffb1b861c7": {
+      "kind": "research",
+      "reference": "evidence:sha256:d178cfd5b1d254c2f12a65727733bb6fb17d1b2539ac92b5ce6ded551cc5da4f",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:88c660e1322bf3272b5707f0": {
+      "kind": "research",
+      "reference": "evidence:sha256:e63f19fba0f2b17cf0f3124c8e815634873caacda234e61908a70a539c14d60f",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:88cdbba0fb2d2c6dad62d8e1": {
+      "kind": "research",
+      "reference": "evidence:sha256:85cbcb0ab10d07065ae68bae3a50fb1c50cb119c1ae33573d4ad7aba7b60ba63",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:88ebfab203a64216e31ccf0a": {
+      "kind": "research",
+      "reference": "evidence:sha256:bb2823c4ea507de14ecd14e5c3fbd61103356417b141bb3a18ee8d2cd95ab006",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:8affd7a8e9cd6ba123a28e99": {
+      "kind": "research",
+      "reference": "evidence:sha256:f45b27a6e188edd8af61c45337f6bb051e3204a9ee7b7f0704ad1e893ec7182d",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:915087da5711149e79b4fd1b": {
+      "kind": "research",
+      "reference": "evidence:sha256:efb294acc4a753febf395e894f13c97517b2910894ddb1409257fd8bfed3b265",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:925a75178b0d836b607ebb8a": {
+      "kind": "research",
+      "reference": "evidence:sha256:f946e04fe61169867ce77ad729463cd43985e542b7874d18ca27d2b5109958de",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:925ef5f137b84d295f6d2cbe": {
+      "kind": "research",
+      "reference": "evidence:sha256:d60dbb3993dfb47f54a9ffc15ed38da7e5f3e75322148b482a876249c9d28710",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:9313c96a899b22930a14547d": {
+      "kind": "research",
+      "reference": "evidence:sha256:343458b5a0b53c393b1fdc91dac2da24ab57a29b4962d8e893ee037902b29e2a",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:97c52b34ae6f2df6276e1f88": {
+      "kind": "research",
+      "reference": "evidence:sha256:c869d7cefe2410246015f7d451f1d487ad2d070ccb85ed477fce5deb9adf2b0b",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:97f8f6846c255be3af18946b": {
+      "kind": "research",
+      "reference": "evidence:sha256:c13537cf2927764e3397bec4e5156dd02b8584e6a34a622eac28497ac427c2fe",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:9814293bb32d3e871b103b52": {
+      "kind": "research",
+      "reference": "evidence:sha256:fdd7f12ea79aeac7257d318fc80b15c7ca96ecc6052a01fc3ea4b20ab5e039f6",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:9ec053526c8aca89b13b0de5": {
+      "kind": "research",
+      "reference": "evidence:sha256:21781ba1f068c8a3a1258d3a65c3c9da7b91d0afe14b9b383dd4d09cdfda9052",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:b3aa25f70ce46e90c6be552b": {
+      "kind": "research",
+      "reference": "evidence:sha256:c98b6806db9699510bc7460e0da5f3b529f7d2f90267c190c4125a1826ca8892",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:b64ba2cb6ebb92eda47886b0": {
+      "kind": "research",
+      "reference": "evidence:sha256:c6121fc3ee9865685133c7fae5de4d51521b03cc7a971bb2ee43872b21db3301",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:b7fd539b25ae2df55fe600ae": {
+      "kind": "research",
+      "reference": "evidence:sha256:a30181c2701ae5450803d692df4dcb9164c81ecfe5cf02fe75f13bdd38145b9e",
+      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
+    },
+    "source:ba944d75643f7d75f1428f55": {
+      "kind": "research",
+      "reference": "evidence:sha256:4395342d05eba3a7d41d671604bc5b472ba367a2c26ac91a4ba55f6fc768095e",
+      "revision": "f712bee4ef97fbdebc22211e694d9b842c8f13897f3f45cac06b57d9c7983a42"
+    },
+    "source:bb6fc49f386b6fe0b725dd64": {
+      "kind": "research",
+      "reference": "evidence:sha256:126fb1a2748c7c76e9ef1d9bb9f66c92399e846a38ef0d0c2afb0ef488d618f3",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:be0f8452afd8135e06a504ca": {
+      "kind": "research",
+      "reference": "evidence:sha256:e03724a336230533925e8f18de25d1aa36eb937c3c78b577c13bfb4abe4c8f13",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:c103308f6f1fe235968407b4": {
+      "kind": "research",
+      "reference": "evidence:sha256:c1d945d876d95165b824940bdc9336e0f819335ac3acd6e94304d90d72931c19",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:ce3a7dfff00c1308197d9e79": {
+      "kind": "research",
+      "reference": "evidence:sha256:e9e25508631e232eea083c3a27aed82f4ab0070893f6780ec5673203ace83272",
+      "revision": "a972a67c5902e4764554df2fefdc2eb297da10f2dc3f6e10e56b81ee905b0209"
+    },
+    "source:d56310aea1acc5eed02a62d7": {
+      "kind": "research",
+      "reference": "evidence:sha256:7d761f4abe1b434691de9f2cf1843366c9b464d5f1ed548c6374f575bced5a43",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:d5a520d65dd956d5d46a8c5a": {
+      "kind": "research",
+      "reference": "evidence:sha256:389679452566dd23b5b8dcb1a085bd1fefce48c10462813b48854fd7a27f7e6f",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:d6e034796b27844933a558c1": {
+      "kind": "research",
+      "reference": "evidence:sha256:e69c539318e338dbf09b57af43f5f590533a8c98424e6b3c3348ce8cb4a5498b",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:d8a70a0cc890e1249234afea": {
+      "kind": "research",
+      "reference": "evidence:sha256:55b2602746eaabbceb33e6a9a46bb8dc20ceee57f70809e34e946a086af7c4a1",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:da1d2f12c082d941cb4f328e": {
+      "kind": "research",
+      "reference": "evidence:sha256:b56168edcac66c27aadbfbeadeed76f31566b52764ddc8e871d9092962c72339",
+      "revision": "05ec98d3843cc02a1992500538ad7d2f9fe4555aff97eed12c903a2b58fcc69e"
+    },
+    "source:dc2185642503a295b497b63a": {
+      "kind": "research",
+      "reference": "evidence:sha256:5ca89a8ed35ed322f1f07c195a4c6a8b0feb2f0b750f65236abe7cbc70cc1e6f",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:dcfa1a5e97f6daa9fcc263b3": {
+      "kind": "research",
+      "reference": "evidence:sha256:bd7acd1da2124e8ac90d11dc195055110dfd32da4d427f47311141f035b98257",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:de273932bfea95fdef27cffe": {
+      "kind": "research",
+      "reference": "evidence:sha256:7c74ba28865d53aa99888105df51636247c9956473df6b77e2e63255587d1231",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:ecb6ee9c8f276add577361aa": {
+      "kind": "research",
+      "reference": "evidence:sha256:66366d0efa21a31869ad9d3916cbb1623b956126edf77c4fb1a19fae1f42bf72",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:ed7db97b7df6547932131d13": {
+      "kind": "research",
+      "reference": "evidence:sha256:312ac16b7ccb84a9182df02a178630cb17e465ff125657a5faa11cb55c556c83",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:f14baf20ac6a072c317ae462": {
+      "kind": "research",
+      "reference": "evidence:sha256:549c873192150985b9774135544c061f12564431abd56f04373da014488f6914",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "source:f1bfcbd9eb7219330aedd981": {
+      "kind": "research",
+      "reference": "evidence:sha256:bd5d426e6ad41be5d3585f4f40b2cc2a2ba1bae63892b3cf9062577df1e63286",
+      "revision": "ffe8372c221162cacf6c92a0dbe5ccc5a9c6afb57c5af7347d120932632446be"
+    },
+    "source:f42759d6e2706268330c6ea9": {
+      "kind": "research",
+      "reference": "evidence:sha256:0820e7bcbf7dcfe7caf1ba0625affacb41a39e4b76f0d1f220eebfa591f8d4f0",
+      "revision": "f712bee4ef97fbdebc22211e694d9b842c8f13897f3f45cac06b57d9c7983a42"
+    },
+    "source:f95bd94727bdb3fc56337dbc": {
+      "kind": "research",
+      "reference": "evidence:sha256:77fe69936faf56896253d8a83e9273086f7674b9fcace53d96898617e9af3b2b",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:fcc43912e9a8f0ebf6f6bf27": {
+      "kind": "research",
+      "reference": "evidence:sha256:364202d9be0cf1bc1aad6e43919a99c63e2637ee46c6942c7b07d17b5a77e349",
+      "revision": "a972a67c5902e4764554df2fefdc2eb297da10f2dc3f6e10e56b81ee905b0209"
+    },
+    "source:fcfcf3d3a1345add28600f41": {
+      "kind": "research",
+      "reference": "evidence:sha256:9f3f1579d5d58c81e54bf53502a639634ad4c487d9d08f375e0ecebbeafde02c",
+      "revision": "056da5609c2f2a3c3d74d2c1386ad9dbb79f6c02fd50bb93769855572f128a03"
+    },
+    "source:fd2e7e5b85c6e5b8e74731a4": {
+      "kind": "research",
+      "reference": "evidence:sha256:da669cc5a87a0642b8bdc9920f1a50e54a8b2c673892a7283b39b92038d20384",
+      "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    }
+  },
+  "version": 1,
+  "zone": 4264
+}

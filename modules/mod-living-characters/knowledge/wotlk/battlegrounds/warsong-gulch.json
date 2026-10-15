@@ -1,0 +1,61 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 489,
+  "npcs": [
+    {
+      "entry": 8001,
+      "name": "Corpus Ragatus",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:8001:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:6441bd9dedc2ce81edf6f07e",
+            "source:22b107d46b4b32475295689e",
+            "source:f1a27cd0239d912d5542c4ec",
+            "source:1481c5c62d9d60e903abbe9a",
+            "source:380dffb3b78b2ee2414c145f"
+          ],
+          "text": "Corpus Ragatus is a questgiver associated with the Warsong Outriders.",
+          "when": {
+            "entry": 8001
+          }
+        }
+      ],
+      "title": null
+    }
+  ],
+  "place": "Warsong Gulch",
+  "sources": {
+    "source:1481c5c62d9d60e903abbe9a": {
+      "kind": "research",
+      "reference": "evidence:sha256:7645e7673592c4d26b753d9326344d67fd4978e4eadb97343fc7c28489780f8d",
+      "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    },
+    "source:22b107d46b4b32475295689e": {
+      "kind": "research",
+      "reference": "evidence:sha256:914e58880ad1db5faea801112ebf332849f0dca2366d08104b002b7ea408d46a",
+      "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    },
+    "source:380dffb3b78b2ee2414c145f": {
+      "kind": "research",
+      "reference": "evidence:sha256:da76e0b5f7077ddfb712f7bef96eded94ba5f0030f039bebea181f3ec8dd32f2",
+      "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    },
+    "source:6441bd9dedc2ce81edf6f07e": {
+      "kind": "research",
+      "reference": "evidence:sha256:64a7af039c15a93c0fac7536b3cc4cd1555cf0a6b34a8f2c379c4dbb1c2b9ca9",
+      "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    },
+    "source:f1a27cd0239d912d5542c4ec": {
+      "kind": "research",
+      "reference": "evidence:sha256:914e58880ad1db5faea801112ebf332849f0dca2366d08104b002b7ea408d46a",
+      "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    }
+  },
+  "version": 1,
+  "zone": 3277
+}

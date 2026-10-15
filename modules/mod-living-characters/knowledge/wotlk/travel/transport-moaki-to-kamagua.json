@@ -1,0 +1,92 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 621,
+  "npcs": [
+    {
+      "entry": 31804,
+      "name": "Qatiichii",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:31804:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:27e8b10783ee32f73578936e",
+            "source:0ce8ee49ccd70423888ea855",
+            "source:57cde79adf7d5afae4dfb5b5",
+            "source:7ea595c932c37c778d7bef74"
+          ],
+          "text": "Qatiichii is a goods vendor associated with Green Island. Visitors can browse goods through the vendor option.",
+          "when": {
+            "entry": 31804
+          }
+        }
+      ],
+      "title": "Green Island"
+    },
+    {
+      "entry": 31806,
+      "name": "Oomailiq",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:31806:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:c343fa16bc3753a6456aba9b",
+            "source:75d3b9323e2742b827a18e00",
+            "source:19ffbd4f3580f4ee5a8e2fb9"
+          ],
+          "text": "Oomailiq is a humanoid bearing the designation Green Island.",
+          "when": {
+            "entry": 31806
+          }
+        }
+      ],
+      "title": "Green Island"
+    }
+  ],
+  "place": "Transport: Moa'ki to Kamagua",
+  "sources": {
+    "source:0ce8ee49ccd70423888ea855": {
+      "kind": "research",
+      "reference": "evidence:sha256:ec20f61118e10fa2e5f478664b46ad8fc36409e6843e8f368fdf088e29b36144",
+      "revision": "80e994a4de960986be027965b495ec559e14cf65b9a6951c3a9e688fadae1fd6"
+    },
+    "source:19ffbd4f3580f4ee5a8e2fb9": {
+      "kind": "research",
+      "reference": "evidence:sha256:df4ead21fb905e5730e9da0a24cfc7d3c50bb991f4923a2ccf622e92fe86e78a",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
+    },
+    "source:27e8b10783ee32f73578936e": {
+      "kind": "research",
+      "reference": "evidence:sha256:15cd67d03800958d2a8b195a58295c2c64e5460f243300a7fc9256fe9ed34bf3",
+      "revision": "80e994a4de960986be027965b495ec559e14cf65b9a6951c3a9e688fadae1fd6"
+    },
+    "source:57cde79adf7d5afae4dfb5b5": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "80e994a4de960986be027965b495ec559e14cf65b9a6951c3a9e688fadae1fd6"
+    },
+    "source:75d3b9323e2742b827a18e00": {
+      "kind": "research",
+      "reference": "evidence:sha256:a47e17aec3c5a152fd5f5affec37e590e31f0136b2ab60226f0692b088ed17b4",
+      "revision": "80e994a4de960986be027965b495ec559e14cf65b9a6951c3a9e688fadae1fd6"
+    },
+    "source:7ea595c932c37c778d7bef74": {
+      "kind": "research",
+      "reference": "evidence:sha256:62386565e6dae049db2c20eeb5e75c3db8104294e6546282abd8e6fa4aeb6376",
+      "revision": "80e994a4de960986be027965b495ec559e14cf65b9a6951c3a9e688fadae1fd6"
+    },
+    "source:c343fa16bc3753a6456aba9b": {
+      "kind": "research",
+      "reference": "evidence:sha256:ec9bf00775345bcc6575485f0719e5037162f5343918c5025a1edc8bcf9e4ab1",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    }
+  },
+  "version": 1,
+  "zone": 0
+}

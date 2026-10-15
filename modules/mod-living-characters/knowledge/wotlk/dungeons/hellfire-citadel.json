@@ -1,0 +1,63 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 540,
+  "npcs": [
+    {
+      "entry": 17294,
+      "name": "Drisella",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:17294:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0c9a4fd8589ad67fa88191dd"
+          ],
+          "text": "Drisella is a prisoner who escaped Kargath's prison. Too weak to continue herself, she asks for Captain Boneshatter to be rescued from execution inside Hellfire Citadel, describing his death as a serious loss to her forces.",
+          "when": {
+            "entry": 17294
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 17296,
+      "name": "Captain Boneshatter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:17296:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0c9a4fd8589ad67fa88191dd",
+            "source:1c6bdc036eab2134eec4c697"
+          ],
+          "text": "Captain Boneshatter is an important officer held for execution inside Hellfire Citadel. After his rescue, he says the prospect of dying in battle, covered in his opponents' blood and taking them down with him, would brighten his day.",
+          "when": {
+            "entry": 17296
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Hellfire Citadel",
+  "sources": {
+    "source:0c9a4fd8589ad67fa88191dd": {
+      "kind": "research",
+      "reference": "evidence:sha256:4bdca4b66ed7f8f42d13fb42f9355db0a00b8b1308356cce5152adbede96c252",
+      "revision": "c9a3908cb6087cea7313123ea669c528421923ec85217a85280b1c27e8686fce"
+    },
+    "source:1c6bdc036eab2134eec4c697": {
+      "kind": "research",
+      "reference": "evidence:sha256:86829dae171271cbecb33319e393204c6b92be300c979b2bd4b1636af6ee54b4",
+      "revision": "c9a3908cb6087cea7313123ea669c528421923ec85217a85280b1c27e8686fce"
+    }
+  },
+  "version": 1,
+  "zone": 3535
+}

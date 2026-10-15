@@ -25,8 +25,8 @@ repository and is not a drop-in module for other cores. Credits and licences are
   reservations; failed requests are not blindly retried.
 
 Guards and native guilds share attributed, expiring institutional reports.
-[Prepared knowledge](knowledge.md) describes the Northshire pilot, context
-budgets, language boundaries and the offline content-authoring workflow.
+[Prepared knowledge](knowledge.md) describes the NPC summaries (where they are, how to look one
+up and edit it), context budgets, language boundaries and shared reports.
 
 The [offline field guide](guide.html) explains conversation, explicit
 commands, corrections and gameplay limits. Open it in a browser.

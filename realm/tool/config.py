@@ -144,8 +144,8 @@ def stage_prompts(realm):
 def stage_knowledge(realm):
     """Generate portable runtime packs for an opted-in realm or recorded test."""
     module = SOURCE / "modules/mod-living-characters"
-    subprocess.run([sys.executable, str(module / "tools/npc_content.py"), "build",
-                    "--source", str(module / "knowledge/authoring/wotlk"),
+    subprocess.run([sys.executable, str(module / "tools/npc_content.py"),
+                    "--source", str(module / "knowledge/wotlk"), "build",
                     "--supplement", str(module / "knowledge/northshire-context.json"),
                     "--output", str(realm / "knowledge/wotlk"), "--replace"], check=True)
 

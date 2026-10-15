@@ -1,0 +1,286 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 590,
+  "npcs": [
+    {
+      "entry": 25100,
+      "name": "Chief Officer Hammerflange",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25100:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:bb47da2ee617a17d95d8f70e",
+            "source:b81dde52b15001d1d7f89951",
+            "source:6ce3835fad7af6c4114b1c01"
+          ],
+          "text": "Chief Officer Hammerflange is part of the Purple Princess crew. Hammerflange describes crew relaxation as key to efficient work.",
+          "when": {
+            "entry": 25100
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25101,
+      "name": "Crewman Cutpipe",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25101:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:646569099ec960a9282a2afc",
+            "source:9e12858872029b3a455b1a75",
+            "source:901c6b8a5e94eb680a18738b"
+          ],
+          "text": "Crewman Cutpipe is a crewman of the Purple Princess. Cutpipe says there is no time to talk and directs repair needs to the Vend-O-Tron.",
+          "when": {
+            "entry": 25101
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25102,
+      "name": "Crewman Spinshaft",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25102:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:901c6b8a5e94eb680a18738b",
+            "source:985f6fe05d861c306269de5b",
+            "source:67989dae66ad659627ab3963"
+          ],
+          "text": "Crewman Spinshaft is a crewman of the Purple Princess.",
+          "when": {
+            "entry": 25102
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25103,
+      "name": "Crewman Boltshine",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25103:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:901c6b8a5e94eb680a18738b",
+            "source:3aa9cbb8b4673795bfd731e9",
+            "source:720593d7367e22dea846d2ce"
+          ],
+          "text": "Crewman Boltshine is a crewman of the Purple Princess.",
+          "when": {
+            "entry": 25103
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25104,
+      "name": "Navigator Hatch",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25104:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:1e630e0f0eed5d4691546e57",
+            "source:ba44baf413e397394624e65b",
+            "source:62174d0420c0464a03845940"
+          ],
+          "text": "Navigator Hatch praises the captain and looks forward to the crew's time to relax when the ship docks.",
+          "when": {
+            "entry": 25104
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25105,
+      "name": "Sky-Captain Cableclamp",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25105:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0718209f2e4d13930dced25c",
+            "source:06ae27be0f188eb2ffd6c921",
+            "source:f7099f1ae185bc68e38ee42d"
+          ],
+          "text": "Sky-Captain Cableclamp is the captain of the Purple Princess. Cableclamp's welcome calls for passengers to relax during the trip and points them to vending machines below for supplies.",
+          "when": {
+            "entry": 25105
+          }
+        }
+      ],
+      "title": "The Purple Princess"
+    },
+    {
+      "entry": 25106,
+      "name": "Watcher Du'una",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25106:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:05692a9c0419fc014231c7c8",
+            "source:4251a2a8be7944ddd5445a49"
+          ],
+          "text": "Watcher Du'una is a humanoid watchman who remarks on the flight from Grom'gol to Undercity and warns that its uneventful passage is no reason to fall asleep on the job.",
+          "when": {
+            "entry": 25106
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 25107,
+      "name": "Watcher Umjin",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25107:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:5090602c62c04b8a7e2395d6",
+            "source:cb014f4616f303687d3890c4"
+          ],
+          "text": "Watcher Umjin is a humanoid watchman who asks for five more minutes of sleep and addresses the listener as “mon.”",
+          "when": {
+            "entry": 25107
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Transport: Grom'Gol to Undercity",
+  "sources": {
+    "source:05692a9c0419fc014231c7c8": {
+      "kind": "research",
+      "reference": "evidence:sha256:4af8e6dd79adb5b1495ba7981472733c434670295ad4f1ec6677dd2dab6eb9ef",
+      "revision": "445e91469ef5d9f2698443bd856f6687105b99a404a4b6d1ddd092b7909ab274"
+    },
+    "source:06ae27be0f188eb2ffd6c921": {
+      "kind": "research",
+      "reference": "evidence:sha256:822762485a2500a2534585cb8a19b86f6aaa18ee9e5eef239876608d731fc10f",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:0718209f2e4d13930dced25c": {
+      "kind": "research",
+      "reference": "evidence:sha256:db58abbfde1d82aa81c8871dedb01f5b15afc9199c0e7980c41303ac0ddcf0d3",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:1e630e0f0eed5d4691546e57": {
+      "kind": "research",
+      "reference": "evidence:sha256:451861fc33d9a34b96d3a25788185330c0a7046df67971c161ac8efeae1a2bfb",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:3aa9cbb8b4673795bfd731e9": {
+      "kind": "research",
+      "reference": "evidence:sha256:b9209279b46ba47126b7ad79a761c2629473894fee92e16d8c1f5e88a65d34fa",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:4251a2a8be7944ddd5445a49": {
+      "kind": "research",
+      "reference": "evidence:sha256:4b96727758ae6acf3ecff0ccd48a772fe203a0c642b067a504bb44d02217c0f4",
+      "revision": "445e91469ef5d9f2698443bd856f6687105b99a404a4b6d1ddd092b7909ab274"
+    },
+    "source:5090602c62c04b8a7e2395d6": {
+      "kind": "research",
+      "reference": "evidence:sha256:e3a76dcc6bb00ff27947c4b03e8833c65a1dcc1d979a61e8f90a816ca328c42f",
+      "revision": "445e91469ef5d9f2698443bd856f6687105b99a404a4b6d1ddd092b7909ab274"
+    },
+    "source:62174d0420c0464a03845940": {
+      "kind": "research",
+      "reference": "evidence:sha256:1fecc6c6b759279392e886accce75e910b3006bbf723a7d349212db2c12bd4e2",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:646569099ec960a9282a2afc": {
+      "kind": "research",
+      "reference": "evidence:sha256:d171786cc5c07279cc56947db0988da26e47ae8ab539ac0bdc9b4fb5b8b21c37",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:67989dae66ad659627ab3963": {
+      "kind": "research",
+      "reference": "evidence:sha256:5b580cab7ad4a8e351eed9b985e5e4671c0c9d5284f8afe84929a47c7c18e85f",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:6ce3835fad7af6c4114b1c01": {
+      "kind": "research",
+      "reference": "evidence:sha256:1fe3900b50884e2ac2e0199c64668e845dacfe2c1c62b809b0a8be37520fa5b8",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:720593d7367e22dea846d2ce": {
+      "kind": "research",
+      "reference": "evidence:sha256:1c72ff5943b7e0e415de0b07c90949839cac8fb67726f2681011a06dfcac3816",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:901c6b8a5e94eb680a18738b": {
+      "kind": "research",
+      "reference": "evidence:sha256:d86ee19af60e28a8ca7185188edb1693deb9c2a01bd153b0fed56c6f4701e03c",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:985f6fe05d861c306269de5b": {
+      "kind": "research",
+      "reference": "evidence:sha256:041f04ef43be89cd25f25176d950257b4015faa1a18789f01b9da7442a9e723e",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:9e12858872029b3a455b1a75": {
+      "kind": "research",
+      "reference": "evidence:sha256:9a2110a1d2145d5c8666be3c707244f40dd38df5d2d288f70dd6d3d6b719f207",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:b81dde52b15001d1d7f89951": {
+      "kind": "research",
+      "reference": "evidence:sha256:a8fa1265b618070782b6cca1aaedb0d016185eb1915cd4975cfd70b9b7c29a92",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:ba44baf413e397394624e65b": {
+      "kind": "research",
+      "reference": "evidence:sha256:787de2dc1f29b6fcb17e726d6e8ff4d4aa14de0d7f4c7164d8ba2ff22e754574",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:bb47da2ee617a17d95d8f70e": {
+      "kind": "research",
+      "reference": "evidence:sha256:89869599656cde3f9fea5eaec8b501c4330f62dfb609d6420ad99565bdd2ea24",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    },
+    "source:cb014f4616f303687d3890c4": {
+      "kind": "research",
+      "reference": "evidence:sha256:fda9921a57d97a503f94cda785fb2dbc7944784b85ef774a945020ca21c97bcc",
+      "revision": "445e91469ef5d9f2698443bd856f6687105b99a404a4b6d1ddd092b7909ab274"
+    },
+    "source:f7099f1ae185bc68e38ee42d": {
+      "kind": "research",
+      "reference": "evidence:sha256:3e9f806f665016fec07b095dcc874fc14901caa184edc9e4ac4c85c05819e0b5",
+      "revision": "a0ed7916d26d214336e86c4906967b12c9e4c6188cf4d18eeba072e045c1308b"
+    }
+  },
+  "version": 1,
+  "zone": 0
+}

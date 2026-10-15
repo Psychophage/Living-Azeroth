@@ -1,0 +1,74 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 530,
+  "npcs": [
+    {
+      "entry": 16404,
+      "name": "Yellowgill Frenzy",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16404:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:cc49c84b450d682d6738c614",
+            "source:c9dade7b6ea49cc5e1edafa3"
+          ],
+          "text": "Yellowgill Frenzy is a creature.",
+          "when": {
+            "entry": 16404
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 16405,
+      "name": "Whitetail Frenzy",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16405:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:84e1982ab7292fa728dc796f",
+            "source:3f36d577a4036d5bca155624"
+          ],
+          "text": "Whitetail Frenzy is a creature.",
+          "when": {
+            "entry": 16405
+          }
+        }
+      ],
+      "title": null
+    }
+  ],
+  "place": "The North Sea",
+  "sources": {
+    "source:3f36d577a4036d5bca155624": {
+      "kind": "research",
+      "reference": "evidence:sha256:38731307d830f1d76cc8bba4e3d490e6c6c1a49c12526d87a64e35eb533926a7",
+      "revision": "0bf9b582c88dbef4a850c93ce1c9bed05660e64a5f01a34da20fa120f6e33415"
+    },
+    "source:84e1982ab7292fa728dc796f": {
+      "kind": "research",
+      "reference": "evidence:sha256:5f8c1c70c9cbd193d8041453e8a79404dd71862bf512b73315af268782340cbd",
+      "revision": "0bf9b582c88dbef4a850c93ce1c9bed05660e64a5f01a34da20fa120f6e33415"
+    },
+    "source:c9dade7b6ea49cc5e1edafa3": {
+      "kind": "research",
+      "reference": "evidence:sha256:e7fcb9cdfbc0b40f853bc4fa382eed1a8bb92887961f01682d683f350b5349cb",
+      "revision": "0bf9b582c88dbef4a850c93ce1c9bed05660e64a5f01a34da20fa120f6e33415"
+    },
+    "source:cc49c84b450d682d6738c614": {
+      "kind": "research",
+      "reference": "evidence:sha256:1589032de66845b54bbf615a36b606615fef6f19d30bdf9a45f78fe7ebcbc2a7",
+      "revision": "0bf9b582c88dbef4a850c93ce1c9bed05660e64a5f01a34da20fa120f6e33415"
+    }
+  },
+  "version": 1,
+  "zone": 3455
+}

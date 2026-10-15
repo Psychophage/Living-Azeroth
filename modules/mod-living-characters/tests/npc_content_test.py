@@ -1,7 +1,9 @@
-"""Offline content workflow checks; no realm or model calls."""
+"""NPC summary workflow checks; no realm or model calls."""
 import copy
 import importlib.util
+import io
 from pathlib import Path
+import re
 import tempfile
 import unittest
 
@@ -10,145 +12,118 @@ content = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(content)
 
 
+def place(name, npcs, sources):
+    return {"format": content.SUMMARIES, "version": 1, "era": "wotlk", "place": name, "map": 0, "zone": 12,
+            "npcs": npcs, "sources": sources}
+
+
 class ContentTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.source = self.root / "authoring"
-        self.source_id = "source:" + "a" * 22
-        fact = {"entry": 1, "name": "Example", "subname": "Cook"}
-        evidence_id = content.value_hash(fact)
-        self.sources = {self.source_id: {
-            "kind": "world_db", "revision": "native-1", "evidence": evidence_id,
-            "origin": {"archive_path": "snapshot/native.json", "artifact_sha256": "b" * 64, "pointer": "/0"},
-        }}
-        content.sharded_write(self.source, "sources", self.sources)
-        content.sharded_write(self.source, "evidence", {evidence_id: fact})
-        content.write(self.source / "manifest.json", {
-            "format": content.AUTHORING, "version": 1, "era": "wotlk", "native_ids": [1, 2, 3],
-        })
-        baseline = {"tier": 2, "confidence": "low", "uncertainty": "Classification question retained."}
-        self.rows = []
-        for entry, disposition in [(1, "authored"), (2, "native_only"), (3, "excluded")]:
-            self.rows.append({
-                "entry": entry, "name": "Example", "title": "Cook", "region": "map-0-zone-12",
-                "classification": {"baseline": baseline, **baseline},
-                "coverage": {"entry": entry, "disposition": disposition, "reason": "Supported disposition.",
-                             "starting_tier": 2, "starting_confidence": "low", "proposed_tier": 2,
-                             "proposed_confidence": "low", "uncertainty": baseline["uncertainty"]},
-                "sources": [self.source_id], "notes": [{"kind": "uncertainties", "items": ["Separate question."]}],
-                "records": [{"id": f"npc:{entry}:identity", "layer": "npc", "text": "An example cook.",
-                             "when": {"entry": entry}, "sources": [self.source_id],
-                             "authored": False, "priority": 80}] if disposition == "authored" else [],
-            })
-        self.save_rows()
+        self.source = self.root / "wotlk"
+        self.cite = "source:" + "a" * 24
+        self.sources = {self.cite: {"kind": "research", "revision": "r1", "reference": "evidence:sha256:" + "b" * 64}}
+        self.cook = {"entry": 1, "name": "Example Cook", "title": "Cook", "records": [{
+            "id": "npc:1:identity", "layer": "npc", "text": "A cook in Goldshire.", "authored": False,
+            "sources": [self.cite], "priority": 80, "when": {"entry": 1}}]}
+        content.write(self.source / "eastern-kingdoms/elwynn-forest.json",
+                      place("Elwynn Forest", [self.cook], self.sources))
+        content.write(self.source / content.WITHOUT, {
+            "format": content.SUMMARIES, "version": 1, "era": "wotlk",
+            "npcs": [{"entry": 2, "name": "Waypoint", "title": None, "decision": "native only",
+                      "reason": "A marker, not a person."}]})
 
-    def save_rows(self):
-        content.write(self.source / "npcs/000000-000999.json", self.rows)
+    def edit(self, change):
+        path = self.source / "eastern-kingdoms/elwynn-forest.json"
+        document = content.read(path)
+        change(document)
+        content.write(path, document)
 
-    def output_records(self, output):
-        return {r["id"]: r for p in sorted((output / "regions").glob("*.json"))
-                for r in content.read(p)["records"]}
+    def test_build_makes_one_pack_per_place(self):
+        index = content.build(self.source, self.root / "out")
+        self.assertEqual([p["path"] for p in index["packs"]], ["eastern-kingdoms/elwynn-forest.json"])
+        self.assertEqual(index["native_entries"], 2)
+        self.assertEqual(index["dispositions"], {"authored": 1, "native_only": 1, "excluded": 0})
+        pack = content.read(self.root / "out/eastern-kingdoms/elwynn-forest.json")
+        self.assertEqual(pack["records"], self.cook["records"])
+        self.assertEqual(pack["sources"], self.sources)
+        self.assertEqual(content.file_hash(self.root / "out" / index["packs"][0]["path"]), index["packs"][0]["sha256"])
 
-    def test_repeated_builds_are_byte_identical_and_exclude_authoring_metadata(self):
-        a, b = self.root / "first", self.root / "second"
-        content.build(self.source, a)
-        content.build(self.source, b)
-        files = lambda p: {str(x.relative_to(p)): x.read_bytes() for x in p.rglob("*") if x.is_file()}
-        self.assertEqual(files(a), files(b))
-        self.assertEqual({"npc:1:identity": self.rows[0]["records"][0]}, self.output_records(a))
-        index = content.read(a / "index.json")
-        self.assertEqual(index["dispositions"], {"authored": 1, "native_only": 1, "excluded": 1})
-        runtime = content.read(next((a / "regions").glob("*.json")))
-        self.assertNotIn("classification", runtime)
-        self.assertNotIn("notes", runtime)
-        self.assertEqual(runtime["sources"][self.source_id]["reference"],
-                         "evidence:sha256:" + self.sources[self.source_id]["evidence"])
+    def test_index_has_only_fields_the_server_accepts(self):
+        loader = (Path(__file__).parents[1] / "src/character/pbc_knowledge.cpp").read_text()
+        allowed = re.search(r'Keys\(root, \{([^}]*"packs"[^}]*)\}\)', loader).group(1)
+        index = content.build(self.source, self.root / "out")
+        self.assertLessEqual(set(index), set(re.findall(r'"([a-z_]+)"', allowed)))
 
-    def test_edit_and_rebuild_preserves_other_records_and_authoring_notes(self):
-        second = copy.deepcopy(self.rows[0])
-        second.update(entry=4)
-        second["coverage"]["entry"] = 4
-        second["records"][0].update(id="npc:4:identity", when={"entry": 4})
-        self.rows.append(second)
-        manifest = content.read(self.source / "manifest.json")
-        manifest["native_ids"].append(4)
-        content.write(self.source / "manifest.json", manifest)
-        self.save_rows()
-        output = self.root / "runtime"
-        content.build(self.source, output)
-        before = self.output_records(output)
-        self.rows[0]["records"][0]["text"] = "Example bears the title Cook."
-        self.save_rows()
-        content.build(self.source, output, replace=True)
-        after = self.output_records(output)
-        self.assertEqual({key for key in before if before[key] != after[key]}, {"npc:1:identity"})
-        self.assertEqual(content.read(self.source / "npcs/000000-000999.json")[0]["notes"], self.rows[0]["notes"])
+    def test_builds_are_identical(self):
+        first = content.build(self.source, self.root / "one")
+        second = content.build(self.source, self.root / "two")
+        self.assertEqual(first, second)
 
-    def test_invalid_edit_does_not_replace_valid_output(self):
-        output = self.root / "runtime"
-        content.build(self.source, output)
-        before = (output / "index.json").read_bytes()
-        self.rows[0]["records"][0]["sources"] = ["source:missing"]
-        self.save_rows()
-        with self.assertRaisesRegex(ValueError, "missing citation"):
-            content.build(self.source, output, replace=True)
-        self.assertEqual((output / "index.json").read_bytes(), before)
+    def test_edited_summary_reaches_the_pack(self):
+        self.edit(lambda d: d["npcs"][0]["records"][0].update(text="A cook who burns everything."))
+        content.build(self.source, self.root / "out")
+        pack = content.read(self.root / "out/eastern-kingdoms/elwynn-forest.json")
+        self.assertEqual(pack["records"][0]["text"], "A cook who burns everything.")
 
-    def test_duplicate_record_and_missing_native_entry_are_rejected(self):
-        self.rows[0]["records"].append(copy.deepcopy(self.rows[0]["records"][0]))
-        self.save_rows()
-        with self.assertRaisesRegex(ValueError, "Duplicate runtime record"):
-            content.load_authoring(self.source)
-        self.rows[0]["records"].pop()
-        self.rows.pop()
-        self.save_rows()
-        with self.assertRaisesRegex(ValueError, "Native coverage"):
-            content.load_authoring(self.source)
+    def test_replace_only_generated_output(self):
+        content.build(self.source, self.root / "out")
+        with self.assertRaisesRegex(ValueError, "use --replace"):
+            content.build(self.source, self.root / "out")
+        content.build(self.source, self.root / "out", replace=True)
+        (self.root / "other").mkdir()
+        content.write(self.root / "other/index.json", {"format": "something else"})
+        with self.assertRaisesRegex(ValueError, "not generated knowledge"):
+            content.build(self.source, self.root / "other", replace=True)
+        with self.assertRaisesRegex(ValueError, "separate folders"):
+            content.build(self.source, self.source / "packs")
 
-    def test_evidence_tampering_and_duplicate_json_keys_are_rejected(self):
-        path = next((self.source / "evidence").glob("*.json"))
-        value = content.read(path)
-        value[next(iter(value))]["name"] = "Unverified name"
-        content.write(path, value)
-        with self.assertRaisesRegex(ValueError, "Evidence hash mismatch"):
-            content.load_authoring(self.source)
-        path.write_bytes(b'{"same": 1, "same": 2}')
-        with self.assertRaisesRegex(ValueError, "Duplicate JSON key"):
-            content.read(path)
+    def test_rejects_a_missing_citation(self):
+        self.edit(lambda d: d["npcs"][0]["records"][0].update(sources=["source:" + "c" * 24]))
+        with self.assertRaisesRegex(ValueError, "cites a source the file does not list"):
+            content.load(self.source)
 
-    def test_context_supplement_preserves_npc_records_and_dispositions(self):
-        supplement = self.root / "context.json"
-        context = {"version": 1, "era": "wotlk", "sources": {"local": {
-            "reference": "quest:7", "revision": "test", "kind": "world_db"}},
-            "records": [{"id": "quest:7", "layer": "quest", "text": "A task remains underway.",
-                         "when": {"entry": 1, "quest_id": 7, "quest_states": ["incomplete"]},
-                         "sources": ["local"], "authored": False, "priority": 90}], "groups": []}
-        content.write(supplement, context)
-        output = self.root / "runtime"
-        index = content.build(self.source, output, supplements=[supplement])
+    def test_rejects_an_npc_in_two_places(self):
+        content.write(self.source / "kalimdor/durotar.json", place("Durotar", [copy.deepcopy(self.cook)], self.sources))
+        with self.assertRaisesRegex(ValueError, "NPC 1 is also in"):
+            content.load(self.source)
+
+    def test_rejects_a_summary_for_an_npc_listed_without_one(self):
+        other = copy.deepcopy(self.cook)
+        other.update(entry=2)
+        other["records"][0].update(id="npc:2:identity", when={"entry": 2})
+        self.edit(lambda d: d["npcs"].append(other))
+        with self.assertRaisesRegex(ValueError, "also has a summary"):
+            content.load(self.source)
+
+    def test_rejects_uncited_sources(self):
+        self.edit(lambda d: d["sources"].update({"source:" + "d" * 24: dict(self.sources[self.cite])}))
+        with self.assertRaisesRegex(ValueError, "lists sources no summary cites"):
+            content.load(self.source)
+
+    def test_supplement_becomes_a_context_pack(self):
+        supplement = self.root / "northshire-context.json"
+        content.write(supplement, {"version": 1, "era": "wotlk", "groups": [], "sources": self.sources, "records": [{
+            "id": "zone:12:example", "layer": "zone", "text": "Elwynn is green.", "authored": False,
+            "sources": [self.cite], "priority": 50, "when": {"zone_id": 12}}]})
+        index = content.build(self.source, self.root / "out", supplements=[supplement])
+        self.assertIn("context/northshire-context.json", [p["path"] for p in index["packs"]])
         self.assertEqual(index["runtime_records"], 2)
-        self.assertEqual(index["native_entries"], 3)
-        self.assertEqual(self.output_records(output), {"npc:1:identity": self.rows[0]["records"][0]})
-        path = output / index["packs"][-1]["path"]
-        self.assertEqual(content.read(path), context)
-        self.assertEqual(content.file_hash(path), index["packs"][-1]["sha256"])
-        before = (output / "index.json").read_bytes()
-        context["records"][0]["id"] = "npc:1:identity"
-        content.write(supplement, context)
-        with self.assertRaisesRegex(ValueError, "Duplicate supplemental record"):
-            content.build(self.source, output, replace=True, supplements=[supplement])
-        self.assertEqual((output / "index.json").read_bytes(), before)
+        content.write(supplement, {**content.read(supplement), "records": copy.deepcopy(self.cook["records"])})
+        with self.assertRaisesRegex(ValueError, "appears twice"):
+            content.build(self.source, self.root / "again", supplements=[supplement])
 
-    def test_replacement_refuses_an_authoring_or_unrelated_directory(self):
-        with self.assertRaisesRegex(ValueError, "separate"):
-            content.build(self.source, self.source / "runtime")
-        target = self.root / "unrelated"
-        content.write(target / "index.json", {"format": "unrelated"})
-        with self.assertRaisesRegex(ValueError, "not generated NPC"):
-            content.build(self.source, target, replace=True)
-        self.assertEqual(content.read(target / "index.json"), {"format": "unrelated"})
+    def test_show_finds_by_name_and_number(self):
+        out = io.StringIO()
+        self.assertEqual(content.show(self.source, "example", out), 1)
+        self.assertIn("A cook in Goldshire.", out.getvalue())
+        self.assertIn("eastern-kingdoms/elwynn-forest.json", out.getvalue())
+        out = io.StringIO()
+        self.assertEqual(content.show(self.source, "2", out), 1)
+        self.assertIn("no summary (native only)", out.getvalue())
+        self.assertEqual(content.show(self.source, "nobody", io.StringIO()), 0)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,99 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 642,
+  "npcs": [
+    {
+      "entry": 34935,
+      "name": "Horde Gunship Cannon",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:34935:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:7582be7c5840fd732eb7c872",
+            "source:67ed40695f17a6089db9af6e"
+          ],
+          "text": "A Horde gunship cannon, built for heavy bombardment and activated through its gunship controls. Its fixed cannon role gives it no personal voice or independent agenda.",
+          "when": {
+            "entry": 34935
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 36162,
+      "name": "Goblin Engineering Crew",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:36162:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:db7a934fa02972b2a4fd480c"
+          ],
+          "text": "A crew bearing the designation Goblin Engineering Crew.",
+          "when": {
+            "entry": 36162
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 36164,
+      "name": "Kor'kron Reaver",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:36164:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a80e405ade4e2ac5751dc5fb",
+            "source:c053c3b50cfb343dbbde4346"
+          ],
+          "text": "A Kor'kron reaver, one of the combatants in the Kor'kron ranks.",
+          "when": {
+            "entry": 36164
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Transport: HordeAirshipBG",
+  "sources": {
+    "source:67ed40695f17a6089db9af6e": {
+      "kind": "research",
+      "reference": "evidence:sha256:e4c292207b9d117ba96f46c67be60bf9af3b8bf8bb0e70a813c9b04b6e5abd70",
+      "revision": "5ada11f1942b100e2388ba328f6e59b5a131db50b8cc778a8a7cf2d7cd6957b4"
+    },
+    "source:7582be7c5840fd732eb7c872": {
+      "kind": "research",
+      "reference": "evidence:sha256:287958e788a2033fb4bd20d50458bfb421531b68308202767c8ee53e5dc8e2d0",
+      "revision": "5ada11f1942b100e2388ba328f6e59b5a131db50b8cc778a8a7cf2d7cd6957b4"
+    },
+    "source:a80e405ade4e2ac5751dc5fb": {
+      "kind": "research",
+      "reference": "evidence:sha256:23d1230a7eff86cd6e93616b066588d5990fee57b40b972a86d1ac16eb829daa",
+      "revision": "5ada11f1942b100e2388ba328f6e59b5a131db50b8cc778a8a7cf2d7cd6957b4"
+    },
+    "source:c053c3b50cfb343dbbde4346": {
+      "kind": "research",
+      "reference": "evidence:sha256:e3c90370b71b50659d775a82d4083ea6cabb91bb2afccfa7918afafbf53d724b",
+      "revision": "5ada11f1942b100e2388ba328f6e59b5a131db50b8cc778a8a7cf2d7cd6957b4"
+    },
+    "source:db7a934fa02972b2a4fd480c": {
+      "kind": "research",
+      "reference": "evidence:sha256:f27c195ca63278d76edeb874e2f693beab938dfd81dd7d816faaaabc6e59426b",
+      "revision": "5ada11f1942b100e2388ba328f6e59b5a131db50b8cc778a8a7cf2d7cd6957b4"
+    }
+  },
+  "version": 1,
+  "zone": 0
+}

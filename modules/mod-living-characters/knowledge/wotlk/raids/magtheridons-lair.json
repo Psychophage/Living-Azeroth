@@ -1,0 +1,110 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "map": 544,
+  "npcs": [
+    {
+      "entry": 17257,
+      "name": "Magtheridon",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:17257:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:e1cb4d7bc38e3886581101e0",
+            "source:5c00512857c795122ba17cd3",
+            "source:df5731669d6d40e970aeb172",
+            "source:a7c25fe25e75556dc6f30411",
+            "source:b23118186be54a832c9dccdf",
+            "source:7dbdf42af3c6e160c841931b",
+            "source:39d980a0b4d1163c054c03f1"
+          ],
+          "text": "Magtheridon is a mighty demon held by sorcery deep within Hellfire Citadel, where A'dal's trials direct champions to confront him. He resents those who take his blood and vows to crush Illidan and reclaim Outland; his taunts show contempt for intruders and confidence that his bindings will fail.",
+          "when": {
+            "entry": 17257
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 18829,
+      "name": "Hellfire Warder",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18829:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a5113279f2412b0d393e0c7d",
+            "source:0b87c464a9dd068643b9d1f3",
+            "source:97e76258f5820523f9f97dd1"
+          ],
+          "text": "Hellfire Warders are elite combatants associated with Hellfire Citadel. They cast Shadow Bolt Volley in combat.",
+          "when": {
+            "entry": 18829
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "Magtheridon's Lair",
+  "sources": {
+    "source:0b87c464a9dd068643b9d1f3": {
+      "kind": "research",
+      "reference": "evidence:sha256:b61cf6de88241fdd30d4cbc453ce83e6358c75740c50aee61cf98ff176d6316f",
+      "revision": "250cf48ce319e22bbb1c1e82b87b2a172d5bd86f85309e666d40a6ed290a8da8"
+    },
+    "source:39d980a0b4d1163c054c03f1": {
+      "kind": "research",
+      "reference": "evidence:sha256:cfd8e6b19f69af54c2cb24afa9bbb78e0c75eeee7e0db60f12a76e2e1e5d0ff9",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:5c00512857c795122ba17cd3": {
+      "kind": "research",
+      "reference": "evidence:sha256:f085fcdedb23fc71a1705f62a68aabe0f10d748427adfba7717288a6e1764968",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:7dbdf42af3c6e160c841931b": {
+      "kind": "research",
+      "reference": "evidence:sha256:40c8f1d815604c7dbf7e4d6fd9b8056469ce6cd02bf4fe23e1552a492d70a827",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:97e76258f5820523f9f97dd1": {
+      "kind": "research",
+      "reference": "evidence:sha256:eb4dc062ae907ebfe14c227d79d4e240ce2acf64203d6c2a00f7b5ea84512ccb",
+      "revision": "250cf48ce319e22bbb1c1e82b87b2a172d5bd86f85309e666d40a6ed290a8da8"
+    },
+    "source:a5113279f2412b0d393e0c7d": {
+      "kind": "research",
+      "reference": "evidence:sha256:f3acfb1d1a426f98098c62958f0c472eaf80cd9c7e200a5f3ce2b9c4d73620f4",
+      "revision": "250cf48ce319e22bbb1c1e82b87b2a172d5bd86f85309e666d40a6ed290a8da8"
+    },
+    "source:a7c25fe25e75556dc6f30411": {
+      "kind": "research",
+      "reference": "evidence:sha256:30fb250b75f38443288b7e9dec4a2180f1f32e1aec76cb743e55c183f54ead08",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:b23118186be54a832c9dccdf": {
+      "kind": "research",
+      "reference": "evidence:sha256:3fa1742096aeb545c637766ca1e56bc64723c76816fabcec8e2c651515934e9f",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:df5731669d6d40e970aeb172": {
+      "kind": "research",
+      "reference": "evidence:sha256:739052582c071e46ee9c250f1855c06117dd7b20323365266253b165e6c36ce6",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "source:e1cb4d7bc38e3886581101e0": {
+      "kind": "research",
+      "reference": "evidence:sha256:99fa6d9a1f060645389e302023f3492b0baecb36439010b1ef31c741d9ebdb31",
+      "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    }
+  },
+  "version": 1,
+  "zone": 3836
+}

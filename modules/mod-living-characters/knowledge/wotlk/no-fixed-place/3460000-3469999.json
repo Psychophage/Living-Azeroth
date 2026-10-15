@@ -1,0 +1,79 @@
+{
+  "era": "wotlk",
+  "format": "living-azeroth-npc-summaries",
+  "npcs": [
+    {
+      "entry": 3460602,
+      "name": "Frost Sphere (2)",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3460602:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:15b1ddc28210ecaccad80d5f",
+            "source:f2f714e667f7b23f2b149d17",
+            "source:710abe5f266e2977fdb36305"
+          ],
+          "text": "A Frost Sphere critter.",
+          "when": {
+            "entry": 3460602
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 3460603,
+      "name": "Frost Sphere (3)",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3460603:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:80e14b70e459512a13526fc8",
+            "source:1e514576fff1fc6782942d7f",
+            "source:710abe5f266e2977fdb36305"
+          ],
+          "text": "A Frost Sphere critter.",
+          "when": {
+            "entry": 3460603
+          }
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "place": "No fixed place",
+  "sources": {
+    "source:15b1ddc28210ecaccad80d5f": {
+      "kind": "research",
+      "reference": "evidence:sha256:89e49e92e23c5500e487c785481072a33a1e08575447fa13e67620939d86327c",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:1e514576fff1fc6782942d7f": {
+      "kind": "research",
+      "reference": "evidence:sha256:34318f4dad1da276123140045644853d86a4c94425cceab2980298aba9ef1216",
+      "revision": "8e3885a951f4271640411212ded419595711340e09c634786d727432ad9bad54"
+    },
+    "source:710abe5f266e2977fdb36305": {
+      "kind": "research",
+      "reference": "evidence:sha256:f73e6216536e901f3db74dcc9ece81316b494fccd457569286ed6ff57befe231",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
+    },
+    "source:80e14b70e459512a13526fc8": {
+      "kind": "research",
+      "reference": "evidence:sha256:9bcba012603ef28fe9bd794716ebb0c2ec5b93e81b53b36362f99d4ce04ca9c9",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:f2f714e667f7b23f2b149d17": {
+      "kind": "research",
+      "reference": "evidence:sha256:709779805ccf2a129739ee573ee9ba63cd90848f7c76ea9d8e52276d4cc4cc4d",
+      "revision": "8e3885a951f4271640411212ded419595711340e09c634786d727432ad9bad54"
+    }
+  },
+  "version": 1
+}
