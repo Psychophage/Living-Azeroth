@@ -6,6 +6,7 @@ than the default one.
 | Task | Command |
 | --- | --- |
 | Start | `./living-azeroth start` |
+| Watch it live, with these commands on keys | `./living-azeroth console` (`--start` starts it first; needs Python's `rich`) |
 | Follow the server log | `./living-azeroth logs` (Ctrl+C stops watching; the realm keeps running) |
 | Check it is running | `./living-azeroth status` |
 | Stop | `./living-azeroth stop` (characters and data are kept) |

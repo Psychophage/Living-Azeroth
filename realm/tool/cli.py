@@ -312,6 +312,10 @@ def main():
     account_parser.add_argument("--gm", type=int, choices=range(0, 4), help="GM level (3 = administrator)")
     command("budget", "show the character system's spending")
     command("backup", "save all realm databases to the realm's backups folder")
+    console_parser = command("console", "a live view of the realm, with its commands one key away")
+    console_parser.add_argument("--start", action="store_true", help="start the realm first if it is stopped")
+    console_parser.add_argument("--stop", action="store_true", help="stop the realm, show the result and close")
+    console_parser.add_argument("--play", metavar="COMMAND", help="shell command that starts the game (key p)")
 
     args = parser.parse_args()
     args.realm = getattr(args, "realm", None)
@@ -357,6 +361,9 @@ def main():
             print(f"Shared with {owner}:")
         compose(owner, "up", "-d", "--wait", "database")
         database_tool(owner, "budget")
+    elif args.command == "console":
+        import console
+        return console.main(realm, start=args.start, stop=args.stop, play=args.play)
     elif args.command == "backup":
         compose(realm, "up", "-d", "--wait", "database")
         tool(realm, "bash", "-c", 'stamp=$(date -u +%Y%m%dT%H%M%SZ); MYSQL_PWD="$(cat /realm/secrets/database-password)" '
