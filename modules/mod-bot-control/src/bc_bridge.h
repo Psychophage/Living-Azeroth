@@ -56,6 +56,8 @@ private:
     void Roster(Player* player, pbc_json const& request);
     void Inspect(Player* player, pbc_json const& request);
     void Bring(Player* player, pbc_json const& request, bool bring);
+    void Bags(Player* player, pbc_json const& request);
+    void Trade(Player* player, pbc_json const& request, std::string const& op);
     void Watch();
 
     void Send(Player* player, pbc_json const& message);

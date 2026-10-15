@@ -18,6 +18,7 @@
 #include "PlayerbotDialogueInventory.h"
 #include "RandomPlayerbotMgr.h"
 #include "SetCraftAction.h"
+#include "TradeShares.h"
 
 bool TradeStatusAction::Execute(Event event)
 {
@@ -82,6 +83,7 @@ bool TradeStatusAction::Execute(Event event)
         if (PlayerbotDialogue::AllowManagedTrade(bot) && CheckTrade())
         {
             std::map<uint32, uint32> givenItemIds, takenItemIds;
+            uint64 botGold = bot->GetTradeData()->GetMoney();
             for (uint32 slot = 0; slot < TRADE_SLOT_TRADED_COUNT; ++slot)
             {
                 Item* item = trader->GetTradeData()->GetItem((TradeSlots)slot);
@@ -99,6 +101,9 @@ bool TradeStatusAction::Execute(Event event)
                 sRandomPlayerbotMgr.SetTradeDiscount(bot, trader, discount);
                 return false;
             }
+
+            // Living Azeroth: what the trader took is no longer shared with them; what they gave now is.
+            PlayerbotTradeShares::Instance().OnTraded(bot, trader, givenItemIds, takenItemIds, botGold);
 
             for (std::map<uint32, uint32>::iterator i = givenItemIds.begin(); i != givenItemIds.end(); ++i)
             {
@@ -144,6 +149,10 @@ void TradeStatusAction::BeginTrade()
 
     WorldPacket p;
     bot->GetSession()->HandleBeginTradeOpcode(p);
+
+    // Living Azeroth: with trade shares on, the player sees the bot's bags in the addon, not as whispered lists.
+    if (PlayerbotTradeShares::Instance().Enabled())
+        return;
 
     ListItemsVisitor visitor;
     IterateItems(&visitor);
@@ -217,7 +226,26 @@ bool TradeStatusAction::CheckTrade()
         return isGettingItem;
     }
 
+    // Living Azeroth: what the bot got while grouped with the trader is theirs to take back free; only the rest is
+    // priced (random bots) or refused (someone else's own character). See TradeShares.h.
+    PlayerbotTradeShares::Free free;
+    bool const shares = PlayerbotTradeShares::Instance().Enabled() && IsRealPlayer(trader);
+    if (shares)
+    {
+        free = PlayerbotTradeShares::Instance().FreeInTrade(bot, trader);
+        if (free.all)
+            return true;
+    }
+
     uint32 accountId = bot->GetSession()->GetAccountId();
+    if (shares && !sPlayerbotAIConfig.IsInRandomAccountList(accountId))
+    {
+        bot->Whisper(PlayerbotTextMgr::instance().GetBotTextOrDefault(
+                         "trade_not_yours", "That isn't yours to take.", {}),
+                     LANG_UNIVERSAL, trader);
+        botAI->PlaySound(TEXT_EMOTE_NO);
+        return false;
+    }
     if (!sPlayerbotAIConfig.IsInRandomAccountList(accountId))
     {
         int32 botItemsMoney = CalculateCost(bot, true);
@@ -230,8 +258,8 @@ bool TradeStatusAction::CheckTrade()
         return true;
     }
 
-    int32 botItemsMoney = CalculateCost(bot, true);
-    int32 botMoney = bot->GetTradeData()->GetMoney() + botItemsMoney;
+    int32 botItemsMoney = std::max(0, CalculateCost(bot, true) - SharedValue(free.items));
+    int32 botMoney = int32(bot->GetTradeData()->GetMoney() - free.gold) + botItemsMoney;
     int32 playerItemsMoney = CalculateCost(trader, false);
     int32 playerMoney = trader->GetTradeData()->GetMoney() + playerItemsMoney;
     if (botItemsMoney > 0 && sPlayerbotAIConfig.enableRandomBotTrading == 2 &&
@@ -253,7 +281,8 @@ bool TradeStatusAction::CheckTrade()
     for (uint32 slot = 0; slot < TRADE_SLOT_TRADED_COUNT; ++slot)
     {
         Item* item = bot->GetTradeData()->GetItem((TradeSlots)slot);
-        if (item && !item->GetTemplate()->SellPrice && !item->GetTemplate()->IsConjuredConsumable())
+        if (item && !item->GetTemplate()->SellPrice && !item->GetTemplate()->IsConjuredConsumable() &&
+            !free.items.count(item->GetEntry()))
         {
             std::ostringstream out;
             botAI->TellMaster(PlayerbotTextMgr::instance().GetBotTextOrDefault(
@@ -348,6 +377,16 @@ bool TradeStatusAction::CheckTrade()
         {{"%money", chat->formatMoney(-(delta + discount))}}));
     botAI->PlaySound(TEXT_EMOTE_NO);
     return false;
+}
+
+// Living Azeroth: what the shared part of the bot's side would have cost, so it is not charged for.
+int32 TradeStatusAction::SharedValue(std::map<uint32, uint32> const& items)
+{
+    double sum = 0;
+    for (auto const& [entry, count] : items)
+        if (ItemTemplate const* proto = sObjectMgr->GetItemTemplate(entry))
+            sum += double(count) * proto->SellPrice * sRandomPlayerbotMgr.GetSellMultiplier(bot);
+    return int32(sum);
 }
 
 int32 TradeStatusAction::CalculateCost(Player* player, bool sell)

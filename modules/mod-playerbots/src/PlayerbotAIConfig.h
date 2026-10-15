@@ -402,6 +402,8 @@ public:
     bool autoTeleportForLevel;
     bool randomBotGroupNearby;
     int32 enableRandomBotTrading;
+    bool tradeSharesEnabled;    // Living Azeroth: Bot/Trade/TradeShares.h
+    uint32 tradeSharesGmLevel;
     uint32 tweakValue;  // Debugging config
 
     uint32 randomBotArenaTeamMaxRating;

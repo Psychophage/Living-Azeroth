@@ -780,6 +780,20 @@ AiPlayerbot.LimitTalentsExpansion = 0
 # Default: 1 (enabled)
 AiPlayerbot.EnableRandomBotTrading = 1
 
+# Living Azeroth trade shares. Opt-in. A bot hands back, without payment, what it got while
+# grouped with the player trading with it: its loot, the items that player gave it, and the
+# gold it gained (at most what it still has). The rest is traded as before: random bots sell
+# at a price, and someone else's own character played as a bot refuses. A player's own
+# characters played as bots hand over everything. The bot's bags are shown in the Living
+# Azeroth addon instead of whispered item lists, which are no longer sent while this is on.
+# Default: 0 (disabled)
+AiPlayerbot.TradeShares.Enabled = 0
+
+# The lowest account security level that may switch on trading freely with any bot from the
+# addon's settings (1 moderator, 2 game master, 3 administrator).
+# Default: 2
+AiPlayerbot.TradeShares.GmLevel = 2
+
 # Configure message prefixes which will be excluded in analysis in trade action to open trade window
 AiPlayerbot.TradeActionExcludedPrefixes = "RPLL_H_,DBMv4,{звезда} Questie,{rt1} Questie"
 

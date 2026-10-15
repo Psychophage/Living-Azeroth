@@ -6,6 +6,7 @@
  */
 
 #include "PopulationMgr.h"
+#include "TradeShares.h"
 #include "PlayerbotDialogue.h"
 #include "PlayerbotDialogueSupport.h"
 #include "PlayerbotDialogueInventory.h"
@@ -135,8 +136,30 @@ public:
         PLAYERHOOK_CAN_PLAYER_USE_GUILD_CHAT,
         PLAYERHOOK_CAN_PLAYER_USE_CHANNEL_CHAT,
         PLAYERHOOK_ON_GIVE_EXP,
-        PLAYERHOOK_ON_BEFORE_TELEPORT
+        PLAYERHOOK_ON_BEFORE_TELEPORT,
+        PLAYERHOOK_ON_LOOT_ITEM,
+        PLAYERHOOK_ON_GROUP_ROLL_REWARD_ITEM,
+        PLAYERHOOK_ON_MONEY_CHANGED
     }) {}
+
+    // Living Azeroth: what a bot gets while grouped with players is shared with them (Bot/Trade/TradeShares.h).
+    void OnPlayerLootItem(Player* player, Item* item, uint32 count, ObjectGuid /*lootguid*/) override
+    {
+        if (item)
+            PlayerbotTradeShares::Instance().OnLoot(player, item->GetEntry(), count);
+    }
+
+    void OnPlayerGroupRollRewardItem(Player* player, Item* item, uint32 count, RollVote /*voteType*/,
+                                     Roll* /*roll*/) override
+    {
+        if (item)
+            PlayerbotTradeShares::Instance().OnLoot(player, item->GetEntry(), count);
+    }
+
+    void OnPlayerMoneyChanged(Player* player, int32& amount) override
+    {
+        PlayerbotTradeShares::Instance().OnMoney(player, amount);
+    }
 
     void OnPlayerLogin(Player* player) override
     {
@@ -515,6 +538,7 @@ public:
     void OnPlayerbotLogout(Player* player) override
     {
         PlayerbotDialogueBridge::Release(player);
+        PlayerbotTradeShares::Instance().Forget(player);
         if (PlayerbotMgr* playerbotMgr = GET_PLAYERBOT_MGR(player))
         {
             PlayerbotAI* botAI = PlayerbotsMgr::instance().GetPlayerbotAI(player);

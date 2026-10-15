@@ -6,6 +6,7 @@
  */
 
 #include "PopulationMgr.h"
+#include "TradeShares.h"
 #include "PlayerbotAIConfig.h"
 #include "PlayerbotDialogue.h"
 #include "BisListMgr.h"
@@ -702,6 +703,8 @@ bool PlayerbotAIConfig::Initialize()
     randombotStartingLevel = sConfigMgr->GetOption<int32>("AiPlayerbot.RandombotStartingLevel", 1);
     enablePeriodicOnlineOffline = sConfigMgr->GetOption<bool>("AiPlayerbot.EnablePeriodicOnlineOffline", false);
     enableRandomBotTrading = sConfigMgr->GetOption<int32>("AiPlayerbot.EnableRandomBotTrading", 1);
+    tradeSharesEnabled = sConfigMgr->GetOption<bool>("AiPlayerbot.TradeShares.Enabled", false);
+    tradeSharesGmLevel = std::clamp(sConfigMgr->GetOption<uint32>("AiPlayerbot.TradeShares.GmLevel", 2), 1u, 4u);
     periodicOnlineOfflineRatio = sConfigMgr->GetOption<float>("AiPlayerbot.PeriodicOnlineOfflineRatio", 2.0);
     gearscorecheck = sConfigMgr->GetOption<bool>("AiPlayerbot.GearScoreCheck", false);
     randomBotPreQuests = sConfigMgr->GetOption<bool>("AiPlayerbot.PreQuests", false);
@@ -830,6 +833,8 @@ bool PlayerbotAIConfig::Initialize()
     sTravelMgr.Init();
     if (population.enabled)
         PlayerbotPopulationMgr::Instance().Initialize();
+    PlayerbotTradeShares::Instance().Configure();
+    PlayerbotTradeShares::Instance().Initialize();
 
     excludedHunterPetFamilies.clear();
     LoadList<std::vector<uint32>>(sConfigMgr->GetOption<std::string>("AiPlayerbot.ExcludedHunterPetFamilies", ""), excludedHunterPetFamilies);

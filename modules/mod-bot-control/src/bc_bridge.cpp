@@ -21,6 +21,7 @@
 #include "DBCStores.h"
 #include "Formations.h"
 #include "PopulationMgr.h"
+#include "TradeShares.h"
 #include "WorldPacket.h"
 #include "WorldSession.h"
 #include "pbc_runtime.h"
@@ -327,6 +328,10 @@ void Bridge::Handle(Player* player, pbc_json const& request)
         return Inspect(player, request);
     if (op == "bring" || op == "dismiss")
         return Bring(player, request, op == "bring");
+    if (op == "bags")
+        return Bags(player, request);
+    if (op == "offer" || op == "offer_gold" || op == "take_back" || op == "trade_freely")
+        return Trade(player, request, op);
     Fail(player, id, "unknown_op");
 }
 
@@ -337,7 +342,12 @@ void Bridge::Hello(Player* player, pbc_json const& id)
     pbc_json switches = pbc_json::array();
     for (Switch const& switch_ : Switches)
         switches.push_back(switch_.name);
-    Reply(player, id, {{"protocol", Protocol}, {"orders", Actions}, {"switches", switches}, {"formations", Formations}});
+    PlayerbotTradeShares& shares = PlayerbotTradeShares::Instance();
+    pbc_json trade = {{"shares", shares.Enabled()},
+                      {"may_trade_freely", shares.MayTradeFreely(player)},
+                      {"trading_freely", shares.TradesFreely(player)}};
+    Reply(player, id, {{"protocol", Protocol}, {"orders", Actions}, {"switches", switches}, {"formations", Formations},
+                       {"trade", trade}});
 }
 
 void Bridge::Bots(Player* player, pbc_json const& id)
@@ -699,6 +709,86 @@ void Bridge::Bring(Player* player, pbc_json const& request, bool bring)
     if (!done)
         return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", messages.empty() ? "" : messages.front()}});
     Reply(player, id, body);
+}
+
+// A bot's bags as the player sees them for trading: what it hands over free, what it sells and at what price.
+// Playerbots owns the rules (TradeShares); this only passes them on.
+void Bridge::Bags(Player* player, pbc_json const& request)
+{
+    pbc_json id = request.contains("id") ? request["id"] : pbc_json();
+    if (!request.contains("bot") || !request["bot"].is_number_unsigned())
+        return Fail(player, id, "bad_request");
+    if (!PlayerbotTradeShares::Instance().Enabled())
+        return Fail(player, id, "unavailable");
+    Player* bot = ObjectAccessor::FindPlayerByLowGUID(request["bot"].get<ObjectGuid::LowType>());
+    if (!IsBot(bot) || !bot->IsInWorld())
+        return Fail(player, id, "unknown_bot");
+    if (!SameGroup(bot, player) && !Commandable(player, bot) && bot->GetTrader() != player)
+        return Fail(player, id, "not_yours");
+    PlayerbotTradeShares::View view = PlayerbotTradeShares::Instance().ViewFor(bot, player);
+    pbc_json stacks = pbc_json::array();
+    // Each stack as [bag, slot, entry, count, property, price, flags] (flags: 1 tradable, 2 in the trade), so a
+    // full set of bags stays a few frames long.
+    for (auto const& stack : view.stacks)
+        stacks.push_back(pbc_json::array({stack.bag, stack.slot, stack.entry, stack.count, stack.property, stack.price,
+                                          (stack.tradable ? 1 : 0) | (stack.inTrade ? 2 : 0)}));
+    pbc_json shared = pbc_json::object();
+    for (auto const& [entry, count] : view.shared)
+        shared[std::to_string(entry)] = count;
+    Reply(player, id, {{"bot", bot->GetGUID().GetCounter()},
+                       {"name", bot->GetName()},
+                       {"money", view.money},
+                       {"allowance", view.allowance},
+                       {"full", view.full},
+                       {"sells", view.sells},
+                       {"shared", shared},
+                       {"stacks", stacks},
+                       {"trading", bot->GetTrader() == player}});
+}
+
+// Into the trade the player has open with a bot: one of its items, its gold, an item taken back out; or a GM's
+// switch for trading freely. Playerbots checks each against its rules.
+void Bridge::Trade(Player* player, pbc_json const& request, std::string const& op)
+{
+    pbc_json id = request.contains("id") ? request["id"] : pbc_json();
+    PlayerbotTradeShares& shares = PlayerbotTradeShares::Instance();
+    if (op == "trade_freely")
+    {
+        if (!request.contains("on") || !request["on"].is_boolean())
+            return Fail(player, id, "bad_request");
+        if (!shares.SetTradeFreely(player, request["on"].get<bool>()))
+            return Fail(player, id, "not_allowed");
+        return Reply(player, id, {{"trading_freely", shares.TradesFreely(player)}});
+    }
+    if (!request.contains("bot") || !request["bot"].is_number_unsigned())
+        return Fail(player, id, "bad_request");
+    Player* bot = ObjectAccessor::FindPlayerByLowGUID(request["bot"].get<ObjectGuid::LowType>());
+    if (!IsBot(bot) || !bot->IsInWorld())
+        return Fail(player, id, "unknown_bot");
+    std::string error;
+    if (op == "offer")
+    {
+        if (!request.contains("bag") || !request["bag"].is_number_unsigned() || !request.contains("slot") ||
+            !request["slot"].is_number_unsigned() || request["bag"].get<uint32>() > 255 ||
+            request["slot"].get<uint32>() > 255)
+            return Fail(player, id, "bad_request");
+        error = shares.Offer(bot, player, uint8(request["bag"].get<uint32>()), uint8(request["slot"].get<uint32>()));
+    }
+    else if (op == "offer_gold")
+    {
+        if (!request.contains("copper") || !request["copper"].is_number_unsigned())
+            return Fail(player, id, "bad_request");
+        error = shares.OfferGold(bot, player, request["copper"].get<uint64>());
+    }
+    else
+    {
+        if (!request.contains("slot") || !request["slot"].is_number_unsigned() || request["slot"].get<uint32>() > 255)
+            return Fail(player, id, "bad_request");
+        error = shares.TakeBack(bot, player, uint8(request["slot"].get<uint32>()));
+    }
+    if (!error.empty())
+        return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", error}});
+    Reply(player, id, {});
 }
 
 void Bridge::Update(uint32 diff)

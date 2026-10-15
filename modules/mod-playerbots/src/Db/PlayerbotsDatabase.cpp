@@ -25,6 +25,11 @@ void PlayerbotsDatabaseConnection::DoPrepareStatements()
     PrepareStatement(PLAYERBOTS_DEL_POPULATION_CHARACTER, "DELETE FROM playerbots_population_character WHERE bot = ?", CONNECTION_BOTH);
     PrepareStatement(PLAYERBOTS_DEL_POPULATION_FAMILIARITY_BOT, "DELETE FROM playerbots_population_familiarity WHERE bot = ?", CONNECTION_BOTH);
 
+    // Living Azeroth trade shares: what each bot got while grouped with each player (entry 0 holds gold).
+    PrepareStatement(PLAYERBOTS_SEL_TRADE_SHARES, "SELECT bot, human, entry, amount FROM playerbots_trade_share", CONNECTION_SYNCH);
+    PrepareStatement(PLAYERBOTS_REP_TRADE_SHARE, "REPLACE INTO playerbots_trade_share (bot, human, entry, amount) VALUES (?, ?, ?, ?)", CONNECTION_BOTH);
+    PrepareStatement(PLAYERBOTS_DEL_TRADE_SHARE, "DELETE FROM playerbots_trade_share WHERE bot = ? AND human = ? AND entry = ?", CONNECTION_BOTH);
+
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER, "SELECT DISTINCT name FROM playerbots_custom_strategy WHERE owner = ?", CONNECTION_SYNCH);
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER_AND_NAME, "SELECT idx, action_line FROM playerbots_custom_strategy WHERE owner = ? AND name = ? ORDER BY idx", CONNECTION_SYNCH);
     PrepareStatement(PLAYERBOTS_SEL_CUSTOM_STRATEGY_BY_OWNER_AND_NAME_AND_IDX, "SELECT action_line FROM playerbots_custom_strategy WHERE owner = ? AND name = ? AND idx = ?", CONNECTION_SYNCH);
