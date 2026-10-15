@@ -24,6 +24,7 @@
 #include "SpellAuras.h"
 #include "Util.h"
 #include "WorldPacket.h"
+#include <queue>
 #include <stack>
 
 class AiObjectContext;
@@ -356,7 +357,9 @@ public:
 
 private:
     std::map<uint16, std::string> handlers;
-    std::stack<WorldPacket> queue;
+    // Living Azeroth: first in, first out. A trigger keeps only the last packet it is given, so packets must be handled
+    // in the order they came; as a stack, a trade's "accept" arriving in the same update as its "window open" was lost.
+    std::queue<WorldPacket> queue;
 };
 
 class ChatCommandHolder

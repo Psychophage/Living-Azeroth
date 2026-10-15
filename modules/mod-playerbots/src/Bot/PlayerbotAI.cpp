@@ -96,7 +96,7 @@ void PacketHandlingHelper::Handle(ExternalEventHelper& helper)
 {
     while (!queue.empty())
     {
-        WorldPacket packet = queue.top();
+        WorldPacket packet = queue.front();
         queue.pop(); // remove first so handling can't modify the queue while we're using it
 
         helper.HandlePacket(handlers, packet);
