@@ -57,12 +57,12 @@ local hit = CreateFrame("Button", nil, body)
 hit:SetSize(2 * OUTER + 4, 2 * OUTER + 4)
 hit:SetPoint("CENTER")
 hit:RegisterForClicks("AnyUp")
-hit:RegisterForDrag("LeftButton")
 
 local parts = {} -- the ring's parts; the first `shown` hold its orders, in ring order
 local shown = 0
 local current -- { key, label, guids }
 local hovered, pressed -- the part under the mouse, the part held down
+local overDisc = false -- the mouse is on the middle, where a click closes the ring
 local anchorFrame -- what the ring opened beside
 local previewing = false -- shown where it opens, to be dragged, while frames are unlocked
 
@@ -164,6 +164,8 @@ local function Refresh()
     end
     if hovered then
         hint:SetText(hovered.order.label)
+    elseif overDisc then
+        hint:SetText("Click to close")
     elseif waiting.any then
         hint:SetText("Waiting for " .. (#bots == 1 and bots[1].name or #bots .. " bots") .. "...")
     else
@@ -434,13 +436,32 @@ function Ring.Preview(show)
     Refresh()
 end
 
-hit:SetScript("OnMouseDown", function()
+-- While it is shown to be placed, pressing anywhere on it moves it straight away.
+local moving = false
+hit:SetScript("OnMouseDown", function(_, button)
+    if previewing then
+        if button == "LeftButton" then
+            moving = true
+            frame:StartMoving()
+        end
+        return
+    end
     pressed = hovered
     if pressed then
         Paint(pressed)
     end
 end)
 hit:SetScript("OnMouseUp", function()
+    if moving then
+        moving = false
+        frame:StopMovingOrSizing()
+        frame:SetUserPlaced(false) -- the addon keeps the position, not the game's layout cache
+        local x, y = frame:GetCenter()
+        local scale = frame:GetScale()
+        Settings().x, Settings().y = x * scale, y * scale
+        Place(nil)
+        return
+    end
     local was = pressed
     pressed = nil
     if was then
@@ -451,30 +472,20 @@ hit:SetScript("OnClick", function()
     local under = Under()
     if type(under) == "table" then
         Give(under)
-    elseif not under and not previewing then
-        frame:Hide() -- the corners of the box around the ring are not part of it
-    end
-end)
-hit:SetScript("OnDragStart", function()
-    if previewing then
-        frame:StartMoving()
-    end
-end)
-hit:SetScript("OnDragStop", function()
-    if previewing then
-        frame:StopMovingOrSizing()
-        local x, y = frame:GetCenter()
-        local scale = frame:GetScale()
-        Settings().x, Settings().y = x * scale, y * scale
-        Place(nil)
+    elseif not previewing then
+        frame:Hide() -- the middle closes it, and the corners of the box around the ring are not part of it
     end
 end)
 
 frame:SetScript("OnHide", function()
+    if moving then
+        moving = false
+        frame:StopMovingOrSizing()
+    end
     ClearOverrideBindings(frame)
     previewing = false
     current = nil
-    hovered, pressed = nil, nil
+    hovered, pressed, overDisc = nil, nil, false
     LA.Fire("ring:changed")
 end)
 
@@ -484,9 +495,9 @@ local wasDown = false
 frame:SetScript("OnUpdate", function()
     local under = hit:IsMouseOver() and Under() or nil
     local part = type(under) == "table" and under or nil
-    if part ~= hovered then
+    if part ~= hovered or (under == "disc") ~= overDisc then
         local was = hovered
-        hovered = part
+        hovered, overDisc = part, under == "disc"
         if was then
             Paint(was)
         end

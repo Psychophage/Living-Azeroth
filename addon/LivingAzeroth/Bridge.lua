@@ -132,6 +132,7 @@ function Bridge.Connect()
         if reply.ok then
             Bridge.protocol = reply.protocol
             Bridge.orders = reply.orders
+            Bridge.trade = reply.trade -- { shares, may_trade_freely, trading_freely }
             SetState("ready")
         else
             SetState("missing")

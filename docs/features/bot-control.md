@@ -25,17 +25,18 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
   the orders ring: the orders are the parts of a ring around a disc that names the bot and
   what it is doing, the current order lit in its colour. Click an order and the mark
   pulses until the bot has actually done it, then shows a tick. The ring stays open for
-  more orders; clicking anywhere else, Escape, or the same mark closes it, and clicking
-  another bot's mark moves it there. Out of combat, the numbers 1-8 give the ring's
-  orders. With two or more of your bots in the party, "All my bots" over the party frames
-  opens the ring for all of them.
+  more orders; clicking its middle, anywhere else, Escape, or the same mark closes it, and
+  clicking another bot's mark moves it there. Out of combat, the numbers 1-8 give the
+  ring's orders. With two or more of your bots in the party, or any in a raid, the "All my
+  bots" button opens the ring for all of them; it stands on its own wherever you put it.
 - **Raid frames** (in a raid): compact cells by group with class-coloured health, a thin
-  power bar and tank and healer marks; clicking a cell targets that player, right-click
-  gives the usual menu. Your bots' cells carry the order mark (on every bot, or the bot
+  power bar and the game's round role icons; clicking a cell targets that player,
+  right-click gives the usual menu. The bars are drawn at the cell's own size, nothing
+  stretched; their "gradient" look is that of DragonUI's party bars. Your bots' cells carry the order mark (on every bot, or the bot
   mark on those simply following you), with a moon when a bot stays out of fights. A
-  group's name or "All my bots" opens the ring for several bots, and shift-clicking order
-  marks picks a selection ("Orders for N selected"). Someone else's bots show a small grey
-  bot mark. With the CompactRaidFrame addon installed, its frames are hidden while these
+  group's name opens the ring for that group's bots, and shift-clicking order marks picks a
+  selection ("Orders for N selected" and "Clear" appear beside "All my bots"). Someone
+  else's bots show a small grey bot mark. With the CompactRaidFrame addon installed, its frames are hidden while these
   are in use (a setting keeps them).
 - **The manager window** (`/la` or the minimap button), with tabs along the bottom. Each
   tab has a list on the left (folding headers, a scroll bar) and the chosen entry on the
@@ -61,14 +62,32 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
     dialogue budget and saves nothing until you press Save). "Rumours" lists what members
     have seen, with who, where and when it fades; officers correct, resolve or forget them,
     and set how long rumours last.
-- The settings (`/la settings` or right-click the minimap button), in two tabs. *Orders
-  ring*: where it opens (beside the frame, at the mouse, or a fixed spot), its size (70% to
-  130%), and which orders it holds (up to eight). *Raid frames*: groups side by side or in
-  rows, the cells' width and height, power bars, order marks on every bot, and hiding the
-  CompactRaidFrame addon's frames, with a cell drawn as it will look. "Move frames" (or
-  `/la unlock` and `/la lock`) puts a box over the party frames (with DragonUI, use its
-  `/duiedit`) and over the raid groups in use to drag, and with "a fixed spot" shows the
-  ring itself at its size to drag into place, out of combat.
+- The settings (`/la settings` or right-click the minimap button), in five tabs (the last, Trading, is
+  below). *Orders ring*: where it opens (beside the frame, at the mouse, or a fixed spot),
+  its size (70% to 130%), and which orders it holds (up to eight). *Raid frames*: groups
+  side by side or in rows; their look (bars gradient, smooth, glossy or flat; health in
+  class colours, darker, or green; names white or in class colours; role icons for tanks
+  and healers, everyone, or no one); power bars, group names, order marks on every bot,
+  and hiding the CompactRaidFrame addon's frames. *Raid sizes*: the cells' width and
+  height, the space between cells and between groups, the power bar's height, and the size
+  of names, health text, group names, role icons and order marks. *All my bots*: whether
+  the button shows, its look (medal and name, medal, or name) and its size. The raid tabs
+  and All my bots draw what they change as it will look. "Move frames" (or `/la unlock`
+  and `/la lock`) outlines the party frames (with DragonUI, use its `/duiedit`), the raid
+  groups in use and "All my bots": press inside an outline and drag, and the frame moves
+  with the mouse straight away, visible where it lands. With "a fixed spot" the ring
+  itself shows at its size to drag into place. Out of combat only.
+- **Trading with bots** (with `AiPlayerbot.TradeShares.Enabled` on the server): opening a
+  trade with a bot opens its bags beside the trade window, in the style of the Bagnon bag
+  addon (`/la bags` opens them for a targeted bot). Click an item, or drag it onto the trade
+  window, and the bot puts it in; click one of its items in the trade window to take it back
+  out; "Give" sets its gold. Your own characters give everything. Other bots give back,
+  free, what they got while grouped with you (loot and what you gave them, ticked) and gold
+  they gained then, at most what they still have; random bots sell the rest at a price
+  (a coin), and someone else's own characters keep theirs. The server decides all of this
+  when the trade is accepted; the window only shows it. Bots no longer whisper their item
+  lists when a trade opens. In the settings' Trading tab, game masters can switch on trading
+  freely with any bot.
 - `/la status` shows the connection; `/la debug` prints what the addon does.
 
 The JSON code has checks that run outside the game: `lua5.1 addon/tests/json_test.lua`.
@@ -93,7 +112,7 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 
 | `op` | Fields | Reply |
 | --- | --- | --- |
-| `hello` | | `protocol`, `orders`, `switches`, `formations`; from now on the player is sent changes |
+| `hello` | | `protocol`, `orders`, `switches`, `formations`, `trade` (`shares`, `may_trade_freely`, `trading_freely`); from now on the player is sent changes |
 | `bots` | | `bots`: the player's group bots and own bots |
 | `who` | `guids` (up to 40) | `bots`: those that are bots, each `guid`, `yours`, `commandable` |
 | `order` | `bot`, `order`, optional `on` or `formation` | `bot` once it has acted |
@@ -106,6 +125,11 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | `roster` | | `characters` (the player's others), `companions` (best known) |
 | `inspect` | `bot` | `bot`, `spec`, `item_level`, `free_slots`, `money`, `zone` |
 | `bring`, `dismiss` | `name` (one of the player's own characters) | Playerbots' `messages` |
+| `bags` | `bot` (in the player's group, commanded, or trading with them) | `name`, `money`, `allowance` (gold it gives), `full`, `sells`, `shared` (entry → count free), `stacks` (each `[bag, slot, entry, count, property, price, flags]`, flags 1 tradable, 2 in the trade), `trading` |
+| `offer` | `bot`, `bag`, `slot` | the bot puts that stack (or its shared part) in the open trade; refused with a `reason` |
+| `offer_gold` | `bot`, `copper` | the bot sets its gold in the trade, at most its `allowance` |
+| `take_back` | `bot`, `slot` (trade slot from 0) | the bot takes that item back out of the trade |
+| `trade_freely` | `on` | `trading_freely`; game masters only (`AiPlayerbot.TradeShares.GmLevel`) |
 
 Orders are `follow`, `stay`, `guard` (hold the spot where the player stands; following,
 staying or falling back ends it, typed or from the addon), `attack`, `pull`, `flee` (fall

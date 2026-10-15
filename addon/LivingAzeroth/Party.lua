@@ -1,15 +1,14 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
 -- Party control: a round mark on the portrait of each bot in the party frames. On a bot the player commands it
--- shows the bot's standing order and opens the orders ring; on someone else's bot it is the grey bot mark. With two
--- or more of the player's bots in the party, "All my bots" over the frames opens the ring for all of them. Also
--- moving the party frames: DragonUI places party frames in its own editor, so with DragonUI the addon leaves
+-- shows the bot's standing order and opens the orders ring; on someone else's bot it is the grey bot mark. ("All my
+-- bots", for every bot at once, is a button of its own: AllBots.lua.) Also moving the party frames: DragonUI places party frames in its own editor, so with DragonUI the addon leaves
 -- placement to it.
 local _, LA = ...
 
 local Party = {}
 LA.Party = Party
 
-local UI, Style, Draw = LA.UI, LA.Style, LA.Draw
+local UI, Style = LA.UI, LA.Style
 
 local MARK = 20
 local marks = {}
@@ -35,18 +34,10 @@ local function Mark(index)
     mark:SetFrameLevel(frame:GetFrameLevel() + 6)
     mark.medal = UI.Icon(mark, MARK, "medal")
     mark.medal:SetPoint("CENTER")
-    mark.glow = mark:CreateTexture(nil, "OVERLAY")
-    mark.glow:SetTexture(Style.ART .. "tile-glow")
-    mark.glow:SetBlendMode("ADD")
-    mark.glow:SetSize(MARK * 1.8, MARK * 1.8)
-    mark.glow:SetPoint("CENTER")
+    mark.glow = UI.MedalGlow(mark, MARK, "OVERLAY")
     mark.glow:Hide()
-    mark.hover = mark:CreateTexture(nil, "HIGHLIGHT")
-    mark.hover:SetTexture(Style.ART .. "tile-glow")
-    mark.hover:SetBlendMode("ADD")
-    mark.hover:SetSize(MARK * 1.8, MARK * 1.8)
-    mark.hover:SetPoint("CENTER")
-    mark.hover:SetAlpha(0.35)
+    mark.hover = UI.MedalGlow(mark, MARK, "HIGHLIGHT")
+    mark.hover:SetAlpha(0.45)
     -- Switches that change how the bot behaves (passive, not looting), beside the frame's bars.
     mark.flags = LA.Markers.Flags(mark, 12)
     mark.flags:SetPoint("LEFT", _G["PartyMemberFrame" .. index .. "HealthBar"] or frame, "RIGHT", 6, 0)
@@ -96,35 +87,6 @@ local function Mark(index)
     return mark
 end
 
--- "All my bots": over the first party frame, on whole pixels.
-local all = CreateFrame("Frame", nil, UIParent)
-Draw.Fit(all)
-all:SetSize(1, 16)
-all:Hide()
-local allButton = UI.Button(all, "All my bots", nil, "plain", "bot")
-allButton:SetHeight(16)
-allButton:SetPoint("BOTTOMLEFT")
-allButton.livingAzerothPip = true
-UI.Tooltip(allButton, "All my bots", "Orders for every bot of yours in the party.")
-
--- The player's commandable bots in the party.
-local function PartyBots()
-    local guids = {}
-    for index = 1, MAX_PARTY_MEMBERS do
-        local guid = LA.Bots.Guid(UnitOf(index))
-        local bot = guid and LA.Bots.Mine()[guid]
-        if bot and bot.commandable then
-            guids[#guids + 1] = guid
-        end
-    end
-    return guids
-end
-
-allButton:SetScript("OnClick", function(self)
-    GameTooltip:Hide()
-    LA.Ring.Toggle({ key = "party", label = "All my bots", guids = PartyBots() }, self)
-end)
-
 function Party.Update()
     for index = 1, MAX_PARTY_MEMBERS do
         local mark = Mark(index)
@@ -153,14 +115,6 @@ function Party.Update()
             end
         end
     end
-    local first = PartyMemberFrame1
-    local show = GetNumRaidMembers() == 0 and #PartyBots() >= 2 and first and first:IsVisible()
-    if show and not all.following then
-        all.following = true
-        Draw.Follow(all, first, "BOTTOMLEFT", "TOPLEFT", 0, 4)
-    end
-    all:SetWidth(allButton:GetWidth())
-    LA.SetShown(all, show)
 end
 
 LA.On("bots:changed", Party.Update)
@@ -195,10 +149,7 @@ end
 local function Mover()
     if not mover then
         -- Four party frames and their gaps.
-        mover = UI.Mover(PartyMemberFrame1, "Party frames", 190, 4 * 64, function()
-            PartyMemberFrame1:SetUserPlaced(false) -- the addon keeps the position, not the game's layout cache
-            SavePosition()
-        end)
+        mover = UI.Mover(PartyMemberFrame1, "Party frames", 190, 4 * 64, SavePosition)
     end
     return mover
 end

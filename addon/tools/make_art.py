@@ -144,6 +144,23 @@ def tile_glow(size=128):
     save(s, "tile-glow")
 
 
+def medal_glow(size=128):
+    """Round light for a medal: hovered, chosen, or waiting (twice the medal's size, so it shows around it)."""
+    s, cr = canvas(size, size)
+    c = size / 2
+    r = size / 4  # the medal's edge
+    for spread, alpha in ((14, 0.07), (10, 0.12), (6, 0.2), (3, 0.3)):
+        cr.arc(c, c, r + spread / 2, 0, 2 * math.pi)
+        cr.set_source_rgba(1, 0.82, 0, alpha)
+        cr.set_line_width(spread)
+        cr.stroke()
+    cr.arc(c, c, r + 1, 0, 2 * math.pi)
+    cr.set_source_rgba(1, 0.86, 0.3, 1)
+    cr.set_line_width(2.2)
+    cr.stroke()
+    save(s, "medal-glow")
+
+
 def medal(size=128):
     """A dark coin with a gold rim, for role and bot marks; the glyph on it is tinted by the game."""
     s, cr = canvas(size, size)
@@ -333,6 +350,7 @@ def main():
         tile(tone)
     tile_glow()
     medal()
+    medal_glow()
     disc()
     for count in range(2, 9):
         ring_segment(count)

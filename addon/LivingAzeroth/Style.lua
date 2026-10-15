@@ -139,7 +139,7 @@ local RECIPES = {
     radio = function(T) return { radius = "round", edges = { Outline(), { 1, T.plainRim } }, fill = T.field } end,
     dot = function() return { radius = "round", fill = { C("#fff1a8"), C("#d9a520") } } end,
     rim = function() return { edges = { Sunken(0.7) } } end,
-    mover = function(T) return { radius = 3, edges = { Outline(), { 1, T.rim } }, fill = C("#2a200c", 0.6) } end,
+    mover = function(T) return { radius = 3, edges = { Outline(), { 1, T.rim } }, fill = C("#ffd36b", 0.04) } end,
     cell = function(T) return { edges = { { 1, Black(1) } }, fill = T.cell } end,
 }
 local recipes = {}

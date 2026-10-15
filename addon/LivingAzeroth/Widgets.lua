@@ -138,6 +138,14 @@ function UI.Text(parent, kind, width)
     return text
 end
 
+-- Changes a text's size, keeping its font, colour and shadow.
+function UI.TextSize(text, size)
+    local font, _, flags = text:GetFont()
+    local r, g, b, a = text:GetTextColor()
+    text:SetFont(font, size, flags)
+    text:SetTextColor(r, g, b, a)
+end
+
 -- A section heading: gold text over a rule that fades out to the right. Anchor its left and right; it is 16 tall.
 function UI.Heading(parent, label)
     local heading = CreateFrame("Frame", nil, parent)
@@ -173,7 +181,6 @@ local CREAM = Style.C("#f7e8c2")
 -- (a gold-rimmed coin, for roles and the bot mark) or "plain" (the glyph alone, in a colour).
 function UI.Icon(parent, size, look)
     local icon = CreateFrame("Frame", nil, parent)
-    icon:SetSize(size, size)
     icon.look = look or "tile"
     if icon.look ~= "plain" then
         icon.base = icon:CreateTexture(nil, "ARTWORK")
@@ -183,10 +190,15 @@ function UI.Icon(parent, size, look)
         end
     end
     icon.glyph = icon:CreateTexture(nil, "OVERLAY")
-    local share = icon.look == "tile" and 0.7 or icon.look == "medal" and 0.62 or 1
-    local glyph = icon.look == "plain" and size or Draw.Even(size * share)
-    icon.glyph:SetSize(glyph, glyph)
     icon.glyph:SetPoint("CENTER")
+    -- The icon's side, its glyph a share of it.
+    function icon:Resize(side)
+        self:SetSize(side, side)
+        local share = self.look == "tile" and 0.7 or self.look == "medal" and 0.62 or 1
+        local glyph = self.look == "plain" and side or Draw.Even(side * share)
+        self.glyph:SetSize(glyph, glyph)
+    end
+    icon:Resize(size)
     function icon:Set(glyph, tone)
         self.glyph:SetTexture(ART .. "glyph-" .. glyph)
         if self.look == "tile" then
@@ -960,48 +972,86 @@ function UI.TopTabs(parent, names, onSelect)
     return tabs
 end
 
--- A gold-rimmed box over a frame that can be dragged to move it while frames are unlocked. width and height are in
--- the target's units; mover:SetArea(width, height) changes them.
+-- A gold outline around a frame while frames are unlocked. Pressing anywhere in it moves the frame straight away,
+-- and the frame shows through it, so the player sees it where it lands. A small tab above the outline names it
+-- (below, when the frame is at the top of the screen). width and height are in the target's units;
+-- mover:SetArea(width, height) changes them.
 function UI.Mover(target, label, width, height, onMoved)
-    local mover = CreateFrame("Frame", nil, UIParent)
+    local mover = CreateFrame("Button", nil, UIParent)
     Draw.Fit(mover)
     mover:SetFrameStrata("MEDIUM") -- over the party and raid frames, under the addon's windows
     mover:SetFrameLevel(60)
-    Draw.Follow(mover, target, "TOPLEFT", "TOPLEFT", -4, 4)
+    local MARGIN = 2 -- the outline sits just outside the frame
+    Draw.Follow(mover, target, "TOPLEFT", "TOPLEFT", -MARGIN, MARGIN)
     function mover:SetArea(w, h)
         local ratio = target:GetEffectiveScale() / self:GetEffectiveScale()
-        self:SetSize(Draw.Round(w * ratio) + 8, Draw.Round(h * ratio) + 8)
+        self:SetSize(Draw.Round(w * ratio) + 2 * MARGIN, Draw.Round(h * ratio) + 2 * MARGIN)
     end
-    mover:SetArea(width, height)
     UI.Surface(mover, "mover")
-    local bar = CreateFrame("Frame", nil, mover)
-    bar:SetPoint("BOTTOMLEFT", mover, "TOPLEFT", 0, 2)
-    UI.Surface(bar, "chosen")
-    local move = UI.Icon(bar, 12, "plain")
-    move:SetPoint("LEFT", 6, 0)
+    Draw.Box(mover, { radius = 3, fill = Style.C("#ffd36b", 0.1), layer = "HIGHLIGHT" })
+    local tab = CreateFrame("Button", nil, mover)
+    UI.Surface(tab, "chosen")
+    local move = UI.Icon(tab, 10, "plain")
+    move:SetPoint("LEFT", 5, 0)
     move:Set("move", Style.gold)
-    local text = UI.Text(bar, "button")
-    text:SetPoint("LEFT", move, "RIGHT", 5, 0)
-    text:SetText(label .. " · drag to move")
-    bar:SetSize(math.ceil(text:GetStringWidth()) + 31, 20)
-    for _, frame in ipairs({ mover, bar }) do
+    local text = UI.Text(tab, "button")
+    text:SetPoint("LEFT", move, "RIGHT", 4, 0)
+    text:SetText(label)
+    tab:SetSize(math.ceil(text:GetStringWidth()) + 25, 16)
+    -- Above the outline, or below it when there is no room above.
+    local below
+    local function PlaceTab()
+        local top, screen = mover:GetTop(), UIParent:GetTop() * UIParent:GetEffectiveScale() / mover:GetEffectiveScale()
+        local wanted = top and top + tab:GetHeight() + 2 > screen
+        if wanted ~= below then
+            below = wanted
+            tab:ClearAllPoints()
+            if below then
+                tab:SetPoint("TOPLEFT", mover, "BOTTOMLEFT", 0, -2)
+            else
+                tab:SetPoint("BOTTOMLEFT", mover, "TOPLEFT", 0, 2)
+            end
+        end
+    end
+    mover:SetScript("OnUpdate", PlaceTab)
+    mover:SetClampedToScreen(true)
+    local moving = false
+    local function Release()
+        if moving then
+            moving = false
+            target:StopMovingOrSizing()
+            -- The addon keeps the position; the game's layout cache would put the frame back a little off.
+            target:SetUserPlaced(false)
+            if onMoved then
+                onMoved()
+            end
+        end
+    end
+    for _, frame in ipairs({ mover, tab }) do
         frame:EnableMouse(true)
-        frame:RegisterForDrag("LeftButton")
-        frame:SetScript("OnDragStart", function()
-            if not InCombatLockdown() then
+        frame:SetScript("OnMouseDown", function(_, button)
+            if button == "LeftButton" and not InCombatLockdown() then
+                moving = true
                 target:SetMovable(true)
                 target:StartMoving()
             end
         end)
-        frame:SetScript("OnDragStop", function()
-            target:StopMovingOrSizing()
-            if onMoved then
-                onMoved()
-            end
-        end)
+        frame:SetScript("OnMouseUp", Release)
     end
+    mover:SetScript("OnHide", Release)
+    mover:SetArea(width, height)
     mover:Hide()
     return mover
+end
+
+-- The round light around a medal of the given size (hovered, chosen or waiting), in a layer of the frame.
+function UI.MedalGlow(frame, size, layer)
+    local glow = frame:CreateTexture(nil, layer or "OVERLAY")
+    glow:SetTexture(Style.ART .. "medal-glow")
+    glow:SetBlendMode("ADD")
+    glow:SetSize(size * 2, size * 2)
+    glow:SetPoint("CENTER")
+    return glow
 end
 
 -- A tooltip with a gold title and white lines, on a frame's OnEnter.

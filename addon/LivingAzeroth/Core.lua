@@ -41,6 +41,7 @@ function LA.SetUnlocked(unlocked)
     LA.unlocked = unlocked
     LA.Party.Unlock(unlocked)
     LA.Raid.Unlock(unlocked)
+    LA.AllBots.Unlock(unlocked)
     LA.Settings.Unlock(unlocked)
     LA.Settings.Refresh()
 end
@@ -99,6 +100,8 @@ SlashCmdList.LIVINGAZEROTH = function(text)
         LA.SetUnlocked(command == "unlock")
     elseif command == "settings" or command == "ring" then
         LA.Settings.Toggle()
+    elseif command == "bags" then
+        LA.Bags.OpenTarget()
     elseif command == "" then
         LA.Manager.Toggle()
     else
