@@ -7,7 +7,8 @@ local Orders = {}
 LA.Orders = Orders
 
 -- Every order the ring can hold. Switches flip; the others are given as they are. "release" is not chosen in the
--- settings: the ring shows it by itself while one of its bots lies dead.
+-- settings: the ring shows it by itself while one of its bots lies dead. "runback" is the addon's own switch, not the
+-- server's: whether a bot that dies releases and runs back by itself (Deaths.lua).
 Orders.catalog = {
     { id = "follow", short = "Follow", label = "Follow me", state = "Following you" },
     { id = "stay", short = "Stay", label = "Stay here", state = "Holding position" },
@@ -19,6 +20,8 @@ Orders.catalog = {
     { id = "passive", short = "Passive", label = "Stay out of fights", switch = true },
     { id = "loot", short = "Loot", label = "Pick up loot", switch = true },
     { id = "join", short = "Join in", label = "Join in when I attack", switch = true },
+    { id = "runback", short = "Run back", label = "Release and run back on their own when dead", switch = true,
+        own = true },
     { id = "release", short = "Release", label = "Release spirit and come back", automatic = true },
 }
 Orders.byId = {}
@@ -42,7 +45,9 @@ end
 -- Whether an order is the bot's current one (a standing order) or switched on.
 function Orders.IsOn(bot, id)
     local order = Orders.byId[id]
-    if order.switch then
+    if order.own then
+        return LA.Deaths.IsOn(bot)
+    elseif order.switch then
         return bot.switches and bot.switches[id] == true
     end
     return bot.order == id
@@ -53,6 +58,8 @@ function Orders.Offered(bot, id)
     local order = Orders.byId[id]
     if id == "release" then
         return bot.life == "dead"
+    elseif Orders.byId[id].own then
+        return bot.commandable == true
     end
     return not order.switch or (bot.switches and bot.switches[id] ~= nil)
 end
@@ -93,6 +100,10 @@ local REASONS = {
 -- (a formation's name).
 function Orders.Give(bot, id, on, extra)
     local guid = bot.guid
+    if Orders.byId[id].own then
+        LA.Deaths.Set(bot, on == nil and not LA.Deaths.IsOn(bot) or on == true)
+        return
+    end
     pending[guid] = pending[guid] or {}
     pending[guid][id] = true
     LA.Fire("orders:changed", guid)

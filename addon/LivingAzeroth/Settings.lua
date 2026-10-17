@@ -1,7 +1,9 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The settings window, in four tabs. Orders ring: where it opens, its size, its layout and how the movement orders
--- show, and which orders it holds (up to eight), with the ring itself drawn as it will look. Raid frames: three parts (Layout, Look, Sizes) beside a small group drawn as it will look. All my bots:
--- that button's look and size. Trading: the bot bags window, and for game masters, trading freely with any bot.
+-- The settings window, in five tabs. Orders ring: where it opens, its size, its layout and how the movement orders
+-- show, and which orders it holds (up to eight), with the ring itself drawn as it will look. Raid frames: three parts
+-- (Layout, Look, Sizes) beside a small group drawn as it will look. All my bots: that button's look and size. When
+-- bots die: whether they release and run back on their own, and how long they wait. Trading: the bot bags window,
+-- and for game masters, trading freely with any bot.
 -- "Move frames" unlocks the party and raid frames and the "All my bots" button and, with the ring at "a fixed spot",
 -- shows the ring itself to drag.
 local _, LA = ...
@@ -97,8 +99,11 @@ local function RaidChanged()
     Settings.Refresh()
 end
 
--- A labelled slider with its value on the right: "Width ...... 72".
+-- A labelled slider with its value on the right: "Width ...... 72". format is a format string or a function.
 local function SliderRow(parent, label, low, high, step, width, format, onChange)
+    local function Show(value)
+        return type(format) == "function" and format(value) or string.format(format, value)
+    end
     local row = CreateFrame("Frame", nil, parent)
     row:SetSize(width, 32)
     row.label = UI.Text(row, "label")
@@ -108,13 +113,13 @@ local function SliderRow(parent, label, low, high, step, width, format, onChange
     row.value:SetPoint("TOPRIGHT")
     row.value:SetJustifyH("RIGHT")
     row.slider = UI.Slider(row, low, high, step, width, function(value)
-        row.value:SetText(string.format(format, value))
+        row.value:SetText(Show(value))
         onChange(value)
     end)
     row.slider:SetPoint("BOTTOMLEFT")
     function row:Set(value)
         self.slider:SetQuietly(value)
-        self.value:SetText(string.format(format, value))
+        self.value:SetText(Show(value))
     end
     return row
 end
@@ -445,6 +450,65 @@ local function BuildAllBots(page, width, height)
     window.allBotsPreview:SetPoint("TOP", preview, "BOTTOM", 0, -16)
 end
 
+-- When bots die
+
+local function Seconds(value)
+    if value == 0 then
+        return "At once"
+    elseif value < 60 then
+        return value .. " s"
+    end
+    local seconds = value % 60
+    return math.floor(value / 60) .. " min" .. (seconds > 0 and " " .. seconds .. " s" or "")
+end
+
+local function BuildDeaths(page, width, height)
+    local panel = UI.Inset(page)
+    panel:SetPoint("TOPLEFT")
+    panel:SetSize(width, height)
+    local inner = width - 20
+    local stack = UI.Stack(panel)
+    local heading = UI.Heading(panel, "Running back")
+    heading:SetWidth(inner)
+    stack:Add(heading, 8, 10)
+    window.runBack = UI.Check(panel, "Bots release and run back on their own",
+        "Otherwise a dead bot waits to be resurrected or told to release (the ring offers Release while one lies " ..
+        "dead). Add Run back to the orders ring to switch it for the bots the ring is open for.", inner)
+    stack:Add(window.runBack, 8, 10)
+    window.runBack.onToggle = function(_, on)
+        LA.Deaths.SetAll(on)
+        Settings.Refresh()
+    end
+    local wait = UI.Heading(panel, "How long they wait")
+    wait:SetWidth(inner)
+    stack:Add(wait, 16, 10)
+    local alone, helped = LA.Deaths.ALONE, LA.Deaths.HELPED
+    window.deathAlone = SliderRow(panel, "When no one in the group can resurrect them", alone[1], alone[2], 1, inner,
+        Seconds, function(value)
+            LivingAzerothDB.deaths.alone = value
+        end)
+    stack:Add(window.deathAlone, 10, 10)
+    window.deathHelped = SliderRow(panel, "When someone can, after the fight ends", helped[1], helped[2], 5, inner,
+        Seconds, function(value)
+            LivingAzerothDB.deaths.helped = value
+        end)
+    stack:Add(window.deathHelped, 10, 10)
+    local who = UI.Text(panel, "small", inner)
+    who:SetText("Priests from level 10, paladins and shamans from 12, and druids from 20 (Rebirth) can resurrect, " ..
+        "you as well as your bots. A bot waits for one who is alive and in the group.")
+    stack:Add(who, 6, 10)
+    local dungeons = UI.Heading(panel, "Dungeons and raids")
+    dungeons:SetWidth(inner)
+    stack:Add(dungeons, 16, 10)
+    window.dungeonsWait = UI.Check(panel, "Wait for the fight to end before releasing",
+        "Even when no one can resurrect them. A bot that releases in a dungeon comes back in through its " ..
+        "entrance and runs to you, so leaving in the middle of a pull helps no one.", inner)
+    stack:Add(window.dungeonsWait, 8, 10)
+    window.dungeonsWait.onToggle = function(_, on)
+        LivingAzerothDB.deaths.dungeonsWait = on
+    end
+end
+
 -- Trading
 
 local function SetTradeFreely(on)
@@ -506,13 +570,13 @@ local function Build()
     local footer = UI.BUTTON_HEIGHT + 8
     local pageHeight = height - TABS - footer
     window.pages = {}
-    window.tabs = UI.TopTabs(window.body, { "Orders ring", "Raid frames", "All my bots", "Trading" },
+    window.tabs = UI.TopTabs(window.body, { "Orders ring", "Raid frames", "All my bots", "When bots die", "Trading" },
         function(index)
             Settings.Show(index)
         end)
     window.tabs:SetPoint("TOPLEFT")
     window.tabs:SetPoint("TOPRIGHT")
-    for index, build in ipairs({ BuildRing, BuildRaid, BuildAllBots, BuildTrade }) do
+    for index, build in ipairs({ BuildRing, BuildRaid, BuildAllBots, BuildDeaths, BuildTrade }) do
         local page = CreateFrame("Frame", nil, window.body)
         page:SetPoint("TOPLEFT", 0, -TABS)
         page:SetSize(width, pageHeight)
@@ -590,6 +654,19 @@ function Settings.Refresh()
     end
     window.allBotsSize:Set(allBots.size)
     window.allBotsPreview:Arrange()
+
+    local deaths = LivingAzerothDB.deaths
+    local mixed = false
+    for _, bot in pairs(LA.Bots.Mine()) do
+        if bot.commandable and LA.Deaths.IsOn(bot) ~= deaths.on then
+            mixed = true
+        end
+    end
+    window.runBack:SetChecked(deaths.on)
+    window.runBack:SetMixed(mixed)
+    window.deathAlone:Set(deaths.alone)
+    window.deathHelped:Set(deaths.helped)
+    window.dungeonsWait:SetChecked(deaths.dungeonsWait)
 
     local trade = LA.Bridge.trade or {}
     window.tradeBags:SetChecked(LivingAzerothDB.tradeBags ~= false)

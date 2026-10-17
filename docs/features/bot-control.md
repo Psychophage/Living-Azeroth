@@ -34,9 +34,20 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
   toggles Follow and Stay, or as one that steps through all three (right-click steps back).
   A combined part shows where the bots are, with a light for each place; pointing at it
   names what a click does. While one of the bots lies dead, "Release spirit" comes first in
-  the ring: the bot releases and runs back to its body (near you, a dead bot otherwise waits
-  to be resurrected, which a priest bot in the group does by itself). With two or more of your bots in the party, or any in a raid, the "All my
-  bots" button opens the ring for all of them; it stands on its own wherever you put it.
+  the ring: the bot releases and runs back to its body. With two or more of your bots in the
+  party, or any in a raid, the "All my bots" button opens the ring for all of them; it
+  stands on its own wherever you put it.
+- **When bots die** (a settings tab): your bots release and run back on their own. With no
+  one alive in the group who can resurrect (priests from level 10, paladins and shamans
+  from 12, druids from 20, you included) they release after 5 seconds; with someone who
+  can, they wait 45 seconds from the end of the fight first (a priest bot resurrects by
+  itself in that time). Both waits are sliders. In dungeons and raids they wait for the
+  fight to end either way (a box). The addon gives the Release order for you; it can be
+  switched off for every bot in the settings, or for some with "Run back" in the ring (a
+  switch kept by the addon, not the server). A bot released inside a dungeon wakes at the
+  graveyard outside; with `AiPlayerbot.DungeonRunBack = 1` it runs to the portal and goes
+  in, coming back to life at the entrance, and follows you again. Without it, it stays a
+  ghost there.
 - **Raid frames** (in a raid): compact cells by group with class-coloured health, a thin
   power bar and the game's round role icons; clicking a cell targets that player,
   right-click gives the usual menu. The bars are drawn at the cell's own size, nothing

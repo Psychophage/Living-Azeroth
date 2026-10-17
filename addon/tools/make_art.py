@@ -41,6 +41,13 @@ EXTRA_GLYPHS = {
     "down": '<path d="M5 8.5h14L12 16.5z" fill="currentColor"/>',
     "right": '<path d="M8.5 5v14l8-7z" fill="currentColor"/>',
     "up": '<path d="M5 15.5h14L12 7.5z" fill="currentColor"/>',
+    # A ghost: the Run back switch.
+    "spirit": '<path d="M12 2.5c-4.2 0-7.3 3.2-7.3 7.4V21l2.4-1.9 2.4 1.9 2.5-1.9 2.5 1.9 2.4-1.9 2.4 1.9V9.9'
+              'c0-4.2-3.1-7.4-7.3-7.4z" fill="currentColor"/>'
+              '<path d="M12 2.5c-4.2 0-7.3 3.2-7.3 7.4V21l2.4-1.9V9.9c0-3.6 2-6.3 4.9-7.4z" fill="#000" '
+              'fill-opacity="0.16"/>'
+              '<circle cx="9.5" cy="10" r="1.5" fill="#000" fill-opacity="0.6"/>'
+              '<circle cx="14.5" cy="10" r="1.5" fill="#000" fill-opacity="0.6"/>',
 }
 
 

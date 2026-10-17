@@ -377,9 +377,14 @@ local function Give(part, back)
         local steps, at = part.entry.steps, part.lit or 1
         id = steps[(at - 2) % #steps + 1]
     end
+    -- A switch goes the same way for every bot: on, unless it already is for all of them.
+    local on
+    if part.entry.kind == "switch" then
+        on = not part.on
+    end
     for _, bot in ipairs(Bots()) do
         if LA.Orders.Offered(bot, id) then
-            LA.Orders.Give(bot, id)
+            LA.Orders.Give(bot, id, on)
         end
     end
     PlaySound("igMainMenuOptionCheckBoxOn")
