@@ -1,6 +1,6 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
 -- Telling bots from players at a glance: a line in the unit tooltip (the party and raid frames mark bots
--- themselves), and the small marks for switches that change how a bot behaves.
+-- themselves).
 local _, LA = ...
 
 local Markers = {}
@@ -8,32 +8,6 @@ LA.Markers = Markers
 
 -- The bot glyph, gold, for a line of tooltip text.
 local ICON = "|T" .. LA.Style.ART .. "glyph-bot:14:14:0:0:64:64:0:64:0:64:255:211:107|t"
-
--- Small marks for switches that change how a bot behaves: passive, and not picking up loot.
-function Markers.Flags(parent, size)
-    local flags = CreateFrame("Frame", nil, parent)
-    flags:SetSize(size * 2 + 2, size)
-    flags.passive = LA.UI.Icon(flags, size, "plain")
-    flags.passive:Set("passive", LA.Style.C("#c7c0ff"))
-    flags.noLoot = LA.UI.Icon(flags, size, "plain")
-    flags.noLoot:Set("loot", LA.Style.C("#8a8170"))
-    flags.noLoot:SetAlpha(0.8)
-    function flags:Update(bot)
-        local switches = bot and bot.switches or {}
-        local passive, noLoot = switches.passive == true, switches.loot == false
-        self.passive:ClearAllPoints()
-        self.noLoot:ClearAllPoints()
-        self.passive:SetPoint("RIGHT")
-        if passive then
-            self.noLoot:SetPoint("RIGHT", self.passive, "LEFT", -2, 0)
-        else
-            self.noLoot:SetPoint("RIGHT")
-        end
-        LA.SetShown(self.passive, passive)
-        LA.SetShown(self.noLoot, noLoot)
-    end
-    return flags
-end
 
 -- Tooltip
 

@@ -16,16 +16,16 @@ local GROUPS = 8
 -- The sizes the player sets (Settings, "Raid sizes") as { least, most, default }: the cell, the spaces between cells
 -- and between groups, and the text and marks in it, in units of the fitted raid frames; the power bar in pixels.
 Raid.SIZES = {
-    width = { 56, 140, 72 },
-    height = { 24, 60, 36 },
+    width = { 36, 140, 72 },
+    height = { 16, 60, 36 },
     gap = { 0, 10, 2 },
     groupGap = { 0, 24, 6 },
-    powerHeight = { 2, 12, 4 },
-    font = { 8, 18, 11 }, -- names
-    status = { 7, 16, 9 }, -- missing health, "Dead", "Offline"
-    label = { 7, 14, 9 }, -- group names
-    role = { 8, 24, 12 },
-    mark = { 10, 24, 14 }, -- the order mark of each of the player's bots
+    powerHeight = { 1, 12, 4 },
+    font = { 5, 18, 11 }, -- names
+    status = { 5, 16, 9 }, -- missing health, "Dead", "Offline"
+    label = { 5, 14, 9 }, -- group names
+    role = { 6, 24, 12 },
+    mark = { 7, 24, 14 }, -- the order mark of each of the player's bots
 }
 local SIZE_KEYS = { "width", "height", "gap", "groupGap", "powerHeight", "font", "status", "label", "role", "mark" }
 -- The game's round role icons (the dungeon finder's), by role: cells of 67 texels in a 256 texture.
@@ -652,21 +652,60 @@ end)
 -- Shown in a raid only; the state driver shows and hides it even in combat.
 RegisterStateDriver(raid, "visibility", "[group:raid] show; hide")
 
--- A cell drawn from made-up values, for the settings: one of the player's bots, following.
-function Raid.Preview(parent)
-    local cell = CreateFrame("Frame", nil, parent)
-    Build(cell)
-    function cell:Refresh()
-        local settings = Settings()
-        self:SetSize(settings.width, settings.height)
-        Arrange(self)
-        Fill(self, {
-            name = "Silannise", class = "SHAMAN", health = 7400, max = 9100, power = 6200, powerMax = 8800,
-            powerType = 0, status = "-1.7k", role = "healer", mark = { "follow", "gold" },
-            target = true,
-        })
+-- A group drawn from made-up values, for the settings: a tank and a healer of the player's bots (the healer
+-- targeted), someone hurt, someone else's bot dead, and someone offline, with the player's layout, sizes and look.
+-- It shrinks to fit the room it has (width, height).
+local SAMPLE = {
+    { name = "Bramwell", class = "WARRIOR", health = 9800, max = 9800, power = 30, powerMax = 100, powerType = 1,
+        role = "tank", mark = { "guard", "steel" } },
+    { name = "Silannise", class = "SHAMAN", health = 7400, max = 9100, power = 6200, powerMax = 8800, powerType = 0,
+        status = "-1.7k", role = "healer", mark = { "follow", "gold" }, target = true },
+    { name = "Elowen", class = "MAGE", health = 3100, max = 6800, power = 5100, powerMax = 9000, powerType = 0,
+        status = "-3.7k", role = "damage" },
+    { name = "Thorne", class = "ROGUE", health = 0, max = 7200, power = 0, powerMax = 100, powerType = 3,
+        status = "Dead", role = "damage", other = true },
+    { name = "Maribel", class = "PRIEST", health = 6000, max = 6000, power = 0, powerMax = 8000, powerType = 0,
+        status = "Offline", role = "healer" },
+}
+
+function Raid.Preview(parent, width, height)
+    local group = CreateFrame("Frame", nil, parent)
+    group.label = UI.Text(group, "cellSmall")
+    group.cells = {}
+    for i = 1, #SAMPLE do
+        group.cells[i] = CreateFrame("Frame", nil, group)
+        Build(group.cells[i])
     end
-    return cell
+    function group:Refresh()
+        local settings = Settings()
+        local rows = settings.layout == "rows"
+        local labelled = Labelled()
+        LA.SetShown(self.label, settings.labels)
+        UI.TextSize(self.label, settings.label)
+        self.label:ClearAllPoints()
+        if rows then
+            self.label:SetText("1")
+            self.label:SetPoint("RIGHT", self, "TOPLEFT", labelled - 2, -settings.height / 2)
+        else
+            self.label:SetText("Group 1")
+            self.label:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 1, -labelled + 2)
+        end
+        for i, cell in ipairs(self.cells) do
+            cell:SetSize(settings.width, settings.height)
+            Arrange(cell)
+            Fill(cell, SAMPLE[i])
+            cell:ClearAllPoints()
+            if rows then
+                cell:SetPoint("TOPLEFT", labelled + (i - 1) * (settings.width + settings.gap), 0)
+            else
+                cell:SetPoint("TOPLEFT", 0, -labelled - (i - 1) * (settings.height + settings.gap))
+            end
+        end
+        local w, h = Extent(1)
+        self:SetSize(w, h)
+        self:SetScale(math.min(1, width / w, height / h))
+    end
+    return group
 end
 
 -- The CompactRaidFrame addon draws its own raid frames; with ours in use, its are hidden (a setting keeps them).

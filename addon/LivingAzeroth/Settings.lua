@@ -1,10 +1,10 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
--- The settings window, in tabs. Orders ring: where the ring opens, its size, and which orders it holds (up to eight,
--- in ring order). Raid frames: how the groups are laid out, what they show and their look (bars, colours, role
--- icons). Raid sizes: the cells, the spaces between them, and the size of each part of a cell. All my bots: that
--- button's look and size. The raid tabs and All my bots show what they change as it will look. Trading: the bot
--- bags window, and for game masters, trading freely with any bot. "Move frames" unlocks the party and raid frames
--- and the "All my bots" button and, with the ring at "a fixed spot", shows the ring itself to drag.
+-- The settings window, in four tabs. Orders ring: where it opens, its size, its layout and how the movement orders
+-- show, and which orders it holds (up to eight); while this tab is open the ring itself shows beside the window as it
+-- will look. Raid frames: three parts (Layout, Look, Sizes) beside a small group drawn as it will look. All my bots:
+-- that button's look and size. Trading: the bot bags window, and for game masters, trading freely with any bot.
+-- "Move frames" unlocks the party and raid frames and the "All my bots" button and, with the ring at "a fixed spot",
+-- shows the ring itself to drag.
 local _, LA = ...
 
 local Settings = {}
@@ -16,6 +16,20 @@ local PLACEMENTS = {
     { id = "beside", label = "Beside the frame", hint = "Next to the bot you clicked" },
     { id = "cursor", label = "At the mouse", hint = "Centred where you click" },
     { id = "fixed", label = "A fixed spot", hint = "Press Move frames to place it" },
+}
+-- The ring's layout and its movement orders, picked from chips with a line saying what the choice does.
+local RING_CHOICES = {
+    { key = "layout", label = "Layout", options = {
+        { id = "classic", label = "Classic", hint = "Every order a part of the ring, in your order." },
+        { id = "kinds", label = "By kind", hint = "Where they are, then things to do, then switches, each " ..
+            "switch with a light that shows whether it is on." },
+        { id = "two", label = "Two rings", hint = "What the bots are doing on an inner ring, things to do on an " ..
+            "outer ring." } } },
+    { key = "movement", label = "Moving", options = {
+        { id = "toggle", label = "Toggle", hint = "Follow and Stay share one part: a click switches between them." },
+        { id = "cycle", label = "Step", hint = "Follow, Stay and Guard share one part: a click moves on to the " ..
+            "next, a right-click back." },
+        { id = "separate", label = "Separate", hint = "Follow, Stay and Guard are parts of their own." } } },
 }
 local LAYOUTS = {
     { id = "columns", label = "Groups side by side", hint = "Each group a column" },
@@ -41,11 +55,14 @@ local PART_SIZES = {
     { "font", "Names", 1 }, { "status", "Health text", 1 }, { "label", "Group names", 1 }, { "role", "Role icons", 1 },
     { "mark", "Order marks", 1 },
 }
+local RAID_PARTS = { { id = 1, label = "Layout" }, { id = 2, label = "Look" }, { id = 3, label = "Sizes" } }
 local ALL_BOTS_LOOKS = { { id = "both", label = "Medal and name" }, { id = "medal", label = "Medal" },
     { id = "name", label = "Name" } }
-local WIDTH, HEIGHT = 560, 450
-local LEFT = 214 -- the left panel's width
+local WIDTH, HEIGHT = 620, 480
+local LEFT = 230 -- the left panel's width on the ring and All my bots tabs
+local PREVIEW = 200 -- the raid preview's panel width
 local TABS = 28 -- the tabs and the space under them
+local RING_TAB = 1
 
 local window
 
@@ -57,9 +74,21 @@ local function Raid()
     return LivingAzerothDB.raid
 end
 
+-- The ring shows beside the window while its tab is open; while frames are unlocked with the ring at a fixed spot,
+-- it shows there to be dragged instead.
+local function RingPreview()
+    if LA.unlocked and Ring().placement == "fixed" then
+        LA.Ring.Preview(true)
+    elseif window and window:IsShown() and window.tabs.selected == RING_TAB then
+        LA.Ring.Preview(true, window)
+    else
+        LA.Ring.Preview(false)
+    end
+end
+
 local function RingChanged()
     LA.Ring.Relayout()
-    Settings.Unlock(LA.unlocked)
+    RingPreview()
     Settings.Refresh()
 end
 
@@ -87,6 +116,18 @@ local function SliderRow(parent, label, low, high, step, width, format, onChange
         self.slider:SetQuietly(value)
         self.value:SetText(string.format(format, value))
     end
+    return row
+end
+
+-- A row of chips with a label on its left: "Bars [Gradient] [Smooth] ...".
+local function ChipRow(parent, label, options, width, labelWidth, onPick)
+    local row = CreateFrame("Frame", nil, parent)
+    row:SetSize(width, UI.BUTTON_HEIGHT)
+    local text = UI.Text(row, "label")
+    text:SetPoint("LEFT")
+    text:SetText(label)
+    row.segment = UI.Segment(row, options, width - labelWidth, onPick)
+    row.segment:SetPoint("LEFT", labelWidth, 0)
     return row
 end
 
@@ -122,6 +163,21 @@ local function BuildRing(page, width, height)
     end)
     window.ringSizeHeading = size
     stack:Add(window.ringSize, 10, 10)
+    local look = UI.Heading(left, "How it looks")
+    look:SetWidth(inner)
+    stack:Add(look, 14, 10)
+    window.ringChoices = {}
+    for i, choice in ipairs(RING_CHOICES) do
+        local row = ChipRow(left, choice.label, choice.options, inner, 52, function(id)
+            Ring()[choice.key] = id
+            RingChanged()
+        end)
+        stack:Add(row, i == 1 and 8 or 6, 10)
+        row.hint = UI.Text(left, "small", inner)
+        stack:Add(row.hint, 4, 10, 26)
+        row.choice = choice
+        window.ringChoices[i] = row
+    end
 
     -- Which orders it holds.
     local right = UI.Inset(page)
@@ -169,27 +225,27 @@ local function BuildRing(page, width, height)
             end
             RingChanged()
         end)
-        UI.Tooltip(button, order.label, "Click to add it to the ring or take it out. The number is its key while " ..
-            "the ring is open.")
+        UI.Tooltip(button, order.label, "Click to add it to the ring or take it out. The number is its place in " ..
+            "your order.")
         button.id = order.id
         window.orders[i] = button
     end
+    local note = UI.Text(right, "small", rightWidth - 20)
+    note:SetPoint("BOTTOMLEFT", 10, 10)
+    note:SetText("The ring beside this window shows how it will look. While it is open, the number keys give its " ..
+        "orders, in the order shown on the ring.")
 end
 
--- Raid frames
+-- Raid frames: Layout, Look and Sizes, one at a time on the left, with the preview on the right.
 
-local function BuildRaid(page, width, height)
-    local inner = LEFT - 20
-    local left = UI.Inset(page)
-    left:SetPoint("TOPLEFT")
-    left:SetSize(LEFT, height)
-    local stack = UI.Stack(left)
-    local layout = UI.Heading(left, "Layout")
-    layout:SetWidth(inner)
+local function RaidLayout(panel, width)
+    local stack = UI.Stack(panel)
+    local layout = UI.Heading(panel, "Groups")
+    layout:SetWidth(width)
     stack:Add(layout, 8, 10)
     window.layouts = {}
     for i, choice in ipairs(LAYOUTS) do
-        local radio = UI.Radio(left, choice.label, choice.hint, inner)
+        local radio = UI.Radio(panel, choice.label, choice.hint, width)
         stack:Add(radio, i == 1 and 8 or 6, 10)
         radio:SetScript("OnClick", function()
             Raid().layout = choice.id
@@ -198,29 +254,30 @@ local function BuildRaid(page, width, height)
         radio.id = choice.id
         window.layouts[i] = radio
     end
-    local show = UI.Heading(left, "Show")
-    show:SetWidth(inner)
+    local show = UI.Heading(panel, "Show")
+    show:SetWidth(width)
     stack:Add(show, 12, 10)
-    window.power = UI.Check(left, "Power bars", "Mana, rage or energy under health", inner)
+    window.power = UI.Check(panel, "Power bars", "Mana, rage or energy under health", width)
     stack:Add(window.power, 8, 10)
     window.power.onToggle = function(_, on)
         Raid().power = on
         RaidChanged()
     end
-    window.always = UI.Check(left, "Every bot's order", "Otherwise bots simply following you show the bot mark",
-        inner)
+    window.always = UI.Check(panel, "Every bot's order", "Otherwise bots simply following you show the bot mark",
+        width)
     stack:Add(window.always, 6, 10)
     window.always.onToggle = function(_, on)
         LivingAzerothDB.iconsAlways = on
         LA.Fire("bots:changed")
+        Settings.Refresh()
     end
-    window.labels = UI.Check(left, "Group names", "Click one for that group's orders", inner)
+    window.labels = UI.Check(panel, "Group names", "Click one for that group's orders", width)
     stack:Add(window.labels, 6, 10)
     window.labels.onToggle = function(_, on)
         Raid().labels = on
         RaidChanged()
     end
-    window.compact = UI.Check(left, "Hide other raid frames", "Those of the CompactRaidFrame addon", inner)
+    window.compact = UI.Check(panel, "Hide other raid frames", "Those of the CompactRaidFrame addon", width)
     stack:Add(window.compact, 6, 10)
     window.compact.onToggle = function(_, on)
         Raid().hideCompact = on
@@ -229,47 +286,31 @@ local function BuildRaid(page, width, height)
             LA.Print("the other raid frames come back after a /reload.")
         end
     end
+end
 
-    local right = UI.Inset(page)
-    right:SetPoint("TOPRIGHT")
-    local rightWidth = width - LEFT - 10
-    right:SetSize(rightWidth, height)
-    local lookHeading = UI.Heading(right, "Look")
-    lookHeading:SetPoint("TOPLEFT", 10, -8)
-    lookHeading:SetWidth(rightWidth - 20)
+local function RaidLook(panel, width)
+    local heading = UI.Heading(panel, "Look")
+    heading:SetPoint("TOPLEFT", 10, -8)
+    heading:SetWidth(width)
     window.looks = {}
-    local above = lookHeading
-    local labelWidth = 46
+    local above = heading
     for i, look in ipairs(LOOKS) do
-        local row = CreateFrame("Frame", nil, right)
-        row:SetSize(rightWidth - 20, UI.BUTTON_HEIGHT)
-        row:SetPoint("TOPLEFT", above, "BOTTOMLEFT", 0, i == 1 and -8 or -6)
-        local label = UI.Text(row, "label")
-        label:SetPoint("LEFT")
-        label:SetText(look.label)
-        row.segment = UI.Segment(row, look.options, rightWidth - 20 - labelWidth, function(id)
+        local row = ChipRow(panel, look.label, look.options, width, 50, function(id)
             Raid()[look.key] = id
             RaidChanged()
         end)
-        row.segment:SetPoint("LEFT", labelWidth, 0)
+        row:SetPoint("TOPLEFT", above, "BOTTOMLEFT", 0, i == 1 and -10 or -8)
         row.key = look.key
         window.looks[i] = row
         above = row
     end
     UI.Tooltip(window.looks[1].segment.chips[1], "Gradient", "Dark at the left, full colour where a full bar ends, " ..
         "with dark rims: the look of DragonUI's party bars.")
-    local preview = UI.Heading(right, "How a cell looks")
-    preview:SetPoint("TOPLEFT", above, "BOTTOMLEFT", 0, -12)
-    preview:SetWidth(rightWidth - 20)
-    window.previews = { LA.Raid.Preview(right) }
-    window.previews[1]:SetPoint("TOP", preview, "BOTTOM", 0, -10)
 end
 
--- Raid sizes
-
-local function SizeColumn(panel, title, sizes, width)
+local function SizeColumn(panel, title, sizes, x, width)
     local heading = UI.Heading(panel, title)
-    heading:SetPoint("TOPLEFT", 10, -8)
+    heading:SetPoint("TOPLEFT", x, -8)
     heading:SetWidth(width)
     local above = heading
     for i, size in ipairs(sizes) do
@@ -284,27 +325,14 @@ local function SizeColumn(panel, title, sizes, width)
         window.sizes[#window.sizes + 1] = row
         above = row
     end
-    return above
 end
 
-local function BuildRaidSizes(page, width, height)
+local function RaidSizes(panel, width)
     window.sizes = {}
-    local left = UI.Inset(page)
-    left:SetPoint("TOPLEFT")
-    left:SetSize(LEFT, height)
-    local last = SizeColumn(left, "Cells", CELL_SIZES, LEFT - 20)
-    local right = UI.Inset(page)
-    right:SetPoint("TOPRIGHT")
-    local rightWidth = width - LEFT - 10
-    right:SetSize(rightWidth, height)
-    SizeColumn(right, "Text and marks", PART_SIZES, rightWidth - 20)
-    local preview = UI.Heading(left, "How a cell looks")
-    preview:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -12)
-    preview:SetWidth(LEFT - 20)
-    local cell = LA.Raid.Preview(left)
-    cell:SetPoint("TOP", preview, "BOTTOM", 0, -10)
-    window.previews[#window.previews + 1] = cell
-    local reset = UI.Button(right, "Default sizes", 110, "plain")
+    local column = math.floor((width - 14) / 2)
+    SizeColumn(panel, "Cells", CELL_SIZES, 10, column)
+    SizeColumn(panel, "Text and marks", PART_SIZES, 10 + column + 14, column)
+    local reset = UI.Button(panel, "Default sizes", 110, "plain")
     reset:SetPoint("BOTTOMRIGHT", -10, 10)
     reset:SetScript("OnClick", function()
         for key, range in pairs(LA.Raid.SIZES) do
@@ -312,6 +340,43 @@ local function BuildRaidSizes(page, width, height)
         end
         RaidChanged()
     end)
+end
+
+local function ShowRaidPart(index)
+    LivingAzerothDB.raidPart = index
+    window.raidParts:Select(index)
+    for i, panel in ipairs(window.raidPanels) do
+        LA.SetShown(panel, i == index)
+    end
+end
+
+local function BuildRaid(page, width, height)
+    local leftWidth = width - PREVIEW - 10
+    local left = UI.Inset(page)
+    left:SetPoint("TOPLEFT")
+    left:SetSize(leftWidth, height)
+    window.raidParts = UI.Segment(left, RAID_PARTS, leftWidth - 20, ShowRaidPart)
+    window.raidParts:SetPoint("TOPLEFT", 10, -10)
+    window.raidPanels = {}
+    for i, build in ipairs({ RaidLayout, RaidLook, RaidSizes }) do
+        local panel = CreateFrame("Frame", nil, left)
+        panel:SetPoint("TOPLEFT", 0, -(UI.BUTTON_HEIGHT + 14))
+        panel:SetPoint("BOTTOMRIGHT")
+        build(panel, leftWidth - 20)
+        window.raidPanels[i] = panel
+    end
+
+    local right = UI.Inset(page)
+    right:SetPoint("TOPRIGHT")
+    right:SetSize(PREVIEW, height)
+    local heading = UI.Heading(right, "As it will look")
+    heading:SetPoint("TOPLEFT", 10, -8)
+    heading:SetWidth(PREVIEW - 20)
+    local room = CreateFrame("Frame", nil, right)
+    room:SetPoint("TOPLEFT", 10, -40)
+    room:SetPoint("BOTTOMRIGHT", -10, 10)
+    window.raidPreview = LA.Raid.Preview(room, PREVIEW - 20, height - 50)
+    window.raidPreview:SetPoint("TOP")
 end
 
 -- All my bots
@@ -362,7 +427,7 @@ local function BuildAllBots(page, width, height)
     right:SetPoint("TOPRIGHT")
     local rightWidth = width - LEFT - 10
     right:SetSize(rightWidth, height)
-    local preview = UI.Heading(right, "How it looks")
+    local preview = UI.Heading(right, "As it will look")
     preview:SetPoint("TOPLEFT", 10, -8)
     preview:SetWidth(rightWidth - 20)
     window.allBotsPreview = LA.AllBots.Preview(right)
@@ -394,7 +459,7 @@ local function BuildTrade(page, width, height)
     stack:Add(heading, 8, 10)
     window.tradeBags = UI.Check(panel, "Show a bot's bags when trading",
         "Click its items to have them put in the trade. Your own characters give everything; other bots give " ..
-        "what they got while grouped with you, and random bots sell the rest.", inner)
+        "what they got while grouped with you, and random bots sell the rest (\"Pay\" puts their price in).", inner)
     stack:Add(window.tradeBags, 8, 10)
     window.tradeBags.onToggle = function(_, on)
         LivingAzerothDB.tradeBags = on
@@ -430,19 +495,21 @@ local function Build()
     local footer = UI.BUTTON_HEIGHT + 8
     local pageHeight = height - TABS - footer
     window.pages = {}
-    window.tabs = UI.TopTabs(window.body, { "Orders ring", "Raid frames", "Raid sizes", "All my bots", "Trading" },
+    window.tabs = UI.TopTabs(window.body, { "Orders ring", "Raid frames", "All my bots", "Trading" },
         function(index)
-        Settings.Show(index)
-    end)
+            Settings.Show(index)
+        end)
     window.tabs:SetPoint("TOPLEFT")
     window.tabs:SetPoint("TOPRIGHT")
-    for index, build in ipairs({ BuildRing, BuildRaid, BuildRaidSizes, BuildAllBots, BuildTrade }) do
+    for index, build in ipairs({ BuildRing, BuildRaid, BuildAllBots, BuildTrade }) do
         local page = CreateFrame("Frame", nil, window.body)
         page:SetPoint("TOPLEFT", 0, -TABS)
         page:SetSize(width, pageHeight)
         build(page, width, pageHeight)
         window.pages[index] = page
     end
+    ShowRaidPart(LivingAzerothDB.raidPart or 1)
+    window:HookScript("OnHide", RingPreview)
 
     window.move = UI.Button(window.body, "Move frames", 100, "plain", "move")
     window.move:SetPoint("BOTTOMLEFT")
@@ -465,6 +532,15 @@ function Settings.Refresh()
     local percent = math.floor(ring.size * 100 + 0.5)
     window.ringSize:SetQuietly(percent)
     window.ringSizeHeading:SetNote(percent .. "%")
+    for _, row in ipairs(window.ringChoices) do
+        local chosen = ring[row.choice.key]
+        row.segment:Select(chosen)
+        for _, option in ipairs(row.choice.options) do
+            if option.id == chosen then
+                row.hint:SetText(option.hint)
+            end
+        end
+    end
     for _, button in ipairs(window.orders) do
         local slot
         for i, id in ipairs(ring.orders) do
@@ -494,9 +570,7 @@ function Settings.Refresh()
     for _, row in ipairs(window.sizes) do
         row:Set(raid[row.key])
     end
-    for _, preview in ipairs(window.previews) do
-        preview:Refresh()
-    end
+    window.raidPreview:Refresh()
 
     local allBots = LivingAzerothDB.allBots
     window.allBots:SetChecked(allBots.shown ~= false)
@@ -524,6 +598,9 @@ function Settings.Show(index)
         Build()
     end
     index = index or LivingAzerothDB.settingsTab or 1
+    if not window.pages[index] then
+        index = 1
+    end
     LivingAzerothDB.settingsTab = index
     window.tabs:Select(index)
     for i, page in ipairs(window.pages) do
@@ -531,6 +608,7 @@ function Settings.Show(index)
     end
     window:Show()
     Settings.Refresh()
+    RingPreview()
 end
 
 function Settings.Toggle()
@@ -542,6 +620,6 @@ function Settings.Toggle()
 end
 
 -- While frames are unlocked and the ring opens at a fixed spot, the ring itself shows there to be dragged.
-function Settings.Unlock(unlocked)
-    LA.Ring.Preview(unlocked and Ring().placement == "fixed")
+function Settings.Unlock()
+    RingPreview()
 end

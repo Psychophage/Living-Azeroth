@@ -211,25 +211,35 @@ def disc(size=256):
     save(s, "disc")
 
 
-# The orders ring's segments, in units of the ring (Ring.lua uses the same numbers): an annulus from RING_INNER to
-# RING_OUTER cut into equal parts with RING_GAP between them and corners rounded by RING_ROUND. Drawn at
-# RING_SCALE texels per unit with the ring's centre at (width / 2, RING_CENTRE_Y) of a texture RING_HEIGHT tall,
-# 512 wide for up to four parts and 256 for more.
-RING_INNER, RING_OUTER, RING_GAP, RING_ROUND = 43, 75, 3, 3
-RING_SCALE, RING_CENTRE_Y, RING_HEIGHT = 2.56, 194, 256
+# The orders ring's segments, in units of the ring (Ring.lua uses the same numbers): an annulus cut into equal parts
+# with RING_GAP between them and corners rounded by RING_ROUND, drawn at `scale` texels per unit with the ring's centre
+# at (width / 2, centre) of a texture RING_HEIGHT tall, 512 wide when a part is too wide for 256 (the same rule as
+# Ring.lua's ArtWidth). Bands: "ring" (one ring of orders), and "ring-in" and "ring-out" (the two-ring layout: the
+# bots' state inside, actions outside).
+RING_GAP, RING_ROUND, RING_HEIGHT = 3, 3, 256
+RING_BANDS = {
+    "ring": dict(inner=43, outer=75, scale=2.56, centre=194),
+    "ring-in": dict(inner=43, outer=66, scale=2.56, centre=194),
+    "ring-out": dict(inner=69, outer=100, scale=2.0, centre=208),
+}
 
 
-def ring_segment(count):
-    """One part of the ring, pointing up: ring-<count>-fill (white, with a dark outline) and ring-<count>-edge (the
-    white band inside the outline). The game tints both and turns them to each part's place with texture
+def art_width(count, outer, scale):
+    return 512 if (outer * math.sin(min(math.pi / count, math.pi / 2)) + 3) * scale > 126 else 256
+
+
+def ring_segment(count, band="ring"):
+    """One part of a ring, pointing up: <band>-<count>-fill (white, with a dark outline) and <band>-<count>-edge
+    (the white band inside the outline). The game tints both and turns them to each part's place with texture
     coordinates."""
-    width = 512 if count <= 4 else 256
-    k = RING_SCALE
+    spec = RING_BANDS[band]
+    inner, outer, k, centre = spec["inner"], spec["outer"], spec["scale"], spec["centre"]
+    width = art_width(count, outer, k)
     ys, xs = np.mgrid[0:RING_HEIGHT, 0:width] + 0.5
-    x, y = (xs - width / 2) / k, (RING_CENTRE_Y - ys) / k
+    x, y = (xs - width / 2) / k, (centre - ys) / k
     half = math.pi / count
     r = np.hypot(x, y)
-    annulus = np.maximum(RING_INNER - r, r - RING_OUTER)
+    annulus = np.maximum(inner - r, r - outer)
     # The two sides, each RING_GAP / 2 in from the line between neighbouring parts.
     side_a = x * math.cos(half) - y * math.sin(half) + RING_GAP / 2
     side_b = -(x * math.cos(half) + y * math.sin(half)) + RING_GAP / 2
@@ -242,14 +252,14 @@ def ring_segment(count):
     def cover(inset):
         return np.clip(depth - inset + 0.5, 0, 1)
 
-    outline, band = 1.3, 1.6
+    outline, band_width = 1.3, 1.6
     alpha = cover(0)
     light = cover(outline)
     fill = np.dstack([light, light, light, alpha])
-    edge = np.dstack([np.ones_like(alpha)] * 3 + [cover(outline) - cover(outline + band)])
+    edge = np.dstack([np.ones_like(alpha)] * 3 + [cover(outline) - cover(outline + band_width)])
     for name, layers in (("fill", fill), ("edge", edge)):
         image = Image.fromarray((layers * 255 + 0.5).astype(np.uint8), "RGBA")
-        save(image, "ring-%d-%s" % (count, name))
+        save(image, "%s-%d-%s" % (band, count, name))
 
 
 def portrait_ring(size=128):
@@ -353,7 +363,8 @@ def main():
     medal_glow()
     disc()
     for count in range(2, 9):
-        ring_segment(count)
+        for band in RING_BANDS:
+            ring_segment(count, band)
     portrait_ring()
     corners()
     grain()

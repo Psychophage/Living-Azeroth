@@ -38,9 +38,6 @@ local function Mark(index)
     mark.glow:Hide()
     mark.hover = UI.MedalGlow(mark, MARK, "HIGHLIGHT")
     mark.hover:SetAlpha(0.45)
-    -- Switches that change how the bot behaves (passive, not looting), beside the frame's bars.
-    mark.flags = LA.Markers.Flags(mark, 12)
-    mark.flags:SetPoint("LEFT", _G["PartyMemberFrame" .. index .. "HealthBar"] or frame, "RIGHT", 6, 0)
     mark.tick = UI.Icon(mark, 11, "plain")
     mark.tick:Set("check", Style.green)
     mark.tick:SetPoint("CENTER", mark, "TOPRIGHT", -2, -2)
@@ -62,6 +59,12 @@ local function Mark(index)
             local waiting = LA.Orders.Pending(bot.guid)
             GameTooltip:AddLine(waiting and "Waiting for " .. bot.name .. "..." or LA.Orders.Standing(bot).state,
                 1, 1, 1)
+            if bot.switches and bot.switches.passive then
+                GameTooltip:AddLine("Staying out of fights", 0.82, 0.66, 1)
+            end
+            if bot.switches and bot.switches.loot == false then
+                GameTooltip:AddLine("Not picking up loot", 0.7, 0.7, 0.7)
+            end
             GameTooltip:AddLine("Click for orders", 0.6, 0.6, 0.6)
         else
             GameTooltip:AddLine(UnitName(unit) or "", 1, 0.82, 0)
@@ -100,14 +103,11 @@ function Party.Update()
                 local order = LA.Orders.Standing(mine)
                 mark.medal:Set(order.glyph, order.tone)
                 mark.medal.base:SetDesaturated(false)
-                mark.flags:Update(mine)
-                mark.flags:Show()
                 mark:Show()
             elseif bot then
                 mark.guid = nil
                 mark.medal:Set("bot", "stone")
                 mark.medal.base:SetDesaturated(true)
-                mark.flags:Hide()
                 mark:Show()
             else
                 mark.guid = nil
