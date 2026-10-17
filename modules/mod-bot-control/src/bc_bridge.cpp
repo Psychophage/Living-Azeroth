@@ -39,8 +39,9 @@ constexpr uint32 WatchIntervalMs = 1000;
 constexpr std::size_t MaxWho = 40;
 
 // Orders the addon can give, each one or more Playerbots chat commands. "guard" holds the
-// player's current spot; "rest" eats and drinks when the bot needs it.
-std::vector<std::string> const Actions = {"follow", "stay", "guard", "attack", "pull", "flee", "rest"};
+// player's current spot; "rest" eats and drinks when the bot needs it; "release" has a dead bot release its spirit
+// and go back to its body (a bot near its leader otherwise waits to be resurrected).
+std::vector<std::string> const Actions = {"follow", "stay", "guard", "attack", "pull", "flee", "rest", "release"};
 
 // Tactic switches, each a Playerbots strategy in combat, out of combat, or both. A bot only
 // offers the switches its class has (not every class has area attacks).
@@ -167,6 +168,8 @@ pbc_json Describe(Player* viewer, Player* bot)
         {"formation", FormationOf(ai)},
         {"resting", bot->IsSitState()},
         {"combat", bot->IsInCombat()},
+        // "dead" (a body that can release), "ghost", or "alive".
+        {"life", bot->IsAlive() ? "alive" : bot->HasPlayerFlag(PLAYER_FLAGS_GHOST) ? "ghost" : "dead"},
         {"yours", ai->GetMaster() == viewer},
         {"commandable", Commandable(viewer, bot)},
     };
@@ -217,6 +220,8 @@ bool Done(Player* bot, std::string const& order, bool on)
         return Standing(ai) == "follow" && SwitchOn(ai, *FindSwitch("passive"));
     if (order == "rest")
         return bot->IsSitState();
+    if (order == "release")
+        return bot->HasPlayerFlag(PLAYER_FLAGS_GHOST) || bot->IsAlive();
     if (order.starts_with("formation:"))
         return FormationOf(ai) == order.substr(10);
     if (Switch const* switch_ = FindSwitch(order))
@@ -405,6 +410,8 @@ void Bridge::Order(Player* player, pbc_json const& request)
 
     PlayerbotAI* ai = GET_PLAYERBOT_AI(bot);
     bool on = request.contains("on") ? request["on"].get<bool>() : switch_ ? !SwitchOn(ai, *switch_) : true;
+    if (order == "release" && (bot->IsAlive() || bot->HasPlayerFlag(PLAYER_FLAGS_GHOST)))
+        return Send(player, {{"re", id}, {"ok", false}, {"error", "refused"}, {"reason", "not dead"}});
     if (order == "rest")
     {
         if (bot->IsInCombat())
@@ -780,7 +787,15 @@ void Bridge::Trade(Player* player, pbc_json const& request, std::string const& o
             !request["slot"].is_number_unsigned() || request["bag"].get<uint32>() > 255 ||
             request["slot"].get<uint32>() > 255)
             return Fail(player, id, "bad_request");
-        error = shares.Offer(bot, player, uint8(request["bag"].get<uint32>()), uint8(request["slot"].get<uint32>()));
+        uint32 count = 0; // the whole stack, or its shared part
+        if (request.contains("count"))
+        {
+            if (!request["count"].is_number_unsigned() || request["count"].get<uint32>() == 0)
+                return Fail(player, id, "bad_request");
+            count = request["count"].get<uint32>();
+        }
+        error = shares.Offer(bot, player, uint8(request["bag"].get<uint32>()), uint8(request["slot"].get<uint32>()),
+                             count);
     }
     else if (op == "offer_gold")
     {

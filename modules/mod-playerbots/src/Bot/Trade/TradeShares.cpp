@@ -336,7 +336,7 @@ std::string PlayerbotTradeShares::Open(Player* bot, Player* trader) const
     return "";
 }
 
-std::string PlayerbotTradeShares::Offer(Player* bot, Player* trader, uint8 bag, uint8 slot)
+std::string PlayerbotTradeShares::Offer(Player* bot, Player* trader, uint8 bag, uint8 slot, uint32 count)
 {
     if (std::string error = Open(bot, trader); !error.empty())
         return error;
@@ -348,9 +348,10 @@ std::string PlayerbotTradeShares::Offer(Player* bot, Player* trader, uint8 bag, 
         return "in_trade";
     if (!item->CanBeTraded())
         return "bound";
+    uint32 const entry = item->GetEntry();
+    uint32 want = count ? std::min(count, item->GetCount()) : item->GetCount();
     if (!FullAccess(bot, trader))
     {
-        uint32 entry = item->GetEntry();
         Ledger ledger = LedgerFor(bot->GetGUID().GetCounter(), trader->GetGUID().GetCounter());
         uint32 shared = TradeShares::SharedCount(ledger, entry, Owned(bot)[entry]);
         uint32 offered = InTrade(bot)[entry];
@@ -362,17 +363,19 @@ std::string PlayerbotTradeShares::Offer(Player* bot, Player* trader, uint8 bag, 
             if (!item->GetTemplate()->SellPrice)
                 return "not_for_sale";
         }
-        else if (free < item->GetCount())
-        {
-            // Only part of the stack is shared: that part goes into the trade on its own.
-            uint16 position = EmptyPosition(bot, item, free);
-            if (!position)
-                return "no_room";
-            bot->SplitItem(item->GetPos(), position, free);
-            item = bot->GetItemByPos(position);
-            if (!item || item->GetEntry() != entry || item->GetCount() != free)
-                return "split_failed";
-        }
+        else if (!count || !Sells(bot))
+            want = std::min(want, free); // only the shared part, unless the player asked a seller for more
+    }
+    if (want < item->GetCount())
+    {
+        // Part of the stack goes into the trade on its own.
+        uint16 position = EmptyPosition(bot, item, want);
+        if (!position)
+            return "no_room";
+        bot->SplitItem(item->GetPos(), position, want);
+        item = bot->GetItemByPos(position);
+        if (!item || item->GetEntry() != entry || item->GetCount() != want)
+            return "split_failed";
     }
     int8 tradeSlot = -1;
     for (uint8 i = 0; i < TRADE_SLOT_TRADED_COUNT && tradeSlot < 0; ++i)

@@ -6,7 +6,8 @@ local _, LA = ...
 local Orders = {}
 LA.Orders = Orders
 
--- Every order the ring can hold. Switches flip; the others are given as they are.
+-- Every order the ring can hold. Switches flip; the others are given as they are. "release" is not chosen in the
+-- settings: the ring shows it by itself while one of its bots lies dead.
 Orders.catalog = {
     { id = "follow", short = "Follow", label = "Follow me", state = "Following you" },
     { id = "stay", short = "Stay", label = "Stay here", state = "Holding position" },
@@ -18,6 +19,7 @@ Orders.catalog = {
     { id = "passive", short = "Passive", label = "Stay out of fights", switch = true },
     { id = "loot", short = "Loot", label = "Pick up loot", switch = true },
     { id = "join", short = "Join in", label = "Join in when I attack", switch = true },
+    { id = "release", short = "Release", label = "Release spirit and come back", automatic = true },
 }
 Orders.byId = {}
 for _, order in ipairs(Orders.catalog) do
@@ -49,6 +51,9 @@ end
 -- Whether the bot can take this order at all (a switch its class lacks cannot).
 function Orders.Offered(bot, id)
     local order = Orders.byId[id]
+    if id == "release" then
+        return bot.life == "dead"
+    end
     return not order.switch or (bot.switches and bot.switches[id] ~= nil)
 end
 

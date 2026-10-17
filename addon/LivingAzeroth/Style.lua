@@ -208,6 +208,7 @@ Style.ORDER_LOOK = {
     attack = { "attack", "red" },
     pull = { "pull", "red" },
     flee = { "flee", "stone" },
+    release = { "up", "blue" },
     rest = { "food", "teal" },
     passive = { "passive", "violet" },
     loot = { "loot", "bronze" },

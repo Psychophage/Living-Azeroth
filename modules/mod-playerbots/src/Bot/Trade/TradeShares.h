@@ -75,7 +75,9 @@ public:
     View ViewFor(Player* bot, Player* trader) const;
 
     // Into the trade the two have open; an empty string when done, else why not.
-    std::string Offer(Player* bot, Player* trader, uint8 bag, uint8 slot);
+    // Offer puts a stack in, or count of it (split off first); without a count, a bot puts in only the part of a
+    // stack that is shared, if any is. A bot that does not sell never puts in more than is shared.
+    std::string Offer(Player* bot, Player* trader, uint8 bag, uint8 slot, uint32 count = 0);
     std::string OfferGold(Player* bot, Player* trader, uint64 copper);
     std::string TakeBack(Player* bot, Player* trader, uint8 tradeSlot);
 

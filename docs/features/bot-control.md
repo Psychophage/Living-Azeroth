@@ -33,7 +33,9 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
   outside). So is how Follow, Stay and Guard show: as parts of their own, as one part that
   toggles Follow and Stay, or as one that steps through all three (right-click steps back).
   A combined part shows where the bots are, with a light for each place; pointing at it
-  names what a click does. With two or more of your bots in the party, or any in a raid, the "All my
+  names what a click does. While one of the bots lies dead, "Release spirit" comes first in
+  the ring: the bot releases and runs back to its body (near you, a dead bot otherwise waits
+  to be resurrected, which a priest bot in the group does by itself). With two or more of your bots in the party, or any in a raid, the "All my
   bots" button opens the ring for all of them; it stands on its own wherever you put it.
 - **Raid frames** (in a raid): compact cells by group with class-coloured health, a thin
   power bar and the game's round role icons; clicking a cell targets that player,
@@ -72,7 +74,7 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
 - The settings (`/la settings` or right-click the minimap button), in four tabs (the last, Trading, is
   below). *Orders ring*: where it opens (beside the frame, at the mouse, or a fixed spot),
   its size (70% to 130%), its layout and how the movement orders show (above), and which
-  orders it holds (up to eight); the ring itself shows beside the window as it will look.
+  orders it holds (up to eight), with the ring drawn above them as it will look.
   *Raid frames*, in three parts beside a sample group drawn as it will look: *Layout*
   (groups side by side or in rows; power bars, group names, order marks on every bot, and
   hiding the CompactRaidFrame addon's frames), *Look* (bars gradient, smooth, glossy or
@@ -89,8 +91,8 @@ it around the minimap. It sits as far out as other addons' minimap buttons.
 - **Trading with bots** (with `AiPlayerbot.TradeShares.Enabled` on the server): opening a
   trade with a bot opens its bags beside the trade window, in the style of the Bagnon bag
   addon (`/la bags` opens them for a targeted bot). Click an item, or drag it onto the trade
-  window, and the bot puts it in; click one of its items in the trade window to take it back
-  out; "Give" sets its gold. Your own characters give everything. Other bots give back,
+  window, and the bot puts it in (shift-click to take only some of a stack); click one of its
+  items in the trade window to take it back out; "Give" sets its gold. Your own characters give everything. Other bots give back,
   free, what they got while grouped with you (loot and what you gave them, ticked) and gold
   they gained then, at most what they still have; random bots sell the rest at a price
   (a coin), and someone else's own characters keep theirs. With a random bot's items in the
@@ -137,7 +139,7 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 | `inspect` | `bot` | `bot`, `spec`, `item_level`, `free_slots`, `money`, `zone` |
 | `bring`, `dismiss` | `name` (one of the player's own characters) | Playerbots' `messages` |
 | `bags` | `bot` (in the player's group, commanded, or trading with them) | `name`, `money`, `allowance` (gold it gives), `full`, `sells`, `shared` (entry → count free), `stacks` (each `[bag, slot, entry, count, property, price, flags]`, flags 1 tradable, 2 in the trade), `trading`, `asking` (while trading: the copper a random bot wants on the player's side before it accepts) |
-| `offer` | `bot`, `bag`, `slot` | the bot puts that stack (or its shared part) in the open trade; refused with a `reason` |
+| `offer` | `bot`, `bag`, `slot`, optional `count` | the bot puts that stack, or `count` of it, in the open trade (without a count, only its shared part if it has one; a bot that does not sell never more than is shared); refused with a `reason` |
 | `offer_gold` | `bot`, `copper` | the bot sets its gold in the trade, at most its `allowance` |
 | `take_back` | `bot`, `slot` (trade slot from 0) | the bot takes that item back out of the trade |
 | `trade_freely` | `on` | `trading_freely`; game masters only (`AiPlayerbot.TradeShares.GmLevel`) |
@@ -145,7 +147,8 @@ Requests carry an `id` and an `op`; each gets one reply with `"re"` set to that 
 Orders are `follow`, `stay`, `guard` (hold the spot where the player stands; following,
 staying or falling back ends it, typed or from the addon), `attack`, `pull`, `flee` (fall
 back to the player, passive), `rest` (eat and drink; refused with `reason` "not needed" at
-full health and mana, or "in combat"), and `formation` with `formation` one of `near`,
+full health and mana, or "in combat"), `release` (a dead bot releases its spirit and runs back
+to its body; refused with `reason` "not dead"), and `formation` with `formation` one of `near`,
 `far`, `arrow`, `queue`, `circle`, `line`, `shield`, `melee`, `chaos`. They go to Playerbots
 as its chat commands. The reply comes when the bot's own state shows the order (for `rest`,
 when it sits down), or with `error: timeout` after `BotControl.OrderTimeoutMs` (10 seconds).
@@ -178,7 +181,8 @@ enemy as soon as the attack starts, instead of after the first hit lands.
 
 A bot is described as `guid`, `name`, `class`, `level`, `role` (tank, healer,
 damage), `order` (follow, stay, guard or free), `switches` (each switch its class has, on or
-off), `formation`, `resting` (sitting to eat or drink), `combat`, `yours` and `commandable`.
+off), `formation`, `resting` (sitting to eat or drink), `combat`, `life` (alive, dead, or ghost),
+`yours` and `commandable`.
 
 After `hello`, the server sends `{"ev":"bot","bot":{...}}` whenever one of the
 player's bots changes, however it changed, and `{"ev":"gone","guid":N}` when one

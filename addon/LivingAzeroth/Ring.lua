@@ -76,13 +76,14 @@ hit:SetPoint("CENTER")
 hit:RegisterForClicks("AnyUp")
 
 local parts = {} -- the ring's parts; the first `shown` hold its entries, in key order
+local shownKey -- which of the bots lay dead when the parts were laid out
 local shown = 0
 local bandsInUse = {} -- band -> { count, parts }
 local current -- { key, label, guids }
 local hovered, pressed -- the part under the mouse, the part held down
 local anchorFrame -- what the ring opened beside
 local previewing = false -- shown without bots: to be dragged into place, or beside the settings
-local previewAnchor -- the settings window it is previewed beside (it is not dragged then)
+local previewAnchor -- the space in the settings it is previewed in (it is not dragged then)
 
 local function Settings()
     return LivingAzerothDB.ring
@@ -109,8 +110,18 @@ local function For(guid)
     return false
 end
 
--- What the bots are doing: their shared standing order, or "Mixed orders".
+-- What the bots are doing: dead or on their way back, their shared standing order, or "Mixed orders".
 local function State(bots)
+    local dead, ghosts = 0, 0
+    for _, bot in ipairs(bots) do
+        dead = dead + (bot.life == "dead" and 1 or 0)
+        ghosts = ghosts + (bot.life == "ghost" and 1 or 0)
+    end
+    if dead > 0 then
+        return #bots == 1 and "Dead" or dead .. " dead"
+    elseif ghosts > 0 then
+        return #bots == 1 and "Running back" or ghosts .. " running back"
+    end
     local first = LA.Orders.Standing(bots[1])
     for i = 2, #bots do
         if LA.Orders.Standing(bots[i]) ~= first then
@@ -178,7 +189,8 @@ end
 
 -- The ring's entries from the player's orders, in key order, each { kind, id, band }: "move" (the combined
 -- movement part, its steps in .steps), "stand" (follow, stay or guard as parts of their own), "action" or "switch".
-local function Entries()
+-- While one of the bots lies dead, "Release spirit" comes first.
+local function Entries(bots)
     local settings = Settings()
     local steps = STEPS[settings.movement]
     local stepping = {}
@@ -218,6 +230,12 @@ local function Entries()
             return a.place < b.place
         end)
     end
+    for _, bot in ipairs(bots) do
+        if bot.life == "dead" then
+            table.insert(entries, 1, { kind = "action", id = "release" })
+            break
+        end
+    end
     for _, entry in ipairs(entries) do
         entry.band = layout ~= "two" and "one" or entry.kind == "action" and "outside" or "inside"
     end
@@ -256,12 +274,25 @@ local function Read(entry, bots)
     return { order = order, on = on, offered = offered, lit = on and 1 or nil, lights = lights }
 end
 
+local Relayout
+
 local function Refresh()
     local bots = previewing and {} or Bots()
     if not previewing and #bots == 0 then
         frame:Hide()
         return
     end
+    -- A bot that died or came back changes which parts the ring has.
+    local key = ""
+    for _, bot in ipairs(bots) do
+        key = key .. (bot.life == "dead" and "d" or "")
+    end
+    if shownKey and key ~= shownKey then
+        shownKey = key
+        Relayout()
+        return
+    end
+    shownKey = key
     local waiting = {}
     for _, bot in ipairs(bots) do
         for _, order in ipairs(LA.Orders.catalog) do
@@ -424,7 +455,8 @@ end
 
 -- The parts for the entries, band by band, and the ring's box for the layout.
 local function Layout()
-    local entries = Entries()
+    local entries = Entries(previewing and {} or Bots())
+    shownKey = nil
     wipe(bandsInUse)
     for _, entry in ipairs(entries) do
         local band = BANDS[entry.band]
@@ -513,15 +545,21 @@ end
 local function Place(anchor)
     local settings = Settings()
     local size = Size()
+    if previewing and previewAnchor then
+        -- In the settings: at the player's size, or smaller to fit its space.
+        size = math.min(size, previewAnchor:GetWidth() / box, previewAnchor:GetHeight() / box)
+    end
     frame:SetSize(box * size, box * size)
     body:SetScale(size)
     local scale = frame:GetScale()
     frame:ClearAllPoints()
-    if settings.placement == "cursor" and anchor then
+    if previewing and previewAnchor then
+        frame:SetPoint("CENTER", previewAnchor, "CENTER")
+    elseif settings.placement == "cursor" and anchor then
         local x, y = GetCursorPosition()
         local ui = UIParent:GetEffectiveScale()
         frame:SetPoint("CENTER", UIParent, "BOTTOMLEFT", x / ui / scale, y / ui / scale)
-    elseif (settings.placement == "fixed" and not previewAnchor) or not anchor then
+    elseif settings.placement == "fixed" or not anchor then
         frame:SetPoint("CENTER", UIParent, "BOTTOMLEFT", settings.x / scale, settings.y / scale)
     else
         frame:SetPoint("LEFT", anchor, "RIGHT", 4, 0)
@@ -557,7 +595,8 @@ function Ring.OpenFor()
     return frame:IsShown() and current and current.key
 end
 
--- After a settings change: the ring, open or previewed, takes its new orders, layout, size and place at once.
+-- After a settings change, or a bot dying or coming back: the ring, open or previewed, takes its new orders, layout,
+-- size and place at once.
 function Ring.Relayout()
     if not frame:IsShown() then
         return
@@ -573,7 +612,7 @@ function Ring.Relayout()
     Refresh()
 end
 
--- The ring without bots, as it will look: beside the settings window (anchor), or at its fixed spot to be dragged
+-- The ring without bots, as it will look: in a space in the settings (anchor), or at its fixed spot to be dragged
 -- into place (no anchor; frames unlocked, placement "fixed"). Hidden with show false.
 function Ring.Preview(show, anchor)
     if not show then
@@ -592,7 +631,7 @@ function Ring.Preview(show, anchor)
     Layout()
     Place(anchor)
     name:SetText("Orders ring")
-    hint:SetText(anchor and "As it will look" or "Drag to place it")
+    hint:SetText(anchor and "" or "Drag to place it")
     frame:SetAlpha(1)
     frame:Show()
     Refresh()
@@ -728,3 +767,4 @@ LA.On("loaded", function()
 end)
 
 Ring.MIN_SIZE, Ring.MAX_SIZE = MIN_SIZE, MAX_SIZE
+Relayout = Ring.Relayout

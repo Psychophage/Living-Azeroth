@@ -1,7 +1,6 @@
 -- SPDX-License-Identifier: GPL-2.0-or-later
 -- The settings window, in four tabs. Orders ring: where it opens, its size, its layout and how the movement orders
--- show, and which orders it holds (up to eight); while this tab is open the ring itself shows beside the window as it
--- will look. Raid frames: three parts (Layout, Look, Sizes) beside a small group drawn as it will look. All my bots:
+-- show, and which orders it holds (up to eight), with the ring itself drawn as it will look. Raid frames: three parts (Layout, Look, Sizes) beside a small group drawn as it will look. All my bots:
 -- that button's look and size. Trading: the bot bags window, and for game masters, trading freely with any bot.
 -- "Move frames" unlocks the party and raid frames and the "All my bots" button and, with the ring at "a fixed spot",
 -- shows the ring itself to drag.
@@ -58,11 +57,12 @@ local PART_SIZES = {
 local RAID_PARTS = { { id = 1, label = "Layout" }, { id = 2, label = "Look" }, { id = 3, label = "Sizes" } }
 local ALL_BOTS_LOOKS = { { id = "both", label = "Medal and name" }, { id = "medal", label = "Medal" },
     { id = "name", label = "Name" } }
-local WIDTH, HEIGHT = 620, 480
+local WIDTH, HEIGHT = 620, 540
 local LEFT = 230 -- the left panel's width on the ring and All my bots tabs
 local PREVIEW = 200 -- the raid preview's panel width
 local TABS = 28 -- the tabs and the space under them
 local RING_TAB = 1
+local RING_ROOM = 196 -- the space for the ring on its tab
 
 local window
 
@@ -74,13 +74,13 @@ local function Raid()
     return LivingAzerothDB.raid
 end
 
--- The ring shows beside the window while its tab is open; while frames are unlocked with the ring at a fixed spot,
+-- The ring shows in its space on its tab while that is open; while frames are unlocked with the ring at a fixed spot,
 -- it shows there to be dragged instead.
 local function RingPreview()
     if LA.unlocked and Ring().placement == "fixed" then
         LA.Ring.Preview(true)
     elseif window and window:IsShown() and window.tabs.selected == RING_TAB then
-        LA.Ring.Preview(true, window)
+        LA.Ring.Preview(true, window.ringRoom)
     else
         LA.Ring.Preview(false)
     end
@@ -179,23 +179,35 @@ local function BuildRing(page, width, height)
         window.ringChoices[i] = row
     end
 
-    -- Which orders it holds.
+    -- The ring as it will look, and which orders it holds.
     local right = UI.Inset(page)
     right:SetPoint("TOPRIGHT")
     local rightWidth = width - LEFT - 10
     right:SetSize(rightWidth, height)
+    local lookTitle = UI.Heading(right, "As it will look")
+    lookTitle:SetPoint("TOPLEFT", 10, -8)
+    lookTitle:SetWidth(rightWidth - 20)
+    window.ringRoom = CreateFrame("Frame", nil, right)
+    window.ringRoom:SetPoint("TOP", lookTitle, "BOTTOM", 0, -4)
+    window.ringRoom:SetSize(rightWidth - 20, RING_ROOM)
     local ordersTitle = UI.Heading(right, "Orders in the ring")
-    ordersTitle:SetPoint("TOPLEFT", 10, -8)
+    ordersTitle:SetPoint("TOPLEFT", lookTitle, "BOTTOMLEFT", 0, -RING_ROOM - 12)
     ordersTitle:SetWidth(rightWidth - 20)
     window.count = ordersTitle.note
     local columns, gap = 4, 4
     local cell = math.floor((rightWidth - 20 - (columns - 1) * gap) / columns)
     window.orders = {}
-    for i, order in ipairs(LA.Orders.catalog) do
+    local choices = {}
+    for _, order in ipairs(LA.Orders.catalog) do
+        if not order.automatic then
+            choices[#choices + 1] = order
+        end
+    end
+    for i, order in ipairs(choices) do
         local button = CreateFrame("Button", nil, right)
         button:SetSize(cell, 48)
         local column, row = (i - 1) % columns, math.floor((i - 1) / columns)
-        button:SetPoint("TOPLEFT", 10 + column * (cell + gap), -32 - row * (48 + gap))
+        button:SetPoint("TOPLEFT", ordersTitle, "BOTTOMLEFT", column * (cell + gap), -8 - row * (48 + gap))
         UI.Surface(button, "row")
         UI.HoverLight(button)
         button.tile = UI.Icon(button, 24, "tile")
@@ -232,8 +244,7 @@ local function BuildRing(page, width, height)
     end
     local note = UI.Text(right, "small", rightWidth - 20)
     note:SetPoint("BOTTOMLEFT", 10, 10)
-    note:SetText("The ring beside this window shows how it will look. While it is open, the number keys give its " ..
-        "orders, in the order shown on the ring.")
+    note:SetText("While the ring is open, the number keys give its orders, in the order shown on the ring.")
 end
 
 -- Raid frames: Layout, Look and Sizes, one at a time on the left, with the preview on the right.

@@ -138,12 +138,14 @@ local function Access(stack)
     return "no"
 end
 
-local function Offer(stack)
+-- Has the bot put a stack in the trade, or count of it.
+local function Offer(stack, count)
     if not trading then
         Busy("Open a trade with " .. (botName or "the bot") .. " to take things.")
         return
     end
-    LA.Bridge.Request({ op = "offer", bot = botGuid, bag = stack.bag, slot = stack.slot }, function(reply)
+    local request = { op = "offer", bot = botGuid, bag = stack.bag, slot = stack.slot, count = count }
+    LA.Bridge.Request(request, function(reply)
         if not reply.ok then
             Refused(reply)
         end
@@ -179,6 +181,9 @@ local function ShowTooltip(button)
     if access ~= "no" and not stack.inTrade then
         GameTooltip:AddLine(trading and "Click, or drag it onto the trade, to have it put in."
             or "Open a trade to take it.", 0.75, 0.75, 0.75, true)
+        if trading and stack.count > 1 then
+            GameTooltip:AddLine("Shift-click to take only some.", 0.75, 0.75, 0.75, true)
+        end
     end
     GameTooltip:Show()
 end
@@ -205,12 +210,33 @@ local function Button(index)
     button:SetScript("OnEnter", ShowTooltip)
     button:SetScript("OnLeave", function() GameTooltip:Hide() end)
     button:SetScript("OnClick", function(self)
-        if self.stack and (IsShiftKeyDown() or IsControlKeyDown()) then
-            HandleModifiedItemClick(select(2, GetItemInfo(ItemString(self.stack))))
-        elseif self.stack and not self.stack.inTrade then
-            Offer(self.stack)
+        local stack = self.stack
+        if not stack then
+            return
+        end
+        local typing = ChatEdit_GetActiveWindow and ChatEdit_GetActiveWindow()
+        if IsShiftKeyDown() and not typing and trading and not stack.inTrade and stack.count > 1
+            and Access(stack) ~= "no" then
+            -- How many, in the game's own box for splitting a stack; a bot that does not sell gives only its
+            -- shared part.
+            local most = stack.count
+            if Access(stack) == "free" and not view.sells then
+                most = math.min(most, view.shared[tostring(stack.entry)] or most)
+            end
+            GameTooltip:Hide()
+            OpenStackSplitFrame(most, self, "TOPLEFT", "TOPRIGHT")
+        elseif IsShiftKeyDown() or IsControlKeyDown() then
+            HandleModifiedItemClick(select(2, GetItemInfo(ItemString(stack))))
+        elseif not stack.inTrade then
+            Offer(stack)
         end
     end)
+    -- The split box calls this with the number chosen.
+    function button:SplitStack(count)
+        if self.stack and count and count > 0 then
+            Offer(self.stack, count)
+        end
+    end
     -- Dropped on the trade window: the same as a click.
     button:SetScript("OnDragStop", function(self)
         if self.stack and not self.stack.inTrade and TradeFrame:IsShown() and TradeFrame:IsMouseOver() then
@@ -368,8 +394,12 @@ function Bags.Refresh()
         return
     end
     asking, again = true, false
-    LA.Bridge.Request({ op = "bags", bot = botGuid }, function(reply)
+    local guid = botGuid
+    LA.Bridge.Request({ op = "bags", bot = guid }, function(reply)
         asking = false
+        if botGuid ~= guid then
+            return -- the window was closed (or opened for another bot) meanwhile: this answer is old
+        end
         if again then
             Bags.Refresh()
             return
@@ -421,9 +451,17 @@ local function Place()
     end
 end
 
+-- Closing forgets the bot, so an answer still on its way does not open the window again.
+local function Forget()
+    botGuid, view, trading, fromTrade = nil, nil, false, false
+end
+
 frame:SetScript("OnHide", function()
     search:ClearFocus()
-    botGuid, view, trading, fromTrade = nil, nil, false, false
+    if StackSplitFrame:IsShown() and StackSplitFrame.owner and StackSplitFrame.owner:GetParent() == frame then
+        StackSplitFrame:Hide()
+    end
+    Forget()
 end)
 
 search:SetScript("OnTextChanged", Bags.Draw)
@@ -496,6 +534,7 @@ events:SetScript("OnEvent", function(_, event)
     elseif event == "TRADE_CLOSED" then
         if fromTrade then
             frame:Hide()
+            Forget() -- also when the window had not shown yet
         else
             trading = false
             if view then
