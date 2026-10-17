@@ -239,6 +239,13 @@ AiPlayerbot.ReviveBotWhenSummoned = 1
 # Default: 1 (enabled)
 AiPlayerbot.BotRepairWhenSummon = 1
 
+# Living Azeroth: a bot that releases its spirit inside a dungeon or raid wakes as a ghost at the
+# graveyard outside, where it cannot find its body and stays a ghost. With this on, it runs to the
+# dungeon's portal and goes in, which brings it back to life at the entrance (as for a player),
+# and then follows its leader again.
+# Default: 0 (disabled)
+AiPlayerbot.DungeonRunBack = 0
+
 #
 #
 ####################################################################################################

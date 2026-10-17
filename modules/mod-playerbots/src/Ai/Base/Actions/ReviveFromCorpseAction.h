@@ -28,6 +28,10 @@ public:
 
     bool Execute(Event event) override;
     bool isUseful() override;
+
+private:
+    bool CorpseInDungeonElsewhere() const;  // Living Azeroth: AiPlayerbot.DungeonRunBack
+    bool RunToDungeon();
 };
 
 class SpiritHealerAction : public MovementAction

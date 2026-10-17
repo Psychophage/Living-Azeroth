@@ -6,14 +6,18 @@
 
 #include "ReviveFromCorpseAction.h"
 #include "Corpse.h"
+#include "DBCStores.h"
 #include "Event.h"
 #include "FleeManager.h"
 #include "GameGraveyard.h"
 #include "MapMgr.h"
+#include "ObjectMgr.h"
 #include "PlayerbotTextMgr.h"
 #include "Playerbots.h"
 #include "RandomPlayerbotMgr.h"
 #include "ServerFacade.h"
+
+#include <algorithm>
 
 bool ReviveFromCorpseAction::Execute(Event event)
 {
@@ -76,6 +80,9 @@ bool FindCorpseAction::Execute(Event /*event*/)
 {
     if (bot->InBattleground())
         return false;
+
+    if (CorpseInDungeonElsewhere())
+        return RunToDungeon();
 
     Player* groupLeader = botAI->GetGroupLeader();
     Corpse* corpse = bot->GetCorpse();
@@ -200,7 +207,57 @@ bool FindCorpseAction::isUseful()
     if (bot->InBattleground())
         return false;
 
-    return bot->GetCorpse();
+    return bot->GetCorpse() || CorpseInDungeonElsewhere();
+}
+
+// Living Azeroth: a ghost released in a dungeon or raid wakes at the graveyard outside, on another map, where
+// GetCorpse() (which looks on the ghost's own map) finds nothing. It goes back in the way a player does.
+bool FindCorpseAction::CorpseInDungeonElsewhere() const
+{
+    if (!sPlayerbotAIConfig.dungeonRunBack || !bot->HasPlayerFlag(PLAYER_FLAGS_GHOST))
+        return false;
+
+    uint32 corpseMap = bot->GetCorpseLocation().GetMapId();
+    MapEntry const* entry = sMapStore.LookupEntry(corpseMap);
+    return corpseMap != bot->GetMapId() && entry && entry->IsDungeon();
+}
+
+// Runs to the nearest portal on this map into the dungeon with the body and goes through it; entering a dungeon
+// with one's body in it brings a ghost back to life at the entrance. With no portal on this map, it goes in at once.
+bool FindCorpseAction::RunToDungeon()
+{
+    uint32 corpseMap = bot->GetCorpseLocation().GetMapId();
+    AreaTrigger const* portal = nullptr;
+    AreaTriggerTeleport const* inside = sObjectMgr->GetMapEntranceTrigger(corpseMap);
+    float nearest = 0.0f;
+    for (auto const& [triggerId, teleport] : sObjectMgr->GetAllAreaTriggerTeleports())
+    {
+        AreaTrigger const* trigger = sObjectMgr->GetAreaTrigger(triggerId);
+        if (teleport.target_mapId != corpseMap || !trigger || trigger->map != bot->GetMapId())
+            continue;
+
+        float distance = bot->GetDistance(trigger->x, trigger->y, trigger->z);
+        if (!portal || distance < nearest)
+        {
+            portal = trigger;
+            inside = &teleport;
+            nearest = distance;
+        }
+    }
+    if (!inside)
+        return false;
+
+    if (portal)
+    {
+        float reach = std::max({portal->radius, portal->length / 2, portal->width / 2, 3.0f}) + 2.0f;
+        if (nearest > reach && (bot->isMoving() || MoveTo(portal->map, portal->x, portal->y, portal->z, false, false)))
+            return true;
+    }
+
+    bot->GetMotionMaster()->Clear();
+    bot->RemoveAurasWithInterruptFlags(AURA_INTERRUPT_FLAG_TELEPORTED | AURA_INTERRUPT_FLAG_CHANGE_MAP);
+    return bot->TeleportTo(inside->target_mapId, inside->target_X, inside->target_Y, inside->target_Z,
+                           inside->target_Orientation);
 }
 
 GraveyardStruct const* SpiritHealerAction::GetGrave(bool startZone)

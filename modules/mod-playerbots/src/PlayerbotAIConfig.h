@@ -425,6 +425,7 @@ public:
     bool allowSummonWhenBotIsDead;
     int reviveBotWhenSummoned;
     bool botRepairWhenSummon;
+    bool dungeonRunBack;  // Living Azeroth: FindCorpseAction, a ghost whose body is in a dungeon goes in
     bool autoInitOnly;
     bool resetInstanceIdForAltBots;
     float autoInitEquipLevelLimitRatio;
