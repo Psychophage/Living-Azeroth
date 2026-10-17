@@ -22,6 +22,7 @@
 #include "Formations.h"
 #include "PopulationMgr.h"
 #include "TradeShares.h"
+#include "TradeStatusAction.h"
 #include "WorldPacket.h"
 #include "WorldSession.h"
 #include "pbc_runtime.h"
@@ -735,6 +736,12 @@ void Bridge::Bags(Player* player, pbc_json const& request)
     pbc_json shared = pbc_json::object();
     for (auto const& [entry, count] : view.shared)
         shared[std::to_string(entry)] = count;
+    // While the two trade: what the bot wants on the player's side before it accepts (a random bot's price).
+    bool const trading = bot->GetTrader() == player;
+    uint32 asking = 0;
+    if (trading)
+        if (PlayerbotAI* botAI = GET_PLAYERBOT_AI(bot))
+            asking = TradeStatusAction(botAI).AskingPrice();
     Reply(player, id, {{"bot", bot->GetGUID().GetCounter()},
                        {"name", bot->GetName()},
                        {"money", view.money},
@@ -743,7 +750,8 @@ void Bridge::Bags(Player* player, pbc_json const& request)
                        {"sells", view.sells},
                        {"shared", shared},
                        {"stacks", stacks},
-                       {"trading", bot->GetTrader() == player}});
+                       {"asking", asking},
+                       {"trading", trading}});
 }
 
 // Into the trade the player has open with a bot: one of its items, its gold, an item taken back out; or a GM's

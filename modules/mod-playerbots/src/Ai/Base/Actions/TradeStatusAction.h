@@ -10,6 +10,7 @@
 #include <map>
 
 #include "QueryItemUsageAction.h"
+#include "TradeShares.h"
 
 class Player;
 class PlayerbotAI;
@@ -21,7 +22,24 @@ public:
 
     bool Execute(Event event) override;
 
+    // Living Azeroth: the copper this bot wants on the trader's side before it accepts the trade they have open, as
+    // the check on accepting works it out (0 when it wants nothing, or does not sell). For the trade window.
+    uint32 AskingPrice();
+
 private:
+    // What each side of the trade is worth to a selling bot, in copper: the bot's items (less what is the trader's
+    // to take back free) and gold, and the trader's items and gold.
+    struct Worth
+    {
+        int32 botItems = 0;
+        int32 bot = 0;
+        int32 traderItems = 0;
+        int32 trader = 0;
+    };
+    Worth TradeWorth(Player* trader, PlayerbotTradeShares::Free const& free);
+    // The gold the trader puts in beyond what the bot asks for its side: a gift, shared back like a given item.
+    uint64 GiftGold(Player* trader);
+
     void BeginTrade();
     void CancelTrade();
     bool CheckTrade();

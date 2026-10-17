@@ -53,12 +53,14 @@ public:
     void Initialize();  // World thread, at startup.
     bool Enabled() const { return _enabled.load(); }
 
-    // What a bot gets while grouped with players. Any map thread.
+    // What a bot gets while grouped with players. Any map thread. Gold that comes in a trade is not counted here:
+    // OnTraded counts what of it was a gift.
     void OnLoot(Player* bot, uint32 entry, uint32 count);
     void OnMoney(Player* bot, int32 amount);
-    // A trade between a bot and a player went through: what the player gave and took, and the gold the bot gave.
+    // A trade between a bot and a player went through: what the player gave and took, the gold the bot gave, and the
+    // gold the player gave as a gift (beyond what the bot asked for its side).
     void OnTraded(Player* bot, Player* trader, std::map<uint32, uint32> const& given,
-                  std::map<uint32, uint32> const& taken, uint64 gold);
+                  std::map<uint32, uint32> const& taken, uint64 gold, uint64 giftGold);
 
     // Everything is the trader's to take: the bot is one of their own characters, or they are a GM trading freely.
     bool FullAccess(Player* bot, Player* trader) const;

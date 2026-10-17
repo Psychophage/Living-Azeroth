@@ -84,6 +84,7 @@ bool TradeStatusAction::Execute(Event event)
         {
             std::map<uint32, uint32> givenItemIds, takenItemIds;
             uint64 botGold = bot->GetTradeData()->GetMoney();
+            uint64 giftGold = GiftGold(trader);
             for (uint32 slot = 0; slot < TRADE_SLOT_TRADED_COUNT; ++slot)
             {
                 Item* item = trader->GetTradeData()->GetItem((TradeSlots)slot);
@@ -103,7 +104,7 @@ bool TradeStatusAction::Execute(Event event)
             }
 
             // Living Azeroth: what the trader took is no longer shared with them; what they gave now is.
-            PlayerbotTradeShares::Instance().OnTraded(bot, trader, givenItemIds, takenItemIds, botGold);
+            PlayerbotTradeShares::Instance().OnTraded(bot, trader, givenItemIds, takenItemIds, botGold, giftGold);
 
             for (std::map<uint32, uint32>::iterator i = givenItemIds.begin(); i != givenItemIds.end(); ++i)
             {
@@ -258,10 +259,11 @@ bool TradeStatusAction::CheckTrade()
         return true;
     }
 
-    int32 botItemsMoney = std::max(0, CalculateCost(bot, true) - SharedValue(free.items));
-    int32 botMoney = int32(bot->GetTradeData()->GetMoney() - free.gold) + botItemsMoney;
-    int32 playerItemsMoney = CalculateCost(trader, false);
-    int32 playerMoney = trader->GetTradeData()->GetMoney() + playerItemsMoney;
+    Worth const worth = TradeWorth(trader, free);
+    int32 botItemsMoney = worth.botItems;
+    int32 botMoney = worth.bot;
+    int32 playerItemsMoney = worth.traderItems;
+    int32 playerMoney = worth.trader;
     if (botItemsMoney > 0 && sPlayerbotAIConfig.enableRandomBotTrading == 2 &&
         (sRandomPlayerbotMgr.IsRandomBot(bot)|| sRandomPlayerbotMgr.IsAddclassBot(bot)))
     {
@@ -377,6 +379,55 @@ bool TradeStatusAction::CheckTrade()
         {{"%money", chat->formatMoney(-(delta + discount))}}));
     botAI->PlaySound(TEXT_EMOTE_NO);
     return false;
+}
+
+// Living Azeroth: see the header.
+TradeStatusAction::Worth TradeStatusAction::TradeWorth(Player* trader, PlayerbotTradeShares::Free const& free)
+{
+    Worth worth;
+    worth.botItems = std::max(0, CalculateCost(bot, true) - SharedValue(free.items));
+    worth.bot = int32(bot->GetTradeData()->GetMoney() - free.gold) + worth.botItems;
+    worth.traderItems = CalculateCost(trader, false);
+    worth.trader = int32(trader->GetTradeData()->GetMoney()) + worth.traderItems;
+    return worth;
+}
+
+// Living Azeroth: see the header. Only random bots sell; what is the trader's to take back is not charged for, and
+// the bot's discount for this trader counts as on accepting.
+uint32 TradeStatusAction::AskingPrice()
+{
+    Player* trader = bot->GetTrader();
+    if (!trader || !bot->GetTradeData() || !trader->GetTradeData() || !IsRealPlayer(trader) ||
+        !sPlayerbotAIConfig.IsInRandomAccountList(bot->GetSession()->GetAccountId()))
+        return 0;
+    PlayerbotTradeShares::Free free;
+    if (PlayerbotTradeShares::Instance().Enabled())
+    {
+        free = PlayerbotTradeShares::Instance().FreeInTrade(bot, trader);
+        if (free.all)
+            return 0;
+    }
+    Worth const worth = TradeWorth(trader, free);
+    int32 const owed = worth.bot - worth.trader - int32(sRandomPlayerbotMgr.GetTradeDiscount(bot, trader));
+    return owed > 0 ? uint32(owed) : 0;
+}
+
+// Living Azeroth: see the header. A bot that does not sell takes all the trader's gold as a gift; a selling bot keeps
+// what its side was worth to it (less the trader's items and their discount) as payment.
+uint64 TradeStatusAction::GiftGold(Player* trader)
+{
+    uint64 const gold = trader->GetTradeData()->GetMoney();
+    if (!IsRealPlayer(trader) || !sPlayerbotAIConfig.IsInRandomAccountList(bot->GetSession()->GetAccountId()))
+        return gold;
+    PlayerbotTradeShares::Free free;
+    if (PlayerbotTradeShares::Instance().Enabled())
+        free = PlayerbotTradeShares::Instance().FreeInTrade(bot, trader);
+    if (free.all)
+        return gold;
+    Worth const worth = TradeWorth(trader, free);
+    int64 const price = std::max<int64>(0, int64(worth.bot) - worth.traderItems -
+                                               int64(sRandomPlayerbotMgr.GetTradeDiscount(bot, trader)));
+    return gold > uint64(price) ? gold - uint64(price) : 0;
 }
 
 // Living Azeroth: what the shared part of the bot's side would have cost, so it is not charged for.

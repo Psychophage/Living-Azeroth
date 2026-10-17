@@ -195,7 +195,8 @@ void PlayerbotTradeShares::OnLoot(Player* bot, uint32 entry, uint32 count)
 void PlayerbotTradeShares::OnMoney(Player* bot, int32 amount)
 {
     // Gold spent is not taken off: the allowance is capped by what the bot still has when it is asked for.
-    if (!Enabled() || amount <= 0 || !bot || !GET_PLAYERBOT_AI(bot) || IsSelfBot(bot))
+    // The game moves a trade's gold while the trade is still open; OnTraded counts the part that was a gift.
+    if (!Enabled() || amount <= 0 || !bot || !GET_PLAYERBOT_AI(bot) || IsSelfBot(bot) || bot->GetTradeData())
         return;
     std::vector<uint32> players = PlayersGroupedWith(bot);
     std::lock_guard lock(_mutex);
@@ -210,7 +211,7 @@ void PlayerbotTradeShares::OnMoney(Player* bot, int32 amount)
 }
 
 void PlayerbotTradeShares::OnTraded(Player* bot, Player* trader, std::map<uint32, uint32> const& given,
-                                    std::map<uint32, uint32> const& taken, uint64 gold)
+                                    std::map<uint32, uint32> const& taken, uint64 gold, uint64 giftGold)
 {
     if (!Enabled() || !bot || !trader || !IsRealPlayer(trader))
         return;
@@ -222,6 +223,7 @@ void PlayerbotTradeShares::OnTraded(Player* bot, Player* trader, std::map<uint32
     TradeShares::Take(ledger, taken, gold);
     for (auto const& [entry, count] : given)
         TradeShares::AddItems(ledger, entry, count);
+    TradeShares::AddGold(ledger, giftGold);
     // Whatever shared the bot no longer has (used, sold, lost) is forgotten.
     for (auto it = ledger.items.begin(); it != ledger.items.end();)
     {

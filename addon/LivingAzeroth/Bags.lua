@@ -50,15 +50,16 @@ local search = CreateFrame("EditBox", "LivingAzerothBotBagsSearch", frame)
 search:SetAutoFocus(false)
 search:SetFontObject("ChatFontSmall")
 search:SetTextInsets(8, 8, 0, 0)
-search:SetHeight(18)
-search:SetPoint("TOPRIGHT", -30, -PAD - 1)
+search:SetHeight(20)
+search:SetPoint("TOPRIGHT", -30, -PAD)
+-- Bagnon's search border, at an edge size the box's height has room for (a 16 edge needs a box 32 tall).
 search:SetBackdrop({
     edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
     bgFile = [[Interface\ChatFrame\ChatFrameBackground]],
-    edgeSize = 16,
+    edgeSize = 10,
     tile = true,
     tileSize = 16,
-    insets = { left = 2, right = 2, top = 2, bottom = 2 },
+    insets = { left = 3, right = 3, top = 3, bottom = 3 },
 })
 search:SetBackdropColor(0, 0, 0, 0.8)
 search:SetBackdropBorderColor(1, 1, 1, 0.8)
@@ -83,6 +84,13 @@ giveButton:SetSize(44, 20)
 giveButton:SetPoint("LEFT", give, "RIGHT", 2, 0)
 giveButton:SetText("Give")
 local giveLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmallLeft")
+-- While trading with a random bot that wants paying: its price for what is in the trade, and "Pay", which puts that
+-- gold on the player's side.
+local ASK_ROW = 24
+local asks = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmallLeft")
+local payButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+payButton:SetSize(44, 20)
+payButton:SetText("Pay")
 
 local buttons = {}
 local view -- the server's last answer for the bot shown
@@ -307,12 +315,30 @@ function Bags.Draw()
         buttons[i].stack = nil
     end
     local rows = math.max(1, math.ceil(shown / COLUMNS))
-    -- While trading: the gold field, or a line saying there is no gold to be had.
+    -- While trading: the gold field, or a line saying there is no gold to be had; above it, the bot's price.
     local canGive = view.full or view.allowance > 0
-    local foot = MONEY_ROW + (trading and (canGive and GIVE_ROW or 18) or 0)
+    local giveRow = canGive and GIVE_ROW or 18
+    local asking = trading and view.asking > 0
+    local foot = MONEY_ROW + (trading and giveRow or 0) + (asking and ASK_ROW or 0)
     frame:SetSize(PAD * 2 + COLUMNS * (ITEM + SPACING) - SPACING, TOP + rows * (ITEM + SPACING) - SPACING + foot + PAD)
     search:SetWidth(math.max(80, frame:GetWidth() - title:GetStringWidth() - 60))
     MoneyFrame_Update(money:GetName(), view.money)
+    LA.SetShown(asks, asking)
+    LA.SetShown(payButton, asking)
+    if asking then
+        asks:ClearAllPoints()
+        asks:SetPoint("BOTTOMLEFT", PAD + 2, PAD + MONEY_ROW + giveRow + 8)
+        payButton:ClearAllPoints()
+        payButton:SetPoint("BOTTOMRIGHT", -PAD - 2, PAD + MONEY_ROW + giveRow + 3)
+        local enough = GetMoney() - GetPlayerTradeMoney() >= view.asking
+        asks:SetText("It asks " .. GetCoinTextureString(view.asking) .. " for what is in the trade."
+            .. (enough and "" or " |cffff6040You haven't that much.|r"))
+        if enough then
+            payButton:Enable()
+        else
+            payButton:Disable()
+        end
+    end
     LA.SetShown(give, trading and canGive)
     LA.SetShown(giveButton, trading and canGive)
     LA.SetShown(giveLabel, trading)
@@ -330,15 +356,24 @@ function Bags.Draw()
     end
 end
 
--- Asks the server for the bot's bags again.
-local asking
+-- Asks the server for the bot's bags again. One question is out at a time; asking again meanwhile asks once more
+-- when its answer comes, so the window ends up showing the latest state.
+local asking, again
 function Bags.Refresh()
-    if not botGuid or asking then
+    if not botGuid then
         return
     end
-    asking = true
+    if asking then
+        again = true
+        return
+    end
+    asking, again = true, false
     LA.Bridge.Request({ op = "bags", bot = botGuid }, function(reply)
         asking = false
+        if again then
+            Bags.Refresh()
+            return
+        end
         if not reply.ok then
             if reply.error ~= "unknown_bot" then
                 Refused(reply)
@@ -354,7 +389,7 @@ function Bags.Refresh()
                 price = row[6], tradable = flags % 2 == 1, inTrade = flags % 4 >= 2 }
         end
         view = { stacks = stacks, shared = reply.shared or {}, money = reply.money or 0,
-            allowance = reply.allowance or 0, full = reply.full, sells = reply.sells }
+            allowance = reply.allowance or 0, full = reply.full, sells = reply.sells, asking = reply.asking or 0 }
         botName = reply.name or botName
         trading = reply.trading and TradeFrame:IsShown()
         Bags.Draw()
@@ -408,6 +443,16 @@ local function Give()
     end)
 end
 giveButton:SetScript("OnClick", Give)
+-- Paying adds the bot's price to the gold already on the player's side, shown in the trade window's own gold field
+-- too; the trade then refreshes the window.
+payButton:SetScript("OnClick", function()
+    if trading and view and view.asking > 0 then
+        local total = GetPlayerTradeMoney() + view.asking
+        MoneyInputFrame_SetCopper(TradePlayerInputMoneyFrame, total)
+        SetTradeMoney(total)
+        Bags.Refresh()
+    end
+end)
 for _, part in ipairs({ "Gold", "Silver", "Copper" }) do
     _G[give:GetName() .. part]:HookScript("OnEnterPressed", Give)
 end
@@ -434,6 +479,7 @@ local events = CreateFrame("Frame")
 events:RegisterEvent("TRADE_SHOW")
 events:RegisterEvent("TRADE_CLOSED")
 events:RegisterEvent("TRADE_TARGET_ITEM_CHANGED")
+events:RegisterEvent("TRADE_PLAYER_ITEM_CHANGED") -- what the player puts in changes the bot's price
 events:RegisterEvent("TRADE_MONEY_CHANGED")
 events:RegisterEvent("TRADE_ACCEPT_UPDATE")
 events:SetScript("OnEvent", function(_, event)
