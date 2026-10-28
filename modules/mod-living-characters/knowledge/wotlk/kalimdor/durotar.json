@@ -4610,6 +4610,44 @@
       "when": {
         "area_id": 2979
       }
+    },
+    {
+      "authored": false,
+      "id": "area:364",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:364",
+        "world:creature:3143",
+        "world:quest:788",
+        "world:creature:3155",
+        "world:creature:3156",
+        "world:creature:3159",
+        "world:creature:3160",
+        "world:creature:3161"
+      ],
+      "text": "You are in The Den, a Horde settlement in Durotar. Gornek, a local guide for new recruits, sends them north after mottled boars and expects them to report back here. Rwag trains rogues, Nartok trains warlocks, Kzan Thornslash is a weaponsmith, Huklah sells cloth and leather armor, and Rarc is an armorer and shieldcrafter.",
+      "when": {
+        "area_id": 364
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2337",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2337",
+        "world:creature:3169",
+        "world:creature:3173",
+        "world:creature:3706",
+        "world:creature:5943",
+        "world:creature:3164"
+      ],
+      "text": "You are in Razor Hill Barracks, a Horde barracks in Durotar. Tarshaw Jaggedscar trains warriors, Swart trains shamans and frames his teaching in terms of the spirits, and Tai'jin teaches priests and expects respect for the ancestral ways. Rawrk teaches First Aid and can refer experienced students to Doctor Gregory Victor at Hammerfall in Arathi Highlands. Jark sells general goods.",
+      "when": {
+        "area_id": 2337
+      }
     }
   ],
   "sources": {
@@ -4628,6 +4666,11 @@
       "reference": "AreaTable.dbc 14 (Durotar)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:2337": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2337 (Razor Hill Barracks)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:2979": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 2979 (Tor'kren Farm)",
@@ -4641,6 +4684,11 @@
     "dbc:area:363": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 363 (Valley of Trials)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:364": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 364 (The Den)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:366": {
@@ -7363,10 +7411,50 @@
       "reference": "acore_world.creature_template 31467 (Forsaken Refugee), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:3155": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3155 (Rwag), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3156": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3156 (Nartok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:31564": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 31564 (Warsong Battleguard), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:3159": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3159 (Kzan Thornslash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3160": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3160 (Huklah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3161": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3161 (Rarc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3164 (Jark), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3169": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3169 (Tarshaw Jaggedscar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3173 (Swart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:3190": {
       "kind": "world_db",
@@ -7438,6 +7526,11 @@
       "reference": "acore_world.creature_template 3296 (Orgrimmar Grunt), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:3706": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3706 (Tai'jin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:5435": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 5435 (Sand Shark), its spawns and NPC summary",
@@ -7488,6 +7581,11 @@
       "reference": "acore_world.creature_template 5941 (Lau'Tiki), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:5943": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5943 (Rawrk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:6408": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 6408 (Ula'elek), its spawns and NPC summary",
@@ -7527,6 +7625,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 6394 (Thazz'ril's Pick)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:788": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 788 (Cutting Teeth)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:806": {
       "kind": "world_db",

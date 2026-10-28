@@ -2307,6 +2307,26 @@
       "when": {
         "area_id": 3486
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2839",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2839",
+        "world:quest:7081",
+        "world:creature:13776",
+        "world:creature:13777",
+        "world:creature:19906",
+        "world:creature:19907",
+        "world:creature:14284",
+        "world:creature:14285"
+      ],
+      "text": "You are in Alterac Valley, a contested valley in the Alterac Mountains. Alliance and Horde forces fight here for graveyards, towers, bunkers and mines, and the Stormpike and Frostwolf battleguards hold the field for their sides. Usha Eyegouge, the Horde battlemaster, and Grumbol Grimhammer, the Alliance battlemaster, send visitors toward the fighting.",
+      "when": {
+        "area_id": 2839
+      }
     }
   ],
   "sources": {
@@ -2383,6 +2403,11 @@
     "dbc:area:283": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 283 (Slaughter Hollow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2839": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2839 (Alterac Valley)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:284": {
@@ -4055,6 +4080,11 @@
       "reference": "acore_world.creature_template 14284 (Stormpike Battleguard), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:14285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14285 (Frostwolf Battleguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:16392": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 16392 (Captain Armando Ossex), its spawns and NPC summary",
@@ -4069,6 +4099,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 1958 (Vile Fin Tidecaller), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:19906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19906 (Usha Eyegouge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:19907": {
       "kind": "world_db",
@@ -4279,6 +4314,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 1712 (Cyclonian)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:7081": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7081 (Alterac Valley Graveyards)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:8412": {
       "kind": "world_db",

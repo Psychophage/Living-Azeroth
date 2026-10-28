@@ -3948,6 +3948,25 @@
       "when": {
         "area_id": 2657
       }
+    },
+    {
+      "authored": false,
+      "id": "area:600",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:600",
+        "world:creature:4648",
+        "world:creature:4649",
+        "world:creature:4651",
+        "world:creature:4661",
+        "world:creature:4652",
+        "world:creature:4653"
+      ],
+      "text": "You are in Bolgan's Hole, a place in Desolace. Gelkis creatures haunt it in several kinds, from stampers and windchasers to earthcallers, maulers and marauders.",
+      "when": {
+        "area_id": 600
+      }
     }
   ],
   "sources": {
@@ -4019,6 +4038,11 @@
     "dbc:area:599": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 599 (Thunder Axe Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:600": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 600 (Bolgan's Hole)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:602": {
@@ -6676,6 +6700,16 @@
       "reference": "acore_world.creature_template 4651 (Gelkis Earthcaller), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:4652": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4652 (Gelkis Mauler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4653": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4653 (Gelkis Marauder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:4655": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 4655 (Maraudine Wrangler), its spawns and NPC summary",
@@ -6690,6 +6724,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 4657 (Maraudine Windchaser), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:4661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4661 (Gelkis Rumbler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:4663": {
       "kind": "world_db",

@@ -2530,6 +2530,24 @@
       "when": {
         "area_id": 2618
       }
+    },
+    {
+      "authored": false,
+      "id": "area:1770",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1770",
+        "world:creature:11016",
+        "world:creature:7118",
+        "world:creature:7120",
+        "world:creature:7114",
+        "world:creature:7093"
+      ],
+      "text": "You are in Shadow Hold, a cult stronghold in Felwood. Jaedenar darkweavers, warlocks and enforcers prowl its halls, and vile oozes lurk among them. Arko'narin is imprisoned here, fearing the cultists will sacrifice her.",
+      "when": {
+        "area_id": 1770
+      }
     }
   ],
   "sources": {
@@ -2571,6 +2589,11 @@
     "dbc:area:1769": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1769 (Timbermaw Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1770": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1770 (Shadow Hold)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:1997": {

@@ -1751,6 +1751,24 @@
       "when": {
         "area_id": 4094
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4088",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4088",
+        "world:creature:25002",
+        "world:creature:25001",
+        "world:creature:24999",
+        "world:creature:25063",
+        "world:creature:24976"
+      ],
+      "text": "You are in Sun's Reach Armory, part of Isle of Quel'Danas. Unleashed hellions, abyssal flamewalkers and irespeakers roam it, along with Dawnblade hawkriders and blood knights.",
+      "when": {
+        "area_id": 4088
+      }
     }
   ],
   "sources": {
@@ -1787,6 +1805,11 @@
     "dbc:area:4087": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4087 (Sun's Reach Harbor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4088": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4088 (Sun's Reach Armory)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4089": {
@@ -3068,6 +3091,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 24980 (Crystal Ward), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24999": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24999 (Irespeaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:25001": {
       "kind": "world_db",

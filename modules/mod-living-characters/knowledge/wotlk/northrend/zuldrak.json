@@ -6188,6 +6188,24 @@
       "when": {
         "area_id": 4579
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4314",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4314",
+        "world:creature:28888",
+        "world:creature:28750",
+        "world:creature:28759",
+        "world:creature:28931",
+        "world:creature:28803"
+      ],
+      "text": "You are in Voltarus, an area of Zul'Drak. A captured Drakkari chieftain is held here by the Scourge, and he pleads to be released. Blight geists, flying fiends and blightblood trolls are the main dangers, and Overlord Drakuru's guards and caged geists add to them.",
+      "when": {
+        "area_id": 4314
+      }
     }
   ],
   "sources": {
@@ -6239,6 +6257,11 @@
     "dbc:area:4313": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4313 (Thrym's End)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4314": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4314 (Voltarus)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4315": {
@@ -10851,6 +10874,11 @@
       "reference": "acore_world.creature_template 28802 (Servant of Drakuru), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:28803": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28803 (Drakuru's Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:28843": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 28843 (Bloated Abomination), its spawns and NPC summary",
@@ -10905,6 +10933,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 28902 (Warlord Zol'Maz), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:28931": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28931 (Blightblood Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:28952": {
       "kind": "world_db",

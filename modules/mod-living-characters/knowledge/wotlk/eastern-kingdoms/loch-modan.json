@@ -3151,6 +3151,23 @@
       "when": {
         "area_id": 936
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2101",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2101",
+        "world:creature:6734",
+        "world:creature:1963",
+        "world:creature:1682",
+        "world:quest:418"
+      ],
+      "text": "You are in Stoutlager Inn, an Alliance inn in Loch Modan. Innkeeper Hearthstove keeps the inn, and Vidra Hearthstove cooks the blood sausages Thelsamar is known for, working from bear meat, boar intestines and spider ichor. Yanni Stoutheart sells general supplies here, including ammunition.",
+      "when": {
+        "area_id": 2101
+      }
     }
   ],
   "sources": {
@@ -3182,6 +3199,11 @@
     "dbc:area:149": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 149 (Silver Stream Mine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2101": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2101 (Stoutlager Inn)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:38": {
@@ -5709,6 +5731,11 @@
       "reference": "acore_world.creature_template 1681 (Brock Stoneseeker), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:1682": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1682 (Yanni Stoutheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:1683": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 1683 (Warg Deepwater), its spawns and NPC summary",
@@ -5723,6 +5750,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 1693 (Loch Crocolisk), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1963 (Vidra Hearthstove), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:2909": {
       "kind": "world_db",
@@ -5744,6 +5776,11 @@
       "reference": "acore_world.creature_template 6241 (Bailor Stonehand), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:6734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6734 (Innkeeper Hearthstove), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:quest:237": {
       "kind": "world_db",
       "reference": "acore_world.quest_template 237 (In Defense of the King's Lands)",
@@ -5758,6 +5795,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 307 (Filthy Paws)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:418": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 418 (Thelsamar Blood Sausages)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:455": {
       "kind": "world_db",

@@ -14153,6 +14153,127 @@
       "when": {
         "area_id": 4743
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4514",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4514",
+        "world:creature:31892",
+        "world:creature:31397",
+        "world:creature:31396",
+        "world:creature:31399"
+      ],
+      "text": "You are in Saronite Mines, a cavern in Icecrown where the Lich King's captives dig saronite. Val'kyr taskmistresses and the foreman Thaldrin drive the workers, and the ore has left some of them hearing voices. Darkspeaker R'khem, chained here, asks to be freed from the ymirjar who took him.",
+      "when": {
+        "area_id": 4514
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4529",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4529",
+        "world:creature:29330",
+        "world:creature:29338",
+        "world:creature:29329",
+        "world:creature:29542",
+        "world:creature:29333"
+      ],
+      "text": "You are in The Crimson Cathedral, a cathedral in Icecrown where Onslaught harbor guards, paladins and raven bishops are the main dangers. Archbishop Landgren is the one named foe, and Onslaught gryphon riders patrol overhead.",
+      "when": {
+        "area_id": 4529
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4530",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4530",
+        "world:creature:30993",
+        "world:creature:31130",
+        "world:creature:30988",
+        "world:creature:30701",
+        "world:creature:30597"
+      ],
+      "text": "You are in Sanctum of Reanimation, a sanctum in Icecrown where scourgebeak fleshrippers, vile creepers and spiked ghouls are the main dangers. Festering corpses lie about, and a crusader calls for them to be burned. Patches, a ghoul held in chains by Doctor Sabnok, wants revenge on the doctor.",
+      "when": {
+        "area_id": 4530
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4666",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4666",
+        "world:creature:33361",
+        "world:creature:33372",
+        "world:creature:33373",
+        "world:creature:33379",
+        "world:creature:33403",
+        "world:creature:33405"
+      ],
+      "text": "You are in Sunreaver Pavilion, a Horde pavilion in Icecrown where the delegations of Orgrimmar, Sen'jin, the Undercity, Silvermoon and Thunder Bluff train their fighters. Grand Champions Mokra the Skullcrusher and Eressea Dawnsinger welcome recruits, and Akinos, Master of Arms, keeps trainees sharp for the fight against the Scourge. The pavilion has an inn and a vendor.",
+      "when": {
+        "area_id": 4666
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4667",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4667",
+        "world:creature:33225",
+        "world:creature:33312",
+        "world:creature:33625"
+      ],
+      "text": "You are in Silver Covenant Pavilion, an Alliance pavilion in Icecrown where the delegations of Stormwind, Ironforge, Gnomeregan, Darnassus and the Exodar train their fighters. Marshal Jacob Alerius and Lana Stouthammer, grand champions of Stormwind and Ironforge, welcome recruits, and Arcanist Taelis guides aspirants for the Silver Covenant. The pavilion has an inn and a vendor.",
+      "when": {
+        "area_id": 4667
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4674",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4674",
+        "world:creature:33817",
+        "world:creature:33759",
+        "world:creature:33417"
+      ],
+      "text": "You are in Argent Pavilion, a pavilion of the Argent Crusade in Icecrown. Justicar Mariel Trueheart greets visitors as the Crusade's seneschal, and Eadric the Pure, Grand Champion of the Argent Crusade, helps coordinate champions' training. Crusader Rhydalla is still investigating the murders around the tournament's Black Knight. A vendor trades here.",
+      "when": {
+        "area_id": 4674
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4862",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4862",
+        "world:creature:36624",
+        "world:creature:36642",
+        "world:creature:36656",
+        "world:quest:24461"
+      ],
+      "text": "You are in The Frozen Halls, a place in Icecrown where Silver Covenant and Sunreaver members work to restore Quel'Delar, a broken dragonforged blade. Caladis Brightspear of the Silver Covenant and Myralion Sunblaze of the Sunreavers both insist the sword must be restored. A Silver Covenant sentinel warns anyone it takes for a minion of the Lich King that they are unwelcome.",
+      "when": {
+        "area_id": 4862
+      }
     }
   ],
   "sources": {
@@ -14236,6 +14357,11 @@
       "reference": "AreaTable.dbc 4513 (Ymirheim)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4514": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4514 (Saronite Mines)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4515": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4515 (The Conflagration)",
@@ -14284,6 +14410,16 @@
     "dbc:area:4526": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4526 (Njorndar Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4529": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4529 (The Crimson Cathedral)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4530": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4530 (Sanctum of Reanimation)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4531": {
@@ -14336,6 +14472,16 @@
       "reference": "AreaTable.dbc 4658 (Argent Tournament Grounds)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4666": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4666 (Sunreaver Pavilion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4667": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4667 (Silver Covenant Pavilion)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4669": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4669 (The Ring of Champions)",
@@ -14361,6 +14507,11 @@
       "reference": "AreaTable.dbc 4673 (The Horde Valiants' Ring)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4674": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4674 (Argent Pavilion)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4692": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4692 (Quel'Delar's Rest)",
@@ -14369,6 +14520,11 @@
     "dbc:area:4743": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4743 (Deathspeaker's Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4862": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4862 (The Frozen Halls)",
       "revision": "3.3.5a client data"
     },
     "dbc:taxi:328": {
@@ -24491,6 +24647,11 @@
       "reference": "acore_world.creature_template 29333 (Onslaught Gryphon Rider), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:29338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29338 (Onslaught Raven Bishop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:29343": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 29343 (Baron Sliver), its spawns and NPC summary",
@@ -24520,6 +24681,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 29515 (Dead Death's Rise Vrykul), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29542": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29542 (Archbishop Landgren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:29614": {
       "kind": "world_db",
@@ -24721,6 +24887,11 @@
       "reference": "acore_world.creature_template 30988 (Scourgebeak Fleshripper), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:30993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30993 (\"Patches\"), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:31037": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 31037 (Forgotten Depths High Priest), its spawns and NPC summary",
@@ -24851,6 +25022,21 @@
       "reference": "acore_world.creature_template 31326 (Death Knight Initiate), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:31396": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31396 (Val'kyr Taskmistress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:31397": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31397 (Saronite Mine Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:31399": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31399 (Foreman Thaldrin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:31413": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 31413 (Hulking Horror), its spawns and NPC summary",
@@ -24945,6 +25131,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 31834 (Ground Commander Xutjja), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:31892": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31892 (Darkspeaker R'khem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:31900": {
       "kind": "world_db",
@@ -25141,10 +25332,30 @@
       "reference": "acore_world.creature_template 33306 (Orgrimmar Valiant), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:33312": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33312 (Lana Stouthammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:33361": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 33361 (Mokra the Skullcrusher), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33372 (Zul'tore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33373 (Deathstalker Visceri), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33379": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33379 (Eressea Dawnsinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:33382": {
       "kind": "world_db",
@@ -25160,6 +25371,21 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 33384 (Undercity Valiant), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33403": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33403 (Runok Wildmane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33405": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33405 (Akinos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33417 (Crusader Rhydalla), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:33438": {
       "kind": "world_db",
@@ -25216,6 +25442,11 @@
       "reference": "acore_world.creature_template 33564 (Ironforge Valiant), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:33625": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33625 (Arcanist Taelis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:33740": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 33740 (Gnomeregan Champion), its spawns and NPC summary",
@@ -25230,6 +25461,16 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 33747 (Stormwind Champion), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:33759": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33759 (Eadric the Pure), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33817": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33817 (Justicar Mariel Trueheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:34127": {
       "kind": "world_db",
@@ -25335,6 +25576,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 13359 (Where Dragons Fell)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:24461": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24461 (Reforging The Sword)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

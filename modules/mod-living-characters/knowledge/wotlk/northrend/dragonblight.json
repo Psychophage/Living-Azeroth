@@ -12012,6 +12012,113 @@
       "when": {
         "area_id": 4478
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4161",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4161",
+        "dbc:area:65",
+        "world:creature:26917",
+        "world:creature:26443",
+        "world:creature:27575",
+        "world:creature:27682",
+        "world:creature:27608",
+        "dbc:taxi:252"
+      ],
+      "text": "You are in Wyrmrest Temple, a dragon temple in Dragonblight that neither side holds. Queen Alexstrasza, the Queen of the Dragons, is here, with Tariolstrasz the steward directing visitors and Lord Afrasastrasz commanding the defenses. Azure drakes and dragons of Malygos's blue flight threaten the temple, and it has an inn and a flight master.",
+      "when": {
+        "area_id": 4161
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4178",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4178",
+        "world:creature:27412",
+        "world:creature:27401",
+        "world:creature:27284"
+      ],
+      "text": "You are in Wintergarde Mine, a mine in Dragonblight. Risen miners and defenders still prowl it. Slinkin the Demo-gnome, a 7th Legion gnome, hides here and reports that Scourge miners are extracting saronite for their war machines.",
+      "when": {
+        "area_id": 4178
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4192",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4192",
+        "world:creature:27382",
+        "world:creature:27330"
+      ],
+      "text": "You are in Frostmourne Cavern, a cavern in Dragonblight. Deathbringer revenants and Onslaught infantry haunt it.",
+      "when": {
+        "area_id": 4192
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4195",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4195",
+        "world:creature:26358",
+        "world:creature:26359",
+        "world:creature:26291",
+        "world:creature:26360"
+      ],
+      "text": "You are in Ice Heart Cavern, a cavern in Dragonblight. Jormungar feeders and spawn, crystalline ice giants and rattlebores haunt its depths.",
+      "when": {
+        "area_id": 4195
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4223",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4223",
+        "world:creature:26593",
+        "world:quest:12265",
+        "world:creature:27358",
+        "world:creature:27356",
+        "world:creature:27363",
+        "world:creature:27362",
+        "world:creature:26475"
+      ],
+      "text": "You are in Maw of Neltharion, a cave in Dragonblight where the Cult of the Damned has drawn necromantic runes. Serinar, a black dragon of the brood, despises the cult and shows it no mercy. Burning Depths necromancers and necrolytes, smoldering geists and constructs, and magmawyrms haunt its depths.",
+      "when": {
+        "area_id": 4223
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4246",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4246",
+        "world:creature:1293",
+        "world:creature:27857",
+        "world:creature:27828",
+        "world:creature:27712",
+        "world:creature:27835",
+        "world:creature:27824"
+      ],
+      "text": "You are in Wintergarde Mausoleum, a Scourge-haunted mausoleum in Dragonblight where 7th Legion soldiers of the Alliance fight. Ambo Cash coordinates the offensive here, and Legion Commander Yorik plans to draw the dread lich Thel'zan out of hiding with his phylactery. Mindless ghouls, dreadbone constructs and Naxxramas shades roam the place, and a Scourge tunnel runs beneath it.",
+      "when": {
+        "area_id": 4246
+      }
     }
   ],
   "sources": {
@@ -12048,6 +12155,11 @@
     "dbc:area:4160": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4160 (Lothalor Woodlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4161": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4161 (Wyrmrest Temple)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4163": {
@@ -12115,6 +12227,11 @@
       "reference": "AreaTable.dbc 4177 (Wintergarde Keep)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4178": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4178 (Wintergarde Mine)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4179": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4179 (Emerald Dragonshrine)",
@@ -12175,6 +12292,11 @@
       "reference": "AreaTable.dbc 4191 (Light's Trust)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4192": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4192 (Frostmourne Cavern)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4193": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4193 (Scarlet Point)",
@@ -12183,6 +12305,16 @@
     "dbc:area:4194": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4194 (Jintha'kalar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4195": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4195 (Ice Heart Cavern)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4223": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4223 (Maw of Neltharion)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4225": {
@@ -12208,6 +12340,11 @@
     "dbc:area:4241": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4241 (Eldritch Heights)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4246": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4246 (Wintergarde Mausoleum)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4253": {
@@ -21065,6 +21202,16 @@
       "reference": "acore_world.creature_template 26358 (Ice Heart Jormungar Feeder), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:26359": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26359 (Ice Heart Jormungar Spawn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26360": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26360 (Rattlebore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:26370": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 26370 (Arcanimus), its spawns and NPC summary",
@@ -21090,9 +21237,19 @@
       "reference": "acore_world.creature_template 26426 (Arctic Ram), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:26443": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26443 (Tariolstrasz), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:26473": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 26473 (Ko'char the Unbreakable), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26475": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26475 (Magmawyrm), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
     "world:creature:26483": {
@@ -21385,6 +21542,11 @@
       "reference": "acore_world.creature_template 27278 (Snowplain Zealot), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:27284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27284 (Risen Wintergarde Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:27286": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 27286 (Dreadbone Invader), its spawns and NPC summary",
@@ -21460,10 +21622,25 @@
       "reference": "acore_world.creature_template 27357 (Onslaught Raven Archon), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:27358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27358 (Burning Depths Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
     "world:creature:27360": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 27360 (Smoldering Skeleton), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27362": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27362 (Smoldering Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27363": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27363 (Smoldering Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:27367": {
       "kind": "world_db",
@@ -21484,6 +21661,21 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 27381 (Chancellor Amai), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27382 (Deathbringer Revenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27401": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27401 (Risen Wintergarde Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27412": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27412 (Slinkin the Demo-gnome), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:27533": {
       "kind": "world_db",
@@ -21565,6 +21757,16 @@
       "reference": "acore_world.creature_template 27804 (Golluck Rockfist), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:27824": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27824 (Naxxramas Shade), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27828": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27828 (Plunderbeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:27835": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 27835 (Dreadbone Construct), its spawns and NPC summary",
@@ -21579,6 +21781,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 27844 (Legion Commander Tyralion), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:27857": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27857 (Legion Commander Yorik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:27872": {
       "kind": "world_db",
@@ -21684,6 +21891,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 12144 (Pest Control)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12265": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12265 (Defiling the Defilers)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:12290": {
       "kind": "world_db",

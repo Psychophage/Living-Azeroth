@@ -8248,6 +8248,26 @@
       "when": {
         "area_id": 4008
       }
+    },
+    {
+      "authored": false,
+      "id": "area:3954",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3954",
+        "world:creature:22386",
+        "world:quest:10893",
+        "world:creature:21810",
+        "world:creature:21809",
+        "world:creature:22308",
+        "world:creature:22396",
+        "world:creature:17855"
+      ],
+      "text": "You are in Wyrmskull Tunnel, a neutral passage in Blade's Edge Mountains. Watcher Moonshade leads the defense here, expecting a stand against the wyrmcultists massing in the tunnel. Wyrmcult hewers, poachers and hunters haunt it, and Draaca Longtail leads them. Expedition wardens keep order on the neutral ground and threaten intruders.",
+      "when": {
+        "area_id": 3954
+      }
     }
   ],
   "sources": {
@@ -8469,6 +8489,11 @@
     "dbc:area:3953": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3953 (Scalewing Shelf)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3954": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3954 (Wyrmskull Tunnel)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:3963": {

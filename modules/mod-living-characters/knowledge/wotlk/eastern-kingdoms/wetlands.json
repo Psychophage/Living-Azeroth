@@ -3674,6 +3674,41 @@
       "when": {
         "area_id": 1039
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2103",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2103",
+        "world:creature:2104",
+        "world:quest:473",
+        "world:quest:465",
+        "world:quest:464",
+        "world:creature:1448"
+      ],
+      "text": "You are in Menethil Keep, an Alliance post in the Wetlands. Captain Stoutfist plans the defense of Menethil from the war room here, where the Dragonmaw orc clan is the threat: its encampment lies northeast of Menethil, and its catapults threaten a siege of the harbor. Neal Allen sells engineering supplies and ammunition here.",
+      "when": {
+        "area_id": 2103
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2104",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2104",
+        "world:creature:1464",
+        "world:creature:4963",
+        "world:creature:3181",
+        "world:creature:4962"
+      ],
+      "text": "You are in Deepwater Tavern, an Alliance tavern in Menethil. Innkeeper Helbrek runs the inn, Mikhail tends the bar, and Fremal Doohickey teaches first aid. Tapoke Jahn, called Slim, admits helping the Defias get a man aboard the king of Stormwind's ship.",
+      "when": {
+        "area_id": 2104
+      }
     }
   ],
   "sources": {
@@ -3755,6 +3790,16 @@
     "dbc:area:205": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 205 (Dun Modr)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2103": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2103 (Menethil Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2104": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2104 (Deepwater Tavern)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:298": {
@@ -6617,6 +6662,16 @@
       "reference": "acore_world.creature_template 14424 (Mirelow), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:1448": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1448 (Neal Allen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1464 (Innkeeper Helbrek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:2086": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 2086 (Valstag Ironjaw), its spawns and NPC summary",
@@ -6687,6 +6742,21 @@
       "reference": "acore_world.creature_template 2682 (Fradd Swiftgear), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:3181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3181 (Fremal Doohickey), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4962": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4962 (Tapoke \"Slim\" Jahn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4963 (Mikhail), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:5683": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 5683 (Comar Villard), its spawns and NPC summary",
@@ -6742,10 +6812,25 @@
       "reference": "acore_world.quest_template 324 (The Lost Ingots)",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:quest:464": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 464 (War Banners)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:465": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 465 (Nek'rosh's Gambit)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:quest:470": {
       "kind": "world_db",
       "reference": "acore_world.quest_template 470 (Digging Through the Ooze)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:473": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 473 (Report to Captain Stoutfist)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

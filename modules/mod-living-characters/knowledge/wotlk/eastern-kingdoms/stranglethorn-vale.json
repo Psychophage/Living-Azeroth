@@ -6888,6 +6888,26 @@
       "when": {
         "area_id": 3357
       }
+    },
+    {
+      "authored": false,
+      "id": "area:106",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:106",
+        "world:creature:978",
+        "world:creature:939",
+        "world:creature:942",
+        "world:creature:938",
+        "world:creature:941",
+        "world:quest:329",
+        "dbc:area:99"
+      ],
+      "text": "You are in The Stockpile, an area of Stranglethorn Vale. Kurzen subchiefs, elites, witch doctors, commandos, headshrinkers and shadow hunters haunt it. A strongbox here holds a muddy note that points to a traitor among the rebels at the Rebel Camp.",
+      "when": {
+        "area_id": 106
+      }
     }
   ],
   "sources": {
@@ -6919,6 +6939,11 @@
     "dbc:area:105": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 105 (Mosh'Ogg Ogre Mound)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:106": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 106 (The Stockpile)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:117": {
@@ -12506,15 +12531,30 @@
       "reference": "acore_world.creature_template 940 (Kurzen Medicine Man), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 941 (Kurzen Headshrinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:942": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 942 (Kurzen Witch Doctor), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 978 (Kurzen Subchief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:quest:202": {
       "kind": "world_db",
       "reference": "acore_world.quest_template 202 (Colonel Kurzen)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:329": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 329 (The Spy Revealed!)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:338": {
       "kind": "world_db",

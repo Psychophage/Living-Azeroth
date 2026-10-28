@@ -8952,6 +8952,23 @@
       "when": {
         "area_id": 3835
       }
+    },
+    {
+      "authored": false,
+      "id": "area:3920",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3920",
+        "world:creature:20232",
+        "world:creature:20234",
+        "world:creature:20235",
+        "world:creature:20231"
+      ],
+      "text": "You are in Shatter Point, an Alliance outpost in Hellfire Peninsula. The Wildhammer dwarves who keep this floating post fly gryphons out into Hellfire, and Wing Commander Gryphongar commands them from what remains of the tower. Gryphon master Runetog Wildhammer and gryphoneer Windbellow look after the birds, and Supply Officer Pestle keeps the stores and the repairs.",
+      "when": {
+        "area_id": 3920
+      }
     }
   ],
   "sources": {
@@ -9178,6 +9195,11 @@
     "dbc:area:3835": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3835 (Dustquill Ravine)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3920": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3920 (Shatter Point)",
       "revision": "3.3.5a client data"
     },
     "dbc:taxi:141": {
@@ -16494,6 +16516,26 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 19937 (Commander Hogarth), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:20231": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20231 (Supply Officer Pestle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20232": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20232 (Wing Commander Gryphongar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20234": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20234 (Runetog Wildhammer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20235 (Gryphoneer Windbellow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:21279": {
       "kind": "world_db",

@@ -6884,6 +6884,60 @@
       "when": {
         "area_id": 4499
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4425",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4425",
+        "world:creature:29481",
+        "world:creature:30146",
+        "world:creature:30147",
+        "world:creature:29426",
+        "world:creature:29885"
+      ],
+      "text": "You are in The Forlorn Mine, a mine in the Storm Peaks. The Hyldnir keep enslaved vrykul here, and Mildred the Cruel drives them hard. Garhal is stirring talk of revolt among the enslaved males, while Hyldnir overseers patrol the tunnels. Lok'lira the Crone, a Yrkvinn illusion practitioner, is imprisoned here.",
+      "when": {
+        "area_id": 4425
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4462",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4462",
+        "world:creature:29434",
+        "world:quest:12831",
+        "world:creature:29411",
+        "world:creature:29412",
+        "world:creature:29413"
+      ],
+      "text": "You are in Crystalweb Cavern, a cave in the Storm Peaks. Crystalweb weavers, spitters and snowblind diggers infest its passages. An injured goblin miner lies poisoned by a spider's bite, and Ricket at K3 could brew him an antidote from an icetip venom sac.",
+      "when": {
+        "area_id": 4462
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4592",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4592",
+        "world:creature:30469",
+        "world:creature:30164",
+        "world:creature:30148",
+        "world:creature:30167",
+        "world:quest:13056"
+      ],
+      "text": "You are in Gimorak's Den, a cave in the Storm Peaks. Cavedweller worgs and infesting jormungars haunt it. A Horde tracker named Val'zij lies weakened after a jormungar stung him, and his wind serpent was killed by Gimorak.",
+      "when": {
+        "area_id": 4592
+      }
     }
   ],
   "sources": {
@@ -6920,6 +6974,11 @@
     "dbc:area:4424": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4424 (Valkyrion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4425": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4425 (The Forlorn Mine)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4428": {
@@ -7042,6 +7101,11 @@
       "reference": "AreaTable.dbc 4461 (Garm's Rise)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4462": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4462 (Crystalweb Cavern)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4473": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4473 (The Frigid Tomb)",
@@ -7065,6 +7129,11 @@
     "dbc:area:4499": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4499 (The Blighted Pool)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4592": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4592 (Gimorak's Den)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:67": {
@@ -12102,6 +12171,11 @@
       "reference": "acore_world.creature_template 29413 (Snowblind Digger), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:29426": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29426 (Hyldnir Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:29428": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 29428 (Ricket), its spawns and NPC summary",
@@ -12126,6 +12200,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 29432 (Gino), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29434": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29434 (Injured Goblin Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:29445": {
       "kind": "world_db",
@@ -12161,6 +12240,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 29477 (Earthen Defender), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:29481": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29481 (Lok'lira the Crone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:29500": {
       "kind": "world_db",
@@ -12342,6 +12426,11 @@
       "reference": "acore_world.creature_template 29875 (Icemane Yeti), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:29885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29885 (Mildred the Cruel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:29904": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 29904 (Smilin' Slirk Brassknob), its spawns and NPC summary",
@@ -12477,6 +12566,16 @@
       "reference": "acore_world.creature_template 30144 (Restless Frostborn Ghost), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:30146": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30146 (Exhausted Vrykul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30147": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30147 (Garhal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:30148": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 30148 (Infesting Jormungar), its spawns and NPC summary",
@@ -12486,6 +12585,16 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 30160 (Brittle Revenant), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:30164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30164 (Cavedweller Worg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30167": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30167 (Gimorak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:30184": {
       "kind": "world_db",
@@ -12627,6 +12736,11 @@
       "reference": "acore_world.quest_template 12823 (A Flawless Plan)",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:quest:12831": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12831 (Only Partly Forgotten)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:quest:12846": {
       "kind": "world_db",
       "reference": "acore_world.quest_template 12846 (Leave No Goblin Behind)",
@@ -12646,6 +12760,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 13035 (Loken's Lackeys)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:13056": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13056 (There's Always Time for Revenge)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -5639,6 +5639,24 @@
       "when": {
         "area_id": 809
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2102",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2102",
+        "world:creature:1373",
+        "world:creature:1247",
+        "world:creature:1226",
+        "world:creature:1228",
+        "world:creature:1229"
+      ],
+      "text": "You are in Thunderbrew Distillery, an Alliance site in Dun Morogh. Barrels of Thunder Ale are kept here, and Jarven Thunderbrew is set to watch over them, though the casks tempt him. Innkeeper Belm keeps an inn for travelers, and trainers of priests, mages and warriors teach their callings in the same place.",
+      "when": {
+        "area_id": 2102
+      }
     }
   ],
   "sources": {
@@ -5685,6 +5703,11 @@
     "dbc:area:189": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 189 (Steelgrill's Depot)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2102": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2102 (Thunderbrew Distillery)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:211": {
@@ -10052,6 +10075,11 @@
       "reference": "acore_world.creature_template 1229 (Granis Swiftaxe), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:1247": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1247 (Innkeeper Belm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:1252": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 1252 (Senir Whitebeard), its spawns and NPC summary",
@@ -10096,6 +10124,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 1271 (Old Icebeard), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:1373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1373 (Jarven Thunderbrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:1374": {
       "kind": "world_db",

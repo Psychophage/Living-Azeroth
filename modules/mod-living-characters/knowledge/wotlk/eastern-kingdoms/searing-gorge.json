@@ -1304,12 +1304,37 @@
       "when": {
         "area_id": 1959
       }
+    },
+    {
+      "authored": false,
+      "id": "area:1443",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1443",
+        "world:creature:8402",
+        "world:creature:5846",
+        "world:creature:9318",
+        "world:creature:8283",
+        "world:creature:8400",
+        "world:creature:5843",
+        "world:creature:8417"
+      ],
+      "text": "You are in The Slag Pit, a Dark Iron workings in Searing Gorge. Dark Iron taskmasters keep enslaved archaeologists at work here, and Incendosaurs, Slave Master Blackheart and Obsidion haunt the pits. The enslaved workers fear discovery and warn strangers to leave, though some ask whether a visitor has come to free them. A dying archaeologist asks that the others be freed.",
+      "when": {
+        "area_id": 1443
+      }
     }
   ],
   "sources": {
     "dbc:area:1442": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1442 (Firewatch Ridge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1443": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1443 (The Slag Pit)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:1444": {
@@ -2312,10 +2337,30 @@
       "reference": "acore_world.creature_template 8277 (Rekk'tilac), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:8283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8283 (Slave Master Blackheart), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:8284": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 8284 (Dorius Stonetender), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8400": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8400 (Obsidion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8402": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8402 (Enslaved Archaeologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8417 (Dying Archaeologist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:8419": {
       "kind": "world_db",

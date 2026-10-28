@@ -6882,6 +6882,23 @@
       "when": {
         "area_id": 2757
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2157",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2157",
+        "world:creature:5851",
+        "world:creature:3376",
+        "world:creature:3377",
+        "world:creature:5848"
+      ],
+      "text": "You are in Bael'dun Keep, an Alliance-held keep in the Barrens. Captain Gerogg Hammertoe commands its guard, and Bael'dun soldiers and riflemen keep the place under arms. Malgin Barleybrew, the morale officer, sells goods to visitors.",
+      "when": {
+        "area_id": 2157
+      }
     }
   ],
   "sources": {
@@ -6948,6 +6965,11 @@
     "dbc:area:1704": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1704 (Grol'dom Farm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2157": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2157 (Bael'dun Keep)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:2319": {
@@ -12195,6 +12217,16 @@
       "reference": "acore_world.creature_template 3341 (Gann Stonespire), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:3376": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3376 (Bael'dun Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3377 (Bael'dun Rifleman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:3379": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 3379 (Burning Blade Bruiser), its spawns and NPC summary",
@@ -12394,6 +12426,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 5797 (Aean Swiftriver), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5848": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5848 (Malgin Barleybrew), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:5851": {
       "kind": "world_db",

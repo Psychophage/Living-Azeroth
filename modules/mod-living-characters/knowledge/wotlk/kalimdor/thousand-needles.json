@@ -2784,9 +2784,32 @@
       "when": {
         "area_id": 3039
       }
+    },
+    {
+      "authored": false,
+      "id": "area:1557",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1557",
+        "world:creature:4095",
+        "world:creature:4099",
+        "world:creature:4097",
+        "world:creature:4096",
+        "world:creature:7404"
+      ],
+      "text": "You are in Splithoof Hold, a hold in Thousand Needles. Galak maulers, marauders and stormers roam the hold, along with galak windchasers and flame guards.",
+      "when": {
+        "area_id": 1557
+      }
     }
   ],
   "sources": {
+    "dbc:area:1557": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1557 (Splithoof Hold)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:2097": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 2097 (Darkcloud Pinnacle)",
@@ -5046,6 +5069,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 5934 (Heartrazor), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:7404": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7404 (Galak Flame Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:1147": {
       "kind": "world_db",

@@ -25,7 +25,7 @@ with no spawn in the world database stay where the original research placed them
 Each place file lists its NPCs (entry, name, title and their `records`), the place's own
 `place_records` (one for the zone, one per town or landmark area: what it is, who holds it, who lives
 there and what troubles it) and the `sources` those records cite. NPCs standing in a place hear its
-zone and area records alongside their own summary. 77 zones and 1,443 areas are described. `northshire-context.json` beside the folder adds the Northshire pilot's quest stages,
+zone and area records alongside their own summary. 82 zones and 1,505 areas are described. `northshire-context.json` beside the folder adds the Northshire pilot's quest stages,
 locations, report group and Common-language policy.
 
 Look an NPC up by name or entry number, edit its `text` in the file the lookup names, then check:
@@ -46,7 +46,9 @@ packs from these files (one pack per place file, plus the context file) into
 
 The NPC summaries were written and reviewed by models from the world database and recorded research;
 the place records were written by Claude Haiku from evidence packets built from the world database and
-map data (2026-10-15), each checked for citations, size, game terms and names not in the evidence.
+map data (2026-10-15; the cities, buildings and caves the map data could not see were added on 2026-10-28
+from the server's own placement of every spawn), each checked for citations, size, game terms and names not
+in the evidence.
 Neither has been play-tested broadly. Some are deliberately short where nothing more was supported;
 `authored: true` marks invented personality or policy rather than sourced fact. The research behind
 them (evidence, review decisions, the authoring tools and planning) is archived outside the

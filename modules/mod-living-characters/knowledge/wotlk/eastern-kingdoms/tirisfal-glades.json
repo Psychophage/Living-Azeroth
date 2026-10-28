@@ -4783,6 +4783,21 @@
       "when": {
         "area_id": 812
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2119",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2119",
+        "world:creature:2128",
+        "world:creature:2127"
+      ],
+      "text": "You are in Gallows' End Tavern, a Horde inn in Tirisfal Glades. Forsaken trainers of magic and arms teach here, including Cain Firesong, who trains undead mages, and Rupert Boch, a warlock trainer with little patience for those he deems unworthy. Weary travelers can rest at the inn.",
+      "when": {
+        "area_id": 2119
+      }
     }
   ],
   "sources": {
@@ -4874,6 +4889,11 @@
     "dbc:area:173": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 173 (Faol's Rest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2119": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2119 (Gallows' End Tavern)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:459": {
@@ -8600,6 +8620,16 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 1941 (Rot Hide Graverobber), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2127 (Rupert Boch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:2128": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2128 (Cain Firesong), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:3522": {
       "kind": "world_db",

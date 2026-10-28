@@ -12466,6 +12466,59 @@
       "when": {
         "area_id": 4269
       }
+    },
+    {
+      "authored": false,
+      "id": "area:4097",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4097",
+        "world:creature:25208",
+        "world:creature:28375",
+        "world:creature:25216",
+        "world:creature:25217",
+        "world:creature:25210"
+      ],
+      "text": "You are in Winterfin Caverns, in Borean Tundra. Captive Winterfin are held here, and one of them, Lurgglbr, begs for help getting out. Another captive, Glrglrglr, fears that magic seeping down from Coldarra is controlling minds. Winterfin oracles and warriors are hostile here, and Keymaster Urmgrgl keeps the key to a captive's cage.",
+      "when": {
+        "area_id": 4097
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4128",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4128",
+        "world:creature:26170",
+        "world:quest:12019",
+        "world:creature:25601",
+        "world:creature:27859"
+      ],
+      "text": "You are in Naxxanar, a floating Scourge citadel in Borean Tundra. Thassarian, an Alliance man who was forced to serve Arthas as a death knight, is here seeking vengeance against Arthas and working against the Cult of the Damned, whose orders lead back to this citadel. Prince Valanar and Vanthryn the Merciless are among the Scourge who hold it.",
+      "when": {
+        "area_id": 4128
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4146",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4146",
+        "world:creature:25752",
+        "world:creature:25753",
+        "world:creature:25758",
+        "world:creature:25814",
+        "world:creature:21757"
+      ],
+      "text": "You are in North Point Station, in Borean Tundra. Scavenger and sentry bots and a Defendo-tank are hostile here, as is a Fizzcrank mechagnome. Big Electromental Flavor, an elemental, is found in the area too.",
+      "when": {
+        "area_id": 4146
+      }
     }
   ],
   "sources": {
@@ -12572,6 +12625,11 @@
     "dbc:area:4043": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4043 (The Flood Plains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4097": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4097 (Winterfin Caverns)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4099": {
@@ -12684,6 +12742,11 @@
       "reference": "AreaTable.dbc 4127 (Steeljaw's Caravan)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4128": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4128 (Naxxanar)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4129": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4129 (Warsong Hold)",
@@ -12727,6 +12790,11 @@
     "dbc:area:4144": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4144 (Warsong Farms Outpost)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4146": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4146 (North Point Station)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4149": {
@@ -22029,6 +22097,11 @@
       "reference": "evidence:sha256:57c98c40b2a42fc515fd0462dd965365efe00d9e971867a82bd1a706e6f90196",
       "revision": "543c2e619c3c36d84526e5ba6737c5e9ecafe239af15167ddeee2bf8e6b3ada5"
     },
+    "world:creature:21757": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21757 (Big Electromental Flavor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:24469": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 24469 (Magnataur Huntress), its spawns and NPC summary",
@@ -22098,6 +22171,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 25208 (Lurgglbr), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:25210": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25210 (Keymaster Urmgrgl), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:25215": {
       "kind": "world_db",
@@ -22569,6 +22647,11 @@
       "reference": "acore_world.creature_template 25600 (Unliving Swine), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:25601": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25601 (Prince Valanar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:25602": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 25602 (Greatmother Taiga), its spawns and NPC summary",
@@ -22784,6 +22867,11 @@
       "reference": "acore_world.creature_template 25811 (Zaza), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:25814": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25814 (Fizzcrank Mechagnome), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:25825": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 25825 (Medic Hawthorn), its spawns and NPC summary",
@@ -22994,6 +23082,11 @@
       "reference": "acore_world.creature_template 27189 (Unu'pe Spearman), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:27859": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27859 (Vanthryn the Merciless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:28375": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 28375 (Glrglrglr), its spawns and NPC summary",
@@ -23103,6 +23196,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 11968 (The Tides Turn)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:12019": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 12019 (Last Rites)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:12157": {
       "kind": "world_db",

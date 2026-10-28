@@ -2787,6 +2787,40 @@
       "when": {
         "area_id": 1002
       }
+    },
+    {
+      "authored": false,
+      "id": "area:98",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:98",
+        "world:creature:580",
+        "world:creature:446",
+        "world:creature:430",
+        "world:creature:711"
+      ],
+      "text": "You are in Rethban Caverns, a cave system in the Redridge Mountains. Redridge drudgers, bashers and mystics prowl its depths, and Ardo Dirtpaw is a notable enemy among them.",
+      "when": {
+        "area_id": 98
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2099",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2099",
+        "world:creature:436",
+        "world:creature:4065",
+        "world:creature:4462",
+        "world:creature:334"
+      ],
+      "text": "You are in Stonewatch Keep, a fortified keep in the Redridge Mountains. Blackrock shadowcasters, sentries and hunters are a danger here, and Gath'Ilzogg is a notable Blackrock enemy among them.",
+      "when": {
+        "area_id": 2099
+      }
     }
   ],
   "sources": {
@@ -2803,6 +2837,11 @@
     "dbc:area:1002": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1002 (Three Corners)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2099": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2099 (Stonewatch Keep)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:44": {
@@ -2843,6 +2882,11 @@
     "dbc:area:97": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 97 (Alther's Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:98": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 98 (Rethban Caverns)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:996": {
@@ -4830,6 +4874,11 @@
       "reference": "acore_world.creature_template 3096 (Captured Servant of Azora), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:334": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 334 (Gath'Ilzogg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:344": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 344 (Magistrate Solomon), its spawns and NPC summary",
@@ -4935,6 +4984,11 @@
       "reference": "acore_world.creature_template 446 (Redridge Basher), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:4462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4462 (Blackrock Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:4463": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 4463 (Blackrock Summoner), its spawns and NPC summary",
@@ -4970,6 +5024,11 @@
       "reference": "acore_world.creature_template 578 (Murloc Scout), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:580": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 580 (Redridge Drudger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:584": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 584 (Kazon), its spawns and NPC summary",
@@ -4984,6 +5043,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:711": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 711 (Ardo Dirtpaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:712": {
       "kind": "world_db",

@@ -5346,7 +5346,36 @@
     }
   ],
   "place": "Ironforge",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1537",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1537",
+        "dbc:area:1",
+        "world:creature:2784",
+        "world:creature:7937",
+        "world:creature:1573"
+      ],
+      "text": "You are in Ironforge, an Alliance city in Dun Morogh. King Magni Bronzebeard rules the dwarven capital and mourns the dwarves lost fighting for the Alliance, while High Tinker Mekkatorque, King of the Gnomes, is determined to win back Gnomeregan. Gryth Thurden arranges gryphon flights, but only to places a traveler has already been, and the city's inn and auction house serve visitors.",
+      "when": {
+        "zone_id": 1537
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1 (Dun Morogh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1537 (Ironforge)",
+      "revision": "3.3.5a client data"
+    },
     "source:000e2862fddf199ad496a299": {
       "kind": "research",
       "reference": "evidence:sha256:f8fb9582c00cb8c25a7df08029a8e81e8b9edae0360cbe37f50a6837635e04a3",
@@ -9801,6 +9830,21 @@
       "kind": "research",
       "reference": "evidence:sha256:c2334ff643e841861c54e0b6b03f2d5a62e586f1ef1dbd370a4d15fbace9ef37",
       "revision": "a1dcb9975ae1359744c40b011a78a2e80f997ffc047e6368352d842b571b08d6"
+    },
+    "world:creature:1573": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1573 (Gryth Thurden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:2784": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2784 (King Magni Bronzebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7937 (High Tinker Mekkatorque), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

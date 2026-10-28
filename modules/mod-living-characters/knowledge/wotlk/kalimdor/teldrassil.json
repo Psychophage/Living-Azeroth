@@ -3004,6 +3004,42 @@
       "when": {
         "area_id": 736
       }
+    },
+    {
+      "authored": false,
+      "id": "area:258",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:258",
+        "world:creature:2005",
+        "world:creature:2003",
+        "world:creature:2002",
+        "world:creature:2004",
+        "world:creature:2038"
+      ],
+      "text": "You are in Fel Rock, an area of Teldrassil. Vicious grells and sprites roam it, and Lord Melenas is among its more notable creatures.",
+      "when": {
+        "area_id": 258
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:262",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:262",
+        "world:creature:7317",
+        "world:quest:2541",
+        "world:creature:2010",
+        "world:creature:2009",
+        "world:creature:2011"
+      ],
+      "text": "You are in Ban'ethil Barrow Den, an area of Teldrassil. Gnarlpine shamans, defenders and augurs inhabit it, and they have animated the body of the druid Oben Rageclaw to attack intruders. His spirit is trapped in the Emerald Dream, unable to stop them.",
+      "when": {
+        "area_id": 262
+      }
     }
   ],
   "sources": {
@@ -3027,6 +3063,11 @@
       "reference": "AreaTable.dbc 256 (Aldrassil)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:258": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 258 (Fel Rock)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:259": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 259 (Lake Al'Ameth)",
@@ -3040,6 +3081,11 @@
     "dbc:area:261": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 261 (Gnarlpine Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:262": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 262 (Ban'ethil Barrow Den)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:264": {
@@ -5217,6 +5263,26 @@
       "reference": "acore_world.creature_template 2001 (Giant Webwood Spider), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:2002": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2002 (Rascal Sprite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:2003": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2003 (Shadow Sprite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:2004": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2004 (Dark Sprite), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:2005": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2005 (Vicious Grell), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:2006": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 2006 (Gnarlpine Ursa), its spawns and NPC summary",
@@ -5306,6 +5372,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 2034 (Feral Nightsaber), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:2038": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 2038 (Lord Melenas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:2039": {
       "kind": "world_db",
@@ -5437,6 +5508,11 @@
       "reference": "acore_world.creature_template 3838 (Vesprystus), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:7317": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7317 (Oben Rageclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:7318": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 7318 (Rageclaw), its spawns and NPC summary",
@@ -5456,6 +5532,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 2499 (Oakenscowl)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:2541": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2541 (The Sleeping Druid)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:476": {
       "kind": "world_db",

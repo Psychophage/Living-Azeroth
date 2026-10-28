@@ -3157,6 +3157,25 @@
       "when": {
         "area_id": 1098
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2098",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2098",
+        "world:creature:785",
+        "world:creature:570",
+        "world:creature:604",
+        "world:creature:787",
+        "world:creature:771",
+        "world:creature:503"
+      ],
+      "text": "You are in Dawning Wood Catacombs, a catacomb within Duskwood. Skeletal warders, brain eaters, plague spreaders and skeletal healers haunt its passages. Commander Felstrom and Lord Malathrom are the notable foes that remain here.",
+      "when": {
+        "area_id": 2098
+      }
     }
   ],
   "sources": {
@@ -3178,6 +3197,11 @@
     "dbc:area:121": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 121 (Tranquil Gardens Cemetery)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2098": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2098 (Dawning Wood Catacombs)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:241": {
@@ -5559,6 +5583,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 48 (Skeletal Warrior), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:503": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 503 (Lord Malathrom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:507": {
       "kind": "world_db",

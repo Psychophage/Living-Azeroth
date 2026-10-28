@@ -12591,6 +12591,78 @@
       "when": {
         "area_id": 4474
       }
+    },
+    {
+      "authored": false,
+      "id": "area:3983",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3983",
+        "world:creature:24150",
+        "world:creature:24151",
+        "world:quest:11299",
+        "world:creature:24250",
+        "world:creature:24216",
+        "world:creature:24249",
+        "world:creature:24258"
+      ],
+      "text": "You are in Utgarde Keep, an area of Howling Fjord. Explorers' League dwarves work among the relics of the Utgarde Catacombs, and Dragonflayers hold their fellow dwarf Daegarn captive in the Ring of Judgement. Dragonflayer fleshrippers, berserkers and soulreavers roam the catacombs alongside val'kyr overseers.",
+      "when": {
+        "area_id": 3983
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4379",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4379",
+        "world:creature:23731",
+        "world:creature:26905",
+        "world:creature:26914",
+        "world:creature:26903",
+        "world:creature:26906",
+        "world:creature:23729"
+      ],
+      "text": "You are in Valgarde, an Alliance town in Howling Fjord. Innkeeper Hazel Lagras runs its inn, and grand master trainers in cooking, tailoring, alchemy and enchanting work here. Baron Ulrik von Stromhearth of the Kirin Tor offers teleportation to Dalaran, which now floats above Crystalsong Forest.",
+      "when": {
+        "area_id": 4379
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4380",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4380",
+        "world:creature:23937",
+        "world:creature:23773",
+        "world:quest:11155",
+        "world:creature:24283",
+        "world:creature:23691"
+      ],
+      "text": "You are in Westguard Inn, an Alliance inn in Howling Fjord. Innkeeper Celeste Goodhutch offers food and lodging, and Chef Kettleblack, who cooks for the keep, needs shoveltusk meat while livestock keep disappearing. Amateur alchemist Peppy Wrongnozzle tinkers with a mixture meant to counter the Forsaken plague, and shoveltusk stags are dangerous.",
+      "when": {
+        "area_id": 4380
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4532",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4532",
+        "world:creature:24342",
+        "world:creature:26964"
+      ],
+      "text": "You are in Vengeance Landing Inn, a Horde inn at Vengeance Landing in Howling Fjord. Its innkeeper, Timothy Holland, invites weary travelers to rest, and grand master tailoring trainer Alexandra McQueen offers to teach a way of salvaging frostweave cloth from slain northern humanoids.",
+      "when": {
+        "area_id": 4532
+      }
     }
   ],
   "sources": {
@@ -12607,6 +12679,11 @@
     "dbc:area:3982": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3982 (Wyrmskull Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3983": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3983 (Utgarde Keep)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:3984": {
@@ -12819,6 +12896,16 @@
       "reference": "AreaTable.dbc 4263 (Lydell's Ambush)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:4379": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4379 (Valgarde)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4380": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4380 (Westguard Inn)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:4402": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4402 (Vengeance Lift)",
@@ -12832,6 +12919,11 @@
     "dbc:area:4474": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 4474 (Twin Shores)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4532": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4532 (Vengeance Landing Inn)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:495": {
@@ -21979,10 +22071,20 @@
       "reference": "acore_world.creature_template 23725 (Stone Giant), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:23729": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23729 (Baron Ulrik von Stromhearth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:23730": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 23730 (Harold Lagras), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23731 (Innkeeper Hazel Lagras), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:23740": {
       "kind": "world_db",
@@ -22018,6 +22120,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 23771 (Blockade Cannon), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23773": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23773 (Chef Kettleblack), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:23778": {
       "kind": "world_db",
@@ -22098,6 +22205,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 23919 (Ice Elemental), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23937": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23937 (Innkeeper Celeste Goodhutch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:23938": {
       "kind": "world_db",
@@ -22269,6 +22381,16 @@
       "reference": "acore_world.creature_template 24131 (Trapper Jethan), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:24150": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24150 (Glorenfeld), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24151": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24151 (Daegarn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:24152": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 24152 (Apothecary Malthus), its spawns and NPC summary",
@@ -22319,6 +22441,11 @@
       "reference": "acore_world.creature_template 24212 (Iron Rune Guardian), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:24216": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24216 (Dragonflayer Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:24218": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 24218 (Apothecary Grick), its spawns and NPC summary",
@@ -22344,6 +22471,11 @@
       "reference": "acore_world.creature_template 24238 (Bjorn Halgurdsson), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:24249": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24249 (Dragonflayer Soulreaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:24250": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 24250 (Dragonflayer Fleshripper), its spawns and NPC summary",
@@ -22353,6 +22485,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 24251 (Chief Plaguebringer Harris), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24258 (Val'kyr Overseer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:24262": {
       "kind": "world_db",
@@ -22368,6 +22505,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 24277 (Garwal), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24283": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24283 (Peppy Wrongnozzle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:24316": {
       "kind": "world_db",
@@ -22388,6 +22530,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 24340 (Rampaging Earth Elemental), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:24342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24342 (Timothy Holland), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:24362": {
       "kind": "world_db",
@@ -22614,10 +22761,20 @@
       "reference": "acore_world.creature_template 26827 (Howling Wolvar Lookout), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:26903": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26903 (Lanolis Dewdrop), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:26905": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 26905 (Brom Brewbaster), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26906 (Elizabeth Jackson), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:26914": {
       "kind": "world_db",
@@ -22628,6 +22785,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 26915 (Ounhulo), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:26964": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26964 (Alexandra McQueen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:27699": {
       "kind": "world_db",
@@ -22698,6 +22860,16 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 6491 (Spirit Healer), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:11155": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11155 (Shoveltusk Soup Again?)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:11299": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11299 (The Ring of Judgement)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:11305": {
       "kind": "world_db",

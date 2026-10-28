@@ -5014,7 +5014,35 @@
     }
   ],
   "place": "Undercity",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1497",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1497",
+        "dbc:area:85",
+        "world:creature:10181",
+        "world:creature:36273"
+      ],
+      "text": "You are in Undercity, a Horde city in Tirisfal Glades. Lady Sylvanas Windrunner, the Banshee Queen, rules the Forsaken here. Bragor Bloodfist, a Kor'kron captain stationed in the city, works with the Forsaken against threats to their borders, and he treats the Scarlet Crusade, Scourge-linked plague activity and a renewed Shadow Council as dangers.",
+      "when": {
+        "zone_id": 1497
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1497": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1497 (Undercity)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:85": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 85 (Tirisfal Glades)",
+      "revision": "3.3.5a client data"
+    },
     "source:0070b19b993ef200bc440153": {
       "kind": "research",
       "reference": "evidence:sha256:bc3a24479ce0a1eb0c21788a24136ba83529eea394c835b4735ca59aeb8e8611",
@@ -8934,6 +8962,16 @@
       "kind": "research",
       "reference": "evidence:sha256:a4ec681663cfe81e3112b132c30382031ea912961eec068e743331e9fe330840",
       "revision": "1612e151ac4d986f9a5b0fcf2b00bf390b5a4b857d36d9c88ae43b22ba821b76"
+    },
+    "world:creature:10181": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10181 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:36273": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36273 (Bragor Bloodfist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

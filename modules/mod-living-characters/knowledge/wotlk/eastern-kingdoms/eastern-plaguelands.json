@@ -4429,6 +4429,41 @@
       "when": {
         "area_id": 4544
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2626",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2626",
+        "world:creature:8557",
+        "world:creature:8556",
+        "world:creature:8555",
+        "world:creature:8558",
+        "world:creature:16184"
+      ],
+      "text": "You are in Terrorweb Tunnel, part of the Eastern Plaguelands. Crypt horrors, crypt walkers, crypt stalkers and crypt slayers haunt the tunnel, and nerubian overseers are found here too.",
+      "when": {
+        "area_id": 2626
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4281",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4281",
+        "world:creature:29480",
+        "world:creature:29194",
+        "world:creature:29196",
+        "world:creature:27928"
+      ],
+      "text": "You are in Acherus: The Ebon Hold, where Death Knights are trained in the Eastern Plaguelands, and neither side holds it. Grimwing, a gryphon flight master, asks where travellers wish to fly. Amal'thazad trains Death Knights and Lord Thorval teaches blood mastery, while Siouxsie the Banshee dismisses visitors as worms.",
+      "when": {
+        "area_id": 4281
+      }
     }
   ],
   "sources": {
@@ -4552,9 +4587,19 @@
       "reference": "AreaTable.dbc 2624 (Blackwood Lake)",
       "revision": "3.3.5a client data"
     },
+    "dbc:area:2626": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2626 (Terrorweb Tunnel)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:2627": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 2627 (Terrordale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4281": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4281 (Acherus: The Ebon Hold)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:4544": {
@@ -7812,6 +7857,16 @@
       "reference": "acore_world.creature_template 1855 (Tirion Fordring), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:27928": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27928 (Siouxsie the Banshee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29194": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29194 (Amal'thazad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:29196": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 29196 (Lord Thorval), its spawns and NPC summary",
@@ -7962,10 +8017,20 @@
       "reference": "acore_world.creature_template 8555 (Crypt Stalker), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:8556": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8556 (Crypt Walker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:8557": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 8557 (Crypt Horror), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:8558": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8558 (Crypt Slayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:8560": {
       "kind": "world_db",

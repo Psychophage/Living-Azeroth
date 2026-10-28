@@ -3058,17 +3058,26 @@
       "priority": 40,
       "sources": [
         "dbc:area:3557",
+        "dbc:area:3524",
+        "world:creature:17468",
+        "world:creature:17204",
+        "world:creature:17509",
+        "world:creature:16771",
         "world:creature:17555",
-        "world:creature:20604",
-        "world:creature:17584"
+        "world:creature:16739"
       ],
-      "text": "You are in The Exodar, an Alliance city on Kalimdor. Stephanos, a hippogryph master, offers rides from near its gates, and the auction house, flight master and profession trainers are inside. Dugiru, the cloth quartermaster, is gathering donations to refill the city's dwindling textile supplies, and Torallius breeds and sells elekks just outside the city.",
+      "text": "You are in The Exodar, an Alliance city in Azuremyst Isle. It is a draenei city where people train in the Light, the elements and the arts of war. Prophet Velen urges peaceful coexistence with Azeroth's peoples, and Farseer Nobundo helps shamanism take root among his people. Its inn and hippogryph rides serve travelers.",
       "when": {
         "zone_id": 3557
       }
     }
   ],
   "sources": {
+    "dbc:area:3524": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3524 (Azuremyst Isle)",
+      "revision": "3.3.5a client data"
+    },
     "dbc:area:3557": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3557 (The Exodar)",
@@ -5449,19 +5458,34 @@
       "reference": "evidence:sha256:5bb58c88f31de6a87e0e3380980a1797d43862fc31a4c0c4493f847fa381303b",
       "revision": "2e99a70ec246f9c39514d3ab5a81c29d12c6f9fa1bdc728aa8b10e507cb31812"
     },
+    "world:creature:16739": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16739 (Caregiver Breel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16771": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16771 (Ahonan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17204": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17204 (Farseer Nobundo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:17468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17468 (Prophet Velen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17509": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17509 (Jol), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:17555": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 17555 (Stephanos), its spawns and NPC summary",
-      "revision": "acore_world as installed on 2026-10-15"
-    },
-    "world:creature:17584": {
-      "kind": "world_db",
-      "reference": "acore_world.creature_template 17584 (Torallius the Pack Handler), its spawns and NPC summary",
-      "revision": "acore_world as installed on 2026-10-15"
-    },
-    "world:creature:20604": {
-      "kind": "world_db",
-      "reference": "acore_world.creature_template 20604 (Dugiru), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     }
   },

@@ -7545,6 +7545,24 @@
       "when": {
         "area_id": 3935
       }
+    },
+    {
+      "authored": false,
+      "id": "area:3881",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3881",
+        "world:creature:20393",
+        "world:creature:20248",
+        "world:creature:21089",
+        "world:creature:20285",
+        "world:quest:10318"
+      ],
+      "text": "You are in Trelleum Mine, a mine in Netherstorm, held by neither the Alliance nor the Horde. Its former foreman, Foreman Sundown, was demoted and now claims the blood elves' pilgrimage to Outland was a pretext Kael'thas used to build his forces here, urging his kin to leave as the Burning Legion advances. Sunfury nethermancers, blood knights and Gan'arg warp-tinkers haunt the workings.",
+      "when": {
+        "area_id": 3881
+      }
     }
   ],
   "sources": {
@@ -7726,6 +7744,11 @@
     "dbc:area:3880": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3880 (Access Shaft Zeon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3881": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3881 (Trelleum Mine)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:3921": {
@@ -13548,6 +13571,11 @@
       "reference": "acore_world.creature_template 20248 (Sunfury Nethermancer), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:20285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20285 (Gan'arg Warp-Tinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:20332": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 20332 (Nether Dragon), its spawns and NPC summary",
@@ -13753,6 +13781,11 @@
       "reference": "acore_world.creature_template 21077 (Farahlon Crumbler), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:21089": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21089 (Sunfury Blood Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:21233": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 21233 (Legion Fel Cannon), its spawns and NPC summary",
@@ -13837,6 +13870,11 @@
       "kind": "world_db",
       "reference": "acore_world.quest_template 10310 (Sabotage the Warp-Gate!)",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:quest:10318": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10318 (Dealing with the Overmaster)",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:quest:10335": {
       "kind": "world_db",

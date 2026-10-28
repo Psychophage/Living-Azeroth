@@ -2317,6 +2317,24 @@
       "when": {
         "area_id": 2403
       }
+    },
+    {
+      "authored": false,
+      "id": "area:1817",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1817",
+        "dbc:area:8",
+        "world:creature:751",
+        "world:creature:752",
+        "world:creature:750",
+        "world:creature:14446"
+      ],
+      "text": "You are in Stagalbog Cave, a cave in the Swamp of Sorrows. Marsh flesheaters, marsh oracles and marsh inkspewers haunt it, and Fingat roams here too.",
+      "when": {
+        "area_id": 1817
+      }
     }
   ],
   "sources": {
@@ -2348,6 +2366,11 @@
     "dbc:area:1798": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1798 (The Shifting Mire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1817": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1817 (Stagalbog Cave)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:1978": {

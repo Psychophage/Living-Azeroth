@@ -3412,6 +3412,23 @@
       "when": {
         "area_id": 1641
       }
+    },
+    {
+      "authored": false,
+      "id": "area:2197",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2197",
+        "world:creature:3045",
+        "world:creature:3046",
+        "world:creature:5957",
+        "world:creature:3419"
+      ],
+      "text": "You are in The Pools of Vision, a Horde settlement in Thunder Bluff. Priest trainers Malakai Cross and Father Cobb teach that helping those in need is the way of the divine, and Birgitte Cranston teaches portal magic to a select few. Apothecary Zamah of the Royal Apothecary Society works here, and the area has its own vendors and trainers.",
+      "when": {
+        "area_id": 2197
+      }
     }
   ],
   "sources": {
@@ -3433,6 +3450,11 @@
     "dbc:area:1641": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 1641 (Hunter Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2197": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2197 (The Pools of Vision)",
       "revision": "3.3.5a client data"
     },
     "source:0078c1fa44ee5a353b7a9e8c": {
@@ -6090,6 +6112,11 @@
       "reference": "acore_world.creature_template 3045 (Malakai Cross), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
     },
+    "world:creature:3046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3046 (Father Cobb), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
     "world:creature:3419": {
       "kind": "world_db",
       "reference": "acore_world.creature_template 3419 (Apothecary Zamah), its spawns and NPC summary",
@@ -6114,6 +6141,11 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 4943 (Mosarn), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:5957": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5957 (Birgitte Cranston), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:9087": {
       "kind": "world_db",

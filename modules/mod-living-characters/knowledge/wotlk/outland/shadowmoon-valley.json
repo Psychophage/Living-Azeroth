@@ -8535,6 +8535,25 @@
       "when": {
         "area_id": 3966
       }
+    },
+    {
+      "authored": false,
+      "id": "area:3965",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3965",
+        "world:creature:23164",
+        "world:creature:23287",
+        "world:creature:23169",
+        "world:creature:23326",
+        "world:creature:23285",
+        "world:creature:23286"
+      ],
+      "text": "You are in Netherwing Mines, a mine in Shadowmoon Valley. Murkblood miners, Nethermine flayers, ravagers and bursters prowl its workings, and Black Blood of Draenor is found here too. Toranaku is here, urging people to leave, and says they must go without giving a reason.",
+      "when": {
+        "area_id": 3965
+      }
     }
   ],
   "sources": {
@@ -8691,6 +8710,11 @@
     "dbc:area:3950": {
       "kind": "world_db",
       "reference": "AreaTable.dbc 3950 (Crimson Watch)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3965": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3965 (Netherwing Mines)",
       "revision": "3.3.5a client data"
     },
     "dbc:area:3966": {
@@ -15082,6 +15106,16 @@
       "kind": "world_db",
       "reference": "acore_world.creature_template 23169 (Nethermine Flayer), its spawns and NPC summary",
       "revision": "acore_world as installed on 2026-10-15"
+    },
+    "world:creature:23285": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23285 (Nethermine Burster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23286 (Black Blood of Draenor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     },
     "world:creature:23287": {
       "kind": "world_db",
