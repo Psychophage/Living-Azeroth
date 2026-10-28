@@ -72,7 +72,7 @@ def check_record(record, about, sources, seen, where):
 def load(root):
     """Every place file and the without-summary list, checked. Returns (places, without)."""
     root = Path(root)
-    places, entries, records, described = {}, {}, set(), {}
+    places, entries, records, described, defined = {}, {}, set(), {}, {}
     for path in sorted(root.rglob("*.json")):
         relative = path.relative_to(root).as_posix()
         if relative == WITHOUT:
@@ -86,6 +86,9 @@ def load(root):
             require(source["kind"] in ("world_db", "research", "authored"), f"{relative}: source {key} kind")
             require(isinstance(source["revision"], str) and 0 < len(source["revision"].encode()) <= 120,
                     f"{relative}: source {key} revision")
+            # The server loads all packs or none, and a source cited in several packs must read the same in each.
+            require(defined.setdefault(key, (source, relative))[0] == source,
+                    f"{relative}: source {key} differs from its definition in {defined[key][1]}")
         cited = set()
         # The place itself: one zone record for the file's zone, and records for areas, each area once.
         for record in document.get("place_records", []):
@@ -144,6 +147,7 @@ def build(root, output, replace=False, supplements=()):
     output.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix=".npc-build-", dir=output.parent))
     packs, record_ids, group_ids = [], set(), set()
+    defined = {key: source for place in places.values() for key, source in place["sources"].items()}
 
     def add(relative, document):
         write(staging / relative, document)
@@ -161,6 +165,8 @@ def build(root, output, replace=False, supplements=()):
         for source in supplements:
             document = read(Path(source))
             require(document.get("version") == 1 and document.get("era") == "wotlk", f"{source}: version or era")
+            for key, value in document["sources"].items():
+                require(defined.setdefault(key, value) == value, f"{source}: source {key} differs from the summaries'")
             for record in document["records"]:
                 require(record["id"] not in record_ids, f"{source}: record {record['id']} appears twice")
                 record_ids.add(record["id"])

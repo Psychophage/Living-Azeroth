@@ -141,6 +141,15 @@ class ContentTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "area 87 is also described"):
             content.load(self.source)
 
+    def test_a_source_reads_the_same_in_every_file(self):
+        other = place("Durotar", [dict(self.cook, entry=3, records=[dict(self.cook["records"][0], id="npc:3:identity",
+                                                                          when={"entry": 3})])],
+                      {self.cite: dict(self.sources[self.cite], revision="r2")})
+        other.update(zone=14)
+        content.write(self.source / "kalimdor/durotar.json", other)
+        with self.assertRaisesRegex(ValueError, "differs from its definition"):
+            content.load(self.source)
+
     def test_show_finds_by_name_and_number(self):
         out = io.StringIO()
         self.assertEqual(content.show(self.source, "example", out), 1)
