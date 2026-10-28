@@ -361,7 +361,39 @@
     }
   ],
   "place": "Auchenai Crypts",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3790",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3790",
+        "dbc:area:3688",
+        "world:creature:18373",
+        "world:creature:18371",
+        "world:creature:18700",
+        "world:creature:18493",
+        "world:quest:10164",
+        "world:quest:10167"
+      ],
+      "text": "You are in the Auchenai Crypts, the crypts of Auchindoun in Terokkar Forest. Exarch Maladaar defends the resting place of his ancestors here and is the greatest of its masters, with Shirrak the Dead Watcher, an undead creature, beside him. Reanimated bones and Auchenai soulpriests fill the halls. Maladaar continues to torment the spirits held inside, and a captive spirit is kept in a tomb deep within.",
+      "when": {
+        "zone_id": 3790
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3688": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3688 (Auchindoun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3790": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3790 (Auchenai Crypts)",
+      "revision": "3.3.5a client data"
+    },
     "source:0c87545a56e9e92f6499f5ca": {
       "kind": "research",
       "reference": "evidence:sha256:d90361b87515012cf2f790651f46d1dc02eac1a900f2e4fe98f746b5687fdf73",
@@ -621,6 +653,36 @@
       "kind": "research",
       "reference": "evidence:sha256:af724dd3140a739f20e7546940f9986e3d9780e1d9c53393803861da89146e3b",
       "revision": "b8fe7ab1b4e0b4316989f4b96f8f049d9dfd7a3044aa82c2b21166a46fc056ca"
+    },
+    "world:creature:18371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18371 (Shirrak the Dead Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18373 (Exarch Maladaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18493": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18493 (Auchenai Soulpriest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18700": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18700 (Reanimated Bones), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10164": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10164 (Everything Will Be Alright)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10167": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10167 (Auchindoun...)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -1747,7 +1747,124 @@
     }
   ],
   "place": "Old Hillsbrad Foothills",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2367",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2367",
+        "dbc:area:440",
+        "dbc:encounter:281",
+        "dbc:encounter:283",
+        "dbc:encounter:285",
+        "world:creature:17876",
+        "world:quest:10283",
+        "world:creature:17819"
+      ],
+      "text": "You are in Old Hillsbrad Foothills, a stretch of Hillsbrad from another time, reached from Tanaris. Epoch Hunter, Captain Skarloc and Lieutenant Drake are its masters, and Durnholde sentries keep watch over it. Young Thrall is imprisoned beneath Durnholde Keep, and the Infinite hold Taretha captive at Tarren Mill.",
+      "when": {
+        "zone_id": 2367
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2368",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2368",
+        "world:creature:18649",
+        "world:creature:18644",
+        "world:creature:18646",
+        "world:creature:18094",
+        "world:creature:18093",
+        "world:creature:18092",
+        "world:creature:17814"
+      ],
+      "text": "You are in Tarren Mill, a settlement with an inn kept by Innkeeper Monica. A peasant works among the apple trees and says there are plenty of apples to take. A horsehand cares for a horse named Bessy, while Tarren Mill lookouts, protectors and guardsmen stand guard alongside Lordaeron watchmen.",
+      "when": {
+        "area_id": 2368
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2369",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2369",
+        "world:creature:20344",
+        "world:creature:20342",
+        "world:creature:20345"
+      ],
+      "text": "You are in Southshore, where Nat Pagle recalls a recurring dream in which undead destroy Tarren Mill and Tarren Mill becomes Southshore's enemy. Hal McAllister meets Nat's claims with disbelief, though he says he worries about Nat. Commander Mograine warns of an undead holocaust and urges preparation, describing an object he has carried for ten years, since Blackrock Spire, as a manifestation of shadow and void.",
+      "when": {
+        "area_id": 2369
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:2370",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:2370",
+        "world:creature:17819",
+        "world:creature:17833",
+        "world:creature:17860",
+        "world:creature:18764",
+        "world:creature:18765",
+        "world:creature:18598"
+      ],
+      "text": "You are in Durnholde Keep, where Durnholde sentries, wardens, veterans, armorers and cooks are all posted. An orc prisoner complains of feeling unwell, hungry and thirsty.",
+      "when": {
+        "area_id": 2370
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2367": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2367 (Old Hillsbrad Foothills)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2368": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2368 (Tarren Mill)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2369": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2369 (Southshore)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2370": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2370 (Durnholde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:281": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 281 (Epoch Hunter)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:283": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 283 (Captain Skarloc)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:285": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 285 (Lieutenant Drake)",
+      "revision": "3.3.5a client data"
+    },
     "source:00aa24c43c7834e6b7a4dfc6": {
       "kind": "research",
       "reference": "evidence:sha256:ef949a1f66b208359adb540ade02b13da77537eb6b88939efca5a86a0c25e1ef",
@@ -3072,6 +3189,96 @@
       "kind": "research",
       "reference": "evidence:sha256:364c0e2bf011f6776ff566deb03915a4d777f6ca58ac2899186698f2c7d83cbe",
       "revision": "c5c02e4fe95f54424ed619c30fec2ce4c0091886e44ac040c176bbb586576ed0"
+    },
+    "world:creature:17814": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17814 (Lordaeron Watchman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17819 (Durnholde Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17833": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17833 (Durnholde Warden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17860 (Durnholde Veteran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17876": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17876 (Thrall), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18092": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18092 (Tarren Mill Guardsman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18093": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18093 (Tarren Mill Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18094": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18094 (Tarren Mill Lookout), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18598": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18598 (Orc Prisoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18644 (Tarren Mill Peasant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18646": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18646 (Tarren Mill Horsehand), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18649 (Innkeeper Monica), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18764": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18764 (Durnholde Armorer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18765": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18765 (Durnholde Cook), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20342": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20342 (Hal McAllister), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20344 (Nat Pagle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20345": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20345 (Commander Mograine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10283": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10283 (Taretha's Diversion)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

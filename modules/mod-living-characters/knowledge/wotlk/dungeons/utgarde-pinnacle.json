@@ -469,7 +469,39 @@
     }
   ],
   "place": "Utgarde Pinnacle",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1196",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1196",
+        "dbc:area:495",
+        "world:creature:26861",
+        "world:creature:26693",
+        "world:creature:26687",
+        "world:creature:26536",
+        "world:creature:26696",
+        "world:quest:13132"
+      ],
+      "text": "You are in Utgarde Pinnacle, a fortress in the Howling Fjord. King Ymiron rules it as his home and calls on a death god there. Skadi the Ruthless and Gortok Palehoof also hold sway within it, and Ymirjar warriors share its halls with mindless servants. Cursed gold lies inside, and it has turned a treasure hunter's crewmates into lifeless servants.",
+      "when": {
+        "zone_id": 1196
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1196": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1196 (Utgarde Pinnacle)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:495": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 495 (Howling Fjord)",
+      "revision": "3.3.5a client data"
+    },
     "source:0c20ab03a552acbaf3d7154e": {
       "kind": "research",
       "reference": "evidence:sha256:8afb177a61c42c7af01277c2b30476f80da210f1d74e00617e66dac3a01b9737",
@@ -794,6 +826,36 @@
       "kind": "research",
       "reference": "evidence:sha256:8c07f0d771d1027d230facde5c2e181e71ff7c53747748462e6a76f4c2ceb77d",
       "revision": "dda9cc0fad33c1ca96936147a154720071aafe723b4f50576c4f6c751762797a"
+    },
+    "world:creature:26536": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26536 (Mindless Servant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26687 (Gortok Palehoof), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26693": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26693 (Skadi the Ruthless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26696 (Ymirjar Berserker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26861": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26861 (King Ymiron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13132": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13132 (Vengeance Be Mine!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

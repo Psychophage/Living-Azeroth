@@ -406,7 +406,44 @@
     }
   ],
   "place": "The Mechanar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3849",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3849",
+        "dbc:area:3842",
+        "dbc:area:3523",
+        "world:creature:19219",
+        "world:creature:19221",
+        "world:creature:19220",
+        "world:creature:19716",
+        "world:creature:20990"
+      ],
+      "text": "You are in The Mechanar, a facility within Tempest Keep in Netherstorm. Mechano-Lord Capacitus, Nethermancer Sepethrea and Pathaleon the Calculator are its masters. Pathaleon directs a continuing project and its workforce from there, and insists the project will go on even as he dies. Mechanar Tinkerers and Bloodwarder Physicians are the most numerous creatures inside.",
+      "when": {
+        "zone_id": 3849
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3523": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3523 (Netherstorm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3842": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3842 (Tempest Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3849": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3849 (The Mechanar)",
+      "revision": "3.3.5a client data"
+    },
     "source:01fbb7f413755dc4aaa2ecd4": {
       "kind": "research",
       "reference": "evidence:sha256:bf2d7b7c93d8fb3d38106f8e8eb480a6305cf24bdf7bca152d6967196be845ef",
@@ -796,6 +833,31 @@
       "kind": "research",
       "reference": "evidence:sha256:821f218c25463f18d89aba744c226c7401668cf470a8f76170ea46f3aee705f7",
       "revision": "6dd0871340b8cf3142769da526b6fd14e5aa9ada9845e16ec43a31e424c9832c"
+    },
+    "world:creature:19219": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19219 (Mechano-Lord Capacitus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19220": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19220 (Pathaleon the Calculator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19221 (Nethermancer Sepethrea), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19716": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19716 (Mechanar Tinkerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20990": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20990 (Bloodwarder Physician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

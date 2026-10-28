@@ -912,7 +912,44 @@
     }
   ],
   "place": "The Temple of Atal'Hakkar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1477",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1477",
+        "dbc:area:8",
+        "world:creature:5710",
+        "dbc:encounter:485",
+        "world:creature:5709",
+        "world:creature:8318",
+        "world:creature:5259",
+        "world:creature:5271"
+      ],
+      "text": "You are in the Temple of Atal'Hakkar, the Sunken Temple, reached from the Swamp of Sorrows. The Atal'ai hold it under Jammal'an the Prophet, who proclaims that Hakkar will live again and urges the Atal'ai to rise when the shield falls. Atal'alarion is also a master here, and the Shade of Eranikus calls on its children to stop an evil threat from entering the world. Atal'ai slaves, witch doctors and deathwalkers fill its halls.",
+      "when": {
+        "zone_id": 1477
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1477": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1477 (The Temple of Atal'Hakkar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:8": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 8 (Swamp of Sorrows)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:485": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 485 (Atal'alarion)",
+      "revision": "3.3.5a client data"
+    },
     "source:036fd880c530940e418d5c73": {
       "kind": "research",
       "reference": "evidence:sha256:407e0854582c524b95da8728e2b3faa6f03dad5907e66d56bb886dfd945ed860",
@@ -1527,6 +1564,31 @@
       "kind": "research",
       "reference": "evidence:sha256:a85c175936e86570d8647e7bdde112da0b3fdc9b4e7738373ead3de4b78c618f",
       "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
+    "world:creature:5259": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5259 (Atal'ai Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:5271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5271 (Atal'ai Deathwalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:5709": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5709 (Shade of Eranikus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:5710": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5710 (Jammal'an the Prophet), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8318 (Atal'ai Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

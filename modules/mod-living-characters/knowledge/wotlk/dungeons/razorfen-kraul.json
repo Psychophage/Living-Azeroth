@@ -854,7 +854,39 @@
     }
   ],
   "place": "Razorfen Kraul",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:491",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:491",
+        "dbc:area:1717",
+        "world:creature:4421",
+        "world:creature:4424",
+        "world:creature:4420",
+        "world:creature:4442",
+        "world:creature:4514",
+        "world:creature:4508"
+      ],
+      "text": "You are in Razorfen Kraul, a dungeon in The Barrens. Charlga Razorflank, called the Crone, claims the Kraul as her ground and threatens outsiders who encroach on it. Other masters here include Death's Head Prophet Aggem Thorncurse and Overlord Ramtusk. Razorfen Defenders and Raging Agam'ar fill the place, and Willix the Importer was once held prisoner here before he escaped.",
+      "when": {
+        "zone_id": 491
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1717": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1717 (Razorfen Kraul)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:491": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 491 (Razorfen Kraul)",
+      "revision": "3.3.5a client data"
+    },
     "source:0008712dde43c69e88211e13": {
       "kind": "research",
       "reference": "evidence:sha256:6de9071b8339c6064b3255e8e8a76bb5cbe7ddc3847d2aa4299998b3805c7ad2",
@@ -1489,6 +1521,36 @@
       "kind": "research",
       "reference": "evidence:sha256:089da8dd7742c11196ac44bd496a43381e973b5a01a83773d4115849d3225691",
       "revision": "3d12b575ca4051b6effa53b49d64c2f4191f514f89166c63ad12da0b4999a778"
+    },
+    "world:creature:4420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4420 (Overlord Ramtusk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4421": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4421 (Charlga Razorflank), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4424": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4424 (Aggem Thorncurse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4442": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4442 (Razorfen Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4508": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4508 (Willix the Importer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4514": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4514 (Raging Agam'ar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

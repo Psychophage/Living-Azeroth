@@ -857,7 +857,39 @@
     }
   ],
   "place": "Gnomeregan",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:721",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:721",
+        "dbc:area:1",
+        "world:creature:7800",
+        "world:creature:6235",
+        "world:creature:6212",
+        "world:creature:7998",
+        "world:creature:7850",
+        "world:quest:2904"
+      ],
+      "text": "You are in Gnomeregan, a gnome city in Dun Morogh. Mekgineer Thermaplugg claims the city as his own, and Electrocutioner 6000 is one of his mechanical combatants, with Dark Iron agents here too. Troggs are invading through tunnels that Blastmaster Emi Shortfuse is trying to seal, and a captive named Kernobee is still held among them after being beaten by Dark Iron dwarves.",
+      "when": {
+        "zone_id": 721
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1 (Dun Morogh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:721": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 721 (Gnomeregan)",
+      "revision": "3.3.5a client data"
+    },
     "source:01ca6e1e0bd9e36f0d0f913a": {
       "kind": "research",
       "reference": "evidence:sha256:cea73561467d554f99e9625c5235e3a9670fc447ef3f370c49e587bc65e77a10",
@@ -1507,6 +1539,36 @@
       "kind": "research",
       "reference": "evidence:sha256:84eb02d502e1412a829cd2a4e0a22755c960a70deca289de1699f962d5ab4e62",
       "revision": "290cbf2981774250ca97215bb9749bfc9ceff8f70673843c9f1f7906ddbcbc48"
+    },
+    "world:creature:6212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6212 (Dark Iron Agent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:6235": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 6235 (Electrocutioner 6000), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7800": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7800 (Mekgineer Thermaplugg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7850 (Kernobee), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7998": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7998 (Blastmaster Emi Shortfuse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:2904": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 2904 (A Fine Mess)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

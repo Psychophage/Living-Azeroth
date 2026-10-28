@@ -443,7 +443,39 @@
     }
   ],
   "place": "The Steamvault",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3715",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3715",
+        "dbc:area:3521",
+        "world:creature:17797",
+        "world:creature:17796",
+        "world:creature:17798",
+        "world:creature:17801",
+        "world:quest:9764",
+        "world:quest:9765"
+      ],
+      "text": "You are in The Steamvault, a naga stronghold inside the Coilfang Reservoir in Zangarmarsh. Hydromancer Thespia, Mekgineer Steamrigger and Warlord Kalithresh lead it, and Thespia and Kalithresh serve Lady Vashj. Coilfang sirens, myrmidons, warriors, engineers, sorceresses and oracles fill its halls. Orders from Lady Vashj call for Cenarion druids to be slain on sight, and the Cenarion Expedition in Zangarmarsh faces the prospect of all out war with the naga.",
+      "when": {
+        "zone_id": 3715
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3521": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3521 (Zangarmarsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3715": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3715 (The Steamvault)",
+      "revision": "3.3.5a client data"
+    },
     "source:0218898de17bbfac4472e5c8": {
       "kind": "research",
       "reference": "evidence:sha256:7eb1079c8d6b347a92c2d0d495084172ee39e120736f47cc067e710e0a3ce1c0",
@@ -828,6 +860,36 @@
       "kind": "research",
       "reference": "evidence:sha256:55757fa718a3d7dac728099d730696cbb0f0f2897e771228926f02277b009d94",
       "revision": "ca94bf43226e083e775eab8bf1680ebb56a46f04b0184b3807c2162185e4dddd"
+    },
+    "world:creature:17796": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17796 (Mekgineer Steamrigger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17797": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17797 (Hydromancer Thespia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17798": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17798 (Warlord Kalithresh), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17801": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17801 (Coilfang Siren), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9764": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9764 (Orders from Lady Vashj)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9765": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9765 (Preparing for War)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -708,7 +708,44 @@
     }
   ],
   "place": "Shadowfang Keep",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:209",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:209",
+        "dbc:area:204",
+        "dbc:area:130",
+        "world:creature:3914",
+        "world:creature:4275",
+        "world:creature:3875",
+        "world:quest:1014",
+        "world:quest:1098"
+      ],
+      "text": "You are in Shadowfang Keep, a dungeon fortress in Silverpine Forest, reached from Pyrewood Village. Undead hold it under Archmage Arugal, who demands service and has his Sons of Arugal about him, with Rethilgore the Cell Keeper, an undead jailer, as the other master. Haunted servitors fill its halls, and Arugal still resides here. Deathstalkers sent to gather intelligence on the keep have not returned.",
+      "when": {
+        "zone_id": 209
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:130": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 130 (Silverpine Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:204": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 204 (Pyrewood Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:209": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 209 (Shadowfang Keep)",
+      "revision": "3.3.5a client data"
+    },
     "source:00a896e722278dc71e4be7d9": {
       "kind": "research",
       "reference": "evidence:sha256:0a563e0480fe51d20c29639a91e03dc2ad0bb258b3cefe89c3fb759407529335",
@@ -1278,6 +1315,31 @@
       "kind": "research",
       "reference": "evidence:sha256:a6568828d54927f9460ddf019ecf7deaaf210b5ffa8b4003ce8eff6622fd6016",
       "revision": "3514e3841efe7661b64d5fc44d46e29c17a458b66a81aae7bc5fac99671864b2"
+    },
+    "world:creature:3875": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3875 (Haunted Servitor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3914": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3914 (Rethilgore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4275": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4275 (Archmage Arugal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:1014": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1014 (Arugal Must Die)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:1098": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1098 (Deathstalkers in Shadowfang)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

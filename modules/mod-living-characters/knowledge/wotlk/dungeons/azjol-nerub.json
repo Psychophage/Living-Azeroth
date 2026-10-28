@@ -245,7 +245,63 @@
     }
   ],
   "place": "Azjol-Nerub",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4277",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4277",
+        "dbc:area:4164",
+        "world:creature:28684",
+        "world:creature:28921",
+        "world:creature:29120",
+        "world:creature:32593",
+        "world:creature:28732",
+        "world:quest:13182"
+      ],
+      "text": "You are in Azjol-Nerub, a ruined underground kingdom of nerubians reached through the Pit of Narjun in Dragonblight. The Scourge claims it, and Krik'thir the Gatewatcher, Hadronox and Anub'arak hold its passages, with Anub'arak the greatest. Undead nerubian warriors, skirmishers and shadowcasters fill the tunnels, along with swarming skittering swarmers. Scourged nerubians tend eggs that will hatch and add to their numbers.",
+      "when": {
+        "zone_id": 4277
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4405",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4405",
+        "world:creature:28684",
+        "world:creature:28921",
+        "world:creature:29120",
+        "world:creature:32593",
+        "world:creature:28732",
+        "world:creature:28734"
+      ],
+      "text": "You are in the Passage of Lost Fiends, a passage within Azjol-Nerub. Krik'thir the Gatewatcher, Hadronox and Anub'arak stand here among many skittering swarmers. Anub'ar warriors and skirmishers are also about.",
+      "when": {
+        "area_id": 4405
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4164": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4164 (The Pit of Narjun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4277": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4277 (Azjol-Nerub)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4405": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4405 (Passage of Lost Fiends)",
+      "revision": "3.3.5a client data"
+    },
     "source:056412351fc9e3e0fcd4d138": {
       "kind": "research",
       "reference": "evidence:sha256:5df4bb651f40a1bf703a0895e4e71be04413dfaa66024c6b04b8ba409eb38939",
@@ -400,6 +456,41 @@
       "kind": "research",
       "reference": "evidence:sha256:808a4d0c7f18a1d36e4815827f5da32404492d8800f676a5a713511f9779dd38",
       "revision": "07e06e1d7e9be0d10cb9b5a38e334411c084129e133cbaf8288b445ba4008ae2"
+    },
+    "world:creature:28684": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28684 (Krik'thir the Gatewatcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28732 (Anub'ar Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28734": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28734 (Anub'ar Skirmisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28921 (Hadronox), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29120": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29120 (Anub'arak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:32593": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32593 (Skittering Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13182": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13182 (Don't Forget the Eggs!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

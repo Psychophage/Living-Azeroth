@@ -623,7 +623,39 @@
     }
   ],
   "place": "Razorfen Downs",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:722",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:722",
+        "dbc:area:1316",
+        "world:creature:7358",
+        "world:creature:7357",
+        "world:creature:7346",
+        "world:creature:7347",
+        "world:creature:7337",
+        "world:quest:3525"
+      ],
+      "text": "You are in Razorfen Downs, a place of tangled vines in The Barrens. Amnennar the Coldbringer, a Scourge lich serving the Lich King, rules the Scourge-aligned quilboar here and calls wraiths from the freezing air. Mordresh Fire Eye, a Scourge commander, rules beside him. Splinterbone centurions, boneflayer ghouls and death's head necromancers fill its halls. The quilboar made a pact with the Scourge, and their idol near the entrance serves as an oven for the captives they take from the Barrens.",
+      "when": {
+        "zone_id": 722
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1316": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1316 (Razorfen Downs)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:722": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 722 (Razorfen Downs)",
+      "revision": "3.3.5a client data"
+    },
     "source:00d20c1d1076d1ec5fc58eb2": {
       "kind": "research",
       "reference": "evidence:sha256:cc8a018721363a0c51b1b5dc3648b49bb8d1b5948c5297df578dc12b93412767",
@@ -1148,6 +1180,36 @@
       "kind": "research",
       "reference": "evidence:sha256:a11456224985ccb13b20e5ee3d0dd5397aec4e858b7524ba30a304c48adcea16",
       "revision": "31bc1d50d87e5dfd1c62d67a6b72ee983485753d63fd5d983bb05db80045228a"
+    },
+    "world:creature:7337": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7337 (Death's Head Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7346": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7346 (Splinterbone Centurion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7347": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7347 (Boneflayer Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7357 (Mordresh Fire Eye), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7358": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7358 (Amnennar the Coldbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:3525": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3525 (Extinguishing the Idol)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

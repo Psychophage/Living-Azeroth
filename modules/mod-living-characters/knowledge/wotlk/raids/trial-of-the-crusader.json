@@ -523,7 +523,59 @@
     }
   ],
   "place": "Trial of the Crusader",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4722",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4722",
+        "dbc:area:4658",
+        "world:creature:34996",
+        "dbc:encounter:629",
+        "dbc:encounter:633",
+        "dbc:encounter:641",
+        "dbc:encounter:645",
+        "world:quest:24589"
+      ],
+      "text": "You are in the Trial of the Crusader, a coliseum in the Argent Tournament Grounds in Icecrown. The Argent Crusade gathers champions here for trials in preparation for the march on Icecrown Citadel. Its masters include the Northrend Beasts, Lord Jaraxxus, the Val'kyr Twins and Anub'arak. Lord Jaraxxus, an Eredar lord of the Burning Legion, is summoned into the middle of the arena, and should he escape he will open a portal for the Legion.",
+      "when": {
+        "zone_id": 4722
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4658": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4658 (Argent Tournament Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4722": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4722 (Trial of the Crusader)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:629": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 629 (Northrend Beasts)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:633": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 633 (Lord Jaraxxus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:641": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 641 (Val'kyr Twins)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:645": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 645 (Anub'arak)",
+      "revision": "3.3.5a client data"
+    },
     "source:143ef343b2cbc2d35502925a": {
       "kind": "research",
       "reference": "evidence:sha256:ad828e09310bbd4107a4bfd8f4c64e4b7052d86639cb53ac28975ba4b7f2f334",
@@ -833,6 +885,16 @@
       "kind": "research",
       "reference": "evidence:sha256:352a6702a8353aa68a5c9db19f7e3a9c9565a8582345efac9f5cbc081b6edb47",
       "revision": "bd622d9de5fd36a31695bf1082f256a158b8b1cec29ca31950fb53489971572e"
+    },
+    "world:creature:34996": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34996 (Highlord Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24589": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24589 (Lord Jaraxxus Must Die!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

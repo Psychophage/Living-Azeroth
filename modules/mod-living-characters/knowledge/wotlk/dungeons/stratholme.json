@@ -1208,7 +1208,44 @@
     }
   ],
   "place": "Stratholme",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2017",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2017",
+        "dbc:area:2279",
+        "dbc:area:139",
+        "world:creature:10440",
+        "world:creature:10808",
+        "world:creature:10997",
+        "world:creature:10390",
+        "world:creature:16031"
+      ],
+      "text": "You are in Stratholme, a place in the Eastern Plaguelands. Baron Rivendare rules the Scourge's domain here and treats intruders as Argent Dawn pawns. Timmy the Cruel, a dangerous adversary, and Cannon Master Willey, who summons Crimson Riflemen during fighting, are among the combatants, and Skeletal Guardians fill the place. Ysida Harmon, who served the Argent Dawn's crusade, is held prisoner by Rivendare.",
+      "when": {
+        "zone_id": 2017
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:139": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 139 (Eastern Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2017": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2017 (Stratholme)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2279": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2279 (Stratholme)",
+      "revision": "3.3.5a client data"
+    },
     "source:01e06ec738b878fc741c5b5f": {
       "kind": "research",
       "reference": "evidence:sha256:4c8d8b342e0b0ae02ec5a1c607309294bc2d95858b73cc00003f8ec29214fae8",
@@ -2223,6 +2260,31 @@
       "kind": "research",
       "reference": "evidence:sha256:966f16770753dde271226fa8338a3f2db9de582b09b7823c228a430d37445ede",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "world:creature:10390": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10390 (Skeletal Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:10440": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10440 (Baron Rivendare), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:10808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10808 (Timmy the Cruel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:10997": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10997 (Cannon Master Willey), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16031": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16031 (Ysida Harmon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

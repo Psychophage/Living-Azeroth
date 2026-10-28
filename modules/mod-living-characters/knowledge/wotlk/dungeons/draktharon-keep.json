@@ -586,7 +586,61 @@
     }
   ],
   "place": "Drak'Tharon Keep",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4196",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4196",
+        "dbc:area:4210",
+        "world:creature:26630",
+        "world:creature:26631",
+        "world:creature:27483",
+        "world:creature:26632",
+        "world:creature:26635",
+        "world:creature:26620"
+      ],
+      "text": "You are in Drak'Tharon Keep, a fortress in Grizzly Hills that was once a bastion of the Drakkari nation. The Lich King's Scourge hold it now. Trollgore, Novos the Summoner, King Dred and the Prophet Tharon'ja are its lords. Risen Drakkari warriors, Drakkari guardians, bats and gutrippers roam its halls, along with death knights, ghoul tormentors, darkweb recluses and scourge reanimators.",
+      "when": {
+        "zone_id": 4196
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4633",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4633",
+        "world:creature:27483",
+        "world:creature:26641",
+        "world:creature:26628",
+        "world:creature:26637"
+      ],
+      "text": "You are in Raptor Pens, part of Drak'Tharon Keep where King Dred, a beast, holds sway. Drakkari gutrippers, Drakkari scytheclaws and risen Drakkari handlers are found here with him.",
+      "when": {
+        "area_id": 4633
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4196": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4196 (Drak'Tharon Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4210": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4210 (Drak'Tharon Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4633": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4633 (Raptor Pens)",
+      "revision": "3.3.5a client data"
+    },
     "source:0339d52a93b1f09fce22f307": {
       "kind": "research",
       "reference": "evidence:sha256:63c94212d4f7476559fd544094d157357e1ba767e3ff69769b5fda327b9c30f8",
@@ -1116,6 +1170,51 @@
       "kind": "research",
       "reference": "evidence:sha256:e658ebbd6aac582912f1db6b55dc9acdb7922303c56b71ed9c18c67fbc8c075f",
       "revision": "511888735af7547b7951666256001bfa2d8835e2b270ac9322ce867495e524a9"
+    },
+    "world:creature:26620": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26620 (Drakkari Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26628": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26628 (Drakkari Scytheclaw), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26630": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26630 (Trollgore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26631": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26631 (Novos the Summoner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26632": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26632 (The Prophet Tharon'ja), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26635": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26635 (Risen Drakkari Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26637": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26637 (Risen Drakkari Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26641 (Drakkari Gutripper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27483": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27483 (King Dred), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

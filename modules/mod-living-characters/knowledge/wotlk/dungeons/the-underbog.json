@@ -491,7 +491,39 @@
     }
   ],
   "place": "The Underbog",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3716",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3716",
+        "dbc:area:3653",
+        "world:creature:17770",
+        "world:creature:17826",
+        "world:creature:17885",
+        "world:quest:9717",
+        "world:creature:17724",
+        "world:creature:17723"
+      ],
+      "text": "You are in The Underbog, a bog in Coilfang: The Underbog beneath Serpent Lake in Zangarmarsh. Hungarfen and Swamplord Musel'ek are its leading creatures, and underbats and bog giants fill it. Hungarfen is one of the leaders of the spore giants, who are at war with the people of Sporeggar. Musel'ek keeps Windcaller Claw captive as a pet.",
+      "when": {
+        "zone_id": 3716
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3653": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3653 (Serpent Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3716": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3716 (The Underbog)",
+      "revision": "3.3.5a client data"
+    },
     "source:04b8d534046d040e5b770db8": {
       "kind": "research",
       "reference": "evidence:sha256:3892b3527f1aff5c94ecf13c919485bedec8ed4f46252528e503224df93ac7f3",
@@ -916,6 +948,36 @@
       "kind": "research",
       "reference": "evidence:sha256:efd1830f1eef080030dee2344807b3b7224ff309a11625fda782b5fc5cc8ad97",
       "revision": "eae906b453e9c2564e855c34fcf5282d89ec1239f657906ba8021a6a45bb3955"
+    },
+    "world:creature:17723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17723 (Bog Giant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17724": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17724 (Underbat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17770": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17770 (Hungarfen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17826": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17826 (Swamplord Musel'ek), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17885": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17885 (Earthbinder Rayge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9717": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9717 (Oh, It's On!)",
+      "revision": "acore_world as installed on 2026-10-15"
     }
   },
   "version": 1,

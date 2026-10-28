@@ -192,7 +192,39 @@
     }
   ],
   "place": "The Obsidian Sanctum",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4493",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4493",
+        "dbc:area:4161",
+        "world:creature:28860",
+        "world:creature:30449",
+        "world:creature:30451",
+        "world:creature:30452",
+        "world:creature:30681",
+        "world:quest:24579"
+      ],
+      "text": "You are in the Obsidian Sanctum, a chamber beneath Wyrmrest Temple in Dragonblight. Sartharion, the Onyx Guardian, watches over the eggs of the Twilight Dragonflight kept here. When they are threatened he calls Shadron, Tenebron and Vesperon to defend the clutch, and Onyx Blaze Mistresses, Onyx Flight Captains, Onyx Sanctum Guardians and Onyx Brood Generals fill the place. The Council of Six has turned against Sartharion.",
+      "when": {
+        "zone_id": 4493
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4161": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4161 (Wyrmrest Temple)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4493": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4493 (The Obsidian Sanctum)",
+      "revision": "3.3.5a client data"
+    },
     "source:019e2f0e1f825c52ece75453": {
       "kind": "research",
       "reference": "evidence:sha256:f977c9d247376bd8617707f1865e4a54adc493e57b2430654e62888003ccad5d",
@@ -347,6 +379,36 @@
       "kind": "research",
       "reference": "evidence:sha256:ccbf49ab8de5a825ccd7bd30dcc1934d92c0eb011287de19dcbfa7c50bffe24e",
       "revision": "cd3ee6a2df72fb7be5f3b93cbb613cc7f02bf044100e331e2c214160a099d1e6"
+    },
+    "world:creature:28860": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28860 (Sartharion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30449": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30449 (Vesperon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30451": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30451 (Shadron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30452": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30452 (Tenebron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30681": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30681 (Onyx Blaze Mistress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24579": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24579 (Sartharion Must Die!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

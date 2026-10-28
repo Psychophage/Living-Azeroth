@@ -742,7 +742,62 @@
     }
   ],
   "place": "The Deadmines",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1581",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1581",
+        "dbc:area:920",
+        "world:creature:639",
+        "world:creature:644",
+        "world:creature:1763",
+        "world:creature:598",
+        "world:creature:3947",
+        "world:quest:167"
+      ],
+      "text": "You are in The Deadmines, a mine and shipyard entered from the Dagger Hills in Westfall. The Defias gang holds it under their kingpin Edwin VanCleef, and goblins build a ship here. Foreman Rhahk'zor and the smelter Gilnid drive the work while Defias miners, diggers and pirates fill the tunnels. Miners lost when a tunnel collapsed have not been heard from.",
+      "when": {
+        "zone_id": 1581
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:1582",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:1582",
+        "world:creature:3947",
+        "world:creature:657",
+        "world:creature:1732",
+        "world:creature:636",
+        "world:creature:4417"
+      ],
+      "text": "You are in Ironclad Cove, a part of The Deadmines where goblin shipbuilders work on a ship. Defias pirates, squallshapers, blackguards and taskmasters are also about.",
+      "when": {
+        "area_id": 1582
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1581": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1581 (The Deadmines)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:1582": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1582 (Ironclad Cove)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:920": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 920 (The Dagger Hills)",
+      "revision": "3.3.5a client data"
+    },
     "source:01fa06e382706e44959ca79d": {
       "kind": "research",
       "reference": "evidence:sha256:a915f790dfd4fda1bfd98bbafb82343146e33021bd36b0f14192a52d6535cb71",
@@ -1292,6 +1347,56 @@
       "kind": "research",
       "reference": "evidence:sha256:62e1b1e158302d711a730a6297a898730d376b305a6d00ca2168e7f52487055b",
       "revision": "6fe4800383d650de73da3b5240d4fa762174db391e911bb301a1037a145d722f"
+    },
+    "world:creature:1732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1732 (Defias Squallshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1763 (Gilnid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3947": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3947 (Goblin Shipbuilder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4417 (Defias Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:598": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 598 (Defias Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:636": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 636 (Defias Blackguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 639 (Edwin VanCleef), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 644 (Rhahk'Zor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:657": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 657 (Defias Pirate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:167": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 167 (Oh Brother. . .)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -452,7 +452,59 @@
     }
   ],
   "place": "Halls of Reflection",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4820",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4820",
+        "dbc:area:4862",
+        "world:creature:38113",
+        "world:creature:38112",
+        "world:creature:37226",
+        "world:creature:38173",
+        "world:creature:37223",
+        "world:quest:24802"
+      ],
+      "text": "You are in the Halls of Reflection, Arthas's citadel, reached through the Frozen Halls in Icecrown. Arthas's servants hold it: the masters Marwyn and Falric serve a greater master and carry out his commands, and the Lich King is here too. Spectral footmen and other ghostly soldiers fill the halls. The sword Frostmourne, which ended the life of Lady Sylvanas Windrunner, the Banshee Queen, rests within these walls, and those who come here are still trying to find her and get out.",
+      "when": {
+        "zone_id": 4820
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4906",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4906",
+        "world:creature:37554",
+        "world:creature:36954"
+      ],
+      "text": "You are in The Shadow Throne, a part of the Halls of Reflection. Lady Sylvanas Windrunner leads the Horde's escape from here while she works to break barriers and hold back the Lich King, who stands in this place.",
+      "when": {
+        "area_id": 4906
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4820": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4820 (Halls of Reflection)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4862": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4862 (The Frozen Halls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4906": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4906 (The Shadow Throne)",
+      "revision": "3.3.5a client data"
+    },
     "source:0643c5be9c4f92beed527255": {
       "kind": "research",
       "reference": "evidence:sha256:6b4f11839b74df90571a27d67b600e9c1aebadc0972c54d09903413163945c9f",
@@ -882,6 +934,46 @@
       "kind": "research",
       "reference": "evidence:sha256:66ed99cbcb894f5358be41c9d8b62755badb62e7803bf795a46189458199a572",
       "revision": "6b8ebd965d5e6b952d8a5f565c10d502f8d2c4c1ac3b3e1f2ee2fbc3c970f95b"
+    },
+    "world:creature:36954": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36954 (The Lich King), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37223": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37223 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37226": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37226 (The Lich King), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37554": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37554 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38112": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38112 (Falric), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38113 (Marwyn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38173 (Spectral Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24802": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24802 (Wrath of the Lich King)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -1779,7 +1779,30 @@
     }
   ],
   "place": "Dire Maul",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "area:3217",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3217",
+        "world:creature:11447",
+        "world:creature:11497",
+        "world:creature:11498"
+      ],
+      "text": "You are in The Maul, a part of Dire Maul. Among the creatures here are Mushgog, The Razza and Skarr the Unbreakable.",
+      "when": {
+        "area_id": 3217
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3217": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3217 (The Maul)",
+      "revision": "3.3.5a client data"
+    },
     "source:0087b4c6742c62f9ed5fe296": {
       "kind": "research",
       "reference": "evidence:sha256:baf49c02bd4a1eb7e69bd7c362209011714ad69c5f3ca2af3824072aea1748ca",
@@ -3224,6 +3247,21 @@
       "kind": "research",
       "reference": "evidence:sha256:63a56fb85c4ff5e95d4052e8ecb495dfbaac456b2e77ed4093c3984b9e611dbd",
       "revision": "07f66174bfcc0da895e39aba85e31d742d7ac925b124bba2d08ed1636a2731f7"
+    },
+    "world:creature:11447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11447 (Mushgog), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11497 (The Razza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11498": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11498 (Skarr the Unbreakable), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

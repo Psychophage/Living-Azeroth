@@ -615,7 +615,34 @@
     }
   ],
   "place": "Alterac Valley",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2597",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2597",
+        "world:quest:6847",
+        "world:creature:13236",
+        "world:creature:13257",
+        "world:creature:13437",
+        "world:creature:13179",
+        "world:quest:5893",
+        "world:quest:6985"
+      ],
+      "text": "You are in Alterac Valley, a battlefield in the heart of Alterac where Alliance and Horde forces fight a war. Primalist Thurloga is helping the Frostwolf Clan summon the Ice Lord to unleash against the Stormpike army of the Alliance. Winterax trolls of the region hold the lost All Seeing Eye. Irondeep and Coldtooth mines, storage depots for both sides, change hands as the fighting shifts, and War Rider and gryphon fleets are being readied for attacks.",
+      "when": {
+        "zone_id": 2597
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2597": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2597 (Alterac Valley)",
+      "revision": "3.3.5a client data"
+    },
     "source:06fe4a1333e9ed7b6e06e1d9": {
       "kind": "research",
       "reference": "evidence:sha256:5971a55e711f940a1a2002d1ee14b8c56eeb1b085bec9c868bbca5ebdc79d6fd",
@@ -1005,6 +1032,41 @@
       "kind": "research",
       "reference": "evidence:sha256:c25e9523616f8b5ce73d007a2b921758cd87437c2e6fa78673887f8e99ca0648",
       "revision": "a8dc8d15f0a5efa11f2a2d76d25ca796770e9d6eafcc0c32041963363af67fc5"
+    },
+    "world:creature:13179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13179 (Wing Commander Guse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13236 (Primalist Thurloga), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13257 (Murgot Deepforge), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13437": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13437 (Wing Commander Ichman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:5893": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5893 (Coldtooth Supplies)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:6847": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6847 (Master Ryson's All Seeing Eye)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:6985": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 6985 (Irondeep Supplies)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

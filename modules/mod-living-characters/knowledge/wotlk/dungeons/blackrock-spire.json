@@ -1756,7 +1756,39 @@
     }
   ],
   "place": "Blackrock Spire",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1583",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1583",
+        "dbc:area:25",
+        "world:creature:9196",
+        "world:creature:9237",
+        "world:creature:9568",
+        "world:creature:9097",
+        "world:creature:10221",
+        "world:quest:4701"
+      ],
+      "text": "You are in Blackrock Spire, the fortress capital of the Blackrock orcs, beneath Blackrock Mountain. Highlord Omokk, the ogre leader, War Master Voone, a troll whose battle plans the orcs rely on, and Overlord Wyrmthalak, taskmaster of the lesser city, command the place. Orc soldiers, dragonspawn and worg pups fill its halls, and the worgs the Blackrock orcs command are bred and trained here, and they keep coming however many are destroyed.",
+      "when": {
+        "zone_id": 1583
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1583": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1583 (Blackrock Spire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:25": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 25 (Blackrock Mountain)",
+      "revision": "3.3.5a client data"
+    },
     "source:007afce012d3c4b2dc79cab7": {
       "kind": "research",
       "reference": "evidence:sha256:8950c7d71a35852624873a2a14a329f62baeeb34ba6ec6dd040b0be7b3d7a7c5",
@@ -3006,6 +3038,36 @@
       "kind": "research",
       "reference": "evidence:sha256:c05b33b683d5222c40a69fdcd995d230b5d1e0b17cbaf04ae7d33a87af1deba9",
       "revision": "dc7fecdc1d43209b4f5ee5b5eb5b98635293c1ed49fd39028b130f4ac907b834"
+    },
+    "world:creature:10221": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10221 (Bloodaxe Worg Pup), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9097": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9097 (Scarshield Legionnaire), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9196": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9196 (Highlord Omokk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9237 (War Master Voone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9568": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9568 (Overlord Wyrmthalak), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:4701": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 4701 (Put Her Down)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

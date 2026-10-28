@@ -435,7 +435,44 @@
     }
   ],
   "place": "Sethekk Halls",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3791",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3791",
+        "dbc:area:3688",
+        "world:creature:18472",
+        "world:creature:18473",
+        "dbc:encounter:253",
+        "world:creature:18323",
+        "world:creature:18325",
+        "world:creature:18956"
+      ],
+      "text": "You are in the Sethekk Halls, a stronghold inside Auchindoun. Sethekk creatures hold it under their leaders Darkweaver Syth and Talon King Ikiss, and Anzu is also named among them. Sethekk guards and prophets fill its halls, and Lakka, Syth's sister, is held in a cage here.",
+      "when": {
+        "zone_id": 3791
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3688": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3688 (Auchindoun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3791": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3791 (Sethekk Halls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:253": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 253 (Anzu)",
+      "revision": "3.3.5a client data"
+    },
     "source:01c7b366f5953b92b133664a": {
       "kind": "research",
       "reference": "evidence:sha256:b5720f1a1868ecd24258eedb90a1ff95da4514e9fadab43b5169b5b9a3c5e1c9",
@@ -875,6 +912,31 @@
       "kind": "research",
       "reference": "evidence:sha256:c7e9d09d3a7de2ccc87481ca9937b6859ae2fa307fe89d510ba538c4f03db179",
       "revision": "b84bf1f7e289184dc803e40228922b59a642b65c8ecf559409d539fec3352add"
+    },
+    "world:creature:18323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18323 (Sethekk Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18325": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18325 (Sethekk Prophet), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18472": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18472 (Darkweaver Syth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18473": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18473 (Talon King Ikiss), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18956": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18956 (Lakka), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

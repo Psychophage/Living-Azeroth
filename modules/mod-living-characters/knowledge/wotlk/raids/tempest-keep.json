@@ -649,7 +649,39 @@
     }
   ],
   "place": "Tempest Keep",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3845",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3845",
+        "dbc:area:3842",
+        "world:creature:19622",
+        "world:creature:18805",
+        "world:creature:19514",
+        "world:creature:20044",
+        "world:creature:20048",
+        "world:quest:10882"
+      ],
+      "text": "You are in Tempest Keep, a stronghold in Netherstorm. Kael'thas Sunstrider, Lord of the Blood Elves, holds it, and its guardians include High Astromancer Solarian and Al'ar, the Phoenix God. Novice astromancers and Crimson Hand centurions fill its halls. Harbinger Skyriss, a servant of the Old Gods, is breaking free of the Arcatraz satellite within it.",
+      "when": {
+        "zone_id": 3845
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3842": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3842 (Tempest Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3845": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3845 (Tempest Keep)",
+      "revision": "3.3.5a client data"
+    },
     "source:01282597a2c0a68c55c1d8ab": {
       "kind": "research",
       "reference": "evidence:sha256:29f4f8c2797359d070cf2a428fe9ac317775b2779637013e7a98e7c496bb2490",
@@ -1209,6 +1241,36 @@
       "kind": "research",
       "reference": "evidence:sha256:30a28ed73816b5a385f837b2533be91ee262b0b2ce3545eb37f3ae236dc427f0",
       "revision": "0655c0ad94bbe75c5509869a00f079a10612801bc716312943494876345632b3"
+    },
+    "world:creature:18805": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18805 (High Astromancer Solarian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19514": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19514 (Al'ar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19622": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19622 (Kael'thas Sunstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20044 (Novice Astromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20048": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20048 (Crimson Hand Centurion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10882": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10882 (Harbinger of Doom)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

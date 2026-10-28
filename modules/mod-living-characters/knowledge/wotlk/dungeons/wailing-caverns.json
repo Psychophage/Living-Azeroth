@@ -785,7 +785,44 @@
     }
   ],
   "place": "Wailing Caverns",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:718",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:718",
+        "dbc:area:17",
+        "world:creature:3669",
+        "world:creature:3670",
+        "dbc:encounter:592",
+        "world:creature:3840",
+        "world:creature:5055",
+        "world:quest:914"
+      ],
+      "text": "You are in the Wailing Caverns, a cavern system in the Barrens. Druids of the Fang, once an order of noble druids, now hold its tunnels under Lord Cobrahn, Lord Pythas and Mutanus the Devourer. They seek to remake the Barrens to match their own twisted dreams. Deviate creatures, including lashers and shamblers, still haunt the caverns.",
+      "when": {
+        "zone_id": 718
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:17": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 17 (The Barrens)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:718": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 718 (Wailing Caverns)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:592": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 592 (Mutanus the Devourer)",
+      "revision": "3.3.5a client data"
+    },
     "source:06cbc68b798f2b69fdcab801": {
       "kind": "research",
       "reference": "evidence:sha256:b9a8035d397ef82cf6d3156ed3c601a6b74cf47ad2c01ed3db100555d94e5326",
@@ -1355,6 +1392,31 @@
       "kind": "research",
       "reference": "evidence:sha256:f2bc0fd44b466e4b60afe5ba9a40ff220880fe70ce407641b0044208f39c1c01",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
+    },
+    "world:creature:3669": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3669 (Lord Cobrahn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3670": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3670 (Lord Pythas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3840": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3840 (Druid of the Fang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:5055": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5055 (Deviate Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:914": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 914 (Leaders of the Fang)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

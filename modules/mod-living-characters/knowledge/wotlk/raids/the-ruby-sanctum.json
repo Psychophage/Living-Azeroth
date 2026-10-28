@@ -236,7 +236,39 @@
     }
   ],
   "place": "The Ruby Sanctum",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4987",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4987",
+        "dbc:area:4161",
+        "world:creature:39863",
+        "world:creature:39746",
+        "world:creature:40417",
+        "world:creature:40626",
+        "world:creature:40429",
+        "world:quest:26034"
+      ],
+      "text": "You are in The Ruby Sanctum, the home of the Red Dragonflight beneath Wyrmrest Temple in Dragonblight. Halion, the Twilight Destroyer, leads the forces that have taken it, and General Zarithrian oversees the assault. Charscale invokers, Ruby drakes and drakonids fill its halls, and the Sanctum Guardian Xerestrasza survived and barred the entrance.",
+      "when": {
+        "zone_id": 4987
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4161": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4161 (Wyrmrest Temple)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4987": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4987 (The Ruby Sanctum)",
+      "revision": "3.3.5a client data"
+    },
     "source:08be800f67352e9ad90a34b2": {
       "kind": "research",
       "reference": "evidence:sha256:22544fc8aca3a1dda3d1ad7aa646e40eeeb9b1f26a2ab98c6386008e57026058",
@@ -441,6 +473,36 @@
       "kind": "research",
       "reference": "evidence:sha256:1637848f04faff2eaf4365e9ac35cb556e0e7766009ba76bffd0cf62b7293b7f",
       "revision": "52654b34495d3123437b0d7977686b5488fe245e8be5247e6352c661e0fd7ed7"
+    },
+    "world:creature:39746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 39746 (General Zarithrian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:39863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 39863 (Halion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:40417": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 40417 (Charscale Invoker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:40429": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 40429 (Sanctum Guardian Xerestrasza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:40626": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 40626 (Ruby Drakonid), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:26034": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 26034 (The Twilight Destroyer)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

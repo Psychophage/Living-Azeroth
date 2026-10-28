@@ -308,7 +308,44 @@
     }
   ],
   "place": "Hellfire Ramparts",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3562",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3562",
+        "dbc:area:3545",
+        "dbc:area:3483",
+        "world:creature:17306",
+        "world:creature:17308",
+        "world:creature:17307",
+        "world:creature:17280",
+        "world:creature:17259"
+      ],
+      "text": "You are in Hellfire Ramparts, the walls of Hellfire Citadel in Hellfire Peninsula. Watchkeeper Gargolmar warns intruders that they are fresh meat, the demon leader Omor the Unscarred taunts them, and Vazruden the Herald serves a lord he does not name. Shattered Hand warhounds and Bonechewer Hungerers are the most common of the Bonechewer and Bleeding Hollow creatures that fill it.",
+      "when": {
+        "zone_id": 3562
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3483": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3483 (Hellfire Peninsula)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3545": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3545 (Hellfire Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3562": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3562 (Hellfire Ramparts)",
+      "revision": "3.3.5a client data"
+    },
     "source:0bc6476ab904bd1ceb40b8ae": {
       "kind": "research",
       "reference": "evidence:sha256:942cbcfcf903918d67574e0aa8c5eb269e712a2d2b6b07b2733523b90fc6c095",
@@ -588,6 +625,31 @@
       "kind": "research",
       "reference": "evidence:sha256:9ec739d07265610fd32a6ba9110e7e0d263e28e646123841b34351fb9c270ebc",
       "revision": "12304b690729b8af31fd59868caac0ac18a61bc1f5096fc1f19ccba97855aa8c"
+    },
+    "world:creature:17259": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17259 (Bonechewer Hungerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17280": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17280 (Shattered Hand Warhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17306 (Watchkeeper Gargolmar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17307": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17307 (Vazruden the Herald), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17308": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17308 (Omor the Unscarred), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

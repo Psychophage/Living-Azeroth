@@ -974,7 +974,284 @@
     }
   ],
   "place": "Zul'Gurub",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1977",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1977",
+        "dbc:area:33",
+        "world:creature:14834",
+        "world:creature:14507",
+        "world:creature:11380",
+        "world:creature:11371",
+        "world:creature:15043",
+        "world:creature:15042"
+      ],
+      "text": "You are in Zul'Gurub, the Hakkari trolls' holy ground in Stranglethorn Vale. High Priest Venoxis, Jin'do the Hexxer and Hakkar the Soulflayer hold it, and Hakkar claims divine authority over the place. Razzashi serpents and Zulian crocolisks are its most numerous creatures. Zanza the Restless, a Loa of Zandalar, has come in an ethereal form and says Hakkar has no dominion over his soul.",
+      "when": {
+        "zone_id": 1977
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3377",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3377",
+        "world:creature:14507",
+        "world:creature:11371",
+        "world:creature:11372",
+        "world:creature:11373",
+        "world:creature:11830",
+        "world:creature:11387"
+      ],
+      "text": "You are in The Coil, a chamber where High Priest Venoxis stands. Razzashi serpents and Razzashi adders are the most common creatures here, with Razzashi cobras, Hakkari priests and Sandfury speakers also present.",
+      "when": {
+        "area_id": 3377
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3378",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3378",
+        "world:creature:14517",
+        "world:creature:11368",
+        "world:creature:14750",
+        "world:creature:11831",
+        "world:creature:11351"
+      ],
+      "text": "You are in the Altar of Hir'eek, where High Priestess Jeklik presides. Bloodseeker bats are the most common creatures here, with Gurubashi bat riders, Hakkari witch doctors and Gurubashi headhunters close by.",
+      "when": {
+        "area_id": 3378
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3379",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3379",
+        "world:creature:14510",
+        "world:creature:14532",
+        "world:creature:14880",
+        "world:creature:11370",
+        "world:creature:11338"
+      ],
+      "text": "You are in Shadra'zaar, where High Priestess Mar'li stands among Razzashi venombroods, skitterers and broodwidows. Hakkari shadowcasters are also found here.",
+      "when": {
+        "area_id": 3379
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3380",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3380",
+        "world:creature:11382",
+        "world:creature:14821",
+        "world:creature:11353",
+        "world:creature:11356",
+        "world:creature:11830"
+      ],
+      "text": "You are in the Hakkari Grounds, where Bloodlord Mandokir stands with his raptor. Razzashi raptors are the most common creatures here, and Gurubashi blood drinkers and champions are common too, along with Hakkari priests.",
+      "when": {
+        "area_id": 3380
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3381",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3381",
+        "world:creature:14509",
+        "world:creature:11361",
+        "world:creature:11350",
+        "world:creature:11360"
+      ],
+      "text": "You are in the Naze of Shirvallah, where High Priest Thekal stands. Zulian tigers are the most common creatures here, followed by Gurubashi axe throwers, with Zulian cubs nearby.",
+      "when": {
+        "area_id": 3381
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3382",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3382",
+        "world:creature:11365",
+        "world:creature:11339",
+        "world:creature:11353"
+      ],
+      "text": "You are in the Temple of Bethekk, where Zulian panthers are the most numerous creatures. Hakkari shadow hunters and Gurubashi blood drinkers are also common here.",
+      "when": {
+        "area_id": 3382
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3383",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3383",
+        "world:creature:11380",
+        "world:creature:14825",
+        "world:creature:14882",
+        "world:creature:14826",
+        "world:creature:14883"
+      ],
+      "text": "You are in the Bloodfire Pit, where Jin'do the Hexxer stands among withered mistresses and Atal'ai mistresses. Sacrificed trolls and voodoo slaves are also found here.",
+      "when": {
+        "area_id": 3383
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3384",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3384",
+        "world:creature:14834",
+        "world:creature:15043",
+        "world:creature:11357",
+        "world:creature:11374",
+        "world:creature:11359"
+      ],
+      "text": "You are in the Altar of the Blood God, where Hakkar the Soulflayer holds sway. Zulian crocolisks and sons of Hakkar are the most common creatures here, with hooktooth frenzies and soulflayers close by.",
+      "when": {
+        "area_id": 3384
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3397",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3397",
+        "world:creature:15042",
+        "world:creature:11371",
+        "world:creature:15111",
+        "world:creature:11372"
+      ],
+      "text": "You are in Zanza's Rise, where Zanza the Restless stands among Razzashi serpents, mad servants and Razzashi adders.",
+      "when": {
+        "area_id": 3397
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3398",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3398",
+        "world:creature:15111",
+        "world:creature:11371",
+        "world:creature:11340"
+      ],
+      "text": "You are in the Edge of Madness, where mad servants are the most common creatures. Razzashi serpents and Hakkari blood priests are also found here.",
+      "when": {
+        "area_id": 3398
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3419",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3419",
+        "world:creature:15043",
+        "world:creature:11374"
+      ],
+      "text": "You are in Pagle's Pointe, a spot in Zul'Gurub where Zulian crocolisks and hooktooth frenzies are found.",
+      "when": {
+        "area_id": 3419
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1977": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1977 (Zul'Gurub)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:33": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 33 (Stranglethorn Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3377": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3377 (The Coil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3378": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3378 (Altar of Hir'eek)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3379": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3379 (Shadra'zaar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3380": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3380 (Hakkari Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3381": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3381 (Naze of Shirvallah)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3382": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3382 (Temple of Bethekk)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3383": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3383 (The Bloodfire Pit)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3384": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3384 (Altar of the Blood God)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3397": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3397 (Zanza's Rise)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3398": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3398 (Edge of Madness)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3419": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3419 (Pagle's Pointe)",
+      "revision": "3.3.5a client data"
+    },
     "source:02892ac7dd90291d333342fa": {
       "kind": "research",
       "reference": "evidence:sha256:9b606f2add84079eeab554932b2bf2b274ff1e5be5c03d1e3bbb0e2cc52500c0",
@@ -1729,6 +2006,201 @@
       "kind": "research",
       "reference": "evidence:sha256:6b617bbfcae5b745ff9e188bdfc31289903dc6a0e3573cb6e1bae79469079078",
       "revision": "dff6848c73e023662e3e81c55937ae73426980815e6fdcb1070d629277c59bac"
+    },
+    "world:creature:11338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11338 (Hakkari Shadowcaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11339 (Hakkari Shadow Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11340 (Hakkari Blood Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11350 (Gurubashi Axe Thrower), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11351": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11351 (Gurubashi Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11353 (Gurubashi Blood Drinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11356": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11356 (Gurubashi Champion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11357": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11357 (Son of Hakkar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11359": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11359 (Soulflayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11360": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11360 (Zulian Cub), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11361": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11361 (Zulian Tiger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11365": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11365 (Zulian Panther), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11368": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11368 (Bloodseeker Bat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11370 (Razzashi Broodwidow), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11371 (Razzashi Serpent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11372": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11372 (Razzashi Adder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11373": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11373 (Razzashi Cobra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11374": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11374 (Hooktooth Frenzy), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11380 (Jin'do the Hexxer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11382": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11382 (Bloodlord Mandokir), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11387 (Sandfury Speaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11830": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11830 (Hakkari Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11831": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11831 (Hakkari Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14507": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14507 (High Priest Venoxis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14509": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14509 (High Priest Thekal), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14510": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14510 (High Priestess Mar'li), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14517": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14517 (High Priestess Jeklik), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14532 (Razzashi Venombrood), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14750": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14750 (Gurubashi Bat Rider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14821": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14821 (Razzashi Raptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14825": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14825 (Withered Mistress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14826": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14826 (Sacrificed Troll), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14834": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14834 (Hakkar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14880": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14880 (Razzashi Skitterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14882": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14882 (Atal'ai Mistress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14883": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14883 (Voodoo Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15042": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15042 (Zanza the Restless), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15043": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15043 (Zulian Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15111 (Mad Servant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

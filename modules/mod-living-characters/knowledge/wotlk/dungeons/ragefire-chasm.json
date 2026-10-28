@@ -253,7 +253,39 @@
     }
   ],
   "place": "Ragefire Chasm",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2437",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2437",
+        "dbc:area:1637",
+        "world:quest:14356",
+        "world:creature:11520",
+        "world:creature:11518",
+        "world:creature:11519",
+        "world:creature:11318",
+        "world:creature:11322"
+      ],
+      "text": "You are in Ragefire Chasm, a place reached from the city of Orgrimmar. The Searing Blade, a sect of the Shadow Council, performs its sinister work deep in the chasm. Its leaders Taragaman the Hungerer, Jergosh the Invoker and Bazzalan lead it, and Taragaman is said to be secretly subverting Horde members. Ragefire Troggs and Searing Blade Cultists fill the chasm.",
+      "when": {
+        "zone_id": 2437
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1637": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1637 (Orgrimmar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2437": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2437 (Ragefire Chasm)",
+      "revision": "3.3.5a client data"
+    },
     "source:12b81fbeb8f0bba1a90d5d29": {
       "kind": "research",
       "reference": "evidence:sha256:2447cee618aaf7f5bd6c64d600531a38e1979ee3b7e4804742036fec848036ef",
@@ -438,6 +470,36 @@
       "kind": "research",
       "reference": "evidence:sha256:2a22eeed1486d4a98954c465998f2a9944b57848b44665f57c83f47d59181985",
       "revision": "24ba3a204ea6914394cc197aea74c2363fe0a8b943b82e044177f71b032a5772"
+    },
+    "world:creature:11318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11318 (Ragefire Trogg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11322": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11322 (Searing Blade Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11518": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11518 (Jergosh the Invoker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11519": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11519 (Bazzalan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11520": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11520 (Taragaman the Hungerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:14356": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 14356 (The Power to Destroy...)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

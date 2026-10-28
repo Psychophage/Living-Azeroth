@@ -2905,7 +2905,144 @@
     }
   ],
   "place": "Icecrown Citadel",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4812",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4812",
+        "dbc:area:4522",
+        "world:creature:36597",
+        "world:creature:36612",
+        "world:creature:36678",
+        "world:creature:37532",
+        "world:creature:32315",
+        "world:creature:38471"
+      ],
+      "text": "You are in Icecrown Citadel, a fortress in Icecrown that the Scourge holds for the Lich King. Its chief figures are Lord Marrowgar, Professor Putricide and the Lich King himself, who rules from the Frozen Throne within. Frostwing whelps fill its halls, and Horde forces led by High Overlord Saurfang assault it. Darnavan, a former ally, now serves the Cult of the Damned and is a threat.",
+      "when": {
+        "zone_id": 4812
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4859",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4859",
+        "world:creature:36597",
+        "world:creature:39190"
+      ],
+      "text": "You are in the Frozen Throne, the seat of the Lich King within Icecrown Citadel. He toys with his captives, telling Tirion Fordring that he engineered the champions' path to Icecrown so they would fall into his hands. Wicked Spirits are common here.",
+      "when": {
+        "area_id": 4859
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4889",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4889",
+        "world:creature:37532",
+        "world:creature:37531"
+      ],
+      "text": "You are in the Frost Queen's Lair, a place within Icecrown Citadel. Frostwing whelps are common here, and Frostwarden handlers are found here too.",
+      "when": {
+        "area_id": 4889
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4890",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4890",
+        "world:creature:36678",
+        "world:quest:24873"
+      ],
+      "text": "You are in Putricide's Laboratory of Alchemical Horrors and Fun, the workshop of Professor Putricide within Icecrown Citadel. He announces disasters in cheerful patter and boasts of a plague meant to destroy all life. He refines increasingly lethal strains of blight to use against his enemies.",
+      "when": {
+        "area_id": 4890
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4891",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4891",
+        "world:creature:37955",
+        "world:creature:37664",
+        "world:creature:37595",
+        "world:creature:37663"
+      ],
+      "text": "You are in the Sanctum of Blood, the chamber of Blood-Queen Lana'thel within Icecrown Citadel. Darkfallen archmages, blood knights and nobles are found here. She speaks of hunger and blood, and she taunts intruders with cool confidence.",
+      "when": {
+        "area_id": 4891
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4892",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4892",
+        "world:creature:37970",
+        "world:creature:38558",
+        "world:creature:37665",
+        "world:creature:37571",
+        "world:creature:37662"
+      ],
+      "text": "You are in the Crimson Hall, a hall of Icecrown Citadel ruled by the Blood Council. Prince Valanar, a Darkfallen prince, boasts of the orb's power. Darkfallen lieutenants, advisors and commanders are found here too. Infiltrator Minchar, an agent captured while investigating a resurrection ritual, is held here and interrogated, and his cries echo through the halls.",
+      "when": {
+        "area_id": 4892
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4522": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4522 (Icecrown Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4812": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4812 (Icecrown Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4859": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4859 (The Frozen Throne)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4889": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4889 (The Frost Queen's Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4890": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4890 (Putricide's Laboratory of Alchemical Horrors and Fun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4891": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4891 (The Sanctum of Blood)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4892": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4892 (The Crimson Hall)",
+      "revision": "3.3.5a client data"
+    },
     "source:00ded616d7d258a49a8cd43c": {
       "kind": "research",
       "reference": "evidence:sha256:110a441481e827edf23ad892d520e6b000998861ed46e8cc0234301dbfa9c28b",
@@ -5115,6 +5252,96 @@
       "kind": "research",
       "reference": "evidence:sha256:da26852af71a51b64b9c8c7f033cddf4199ce5168bd8700d42ce1c37e11822ce",
       "revision": "fd2e7982c27159210d3e69101bc76b62d57cfb5f2be9b699b82adae7fb27871b"
+    },
+    "world:creature:32315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32315 (High Overlord Saurfang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36597 (The Lich King), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36612": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36612 (Lord Marrowgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36678": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36678 (Professor Putricide), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37531": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37531 (Frostwarden Handler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37532": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37532 (Frostwing Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37571": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37571 (Darkfallen Advisor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37595": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37595 (Darkfallen Blood Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37662": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37662 (Darkfallen Commander), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37663 (Darkfallen Noble), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37664 (Darkfallen Archmage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37665": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37665 (Darkfallen Lieutenant), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37955": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37955 (Blood-Queen Lana'thel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37970": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37970 (Prince Valanar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38471": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38471 (Infiltrator Minchar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38558": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38558 (Infiltrator Minchar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:39190": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 39190 (Wicked Spirit), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24873": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24873 (Residue Rendezvous)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

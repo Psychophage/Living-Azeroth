@@ -535,7 +535,39 @@
     }
   ],
   "place": "Utgarde Keep",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:206",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:206",
+        "dbc:area:495",
+        "world:creature:23953",
+        "world:creature:23954",
+        "world:creature:24201",
+        "world:creature:24084",
+        "world:creature:24078",
+        "world:quest:13205"
+      ],
+      "text": "You are in Utgarde Keep, a stronghold in the Howling Fjord. Its lords are Prince Keleseth, a San'layn elf prince who commands skeletons, Skarvold and Dalronn, and Ingvar the Plunderer, a fierce vrykul warrior who leads the vrykul forces. Tunneling ghouls and dragonflayers fill it.",
+      "when": {
+        "zone_id": 206
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:206": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 206 (Utgarde Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:495": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 495 (Howling Fjord)",
+      "revision": "3.3.5a client data"
+    },
     "source:03c5d345759c6774d200ba08": {
       "kind": "research",
       "reference": "evidence:sha256:807d0a1f02c4ff920083d951024554cd09f3d999908d56cbeba3ab12f1cda19b",
@@ -995,6 +1027,36 @@
       "kind": "research",
       "reference": "evidence:sha256:058233649ea499e5d24fc690cd41f9e46164f4dfd82eb19075cefc866c85727c",
       "revision": "2cfa6e4a073d3f3bffdfe7aa41dfe53b136f3ebe7a563b4888005d247c995079"
+    },
+    "world:creature:23953": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23953 (Prince Keleseth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23954": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23954 (Ingvar the Plunderer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24078": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24078 (Dragonflayer Metalworker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24084": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24084 (Tunneling Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24201 (Dalronn the Controller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13205": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13205 (Disarmament)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

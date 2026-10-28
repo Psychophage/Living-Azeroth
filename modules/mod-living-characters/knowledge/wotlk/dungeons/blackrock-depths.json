@@ -1875,7 +1875,39 @@
     }
   ],
   "place": "Blackrock Depths",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1584",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1584",
+        "dbc:area:25",
+        "world:creature:9537",
+        "world:creature:9019",
+        "world:creature:8983",
+        "world:creature:8893",
+        "world:creature:8921",
+        "world:quest:3982"
+      ],
+      "text": "You are in Blackrock Depths, a Dark Iron dwarf stronghold beneath Blackrock Mountain. Emperor Dagran Thaurissan rules it, and Golem Lord Argelmach claims its Manufactory. Anvilrage soldiers and bloodhounds fill its halls. Princess Moira Bronzebeard is held captive here by the emperor.",
+      "when": {
+        "zone_id": 1584
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1584": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1584 (Blackrock Depths)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:25": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 25 (Blackrock Mountain)",
+      "revision": "3.3.5a client data"
+    },
     "source:00613b61cf930d5ae93cffba": {
       "kind": "research",
       "reference": "evidence:sha256:0428b4f573c8f511d15a269feafd1ac10ceabb85a83cd5482bb30b6cb5aab5ba",
@@ -3405,6 +3437,36 @@
       "kind": "research",
       "reference": "evidence:sha256:a92677e13e553c82578295ee243a724b7c8657352584517048491145cfeafbac",
       "revision": "003904da2261b9fb30d63a35daea0e47b1812a07dd8c1995618fe6c13e1274bd"
+    },
+    "world:creature:8893": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8893 (Anvilrage Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8921 (Bloodhound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8983": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8983 (Golem Lord Argelmach), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9019": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9019 (Emperor Dagran Thaurissan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:9537": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 9537 (Hurley Blackbreath), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:3982": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 3982 (What Is Going On?)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

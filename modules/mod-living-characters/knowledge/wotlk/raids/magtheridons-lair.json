@@ -53,7 +53,42 @@
     }
   ],
   "place": "Magtheridon's Lair",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3836",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3836",
+        "dbc:area:3545",
+        "dbc:area:3483",
+        "world:creature:17257",
+        "world:creature:18829",
+        "world:creature:17256"
+      ],
+      "text": "You are in Magtheridon's Lair, a chamber deep within Hellfire Citadel in Hellfire Peninsula. Magtheridon, a mighty demon, is held here by sorcery. He resents those who take his blood and vows to crush Illidan and reclaim Outland. Hellfire Warders and Hellfire Channelers fill the place.",
+      "when": {
+        "zone_id": 3836
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3483": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3483 (Hellfire Peninsula)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3545": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3545 (Hellfire Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3836": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3836 (Magtheridon's Lair)",
+      "revision": "3.3.5a client data"
+    },
     "source:0b87c464a9dd068643b9d1f3": {
       "kind": "research",
       "reference": "evidence:sha256:b61cf6de88241fdd30d4cbc453ce83e6358c75740c50aee61cf98ff176d6316f",
@@ -103,6 +138,21 @@
       "kind": "research",
       "reference": "evidence:sha256:99fa6d9a1f060645389e302023f3492b0baecb36439010b1ef31c741d9ebdb31",
       "revision": "3d11a047da514c451f6ac5d0fb0516416e4fb80c0b8a5ba1a0a47d7f535a1b61"
+    },
+    "world:creature:17256": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17256 (Hellfire Channeler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17257": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17257 (Magtheridon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18829": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18829 (Hellfire Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

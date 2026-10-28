@@ -318,7 +318,33 @@
     }
   ],
   "place": "Arathi Basin",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3358",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3358",
+        "world:quest:8105",
+        "world:quest:8120",
+        "world:creature:15045",
+        "world:creature:15046",
+        "world:creature:15074",
+        "world:creature:15075"
+      ],
+      "text": "You are in Arathi Basin, a battlefield where the League of Arathor and the Horde fight over its resources. Its key points are a mine, a lumber mill, a blacksmith, a farm and a stable, and holding them supplies each side with metal, weapons, food and lumber. Arathi farmers and miners work for the Alliance here, and Forsaken farmers and miners do the same for the Horde.",
+      "when": {
+        "zone_id": 3358
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3358": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3358 (Arathi Basin)",
+      "revision": "3.3.5a client data"
+    },
     "source:0280621ca839e4048ab24f34": {
       "kind": "research",
       "reference": "evidence:sha256:64761f0c6cab8c689e2cac4b6f7b1dee7c2da35a11be60589a5093c4c9be19c9",
@@ -458,6 +484,36 @@
       "kind": "research",
       "reference": "evidence:sha256:0c227881156ba586504577e92cb88e1c7d347dd71a9cb21d89115b64f1ffe407",
       "revision": "f1b2f4aec1c8511e9047e9f6accb6212c7c287e4fe3adb33e0a99a51a8b805b7"
+    },
+    "world:creature:15045": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15045 (Arathi Farmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15046": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15046 (Forsaken Farmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15074": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15074 (Arathi Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15075": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15075 (Forsaken Miner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:8105": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8105 (The Battle for Arathi Basin!)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:8120": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8120 (The Battle for Arathi Basin!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

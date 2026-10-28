@@ -576,7 +576,44 @@
     }
   ],
   "place": "Blackwing Lair",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2677",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2677",
+        "dbc:area:1583",
+        "dbc:encounter:617",
+        "world:creature:12017",
+        "world:creature:13020",
+        "world:creature:13996",
+        "world:creature:14025",
+        "world:quest:8730"
+      ],
+      "text": "You are in Blackwing Lair, a place within Blackrock Spire. Nefarian dwells in its inner sanctum, and Broodlord Lashlayer guards the Halls of Strife that lead toward it. Vaelastrasz the Corrupt, a mortally weakened red dragon, fights Nefarius's corruption here. Blackwing technicians and corrupted whelps fill the lair. Nefarius holds the Red Scepter Shard and plans to destroy it.",
+      "when": {
+        "zone_id": 2677
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1583": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1583 (Blackrock Spire)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2677": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2677 (Blackwing Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:617": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 617 (Nefarian)",
+      "revision": "3.3.5a client data"
+    },
     "source:0358fb785c6b83b5cd9f04b3": {
       "kind": "research",
       "reference": "evidence:sha256:af8a990aa2729fddd9793af3027ed8c343fcdad3424d69edc1c8b78e31b592dd",
@@ -1031,6 +1068,31 @@
       "kind": "research",
       "reference": "evidence:sha256:b26bd7829f31955a3147376a4b889af90e3f220b5ddf4eece1afa9d4eb8bf75d",
       "revision": "207dabfbe1a99d3dec7e767b2bad1f9320f491c4fd0837829ce2716b8468b2a0"
+    },
+    "world:creature:12017": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12017 (Broodlord Lashlayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13020": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13020 (Vaelastrasz the Corrupt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13996": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13996 (Blackwing Technician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:14025": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 14025 (Corrupted Bronze Whelp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:8730": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 8730 (Nefarius's Corruption)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

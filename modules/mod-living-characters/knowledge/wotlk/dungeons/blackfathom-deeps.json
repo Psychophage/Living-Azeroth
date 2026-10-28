@@ -616,7 +616,39 @@
     }
   ],
   "place": "Blackfathom Deeps",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:719",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:719",
+        "dbc:area:2077",
+        "world:quest:1199",
+        "world:quest:1200",
+        "world:creature:4832",
+        "world:creature:4831",
+        "world:creature:4829",
+        "world:creature:4805"
+      ],
+      "text": "You are in Blackfathom Deeps, a ruined temple in Twilight Vale in Darkshore, where Twilight's Hammer cultists have allied with the naga to occupy the grounds. The cultists serve the Old Gods and work toward their return. Twilight Lord Kelris leads them. Its masters are Twilight Lord Kelris, Lady Sarevess and Aku'mai, a servant of the Old God who rose from the waters. Sea witches, myrmidons, oracles, tide priestesses, shadowstalkers, hellcallers and murlocs fill the place.",
+      "when": {
+        "zone_id": 719
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2077": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2077 (Twilight Vale)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:719": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 719 (Blackfathom Deeps)",
+      "revision": "3.3.5a client data"
+    },
     "source:04b57fe73612e2a7ec516118": {
       "kind": "research",
       "reference": "evidence:sha256:c73b60204ead793e9cb9723072a74576e9e3f5d9a330212f61867f4b841bbadf",
@@ -1106,6 +1138,36 @@
       "kind": "research",
       "reference": "evidence:sha256:41be2c3cc219e359b62be5fe776c3bffe845af07b18e312a328f453ca2b4bbd1",
       "revision": "4c541c80dc21c478fbe1ec0810742f8c1ebc7ffb26341a8c94340411c95729ce"
+    },
+    "world:creature:4805": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4805 (Blackfathom Sea Witch), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4829": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4829 (Aku'mai), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4831": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4831 (Lady Sarevess), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:4832": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 4832 (Twilight Lord Kelris), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:1199": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1199 (Twilight Falls)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:1200": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 1200 (Blackfathom Villainy)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

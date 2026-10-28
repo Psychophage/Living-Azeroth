@@ -260,7 +260,49 @@
     }
   ],
   "place": "The Violet Hold",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4415",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4415",
+        "dbc:area:4567",
+        "dbc:area:4395",
+        "world:creature:29315",
+        "dbc:encounter:545",
+        "world:creature:29395",
+        "world:creature:30658",
+        "world:quest:13256"
+      ],
+      "text": "You are in the Violet Hold, a prison in Dalaran. Blue dragonflight invaders have taken it and mean to break out into the rest of Dalaran. Its masters are Erekem and Cyanigosa, the greater of the two. Erekem's guards stand in its halls, and Lieutenant Sinclari warns that her own guards are struggling to hold its defenses. Reports say prisoners are being freed.",
+      "when": {
+        "zone_id": 4415
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4395": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4395 (Dalaran)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4415": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4415 (The Violet Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4567": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4567 (The Violet Hold)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:545": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 545 (Cyanigosa)",
+      "revision": "3.3.5a client data"
+    },
     "source:0093794e824e9f853cace9a9": {
       "kind": "research",
       "reference": "evidence:sha256:b997a3a9528f67ebf746d94d70d82d323e7c36455bc83116d475444d323bbea0",
@@ -490,6 +532,26 @@
       "kind": "research",
       "reference": "evidence:sha256:86a0f222935e6cb6b626ef9c576fba9d471d7274ff4d7e138b8864210b37a061",
       "revision": "660432b1a40c4ffb356cad64045d0f67d56ff2e939811acc2658fab66d06a037"
+    },
+    "world:creature:29315": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29315 (Erekem), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29395": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29395 (Erekem Guard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30658": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30658 (Lieutenant Sinclari), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13256": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13256 (Proof of Demise: Cyanigosa)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

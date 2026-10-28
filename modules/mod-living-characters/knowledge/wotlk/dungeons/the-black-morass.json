@@ -136,7 +136,54 @@
     }
   ],
   "place": "The Black Morass",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2366",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2366",
+        "dbc:area:981",
+        "dbc:area:440",
+        "world:quest:10297",
+        "dbc:encounter:287",
+        "dbc:encounter:291",
+        "world:creature:17952",
+        "world:creature:18982"
+      ],
+      "text": "You are in The Black Morass, a timeway reached through The Gaping Chasm in Tanaris. Medivh works in its heart to open the Dark Portal, and rifts open across the morass as the Infinite send their rift lords to stop him. Chrono Lord Deja and Aeonus are among its lords, and the morass is filled with crocolisks, sable jaguars and other beasts.",
+      "when": {
+        "zone_id": 2366
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2366": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2366 (The Black Morass)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:981": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 981 (The Gaping Chasm)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:287": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 287 (Chrono Lord Deja)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:291": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 291 (Aeonus)",
+      "revision": "3.3.5a client data"
+    },
     "source:17d2d23dfa49fa45bc022ab5": {
       "kind": "research",
       "reference": "evidence:sha256:475605be2fd2e3b7dd29618da0d8a19e176b99748dfeb1ff7639ec1c7faa3664",
@@ -256,6 +303,21 @@
       "kind": "research",
       "reference": "evidence:sha256:07f1bea5d632984a7329c290476ac244481a70705f8a3b37e1051889a1840157",
       "revision": "56c2e3d4081f2f3c067c0cbf671d13f88e514c96f34afa9e7b99ebbb0c9c4c28"
+    },
+    "world:creature:17952": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17952 (Darkwater Crocolisk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18982": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18982 (Sable Jaguar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10297": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10297 (The Opening of the Dark Portal)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

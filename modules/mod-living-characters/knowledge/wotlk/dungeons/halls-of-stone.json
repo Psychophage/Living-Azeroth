@@ -470,7 +470,39 @@
     }
   ],
   "place": "Halls of Stone",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4264",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4264",
+        "dbc:area:4547",
+        "world:creature:27978",
+        "world:creature:27977",
+        "world:creature:27975",
+        "world:creature:27973",
+        "world:creature:27963",
+        "world:creature:28070"
+      ],
+      "text": "You are in the Halls of Stone, a dungeon within The Storm Peaks. Sjonnir the Ironshaper holds it with Krystallus and the Maiden of Grief, and Sjonnir boasts that iron armies will smother the world. Crystalline Shardlings and Dark Rune theurgists fill its halls. Brann Bronzebeard, a researcher, presses for answers about the origins of the earthen.",
+      "when": {
+        "zone_id": 4264
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4264": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4264 (Halls of Stone)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4547": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4547 (Halls of Stone)",
+      "revision": "3.3.5a client data"
+    },
     "source:00096177ff40e141e910dafc": {
       "kind": "research",
       "reference": "evidence:sha256:18a122570c6f3a138ac4a96caeb021c438277fc4bcc6bb9c93e81f5471cf0fd3",
@@ -800,6 +832,36 @@
       "kind": "research",
       "reference": "evidence:sha256:da669cc5a87a0642b8bdc9920f1a50e54a8b2c673892a7283b39b92038d20384",
       "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
+    },
+    "world:creature:27963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27963 (Dark Rune Theurgist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27973": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27973 (Crystalline Shardling), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27975 (Maiden of Grief), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27977 (Krystallus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27978 (Sjonnir The Ironshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28070": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28070 (Brann Bronzebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

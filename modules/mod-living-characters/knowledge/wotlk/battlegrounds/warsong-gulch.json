@@ -29,7 +29,30 @@
     }
   ],
   "place": "Warsong Gulch",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3277",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3277",
+        "world:quest:7789",
+        "world:quest:7788",
+        "world:creature:8001"
+      ],
+      "text": "You are in Warsong Gulch, a contested field of strife in the Ashenvale forest. Alliance forces defend Silverwing Hold here, and Horde forces, who say Kalimdor belongs to them, contest the gulch. Horde forces are said to be cutting down the evergreens here to power their war machines. Corpus Ragatus is among the hostile creatures found here.",
+      "when": {
+        "zone_id": 3277
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3277": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3277 (Warsong Gulch)",
+      "revision": "3.3.5a client data"
+    },
     "source:1481c5c62d9d60e903abbe9a": {
       "kind": "research",
       "reference": "evidence:sha256:7645e7673592c4d26b753d9326344d67fd4978e4eadb97343fc7c28489780f8d",
@@ -54,6 +77,21 @@
       "kind": "research",
       "reference": "evidence:sha256:914e58880ad1db5faea801112ebf332849f0dca2366d08104b002b7ea408d46a",
       "revision": "9bddb4680f7e520e689075557cbfdca86d0d1ed4553ade23c6f4aef246de7529"
+    },
+    "world:creature:8001": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8001 (Corpus Ragatus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:7788": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7788 (Vanquish the Invaders!)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:7789": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7789 (Quell the Silverwing Usurpers)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

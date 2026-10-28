@@ -758,7 +758,39 @@
     }
   ],
   "place": "Zul'Aman",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3805",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3805",
+        "dbc:area:3433",
+        "world:creature:23863",
+        "world:creature:23576",
+        "world:creature:24239",
+        "world:creature:23597",
+        "world:creature:23897",
+        "world:quest:11132"
+      ],
+      "text": "You are in Zul'Aman, a place of the Amani trolls, in the Ghostlands. Amani trolls hold it under Zul'jin, who proclaims the return of the Amani empire, with the Bear Avatar Nalorakk and Hex Lord Malacrass among its lords. Amani'shi guardians stand within. A troll captive named Zungam is held there. Recruits sent by Budd Nedreck of Hatchet Hills went in after Nalorakk and have gone missing.",
+      "when": {
+        "zone_id": 3805
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3433": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3433 (Ghostlands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3805": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3805 (Zul'Aman)",
+      "revision": "3.3.5a client data"
+    },
     "source:01f0388c8cef02b70b6cf874": {
       "kind": "research",
       "reference": "evidence:sha256:ec77e07ea1e46f5b1631292cca53e2f7ce4aaebf2935cbf53f279d9fc2941682",
@@ -1383,6 +1415,36 @@
       "kind": "research",
       "reference": "evidence:sha256:0e8ca06d18b0204a445addf0fbb155ea66529bebd06a1bfd56a2dfb2d69076d1",
       "revision": "112c36e33e2e6ee9f54cabdcdff9956c19d2adaaa6f81e42224714c8c0f48c5b"
+    },
+    "world:creature:23576": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23576 (Nalorakk), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23597": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23597 (Amani'shi Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23863": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23863 (Zul'jin), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23897": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23897 (Zungam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24239": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24239 (Hex Lord Malacrass), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:11132": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11132 (Promises, Promises...)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -554,7 +554,39 @@
     }
   ],
   "place": "Halls of Lightning",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4272",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4272",
+        "dbc:area:4548",
+        "world:creature:28923",
+        "world:quest:13253",
+        "world:creature:28587",
+        "world:creature:28546",
+        "world:creature:28961",
+        "world:creature:28836"
+      ],
+      "text": "You are in the Halls of Lightning, a set of halls in The Storm Peaks. Loken is poised within them to put an end to the world, and he speaks of a master who has shown him the future, predicting Azeroth reborn in darkness and Yogg-Saron released. Volkhan, an ironworking adversary who dreams of conquest by armies of iron, and Ionar, an elemental guardian who warns that intruders must first weather the storm, are here too. Titanium siegebreakers and stormforged runeshapers fill the halls.",
+      "when": {
+        "zone_id": 4272
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4272": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4272 (Halls of Lightning)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4548": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4548 (Halls of Lightning)",
+      "revision": "3.3.5a client data"
+    },
     "source:063ea6b124db425c37668d1e": {
       "kind": "research",
       "reference": "evidence:sha256:f127d53619b1f5552827e58cca718ce0bee36948b5e20510a2e343e9d59038f9",
@@ -1019,6 +1051,36 @@
       "kind": "research",
       "reference": "evidence:sha256:764f88dd2a7691b6dd031fa19249f3e14e9192d07acd01088f5956153682a2a2",
       "revision": "0c9dcdb4c73db7200b914177a53d4f2de87d203cdddce4e7817edf8a396c2847"
+    },
+    "world:creature:28546": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28546 (Ionar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28587": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28587 (Volkhan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28836": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28836 (Stormforged Runeshaper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28923": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28923 (Loken), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:28961": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28961 (Titanium Siegebreaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13253": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13253 (Proof of Demise: Loken)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

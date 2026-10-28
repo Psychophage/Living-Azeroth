@@ -649,7 +649,39 @@
     }
   ],
   "place": "Ahn'Qiraj",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3428",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3428",
+        "dbc:area:3478",
+        "world:creature:15516",
+        "world:creature:15263",
+        "world:creature:15275",
+        "world:creature:15727",
+        "world:creature:15300",
+        "world:creature:15504"
+      ],
+      "text": "You are in Ahn'Qiraj, a Qiraji temple entered through the Gates of Ahn'Qiraj. Battleguard Sartura guards its sacred grounds under the laws of the Ancients. Its rulers include the Prophet Skeram, the Twin Emperors Vek'nilash and Vek'lor, and C'Thun, a colossal abomination whose evil legacy is said to linger even after death. Vekniss drones and guardians, Qiraji slayers and champions, and Anubisath sentinels fill it. Dragons of the Brood of Ysera are here to stop C'Thun and its worshippers.",
+      "when": {
+        "zone_id": 3428
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3428": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3428 (Ahn'Qiraj)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3478": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3478 (Gates of Ahn'Qiraj)",
+      "revision": "3.3.5a client data"
+    },
     "source:01391f29602fbd2c0625613c": {
       "kind": "research",
       "reference": "evidence:sha256:c5db0eb44f80304616051d9e09649dc20c3870c7173c2172e5141f206aec915e",
@@ -1109,6 +1141,36 @@
       "kind": "research",
       "reference": "evidence:sha256:41f276bf3d40f25b69e87f42fabbbc63821b0109192dd8bf20b4929e1f1d89cd",
       "revision": "a95bc6261e4367956fd0214faf7b2fa8340603d02d1d7a8de567c4e4e79c25e0"
+    },
+    "world:creature:15263": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15263 (The Prophet Skeram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15275": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15275 (Emperor Vek'nilash), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15300": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15300 (Vekniss Drone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15504": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15504 (Vethsera), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15516": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15516 (Battleguard Sartura), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15727": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15727 (C'Thun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

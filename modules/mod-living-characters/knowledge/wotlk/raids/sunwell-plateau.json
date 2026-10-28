@@ -1015,7 +1015,85 @@
     }
   ],
   "place": "Sunwell Plateau",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4075",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4075",
+        "dbc:area:4080",
+        "world:creature:24850",
+        "world:creature:24882",
+        "world:creature:25608",
+        "world:creature:25371",
+        "world:creature:25486",
+        "world:quest:24564"
+      ],
+      "text": "You are in Sunwell Plateau, a plateau on the Isle of Quel'Danas that holds the Sunwell. Kalecgos, Brutallus and Kil'jaeden are its masters, and Kil'jaeden is a commander pursuing a long-laid plan. Sunblade vindicators, priests and mages fill the plateau with Shadowsword vanquishers and volatile fiends. The end of Quel'Delar's exile is said to await within, where Quel'Thalas's regent and Grand Magister Rommath stand.",
+      "when": {
+        "zone_id": 4075
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4139",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4139",
+        "world:creature:24850",
+        "world:creature:25638",
+        "world:creature:25632",
+        "world:creature:25639",
+        "world:creature:25644",
+        "world:creature:25661",
+        "world:creature:25371"
+      ],
+      "text": "You are in Parhelion Plaza, where Kalecgos stands, having declared himself no longer Malygos's slave. Captain Selana and Vindicator Moorba are here with Anchorite Elbadon, Neophyte Narama and Shattered Sun soldiers. Sunblade dawn priests and vindicators are among the forces around them.",
+      "when": {
+        "area_id": 4139
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4140",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4140",
+        "world:creature:24882",
+        "world:creature:24895",
+        "world:creature:25486"
+      ],
+      "text": "You are in The Dead Scar, where Brutallus, a demon, stands with Shadowsword vanquishers, soulbinders, manafiends and lifeshapers. Madrigosa, a dragon who calls Malygos her lord, is here trying to keep him alive long enough to question him about Anveena and Kalec.",
+      "when": {
+        "area_id": 4140
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4075": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4075 (Sunwell Plateau)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4080": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4080 (Isle of Quel'Danas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4139": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4139 (Parhelion Plaza)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4140": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4140 (The Dead Scar)",
+      "revision": "3.3.5a client data"
+    },
     "source:011279e48be53398d1821bcc": {
       "kind": "research",
       "reference": "evidence:sha256:b7ea462934a05cef1cf79a6c4da99fff80fc6010dcd2088a83610f16377af3de",
@@ -1865,6 +1943,66 @@
       "kind": "research",
       "reference": "evidence:sha256:14a36916c62c7f635ff1c73080642fc2003679f7de026d9ba9f71a0258c5b26a",
       "revision": "b25ec5726ed6d19dc50f288407a6299f305331d0f018ec9ed6d4b086aa43a271"
+    },
+    "world:creature:24850": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24850 (Kalecgos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24882": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24882 (Brutallus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24895": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24895 (Madrigosa), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25371 (Sunblade Dawn Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25486": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25486 (Shadowsword Vanquisher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25608": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25608 (Kil'jaeden), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25632": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25632 (Vindicator Moorba), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25638": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25638 (Captain Selana), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25639": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25639 (Anchorite Elbadon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25644": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25644 (Neophyte Narama), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:25661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 25661 (Shattered Sun Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24564": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24564 (The Purification of Quel'Delar)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

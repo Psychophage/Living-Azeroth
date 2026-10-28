@@ -2149,7 +2149,197 @@
     }
   ],
   "place": "Ulduar",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4273",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4273",
+        "dbc:area:4445",
+        "world:creature:33186",
+        "world:creature:33118",
+        "world:creature:33113",
+        "world:creature:32930",
+        "world:creature:33121",
+        "world:quest:13607"
+      ],
+      "text": "You are in Ulduar, a titan complex in The Storm Peaks, now held by Keeper-made machines and the forces of Loken. Ignis the Furnace Master makes weapons in the Colossal Forge meant to reclaim the world, Flame Leviathan guards the Formation Grounds as the first line of defense, and Kologarn bars the way. Iron constructs fill its halls. Algalon the Observer is said to beam messages to his Titan masters from the Celestial Planetarium, whose entrance has yet to be found.",
+      "when": {
+        "zone_id": 4273
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4650",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4650",
+        "world:creature:34054",
+        "world:creature:33236",
+        "world:creature:33214",
+        "world:creature:34234",
+        "world:creature:33264",
+        "world:creature:33237",
+        "world:creature:34164"
+      ],
+      "text": "You are in the Iron Concourse, a part of Ulduar where Bronzebeard Radio broadcasts warnings and guidance to listeners. Its transmissions explain the generators and repair stations and comment on Thorim's tower. Steelforged defenders, mechanolifts, runeforged sentries, ironwork cannons, an Ulduar Colossus and mechagnome battletanks are found here.",
+      "when": {
+        "area_id": 4650
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4652",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4652",
+        "world:creature:33236",
+        "world:creature:34234",
+        "world:creature:33237",
+        "world:creature:33214"
+      ],
+      "text": "You are in the Formation Grounds, a part of Ulduar where steelforged defenders and runeforged sentries stand guard. An Ulduar Colossus and a mechanolift are here too.",
+      "when": {
+        "area_id": 4652
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4653",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4653",
+        "world:creature:33186",
+        "world:creature:33214"
+      ],
+      "text": "You are in Razorscale's Aerie, where Razorscale, a broodmother, normally keeps to her aerie near the Colossal Forge. She began raining fire on the lands outside the titan complex, and the Council of Six calls her a threat. A mechanolift is here too.",
+      "when": {
+        "area_id": 4653
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4654",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4654",
+        "world:creature:33118",
+        "world:creature:33121",
+        "world:creature:34085",
+        "world:creature:34086"
+      ],
+      "text": "You are in the Colossal Forge, a workshop in Ulduar where Ignis the Furnace Master works. Iron constructs, forge constructs and magma ragers are here with him.",
+      "when": {
+        "area_id": 4654
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4655",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4655",
+        "world:creature:33293",
+        "world:creature:34267",
+        "world:creature:34269",
+        "world:creature:34271",
+        "world:creature:34273"
+      ],
+      "text": "You are in the Scrapyard, a part of Ulduar where XT-002 Deconstructor is found. It is a deadly construct that thinks itself the keeper's son, and parts recovery technicians, salvagebots, compactobots and disposalbots are found around it.",
+      "when": {
+        "area_id": 4655
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4656",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4656",
+        "world:creature:32906",
+        "world:quest:13606",
+        "world:creature:33525",
+        "world:creature:33430",
+        "world:creature:33431",
+        "world:creature:33355"
+      ],
+      "text": "You are in the Conservatory of Life, a part of Ulduar where Freya guards the Conservatory and calls on the Elders. The essence of Freya's sigil is tied to her three elder servants, Brightleaf, Ironbranch and Stonebark, and harm to them compromises it. Mangrove ents, guardian lashers, forest swarmers and misguided nymphs are here too.",
+      "when": {
+        "area_id": 4656
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4665",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4665",
+        "world:creature:33579",
+        "world:creature:33624",
+        "world:creature:33696",
+        "world:creature:33629"
+      ],
+      "text": "You are in Expedition Base Camp, where Brann Bronzebeard directs his expedition into Ulduar and warns of Iron Dwarf attacks from bunkers. Archmage Pentarus and Archmage Rhydian of the Kirin Tor are with the expedition, and Rhydian reports that scouts have seen a giant construct before the gate. Weslex Quickwrench, a senior siege engineer, works the expedition's siege engines. A vendor and repairs are here.",
+      "when": {
+        "area_id": 4665
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4273": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4273 (Ulduar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4445": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4445 (Ulduar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4650": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4650 (Iron Concourse)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4652": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4652 (Formation Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4653": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4653 (Razorscale's Aerie)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4654": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4654 (The Colossal Forge)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4655": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4655 (The Scrapyard)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4656": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4656 (The Conservatory of Life)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4665": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4665 (Expedition Base Camp)",
+      "revision": "3.3.5a client data"
+    },
     "source:0014bf4551b131f9669f2150": {
       "kind": "research",
       "reference": "evidence:sha256:7909a9ef4fccfbc0d82177b6dadac35378e7debbfe1958edf4669ce81a1b6bc5",
@@ -3894,6 +4084,156 @@
       "kind": "research",
       "reference": "evidence:sha256:9021dc3adec47c6b03f973d5034f94132747cce068bce7907d584c35f6218499",
       "revision": "c8f074746a7b03201f93128eb173656ac8e73313ef14eace7d8482b7d34b5548"
+    },
+    "world:creature:32906": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32906 (Freya), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:32930": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32930 (Kologarn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33113": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33113 (Flame Leviathan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33118 (Ignis the Furnace Master), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33121": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33121 (Iron Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33186": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33186 (Razorscale), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33214 (Mechanolift 304-A), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33236 (Steelforged Defender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33237": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33237 (Ulduar Colossus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33264": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33264 (Ironwork Cannon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33293": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33293 (XT-002 Deconstructor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33355 (Misguided Nymph), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33430": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33430 (Guardian Lasher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33431": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33431 (Forest Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33525": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33525 (Mangrove Ent), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33579": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33579 (Brann Bronzebeard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33624": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33624 (Archmage Pentarus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33629": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33629 (Weslex Quickwrench), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33696 (Archmage Rhydian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34054": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34054 (Bronzebeard Radio), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34085": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34085 (Forge Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34086": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34086 (Magma Rager), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34164": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34164 (Mechagnome Battletank), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34234": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34234 (Runeforged Sentry), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34267": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34267 (Parts Recovery Technician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34269": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34269 (XR-949 Salvagebot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34271 (XD-175 Compactobot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34273": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34273 (XB-488 Disposalbot), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13606": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13606 (Freya's Sigil)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13607": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13607 (The Celestial Planetarium)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

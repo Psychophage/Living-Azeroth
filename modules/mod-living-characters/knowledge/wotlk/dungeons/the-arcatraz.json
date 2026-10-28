@@ -640,7 +640,44 @@
     }
   ],
   "place": "The Arcatraz",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3848",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3848",
+        "dbc:area:3842",
+        "dbc:encounter:500",
+        "world:creature:20870",
+        "world:creature:20865",
+        "world:creature:20869",
+        "world:creature:21962",
+        "world:quest:10706"
+      ],
+      "text": "You are in The Arcatraz, a complex within Tempest Keep in Netherstorm. Harbinger Skyriss and Zereketh the Unbound are its masters, and protean horrors and Arcatraz sentinels fill it. Ashtongue seer Udalo was held here by Kael'thas, and the meaning of the word Atam'al, scrawled on the floor where he died, is still unclear to Akama.",
+      "when": {
+        "zone_id": 3848
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3842": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3842 (Tempest Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3848": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3848 (The Arcatraz)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:500": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 500 (Harbinger Skyriss)",
+      "revision": "3.3.5a client data"
+    },
     "source:021a3d7f0304d62e685099aa": {
       "kind": "research",
       "reference": "evidence:sha256:907bd749ff6b913da22bc0a278e7e49ccc43839b9b59b4a6b1bd4d77adcd2e84",
@@ -1155,6 +1192,31 @@
       "kind": "research",
       "reference": "evidence:sha256:ab79392f24a55d8fe728b1debb5b42ff81b3b1bfa8bb63122482d634c67cca5c",
       "revision": "adb218fa10ce12a3e894645bd21d5248af70d6a24419d2605d8bec078cd43381"
+    },
+    "world:creature:20865": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20865 (Protean Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20869": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20869 (Arcatraz Sentinel), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:20870": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 20870 (Zereketh the Unbound), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21962": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21962 (Udalo), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10706": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10706 (A Mysterious Portent)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

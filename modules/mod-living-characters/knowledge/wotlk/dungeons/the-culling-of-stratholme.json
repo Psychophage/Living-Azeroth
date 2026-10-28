@@ -1288,7 +1288,54 @@
     }
   ],
   "place": "The Culling of Stratholme",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4100",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4100",
+        "dbc:area:2300",
+        "dbc:area:440",
+        "dbc:encounter:293",
+        "dbc:encounter:296",
+        "world:creature:26499",
+        "world:creature:27737",
+        "world:quest:13149"
+      ],
+      "text": "You are in The Culling of Stratholme, a city of the past reached through the Caverns of Time in Tanaris. Undead forces hold it under Meathook and Mal'ganis, the greatest of its masters. Risen zombies and ghouls fill the place, and the infected people here are at risk of becoming Mal'ganis's undead slaves. Suspicious grain may carry the plague, and the Infinite Dragonflight is still working to deceive Prince Arthas of Lordaeron about it.",
+      "when": {
+        "zone_id": 4100
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2300": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2300 (Caverns of Time)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4100": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4100 (The Culling of Stratholme)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:293": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 293 (Meathook)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:296": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 296 (Mal'ganis)",
+      "revision": "3.3.5a client data"
+    },
     "source:0348435bc5cfcc0dcae10e20": {
       "kind": "research",
       "reference": "evidence:sha256:d01415748c3afff8591291163f0d55617d39c0518a5a521620248802b4c0a1a7",
@@ -2283,6 +2330,21 @@
       "kind": "research",
       "reference": "evidence:sha256:b1cdd7111cd1cec0dd68fcd9ed7abeb89181170dc18fb09493536f831fe91f54",
       "revision": "0b484f2cff36be998112991f0c16ded6d6f619263f27c62df6eaa91b7c0af488"
+    },
+    "world:creature:26499": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26499 (Arthas), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27737": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27737 (Risen Zombie), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13149": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13149 (Dispelling Illusions)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

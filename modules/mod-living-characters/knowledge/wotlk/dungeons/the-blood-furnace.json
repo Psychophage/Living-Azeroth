@@ -440,7 +440,39 @@
     }
   ],
   "place": "The Blood Furnace",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3713",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3713",
+        "dbc:area:3955",
+        "world:creature:17381",
+        "world:creature:17380",
+        "world:creature:17377",
+        "world:creature:17398",
+        "world:creature:17371",
+        "world:creature:17416"
+      ],
+      "text": "You are in The Blood Furnace, a section of the Hellfire Citadel reached from Hellfire Basin in Hellfire Peninsula. Nascent Fel Orcs and Shadowmoon warlocks fill its halls. Its chief creatures are The Maker, a demon absorbed in his work, Broggok, and Keli'dan the Breaker, the greatest of the three. An orc of the Horde is held captive here.",
+      "when": {
+        "zone_id": 3713
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3713": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3713 (The Blood Furnace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3955": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3955 (Hellfire Basin)",
+      "revision": "3.3.5a client data"
+    },
     "source:0f009441cdf14c3f4acfaee4": {
       "kind": "research",
       "reference": "evidence:sha256:ce94b3aa2b776c88962ce2e75c6acf111dd88bba3cf21993bf19272d38461be0",
@@ -810,6 +842,36 @@
       "kind": "research",
       "reference": "evidence:sha256:84f753caa9426547099d9cdcbe741a6bf01612b8ae3a1d17f8c40694681f26fc",
       "revision": "3af85176b8ff2c9ae21cf9a1c0911adf30ab2496a6ba6522fed1e3fb08f6c458"
+    },
+    "world:creature:17371": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17371 (Shadowmoon Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17377": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17377 (Keli'dan the Breaker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17380": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17380 (Broggok), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17381": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17381 (The Maker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17398": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17398 (Nascent Fel Orc), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17416 (Orc Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

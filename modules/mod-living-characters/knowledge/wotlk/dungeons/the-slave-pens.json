@@ -598,7 +598,44 @@
     }
   ],
   "place": "The Slave Pens",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3717",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3717",
+        "dbc:area:3653",
+        "dbc:area:3521",
+        "world:creature:17941",
+        "world:creature:17991",
+        "world:creature:17942",
+        "world:creature:17940",
+        "world:creature:18206"
+      ],
+      "text": "You are in the Slave Pens, a Coilfang place at Serpent Lake in Zangarmarsh. Mennu the Betrayer insists that the work must go on, Rokmar the Crackler is a lone named creature, and Quagmirran, a beast with three hearts, rests in a deep pool here. Coilfang technicians fill the pens, and Wastewalker captives are still held here.",
+      "when": {
+        "zone_id": 3717
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3521": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3521 (Zangarmarsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3653": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3653 (Serpent Lake)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3717": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3717 (The Slave Pens)",
+      "revision": "3.3.5a client data"
+    },
     "source:00865ef91e50ba11496fced4": {
       "kind": "research",
       "reference": "evidence:sha256:95fb1f5fbaf99434c3699742066a365ebc37609e8f2300eb38648ec49d41a6fb",
@@ -1188,6 +1225,31 @@
       "kind": "research",
       "reference": "evidence:sha256:a5a910d08dd20f2f75dc28fdaece7d60ec7d4e6d8efbd53872c4860112cec7ad",
       "revision": "f48d6747975cc8dacd6094902b99f217365a6ac33823b3ad1b796f7b3bce4d2f"
+    },
+    "world:creature:17940": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17940 (Coilfang Technician), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17941": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17941 (Mennu the Betrayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17942": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17942 (Quagmirran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17991": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17991 (Rokmar the Crackler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18206": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18206 (Wastewalker Captive), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

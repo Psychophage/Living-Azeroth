@@ -468,7 +468,151 @@
     }
   ],
   "place": "Ahn'kahet: The Old Kingdom",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4494",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4494",
+        "dbc:area:65",
+        "world:creature:29311",
+        "world:creature:29308",
+        "world:creature:30338",
+        "world:creature:30287",
+        "world:quest:13255",
+        "world:quest:13187"
+      ],
+      "text": "You are in Ahn'kahet: The Old Kingdom, the ancient nerubian realm in Dragonblight. Herald Volazj, leader of the Old Gods' forces, and Prince Taldaram hold it, and Ahn'kahar swarmers and plundering geists fill its halls. The Faceless, creatures of an Old God's will that the nerubians uncovered by digging too deep, roam its passages.",
+      "when": {
+        "zone_id": 4494
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4623",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4623",
+        "world:creature:29309",
+        "world:creature:30338",
+        "world:creature:30276",
+        "world:creature:30172",
+        "world:creature:30173"
+      ],
+      "text": "You are in the Hall of the Conquered Kings, where Elder Nadox stands. He invokes the Lich King, and Ahn'kahar swarmers and web winders fill the hall, with swarm eggs and guardian eggs among them.",
+      "when": {
+        "area_id": 4623
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4624",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4624",
+        "world:creature:29308",
+        "world:creature:30287",
+        "world:creature:30286",
+        "world:creature:30284"
+      ],
+      "text": "You are in Befouled Terrace, where Prince Taldaram holds sway. He threatens to feast on intruders and speaks of drinking blood, and plundering geists, frostbringers and bonegrinders roam the terrace.",
+      "when": {
+        "area_id": 4624
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4625",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4625",
+        "world:creature:29310",
+        "world:creature:30111",
+        "world:creature:30179",
+        "world:creature:30319",
+        "world:creature:30416"
+      ],
+      "text": "You are in The Desecrated Altar, where Jedoga Shadowseeker guards what she calls sacred halls and asks Yogg-Saron for power. Twilight worshippers, apostles and darkcasters are about, with bound fire elementals.",
+      "when": {
+        "area_id": 4625
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4626",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4626",
+        "world:creature:30258",
+        "world:creature:30329"
+      ],
+      "text": "You are in the Shimmering Bog, where Amanitar stands among savage cave beasts.",
+      "when": {
+        "area_id": 4626
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4627",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4627",
+        "world:creature:29311",
+        "world:creature:30414",
+        "world:quest:13187",
+        "world:creature:30179",
+        "world:creature:30319",
+        "world:creature:30111"
+      ],
+      "text": "You are in the Fallen Temple of Ahn'kahet, where Herald Volazj stands with the Forgotten Ones who accompany him. Twilight apostles, darkcasters and worshippers are about as well.",
+      "when": {
+        "area_id": 4627
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4494": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4494 (Ahn'kahet: The Old Kingdom)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4623": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4623 (Hall of the Conquered Kings)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4624": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4624 (Befouled Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4625": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4625 (The Desecrated Altar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4626": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4626 (Shimmering Bog)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4627": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4627 (Fallen Temple of Ahn'kahet)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:65": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 65 (Dragonblight)",
+      "revision": "3.3.5a client data"
+    },
     "source:053dfd1cd9b8c18eaf179ee9": {
       "kind": "research",
       "reference": "evidence:sha256:4d085dcbb1b487a9ac17673be40737d1700ea61ae6bc553f841da0a6f263d968",
@@ -873,6 +1017,106 @@
       "kind": "research",
       "reference": "evidence:sha256:93b1e5caa3389fa415c492160853b86173e62d361145e2920ef5cee1ad1e517b",
       "revision": "2e5a57ce93a139ea417aeb5f081f4d91cb723404ac23faf6eb0150cd2823d07b"
+    },
+    "world:creature:29308": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29308 (Prince Taldaram), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29309": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29309 (Elder Nadox), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29310": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29310 (Jedoga Shadowseeker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29311": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29311 (Herald Volazj), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30111": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30111 (Twilight Worshipper), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30172": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30172 (Ahn'kahar Swarm Egg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30173": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30173 (Ahn'kahar Guardian Egg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30179": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30179 (Twilight Apostle), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30258": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30258 (Amanitar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30276": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30276 (Ahn'kahar Web Winder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30284": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30284 (Bonegrinder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30286": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30286 (Frostbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30287": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30287 (Plundering Geist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30319 (Twilight Darkcaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30329": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30329 (Savage Cave Beast), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30338 (Ahn'kahar Swarmer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30414": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30414 (Forgotten One), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:30416": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 30416 (Bound Fire Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13187": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13187 (The Faceless Ones)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13255": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13255 (Proof of Demise: Herald Volazj)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

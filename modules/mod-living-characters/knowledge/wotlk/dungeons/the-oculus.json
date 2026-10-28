@@ -344,7 +344,39 @@
     }
   ],
   "place": "The Oculus",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4228",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4228",
+        "dbc:area:4120",
+        "world:creature:27447",
+        "world:creature:27656",
+        "world:creature:27655",
+        "world:creature:27641",
+        "world:quest:13126",
+        "world:quest:13247"
+      ],
+      "text": "You are in the Oculus, a ring-shaped ley-line conduit reached through The Nexus in Borean Tundra. Malygos funnels the magic of Azeroth's ley lines through it, and Azure-Lord Varos Cloudstrider commands the drakes that guard it. Mage-Lord Urom sends pets against those who come, and Ley-Guardian Eregos defends the conduit itself. Azure ring guardians, ley-whelps, ring-lord conjurers and sorceresses, and centrifuge constructs fill the place, and the constructs power Varos's shield.",
+      "when": {
+        "zone_id": 4228
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4120 (The Nexus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4228": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4228 (The Oculus)",
+      "revision": "3.3.5a client data"
+    },
     "source:0e6a8ce398f318ee395a3e2a": {
       "kind": "research",
       "reference": "evidence:sha256:2b98c7a0d84148a8ee00eab24dd78ababcfe6a5f816a85d99ee478d560dedfed",
@@ -614,6 +646,36 @@
       "kind": "research",
       "reference": "evidence:sha256:5a2d1452750e23dae1c17f08b3974e99bf43863e2f3e0be8019c53a0478f61d5",
       "revision": "8a2ece5c54c03bedd56fe65409d24c397f4c3f11d14620b4471f16f1bfbc0310"
+    },
+    "world:creature:27447": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27447 (Varos Cloudstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27641": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27641 (Centrifuge Construct), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27655": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27655 (Mage-Lord Urom), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:27656": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 27656 (Ley-Guardian Eregos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13126": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13126 (A Unified Front)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13247": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13247 (Proof of Demise: Ley-Guardian Eregos)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

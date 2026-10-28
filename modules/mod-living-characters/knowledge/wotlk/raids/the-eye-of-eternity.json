@@ -70,7 +70,41 @@
     }
   ],
   "place": "The Eye of Eternity",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4500",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4500",
+        "dbc:area:4120",
+        "dbc:area:3537",
+        "world:creature:28859",
+        "world:quest:24584"
+      ],
+      "text": "You are in The Eye of Eternity, a place reached through The Nexus in Borean Tundra. Malygos, the Spell-Weaver, holds it, and he is draining magic out of the world to gather it here. He regards mortal intruders as ignorant children who dare to wield magic in his domain, and he boasts that his power is infinite.",
+      "when": {
+        "zone_id": 4500
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3537 (Borean Tundra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4120 (The Nexus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4500": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4500 (The Eye of Eternity)",
+      "revision": "3.3.5a client data"
+    },
     "source:00402d07f34336be17eb7c78": {
       "kind": "research",
       "reference": "evidence:sha256:572f79b47c585aeac66e97885bff0026a93d85f5acf031ba52728eed265fabd5",
@@ -110,6 +144,16 @@
       "kind": "research",
       "reference": "evidence:sha256:386dc0d09b8aec39ba1c22cb07e93fd10d47e2aff457ad32bff03e1f99edf0ec",
       "revision": "3e12ec29a355e17de6568fddf4ea56f602deb09fe811f125d4d42da935a9c0e1"
+    },
+    "world:creature:28859": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 28859 (Malygos), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24584": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24584 (Malygos Must Die!)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

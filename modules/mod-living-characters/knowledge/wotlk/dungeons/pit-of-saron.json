@@ -828,7 +828,92 @@
     }
   ],
   "place": "Pit of Saron",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4813",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4813",
+        "dbc:area:4862",
+        "dbc:area:210",
+        "world:creature:36494",
+        "dbc:encounter:837",
+        "world:creature:36881",
+        "world:quest:24461",
+        "world:quest:24507"
+      ],
+      "text": "You are in the Pit of Saron, a Scourge quarry and forge in Icecrown, reached through the Frozen Halls. The Scourge holds it, and captured soldiers are put to work mining saronite ore in the quarry. Forgemaster Garfrost and Scourgelord Tyrannus are its masters, and skeletal slaves and other undead fill its workings.",
+      "when": {
+        "zone_id": 4813
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4904",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4904",
+        "world:creature:36990",
+        "world:creature:36881",
+        "world:creature:36788",
+        "world:creature:36794"
+      ],
+      "text": "You are in The Dark Approach, the way into the Pit of Saron. Lady Sylvanas Windrunner, the Banshee Queen, leads Horde forces against the Scourge here. Skeletal slaves and Deathwhisper necrolytes stand in their path, and the Scourgelord is among them.",
+      "when": {
+        "area_id": 4904
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4905",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4905",
+        "world:creature:36877",
+        "world:creature:36841",
+        "world:creature:36661"
+      ],
+      "text": "You are in Scourgelord's Command, a part of the Pit of Saron. Wrathbone skeletons and fallen warriors stand here, with Rimefang among them.",
+      "when": {
+        "area_id": 4905
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:210": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 210 (Icecrown)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4813": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4813 (Pit of Saron)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4862": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4862 (The Frozen Halls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4904": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4904 (The Dark Approach)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4905": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4905 (Scourgelord's Command)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:837": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 837 (Overlrod Tyrannus)",
+      "revision": "3.3.5a client data"
+    },
     "source:0495d658fa8f0544a19c74e7": {
       "kind": "research",
       "reference": "evidence:sha256:43c3c6ef04f11e2281ea23a52b6bab23eaa5d9842ea95d3722f2b1cb14f1b73a",
@@ -1518,6 +1603,56 @@
       "kind": "research",
       "reference": "evidence:sha256:a6f4120634883fb3d0a84e96d06024182d1cf9dcfb69ab3f216b27398dbcbb7f",
       "revision": "8d5544dd82ea9f57496ee87cbead3a633b71d055b87300f11ba4286dfa8b9de5"
+    },
+    "world:creature:36494": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36494 (Forgemaster Garfrost), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36661": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36661 (Rimefang), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36788": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36788 (Deathwhisper Necrolyte), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36794": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36794 (Scourgelord Tyrannus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36841 (Fallen Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36877": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36877 (Wrathbone Skeleton), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36881": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36881 (Skeletal Slave), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36990": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36990 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24461": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24461 (Reforging The Sword)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24507": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24507 (The Path to the Citadel)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -643,7 +643,44 @@
     }
   ],
   "place": "The Nexus",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4265",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4265",
+        "dbc:area:4120",
+        "dbc:area:3537",
+        "world:quest:11905",
+        "world:creature:26723",
+        "world:creature:26731",
+        "world:creature:26763",
+        "world:creature:26746"
+      ],
+      "text": "You are in the Nexus, a place in Borean Tundra. Azeroth's ley lines are being redirected here, and the arcane energy is tearing a rift between dimensions. Malygos has taken Keristrasza as his consort and holds her in the Nexus. Keristrasza, Grand Magus Telestra and Anomalus are among its masters, and crazed mana creatures fill its halls.",
+      "when": {
+        "zone_id": 4265
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3537": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3537 (Borean Tundra)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4120": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4120 (The Nexus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4265": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4265 (The Nexus)",
+      "revision": "3.3.5a client data"
+    },
     "source:148560f9b42fa95acf9b6bf7": {
       "kind": "research",
       "reference": "evidence:sha256:5c1f4aa047ae850032f27c305c9699d587ab2d086bc00b3f159aa65d829132be",
@@ -1173,6 +1210,31 @@
       "kind": "research",
       "reference": "evidence:sha256:2238a418901700aa6b3ebe1ec64cff625818b36515faf7578d16e4e07e7cfff3",
       "revision": "0b6e8d889485979ad502992a870f87e21270561ba8ee78cfa14356e1e6266f71"
+    },
+    "world:creature:26723": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26723 (Keristrasza), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26731": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26731 (Grand Magus Telestra), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26746": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26746 (Crazed Mana-Wraith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:26763": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 26763 (Anomalus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:11905": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11905 (Postponing the Inevitable)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

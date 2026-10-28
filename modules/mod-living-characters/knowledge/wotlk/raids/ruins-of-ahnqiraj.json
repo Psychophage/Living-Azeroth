@@ -712,7 +712,178 @@
     }
   ],
   "place": "Ruins of Ahn'Qiraj",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3429",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3429",
+        "dbc:area:3478",
+        "world:creature:15339",
+        "world:creature:15341",
+        "world:creature:15340",
+        "world:creature:15325",
+        "world:creature:15387",
+        "world:creature:15355"
+      ],
+      "text": "You are in the Ruins of Ahn'Qiraj, a Qiraji city entered through the Gates of Ahn'Qiraj. Qiraji forces hold it, and Ossirian the Unscarred orders them to protect the city and drive out trespassers. General Rajaxx and Moam hold other parts of it. Hive'Zara wasps and stingers, scarabs, Qiraji warriors and Anubisath guardians fill it.",
+      "when": {
+        "zone_id": 3429
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3448",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3448",
+        "world:creature:15325",
+        "world:creature:15327",
+        "world:creature:15343",
+        "world:creature:15324",
+        "world:creature:15168"
+      ],
+      "text": "You are in Scarab Terrace, a part of the Ruins of Ahn'Qiraj. Hive'Zara wasps and stingers fill it, along with Qiraji swarmguards and gladiators. Vile Scarabs are found here too.",
+      "when": {
+        "area_id": 3448
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3449",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3449",
+        "world:creature:15341",
+        "world:creature:15385",
+        "world:creature:15386",
+        "world:creature:15388",
+        "world:creature:15389",
+        "world:creature:15387",
+        "world:creature:15344"
+      ],
+      "text": "You are in General's Terrace, a part of the Ruins of Ahn'Qiraj where General Rajaxx leads Qiraji forces. Colonel Zerran, Major Yeggeth, Major Pakkon and Captain Drenn are its officers, alongside Qiraji warriors, swarmguard needlers and gladiators.",
+      "when": {
+        "area_id": 3449
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3450",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3450",
+        "world:creature:15340",
+        "world:creature:15461",
+        "world:creature:15462",
+        "world:creature:15338",
+        "world:creature:15335",
+        "world:creature:15168"
+      ],
+      "text": "You are in The Reservoir, a part of the Ruins of Ahn'Qiraj where Moam is found. Shrieker and spitting scarabs share it with Obsidian Destroyers and Flesh Hunters. Vile Scarabs are found here too.",
+      "when": {
+        "area_id": 3450
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3451",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3451",
+        "world:creature:15370",
+        "world:creature:15320",
+        "world:creature:15323",
+        "world:creature:15318",
+        "world:creature:15319",
+        "world:creature:15514",
+        "world:creature:15333"
+      ],
+      "text": "You are in The Hatchery, a part of the Ruins of Ahn'Qiraj where Buru the Gorger is found. Hive'Zara soldiers, sandstalkers, drones, collectors and tail lashers are here, with Buru eggs and Flesh Hunters. Silicate feeders are found here too.",
+      "when": {
+        "area_id": 3451
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3452",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3452",
+        "world:creature:15369",
+        "world:creature:15325",
+        "world:creature:15327",
+        "world:creature:15333"
+      ],
+      "text": "You are in The Comb, a part of the Ruins of Ahn'Qiraj where Ayamiss the Hunter is found. Hive'Zara wasps and stingers fill it alongside Ayamiss, and silicate feeders are found here too.",
+      "when": {
+        "area_id": 3452
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3453",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3453",
+        "world:creature:15339",
+        "world:creature:15355"
+      ],
+      "text": "You are in Watchers' Terrace, a part of the Ruins of Ahn'Qiraj where Ossirian the Unscarred, a Qiraji defender, keeps watch. Anubisath guardians are with him.",
+      "when": {
+        "area_id": 3453
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3429": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3429 (Ruins of Ahn'Qiraj)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3448": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3448 (Scarab Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3449": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3449 (General's Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3450": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3450 (The Reservoir)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3451": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3451 (The Hatchery)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3452": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3452 (The Comb)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3453": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3453 (Watchers' Terrace)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3478": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3478 (Gates of Ahn'Qiraj)",
+      "revision": "3.3.5a client data"
+    },
     "source:006e9b0b09e5634e9e764b71": {
       "kind": "research",
       "reference": "evidence:sha256:bdb1bec3d786ab8b21115df54841176bea824d906e7dd725d859ed607faf755d",
@@ -1207,6 +1378,141 @@
       "kind": "research",
       "reference": "evidence:sha256:508c34b1b7958c8ad9eeb640ea94688b5fde4c9629ff68d7aa848a316372c622",
       "revision": "490d71ae24ad459aa112bb922f2202d9709e4eb7df007b836396add516043795"
+    },
+    "world:creature:15168": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15168 (Vile Scarab), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15318": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15318 (Hive'Zara Drone), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15319": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15319 (Hive'Zara Collector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15320": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15320 (Hive'Zara Soldier), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15323": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15323 (Hive'Zara Sandstalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15324": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15324 (Qiraji Gladiator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15325": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15325 (Hive'Zara Wasp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15327": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15327 (Hive'Zara Stinger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15333": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15333 (Silicate Feeder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15335": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15335 (Flesh Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15338": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15338 (Obsidian Destroyer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15339": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15339 (Ossirian the Unscarred), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15340": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15340 (Moam), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15341 (General Rajaxx), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15343": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15343 (Qiraji Swarmguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15344 (Swarmguard Needler), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15355": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15355 (Anubisath Guardian), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15369": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15369 (Ayamiss the Hunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15370": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15370 (Buru the Gorger), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15385": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15385 (Colonel Zerran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15386": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15386 (Major Yeggeth), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15387": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15387 (Qiraji Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15388": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15388 (Major Pakkon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15389 (Captain Drenn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15461": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15461 (Shrieker Scarab), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15462": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15462 (Spitting Scarab), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15514": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15514 (Buru Egg), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

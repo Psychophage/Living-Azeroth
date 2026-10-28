@@ -1786,7 +1786,39 @@
     }
   ],
   "place": "Karazhan",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3457",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3457",
+        "dbc:area:2837",
+        "world:creature:15687",
+        "world:creature:15690",
+        "world:creature:17225",
+        "world:creature:16409",
+        "world:creature:16468",
+        "world:quest:9645"
+      ],
+      "text": "You are in Karazhan, a tower reached through the Master's Cellar in Deadwind Pass. Moroes, the Tower Steward, greets unannounced visitors and gives changing reports of the Master's whereabouts. Prince Malchezaar, a demon at the top of the tower, is named by Archmage Alturus as a Burning Legion threat to its link with other worlds, and Nightbane, an ancient winged creature, attacks from the air and lands to crush those who come near. Phantoms, spectral patrons, mana feeders and syphoners fill its halls, and agents of the Violet Eye are still searching it for Medivh's journal.",
+      "when": {
+        "zone_id": 3457
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2837": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2837 (The Master's Cellar)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3457": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3457 (Karazhan)",
+      "revision": "3.3.5a client data"
+    },
     "source:002b493961029d605bcde29e": {
       "kind": "research",
       "reference": "evidence:sha256:9219a9f6e9e7e34add49eb0ac92f3b918f14661c329bfd77f6211e64d4698703",
@@ -3376,6 +3408,36 @@
       "kind": "research",
       "reference": "evidence:sha256:5e3edb5788cdf23d227c4895265fb87cb75949521dcd7c04ad7cf8fd4f2edd19",
       "revision": "2bbd849fbe1000b90cce5c6f8255b461fb35045778896a5663ad8de2c80ee882"
+    },
+    "world:creature:15687": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15687 (Moroes), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15690": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15690 (Prince Malchezaar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16409": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16409 (Phantom Guest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16468": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16468 (Spectral Patron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17225": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17225 (Nightbane), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9645": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9645 (The Master's Terrace)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

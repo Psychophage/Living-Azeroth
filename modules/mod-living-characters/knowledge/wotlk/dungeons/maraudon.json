@@ -1151,7 +1151,39 @@
     }
   ],
   "place": "Maraudon",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2100",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2100",
+        "dbc:area:405",
+        "world:creature:12236",
+        "world:creature:13282",
+        "world:creature:12201",
+        "world:quest:7044",
+        "world:creature:11789",
+        "world:creature:12217"
+      ],
+      "text": "You are in Maraudon, a network of twisting caverns in Desolace. Corruption spread by Lord Vyletongue has taken hold of the caves: he keeps to the passages beyond the purple crystals, while Noxxion, a living symbol of his corruption, dwells beyond the orange ones. Princess Theradras, an elemental force of earth tied to the Old Gods, is also here. Deep borers, corruptors and noxious slimes fill the tunnels, and Vyletongue and Noxxion hold the two parts of Celebras's scepter while the corruption keeps spreading.",
+      "when": {
+        "zone_id": 2100
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2100": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2100 (Maraudon)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:405": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 405 (Desolace)",
+      "revision": "3.3.5a client data"
+    },
     "source:0011b22e57a43888610d8edc": {
       "kind": "research",
       "reference": "evidence:sha256:060bcd33384b5c087418c676be24fb8b96b4b0c3eafe90ad17f89ddec45273e2",
@@ -2016,6 +2048,36 @@
       "kind": "research",
       "reference": "evidence:sha256:b9ea32ed34adf460879d497e8e0eb1ce8ba0edac7a2428ab1626f506bcc3f54f",
       "revision": "0fc8592cbac16797fbd317071f3fefb9f1b6e14a5c92e604297e0d751979eeba"
+    },
+    "world:creature:11789": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11789 (Deep Borer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12201": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12201 (Princess Theradras), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12217": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12217 (Corruptor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12236": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12236 (Lord Vyletongue), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:13282": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 13282 (Noxxion), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:7044": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 7044 (Legends of Maraudon)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

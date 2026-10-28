@@ -770,7 +770,39 @@
     }
   ],
   "place": "The Shattered Halls",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3714",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3714",
+        "dbc:area:3545",
+        "world:creature:16808",
+        "world:creature:16807",
+        "world:creature:17464",
+        "world:creature:17420",
+        "world:creature:17290",
+        "world:quest:9524"
+      ],
+      "text": "You are in The Shattered Halls, a set of halls inside Hellfire Citadel in Hellfire Peninsula. Warchief Kargath Bladefist rules them and claims his faction is the true Horde, rejecting Thrall's Horde. Shattered Hand gladiators and heathens fill the halls, and Grand Warlock Nethekurse, a cruel warlock, taunts challengers and sends his peons against them. Kargath holds captured Alliance soldiers here, among them Captain Alina, who faces execution.",
+      "when": {
+        "zone_id": 3714
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3545": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3545 (Hellfire Citadel)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3714": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3714 (The Shattered Halls)",
+      "revision": "3.3.5a client data"
+    },
     "source:04fbe65d18a76b5034cd43fd": {
       "kind": "research",
       "reference": "evidence:sha256:8a9d25d066ed6e07b5b0812bfa1841f6c0c6e13f5deeba45951af3b35d47a8e7",
@@ -1455,6 +1487,36 @@
       "kind": "research",
       "reference": "evidence:sha256:60b336acc568c15485f100ed13f046aee1913a020275440db1617748a17070e4",
       "revision": "6f30d648b25e8f772c425bad2affd6f2d4b576f5f8d1abde97cef8975bdbbc29"
+    },
+    "world:creature:16807": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16807 (Grand Warlock Nethekurse), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16808": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16808 (Warchief Kargath Bladefist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17290": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17290 (Captain Alina), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17420": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17420 (Shattered Hand Heathen), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17464": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17464 (Shattered Hand Gladiator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9524": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9524 (Imprisoned in the Citadel)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

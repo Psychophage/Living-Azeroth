@@ -658,7 +658,39 @@
     }
   ],
   "place": "The Botanica",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3847",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3847",
+        "dbc:area:3842",
+        "world:creature:17976",
+        "world:creature:17975",
+        "world:creature:17978",
+        "world:creature:17977",
+        "world:creature:17993",
+        "world:creature:18587"
+      ],
+      "text": "You are in the Botanica, a botanical lab inside Tempest Keep in Netherstorm. Commander Sarannis, High Botanist Freywinn, Thorngrin the Tender and Warp Splinter are its guardians. Freywinn guards delicate specimens and summons plants to his aid, while Bloodwarder Protectors and Frayers fill its halls. Warp Splinter defends a sanctuary here, though its threats break into doubt.",
+      "when": {
+        "zone_id": 3847
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3842": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3842 (Tempest Keep)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3847": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3847 (The Botanica)",
+      "revision": "3.3.5a client data"
+    },
     "source:0162df635d5e06b985542dc3": {
       "kind": "research",
       "reference": "evidence:sha256:d37000c4a6e0bb65e4ca428b9d86f6a50a6b8435eb4bed23525967075cc2aedb",
@@ -1168,6 +1200,36 @@
       "kind": "research",
       "reference": "evidence:sha256:dcbc29e47a4bd72ecd96107c72bf4b93d67c09491d3cd4134dd67f40fc6f604d",
       "revision": "09776d9f10fd4a1e5c9fb6e3232698be50b50f8a61454c2f44ed30617d1b6392"
+    },
+    "world:creature:17975": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17975 (High Botanist Freywinn), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17976": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17976 (Commander Sarannis), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17977 (Warp Splinter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17978": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17978 (Thorngrin the Tender), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17993 (Bloodwarder Protector), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18587": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18587 (Frayer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

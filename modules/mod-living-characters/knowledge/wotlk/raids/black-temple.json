@@ -2019,7 +2019,63 @@
     }
   ],
   "place": "Black Temple",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3959",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3959",
+        "dbc:area:3756",
+        "world:creature:22917",
+        "world:creature:22887",
+        "world:creature:22955",
+        "world:creature:22939",
+        "world:creature:22963",
+        "world:creature:22841"
+      ],
+      "text": "You are in the Black Temple, set in the Ruins of Karabor in Shadowmoon Valley. Illidan Stormrage, the Betrayer, holds it, and High Warlord Naj'entus is among its masters. Charming courtesans, temple concubines and Bonechewer workers fill its halls. Akama is still struggling to win back his soul from the Shade of Akama inside.",
+      "when": {
+        "zone_id": 3959
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:4009",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:4009",
+        "world:creature:22898",
+        "world:creature:22963",
+        "world:creature:23028",
+        "world:creature:22960",
+        "world:creature:23330",
+        "world:creature:22954"
+      ],
+      "text": "You are in the Illidari Training Grounds of the Black Temple. The demon Supremus stands here among Bonechewer workers and taskmasters, Dragonmaw wyrmcallers and wind reavers, and Illidari fearbringers.",
+      "when": {
+        "area_id": 4009
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3756": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3756 (Ruins of Karabor)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3959": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3959 (Black Temple)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4009": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4009 (Illidari Training Grounds)",
+      "revision": "3.3.5a client data"
+    },
     "source:018d537db331709a5ac09645": {
       "kind": "research",
       "reference": "evidence:sha256:75715e5b19c494730e155b93a3fc6f17845477ed99ff03a7b274ec9f65167932",
@@ -3629,6 +3685,61 @@
       "kind": "research",
       "reference": "evidence:sha256:86cc844397192ca3e8043a5507ac3bb3a0d64e3a4a4207cba51f9cc73a36d73a",
       "revision": "813ab56a81a3bf6c60cd832f455d4a9db4c0f34767b59bc09401db695db791f7"
+    },
+    "world:creature:22841": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22841 (Shade of Akama), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22887": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22887 (High Warlord Naj'entus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22898": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22898 (Supremus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22917": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22917 (Illidan Stormrage), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22939": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22939 (Temple Concubine), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22954": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22954 (Illidari Fearbringer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22955": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22955 (Charming Courtesan), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22960": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22960 (Dragonmaw Wyrmcaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:22963": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 22963 (Bonechewer Worker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23028": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23028 (Bonechewer Taskmaster), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:23330": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 23330 (Dragonmaw Wind Reaver), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

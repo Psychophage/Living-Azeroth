@@ -263,7 +263,39 @@
     }
   ],
   "place": "The Stockade",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:717",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:717",
+        "dbc:area:1519",
+        "world:creature:1716",
+        "world:creature:1696",
+        "world:creature:1666",
+        "world:creature:1663",
+        "world:creature:1708",
+        "world:quest:386"
+      ],
+      "text": "You are in the Stormwind Stockade, a prison in Stormwind City. Defias inmates, captives, convicts and insurgents fill it, and Bazil Thredd claims the place for his side against the Warden's authority. Targorr the Dread, Kam Deepfury and Dextren Ward are held here, Targorr's execution delayed by a noble's hold and Dextren Ward's imprisonment angering Darkshire's council.",
+      "when": {
+        "zone_id": 717
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1519 (Stormwind City)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:717": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 717 (The Stockade)",
+      "revision": "3.3.5a client data"
+    },
     "source:09afb9527935ec14c954e9b4": {
       "kind": "research",
       "reference": "evidence:sha256:116e5253cba20ac70f9d512e3264d432cfdf7d695e3e67399ed33c37a1ed0e75",
@@ -503,6 +535,36 @@
       "kind": "research",
       "reference": "evidence:sha256:26e40ae443c9b08e1176a91965fcd6a01445ce1239e6c479df058777a5ad5144",
       "revision": "ea0724670073371dd430b05815b0ed4cce6974b4935be58ad455875de7cd1bcb"
+    },
+    "world:creature:1663": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1663 (Dextren Ward), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1666": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1666 (Kam Deepfury), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1696": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1696 (Targorr the Dread), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1708": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1708 (Defias Inmate), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:1716": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 1716 (Bazil Thredd), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:386": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 386 (What Comes Around...)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

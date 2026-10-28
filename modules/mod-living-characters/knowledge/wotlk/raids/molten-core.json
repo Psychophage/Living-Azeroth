@@ -507,7 +507,49 @@
     }
   ],
   "place": "Molten Core",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2717",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2717",
+        "dbc:area:25",
+        "dbc:encounter:672",
+        "dbc:encounter:671",
+        "world:creature:12118",
+        "world:creature:11668",
+        "world:creature:11669",
+        "world:creature:12076"
+      ],
+      "text": "You are in Molten Core, a chamber beneath Blackrock Mountain that the Firelords hold. Its lords include Ragnaros, Majordomo Executus and the Firelord captain Lucifron. Flame imps, Firelords and lava elementals fill it. Duke Hydraxis names Lucifron as one of the captains to destroy in his campaign against the Firelords.",
+      "when": {
+        "zone_id": 2717
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:25": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 25 (Blackrock Mountain)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2717": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2717 (Molten Core)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:671": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 671 (Majordomo Executus)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:672": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 672 (Ragnaros)",
+      "revision": "3.3.5a client data"
+    },
     "source:05648d7f5dc90c82c86720c4": {
       "kind": "research",
       "reference": "evidence:sha256:0e7bdfb3deae4f88fcb4103120f60b5bd72f7e3aae12132a206309483f189803",
@@ -822,6 +864,26 @@
       "kind": "research",
       "reference": "evidence:sha256:9567b5636ec62996eb21e4749c9fff14b90c1cbb43b2779896f2195259dae000",
       "revision": "03e422dc69b32c71e1fa8b900046b234f38ef3d1700433642814270bfe1cb074"
+    },
+    "world:creature:11668": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11668 (Firelord), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11669": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11669 (Flame Imp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12076": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12076 (Lava Elemental), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12118": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12118 (Lucifron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -1498,7 +1498,39 @@
     }
   ],
   "place": "Naxxramas",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3456",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3456",
+        "dbc:area:4246",
+        "world:quest:9034",
+        "world:creature:15977",
+        "world:creature:16037",
+        "world:creature:15990",
+        "world:creature:15989",
+        "world:quest:9033"
+      ],
+      "text": "You are in Naxxramas, reached through the Wintergarde Mausoleum in Dragonblight. The Scourge holds it, and its creatures include poisonous skitterers and plagued bats. Kel'Thuzad serves the Lich King and summons minions to his call, while Sapphiron, who is undead, can take flight. Kel'Thuzad is said to be amassing forces for another attack.",
+      "when": {
+        "zone_id": 3456
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3456": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3456 (Naxxramas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4246": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4246 (Wintergarde Mausoleum)",
+      "revision": "3.3.5a client data"
+    },
     "source:010483cde086206b5222e2ab": {
       "kind": "research",
       "reference": "evidence:sha256:1011a167e474f1029f307f094cd915927598b0add02ffc932f82f42e79d1230d",
@@ -2723,6 +2755,36 @@
       "kind": "research",
       "reference": "evidence:sha256:13bc9eb7d871905df5b00cfb1108b3fca19a00cb155821c3015ef86e437cc2cf",
       "revision": "5f7444ecec6076946358416884fba84776b1cb9402190714e5631302705452d3"
+    },
+    "world:creature:15977": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15977 (Poisonous Skitterer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15989": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15989 (Sapphiron), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:15990": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 15990 (Kel'Thuzad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:16037": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 16037 (Plagued Bat), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9033": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9033 (Echoes of War)",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:9034": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 9034 (Dreadnaught Breastplate)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

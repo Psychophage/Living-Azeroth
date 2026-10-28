@@ -621,7 +621,39 @@
     }
   ],
   "place": "Magisters' Terrace",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4131",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4131",
+        "dbc:area:4080",
+        "world:creature:24664",
+        "world:creature:24744",
+        "world:quest:11492",
+        "world:creature:24686",
+        "world:creature:24761",
+        "world:creature:24822"
+      ],
+      "text": "You are in Magisters' Terrace on the Isle of Quel'Danas. Sunblade warlocks hold it for Kael'thas Sunstrider, lord of the blood elves, who once more leads Legion forces here, alongside Vexallus. Brightscale wyrms roam it, and the Sunwell is being fed upon.",
+      "when": {
+        "zone_id": 4131
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4080": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4080 (Isle of Quel'Danas)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4131": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4131 (Magisters' Terrace)",
+      "revision": "3.3.5a client data"
+    },
     "source:08e9214122f1079c935a1813": {
       "kind": "research",
       "reference": "evidence:sha256:86076f071f830f931115e920203f8d79ea8160b25172b2f6d1706a816d9064cb",
@@ -1121,6 +1153,36 @@
       "kind": "research",
       "reference": "evidence:sha256:b81cfdb14579ec3200a210a835ef5dc9da4810570b5f4ee1b6da5793f8d9925b",
       "revision": "3d20965a042b0bcbeaa6504b180f442a13a4535b49f7b15bf10fd7c6df65a98f"
+    },
+    "world:creature:24664": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24664 (Kael'thas Sunstrider), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24686": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24686 (Sunblade Warlock), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24744": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24744 (Vexallus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24761": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24761 (Brightscale Wyrm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:24822": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 24822 (Tyrith), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:11492": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 11492 (Hard to Kill)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

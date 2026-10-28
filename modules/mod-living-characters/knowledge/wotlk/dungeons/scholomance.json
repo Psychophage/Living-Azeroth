@@ -892,7 +892,49 @@
     }
   ],
   "place": "Scholomance",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2057",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2057",
+        "dbc:area:2298",
+        "dbc:area:28",
+        "world:creature:10432",
+        "world:creature:11261",
+        "dbc:encounter:451",
+        "world:quest:5515",
+        "world:creature:10485"
+      ],
+      "text": "You are in Scholomance, a school of the dead beneath Caer Darrow in the Western Plaguelands. Undead scholars of the Scourge hold it, among them Vectus, who studies black dragon eggs and oversees the training of young dragons, and Doctor Theolen Krastinov, called the Butcher, who treats people as material for grotesque operations. Kirtonos the Herald, the master Krastinov served, still lives here, and risen aberrations fill the halls.",
+      "when": {
+        "zone_id": 2057
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:2057": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2057 (Scholomance)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2298": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2298 (Caer Darrow)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:28": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 28 (Western Plaguelands)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:451": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 451 (Kirtonos the Herald)",
+      "revision": "3.3.5a client data"
+    },
     "source:025d8194a75c122ce6520db2": {
       "kind": "research",
       "reference": "evidence:sha256:34ceeaab553a4aadb0207b30bffc7af07b308157bc9db9f27b23b91ca2063aaa",
@@ -1612,6 +1654,26 @@
       "kind": "research",
       "reference": "evidence:sha256:b315a476db785250f90526c76240a32f38624475c2e4e6f2ec22663c4a57f992",
       "revision": "0e29c5285a0761d6b77747ce9765f550535bc93c6fc6459126550f0356080415"
+    },
+    "world:creature:10432": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10432 (Vectus), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:10485": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10485 (Risen Aberration), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:11261": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 11261 (Doctor Theolen Krastinov), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:5515": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 5515 (Krastinov's Bag of Horrors)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

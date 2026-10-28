@@ -349,7 +349,44 @@
     }
   ],
   "place": "Mana-Tombs",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3792",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3792",
+        "dbc:area:3688",
+        "dbc:area:3519",
+        "world:creature:18344",
+        "world:creature:18341",
+        "world:creature:18313",
+        "world:creature:19306",
+        "world:quest:10165"
+      ],
+      "text": "You are in the Mana-Tombs, a crypt within Auchindoun in Terokkar Forest. Nexus-Prince Shaffar holds it and pillages it for all it is worth, keeping outside forces locked out. Pandemonius, who speaks of feeding on souls, rules here as well, and ethereals of several kinds and Mana Leeches fill its halls.",
+      "when": {
+        "zone_id": 3792
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3519 (Terokkar Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3688": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3688 (Auchindoun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3792": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3792 (Mana-Tombs)",
+      "revision": "3.3.5a client data"
+    },
     "source:12fe8cd95318aa21c3caff53": {
       "kind": "research",
       "reference": "evidence:sha256:cfcb2d35cac2820f7d5ee3061dd343bb4f0486aa78f24ae22d81af69710bc2b0",
@@ -644,6 +681,31 @@
       "kind": "research",
       "reference": "evidence:sha256:6ba31b4bc35bc36560154199dad856f3942dee1c29df089ffb1a51c18f70b2df",
       "revision": "2d56eb33ff8b0687424a861493cb628fc96feabe3cc45ea3e55d41b8b8112df2"
+    },
+    "world:creature:18313": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18313 (Ethereal Sorcerer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18341": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18341 (Pandemonius), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18344": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18344 (Nexus-Prince Shaffar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19306 (Mana Leech), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10165": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10165 (Undercutting the Competition)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

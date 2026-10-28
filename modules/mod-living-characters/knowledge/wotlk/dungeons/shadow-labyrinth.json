@@ -517,7 +517,44 @@
     }
   ],
   "place": "Shadow Labyrinth",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3789",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3789",
+        "dbc:area:3688",
+        "dbc:area:3519",
+        "world:creature:18732",
+        "world:creature:18708",
+        "world:creature:18631",
+        "world:creature:18891",
+        "world:quest:10091"
+      ],
+      "text": "You are in the Shadow Labyrinth, inside Auchindoun in Terokkar Forest. Shadow Council warlocks hold it, Grandmaster Vorpil among them, and its cultists use special devices to make soul shards and to summon demonic forces they cannot control. Murmur, a cosmic being the Council summoned, caused Auchindoun to explode and threatens to break free into the outside world. A Shattrath spy, Spy To'gun, is caged here.",
+      "when": {
+        "zone_id": 3789
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3519": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3519 (Terokkar Forest)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3688": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3688 (Auchindoun)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3789": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3789 (Shadow Labyrinth)",
+      "revision": "3.3.5a client data"
+    },
     "source:00881d14715d7ee46239c5fa": {
       "kind": "research",
       "reference": "evidence:sha256:918ddc5502858030345416c7dd0468b34c3fcf785c89ca6c222bba639b571487",
@@ -987,6 +1024,31 @@
       "kind": "research",
       "reference": "evidence:sha256:bf4ec785267a6b3cfa82e5572b8d084651929bc2bff9e01c6dcb7f2261edddf6",
       "revision": "2167807abe1cc904b71d784f256378cecd95809683dfb7913b000ca107846a1d"
+    },
+    "world:creature:18631": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18631 (Cabal Cultist), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18708": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18708 (Murmur), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18732": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18732 (Grandmaster Vorpil), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:18891": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18891 (Spy To'gun), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:10091": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 10091 (The Soul Devices)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

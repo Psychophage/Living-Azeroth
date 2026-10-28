@@ -669,7 +669,133 @@
     }
   ],
   "place": "Hyjal Summit",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3606",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3606",
+        "dbc:area:440",
+        "world:creature:17968",
+        "dbc:encounter:619",
+        "world:creature:17772",
+        "world:creature:17852",
+        "world:creature:17895",
+        "world:creature:17899"
+      ],
+      "text": "You are in Hyjal Summit, the battlefield of Mount Hyjal, reached from Tanaris. Archimonde's Scourge army and the Burning Legion press against the mountain, and the masters here include the demon Archimonde and Anetheron. Lady Jaina Proudmoore leads a small force against the Scourge, while Warchief Thrall rallies his own against the Burning Legion. Ghouls and shadowy necromancers fill the mountain.",
+      "when": {
+        "zone_id": 3606
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3707",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3707",
+        "world:creature:17772",
+        "world:creature:17919",
+        "world:creature:17920",
+        "world:creature:17921",
+        "world:creature:17922",
+        "world:creature:17928"
+      ],
+      "text": "You are in the Alliance Base on Hyjal Summit, where Lady Jaina Proudmoore's troops hold the line. Alliance footmen, knights, riflemen, sorceresses and priests stand with her.",
+      "when": {
+        "area_id": 3707
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3708",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3708",
+        "world:creature:17852",
+        "world:creature:17932",
+        "world:creature:17933",
+        "world:creature:17934",
+        "world:creature:17935",
+        "world:creature:17936"
+      ],
+      "text": "You are in the Horde Encampment on Hyjal Summit, where Warchief Thrall's force is camped. Grunts, tauren warriors, headhunters, witch doctors and shamans stand with him.",
+      "when": {
+        "area_id": 3708
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3709",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3709",
+        "world:creature:17948",
+        "world:creature:17944",
+        "world:creature:17945",
+        "world:creature:3794"
+      ],
+      "text": "You are in the Night Elf Village on Hyjal Summit, where Tyrande Whisperwind, High Priestess of Elune, seeks aid against the Burning Legion. She directs visitors toward Jaina Proudmoore and Thrall. Dryads, night elf huntresses and Druids of the Talon are here too.",
+      "when": {
+        "area_id": 3709
+      }
+    },
+    {
+      "authored": false,
+      "id": "area:3710",
+      "layer": "location",
+      "priority": 60,
+      "sources": [
+        "dbc:area:3710",
+        "world:creature:17968"
+      ],
+      "text": "You are in Nordrassil on Hyjal Summit, where the demon Archimonde stands. He demands submission and calls those who resist vermin.",
+      "when": {
+        "area_id": 3710
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3606": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3606 (Hyjal Summit)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3707": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3707 (Alliance Base)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3708": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3708 (Horde Encampment)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3709": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3709 (Night Elf Village)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3710": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3710 (Nordrassil)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:619": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 619 (Anetheron)",
+      "revision": "3.3.5a client data"
+    },
     "source:00505df522ab9b99640d5fec": {
       "kind": "research",
       "reference": "evidence:sha256:6274015ccb4bb03132c11fb7ef923d29263734774f6f03e2d4e12cf988fc595c",
@@ -1124,6 +1250,101 @@
       "kind": "research",
       "reference": "evidence:sha256:fff8268472127bce2a0a431c7dd61568d611dea089ba572f97c40f3f0ed320ad",
       "revision": "104d7e036ea213bc038c35ef42bfa3e524ba8e142f00253b1a1d5d73e707da6e"
+    },
+    "world:creature:17772": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17772 (Lady Jaina Proudmoore), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17852": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17852 (Thrall), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17895": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17895 (Ghoul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17899": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17899 (Shadowy Necromancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17919": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17919 (Alliance Footman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17920": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17920 (Alliance Knight), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17921": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17921 (Alliance Rifleman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17922": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17922 (Alliance Sorceress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17928": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17928 (Alliance Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17932": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17932 (Horde Grunt), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17933": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17933 (Tauren Warrior), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17934": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17934 (Horde Headhunter), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17935": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17935 (Horde Witch Doctor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17936": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17936 (Horde Shaman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17944": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17944 (Dryad), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17945": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17945 (Night Elf Huntress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17948": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17948 (Tyrande Whisperwind), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:17968": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 17968 (Archimonde), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:3794": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 3794 (Druid of the Talon), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

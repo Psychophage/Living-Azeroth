@@ -705,7 +705,39 @@
     }
   ],
   "place": "Serpentshrine Cavern",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3607",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3607",
+        "dbc:area:3521",
+        "world:creature:21212",
+        "world:creature:21214",
+        "world:creature:21213",
+        "world:creature:21216",
+        "world:creature:21298",
+        "world:creature:21229"
+      ],
+      "text": "You are in Serpentshrine Cavern, a Coilfang cavern in Zangarmarsh. Lady Vashj, the Coilfang Matron, says her people must reclaim their rightful place and alone should control the scarce water of Outland. Fathom-Lord Karathress commands guards to confront visitors, Morogrim Tidewalker commands his subjects to attack, and Hydross the Unstable, the Duke of Currents, shifts between clean and corrupted states. Among those here are Coilfang serpentguards and Greyheart tidecallers.",
+      "when": {
+        "zone_id": 3607
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3521": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3521 (Zangarmarsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3607": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3607 (Serpentshrine Cavern)",
+      "revision": "3.3.5a client data"
+    },
     "source:03314a12fc98f992001a0cc7": {
       "kind": "research",
       "reference": "evidence:sha256:0920ee88eabd62de7d56411eb7c2fdb8e6dda2863ec703b5b5845f2dca7cbb4e",
@@ -1260,6 +1292,36 @@
       "kind": "research",
       "reference": "evidence:sha256:91892b5e0b9850c656b8b69923fad566dd326516bac84487cae731b2c967c52e",
       "revision": "8507c4cd0ced054465ba45272c5d3c215b638e1476d56f8e8402f747fa345fc0"
+    },
+    "world:creature:21212": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21212 (Lady Vashj), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21213": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21213 (Morogrim Tidewalker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21214": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21214 (Fathom-Lord Karathress), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21216": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21216 (Hydross the Unstable), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21229": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21229 (Greyheart Tidecaller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21298": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21298 (Coilfang Serpentguard), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -600,7 +600,44 @@
     }
   ],
   "place": "Zul'Farrak",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:1176",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:1176",
+        "dbc:area:978",
+        "dbc:area:440",
+        "world:creature:7267",
+        "world:creature:8127",
+        "world:creature:7271",
+        "world:creature:7604",
+        "world:creature:5649"
+      ],
+      "text": "You are in Zul'Farrak, a place of trolls in Tanaris. Sandfury trolls fill it, and Chief Ukorz Sandscalp, who leads them, claims the desert as his own. Antu'sul, Overseer of Sul, commands the Sul'lithuz as his children and turns them against intruders, while Witch Doctor Zum'rah claims a sanctum here. Captives held by trolls include Sergeant Bly and his band.",
+      "when": {
+        "zone_id": 1176
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:1176": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 1176 (Zul'Farrak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:440": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 440 (Tanaris)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:978": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 978 (Zul'Farrak)",
+      "revision": "3.3.5a client data"
+    },
     "source:0890eade27cbc748052b4b96": {
       "kind": "research",
       "reference": "evidence:sha256:a441b463d305aa62296bdd0dc004229b678dcd8fab58a00baa3351ccf1307aac",
@@ -1105,6 +1142,31 @@
       "kind": "research",
       "reference": "evidence:sha256:38c867b239612d9abef4d3907b5f42e810f0a76edfc9b53420751c7dd6d1cb0f",
       "revision": "a63f676999bc2e44032710ba7962b4910e910bf8770c4143324d978f0297113c"
+    },
+    "world:creature:5649": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 5649 (Sandfury Blood Drinker), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7267": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7267 (Chief Ukorz Sandscalp), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7271": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7271 (Witch Doctor Zum'rah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:7604": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 7604 (Sergeant Bly), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:8127": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 8127 (Antu'sul), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

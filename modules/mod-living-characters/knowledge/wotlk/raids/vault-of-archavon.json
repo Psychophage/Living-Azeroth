@@ -211,7 +211,39 @@
     }
   ],
   "place": "Vault of Archavon",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4603",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4603",
+        "dbc:area:4575",
+        "world:creature:31125",
+        "world:creature:33993",
+        "world:creature:38433",
+        "world:creature:32353",
+        "world:creature:34015",
+        "world:creature:38482"
+      ],
+      "text": "You are in the Vault of Archavon, a vault entered from Wintergrasp Fortress in Wintergrasp. Archavon the Stone Watcher, Emalon the Storm Watcher and Toravon the Ice Watcher are its guardians. Warders of stone, storm and frost fill it.",
+      "when": {
+        "zone_id": 4603
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4575": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4575 (Wintergrasp Fortress)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4603": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4603 (Vault of Archavon)",
+      "revision": "3.3.5a client data"
+    },
     "source:09c772bae485e3a39fbe63fc": {
       "kind": "research",
       "reference": "evidence:sha256:e285ad8f371c5555b90464818b72435899a65d0bd574a18d36bc7ebcec24d357",
@@ -356,6 +388,36 @@
       "kind": "research",
       "reference": "evidence:sha256:6508cb0a804537b03508cb4a0b6763c2ff1d7391d9ae9496324eca5d2151808b",
       "revision": "672bcb53e10c876ef9a3cc046df4a13c56030ae59c93d42def4bfc51c1252de4"
+    },
+    "world:creature:31125": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 31125 (Archavon the Stone Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:32353": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 32353 (Archavon Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:33993": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33993 (Emalon the Storm Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34015": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34015 (Tempest Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38433": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38433 (Toravon the Ice Watcher), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:38482": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 38482 (Frost Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

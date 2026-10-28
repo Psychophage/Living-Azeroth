@@ -55,7 +55,41 @@
     }
   ],
   "place": "Onyxia's Lair",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:2159",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:2159",
+        "dbc:area:511",
+        "dbc:area:15",
+        "world:creature:10184",
+        "world:creature:12129"
+      ],
+      "text": "You are in Onyxia's Lair, the lair of Onyxia, Deathwing's daughter and Nefarian's twin, reached through the Wyrmbog in Dustwallow Marsh. Onyxia holds it and fiercely guards her clutch, and she regards mortals as inferior. Several Onyxian Warders are about the lair.",
+      "when": {
+        "zone_id": 2159
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:15": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 15 (Dustwallow Marsh)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:2159": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 2159 (Onyxia's Lair)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:511": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 511 (Wyrmbog)",
+      "revision": "3.3.5a client data"
+    },
     "source:1de70aa7604556b06d3f9933": {
       "kind": "research",
       "reference": "evidence:sha256:60ae5d0a0ab2dfa8ea36b113ebcafce907ff64d20a2b851f90d4fe0298fa815a",
@@ -115,6 +149,16 @@
       "kind": "research",
       "reference": "evidence:sha256:f1ef74014b197fc0ea4ed4b97b8c2da7a301fb6507e2a01780223b2c0f86665c",
       "revision": "b601dd16e6153334be344725521cb7252bed795a94c6b2b63269411e629f0daa"
+    },
+    "world:creature:10184": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 10184 (Onyxia), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:12129": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 12129 (Onyxian Warder), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

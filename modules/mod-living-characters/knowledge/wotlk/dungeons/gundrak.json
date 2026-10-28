@@ -473,7 +473,39 @@
     }
   ],
   "place": "Gundrak",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4416",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4416",
+        "dbc:area:4375",
+        "world:creature:29304",
+        "world:creature:29305",
+        "world:creature:29306",
+        "world:creature:29768",
+        "world:creature:29819",
+        "world:quest:13250"
+      ],
+      "text": "You are in Gundrak, a Drakkari city in Zul'Drak. High Prophets Slad'ran of Sseratus, Moorabi of Mam'toth and Gal'darah of Akali are its rulers. The Drakkari prophets have slain most of their gods to take their powers, and Gal'darah is said to have killed Akali. Snakes, Drakkari lancers, fire weavers, god hunters and earthshakers fill the city.",
+      "when": {
+        "zone_id": 4416
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4375": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4375 (Gundrak)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4416": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4416 (Gundrak)",
+      "revision": "3.3.5a client data"
+    },
     "source:01c3daa15b0af885d2696fc0": {
       "kind": "research",
       "reference": "evidence:sha256:d26c1bf486f5a3d0d8b34e3e3222e487d0beafbc3f67ea533ffa226a63d4a575",
@@ -818,6 +850,36 @@
       "kind": "research",
       "reference": "evidence:sha256:177075f7215f5e2a04e9b07c21dbf073b70933f7d6fb546179b31718c5a251dc",
       "revision": "6b521e39e22bd4c4fd44dc65949249e67cab3268a000bb270e1b5608cc89acc1"
+    },
+    "world:creature:29304": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29304 (Slad'ran), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29305": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29305 (Moorabi), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29306": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29306 (Gal'darah), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29768": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29768 (Unyielding Constrictor), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:29819": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 29819 (Drakkari Lancer), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:13250": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 13250 (Proof of Demise: Gal'darah)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

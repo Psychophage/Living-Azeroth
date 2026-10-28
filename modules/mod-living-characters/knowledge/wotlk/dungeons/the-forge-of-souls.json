@@ -377,7 +377,39 @@
     }
   ],
   "place": "The Forge of Souls",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4809",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4809",
+        "dbc:area:4862",
+        "world:creature:36497",
+        "world:creature:36502",
+        "world:creature:36478",
+        "world:creature:36522",
+        "world:creature:37596",
+        "world:quest:24506"
+      ],
+      "text": "You are in The Forge of Souls, a soul-harvesting forge reached through the Frozen Halls in Icecrown. Bronjahm, the Godfather of Souls, commands its work, and the Devourer of Souls, a formidable soul-consuming presence, is allied with him. Soulguards and soul horrors fill its halls, and Lady Sylvanas Windrunner, the Banshee Queen, has uncovered a hole into it from the defenses of Icecrown Citadel.",
+      "when": {
+        "zone_id": 4809
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4809": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4809 (The Forge of Souls)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4862": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4862 (The Frozen Halls)",
+      "revision": "3.3.5a client data"
+    },
     "source:07c4840d370936dc2e6e7422": {
       "kind": "research",
       "reference": "evidence:sha256:62d9a281c2151a3d3eaa5d559dbf0948f559d84d0f6e49d1e03b4e6d42c881fc",
@@ -707,6 +739,36 @@
       "kind": "research",
       "reference": "evidence:sha256:70fa6f89abd2c9dee8c6cf90ac6abc252cf911e222f540c11d2ed49c13124118",
       "revision": "5cf9a47414b86a21c343817e99461bb4f755c92aa5116dd2661ef68a17bed1c4"
+    },
+    "world:creature:36478": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36478 (Soulguard Watchman), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36497": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36497 (Bronjahm), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36502": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36502 (Devourer of Souls), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:36522": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 36522 (Soul Horror), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:37596": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 37596 (Lady Sylvanas Windrunner), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:24506": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 24506 (Inside the Frozen Citadel)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

@@ -101,7 +101,43 @@
     }
   ],
   "place": "Gruul's Lair",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:3923",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:3923",
+        "dbc:area:3866",
+        "dbc:area:3522",
+        "world:creature:18831",
+        "world:creature:19044",
+        "world:creature:19389",
+        "world:creature:21350"
+      ],
+      "text": "You are in Gruul's Lair, a lair in the Blade's Edge Mountains, reached through Skald. Ogres and gronn rule it under High King Maulgar, Lord of the Ogres, who insists that gronn hold the real power in Outland, and under Gruul the Dragonkiller, a gronn whose seven sons favor the Bladespire ogres. Lair Brutes and gronn priests fill its halls, along with other named creatures.",
+      "when": {
+        "zone_id": 3923
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:3522": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3522 (Blade's Edge Mountains)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3866": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3866 (Skald)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:3923": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 3923 (Gruul's Lair)",
+      "revision": "3.3.5a client data"
+    },
     "source:0ff5300424b5c25fa9b5d7a1": {
       "kind": "research",
       "reference": "evidence:sha256:d46adac611cf8e4330c91fafae04d3d8d136767e3b0007528c19473d2a978412",
@@ -201,6 +237,26 @@
       "kind": "research",
       "reference": "evidence:sha256:bae704af147462ba4bcb7e105139c3b1270ea548439db6303b27c46c6225f0a5",
       "revision": "1587a4dd86857552ea26a708b42928b900ec57648f05cb57f99c33ae672dc456"
+    },
+    "world:creature:18831": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 18831 (High King Maulgar), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19044": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19044 (Gruul the Dragonkiller), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:19389": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 19389 (Lair Brute), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:21350": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 21350 (Gronn-Priest), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,

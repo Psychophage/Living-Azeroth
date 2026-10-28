@@ -119,7 +119,54 @@
     }
   ],
   "place": "Trial of the Champion",
+  "place_records": [
+    {
+      "authored": false,
+      "id": "zone:4723",
+      "layer": "zone",
+      "priority": 40,
+      "sources": [
+        "dbc:area:4723",
+        "dbc:area:4658",
+        "dbc:encounter:334",
+        "dbc:encounter:338",
+        "dbc:encounter:340",
+        "world:creature:33628",
+        "world:creature:34856",
+        "world:quest:14199"
+      ],
+      "text": "You are in the Trial of the Champion, a coliseum within the Argent Tournament Grounds in Icecrown. Its guardians are the Grand Champions, the Argent Champion and the Black Knight. Highlord Tirion Fordring presides over the champions' trials, and spectators of many races fill the stands. The Kirin Tor warn of interference from the Black Knight.",
+      "when": {
+        "zone_id": 4723
+      }
+    }
+  ],
   "sources": {
+    "dbc:area:4658": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4658 (Argent Tournament Grounds)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:area:4723": {
+      "kind": "world_db",
+      "reference": "AreaTable.dbc 4723 (Trial of the Champion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:334": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 334 (Grand Champions)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:338": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 338 (Argent Champion)",
+      "revision": "3.3.5a client data"
+    },
+    "dbc:encounter:340": {
+      "kind": "world_db",
+      "reference": "DungeonEncounter.dbc 340 (The Black Knight)",
+      "revision": "3.3.5a client data"
+    },
     "source:045ca4243e73d3a81723c12f": {
       "kind": "research",
       "reference": "evidence:sha256:18621ff915c6411788fa83ff1a35c6267fd64542251ff0963d7cefa93b4bafe7",
@@ -214,6 +261,21 @@
       "kind": "research",
       "reference": "evidence:sha256:b23a4d72b3bbfad39732dfa4bafbd3a0e81c2642c6ec717200e1fd4841630e4c",
       "revision": "2f1a09715e38af50f500466e8c7563f0e34c925dfb772ae375a3121dc17c18a4"
+    },
+    "world:creature:33628": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 33628 (Highlord Tirion Fordring), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:creature:34856": {
+      "kind": "world_db",
+      "reference": "acore_world.creature_template 34856 (Dwarven Coliseum Spectator), its spawns and NPC summary",
+      "revision": "acore_world as installed on 2026-10-28"
+    },
+    "world:quest:14199": {
+      "kind": "world_db",
+      "reference": "acore_world.quest_template 14199 (Proof of Demise: The Black Knight)",
+      "revision": "acore_world as installed on 2026-10-28"
     }
   },
   "version": 1,
