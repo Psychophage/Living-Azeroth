@@ -150,6 +150,71 @@
       "title": ""
     },
     {
+      "entry": 4283,
+      "name": "Scarlet Sentry",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4283:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:06e80ed02f4ab7f186ec6173",
+            "source:40f73768cd7b49536f135a10",
+            "source:25471d9e7c5648e4cbc24310",
+            "source:a4e7c66276f8725078a606e4"
+          ],
+          "text": "A Scarlet Crusade sentry who warns enemies that the Crusade will destroy those carrying the Scourge’s taint. He calls on the Crusade to smite the wicked and drive evil from the land.",
+          "when": {
+            "entry": 4283
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 4284,
+      "name": "Scarlet Augur",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4284:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d9ea049828ccfbd90c9a4a67",
+            "source:4bd76c39dccc494b016067d4"
+          ],
+          "text": "A Scarlet Crusade augur who fights with spells.",
+          "when": {
+            "entry": 4284
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 4285,
+      "name": "Scarlet Disciple",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4285:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:15d791d805dcb4432bc04cc3",
+            "source:39fbb849ed0ee5287b35b6b0"
+          ],
+          "text": "A Scarlet Crusade disciple who fights with spells.",
+          "when": {
+            "entry": 4285
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 4286,
       "name": "Scarlet Soldier",
       "records": [
@@ -803,6 +868,11 @@
       "reference": "evidence:sha256:99937585d3b535e8fee3af40f2e73ffb75aed9dd25ae273d86851e9bafb46097",
       "revision": "d56e6ed4fdcfb288b65de70eb301e2b8e37411c9938c36ab1b59940cdd09a8b6"
     },
+    "source:06e80ed02f4ab7f186ec6173": {
+      "kind": "research",
+      "reference": "evidence:sha256:bf8954bba77fb8b2ba1d8fa3e4d1914ad8dca14544b1d1aa6eaab75474d3aab5",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
+    },
     "source:07108e95328cf370177b6c16": {
       "kind": "research",
       "reference": "evidence:sha256:edc5ba599ed54f827c98fc3214880d363b971c58bb0d3ea1d132ea98cb12eb4f",
@@ -858,6 +928,11 @@
       "reference": "evidence:sha256:e4b0c6d014e0903aecb3882f5b767483057b6170235d597b9d65743fa69a1c2b",
       "revision": "d56e6ed4fdcfb288b65de70eb301e2b8e37411c9938c36ab1b59940cdd09a8b6"
     },
+    "source:15d791d805dcb4432bc04cc3": {
+      "kind": "research",
+      "reference": "evidence:sha256:85eb6ff8de6cd5deab7459fe8f52520be2a8c5cf0c31094cdc09890f63650d5e",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
+    },
     "source:17f1318b7abbb8275b95ef4f": {
       "kind": "research",
       "reference": "evidence:sha256:687cd7af4ac71dfe23eb17d9a4dfb25bf6c530f3cebe4b8be1858e7ad7505213",
@@ -882,6 +957,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e04a7b5797484391e2f10b800fc17f600751d0de1de352ac26f994f1ad37759b",
       "revision": "14c94a099acf91e377af9f51804feb5a2f32509457522e33ed620bddc7f52443"
+    },
+    "source:25471d9e7c5648e4cbc24310": {
+      "kind": "research",
+      "reference": "evidence:sha256:36cd7275e268978b73651c5d35b0b287d2979297745e71fcb9337a13c2c12b0c",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
     },
     "source:26e0b21510625dbaa6b6afc3": {
       "kind": "research",
@@ -918,6 +998,11 @@
       "reference": "evidence:sha256:5c3d996cc586b729ea044d36bf785a480b89091784147fbc466d78521780212f",
       "revision": "e12ef8a2ecf787a783fb03c62c755ec1d0ac79d964aeaf33991c7aa30f8062e5"
     },
+    "source:39fbb849ed0ee5287b35b6b0": {
+      "kind": "research",
+      "reference": "evidence:sha256:c739681038925cf34e311cdbf08b2216bc116f7abe8acfd91309678241828850",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
+    },
     "source:3d7b2027c0521f51c52ad502": {
       "kind": "research",
       "reference": "evidence:sha256:2d815fbc1f597a9541c83434be058d893fc22269c0ea12398ededf2443ed0148",
@@ -933,6 +1018,11 @@
       "reference": "evidence:sha256:670ad7857bd2a557772987f040d280ef5f8e8dfc9a532c970ece19e6f77c1800",
       "revision": "b507654df254191131f2bb95b69a7ad6ce2ad9fa1f64d0add85825046fcd9dd6"
     },
+    "source:40f73768cd7b49536f135a10": {
+      "kind": "research",
+      "reference": "evidence:sha256:5b5bd568734299c9c54be2648b8bae95b407cf0d2a1d0dc38b93d10dfa064368",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
+    },
     "source:43d488cbdbbd98c408acbd40": {
       "kind": "research",
       "reference": "evidence:sha256:92cb602bd287bd85849f0fbc381bf41c5b5b98feed09ae547f60e8ebdd505626",
@@ -942,6 +1032,11 @@
       "kind": "research",
       "reference": "evidence:sha256:524269307f4cfb327e5e5ba83430327c9ce4397dcdd88f6d694799887ee0e83d",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:4bd76c39dccc494b016067d4": {
+      "kind": "research",
+      "reference": "evidence:sha256:f1f93eabb182e7c93ba38bb09eda6d1a2ce56de6ac317eadecf751fbc4a7c50f",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
     },
     "source:4da1d39ef87976df28fdc1e4": {
       "kind": "research",
@@ -1193,6 +1288,11 @@
       "reference": "evidence:sha256:4002574bddb1d602cb24fd19184154159f41d5a1a6e4620e0bd49a54e4c064db",
       "revision": "63d64a936f44b7edd81ac614d232ec29c15d40cd65b39045ac9b7a35fc534e2d"
     },
+    "source:a4e7c66276f8725078a606e4": {
+      "kind": "research",
+      "reference": "evidence:sha256:78bec0de4fd15a9b09e84e8f4a2b6b79aa90012d8c827913fd4a23e43a76e073",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
+    },
     "source:aa13323b400d6bf9588e9b8c": {
       "kind": "research",
       "reference": "evidence:sha256:500e65b897e2aac7d7dd67dfa8058b60a6847849786c9071c58c079300c8ef56",
@@ -1367,6 +1467,11 @@
       "kind": "research",
       "reference": "evidence:sha256:faec77047bb5145a6698bbccd7acb9e55f2132256015979ec42af40bd3793aa5",
       "revision": "e12ef8a2ecf787a783fb03c62c755ec1d0ac79d964aeaf33991c7aa30f8062e5"
+    },
+    "source:d9ea049828ccfbd90c9a4a67": {
+      "kind": "research",
+      "reference": "evidence:sha256:aab2bc7590f327ece7bbd089cc19825c25b8873a7d1d99dd0e3919034f786abf",
+      "revision": "da65778bf6dd004c2920d354b1a390a3372aad38d4e58b450051534c80c76959"
     },
     "source:dc43e179dce4f276cffc460f": {
       "kind": "research",

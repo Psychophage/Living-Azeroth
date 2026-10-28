@@ -723,6 +723,33 @@
       "title": null
     },
     {
+      "entry": 9117,
+      "name": "J.D. Collie",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:9117:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:616f461a54e80a46a41eb74e",
+            "source:7b2b30494abf83fa621e1a13",
+            "source:4ac35d499f636de916642d30",
+            "source:d5daa383d6a8a7fa18dda009",
+            "source:98599173e9ce5402cdfbd985",
+            "source:888547c393494c25707f33a5",
+            "source:5283013b64a52d9560594ec1",
+            "source:7864b3d392026ede00f47194"
+          ],
+          "text": "J.D. Collie makes her home in a cave in Un'Goro Crater, where she studies the strange crystals scattered across the region. Curious about rumors of the crystal pylons and convinced they are connected to the crystals, she asks visitors to locate them and continues experimenting with what she finds. Her experiments often fail, but she treats each attempt as practice and expects the next to work. She knows of Blazerunner in the crater's charred center and warns that his powerful aura has driven challengers from the rocky paths.",
+          "when": {
+            "entry": 9117
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 9118,
       "name": "Larion",
       "records": [
@@ -2262,6 +2289,11 @@
       "reference": "evidence:sha256:df46934ddf0f8f77012e97c1962397806575d8c5e41724486aab0fc22b82f273",
       "revision": "4933f7e65edd932a643916aeafcba055cc16fe07fde32eb30f65211438f2e8f5"
     },
+    "source:4ac35d499f636de916642d30": {
+      "kind": "research",
+      "reference": "evidence:sha256:7b477f1aa1a2eaf60a7130a9db9c4109c05c1b13e7fbb054311cbaa2f3211275",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
+    },
     "source:4b4906207c35581782a4b2f9": {
       "kind": "research",
       "reference": "evidence:sha256:5cc5edfb93e325994ecba69a3a9174264d038d736a7cc8c63b92514790e4789f",
@@ -2311,6 +2343,11 @@
       "kind": "research",
       "reference": "evidence:sha256:994899525b9c46fb8e01b49f7efe624bcbac5270d0456b4be36c2f7883f82b24",
       "revision": "ee45059195e9393f0e1bd05db53b1eac0db8bff48c34fbbf7725fe23ee2bd11b"
+    },
+    "source:5283013b64a52d9560594ec1": {
+      "kind": "research",
+      "reference": "evidence:sha256:152a99d7d3fb2f28ed803a1edd69343622a75d954f58d0c3f690fc9a3362c242",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:528951989148adafe9e75e65": {
       "kind": "research",
@@ -2381,6 +2418,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e276fd279905685843452191633854ec43a8b7492fc373efa93576e79df9d816",
       "revision": "4933f7e65edd932a643916aeafcba055cc16fe07fde32eb30f65211438f2e8f5"
+    },
+    "source:616f461a54e80a46a41eb74e": {
+      "kind": "research",
+      "reference": "evidence:sha256:a2c5bc6876778ecfaa8a391634c15b8978f37454f7e3703c14bb3c7f1d42d515",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:62b3607174bdb604be67c75a": {
       "kind": "research",
@@ -2527,6 +2569,11 @@
       "reference": "evidence:sha256:5c601069b91f4f2869e7aebfeac01922cd7266ea91ed0270e0a1b79652c5986a",
       "revision": "ba111966b5dc7356a5dbbd25b37a86e318c9f7bfcc4e9060b7506ebd6475c09f"
     },
+    "source:7864b3d392026ede00f47194": {
+      "kind": "research",
+      "reference": "evidence:sha256:6db64df62741dfc882aeddc01b3816b172e28a88f6077a7a073649667f57bbb1",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
+    },
     "source:78aecfe9373fa86b8cf89d72": {
       "kind": "research",
       "reference": "evidence:sha256:4f632b57ab298be1ffb9ad52b8f39ce418671f6e98e1489635194e5a89b54315",
@@ -2546,6 +2593,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2213d9e3ed9f7a293cfa810ee92a3c2d42c3b5f7bb1dc3c1286d00c90b8aaf75",
       "revision": "b4d36278c4f0edd98773208f688360c7b8dfc7760c4e4c42b6f3a930d888903f"
+    },
+    "source:7b2b30494abf83fa621e1a13": {
+      "kind": "research",
+      "reference": "evidence:sha256:f50217844b8a18f5b43accd36649155cd121e83101b8b2bb06ad6383aac359ca",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:7e5b1063866e937678a731a0": {
       "kind": "research",
@@ -2591,6 +2643,11 @@
       "kind": "research",
       "reference": "evidence:sha256:41485f2b3788a44e0631d75663fa320fc8c301b69044b1c4a4b5a8c57a3f8449",
       "revision": "50c18e9f54fe27665c51a47b18c802b36f7d1121ee11d0e36ed69268952cb16f"
+    },
+    "source:888547c393494c25707f33a5": {
+      "kind": "research",
+      "reference": "evidence:sha256:52ddd1a83b1edf269164d96d06a80736959a7559cf0750cc04716705d501f05f",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:8a2d24e63a1c3f7f057c6021": {
       "kind": "research",
@@ -2656,6 +2713,11 @@
       "kind": "research",
       "reference": "evidence:sha256:ca51a1aa0f95ba364e1c358881dfecc075f4a04c35213414ab075f193def091e",
       "revision": "a51d209803883713a1e5b4f7d2a1fec4388f92bb2ce1aafdfe6368cb58f3ab99"
+    },
+    "source:98599173e9ce5402cdfbd985": {
+      "kind": "research",
+      "reference": "evidence:sha256:3053f45f51a10102c2892e33c74f832a332f27c9f7b7d54dd6c3fe939899d510",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:98e0d5c0faaa0cee31a64092": {
       "kind": "research",
@@ -2976,6 +3038,11 @@
       "kind": "research",
       "reference": "evidence:sha256:da76e0b5f7077ddfb712f7bef96eded94ba5f0030f039bebea181f3ec8dd32f2",
       "revision": "4d6cda422d31aadc83b40e0765e9725d27a7d40bb0e7c64ed9bb1acb93730bc6"
+    },
+    "source:d5daa383d6a8a7fa18dda009": {
+      "kind": "research",
+      "reference": "evidence:sha256:0f341f4b66c3a6bf75bc914ab753d6cfaf770e106ad06fb37bb8307b9a6a4b06",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:d7531a7f1e19f573c6b10036": {
       "kind": "research",

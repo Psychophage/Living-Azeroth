@@ -1587,6 +1587,51 @@
       "title": null
     },
     {
+      "entry": 18136,
+      "name": "Marsh Lurker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18136:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2c477b8c6e441e5854c5c92f",
+            "source:8723d66df96ee439e4758219",
+            "source:337c713ad1fdcb0726d859d8"
+          ],
+          "text": "Marsh Lurkers are among the marsh beasts that have recently invaded the sporelok caves of Funggor Cavern. Lauranna asks outsiders to clear the beasts from the area, placing these lurkers among the threats to the sporelok there.",
+          "when": {
+            "entry": 18136
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 18137,
+      "name": "Marsh Dredger",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18137:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2958a2f8e50b416c03c4b858",
+            "source:e2afec22e93ccd61d1ef6c02",
+            "source:eca5d09bf2316ff5fc101c9e",
+            "source:b64c2d9b3a8e03ed77682cef"
+          ],
+          "text": "Marsh Dredgers are marsh beasts encountered in Zangarmarsh, including Funggor Cavern. In combat, a Marsh Dredger can use strangling roots to hinder its foes.",
+          "when": {
+            "entry": 18137
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 18139,
       "name": "Sporeggar Preserver",
       "records": [
@@ -1963,6 +2008,30 @@
         }
       ],
       "title": "Innkeeper"
+    },
+    {
+      "entry": 18282,
+      "name": "Lord Klaq",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18282:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:565e51b0340ea30ae8c04a90",
+            "source:acba6412dfdff080c6e7c9ba",
+            "source:4826d9b1c599fe93541ee966",
+            "source:ee738209dd14022c2280e8be",
+            "source:6ac0a1fdb04d901df7cb9b5c"
+          ],
+          "text": "Lord Klaq is identified as the leader of the marshbeasts attacking the Cenarion Expedition’s watchers near Funggor Cavern. Warden Hamoot believes killing him will end the attacks; Klaq is also described as using Thorns and Thunderclap in combat.",
+          "when": {
+            "entry": 18282
+          }
+        }
+      ],
+      "title": null
     },
     {
       "entry": 18285,
@@ -2382,6 +2451,30 @@
         }
       ],
       "title": "Master Fishing Trainer"
+    },
+    {
+      "entry": 18912,
+      "name": "Sporelok",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:18912:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:cadf9749f1c9e90fcfeb1cdb",
+            "source:5da5680570b5c6cd7fd665ab",
+            "source:363beb4a47464b1c606035c0",
+            "source:7189eec3c97b008c909e614d",
+            "source:19ffbd4f3580f4ee5a8e2fb9"
+          ],
+          "text": "Sporelok is a humanoid found in Terokkar Forest and Zangarmarsh.",
+          "when": {
+            "entry": 18912
+          }
+        }
+      ],
+      "title": null
     },
     {
       "entry": 18922,
@@ -4642,6 +4735,11 @@
       "reference": "evidence:sha256:a52810b55a8f85c2a5d778649d4ff7f0e2273a80e94b2f072226a6ef5e24fe5b",
       "revision": "5b75c8911bd7e7e4a9c9a2bfab08c389e05ea8e0317b50b5340f515e2ae3e70d"
     },
+    "source:19ffbd4f3580f4ee5a8e2fb9": {
+      "kind": "research",
+      "reference": "evidence:sha256:df4ead21fb905e5730e9da0a24cfc7d3c50bb991f4923a2ccf622e92fe86e78a",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
+    },
     "source:1a8e0b486b3e8ce0df6edad0": {
       "kind": "research",
       "reference": "evidence:sha256:5e2fbc9c67845e3a655c04e7873077a87bdd49682959c45876419cdefa9b8344",
@@ -4822,6 +4920,11 @@
       "reference": "evidence:sha256:c1993a4242e5264d43d8c3b52a51efee69f2f54caa1b20a113e2acf630f9709b",
       "revision": "6eb0e9a79e5c8d65761165eeb8d6e49a8b42cd9a5122da6ee92b6abf57d34e5f"
     },
+    "source:2958a2f8e50b416c03c4b858": {
+      "kind": "research",
+      "reference": "evidence:sha256:d0bcacc3011b2e8c42e2bd0051992cdad148f6a4c21c3047c14c6b2388f6964b",
+      "revision": "0cb67b720a5c74bcd6e1aaf0d673357f219b85412cb7db5f36af567f5cc1f6fc"
+    },
     "source:29957c6a7a22c439bc74ac07": {
       "kind": "research",
       "reference": "evidence:sha256:9d0bc13890c4ee44ceebe3be66ef0a4142c91e24450cf87aae34ba63efc67e4b",
@@ -4846,6 +4949,11 @@
       "kind": "research",
       "reference": "evidence:sha256:dbbbc5c7f68a6e2cef35c578b0f0baaa6faadf8d58828867559e58027e3e2fe1",
       "revision": "b1b7d858423b4a2b9df30ef7043f0b71ef937ae3d1701dba2c128b98b75c62a4"
+    },
+    "source:2c477b8c6e441e5854c5c92f": {
+      "kind": "research",
+      "reference": "evidence:sha256:3818c07b1878384e0e6f05045ce305bb564e9d4044fbf2b6ad61f0bb20d61491",
+      "revision": "09dae6ea509d40bf2f771b515fd6af303da5761856684a8da6c6a7082ec247d7"
     },
     "source:2ca2a690b8a9b80b9e7acbc7": {
       "kind": "research",
@@ -4937,6 +5045,11 @@
       "reference": "evidence:sha256:6d33ce68ddc74e71b1a9a0a2414b1de44a73e47d39de2f10a96a6dc08e6fe78d",
       "revision": "d6297bfca659f371350a47ba6edd7ef268266c1ff2374a65d7347033acf88be9"
     },
+    "source:337c713ad1fdcb0726d859d8": {
+      "kind": "research",
+      "reference": "evidence:sha256:0d557da6ea30de85f8060a55e86d815e4db51220425d6b311d489bf8cb557155",
+      "revision": "09dae6ea509d40bf2f771b515fd6af303da5761856684a8da6c6a7082ec247d7"
+    },
     "source:33d67ce6d5414afee14dfdef": {
       "kind": "research",
       "reference": "evidence:sha256:7830f2c782eada4e20677d6977bf6518a1c25b80bfbe5da0080e243781a55cbc",
@@ -4966,6 +5079,11 @@
       "kind": "research",
       "reference": "evidence:sha256:94404c72a4881dcc657b243a8d71ae21f09074af95767f697d4069aae0ac2ea0",
       "revision": "1b98349cfffceabef3bc32f09fc61a15171e0640ee708af743404fa4a23bc61e"
+    },
+    "source:363beb4a47464b1c606035c0": {
+      "kind": "research",
+      "reference": "evidence:sha256:ed0320b486ac18dbf2085c56e8c6af112b8cf8d7fd765ce93eadceb648ccc645",
+      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
     },
     "source:363ec43f168c5574a77a0b88": {
       "kind": "research",
@@ -5212,6 +5330,11 @@
       "reference": "evidence:sha256:4859cc50e7fc6931de2711d2fa2be8131680e1b2790cf5a0938531149cdf5f0a",
       "revision": "b077f1bba93390548acb716864d97b7ed000f3da4bb48871059cd0fd07361b0e"
     },
+    "source:4826d9b1c599fe93541ee966": {
+      "kind": "research",
+      "reference": "evidence:sha256:40106b20c2abe17ff5df95b14dfc0e4184e6fe9497a4e24a75ee8ee17fa28632",
+      "revision": "00524f5d95280cb1da6c3d1cccf8a4f6363bce276b10140fd4e8101666dc926b"
+    },
     "source:48aacd587a08c0ac5fbd66dd": {
       "kind": "research",
       "reference": "evidence:sha256:d25308d64a4c78750c68a6ed68194bcc7983920a2c7186e927095b208b7b91b1",
@@ -5392,6 +5515,11 @@
       "reference": "evidence:sha256:d8fb5b722116c048980a85c3f945b637373fc226f83e4529d80acf6ecee78c6a",
       "revision": "539e82d116164e032c5642d107fa951aae72fa2ebd6c0474b97be1928fb618a2"
     },
+    "source:565e51b0340ea30ae8c04a90": {
+      "kind": "research",
+      "reference": "evidence:sha256:b6ab8475547112e382ed9a0b4ea4358537d18e28279c6645af917019fe82fc2c",
+      "revision": "00524f5d95280cb1da6c3d1cccf8a4f6363bce276b10140fd4e8101666dc926b"
+    },
     "source:56f6ba822f44051789551774": {
       "kind": "research",
       "reference": "evidence:sha256:c4d78c70484d08ee73cd5c8599b814b840e0cc4e37a51dc57e75ef95f5bd9894",
@@ -5486,6 +5614,11 @@
       "kind": "research",
       "reference": "evidence:sha256:579b6af11400f4ed4c14df50ceb313fc2ff68aa99f6c995b4b26cc8fa781d547",
       "revision": "ba739218ec8ea30e3101050ce757609769a71ef5f9b97093247cad0a19ad96f3"
+    },
+    "source:5da5680570b5c6cd7fd665ab": {
+      "kind": "research",
+      "reference": "evidence:sha256:f29af8d54924a618edff7a919f3a6c79f6dafdb48075eee489e0a586da82c4b5",
+      "revision": "e8800e7564d2970616215aa26138fa52d4f64794efd2867670bfc2d28e730fcb"
     },
     "source:5e200ead4dba14b4cb14486b": {
       "kind": "research",
@@ -5632,6 +5765,11 @@
       "reference": "evidence:sha256:ab141665af177aa56ddadaed0920c6b8bf65f7d5db2d9a27037cf4a87d2f89d2",
       "revision": "c0dc662318121a26f86d8014fe57948971cf38b239619dc6953379c544234fc9"
     },
+    "source:6ac0a1fdb04d901df7cb9b5c": {
+      "kind": "research",
+      "reference": "evidence:sha256:bb6f0204b722be291a8f57b3576acffdbd3a58ace27f4280dd28b44998c5504a",
+      "revision": "00524f5d95280cb1da6c3d1cccf8a4f6363bce276b10140fd4e8101666dc926b"
+    },
     "source:6b53fe812322d7c868afbd1a": {
       "kind": "research",
       "reference": "evidence:sha256:39102fe70b6e95f43b545fe83318cd084654d15b53782c76bd5ee8fc1092af0e",
@@ -5696,6 +5834,11 @@
       "kind": "research",
       "reference": "evidence:sha256:6725054a25043e8c18b8b0a3d2f33bcc4557ef17c047d52876b198d1cf3fa5a9",
       "revision": "5e0745424c651fd474531fb25001cd684780de99d1f25f5a8762beead0b6c8bf"
+    },
+    "source:7189eec3c97b008c909e614d": {
+      "kind": "research",
+      "reference": "evidence:sha256:57807b92862ee8de448850bc3add08c2750a994161b3f2dbb94d2c18f5b7a404",
+      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
     },
     "source:71c92643b7c9d8beb029f2f8": {
       "kind": "research",
@@ -5971,6 +6114,11 @@
       "kind": "research",
       "reference": "evidence:sha256:8563e804023b72b0dbaff5403cf273e1767ffa43a06c57dce3c405fbad278af6",
       "revision": "d279b8ea39c3197ed95fb0f810457a8dea050ea2696313a9718612b0cca54042"
+    },
+    "source:8723d66df96ee439e4758219": {
+      "kind": "research",
+      "reference": "evidence:sha256:3c200cd09ffb9aab34c2fd5d2cc3ab643c0eeee456b49ef5d8af686017284f23",
+      "revision": "09dae6ea509d40bf2f771b515fd6af303da5761856684a8da6c6a7082ec247d7"
     },
     "source:875ef6926e7fb2ac086a1249": {
       "kind": "research",
@@ -6427,6 +6575,11 @@
       "reference": "evidence:sha256:391b269ed6582eb7596755ae76d036c108b8e91d6336778eac51fff5a87a94ab",
       "revision": "d6297bfca659f371350a47ba6edd7ef268266c1ff2374a65d7347033acf88be9"
     },
+    "source:acba6412dfdff080c6e7c9ba": {
+      "kind": "research",
+      "reference": "evidence:sha256:869b07d1c547d7ba9c2a98e6747f27faa235534999971d80f64b46d291b98d20",
+      "revision": "00524f5d95280cb1da6c3d1cccf8a4f6363bce276b10140fd4e8101666dc926b"
+    },
     "source:adec19098e81f332c97c9148": {
       "kind": "research",
       "reference": "evidence:sha256:2e8fbeefaa28cdd2f9402a0e98b02ca9ff252b9cc72dc9680f9084de2d296745",
@@ -6516,6 +6669,11 @@
       "kind": "research",
       "reference": "evidence:sha256:a0d79794aa2422555e1311cfd408b2f4dd64ec7f767e08f0f8ee724502589456",
       "revision": "057e137768acb4b6f62bdc027afcc5d5c37582fa037577b5271749134407b444"
+    },
+    "source:b64c2d9b3a8e03ed77682cef": {
+      "kind": "research",
+      "reference": "evidence:sha256:6f74746bd40aa9baebd9fb49f9c569d7615c63c8df354cb27d2edc0445f3be2f",
+      "revision": "0cb67b720a5c74bcd6e1aaf0d673357f219b85412cb7db5f36af567f5cc1f6fc"
     },
     "source:b721f8a774febd77302c6781": {
       "kind": "research",
@@ -6721,6 +6879,11 @@
       "kind": "research",
       "reference": "evidence:sha256:8b22e00af07b04a218f750a1cf5c70f9ee134fb9524c82d28603219debd5d4a2",
       "revision": "d3dd9eedb2732c25b8870de0c47fbaf57731730e35abd58817db1916c94c25b0"
+    },
+    "source:cadf9749f1c9e90fcfeb1cdb": {
+      "kind": "research",
+      "reference": "evidence:sha256:246ed508993c1620c59a1d9235cdece7e6a4167b2a37b674a25d360a7cec0c57",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:cb2d3b57c5eff397b57283e3": {
       "kind": "research",
@@ -7007,6 +7170,11 @@
       "reference": "evidence:sha256:6fe40ec1510feb7a3a966f250802330f63ca1a9a92ea699d5ee371e1aa74df08",
       "revision": "15968ead9e3912af01587b86fae0e5e5524e3b384e64ef924e4f34104f303cdc"
     },
+    "source:e2afec22e93ccd61d1ef6c02": {
+      "kind": "research",
+      "reference": "evidence:sha256:2814addd63e0672cbc2c15d5aa88f61faa4e896916f48a8f521335b78abe0396",
+      "revision": "0cb67b720a5c74bcd6e1aaf0d673357f219b85412cb7db5f36af567f5cc1f6fc"
+    },
     "source:e3898e85339601e174934ccc": {
       "kind": "research",
       "reference": "evidence:sha256:9041d61540a0460b5f92881069d0655252e2e60cb631af8d85efdaf1e0b36321",
@@ -7177,6 +7345,11 @@
       "reference": "evidence:sha256:9e05b28b9f5a51792eae252248514ca1a648b60566cddf39829e31d78a27eb3c",
       "revision": "eb1d67b89e13e603f33b1f5e0024e3f70138145043043cec02f93bab25fa3f03"
     },
+    "source:eca5d09bf2316ff5fc101c9e": {
+      "kind": "research",
+      "reference": "evidence:sha256:0d557da6ea30de85f8060a55e86d815e4db51220425d6b311d489bf8cb557155",
+      "revision": "0cb67b720a5c74bcd6e1aaf0d673357f219b85412cb7db5f36af567f5cc1f6fc"
+    },
     "source:ecea30b26e5b4cfb8d3d267d": {
       "kind": "research",
       "reference": "evidence:sha256:30c747717cb87f643bb0420f4c1367e4a7d74f790273c72ff3565a3d8680001a",
@@ -7206,6 +7379,11 @@
       "kind": "research",
       "reference": "evidence:sha256:c63147dac3152b08d3396213c44314fe0730c4d738c733e8e73865c11f909725",
       "revision": "b1b7d858423b4a2b9df30ef7043f0b71ef937ae3d1701dba2c128b98b75c62a4"
+    },
+    "source:ee738209dd14022c2280e8be": {
+      "kind": "research",
+      "reference": "evidence:sha256:973d90e0ea29a4be7dbf5f72d563c9cc4005f67f8fa9ac874123606d31740149",
+      "revision": "00524f5d95280cb1da6c3d1cccf8a4f6363bce276b10140fd4e8101666dc926b"
     },
     "source:eed8fa26e63f3d66f67fade3": {
       "kind": "research",

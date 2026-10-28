@@ -1161,6 +1161,29 @@
       "title": null
     },
     {
+      "entry": 16016,
+      "name": "Anthion Harmon",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16016:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:901b968c22f3150d9010a341",
+            "source:7639ec5662b0ffbfce23afad",
+            "source:3f469a12a08b8e8655a11556",
+            "source:755d56d09c8e57f40c2abec6"
+          ],
+          "text": "Anthion Harmon regrets that he and others split Valthalak’s medallion without understanding its curse, and says Theldren beat him when he tried to reclaim a piece. He seeks help recovering the fragments and directs the effort to Falrin Treeshaper for a way to provoke Theldren. Anthion says restoring the medallion can stop the spell; at parting, he says he can finally rest and that his time in the world is short.",
+          "when": {
+            "entry": 16016
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 16031,
       "name": "Ysida Harmon",
       "records": [
@@ -1501,6 +1524,11 @@
       "reference": "evidence:sha256:8969aae141506d2b2642046dbf565341768bde9ccaf7c546c598d50c215169c8",
       "revision": "8c39e53183bb2fe203da289ed0a37adfd9f22d093ce99045f20fc13368698f98"
     },
+    "source:3f469a12a08b8e8655a11556": {
+      "kind": "research",
+      "reference": "evidence:sha256:e2b5471da93087517c6972f068e5529e665c976dd2704e4c74aec9d8ae832146",
+      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
+    },
     "source:3fa8b3e0282803c0d4e2b185": {
       "kind": "research",
       "reference": "evidence:sha256:feb70af2688eebb5db6c8e98c7a56c309b3252f59a32c5a1315fee74b44de6f5",
@@ -1696,10 +1724,20 @@
       "reference": "evidence:sha256:1ef81245442a8a3e5dc816f9b220b3a9609172bfa3def83d2f7c330b2836e45a",
       "revision": "9b7a004c83bd1f5ed46bd6ea69e691137347042a3b2ec9a1c4836188308c7886"
     },
+    "source:755d56d09c8e57f40c2abec6": {
+      "kind": "research",
+      "reference": "evidence:sha256:310fa57ce0fd821d2659c94263f123168b79858d0e243d4c1eefb9573d4e9ccd",
+      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
+    },
     "source:76383a7768f2b63ed39a0b1b": {
       "kind": "research",
       "reference": "evidence:sha256:cee86bd02701ddc55d29983c3bc3a42103393cfd1c2755a50b8168220291567e",
       "revision": "dfc64ab8c866406e88108d7df4a8f4e1413529b70628b74ce0f9cd7d8efbc426"
+    },
+    "source:7639ec5662b0ffbfce23afad": {
+      "kind": "research",
+      "reference": "evidence:sha256:bf5ab671210c877a0dad1fdd3f2ae5bd47a98ef4f83ff6465c71b000e8547f9d",
+      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
     },
     "source:7690c10ab4daefab718070d6": {
       "kind": "research",
@@ -1790,6 +1828,11 @@
       "kind": "research",
       "reference": "evidence:sha256:51535cbfef3fc41678f14de43fa14bffc5f924802e2af1c1c407620adad97d42",
       "revision": "ed2fc1cbd68e4ba43f2f233061dd25a67311865cb29624c7beca37688efe689f"
+    },
+    "source:901b968c22f3150d9010a341": {
+      "kind": "research",
+      "reference": "evidence:sha256:7fa664cb57c7f076211095283630470dc543ba595b257d4dec568d3a1ce02ac7",
+      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
     },
     "source:9398196bb3a1e7f9289abc72": {
       "kind": "research",

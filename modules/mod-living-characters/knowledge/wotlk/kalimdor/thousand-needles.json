@@ -1703,6 +1703,27 @@
       "title": "Engineering Supplies"
     },
     {
+      "entry": 7404,
+      "name": "Galak Flame Guard",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:7404:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:3162a041f983c7a1aaaec768",
+            "source:083aba622ab8d5f1446d202e"
+          ],
+          "text": "Galak Flame Guard is identified by its guard title and Galak name.",
+          "when": {
+            "entry": 7404
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 9238,
       "name": "Quentin",
       "records": [
@@ -2911,6 +2932,11 @@
       "reference": "evidence:sha256:0d22c0027b03aa1f044800ee9e2d117709b54dfb35a28b0f609baa370937e28b",
       "revision": "76697f9558d0c1d95afcaa39301deda4823289cb4788273f730ee70867036148"
     },
+    "source:083aba622ab8d5f1446d202e": {
+      "kind": "research",
+      "reference": "evidence:sha256:302699ecce6c9433760f8762cb0725eef7cb63e17b2bbc4ffc25ab7a665a7b00",
+      "revision": "1ce38da18ccac7eb466e38b3ec64b212cda8f394cc82cb7620f50a898c4fa8ac"
+    },
     "source:095acbf7a6b7b1b063cb3c51": {
       "kind": "research",
       "reference": "evidence:sha256:646b54c50aa89ab9d0eef37b794a98efc4eea5b5f0133878c7313b0a711a36cd",
@@ -3260,6 +3286,11 @@
       "kind": "research",
       "reference": "evidence:sha256:27eae5f2d96df1eba784f033e7f81aa8c4b3e98c4cc3e6d491fd8451bc138e62",
       "revision": "8539623006ac3204e7d1f1ec1aa06b6836d6844e5802ae18c80bd6bb7a225baf"
+    },
+    "source:3162a041f983c7a1aaaec768": {
+      "kind": "research",
+      "reference": "evidence:sha256:9c736a3041cbad53cee3b2e844c7fb3ca7eb8af99d3bd5d19a0ac4e089072c54",
+      "revision": "1ce38da18ccac7eb466e38b3ec64b212cda8f394cc82cb7620f50a898c4fa8ac"
     },
     "source:328afee86119c23f8df25f51": {
       "kind": "research",

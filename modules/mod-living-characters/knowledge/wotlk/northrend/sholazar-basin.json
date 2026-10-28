@@ -2583,6 +2583,28 @@
       "title": ""
     },
     {
+      "entry": 28840,
+      "name": "Overlook Sentry",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:28840:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:34f9b2b900db46a565f36c59",
+            "source:4cd4a6f3aaec3df0f33e3534",
+            "source:cdd41338eeac3dadbbcff5b1"
+          ],
+          "text": "An Overlook Sentry is a sentry in Icecrown. It serves as a combatant, with Rune Detonation among its combat abilities.",
+          "when": {
+            "entry": 28840
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 28858,
       "name": "Storm Revenant",
       "records": [
@@ -2864,6 +2886,27 @@
           "text": "A Goretalon Matriarch is a beast identified as a matriarch among the Goretalons.",
           "when": {
             "entry": 29044
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 29066,
+      "name": "Titan Sentry",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:29066:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d0a2c37209ddc1fa6995ca07",
+            "source:b824d45db6e36685431d0678"
+          ],
+          "text": "A mechanical guardian, the Titan Sentry is found in Icecrown and another Northrend area. Its identity is that of a sentry rather than a named individual.",
+          "when": {
+            "entry": 29066
           }
         }
       ],
@@ -4529,6 +4572,11 @@
       "reference": "evidence:sha256:0870ac16854ea2bf2c36f08cf13b09da4d98e6405b576bbdbf8dbf2f5060d769",
       "revision": "68162ffb5f70262e0e4c85018bbc33bc03d462d8a6abb55e64e009364302022e"
     },
+    "source:34f9b2b900db46a565f36c59": {
+      "kind": "research",
+      "reference": "evidence:sha256:dda47c2a5369a2a1b0f21557db0a84ada4319e9a6b858c1a204829a0e734ab45",
+      "revision": "78cd7e23beb06a1f1936cc5418944b79253e6686278627cce76d724135546400"
+    },
     "source:36e0440f5ccaf9d672a914e4": {
       "kind": "research",
       "reference": "evidence:sha256:0bd8dbdc057bf88cfae1e21c978014b606cc608f0e8bcd84614b9bcef5c03d22",
@@ -4793,6 +4841,11 @@
       "kind": "research",
       "reference": "evidence:sha256:32e7640ebcea1b7180d41fb82a398ba27731d8b84cee8aa03cb60fa3f1b950b8",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:4cd4a6f3aaec3df0f33e3534": {
+      "kind": "research",
+      "reference": "evidence:sha256:7a8c085a6be46e9ae46dbdea4a2cba385bf0b5a6ef94b1f22738d821da21baae",
+      "revision": "78cd7e23beb06a1f1936cc5418944b79253e6686278627cce76d724135546400"
     },
     "source:4d14f6246b051cb4b69ea59d": {
       "kind": "research",
@@ -6029,6 +6082,11 @@
       "reference": "evidence:sha256:1728685f6619d966d04d105aeba4092b5744b0a2be8095c445762bd2527dd11c",
       "revision": "9830a6c7f67192f76c82a9f94b4da90b219c39a7c69440da84a25eb95cbb1dca"
     },
+    "source:b824d45db6e36685431d0678": {
+      "kind": "research",
+      "reference": "evidence:sha256:c3cc3c2e8523ae6b344dbfb922712ca1f7c492c1dfed847c80bffeb8667a52d4",
+      "revision": "78cd7e23beb06a1f1936cc5418944b79253e6686278627cce76d724135546400"
+    },
     "source:b88cf48b883c1e18d79a1c74": {
       "kind": "research",
       "reference": "evidence:sha256:86e0ed110a317697086ccd8c3ea307154131237def1d6cb02cc230f60f91366c",
@@ -6244,6 +6302,11 @@
       "reference": "evidence:sha256:e4e20ca55d1ed21c4305342dbe981da55d4b0edff1123249ee9d416dbb2a7cb8",
       "revision": "af82e79ce70c9bb3a6ede228afc42451eb25b3415e9da49e4720ed0067012823"
     },
+    "source:cdd41338eeac3dadbbcff5b1": {
+      "kind": "research",
+      "reference": "evidence:sha256:d8599180d042c3046112200797c3c4c3531f80fa471e74297ae68757a95526bb",
+      "revision": "78cd7e23beb06a1f1936cc5418944b79253e6686278627cce76d724135546400"
+    },
     "source:ce2941dbc0e0b4fb1055352f": {
       "kind": "research",
       "reference": "evidence:sha256:e6fbccc909b63cc21a770d28ab9307ff248ef94abcddaeb89d3e644ff16546c4",
@@ -6263,6 +6326,11 @@
       "kind": "research",
       "reference": "evidence:sha256:dd9cff1f94067c000cba8bd9bc0a547ee830ceaa395cd761b660d5e11d64107e",
       "revision": "ef6a3dffd8f7bd0c110a0caae6f19bdf5fd98075215eb8ef1312781beff65ec2"
+    },
+    "source:d0a2c37209ddc1fa6995ca07": {
+      "kind": "research",
+      "reference": "evidence:sha256:0aed90d1f71df4161476fb3d950cd4fdde9202aa91c490ff50dc108542cb4463",
+      "revision": "78cd7e23beb06a1f1936cc5418944b79253e6686278627cce76d724135546400"
     },
     "source:d18d4ecb1a9fc6c7924a95e8": {
       "kind": "research",

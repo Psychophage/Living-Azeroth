@@ -4463,6 +4463,29 @@
       "title": ""
     },
     {
+      "entry": 24501,
+      "name": "Drohn's Distillery Apprentice",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:24501:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:40f2e529ef310819aaa05c80",
+            "source:c033ab67c3a981421c1ef028",
+            "source:265879de13570af23e9df405",
+            "source:895d8a2a0438b447a527c4db"
+          ],
+          "text": "An apprentice of Drohn's Distillery and its brew vendor, this character confidently claims that no one in Azeroth can match the quality of the brew.",
+          "when": {
+            "entry": 24501
+          }
+        }
+      ],
+      "title": "Drohn's Distillery Brew Vendor"
+    },
+    {
       "entry": 24545,
       "name": "Thunderbrew \"Apprentice\"",
       "records": [
@@ -6804,6 +6827,11 @@
       "reference": "evidence:sha256:9bff5de5903702aec208da8373c2e7cc17023dfd77c2c61641c3b2c717845e76",
       "revision": "b10c087e81534ec907bbd4b1a1375ff44a7f731c2e15c157b2a3274845852018"
     },
+    "source:265879de13570af23e9df405": {
+      "kind": "research",
+      "reference": "evidence:sha256:29e6d3121482060e340b09719f746e6c6b13522802b7dc7e37cb320d1715f5cb",
+      "revision": "8a7f3f158292be1ef7f6fb24b98469ed1b8cc6168db0def57da839c769b2863d"
+    },
     "source:26e0d32eb9012bd19ecb0f21": {
       "kind": "research",
       "reference": "evidence:sha256:ac126269d653c051852c15516914eb21bb9dcf83d1cca4b18009382fd3e5961d",
@@ -7233,6 +7261,11 @@
       "kind": "research",
       "reference": "evidence:sha256:56967580081b6e168b02be67a1889fe08f8d62d91b66d16700f3d8be3dd65970",
       "revision": "85593ef168329b597de2fe6d339ae70471e40dd39a252f73a6fa1a65107aa666"
+    },
+    "source:40f2e529ef310819aaa05c80": {
+      "kind": "research",
+      "reference": "evidence:sha256:6cebf4318d9ce6e7f9d16677ef2481453b725331d8356a93485f4e3f51411b67",
+      "revision": "8a7f3f158292be1ef7f6fb24b98469ed1b8cc6168db0def57da839c769b2863d"
     },
     "source:41434ec4bf85401047c32e43": {
       "kind": "research",
@@ -8484,6 +8517,11 @@
       "reference": "evidence:sha256:b289b22a6621bf21c9ff426c34a8dbd9d9de8de0a90a3b98e567e9df61b394ea",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
+    "source:895d8a2a0438b447a527c4db": {
+      "kind": "research",
+      "reference": "evidence:sha256:b80cac9ebbc31de98c0614d1000892154c2d1522cf5ca91a60712dbfb03d1e2f",
+      "revision": "8a7f3f158292be1ef7f6fb24b98469ed1b8cc6168db0def57da839c769b2863d"
+    },
     "source:89b3b184abfd34b0be54ffaa": {
       "kind": "research",
       "reference": "evidence:sha256:77f4436240886e4220b369332bd18aa6185f8ba66e023f6c44ced5b73acb8796",
@@ -9548,6 +9586,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2d90fdaeb89550aeadc7270e5e9fb05cfaad3211f9b9aab0b9cce5a74e912b7a",
       "revision": "3dfd4bbd4584665b9d3853b5f5017d58931e0365375b23e35aa4b6f93bb8bca3"
+    },
+    "source:c033ab67c3a981421c1ef028": {
+      "kind": "research",
+      "reference": "evidence:sha256:07569333f71f29eadb7cd77adb295ffbf9174c5c632b1f11e4237fef6ef53bf5",
+      "revision": "8a7f3f158292be1ef7f6fb24b98469ed1b8cc6168db0def57da839c769b2863d"
     },
     "source:c0467be5489f6aac3f6c6c46": {
       "kind": "research",

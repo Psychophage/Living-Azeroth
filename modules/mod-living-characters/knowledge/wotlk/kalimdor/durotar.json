@@ -1993,27 +1993,6 @@
       "title": null
     },
     {
-      "entry": 3373,
-      "name": "Arnok",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:3373:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:ade571f3c82f7d58fbcdb3f0",
-            "source:b52e154de000278fe054f933"
-          ],
-          "text": "Arnok teaches First Aid. When a student needs further instruction, he directs them to Doctor Gregory Victor at Hammerfall in the Arathi Highlands.",
-          "when": {
-            "entry": 3373
-          }
-        }
-      ],
-      "title": "First Aid Trainer"
-    },
-    {
       "entry": 3620,
       "name": "Harruk",
       "records": [
@@ -2590,71 +2569,6 @@
         }
       ],
       "title": null
-    },
-    {
-      "entry": 5994,
-      "name": "Zayus",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:5994:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:1d5ec3bbd0a2ddd191e6e8e1",
-            "source:5a4c3eea8de2f9588d43c567"
-          ],
-          "text": "Zayus is a High Priest who offers training in priestly ways.",
-          "when": {
-            "entry": 5994
-          }
-        }
-      ],
-      "title": "High Priest"
-    },
-    {
-      "entry": 6014,
-      "name": "X'yera",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:6014:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:3e0ffc9c3877e168deb282ba",
-            "source:5d53594be94c32d2b38c4bfd"
-          ],
-          "text": "X'yera is a priest trainer who offers training in priestly ways.",
-          "when": {
-            "entry": 6014
-          }
-        }
-      ],
-      "title": "Priest Trainer"
-    },
-    {
-      "entry": 6018,
-      "name": "Ur'kyo",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:6018:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:e0b8f6b3c065ce1c90255f20",
-            "source:434430b5a93bb5acc4527da4",
-            "source:8872e906b0b06df3b0294a95",
-            "source:4c031a63ab84808f9f108f66"
-          ],
-          "text": "Ur'kyo is a priest trainer who offers training in priestly ways and warns visitors to respect his people's ways.",
-          "when": {
-            "entry": 6018
-          }
-        }
-      ],
-      "title": "Priest Trainer"
     },
     {
       "entry": 6027,
@@ -3284,27 +3198,6 @@
       "title": null
     },
     {
-      "entry": 14376,
-      "name": "Scout Manslayer",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:14376:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:920ba28c13345e5d169215af",
-            "source:2db546e225c4a624910400d8"
-          ],
-          "text": "Scout Manslayer is a scout who attacks with a hooked net.",
-          "when": {
-            "entry": 14376
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 14544,
       "name": "Swift Orange Raptor",
       "records": [
@@ -3427,6 +3320,29 @@
         }
       ],
       "title": ""
+    },
+    {
+      "entry": 23533,
+      "name": "T'chali's Voodoo Brewery Apprentice",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:23533:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:aaa4bab07a8b6de3fe60b05d",
+            "source:354d206a649e8bfeeaa90699",
+            "source:939a26e3ac5a0e974cea14eb",
+            "source:921ddd633adacba5549eb740"
+          ],
+          "text": "This apprentice serves as a Voodoo Brew vendor for T'chali's brewery. The greeting is relaxed and colloquial, pitching the brew as the best in the realms. The same named vendor appears at several festival locations, tying the role to the traveling celebration.",
+          "when": {
+            "entry": 23533
+          }
+        }
+      ],
+      "title": "Voodoo Brew Vendor"
     },
     {
       "entry": 23603,
@@ -3775,6 +3691,27 @@
           "text": "Durotar Flame Keeper welcomes visitors to honor the flame, describing festival fires in Horde settlements as their own and urging desecration of Alliance fires. The keeper presents the festival from a Horde perspective.",
           "when": {
             "entry": 25929
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 26012,
+      "name": "Arena Organizer",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:26012:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:c71642d5febe48cac3c1be05",
+            "source:a553dd01ac18e20276e1f882"
+          ],
+          "text": "An Arena Organizer serves as a petitioner for guild formation. Their available petition option points visitors toward information on how to form a guild.",
+          "when": {
+            "entry": 26012
           }
         }
       ],
@@ -5096,11 +5033,6 @@
       "reference": "evidence:sha256:5ac68135e853dc0b5861ce4266b10516309b7d74270cf99f3b077128fe16164b",
       "revision": "3677a210dfaf3105fd765efe8c8a998db9530ea41071033f75a1cacf64e89a10"
     },
-    "source:1d5ec3bbd0a2ddd191e6e8e1": {
-      "kind": "research",
-      "reference": "evidence:sha256:f874b0f7a9928bb07e1fdf6e16b7da0be32310d8754cda84ed26ac68f952c646",
-      "revision": "74c1018412c72387c475bd62b610ce631c15c71caf264db054ba71859108078e"
-    },
     "source:1d6f69d61b8cde57c5625762": {
       "kind": "research",
       "reference": "evidence:sha256:6348baa9fe56245c38b218ed28ec80c7fb3bf8855f6d1430ccd21c1346bf6306",
@@ -5226,11 +5158,6 @@
       "reference": "evidence:sha256:b3b1b736f56ff83e607355a6fec58f48b653909338ac8285b01716458d129790",
       "revision": "df877bc22d8223a0e807abc3cc68a1bcce2ae441dada88e9d574889182896773"
     },
-    "source:2db546e225c4a624910400d8": {
-      "kind": "research",
-      "reference": "evidence:sha256:e97485c4d019789840421695ebcba4d91a843877bc136a2d621189f33b7896f4",
-      "revision": "f861e810bd34b88ff735350b65a426b4b3ac60842c877b8707644c75af499a2e"
-    },
     "source:2f0ac05a814069de18b246cd": {
       "kind": "research",
       "reference": "evidence:sha256:526bed38fe0a7a85ddc403fb6923a0068a51fdb71eb0b70115038eaee3a50b1b",
@@ -5310,6 +5237,11 @@
       "kind": "research",
       "reference": "evidence:sha256:a7a77f49722db5d04c51e495e9130e917af5ca93309e2cda2043c4478508a629",
       "revision": "88c5f064592f4b8158f00793588fa4b50fa2b9e1c1adb0464182fbade2a509a3"
+    },
+    "source:354d206a649e8bfeeaa90699": {
+      "kind": "research",
+      "reference": "evidence:sha256:bd7e0ee9c8410a4369a7849573a7c8158aa4deee03e077240ce5d43aff936a8c",
+      "revision": "5b985db8ae99a0ebcea9435ba2d1bfe0e2ad5e826651a6b10f399fb47245e363"
     },
     "source:357a6a7702a0cf952137d808": {
       "kind": "research",
@@ -5401,11 +5333,6 @@
       "reference": "evidence:sha256:70754946b5eb7fa2014c583befb7739f4317e17aee0cf822cfd31f94e38c41b7",
       "revision": "7131060e6e6bf8d95be260458facb48bb64226fbaeb7b0da4b19302276eb179e"
     },
-    "source:3e0ffc9c3877e168deb282ba": {
-      "kind": "research",
-      "reference": "evidence:sha256:a1a80f27e28143556eacc9f1888045cc8490b79e4c7fde0b1259d8cd73a422d1",
-      "revision": "74c1018412c72387c475bd62b610ce631c15c71caf264db054ba71859108078e"
-    },
     "source:3e35bba0b14754458a9ab610": {
       "kind": "research",
       "reference": "evidence:sha256:8336006b3a454d043be5b4a105730907bde247c98b4ff8c587dc31c978377b51",
@@ -5455,11 +5382,6 @@
       "kind": "research",
       "reference": "evidence:sha256:6961090ef36b9924a39f23d5610f8feb5606cffe9e45bb45613343b8791372e0",
       "revision": "176e04f14748dca744222ab04f9e39076f1ebc5fb70d6358625295a0e5360b99"
-    },
-    "source:434430b5a93bb5acc4527da4": {
-      "kind": "research",
-      "reference": "evidence:sha256:0a451384cef6f9c42d748a6dcfb71a1e76f21ee881918f09c4034fe3da9c38ef",
-      "revision": "ab6dae10d863c7eefcdbcb0af76a3bbe02edecad679bc0fe68c5a6cf2fcd5ac3"
     },
     "source:437f165916b88eccbcdc956a": {
       "kind": "research",
@@ -5565,11 +5487,6 @@
       "kind": "research",
       "reference": "evidence:sha256:1cf6d79340a9220a8464c2322aa0ef404d7842d668d3fa5e8a07b332590eec4f",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:4c031a63ab84808f9f108f66": {
-      "kind": "research",
-      "reference": "evidence:sha256:6e4e482fef001cbfd80f18ac9be60b73c22493bc1eeae006a04fb20d19f1f998",
-      "revision": "ab6dae10d863c7eefcdbcb0af76a3bbe02edecad679bc0fe68c5a6cf2fcd5ac3"
     },
     "source:4c15cb334ffb2f6d1e631569": {
       "kind": "research",
@@ -5701,11 +5618,6 @@
       "reference": "evidence:sha256:e5ea7ff997c78e15cfdc49a030eb751458919683d717ee2d40648d80402ca4ce",
       "revision": "0d244ba9fd28ea2e14cf8be85a52477e38ff99c8730578d7c9b0db2260c0266d"
     },
-    "source:5a4c3eea8de2f9588d43c567": {
-      "kind": "research",
-      "reference": "evidence:sha256:6e77e340b57de92396a31d800d826f9f99fe85dd25195b38ff4b33165e25e0d5",
-      "revision": "74c1018412c72387c475bd62b610ce631c15c71caf264db054ba71859108078e"
-    },
     "source:5bcfdc084bb161046ae08bbb": {
       "kind": "research",
       "reference": "evidence:sha256:7bb2e0be673a8607a886bee76b80d2f867a67074201f6e49766275258d15790d",
@@ -5725,11 +5637,6 @@
       "kind": "research",
       "reference": "evidence:sha256:8da13c670ec879f899b581310a970c534230d535e99aafa50a0c28d7af1368fa",
       "revision": "64715ea98760f0ea1d99ead7734d1cdfed352f22eb086e5cdb7f7557c12888b0"
-    },
-    "source:5d53594be94c32d2b38c4bfd": {
-      "kind": "research",
-      "reference": "evidence:sha256:5a19035c2826251ee2f85f0b4c73f4f2ee7f26572e8eb5d9867752cc4c5516a9",
-      "revision": "74c1018412c72387c475bd62b610ce631c15c71caf264db054ba71859108078e"
     },
     "source:5d96f6297627891a44ab2e6a": {
       "kind": "research",
@@ -6131,11 +6038,6 @@
       "reference": "evidence:sha256:a28e4ca802c132e5dc0db213bff18380d99ab4f34e8a6764fc5de9acc71e8da7",
       "revision": "7d76c15db36b458da758126dca0e87f9d5107c37ba172114191ff299853462b8"
     },
-    "source:8872e906b0b06df3b0294a95": {
-      "kind": "research",
-      "reference": "evidence:sha256:97b532e096ab360ac8f0bd1db33fc04cb183b48594c753221fd084dfb57b5349",
-      "revision": "ab6dae10d863c7eefcdbcb0af76a3bbe02edecad679bc0fe68c5a6cf2fcd5ac3"
-    },
     "source:88d769c24be46c694f2c925f": {
       "kind": "research",
       "reference": "evidence:sha256:f30769e139884916ee74354a1d50b0593ce35d457e2b73008d1da74049418177",
@@ -6211,10 +6113,10 @@
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
       "revision": "46ae93d20400ca02141a6920734cacd710bfb907005741181ab0682ba66e6a85"
     },
-    "source:920ba28c13345e5d169215af": {
+    "source:921ddd633adacba5549eb740": {
       "kind": "research",
-      "reference": "evidence:sha256:94a53d459d542824fe68671106f4d18821ffdf674f36d5c9340480eaae260f1c",
-      "revision": "f861e810bd34b88ff735350b65a426b4b3ac60842c877b8707644c75af499a2e"
+      "reference": "evidence:sha256:53dda22c4951af3b2b918f38c178f447b526693b67fdf9801bb4cf0ee584dc96",
+      "revision": "5b985db8ae99a0ebcea9435ba2d1bfe0e2ad5e826651a6b10f399fb47245e363"
     },
     "source:92334d47848d9387b2749af6": {
       "kind": "research",
@@ -6230,6 +6132,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2f09505456142d6f9c88ecad01c7ff27915a224dee7ca4ba00b09cda750d14a1",
       "revision": "c54c12ffbb363e6b47cad98cbd97abe41f1c34644d934aa14f61149dd8435f49"
+    },
+    "source:939a26e3ac5a0e974cea14eb": {
+      "kind": "research",
+      "reference": "evidence:sha256:e4aef2107e6db7ead4da712e52bebec2b787991176011a4ec51d6af44ba94241",
+      "revision": "5b985db8ae99a0ebcea9435ba2d1bfe0e2ad5e826651a6b10f399fb47245e363"
     },
     "source:941e7d45d14809eb9f0bd226": {
       "kind": "research",
@@ -6361,6 +6268,11 @@
       "reference": "evidence:sha256:cd23b9ecd431583784b08900b9ae74afb728464ab9762125a0244376ff56e1e7",
       "revision": "515717a9ac8b6ea3d0e4b155651f76125a4098e709502cffdd4349ba95a53cb0"
     },
+    "source:a553dd01ac18e20276e1f882": {
+      "kind": "research",
+      "reference": "evidence:sha256:14775426bbde08ed13c080042caf3614513917fd827a5fc20586f8fd809a5150",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
+    },
     "source:a5f390d09f1ec71e35a8febe": {
       "kind": "research",
       "reference": "evidence:sha256:4e8d126853871cfe3d4908bad16328c17bbe676a45b1b4df08045bffaf866b5e",
@@ -6436,6 +6348,11 @@
       "reference": "evidence:sha256:bbdcaa86f43de71534bbdd15c2b1e7e7f62b3e67a4322eb1c4c54d2577b7a8a8",
       "revision": "1e57ad8b8641c914f659ea772d97672d976898607e68f045c5b33d2c9fd80924"
     },
+    "source:aaa4bab07a8b6de3fe60b05d": {
+      "kind": "research",
+      "reference": "evidence:sha256:cb444bf56d3d1d455d11f4c351c93d0732d6160a8b2a0192b38476d0d3678a49",
+      "revision": "5b985db8ae99a0ebcea9435ba2d1bfe0e2ad5e826651a6b10f399fb47245e363"
+    },
     "source:ab1ed99e92cc5ba281ac8e4e": {
       "kind": "research",
       "reference": "evidence:sha256:d067d6d94cc52e260e5f74ffd867bac7e85fab442ced2beeb7cde39ab375809f",
@@ -6510,11 +6427,6 @@
       "kind": "research",
       "reference": "evidence:sha256:fd67f0850ed61b0be54eaadc7be052fa2051d858dcf782456513a671ed288aff",
       "revision": "4e1556a22be45338d5b126cb9658342786f3ea71eb2d85c19c87da08a8160e67"
-    },
-    "source:ade571f3c82f7d58fbcdb3f0": {
-      "kind": "research",
-      "reference": "evidence:sha256:db13091ce4690e7322e2d782720d8e0502bb16deb9553d66ef8ae5d34b50e762",
-      "revision": "7eea06bfbdfcaf0ea2eabf39e3d7d4581355e95d99ca75bca9591fc42b74e644"
     },
     "source:ade67a62910f0f55f7b43fe0": {
       "kind": "research",
@@ -6600,11 +6512,6 @@
       "kind": "research",
       "reference": "evidence:sha256:2fa80a2b519fc612f50ce8e67226c44ef93c3e9dd19508094783525790f4df6c",
       "revision": "ab6dae10d863c7eefcdbcb0af76a3bbe02edecad679bc0fe68c5a6cf2fcd5ac3"
-    },
-    "source:b52e154de000278fe054f933": {
-      "kind": "research",
-      "reference": "evidence:sha256:ba5a049254919bc98371607e589017a20334d42dacaeb428d3784be5a0196c6d",
-      "revision": "7eea06bfbdfcaf0ea2eabf39e3d7d4581355e95d99ca75bca9591fc42b74e644"
     },
     "source:b554e3c4c909185e1b08a249": {
       "kind": "research",
@@ -6745,6 +6652,11 @@
       "kind": "research",
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
       "revision": "88c5f064592f4b8158f00793588fa4b50fa2b9e1c1adb0464182fbade2a509a3"
+    },
+    "source:c71642d5febe48cac3c1be05": {
+      "kind": "research",
+      "reference": "evidence:sha256:ba30d785ba71097c38d4546b93a612916de5a7f8b2870f056a684219f424b3a8",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
     },
     "source:c762c613f63509644da275f7": {
       "kind": "research",
@@ -6930,11 +6842,6 @@
       "kind": "research",
       "reference": "evidence:sha256:61866d4977723c3b901bccef8edabc8a13a5cc05c94d168e684811ed78905e79",
       "revision": "00ff98ad64e4da50aba06cc5f1a9e2935d12644403b62925b5a43a3a70091bee"
-    },
-    "source:e0b8f6b3c065ce1c90255f20": {
-      "kind": "research",
-      "reference": "evidence:sha256:80882cdbdc559e34fb4935a738a403b853b4646aeccb6866ca8b803367d754ed",
-      "revision": "ab6dae10d863c7eefcdbcb0af76a3bbe02edecad679bc0fe68c5a6cf2fcd5ac3"
     },
     "source:e0f1bb0968d1b16a201070b1": {
       "kind": "research",

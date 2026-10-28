@@ -4,6 +4,51 @@
   "map": 36,
   "npcs": [
     {
+      "entry": 594,
+      "name": "Defias Henchman",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:594:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:f7217eb257ce7feb6db7fc71",
+            "source:e824b19211319c945c49a111",
+            "source:114eb14615d7124144ed10b5",
+            "source:ecbae4ce30430ea76a6c3dc6",
+            "source:1399b460bcbce98cef780454"
+          ],
+          "text": "A Defias Brotherhood henchman in Westfall who threatens opposition with the Brotherhood’s power and eagerly welcomes a chance to use a freshly sharpened blade.",
+          "when": {
+            "entry": 594
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 596,
+      "name": "Brainwashed Noble",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:596:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:89db07f953285a5ca3ced21c",
+            "source:1ff52d59c308e66844d0b82d"
+          ],
+          "text": "A brainwashed noble in Westfall.",
+          "when": {
+            "entry": 596
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 598,
       "name": "Defias Miner",
       "records": [
@@ -25,6 +70,52 @@
       "title": null
     },
     {
+      "entry": 599,
+      "name": "Marisa du'Paige",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:599:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2983b7e5d22bb3dcba948f0d",
+            "source:5e2ba3f8e2ef7bda3564b1e2",
+            "source:73004d5e66e05d50ea33e956",
+            "source:5688d278256c54cd7f71d090",
+            "source:f4b6988e3fee1a36f321d59a",
+            "source:f7c287f9a5b73f2de8a50996"
+          ],
+          "text": "Marisa du'Paige is a rare humanoid whose combat repertoire includes Fireball, Polymorph: Chicken, Sleep, and Chains of Ice.",
+          "when": {
+            "entry": 599
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 619,
+      "name": "Defias Conjurer",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:619:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:808f379090bf497438ddfb1d",
+            "source:dabc080e9fd990368e0dc7f6"
+          ],
+          "text": "A Defias conjurer in Westfall.",
+          "when": {
+            "entry": 619
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 622,
       "name": "Goblin Engineer",
       "records": [
@@ -44,6 +135,90 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 623,
+      "name": "Skeletal Miner",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:623:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:5909d1d0b506c363d89ce82e",
+            "source:684af635bc078d375890c270"
+          ],
+          "text": "An undead skeletal miner in Westfall.",
+          "when": {
+            "entry": 623
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 624,
+      "name": "Undead Excavator",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:624:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:464f8c6e1867f92278edb2a5",
+            "source:61d8e82f51681c3979afd89c"
+          ],
+          "text": "An undead excavator in Westfall.",
+          "when": {
+            "entry": 624
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 625,
+      "name": "Undead Dynamiter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:625:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:940e9185c3dfbc49e1d7436f",
+            "source:aad86e614a502e20f2fe0fcf"
+          ],
+          "text": "An undead dynamiter in Westfall.",
+          "when": {
+            "entry": 625
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 626,
+      "name": "Foreman Thistlenettle",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:626:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b13b3c83141d15b7f185c65d",
+            "source:606153f11497db572ae68c81"
+          ],
+          "text": "Foreman Thistlenettle is an undead foreman in Westfall and Wilder Thistlenettle’s brother. Wilder recalls that his brother was among those missing after a mine beneath a Moonbrook barn collapsed, and that he always carried an Explorers’ League badge.",
+          "when": {
+            "entry": 626
+          }
+        }
+      ],
+      "title": ""
     },
     {
       "entry": 634,
@@ -272,6 +447,96 @@
       "title": null
     },
     {
+      "entry": 824,
+      "name": "Defias Digger",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:824:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:8268914a023e00b04d038a43",
+            "source:035af03882b5b451e9df66bb",
+            "source:5bbfbe34fed3ef79b4d47a9b",
+            "source:4a4e93258b11bdacc9a7c136"
+          ],
+          "text": "A Defias digger in Westfall who invokes the Brotherhood’s power and warns opponents that it will not tolerate their actions.",
+          "when": {
+            "entry": 824
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 1725,
+      "name": "Defias Watchman",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:1725:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2b0a659b84a7be1aa2f66298",
+            "source:61536b8c20025432f5490d0a"
+          ],
+          "text": "A Defias watchman who can shoot at opponents at range.",
+          "when": {
+            "entry": 1725
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 1726,
+      "name": "Defias Magician",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:1726:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0a30e60a0822590ac2279cef",
+            "source:20041cdd2bcc0389cd9196b5",
+            "source:9e7efdc30e5d6503a03b16f5",
+            "source:f8feaff88e778c40d44407c1",
+            "source:18031ccc3bc5a9fbb2de4c68"
+          ],
+          "text": "A Defias magician encountered among the Defias in Westfall, it uses frost armor before combat, hurls fireballs in battle, and can summon a living flame. Its arcane training marks it as a magical combatant in the gang’s ranks.",
+          "when": {
+            "entry": 1726
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 1727,
+      "name": "Defias Worker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:1727:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:478aa5214db7591a4178023d",
+            "source:b0cfe5dd277bee7bb9cc5f8a",
+            "source:01fa06e382706e44959ca79d"
+          ],
+          "text": "A Defias worker found among the gang’s forces in Westfall, this worker is a combatant despite the name, and flees for assistance when badly hurt.",
+          "when": {
+            "entry": 1727
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 1729,
       "name": "Defias Evoker",
       "records": [
@@ -478,6 +743,16 @@
   ],
   "place": "The Deadmines",
   "sources": {
+    "source:01fa06e382706e44959ca79d": {
+      "kind": "research",
+      "reference": "evidence:sha256:a915f790dfd4fda1bfd98bbafb82343146e33021bd36b0f14192a52d6535cb71",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
+    "source:035af03882b5b451e9df66bb": {
+      "kind": "research",
+      "reference": "evidence:sha256:0b1bf7479abe86084ade860ab56966d1c092f8e7e54037eb9c349ba5581fb574",
+      "revision": "a39e45f67c897e93b9ad756211a9fb0018a0ab687e7a727496417f65f78a6297"
+    },
     "source:05d0f693f7fa65ac04629342": {
       "kind": "research",
       "reference": "evidence:sha256:374894da489ba9a7384a304892392f5d5db7963541a3be4a9b5f06f730eb710e",
@@ -498,6 +773,11 @@
       "reference": "evidence:sha256:6e35790d9eec9bf8d57d92ff9a9f3344472afa043d84d1433859c8ebed76a490",
       "revision": "1186cf16cec32cc08eafbba6520d31fc3a1e2ddb8e02a15e86574a48b622bff4"
     },
+    "source:0a30e60a0822590ac2279cef": {
+      "kind": "research",
+      "reference": "evidence:sha256:fdb7c25bf4f0032a67d87a7cf32b7e5b58a58dd54bde14eee2c5efb465a38545",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
     "source:0c54a797b0b5ce0f3a4cd9af": {
       "kind": "research",
       "reference": "evidence:sha256:43d18026fbca657c3dd35156c43974378ca094903c470da8d4691e03cdbe8204",
@@ -507,6 +787,16 @@
       "kind": "research",
       "reference": "evidence:sha256:5b143e6c499448143c2afe70854ec60da17c757bbfb9b15fdc9292caae58c11d",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
+    },
+    "source:114eb14615d7124144ed10b5": {
+      "kind": "research",
+      "reference": "evidence:sha256:8a537b253bdfd78aaec4bd5237b8f76817b6068f53c8e1c61c21d1e58154371b",
+      "revision": "b3ec2cd0827e66a4a6c73d4da459d160328cab77346b33e75e6611d7d42b245e"
+    },
+    "source:1399b460bcbce98cef780454": {
+      "kind": "research",
+      "reference": "evidence:sha256:7882df0ac9da2e8434a06a2c0df236b8bcf619ed5042cacb0606ef51583b42fd",
+      "revision": "b3ec2cd0827e66a4a6c73d4da459d160328cab77346b33e75e6611d7d42b245e"
     },
     "source:13f10917211a488198d815e4": {
       "kind": "research",
@@ -527,6 +817,11 @@
       "kind": "research",
       "reference": "evidence:sha256:f9f0c6506304f6e4225103b480e20ba2fe2ebe8e16232026d69950a82e5384c6",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
+    },
+    "source:18031ccc3bc5a9fbb2de4c68": {
+      "kind": "research",
+      "reference": "evidence:sha256:fb4e56c4790f3c67a58f387c5a1595701f71318400ae6691bba3683556e8afae",
+      "revision": "ffb8f99e81a261e9151767e234efdeb5aefb677c8efeb519d4ff7bcadc910394"
     },
     "source:186896e2acf5ccce1cfedb79": {
       "kind": "research",
@@ -553,10 +848,30 @@
       "reference": "evidence:sha256:30c8d5f273f834b73403f91b814f757dd195e7fa07ae3573f71522e857bd5608",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
     },
+    "source:1ff52d59c308e66844d0b82d": {
+      "kind": "research",
+      "reference": "evidence:sha256:c087d03bb1f3ebda2a848b0f303a8195e3ce8cacd14612033d7ad381eb265f46",
+      "revision": "d22e8b54048cd7dea68a4c8e22606f70f0d43487a430e86e0ef435ef7f9cf3ff"
+    },
+    "source:20041cdd2bcc0389cd9196b5": {
+      "kind": "research",
+      "reference": "evidence:sha256:2bdd6618bdc7d78d53694028569a5e8924b14af0bd23bd2f5a3dcabe2b43ed5b",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
     "source:27f4877221abf4c0ff661bf8": {
       "kind": "research",
       "reference": "evidence:sha256:ba5d232314a4b82625efe921fe05d75e991e84dc77da317e57d3f5d2dfd2af32",
       "revision": "6fe4800383d650de73da3b5240d4fa762174db391e911bb301a1037a145d722f"
+    },
+    "source:2983b7e5d22bb3dcba948f0d": {
+      "kind": "research",
+      "reference": "evidence:sha256:e5119810a5df1b023ead41b0ad1324b6f177741e5d45a3a550c2736b73519440",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:2b0a659b84a7be1aa2f66298": {
+      "kind": "research",
+      "reference": "evidence:sha256:84754b12478ffbde228adfae30855a9b78b2d03c064bc7ea4968fe9f3a65b49b",
+      "revision": "c7d380edb304b11c4dd279b875c828070d86e70bd9784e722425b297f16b7cc5"
     },
     "source:2b13509e77a97d54c609254d": {
       "kind": "research",
@@ -588,10 +903,25 @@
       "reference": "evidence:sha256:9bed62b3335e92d4c1ba23c8e401b265a0d4f3e2ce61c87f11c1da3a11c3c82c",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
     },
+    "source:464f8c6e1867f92278edb2a5": {
+      "kind": "research",
+      "reference": "evidence:sha256:4aae04475983c13d8051beecc6a7b7759a5804b1072d050ab066e8b1dabb53e9",
+      "revision": "f015748edd803123c9e340493d74badebf1811aaadc9eb2275b7ff061c689a8b"
+    },
     "source:4783ce69935d87a443ad4677": {
       "kind": "research",
       "reference": "evidence:sha256:35afbf6ea16669b9f68815a5882eeada1135b52f28d25c2190dbe8ea3b73452a",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
+    },
+    "source:478aa5214db7591a4178023d": {
+      "kind": "research",
+      "reference": "evidence:sha256:f5752e062854dbbd21d2b00a03c0fdf814ca5008a61aea9e0e9690e0a457dfed",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
+    "source:4a4e93258b11bdacc9a7c136": {
+      "kind": "research",
+      "reference": "evidence:sha256:cd4957b6c8dfb53274789d9b2358b60d8e00b2ce2a862f31f4c0bdd2965914a1",
+      "revision": "a39e45f67c897e93b9ad756211a9fb0018a0ab687e7a727496417f65f78a6297"
     },
     "source:4ae5fef38f296b8e5f9433c6": {
       "kind": "research",
@@ -618,10 +948,20 @@
       "reference": "evidence:sha256:c792e761ec733d3a2bad903a54eface9606df9ece03cd99eecce689b35c23900",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
     },
+    "source:5688d278256c54cd7f71d090": {
+      "kind": "research",
+      "reference": "evidence:sha256:e9d88ee359899738c53b025187068708aec75d20dbc7764b759977974a812c5f",
+      "revision": "cc4d3efb6f717aa32d460d7c123382bc1219fd2ae509de6c67b8c3bbbb50ad4b"
+    },
     "source:57b6917954bdb131dbfe4b52": {
       "kind": "research",
       "reference": "evidence:sha256:92aa79e9d27b9036a91fa9d0e19fbe0248c9ccb623193b60d61591a99951016a",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
+    },
+    "source:5909d1d0b506c363d89ce82e": {
+      "kind": "research",
+      "reference": "evidence:sha256:80913d3ef8c2b613e27951e3f55a9f308c5afd738c8c77a0878fa5275ca454ee",
+      "revision": "32ad92bedf896be48eabc630ba9d7eba07a3ba3b0110c2a9f469a70b1ef0dcd4"
     },
     "source:59803344b710919296d05e7c": {
       "kind": "research",
@@ -643,20 +983,50 @@
       "reference": "evidence:sha256:c50f389fc5a2a27ca3f513f3b466351fb9655bdb129d989bef64b54771a43d54",
       "revision": "56cc9ce849700d6dc6633751406a1bcc36117264c43cf87286cb67d4ebc0e5c1"
     },
+    "source:5bbfbe34fed3ef79b4d47a9b": {
+      "kind": "research",
+      "reference": "evidence:sha256:789b40f03c67d06a5b95112c3c845b2a3fe6c10d7e9c1d30a7c3512cbcbc5c55",
+      "revision": "a39e45f67c897e93b9ad756211a9fb0018a0ab687e7a727496417f65f78a6297"
+    },
     "source:5d93a3a50c4ca3d011f49870": {
       "kind": "research",
       "reference": "evidence:sha256:fa9f47a88bf62a3fa5f9fdd672f3cf33b716e02aec6edcd98ac78df4f9b0fd27",
       "revision": "fc77e0dcd085176aac2797e70f9ee360330f5b3f2b15dc4191830d9090de43fd"
+    },
+    "source:5e2ba3f8e2ef7bda3564b1e2": {
+      "kind": "research",
+      "reference": "evidence:sha256:d82ee789e50d4d15df693ef0c3c3a7e83c4eef9446bcf461df1ade406cf84c13",
+      "revision": "86c110b759b8cdb36d35a87c85ffe98ab1eda386fe064b682c632b8d8e545fb5"
+    },
+    "source:606153f11497db572ae68c81": {
+      "kind": "research",
+      "reference": "evidence:sha256:7c326cc13bce47d3da5698d54e90f94d3f8800ecfbcd4f80b29c2b6b2b98d352",
+      "revision": "c58cb0a6f99f843ba517778ce14aa7b66d29a23996d1dab6a59b35ea2f679a31"
     },
     "source:609aaf19a2ff2819e011ad00": {
       "kind": "research",
       "reference": "evidence:sha256:ede59c6b3791398c94f431554491005952ddade7bd4205b77454410312597793",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
     },
+    "source:61536b8c20025432f5490d0a": {
+      "kind": "research",
+      "reference": "evidence:sha256:8d529d50b9c956037c050c5c4e5eec48d263f8a90958244b4c31caede225686c",
+      "revision": "2078ec1a19f0d7d4fc46904b7a874771d04850a7bc77def220613e3e2fafe2dc"
+    },
+    "source:61d8e82f51681c3979afd89c": {
+      "kind": "research",
+      "reference": "evidence:sha256:688f912d813dde6162358eb97c02607ef9759c13dafc5b3d6e288c8a8384bfbe",
+      "revision": "f015748edd803123c9e340493d74badebf1811aaadc9eb2275b7ff061c689a8b"
+    },
     "source:62b026f5e1158bcd45531f68": {
       "kind": "research",
       "reference": "evidence:sha256:9ca54b3d8023f924ca05b1ea3124a26f52263ce9099aa6cc72c382a8fa86467b",
       "revision": "6fe4800383d650de73da3b5240d4fa762174db391e911bb301a1037a145d722f"
+    },
+    "source:684af635bc078d375890c270": {
+      "kind": "research",
+      "reference": "evidence:sha256:32c522737c79f7a6b26eeaf3354cb86bc6fec3c453b76cdd40281530be044a68",
+      "revision": "32ad92bedf896be48eabc630ba9d7eba07a3ba3b0110c2a9f469a70b1ef0dcd4"
     },
     "source:6a2c3a430c65d25915c40b7a": {
       "kind": "research",
@@ -668,10 +1038,20 @@
       "reference": "evidence:sha256:72b8fa3f52d11200c72c01238c86f0a26dc82d1e6bd225208890147864f711fd",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
     },
+    "source:73004d5e66e05d50ea33e956": {
+      "kind": "research",
+      "reference": "evidence:sha256:1a3cc6ec07e9853e9a4565d00272520f7bf1d778d23a2133692145d0be4feb60",
+      "revision": "cc4d3efb6f717aa32d460d7c123382bc1219fd2ae509de6c67b8c3bbbb50ad4b"
+    },
     "source:7b9cd4874ffee87e1e27757a": {
       "kind": "research",
       "reference": "evidence:sha256:19faaff9ca5751dca4502ef5009855c6ec9b5b88dc89c2220883114f1740c65f",
       "revision": "021acca5cfb4f55976b9ea2ee9e61e72f2690a427a0cc96cbdd64859adf8c2f0"
+    },
+    "source:808f379090bf497438ddfb1d": {
+      "kind": "research",
+      "reference": "evidence:sha256:b93a659a7eb43c35514b15ce151ebe28c4ce43761670d66412616ca383754308",
+      "revision": "c2ae0f44329b03ab43a4c946138655a5bc4328ac01ed42e284f646e0bbb0a178"
     },
     "source:81f0513d2a8749233f7495b5": {
       "kind": "research",
@@ -682,6 +1062,11 @@
       "kind": "research",
       "reference": "evidence:sha256:d56b965b34abfe833208448848a6099cf4d8a0aebc160aa2f736d28e1cd957f1",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
+    },
+    "source:8268914a023e00b04d038a43": {
+      "kind": "research",
+      "reference": "evidence:sha256:25da69681a77d793eadd81a4b6fa000fa9b35795bc2b6a88d985ac493e488e86",
+      "revision": "a39e45f67c897e93b9ad756211a9fb0018a0ab687e7a727496417f65f78a6297"
     },
     "source:854fd18ed33d5c3a2c05681e": {
       "kind": "research",
@@ -703,6 +1088,11 @@
       "reference": "evidence:sha256:3b76c54482335dd18112025ce56069ceacf0f86a6ea27c33e65979dab0d70b1c",
       "revision": "6fe4800383d650de73da3b5240d4fa762174db391e911bb301a1037a145d722f"
     },
+    "source:89db07f953285a5ca3ced21c": {
+      "kind": "research",
+      "reference": "evidence:sha256:7fb3f647d300a3caf8a13a5ddfdd677d2a2e354468e16dd0ec469e24c00979a1",
+      "revision": "d22e8b54048cd7dea68a4c8e22606f70f0d43487a430e86e0ef435ef7f9cf3ff"
+    },
     "source:8b01b8770ca86ee8ac4fbe8f": {
       "kind": "research",
       "reference": "evidence:sha256:e8feca1be1c7d607ff9569211dd3ff649e23a443ae1c17a7f35a70e17fad8dc3",
@@ -712,6 +1102,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2e6cb81fda1d0fa0007be67d8da3e25b9e4c0a5bda4ceb3a57dd613e2fcb9ccc",
       "revision": "56cc9ce849700d6dc6633751406a1bcc36117264c43cf87286cb67d4ebc0e5c1"
+    },
+    "source:940e9185c3dfbc49e1d7436f": {
+      "kind": "research",
+      "reference": "evidence:sha256:0ce6780c72de9da0e75c61e238a2888dc1036aa8c85b04ddc944c2106c97ec8b",
+      "revision": "fd7e7f82a97a4d3e34ef9e9d431433d9f38907de9ffa01d825b77e25467efa68"
     },
     "source:952d3e29f5632a253366a35b": {
       "kind": "research",
@@ -738,6 +1133,11 @@
       "reference": "evidence:sha256:ae543649085b3767fdc78422a395b64be7e5fcd0b73472843d6a9d7296a10467",
       "revision": "29e500b0b79e062f2a6c276d473ed3e58f6c2f2add5fc0dc6760e696b5ed084e"
     },
+    "source:9e7efdc30e5d6503a03b16f5": {
+      "kind": "research",
+      "reference": "evidence:sha256:1952a8bd16c9cf2d5b9e35aef079aa1fd64ac209f40510f3461da02f5db6bcea",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
     "source:a2d216cb4bbde574bd37506a": {
       "kind": "research",
       "reference": "evidence:sha256:b58a4ac293f300bcd14d31fa0bcdad30c6b672236a299a00f504f9f8e38cd522",
@@ -753,10 +1153,25 @@
       "reference": "evidence:sha256:61b3651b9388534bee04fea113af3c41fb2f4ed49fd6c0b9ccd3df9da332424c",
       "revision": "fc77e0dcd085176aac2797e70f9ee360330f5b3f2b15dc4191830d9090de43fd"
     },
+    "source:aad86e614a502e20f2fe0fcf": {
+      "kind": "research",
+      "reference": "evidence:sha256:b75c7047e8d36f0fc370874e2e72154dce9bb6470506145e7642a5d6d020c988",
+      "revision": "fd7e7f82a97a4d3e34ef9e9d431433d9f38907de9ffa01d825b77e25467efa68"
+    },
     "source:adf366a622cefccd4f80ccc9": {
       "kind": "research",
       "reference": "evidence:sha256:e88c5b15a8c488b2fa79e62a96466a47bfe601b03447016de68f73a619c63010",
       "revision": "56cc9ce849700d6dc6633751406a1bcc36117264c43cf87286cb67d4ebc0e5c1"
+    },
+    "source:b0cfe5dd277bee7bb9cc5f8a": {
+      "kind": "research",
+      "reference": "evidence:sha256:e65b783cd3107e34eb42e8868bb7031c8e6d8857700351fe258ef043b8a2ab14",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
+    },
+    "source:b13b3c83141d15b7f185c65d": {
+      "kind": "research",
+      "reference": "evidence:sha256:b52e26e5ff24e9c61b33486948e7d2da42c633481e85d3ddbeadaad1931201c0",
+      "revision": "c58cb0a6f99f843ba517778ce14aa7b66d29a23996d1dab6a59b35ea2f679a31"
     },
     "source:bb0792aa851bd3d65f7520c5": {
       "kind": "research",
@@ -793,6 +1208,11 @@
       "reference": "evidence:sha256:17d7b1232beedd8ff6be7a044869bc330bf3317b5c613a7aa310ec5e15a28331",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
     },
+    "source:dabc080e9fd990368e0dc7f6": {
+      "kind": "research",
+      "reference": "evidence:sha256:8d4cdd8f9db9a027ca73899db02f774a8677c83be6af35bd9116e705cab3f3f6",
+      "revision": "c2ae0f44329b03ab43a4c946138655a5bc4328ac01ed42e284f646e0bbb0a178"
+    },
     "source:dd512b96345d1de16e4801b1": {
       "kind": "research",
       "reference": "evidence:sha256:b1de0b50907098226408968c3a8eb1a2284755fb058578ae231d065d51b4d7d4",
@@ -813,6 +1233,11 @@
       "reference": "evidence:sha256:c70181104584989fa07b391dd7bf4e0c56bd2a496b491b973792eed4bffdf1a7",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
     },
+    "source:e824b19211319c945c49a111": {
+      "kind": "research",
+      "reference": "evidence:sha256:cdf7ae62a6833bc3a0e2134500519d142a65d0affdabb32f7157cca2801f9817",
+      "revision": "b3ec2cd0827e66a4a6c73d4da459d160328cab77346b33e75e6611d7d42b245e"
+    },
     "source:ea448c501476104995c3c126": {
       "kind": "research",
       "reference": "evidence:sha256:10f970d5ff3ae09d8d707aec4078bdd3b167d282f5a56cd0fba496034cebde27",
@@ -822,6 +1247,11 @@
       "kind": "research",
       "reference": "evidence:sha256:7864ef40c3b89590d94f7e2e2884b71a89a93f8dbd551852972d57fa8b54edf8",
       "revision": "cb2de478dd067f5a282ad06471229bbd2abb69dba0ae9af5c5a13940aa635aa4"
+    },
+    "source:ecbae4ce30430ea76a6c3dc6": {
+      "kind": "research",
+      "reference": "evidence:sha256:116b880cf8e910ac74c9fea8327b51e6127b5e4f8dc0a4b569590707e0887b1f",
+      "revision": "b3ec2cd0827e66a4a6c73d4da459d160328cab77346b33e75e6611d7d42b245e"
     },
     "source:ee0690c2ceaf0c1cdd10a967": {
       "kind": "research",
@@ -833,10 +1263,30 @@
       "reference": "evidence:sha256:d994efa115b1156f480194b1c0f21a65edb479ea21b2a50b875fe9dbf818b010",
       "revision": "f46d0df755da0dbf122dacd12ad4d7dd077dacdc3b99c655e54fb0bba38bb198"
     },
+    "source:f4b6988e3fee1a36f321d59a": {
+      "kind": "research",
+      "reference": "evidence:sha256:bbb75db75f1176388e87fc985924b8e42faa82c662e469fce3d05ab2f1b365a5",
+      "revision": "cc4d3efb6f717aa32d460d7c123382bc1219fd2ae509de6c67b8c3bbbb50ad4b"
+    },
+    "source:f7217eb257ce7feb6db7fc71": {
+      "kind": "research",
+      "reference": "evidence:sha256:9097a7cdf4127cac28ede1259e861973105bc58ac0fac1d1db2c882d32176b65",
+      "revision": "b3ec2cd0827e66a4a6c73d4da459d160328cab77346b33e75e6611d7d42b245e"
+    },
     "source:f758f8736d4467b94aead9f8": {
       "kind": "research",
       "reference": "evidence:sha256:ebe528e2c058e9df3b18e829b13c929898f5cd1d9519a37054270db029a2fce1",
       "revision": "3df904c4a3b13fe14c2e11d1517d48c006aff84788595cb722fc6d099398571b"
+    },
+    "source:f7c287f9a5b73f2de8a50996": {
+      "kind": "research",
+      "reference": "evidence:sha256:fe0b93351bdacc6a0473bcf8e6c293d8b41892bddc38664c0c42af4b6048bb80",
+      "revision": "cc4d3efb6f717aa32d460d7c123382bc1219fd2ae509de6c67b8c3bbbb50ad4b"
+    },
+    "source:f8feaff88e778c40d44407c1": {
+      "kind": "research",
+      "reference": "evidence:sha256:56b26e7a090637a3d0fdebb103896224a3b082237eed974474017584535244d2",
+      "revision": "d26b6f13f39c934ced6d905106fa03d3cc22ed454a6ea70d99cd65c6ec61f27b"
     },
     "source:fe72ee8a9d991c85acdb0660": {
       "kind": "research",

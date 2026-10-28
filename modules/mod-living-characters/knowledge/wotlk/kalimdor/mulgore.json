@@ -101,6 +101,29 @@
       "title": null
     },
     {
+      "entry": 2951,
+      "name": "Palemane Poacher",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:2951:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2182ff0e5357c6a8744b67e2",
+            "source:048e04fd485f480bd40c741a",
+            "source:27ce8e7c2d578c5f5a4d8056",
+            "source:57fd20a2c9c4467a69accd4e"
+          ],
+          "text": "A Palemane gnoll poacher in Mulgore, she is part of the threat to local wildlife that has driven the tauren to abandon attempts at peaceful communication. Her combat taunts about fresh meat and bones give her a predatory, hostile edge.",
+          "when": {
+            "entry": 2951
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 2952,
       "name": "Bristleback Quilboar",
       "records": [
@@ -815,6 +838,27 @@
           "text": "Flatland cougars roam the Mulgore plains and surrounding areas.",
           "when": {
             "entry": 3035
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3051,
+      "name": "Supervisor Fizsprocket",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3051:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:495d3fc9f22158de5f30cace",
+            "source:068046304f61b2784c6907c6"
+          ],
+          "text": "Supervisor Fizsprocket is named as the Venture Co. mastermind behind plans to drive the Tauren from their lands and leave the way clear for the company to plunder them. Morin Cloudstalker wants him killed and his clipboard recovered, hoping it may contain useful information. He is located at a Venture Co. mine east of the ravaged caravan.",
+          "when": {
+            "entry": 3051
           }
         }
       ],
@@ -3198,6 +3242,11 @@
       "reference": "evidence:sha256:f1e06d81a3d67fff019967959cf4378ee3179e2f49fef9ee717d220504bc556e",
       "revision": "e727fb487af11127dee47c406f54b9c3db8d9536b4f22f55817a100e02cba730"
     },
+    "source:048e04fd485f480bd40c741a": {
+      "kind": "research",
+      "reference": "evidence:sha256:c60582fc7c363382854237d358fb8168f7add6ccc70589191315a3017d6613c3",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
+    },
     "source:058577d90f1924506e9bd70f": {
       "kind": "research",
       "reference": "evidence:sha256:c77e6d3e5ec6093ebc5e2eb3e4cafd1fe34f040db71749c5ae9f1cc98446b657",
@@ -3207,6 +3256,11 @@
       "kind": "research",
       "reference": "evidence:sha256:4ff395161e2da5fbd97b45a66b518a5fa540e376adcafa300ce4e189fd57f366",
       "revision": "f4f065e3fc3ed7de66191a13a689a90f601c6a7f385b6c4d28fc54874253eb9b"
+    },
+    "source:068046304f61b2784c6907c6": {
+      "kind": "research",
+      "reference": "evidence:sha256:4f6b34b19b9af9b57b7a67d273916403a5589b41a7b75c052083956d1872e7e4",
+      "revision": "439a0c267d6442c551f384e45bcb48978927972a364ae438716e58e493d01627"
     },
     "source:07ea508b62c184987892f61a": {
       "kind": "research",
@@ -3443,6 +3497,11 @@
       "reference": "evidence:sha256:998cc65d7575639e072d3551e31493d6ce990920308905ecfadf2cca5edb0e29",
       "revision": "190f5c0546e58608840842200ba1423bc4841ef96652b698ec92460f85f6f8c4"
     },
+    "source:2182ff0e5357c6a8744b67e2": {
+      "kind": "research",
+      "reference": "evidence:sha256:c1e1fd63f175366fede252c0f89096991b84f2527f3bda6301fb2b121893bd63",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
+    },
     "source:21b4539becb7d056155f46cc": {
       "kind": "research",
       "reference": "evidence:sha256:4ac0e951e6c22200ed2a104bec58e79ebe7874888a267be869473a10df53275b",
@@ -3532,6 +3591,11 @@
       "kind": "research",
       "reference": "evidence:sha256:665ae0ca277c07003e4b18c2aaad052b35a848bc10d019af49f33bbaeff90ea5",
       "revision": "1690139ff28a7ad445c32ce91ee9bdeddb50d2fc4161f7aa8ad78f296902b58a"
+    },
+    "source:27ce8e7c2d578c5f5a4d8056": {
+      "kind": "research",
+      "reference": "evidence:sha256:5af59d121b4ddbd2c82f1e7d2c9d5b552996dd85f065c310444ce3702fa5b528",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:27e597fb4042244bda53b8a6": {
       "kind": "research",
@@ -3768,6 +3832,11 @@
       "reference": "evidence:sha256:6c09a87409516ce7b23e9e5b6bd2331fc080d8ea84751655031a4958c5cad428",
       "revision": "c018b61bbf6eb83ad51363a05a9f1e570e14cc06691c84b9d822558783f3065f"
     },
+    "source:495d3fc9f22158de5f30cace": {
+      "kind": "research",
+      "reference": "evidence:sha256:d46eb7440f037dced731bd253d7c61cb45eb665ffcb12dfb575bf583092309fd",
+      "revision": "439a0c267d6442c551f384e45bcb48978927972a364ae438716e58e493d01627"
+    },
     "source:495ef493b679a409bc8cdee2": {
       "kind": "research",
       "reference": "evidence:sha256:ed7a854ebed01e81b5c455d5e1bb816782833d4a3371cb9b210f01c8f4de283c",
@@ -3857,6 +3926,11 @@
       "kind": "research",
       "reference": "evidence:sha256:a8e8b767aabc917749f4c73503dbaf667212eb53f5c5a9fc2e6163e28c429223",
       "revision": "ab9de1a0258d56be2bcf04ddb00599e2aed14f9dadef48df0b471fd43ad5022a"
+    },
+    "source:57fd20a2c9c4467a69accd4e": {
+      "kind": "research",
+      "reference": "evidence:sha256:7f279acca5adbc01da85dc4f8e4dd233764dcbec24c7bcbca66776d1ffc96e81",
+      "revision": "5e728774f58c88ba027caa7b3f192304e20c529dba787998d09f5e25a9b9c219"
     },
     "source:5831aa7c4a147b295998744d": {
       "kind": "research",

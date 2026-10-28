@@ -2036,6 +2036,27 @@
       "title": null
     },
     {
+      "entry": 2105,
+      "name": "Mountaineer Dokkin",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:2105:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b7138fe52a9f5303f55e4a0d",
+            "source:366444b13e53af3ddfb6734d"
+          ],
+          "text": "Mountaineer Dokkin is a mountaineer.",
+          "when": {
+            "entry": 2105
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 2476,
       "name": "Large Loch Crocolisk",
       "records": [
@@ -2476,50 +2497,6 @@
       "title": null
     },
     {
-      "entry": 2909,
-      "name": "Hammertoe Grez",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:2909:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:98909af27f24fb58ee4cfed5",
-            "source:a31b0670d20ed0bbe68b92ca",
-            "source:aef7875d03a0ec6a8c181f4e",
-            "source:5a8fbaf089d24fd7451d6d09"
-          ],
-          "text": "Hammertoe Grez is a dwarf who was investigating the origins of his people and the titan excavations while trying to stop the Shadowforge clan from using scrolls to make stronger golems. Wounded and held in Uldaman, he asks for his amulet to be recovered; he wants it brought to Prospector Ryedol, who knows of his research and mission.",
-          "when": {
-            "entry": 2909
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 2932,
-      "name": "Magregan Deepshadow",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:2932:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:98909af27f24fb58ee4cfed5",
-            "source:590288b49fe4f6e67e614a00"
-          ],
-          "text": "Magregan Deepshadow is identified by the wounded Hammertoe Grez as the dwarf holding Hammertoe's amulet. Hammertoe fears the amulet could lead the Shadowforge to scrolls for making stronger golems. Magregan's combat behavior includes casting Whirlwind.",
-          "when": {
-            "entry": 2932
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 3290,
       "name": "Deek Fizzlebizz",
       "records": [
@@ -2635,94 +2612,6 @@
         }
       ],
       "title": "Baker"
-    },
-    {
-      "entry": 4845,
-      "name": "Shadowforge Ruffian",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:4845:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:086ebe2375bc7b8d405e911d",
-            "source:26638265684e9c8a4c4d8c74",
-            "source:19cf63274521bc8b43e3b47e"
-          ],
-          "text": "A Shadowforge ruffian, this hostile humanoid fights with Kick and may flee for assistance when badly wounded.",
-          "when": {
-            "entry": 4845
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 4846,
-      "name": "Shadowforge Digger",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:4846:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:8323185087f7a973e58481a1",
-            "source:42325b7cad58211225dcadae"
-          ],
-          "text": "A Shadowforge digger, this hostile humanoid uses Sunder Armor in combat.",
-          "when": {
-            "entry": 4846
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 4856,
-      "name": "Stonevault Cave Hunter",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:4856:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:0b55dd8e414c587f3dc1d21f",
-            "source:679ea1ff4f0b4a0f98857c83",
-            "source:4a40ee214e3095d5ca123bbc"
-          ],
-          "text": "A Stonevault Cave Hunter is a humanoid combatant that can throw at an opponent in combat.",
-          "when": {
-            "entry": 4856
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 4872,
-      "name": "Obsidian Golem",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:4872:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b4df104b9df5e7f881c35c7a",
-            "source:db60f8b41ad937a6d816b3d0",
-            "source:a36b502343bbe1f7ceda3aca",
-            "source:65aa016d117b6db93d8cafb6"
-          ],
-          "text": "An Obsidian Golem is a mechanical golem found in Loch Modan.",
-          "when": {
-            "entry": 4872
-          }
-        }
-      ],
-      "title": null
     },
     {
       "entry": 6030,
@@ -3390,11 +3279,6 @@
       "reference": "evidence:sha256:adeb4cc093f8c08f6eeff1023ae80cdb8be00514914dd34c22137c5cbce229d6",
       "revision": "952700806f5667ab633c1605d517393ee318e6f1f7580751efad489a5d1c497a"
     },
-    "source:086ebe2375bc7b8d405e911d": {
-      "kind": "research",
-      "reference": "evidence:sha256:a7b79fe1aadfead5dfcfd8a88f14c346f1b6468b35d425cd303523a302500c9e",
-      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
-    },
     "source:08c0378f97dc4d46dd1e9081": {
       "kind": "research",
       "reference": "evidence:sha256:6f9506d64b6f037959c70ae6213f328c03d77a73a4833473a76a70c347a93046",
@@ -3424,11 +3308,6 @@
       "kind": "research",
       "reference": "evidence:sha256:0a2ba4044b1fa7b20fc483bc353ef6b80c7f76861c28ed9546758208526d1cf0",
       "revision": "fc3629cbab136e53a81ffdc0b59159732b79767b5ae1db830ee73e05139b56e8"
-    },
-    "source:0b55dd8e414c587f3dc1d21f": {
-      "kind": "research",
-      "reference": "evidence:sha256:4ec5e18b852e8be4d2a020dcb580070bd1a0cfc07be640cd9d1489f04ad50a08",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:0cf28d97a7e2f802b79fadaf": {
       "kind": "research",
@@ -3535,11 +3414,6 @@
       "reference": "evidence:sha256:789c1901316278b002c45c4da2e0da6a095df45ddba6416cf2f61916bc904163",
       "revision": "fc3629cbab136e53a81ffdc0b59159732b79767b5ae1db830ee73e05139b56e8"
     },
-    "source:19cf63274521bc8b43e3b47e": {
-      "kind": "research",
-      "reference": "evidence:sha256:35abfd8b0f1f58cd99ae7f1568401e9ea67f09cd40bb1da5ef0e0a5f675ca47c",
-      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
-    },
     "source:19ffbd4f3580f4ee5a8e2fb9": {
       "kind": "research",
       "reference": "evidence:sha256:df4ead21fb905e5730e9da0a24cfc7d3c50bb991f4923a2ccf622e92fe86e78a",
@@ -3629,11 +3503,6 @@
       "kind": "research",
       "reference": "evidence:sha256:9a01661fc7f338d2d0d3dee3794fc2e09d828897037c8d88619b901b89be2713",
       "revision": "6bef539e1f9451692267e848c69586eeff402b06c060e83c8a0c63e895216b0f"
-    },
-    "source:26638265684e9c8a4c4d8c74": {
-      "kind": "research",
-      "reference": "evidence:sha256:fced71bf739c4174869eea8ab6ce5f2fb7802953d31e73104be6ca94fcb3aa1a",
-      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
     },
     "source:268d502003c80ad41f78cdea": {
       "kind": "research",
@@ -3805,6 +3674,11 @@
       "reference": "evidence:sha256:9f12d6b5658a8c50bdcf2b1f1652c9dd9f53dd0bf9829d6b9ded855f65902fea",
       "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
     },
+    "source:366444b13e53af3ddfb6734d": {
+      "kind": "research",
+      "reference": "evidence:sha256:a5ca75c22ba4d1b8cd6d6db26a32ce9e7b9b6402a057a018cc6bebfd6144688f",
+      "revision": "14b61d6c183357fd5f30e4d828679684dc2fca2b697b71af4a8cc222c9a9ebee"
+    },
     "source:36e5a1e6f44da980118e8d5c": {
       "kind": "research",
       "reference": "evidence:sha256:0cb73f11c9c3f508f9531a13484c24c5f47a722ef096504fb6ab6744bf601bd2",
@@ -3914,11 +3788,6 @@
       "kind": "research",
       "reference": "evidence:sha256:247484ef6163465c7181979b30a923f1e8c4023f05193fb3c4f230fdc22d6d8d",
       "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
-    },
-    "source:42325b7cad58211225dcadae": {
-      "kind": "research",
-      "reference": "evidence:sha256:18cad2993e9d24a2a9317dd36219ef85ec68339c49190b1cda187ad4f439f6fa",
-      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
     },
     "source:423a98c1d6e8c48fb041f3d5": {
       "kind": "research",
@@ -4054,11 +3923,6 @@
       "kind": "research",
       "reference": "evidence:sha256:e06a6722c9f8a3cd544a1af870ff8f9ad319c926baa5cf39d95e6980c65b81e0",
       "revision": "a899c6a28cdab72cfe96ced7bc2caec1cd61d55cf003518b17b3716f3634c69c"
-    },
-    "source:4a40ee214e3095d5ca123bbc": {
-      "kind": "research",
-      "reference": "evidence:sha256:9aed4a946002f0ea236818365cb29233674c88a70974df2f34b45b7abf894b95",
-      "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
     },
     "source:4af48753605091ad633f9763": {
       "kind": "research",
@@ -4225,16 +4089,6 @@
       "reference": "evidence:sha256:17f4d639bc1df6d3bf45e5d77d5f033055eaa3abae06eff5a8972e8f9a1bdf86",
       "revision": "759976b9c68ab39e1bce637c879e6ca5014d382a5dad3d43988e3b6557e609e8"
     },
-    "source:590288b49fe4f6e67e614a00": {
-      "kind": "research",
-      "reference": "evidence:sha256:13bb2dc32ef9ffea4571386cd57705075f768eff8cb5b9ee670d31e8c31136a3",
-      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
-    },
-    "source:5a8fbaf089d24fd7451d6d09": {
-      "kind": "research",
-      "reference": "evidence:sha256:4d8686786b3cd212fbde6a322dfa8adc52420687e5fdec601100a1f48453e09c",
-      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
-    },
     "source:5baed23eba4b6b065f6319f9": {
       "kind": "research",
       "reference": "evidence:sha256:f406f21ddabb529dbff8df650cefc58d9982f0279a78a244ff37653160f0be74",
@@ -4340,11 +4194,6 @@
       "reference": "evidence:sha256:d034dad2a483f0883bea2bd9c590b66a779441bd6c3fad55beea7b86f0742586",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
-    "source:65aa016d117b6db93d8cafb6": {
-      "kind": "research",
-      "reference": "evidence:sha256:62424643457695f86e0b088028899c683b6b377f1466779414903da063022e3d",
-      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
-    },
     "source:6606a43edd1258b0bd1dc045": {
       "kind": "research",
       "reference": "evidence:sha256:5d98a42601e03e17e58c27913ada4f46b4dbd9324234f9a7193655917a6f88f2",
@@ -4359,11 +4208,6 @@
       "kind": "research",
       "reference": "evidence:sha256:8960ef761c440070a1770d019a76dd83cc0f74825a7d5b96bad758d1952a739e",
       "revision": "d7e5b7159bb731ea70ff37bf612f26618114f598fa858b3232c542ddef235c27"
-    },
-    "source:679ea1ff4f0b4a0f98857c83": {
-      "kind": "research",
-      "reference": "evidence:sha256:ab826431ffdcb696767f5f427b5235a80a33bc35dee85f9948164286465eea96",
-      "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
     },
     "source:6857210a58e3fecabb4b4253": {
       "kind": "research",
@@ -4680,11 +4524,6 @@
       "reference": "evidence:sha256:7bcfbfea2b5456f7d08533548bd60d8374df1f428a59faa69ef0eb72030f9bff",
       "revision": "2da17711b9db139c44b61b151e6d32b6e8d817aaa19697b058d2bab5860cfe0b"
     },
-    "source:8323185087f7a973e58481a1": {
-      "kind": "research",
-      "reference": "evidence:sha256:371dc7d45ffe3f58e25304b204196a8407da045b703082f34ca6ba64874c6977",
-      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
-    },
     "source:83b3436823ff076a5b55dc22": {
       "kind": "research",
       "reference": "evidence:sha256:c3dc7958c7f5634a4a5bfd15063db72ab8849eed314ff4e39de6147ba14f8ee6",
@@ -4870,11 +4709,6 @@
       "reference": "evidence:sha256:2fcc7ab06bd7367bfe7ede7e3cf1a991fffb02b25fc75dfa58ebd324e1d4cd7e",
       "revision": "eab6613e1a3201964e3c09b783784d8c419809fa1feed059039584bec3600eca"
     },
-    "source:98909af27f24fb58ee4cfed5": {
-      "kind": "research",
-      "reference": "evidence:sha256:f60cfd770e2bb3d7b33522162a6c2d7c7e3bd4251962862c24ede6ae6e1cc859",
-      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
-    },
     "source:98d6bc4b7b1b7a92d9eaebbc": {
       "kind": "research",
       "reference": "evidence:sha256:8708a864a1df3908030f273da5a04b9e6e47648689178e35229066f897710d82",
@@ -4995,16 +4829,6 @@
       "reference": "evidence:sha256:846e2344f69757131f0cb801e76faadeccdecd1621658a40fec81831ccbdc150",
       "revision": "98cd09cce7ff465e5ab88ddea5959b3e6090393c160b00fe0d958740be36f2f9"
     },
-    "source:a31b0670d20ed0bbe68b92ca": {
-      "kind": "research",
-      "reference": "evidence:sha256:4b23c8dbcb4724ca635be16b160f57b1481c841328da92337c647a3bb1e9b581",
-      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
-    },
-    "source:a36b502343bbe1f7ceda3aca": {
-      "kind": "research",
-      "reference": "evidence:sha256:4af1ab80bfa0e29a80868069f526b2c6ddf58f2484f966237b827b26c7e332cc",
-      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
-    },
     "source:a3af4735d2ed0b7f7f499152": {
       "kind": "research",
       "reference": "evidence:sha256:a7b779a09be0afdf59dcdcd9b8529c4236e6d0f8fd336ccc7060db0e7b1ec0db",
@@ -5100,11 +4924,6 @@
       "reference": "evidence:sha256:8209b77b478c445d6e9c9511c93a246cc2015a062dba34988d00c00121293640",
       "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
     },
-    "source:aef7875d03a0ec6a8c181f4e": {
-      "kind": "research",
-      "reference": "evidence:sha256:a96ce5395f01d89c6279a09823bd48b515a750686043d493dae395165b2cc958",
-      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
-    },
     "source:b05e9dd612ae1db76fdc91e9": {
       "kind": "research",
       "reference": "evidence:sha256:2cb6aacae3b92e9d5607a80e002c6e0175eaa58c02450927894e2e7a50c780d4",
@@ -5150,11 +4969,6 @@
       "reference": "evidence:sha256:552be4c7b194b407ab1ed86e7b929bc2e6f4526b8b212ebf621ae7e2a828e3cc",
       "revision": "a899c6a28cdab72cfe96ced7bc2caec1cd61d55cf003518b17b3716f3634c69c"
     },
-    "source:b4df104b9df5e7f881c35c7a": {
-      "kind": "research",
-      "reference": "evidence:sha256:409d7e289331826c9de944af745ea1b982d6d50fde0dd21cc4daa9f707552267",
-      "revision": "19c9440ead9638744504af14aabf2b4f3167d4c5148abf9fc613c530dd823304"
-    },
     "source:b52d5374655fb288e7821f44": {
       "kind": "research",
       "reference": "evidence:sha256:7d09522bc935182c3eb7857af2a552de20e135edf5e3ed0cae74c5c98e6715ec",
@@ -5169,6 +4983,11 @@
       "kind": "research",
       "reference": "evidence:sha256:24a4f65964f7fbfce9af299e02e9e3ebfcec1aa1ab01ec370a0fb4251f074a1c",
       "revision": "fc3629cbab136e53a81ffdc0b59159732b79767b5ae1db830ee73e05139b56e8"
+    },
+    "source:b7138fe52a9f5303f55e4a0d": {
+      "kind": "research",
+      "reference": "evidence:sha256:9e89b08bcec1e3d9eeb182fd64541a9a8dcf498fde9cb3eed9a674b09759b723",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:b7935e809e7e59013ef690df": {
       "kind": "research",
@@ -5504,11 +5323,6 @@
       "kind": "research",
       "reference": "evidence:sha256:8275ab3df59009ca3c85e5de8b4a6b7cb9b58cdd0778ecc0290a2f00fb19eaf4",
       "revision": "98cd09cce7ff465e5ab88ddea5959b3e6090393c160b00fe0d958740be36f2f9"
-    },
-    "source:db60f8b41ad937a6d816b3d0": {
-      "kind": "research",
-      "reference": "evidence:sha256:cbbf474a39c4bc60e73b521c866ffdc0c24d1dfe1d0c870f9c41a81f98fe288b",
-      "revision": "19c9440ead9638744504af14aabf2b4f3167d4c5148abf9fc613c530dd823304"
     },
     "source:dc325ea0fd39036b16cffce6": {
       "kind": "research",

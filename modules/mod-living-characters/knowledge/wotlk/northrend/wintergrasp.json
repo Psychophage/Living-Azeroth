@@ -4,116 +4,6 @@
   "map": 571,
   "npcs": [
     {
-      "entry": 27355,
-      "name": "Rothin the Decaying",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27355:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:38fdbd4960c259509d699075",
-            "source:9392abdc7c6a5f4f8b8b55b6",
-            "source:2068852ba39f37ce046b77cf",
-            "source:2721d6813e4a1a5ac1c20d6d",
-            "source:d7f86c2f0b23e0014ff60214"
-          ],
-          "text": "Rothin the Decaying belongs to the Cult of the Damned and, according to Serinar’s task, resurrects black dragons as magmawyrms in the Maw of Neltharion. He treats the ancient wyrms as valuable to his work, reacts with dismay at their loss and threatens anyone who interrupts him. He insists that death only strengthens, without explaining what it strengthens.",
-          "when": {
-            "entry": 27355
-          }
-        }
-      ],
-      "title": "Cult of the Damned"
-    },
-    {
-      "entry": 27358,
-      "name": "Burning Depths Necromancer",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27358:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:ad088cc442af63be132b6382",
-            "source:ddd23f134c74735c779db1ef"
-          ],
-          "text": "A Burning Depths Necromancer belongs to the Cult of the Damned. Serinar targets these necromancers among the cult’s forces in the Maw of Neltharion.",
-          "when": {
-            "entry": 27358
-          }
-        }
-      ],
-      "title": "Cult of the Damned"
-    },
-    {
-      "entry": 27362,
-      "name": "Smoldering Construct",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27362:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:af4ad586dd5585c29f7a4e1b",
-            "source:ddd23f134c74735c779db1ef"
-          ],
-          "text": "A Smoldering Construct is an undead creature encountered among the Cult atrocities in the Maw of Neltharion. Serinar calls for its destruction alongside Burning Depths Necromancers and Smoldering Geist.",
-          "when": {
-            "entry": 27362
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 27363,
-      "name": "Smoldering Geist",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27363:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:30709d0732d9aa4da0fe8ef1",
-            "source:ddd23f134c74735c779db1ef"
-          ],
-          "text": "A Smoldering Geist is an undead creature encountered among the Cult atrocities in the Maw of Neltharion. Serinar calls for its destruction alongside Burning Depths Necromancers and Smoldering Constructs.",
-          "when": {
-            "entry": 27363
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 27448,
-      "name": "Serinar's Presence",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27448:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:890377cfbdec5e4278b4319b",
-            "source:0f3ef1ccce1d19dd9718202d",
-            "source:8326a711e9bc29474b5f3019",
-            "source:2ae637c524c736dbeb11e348"
-          ],
-          "text": "Serinar's Presence is a dragonkin in Wintergrasp.",
-          "when": {
-            "entry": 27448
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 30368,
       "name": "Elder Bluewolf",
       "records": [
@@ -1181,11 +1071,6 @@
       "reference": "evidence:sha256:bd18999df2bfa500b41090baeb7a90e6deb63267059e3c962af056821fae5855",
       "revision": "73abf95546a7fea1cf66d8278bee48468dc10f300d415cd2a4a439a686166026"
     },
-    "source:0f3ef1ccce1d19dd9718202d": {
-      "kind": "research",
-      "reference": "evidence:sha256:ecfdd2293a6d975ff0493c36c150df6a09c45ce317e6bcc7b8fb010c103f9341",
-      "revision": "eb7c0b202d3bb190b9b21699b1504be241bee927e45193f618dbed6dac5450fd"
-    },
     "source:0f8fe71475d9f802988c35ce": {
       "kind": "research",
       "reference": "evidence:sha256:5bcb87f17c44e68a656266996f04b6acfd24d8451a69dacc597921aae447fef3",
@@ -1226,11 +1111,6 @@
       "reference": "evidence:sha256:1bc9b1c2afdadaa32566c87bc4006ff44f7ac76ec1b7c37333a6b038d56b1c03",
       "revision": "9750ebba83a761917103a196c73a75bed6c5a9d7b94cfe202eb621cfb44f783c"
     },
-    "source:2068852ba39f37ce046b77cf": {
-      "kind": "research",
-      "reference": "evidence:sha256:1cbd0696516bd423e455e927dee50799aadd5865152bb989760c8a5c04b9f2b1",
-      "revision": "b531432b04d6947b712f3f7a2d1f50673118b50dfcac715b0c9f4abd40c71cbe"
-    },
     "source:2084510ee916842f18846945": {
       "kind": "research",
       "reference": "evidence:sha256:21138f35c76bcad60420988963bbce6a31eb3d1683f98d6ac725307fa65b68cc",
@@ -1241,20 +1121,10 @@
       "reference": "evidence:sha256:56e77898e5aff510f95ac4aac41f6e62b30bad4dc7b8dba4461241687e8ddbc6",
       "revision": "f74ef67394f5537a45cdbcb041f76ba67633dd5ba5ae405ca3e406063edbfe80"
     },
-    "source:2721d6813e4a1a5ac1c20d6d": {
-      "kind": "research",
-      "reference": "evidence:sha256:b7591db3ce831908d1016bf322b18fe7f474173bc483783bf60c87d46c3f32f6",
-      "revision": "b531432b04d6947b712f3f7a2d1f50673118b50dfcac715b0c9f4abd40c71cbe"
-    },
     "source:27b43611e14b48235bca3e8b": {
       "kind": "research",
       "reference": "evidence:sha256:9cca501131fe28ef9582a90bacbf9fe959c0c8d1de9afac4c9235be2f6569793",
       "revision": "08141b0cafc14c94d1fb781ca0eb9562712917508809ea499133cdaba324cc61"
-    },
-    "source:2ae637c524c736dbeb11e348": {
-      "kind": "research",
-      "reference": "evidence:sha256:ea86345cc1e73abd77f1f41613a206d94905d864fd0736f7762bdac8983229e7",
-      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
     "source:2bbc03f178c7d0489409b11f": {
       "kind": "research",
@@ -1276,11 +1146,6 @@
       "reference": "evidence:sha256:ea277437c1cfc1889f47dfbc36fd1b5f7dee1912005cb1adfb73689704524dc1",
       "revision": "8c5f00657fdcc11d977df42cb7c485fe0b27374d7f806fc9756ce81edb332883"
     },
-    "source:30709d0732d9aa4da0fe8ef1": {
-      "kind": "research",
-      "reference": "evidence:sha256:e93baf2f2dfb6bd4c7779b1c0edef413ba3988a57ba24f6451053ba19b1bb258",
-      "revision": "46e170a193ed41dd4893af0260ee83e8b9d3bcdf785e411ba310724e10018031"
-    },
     "source:37753c3fd0691320406d7f35": {
       "kind": "research",
       "reference": "evidence:sha256:462b65a4b79d2b8c82b2fdf0e6011c35c5b4fa241d1c2ddb1445f54389726d4f",
@@ -1295,11 +1160,6 @@
       "kind": "research",
       "reference": "evidence:sha256:810f744221b208911a9e4ba949ba09bee1c86373f9958c34b8cb930fdca2239b",
       "revision": "f74ef67394f5537a45cdbcb041f76ba67633dd5ba5ae405ca3e406063edbfe80"
-    },
-    "source:38fdbd4960c259509d699075": {
-      "kind": "research",
-      "reference": "evidence:sha256:b77c26965b4bd2441c4440d25286d68903ce8dafbce8eb436827a01771ff9c8e",
-      "revision": "b531432b04d6947b712f3f7a2d1f50673118b50dfcac715b0c9f4abd40c71cbe"
     },
     "source:3d429fc806857eadddf130dd": {
       "kind": "research",
@@ -1536,11 +1396,6 @@
       "reference": "evidence:sha256:f67286074d838ec90905e4ba1ca3912990fa249eadb24a7f013932daf23297e5",
       "revision": "ed1a7a84a713dadfbc9583b0ac840b0886f03efd45cd4dbf2de6cef42aaeaae2"
     },
-    "source:890377cfbdec5e4278b4319b": {
-      "kind": "research",
-      "reference": "evidence:sha256:0b0ffd474e940c0265fc9d7bd84216d4afcdb74c2a33070f75f969345dd4a4e7",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:8aef66c2b87e33ad891c9ed4": {
       "kind": "research",
       "reference": "evidence:sha256:aed19577247b580537b2da065ec0741022d6919bb2674073cc73ec28b358df85",
@@ -1570,11 +1425,6 @@
       "kind": "research",
       "reference": "evidence:sha256:a23a3f645cfbd923a50c29ecb10f1177d89f9ff6fbe899d927d66bfc2fc79269",
       "revision": "fa449d49ea29808b6bc3078266e4411f948c6fec3d5fffd4d536be35f5830d36"
-    },
-    "source:9392abdc7c6a5f4f8b8b55b6": {
-      "kind": "research",
-      "reference": "evidence:sha256:b1ce25aa37c3129e0e6e7623a55fc40298cf0cbb917fd3da6483c7d2b006a6ad",
-      "revision": "b531432b04d6947b712f3f7a2d1f50673118b50dfcac715b0c9f4abd40c71cbe"
     },
     "source:94700cc705c7e2edcdbf8550": {
       "kind": "research",
@@ -1666,20 +1516,10 @@
       "reference": "evidence:sha256:d99dab0022fdd2482165c7700c8fa9d309ef8d3a3334750095779274d10efb61",
       "revision": "28246b228f9c05a524d08e051c57f3b1dfdbbf0b63c1424092c0bd5c20afb5a3"
     },
-    "source:ad088cc442af63be132b6382": {
-      "kind": "research",
-      "reference": "evidence:sha256:890a8a3a9ff78521b73ba630048a5301069fda0f4f0dfbad2667414bc5ff75b5",
-      "revision": "f0984b8251203ccc3ccd62e10ecd8d110d6c288740f95724548be135475ec13e"
-    },
     "source:ad6a8ba9f896b9dda314b4bd": {
       "kind": "research",
       "reference": "evidence:sha256:daf44abb1bda9e164cc1eb25ed4a4481ebd774105326f3d1123bf3e210d5a68c",
       "revision": "74f7b24822d0ea3ebce7c098bf6d2b9c1f313b51d5fc484429e928290e3ff305"
-    },
-    "source:af4ad586dd5585c29f7a4e1b": {
-      "kind": "research",
-      "reference": "evidence:sha256:f5fbe56e2ac5720711b4179ec2c2b58ff1286883a33e8e2aa12fc2e1fca93a20",
-      "revision": "557bc928fed1aa51000a1ee3f5faab6142988ff4cd57b900388c8d87a08da7ab"
     },
     "source:b115c0b1588926e565b28778": {
       "kind": "research",
@@ -1776,11 +1616,6 @@
       "reference": "evidence:sha256:9e086dd4cc745952314a53b19a9627450eac3deca57e7828aae212a145d4726e",
       "revision": "f99b6fb4aee220033bb9106ca91dce7fe24549f7c91076cbab65606a7f944305"
     },
-    "source:d7f86c2f0b23e0014ff60214": {
-      "kind": "research",
-      "reference": "evidence:sha256:45492cbbce99694a4eecb709f9d18670d81f2a4d3e9eed0de38982895d736914",
-      "revision": "b531432b04d6947b712f3f7a2d1f50673118b50dfcac715b0c9f4abd40c71cbe"
-    },
     "source:d807520e0322c89009a65a3a": {
       "kind": "research",
       "reference": "evidence:sha256:030d369b24e26803a4ea8656c2ddee8f785d5d6d964c151b64101e4449fc5007",
@@ -1805,11 +1640,6 @@
       "kind": "research",
       "reference": "evidence:sha256:22dcd7cca643c34a752c72290248488019aa9f61a8f686131dbd6479a8fe6796",
       "revision": "73abf95546a7fea1cf66d8278bee48468dc10f300d415cd2a4a439a686166026"
-    },
-    "source:ddd23f134c74735c779db1ef": {
-      "kind": "research",
-      "reference": "evidence:sha256:a6fde4b216f3b1db962a2ae33f7de7f16fdda87ec986eaae84ef7a7222d8a0b3",
-      "revision": "f0984b8251203ccc3ccd62e10ecd8d110d6c288740f95724548be135475ec13e"
     },
     "source:dea23d8b2d6225f04bc83ee6": {
       "kind": "research",

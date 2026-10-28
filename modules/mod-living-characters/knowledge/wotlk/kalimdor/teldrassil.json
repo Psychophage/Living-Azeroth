@@ -2679,6 +2679,53 @@
       "title": null
     },
     {
+      "entry": 16781,
+      "name": "Midsummer Celebrant",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16781:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2c8c179bd35888db8c928f8e",
+            "source:0df853ba142d76b223a01e04",
+            "source:5329c75d4413ce636bf972f9",
+            "source:1e8e5a2942a2fff8ff0f8f61"
+          ],
+          "text": "Midsummer Celebrants welcome visitors to the Fire Festival and point to its festivities, from dancing at the ribbon pole to torch juggling. Their words also carry a factional edge: Horde and Alliance celebrants speak of protecting their own fires and stealing the other's, giving the celebration a note of rivalry.",
+          "when": {
+            "entry": 16781
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 16817,
+      "name": "Festival Loremaster",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16817:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:460ae640d78b830897c8205b",
+            "source:d0589953dc25bc0089f52caf",
+            "source:76e237232822395bf7e2fd13",
+            "source:f4de50ed940f1821e04b9bd8",
+            "source:af5329d1f20454d181c9072d"
+          ],
+          "text": "The Festival Loremaster studies festivals past and documents the current celebration, while the Flame Wardens tend its fires. The Loremaster sees sacred flames as carrying power and suspects enemy cities guard such fires too. The stolen-city flames brought back by adventurers are recognized as coming from Orgrimmar and Thunder Bluff, and the Loremaster praises the daring involved in recovering them for the collection.",
+          "when": {
+            "entry": 16817
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 25906,
       "name": "Teldrassil Flame Warden",
       "records": [
@@ -2693,6 +2740,28 @@
           "text": "A Teldrassil Flame Warden who welcomes visitors to honor the Alliance festival fires. The warden urges travelers to honor those fires across Alliance lands and openly encourages desecrating the Horde's fires, expressing a clear partisan hostility toward the rival festival.",
           "when": {
             "entry": 25906
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 25975,
+      "name": "Master Fire Eater",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:25975:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:6595c31211a07d4e32c05ddb",
+            "source:451868278d79fee57e86f88d",
+            "source:0e0c7d0ca8625113ed1167ab"
+          ],
+          "text": "A Master Fire Eater teaches the fire festival’s torch-catching tricks, confident in their own skill but warning students to take care around the flames. Their greetings celebrate the festival and invite visitors to honor the local flame.",
+          "when": {
+            "entry": 25975
           }
         }
       ],
@@ -3133,10 +3202,20 @@
       "reference": "evidence:sha256:b099655922b35acbf31ed22e0095dd2aba8918b2a62ede70d6394cf017c2816d",
       "revision": "74fa22abbcf013bab66c9df0c4ad3ae6505a6c6002fa243cf650543a48009d5e"
     },
+    "source:0df853ba142d76b223a01e04": {
+      "kind": "research",
+      "reference": "evidence:sha256:d1153f93a65e525ca9ecf543982348fcfec29314e4fb4df87d5f9b3500fa7abb",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
+    },
     "source:0e0522f6aabbdfdb9c52c73c": {
       "kind": "research",
       "reference": "evidence:sha256:be68f36f3664b20b0352ef4df28cc970c10bfad546a2050622bb3d6d3faa6860",
       "revision": "55f80fb9d92f7977937e2f294bdbe192c7df6f898c7539a1553a7e481616f283"
+    },
+    "source:0e0c7d0ca8625113ed1167ab": {
+      "kind": "research",
+      "reference": "evidence:sha256:1e9d4ac16cf6c2196ccb9bb04dde8ff707341bd5c85df6a0ea026ab658c29342",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
     },
     "source:0ee59bcac8714654bdfb4271": {
       "kind": "research",
@@ -3278,6 +3357,11 @@
       "reference": "evidence:sha256:dc8a6256a4a93a8b76e17eef1f5d9149b6f9f73eafc31ada3616e3bbb2b855bb",
       "revision": "a82ad87a5a76bf4170f0290e6203ba404217c6aad483390f38696c137931587c"
     },
+    "source:1e8e5a2942a2fff8ff0f8f61": {
+      "kind": "research",
+      "reference": "evidence:sha256:2e9a47fff1b27d99653161f0b257f7fa7f147ba9d13735220c0257ee3f0b5005",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
+    },
     "source:205b3bef75a7a34dac8b81b7": {
       "kind": "research",
       "reference": "evidence:sha256:92b8c74aff2e4f2e1af4cb7279164869044d4eb8d49362204403b1fcf866ef91",
@@ -3377,6 +3461,11 @@
       "kind": "research",
       "reference": "evidence:sha256:3f30778815bc1a1aa442c847635c3d6cce1d4c78a71fcf22e8c99175f108369a",
       "revision": "ec8904ed38b0d8bbc919e436f9262924af30a4306e9219f7d15c3a754a79ce39"
+    },
+    "source:2c8c179bd35888db8c928f8e": {
+      "kind": "research",
+      "reference": "evidence:sha256:62d0941457458b84de49d3f2c7d1653f22f48f1a851845f140b345a0da194b17",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:2ea98f19da3dcc9866f316e5": {
       "kind": "research",
@@ -3538,6 +3627,16 @@
       "reference": "evidence:sha256:2a80b9143fcaae4c2c68e32202c6a7a6e15a5221ea02d99fdba4ecd3317f6c0a",
       "revision": "90113657c8fcbb3dd7827a9cb48850a50127fad194c0728088d307b84668f0cc"
     },
+    "source:451868278d79fee57e86f88d": {
+      "kind": "research",
+      "reference": "evidence:sha256:c334f594202f37154296f586992352a971db07b7b53fcef3cc25a993ed296414",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
+    },
+    "source:460ae640d78b830897c8205b": {
+      "kind": "research",
+      "reference": "evidence:sha256:4d9b8b9ea44025e6c1471333a8be3c7949411c8cd3c85058e08270116b6b2491",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
+    },
     "source:4692f2ca72b91cfbd955fe42": {
       "kind": "research",
       "reference": "evidence:sha256:c72d0884a7d8636e8964bc7a5a4e76da092e558ca2b982992783174d25e8b1a0",
@@ -3617,6 +3716,11 @@
       "kind": "research",
       "reference": "evidence:sha256:8ddffab0a4f0879b02d6f91be6f90583d28bc3493d9714ce8f518b7270fee117",
       "revision": "a82ad87a5a76bf4170f0290e6203ba404217c6aad483390f38696c137931587c"
+    },
+    "source:5329c75d4413ce636bf972f9": {
+      "kind": "research",
+      "reference": "evidence:sha256:6f7b581a397212761e8d5593838dbe4a0d9e87173f154ac9ca39e810f6f74075",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:5348f94084d37076ab6b72a6": {
       "kind": "research",
@@ -3808,6 +3912,11 @@
       "reference": "evidence:sha256:d133bc211e0b9f04ad20a1548801102597ac2a93de9e7cee521d319149fd8297",
       "revision": "87338e85e10fd8a5d67f502ba4e0b2b776f21fc327208ec37bd71d6f228486e9"
     },
+    "source:6595c31211a07d4e32c05ddb": {
+      "kind": "research",
+      "reference": "evidence:sha256:8d52b38923c7ef4579c54f0a36615799e6fc9451b79471e436a6cecfa0b90c43",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
+    },
     "source:665b1755b241f518d3e66bde": {
       "kind": "research",
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
@@ -3947,6 +4056,11 @@
       "kind": "research",
       "reference": "evidence:sha256:612b7028aa4c00a025c06ab66a1246060a34f22e7ac6c65dc6c72ce4276700ef",
       "revision": "e869edeaa743df4f5ff5f760e1547d53952974ffd167e55f31310558ba52c66c"
+    },
+    "source:76e237232822395bf7e2fd13": {
+      "kind": "research",
+      "reference": "evidence:sha256:45fb760e35ec93d14d28bb6263cd5c4fb38a334a03eea2b0dd0fa48bdda80cfc",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:77ed30e52bd0e3735dc50929": {
       "kind": "research",
@@ -4373,6 +4487,11 @@
       "reference": "evidence:sha256:9de79f31b69e2e5bbde39fe853b44dd78a2b5cc332631e5b2535f8a8388c6a9e",
       "revision": "e5c2e652008543057e0ab49e326bd5ba8939898358b67b29bb74beff85001284"
     },
+    "source:af5329d1f20454d181c9072d": {
+      "kind": "research",
+      "reference": "evidence:sha256:bf1afffac165b4fd2613ecf1ca16899c63717917bed000c5b82294492be3ace8",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
+    },
     "source:af9b032438f32118fe47c5b1": {
       "kind": "research",
       "reference": "evidence:sha256:ccebcdb3a3edb2270ae076fcc90a7d95f97c357c62d1f133e59204a59566254d",
@@ -4662,6 +4781,11 @@
       "kind": "research",
       "reference": "evidence:sha256:728245b4bf46f7d77777b9c9e74b4eb416ee206506b117c5209a72531011d076",
       "revision": "ff383bddec79462fbeb59af2f770ddccf33c21716e0aed5048fb0df92cecf844"
+    },
+    "source:d0589953dc25bc0089f52caf": {
+      "kind": "research",
+      "reference": "evidence:sha256:0c1160c819aa99f5ab3765f65a183cee5c8bbae1ec582895ac6fe8c9b6d79577",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:d17082a08d830bc04127b6b4": {
       "kind": "research",
@@ -4982,6 +5106,11 @@
       "kind": "research",
       "reference": "evidence:sha256:8d8403ea06d2a060767e8168da185dc7802f4be728dfcad8f69727ef661c560e",
       "revision": "4e99e9684c13ae5545f809211755f8f75090dcf8d85e1f0499ce25a54efd48cf"
+    },
+    "source:f4de50ed940f1821e04b9bd8": {
+      "kind": "research",
+      "reference": "evidence:sha256:d7460a015847989a118be9bfea64e7fe610e5058fc46751730782f1aa15080c9",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:f5b227f22ac2f69961639bb2": {
       "kind": "research",

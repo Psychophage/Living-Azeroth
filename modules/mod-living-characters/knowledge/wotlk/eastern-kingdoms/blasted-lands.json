@@ -4,49 +4,6 @@
   "map": 0,
   "npcs": [
     {
-      "entry": 752,
-      "name": "Marsh Oracle",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:752:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:86248e52238894666c7aedc7",
-            "source:ab831e4eb68481443fc7d517",
-            "source:24aa6fd5dbf21092e6248952"
-          ],
-          "text": "A marsh oracle among the coastal fish men hunted in the Swamp of Sorrows. Katar asks adventurers to fight these oracles alongside marsh inkspewers and flesheaters.",
-          "when": {
-            "entry": 752
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 950,
-      "name": "Swamp Talker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:950:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:8ef469ee875fe0b615f5ad7c",
-            "source:e543a08871f8ab58878c852b"
-          ],
-          "text": "Swamp Talker is the murloc Bengor names as having seized the Warchief’s Orders during an ambush on the way to the Blasted Lands. Bengor places Swamp Talker in a cave to the east.",
-          "when": {
-            "entry": 950
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 3546,
       "name": "Bernie Heisten",
       "records": [
@@ -481,6 +438,69 @@
       "title": null
     },
     {
+      "entry": 5996,
+      "name": "Nethergarde Miner",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5996:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a0eb2f07638942087c0ee50a",
+            "source:0cc1517f9799e51d1435c006"
+          ],
+          "text": "Nethergarde miners perform mining work and use Sunder Armor in combat.",
+          "when": {
+            "entry": 5996
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 5997,
+      "name": "Nethergarde Engineer",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5997:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:548f2a2419a86761bc744a88",
+            "source:84a2dd67703324c50e980dbf"
+          ],
+          "text": "Nethergarde engineers fight with shooting attacks.",
+          "when": {
+            "entry": 5997
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 5998,
+      "name": "Nethergarde Foreman",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5998:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:537280d77d411d75d1247f68",
+            "source:0e59c879a2cc6e75040fb84f"
+          ],
+          "text": "Nethergarde foremen oversee work and use Battle Command in combat.",
+          "when": {
+            "entry": 5998
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 5999,
       "name": "Nethergarde Soldier",
       "records": [
@@ -789,50 +809,6 @@
         }
       ],
       "title": null
-    },
-    {
-      "entry": 7371,
-      "name": "Deadwind Mauler",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:7371:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:f1210991849489b2382129a9",
-            "source:4cbd017895cd8faed331f153",
-            "source:25ce3e6f6579e22de5237127"
-          ],
-          "text": "A Deadwind mauler is a combatant encountered in Deadwind Pass and nearby Deadwind areas. It attacks with an uppercut.",
-          "when": {
-            "entry": 7371
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 7372,
-      "name": "Deadwind Warlock",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:7372:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:1e1577284913a79ab9150da2",
-            "source:d4e3d0f2c95d66ddb4d921c2",
-            "source:b2d222f38a13ce414c54923e"
-          ],
-          "text": "A Deadwind warlock is a combatant encountered in Deadwind Pass and nearby Deadwind areas. It attacks with shadow bolt.",
-          "when": {
-            "entry": 7372
-          }
-        }
-      ],
-      "title": ""
     },
     {
       "entry": 7505,
@@ -2080,6 +2056,11 @@
       "reference": "evidence:sha256:5262572feaba0a373f2ec2d8c629dbb724a922405acded103bc9cc0974b9f5c5",
       "revision": "11193a9c81a3089f3bc97f084dc54e942f8ca02c8e3ad1170bbab3bc81f852c9"
     },
+    "source:0cc1517f9799e51d1435c006": {
+      "kind": "research",
+      "reference": "evidence:sha256:ee64c4989f2f123a5a5c834d55de4c622888942310fb33386263431d92a7b7c1",
+      "revision": "45cf823eb95c852a693d87bf979451c2a0d3bf888a1cf69da69115e52bc95c1e"
+    },
     "source:0d2194d9fae2e2b758ba80e9": {
       "kind": "research",
       "reference": "evidence:sha256:54337d1a021f67773a18f5eb0af5a07ca7e001961b5f14cd039346d403309df4",
@@ -2089,6 +2070,11 @@
       "kind": "research",
       "reference": "evidence:sha256:c9da4a619888002320118808cb03f2f97716065d4a63f274fba5104137fb4cf2",
       "revision": "11193a9c81a3089f3bc97f084dc54e942f8ca02c8e3ad1170bbab3bc81f852c9"
+    },
+    "source:0e59c879a2cc6e75040fb84f": {
+      "kind": "research",
+      "reference": "evidence:sha256:e78aa15fc033d4e231332944c19866650a1dc4029906e2b54ae182cee7af583c",
+      "revision": "24e36efda3b2ab2a1008ff23ac0fb838d39462388f0885ad854ba7ddad3666a4"
     },
     "source:1095ee67eb882b6f9865dbc4": {
       "kind": "research",
@@ -2175,11 +2161,6 @@
       "reference": "evidence:sha256:8ae6c5422d9bbebbd3c497e1d8880bd6309bf38e8d3b950c01419caa4f2b0146",
       "revision": "2bf34486bff8eaac65015c5100cc6feb7bd53984e813d636017e3b0a5cf4d234"
     },
-    "source:1e1577284913a79ab9150da2": {
-      "kind": "research",
-      "reference": "evidence:sha256:3ef6a3e45966cb064fa54ed58ad955145d90e9a9396e29730af6cb0f4033f3cd",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
-    },
     "source:1ec506d715251469123b9404": {
       "kind": "research",
       "reference": "evidence:sha256:4e3d0b6ee582087743fe430313226499be28017810fee487ea2c3d2be9ee3afc",
@@ -2210,11 +2191,6 @@
       "reference": "evidence:sha256:1cd41f95995b220cab62ea23dc1c0e0fbdec34e7dafae1bbd4167702de7eda70",
       "revision": "713c6fbac94ff99cd076ac6c3b241aa1ce9c7e09878f8061b66da5de8b2aa34d"
     },
-    "source:24aa6fd5dbf21092e6248952": {
-      "kind": "research",
-      "reference": "evidence:sha256:2716d43610c5ccb2ef478845cb14270ca8b975c2bef11aad4914dbbb5523b9b0",
-      "revision": "ceb8e35416791642bfa9d9fed96b37bcf8cb38da79624aaebdd460c7ca9c7639"
-    },
     "source:24ec50ac350a55f823cb4379": {
       "kind": "research",
       "reference": "evidence:sha256:0a2f92f619b82896ec7a80ba8a11a359cdb31fd03c9dcc29b5cb566d76963b48",
@@ -2224,11 +2200,6 @@
       "kind": "research",
       "reference": "evidence:sha256:779fb84cea035855ad400be52a78831aa4db4d3d679455935734fd8bbfb00956",
       "revision": "f112810cd0ba5af310b4be788f328206a8cc7b15820cd0160c3122a32df33485"
-    },
-    "source:25ce3e6f6579e22de5237127": {
-      "kind": "research",
-      "reference": "evidence:sha256:97bb7df70f96e72093412fd9689fa39c3fe08b72a8f3b14033f73c0ec5252a57",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:262e66bcbf10aa0fb948cf5c": {
       "kind": "research",
@@ -2465,11 +2436,6 @@
       "reference": "evidence:sha256:742f06b691d6c06c1db12147bf7ccc93dbef97ea7d6685b656d1c76448becb6e",
       "revision": "6347125616a7be53b7f19674ebf0f4efdc30a7956d414c8303cb02a1075614ac"
     },
-    "source:4cbd017895cd8faed331f153": {
-      "kind": "research",
-      "reference": "evidence:sha256:9930c3ce0f800be4feb6c503872136e8db5a1085334da058b0d94f46aef08dde",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
-    },
     "source:4ce2c94269cb59fbdb8b221d": {
       "kind": "research",
       "reference": "evidence:sha256:4c9199faeb56ce39e1c592f406436aa8964c286a8febd4237d794003d3c201ad",
@@ -2490,6 +2456,11 @@
       "reference": "evidence:sha256:2a5457a51fa58a7f44fb1f722c1e5fc857c1a8e463d1478a4762eb976820973a",
       "revision": "713c6fbac94ff99cd076ac6c3b241aa1ce9c7e09878f8061b66da5de8b2aa34d"
     },
+    "source:537280d77d411d75d1247f68": {
+      "kind": "research",
+      "reference": "evidence:sha256:d025c07ea1a6758b4abf0874c0fd8b068a85321ef197559acd5c4d79cf38f8b2",
+      "revision": "24e36efda3b2ab2a1008ff23ac0fb838d39462388f0885ad854ba7ddad3666a4"
+    },
     "source:53c765a95d1a8b921830338b": {
       "kind": "research",
       "reference": "evidence:sha256:4ba998196d07c0cb5d9c9b0563d1c92050ce172084dcc63620e5760222869dd0",
@@ -2504,6 +2475,11 @@
       "kind": "research",
       "reference": "evidence:sha256:ca8a9ed3b64147e3d5047f500a494eec4cd4773554f90de93c870fb162580147",
       "revision": "713c6fbac94ff99cd076ac6c3b241aa1ce9c7e09878f8061b66da5de8b2aa34d"
+    },
+    "source:548f2a2419a86761bc744a88": {
+      "kind": "research",
+      "reference": "evidence:sha256:73bfe108a8beab5b521d588d99aab21b5e593c05232b9bde45a241de359567aa",
+      "revision": "f2bece8d530715fa50bfa07f52b17310961a6f286eac1ff2f762326fc82c78a0"
     },
     "source:5570581a4a414dd9e2ac9632": {
       "kind": "research",
@@ -2805,6 +2781,11 @@
       "reference": "evidence:sha256:7bc7f89d2da8cbbcc4e18d38c77e264551cf59e9fee069953e02572ce60e8edc",
       "revision": "43df8548c78de9cdab8deed8b96c983dd2aa6cdfaf9bc9a430b0290f9f33c194"
     },
+    "source:84a2dd67703324c50e980dbf": {
+      "kind": "research",
+      "reference": "evidence:sha256:9b56a8b83eb7407eb68639358fa0bb49154cb111ad80c3669451c284ef58c5f6",
+      "revision": "f2bece8d530715fa50bfa07f52b17310961a6f286eac1ff2f762326fc82c78a0"
+    },
     "source:8524703e913733df9e52d899": {
       "kind": "research",
       "reference": "evidence:sha256:7d101c32be1231c82efadfd39848feb2f4292c888c6f2549c323ae4a0a48d3f9",
@@ -2814,11 +2795,6 @@
       "kind": "research",
       "reference": "evidence:sha256:a6a94d11c06dc591da112413a9ffd2979933352029e091dbe0f48aca07209620",
       "revision": "444fe035562bfd22e6ee2396ae5e3402b1a00fdb6cd54f62f9bbab71303d47b1"
-    },
-    "source:86248e52238894666c7aedc7": {
-      "kind": "research",
-      "reference": "evidence:sha256:f151231fd6f7729650ad2154b4daf1d665a2a95ed4edb04cda60682dbade82eb",
-      "revision": "ceb8e35416791642bfa9d9fed96b37bcf8cb38da79624aaebdd460c7ca9c7639"
     },
     "source:8767e0267e86810de7e55d62": {
       "kind": "research",
@@ -2854,11 +2830,6 @@
       "kind": "research",
       "reference": "evidence:sha256:61a07f18e34494523d2cfb5ae40fcc7fa97707a4b2694ea48b0d2d4302c07886",
       "revision": "2defcde617e8c48c5bad4108821731fe7a02c4a00130afec3280c270ba646360"
-    },
-    "source:8ef469ee875fe0b615f5ad7c": {
-      "kind": "research",
-      "reference": "evidence:sha256:ee82d23ffcae20266739d3baec5414a94fddba58be64023999f18af5b4700e66",
-      "revision": "6abc1f11ff30fe0a1b187b461be36bb98d8e71a83e4a75bfb16d61db7d38b16a"
     },
     "source:8efe6508b92d03976f51f965": {
       "kind": "research",
@@ -2914,6 +2885,11 @@
       "kind": "research",
       "reference": "evidence:sha256:c92c2ab94a9b272ebfc3a28fb0f280a4858b0c834d471947489adaaa35878237",
       "revision": "e3dbb3971cac360b40e17c8707e8a7927785c22c9950026ed9eead0caab70c30"
+    },
+    "source:a0eb2f07638942087c0ee50a": {
+      "kind": "research",
+      "reference": "evidence:sha256:6875e66df29c6c0c856b527e3cbdd386a556751b496cda53ee34c3a3ed149794",
+      "revision": "45cf823eb95c852a693d87bf979451c2a0d3bf888a1cf69da69115e52bc95c1e"
     },
     "source:a192fc1d1b752df0f1808ed3": {
       "kind": "research",
@@ -2975,11 +2951,6 @@
       "reference": "evidence:sha256:7270ce34abc828fbf54848be1b7f8e8230f842050b19a28cd47ce8f3d1c26de1",
       "revision": "6347125616a7be53b7f19674ebf0f4efdc30a7956d414c8303cb02a1075614ac"
     },
-    "source:ab831e4eb68481443fc7d517": {
-      "kind": "research",
-      "reference": "evidence:sha256:3734cef9273478b3b586120fb3d249ae104882eb3a9c183dedbcd29f8885b229",
-      "revision": "ceb8e35416791642bfa9d9fed96b37bcf8cb38da79624aaebdd460c7ca9c7639"
-    },
     "source:abbd359d76b9651e40334458": {
       "kind": "research",
       "reference": "evidence:sha256:301967be12d2c08d00ad865789bed64e0a76286610da0f21168f429e586a8f66",
@@ -3014,11 +2985,6 @@
       "kind": "research",
       "reference": "evidence:sha256:4b98c5a54465a31041312235cb251a6eeb06a34314aea5706448aca427282d0c",
       "revision": "e3dbb3971cac360b40e17c8707e8a7927785c22c9950026ed9eead0caab70c30"
-    },
-    "source:b2d222f38a13ce414c54923e": {
-      "kind": "research",
-      "reference": "evidence:sha256:cb5a1c10a9a474527520b17d11dcd1f68f106ec5fb85ebf3bb549800b023f2cc",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:b37c3d3ed9ee603e6101ec69": {
       "kind": "research",
@@ -3215,11 +3181,6 @@
       "reference": "evidence:sha256:048063fd89e0a49d3bd12b7b8ae691fa15c2371b18be2210edbfd047f1ffa015",
       "revision": "9a51d97224b9ac90544d8cef8e071624a1939c5ebedf81f75060d612f1e4053b"
     },
-    "source:d4e3d0f2c95d66ddb4d921c2": {
-      "kind": "research",
-      "reference": "evidence:sha256:cecb53e356b07ead9a5868a88c0cf1eb531ef8a7abaacd5d67d4a8c59091acff",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
-    },
     "source:d58d373c159e1c55707ec8e5": {
       "kind": "research",
       "reference": "evidence:sha256:cef65610b0f56416fcd29c214fe978d384c79a3d76c2605db21cd8c5a00f1072",
@@ -3340,11 +3301,6 @@
       "reference": "evidence:sha256:a7bb81d7c624cb5f5202fb6e48e28c6718c635d112131442eb0f10e9bd8d224d",
       "revision": "e3dbb3971cac360b40e17c8707e8a7927785c22c9950026ed9eead0caab70c30"
     },
-    "source:e543a08871f8ab58878c852b": {
-      "kind": "research",
-      "reference": "evidence:sha256:a047efce1300eb572c8c7672e708eac672cda59c13c8ca3cae2ff1e9dde0c62f",
-      "revision": "6abc1f11ff30fe0a1b187b461be36bb98d8e71a83e4a75bfb16d61db7d38b16a"
-    },
     "source:e5ee16ae29ba83e9dfc7b8cc": {
       "kind": "research",
       "reference": "evidence:sha256:cdd701e6353eabfa213c9cf1cf3149e3ea65f2397a57ba16a58dc759754edc9d",
@@ -3439,11 +3395,6 @@
       "kind": "research",
       "reference": "evidence:sha256:e40b38ce052b68c7ca642243983b7f261a3d6cc2bb600bbc06a62451dcfae029",
       "revision": "c4440d379c36808ba9394cef58394cabc898efe7b2b3adbeec478f0dbaac60f8"
-    },
-    "source:f1210991849489b2382129a9": {
-      "kind": "research",
-      "reference": "evidence:sha256:f57df28eabdfb7e878d834c23b95c9492806b8b96ca9add98e3d80461891c28e",
-      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:f2557e942ed3c784c5eaa59c": {
       "kind": "research",

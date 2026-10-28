@@ -2848,6 +2848,28 @@
       "title": "The Argent Dawn"
     },
     {
+      "entry": 16818,
+      "name": "Festival Talespinner",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16818:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b171bd60441c6cc42e59b462",
+            "source:c500f6ffa1003d37d86e3c36",
+            "source:75fe476689548bd7cb638761"
+          ],
+          "text": "The Festival Talespinner is a festival historian who keeps its past and documents the current year's celebrations. He says festival fires hold power and suspects sacred flames burn in enemy cities. He invites tales of the stolen city flames and responds to their return with interest.",
+          "when": {
+            "entry": 16818
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 19176,
       "name": "Tauren Commoner",
       "records": [
@@ -3243,6 +3265,28 @@
       "title": "Wintergrasp Battle-Mage"
     },
     {
+      "entry": 37675,
+      "name": "Public Relations Agent",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:37675:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a2dfa862e5847fb76676334d",
+            "source:c70c0c4b58717a3e3c491ff6",
+            "source:2e8a778f19157c56c63f8fd3"
+          ],
+          "text": "The Public Relations Agent represents Crown Chemical Co. with an upbeat sales pitch, offering visitors a gift, a job, or something for themselves. They point customers to the company's mascot, Kwee, or the nearby Lovely Merchant when they need something the agent cannot provide.",
+          "when": {
+            "entry": 37675
+          }
+        }
+      ],
+      "title": "Crown Chemical Co."
+    },
+    {
       "entry": 38044,
       "name": "Kwee Q. Peddlefeet",
       "records": [
@@ -3265,6 +3309,28 @@
         }
       ],
       "title": "Crown Chemical Co."
+    },
+    {
+      "entry": 38295,
+      "name": "Junior Detective",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:38295:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:864b22259e784b9356159ff5",
+            "source:154afe7a3c038d97131eaa79",
+            "source:aa1be936b70b147d09419d6a"
+          ],
+          "text": "A junior investigator in the inquiry into the Crown Chemical Company. Steamwheedle seeks help with the investigation and points interested helpers to Detective Snap Snagglebolt in Orgrimmar.",
+          "when": {
+            "entry": 38295
+          }
+        }
+      ],
+      "title": ""
     }
   ],
   "place": "Thunder Bluff",
@@ -3589,6 +3655,11 @@
       "reference": "evidence:sha256:b33ea35e65abaeee3aa6a45254dada9d890aea82de9887c8852cde7945d3fb67",
       "revision": "98a760b0cafa2c8349218aae270ff46fad64edc8e6c1fd322d02152f17d5b52b"
     },
+    "source:154afe7a3c038d97131eaa79": {
+      "kind": "research",
+      "reference": "evidence:sha256:7daad57b7999f0bafd154e4586c76ceeff82c424074ec20ba452e7f1c7255147",
+      "revision": "d436c0c913a2be8cd38f814a73d3724ae3a19474d838f3480a7acea36614f546"
+    },
     "source:1564265f4e32016f4518bedc": {
       "kind": "research",
       "reference": "evidence:sha256:9128e87dc6b2028e35958bb3aaf075a027f612bf43b5bbf436d9bd9c5b1e16c9",
@@ -3853,6 +3924,11 @@
       "kind": "research",
       "reference": "evidence:sha256:9c7733cd0023c1634565abfeb3a9f67719354405c1e55fbd59fe33a0c66dc2e6",
       "revision": "277dab00d42772118ff9951dceb3fd8da5c366aa720b300296f43bf0c5e52b26"
+    },
+    "source:2e8a778f19157c56c63f8fd3": {
+      "kind": "research",
+      "reference": "evidence:sha256:ee4ea66f1c1b7f449d0682dc9214cd4832da9b468cc88be6a39e811e44808b9f",
+      "revision": "1ceeba9a3aa63bec7f820aa7af6573fbd86e38de4a1662e6876ead5729dd4208"
     },
     "source:2efa17da8c1669c05b8cc749": {
       "kind": "research",
@@ -4684,6 +4760,11 @@
       "reference": "evidence:sha256:da76e0b5f7077ddfb712f7bef96eded94ba5f0030f039bebea181f3ec8dd32f2",
       "revision": "6babcb36bc9ee3261f124643f590726e223a74b4625d12b76dd91572d24cdb65"
     },
+    "source:75fe476689548bd7cb638761": {
+      "kind": "research",
+      "reference": "evidence:sha256:6342d042dfef9c947bfb7ca8c48b3f4a5ec56b1da192bd496de3a3d044524d92",
+      "revision": "ded8b531e471bd070f629a6ab866971e70d31a3f9d8db03260a784525b3e3838"
+    },
     "source:76148bc07888581fb874dc15": {
       "kind": "research",
       "reference": "evidence:sha256:dc7ccbdab096f10c7d0ba3fb3bcd55a9fa688c04308eb3f14525b52fce225e04",
@@ -4833,6 +4914,11 @@
       "kind": "research",
       "reference": "evidence:sha256:093a8a7d3136ddd6728fbeca3785da7f0e42cc16b8b4e1b00987a44cdde5c5fb",
       "revision": "c072bf321d1af33d561cd9e07fa9c5f4870f86f15a18a146efe58cbb4796098b"
+    },
+    "source:864b22259e784b9356159ff5": {
+      "kind": "research",
+      "reference": "evidence:sha256:45fc18a9218494fb766d303e723c60baa7e54bf5cfcc373b782c710d4a2173dc",
+      "revision": "d436c0c913a2be8cd38f814a73d3724ae3a19474d838f3480a7acea36614f546"
     },
     "source:865fbd895efdcf18f8e1cc5c": {
       "kind": "research",
@@ -5059,6 +5145,11 @@
       "reference": "evidence:sha256:0514d1d96e1033315c2eb66a74d3aef7c8b73278f7ca8cbeddc585eab356bf5c",
       "revision": "9ece052e03fc7becb760e763c2dcfb787bc9cea62a4d0c815957cc256ae74745"
     },
+    "source:a2dfa862e5847fb76676334d": {
+      "kind": "research",
+      "reference": "evidence:sha256:b643efea27a06b1487451b58b933f2df5adb0ab1390db3a96b5ee8d190af4ea2",
+      "revision": "1ceeba9a3aa63bec7f820aa7af6573fbd86e38de4a1662e6876ead5729dd4208"
+    },
     "source:a2edce253db2485c5e41fa6f": {
       "kind": "research",
       "reference": "evidence:sha256:25c77d989e96bdea74d3cf8b0f0be02ed8cf2f5187ea3abc47b20dc5d9880e58",
@@ -5138,6 +5229,11 @@
       "kind": "research",
       "reference": "evidence:sha256:53cc4a6dcf7dd772ebecabcac27545955b5fb4aebec1d3bbc64b0ddc45e3c9e4",
       "revision": "6babcb36bc9ee3261f124643f590726e223a74b4625d12b76dd91572d24cdb65"
+    },
+    "source:aa1be936b70b147d09419d6a": {
+      "kind": "research",
+      "reference": "evidence:sha256:c7adf3ce9957d9f0ee349e14d9b1d80c50606413459ed5dc438a9aee9d1cef3f",
+      "revision": "d436c0c913a2be8cd38f814a73d3724ae3a19474d838f3480a7acea36614f546"
     },
     "source:aa5fc7ce2d35cecf8eb0ee98": {
       "kind": "research",
@@ -5223,6 +5319,11 @@
       "kind": "research",
       "reference": "evidence:sha256:a2238ff78820d980c692f046920510d55e79aaa3c07ef2290081110e315010d2",
       "revision": "277dab00d42772118ff9951dceb3fd8da5c366aa720b300296f43bf0c5e52b26"
+    },
+    "source:b171bd60441c6cc42e59b462": {
+      "kind": "research",
+      "reference": "evidence:sha256:e55a2d0881ba9d63478c4619c344aaaffb605d2cee9cd2f68a562aa0f234aab3",
+      "revision": "ded8b531e471bd070f629a6ab866971e70d31a3f9d8db03260a784525b3e3838"
     },
     "source:b1f9ac17865e392c5d4dcaf2": {
       "kind": "research",
@@ -5384,6 +5485,11 @@
       "reference": "evidence:sha256:fee2994ff3027a7ab784b071a1a2a382964e42de842f2f53efbfd91621a364d9",
       "revision": "06a249bb9ff3311bd54aba58afd809372fd2b81fe173615e6a11838a0fde2f6c"
     },
+    "source:c500f6ffa1003d37d86e3c36": {
+      "kind": "research",
+      "reference": "evidence:sha256:e6d02857938f18aeb254120595accb96cc74c222c83e61bf05b954f4b900e10d",
+      "revision": "ded8b531e471bd070f629a6ab866971e70d31a3f9d8db03260a784525b3e3838"
+    },
     "source:c51565b49bfb29fea749f7f7": {
       "kind": "research",
       "reference": "evidence:sha256:8a91614a8c0a28330cd2777d2b11b2ddae70befd2e08eaf637b953ba2d661100",
@@ -5408,6 +5514,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2ed97d5c00ce4dd94314eb858eb2a1f71c1af3f1df7daa431271a23bcae84c93",
       "revision": "a1a9ce450cf495bfaf97c64c93e63e4c2f71656115126ab0ea9ce25e96efd742"
+    },
+    "source:c70c0c4b58717a3e3c491ff6": {
+      "kind": "research",
+      "reference": "evidence:sha256:7113a07f903680300cbdaca57b6e94740d4fdf85c5c92e08db3524dc8d0534cc",
+      "revision": "1ceeba9a3aa63bec7f820aa7af6573fbd86e38de4a1662e6876ead5729dd4208"
     },
     "source:c73325efb1d1d8cac3fd02c6": {
       "kind": "research",

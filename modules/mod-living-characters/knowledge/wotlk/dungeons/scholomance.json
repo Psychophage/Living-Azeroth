@@ -864,6 +864,31 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 15594,
+      "name": "Elder Moonstrike",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:15594:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:5849c2847b379b67613d6cb5",
+            "source:d4c64671644e1fc1a3cea1ba",
+            "source:403e09b5eb7c0566e02309fc",
+            "source:c0ad28847508164e00bd23cf",
+            "source:288727515083f4cf273e4576",
+            "source:fe241a394d03586151a403a0"
+          ],
+          "text": "Elder Moonstrike speaks of the stars as beacons of hope and strength, and wonders whether the wise or fortunate can find earthly truths by looking to the heavens. His conversations also point visitors toward other named elders, including Darkcore, Graveborn and Highpeak.",
+          "when": {
+            "entry": 15594
+          }
+        }
+      ],
+      "title": null
     }
   ],
   "place": "Scholomance",
@@ -948,6 +973,11 @@
       "reference": "evidence:sha256:de58dc287327960ac6e0fdaaec90243523df84355889f29d99de2ebf700816f0",
       "revision": "6ec809a0d333e12f4b24aee9f4ef8fc9e7b6772d44f6ee35eec509b8816bda76"
     },
+    "source:288727515083f4cf273e4576": {
+      "kind": "research",
+      "reference": "evidence:sha256:a9e8328dcfbb6f3e092538739dacb77a277e6155abe650d27b0c0c2088e516dc",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
+    },
     "source:2cf4df34dcb72f60b56f02f2": {
       "kind": "research",
       "reference": "evidence:sha256:81ed67b531ccfdc75272acc8301ae2013ba2946974dd9088c40714e9b49ad745",
@@ -1028,6 +1058,11 @@
       "reference": "evidence:sha256:f8bd676033fbdac264a215efe94d99df66c77245163949b99fa171f5da954d5e",
       "revision": "e2685cde59aa5802971aa970562cd47ea1817da19e500bf1ed80096616d01e1f"
     },
+    "source:403e09b5eb7c0566e02309fc": {
+      "kind": "research",
+      "reference": "evidence:sha256:d85da6b7b457420787878b74fa44615078b4cf71970bba4e5adf878b65e108f6",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
+    },
     "source:419e95d4faa64bed6998943d": {
       "kind": "research",
       "reference": "evidence:sha256:c9d82c8bcb42c6edb3382603f4a12d9df5d43f760bad9fe3a24cd44ed821d3c6",
@@ -1102,6 +1137,11 @@
       "kind": "research",
       "reference": "evidence:sha256:fa2f7f8ce79f3a9f1f5e9acd6c524ae8bf0e02407844ee94bda74645bea17497",
       "revision": "66baed2de91d0be23254944df05c0482c2db54265b77509a3e61a34b1285fd8c"
+    },
+    "source:5849c2847b379b67613d6cb5": {
+      "kind": "research",
+      "reference": "evidence:sha256:60bea32cdeed2c6a0b914fda5913a36b8ba9361fb2f716452633802ebb5fb736",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
     },
     "source:58f9b8fbfffb2362687e6bd8": {
       "kind": "research",
@@ -1363,6 +1403,11 @@
       "reference": "evidence:sha256:f1306c60e5d83c7c140ed19dc79fee79a68149e53b3cbd7fa9509a34b7de859b",
       "revision": "9ea0abef4e5fc213ad03eac27617c7ddb496a433608edbe6ec4ccbbd8a236014"
     },
+    "source:c0ad28847508164e00bd23cf": {
+      "kind": "research",
+      "reference": "evidence:sha256:97e2cc65f7085b739427e5032f5826aba9459ce3950ad260072264ce1d93533f",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
+    },
     "source:c63ccb4f5982f42b1c7d1ae0": {
       "kind": "research",
       "reference": "evidence:sha256:c8a145dfde3fca7e22c617dc7a68e834a7a3e7912e693e20cbe3cf92c34a6aba",
@@ -1422,6 +1467,11 @@
       "kind": "research",
       "reference": "evidence:sha256:60bdbc11b7b6b7cfbed6729146e89bf8a0ab39c0ea4839e9fc0760fb0e655588",
       "revision": "2da20340693573d5ad35f1f84b90a0bb010f0a065340bf2e46128dd99945d071"
+    },
+    "source:d4c64671644e1fc1a3cea1ba": {
+      "kind": "research",
+      "reference": "evidence:sha256:1115ec6d9cb71932ad436800499d7250424936ae125fbd64978817ff250210bd",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
     },
     "source:d65043af72e45c6a1be24858": {
       "kind": "research",
@@ -1547,6 +1597,11 @@
       "kind": "research",
       "reference": "evidence:sha256:eb27fcedb0c214c73fd08db11b8b497cd4c5e899766b1675db8f94ecf58fa1f7",
       "revision": "1b135e8cd9d5324c4c58acdefeb4cc2c05e626ce6dc1e8f7bfeb2440b5fe9f26"
+    },
+    "source:fe241a394d03586151a403a0": {
+      "kind": "research",
+      "reference": "evidence:sha256:064a33ece400be55ab0f1eafb499f42626a99e1021ce04138bdc8e881c7ef91f",
+      "revision": "abfb1cdfa89e2847fddfedb46521667ce7488b941ddae560f8d025c4b692c72c"
     },
     "source:fe604b6bcb122efc466b6cfc": {
       "kind": "research",

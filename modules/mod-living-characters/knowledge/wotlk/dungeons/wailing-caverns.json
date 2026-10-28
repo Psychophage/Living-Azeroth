@@ -4,6 +4,114 @@
   "map": 43,
   "npcs": [
     {
+      "entry": 3630,
+      "name": "Deviate Coiler",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3630:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:4a693dd83a8983de894e5816",
+            "source:35e28ff787060248e199a1e4"
+          ],
+          "text": "Deviate Coilers are snake-like creatures found in the Barrens.",
+          "when": {
+            "entry": 3630
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3631,
+      "name": "Deviate Stinglash",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3631:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a0e41749b0964716239a9e00",
+            "source:f6e7c29e4b571b54e14dfdda",
+            "source:47ddf4d814e7fb911c0a3d32"
+          ],
+          "text": "Deviate Stinglashes are creatures found in the Barrens. They use Lash in combat.",
+          "when": {
+            "entry": 3631
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3632,
+      "name": "Deviate Creeper",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3632:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:c287192b2730a062bec2d363",
+            "source:23f8b4b74f73a7fe0fee6858",
+            "source:2844876951ef6ac0c5b5c89d"
+          ],
+          "text": "Deviate Creepers are creatures found in the Barrens that use Stealth and Infected Wound in combat.",
+          "when": {
+            "entry": 3632
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3633,
+      "name": "Deviate Slayer",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3633:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0f757b2868b455928fbf22e8",
+            "source:810be9450c98bd223e65b355",
+            "source:93adbd481ef0ba39503ef083"
+          ],
+          "text": "Deviate Slayers are creatures found in the Barrens. They use Fatal Bite when badly wounded.",
+          "when": {
+            "entry": 3633
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3634,
+      "name": "Deviate Stalker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3634:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:70890d8af16e030415c422f8",
+            "source:1405895e16457896d092e3d7"
+          ],
+          "text": "A beast called a Deviate Stalker, one of the Barrens' deviate creatures.",
+          "when": {
+            "entry": 3634
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 3636,
       "name": "Deviate Ravager",
       "records": [
@@ -47,6 +155,70 @@
       "title": null
     },
     {
+      "entry": 3638,
+      "name": "Devouring Ectoplasm",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3638:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:f1d60f3704f54ef351951685",
+            "source:438e42bf455731d6fb956ece",
+            "source:84a94a6ed30e1b1378dc6d3e"
+          ],
+          "text": "Devouring Ectoplasm is an ectoplasmic creature found in the Barrens. When badly hurt, it can cast Clone, an unnerving last-ditch trick.",
+          "when": {
+            "entry": 3638
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3641,
+      "name": "Deviate Lurker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3641:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:397a53bc13a3bf9494b0cb6d",
+            "source:cbc445d1e26ccc89327667d7"
+          ],
+          "text": "A beast known as a Deviate Lurker, found in the Barrens.",
+          "when": {
+            "entry": 3641
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3652,
+      "name": "Trigore the Lasher",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3652:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:3fd959fbd199557b2bba1f88",
+            "source:e8415bf9f64e5c7193e7fbe8"
+          ],
+          "text": "An elite creature known as Trigore the Lasher, a formidable presence in the Barrens.",
+          "when": {
+            "entry": 3652
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 3653,
       "name": "Kresh",
       "records": [
@@ -64,6 +236,30 @@
           "text": "Kresh is a named creature whose hide is sought by Nalpak for leatherworking.",
           "when": {
             "entry": 3653
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 3655,
+      "name": "Mad Magglish",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3655:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:2cc5aef1aab020d553ff68fe",
+            "source:aa180476a14a253fea489b42",
+            "source:2578374eb12db3f37b885ba9",
+            "source:89aea7b9e6b3ae4a76acfe23",
+            "source:7697fe0849bb185d9c580710"
+          ],
+          "text": "Mad Magglish is a thief identified by Crane Operator Bigglefuzz: after a cargo mishap at the Ratchet docks, he ran off with a bottle of 99-year-old port. Bigglefuzz says he chased Magglish as far as Wailing Caverns, then stopped short of entering. Magglish uses stealth and smoke bombs when threatened, making him an elusive quarry.",
+          "when": {
+            "entry": 3655
           }
         }
       ],
@@ -137,6 +333,30 @@
         }
       ],
       "title": "Fanglord"
+    },
+    {
+      "entry": 3672,
+      "name": "Boahn",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:3672:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:17fea982f7fe3d5302fc5521",
+            "source:6a8a51ff64b673160f571a24",
+            "source:09dcc40b834f307199116cfc",
+            "source:8ad66ef6813b988409089355",
+            "source:16f8cfb4ce1839a2a295452b"
+          ],
+          "text": "Boahn bears the title Druid of the Fang. In combat, he can cast lightning and healing spells, change into snake form, and flee for help when badly injured.",
+          "when": {
+            "entry": 3672
+          }
+        }
+      ],
+      "title": "Druid of the Fang"
     },
     {
       "entry": 3673,
@@ -390,6 +610,50 @@
       "title": null
     },
     {
+      "entry": 5767,
+      "name": "Nalpak",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5767:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:bda849e6579b19445bea1fc4",
+            "source:9ff74347639e63d6c255ae64",
+            "source:e7295fa31a8aed4564a2dd83"
+          ],
+          "text": "Nalpak is a Disciple of Naralex who believes the deviate creatures’ hides can serve leatherworking, despite the creatures’ evil nature. He seeks those hides from the creatures infesting the caverns.",
+          "when": {
+            "entry": 5767
+          }
+        }
+      ],
+      "title": "Disciple of Naralex"
+    },
+    {
+      "entry": 5768,
+      "name": "Ebru",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5768:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:d4d883089fcae032db9b0f04",
+            "source:8336c1339e139078716aed29",
+            "source:ed3029d26b1052c0c7c00ec4"
+          ],
+          "text": "Ebru is a Disciple of Naralex focused on eradicating the corrupt deviate creatures haunting the caverns. She distinguishes this work from the effort by other disciples to awaken Naralex, whose failed dream brought the corruption.",
+          "when": {
+            "entry": 5768
+          }
+        }
+      ],
+      "title": "Disciple of Naralex"
+    },
+    {
       "entry": 5775,
       "name": "Verdan the Everliving",
       "records": [
@@ -410,6 +674,50 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 5783,
+      "name": "Kalldan Felmoon",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5783:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:8a78502ca408365fe59e3f31",
+            "source:fba6cdbb602db63df785cacb",
+            "source:8a2bee37e06169e09560566a"
+          ],
+          "text": "Kalldan Felmoon is a specialist leatherworking-supplies vendor who offers goods to visitors.",
+          "when": {
+            "entry": 5783
+          }
+        }
+      ],
+      "title": "Specialist Leatherworking Supplies"
+    },
+    {
+      "entry": 5784,
+      "name": "Waldor",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5784:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a007707200cdd5099f5861c1",
+            "source:64e5d32804fb3d25a792a56d",
+            "source:66f50f1693d06d3753b88790"
+          ],
+          "text": "Waldor teaches leatherworking and warns that the caverns below hold strange hides, reminding visitors that their own skin is far more valuable.",
+          "when": {
+            "entry": 5784
+          }
+        }
+      ],
+      "title": "Leatherworking Trainer"
     },
     {
       "entry": 5912,
@@ -453,6 +761,27 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 20797,
+      "name": "Deviate Coiler Hatchling",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:20797:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:32f7c61220fc21c02eb70acd",
+            "source:1eaa8889b7d9ea779e339bc8"
+          ],
+          "text": "A hatchling of the Deviate Coiler kind, this juvenile is identified as a beast.",
+          "when": {
+            "entry": 20797
+          }
+        }
+      ],
+      "title": null
     }
   ],
   "place": "Wailing Caverns",
@@ -461,6 +790,11 @@
       "kind": "research",
       "reference": "evidence:sha256:b9a8035d397ef82cf6d3156ed3c601a6b74cf47ad2c01ed3db100555d94e5326",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
+    },
+    "source:09dcc40b834f307199116cfc": {
+      "kind": "research",
+      "reference": "evidence:sha256:26e29b3836227696984d0b2870b714f68ae0a969980272113b2ebc2847d37079",
+      "revision": "0610ae89c563580bbc99c2553037537fa31c037ce1d1fee7c70b7193427b800d"
     },
     "source:0b4b2e6d8229d13d6bcac6b2": {
       "kind": "research",
@@ -472,6 +806,11 @@
       "reference": "evidence:sha256:aae3f8c8265780a9f4eb8dbc248a3cedb517c48fe9f98e22acc56b700054cba1",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
     },
+    "source:0f757b2868b455928fbf22e8": {
+      "kind": "research",
+      "reference": "evidence:sha256:43dcf938f72386091bc8aa3e0f0749c430c1dfd71ccc0913f7995825342cdf6d",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
     "source:10532a8635824ae5133cdb2b": {
       "kind": "research",
       "reference": "evidence:sha256:b119770baec54e0c45edcd562f1bebdba97106f163e14b9e7c9bd2e0fc110b38",
@@ -482,10 +821,25 @@
       "reference": "evidence:sha256:f5e1614210d71b02280f1c481f6026324458adcf66f005b4259a4c016d72776d",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
     },
+    "source:1405895e16457896d092e3d7": {
+      "kind": "research",
+      "reference": "evidence:sha256:db59e0e40fbf3b0f9f29bfb45af07112b572fd9c2babc1481e784da2d02e271b",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
+    "source:16f8cfb4ce1839a2a295452b": {
+      "kind": "research",
+      "reference": "evidence:sha256:0a4ad6de4f78ef562f7a661e2833c21c7b23857139548ad64bdc85ea0eb425fc",
+      "revision": "6f5b9c49793676be63c5ae8bcaefe04ec8c3ef93e3f6ed428a6c061b8d93becd"
+    },
     "source:1706a81b0e942b01beea70f8": {
       "kind": "research",
       "reference": "evidence:sha256:1fedbf762307a246d647c920bfb8c80d67298bbb0edd284aa0c102fc5504a323",
       "revision": "84cc18695ace19e602eacdaf0eb067912c1aab0897e58aa04faecc93eac8578d"
+    },
+    "source:17fea982f7fe3d5302fc5521": {
+      "kind": "research",
+      "reference": "evidence:sha256:55094292120425e298c33aea288fa44357cae08cf29aea9d1818643891d7be28",
+      "revision": "0610ae89c563580bbc99c2553037537fa31c037ce1d1fee7c70b7193427b800d"
     },
     "source:1a61ef475710396c466e4b42": {
       "kind": "research",
@@ -497,6 +851,11 @@
       "reference": "evidence:sha256:268bb9761a0dc32becad8a68643b85f77204ccb83376a5804903c3a0f95801dd",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:1eaa8889b7d9ea779e339bc8": {
+      "kind": "research",
+      "reference": "evidence:sha256:712a3b993016a8f4e727ca672ae79a0187611d72554474522c6449e9030e5624",
+      "revision": "0669b39f16d136e1600ff4e11ae55d99e792b0693899f1ecfb472383cc4ada84"
+    },
     "source:1f9652b5666dad9930ff9204": {
       "kind": "research",
       "reference": "evidence:sha256:c591877662ab8676e5542846dc61b341210d693ec7c8e3d820d303764c0466c9",
@@ -507,10 +866,25 @@
       "reference": "evidence:sha256:8f1e6c147ace2be2dcbfa82f88ee07309619136a3232b26e99a3bb54cb6219df",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
     },
+    "source:23f8b4b74f73a7fe0fee6858": {
+      "kind": "research",
+      "reference": "evidence:sha256:1a2613540adf340e34674ae603d286d1ea698b7239c32d415bfe23074c3e615e",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
+    "source:2578374eb12db3f37b885ba9": {
+      "kind": "research",
+      "reference": "evidence:sha256:587cd608fb86a4a4de8ae02fe8c753e0c15e23094ad59a9f1754189e340e5732",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
     "source:267447f03d89d3a932d55db5": {
       "kind": "research",
       "reference": "evidence:sha256:0359352fd35171a5b7bdba21f5765da02c0b5bb4f0352c6bc39ae67c8bcb3d13",
       "revision": "9522a91e46ae07f398d456fe3ff31a834cd1b53f33d6e3488c2328e4079ac1f1"
+    },
+    "source:2844876951ef6ac0c5b5c89d": {
+      "kind": "research",
+      "reference": "evidence:sha256:865d054c4577fac14e30be69a48dd76c8a21203c03fadacfbac65ef0813e7ef0",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
     },
     "source:2855e229760335d90f765806": {
       "kind": "research",
@@ -521,6 +895,11 @@
       "kind": "research",
       "reference": "evidence:sha256:ebed899997aa0743d0127e9bc360863f6a06bef26bbd428b480709316d37267d",
       "revision": "84cc18695ace19e602eacdaf0eb067912c1aab0897e58aa04faecc93eac8578d"
+    },
+    "source:2cc5aef1aab020d553ff68fe": {
+      "kind": "research",
+      "reference": "evidence:sha256:ac354e855d800052e2989a3a9a324ae757c7644c8526a23f1bfa7a82cfe09b01",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
     },
     "source:2e02684009ba4bf8280f10a0": {
       "kind": "research",
@@ -542,10 +921,25 @@
       "reference": "evidence:sha256:fb848c3f00f505a3f0953a4a0aec30cd22da3600bd947d30c248556aca0080e2",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
     },
+    "source:32f7c61220fc21c02eb70acd": {
+      "kind": "research",
+      "reference": "evidence:sha256:81edb4b5b814f8a087a97779758c2171c3cf1b5c10329d2732818bd6b9264ade",
+      "revision": "0669b39f16d136e1600ff4e11ae55d99e792b0693899f1ecfb472383cc4ada84"
+    },
     "source:345da1c77aee05374be83e77": {
       "kind": "research",
       "reference": "evidence:sha256:721c85de5290985b9161c6d9960fedfec8cbb76daac4b226dc488d7adc94ddd5",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
+    },
+    "source:35e28ff787060248e199a1e4": {
+      "kind": "research",
+      "reference": "evidence:sha256:b140d6639c5b40c79ee3481b5c53fc037725368ea399f8cf40e22c2b39d2e4f6",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
+    "source:397a53bc13a3bf9494b0cb6d": {
+      "kind": "research",
+      "reference": "evidence:sha256:7145d2526174f3bf64970283f870173958dcaa09aba3e76425245ea45847c960",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
     },
     "source:3c79d11674077be9f30ed123": {
       "kind": "research",
@@ -562,10 +956,30 @@
       "reference": "evidence:sha256:11a5b6ddbb8a6dc6e2c82a3d71d5628ba6ea99c7748476f5f467b11d4d122aac",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
     },
+    "source:3fd959fbd199557b2bba1f88": {
+      "kind": "research",
+      "reference": "evidence:sha256:77a7e8651ac7c3092b5ee774b73b3214089ec8d11b91fb707ba7c7d2c64efd5d",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
+    "source:438e42bf455731d6fb956ece": {
+      "kind": "research",
+      "reference": "evidence:sha256:c83547dfeba454ff1e16a020dba70788c2ae553fb37fb4a733606b19cb346cd7",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
     "source:474a38eb1acb0ea1612d4198": {
       "kind": "research",
       "reference": "evidence:sha256:3b09968874041e11dbba527d836986717857fb1fa229a4a135fb9d7cdea2681b",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
+    },
+    "source:47ddf4d814e7fb911c0a3d32": {
+      "kind": "research",
+      "reference": "evidence:sha256:51eefc2dd9e8328e023203fe4a2694b986a7ee6db892242ed39e6a655565f3de",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
+    "source:4a693dd83a8983de894e5816": {
+      "kind": "research",
+      "reference": "evidence:sha256:48c2bdda68f99cb855e70ac8f1565738976199baad3da15d844130941c28c208",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
     },
     "source:4b8a58b9ca02be27408a8723": {
       "kind": "research",
@@ -627,10 +1041,25 @@
       "reference": "evidence:sha256:34c32476801e48ff8b4c939c516653674431f50ac6d4378cf159b4c0842a334e",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:64e5d32804fb3d25a792a56d": {
+      "kind": "research",
+      "reference": "evidence:sha256:435b95d960252413c2467c3522c378682347972d848fd29e439c1b8bc1a1a1dd",
+      "revision": "ecc29611de9955b0a5232ea2d00520f4b876f346b7072a51b256b5735be3b684"
+    },
     "source:668ef93ab1a68f874e076613": {
       "kind": "research",
       "reference": "evidence:sha256:b4e5d36797b51bd2db3a2b5defa972901c504b884c2b99645b828f07dde11305",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
+    },
+    "source:66f50f1693d06d3753b88790": {
+      "kind": "research",
+      "reference": "evidence:sha256:0dbff729a28586b639c11a214c2f9c3883036c179e983babb741e1b66e86eec6",
+      "revision": "ecc29611de9955b0a5232ea2d00520f4b876f346b7072a51b256b5735be3b684"
+    },
+    "source:6a8a51ff64b673160f571a24": {
+      "kind": "research",
+      "reference": "evidence:sha256:d47a9255170d5f9a29b3afe9e47dddbacb5a23e01ce4a4981b78ccbe8e4b263e",
+      "revision": "0610ae89c563580bbc99c2553037537fa31c037ce1d1fee7c70b7193427b800d"
     },
     "source:6b5ad6bd9c7cc95b533ad9f8": {
       "kind": "research",
@@ -641,6 +1070,16 @@
       "kind": "research",
       "reference": "evidence:sha256:f9e8e149dc880194f03e9c6c7c19cbaaa14fc1bab8010c87970bcdbb748ef513",
       "revision": "84cc18695ace19e602eacdaf0eb067912c1aab0897e58aa04faecc93eac8578d"
+    },
+    "source:70890d8af16e030415c422f8": {
+      "kind": "research",
+      "reference": "evidence:sha256:e1000a1f982274937d944f0b87bc6d18c4998827a8c2de2ba6acfe1c29852eb4",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
+    "source:7697fe0849bb185d9c580710": {
+      "kind": "research",
+      "reference": "evidence:sha256:ae397e2601149a9278ed0326ea422db1ce2d41ff6b7a035525b2108d7f5c92f1",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
     },
     "source:7cb783fd27ef708b6bd6989c": {
       "kind": "research",
@@ -657,10 +1096,20 @@
       "reference": "evidence:sha256:49563479b65e271f8af5c0cbc3948e35eed47af5711e497cb03b19e15123a5a8",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
     },
+    "source:810be9450c98bd223e65b355": {
+      "kind": "research",
+      "reference": "evidence:sha256:cc9521e1a236bf32df5435ad424fbe08bf89c8404e11a4e61018957c74328c3c",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
     "source:81c51aeac286fbd1497d4e69": {
       "kind": "research",
       "reference": "evidence:sha256:2c2aa026ce195d803d36e90481b258b96d836f213746af515814e6967f1f03ee",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:8336c1339e139078716aed29": {
+      "kind": "research",
+      "reference": "evidence:sha256:71878be95188a27676f78e2450738472b3568a533a677fc21347ee2044804a93",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
     },
     "source:839dc751c447ac243747f6db": {
       "kind": "research",
@@ -672,15 +1121,45 @@
       "reference": "evidence:sha256:f95bf73e1f6e2043bb100e5722e3793dc684272bde5763ede6a3b2f318c63cfc",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
     },
+    "source:84a94a6ed30e1b1378dc6d3e": {
+      "kind": "research",
+      "reference": "evidence:sha256:c7a212e217ed2b1866c1b727a4140e8cf7a2561323f871025cc36663736dce54",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
+    "source:89aea7b9e6b3ae4a76acfe23": {
+      "kind": "research",
+      "reference": "evidence:sha256:bef1eab49385178f96c30b6bb3383fe272b6493687168d28242a815a634857f1",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
+    "source:8a2bee37e06169e09560566a": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
     "source:8a3253f36ae9afb9dc0c08e3": {
       "kind": "research",
       "reference": "evidence:sha256:b9344e355b4c06d6004e7350e047b80f106a4370159ddb6498713525d8e0bf47",
       "revision": "84cc18695ace19e602eacdaf0eb067912c1aab0897e58aa04faecc93eac8578d"
     },
+    "source:8a78502ca408365fe59e3f31": {
+      "kind": "research",
+      "reference": "evidence:sha256:6aa223793e403703b6cadd8b0aa7e6381835fae131139090621b21f7586d330c",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
+    "source:8ad66ef6813b988409089355": {
+      "kind": "research",
+      "reference": "evidence:sha256:bf6de27712ef5c37af21eeb5066eb651bed15f0ba3a51eabf762116c057d13b6",
+      "revision": "6f5b9c49793676be63c5ae8bcaefe04ec8c3ef93e3f6ed428a6c061b8d93becd"
+    },
     "source:90ab58d8a173edb2c32a810a": {
       "kind": "research",
       "reference": "evidence:sha256:82bc84fc1efc8ccf9083f2d00a72da8548a6e8c40a17fbe4a1be553ab3d23e3f",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
+    },
+    "source:93adbd481ef0ba39503ef083": {
+      "kind": "research",
+      "reference": "evidence:sha256:3ffff150ab7586441a0ccbdafb88b28b15998e496eb1c9b6c2521aee85d68864",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
     },
     "source:9bd837bf92ebf225ef75fa01": {
       "kind": "research",
@@ -692,10 +1171,25 @@
       "reference": "evidence:sha256:8c454a9aaa3892ba122cf91085d35b3c300bacce83d28e432199ce9009f0da25",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:9ff74347639e63d6c255ae64": {
+      "kind": "research",
+      "reference": "evidence:sha256:fa14dfe18d09509982d4657a4667ff823c8b49ea0a75c84b6ade7d41afc55000",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
+    "source:a007707200cdd5099f5861c1": {
+      "kind": "research",
+      "reference": "evidence:sha256:cb5dbf35b4fa1e4090a8eeabc2f66aca42918f76d1ca2ab10a4f9a4a8444cd57",
+      "revision": "ecc29611de9955b0a5232ea2d00520f4b876f346b7072a51b256b5735be3b684"
+    },
     "source:a0cdf4dd4de70f9d3f930e09": {
       "kind": "research",
       "reference": "evidence:sha256:ad980834a4fbbbd2c452be6d5fa89805eb6f870150c5a241509bf70e1b105389",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
+    },
+    "source:a0e41749b0964716239a9e00": {
+      "kind": "research",
+      "reference": "evidence:sha256:b1b8892efbbb1ce146f5d9f12ff814e74371c0524d45ab435f934529c4eccead",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
     },
     "source:a437387fab362e60922af703": {
       "kind": "research",
@@ -707,6 +1201,11 @@
       "reference": "evidence:sha256:410190f48c8f8bae758b22691e6efb75383fa75cad9792553167b415b7eb888f",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:aa180476a14a253fea489b42": {
+      "kind": "research",
+      "reference": "evidence:sha256:0489387affba227ee95c104b357292805ef1aff18e78097c2711e2f92672688c",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
     "source:b4ee2d900babb9e87e922dfd": {
       "kind": "research",
       "reference": "evidence:sha256:6e26f694627a37c2178e1e79fac646f3851e933430c1243f3fe2b20a1ac265fe",
@@ -717,20 +1216,40 @@
       "reference": "evidence:sha256:963346295ea8d0b7c487b2574755e799b40c01454b1e4068e81fa07219fe4d6b",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:bda849e6579b19445bea1fc4": {
+      "kind": "research",
+      "reference": "evidence:sha256:73db91c54773afe899236392e3f50860d4eadeac02ce99babe68390a6402e7e5",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
     "source:be06e9f05b4ca0af2e73f63f": {
       "kind": "research",
       "reference": "evidence:sha256:20fea5145679494207d0e8df2435804f0c6b31660bcdc22e34ad2a3dab59d34b",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
+    },
+    "source:c287192b2730a062bec2d363": {
+      "kind": "research",
+      "reference": "evidence:sha256:9724b95266919717df1bf06271125aea023685c4af09f1cea02420a903ebfa10",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
     },
     "source:c8d34a0d9fb438f1102b9e01": {
       "kind": "research",
       "reference": "evidence:sha256:e9920209b14cf5c68d37a6e8f059fb92ccb9967e2890e4dcbe11216839a7a512",
       "revision": "4ce5b38e907203971d9e14ea6aaee40e9384f09312e8f2d65edcae5ff042adbe"
     },
+    "source:cbc445d1e26ccc89327667d7": {
+      "kind": "research",
+      "reference": "evidence:sha256:8e6a3cf0c9b0018103cac0634f1527dae3908342f0d97b17fc3af5b8ec348de3",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
     "source:d0dd7dadba3980f488335fe1": {
       "kind": "research",
       "reference": "evidence:sha256:fcaaa75046e93129f0e7f6f3f38cd28c7bfff975d7e9a6980ffdeccc00efcd05",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
+    },
+    "source:d4d883089fcae032db9b0f04": {
+      "kind": "research",
+      "reference": "evidence:sha256:3bd2e38d5df8a6ea8bdb4941d7a5fa0273418c4b52de40b5ff7c4acb6e15ac84",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
     },
     "source:d5d3610982d3d2f43dc82c07": {
       "kind": "research",
@@ -757,6 +1276,16 @@
       "reference": "evidence:sha256:e9c30ebade885363ec823913b9a5691c2da70e0aa44af7a6f4e175fed9f03093",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:e7295fa31a8aed4564a2dd83": {
+      "kind": "research",
+      "reference": "evidence:sha256:2b9db5653df050d90fbcf44245fb4b290e74a1200181b0c85de8517430fe1775",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
+    "source:e8415bf9f64e5c7193e7fbe8": {
+      "kind": "research",
+      "reference": "evidence:sha256:0ef00b59903b674b968c1f224eacc8a12cff3a807fd9c6c265e14a2a6c4d95b1",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
+    },
     "source:ea4e10d1a887e6e8fdc5138c": {
       "kind": "research",
       "reference": "evidence:sha256:f67d607ba359d765012f117a9dca7bac414e0b8be9ab277167de6ed0bc817729",
@@ -772,6 +1301,11 @@
       "reference": "evidence:sha256:cab727ba0961ab0a35a5505151c47545a8ec66fb4900e26ff902b1c6c845dddc",
       "revision": "84cc18695ace19e602eacdaf0eb067912c1aab0897e58aa04faecc93eac8578d"
     },
+    "source:ed3029d26b1052c0c7c00ec4": {
+      "kind": "research",
+      "reference": "evidence:sha256:37525c86eb0c1e65e6f3dce3173e427ca72b368bc72bb6236e9de2fca730eeb9",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
+    },
     "source:eda746c3cca674f5defd005c": {
       "kind": "research",
       "reference": "evidence:sha256:fb375fe3e80188a00bb7434e9082c0ff08273c167213d38642076595521728bf",
@@ -781,6 +1315,11 @@
       "kind": "research",
       "reference": "evidence:sha256:aba1c96ea167251ef3ba6401944983f77ac7b00b5a74ae5a01344281a52b4714",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
+    },
+    "source:f1d60f3704f54ef351951685": {
+      "kind": "research",
+      "reference": "evidence:sha256:2f1d5e3f7d7be2cfa273ef0983daada87da4d3a5761bb80153ca66ab3ec5f075",
+      "revision": "36a8901abd57719ae8329f8a9a9f0f94f34062ec11a68519c32ebab0dd60d3a5"
     },
     "source:f41e9326fe80b1a7b07e3d90": {
       "kind": "research",
@@ -792,10 +1331,20 @@
       "reference": "evidence:sha256:8b0169f085a8f212459c6de31c4127fdf5f784bc1c86b790cc47c4ebe6c38fc3",
       "revision": "17648c08497688de4d6fa2d3ddfd71e2c6a948795348c4f25e177519a7fc23be"
     },
+    "source:f6e7c29e4b571b54e14dfdda": {
+      "kind": "research",
+      "reference": "evidence:sha256:3b7b332bffdce9736bb35889cbe5ff5c91c863eea706b1102e3fa5dc33b9dd4c",
+      "revision": "a84a468cebc22f29e600f8549db9ed7ff0e55af1752cda87787daa9838b5fbaf"
+    },
     "source:fa3da7ba7708d5af5c7abca1": {
       "kind": "research",
       "reference": "evidence:sha256:081f93495c2b8bc2e11064068036f3dc1f0d6a61204728c1f724301a413a20f1",
       "revision": "47689ce1b779a8e03ad50dc50a4b8463b294c2b92cf355412bf79bc8f1cbab7f"
+    },
+    "source:fba6cdbb602db63df785cacb": {
+      "kind": "research",
+      "reference": "evidence:sha256:0c9f76193eff1c2dbc391e8eea9117305508c3879d23f057675188507a318f56",
+      "revision": "825a7b14d458f3ecf9ebf8cfc0dfc178c2739f3e9109958dc8726a6ea13f1d9a"
     },
     "source:fd3da039020e5c78e786eb7f": {
       "kind": "research",

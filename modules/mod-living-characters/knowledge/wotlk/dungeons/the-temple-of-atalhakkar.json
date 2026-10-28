@@ -4,6 +4,73 @@
   "map": 109,
   "npcs": [
     {
+      "entry": 1063,
+      "name": "Jade",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:1063:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:53e0b0f50bc6119a96a2cce0",
+            "source:65952d4a05b55b5fe5d12e89",
+            "source:d254e4a5ffa8d40ba7459d44",
+            "source:38c7d7073d30d114766da368"
+          ],
+          "text": "Jade guards the Temple and refuses to let intruders enter. On seeing one, she says she must destroy them for their own good, presenting her attack as protection rather than mere hostility.",
+          "when": {
+            "entry": 1063
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 5224,
+      "name": "Murk Slitherer",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5224:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0b70b606d79ea33e6cc81e12",
+            "source:e6b7ff71e2ae78f8d0cd79cf",
+            "source:5aa7e9b26210df4e020ef575"
+          ],
+          "text": "Murk Slitherer is a beast found in the Swamp of Sorrows.",
+          "when": {
+            "entry": 5224
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 5225,
+      "name": "Murk Spitter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5225:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ff6bd63ea0e7396a18f4e6be",
+            "source:8f4bfc20b3ebeded286746f2",
+            "source:9b37dafa3eeec4dc0ef838b3"
+          ],
+          "text": "Murk Spitter is a beast found in several areas; it casts Venom Spit in combat.",
+          "when": {
+            "entry": 5225
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 5228,
       "name": "Saturated Ooze",
       "records": [
@@ -24,6 +91,50 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 5235,
+      "name": "Fungal Ooze",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5235:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:279727ac9526bf64d197ad27",
+            "source:d648c9b911cf73e4b570d3b3",
+            "source:5aa7e9b26210df4e020ef575"
+          ],
+          "text": "Fungal Ooze is an ooze found in the Swamp of Sorrows.",
+          "when": {
+            "entry": 5235
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 5243,
+      "name": "Cursed Atal'ai",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5243:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:66db5217e7d1b880d22bf3c7",
+            "source:0879ab40cf2c0434338b4dc8",
+            "source:99463875a7a3cc3ed76f021d"
+          ],
+          "text": "Cursed Atal'ai is a humanoid that casts Call of the Grave at low health.",
+          "when": {
+            "entry": 5243
+          }
+        }
+      ],
+      "title": ""
     },
     {
       "entry": 5256,
@@ -70,6 +181,48 @@
       "title": null
     },
     {
+      "entry": 5261,
+      "name": "Enthralled Atal'ai",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5261:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:45dbe5c02221c5b22c7215f2",
+            "source:a163a25a04018e46fdd0f3e4"
+          ],
+          "text": "An enthralled Atal'ai that casts Fixate in combat.",
+          "when": {
+            "entry": 5261
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 5263,
+      "name": "Mummified Atal'ai",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5263:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:917aa49b7bcbae730efd07cd",
+            "source:610978fed1f977a4e48d514d"
+          ],
+          "text": "A mummified Atal'ai that casts Fevered Plague in combat.",
+          "when": {
+            "entry": 5263
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 5267,
       "name": "Unliving Atal'ai",
       "records": [
@@ -91,6 +244,29 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 5269,
+      "name": "Atal'ai Priest",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5269:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:1d0ec824ddfbc21f8450720e",
+            "source:3d1f34cf5cfd8aa8e2bd559d",
+            "source:4ac8dc4a04035295903310f2",
+            "source:6101303d7bf55b42f7485337"
+          ],
+          "text": "An Atal'ai priest who uses Shadow Bolt in combat and heals a friendly with missing health.",
+          "when": {
+            "entry": 5269
+          }
+        }
+      ],
+      "title": ""
     },
     {
       "entry": 5270,
@@ -220,6 +396,70 @@
         }
       ],
       "title": null
+    },
+    {
+      "entry": 5399,
+      "name": "Veyzhak the Cannibal",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5399:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:104b5f17705bc87156f1e925",
+            "source:e4e88924c5073301562d5564"
+          ],
+          "text": "Veyzhak the Cannibal is a rare humanoid whose loot includes a Fetish of Hakkar sought in the Temple of Atal'Hakkar investigation. His epithet and rare status distinguish him among the named creatures connected to that affair.",
+          "when": {
+            "entry": 5399
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 5400,
+      "name": "Zekkis",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5400:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:144a3edf81d0ed8f34c82d3c",
+            "source:f6dd6245f20a21718aefcd91",
+            "source:126687772c3740feacd415de"
+          ],
+          "text": "Zekkis is an undead adversary whose combat magic includes Curse of Blood and Contagion of Rot.",
+          "when": {
+            "entry": 5400
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 5401,
+      "name": "Kazkaz the Unholy",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:5401:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ee25af3bd5618ee6ef533ac7",
+            "source:995cb603e03b3321336815e8"
+          ],
+          "text": "Kazkaz the Unholy is a named humanoid associated with a Fetish of Hakkar sought in the Temple of Atal'Hakkar investigation.",
+          "when": {
+            "entry": 5401
+          }
+        }
+      ],
+      "title": ""
     },
     {
       "entry": 5708,
@@ -683,6 +923,11 @@
       "reference": "evidence:sha256:0e71edc6f4669640bd58adfa6e0d1ab817ca2febf4494af3dec6218209f137e0",
       "revision": "475fba03946e4feaf0084cb8eea8f61e232e80249e6bfbd848f99ad52afefd28"
     },
+    "source:0879ab40cf2c0434338b4dc8": {
+      "kind": "research",
+      "reference": "evidence:sha256:18e31e1a7361a4b7db1f8fc69a17f074742509fbe2b90eac8851d2a61680b88a",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
     "source:09ba59f554b149d238d81657": {
       "kind": "research",
       "reference": "evidence:sha256:e3518a5a99b62521a54ef46333b545bd81df2041a65a85de7d9bd967fc172e34",
@@ -692,6 +937,11 @@
       "kind": "research",
       "reference": "evidence:sha256:6904f102fae2c338f99ed4b02334f6a070dccf564fe7e13a93f39e2335fd9651",
       "revision": "32b9249060ea43338bb59e9de601a2c5564755127375e3ff3e6006482d9422d4"
+    },
+    "source:0b70b606d79ea33e6cc81e12": {
+      "kind": "research",
+      "reference": "evidence:sha256:8fd1cedd0d887c79213d430d45b309924afbce70b3e84fb3a592ab1b03a9dd5d",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
     },
     "source:0cc7c1201371b644f3ac4a11": {
       "kind": "research",
@@ -703,10 +953,25 @@
       "reference": "evidence:sha256:1fb68b0d75a3e4aba557dfd65ebfb334247d2d2d3f30d9fe8a257b32e31856fa",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
     },
+    "source:104b5f17705bc87156f1e925": {
+      "kind": "research",
+      "reference": "evidence:sha256:ef3c37a3ad26de8d73eee43e637eb8909b9f759aa2c96237b9131513b6537959",
+      "revision": "8741d30480f991a60e5c812bd8331e82bf3efaaf53a63985d09e9e0a7014f94f"
+    },
+    "source:126687772c3740feacd415de": {
+      "kind": "research",
+      "reference": "evidence:sha256:70c9f8723d5ea40462abd82211f30b3ad5263e105632c63bd979f4fd252f7952",
+      "revision": "265125181c452e13a535a3fa0fcb08b670d0c19eee8a088244376aec89fe2400"
+    },
     "source:1305a90507a7479ec0554883": {
       "kind": "research",
       "reference": "evidence:sha256:55b0330357ebc0f7f24538fc79c6ded2c5a63917c8fbdc92fcffdcbd446869fe",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
+    },
+    "source:144a3edf81d0ed8f34c82d3c": {
+      "kind": "research",
+      "reference": "evidence:sha256:60dbed1ba15918ede5026c28a4a1df2292a343d95d7525f9694dedc72f5da21b",
+      "revision": "265125181c452e13a535a3fa0fcb08b670d0c19eee8a088244376aec89fe2400"
     },
     "source:1674d5496ace1bedd4a0bdad": {
       "kind": "research",
@@ -722,6 +987,11 @@
       "kind": "research",
       "reference": "evidence:sha256:f28ffdbb8170cd17fb843ed820f37f3b876b44a43f8a95b9afc6e9ced841963c",
       "revision": "e34a94e7057a251b4e846cea45f94464269069b92a4e183d8d829da35ac2cffd"
+    },
+    "source:1d0ec824ddfbc21f8450720e": {
+      "kind": "research",
+      "reference": "evidence:sha256:3339b754a8f6a2b4e8a619c0693c3653063ad4829143a50b23bf9118862fe7f7",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
     },
     "source:1ef8cc3b6145188ebfd57829": {
       "kind": "research",
@@ -753,6 +1023,11 @@
       "reference": "evidence:sha256:47015bc62d5e43c760b60e98359e51c0741603426a05adc6b2f2c807714aea57",
       "revision": "475fba03946e4feaf0084cb8eea8f61e232e80249e6bfbd848f99ad52afefd28"
     },
+    "source:279727ac9526bf64d197ad27": {
+      "kind": "research",
+      "reference": "evidence:sha256:d8861c2a8016c204e3fecbea2b4bcc89fd33cad2d831cb542613800e13528305",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
     "source:2ac5b2c51f1a92b5f5594e40": {
       "kind": "research",
       "reference": "evidence:sha256:e4928e5232654ffe47e6c6974fee968f976fa5c2521c5d8c4b6cde3a72e57d82",
@@ -783,10 +1058,20 @@
       "reference": "evidence:sha256:1704b8e490246ad5d87daa5715e445ab3fe08514bb5e6a8f9497b23c6d3f725a",
       "revision": "475fba03946e4feaf0084cb8eea8f61e232e80249e6bfbd848f99ad52afefd28"
     },
+    "source:38c7d7073d30d114766da368": {
+      "kind": "research",
+      "reference": "evidence:sha256:e40aa56862b7f075cade15b1abefa5a29d15d4cd04ef96a915a9748fd0ab7945",
+      "revision": "070ee66d32c6b675b09202ee62a66f610f32d71d833438ce12c9502565a61bde"
+    },
     "source:3bfbc086d18427feed52ed0e": {
       "kind": "research",
       "reference": "evidence:sha256:062a1bb2fc89bc95f41f1569dde23cbf5e07164cd988602afcf80263f46e3278",
       "revision": "2f5fe7bdad657c33ef6f344cb397708e640d7d238d04257b5caa40ae4f98c06d"
+    },
+    "source:3d1f34cf5cfd8aa8e2bd559d": {
+      "kind": "research",
+      "reference": "evidence:sha256:1329da08833216b115ad7887a5ca984d390a68b4287e7cf1053020bd5399303a",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
     },
     "source:4014db75fbb700e52771fce6": {
       "kind": "research",
@@ -813,6 +1098,11 @@
       "reference": "evidence:sha256:aa94e327e7dd0a0dfb4a44c9f30120710b4fa94bcd4f5bcb963b40870a6b2242",
       "revision": "d27e8f23cb64783222668adae984c3d2766ea70de131f4b3e2903480dd62c633"
     },
+    "source:45dbe5c02221c5b22c7215f2": {
+      "kind": "research",
+      "reference": "evidence:sha256:62e5be7f7c369d32e7e6147df24e9ba310385994ecc01c9cc959fcd718e2a99b",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
+    },
     "source:46204049a8a67d2553943c5c": {
       "kind": "research",
       "reference": "evidence:sha256:e886277384c51fa87818afc75b2e832562585e6262bee08d310d118ebae7dc03",
@@ -822,6 +1112,11 @@
       "kind": "research",
       "reference": "evidence:sha256:6e36a6a3b965ac723c65a88b3ef44a741a73e900c2bc26e0abdf831aefb21273",
       "revision": "d27e8f23cb64783222668adae984c3d2766ea70de131f4b3e2903480dd62c633"
+    },
+    "source:4ac8dc4a04035295903310f2": {
+      "kind": "research",
+      "reference": "evidence:sha256:0ca9a04e211674a36ba7a5a25fdc54573b140acac5ce4c31bda5e1c49cf7bc30",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
     },
     "source:4af6d16ee82917c81649e17b": {
       "kind": "research",
@@ -838,6 +1133,11 @@
       "reference": "evidence:sha256:b6ece8afcb8b837b811f90af544326f3b0aca20d5fa3da979ca85f6da80ca31d",
       "revision": "93ffc8823560f96ea66f9e620b633f723324584bb023aea2de0ff7a31274f983"
     },
+    "source:53e0b0f50bc6119a96a2cce0": {
+      "kind": "research",
+      "reference": "evidence:sha256:6a879e84b353a7f72182f24c117a33d05be97f7da60399c6c30b2a1cdedc0146",
+      "revision": "070ee66d32c6b675b09202ee62a66f610f32d71d833438ce12c9502565a61bde"
+    },
     "source:563cf3dca140aa004bb754fc": {
       "kind": "research",
       "reference": "evidence:sha256:4717eccf4ddc93fe95a7777da28f89cf4983d0bf81cb76f3bdd720e90d0c757f",
@@ -848,10 +1148,25 @@
       "reference": "evidence:sha256:ad94d818e17ca1778d11057041c4667303f313f8830fdfd68e7fc6c3fa6d75d6",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
     },
+    "source:5aa7e9b26210df4e020ef575": {
+      "kind": "research",
+      "reference": "evidence:sha256:4825e2faea4ad0a379535365dd6c98cb7e826bfbf169b9866a0f9c0308b6093d",
+      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
+    },
     "source:5f6e46634fa835ff392664ac": {
       "kind": "research",
       "reference": "evidence:sha256:b6879b3bd5b7935c2b4ae05793e5f877a975c216096d420fb758aa4918d3128f",
       "revision": "2f5fe7bdad657c33ef6f344cb397708e640d7d238d04257b5caa40ae4f98c06d"
+    },
+    "source:6101303d7bf55b42f7485337": {
+      "kind": "research",
+      "reference": "evidence:sha256:0ffa2daa9d4c4206ad9d35984ea4f778e6b7bc960420d6d8c5c484b2af135c9c",
+      "revision": "b46d94d6a5bb92a1e5dc0d433d67ec26ae0253ebfc8c0b2becd2b0cc79b0df6b"
+    },
+    "source:610978fed1f977a4e48d514d": {
+      "kind": "research",
+      "reference": "evidence:sha256:8817853e0b035d9613188a4125b52a531e9693106471211e7bf0144e18b95022",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
     },
     "source:6184e3c43c6b74af766bc16f": {
       "kind": "research",
@@ -867,6 +1182,16 @@
       "kind": "research",
       "reference": "evidence:sha256:8379a1bcddfcf0c075255892e4413ea422c2b2acf118747375d6d0fdda023acc",
       "revision": "e34a94e7057a251b4e846cea45f94464269069b92a4e183d8d829da35ac2cffd"
+    },
+    "source:65952d4a05b55b5fe5d12e89": {
+      "kind": "research",
+      "reference": "evidence:sha256:4592a30a23dcdd232b00114f410991977528843b385f8647da7841be8540a010",
+      "revision": "070ee66d32c6b675b09202ee62a66f610f32d71d833438ce12c9502565a61bde"
+    },
+    "source:66db5217e7d1b880d22bf3c7": {
+      "kind": "research",
+      "reference": "evidence:sha256:345a02b37e2ef4a62c3d3fa8c6d4645d0049c14b03cb4d60adb00ed49e6df73b",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
     },
     "source:672fa567d93572e8eb4784b6": {
       "kind": "research",
@@ -923,10 +1248,35 @@
       "reference": "evidence:sha256:40d3dff413e346a99617afa5edc9abd86ad6d9406bc4043bb85dad24019be734",
       "revision": "d27e8f23cb64783222668adae984c3d2766ea70de131f4b3e2903480dd62c633"
     },
+    "source:8f4bfc20b3ebeded286746f2": {
+      "kind": "research",
+      "reference": "evidence:sha256:9cf25ebfec6d3b64b01e6526e02bce802b934a47e292dcc59e775de60fd17f1b",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
+    "source:917aa49b7bcbae730efd07cd": {
+      "kind": "research",
+      "reference": "evidence:sha256:ee4e6cebae3c4b113480b02cc5ab1886f454b24321a6ab6ab5804899a679b53d",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
+    },
+    "source:99463875a7a3cc3ed76f021d": {
+      "kind": "research",
+      "reference": "evidence:sha256:efb65c8d3487c59d0d1eb118e68af37e4180ac675b3e233107458d6bee940317",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
+    "source:995cb603e03b3321336815e8": {
+      "kind": "research",
+      "reference": "evidence:sha256:8a2c4a9fe5f545098808b08f30bc934abd76ada453824d42afc308d7eb4ae10a",
+      "revision": "db6e717f7273f57cece94955dce2606f06358be63773901bf71ea4e054c4923d"
+    },
     "source:99bbd5aed8d6c0814ce1e04f": {
       "kind": "research",
       "reference": "evidence:sha256:477167d05252082190bed66f370b47e9eaff6a240726196437b1efb124be9921",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
+    },
+    "source:9b37dafa3eeec4dc0ef838b3": {
+      "kind": "research",
+      "reference": "evidence:sha256:80c08963528e072bfa270bd527161b8bb81d01914f37e11f36c1cdd0302de249",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
     },
     "source:9c11ab0d313876b643362b98": {
       "kind": "research",
@@ -942,6 +1292,11 @@
       "kind": "research",
       "reference": "evidence:sha256:f12704f947a22681e05a18f682d9a54d4819a996774c135815278af67c84c175",
       "revision": "93ffc8823560f96ea66f9e620b633f723324584bb023aea2de0ff7a31274f983"
+    },
+    "source:a163a25a04018e46fdd0f3e4": {
+      "kind": "research",
+      "reference": "evidence:sha256:2f9a7c695c7a883dd93d2bdf61b6fc0abf4f72ab9cde621b820268f3930c4dd9",
+      "revision": "d2738b9fd312f87d44688c5231ba429305fdb99830a4a7d4822baf230225089c"
     },
     "source:ac4976d1a02e1015f407e789": {
       "kind": "research",
@@ -1023,6 +1378,11 @@
       "reference": "evidence:sha256:1afffc4354b3a66c327224a811ac3b06e7f898f886675b5433cb6846a19ef796",
       "revision": "e34a94e7057a251b4e846cea45f94464269069b92a4e183d8d829da35ac2cffd"
     },
+    "source:d254e4a5ffa8d40ba7459d44": {
+      "kind": "research",
+      "reference": "evidence:sha256:c132550a71e42e025bdf8a86843413d676823d3793927f6d20044ccc1702e3cc",
+      "revision": "070ee66d32c6b675b09202ee62a66f610f32d71d833438ce12c9502565a61bde"
+    },
     "source:d31de242893f1fa53701b66d": {
       "kind": "research",
       "reference": "evidence:sha256:e63b1838152c1524a0377800b159c81cad7817d8c6df3570e2094c2d07ac9177",
@@ -1037,6 +1397,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e6964eb36339801e5282c127d4ecd6b9bb481399e148bc105f353f10069faa98",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
+    },
+    "source:d648c9b911cf73e4b570d3b3": {
+      "kind": "research",
+      "reference": "evidence:sha256:4cde818c0eaad0391929d9c4e0542c7f6a54718ce3b148e6e534969cbca71895",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
     },
     "source:d687cabb70fd595af744ab86": {
       "kind": "research",
@@ -1113,10 +1478,25 @@
       "reference": "evidence:sha256:0305dd90021683ab5cd5cb254f3b4ef64ba209ab2ba6394af43d348391b9a034",
       "revision": "e3e92ebcfd511628bd4b88f7a3a153b2d908bd129f344a86b05f1afb4569efa4"
     },
+    "source:e4e88924c5073301562d5564": {
+      "kind": "research",
+      "reference": "evidence:sha256:348d6945e3633ece6e8b0bababe4d35e51df74f7a04e2abdd6221975d3a53b60",
+      "revision": "31eea54dd8a8cefbb784d97879dee596b233a8a7109be617707b6ddc768d5687"
+    },
+    "source:e6b7ff71e2ae78f8d0cd79cf": {
+      "kind": "research",
+      "reference": "evidence:sha256:33bfd32644f8f5d78abcbc61080b48478ef2c938d3a82668c152a9f6472df76f",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
+    },
     "source:ea95741a9aae82dc86e0643c": {
       "kind": "research",
       "reference": "evidence:sha256:d254b722df79984ff36da2825027c7eac4d7e67bed009b8643ea8e9c38a98751",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
+    },
+    "source:ee25af3bd5618ee6ef533ac7": {
+      "kind": "research",
+      "reference": "evidence:sha256:d72da47fd63d3d33a27435452f3c1dcd0054732d2364be32598e7cb4506b63e0",
+      "revision": "8741d30480f991a60e5c812bd8331e82bf3efaaf53a63985d09e9e0a7014f94f"
     },
     "source:f35cdf941785579ed7bfebaa": {
       "kind": "research",
@@ -1128,6 +1508,11 @@
       "reference": "evidence:sha256:d43787a76a2a6a83fd60c18c40391235b64f9b3086f67bde63a89864ae22a8ae",
       "revision": "32b9249060ea43338bb59e9de601a2c5564755127375e3ff3e6006482d9422d4"
     },
+    "source:f6dd6245f20a21718aefcd91": {
+      "kind": "research",
+      "reference": "evidence:sha256:2748f589de69bcc92fff28b0616bc47372e6fdca170d4547515805d53c92a6f6",
+      "revision": "265125181c452e13a535a3fa0fcb08b670d0c19eee8a088244376aec89fe2400"
+    },
     "source:faef51baae1732f8d425d611": {
       "kind": "research",
       "reference": "evidence:sha256:ce83a8d4a3fe83aed4f2c1ae84183ebf901a8e9475e87eefc8873970346c3291",
@@ -1137,6 +1522,11 @@
       "kind": "research",
       "reference": "evidence:sha256:01cc2fc430e9b2b666b88b079dae425f9fd4561391cc38af259d31da679ffefe",
       "revision": "2843e1230538d0346f8ca894c4ed9d4feaf25a9410efeac8da2e847528ec2cf2"
+    },
+    "source:ff6bd63ea0e7396a18f4e6be": {
+      "kind": "research",
+      "reference": "evidence:sha256:a85c175936e86570d8647e7bdde112da0b3fdc9b4e7738373ead3de4b78c618f",
+      "revision": "b95306009b7ceba1d2d10d5274f7b07878eaed704fcf1ca4aa77afcf0c810c6e"
     }
   },
   "version": 1,

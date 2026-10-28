@@ -28,6 +28,93 @@
       "title": "Ancient Stone Watcher"
     },
     {
+      "entry": 2909,
+      "name": "Hammertoe Grez",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:2909:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:98909af27f24fb58ee4cfed5",
+            "source:a31b0670d20ed0bbe68b92ca",
+            "source:aef7875d03a0ec6a8c181f4e",
+            "source:5a8fbaf089d24fd7451d6d09"
+          ],
+          "text": "Hammertoe Grez is a dwarf who was investigating the origins of his people and the titan excavations while trying to stop the Shadowforge clan from using scrolls to make stronger golems. Wounded and held in Uldaman, he asks for his amulet to be recovered; he wants it brought to Prospector Ryedol, who knows of his research and mission.",
+          "when": {
+            "entry": 2909
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 2932,
+      "name": "Magregan Deepshadow",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:2932:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:98909af27f24fb58ee4cfed5",
+            "source:590288b49fe4f6e67e614a00"
+          ],
+          "text": "Magregan Deepshadow is identified by the wounded Hammertoe Grez as the dwarf holding Hammertoe's amulet. Hammertoe fears the amulet could lead the Shadowforge to scrolls for making stronger golems. Magregan's combat behavior includes casting Whirlwind.",
+          "when": {
+            "entry": 2932
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 4845,
+      "name": "Shadowforge Ruffian",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4845:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:086ebe2375bc7b8d405e911d",
+            "source:26638265684e9c8a4c4d8c74",
+            "source:19cf63274521bc8b43e3b47e"
+          ],
+          "text": "A Shadowforge ruffian, this hostile humanoid fights with Kick and may flee for assistance when badly wounded.",
+          "when": {
+            "entry": 4845
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 4846,
+      "name": "Shadowforge Digger",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4846:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:8323185087f7a973e58481a1",
+            "source:42325b7cad58211225dcadae"
+          ],
+          "text": "A Shadowforge digger, this hostile humanoid uses Sunder Armor in combat.",
+          "when": {
+            "entry": 4846
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 4847,
       "name": "Shadowforge Relic Hunter",
       "records": [
@@ -230,6 +317,28 @@
       "title": null
     },
     {
+      "entry": 4856,
+      "name": "Stonevault Cave Hunter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4856:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0b55dd8e414c587f3dc1d21f",
+            "source:679ea1ff4f0b4a0f98857c83",
+            "source:4a40ee214e3095d5ca123bbc"
+          ],
+          "text": "A Stonevault Cave Hunter is a humanoid combatant that can throw at an opponent in combat.",
+          "when": {
+            "entry": 4856
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 4857,
       "name": "Stone Keeper",
       "records": [
@@ -312,6 +421,29 @@
           "text": "The Jadespine Basilisk is a basilisk. In combat, it can cast Reflection and Crystalline Slumber.",
           "when": {
             "entry": 4863
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 4872,
+      "name": "Obsidian Golem",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4872:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b4df104b9df5e7f881c35c7a",
+            "source:db60f8b41ad937a6d816b3d0",
+            "source:a36b502343bbe1f7ceda3aca",
+            "source:65aa016d117b6db93d8cafb6"
+          ],
+          "text": "An Obsidian Golem is a mechanical golem found in Loch Modan.",
+          "when": {
+            "entry": 4872
           }
         }
       ],
@@ -519,6 +651,26 @@
           "text": "A Shadowforge Geologist is an armed worker among the Blackrock dwarves of the Shadowforge. In a fight, it can strike with Flame Spike and Flame Lash.",
           "when": {
             "entry": 7030
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 7057,
+      "name": "Digmaster Shovelphlange",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:7057:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:892b7d6c6a92250dbde8853f"
+          ],
+          "text": "Digmaster Shovelphlange has a role overseeing excavation.",
+          "when": {
+            "entry": 7057
           }
         }
       ],
@@ -919,10 +1071,20 @@
       "reference": "evidence:sha256:b439f6af4fd660403fbeae5a8916b7dc89e23ba96b00b58e334f542d65efc489",
       "revision": "015572509fd11ba3f800d3a7dd99392f93a761a5f2f448d8df17c2a86ac6f478"
     },
+    "source:086ebe2375bc7b8d405e911d": {
+      "kind": "research",
+      "reference": "evidence:sha256:a7b79fe1aadfead5dfcfd8a88f14c346f1b6468b35d425cd303523a302500c9e",
+      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
+    },
     "source:08dd93454b7883fc28c5eb3c": {
       "kind": "research",
       "reference": "evidence:sha256:c5e04736f02cb34e9398b1b512512d00e1a9ba77be5a26d05d6135d1a1cc3635",
       "revision": "27bae6f4c7e0d3fbf67be4de03af3421688383e923c1aaded8ff4c476bb67695"
+    },
+    "source:0b55dd8e414c587f3dc1d21f": {
+      "kind": "research",
+      "reference": "evidence:sha256:4ec5e18b852e8be4d2a020dcb580070bd1a0cfc07be640cd9d1489f04ad50a08",
+      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:0ceb06775a33ce5e34ee0192": {
       "kind": "research",
@@ -959,6 +1121,11 @@
       "reference": "evidence:sha256:dc43a39ddb3ad7d0bdbc7dddb4b2ea89d3bf0f191ee5b7b43a564dc4978b2baa",
       "revision": "38d48d326b81372a22ea9d1e8cfcc447c1e85fbcf422f8d28882a301d576e8e9"
     },
+    "source:19cf63274521bc8b43e3b47e": {
+      "kind": "research",
+      "reference": "evidence:sha256:35abfd8b0f1f58cd99ae7f1568401e9ea67f09cd40bb1da5ef0e0a5f675ca47c",
+      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
+    },
     "source:1aef5d42b2bd8a081e385dfc": {
       "kind": "research",
       "reference": "evidence:sha256:cd806852e5ded0f139530858246d960abd6bd89733f9eca2f0d516590d55c16d",
@@ -988,6 +1155,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e36967b1d8b9b27469d0217c370be131ce3efb113e9db0edf4bbdf1951900836",
       "revision": "4d29474700d1d0dc25a5bceeb81f88030d778b297fe9c22e4615e56eadc6faf1"
+    },
+    "source:26638265684e9c8a4c4d8c74": {
+      "kind": "research",
+      "reference": "evidence:sha256:fced71bf739c4174869eea8ab6ce5f2fb7802953d31e73104be6ca94fcb3aa1a",
+      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
     },
     "source:2786fc02e3e79acd5e2c79e4": {
       "kind": "research",
@@ -1069,6 +1241,11 @@
       "reference": "evidence:sha256:aebaa27e9014da1be0e873156357634095f65e1825d7ba98db3540cde3c11e03",
       "revision": "9ca2ae7933a7b1a74c12eb14625c36c39d53bc9d2eab3d78d09a124270baefb1"
     },
+    "source:42325b7cad58211225dcadae": {
+      "kind": "research",
+      "reference": "evidence:sha256:18cad2993e9d24a2a9317dd36219ef85ec68339c49190b1cda187ad4f439f6fa",
+      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
+    },
     "source:4411f3da2965612c8697037c": {
       "kind": "research",
       "reference": "evidence:sha256:7158f3b6437cebca6b3807669c4935e527c97ff7ac20bfb81f3eac5bd2e0c4db",
@@ -1098,6 +1275,11 @@
       "kind": "research",
       "reference": "evidence:sha256:55f4fae6087f6d649ac51e760cf78d9130e7b1ef393d912594ac1193d5ea5f20",
       "revision": "1f33b6cf446b17ad4d17c71b6c219d483a14d01499deca282f510e5f84dae945"
+    },
+    "source:4a40ee214e3095d5ca123bbc": {
+      "kind": "research",
+      "reference": "evidence:sha256:9aed4a946002f0ea236818365cb29233674c88a70974df2f34b45b7abf894b95",
+      "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
     },
     "source:4b397db63d65c67fe10a0056": {
       "kind": "research",
@@ -1129,6 +1311,11 @@
       "reference": "evidence:sha256:0f7bbf4b2a26f8e1111b60558b516a478f9d57db72497c1b0af7ba8a01271a11",
       "revision": "1f33b6cf446b17ad4d17c71b6c219d483a14d01499deca282f510e5f84dae945"
     },
+    "source:590288b49fe4f6e67e614a00": {
+      "kind": "research",
+      "reference": "evidence:sha256:13bb2dc32ef9ffea4571386cd57705075f768eff8cb5b9ee670d31e8c31136a3",
+      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
+    },
     "source:59c53b285f54657769d65b62": {
       "kind": "research",
       "reference": "evidence:sha256:1f84e27ab1b514c7ea8a6e8a224be1956cba5261960eaab3837a211afa727817",
@@ -1138,6 +1325,11 @@
       "kind": "research",
       "reference": "evidence:sha256:abc0e27bc1713618a247c1ee126804ce303b024f00b9a57fb29948d4ec5e5fab",
       "revision": "4d29474700d1d0dc25a5bceeb81f88030d778b297fe9c22e4615e56eadc6faf1"
+    },
+    "source:5a8fbaf089d24fd7451d6d09": {
+      "kind": "research",
+      "reference": "evidence:sha256:4d8686786b3cd212fbde6a322dfa8adc52420687e5fdec601100a1f48453e09c",
+      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
     },
     "source:5d5c6f555f064229c9700b3b": {
       "kind": "research",
@@ -1149,10 +1341,20 @@
       "reference": "evidence:sha256:24c7df99120487b7c332b6e74b36e40e51b6242f0fa820d55248d745c8eaed86",
       "revision": "015572509fd11ba3f800d3a7dd99392f93a761a5f2f448d8df17c2a86ac6f478"
     },
+    "source:65aa016d117b6db93d8cafb6": {
+      "kind": "research",
+      "reference": "evidence:sha256:62424643457695f86e0b088028899c683b6b377f1466779414903da063022e3d",
+      "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
+    },
     "source:65fd4d63e113c615d36fedce": {
       "kind": "research",
       "reference": "evidence:sha256:5f94955a257dcdb69d3979c8544204b93e73b11040450e77c4486fb839a101b2",
       "revision": "9ca2ae7933a7b1a74c12eb14625c36c39d53bc9d2eab3d78d09a124270baefb1"
+    },
+    "source:679ea1ff4f0b4a0f98857c83": {
+      "kind": "research",
+      "reference": "evidence:sha256:ab826431ffdcb696767f5f427b5235a80a33bc35dee85f9948164286465eea96",
+      "revision": "e1ffb5dc2e486aaa5e931c19116452ae917c4b839e20cec932f2af15aeddf1d6"
     },
     "source:68ce323467c8447de13154de": {
       "kind": "research",
@@ -1209,6 +1411,11 @@
       "reference": "evidence:sha256:6f88efb39383ce1c12e36514755515503e5a451a0bd473b28d74554964ec9374",
       "revision": "554052748fde88ba77d230f83417b9182f683ac3e03dc3464b1144c8a2f3c97b"
     },
+    "source:8323185087f7a973e58481a1": {
+      "kind": "research",
+      "reference": "evidence:sha256:371dc7d45ffe3f58e25304b204196a8407da045b703082f34ca6ba64874c6977",
+      "revision": "388473e8b59459c52f25754bfdc4fe48b55fef9b1e085e89c86137e5b32865a6"
+    },
     "source:853f9feb3d28d85de80edf51": {
       "kind": "research",
       "reference": "evidence:sha256:20e6c3eb31aa42ec708208c412406f476037e86b16fc33fe1ddb9b6468f69b05",
@@ -1223,6 +1430,11 @@
       "kind": "research",
       "reference": "evidence:sha256:76505aba2fd5c9666e6030b7be2ce97b6a634e12c48cee4e0a70103fcb72427d",
       "revision": "015572509fd11ba3f800d3a7dd99392f93a761a5f2f448d8df17c2a86ac6f478"
+    },
+    "source:892b7d6c6a92250dbde8853f": {
+      "kind": "research",
+      "reference": "evidence:sha256:efed19cffad664a4bbe291ae5c386386178d3e1cbbbda53f53a033a9bb56f79e",
+      "revision": "639266831ef42783b3c5ddf4779ec3187683e938052bda6d11573d15b52d882f"
     },
     "source:8c4438cef7bc16a487128011": {
       "kind": "research",
@@ -1274,6 +1486,11 @@
       "reference": "evidence:sha256:c7d4456968380fe145fe12af9f9727b269256938c1de00e8b76aac0ee0e4cc6f",
       "revision": "015572509fd11ba3f800d3a7dd99392f93a761a5f2f448d8df17c2a86ac6f478"
     },
+    "source:98909af27f24fb58ee4cfed5": {
+      "kind": "research",
+      "reference": "evidence:sha256:f60cfd770e2bb3d7b33522162a6c2d7c7e3bd4251962862c24ede6ae6e1cc859",
+      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
+    },
     "source:9a8d39c0764f21b9aabd3f9f": {
       "kind": "research",
       "reference": "evidence:sha256:0293aed96518970faefa13db1aee1e71273cbe0ce8d8c4f0064d24253acf3f7b",
@@ -1304,10 +1521,20 @@
       "reference": "evidence:sha256:79d0c65a20b94f208c6de2cccafd052913008a011d3f05cd328970706950364b",
       "revision": "1d6a80068423b6173867b9ca62323a488287aa9c18f1f1d1bfb218b9736400a7"
     },
+    "source:a31b0670d20ed0bbe68b92ca": {
+      "kind": "research",
+      "reference": "evidence:sha256:4b23c8dbcb4724ca635be16b160f57b1481c841328da92337c647a3bb1e9b581",
+      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
+    },
     "source:a31cbcfdd63c75213a4d29e8": {
       "kind": "research",
       "reference": "evidence:sha256:da8a380d4bc989c1060ec5ba353fb1808da0a86c33463ddaba6faa92e3bfb35f",
       "revision": "1d6a80068423b6173867b9ca62323a488287aa9c18f1f1d1bfb218b9736400a7"
+    },
+    "source:a36b502343bbe1f7ceda3aca": {
+      "kind": "research",
+      "reference": "evidence:sha256:4af1ab80bfa0e29a80868069f526b2c6ddf58f2484f966237b827b26c7e332cc",
+      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
     "source:a64a505f34781109a302419a": {
       "kind": "research",
@@ -1344,6 +1571,11 @@
       "reference": "evidence:sha256:765fa4fa962dfe14504c969e8e3291f91610fd7fb3119b670b47befd2ae55c03",
       "revision": "4d29474700d1d0dc25a5bceeb81f88030d778b297fe9c22e4615e56eadc6faf1"
     },
+    "source:aef7875d03a0ec6a8c181f4e": {
+      "kind": "research",
+      "reference": "evidence:sha256:a96ce5395f01d89c6279a09823bd48b515a750686043d493dae395165b2cc958",
+      "revision": "6ef486cd994cd983d722a84afb4ac6204a68ee3f66fd12c3ed4207836cd1a162"
+    },
     "source:b0795bde2ef0ffde69b08b60": {
       "kind": "research",
       "reference": "evidence:sha256:996a60dbb6597d92eaeb6dea6f2073bd8aa48885b5b1c5f2757390d2f1f37370",
@@ -1378,6 +1610,11 @@
       "kind": "research",
       "reference": "evidence:sha256:3075e43bac1729a7cf38ba90c18d7ad75f95551537ddafe0c1ecf55758280cec",
       "revision": "4d29474700d1d0dc25a5bceeb81f88030d778b297fe9c22e4615e56eadc6faf1"
+    },
+    "source:b4df104b9df5e7f881c35c7a": {
+      "kind": "research",
+      "reference": "evidence:sha256:409d7e289331826c9de944af745ea1b982d6d50fde0dd21cc4daa9f707552267",
+      "revision": "19c9440ead9638744504af14aabf2b4f3167d4c5148abf9fc613c530dd823304"
     },
     "source:b6333cb371100cb7f0a470d7": {
       "kind": "research",
@@ -1473,6 +1710,11 @@
       "kind": "research",
       "reference": "evidence:sha256:652649d07225054bbe5d93c8d66901c4c810e474b382b3222852f1e01ab90eb4",
       "revision": "015572509fd11ba3f800d3a7dd99392f93a761a5f2f448d8df17c2a86ac6f478"
+    },
+    "source:db60f8b41ad937a6d816b3d0": {
+      "kind": "research",
+      "reference": "evidence:sha256:cbbf474a39c4bc60e73b521c866ffdc0c24d1dfe1d0c870f9c41a81f98fe288b",
+      "revision": "19c9440ead9638744504af14aabf2b4f3167d4c5148abf9fc613c530dd823304"
     },
     "source:dc53b5f30569f11e515af016": {
       "kind": "research",

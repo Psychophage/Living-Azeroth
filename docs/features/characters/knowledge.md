@@ -17,6 +17,11 @@ API call. Ordinary dialogue, memory processing and selection use the shared budg
 | `no-fixed-place/` | NPCs with no static spawn (summoned, scripted, quest creatures), by entry ID |
 | `without-summary.json` | 4,417 NPCs deliberately left without one (`native only` or `excluded`), with the reason |
 
+An NPC is filed under the zone the server reports for most of its spawns (the server's own lookup, which
+sees buildings such as Ironforge, Undercity and Dalaran; the terrain under them says Dun Morogh, Tirisfal
+and Crystalsong Forest). A dungeon's entrance cave shares the dungeon's file, since both are one zone. NPCs
+with no spawn in the world database stay where the original research placed them.
+
 Each place file lists its NPCs (entry, name, title and their `records`), the place's own
 `place_records` (one for the zone, one per town or landmark area: what it is, who holds it, who lives
 there and what troubles it) and the `sources` those records cite. NPCs standing in a place hear its

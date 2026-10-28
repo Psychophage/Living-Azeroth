@@ -2437,28 +2437,6 @@
       "title": "General & Trade Supplies"
     },
     {
-      "entry": 1325,
-      "name": "Jasper Fel",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:1325:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:7b65439eabd7346ec43e89d3",
-            "source:224ab8d3c6af73f97c4ead35",
-            "source:ff62922a7628e6570a3cf3d8"
-          ],
-          "text": "Jasper Fel is a shady dealer who offers goods for sale. He urges visitors to speak quietly and carefully, warning that a wrong word in these parts could bring danger.",
-          "when": {
-            "entry": 1325
-          }
-        }
-      ],
-      "title": "Shady Dealer"
-    },
-    {
       "entry": 1423,
       "name": "Stormwind Guard",
       "records": [
@@ -3058,29 +3036,6 @@
           "text": "A Defias dockworker aligned with the Brotherhood, he threatens opponents, boasts of its power, and is eager to use his sharpened blade.",
           "when": {
             "entry": 6927
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 7207,
-      "name": "Doc Mixilpixil",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:7207:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:02944ee485ce90d221fc0682",
-            "source:684b4f84f5386d77a7649b7c",
-            "source:049036dd4c786efa5450a39e",
-            "source:0ba0deaf59c9dc199914a93e"
-          ],
-          "text": "Doc Mixilpixil is an eccentric doctor who examines patients and investigates possible cures. His cheerfully unsettling bedside manner includes consulting unusual companions, such as a squirrel and a statue.",
-          "when": {
-            "entry": 7207
           }
         }
       ],
@@ -4645,11 +4600,6 @@
       "reference": "evidence:sha256:262bcd74199c30eb081b8e81788669022cf2197b32e61587c5a6100bd06002e1",
       "revision": "5788ad6118c6126e062faa6226b1ffc276a245a8d5f985e0998052249e46c9fa"
     },
-    "source:02944ee485ce90d221fc0682": {
-      "kind": "research",
-      "reference": "evidence:sha256:74608fcddaba27c80cc990ebf3936b7b8f9e8db0755c5cfa66b9ff89da4f9d62",
-      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
-    },
     "source:03107dd1cc9b5e36b71c98d8": {
       "kind": "research",
       "reference": "evidence:sha256:8baef460d116fda2b074c5277d20e00e02c7be75ae9020681fea9fa196d0e6a5",
@@ -4674,11 +4624,6 @@
       "kind": "research",
       "reference": "evidence:sha256:dbd77d5a42ee1f675c902ab07b1a7a471c41df93a8dd0adcd81387020f2c9039",
       "revision": "9db7d4edb59498c2a1eb3149402e5f4b72a8534819cc8a909e25b27df1230250"
-    },
-    "source:049036dd4c786efa5450a39e": {
-      "kind": "research",
-      "reference": "evidence:sha256:3b2bd4850b3e996e6edd0a9a576e789148ee60e4f61bc68aa643bbb75709563b",
-      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
     },
     "source:04bca635a055597a5b62afcf": {
       "kind": "research",
@@ -4769,11 +4714,6 @@
       "kind": "research",
       "reference": "evidence:sha256:6f8ebed7468a2437abb90b78fef882910269c1d6390a2dcbfded1d1cd242d5e0",
       "revision": "7bde02e77a469e9cd04e90083efadb903d61bf79a8f8553f5b383e9dbfffe4ea"
-    },
-    "source:0ba0deaf59c9dc199914a93e": {
-      "kind": "research",
-      "reference": "evidence:sha256:0c629ee978ea614907258f35892397af0aad4cfdc8507c6065f91b6c9e414680",
-      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
     },
     "source:0bb076ba61c8efa1e1eeca45": {
       "kind": "research",
@@ -5054,11 +4994,6 @@
       "kind": "research",
       "reference": "evidence:sha256:cccf7a7b97f903d6b2866d988077755709281b2f8ae15adef0fe2e9eb0f93927",
       "revision": "f3b8b5e229005b320a0acc303c136482eb8800c851007e6ae2074d9d8489ce81"
-    },
-    "source:224ab8d3c6af73f97c4ead35": {
-      "kind": "research",
-      "reference": "evidence:sha256:53a37fef328a6ed70a8bd13b2362f1e3be46ebc40a5f2f03e305d3529171880b",
-      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
     },
     "source:230df84c87784e14062f46aa": {
       "kind": "research",
@@ -5760,11 +5695,6 @@
       "reference": "evidence:sha256:a3f81c56967494ea743ed50bdeb948c818865a518e1d95eda0f9bb01d7362c52",
       "revision": "9a5f1b24b680ac0f02d20ed47244ca02af8994e64db7c1183562eef4fb57c8d6"
     },
-    "source:684b4f84f5386d77a7649b7c": {
-      "kind": "research",
-      "reference": "evidence:sha256:61641d80655ad4ff3f4c77d2f300ba4baf719f4499e0dc2bdc23185760e7f2d3",
-      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
-    },
     "source:68c3854f7c5e9e8012ec8d4d": {
       "kind": "research",
       "reference": "evidence:sha256:264152c511d4cb24c39aa98080efacbe82e98a02e01c20932e4e76e56de905a9",
@@ -5989,11 +5919,6 @@
       "kind": "research",
       "reference": "evidence:sha256:0bc1985f6caac5c64456515ae4adc99ec4f25561a926414d9dbadb025ae22081",
       "revision": "aab9a64b13dfe1524a044436925c205dfaa6c2e45bccc9029131eb3e17c2046b"
-    },
-    "source:7b65439eabd7346ec43e89d3": {
-      "kind": "research",
-      "reference": "evidence:sha256:9dcebd750069c6909e95f8c266a4f7416c92ea6cd63ee8cd11afcff13aa0e720",
-      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
     },
     "source:7c7f574dc78ea5963f7754c4": {
       "kind": "research",
@@ -7364,11 +7289,6 @@
       "kind": "research",
       "reference": "evidence:sha256:536ef8ee69e217f61e61eb8877bf850d032967f44dc2e170e6bc083ced1578d1",
       "revision": "8384ef5893decb6de99edb79fed2fb5c35749a8ba03cd30634aea3a3a394a601"
-    },
-    "source:ff62922a7628e6570a3cf3d8": {
-      "kind": "research",
-      "reference": "evidence:sha256:9005e008a77b3b04b37e6245c28020e9cfc6ba507f98a2d935048c7fbb39bcca",
-      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
     },
     "world:creature:103": {
       "kind": "world_db",

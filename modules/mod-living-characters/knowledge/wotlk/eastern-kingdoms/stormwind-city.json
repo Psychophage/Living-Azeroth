@@ -1287,6 +1287,28 @@
       "title": "Blade Merchant"
     },
     {
+      "entry": 1325,
+      "name": "Jasper Fel",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:1325:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:7b65439eabd7346ec43e89d3",
+            "source:224ab8d3c6af73f97c4ead35",
+            "source:ff62922a7628e6570a3cf3d8"
+          ],
+          "text": "Jasper Fel is a shady dealer who offers goods for sale. He urges visitors to speak quietly and carefully, warning that a wrong word in these parts could bring danger.",
+          "when": {
+            "entry": 1325
+          }
+        }
+      ],
+      "title": "Shady Dealer"
+    },
+    {
       "entry": 1326,
       "name": "Sloan McCoy",
       "records": [
@@ -4544,6 +4566,29 @@
       "title": "SI:7 Operative"
     },
     {
+      "entry": 7207,
+      "name": "Doc Mixilpixil",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:7207:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:02944ee485ce90d221fc0682",
+            "source:684b4f84f5386d77a7649b7c",
+            "source:049036dd4c786efa5450a39e",
+            "source:0ba0deaf59c9dc199914a93e"
+          ],
+          "text": "Doc Mixilpixil is an eccentric doctor who examines patients and investigates possible cures. His cheerfully unsettling bedside manner includes consulting unusual companions, such as a squirrel and a statue.",
+          "when": {
+            "entry": 7207
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 7208,
       "name": "Noarm",
       "records": [
@@ -5942,6 +5987,69 @@
       "title": null
     },
     {
+      "entry": 16395,
+      "name": "Argent Dawn Paladin",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16395:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b6300ca5b568511aef8b881e",
+            "source:7ea9154fd3d09e175abbbc30"
+          ],
+          "text": "An Argent Dawn paladin, identified with the Argent Dawn.",
+          "when": {
+            "entry": 16395
+          }
+        }
+      ],
+      "title": "The Argent Dawn"
+    },
+    {
+      "entry": 16433,
+      "name": "Argent Dawn Crusader",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16433:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:015753af4f41be52fc6327bc",
+            "source:661ad9b03f7f5b3b385057a6"
+          ],
+          "text": "An Argent Dawn crusader, marked by the order’s name and the crusading rank it bears.",
+          "when": {
+            "entry": 16433
+          }
+        }
+      ],
+      "title": "The Argent Dawn"
+    },
+    {
+      "entry": 16434,
+      "name": "Argent Dawn Champion",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16434:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:21bb120bd8b356bc841cc42a",
+            "source:c8bd8a7668a9cca6a08a34be"
+          ],
+          "text": "An Argent Dawn champion, carrying the order’s name and a rank that sets this figure apart from its crusaders.",
+          "when": {
+            "entry": 16434
+          }
+        }
+      ],
+      "title": "The Argent Dawn"
+    },
+    {
       "entry": 16478,
       "name": "Lieutenant Orrin",
       "records": [
@@ -5960,6 +6068,29 @@
           "text": "Lieutenant Orrin serves the Argent Dawn at Stormwind and directs inquiries into Scourge activity outside the city. He asks investigators to study strange runic circles and bring proof against the undead; another assignment brings him a cracked necrotic crystal.",
           "when": {
             "entry": 16478
+          }
+        }
+      ],
+      "title": "The Argent Dawn"
+    },
+    {
+      "entry": 16786,
+      "name": "Argent Quartermaster",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16786:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:e0a3f214fc59ba6678405062",
+            "source:2593ebf763f735669284b729",
+            "source:dbdd89e374de45bed5cd29df",
+            "source:bdc49b25e7688874faa751d4"
+          ],
+          "text": "An Argent Dawn quartermaster, this representative directs those seeking orders against the Scourge to Light's Hope Chapel. Visitors can also ask to spend their runes, reflecting the quartermaster's role in the order's festival services.",
+          "when": {
+            "entry": 16786
           }
         }
       ],
@@ -6181,6 +6312,50 @@
         }
       ],
       "title": ""
+    },
+    {
+      "entry": 26123,
+      "name": "Midsummer Supplier",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:26123:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:38335d14b4a06cfcacfed1eb",
+            "source:d2be01aff89c9906aeb48ac3",
+            "source:11bd61f18529448465577ccb"
+          ],
+          "text": "A Midsummer Supplier serves the fire festival as a goods vendor, allowing visitors to browse the supplier’s wares.",
+          "when": {
+            "entry": 26123
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 26221,
+      "name": "Earthen Ring Elder",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:26221:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ba3b0d7d66079cf761b75f06",
+            "source:bb330551e2f6c545d7d2b66a",
+            "source:a10a449902fd65d3d71e812a"
+          ],
+          "text": "An Earthen Ring elder who treats the Twilight Cult as a threat to the balance the Ring fights to preserve. In public, they call stopping the cult a sworn duty, warning that its success would undo their work. Their appeal is urgent and collective, rooted in responsibility for the balance.",
+          "when": {
+            "entry": 26221
+          }
+        }
+      ],
+      "title": "The Earthen Ring"
     },
     {
       "entry": 26548,
@@ -7422,6 +7597,11 @@
       "reference": "evidence:sha256:6664689801f576255ae94c1a211b2aae3e4370ce7a630d96fbdbc21a05455c39",
       "revision": "76706b40286dee4cb88bba527bf1341b9d8bdfc3ae6b3428b50ba8faece31c10"
     },
+    "source:015753af4f41be52fc6327bc": {
+      "kind": "research",
+      "reference": "evidence:sha256:46be940036644c96eed300b91473ebf1848a5261cb92b1a2a0b0b61cd4aa55de",
+      "revision": "90d1eaa522295be9470be69c54ad1d933945b6f5a22197577730406d4dbc6f80"
+    },
     "source:0163e2debc6ca227cad9a5ab": {
       "kind": "research",
       "reference": "evidence:sha256:a6268416cd5b8d8c6729c1647744f5377e770320a9083a9000a3d249d350e10f",
@@ -7462,6 +7642,11 @@
       "reference": "evidence:sha256:36ea395bd25fc7acbf1a2dcc61b97edc696605aaaf9688c69c6ab870b59e4334",
       "revision": "f163b5dc367b208d16761748bf66d630172ee6ff3e3cf715a482f7118dc1480d"
     },
+    "source:02944ee485ce90d221fc0682": {
+      "kind": "research",
+      "reference": "evidence:sha256:74608fcddaba27c80cc990ebf3936b7b8f9e8db0755c5cfa66b9ff89da4f9d62",
+      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
+    },
     "source:02af3f1e9fda8a4e72f2a1f3": {
       "kind": "research",
       "reference": "evidence:sha256:aa2b3d9bcf020a7512936e1936278ffe39f2fb179419b393484b353ce44a4d35",
@@ -7496,6 +7681,11 @@
       "kind": "research",
       "reference": "evidence:sha256:9b1814d788d92bd2476603700c1bebab32ea7e90edf5591eb8e928a8efdf6cd1",
       "revision": "cb79cbeed6910006557f174bd85d1f020bcbf6cff0436789a9042b44b220e64d"
+    },
+    "source:049036dd4c786efa5450a39e": {
+      "kind": "research",
+      "reference": "evidence:sha256:3b2bd4850b3e996e6edd0a9a576e789148ee60e4f61bc68aa643bbb75709563b",
+      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
     },
     "source:0493d58882544e89e8d4583a": {
       "kind": "research",
@@ -7637,6 +7827,11 @@
       "reference": "evidence:sha256:b8b0eb8f1282596dd078f87c6d9e458ea5ac86d1a387077399170c70bf3d9e16",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
+    "source:0ba0deaf59c9dc199914a93e": {
+      "kind": "research",
+      "reference": "evidence:sha256:0c629ee978ea614907258f35892397af0aad4cfdc8507c6065f91b6c9e414680",
+      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
+    },
     "source:0ba7d131f9da52d2dee83c3a": {
       "kind": "research",
       "reference": "evidence:sha256:aa2b3d9bcf020a7512936e1936278ffe39f2fb179419b393484b353ce44a4d35",
@@ -7731,6 +7926,11 @@
       "kind": "research",
       "reference": "evidence:sha256:50e33be5f28c7da0298f72078ead4a842fc7cba587f788fa0afd56848a9b15b4",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:11bd61f18529448465577ccb": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
     },
     "source:11cb8757cb9e319406baa2a0": {
       "kind": "research",
@@ -8002,6 +8202,11 @@
       "reference": "evidence:sha256:1a887954f90af25dad51f45ad963a9f41463dc72c2d26785c3efd327c65d1f26",
       "revision": "781bf9ad2b0630a1d39c8e251a1764e31f195c1698494544d1daa531370b4778"
     },
+    "source:21bb120bd8b356bc841cc42a": {
+      "kind": "research",
+      "reference": "evidence:sha256:6000dce154160364fc9d3ef7aa2655c3359e0342d685fb0aa026a3ffb5540edb",
+      "revision": "90d1eaa522295be9470be69c54ad1d933945b6f5a22197577730406d4dbc6f80"
+    },
     "source:21e2af0069afe6337d12528d": {
       "kind": "research",
       "reference": "evidence:sha256:cf527b7ecd62f6451b72a3955c4f7d54343e2f03ff3c37e79f073c149e8c2913",
@@ -8011,6 +8216,11 @@
       "kind": "research",
       "reference": "evidence:sha256:0fe1ff465f91e59066d058fac28f4169476f866e71352d16e565b8f53ff49825",
       "revision": "69c5718e673065020b34a4303133d8fe7fbbc257f72247179ddccd00f28bedde"
+    },
+    "source:224ab8d3c6af73f97c4ead35": {
+      "kind": "research",
+      "reference": "evidence:sha256:53a37fef328a6ed70a8bd13b2362f1e3be46ebc40a5f2f03e305d3529171880b",
+      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
     },
     "source:22bd23cda6116025df6ca6a2": {
       "kind": "research",
@@ -8026,6 +8236,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e9f80635bba0836a7266ad37ead31985d0e18f169aae1dd16c1247ac2822d72a",
       "revision": "3284fe1c2ab509d3a49fa5d64e2d0aea8a908e49cc5f6e9924b7c2cef5a0d8fc"
+    },
+    "source:2593ebf763f735669284b729": {
+      "kind": "research",
+      "reference": "evidence:sha256:a057fd1996922805056e7f267872866e8d90804c23985f5c0c93deb907cb7bb7",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:25b946333c613c361e1104c0": {
       "kind": "research",
@@ -8381,6 +8596,11 @@
       "kind": "research",
       "reference": "evidence:sha256:c6fe9a9955aee3840d99c664680b2e030fc4d81be731e78245fd62e414bea3e3",
       "revision": "b434fa9657970948382bc08d3941957a8f8899c499e96876256ebe062ada50a5"
+    },
+    "source:38335d14b4a06cfcacfed1eb": {
+      "kind": "research",
+      "reference": "evidence:sha256:5f5df10ba9edcfd5daf970ecfb1ce2a9e74a3724c5e01f0006b0b14760a957f8",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
     },
     "source:387d71d4bc5a5dc022094b13": {
       "kind": "research",
@@ -9177,6 +9397,11 @@
       "reference": "evidence:sha256:02e005f09460c6482085e136df3da9c88872d5a42fae89aa34450062a097c110",
       "revision": "de8413470121510f8975221bf9746fd4dbb77c9ef4e8924249008ef4ea2099c3"
     },
+    "source:661ad9b03f7f5b3b385057a6": {
+      "kind": "research",
+      "reference": "evidence:sha256:e127733220e9c14bedc04121a75a3c2ddef81319408f54ead6a68a5c88944560",
+      "revision": "90d1eaa522295be9470be69c54ad1d933945b6f5a22197577730406d4dbc6f80"
+    },
     "source:662a51d5c6dc81da48068731": {
       "kind": "research",
       "reference": "evidence:sha256:77b666cf0665bf2e688f5944daf6fecdcf7c5c90253f93c9d9567aeb45ebf5c7",
@@ -9221,6 +9446,11 @@
       "kind": "research",
       "reference": "evidence:sha256:01690382e2e48688aae50d824627f30286b7b27daa7368a59b22bd32fa1f9566",
       "revision": "1945f407c8e43a3ead5711e23d559e753ecfb6fa993749999708af753867a4b8"
+    },
+    "source:684b4f84f5386d77a7649b7c": {
+      "kind": "research",
+      "reference": "evidence:sha256:61641d80655ad4ff3f4c77d2f300ba4baf719f4499e0dc2bdc23185760e7f2d3",
+      "revision": "90301c2e045bd7de28b51b64ff5acf9e49b5358a01df893c16a8fbc92b4a4812"
     },
     "source:6859dff2cb9339b0217ef736": {
       "kind": "research",
@@ -9592,6 +9822,11 @@
       "reference": "evidence:sha256:e67358517cc18818136069a3c1b1db147a8f96b681843f8913429427d3ab5d24",
       "revision": "9e8eee0fbccb4eefba6948940bd68c7b07034dff109aa090385e163e603b9e33"
     },
+    "source:7b65439eabd7346ec43e89d3": {
+      "kind": "research",
+      "reference": "evidence:sha256:9dcebd750069c6909e95f8c266a4f7416c92ea6cd63ee8cd11afcff13aa0e720",
+      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
+    },
     "source:7b69885c37b65d308f1ca6be": {
       "kind": "research",
       "reference": "evidence:sha256:96171a20104fca6ce5d968f5f124fd9bef8caa9017203c1d8910e95de78afdfb",
@@ -9631,6 +9866,11 @@
       "kind": "research",
       "reference": "evidence:sha256:80d2fad4b6f93e7c410adabacccd246cc745bb148c74ad4107d33076978f6e57",
       "revision": "602f6445dbbf07bf84917697357aaadaa8abf4fd6e537a8d78cc70dc0cc1a8dd"
+    },
+    "source:7ea9154fd3d09e175abbbc30": {
+      "kind": "research",
+      "reference": "evidence:sha256:e65dd47093bc8b65e96dd76438ae9aca149dc9cf4adcaa824ae59ce0b944b40e",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
     },
     "source:7f03fab38fae970950840ac1": {
       "kind": "research",
@@ -10327,6 +10567,11 @@
       "reference": "evidence:sha256:62fa9a1d02325818fa159246ba999a0442524f811a426894724e696bf1a0088e",
       "revision": "400bdd2bea5e9f9bbe903cb0f7f7ee153db0f448558386899fce772b2cb72c14"
     },
+    "source:a10a449902fd65d3d71e812a": {
+      "kind": "research",
+      "reference": "evidence:sha256:b7f5339cbd79d2c185cab84af273a9ee7ecb43785b87960d982a8d8153582201",
+      "revision": "44c4eb2cb391b17a08e9452cfc89a8ccf7b00254c012c881657c7a1e1d6c3693"
+    },
     "source:a187b89718a05b1a2d05a2bf": {
       "kind": "research",
       "reference": "evidence:sha256:4ca53f411c6319d9a1fbbb6c1bb88389864f64ac007e78d9c8c705d91a29ec0a",
@@ -10762,6 +11007,11 @@
       "reference": "evidence:sha256:2b2494b4844cef298d3d332536f94ece3101a23f333bebfb86e5bf3659457f6d",
       "revision": "0e04e6079ccd29fe5b3631cf8368681a3f1b4a36669c121d5f390de6378fde37"
     },
+    "source:b6300ca5b568511aef8b881e": {
+      "kind": "research",
+      "reference": "evidence:sha256:1061e5d8947450156dde0c6f7234a9ac2d5f08387f598c332fb3e644265c50a4",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
+    },
     "source:b66d4c1817b8542ed1c47988": {
       "kind": "research",
       "reference": "evidence:sha256:f7d04ca3f4bbf4f50131dc7bcec58c539b9a9fa47f63c8a7e18142b5f39b80a7",
@@ -10827,6 +11077,11 @@
       "reference": "evidence:sha256:ceda97183ea38f1d89efe6695b4268f32a08d57b902a19e646ffbbe6754ce6de",
       "revision": "73ad0c7959318bd552868af529c9254b4854ef44849ac47864e46cbea4f01b4c"
     },
+    "source:ba3b0d7d66079cf761b75f06": {
+      "kind": "research",
+      "reference": "evidence:sha256:cfd461b4da91c109bb43cdd995978a325df9b179db7fe19638110ccaa958aaae",
+      "revision": "44c4eb2cb391b17a08e9452cfc89a8ccf7b00254c012c881657c7a1e1d6c3693"
+    },
     "source:ba4dc90ddf2980ba30cfb3fd": {
       "kind": "research",
       "reference": "evidence:sha256:dbd77d5a42ee1f675c902ab07b1a7a471c41df93a8dd0adcd81387020f2c9039",
@@ -10841,6 +11096,11 @@
       "kind": "research",
       "reference": "evidence:sha256:7d3099e0bcb0aaa2a1e435c621247fb861899a1d7015e0e857dae35359fb70a1",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
+    },
+    "source:bb330551e2f6c545d7d2b66a": {
+      "kind": "research",
+      "reference": "evidence:sha256:f2dead430d54ac9489b057518525c8a2325be5f2488ef19e41a64627540b1ecc",
+      "revision": "44c4eb2cb391b17a08e9452cfc89a8ccf7b00254c012c881657c7a1e1d6c3693"
     },
     "source:bb373a8760900c95beb02269": {
       "kind": "research",
@@ -10876,6 +11136,11 @@
       "kind": "research",
       "reference": "evidence:sha256:677051b30307e9d3205ee7aa51c038f0fe1e1daddac305696b00e57fe6211bc6",
       "revision": "f583fc7ecb7a26d03f75a225d11d682c0d10cd62268dfc0e9ede009f0ea749ca"
+    },
+    "source:bdc49b25e7688874faa751d4": {
+      "kind": "research",
+      "reference": "evidence:sha256:991b38d31ad77498300832dcefe3313341ea88c7e133f7f24e5b9423213a075c",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:bdd3d9a3075eccfa0e7cc6c4": {
       "kind": "research",
@@ -11091,6 +11356,11 @@
       "kind": "research",
       "reference": "evidence:sha256:ed1d34c883127e0ec65fa7fa7e665cfe773bb152ce3ce9787a3d491f9c54b228",
       "revision": "0abda1a5217e03446b58e34597c6a04a9b6324d4157ea050a04eac6208784af2"
+    },
+    "source:c8bd8a7668a9cca6a08a34be": {
+      "kind": "research",
+      "reference": "evidence:sha256:c84ca134c8a29913b300e697731d33cb791dc6fbda659394d25be5eea27cd3b5",
+      "revision": "90d1eaa522295be9470be69c54ad1d933945b6f5a22197577730406d4dbc6f80"
     },
     "source:c9254a2efa922aadac357611": {
       "kind": "research",
@@ -11332,6 +11602,11 @@
       "reference": "evidence:sha256:130b594e545e70f8b29676e4ea4aa996fe2385ec008b4880fff837eb8ba72da7",
       "revision": "5e2f17bbc48d6c2cf16ab31acc8ec1b017fe3f446d057ba6f1b9fa1be0f035ee"
     },
+    "source:d2be01aff89c9906aeb48ac3": {
+      "kind": "research",
+      "reference": "evidence:sha256:4b9d54f1c4f04624ae616ed0bfe5bd05ff1c1ac0c7577a92d2b16c6d715dad8d",
+      "revision": "9aa0443b7a40783ffa0aba00ad01d378dba25308fe51d2c79e22db9ea72df8c3"
+    },
     "source:d2cfde0dae0384d2a7c28f91": {
       "kind": "research",
       "reference": "evidence:sha256:d10e915591e6a76143aa8a29229f2d6286cf3126d2cce4efa1194a73736ec14c",
@@ -11517,6 +11792,11 @@
       "reference": "evidence:sha256:f71a2c63b382c9df91f33f5c2600560462c1d4126923e8f222f71b92e882bad3",
       "revision": "18f92c83df46b971c235025c75a1aed42db2c69af791dc478e379beb6fc02617"
     },
+    "source:dbdd89e374de45bed5cd29df": {
+      "kind": "research",
+      "reference": "evidence:sha256:a7a7d8a52881ea182c8a934fe54b9183a7a51554d6a2659e07b999d19baadf1b",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
+    },
     "source:dbef6deea5b24993b4f0db14": {
       "kind": "research",
       "reference": "evidence:sha256:4a9e13ce4e1060e5bb1eab9940a6c32e72c2f72ed94e21fae4293cac0db3c34a",
@@ -11631,6 +11911,11 @@
       "kind": "research",
       "reference": "evidence:sha256:f6ef53ccfe297a5992fa94d0b4d9fcd07237225b6adf392373d8f60d2d2a9322",
       "revision": "50206613d21f52cd11d6c43b3563ddef8fbecbb176708c48d1ba0feed48c43c2"
+    },
+    "source:e0a3f214fc59ba6678405062": {
+      "kind": "research",
+      "reference": "evidence:sha256:1273dca99f73f011b892c534aa3f236f76c3ce2483fcc7b3d948392a672d2a85",
+      "revision": "d72640f0bb75963ba79495dc8a87e779adf417f50ca06494225ab04a84c5bcfa"
     },
     "source:e0bbbb7591168c1e1a0d2f9c": {
       "kind": "research",
@@ -12146,6 +12431,11 @@
       "kind": "research",
       "reference": "evidence:sha256:82b90b9bd61f6ae7d48a05ad179a3eee29aa1476f047ede342a1248a73fb265e",
       "revision": "29ebf606eebf99f0de9f11016a565306cd56b0ce460e79293cb8bc7fe849d239"
+    },
+    "source:ff62922a7628e6570a3cf3d8": {
+      "kind": "research",
+      "reference": "evidence:sha256:9005e008a77b3b04b37e6245c28020e9cfc6ba507f98a2d935048c7fbb39bcca",
+      "revision": "a704070a3f56226dcf2eecc316c0615268051a62aeec3c484dc8f7201169748f"
     },
     "source:ff78836ce9b04f3222251539": {
       "kind": "research",

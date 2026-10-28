@@ -2472,29 +2472,6 @@
       "title": null
     },
     {
-      "entry": 16016,
-      "name": "Anthion Harmon",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:16016:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:901b968c22f3150d9010a341",
-            "source:7639ec5662b0ffbfce23afad",
-            "source:3f469a12a08b8e8655a11556",
-            "source:755d56d09c8e57f40c2abec6"
-          ],
-          "text": "Anthion Harmon regrets that he and others split Valthalak’s medallion without understanding its curse, and says Theldren beat him when he tried to reclaim a piece. He seeks help recovering the fragments and directs the effort to Falrin Treeshaper for a way to provoke Theldren. Anthion says restoring the medallion can stop the spell; at parting, he says he can finally rest and that his time in the world is short.",
-          "when": {
-            "entry": 16016
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 16112,
       "name": "Korfax, Champion of the Light",
       "records": [
@@ -2979,6 +2956,30 @@
           "text": "An Argent Dawn medic whose greeting conveys a heavy workload and impatience with interruptions. A visitor can ask for disease treatment; the medic's brief response makes clear they are pressed for time.",
           "when": {
             "entry": 16284
+          }
+        }
+      ],
+      "title": "The Argent Dawn"
+    },
+    {
+      "entry": 16285,
+      "name": "Argent Emissary",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:16285:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:5436676d7851d3ba0b4c0c02",
+            "source:6f3d8966be556c86a89814f1",
+            "source:160cf16d251a5bfda954ad7c",
+            "source:f056565d20ca862e65c79266",
+            "source:25fdb7f909be2e29284e71a1"
+          ],
+          "text": "An Argent Dawn emissary who speaks for the order during the Scourge invasion. The emissary calls for Horde and Alliance forces to defend their lands and asks an experienced adventurer to investigate a suspected Scourge agent at Karazhan, then thanks them for the information they return.",
+          "when": {
+            "entry": 16285
           }
         }
       ],
@@ -4881,6 +4882,11 @@
       "reference": "evidence:sha256:ac04c2c1da15c98f743109604fa33b64ec927c8b864daabb08f51d9799540470",
       "revision": "9543bc56fabbe65d6d4f20053f28da315268955795ec93fb89570a281009832b"
     },
+    "source:160cf16d251a5bfda954ad7c": {
+      "kind": "research",
+      "reference": "evidence:sha256:73b6b4ffced5df830d72489eecc6ff664a031d8ff2cfc236c20d405ccd6d6cc7",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
+    },
     "source:164758e7c938ac7f425cb282": {
       "kind": "research",
       "reference": "evidence:sha256:ed99edc3aacd290409908116396f18a625e5167fd23d34d79d30f72959e71122",
@@ -5115,6 +5121,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e465e241be0e4c68fd82ad2bc9addb0bce77e557141c72d1bf72b12afcd31e22",
       "revision": "cf4bb0d4e010c44710c6398e8411767ca838b30b094b18ef39195add086f5ef2"
+    },
+    "source:25fdb7f909be2e29284e71a1": {
+      "kind": "research",
+      "reference": "evidence:sha256:5fc6dfdacf35321eabfea95a20fac9833485e7fdd6ab3946ffe68ab4a84c1e11",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
     },
     "source:265d52ff15dac676366d6e7a": {
       "kind": "research",
@@ -5421,11 +5432,6 @@
       "reference": "evidence:sha256:d1793d3b02b1fb90bd0a21378fea50546f2dbac688383fdfc433e2a2bcdc3f78",
       "revision": "ce992d5801e545d58b756efd1bd75152dfd260f410af1d7b1c999f977dfead3a"
     },
-    "source:3f469a12a08b8e8655a11556": {
-      "kind": "research",
-      "reference": "evidence:sha256:e2b5471da93087517c6972f068e5529e665c976dd2704e4c74aec9d8ae832146",
-      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
-    },
     "source:3fd2a5c69defb76a6b29f1b9": {
       "kind": "research",
       "reference": "evidence:sha256:57e582609fa2b8c4687d91f24f3b781481e0c662eae3053310f1963cab392528",
@@ -5720,6 +5726,11 @@
       "kind": "research",
       "reference": "evidence:sha256:2799e8153e4f62c8dfbcd420e3bfba30a5635d25aa1f6853fbe4e39c5d6e76d5",
       "revision": "4c8060ced2aea9bf17fb741a17091ccbf37d14941afb83548afaf616209c0d4a"
+    },
+    "source:5436676d7851d3ba0b4c0c02": {
+      "kind": "research",
+      "reference": "evidence:sha256:d63afb69630d072b5aee8a0124fd8544b7da5845de74370b6e4b39ebdfc0d570",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
     },
     "source:545ae1d4e19c46d99580059a": {
       "kind": "research",
@@ -6081,6 +6092,11 @@
       "reference": "evidence:sha256:d21c3d7fdb100909b0e39f80ccb04d3d6983be1eb62e4a35cda0b49d49181cfb",
       "revision": "f8dfec633a14aa719b4de8fb235dca63bf66a278c868403be00b2b9d43da6104"
     },
+    "source:6f3d8966be556c86a89814f1": {
+      "kind": "research",
+      "reference": "evidence:sha256:c1b5ac860c79d99b12f6fc223dda494b034d5d93f8585d09add39dc4370df1b7",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
+    },
     "source:6f8baa6ee551571978c5b69a": {
       "kind": "research",
       "reference": "evidence:sha256:bfcf527e8b45568c8c0de883c770c4376e9393a8c5ec7d2bf07ad9b9df2af67b",
@@ -6146,20 +6162,10 @@
       "reference": "evidence:sha256:2b39fef2e50ed6634f0c6561769f1ee9709b819eafff36fbe6da7c0d9cba42a6",
       "revision": "b807a234bce88d4259047ab7595ba13fb2b056fc71537dbc7dd5f7411573a48c"
     },
-    "source:755d56d09c8e57f40c2abec6": {
-      "kind": "research",
-      "reference": "evidence:sha256:310fa57ce0fd821d2659c94263f123168b79858d0e243d4c1eefb9573d4e9ccd",
-      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
-    },
     "source:756e696d190aef9f09aabaa9": {
       "kind": "research",
       "reference": "evidence:sha256:96dd14d71e1423b01fad5247eb5519e2fb7e97afe309df73d903d6d3fe56a291",
       "revision": "cf4bb0d4e010c44710c6398e8411767ca838b30b094b18ef39195add086f5ef2"
-    },
-    "source:7639ec5662b0ffbfce23afad": {
-      "kind": "research",
-      "reference": "evidence:sha256:bf5ab671210c877a0dad1fdd3f2ae5bd47a98ef4f83ff6465c71b000e8547f9d",
-      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
     },
     "source:766f2cc0a7cf84fc5d13ae58": {
       "kind": "research",
@@ -6455,11 +6461,6 @@
       "kind": "research",
       "reference": "evidence:sha256:7e73a7b1016093bc06e2ab46394a0ab3b573e29b9e658c36c037fcb3d1c8c430",
       "revision": "6ced912e43c2c1bf8be89c76aa47d0b663e0b89a7487afb747ff10c9e97f0952"
-    },
-    "source:901b968c22f3150d9010a341": {
-      "kind": "research",
-      "reference": "evidence:sha256:7fa664cb57c7f076211095283630470dc543ba595b257d4dec568d3a1ce02ac7",
-      "revision": "cb9f5a566a638b01fcd5ed5fdaff6100329b637c4661addc4c72b0f0626ea806"
     },
     "source:9023b5866f070d596cdf81cb": {
       "kind": "research",
@@ -7510,6 +7511,11 @@
       "kind": "research",
       "reference": "evidence:sha256:51a71026deee0385fbcb0f9b638b4a05386f24d46fe10f029eb52b8f2fe332fc",
       "revision": "2549b6cef475063170c2228b88b482a3133755f7660cee573820ea17c147741d"
+    },
+    "source:f056565d20ca862e65c79266": {
+      "kind": "research",
+      "reference": "evidence:sha256:e633f07b986b7528d1dbd8221c366a108c9df000801596724d49140d0da017a4",
+      "revision": "17f0b46f2f88fcf4c05175fb9f76f907030ceaf18c03ce834ac91947c8520ad3"
     },
     "source:f09ccd417d489ee7b6c87ed0": {
       "kind": "research",

@@ -3588,6 +3588,27 @@
       "title": ""
     },
     {
+      "entry": 26124,
+      "name": "Midsummer Merchant",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:26124:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:713e7ab5f85daa7afb6c710f",
+            "source:cd77a46487cf8242683a06df"
+          ],
+          "text": "A Midsummer merchant offering festival goods for visitors to browse.",
+          "when": {
+            "entry": 26124
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 30584,
       "name": "Mabrian Fardawn",
       "records": [
@@ -5034,6 +5055,11 @@
       "reference": "evidence:sha256:6ee236a43925d7cdc8b4eccc9fe94c51e74eb25c98badc51d9881788d891ee07",
       "revision": "6c28ba4c565c46cd125761bc36ed29ec107c0838ea19d0b610db26df3dcdf0e8"
     },
+    "source:713e7ab5f85daa7afb6c710f": {
+      "kind": "research",
+      "reference": "evidence:sha256:0512774ca50f540184511a9fa245480b52100056689ee75a710115ca016a8f57",
+      "revision": "337696f9f2d70c16666dc49f075da208754cb1546f0f5e948bdf0d6d6a3ff0d2"
+    },
     "source:71c3039882c399e979cb6404": {
       "kind": "research",
       "reference": "evidence:sha256:9aeb40872cd0711a865f89a92f8b22ef842179c75a0a8f24be4fd56b8fda4741",
@@ -6103,6 +6129,11 @@
       "kind": "research",
       "reference": "evidence:sha256:bad1e0e0740942e4d814ed3358e1859235751f41bea402d88f2d43345a8e6264",
       "revision": "64cb02eff89fce3b08c7cb89011ab030e243986e148de83082ef03d0e3e9cc1e"
+    },
+    "source:cd77a46487cf8242683a06df": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "337696f9f2d70c16666dc49f075da208754cb1546f0f5e948bdf0d6d6a3ff0d2"
     },
     "source:cd7b8550ce21d72201e98f4a": {
       "kind": "research",

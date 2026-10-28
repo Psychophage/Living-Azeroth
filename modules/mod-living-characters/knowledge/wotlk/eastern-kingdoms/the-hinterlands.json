@@ -1696,6 +1696,28 @@
       "title": "Stable Master"
     },
     {
+      "entry": 10802,
+      "name": "Hitah'ya the Keeper",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:10802:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:ceb510b7db58d0e79c58106e",
+            "source:efd653c185e8cf0548e43ef3",
+            "source:4ff5bff6a7774523a8d43175"
+          ],
+          "text": "Elder Torntusk's task identifies Hitah'ya the Keeper as the target to kill for the Shackle Key. In combat she uses Shadow Bolt and can cast Renew.",
+          "when": {
+            "entry": 10802
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 11097,
       "name": "Drakk Stonehand",
       "records": [
@@ -3370,6 +3392,11 @@
       "reference": "evidence:sha256:bd44e1e34c309697dee2bc2e27c66f06e1946e58c9d4288d8b3faa62bdbb8b67",
       "revision": "a38ffe8969015baefc9e55896487a3a078d36373d384cb1b5a10a189ecdedd50"
     },
+    "source:4ff5bff6a7774523a8d43175": {
+      "kind": "research",
+      "reference": "evidence:sha256:9d68e15fe5b445331b19a958e90260502f6b9c61eb51986acb5cc3d6342aacd2",
+      "revision": "d0f42386171122e538495cb6ee82bd1b5fb39d5e92bf8af1936d05bedf2bee8f"
+    },
     "source:505738d1c6a4027858057225": {
       "kind": "research",
       "reference": "evidence:sha256:9fde69665dac18f73a7ff4b5561374293e10c5c672acc94b96ea6e3a0dae545d",
@@ -4225,6 +4252,11 @@
       "reference": "evidence:sha256:d1ab8d5d225ddcd4cafaeb2f912803312a02aec0be9bdb794d04905d6140d46a",
       "revision": "4cb7d0c239c4135c099de492b79c194496123f413af6df3a5f847add69764be3"
     },
+    "source:ceb510b7db58d0e79c58106e": {
+      "kind": "research",
+      "reference": "evidence:sha256:61b214fec0b662d19037690b983a31ebee9fc100600b82dd9489b0ba1b6c9422",
+      "revision": "d0f42386171122e538495cb6ee82bd1b5fb39d5e92bf8af1936d05bedf2bee8f"
+    },
     "source:cf555129bc62089af501a4c2": {
       "kind": "research",
       "reference": "evidence:sha256:25fb8ef273d0f276a4dea5c79cec500e3b0ed29f15b18ec105c451b69ae14cfd",
@@ -4514,6 +4546,11 @@
       "kind": "research",
       "reference": "evidence:sha256:21dfa74e7f3fb59e3ef7f25ac65bfe574de8dabfb88618667f7d59de9a466410",
       "revision": "a0a24b92407d1cc6dbc48b92c5ead4fcecac18258ea5a4d152386477a5a63da1"
+    },
+    "source:efd653c185e8cf0548e43ef3": {
+      "kind": "research",
+      "reference": "evidence:sha256:de946208a00e75e0b96617ad9e5a1ba960ce64b9ba60eeb9edb521bc3b40dc01",
+      "revision": "d0f42386171122e538495cb6ee82bd1b5fb39d5e92bf8af1936d05bedf2bee8f"
     },
     "source:f15e8bb921d0b42530dd0abc": {
       "kind": "research",

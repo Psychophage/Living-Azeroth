@@ -3252,80 +3252,6 @@
       "title": "Leatherworking Trainer"
     },
     {
-      "entry": 11440,
-      "name": "Gordok Enforcer",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:11440:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:585d98124b0034f5d46ffa63",
-            "source:233a71cb88df7437483c8f1f",
-            "source:17391da347d16c24f862650f",
-            "source:97ed4d0bf5504a884d55346d",
-            "source:7cba2eb1b8a29b3c4657fc29",
-            "source:280e5b4976d44633c3ce5599"
-          ],
-          "text": "A Gordok Enforcer is an ogre combatant whose barks threaten to crush or smash opponents. One line says he feels unwell; another promises to smash the target. In combat, he can cast Strike.",
-          "when": {
-            "entry": 11440
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 11442,
-      "name": "Gordok Mauler",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:11442:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:06de6d798b1cb0813680d651",
-            "source:786e27e356050ab67595b26a",
-            "source:537c950e3fba1c80607714c9",
-            "source:c7a935ef8aa0643af01b9591",
-            "source:5a037959a2f22763ee9d29f6",
-            "source:696c476d866c29c360126f8c"
-          ],
-          "text": "A Gordok Mauler is an ogre combatant who roars and threatens to smash or crush opponents. Its aggro script plays one of these barks when combat begins.",
-          "when": {
-            "entry": 11442
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 11443,
-      "name": "Gordok Ogre-Mage",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:11443:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:c5d2f6ee6016d1c3bbee44da",
-            "source:2639c341de863f6ae8cf7ad7",
-            "source:cf86e4f4ddac9fce84c1dd4c",
-            "source:96f0e25931304e4660f28ac9",
-            "source:6a5c8f7e07a8917de1cd5a62"
-          ],
-          "text": "A Gordok ogre-mage who threatens opponents in blunt, violent combat boasts, saying it will smash or crush them. It casts a spell in combat.",
-          "when": {
-            "entry": 11443
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 11717,
       "name": "Bethan Bluewater",
       "records": [
@@ -4364,11 +4290,6 @@
       "reference": "evidence:sha256:1b4aab4b2c3eddb914da85c9fb94b00e3af817858c8a12fc31758e4172a4a53c",
       "revision": "612d6b7e129299a84ef2c312bab225741b8cdf685375fa1a1157eb06da860b43"
     },
-    "source:06de6d798b1cb0813680d651": {
-      "kind": "research",
-      "reference": "evidence:sha256:65c83b8b1ffbdf1c22813c0005f7c8a91bad4893ac95160750fc04d9897b624d",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:06e61390b05cf4661849298b": {
       "kind": "research",
       "reference": "evidence:sha256:98799a8d1524bc062918b2d31d2fddaad7189532a88d089b80509804727e1b11",
@@ -4614,11 +4535,6 @@
       "reference": "evidence:sha256:c411ae9432fde3de24b9e58424cb39f8545d9faff6d3767e2f9550666ee8e83d",
       "revision": "788e4973b61151279558f5e4fe2cbd06d250ed47d3c27788fd361ede050a7cdc"
     },
-    "source:17391da347d16c24f862650f": {
-      "kind": "research",
-      "reference": "evidence:sha256:dae9d0ab69997baba4439187c1e3289f3c0ff6d1ff37408fe44f54b361aa8dd2",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:1794bd440173433a5668a393": {
       "kind": "research",
       "reference": "evidence:sha256:f0b529c25bf2cfbce89e9f24bb4b89ee65f06c68ad28f723a658dd936ce0140d",
@@ -4734,11 +4650,6 @@
       "reference": "evidence:sha256:2d254a44e50e4b63f3e618785b5f304fd243c302ee878702d98d04dd78bc62a3",
       "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
-    "source:233a71cb88df7437483c8f1f": {
-      "kind": "research",
-      "reference": "evidence:sha256:ff67036fc72a51c7fabff397cc7111725b873a05e38492236f3f3cf9d32604b7",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:234ac5629edb37eb74e0e076": {
       "kind": "research",
       "reference": "evidence:sha256:e3cd8c78698a2014da80d746f5b3433725b79ea7ed7c002f52223da8e027c311",
@@ -4764,11 +4675,6 @@
       "reference": "evidence:sha256:9fa96514c3fa1f142a7b6764d1d2c76de9103ed26711dccb6384805cacb1503a",
       "revision": "fb49d3a773b3430f4c6b0c298c101456ff32e3decca0aa119457b2067a628fce"
     },
-    "source:2639c341de863f6ae8cf7ad7": {
-      "kind": "research",
-      "reference": "evidence:sha256:99d7018a8dbaf32606f67dfd022e8b686395783ec00146d58a46f4c15b6d1039",
-      "revision": "d53c9cd53a1b732cd95e1d4f045f223de9977fdbb01447146df2fbb4800504c1"
-    },
     "source:26a9c4fa0f465e459b79f11e": {
       "kind": "research",
       "reference": "evidence:sha256:67b4bb9a5a2cd541cc2d309eb6762964e6f2051b2175564af832a96245e8c989",
@@ -4788,11 +4694,6 @@
       "kind": "research",
       "reference": "evidence:sha256:2d5bc0a5ffed1cee63d42dc86fbff281518339f8480d74875e2552923488256e",
       "revision": "f005f2945021bca75fb231a7c941f364ff2dee73f84fd736b18cbf0665472813"
-    },
-    "source:280e5b4976d44633c3ce5599": {
-      "kind": "research",
-      "reference": "evidence:sha256:a1a013094010fc9fa54e0342cb6809ad8aa8a77c992451fe4a5d2c910a04b58a",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
     "source:28a5063e79856cb93b153efc": {
       "kind": "research",
@@ -5259,11 +5160,6 @@
       "reference": "evidence:sha256:343019ffe611adc4d9b4d59d64a42c4a0834bd4f8b93469005836cb916d8c223",
       "revision": "57eb921967a622aa298735d902536a2b697035a33e1bcbc871f0b730c672d14f"
     },
-    "source:537c950e3fba1c80607714c9": {
-      "kind": "research",
-      "reference": "evidence:sha256:834825d6d6933a387756171b35545e51ef0ff68b561287b553f3c008d840b659",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:53b1d9ebd874bfe5ddc7874e": {
       "kind": "research",
       "reference": "evidence:sha256:87e0cccf83efbabae6b6658acff99f37614a6f19d23e0beb46d2ecb32c408344",
@@ -5304,11 +5200,6 @@
       "reference": "evidence:sha256:f0b529c25bf2cfbce89e9f24bb4b89ee65f06c68ad28f723a658dd936ce0140d",
       "revision": "bcc7fe4a1c8f6c18601ab77755db75e3ef7c21b1a02fe3ce90f94c73ab1fb748"
     },
-    "source:585d98124b0034f5d46ffa63": {
-      "kind": "research",
-      "reference": "evidence:sha256:439bda305c24cf99f0b028e94afe852be9c94af969b042bc1ea2ce23cd68a467",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:587f4ba92db1f4526ea4c3eb": {
       "kind": "research",
       "reference": "evidence:sha256:8f3164e15415c76fe28b12cdc5b690fd0e78abcd236b78a9903e3963987178f2",
@@ -5333,11 +5224,6 @@
       "kind": "research",
       "reference": "evidence:sha256:440984cb7cc3014cd48284d619d23e9309b6d7bfe558bdf432cdb00262bccd80",
       "revision": "c0ba2ea5b8c2fa62accc5ac91dba3338c83b02c66d786baa2e7d18828f5d2a42"
-    },
-    "source:5a037959a2f22763ee9d29f6": {
-      "kind": "research",
-      "reference": "evidence:sha256:9abef4cbc2c37166aaeb9861b80a4068b7a2804ae7d61448a628adb9b574c77d",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
     "source:5a380f65930bd5c0d567f0a9": {
       "kind": "research",
@@ -5609,11 +5495,6 @@
       "reference": "evidence:sha256:39151a56896220ba1cda9c78bb92b2d72ad7dee1dcdb276d007a032c5d0b3563",
       "revision": "57eb921967a622aa298735d902536a2b697035a33e1bcbc871f0b730c672d14f"
     },
-    "source:696c476d866c29c360126f8c": {
-      "kind": "research",
-      "reference": "evidence:sha256:82a06322485a7c23e1a01fb872f8755ca50316d0dbbd66042cd7184ddfa7cc0b",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:697a5173f4fe16cc69e09150": {
       "kind": "research",
       "reference": "evidence:sha256:7ff252d925ad5f28d4a0a82d88927ce5473462af4b935726ad1f4a2340ed46f1",
@@ -5638,11 +5519,6 @@
       "kind": "research",
       "reference": "evidence:sha256:9cab0a7204a5447243266077358a7b686c280e9f03203bf963fcd1ca36e7b858",
       "revision": "fa3dfff750ca6f5de0becdac41693649f174b42e71d47acd0d3d3c05386ffa5c"
-    },
-    "source:6a5c8f7e07a8917de1cd5a62": {
-      "kind": "research",
-      "reference": "evidence:sha256:9b2273c55cb91f047ab360651d03e9993b8fb0d8fba0d3c88948df8ac74fb358",
-      "revision": "d53c9cd53a1b732cd95e1d4f045f223de9977fdbb01447146df2fbb4800504c1"
     },
     "source:6a7a2cf910a9cb29cbcb549c": {
       "kind": "research",
@@ -5814,11 +5690,6 @@
       "reference": "evidence:sha256:0a4c30c0f7ffab1363c2cf2655a91cd87aa0e7bf66be5a6755862b6b5a8b1453",
       "revision": "cd670d98bd57a226915b48eef871559650e92a26abf02951b181db454f47f374"
     },
-    "source:786e27e356050ab67595b26a": {
-      "kind": "research",
-      "reference": "evidence:sha256:bf3337a362c76ee0b664c193d0a03a09c9f74ae4489599bca43bef73a22fb773",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
-    },
     "source:78e44af0fdb9706fa092b6b6": {
       "kind": "research",
       "reference": "evidence:sha256:5586e22a9e0efd9688e43d3d6b8d11a633097e3d2c94c6eb68ee4d77e494df87",
@@ -5853,11 +5724,6 @@
       "kind": "research",
       "reference": "evidence:sha256:f76842fb22219dc3700216c9b20ddb05a1b59c830610cb344d563ff72956e62f",
       "revision": "612d6b7e129299a84ef2c312bab225741b8cdf685375fa1a1157eb06da860b43"
-    },
-    "source:7cba2eb1b8a29b3c4657fc29": {
-      "kind": "research",
-      "reference": "evidence:sha256:4da2224e4b8663a1360b3a92f7f4802a8073313fec9c9e76bdc8d270b9390d3c",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
     "source:7d98a83958a34e27bca941f4": {
       "kind": "research",
@@ -6149,11 +6015,6 @@
       "reference": "evidence:sha256:4c86eed3a2fac40e033b705dd96ddd56ce855f765f0c085ce990575dfa680194",
       "revision": "8f70fc3ade5bea78a51a3a3b4c7770b543f1b9845bddafaad3ec65210f9472fb"
     },
-    "source:96f0e25931304e4660f28ac9": {
-      "kind": "research",
-      "reference": "evidence:sha256:8b014122f720e3a3bddbfe8b7c743c96cd7256b7e1fb1576754a1b65efb58182",
-      "revision": "d53c9cd53a1b732cd95e1d4f045f223de9977fdbb01447146df2fbb4800504c1"
-    },
     "source:97c9be5ea1315acb4b49fdc4": {
       "kind": "research",
       "reference": "evidence:sha256:2b1f30d12197aa0a5f436a44dc0fad37e453ab82f6d15ed447ca3cd485a2faad",
@@ -6163,11 +6024,6 @@
       "kind": "research",
       "reference": "evidence:sha256:69308ebcc00211e6370dca9b007187b7833e37b3a9be856448ef5b9ca67953b7",
       "revision": "abc56e35c7449b43f1a99e5c530d203bb30679c39606e9c2e2cf5ceb85b27e3e"
-    },
-    "source:97ed4d0bf5504a884d55346d": {
-      "kind": "research",
-      "reference": "evidence:sha256:c6e0f2eda2cfeeb89b65d4a08e80f3e6793b69ca2801b897e0ef6e8128da4215",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
     "source:9874804a95843d0e44d00618": {
       "kind": "research",
@@ -6664,11 +6520,6 @@
       "reference": "evidence:sha256:579d72d9ec4da78f13955366ef1a4b56d86cb84ca93be2246d753d86b44729c7",
       "revision": "612d6b7e129299a84ef2c312bab225741b8cdf685375fa1a1157eb06da860b43"
     },
-    "source:c5d2f6ee6016d1c3bbee44da": {
-      "kind": "research",
-      "reference": "evidence:sha256:0898bfbf9dc61823130129d6d0c9fcf662aeb33be1bd6f41afda538dcca0fd3f",
-      "revision": "d53c9cd53a1b732cd95e1d4f045f223de9977fdbb01447146df2fbb4800504c1"
-    },
     "source:c619a7c3f073a4834e39effa": {
       "kind": "research",
       "reference": "evidence:sha256:24a588a30105d2957e1ed9e5738e2e4ccdc82145f874f0771d51359f7101aa25",
@@ -6698,11 +6549,6 @@
       "kind": "research",
       "reference": "evidence:sha256:2dcef413c948a2fdc807a5886f06cd80e0b3b178edcaf8726cdf05ec81a96f2a",
       "revision": "61ff749d996e2669c707c5c08764b63565627d7b2329b73b7126ac7cb62fef55"
-    },
-    "source:c7a935ef8aa0643af01b9591": {
-      "kind": "research",
-      "reference": "evidence:sha256:d6044755fdb0b5fe96665822ebcfd6f652d21c42cc0c90618a30f7acc01dc1cb",
-      "revision": "843d0307b00f7549c5ad9e5539c532bf561dcde8687fa496379b00375fa42739"
     },
     "source:c7eba8d44ea4d9149dab57e9": {
       "kind": "research",
@@ -6778,11 +6624,6 @@
       "kind": "research",
       "reference": "evidence:sha256:5026047cb6b4899ddcebffe4c4714a6a88c83b8d4ba4c1c084839ac40da487ff",
       "revision": "3e7fe26ed1fdfb396b02f4a84c85ac6c83e6deea15caf8ddc631fe65631bb3cf"
-    },
-    "source:cf86e4f4ddac9fce84c1dd4c": {
-      "kind": "research",
-      "reference": "evidence:sha256:85e33717c91e67efc2d239e2530d69148cafbe4c15b86db98956c4804bd62ea5",
-      "revision": "d53c9cd53a1b732cd95e1d4f045f223de9977fdbb01447146df2fbb4800504c1"
     },
     "source:cfa328e334376f52057f638b": {
       "kind": "research",

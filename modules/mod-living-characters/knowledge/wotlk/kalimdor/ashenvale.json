@@ -3085,6 +3085,32 @@
       "title": "Heavy Armor Merchant"
     },
     {
+      "entry": 6072,
+      "name": "Diathorus the Seeker",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6072:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:913b93ced82a264b52c33a7f",
+            "source:b80641cb8dff45d5f21696a2",
+            "source:73dd7d92a48d939caa0ddec5",
+            "source:257d8d1c1c413b551c077dd8",
+            "source:b42c6e1879a3c6c1b6a26047",
+            "source:9ce107c80091c4eaa47d6649",
+            "source:b075865b5ae195e5534f35b5"
+          ],
+          "text": "Diathorus the Seeker is a dreadlord of the Burning Legion, named among the leaders behind the threat to Ashenvale. Vindicator Vedaar's directions place him in the barrow den atop Demon Fall Ridge, where the player is tasked with confronting him.",
+          "when": {
+            "entry": 6072
+          }
+        }
+      ],
+      "title": null
+    },
+    {
       "entry": 6073,
       "name": "Searing Infernal",
       "records": [
@@ -6982,6 +7008,11 @@
       "reference": "evidence:sha256:7135fe15e5e5f24a4d256b7051b8444356750e95eafc7f1b7b42df5139b32d20",
       "revision": "0d7a96b36bdb0d647b8884738a2b38b728c9536ffd101a6285e6ed0f1de9e132"
     },
+    "source:257d8d1c1c413b551c077dd8": {
+      "kind": "research",
+      "reference": "evidence:sha256:ce86baacf7732381bc7d3f7b8108603b8359a60fce260ecd490b1552c6b2f65b",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
+    },
     "source:25fd393242913600f0e896fc": {
       "kind": "research",
       "reference": "evidence:sha256:9a14dc1132b46aad55ef5b496ab8d72d48d105b8cbbd2e719d1f79e0e50b2037",
@@ -8177,6 +8208,11 @@
       "reference": "evidence:sha256:5a220227cc7c1d5abc5c025465edfebf6ba64bd5c9e3cc43d98b85a7d5bb772c",
       "revision": "c49398c7079132e5df4ebd94f8eb4aace8bfea8e9c700df87b57503edecde13f"
     },
+    "source:73dd7d92a48d939caa0ddec5": {
+      "kind": "research",
+      "reference": "evidence:sha256:ea1d5eb094c64ccae27e5b0f5b378a097eca44a36d453e5217fad7ee327764fa",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
+    },
     "source:73fbabbbe64591976e8266b3": {
       "kind": "research",
       "reference": "evidence:sha256:7842d1ae246cb321d9bc187bcd59687964f800a3f4d8bf40f6614de474f3f46b",
@@ -8702,6 +8738,11 @@
       "reference": "evidence:sha256:9752b393dfacddb010a9349cb6fcddf3057da363b5b64d07d4697a47b8396a71",
       "revision": "3a969aab883310a8976a8dd643f274ca4bebf277b83d2beda54c14e00691d6e8"
     },
+    "source:913b93ced82a264b52c33a7f": {
+      "kind": "research",
+      "reference": "evidence:sha256:efb584cc38efd90bfb8b4d77328c7e9cc357681c7c43b6c068e7fc3540fd078d",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
+    },
     "source:918058379124dfa072450f2e": {
       "kind": "research",
       "reference": "evidence:sha256:f732c88d2a58183a8e21a318b863d65715b40a150a1e357222d3b1c7d5b0ae1f",
@@ -8911,6 +8952,11 @@
       "kind": "research",
       "reference": "evidence:sha256:7a345bdc7415561cdb302d16676dd8dda26228e1281d1f085a6a86e3192a2336",
       "revision": "68f645019094e2b0ee0c94f83de895b0360a3cf6d7792c7847e150c6652a8dfa"
+    },
+    "source:9ce107c80091c4eaa47d6649": {
+      "kind": "research",
+      "reference": "evidence:sha256:d7e3be2755d13291e33bc9ffeebe38e2ccf7e6a0a3e2caf874372f1da2465926",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
     },
     "source:9ce2f08fe279c4fce52e1e84": {
       "kind": "research",
@@ -9252,6 +9298,11 @@
       "reference": "evidence:sha256:1058c00ba10d6b2a2edee89d5ba8fba0cc13246600f6a5303e9ebb41c71c7627",
       "revision": "150b8802c89e82a537d0a12be976949640b43d2c2a7fa2e03a83b45dfb7fa1a3"
     },
+    "source:b075865b5ae195e5534f35b5": {
+      "kind": "research",
+      "reference": "evidence:sha256:6b904f76b90b229debb4c70ceb31d24f3fd2229ac0092492601a7896f402178e",
+      "revision": "280984a6d8e0d20d60dd14b3bc500734c741c6e4b017de8bfc5de4c6c3cc880d"
+    },
     "source:b176c22bcf9bdaa8f0bc673e": {
       "kind": "research",
       "reference": "evidence:sha256:82e83fd60d7e11d859cdc0ad4de99a5608e4b5a216198d1fb0caba822e84fd24",
@@ -9312,6 +9363,11 @@
       "reference": "evidence:sha256:b4ebcdb1107cdfea51ff93bb66cd5f29680cc92c185e71c30b4159ea408a6ef1",
       "revision": "3d53892629c68834fc3bd7ead8dd6731b6918a3c54a7afc8ac2864416dea74af"
     },
+    "source:b42c6e1879a3c6c1b6a26047": {
+      "kind": "research",
+      "reference": "evidence:sha256:11e3808dc8840a8b8d0a1270756403dcdd1a453e61f858695bba705c56d63745",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
+    },
     "source:b4b022d18a7bed76327eef2a": {
       "kind": "research",
       "reference": "evidence:sha256:049aeb503678d18ebecc34ea0d5fa521d6177bc5200e3408694bbb4dfface3ff",
@@ -9361,6 +9417,11 @@
       "kind": "research",
       "reference": "evidence:sha256:846c6cd7caa22b293c36edf294ba0df6838b4c0b7ce30396c719310b9c226552",
       "revision": "9576fd3bbc7aa54b5305df9767fc8af4d4f3c89118ae134a24ae6279f0360d92"
+    },
+    "source:b80641cb8dff45d5f21696a2": {
+      "kind": "research",
+      "reference": "evidence:sha256:7f2a4c7c14058235e1cc76fa74170b24c91825bb366d6c242b4e0557ab4d92b3",
+      "revision": "bb8c9fa28ac3e79a57131b3aaac3f10d1ed9557de74e96e4d11e13f4f03eb90f"
     },
     "source:b84717859f709b5a97d9c49a": {
       "kind": "research",

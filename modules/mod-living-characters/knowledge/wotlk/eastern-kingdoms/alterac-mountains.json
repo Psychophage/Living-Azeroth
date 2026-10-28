@@ -164,50 +164,6 @@
       "title": null
     },
     {
-      "entry": 2248,
-      "name": "Cave Yeti",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:2248:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b788bdd1e53955e18aacdd8f",
-            "source:abb4318988374bf233612085"
-          ],
-          "text": "A cave yeti, one of the hostile wild creatures found in the Alterac region. It has no recorded service or spoken role in the supplied evidence.",
-          "when": {
-            "entry": 2248
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 2249,
-      "name": "Ferocious Yeti",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:2249:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:fccc3388745128683f1e6842",
-            "source:130d8bfd87047c149b8c6fb8",
-            "source:193e9e889eafce9c12ac02d5",
-            "source:c163f227d8c2b6c1a33850e4"
-          ],
-          "text": "A ferocious yeti of the Alterac region. When badly wounded it can go into a frenzy, and its recorded combat behavior includes Enrage.",
-          "when": {
-            "entry": 2249
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 2250,
       "name": "Mountain Yeti",
       "records": [
@@ -2584,11 +2540,6 @@
       "reference": "evidence:sha256:6a5ca9a9050fa6f6638f2a1ea6f5d102fe064860e234236220d4ae3970ac31d9",
       "revision": "85b06cf07107073912922ab408a6a625d6ba5c9fb7d9432f8ac51c41dccec703"
     },
-    "source:130d8bfd87047c149b8c6fb8": {
-      "kind": "research",
-      "reference": "evidence:sha256:0fe375e605aa5a7ca3d3ee890c0a9b67744247cf095e34711209211bd39b8b6d",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
-    },
     "source:13485921cd60902178a983e0": {
       "kind": "research",
       "reference": "evidence:sha256:da76e0b5f7077ddfb712f7bef96eded94ba5f0030f039bebea181f3ec8dd32f2",
@@ -2628,11 +2579,6 @@
       "kind": "research",
       "reference": "evidence:sha256:94db2bfd4277638238c652736f301bf68dc0d7c70f4b66fa2036c07b02a6ec56",
       "revision": "30969a36a34c888769fa428aaf7c5039319b6bb395acce8816b260ba6e4ad9fa"
-    },
-    "source:193e9e889eafce9c12ac02d5": {
-      "kind": "research",
-      "reference": "evidence:sha256:7933bd8e87daa604900bfad9e9b1a9f91484301cf6505e90b7ce059a22c2c848",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
     },
     "source:195b5293375e9b4a3787b73b": {
       "kind": "research",
@@ -3589,11 +3535,6 @@
       "reference": "evidence:sha256:18cbef513eeb6e678880bd4a6d075180ea0034863f12f5b47022a1005c7691b0",
       "revision": "b6d98efcd45c74c02afe42d5e16f5b27a70c829547d2e22083a21eca7c50170d"
     },
-    "source:abb4318988374bf233612085": {
-      "kind": "research",
-      "reference": "evidence:sha256:a507c32fb89ed6ae7f64abdb864ff36d6ff2d8c8b5a4c3dae5a281f5289dda9a",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
-    },
     "source:acfced9df4d5209864d46999": {
       "kind": "research",
       "reference": "evidence:sha256:205d127d79eab94376649e1235a2c0fcd4eceaa80129156d4ecf185029d0c194",
@@ -3638,11 +3579,6 @@
       "kind": "research",
       "reference": "evidence:sha256:9787cb2c562ea3160bc6493c1776251d67bbc51739e4ca7e769634fb1cd47ad8",
       "revision": "35e4dcb9c4bb3a4643ebc5602372c7a691016f150e83d6a0fbd90e46c412d90a"
-    },
-    "source:b788bdd1e53955e18aacdd8f": {
-      "kind": "research",
-      "reference": "evidence:sha256:f8b0707338efba6b6db43cd5d1997fe988c32e1fbe619ce06b035f8ca3d4afef",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
     },
     "source:b7d9205d61b0d0617d4707a9": {
       "kind": "research",
@@ -3693,11 +3629,6 @@
       "kind": "research",
       "reference": "evidence:sha256:fc84c6321f04b787292ee759bc8dac3e9612d0ff71541a21c27b10a7faa2de02",
       "revision": "d1fe59a1c10596005f18ac962a31f919c86e2f76cc700dfab56f23f1340950e5"
-    },
-    "source:c163f227d8c2b6c1a33850e4": {
-      "kind": "research",
-      "reference": "evidence:sha256:6f7f2cef199e0b8aaa0cc82be2a675d4ef9e5214a6a2e8c822c669c129ba8020",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
     },
     "source:c23c29fbb3da0b6ba39a3d9b": {
       "kind": "research",
@@ -4083,11 +4014,6 @@
       "kind": "research",
       "reference": "evidence:sha256:d8c94e5cf61fd3b408a41fc418fd0d19d5aa11d4a132122ce2a899f607ff482e",
       "revision": "22db03c6fe782770751b374ce09148b5feafa79c95d15e31216b21926f94f081"
-    },
-    "source:fccc3388745128683f1e6842": {
-      "kind": "research",
-      "reference": "evidence:sha256:7b2281c972792fb6d3534a1c8d2d5591c80119654c971af8d55c9164e4b7befe",
-      "revision": "6d2d0a66de1ecb38edc468099b3d1cf9d11d2ce4bee950007f35a8d1f742a0a0"
     },
     "source:ff60159b457cd8467ba6aa3e": {
       "kind": "research",

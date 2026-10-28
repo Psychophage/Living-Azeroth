@@ -4,6 +4,28 @@
   "map": 90,
   "npcs": [
     {
+      "entry": 2683,
+      "name": "Namdo Bizzfizzle",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:2683:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:fe0712c65016a5fb9e195591",
+            "source:04503eb801adb4547a6a7be5",
+            "source:e264bfd89bcd78902c46fae6"
+          ],
+          "text": "Namdo Bizzfizzle sells engineering supplies, serving engineers seeking materials for their craft.",
+          "when": {
+            "entry": 2683
+          }
+        }
+      ],
+      "title": "Engineering Supplies"
+    },
+    {
       "entry": 6206,
       "name": "Caverndeep Burrower",
       "records": [
@@ -40,6 +62,76 @@
           "text": "A Caverndeep Ambusher is a humanoid fighter that strikes from behind with Backstab, a tactic fitting its name.",
           "when": {
             "entry": 6207
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 6208,
+      "name": "Caverndeep Invader",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6208:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:0b43346d387e9f9b8ec3c73e",
+            "source:14cf31348b00a3282b19eb29",
+            "source:cc348433e64df40bd97281c3",
+            "source:04389e0667b30453323f8770"
+          ],
+          "text": "A Caverndeep Invader is one of the humanoids encountered among the Caverndeep. When affected by Radiation, it is associated with the blood-spray outbreak, marking it as one of the invaders caught up in the irradiated threat.",
+          "when": {
+            "entry": 6208
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 6209,
+      "name": "Caverndeep Looter",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6209:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b87643ce1ba0a53c91a16e4e",
+            "source:f43ce198d812923c9f9aa049",
+            "source:4a34f8c15052d059819985c7",
+            "source:d1bbb4dd7fc722fac7ed597e",
+            "source:4d6c59a21100ceb383a19776"
+          ],
+          "text": "The Caverndeep Looter is an armed humanoid of the Caverndeep group. It fights with a weapon and can cast Grab Weapon in combat; radiation can also leave it irradiated.",
+          "when": {
+            "entry": 6209
+          }
+        }
+      ],
+      "title": null
+    },
+    {
+      "entry": 6210,
+      "name": "Caverndeep Pillager",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6210:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:143d2801965c0dbd6093ecc2",
+            "source:2481a0695a5c394fa429de65",
+            "source:9183ed02e41b719fe901e952",
+            "source:81b8163b2220180e562b1b21"
+          ],
+          "text": "A Caverndeep Pillager is one of the humanoids of the Caverndeep group. It is caught up in the radiation outbreak, becoming irradiated when splashed by the blood; its name marks it as a pillager among those invaders.",
+          "when": {
+            "entry": 6210
           }
         }
       ],
@@ -85,6 +177,29 @@
           "text": "A Dark Iron Agent is a humanoid combatant with a hostile voice: it threatens death when attacked and speaks again when struck by Radiation. Its lines invoke Dark Iron identity.",
           "when": {
             "entry": 6212
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 6213,
+      "name": "Irradiated Invader",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6213:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:a7bdc09a45dd439eddc6a3f9",
+            "source:2374d13eeae378487055a1bf",
+            "source:9502e421babedff6fa76e039",
+            "source:3fdc39e73f5e7a1dfc0826ae"
+          ],
+          "text": "An Irradiated Invader is a humanoid already marked by the outbreak. In combat it can cast Radiation Bolt, making it an active part of the irradiated danger around the Caverndeep.",
+          "when": {
+            "entry": 6213
           }
         }
       ],
@@ -152,6 +267,33 @@
         }
       ],
       "title": ""
+    },
+    {
+      "entry": 6221,
+      "name": "Addled Leper",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6221:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:9a5d1ed1deaf213a9d66412f",
+            "source:69b0c8e025e968bb066e6b57",
+            "source:842347d233fc4ce822c5d0a2",
+            "source:b09722045a04bc70e740f09c",
+            "source:01ca6e1e0bd9e36f0d0f913a",
+            "source:36fb6eb2a8200c81a8fbfb65",
+            "source:a68583f247b0f59aa730018a",
+            "source:8b99f686d2e3055b6f990615"
+          ],
+          "text": "The Addled Leper is a deluded defender who mistakes others for trogg invaders and answers them with threats. Their sickness clouds their sight, but their words insist that no gnome be left behind; they see themselves as holding the line against the troggs.",
+          "when": {
+            "entry": 6221
+          }
+        }
+      ],
+      "title": null
     },
     {
       "entry": 6222,
@@ -353,6 +495,31 @@
         }
       ],
       "title": ""
+    },
+    {
+      "entry": 6231,
+      "name": "Techbot",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:6231:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:405affcd5460f215ecb4ffc8",
+            "source:2b19703b78612855161e968c",
+            "source:a781cef1442fa7603fa9cce9",
+            "source:a101d978c459fd43a27cb27e",
+            "source:7d752f4552f5695e9b9d64a1",
+            "source:c66f23090ccc755edf9e7d45"
+          ],
+          "text": "Techbot presents itself as an information and help bot, inviting visitors to whisper for answers. It asks to be treated kindly, jokes uncertainly about a hidden “COW level,” and describes handling people in the order they appear on its screen. Its speech mixes helpful reassurance with computer-like queue announcements.",
+          "when": {
+            "entry": 6231
+          }
+        }
+      ],
+      "title": null
     },
     {
       "entry": 6232,
@@ -646,6 +813,28 @@
       "title": ""
     },
     {
+      "entry": 8320,
+      "name": "Sprok",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:8320:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:c4464e94ee0f128d87236e54",
+            "source:8213ead3544f9633a2580087",
+            "source:0643ccb476264a064f8fc974"
+          ],
+          "text": "Sprok is associated with the Away Team.",
+          "when": {
+            "entry": 8320
+          }
+        }
+      ],
+      "title": "Away Team"
+    },
+    {
       "entry": 9676,
       "name": "Tink Sprocketwhistle",
       "records": [
@@ -669,15 +858,40 @@
   ],
   "place": "Gnomeregan",
   "sources": {
+    "source:01ca6e1e0bd9e36f0d0f913a": {
+      "kind": "research",
+      "reference": "evidence:sha256:cea73561467d554f99e9625c5235e3a9670fc447ef3f370c49e587bc65e77a10",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:02abf20378b7d3ae4581bf2b": {
       "kind": "research",
       "reference": "evidence:sha256:5996714efd819f0155db03ce86fe97e3a208bf6a89175c49caec42ee5ca1d3d4",
       "revision": "9076ec40d7f09dbb6e524308209045d60766f3f730586818d6bb955f0984e713"
     },
+    "source:04389e0667b30453323f8770": {
+      "kind": "research",
+      "reference": "evidence:sha256:51f77f9ce31445b8085c682426653af62a4161ac5f9eeb2c2436c131d753b3c3",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
+    "source:04503eb801adb4547a6a7be5": {
+      "kind": "research",
+      "reference": "evidence:sha256:4942e544e5dded0720e2d0030d4c551eff1f8ffe23faf676e0da07a9f787110d",
+      "revision": "067a4042199cc5f271c28a16a68ac73d2e2512eddd06556c694afb6cec2df02e"
+    },
     "source:046695d9fcfcb1d604f266f0": {
       "kind": "research",
       "reference": "evidence:sha256:4b90d5f74af78e3b5609a1e3bd461dc3f7e35caa8309679d0d250e8512d8d58f",
       "revision": "9076ec40d7f09dbb6e524308209045d60766f3f730586818d6bb955f0984e713"
+    },
+    "source:0643ccb476264a064f8fc974": {
+      "kind": "research",
+      "reference": "evidence:sha256:3e5737bc7c4bef5fc072efa6fafae3e945a87816e2d3f48d92cb130d55b39d74",
+      "revision": "236901cad30097b6f232b943984e1864d76279f81b727cc0a22f76536f8ab632"
+    },
+    "source:0b43346d387e9f9b8ec3c73e": {
+      "kind": "research",
+      "reference": "evidence:sha256:7392829d8a3042bd8d395d3562e617072c0e03290c6c83f25cbcb7b3334a9737",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:0c5e75abf8f91ff578d08166": {
       "kind": "research",
@@ -693,6 +907,16 @@
       "kind": "research",
       "reference": "evidence:sha256:6da8610ca13ee208da3b27a49d07b66455f548985cfdf66b7895061eddcac09b",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
+    },
+    "source:143d2801965c0dbd6093ecc2": {
+      "kind": "research",
+      "reference": "evidence:sha256:8cdffe86746dc5cf09770364bd1e4e9c163bedd90c6d5397889615ea8cb31bd2",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
+    "source:14cf31348b00a3282b19eb29": {
+      "kind": "research",
+      "reference": "evidence:sha256:b594564afaeb5ac1ed98f8ed8ebddfdd1731734d260cf6fe4a3a6704560a8e99",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:159dfacc56f9a8e74e1ee5cc": {
       "kind": "research",
@@ -719,15 +943,30 @@
       "reference": "evidence:sha256:bf3735fb78381d5d5a06865787d83713ffb91288368735b5bce7dbe87f43ff02",
       "revision": "51e353c32f67a3282b6e3411e0441a81d7fce58c9bf8a1900152072d4cb091ef"
     },
+    "source:2374d13eeae378487055a1bf": {
+      "kind": "research",
+      "reference": "evidence:sha256:7b1447c489537a374e808756e0b2b2abf2ab529efcd4bdc9a6001b155ba06ba7",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:23c90e4a10c90ca78ede74c1": {
       "kind": "research",
       "reference": "evidence:sha256:ec16a27f0c218c9f6413a5c10acb77ba5ab7d037e143d00686d7c92a699caf08",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
     },
+    "source:2481a0695a5c394fa429de65": {
+      "kind": "research",
+      "reference": "evidence:sha256:e427a3d794184573fc949817a7bd682fc13a33c941357b24ad445644bb04a398",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:291d5696dd4ee3d632bbb10f": {
       "kind": "research",
       "reference": "evidence:sha256:44254891f458c19da9418242871f76c50e4ebe6603acc64fd8b7de487d1a1892",
       "revision": "51e353c32f67a3282b6e3411e0441a81d7fce58c9bf8a1900152072d4cb091ef"
+    },
+    "source:2b19703b78612855161e968c": {
+      "kind": "research",
+      "reference": "evidence:sha256:b778149d15f09ed354febbea8e2f31692f56d7fb45ca38316925009e9ec69f1e",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
     },
     "source:2db3b1f880ee9df599a5a7c2": {
       "kind": "research",
@@ -749,6 +988,11 @@
       "reference": "evidence:sha256:5e0d30dc69f45210c53fe003bd7a401e1fc3c27a6a2b03bd890a09b5afb8f35e",
       "revision": "51e353c32f67a3282b6e3411e0441a81d7fce58c9bf8a1900152072d4cb091ef"
     },
+    "source:36fb6eb2a8200c81a8fbfb65": {
+      "kind": "research",
+      "reference": "evidence:sha256:b83dfb514551f973a2085b8d08c7113727371596cf5e1a498f03b4f09ee1954a",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:38d9caebc37256b365f44e73": {
       "kind": "research",
       "reference": "evidence:sha256:67a18eaef3a92f5a8cfbf913b97f5dce0e5d77bfbc267025c69fbc146220dc37",
@@ -759,10 +1003,20 @@
       "reference": "evidence:sha256:35c62c6d4ac481e83319d532a94cf4ffe933e07e0fb9f8c8f7d199cf0beaccf6",
       "revision": "290cbf2981774250ca97215bb9749bfc9ceff8f70673843c9f1f7906ddbcbc48"
     },
+    "source:3fdc39e73f5e7a1dfc0826ae": {
+      "kind": "research",
+      "reference": "evidence:sha256:bbc4b5fc8490babb8f214db9f58b46c71a425ac544fd922c635b61c1b041fd88",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:4047d40f5eb94cb92b79cdd2": {
       "kind": "research",
       "reference": "evidence:sha256:038a50686fd7c36a77d1dfdadaf647e61b389911c7e2da279f6f7d257ea4ddba",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
+    },
+    "source:405affcd5460f215ecb4ffc8": {
+      "kind": "research",
+      "reference": "evidence:sha256:998f5ae549adc71719968a6dae648e02a16b444cbff8af3ab7a3b8960b21e651",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
     },
     "source:4194deadf38c9ea8fe21c4cb": {
       "kind": "research",
@@ -779,10 +1033,20 @@
       "reference": "evidence:sha256:c05c4b53a926d11ea1088e35cded1c6ca20ceab0759390b1fe495623070a40b1",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
     },
+    "source:4a34f8c15052d059819985c7": {
+      "kind": "research",
+      "reference": "evidence:sha256:89ff9d74de3a120074942c413dfe879e8dbf1cdf2f607308a07c3eea628a7786",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:4d238bcc6d71a88dc38e2724": {
       "kind": "research",
       "reference": "evidence:sha256:a1e22423066bd2e32666b660dee2287740ab971e23c8dd365315d88aca6d3dd8",
       "revision": "c419ffabefd40095c3279954cea63ee5e1d1f7b92ad5b6b4101415135b0126c9"
+    },
+    "source:4d6c59a21100ceb383a19776": {
+      "kind": "research",
+      "reference": "evidence:sha256:9d0efcdbbe01da43f1f7d0c19d0d82bffc4081ec5d64bc6ccfba52437795b8b9",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:4f8f86f31c250fc73943d05f": {
       "kind": "research",
@@ -814,6 +1078,11 @@
       "reference": "evidence:sha256:991fde743e77d3c56e45b890bd8338117424def3c291872009fe544583409fae",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
     },
+    "source:69b0c8e025e968bb066e6b57": {
+      "kind": "research",
+      "reference": "evidence:sha256:2d950b55ed8cb713c6f952e34503f4ea97f92410c2cce09d262bbd21e7e5468e",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:6d73f74fbfbaf302c0c74159": {
       "kind": "research",
       "reference": "evidence:sha256:eff69c08396131c5f1a10bb27b63903bd0ab8586ee5f620b58e9012e36fa2eb6",
@@ -839,6 +1108,11 @@
       "reference": "evidence:sha256:dcd701f7d0d8d9e20eecfbbf8de371249f2689260cc08d71679a30ab28a8b68d",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
     },
+    "source:7d752f4552f5695e9b9d64a1": {
+      "kind": "research",
+      "reference": "evidence:sha256:21a030ae8e072a60dca08ea171774cfa7f5d1006c549b283e9fd0470ea269b10",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
+    },
     "source:7de0b8763721048dfd56f929": {
       "kind": "research",
       "reference": "evidence:sha256:1b2f0335f0fdbc4589b656c46cc7002b7b7a061b4b90f7fd4717b6282460a625",
@@ -849,15 +1123,30 @@
       "reference": "evidence:sha256:c9b54912ec6b0125694a7749779dd7e36935271683893633228f47e1a9aa6f8e",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
     },
+    "source:81b8163b2220180e562b1b21": {
+      "kind": "research",
+      "reference": "evidence:sha256:2d84b4666a82c3c294a17bfaa815b689e1e6f287c52ac48ca09728d4cd4603cf",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:81cad447e1a466fdfaebbb6a": {
       "kind": "research",
       "reference": "evidence:sha256:178ee970f9ca4b5b9bb4d8dafe4d69b102d4432e8873d9f5b5256c8f4f77db61",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
     },
+    "source:8213ead3544f9633a2580087": {
+      "kind": "research",
+      "reference": "evidence:sha256:ff98739e0635ac0904867616630c5ae8f0112cd84bb0b824c3d4cc58f3de282b",
+      "revision": "236901cad30097b6f232b943984e1864d76279f81b727cc0a22f76536f8ab632"
+    },
     "source:841457e8be34c0547356f951": {
       "kind": "research",
       "reference": "evidence:sha256:2ad3fa1a9cf30e5c6b1d4fdb2c5e7d5de5ce67321f5b19e159bdc605a9c83c3a",
       "revision": "c419ffabefd40095c3279954cea63ee5e1d1f7b92ad5b6b4101415135b0126c9"
+    },
+    "source:842347d233fc4ce822c5d0a2": {
+      "kind": "research",
+      "reference": "evidence:sha256:f26aec1f1734c36e12ac9bfee5f4ce8e26afa73afb35bac5173a5097093eb4ce",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:85c85e9f05a2974ed9bacbe7": {
       "kind": "research",
@@ -874,6 +1163,11 @@
       "reference": "evidence:sha256:d346ce57f30dac9616afcc86902296913afd41e1c0659972a7206732fbc8bb16",
       "revision": "51e353c32f67a3282b6e3411e0441a81d7fce58c9bf8a1900152072d4cb091ef"
     },
+    "source:8b99f686d2e3055b6f990615": {
+      "kind": "research",
+      "reference": "evidence:sha256:c5e94628b15b088999e3e90cdb6117450ac2d30bb56f48abb181213ffd7f81a7",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:8eeec3c78779fb5edeb8646c": {
       "kind": "research",
       "reference": "evidence:sha256:3a48153d1cfe1af66ded3e4a21ba835701e46af545ab0d4880e9cf5bd39ffd60",
@@ -884,10 +1178,25 @@
       "reference": "evidence:sha256:9429a47f30d8348a2a26d0ffab3e4ec1ad639cddf8c585476e8701b73ef4e797",
       "revision": "290cbf2981774250ca97215bb9749bfc9ceff8f70673843c9f1f7906ddbcbc48"
     },
+    "source:9183ed02e41b719fe901e952": {
+      "kind": "research",
+      "reference": "evidence:sha256:80ba20c3a099a1ab0aa8383404c0692d4e3cb4a39888cb0fc4b864d82a7d0da6",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:94a7745446fc106afc17402d": {
       "kind": "research",
       "reference": "evidence:sha256:e78783a3701195ed8ec021f7cb9dd611028bca42402acb93cfac1faf5633e27f",
       "revision": "9076ec40d7f09dbb6e524308209045d60766f3f730586818d6bb955f0984e713"
+    },
+    "source:9502e421babedff6fa76e039": {
+      "kind": "research",
+      "reference": "evidence:sha256:bed48a4689f5489a025f710c0af4a7a73780982254a37bdb6c35ac432aa7dd81",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
+    "source:9a5d1ed1deaf213a9d66412f": {
+      "kind": "research",
+      "reference": "evidence:sha256:f5ef294913abead3762ad7fd087c8e594bb01dc36cad4e933e3b1679500fd21e",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:9a5f31486714da2ec217f99e": {
       "kind": "research",
@@ -899,6 +1208,11 @@
       "reference": "evidence:sha256:9ee7f6e5ba15ac7fe31b8ba8cf1a1ab96c4f2c38c8341ba0c603571039ff527a",
       "revision": "17cbc1b7eb3074c35b949310b4ef4f4d75d731ff27efff3512836c8af108e50e"
     },
+    "source:a101d978c459fd43a27cb27e": {
+      "kind": "research",
+      "reference": "evidence:sha256:de48c4ce9e4de1c9b7e6a613da17574a82003c44a64df8bda2fae400466b15ab",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
+    },
     "source:a280ddb054bc93573a2c55c9": {
       "kind": "research",
       "reference": "evidence:sha256:d20c13f27393f234e3b07816e581d475b3a228bdba13588d6293486f4e4a5ee5",
@@ -908,6 +1222,21 @@
       "kind": "research",
       "reference": "evidence:sha256:e75e60711e0b087dea32a72a34cb44d1bc3f83b9b53196eeb6df631804214283",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
+    },
+    "source:a68583f247b0f59aa730018a": {
+      "kind": "research",
+      "reference": "evidence:sha256:248803bf530bfbda67ad02900acde7e520b08f80ee516f22864e9b582192cfa4",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
+    "source:a781cef1442fa7603fa9cce9": {
+      "kind": "research",
+      "reference": "evidence:sha256:0f877b0199cd66137a8eb9651e1c4b9ddfa70201b164d8453814e664c108f136",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
+    },
+    "source:a7bdc09a45dd439eddc6a3f9": {
+      "kind": "research",
+      "reference": "evidence:sha256:720322571c752c2e90f283b7b0140badd1f093eed54dd3be21b9f3bfd5e7ee73",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:ab28572ddb39215634812320": {
       "kind": "research",
@@ -929,6 +1258,11 @@
       "reference": "evidence:sha256:5ee882f95538c52cf66010fcae4cb113775e9bf2e56b0d9567c9b0a85573531f",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
     },
+    "source:b09722045a04bc70e740f09c": {
+      "kind": "research",
+      "reference": "evidence:sha256:2d0a22e312056d371a3bde5000363a6208c50c954772cf7be42c894127258db8",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:b0af4fc258566b81a63a7dd2": {
       "kind": "research",
       "reference": "evidence:sha256:dd28afab7decb37c6c571fa61e3e00976fb18906a7a5ab5d95d444eb39aadf9d",
@@ -943,6 +1277,11 @@
       "kind": "research",
       "reference": "evidence:sha256:fbb76409278db5181ddc0dae48237966fbe1d3c48e57fe273ee4da7f0cae3f2a",
       "revision": "290cbf2981774250ca97215bb9749bfc9ceff8f70673843c9f1f7906ddbcbc48"
+    },
+    "source:b87643ce1ba0a53c91a16e4e": {
+      "kind": "research",
+      "reference": "evidence:sha256:153b1d9faba1a1b0b2256f9e5d54494fa217811e951bd11481a6d8ab1dbb5ebe",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:bac6781b0b295f2f38b7e0a2": {
       "kind": "research",
@@ -959,10 +1298,20 @@
       "reference": "evidence:sha256:ebc71739324f273927c34c09cbfe7cc09d224188854b6f5d63c1406aa7734316",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
     },
+    "source:c4464e94ee0f128d87236e54": {
+      "kind": "research",
+      "reference": "evidence:sha256:9c59445d9a7c62418efa302b94d7df2be3a442b13d685e93f21e0290a6416efd",
+      "revision": "236901cad30097b6f232b943984e1864d76279f81b727cc0a22f76536f8ab632"
+    },
     "source:c661f3f73360b3cb717e4c40": {
       "kind": "research",
       "reference": "evidence:sha256:fbf8c306e504f3124ceae60b0e7630fca36d0f4eddceb5adb1c40207b095ee52",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
+    },
+    "source:c66f23090ccc755edf9e7d45": {
+      "kind": "research",
+      "reference": "evidence:sha256:a7c8b53db18538b06f29ef15fc40dda743c0f3110db110361928eea7237bad56",
+      "revision": "f8678256d6ba8287436d2a0b8cfb8ddbf115aa703b2c1cdfd58e052594e2573d"
     },
     "source:c6f47fc22e607d1f979334ba": {
       "kind": "research",
@@ -993,6 +1342,16 @@
       "kind": "research",
       "reference": "evidence:sha256:21f5dcb0adf8285ac623957939470e874a62cf5b1e6570b550a4371f77b42be2",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
+    },
+    "source:cc348433e64df40bd97281c3": {
+      "kind": "research",
+      "reference": "evidence:sha256:6cf2c45ace84bc737432d7636ddf15927edb4d9328d8f1bd782d3a4429f398c9",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
+    "source:d1bbb4dd7fc722fac7ed597e": {
+      "kind": "research",
+      "reference": "evidence:sha256:d71b218f83918f11f2c79b45939fa08f540c1fcbd333ab3fb2cebfaf57b1de02",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
     },
     "source:d25db187adf4cbfe4a72c395": {
       "kind": "research",
@@ -1054,6 +1413,11 @@
       "reference": "evidence:sha256:55d34a021227bb4a1e78a07f601d452820a2f6c5b163c457a2331faf2b82cbe3",
       "revision": "e1c8c74db1d8e4b8002f06c98e753c1355a555d8c2a8ebc5e469c1f82ad21446"
     },
+    "source:e264bfd89bcd78902c46fae6": {
+      "kind": "research",
+      "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
+      "revision": "067a4042199cc5f271c28a16a68ac73d2e2512eddd06556c694afb6cec2df02e"
+    },
     "source:ea584908c4282528629a7c1c": {
       "kind": "research",
       "reference": "evidence:sha256:b33281c7e32d9cb685d86e84152938aea071ba529ae39805bd4e6de31b13dc8e",
@@ -1104,6 +1468,11 @@
       "reference": "evidence:sha256:4cc265ceb3a1c21777608d4a38712d2e81d0c6b88b5dc5840e8efd77d6849434",
       "revision": "8d8c627a1938805ee30352a3cea21ebe2bc627b2040c4c6ec2146bc9a2ac6dea"
     },
+    "source:f43ce198d812923c9f9aa049": {
+      "kind": "research",
+      "reference": "evidence:sha256:b0232ac0cf9c5467d8be886343ae68374d749b9b718fdb8e788df55fc0c83620",
+      "revision": "2843e6619761b0d87485022e4defede31db2f2780978db362ee661bb458afdc5"
+    },
     "source:f4d98b577ed1354d84b89470": {
       "kind": "research",
       "reference": "evidence:sha256:cda104b280744f86c83944920af80e2f0f51f8bca0c61d95ecc011e9af5dbbb6",
@@ -1128,6 +1497,11 @@
       "kind": "research",
       "reference": "evidence:sha256:30478377938e9118fdaa10693f4b3c8934b393f622acae7d6c52d91bebdeba70",
       "revision": "51e353c32f67a3282b6e3411e0441a81d7fce58c9bf8a1900152072d4cb091ef"
+    },
+    "source:fe0712c65016a5fb9e195591": {
+      "kind": "research",
+      "reference": "evidence:sha256:c594297fbf60e615af4fbcd8231c83f0415f7b1f38da4db1324ce72edcada43a",
+      "revision": "067a4042199cc5f271c28a16a68ac73d2e2512eddd06556c694afb6cec2df02e"
     },
     "source:fe5e0f4c217521fefb4a975d": {
       "kind": "research",

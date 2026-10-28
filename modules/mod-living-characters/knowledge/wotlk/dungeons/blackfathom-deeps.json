@@ -78,6 +78,47 @@
       "title": ""
     },
     {
+      "entry": 4802,
+      "name": "Blackfathom Tide Priestess",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4802:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:76100a087f7c04343a3a3b97",
+            "source:29a5572a2705d5dff46215eb"
+          ],
+          "text": "Blackfathom Tide Priestesses wield Frostbolt in combat.",
+          "when": {
+            "entry": 4802
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 4803,
+      "name": "Blackfathom Oracle",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:4803:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:b8f43b2fc920808014f70154"
+          ],
+          "text": "Blackfathom Oracles are humanoid creatures with an oracle role.",
+          "when": {
+            "entry": 4803
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 4805,
       "name": "Blackfathom Sea Witch",
       "records": [
@@ -661,6 +702,11 @@
       "reference": "evidence:sha256:0ae06b9dfbcc07e416554509b6bef7faf4f750078b7c275d4679c383ca7079cf",
       "revision": "ef5b6e26013f90f9150e2be4b85793cb1891e220d1aad0310a462696ba572888"
     },
+    "source:29a5572a2705d5dff46215eb": {
+      "kind": "research",
+      "reference": "evidence:sha256:f07804596b89bf1759415b87e27195654785d477810bff0871d3ca2f8c8c7ddd",
+      "revision": "070e0e6e0f14756416311af8e32307ae188c9c8b3103ae502c2fea8cd3a9aebe"
+    },
     "source:2abe89665bf83cea3bc4aee5": {
       "kind": "research",
       "reference": "evidence:sha256:3c714e224c8232fb122b77a54c0a95b18cd219ec0a9dc80ae0fae916a526cef1",
@@ -770,6 +816,11 @@
       "kind": "research",
       "reference": "evidence:sha256:47b9c77adc3e7d19b2ec4df936931a2bb9efd130f67f9e9d9ac27444de88572b",
       "revision": "847bf4b596dd7579f764be2a8f1fd02f8d9940c6ec33ad65cc85829dfcf0d00f"
+    },
+    "source:76100a087f7c04343a3a3b97": {
+      "kind": "research",
+      "reference": "evidence:sha256:b43c1a97cbbbefc233cf18173624172f2c27bcc3ab232f76fde1c1339743970c",
+      "revision": "070e0e6e0f14756416311af8e32307ae188c9c8b3103ae502c2fea8cd3a9aebe"
     },
     "source:76938c440ef182d442adc147": {
       "kind": "research",
@@ -925,6 +976,11 @@
       "kind": "research",
       "reference": "evidence:sha256:99027e4c80ffb9397ca2359db663cadf4f00cde4a6dd296f5e90ae7eaf7130e1",
       "revision": "4776e50c7f106ce5b7ccf151fef20fd7d1786bc978a0310e742ac169cb833606"
+    },
+    "source:b8f43b2fc920808014f70154": {
+      "kind": "research",
+      "reference": "evidence:sha256:b990b44203a21263a31313f8857a2d0367ccff37622f0be6425fb0a31f0be8a9",
+      "revision": "c0a88d8af124e00a5995070a66c1ccf5cd5030cf3e15adf63aaa9b664018b4ee"
     },
     "source:b96c8bbe47053fee071a1b89": {
       "kind": "research",

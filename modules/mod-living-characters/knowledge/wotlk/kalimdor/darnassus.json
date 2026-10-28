@@ -2923,6 +2923,28 @@
       "title": "Darnassus Commendations"
     },
     {
+      "entry": 15892,
+      "name": "Lunar Festival Emissary",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:15892:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:e945d2e6e0833290d90cef94",
+            "source:6c05934eee23c776065681c8",
+            "source:84eec913457ea6aebfb28416"
+          ],
+          "text": "Lunar Festival Emissaries serve as festival quest contacts in several regions. The Cenarion Circle’s celebration welcomes Azeroth’s inhabitants, and festival guidance directs visitors to a Lunar Festival Harbinger in the city, who can tell them more.",
+          "when": {
+            "entry": 15892
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 16001,
       "name": "Aldris Fourclouds",
       "records": [
@@ -3468,6 +3490,29 @@
       "title": "Crown Chemical Co."
     },
     {
+      "entry": 38293,
+      "name": "Junior Inspector",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:38293:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:10c15fe5a0c98ce93dfb711e",
+            "source:dbb846b6d7da2993f3000043",
+            "source:4f7778686b997c268ffd0ceb",
+            "source:c00372f4c1f9d72d1d0b10c8"
+          ],
+          "text": "The Junior Inspector is a Steamwheedle investigator suspicious of Crown Chemical Co., joking that something stinks beyond their socks. They invite interested recruits to join the inquiry and point them toward Inspector Snip Snagglebolt in Stormwind.",
+          "when": {
+            "entry": 38293
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 40441,
       "name": "Battered Brewmaster",
       "records": [
@@ -3807,6 +3852,11 @@
       "kind": "research",
       "reference": "evidence:sha256:55f6868abaab47fc3c4e7e0dd2be42be160e9a3808f59aac194bd5ea1038f50e",
       "revision": "e138f5ad78ff77e94a8228d167ada3a731b7e7a85445a4e615bdf63ac5e62c48"
+    },
+    "source:10c15fe5a0c98ce93dfb711e": {
+      "kind": "research",
+      "reference": "evidence:sha256:956bb16c71778cdbbc4bdd9c3e33939a1857aa94e0ffedba5d47de59b751a6a6",
+      "revision": "c2fceea9be6e9ca0065a48f61960e1c1d1addbbc4ced0b80a94e0fa92bc10651"
     },
     "source:11a9cbccf5f718bcc72c8c04": {
       "kind": "research",
@@ -4393,6 +4443,11 @@
       "reference": "evidence:sha256:bdfe4efe0b5019f03354c968909cf228a4331e0cb88e769d6903d2ca5360ea80",
       "revision": "22c6b4b72d8e3976f0ca1075c77b506cdbc8ee6912421b1825edb00eeba03922"
     },
+    "source:4f7778686b997c268ffd0ceb": {
+      "kind": "research",
+      "reference": "evidence:sha256:39e74f51ef954f91fa377fcd8e2af4bf760fb648d842fc0b03cac501486839c5",
+      "revision": "c2fceea9be6e9ca0065a48f61960e1c1d1addbbc4ced0b80a94e0fa92bc10651"
+    },
     "source:4fa82f381b629194491e37da": {
       "kind": "research",
       "reference": "evidence:sha256:92ffd0cf5e267bc836144f9fd7bc68a1139aae25ee1fc54eccd25f9d041f2030",
@@ -4708,6 +4763,11 @@
       "reference": "evidence:sha256:af49e5d6ff25b8db262b1e8c11c45f898419a67aff5fcdce79fe6f78dbf3371e",
       "revision": "6f5a12296ccf21410a2d5e1fc3a76c6463d13d183b541c2ae5ae4b18436a8a36"
     },
+    "source:6c05934eee23c776065681c8": {
+      "kind": "research",
+      "reference": "evidence:sha256:b4fe39d0c1fe1d129dcd51f916fea265eba112f76088aa0c142db31c8bc0e841",
+      "revision": "807e051c082c4687593ea0ab5121ba89b757c18526efdb12e38ad6f85395def0"
+    },
     "source:6c75d3f316db4c5c81758427": {
       "kind": "research",
       "reference": "evidence:sha256:b929d1a7ecc1d33b5bd900ff878831aee43aa21fbe00b396f16947b49e21ba68",
@@ -5002,6 +5062,11 @@
       "kind": "research",
       "reference": "evidence:sha256:d225d994f0f029a7996886851a7c9d9d9513529298f4bf13b2067ed2d41797c1",
       "revision": "2703a0b2f186d4258bbb393d686c6042f8f4d848c5aaf5d29d3301e0127b8e9c"
+    },
+    "source:84eec913457ea6aebfb28416": {
+      "kind": "research",
+      "reference": "evidence:sha256:ad6c69f6479c4233b4734f0ccd0143f886135ad3ef4eac76b340847678bafac9",
+      "revision": "807e051c082c4687593ea0ab5121ba89b757c18526efdb12e38ad6f85395def0"
     },
     "source:8527d3165583a6b175667fe8": {
       "kind": "research",
@@ -5598,6 +5663,11 @@
       "reference": "evidence:sha256:6bd994483ee9954c562ceef892f2512313df58ab4651aeab1b6357d7a28690a0",
       "revision": "48eb324a5acbdaf39087374ca8969c8d3ea617cb87b708c66d75d56cf0c8b487"
     },
+    "source:c00372f4c1f9d72d1d0b10c8": {
+      "kind": "research",
+      "reference": "evidence:sha256:c7adf3ce9957d9f0ee349e14d9b1d80c50606413459ed5dc438a9aee9d1cef3f",
+      "revision": "c2fceea9be6e9ca0065a48f61960e1c1d1addbbc4ced0b80a94e0fa92bc10651"
+    },
     "source:c0201f8c04f915f0079d83ae": {
       "kind": "research",
       "reference": "evidence:sha256:b015a1239c752ab1e1fd39fd0df53966cb4f6e66995f714aac6dc079739356ec",
@@ -5878,6 +5948,11 @@
       "reference": "evidence:sha256:008b76c7c6002db8aee710c2097726e572021e0691504f0525398244543c8e3d",
       "revision": "c28f2eaf704b295ec28904ed60ea97a0cb17b7ed684e126bafb0b7180f8bbb96"
     },
+    "source:dbb846b6d7da2993f3000043": {
+      "kind": "research",
+      "reference": "evidence:sha256:93d38d56bd0029094ecffa1a7859730036c5d3233f8dc3d93e7a318e89a879b1",
+      "revision": "c2fceea9be6e9ca0065a48f61960e1c1d1addbbc4ced0b80a94e0fa92bc10651"
+    },
     "source:dc09dff64ae069845e60edcf": {
       "kind": "research",
       "reference": "evidence:sha256:03bae07a6828b6489fc77b709617ce859fd6ef2dbdcf959cea389d5059a93ac7",
@@ -6037,6 +6112,11 @@
       "kind": "research",
       "reference": "evidence:sha256:36044816591e92180e6cd13cfce8f18a29ac57858ae715abe50ee43bff17b65c",
       "revision": "19f216412bbff924f161b671991b38ed0a73408454ebd372db51818c1c6a4b0d"
+    },
+    "source:e945d2e6e0833290d90cef94": {
+      "kind": "research",
+      "reference": "evidence:sha256:2d2b836e7c944c4a6f2b1da30e80896a76e1a9d58e0a4de23551766e1192dd09",
+      "revision": "807e051c082c4687593ea0ab5121ba89b757c18526efdb12e38ad6f85395def0"
     },
     "source:e9b97b1e74c93262f55b40a0": {
       "kind": "research",

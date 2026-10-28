@@ -806,72 +806,6 @@
       "title": null
     },
     {
-      "entry": 8917,
-      "name": "Quarry Slave",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:8917:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:3c7617dc53db78185f969c95",
-            "source:98ba451df811274ebc765c25",
-            "source:60e10c837d9d5887ff6a0673"
-          ],
-          "text": "Quarry Slaves are humanoid workers found across more than one part of the region. When attacked, they respond with a direct strike.",
-          "when": {
-            "entry": 8917
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 8924,
-      "name": "The Behemoth",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:8924:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b5a48e7bb89f0c227f42c16c",
-            "source:fa7148d817c23e8490a8f9ce"
-          ],
-          "text": "The Behemoth is a lone, formidable humanoid opponent in this area, a singular presence distinguished by its imposing title.",
-          "when": {
-            "entry": 8924
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 9026,
-      "name": "Overmaster Pyron",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:9026:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:57879cc96acb8ffaa2e03360",
-            "source:d5b158b5c79fc2a17c30cd18",
-            "source:6cd06ef7bacb64f1c617c271",
-            "source:631d40881a6674c33a07d3e3"
-          ],
-          "text": "Overmaster Pyron is the fire elemental guarding the Blackrock Quarry entrance, where his disturbance of the elements threatens the surrounding lands. He vows that Incendius will raise him from the ashes, revealing a claimed bond between the two and a defiant refusal to accept defeat.",
-          "when": {
-            "entry": 9026
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 9318,
       "name": "Incendosaur",
       "records": [
@@ -1191,49 +1125,6 @@
         }
       ],
       "title": ""
-    },
-    {
-      "entry": 24818,
-      "name": "Anvilrage Taskmaster",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:24818:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:c555a97d0794be3a4d9a548d",
-            "source:3b948f3156db68ad88c0dae6",
-            "source:cce7bbf0ff380ae3f560485b"
-          ],
-          "text": "An Anvilrage taskmaster encountered in several regions. In combat, it uses Strike and calls on a Haste Aura when badly wounded.",
-          "when": {
-            "entry": 24818
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 24819,
-      "name": "Anvilrage Enforcer",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:24819:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:9b9b83d54efdd53294807d10",
-            "source:055b2ca8f93c1b2ea8b71c82"
-          ],
-          "text": "An Anvilrage enforcer encountered in several regions. In combat, it uses a Hooked Net against its opponents.",
-          "when": {
-            "entry": 24819
-          }
-        }
-      ],
-      "title": ""
     }
   ],
   "place": "Searing Gorge",
@@ -1486,11 +1377,6 @@
       "reference": "evidence:sha256:6d0a0a37f3ff621230f382a31bd567db1444560165b0ee7b5703869d4709edee",
       "revision": "73d8447d1a5ca158a4507b38bd7220814536f21d44955ffa97814488da317f19"
     },
-    "source:055b2ca8f93c1b2ea8b71c82": {
-      "kind": "research",
-      "reference": "evidence:sha256:162da0271ec5fa9dcfbc84f5557771c7113fd750fc0df49e3036d88b62483cd6",
-      "revision": "925ab6b28cfd2e77235c6e9680e2ad7bd2bfb2edaca95976bad2255c8e64a361"
-    },
     "source:05c19db722a358bcd7671540": {
       "kind": "research",
       "reference": "evidence:sha256:c927d08e51b326951e2c33a0e3a2b5da903ef70da4a0e4d5827df43c5106bbdb",
@@ -1691,16 +1577,6 @@
       "reference": "evidence:sha256:0af6ae2eb4d7f7a215a38d2a400a759c49069dbb1b2dffa1aa00336ecdee289f",
       "revision": "72bb4ffc8f08e0af3b399e513105a4a9d8783ac91e2b624193aabaa8234e5e26"
     },
-    "source:3b948f3156db68ad88c0dae6": {
-      "kind": "research",
-      "reference": "evidence:sha256:1cf72375cda229e7600ca92e0111546d1d63406c0487909c05fb4d17561c207b",
-      "revision": "925ab6b28cfd2e77235c6e9680e2ad7bd2bfb2edaca95976bad2255c8e64a361"
-    },
-    "source:3c7617dc53db78185f969c95": {
-      "kind": "research",
-      "reference": "evidence:sha256:f13206c71ebdeb694331ebbfae9b11736e4b52d51dbcd328b9490dbc0ce33447",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
-    },
     "source:3df30c89044885bd885d3873": {
       "kind": "research",
       "reference": "evidence:sha256:51ccfabc656f8220c0f16327fea3e11d346c71cb173dcb2cd2d504ee7ed794a6",
@@ -1786,11 +1662,6 @@
       "reference": "evidence:sha256:e0c8750d9920ee0172f65d4d14b89f4d26b20c15aedbef4c59c29487ac5b997b",
       "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
-    "source:57879cc96acb8ffaa2e03360": {
-      "kind": "research",
-      "reference": "evidence:sha256:86d73159a6ee7b0e5c8f3905608ba2fda72f567bec135cf02f214cd04960fe72",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
-    },
     "source:5901f9a05d1b55f057091c09": {
       "kind": "research",
       "reference": "evidence:sha256:8b55cc36d8a3600a38ae4ef5a6bab5f9675e306412c9c811f840790d8a09790b",
@@ -1841,11 +1712,6 @@
       "reference": "evidence:sha256:1e4029ccbeb861e2107525db1126adb6e8bd7c4b1f969cfef56122adc719023b",
       "revision": "73d8447d1a5ca158a4507b38bd7220814536f21d44955ffa97814488da317f19"
     },
-    "source:60e10c837d9d5887ff6a0673": {
-      "kind": "research",
-      "reference": "evidence:sha256:df3c3a7f2afbff19c2aa5babe61a2dd26a845f6d0320ee4af9b9a5a90e82de32",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
-    },
     "source:6267322c65b3622f47558059": {
       "kind": "research",
       "reference": "evidence:sha256:c671093b3381e1e2d16bcaa96ed243b56e1ecfa0f5124020d9b3e555439a2fe9",
@@ -1855,11 +1721,6 @@
       "kind": "research",
       "reference": "evidence:sha256:0ba4dd8c9484d08972c9b6954cf1ea3f395b4a9f77d8e35e54f088d3cf217977",
       "revision": "9d5d9b62c0af483cf0c171c61fd20be787c74460105785d224eee2bdfba9c90a"
-    },
-    "source:631d40881a6674c33a07d3e3": {
-      "kind": "research",
-      "reference": "evidence:sha256:9a5e76dafebec5ea83664a585927dc841452e826915adeff5a58a8659c1f32ea",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
     },
     "source:63ac7f8426f306b88879a840": {
       "kind": "research",
@@ -1890,11 +1751,6 @@
       "kind": "research",
       "reference": "evidence:sha256:64cd466ef4a92376a4429ad3869fc473e1480056ea92ac5a11cb73a37efd5975",
       "revision": "3ee773517c13eebda605e8860b02254034c0388f58b04133a34d35a271ff6ee5"
-    },
-    "source:6cd06ef7bacb64f1c617c271": {
-      "kind": "research",
-      "reference": "evidence:sha256:b1975d4c76c391bd18609371f755a76d4a296413b734f2ab4182363e33b39433",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
     },
     "source:6f599671ba98264a5ee95aab": {
       "kind": "research",
@@ -2001,11 +1857,6 @@
       "reference": "evidence:sha256:7cc2c9d9469e390fd4d81e9ba605b3f318ccc855ad15d76bb3d46272446e575a",
       "revision": "9debe843505c98bcb7a43afbed79b830001034ea7d8d926def7c042db9a791d5"
     },
-    "source:98ba451df811274ebc765c25": {
-      "kind": "research",
-      "reference": "evidence:sha256:cffc594fc0abfedcaca265a41624bd36b3beee2585e2b7a8c9e835c321dd6e5c",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
-    },
     "source:9aff9bb72a02cb6348bb5a28": {
       "kind": "research",
       "reference": "evidence:sha256:0e15f515ade6bb3e9fb146afda9fa319016d4b5ba2abbe53a1f19f5a2c51d11a",
@@ -2015,11 +1866,6 @@
       "kind": "research",
       "reference": "evidence:sha256:3a0fd7fb2608d2c51eb1aa3da4e82a43a7c3ea0709e9e837567e7c8a7a45eb92",
       "revision": "7307fcecb57e950be7598ee0741e9b4d56aeb5f66ea4746259871d024eecc03f"
-    },
-    "source:9b9b83d54efdd53294807d10": {
-      "kind": "research",
-      "reference": "evidence:sha256:b69e43eea49784fe9574e31c89de933d71860a8b8f137f3349a5a6aaa3d5ff96",
-      "revision": "925ab6b28cfd2e77235c6e9680e2ad7bd2bfb2edaca95976bad2255c8e64a361"
     },
     "source:9cd55f0c8aa237a404619d8e": {
       "kind": "research",
@@ -2126,11 +1972,6 @@
       "reference": "evidence:sha256:6826d85920c51796aa0d218e7e25287aa89a674335228fbd16b119b5b5cc8b39",
       "revision": "726d3f9c9f89efa93d2583a804b61d9a784cf69946087dbb051ba871d46afca2"
     },
-    "source:b5a48e7bb89f0c227f42c16c": {
-      "kind": "research",
-      "reference": "evidence:sha256:6ffcd301622b1a565d719188390f09b64a459bceed7d16251cee49a29d70f81a",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
-    },
     "source:b674021213e01ebf084c4a30": {
       "kind": "research",
       "reference": "evidence:sha256:c1f2d861c4b82fd62654639b28a0e886a1a28253a28f471176c17168f4ca1841",
@@ -2191,16 +2032,6 @@
       "reference": "evidence:sha256:e97303e3c09d67bcb9854fd51697416fcbed2903a9d2c3ca1cee60f4d3734903",
       "revision": "63b6f59e75042294704bc36cfbf621b5000c900b4f66f628ccec5339580a5586"
     },
-    "source:c555a97d0794be3a4d9a548d": {
-      "kind": "research",
-      "reference": "evidence:sha256:f160846d8c28c49ea0a827dc2f1c6e0524a7ba39440dfd90fb52d79faf5c32fe",
-      "revision": "925ab6b28cfd2e77235c6e9680e2ad7bd2bfb2edaca95976bad2255c8e64a361"
-    },
-    "source:cce7bbf0ff380ae3f560485b": {
-      "kind": "research",
-      "reference": "evidence:sha256:33adfacb1e894e3d08f4bb38267c376d70f44cf7ff458d1c7749e46dd8e72ad7",
-      "revision": "4999c6c4234342e62b1b343163e46343093b121def6691e2add18db4f1110efb"
-    },
     "source:cedf47dcb40dc725d3663d12": {
       "kind": "research",
       "reference": "evidence:sha256:1493304a80d9b57e1178b3d0519051597871bbd34ef0fb2ff73e80f26a4413d5",
@@ -2230,11 +2061,6 @@
       "kind": "research",
       "reference": "evidence:sha256:c9ade99bfffdecfa46a150b2613c3ff6ff37393993a0cfd4e670f0cd81f6244e",
       "revision": "63b6f59e75042294704bc36cfbf621b5000c900b4f66f628ccec5339580a5586"
-    },
-    "source:d5b158b5c79fc2a17c30cd18": {
-      "kind": "research",
-      "reference": "evidence:sha256:5983f66542a4d4e7f17e182ccd273615aa053e6a683f57d63545a6ec58c98be1",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
     },
     "source:d7bc760b4e6651ee6d787ffd": {
       "kind": "research",
@@ -2360,11 +2186,6 @@
       "kind": "research",
       "reference": "evidence:sha256:4d47e3e476b06c1e665da12001dc4b1be5a7e5e14e77f64d42f4c7bc8b6c2bf3",
       "revision": "8b62e1e4f168e2605cf9edc31478ac8726e5b72fd639652c930033ed6305e493"
-    },
-    "source:fa7148d817c23e8490a8f9ce": {
-      "kind": "research",
-      "reference": "evidence:sha256:f80ca22a4bb30e7acf2888780c1e104df3cc76156b596225d9cc16e04240a5bf",
-      "revision": "9bf7542925f2b876a8f0f8044db20633e8c7d0a3087dbde1d2c6d2658ae32642"
     },
     "source:fc0ced8b0dcaf560846e839c": {
       "kind": "research",

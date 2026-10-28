@@ -47,6 +47,50 @@
       "title": ""
     },
     {
+      "entry": 7371,
+      "name": "Deadwind Mauler",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:7371:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:f1210991849489b2382129a9",
+            "source:4cbd017895cd8faed331f153",
+            "source:25ce3e6f6579e22de5237127"
+          ],
+          "text": "A Deadwind mauler is a combatant encountered in Deadwind Pass and nearby Deadwind areas. It attacks with an uppercut.",
+          "when": {
+            "entry": 7371
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
+      "entry": 7372,
+      "name": "Deadwind Warlock",
+      "records": [
+        {
+          "authored": false,
+          "id": "npc:7372:identity",
+          "layer": "npc",
+          "priority": 80,
+          "sources": [
+            "source:1e1577284913a79ab9150da2",
+            "source:d4e3d0f2c95d66ddb4d921c2",
+            "source:b2d222f38a13ce414c54923e"
+          ],
+          "text": "A Deadwind warlock is a combatant encountered in Deadwind Pass and nearby Deadwind areas. It attacks with shadow bolt.",
+          "when": {
+            "entry": 7372
+          }
+        }
+      ],
+      "title": ""
+    },
+    {
       "entry": 7376,
       "name": "Sky Shadow",
       "records": [
@@ -468,10 +512,20 @@
       "reference": "evidence:sha256:a2e626a6aa41cb0e2d71bf198524db1bb075174d7b1e24c9f27508f34337728b",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
     },
+    "source:1e1577284913a79ab9150da2": {
+      "kind": "research",
+      "reference": "evidence:sha256:3ef6a3e45966cb064fa54ed58ad955145d90e9a9396e29730af6cb0f4033f3cd",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
+    },
     "source:1f285e9a003422c07bc79740": {
       "kind": "research",
       "reference": "evidence:sha256:f33c4f3b04b61dbbbcb62d4c847e8c1644af389c9d77b87a860bcb95412c8c8b",
       "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
+    },
+    "source:25ce3e6f6579e22de5237127": {
+      "kind": "research",
+      "reference": "evidence:sha256:97bb7df70f96e72093412fd9689fa39c3fe08b72a8f3b14033f73c0ec5252a57",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:25dcf641a229e32c597c12cb": {
       "kind": "research",
@@ -527,6 +581,11 @@
       "kind": "research",
       "reference": "evidence:sha256:7ce4a123b5f6c8ab41e74b8341a9926a6db07664a2af46f1fd87d76b9f5623c6",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
+    },
+    "source:4cbd017895cd8faed331f153": {
+      "kind": "research",
+      "reference": "evidence:sha256:9930c3ce0f800be4feb6c503872136e8db5a1085334da058b0d94f46aef08dde",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:66b2ad08f06c35e7dff53b4b": {
       "kind": "research",
@@ -588,6 +647,11 @@
       "reference": "evidence:sha256:f806f2fe6509110b022ae2a194eee56c1fcaced23c640293103ced0e981f2b68",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
     },
+    "source:b2d222f38a13ce414c54923e": {
+      "kind": "research",
+      "reference": "evidence:sha256:cb5a1c10a9a474527520b17d11dcd1f68f106ec5fb85ebf3bb549800b023f2cc",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
+    },
     "source:b3cf2a617df6a7de4a1587e4": {
       "kind": "research",
       "reference": "evidence:sha256:2b66b75eadf836836eca444ade677594b40d147614cd283e1979bc99f5d6d6ca",
@@ -612,6 +676,11 @@
       "kind": "research",
       "reference": "evidence:sha256:e8e6a9d8b81382e790e0eb56fbb9206e7e1a33b0f20b2cc699431aedcff9353d",
       "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
+    },
+    "source:d4e3d0f2c95d66ddb4d921c2": {
+      "kind": "research",
+      "reference": "evidence:sha256:cecb53e356b07ead9a5868a88c0cf1eb531ef8a7abaacd5d67d4a8c59091acff",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:d5c4518f4468d9ab7e0055ab": {
       "kind": "research",
@@ -652,6 +721,11 @@
       "kind": "research",
       "reference": "evidence:sha256:0b655606af5d2ca8eecb13836eadaa971bf657cedaffe32bb47f380b956d98c2",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
+    },
+    "source:f1210991849489b2382129a9": {
+      "kind": "research",
+      "reference": "evidence:sha256:f57df28eabdfb7e878d834c23b95c9492806b8b96ca9add98e3d80461891c28e",
+      "revision": "dcb63b19932b2ba938a274aad0901cb662a698900772638d5f6dcba70577ad1f"
     },
     "source:f350f0d9f5905c1588b52113": {
       "kind": "research",
