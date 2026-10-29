@@ -4,30 +4,6 @@
   "map": 631,
   "npcs": [
     {
-      "entry": 22515,
-      "name": "World Trigger",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:22515:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:1dfd76c9f20616c07618716e",
-            "source:df57e42f3eea043f7154442c",
-            "source:9147cf7c3f3227f49173f968",
-            "source:137c5f16050ff636885521c2",
-            "source:924eebd5f1e482fcbd341ea6"
-          ],
-          "text": "A world trigger that announces attacks on the Gates of the Blue Sapphire, Green Emerald, and Red Sun. Its alerts identify which gate is under attack.",
-          "when": {
-            "entry": 22515
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 32315,
       "name": "High Overlord Saurfang",
       "records": [
@@ -194,7 +170,7 @@
             "source:9d4d77b31f0e7166c7fafc9d",
             "source:792e83999b449db469f73999"
           ],
-          "text": "Servants of the Throne are elite undead in the Abomination Wing of Icecrown Citadel. They use Glacial Blast in combat.",
+          "text": "Servants of the Throne are undead in the Abomination Wing of Icecrown Citadel who blast foes with Glacial Blast.",
           "when": {
             "entry": 36724
           }
@@ -215,7 +191,7 @@
             "source:f5ba33077f32bf81f7e0a5bf",
             "source:9252356a6263ae3d38c45d26"
           ],
-          "text": "Nerub'ar Broodkeepers are elite undead in Icecrown Citadel's Abomination Wing, identified by their role tending a Nerub'ar brood.",
+          "text": "Nerub'ar Broodkeepers are undead in Icecrown Citadel's Abomination Wing who tend a Nerub'ar brood.",
           "when": {
             "entry": 36725
           }
@@ -241,7 +217,7 @@
             "source:e5116ba8867eaa36b215814c",
             "source:1bd65342b8c60ceffc5d0b7f"
           ],
-          "text": "Valithria Dreamwalker speaks as an individual combatant, calling for heroes to heal her wounds because she cannot hold off attackers much longer. As her strength returns, she urges them onward and says she has opened a portal into the Dream as their salvation. Her encounter lines also show her strain and loss of control as only nightmares remain, and her lament when a player dies.",
+          "text": "Valithria Dreamwalker calls on heroes to heal her wounds because she cannot hold off attackers much longer. As her strength returns, she urges them on and says she has opened a portal into the Dream as their salvation. Near the end she loses control, crying that only nightmares remain, and she laments a fallen hero with \"A tragic loss...\"",
           "when": {
             "entry": 36789
           }
@@ -263,7 +239,7 @@
             "source:a56485fa8897d24fbdb2b5c4",
             "source:2da099100e96dc4a6e8dbd95"
           ],
-          "text": "Deathspeaker Servant is a Cult of the Damned combatant who casts Chaos Bolt.",
+          "text": "Deathspeaker Servant is a Cult of the Damned member who hurls Chaos Bolts.",
           "when": {
             "entry": 36805
           }
@@ -419,7 +395,7 @@
             "source:8acf581da06c9e6225e050ed",
             "source:66157a91f0725aa10696675f"
           ],
-          "text": "A Skybreaker Protector is a combatant with a defensive role. Its attack is Devastate.",
+          "text": "A Skybreaker Protector is a defensive fighter who strikes with crushing Devastate blows.",
           "when": {
             "entry": 36998
           }
@@ -542,27 +518,6 @@
       "title": ""
     },
     {
-      "entry": 37013,
-      "name": "Puddle Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:37013:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:12a4c51d13d8448978fc3276",
-            "source:1517ab60926428d986e9866b"
-          ],
-          "text": "Puddle Stalker appears among the creatures in Icecrown Citadel.",
-          "when": {
-            "entry": 37013
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 37016,
       "name": "Skybreaker Luminary",
       "records": [
@@ -597,7 +552,7 @@
             "source:d8d62ef1678c1d951d29daa9",
             "source:25729f8056326deb0977c4d9"
           ],
-          "text": "A Skybreaker Assassin is a humanoid combatant in Icecrown Citadel. Its attacks include Sinister Strike, matching the role implied by its name.",
+          "text": "A humanoid Skybreaker assassin that fights with Sinister Strike.",
           "when": {
             "entry": 37017
           }
@@ -769,7 +724,7 @@
             "source:f0b7580f4645c09b25eac45a",
             "source:88aece486e0c470c21fcb711"
           ],
-          "text": "A Kor'kron Primalist is one of the humanoid Kor'kron stationed in area 4812.",
+          "text": "A Kor'kron Primalist is a humanoid Kor'kron stationed in Icecrown Citadel.",
           "when": {
             "entry": 37030
           }
@@ -790,7 +745,7 @@
             "source:76b6c5c06db3741eb92f4092",
             "source:11cccbfc0034bde095bfc712"
           ],
-          "text": "A Kor'kron Oracle is one of the humanoid Kor'kron stationed in area 4812.",
+          "text": "A Kor'kron Oracle is a humanoid Kor'kron stationed in Icecrown Citadel.",
           "when": {
             "entry": 37031
           }
@@ -832,7 +787,7 @@
             "source:79d16f6fccd3864eff88ec92",
             "source:c72acdc0d169f3b0ead1f3f2"
           ],
-          "text": "A Kor'kron Invoker is a humanoid fighter who uses Frostfire Bolt in combat.",
+          "text": "A Kor'kron Invoker is a humanoid Kor'kron who hurls Frostfire Bolts.",
           "when": {
             "entry": 37033
           }
@@ -898,7 +853,7 @@
             "source:274bc3721a7a8f57ff105832",
             "source:e52e766cf47b21f62b02ab73"
           ],
-          "text": "The Val'kyr Herald bears a herald's role in Icecrown Citadel.",
+          "text": "An undead Val'kyr herald in Icecrown Citadel.",
           "when": {
             "entry": 37098
           }
@@ -1745,7 +1700,7 @@
             "source:9c90bc6aae0f59ea17b320f8",
             "source:9eb3eda69d89971b2b258ee6"
           ],
-          "text": "Crusader Grimtong is a warrior armor crafter and seller, identified by that role in his greeting and title.",
+          "text": "Crusader Grimtong crafts and sells Ymirjar Lord's armor for warriors.",
           "when": {
             "entry": 37688
           }
@@ -1800,27 +1755,6 @@
       "title": "Paladin Armor"
     },
     {
-      "entry": 37744,
-      "name": "Frost Freeze Trap",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:37744:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:42a6edf5acd238020f794009",
-            "source:7126f059473e7e2d1b3f59d3"
-          ],
-          "text": "A fixed trap in Icecrown Citadel.",
-          "when": {
-            "entry": 37744
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 37782,
       "name": "Flesh-eating Insect",
       "records": [
@@ -1868,27 +1802,6 @@
       "title": ""
     },
     {
-      "entry": 37824,
-      "name": "Abomination Wing Mad Scientist Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:37824:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:a578190f9ecb12a6d888208f",
-            "source:2e146532fc4b80a577400f6d"
-          ],
-          "text": "An Abomination Wing Mad Scientist Stalker in Icecrown Citadel.",
-          "when": {
-            "entry": 37824
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 37920,
       "name": "Kor'kron Reaver",
       "records": [
@@ -1901,7 +1814,7 @@
             "source:254b82ec8ada9eae5f70c12e",
             "source:be5d8e1f2eec141ea0fc7fd0"
           ],
-          "text": "A Kor'kron reaver serving in the Saurfang event at Icecrown Citadel, one of the combat roles associated with that encounter.",
+          "text": "A Kor'kron reaver in Saurfang's company at Icecrown Citadel.",
           "when": {
             "entry": 37920
           }
@@ -1922,7 +1835,7 @@
             "source:306d5ec0005e2e7bf0f68d18",
             "source:de856aa235f8f071db2e5a7c"
           ],
-          "text": "An Argent Champion appearing in the Icecrown Citadel conflict, identified by a title that marks a champion's role.",
+          "text": "An Argent Champion fighting in Icecrown Citadel.",
           "when": {
             "entry": 37928
           }
@@ -2066,7 +1979,7 @@
             "source:d16577538b98b1d0eed32e97",
             "source:3b94ef9601884a6e77d96bd0"
           ],
-          "text": "Ikfirus the Vile is a named rogue armor vendor. His greeting describes crafting and selling Shadowblade armor for rogues.",
+          "text": "Ikfirus the Vile crafts and sells Shadowblade armor for rogues.",
           "when": {
             "entry": 37991
           }
@@ -2088,7 +2001,7 @@
             "source:769c98acbb45a5050f2b78ba",
             "source:11e803f9abcbb69ba52b2db3"
           ],
-          "text": "Tortunok is a named druid armor vendor. His greeting describes crafting and selling Freya's Lasherweave armor for druids.",
+          "text": "Tortunok crafts and sells Freya's Lasherweave armor for druids.",
           "when": {
             "entry": 37992
           }
@@ -2110,7 +2023,7 @@
             "source:cdf9df47682ac48d84713121",
             "source:9645903e8cef6407c4698548"
           ],
-          "text": "Gerardo the Suave is a named hunter armor vendor. His greeting describes crafting and selling Ahn'kahar Blood Hunter armor for hunters.",
+          "text": "Gerardo the Suave crafts and sells Ahn'kahar Blood Hunter armor for hunters.",
           "when": {
             "entry": 37993
           }
@@ -2380,27 +2293,6 @@
       "title": "Mage Armor"
     },
     {
-      "entry": 38310,
-      "name": "Invisible Stalker (Float,Uninteractible,LargeAOI) (3.00)",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:38310:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:3d649c5763670203ad374635",
-            "source:735b412946d43ebcb878baf9"
-          ],
-          "text": "An invisible, non-interactive stalker helper.",
-          "when": {
-            "entry": 38310
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 38316,
       "name": "Ormus the Penitent",
       "records": [
@@ -2424,48 +2316,6 @@
       "title": "Death Knight Armor"
     },
     {
-      "entry": 38317,
-      "name": "Tear Gas Target Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:38317:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:796e680d215a7128d399c278",
-            "source:a08cdb06a8cfc4d38d45ef13"
-          ],
-          "text": "A non-interactive stalker helper named for tear-gas targeting.",
-          "when": {
-            "entry": 38317
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 38421,
-      "name": "Nightmare Cloud",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:38421:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:544ef893d733e7ea297d180f",
-            "source:96411a613d406dae2b9bea15"
-          ],
-          "text": "A Nightmare Cloud encounter helper associated with Valithria.",
-          "when": {
-            "entry": 38421
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 38471,
       "name": "Infiltrator Minchar",
       "records": [
@@ -2480,7 +2330,7 @@
             "source:ce9b804c258736180747c5f7",
             "source:50bdd3b792d6fda39b4b15b4"
           ],
-          "text": "Infiltrator Minchar is an Argent Crusade quest contact at Icecrown Citadel. He asks for help recovering Darnavan, a former ally whose Cult of the Damned brainwashing has made him a threat; Minchar welcomes Darnavan's return and values the intelligence he brings from inside the Citadel.",
+          "text": "Infiltrator Minchar of the Argent Crusade asks for help recovering Darnavan, a former ally whose Cult of the Damned brainwashing has made him a threat. He is grateful when Darnavan is brought back alive and values the intelligence he carries from inside the Citadel.",
           "when": {
             "entry": 38471
           }
@@ -2815,27 +2665,6 @@
       "title": "Emblem of Frost Quartermaster"
     },
     {
-      "entry": 38879,
-      "name": "Putricide's Trap",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:38879:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:3df3d68142900521397d14fc",
-            "source:9383f54c2b975c563d8564d5"
-          ],
-          "text": "Putricide’s Trap is a scripted trap associated with Putricide in Icecrown Citadel.",
-          "when": {
-            "entry": 38879
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 39190,
       "name": "Wicked Spirit",
       "records": [
@@ -2848,7 +2677,7 @@
             "source:4b38ead1e44d627915583ba0",
             "source:ed49e12228dc0393967c333d"
           ],
-          "text": "Wicked Spirit is an elite undead presence in Icecrown Citadel, one of several of its kind found there.",
+          "text": "Wicked Spirits are undead spirits found in Icecrown Citadel.",
           "when": {
             "entry": 39190
           }
@@ -2895,7 +2724,7 @@
             "source:23c14a5acff740f8e94e654f",
             "source:0420f77bf8cb02ad94af246f"
           ],
-          "text": "Aronen is an apprentice to Ormus who serves as a quest contact in Icecrown.",
+          "text": "Aronen is an apprentice to Ormus, stationed in Icecrown with many tasks for those willing to help, among them one called A Change of Heart.",
           "when": {
             "entry": 39509
           }
@@ -3198,20 +3027,10 @@
       "reference": "evidence:sha256:e58fdcf48440133d19d1f0527a5dd61c8bdcade9236ee1a911a187d76bfab02c",
       "revision": "bea67c87751106e93b13053c304ae5f120554c94411d6cb2be7007babec64a74"
     },
-    "source:12a4c51d13d8448978fc3276": {
-      "kind": "research",
-      "reference": "evidence:sha256:6e3e32280bcf496fb5136a04824c82b888578dacfc05d1c0c6bb00203493e470",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:12d6bfd6da12b0ba13154793": {
       "kind": "research",
       "reference": "evidence:sha256:4da36517076e3cd643eb89c6e78805638ca4dfb6bc71218dd09b7f137964fa71",
       "revision": "20692bd0e1bb3700d7758fb266a6d8d69c1ec0130b1dfc1cc561f9c8d119ad8c"
-    },
-    "source:137c5f16050ff636885521c2": {
-      "kind": "research",
-      "reference": "evidence:sha256:0163425e83e8648903ade5056ae5f83205e837ad5ff8c1bbaf1fdfd02ed22170",
-      "revision": "90414b7c5d50deb21e4208e643f6992ada1186e5501489af294a5d67a76be1e1"
     },
     "source:1391f3da11192ea67c21c42b": {
       "kind": "research",
@@ -3222,11 +3041,6 @@
       "kind": "research",
       "reference": "evidence:sha256:3e13a7bfcab9429ea8f7bc3b20aeb2523ae223fe0a9cb145c540f5fa3955f0e9",
       "revision": "8a8d52f259f1102dfc351ea667f582d233eedcdc2453eef26ff11d4967c38410"
-    },
-    "source:1517ab60926428d986e9866b": {
-      "kind": "research",
-      "reference": "evidence:sha256:15d50b341b478e9de550168df9d7dfa35ae702e8ffc3ce617c3a5034cc74f251",
-      "revision": "c30f01a22ac4dd00643178583e541a1b6df68f29966fd272462802369cb8aef8"
     },
     "source:15e1b7b4ba919a8990c9bd86": {
       "kind": "research",
@@ -3312,11 +3126,6 @@
       "kind": "research",
       "reference": "evidence:sha256:26d4657582d565dea24a448d1e70335a900ec39faed79966b268ada0f6ca2eda",
       "revision": "bea67c87751106e93b13053c304ae5f120554c94411d6cb2be7007babec64a74"
-    },
-    "source:1dfd76c9f20616c07618716e": {
-      "kind": "research",
-      "reference": "evidence:sha256:41ced836a2b18719b2895a4ae6a9ca9f7d8390abb2ed7a348ca7d12c38542ab7",
-      "revision": "90414b7c5d50deb21e4208e643f6992ada1186e5501489af294a5d67a76be1e1"
     },
     "source:1e1f7b8d1652f23242454acb": {
       "kind": "research",
@@ -3453,11 +3262,6 @@
       "reference": "evidence:sha256:d8bb505dfb105aa593f9c84478abab3add554a4f65091b6c627339d6114e72f5",
       "revision": "c30f01a22ac4dd00643178583e541a1b6df68f29966fd272462802369cb8aef8"
     },
-    "source:2e146532fc4b80a577400f6d": {
-      "kind": "research",
-      "reference": "evidence:sha256:85f30b17b2fce10eb0b6f3a31cc7c1c71590de31a21575e8438f5e008a3af70d",
-      "revision": "1838df86bd71646aacc973fc83165b449059789fb10cf321c288ade74383b43e"
-    },
     "source:2e447e0dfe81d37893f86c39": {
       "kind": "research",
       "reference": "evidence:sha256:48b2069a14a785adf9e95b8e14f850918196cee586e44b5c25d044d5c2a6c896",
@@ -3568,16 +3372,6 @@
       "reference": "evidence:sha256:cfde71e85fbae038d90126f53b00809a5adda05968371acc0eafeebc29c522ad",
       "revision": "745038411b7475181e480ef7c01a3a937a7b3592fa014de25c040b56d277a254"
     },
-    "source:3d649c5763670203ad374635": {
-      "kind": "research",
-      "reference": "evidence:sha256:8695eacb79f9810ac571b759074ed9f9f9f008c519e092bb0297e5066444cd57",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
-    },
-    "source:3df3d68142900521397d14fc": {
-      "kind": "research",
-      "reference": "evidence:sha256:a343b335936701bb8c14ad944a287bf0c9cd957a2c4f9c2d9e32cf09a69396b8",
-      "revision": "f68e641eedbe9e6b63b5e4069243e48eba6668753bf95debdcec7e83e54b634f"
-    },
     "source:3e3072eaac6f8fa7cc7d69b8": {
       "kind": "research",
       "reference": "evidence:sha256:35fc43ec339f1740d8ba9b203cf40016a92dd2abb108d77b4598aa3dc87f7721",
@@ -3622,11 +3416,6 @@
       "kind": "research",
       "reference": "evidence:sha256:b4758a45e86349729d7299fee29a7ac5cd658b16c2a2c96ca94342b5027ddfa9",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:42a6edf5acd238020f794009": {
-      "kind": "research",
-      "reference": "evidence:sha256:bc73b2991b503aa14d82d365a26babd948ff3987f76e117bc72fb96e96bbdb64",
-      "revision": "1838df86bd71646aacc973fc83165b449059789fb10cf321c288ade74383b43e"
     },
     "source:4571da9f1400e3ddc1abdb72": {
       "kind": "research",
@@ -3737,11 +3526,6 @@
       "kind": "research",
       "reference": "evidence:sha256:fb26d843ae90053628d1f81db32afc682393f59fa827736cc405bc0b10bff108",
       "revision": "f68e641eedbe9e6b63b5e4069243e48eba6668753bf95debdcec7e83e54b634f"
-    },
-    "source:544ef893d733e7ea297d180f": {
-      "kind": "research",
-      "reference": "evidence:sha256:afd0dbff9f0408c9e6225b2789a72c98125e82b75b4b13089810962e7ab0a697",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
     },
     "source:54670f0c93bafdb113725cfc": {
       "kind": "research",
@@ -3993,11 +3777,6 @@
       "reference": "evidence:sha256:c1f78dea7eea459065f04730ddfa8be83c0b8d0f37092b8854c5c32bacea00bb",
       "revision": "4bb431911d1d1dbd9a785227d16d8020f03b135cf62669c9d68986d420cb9940"
     },
-    "source:7126f059473e7e2d1b3f59d3": {
-      "kind": "research",
-      "reference": "evidence:sha256:c48318927ad5ed6436ed717c73b8cacf129d1f11df568419a08312df8aa72e76",
-      "revision": "1838df86bd71646aacc973fc83165b449059789fb10cf321c288ade74383b43e"
-    },
     "source:71b936c354bdc08c88832635": {
       "kind": "research",
       "reference": "evidence:sha256:9a5cb6b0558ad0b67a8f55a64a11ffafa1743900fd0f37b92e4283be94aeaf73",
@@ -4012,11 +3791,6 @@
       "kind": "research",
       "reference": "evidence:sha256:1851aa54b941205d3c09c4cd8d8710d727e3ba1740ffc199c6d8d8d473077327",
       "revision": "5bbc8258910ab50376ea46b6c7bcdfd0b4cb9d7b4f4d88f967ca0a1137bfda73"
-    },
-    "source:735b412946d43ebcb878baf9": {
-      "kind": "research",
-      "reference": "evidence:sha256:0ea706cd0860089afbf6bff35cd015a13bf9377c9844d585e92af5664cab8eca",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
     },
     "source:74224e7e79367bdd6e90afbc": {
       "kind": "research",
@@ -4102,11 +3876,6 @@
       "kind": "research",
       "reference": "evidence:sha256:f768cd08464dc9e65bb3ef491a0bc24c63c32feece0652dab231ad7ed138793e",
       "revision": "ca1064c11ae967d291f1b4335af4ca4272c7295c73b7174962fb5025a67cd71c"
-    },
-    "source:796e680d215a7128d399c278": {
-      "kind": "research",
-      "reference": "evidence:sha256:4ee86f15167b4a820e0ecd1600bc2a35d3f748acb2085054be42623a8f09c2bd",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
     },
     "source:79d16f6fccd3864eff88ec92": {
       "kind": "research",
@@ -4288,11 +4057,6 @@
       "reference": "evidence:sha256:3a55a77cd58d2f41f4caf2bffafd50032fd48a0d42b8d20aad9846ffa5bc383d",
       "revision": "1838df86bd71646aacc973fc83165b449059789fb10cf321c288ade74383b43e"
     },
-    "source:9147cf7c3f3227f49173f968": {
-      "kind": "research",
-      "reference": "evidence:sha256:0e92791a347d106965e3855eb635a14d36f5b353a5a27510605c77e9804f30e5",
-      "revision": "90414b7c5d50deb21e4208e643f6992ada1186e5501489af294a5d67a76be1e1"
-    },
     "source:9196ce06cbe618c9fb8ee11f": {
       "kind": "research",
       "reference": "evidence:sha256:20cb8094061abe282a0597e3b21cf90c4a7ff1f83e2b9f103a780569c1acf298",
@@ -4313,11 +4077,6 @@
       "reference": "evidence:sha256:3360199d852461c5f22e42d9d942d79b535363c587bd5892ba6760be913324f0",
       "revision": "2ed0ade527d3d5deb3840a006e7c2e5ae0fc683ebf8945a44436247cd4abb5d8"
     },
-    "source:924eebd5f1e482fcbd341ea6": {
-      "kind": "research",
-      "reference": "evidence:sha256:20c039ef370c09e7818587cb456ab4e0883e5a9003237f41e317991b2303029a",
-      "revision": "90414b7c5d50deb21e4208e643f6992ada1186e5501489af294a5d67a76be1e1"
-    },
     "source:9252356a6263ae3d38c45d26": {
       "kind": "research",
       "reference": "evidence:sha256:888108b1cb0841fb8d6da234b9cbda869137b70a82224b86cd18387581609541",
@@ -4327,11 +4086,6 @@
       "kind": "research",
       "reference": "evidence:sha256:24df235b15a7169fa9354618467b05248ab93cf324b4acd923be6580c762d945",
       "revision": "a35f3938fcc53c69f88955b1e19f7dd4639b7c3a0b2f17f77e490c641ffb98f7"
-    },
-    "source:9383f54c2b975c563d8564d5": {
-      "kind": "research",
-      "reference": "evidence:sha256:9858b5e9d7ebb7ec98bb1304edf7c1a23e2d3d94ca71ff81cd724f94a4bd1205",
-      "revision": "f68e641eedbe9e6b63b5e4069243e48eba6668753bf95debdcec7e83e54b634f"
     },
     "source:93d04019e1c89d9051e5bc21": {
       "kind": "research",
@@ -4347,11 +4101,6 @@
       "kind": "research",
       "reference": "evidence:sha256:e159cd2ccbc9f23e49e40842c210f626b7364c687556fe7d11551c6acfd5a0c5",
       "revision": "9d1cc66e38f5a0f8f65f27635027d610cc1170f09c045fdd49320f2365ba5a26"
-    },
-    "source:96411a613d406dae2b9bea15": {
-      "kind": "research",
-      "reference": "evidence:sha256:32e0559386e47898dd19f6a0e68400ff71497e34d8b73c54a327f7c560186bce",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
     },
     "source:9645903e8cef6407c4698548": {
       "kind": "research",
@@ -4423,11 +4172,6 @@
       "reference": "evidence:sha256:30de30e79c292e5e939ff10fbc97b67bb0052387a9affdf2dd9f58ac96273885",
       "revision": "f2987ea62e456fd02f7715750a46d76a368f07735d6b8b842d162a058974fee9"
     },
-    "source:a08cdb06a8cfc4d38d45ef13": {
-      "kind": "research",
-      "reference": "evidence:sha256:04502a5142fe2a491627c9cf7dfccb7ceb4278fbf1a65ee5173cf61dde35893f",
-      "revision": "d5d36346c42033d806a78a5d22a93feb4d5da3f8669958c359ccac0299fedc30"
-    },
     "source:a09f0d696994502af27da22d": {
       "kind": "research",
       "reference": "evidence:sha256:d50b13e99120efe02e521f5a24bbbdb4fc0a6a60d05e170c03501263a48dff82",
@@ -4452,11 +4196,6 @@
       "kind": "research",
       "reference": "evidence:sha256:7bb19e1ef3a952bb8f66f6d3ad589dcf35dda238cfec6220cb794cb667c4e3f0",
       "revision": "8a8d52f259f1102dfc351ea667f582d233eedcdc2453eef26ff11d4967c38410"
-    },
-    "source:a578190f9ecb12a6d888208f": {
-      "kind": "research",
-      "reference": "evidence:sha256:ae85107dc1b0b1dd8da305938b7e2877a0a93aecbe13126b63b78ea1c21dc4dc",
-      "revision": "1838df86bd71646aacc973fc83165b449059789fb10cf321c288ade74383b43e"
     },
     "source:a664f4235eaac320ef394881": {
       "kind": "research",
@@ -4947,11 +4686,6 @@
       "kind": "research",
       "reference": "evidence:sha256:35a168c2cfb5a642eb3e5fb072c37e147ca60e751e9b04a548cb006d1bd3f310",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:df57e42f3eea043f7154442c": {
-      "kind": "research",
-      "reference": "evidence:sha256:1beb720ae428b8d88d08ef80112a1e2d28f8590d5ae219d83098a0a376e9d75d",
-      "revision": "90414b7c5d50deb21e4208e643f6992ada1186e5501489af294a5d67a76be1e1"
     },
     "source:df8e3ba4cdf40f19432d8e6d": {
       "kind": "research",

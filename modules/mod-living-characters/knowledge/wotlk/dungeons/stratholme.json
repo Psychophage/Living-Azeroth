@@ -17,7 +17,7 @@
             "source:5670bb6146645b0ed63f7598",
             "source:256847ddfc370628c41d8fee"
           ],
-          "text": "Ravaged Cadaver is a hostile undead cadaver encountered in combat. It uses Strike, and its death is accompanied by a line describing the broken body rising again.",
+          "text": "Ravaged Cadaver is an undead cadaver that fights with Strike; as it falls, its broken body seems to rise again.",
           "when": {
             "entry": 10381
           }
@@ -39,7 +39,7 @@
             "source:85b4d761e7528a2bf94f6826",
             "source:ab82d78db5af953bc636d410"
           ],
-          "text": "Mangled Cadaver is a hostile undead cadaver that casts Cadaver Worms. Its death is accompanied by a line describing the broken body rising again.",
+          "text": "Mangled Cadaver is an undead cadaver that casts Cadaver Worms; as it falls, its broken body seems to rise again.",
           "when": {
             "entry": 10382
           }
@@ -65,7 +65,7 @@
             "source:2961e54e1618f80947e2f354",
             "source:784d1171e522ff3952e16e21"
           ],
-          "text": "Spectral Citizen reacts to bow, dance, kiss, wave and rude emotes. It can return a rude gesture to the player.",
+          "text": "Spectral Citizen reacts to bows, dances, kisses, waves and rude gestures, and can return a rude gesture to whoever made it.",
           "when": {
             "entry": 10384
           }
@@ -88,7 +88,7 @@
             "source:5e2b43f0e16e0e1709e251af",
             "source:e37225062ede74479e8f99a7"
           ],
-          "text": "Ghostly Citizen is a hostile spectral figure that can return a rude gesture to the player.",
+          "text": "Ghostly Citizen is a spectral figure that returns a rude gesture to whoever makes one.",
           "when": {
             "entry": 10385
           }
@@ -110,7 +110,7 @@
             "source:8791f0bb3a047bc6d1167056",
             "source:586338df260857e83188e61e"
           ],
-          "text": "Skeletal Guardian is a hostile skeletal combatant that casts Demon Armor while out of combat.",
+          "text": "Skeletal Guardian is a skeletal fighter that wards itself with Demon Armor before a fight.",
           "when": {
             "entry": 10390
           }
@@ -132,7 +132,7 @@
             "source:f156fd33a08a239687ae9269",
             "source:fd836c608ab99d3daab819a8"
           ],
-          "text": "Skeletal Berserker is a hostile skeletal combatant that uses Strike in combat.",
+          "text": "Skeletal Berserker is a skeletal fighter that strikes hard in combat.",
           "when": {
             "entry": 10391
           }
@@ -158,7 +158,7 @@
             "source:127bab56f00f411fb56c71de",
             "source:afd6a99c241ea3f95e7b89c3"
           ],
-          "text": "Skul is a solitary, high-ranking spellcaster. Skul casts Frost Armor while out of combat and uses Frostbolt, Frost Shock, and Blizzard in combat.",
+          "text": "Skul is a solitary, high-ranking undead frost spellcaster. He wards himself with Frost Armor, then fights with Frostbolt, Frost Shock and Blizzard.",
           "when": {
             "entry": 10393
           }
@@ -180,7 +180,7 @@
             "source:6db648217f668ba65c1253f7",
             "source:bc041b9dd26b64e02d468cf4"
           ],
-          "text": "Thuzadin Shadowcasters are numerous spellcasting undead in the same area as the Thuzadin Acolytes. They cast Shadow Channeling while out of combat.",
+          "text": "Thuzadin Shadowcasters are undead spellcasters found in numbers beside the Thuzadin Acolytes, channeling shadow magic when not fighting.",
           "when": {
             "entry": 10398
           }
@@ -226,7 +226,7 @@
             "source:20d6f75f34cf8144e9ad7f82",
             "source:a4a56aad98b01e59c790e71e"
           ],
-          "text": "Thuzadin Necromancers are spellcasting members of the Thuzadin ranks. They summon a skeletal servant while out of combat.",
+          "text": "Thuzadin Necromancers are spellcasters of the Thuzadin ranks who summon a skeletal servant to fight beside them.",
           "when": {
             "entry": 10400
           }
@@ -249,7 +249,7 @@
             "source:38f4bef9c783d9ea7d677979",
             "source:6c2c59b3167659a8be8deddf"
           ],
-          "text": "Plague Ghouls are combat creatures whose attack is Ghoul Plague. A line announces when one becomes enraged.",
+          "text": "Plague Ghouls are ghouls that attack with Ghoul Plague and are heard to become enraged.",
           "when": {
             "entry": 10405
           }
@@ -272,7 +272,7 @@
             "source:7b4f6c4dfe0733b84aa6e070",
             "source:f14f9592e75e07977bb9862a"
           ],
-          "text": "Ghoul Raveners are combat creatures that use Head Crack and perform a nonverbal emote while out of combat.",
+          "text": "Ghoul Raveners are ghouls that fight with Head Crack.",
           "when": {
             "entry": 10406
           }
@@ -296,7 +296,7 @@
             "source:79196a3baf6df56245daeeeb",
             "source:7b78b6f44c19c07ab413ce57"
           ],
-          "text": "A Fleshflayer Ghoul in Stratholme, it attacks intruders with Rend and can be heard giving a rasping idle emote.",
+          "text": "A Fleshflayer Ghoul of Stratholme that attacks intruders with Rend.",
           "when": {
             "entry": 10407
           }
@@ -342,7 +342,7 @@
             "source:2065a8a6136bb4898bb1e13c",
             "source:7b78b6f44c19c07ab413ce57"
           ],
-          "text": "A Rockwing Screecher in Stratholme, it gives a shrill sound when it notices a threat and joins the fight.",
+          "text": "A Rockwing Screecher in Stratholme that gives a shrill cry when it notices a threat.",
           "when": {
             "entry": 10409
           }
@@ -564,7 +564,7 @@
             "source:76383a7768f2b63ed39a0b1b",
             "source:0530f76ae2776278cd5fe14e"
           ],
-          "text": "A Crimson Defender supports the fighting with Devotion Aura, marking it as a protective combat role among the Crimson forces.",
+          "text": "A Crimson Defender, a protective fighter of the Crimson forces who radiates Devotion Aura in battle.",
           "when": {
             "entry": 10421
           }
@@ -587,7 +587,7 @@
             "source:a7d3f1dfa13af9f021c75d19",
             "source:7b78b6f44c19c07ab413ce57"
           ],
-          "text": "The Crimson Sorcerer is an elite spellcaster among the Stratholme combatants.",
+          "text": "The Crimson Sorcerer is a spellcaster among the Crimson forces in Stratholme.",
           "when": {
             "entry": 10422
           }
@@ -609,7 +609,7 @@
             "source:06d476d12609b9b2324174c0",
             "source:2108a6f3447ffafb7a12296a"
           ],
-          "text": "The Crimson Priest is an elite combatant whose role is marked by Holy Smite, a direct offensive spell used in combat.",
+          "text": "The Crimson Priest is a Crimson fighter who strikes foes with Holy Smite.",
           "when": {
             "entry": 10423
           }
@@ -656,7 +656,7 @@
             "source:ea2c9377110e2f00cf76692f",
             "source:29f473a1c3aea923b7a9d2a2"
           ],
-          "text": "The Crimson Battle Mage is an elite combat spellcaster whose combat technique is Arcane Explosion.",
+          "text": "The Crimson Battle Mage is a spellcaster who fights with Arcane Explosion.",
           "when": {
             "entry": 10425
           }
@@ -678,7 +678,7 @@
             "source:2c768062c28205e35c4b6683",
             "source:824563e56385e640329de931"
           ],
-          "text": "The Crimson Inquisitor is an elite combatant whose tactic is Mana Burn. That gives this inquisitor a magical role in battle.",
+          "text": "The Crimson Inquisitor is a Crimson fighter who burns away the mana of its foes with Mana Burn.",
           "when": {
             "entry": 10426
           }
@@ -702,7 +702,7 @@
             "source:6d7d50815ceece4e7bbb3936",
             "source:c0cf55810fa5bd3c05872616"
           ],
-          "text": "Magistrate Barthilas serves as a warning voice at the Service Gate: he calls out intruders and insists that Lord Rivendare be warned. In combat he uses Furious Anger and Crowd Pummel, giving the magistrate a forceful role in defending the gate.",
+          "text": "Magistrate Barthilas is an undead magistrate who guards the Service Gate, crying out that intruders are there and Lord Rivendare must be warned. In battle he uses Furious Anger and Crowd Pummel.",
           "when": {
             "entry": 10435
           }
@@ -725,7 +725,7 @@
             "source:796a2b0708c966759045bae0",
             "source:f15eab4f14a8d1e5ac8107bd"
           ],
-          "text": "Baroness Anastari drops a Plagued Flesh Sample. Betina Bigglezink requests these samples for her plague research.",
+          "text": "Baroness Anastari is an undead baroness of Stratholme, whose plagued flesh Betina Bigglezink seeks as samples for her plague research.",
           "when": {
             "entry": 10436
           }
@@ -748,7 +748,7 @@
             "source:f1d9eb5e2365ec7dc3c5ae74",
             "source:4f9a2f124fb9c97fd4d65ca4"
           ],
-          "text": "Nerub'enkan is a named combatant who uses Encasing Webs and Pierce Armor.",
+          "text": "Nerub'enkan is an undead who entangles foes with Encasing Webs and pierces their armor.",
           "when": {
             "entry": 10437
           }
@@ -771,7 +771,7 @@
             "source:0c75d45c1317df39937b1ac0",
             "source:b0ac5f9a1762ce929f70d554"
           ],
-          "text": "Maleki the Pallid is a named combatant who uses Frostbolt and Ice Tomb.",
+          "text": "Maleki the Pallid is a frost spellcaster who hurls Frostbolt and entombs foes with Ice Tomb.",
           "when": {
             "entry": 10438
           }
@@ -818,7 +818,7 @@
             "source:24383b2bca95d7d9fa1a32e9",
             "source:efe282fab579509dbef8335c"
           ],
-          "text": "Shrieking Banshees are combatants that use Banshee Wail.",
+          "text": "Shrieking Banshees are undead that attack with a Banshee Wail.",
           "when": {
             "entry": 10463
           }
@@ -840,7 +840,7 @@
             "source:ca4de38f8cd0ce75b4650617",
             "source:7f028003ec7219d035bf8d37"
           ],
-          "text": "Wailing Banshees are combatants that use Anti-Magic Shield.",
+          "text": "Wailing Banshees are undead that shield themselves with Anti-Magic Shield.",
           "when": {
             "entry": 10464
           }
@@ -892,7 +892,7 @@
             "source:0f0509a113b7dacef0538776",
             "source:d9959497823e27d607ae639c"
           ],
-          "text": "Hearthsinger Forresten is an undead combatant in Stratholme. In combat, Forresten uses Shoot, Multi-Shot, Demoralizing Shout and Enchanting Lullaby.",
+          "text": "Hearthsinger Forresten is an undead singer in Stratholme who shoots foes, shouts to demoralize them and sings an Enchanting Lullaby.",
           "when": {
             "entry": 10558
           }
@@ -916,7 +916,7 @@
             "source:9d34657a03c5d2bb2c2287f3",
             "source:a356ea4af5a7981fe1c42fc8"
           ],
-          "text": "Timmy the Cruel is a dangerous adversary whose cry announces his appearance; he answers a threat with a yell and attacks with Ravenous Claw.",
+          "text": "Timmy the Cruel is an undead who bellows \"TIMMY!\" when he appears, answers a threat with a shout and attacks with Ravenous Claw.",
           "when": {
             "entry": 10808
           }
@@ -941,7 +941,7 @@
             "source:8b58d250fcb5d9581eeeba82",
             "source:7b78b6f44c19c07ab413ce57"
           ],
-          "text": "Stonespine is an undead combatant in Stratholme who uses Vicious Rend in combat.",
+          "text": "Stonespine is an undead in Stratholme who rends foes with Vicious Rend.",
           "when": {
             "entry": 10809
           }
@@ -1058,7 +1058,7 @@
             "source:03e0cb2b115ed4287ec06eb3",
             "source:63a0dbce744ed73bed129734"
           ],
-          "text": "Malor the Zealous is a named combatant. In combat, he uses Ground Smash and Head Crack.",
+          "text": "Malor the Zealous is a fighter who smashes foes with Ground Smash and Head Crack.",
           "when": {
             "entry": 11032
           }
@@ -1104,7 +1104,7 @@
             "source:678c30ad7f8e388b6ddc156f",
             "source:97f4d8bba544d595d6bfe0ba"
           ],
-          "text": "Stratholme Courier is a combatant whose abilities include Incorporeal Defense and Pummel against a victim casting a spell.",
+          "text": "Stratholme Courier is an undead courier who guards itself with Incorporeal Defense, kicks with Snap Kick and pummels any foe casting a spell.",
           "when": {
             "entry": 11082
           }
@@ -1127,7 +1127,7 @@
             "source:9bdbd64b63792f4f87023158",
             "source:4fc79b3a0c15ce29069920de"
           ],
-          "text": "Balzaphon is a named combatant who uses Frostbolt and Cone of Cold in battle.",
+          "text": "Balzaphon is an undead frost caster who hurls Frostbolt and Cone of Cold.",
           "when": {
             "entry": 14684
           }

@@ -60,7 +60,7 @@
             "source:97c52b34ae6f2df6276e1f88",
             "source:40b1aa5a4d7b50b8b1998188"
           ],
-          "text": "A Dark Rune elementalist who calls on elemental magic in combat, including summoning an air elemental. This caster brings a summoned ally into the Halls of Stone encounter.",
+          "text": "A Dark Rune elementalist, a caster who calls on elemental magic and summons an air elemental to fight beside it.",
           "when": {
             "entry": 27962
           }
@@ -147,7 +147,7 @@
             "source:88ebfab203a64216e31ccf0a",
             "source:83aee476282896ffb1b861c7"
           ],
-          "text": "A Dark Rune Controller in the Storm Peaks dungeon. In combat, it can summon crystalline shardlings and cast Domination.",
+          "text": "A Dark Rune Controller of the Halls of Stone who summons crystalline shardlings and can dominate a foe's will.",
           "when": {
             "entry": 27966
           }
@@ -169,7 +169,7 @@
             "source:b64ba2cb6ebb92eda47886b0",
             "source:6c7215d641de5583a41d1d5a"
           ],
-          "text": "A Dark Rune Giant encountered in the Storm Peaks dungeon. It uses a powerful Stomp in combat.",
+          "text": "A Dark Rune Giant of the Halls of Stone that stomps foes underfoot.",
           "when": {
             "entry": 27969
           }
@@ -191,7 +191,7 @@
             "source:6484b5e9d5de1173de3336d9",
             "source:2f9a742dbbf668e6bd28d871"
           ],
-          "text": "A Raging Construct found in the Storm Peaks dungeon. In combat it can strike with a Potent Jolt.",
+          "text": "A Raging Construct of the Halls of Stone that strikes with a Potent Jolt.",
           "when": {
             "entry": 27970
           }
@@ -213,7 +213,7 @@
             "source:925a75178b0d836b607ebb8a",
             "source:88c660e1322bf3272b5707f0"
           ],
-          "text": "An Unrelenting Construct encountered in the Storm Peaks dungeon. It charges in combat.",
+          "text": "An Unrelenting Construct of the Halls of Stone that charges at foes.",
           "when": {
             "entry": 27971
           }
@@ -235,7 +235,7 @@
             "source:f14baf20ac6a072c317ae462",
             "source:3c1adf43cea08dbe46537a4e"
           ],
-          "text": "A Lightning Construct found in the Storm Peaks dungeon. It uses Chain Lightning in combat.",
+          "text": "A Lightning Construct of the Halls of Stone that hurls Chain Lightning.",
           "when": {
             "entry": 27972
           }
@@ -361,27 +361,6 @@
       "title": ""
     },
     {
-      "entry": 28130,
-      "name": "Invis Lightning Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:28130:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:779521db0c7158e6526cd69d",
-            "source:9ec053526c8aca89b13b0de5"
-          ],
-          "text": "An invisible lightning stalker.",
-          "when": {
-            "entry": 28130
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 28149,
       "name": "Earthen Protector",
       "records": [
@@ -397,27 +376,6 @@
           "text": "An Earthen Protector humanoid.",
           "when": {
             "entry": 28149
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 28235,
-      "name": "Dark Matter",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:28235:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:8affd7a8e9cd6ba123a28e99",
-            "source:9313c96a899b22930a14547d"
-          ],
-          "text": "Dark Matter.",
-          "when": {
-            "entry": 28235
           }
         }
       ],
@@ -628,11 +586,6 @@
       "reference": "evidence:sha256:18a7d837d53e4d6a009481d7edebe139ae1f0892be40bb88257aba3911556c5f",
       "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
     },
-    "source:779521db0c7158e6526cd69d": {
-      "kind": "research",
-      "reference": "evidence:sha256:6baec4ed2c885847f1812154dc4a2a202b9c9675d4feb76bd9c94daee636ff62",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:7f15700eeaec98715da31f40": {
       "kind": "research",
       "reference": "evidence:sha256:159c32d45e98dcd19132b7eab380e0a3ea4a3845f2c428e02472e1f5618abd12",
@@ -663,11 +616,6 @@
       "reference": "evidence:sha256:bb2823c4ea507de14ecd14e5c3fbd61103356417b141bb3a18ee8d2cd95ab006",
       "revision": "afc0b0c0ad58bcf60b64967a83de545dd0e58ef17c0455d7fd6843525d138f4d"
     },
-    "source:8affd7a8e9cd6ba123a28e99": {
-      "kind": "research",
-      "reference": "evidence:sha256:f45b27a6e188edd8af61c45337f6bb051e3204a9ee7b7f0704ad1e893ec7182d",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:915087da5711149e79b4fd1b": {
       "kind": "research",
       "reference": "evidence:sha256:efb294acc4a753febf395e894f13c97517b2910894ddb1409257fd8bfed3b265",
@@ -683,11 +631,6 @@
       "reference": "evidence:sha256:d60dbb3993dfb47f54a9ffc15ed38da7e5f3e75322148b482a876249c9d28710",
       "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
     },
-    "source:9313c96a899b22930a14547d": {
-      "kind": "research",
-      "reference": "evidence:sha256:343458b5a0b53c393b1fdc91dac2da24ab57a29b4962d8e893ee037902b29e2a",
-      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
-    },
     "source:97c52b34ae6f2df6276e1f88": {
       "kind": "research",
       "reference": "evidence:sha256:c869d7cefe2410246015f7d451f1d487ad2d070ccb85ed477fce5deb9adf2b0b",
@@ -701,11 +644,6 @@
     "source:9814293bb32d3e871b103b52": {
       "kind": "research",
       "reference": "evidence:sha256:fdd7f12ea79aeac7257d318fc80b15c7ca96ecc6052a01fc3ea4b20ab5e039f6",
-      "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
-    },
-    "source:9ec053526c8aca89b13b0de5": {
-      "kind": "research",
-      "reference": "evidence:sha256:21781ba1f068c8a3a1258d3a65c3c9da7b91d0afe14b9b383dd4d09cdfda9052",
       "revision": "377e9d9eb44cc7696d9b018ad9fe8917340213bab9d7f2a795f175d1a8c2b959"
     },
     "source:b3aa25f70ce46e90c6be552b": {

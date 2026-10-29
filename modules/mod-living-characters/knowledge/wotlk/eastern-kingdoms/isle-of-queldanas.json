@@ -42,7 +42,7 @@
             "source:6654d25aeeb91e127c828d5c",
             "source:96d218ee98236a1802bb37ff"
           ],
-          "text": "Shattered Sun Marksmen are ranged fighters serving the Sunwell campaign. They appear across several areas of the campaign and hold their positions while out of combat, ready to respond when threats engage them.",
+          "text": "Shattered Sun Marksmen are ranged fighters who stand at their posts around the Sunwell region and fire on threats from a distance.",
           "when": {
             "entry": 24938
           }
@@ -65,7 +65,7 @@
             "source:c44204bfd6d249b980770613",
             "source:3ee52ddbd8dabda0753a0957"
           ],
-          "text": "Wretched Devourers are hostile humanoids in the Sunwell region. One claims, “Mine! You shall not take this place!” and uses Mana Tap in combat, presenting its hold on the area as something to defend.",
+          "text": "Wretched Devourers are hostile humanoids in the Sunwell region who defend their hold on the place, crying \"Mine! You shall not take this place!\" and draining foes with Mana Tap.",
           "when": {
             "entry": 24960
           }
@@ -90,7 +90,7 @@
             "source:98a4eb2d662f50010d72311f",
             "source:1e93a2c53bfe79f47d534cfd"
           ],
-          "text": "Vindicator Xayann is a Shattered Sun planner at the staging area who devised replacement crystal cores for the malfunctioning sentries. The plan turns defeated sentries into friendly units for tactical guard posts, helping secure the sanctum and extend the perimeter. Xayann's focus is using repaired sentries to strengthen the operation's defenses.",
+          "text": "Vindicator Xayann is a Shattered Sun planner at the staging area who made new crystal cores to bring the malfunctioning sentries under Shattered Sun control. Converted sentries guard tactical locations; they helped take the Sun's Reach Sanctum, and he keeps converting more.",
           "when": {
             "entry": 24965
           }
@@ -113,7 +113,7 @@
             "source:e124791cd8e63e06cf2b6062",
             "source:60bb7ffd43fc338deb0b3a6f"
           ],
-          "text": "A Wretched Fiend is a hostile Wretched occupying Sun's Reach and Dawning Square. It warns intruders that the place belongs to its kind, then fights with Sunder Armor.",
+          "text": "A Wretched Fiend is a hostile Wretched occupying Sun's Reach and Dawning Square. It warns intruders that the place is its kind's, then fights, wearing down armor with Sunder Armor.",
           "when": {
             "entry": 24966
           }
@@ -211,7 +211,7 @@
             "source:0f2e8bf8d0aac96fba730fb0",
             "source:89838fd30d2f2344f9a19e21"
           ],
-          "text": "A Blood Knight in Kael'thas's elite Dawnblade army stationed at Sun's Reach Harbor, this soldier casts Holy Light when badly wounded.",
+          "text": "A Blood Knight in Kael'thas's Dawnblade army stationed at Sun's Reach Harbor, who casts Holy Light when badly wounded.",
           "when": {
             "entry": 24976
           }
@@ -234,7 +234,7 @@
             "source:0f2e8bf8d0aac96fba730fb0",
             "source:66e806eddaa5530ca61b8e50"
           ],
-          "text": "A Summoner in Kael'thas's elite Dawnblade army stationed at Sun's Reach Harbor, this soldier casts Fel Armor upon returning.",
+          "text": "A Summoner in Kael'thas's Dawnblade army stationed at Sun's Reach Harbor, who wards itself with Fel Armor.",
           "when": {
             "entry": 24978
           }
@@ -257,31 +257,9 @@
             "source:0f2e8bf8d0aac96fba730fb0",
             "source:a47858856c2e09e2fd264f0d"
           ],
-          "text": "A Marksman in Kael'thas's elite Dawnblade army stationed at Sun's Reach Harbor, this soldier casts Flaming Arrow while out of combat.",
+          "text": "A Marksman in Kael'thas's Dawnblade army, stationed at Sun's Reach Harbor, who looses Flaming Arrows even before a fight begins.",
           "when": {
             "entry": 24979
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 24980,
-      "name": "Crystal Ward",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:24980:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:e091bb8c305d2b39d80199b3",
-            "source:63a15872bee8142008b191c5",
-            "source:43cf520c3e08b42ba7d0a73a"
-          ],
-          "text": "A Crystal Ward in the Isle of Quel'Danas.",
-          "when": {
-            "entry": 24980
           }
         }
       ],
@@ -302,7 +280,7 @@
             "source:43cf520c3e08b42ba7d0a73a",
             "source:b4e9309b2178b24b416dc3e1"
           ],
-          "text": "A mechanical Shattered Sun Sentry on the Isle of Quel'Danas.",
+          "text": "A mechanical sentry of the Shattered Sun on the Isle of Quel'Danas.",
           "when": {
             "entry": 24994
           }
@@ -325,7 +303,7 @@
             "source:cc0882cc9b3a303c38238089",
             "source:e3950a17a869600db59c7cb4"
           ],
-          "text": "Irespeaker is a combatant that uses Fel Fireball when its opponent is out of melee range and Fel Consumption when the opponent closes in.",
+          "text": "A fighter that hurls Fel Fireballs at foes out of reach and turns to Fel Consumption when they close in.",
           "when": {
             "entry": 24999
           }
@@ -347,7 +325,7 @@
             "source:da29f4c661b6368e3282a574",
             "source:8da129266ea827ae0cbefc84"
           ],
-          "text": "Abyssal Flamewalker casts Abyssal Meteor Fall when it appears.",
+          "text": "An Abyssal Flamewalker that arrives in a burst of Abyssal Meteor Fall.",
           "when": {
             "entry": 25001
           }
@@ -370,7 +348,7 @@
             "source:6dbf18d99467fc0dbe28959b",
             "source:dfb96a37e593a043241930fd"
           ],
-          "text": "Unleashed Hellion uses War Stomp and Rain of Fire in combat.",
+          "text": "An Unleashed Hellion that stomps the ground with War Stomp and rains fire on its foes.",
           "when": {
             "entry": 25002
           }
@@ -436,7 +414,7 @@
             "source:a7dbf6c3a249effa97529950",
             "source:18305a09923d1c819fdd15f8"
           ],
-          "text": "A Wrath Enforcer serving among the enemy forces in the Dead Scar, targeted by the Shattered Sun's continuing air strikes. It casts a spell while in combat.",
+          "text": "A Wrath Enforcer serving among the Legion's forces in the Dead Scar, a target of the Shattered Sun's continuing air strikes.",
           "when": {
             "entry": 25030
           }
@@ -459,7 +437,7 @@
             "source:df3760806c39becf8e8df6f8",
             "source:227e32012eb1c1518252f6ba"
           ],
-          "text": "A powerful Pit Overlord among the enemy forces in the Dead Scar, targeted by the Shattered Sun's continuing air strikes. In combat, it attacks with Cleave.",
+          "text": "A powerful Pit Overlord among the Legion's forces in the Dead Scar, a target of the Shattered Sun's continuing air strikes. It fights with cleaving blows.",
           "when": {
             "entry": 25031
           }
@@ -507,7 +485,7 @@
             "source:317d81f224328bac21999832",
             "source:3f8c2db9708038fffb600052"
           ],
-          "text": "An Eredar Sorcerer is a combatant among the Legion's forces in the Dead Scar. It is one of the enemies targeted in the Sun's Reach air strikes, alongside Pit Overlords and Wrath Enforcers. In battle, it casts Flames of Doom.",
+          "text": "An Eredar Sorcerer among the Legion's forces in the Dead Scar, a target of the Sun's Reach air strikes alongside Pit Overlords and Wrath Enforcers. It hurls Flames of Doom.",
           "when": {
             "entry": 25033
           }
@@ -551,7 +529,7 @@
             "source:780548dca3e729f0b22d80c5",
             "source:394b8732cc36cab59cc0fc4a"
           ],
-          "text": "Tyrael Flamekissed is a general-goods vendor who lets visitors browse his wares.",
+          "text": "Tyrael Flamekissed is a general goods merchant who sells his wares to visitors.",
           "when": {
             "entry": 25035
           }
@@ -620,7 +598,7 @@
             "source:9239d9bc2c5b9e21f2b8002a",
             "source:394b8732cc36cab59cc0fc4a"
           ],
-          "text": "Kaalif is a reagent vendor who lets visitors browse his wares.",
+          "text": "Kaalif is a reagent merchant who sells his wares to visitors.",
           "when": {
             "entry": 25039
           }
@@ -737,7 +715,7 @@
             "source:b68f7afcacae436389e6d1cb",
             "source:1687212bf06edd3f5076c574"
           ],
-          "text": "Darkspine Myrmidons are numerous hostile combatants found in the waters near Sun's Reach. In combat, they use Sunder Armor and Demoralizing Shout.",
+          "text": "Darkspine Myrmidons are hostile fighters, numerous in the waters near Sun's Reach. They sunder armor and shout to dishearten foes.",
           "when": {
             "entry": 25060
           }
@@ -782,7 +760,7 @@
             "source:8422f759fd736a2a2cf13ad0",
             "source:9e4263fe538f93e6b98de081"
           ],
-          "text": "Dawnblade Hawkriders are combatants found in two areas of Quel'Danas.",
+          "text": "A Dawnblade hawkrider on the Isle of Quel'Danas.",
           "when": {
             "entry": 25063
           }
@@ -805,7 +783,7 @@
             "source:ba0c5292b3139d4c5ebb8a27",
             "source:4a503f627f2dd1138b5972a4"
           ],
-          "text": "At Sun's Reach Armory, Magister Ilastar advocates attacks on Kael'thas's Dawnblade forces, describing them as an elite army and their casualties as useful to the campaign. His satisfaction is personal: he hopes Kael'thas feels despair, helplessness, or fear, and says the Dawnblade soldiers sealed their fate by following him.",
+          "text": "At Sun's Reach Armory, Magister Ilastar urges attacks on Kael'thas's Dawnblade army, calling it an elite force and its casualties a great help. His satisfaction is personal: he hopes Kael'thas feels despair, helplessness or fear, and says the Dawnblade soldiers sealed their fate by following him.",
           "when": {
             "entry": 25069
           }
@@ -826,7 +804,7 @@
             "source:60d6d1efe0ca9813f66474dc",
             "source:bb4f530f9ed1e4ca9d1f4b61"
           ],
-          "text": "Darkspine Sirens are creatures found in Quel'Danas.",
+          "text": "A Darkspine Siren of Quel'Danas who fights from a distance.",
           "when": {
             "entry": 25073
           }
@@ -847,7 +825,7 @@
             "source:69c4461759a293af09fe6abc",
             "source:b0eac3531e3f04935d629208"
           ],
-          "text": "Greengill Slaves are found in large numbers in Quel'Danas. When hit by an Orb of Murloc Control, a Greengill Slave casts Greengill Slave Freed.",
+          "text": "A Greengill murloc slave, found in large numbers on Quel'Danas. Struck by an Orb of Murloc Control, it is set free.",
           "when": {
             "entry": 25084
           }
@@ -959,7 +937,7 @@
             "source:f3ff1f774809be007e1514c3",
             "source:26082ac4eb105f08610290d4"
           ],
-          "text": "A Shattered Sun Warrior is one of the Shattered Sun's combatants, represented in numbers across several areas of the Isle of Quel'Danas.",
+          "text": "A humanoid warrior of the Shattered Sun on the Isle of Quel'Danas.",
           "when": {
             "entry": 25115
           }
@@ -1120,7 +1098,7 @@
             "source:eef070624c0e7a160254f75c",
             "source:fdaca1bda36f7de5a7f97208"
           ],
-          "text": "Anchorite Kairthos is a Shattered Sun quest contact on Quel'Danas. He requests a large donation supporting Anchorite Ayuri's efforts, with recognition among Shattered Sun fighters offered in return.",
+          "text": "Anchorite Kairthos serves the Shattered Sun on Quel'Danas. He asks for a large gift of gold toward Anchorite Ayuri's efforts and promises that word of the giver's deeds in the war will spread far and wide.",
           "when": {
             "entry": 25163
           }
@@ -1141,7 +1119,7 @@
             "source:62f01cb09eaf292b0a8f9785",
             "source:42ee9b2b5056f1ed56f16e7e"
           ],
-          "text": "A Shattered Sun recruit serving on Quel'Danas, one of several recruits stationed in the area.",
+          "text": "A Shattered Sun recruit serving on Quel'Danas.",
           "when": {
             "entry": 25164
           }
@@ -1204,7 +1182,7 @@
             "source:a69375809e7873e27ad52d46",
             "source:4aecf99a09b198074bebe557"
           ],
-          "text": "K'iru is a named presence on the Isle of Quel'Danas.",
+          "text": "K'iru is a being of the Isle of Quel'Danas.",
           "when": {
             "entry": 25174
           }
@@ -1291,7 +1269,7 @@
             "source:546b0cdf07f2043564cdba9f",
             "source:c0992eb540ba84baba9afee7"
           ],
-          "text": "Theremis is a vendor titled Keeper of Lost Artifacts, offering goods to browse. That title marks him out from the nearby specialty sellers, though the available records do not specify which artifacts he carries or what they mean to him.",
+          "text": "Theremis is a merchant titled Keeper of Lost Artifacts, who sells goods to visitors. The records do not say which artifacts he keeps.",
           "when": {
             "entry": 25976
           }
@@ -1313,7 +1291,7 @@
             "source:9baf07370f615b8e23c718a1",
             "source:c0992eb540ba84baba9afee7"
           ],
-          "text": "Yrma is a vendor titled Transmuter of Sin'dorei Relics, offering goods to browse. Her title points to a specialty in Sin'dorei relics, distinct from the nearby artifact keeper and gear purveyors; the available records do not explain her methods or stock.",
+          "text": "Yrma is a merchant titled Transmuter of Sin'dorei Relics, who sells goods to visitors. Her methods and stock are not recorded.",
           "when": {
             "entry": 25977
           }
@@ -1335,7 +1313,7 @@
             "source:ccb92e20bd474cdd63161f1d",
             "source:c0992eb540ba84baba9afee7"
           ],
-          "text": "Kayri is an Exotic Gear Purveyor, a vendor whose title distinguishes her specialty from the artifact keeper and relic transmuter nearby. The records establish the vendor role but do not identify particular gear, its origin, or Kayri's personal views.",
+          "text": "Kayri is an Exotic Gear Purveyor, a merchant who sells goods to visitors. Her particular wares and views are not recorded.",
           "when": {
             "entry": 26089
           }
@@ -1357,7 +1335,7 @@
             "source:681cf347ec7b46bcdb003399",
             "source:c0992eb540ba84baba9afee7"
           ],
-          "text": "Karynna is an Exotic Gear Purveyor, a vendor whose title distinguishes her specialty from the artifact keeper and relic transmuter nearby. The records establish the vendor role but do not identify particular gear, its origin, or Karynna's personal views.",
+          "text": "Karynna is an Exotic Gear Purveyor, a merchant who sells goods to visitors. Her particular wares and views are not recorded.",
           "when": {
             "entry": 26090
           }
@@ -1379,7 +1357,7 @@
             "source:367ca26e9078432834df3a5d",
             "source:e33987e1c5b3f3e6461974da"
           ],
-          "text": "Olus is an Exotic Gear Purveyor, a vendor whose title distinguishes his specialty from the artifact keeper and relic transmuter nearby.",
+          "text": "Olus is an Exotic Gear Purveyor, a merchant who sells goods to visitors.",
           "when": {
             "entry": 26091
           }
@@ -1401,7 +1379,7 @@
             "source:28427daeec478f0be9d15e07",
             "source:c0992eb540ba84baba9afee7"
           ],
-          "text": "Soryn is an Exotic Gear Purveyor, a vendor whose title distinguishes his specialty from the artifact keeper and relic transmuter nearby. The records establish the vendor role but do not identify particular gear, its origin, or Soryn's personal views.",
+          "text": "Soryn is an Exotic Gear Purveyor, a merchant who sells goods to visitors. His particular wares and views are not recorded.",
           "when": {
             "entry": 26092
           }
@@ -1423,7 +1401,7 @@
             "source:fb1aba1f4dde826640ace278",
             "source:43cf520c3e08b42ba7d0a73a"
           ],
-          "text": "A Shattered Sun peacekeeper on the Isle of Quel'Danas.",
+          "text": "A Shattered Sun peacekeeper.",
           "when": {
             "entry": 26253
           }
@@ -1447,7 +1425,7 @@
             "source:3b788b42a02e303d29599557",
             "source:9166b63199d3f0fd2f3b0165"
           ],
-          "text": "Ohura is a dragonhawk master who handles fast travel. When attacked, she summons an enraged felbat to aid her.",
+          "text": "Ohura is a dragonhawk master who carries travelers swiftly to other places. When attacked, she calls an enraged felbat to her aid.",
           "when": {
             "entry": 26560
           }
@@ -1542,7 +1520,7 @@
             "source:d8d8b91d80c19da175d012b2",
             "source:4f731343ddce2d3aa1fae5ac"
           ],
-          "text": "These remains are identified as those of Thalorien Dawnseeker, Quel'Delar's last wielder. He defended the Sunwell against the Scourge and fell in the Dead Scar while buying time for his men. Halduron directs would-be bearers of Quel'Delar to seek Thalorien's spirit's blessing at the remains before gaining admission to the Sunwell.",
+          "text": "The remains of Thalorien Dawnseeker, Quel'Delar's last wielder, who defended the Sunwell against the Scourge and fell in the Dead Scar buying time for his men. Halduron directs would-be bearers of Quel'Delar to seek Thalorien's spirit's blessing at the remains before entering the Sunwell.",
           "when": {
             "entry": 37552
           }
@@ -2302,11 +2280,6 @@
       "reference": "evidence:sha256:0616dbd1c9c2a8a7ef27a92194d6413c3760f21b00c78127c1761349bbff04f6",
       "revision": "45987246b97d19ff8577b1694cfb1b602f198259dffac6dfa563a5ea6056e246"
     },
-    "source:63a15872bee8142008b191c5": {
-      "kind": "research",
-      "reference": "evidence:sha256:c3bd9acedad3d39c8fe4f37563e66b272e16fe6ce3d5db58d5b361c9bb7dad77",
-      "revision": "6e64638d429518f6ec9347526101c4c7ca5bb875e85601220135d5231c7530d4"
-    },
     "source:6654d25aeeb91e127c828d5c": {
       "kind": "research",
       "reference": "evidence:sha256:6e8a303fdd7135e52539a87de237a41d7ddecf6cd3e572ffa00316bce39dea91",
@@ -2921,11 +2894,6 @@
       "kind": "research",
       "reference": "evidence:sha256:9b3d77769dd5f020cc97e428f16ad0a42156848380687d3cf16b39171bc99ca1",
       "revision": "7d69a83a1e20f8d4cd538c98afdb0f31ea46c37bcbc36fa330c5bb55ee8ecac4"
-    },
-    "source:e091bb8c305d2b39d80199b3": {
-      "kind": "research",
-      "reference": "evidence:sha256:db58ebf973683cc881abb16ca3da39a27ec35593ae2be834be2b8eeccb14707f",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:e124791cd8e63e06cf2b6062": {
       "kind": "research",

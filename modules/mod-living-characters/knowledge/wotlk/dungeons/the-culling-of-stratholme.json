@@ -4,27 +4,6 @@
   "map": 595,
   "npcs": [
     {
-      "entry": 20562,
-      "name": "Invisible Stalker (Scale x5)",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:20562:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:99becd8d21064fead1252206",
-            "source:cbf07db3c530be89d8570fc6"
-          ],
-          "text": "An Invisible Stalker in The Culling of Stratholme.",
-          "when": {
-            "entry": 20562
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 26499,
       "name": "Arthas",
       "records": [
@@ -64,7 +43,7 @@
             "source:3ff0719a436dd091f67c7d8b",
             "source:a5a2c6688ee20431a4ec242a"
           ],
-          "text": "Chromie directs adventurers in Stratholme’s past to expose suspicious grain, warning that the Infinite Dragonflight seeks to deceive Arthas and alter his fateful decision. She also raises an emergency: a colleague, identified as a Guardian of Time, has been captured, and urges rescue while keeping Arthas the priority. Her urgent, task-focused warnings present her as a guide through this historical crisis.",
+          "text": "Chromie guides adventurers through Stratholme's past, warning that the Infinite Dragonflight seeks to deceive Arthas and alter his fateful decision. She also raises the alarm that a colleague, a Guardian of Time, has been captured, and urges a rescue while keeping Arthas the priority.",
           "when": {
             "entry": 26527
           }
@@ -86,7 +65,7 @@
             "source:b687c18cac7a87087e444bfc",
             "source:c31cbc21c6b5a55f7fdd0e72"
           ],
-          "text": "An Enraging Ghoul, an undead combatant found in this area, is a dangerous but generic creature rather than an identified individual. It casts a spell in combat.",
+          "text": "An undead Enraging Ghoul of Stratholme, a dangerous common creature rather than a named individual.",
           "when": {
             "entry": 27729
           }
@@ -108,7 +87,7 @@
             "source:a789736038b947a6f421b756",
             "source:e8219cba600fb71a95df6131"
           ],
-          "text": "An Acolyte is a generic humanoid combatant; its name suggests a religious or magical attendant. In combat it casts Shadow Shock.",
+          "text": "An Acolyte, a humanoid attendant in Stratholme who strikes with shadow magic, Shadow Shock.",
           "when": {
             "entry": 27731
           }
@@ -130,7 +109,7 @@
             "source:da29e9f045c0e48d029e04ae",
             "source:507c7a61ceaf35d8793f016c"
           ],
-          "text": "A Crypt Fiend is an undead combat creature, a generic enemy rather than a named individual. It casts a spell in combat.",
+          "text": "An undead Crypt Fiend of Stratholme, a common foe rather than a named individual.",
           "when": {
             "entry": 27734
           }
@@ -152,7 +131,7 @@
             "source:67113466ca3028d6bd9c61f1",
             "source:08d08988392e99dca7cc28f3"
           ],
-          "text": "A Patchwork Construct is a generic assembled creature used in combat.",
+          "text": "A Patchwork Construct, an undead assembled creature of Stratholme.",
           "when": {
             "entry": 27736
           }
@@ -173,7 +152,7 @@
             "source:2c097e9d06632fb070e48b50",
             "source:277e183626e842d128bc36b7"
           ],
-          "text": "A Risen Zombie is an undead combatant appearing in many instances in this area.",
+          "text": "An undead risen zombie, one of many in the Culling of Stratholme.",
           "when": {
             "entry": 27737
           }
@@ -195,7 +174,7 @@
             "source:afb058f00d9de6892902f905",
             "source:e3e8cbd720c40c83421710e7"
           ],
-          "text": "A Lordaeron Footman is a generic humanoid soldier, distinguished from the nearby knight and High Elf combatants by the footman role in its name. It uses Defend in combat.",
+          "text": "A Lordaeron Footman, a humanoid soldier of Stratholme who braces behind a Defend stance in battle.",
           "when": {
             "entry": 27745
           }
@@ -216,7 +195,7 @@
             "source:adb2b36e2292a311e9adf637",
             "source:a88a05b525cb185af325cb27"
           ],
-          "text": "A Lordaeron Knight is a generic humanoid combatant identified by the knight role in its name, distinct from the footman and High Elf entries nearby.",
+          "text": "A humanoid Lordaeron knight in the Culling of Stratholme.",
           "when": {
             "entry": 27746
           }
@@ -238,7 +217,7 @@
             "source:6b99862250795c236029cd2f",
             "source:ed6e097cf54437dd962d663c"
           ],
-          "text": "A High Elf Mage-Priest is a generic humanoid combatant whose title combines magical and priestly roles.",
+          "text": "A humanoid High Elf mage-priest in the Culling of Stratholme.",
           "when": {
             "entry": 27747
           }
@@ -259,7 +238,7 @@
             "source:40c1f87f879deb35ad76de3b",
             "source:edead06cb554e3997cebd25b"
           ],
-          "text": "A High Elf Sorceress is a generic humanoid combatant identified by her High Elf and sorceress titles, distinct in role from the nearby Mage-Priest.",
+          "text": "A humanoid High Elf sorceress in the Culling of Stratholme.",
           "when": {
             "entry": 27752
           }
@@ -474,7 +453,7 @@
             "source:223eb2b778dd3fd49161a636",
             "source:58d515b50028f3622726283c"
           ],
-          "text": "A humanoid public crier associated with Lordaeron.",
+          "text": "A public crier of Lordaeron.",
           "when": {
             "entry": 27913
           }
@@ -500,7 +479,7 @@
             "source:504046e7005ed40cd9c2aaec",
             "source:5e3e9d6f195a113aefcce337"
           ],
-          "text": "Chromie works to protect the timeline from the Infinite Dragonflight, whose deception could keep Arthas from making his fateful decision at Stratholme. She directs adventurers through the grain investigation and the escort, watches for another foreign presence, and warns that the Guardian of Time is fading.",
+          "text": "Chromie works to protect the timeline from the Infinite Dragonflight, whose deception could keep Arthas from making his fateful decision at Stratholme. She sends adventurers to expose the plagued grain and to stand by Arthas, watches for another foreign presence, and warns that the Guardian of Time is fading.",
           "when": {
             "entry": 27915
           }
@@ -566,7 +545,7 @@
             "source:1e3a571eaf06fd8156dc5c03",
             "source:37cb1b155c1e56281f8b2de0"
           ],
-          "text": "An elite Bile Golem in Stratholme that casts spells in combat.",
+          "text": "A Bile Golem, an undead construct of Stratholme that casts spells in battle.",
           "when": {
             "entry": 28201
           }
@@ -587,7 +566,7 @@
             "source:052fa5b351597f558caa94f8",
             "source:a4465e2c3062818c23b8c57c"
           ],
-          "text": "A devouring ghoul is an undead combat creature that can cast a spell while fighting.",
+          "text": "A Devouring Ghoul, an undead creature of Stratholme.",
           "when": {
             "entry": 28249
           }
@@ -608,7 +587,7 @@
             "source:9b2252923f2b29ebbea935a3",
             "source:405321a8dabf31481ca8d268"
           ],
-          "text": "Postmaster Malown is a named humanoid identified by a postmaster's title.",
+          "text": "Postmaster Malown is the postmaster in the Culling of Stratholme.",
           "when": {
             "entry": 30547
           }
@@ -1018,7 +997,7 @@
             "source:adf1b16c439143fbe327b98f",
             "source:ce9a50e0e6a497942e707765"
           ],
-          "text": "Stephanie Sindree is a fruit and fish vendor. When challenged about her food, she protests that it was not hers and offers a refund, suggesting she is caught up in a dispute and worried about its consequences.",
+          "text": "Stephanie Sindree sells fruit and fish. When confronted about her food, she protests that it was not hers and offers a refund, clearly caught up in a dispute and worried about the consequences.",
           "when": {
             "entry": 31019
           }
@@ -1154,7 +1133,7 @@
             "source:4399e48174b268b8ff92ba10",
             "source:24285624fa057782447dc56c"
           ],
-          "text": "Robert Pierce supplies ammunition in Stratholme. His stall serves those looking to browse and replenish their ammunition while the city is in turmoil.",
+          "text": "Robert Pierce sells ammunition from his stall in Stratholme while the city is in turmoil.",
           "when": {
             "entry": 31025
           }
@@ -1278,7 +1257,7 @@
             "source:c5310c383b3b51b01eb153ea",
             "source:132f30d6fcf68e1c393df9f4"
           ],
-          "text": "Agitated Stratholme Residents are townspeople whose shouted pleas convey confusion and alarm: they ask for Barthilas and the magistrate, demand leadership, wonder what to do, and press to be let through. Their words show a crowd seeking direction and access, without identifying any individual speaker or explaining the crisis.",
+          "text": "Agitated Stratholme Residents are townspeople whose shouted pleas show confusion and alarm: they ask for Barthilas and the magistrate, demand leadership, wonder what to do, and press to be let through.",
           "when": {
             "entry": 31127
           }
@@ -1924,11 +1903,6 @@
     "source:99677ae9f3dfaf13bbfe1a9a": {
       "kind": "research",
       "reference": "evidence:sha256:42e3af239b96ed9c61e5771cf4e6bd938bbed0eb5bb79320918809633339329e",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:99becd8d21064fead1252206": {
-      "kind": "research",
-      "reference": "evidence:sha256:d60b168ab52a2418cb2ca11540ca951844267058614e785d5e0984366d88ee79",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:9b2252923f2b29ebbea935a3": {

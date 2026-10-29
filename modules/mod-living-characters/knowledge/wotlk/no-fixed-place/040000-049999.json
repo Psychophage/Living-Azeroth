@@ -216,72 +216,6 @@
       "title": ""
     },
     {
-      "entry": 40101,
-      "name": "Valley of Heroes Credit",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40101:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:fffd98826584f580100eceb7",
-            "source:547677c3835437527667d72f",
-            "source:ac2c9fcc68c64794426576ab"
-          ],
-          "text": "A visit credit for Stormwind's Valley of Heroes, one of three stops in the orchard's message-spreading task. The task directs its participant to wear the Doomsday Message while visiting the valley.",
-          "when": {
-            "entry": 40101
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 40102,
-      "name": "Westbrook Garrison Credit",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40102:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:e9cbfd30c7d54ab46358574e",
-            "source:3ec48b00b8c24e073b08ed18",
-            "source:ac2c9fcc68c64794426576ab"
-          ],
-          "text": "A visit credit for Westbrook Garrison, one of three stops in the orchard's message-spreading task. The task directs its participant to wear the Doomsday Message while visiting the garrison.",
-          "when": {
-            "entry": 40102
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 40103,
-      "name": "Goldshire Credit",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40103:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:5e51066241b65cf015b3ac22",
-            "source:0098e06c509877981f1684a2",
-            "source:ac2c9fcc68c64794426576ab"
-          ],
-          "text": "A visit credit for Goldshire, one of three stops in the orchard's message-spreading task. The task directs its participant to wear the Doomsday Message while visiting the town square.",
-          "when": {
-            "entry": 40103
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 40104,
       "name": "Raging Wind Elemental",
       "records": [
@@ -408,27 +342,6 @@
       "title": ""
     },
     {
-      "entry": 40135,
-      "name": "Consumption",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40135:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b6f0ee6f54ee507881050378",
-            "source:f39af6952ad5d1efd38d0f57"
-          ],
-          "text": "Consumption.",
-          "when": {
-            "entry": 40135
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 40141,
       "name": "Tormun's Shield",
       "records": [
@@ -539,27 +452,6 @@
       "title": "The Twilight Destroyer"
     },
     {
-      "entry": 40151,
-      "name": "Combat Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40151:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:28be2c9ddf113bb9a7f0a2dd",
-            "source:a476c1ac056fe961e5ddab69"
-          ],
-          "text": "Combat Stalker.",
-          "when": {
-            "entry": 40151
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 40165,
       "name": "Blazing Hippogryph",
       "records": [
@@ -637,7 +529,7 @@
             "source:3408d18dfb70b09626815f2b",
             "source:b5d2e76d33bcc5e026f53325"
           ],
-          "text": "The Attuned Frog is a Sen'jin frog used as a tiny spy: “Da Perfect Spies” has players attune frogs at a sentry totem to gather information for Vol'jin.",
+          "text": "A tiny Sen'jin frog, attuned to a sentry totem's sight to serve as a spy gathering information for Vol'jin.",
           "when": {
             "entry": 40188
           }
@@ -826,7 +718,7 @@
             "source:3f79095fc334526cb8452860",
             "source:234264fad72eaf19e74814d0"
           ],
-          "text": "Zom Bocom bears the title Apprentice Arena Vendor.",
+          "text": "Zom Bocom is an apprentice arena vendor.",
           "when": {
             "entry": 40205
           }
@@ -847,7 +739,7 @@
             "source:ce17c29e574ebdca9af7545e",
             "source:efb3bf4769570e476c90467b"
           ],
-          "text": "Big Zokk Torquewrench bears the title Arena Vendor.",
+          "text": "Big Zokk Torquewrench is an arena vendor.",
           "when": {
             "entry": 40206
           }
@@ -868,7 +760,7 @@
             "source:004c5b371b1b81215e470c8e",
             "source:88ff869713121a3a7dba8461"
           ],
-          "text": "Kezzik the Striker bears the title Veteran Arena Vendor.",
+          "text": "Kezzik the Striker is a veteran arena vendor.",
           "when": {
             "entry": 40207
           }
@@ -889,7 +781,7 @@
             "source:8bbe6b060e94174424615727",
             "source:02e0e3297a4a560c054e38a5"
           ],
-          "text": "Leeni “Smiley” Smalls bears the title Apprentice Arena Vendor.",
+          "text": "Leeni “Smiley” Smalls is an apprentice arena vendor.",
           "when": {
             "entry": 40208
           }
@@ -1034,7 +926,7 @@
             "source:456c934910e6e1d8fe12d744",
             "source:3c5b1fc5cb7b485d8610e438"
           ],
-          "text": "Argex Irongut is identified as a Veteran Arena Vendor, linking his public role to the arena and its vendor trade.",
+          "text": "Argex Irongut is a veteran arena vendor.",
           "when": {
             "entry": 40215
           }
@@ -1164,7 +1056,7 @@
             "source:fff3b7b1aef6361046f864ff",
             "source:d9e011b8de83fddfd183076f"
           ],
-          "text": "A troll who answers Vol’jin’s call to recruit for the Darkspear cause. On being recruited, this volunteer voices eagerness to sign up, explicitly pledges support to Vol’jin, or offers help; the lines show willingness, not later training or service.",
+          "text": "A troll recruited to the Darkspear cause, eager to sign up and ready to do anything for Vol'jin.",
           "when": {
             "entry": 40260
           }
@@ -1208,7 +1100,7 @@
             "source:53ec42da25420a67ac8643d1",
             "source:026b8c5ce2867ea725bcafa3"
           ],
-          "text": "A troll who answers Vol’jin’s call to recruit for the Darkspear cause. On being recruited, this volunteer voices eagerness to sign up, explicitly pledges support to Vol’jin, or offers help; the lines show willingness, not later training or service.",
+          "text": "A troll recruited to the Darkspear cause, eager to sign up and ready to do anything for Vol'jin.",
           "when": {
             "entry": 40264
           }
@@ -1452,27 +1344,6 @@
       "title": ""
     },
     {
-      "entry": 40368,
-      "name": "Zalazane's Remains",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40368:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:bfee13308cceface82ad27ef",
-            "source:0ab70cfae0fe4bc566a02795"
-          ],
-          "text": "Zalazane's Remains is identified as Zalazane's remains.",
-          "when": {
-            "entry": 40368
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 40373,
       "name": "Ritual Drummer",
       "records": [
@@ -1487,7 +1358,7 @@
             "source:14b6d1176c8713c52338cb9c",
             "source:a8db484cad30eb32a5851d7d"
           ],
-          "text": "The Ritual Drummer is a creature assigned a ritual role. Out of combat, it casts Bang Ritual Gong.",
+          "text": "A drummer who bangs a ritual gong when not fighting.",
           "when": {
             "entry": 40373
           }
@@ -1550,7 +1421,7 @@
             "source:31ce6f9be0912e84a41402e6",
             "source:16ccff99f0c6c2fba3a5d4bb"
           ],
-          "text": "Tyrantus is identified as Kieupid's pet, a named beast.",
+          "text": "Tyrantus is Kieupid's pet beast.",
           "when": {
             "entry": 40404
           }
@@ -1593,7 +1464,7 @@
             "source:2c4c4908b4397813d3f0cafa",
             "source:80b530451dac8f35c5ffa78c"
           ],
-          "text": "Bones of Bwonsamdi is an elite named figure whose name invokes Bwonsamdi.",
+          "text": "A humanoid whose name invokes Bwonsamdi.",
           "when": {
             "entry": 40414
           }
@@ -1677,7 +1548,7 @@
             "source:abb880fddf4cfc451c8895c1",
             "source:d3b3397c2f538c5177656a68"
           ],
-          "text": "An elite Charscale, marked as an elite member of its kind.",
+          "text": "A dragonkin Charscale, one of the stronger of its kind.",
           "when": {
             "entry": 40422
           }
@@ -1722,27 +1593,6 @@
           "text": "A troll identified with voodoo; it is humanoid.",
           "when": {
             "entry": 40425
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 40428,
-      "name": "[DND] Quest Credit Bunny - ET Battle",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40428:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:7f299a2b734cecdf498591d8",
-            "source:b90c048d5c30aee28a9030fa"
-          ],
-          "text": "An internal quest-credit target listed among the required targets for Zalazane's Fall; its name ties it to the Echo Isles battle.",
-          "when": {
-            "entry": 40428
           }
         }
       ],
@@ -1975,7 +1825,7 @@
             "source:64d193fc9f8e85acb022a273",
             "source:80aa06b5e5ff6d5be7ae3d46"
           ],
-          "text": "Elgin Clickspring is the High Tinker's assistant and helps keep the assault running on schedule. He expects Mekkatorque to return for more troops and urges people to speak with him soon, saying his boss hates delays. His remarks show concern for coordinating the assault and keeping it timely.",
+          "text": "Elgin Clickspring is the High Tinker's assistant, charged with keeping the assault running like clockwork. He expects Mekkatorque back for more troops any time and urges visitors to speak with him soon, since his boss hates being late.",
           "when": {
             "entry": 40478
           }
@@ -2017,7 +1867,7 @@
             "source:bfac3f7923004cb12aba70e6",
             "source:657b9fa584a2d8f0c61f16ea"
           ],
-          "text": "Zild'jian is identified as Vol'jin's Wardrummer.",
+          "text": "Zild'jian is Vol'jin's Wardrummer.",
           "when": {
             "entry": 40492
           }
@@ -2081,7 +1931,7 @@
             "source:5c89f20846a73365e957e973",
             "source:d7ddb5a46250c0fc4a9f438a"
           ],
-          "text": "Knight-Lieutenant T'Maire Sydes is identified as the Northrend Armor Quartermaster.",
+          "text": "Knight-Lieutenant T'Maire Sydes is the Northrend Armor Quartermaster.",
           "when": {
             "entry": 40606
           }
@@ -2189,7 +2039,7 @@
             "source:eb6cb68856cf13978b77b0bf",
             "source:3799b556e49c5f81bf1645b5"
           ],
-          "text": "Living Inferno is an elite creature that begins passive, then turns aggressive and joins combat across the zone.",
+          "text": "A fiery elemental that begins passive, then turns hostile and joins the fight across the whole area.",
           "when": {
             "entry": 40681
           }
@@ -2214,7 +2064,7 @@
             "source:112ffb1020ba4f9f26c75163",
             "source:2a0fee4bf3f5d10b89373f9f"
           ],
-          "text": "Living Ember is an elemental combatant that casts Berserk.",
+          "text": "A Living Ember, an elemental that goes berserk.",
           "when": {
             "entry": 40683
           }
@@ -2314,11 +2164,6 @@
       "reference": "evidence:sha256:3668494c00982f0fca7d77e1fac915bc2e761fd427a7e65fc7ba529932a9bb08",
       "revision": "367535182994b29a7ab86fd7332144b4af0453c5c0aa39415d9ba13cec58405c"
     },
-    "source:0098e06c509877981f1684a2": {
-      "kind": "research",
-      "reference": "evidence:sha256:4788be2bd33b177e370a058744b7023c795f19b3bb6158179950bbb58f39c1bf",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
-    },
     "source:016618c2e497b1383b2a8c1d": {
       "kind": "research",
       "reference": "evidence:sha256:dd634101b028b2519fe57f9686b39a7ee8093901267fee8b13889cd7e6c54eb5",
@@ -2367,11 +2212,6 @@
     "source:08c41a40e7d49ae3817ac045": {
       "kind": "research",
       "reference": "evidence:sha256:d43ae25b45f8a4b12591528b24fa4130f6778f9a1c38cb1234a00d3b028260f4",
-      "revision": "a5ad451c756e47b6c2f7fdc178e853e7997f35c110ba49e645b6b77ef882f686"
-    },
-    "source:0ab70cfae0fe4bc566a02795": {
-      "kind": "research",
-      "reference": "evidence:sha256:5144e5cd4ed21ca03228cc4097c3aa126683d0d3a6e2e5859fc2eefd0c163b1b",
       "revision": "a5ad451c756e47b6c2f7fdc178e853e7997f35c110ba49e645b6b77ef882f686"
     },
     "source:0d4537953d8efed93dff1895": {
@@ -2514,11 +2354,6 @@
       "reference": "evidence:sha256:422337685a965952ff33b7f6cf11339eb7c5aa468a3f057c20961ce660f892ea",
       "revision": "a5ad451c756e47b6c2f7fdc178e853e7997f35c110ba49e645b6b77ef882f686"
     },
-    "source:28be2c9ddf113bb9a7f0a2dd": {
-      "kind": "research",
-      "reference": "evidence:sha256:e6c35ce0376f424bec1ca772062b7a337569a9fd160c2a8cf0bdeb436bf7dec8",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:2a0fee4bf3f5d10b89373f9f": {
       "kind": "research",
       "reference": "evidence:sha256:32c573a52398edf43d59306c709add9c71f0f560354043bc348de506d00b7383",
@@ -2654,11 +2489,6 @@
       "reference": "evidence:sha256:82c5f6d71535a2e20ea38572832803dbf918f74886a827b4fe3f5f31017453b7",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
-    "source:3ec48b00b8c24e073b08ed18": {
-      "kind": "research",
-      "reference": "evidence:sha256:62e0f047515004bcfe0e51ee53a28ef64843209002bcacee9349939786227ddc",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
-    },
     "source:3f79095fc334526cb8452860": {
       "kind": "research",
       "reference": "evidence:sha256:b7208b66188aa22bee6f10bed7582f5c5f8356355cfe3e82f704088e818315bf",
@@ -2734,11 +2564,6 @@
       "reference": "evidence:sha256:f8c8505cb157ccd5e6be6dcccffee634213ed2f26926917d78d167d0d0017ebc",
       "revision": "85d0b94ab6972c381a5267d708c9e38b9bfec03f55b9960f8abf2f2a9593c292"
     },
-    "source:547677c3835437527667d72f": {
-      "kind": "research",
-      "reference": "evidence:sha256:3107c8cf66c45c16c0fe336404cde6ea4f0525cde57dbbbbc4eaab1ab3cc54bb",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
-    },
     "source:547744ba0e81e97b44c2fa6f": {
       "kind": "research",
       "reference": "evidence:sha256:fc4cfad15bbaa63bdd0d42e502cb4c7c64a413d1e9e3a6bca9adbfc420053f46",
@@ -2778,11 +2603,6 @@
       "kind": "research",
       "reference": "evidence:sha256:d95f41c688b0a0f387ee8c47b03a8fc64195c932251a92d6fb05a3b156976e74",
       "revision": "ef47b866172010aab87a7d00a6f7dca4713e451781732306c8adfcf271d0c086"
-    },
-    "source:5e51066241b65cf015b3ac22": {
-      "kind": "research",
-      "reference": "evidence:sha256:a77c7a6080b64c20979f5cd6172bf17493b418afbf874cbaf92abd88536d0292",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
     },
     "source:5f4d7daec3759d812db9722c": {
       "kind": "research",
@@ -2873,11 +2693,6 @@
       "kind": "research",
       "reference": "evidence:sha256:6aecf86abdb09b74aedea6af42742fa3d47771344924ee75b695b7c09fda0315",
       "revision": "85d0b94ab6972c381a5267d708c9e38b9bfec03f55b9960f8abf2f2a9593c292"
-    },
-    "source:7f299a2b734cecdf498591d8": {
-      "kind": "research",
-      "reference": "evidence:sha256:c28460d4616ecb371ec69d7b3551e52bb8274a3a673b56beedf99627c4bb676a",
-      "revision": "3e2213db9b6e55e3f29d12a09b45814711d7da75d34c07d882cd2b4d0576c419"
     },
     "source:80aa06b5e5ff6d5be7ae3d46": {
       "kind": "research",
@@ -3029,11 +2844,6 @@
       "reference": "evidence:sha256:b245b11da0176d4ba562ce0023ad8a6931555807f0a2b548dc43ac71239d28f2",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
-    "source:a476c1ac056fe961e5ddab69": {
-      "kind": "research",
-      "reference": "evidence:sha256:0e803955793536665edee38ae70b7a870dd1efc6f7ca803f97fc053defc443a2",
-      "revision": "65ec3136b7de18657c0faebf9336d928345473efacd9f5c2c6ab4198b9b23744"
-    },
     "source:a6217bce6ce42cd7f17e47d2": {
       "kind": "research",
       "reference": "evidence:sha256:0f0154e35b63ea542e5c93b6a6283114d15955fe6b8c58de3a5c4a9b2c2c895f",
@@ -3073,11 +2883,6 @@
       "kind": "research",
       "reference": "evidence:sha256:30beb93a455bdaf2d46642e738542fb0dbe952811c15940f39548672b631aff2",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:ac2c9fcc68c64794426576ab": {
-      "kind": "research",
-      "reference": "evidence:sha256:eac4febb5da6eb80d6e9e5a8f5085185972ed280aca0e349d8691d62ffc4dfe9",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
     },
     "source:ac8614bf6671bc93a38e3cbd": {
       "kind": "research",
@@ -3119,20 +2924,10 @@
       "reference": "evidence:sha256:4bbd2fbef445202c07fbc710b7005a33b2cbccac61037743cca10badc36fa52a",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
-    "source:b6f0ee6f54ee507881050378": {
-      "kind": "research",
-      "reference": "evidence:sha256:30344b34c468754314976ba4dac1f3b2fc1d70e60f0e0f956f34cde8ce4ac0cf",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:b8529f059217f909668e054a": {
       "kind": "research",
       "reference": "evidence:sha256:be16b35a62b41f5a80ce39a11a95b93f6c94e24ab98d4322072305d4dc4bb817",
       "revision": "ce8fae8af85c23d04feda0dd681955b21d4cb5ca378d153f180871bc141328af"
-    },
-    "source:b90c048d5c30aee28a9030fa": {
-      "kind": "research",
-      "reference": "evidence:sha256:798122754984eb286eb0e33af4d603380d43d66b20735d79252f912025315488",
-      "revision": "3e2213db9b6e55e3f29d12a09b45814711d7da75d34c07d882cd2b4d0576c419"
     },
     "source:ba013ab59bf38e680d8e826e": {
       "kind": "research",
@@ -3188,11 +2983,6 @@
       "kind": "research",
       "reference": "evidence:sha256:92f9c646a66d6f177beae69c40b8cf8182fa6b369d11bd308da7d20a4064d4c4",
       "revision": "945b4b984a72dc64458dc2ffc944cab30a0ca70aca9268c7d4e527ff8b61d5cb"
-    },
-    "source:bfee13308cceface82ad27ef": {
-      "kind": "research",
-      "reference": "evidence:sha256:02678bbf958067361016ddc32a5aa2e8bd1490b45c131b6bf840273ba3001020",
-      "revision": "a5ad451c756e47b6c2f7fdc178e853e7997f35c110ba49e645b6b77ef882f686"
     },
     "source:c0467be5489f6aac3f6c6c46": {
       "kind": "research",
@@ -3394,11 +3184,6 @@
       "reference": "evidence:sha256:3917822e1764a4806388ef70e182ea4f9d378e0e17482319d915eb6ba2058816",
       "revision": "bf7b74897353c3c7dbf7b6351fc9d7c2278df3d390969364015da38fdd2e101d"
     },
-    "source:e9cbfd30c7d54ab46358574e": {
-      "kind": "research",
-      "reference": "evidence:sha256:28632cd4be65d3c741e6b5fb5b092ed2da5246de0278e3dbc4b5fbc194c5ce49",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
-    },
     "source:ea0be67320265bd2039b6bfa": {
       "kind": "research",
       "reference": "evidence:sha256:e2f997b6a5b95a7ce610dbc2d8d51acf527cc33447efa00953c2906da4f3c779",
@@ -3449,11 +3234,6 @@
       "reference": "evidence:sha256:41fd5b43eb683a9b012586907a223b6254d79fa313bb290f8777e46b2de74471",
       "revision": "43091205a0c2e58839f5527408b40f2fb875ae5700330405f3496ee062ee4558"
     },
-    "source:f39af6952ad5d1efd38d0f57": {
-      "kind": "research",
-      "reference": "evidence:sha256:c61cf34d03e498885038195182b1dba02483456d033be99ecd69c0bc0e35de62",
-      "revision": "43091205a0c2e58839f5527408b40f2fb875ae5700330405f3496ee062ee4558"
-    },
     "source:f39c9cbe5c3c366facb0f8ca": {
       "kind": "research",
       "reference": "evidence:sha256:7c384a90f49f7d0148bc368dbae4c5274978de83ee7f1c2dff66b6751dac5348",
@@ -3498,11 +3278,6 @@
       "kind": "research",
       "reference": "evidence:sha256:47b8561b2ae6f1cde4d2a2abe248c645bab84a8d6682544813d38bacd9563cc6",
       "revision": "85d0b94ab6972c381a5267d708c9e38b9bfec03f55b9960f8abf2f2a9593c292"
-    },
-    "source:fffd98826584f580100eceb7": {
-      "kind": "research",
-      "reference": "evidence:sha256:e79a32f32c4e2a212ea71626de4990d120ff46a9ef7f29388b8ccca900966b32",
-      "revision": "ab8ffa4417be599de3ce7ce1f83353b6547083c1216ed4e1f8cbe3191c47dd4a"
     }
   },
   "version": 1

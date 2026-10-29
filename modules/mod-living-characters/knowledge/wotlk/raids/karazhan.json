@@ -673,7 +673,7 @@
             "source:26d89c6517bd1e22c5c9d48b",
             "source:f054dfeb92ff5518c08adf30"
           ],
-          "text": "A phantom guardsman defending Karazhan’s tower, this spirit calls others to arms when intruders arrive. In combat it can summon a phantom hound, reinforcing its role as a supernatural tower guard.",
+          "text": "A phantom guardsman defending Karazhan's tower, this spirit cries \"To arms!\" and \"Protect the tower!\" when intruders arrive, and can summon a phantom hound.",
           "when": {
             "entry": 16425
           }
@@ -1026,7 +1026,7 @@
             "source:f971173b63325354ebf6b4d7",
             "source:d6a0840f1ae1d46dc258ddd2"
           ],
-          "text": "Chaotic Sentience is a hostile entity found in Karazhan. In combat, it attacks with Unstable Magic.",
+          "text": "Chaotic Sentience is a hostile elemental entity in Karazhan that lashes out with Unstable Magic.",
           "when": {
             "entry": 16489
           }
@@ -1123,7 +1123,7 @@
             "source:71a677c8a3e7c8009b47a74b",
             "source:c4bffddfa39735b57e23b798"
           ],
-          "text": "The Shade of Aran identifies himself as Nielas Aran and refers to Medivh as his son, saying the son has gone mad. His combat words suggest he believes himself trapped in torment: he reacts with alarm, fights with fire and frost, and pleads for the nightmare to end. When he sees Atiesh, he asks whether an unidentified “he” sent you.",
+          "text": "The Shade of Aran identifies himself as Nielas Aran and refers to Medivh as his son, saying the son has gone mad. His combat words suggest he believes himself trapped in torment: he reacts with alarm, fights with fire and frost, and pleads for the nightmare to end. Shown Atiesh, he demands where it came from and asks if some \"HE\" sent the bearer.",
           "when": {
             "entry": 16524
           }
@@ -1507,7 +1507,7 @@
             "source:afc769fe3ceefd9b3b6219f5",
             "source:12bbcca8a372a3c5834bc077"
           ],
-          "text": "The Echo of Medivh oversees a game of skill in Karazhan, requiring visitors to beat him before passing his hall. He warns against complacency and lapses in concentration, insists on perfection and can cheat to change the situation. After being beaten, he invites visitors to test their skills against one another.",
+          "text": "The Echo of Medivh guards his hall with a game of skill, requiring challengers to defeat him before they pass. He warns against complacency and lapses in concentration, insists on perfection and cheats when it suits him. Once beaten, he invites challengers to test their skills against one another.",
           "when": {
             "entry": 16816
           }
@@ -1556,7 +1556,7 @@
             "source:7c64f33fb294feb4bfbc4958",
             "source:1f34f4f46afe465e8981232c"
           ],
-          "text": "Ythyar is a vendor whose greeting remarks on the odd place to find customers.",
+          "text": "Ythyar is a vendor who greets visitors by remarking that Karazhan is an odd place to find potential customers.",
           "when": {
             "entry": 17518
           }
@@ -1718,27 +1718,6 @@
       "title": null
     },
     {
-      "entry": 22524,
-      "name": "Karazhan - Chess, Victory Controller",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:22524:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:7318b4bdc212d128622ab24b",
-            "source:8fc8587baea1abb84376131b"
-          ],
-          "text": "A mechanical controller named for victory in Karazhan's chess encounter.",
-          "when": {
-            "entry": 22524
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 28194,
       "name": "Prince Tenris Mirkblood",
       "records": [
@@ -1761,28 +1740,6 @@
         }
       ],
       "title": "The San'layn"
-    },
-    {
-      "entry": 28485,
-      "name": "Blood Vat Bunny",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:28485:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b822a33653fd23b077f5e96f",
-            "source:78ebc5ab4df192a55b95d465",
-            "source:977e4a085f9fd820ce0249ac"
-          ],
-          "text": "A Blood Vat bunny that casts the spell “Scourge Invasion Blood Vat Bunny.”",
-          "when": {
-            "entry": 28485
-          }
-        }
-      ],
-      "title": ""
     }
   ],
   "place": "Karazhan",
@@ -2459,11 +2416,6 @@
       "reference": "evidence:sha256:242a8d07307656ded9755ac43d58e0cd18b7fa9ff7c5e95341bd484f398e7dcd",
       "revision": "c6975c1dc63c94becc5ee105c62faeb9199cbd3030e3ba4f19a8596b0e59e11b"
     },
-    "source:7318b4bdc212d128622ab24b": {
-      "kind": "research",
-      "reference": "evidence:sha256:62af9fd1209a3f931758fc1078a1c2fd56955aeb3604eea2b52638ab98ff28c9",
-      "revision": "cf36e031cccc9cdcf14942e3772da17f59cbfede6957f163c04eb9b39a7e582d"
-    },
     "source:737cb18403c40669043849f5": {
       "kind": "research",
       "reference": "evidence:sha256:bc842e2d8c31e20d08456d7e3d28ad27edac1a0a89674da9da81cccab4d1190d",
@@ -2498,11 +2450,6 @@
       "kind": "research",
       "reference": "evidence:sha256:f38345b4b1e0385f1b5fe9af6f54441aeb57c5f8ed6050ecab445e423ceddef7",
       "revision": "a0c74c6901ab237e7c12fe45f80b21eeff72a1520bb02b5ab6d21e303c577fcf"
-    },
-    "source:78ebc5ab4df192a55b95d465": {
-      "kind": "research",
-      "reference": "evidence:sha256:5b169f4c34f78605516562b5c50455662778390fe950fcfde93dddad20b7e734",
-      "revision": "cf36e031cccc9cdcf14942e3772da17f59cbfede6957f163c04eb9b39a7e582d"
     },
     "source:798c848abebb7adc8543730f": {
       "kind": "research",
@@ -2644,11 +2591,6 @@
       "reference": "evidence:sha256:65cc7a7c3307e8af012d8803c6645c61b00c847d99430125b66a3ccb372284ea",
       "revision": "04af79c1d36f443227c3c8c194ed93b1bb69d1b8fe9c02a01e3151d53cfab134"
     },
-    "source:8fc8587baea1abb84376131b": {
-      "kind": "research",
-      "reference": "evidence:sha256:ae6d7c60ef660c3c585c3a9963fc7a3be61f70fbde07bfae43546265da1b78c1",
-      "revision": "cf36e031cccc9cdcf14942e3772da17f59cbfede6957f163c04eb9b39a7e582d"
-    },
     "source:90b14e8dcd9cacf64bffa3f3": {
       "kind": "research",
       "reference": "evidence:sha256:86d929c1628f375f18459505b25596caf8219ffa0804b3f74e9924f80d56bf76",
@@ -2688,11 +2630,6 @@
       "kind": "research",
       "reference": "evidence:sha256:e21c0b1ec5ecb28198c82687a2c9f969716cf7597726026e9c9f9904c9270b16",
       "revision": "2d7c5248b6492dcfed6167212ac793ef54a83542a7803022de810507135251e0"
-    },
-    "source:977e4a085f9fd820ce0249ac": {
-      "kind": "research",
-      "reference": "evidence:sha256:75e18c4867d4cd9d3eade19836921ac1530262daeaac22abc73411f69e1ec082",
-      "revision": "cf36e031cccc9cdcf14942e3772da17f59cbfede6957f163c04eb9b39a7e582d"
     },
     "source:9880bac25d8d0fb12b14b867": {
       "kind": "research",
@@ -2903,11 +2840,6 @@
       "kind": "research",
       "reference": "evidence:sha256:6883de39d32b784e1feb6a82d361bb99d9469cc8129372ab0e91094dea604736",
       "revision": "c6975c1dc63c94becc5ee105c62faeb9199cbd3030e3ba4f19a8596b0e59e11b"
-    },
-    "source:b822a33653fd23b077f5e96f": {
-      "kind": "research",
-      "reference": "evidence:sha256:33dfcc09de76231443dfb2a2e3ff341bac7b7a67a03e6c42411d6805141eec64",
-      "revision": "cf36e031cccc9cdcf14942e3772da17f59cbfede6957f163c04eb9b39a7e582d"
     },
     "source:b945cc0b14d1c59b7d49494d": {
       "kind": "research",

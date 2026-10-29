@@ -38,7 +38,7 @@
             "source:ef56a4ddcc2490ae84eb3b44",
             "source:8b6507db6b7ab5f6225c3e67"
           ],
-          "text": "A restless shade is an undead combatant that casts Curse of Weakness in combat.",
+          "text": "A restless shade is an undead that weakens its foes with Curse of Weakness.",
           "when": {
             "entry": 7370
           }
@@ -104,7 +104,7 @@
             "source:7c91028a4548e441447977c8",
             "source:0039ef529be6ed023e6a5603"
           ],
-          "text": "Sky Shadow is a beast that casts Rend in combat.",
+          "text": "Sky Shadow is a beast that rends its foes.",
           "when": {
             "entry": 7376
           }
@@ -129,7 +129,7 @@
             "source:79149764e4286087fd38e594",
             "source:b4fb00670c3dff3fdb9a9275"
           ],
-          "text": "A Deadwind ogre mage is a humanoid combatant that uses Lightning Shield outside combat and Lightning Bolt and Bloodlust in combat, including Bloodlust when badly hurt.",
+          "text": "A Deadwind ogre mage is a humanoid who wards itself with lightning, hurls lightning bolts and works itself into a bloodlust, especially when badly hurt.",
           "when": {
             "entry": 7379
           }
@@ -151,7 +151,7 @@
             "source:9d4a97d981ba24ac1f24ae2e",
             "source:d9174eab9d22b11292a04af2"
           ],
-          "text": "A wailing spectre is an undead combatant that casts Cry of the Dead in combat.",
+          "text": "A wailing spectre is an undead that wails a Cry of the Dead at its foes.",
           "when": {
             "entry": 12377
           }
@@ -173,7 +173,7 @@
             "source:3f8eecf4a2ac04d4d8502b68",
             "source:edb654efccc5470b917edd13"
           ],
-          "text": "A damned soul is an undead combatant that casts Shadow Bolt in combat.",
+          "text": "A damned soul is an undead that hurls Shadow Bolts.",
           "when": {
             "entry": 12378
           }
@@ -196,7 +196,7 @@
             "source:bde57870de1a2f5a063abbb9",
             "source:66b2ad08f06c35e7dff53b4b"
           ],
-          "text": "An undead figure known as an Unliving Caretaker appears among the creatures around Karazhan. It uses Debilitating Strike in combat and can enrage at low health, becoming more dangerous as a fight goes on.",
+          "text": "An Unliving Caretaker is an undead found around Karazhan that strikes to debilitate its foes and flies into an enrage when badly hurt.",
           "when": {
             "entry": 12379
           }
@@ -219,7 +219,7 @@
             "source:d19b252306d5ea9a1a5f7f12",
             "source:07de313146e91b6f1eaa7db6"
           ],
-          "text": "An undead resident found around Karazhan, this creature fights with Sunder Armor and Kick. The abilities mark it as a direct melee threat among the area's restless inhabitants.",
+          "text": "An Unliving Resident is an undead found around Karazhan that sunders armor and kicks.",
           "when": {
             "entry": 12380
           }
@@ -247,50 +247,6 @@
           "text": "Archmage Alturus is a Violet Eye agent of the Kirin Tor, assigned to watch Karazhan and Medivh. He is an inquisitive, determined researcher, pursuing the tower's secrets and evidence of Medivh's lingering essence. The danger within Karazhan concerns him; he seeks help investigating it and warns that a demonic presence must be stopped.",
           "when": {
             "entry": 17613
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 18161,
-      "name": "Underground Well Credit Marker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:18161:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:46e598049facc28e368c1dbd",
-            "source:6c72551e499ddf7bdb6406c4",
-            "source:982e25a55be6b285c86d9603"
-          ],
-          "text": "The underground well is a scrying objective in the Master's Cellar.",
-          "when": {
-            "entry": 18161
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 18162,
-      "name": "Underground Pond Credit Marker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:18162:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:46e598049facc28e368c1dbd",
-            "source:0c5725b65ee5d4f5d4ce5108",
-            "source:7f2b9f68885affac0f051726"
-          ],
-          "text": "The underground pond is a scrying objective in the Master's Cellar.",
-          "when": {
-            "entry": 18162
           }
         }
       ],
@@ -337,7 +293,7 @@
             "source:7023f9a4149fc5c7d7b0a249",
             "source:0b7283e4ce25baf8ec627463"
           ],
-          "text": "Apprentice Darius is a vendor in Deadwind Pass; visitors can browse his goods.",
+          "text": "Apprentice Darius sells goods in Deadwind Pass.",
           "when": {
             "entry": 18255
           }
@@ -505,11 +461,6 @@
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
       "revision": "c1b9c8051762f102b462e4621840b2dd1f829bc9037b3ea078cd9bf5e7dc9722"
     },
-    "source:0c5725b65ee5d4f5d4ce5108": {
-      "kind": "research",
-      "reference": "evidence:sha256:ddf005f8a8e3f2c96ea5de1c90d8b781e3702c89357d9dad175a13acff44d10c",
-      "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
-    },
     "source:0e240997f2215ba8da5211b4": {
       "kind": "research",
       "reference": "evidence:sha256:48565f495f963d88cb3e58b7bc8255f2f9cca03b538380ebf1079eaed49e1ff7",
@@ -615,11 +566,6 @@
       "reference": "evidence:sha256:1ead4049ce55bcfb94e850ac41dd7aef346010218b8cc5b050b82a65811a1b3e",
       "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
     },
-    "source:6c72551e499ddf7bdb6406c4": {
-      "kind": "research",
-      "reference": "evidence:sha256:7760483be4d81347e25e14097ea0ac1eaa9d23ddd608c83df71b47f1d526eaec",
-      "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
-    },
     "source:6d1193ea460b08cf9054d23c": {
       "kind": "research",
       "reference": "evidence:sha256:861ae6bc4b0c32a790b311a124ca98a2bd67eccc317182ceb250174f4790452b",
@@ -640,11 +586,6 @@
       "reference": "evidence:sha256:6b4833320a44a0c4c40dd053f4f2d5183541510a4c5d116d2cbebb87dcace025",
       "revision": "62cdc66c2b7eef033adc26a43190b43532b02b307a36cde1d6cfe5f321406dc8"
     },
-    "source:7f2b9f68885affac0f051726": {
-      "kind": "research",
-      "reference": "evidence:sha256:bb9b7a1c08e6434d5cc2f0584d01a51aa07bf5b32fc12e152d0f2dce2cfd96e2",
-      "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
-    },
     "source:878f7e01ab8baacbccd5a539": {
       "kind": "research",
       "reference": "evidence:sha256:d8209fe9dc5609eae91aa738285d10ad7136bacea2d907ef0a6666f0fac3dff8",
@@ -659,11 +600,6 @@
       "kind": "research",
       "reference": "evidence:sha256:8ddbcdab6117967a2906ddfe79d8354efc6c4f9192f22ef76203e6351269761e",
       "revision": "c1b9c8051762f102b462e4621840b2dd1f829bc9037b3ea078cd9bf5e7dc9722"
-    },
-    "source:982e25a55be6b285c86d9603": {
-      "kind": "research",
-      "reference": "evidence:sha256:220c8f70aaf9b0885399cfafb35eae7dfdbd97949ebe791ba23d9398e356d247",
-      "revision": "4cdec5add6bcc5eb1e03ea3d4cee477f2ef71c18e516049a6d1f1f1079b3de9a"
     },
     "source:9d4a97d981ba24ac1f24ae2e": {
       "kind": "research",

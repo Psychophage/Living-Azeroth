@@ -206,7 +206,7 @@
             "source:140813ea47139a6077ed9f18",
             "source:5eefdf1df84754992b1732ee"
           ],
-          "text": "A Coilfang warrior who enters Defensive Stance when attacked and uses Battle Shout and Mortal Blow in combat.",
+          "text": "A Coilfang warrior who takes a defensive stance when attacked, shouting battle cries and landing mortal blows.",
           "when": {
             "entry": 17802
           }
@@ -274,7 +274,7 @@
             "source:8db227114ed59cd07230bf67",
             "source:1fee407e837cf79783a34984"
           ],
-          "text": "A Coilfang Water Elemental found in Coilfang Reservoir. In combat, it can cast Water Bolt Volley.",
+          "text": "A Coilfang water elemental of Coilfang Reservoir that hurls volleys of water bolts.",
           "when": {
             "entry": 17917
           }
@@ -296,7 +296,7 @@
             "source:b2661703af044296b15dda49",
             "source:199b62e2fd5870ffb8397e29"
           ],
-          "text": "A Steamrigger Mechanic is a humanoid mechanic in Coilfang Reservoir who can cast Repair in combat.",
+          "text": "A humanoid Steamrigger mechanic of Coilfang Reservoir who can repair even in the midst of a fight.",
           "when": {
             "entry": 17951
           }
@@ -317,32 +317,9 @@
             "source:2b56dcd4dacaef67d1d11d1d",
             "source:b0e84929adfe8e381e18c524"
           ],
-          "text": "A mechanical distiller found in Coilfang Reservoir.",
+          "text": "A mechanical naga distiller in the Steamvault.",
           "when": {
             "entry": 17954
-          }
-        }
-      ],
-      "title": null
-    },
-    {
-      "entry": 20926,
-      "name": "Coilfang Door Controller",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:20926:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:09adc3cc4e9125be7cc818e2",
-            "source:0dc409c69c8a2548d12a57c5",
-            "source:81137394f2a8eb26d848e08b",
-            "source:4ee51d9ccbef2e7871b6937e"
-          ],
-          "text": "A Coilfang door-control device in Coilfang Reservoir. Using its access panel is accompanied by a faint echo; when the main door opens, a loud rumble of metal grinding on stone is heard.",
-          "when": {
-            "entry": 20926
           }
         }
       ],
@@ -362,7 +339,7 @@
             "source:863379107ac8fbc7515d0a5b",
             "source:6eb0d0983a73c51855c04823"
           ],
-          "text": "A humanoid Coilfang Leper in Coilfang Reservoir. It can cast Heal on an injured ally.",
+          "text": "A humanoid Coilfang leper in Coilfang Reservoir who heals badly hurt allies.",
           "when": {
             "entry": 21338
           }
@@ -389,7 +366,7 @@
             "source:95d8803f93a51536be112414",
             "source:58bb54a8b6e0f9af6b8073fd"
           ],
-          "text": "A giant with a combat-focused presence, the Bog Overlord uses Fungal Decay while out of combat, then attacks with Poison Bolt and Trample. When badly wounded, it enrages and gives an angry battle shout.",
+          "text": "A giant that spreads Fungal Decay, then fights with Poison Bolt and Trample. Badly wounded, it becomes enraged.",
           "when": {
             "entry": 21694
           }
@@ -411,7 +388,7 @@
             "source:d78b7503938c6f0f64c50996",
             "source:8c2201a4e1da2f4ed934ab3a"
           ],
-          "text": "An elemental, Tidal Surger casts Water Spout while fighting. This gives the surger a clear water-themed combat identity.",
+          "text": "A water elemental of the Steamvault that raises a Water Spout against its foes.",
           "when": {
             "entry": 21695
           }
@@ -433,7 +410,7 @@
             "source:9fea79fb3118f06d9a6c4139",
             "source:96eeea66a886c2dadb653396"
           ],
-          "text": "An elemental, Steam Surger attacks with Water Bolt during combat. The name and spell give this surger a steam-and-water theme within its combat role.",
+          "text": "A steam elemental of the Steamvault that hurls bolts of water.",
           "when": {
             "entry": 21696
           }
@@ -490,16 +467,6 @@
       "kind": "research",
       "reference": "evidence:sha256:3975f145c3edab357a5ff115ee384c79e7c753ebc6d6950cd263182b9e9415c7",
       "revision": "371c006791264420e3536534ff574188282d099cb98ec24adc4f24f0d7197c6b"
-    },
-    "source:09adc3cc4e9125be7cc818e2": {
-      "kind": "research",
-      "reference": "evidence:sha256:a222f6037855962012ac4a944498ee2f29b1f7078a8151453f6fca4809f23064",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:0dc409c69c8a2548d12a57c5": {
-      "kind": "research",
-      "reference": "evidence:sha256:10ff88f167e8d55f476f653c0357d31e6c8cf54b9373ef6a54aada665906192b",
-      "revision": "eccf826c2afcf7ce17571a669554e6764aac978220937df2f4ca2121932ad89a"
     },
     "source:0e3c2097f158d632ff50cd01": {
       "kind": "research",
@@ -606,11 +573,6 @@
       "reference": "evidence:sha256:9bb2eee5ecbf1b922b918f59a38f6a60947d51b4bec4394885f712b6f2a77dd8",
       "revision": "371c006791264420e3536534ff574188282d099cb98ec24adc4f24f0d7197c6b"
     },
-    "source:4ee51d9ccbef2e7871b6937e": {
-      "kind": "research",
-      "reference": "evidence:sha256:1a5523dca32e6f796bb7e4747dd9ce5d5c8ee2eeeedb98d60b08139722244765",
-      "revision": "eccf826c2afcf7ce17571a669554e6764aac978220937df2f4ca2121932ad89a"
-    },
     "source:58bb54a8b6e0f9af6b8073fd": {
       "kind": "research",
       "reference": "evidence:sha256:977d9feb13dd57a2deaba9d0bdff171472c9e314a2fe88618e738ad324cb2ced",
@@ -640,11 +602,6 @@
       "kind": "research",
       "reference": "evidence:sha256:16cdb5e93c689f56fae4e2ea872eef85b5595463ddbe275f2bc2e10f4b9ea941",
       "revision": "fd69133cb4f73ebc2e7fe277bcaac3689867ebd260aea7d6b696045eba284495"
-    },
-    "source:81137394f2a8eb26d848e08b": {
-      "kind": "research",
-      "reference": "evidence:sha256:883031bf40966a8195cd73fa5d758e3696fcd5a68ceda7e55930b13f61bd5df5",
-      "revision": "eccf826c2afcf7ce17571a669554e6764aac978220937df2f4ca2121932ad89a"
     },
     "source:863379107ac8fbc7515d0a5b": {
       "kind": "research",

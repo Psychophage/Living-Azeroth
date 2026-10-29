@@ -4,27 +4,6 @@
   "map": 603,
   "npcs": [
     {
-      "entry": 32780,
-      "name": "Invisible Stalker (All Phases)",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:32780:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:5f2f7ff441b3ccea4512cfa1",
-            "source:b30492272ad906718cf45d02"
-          ],
-          "text": "An Invisible Stalker found in Ulduar.",
-          "when": {
-            "entry": 32780
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 32845,
       "name": "Hodir",
       "records": [
@@ -64,7 +43,7 @@
             "source:5b77ff17fcda2c48ead250fd",
             "source:bf69b833a4dc7141844b5991"
           ],
-          "text": "Stormcaller Brundir is an Ulduar boss who dismisses challengers as mere mortals. He attacks with blinding light and calls down deadly storms from the air. At death, he declares that the storm's power lives on, making that force central to his identity.",
+          "text": "Stormcaller Brundir is a hostile master of storms in Ulduar who dismisses challengers as mere mortals. He blinds foes with light and calls down deadly storms from the air. Dying, he declares that the power of the storm lives on.",
           "when": {
             "entry": 32857
           }
@@ -345,7 +324,7 @@
             "source:fbea1f259a3977387a979040",
             "source:45f8ce38784eae69d5bdc947"
           ],
-          "text": "Runemaster Molgeim is a hostile Ulduar boss who wields death and storm runes. He regards mortals’ losses as insignificant, calls their deaths the price of arrogance, and promises that the legacy of storms will endure. His declaration that the Assembly of Iron is adjourned places him in that gathering.",
+          "text": "Runemaster Molgeim is a hostile runemaster of the Assembly of Iron in Ulduar who wields death and storm runes. He calls mortals' losses insignificant and vows that the legacy of storms shall not be undone.",
           "when": {
             "entry": 32927
           }
@@ -371,31 +350,9 @@
             "source:9c801396805ea9d180806687",
             "source:09cf1a4fad0a2a44500fe4e7"
           ],
-          "text": "Kologarn is an Ulduar boss who bars passage and challenges intruders. Its combat lines dismiss injuries to its arms as minor and taunt its opponents with blunt claims of failure and oblivion.",
+          "text": "Kologarn bars the way in Ulduar, shrugging off wounds to its arms as scratches and taunting intruders that they fail and face oblivion.",
           "when": {
             "entry": 32930
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 33089,
-      "name": "Dark Matter",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:33089:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:8b45e69e31a50ca9c2a4508a",
-            "source:09bae50ff59df48d6c00ade9",
-            "source:b30492272ad906718cf45d02"
-          ],
-          "text": "Dark Matter in Ulduar.",
-          "when": {
-            "entry": 33089
           }
         }
       ],
@@ -632,7 +589,7 @@
             "source:130ef379ef0d4db554c4f308",
             "source:c65fc8ba491bb754206c9d96"
           ],
-          "text": "A Steelforged Defender is one of Ulduar's forged guardians, armed with Lightning Bolt.",
+          "text": "A forged guardian of Ulduar that hurls lightning at its foes.",
           "when": {
             "entry": 33236
           }
@@ -654,7 +611,7 @@
             "source:c4f53a88c000792365fa053e",
             "source:6dba0ed70d3b6088f9e1cbe4"
           ],
-          "text": "A massive Ulduar colossus that attacks with Ground Slam.",
+          "text": "A massive colossus of Ulduar that smashes the ground with great slams.",
           "when": {
             "entry": 33237
           }
@@ -761,28 +718,6 @@
       "title": ""
     },
     {
-      "entry": 33337,
-      "name": "XT-Toy Pile",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:33337:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:42648bfb6ef8d90ee2621ad4",
-            "source:55749ad04e6f1a4b42a24824",
-            "source:b30492272ad906718cf45d02"
-          ],
-          "text": "XT-Toy Pile is a named presence in Ulduar.",
-          "when": {
-            "entry": 33337
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 33350,
       "name": "Mimiron",
       "records": [
@@ -822,7 +757,7 @@
             "source:1f4227cac24dfc62c404eac5",
             "source:4c7e310a48dbf8f2f5d6c766"
           ],
-          "text": "Corrupted Servitor is a combat creature that casts Petrify Joints and Violent Earth.",
+          "text": "A corrupted servitor in Ulduar that petrifies the joints of its foes and shakes the earth violently.",
           "when": {
             "entry": 33354
           }
@@ -845,30 +780,9 @@
             "source:b3a80e7ed85dc9c7ec89b96a",
             "source:39c2a9c550c3ea32eca5c074"
           ],
-          "text": "Misguided Nymph is a creature that casts Frost Spear.",
+          "text": "A misguided nymph in Ulduar that hurls spears of frost.",
           "when": {
             "entry": 33355
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 33378,
-      "name": "Thunder Orb",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:33378:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:df3cbb738bfeac1e688453ea",
-            "source:faf1f11ddc67dc278831894c"
-          ],
-          "text": "Thunder Orb is an encounter entity.",
-          "when": {
-            "entry": 33378
           }
         }
       ],
@@ -888,7 +802,7 @@
             "source:25d50ddfada2fb58ee4faf7c",
             "source:92b0c6a78e714b6cd7f0c04d"
           ],
-          "text": "Leviathan Mk II is a named, massive mechanical combatant in Ulduar. It begins to cast Plasma Blast.",
+          "text": "A massive mechanical leviathan in Ulduar that fires Plasma Blasts.",
           "when": {
             "entry": 33432
           }
@@ -936,7 +850,7 @@
             "source:bd540fcd1f7de03441a4d568",
             "source:2c2a5fb31899547fdef918c4"
           ],
-          "text": "Nature's Blade is a combatant at Ulduar. Its attacks include Living Tsunami.",
+          "text": "A fighter in Ulduar that sends living tsunamis against its foes.",
           "when": {
             "entry": 33527
           }
@@ -959,30 +873,9 @@
             "source:f3fd9d0659c5b0dcdcf8a91d",
             "source:68ad767dc3bb0ae49f371319"
           ],
-          "text": "Guardian of Life is a combatant at Ulduar. Its attacks include Poison Breath.",
+          "text": "A guardian of life in Ulduar that breathes poison on its foes.",
           "when": {
             "entry": 33528
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 33571,
-      "name": "Ulduar Gauntlet Generator",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:33571:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:4248c26f208bf591d8c74d39",
-            "source:3a1cb54e616418b657cd1440"
-          ],
-          "text": "The Ulduar Gauntlet Generator is a scripted mechanism used in the Storm Beacon spawn sequence.",
-          "when": {
-            "entry": 33571
           }
         }
       ],
@@ -1092,7 +985,7 @@
             "source:28fb4d5b8c3c42e2fb1c6990",
             "source:55c51c196e4f17194fc76163"
           ],
-          "text": "An Explorer's League engineer still trying to understand unfamiliar technology, they admit the device is beyond them but insist they have not given up. Their caution tempers their determination: they ask the player not to expect a quick breakthrough.",
+          "text": "An Explorer's League engineer in Ulduar who can't figure out how the technology works. They admit it is beyond them but say they haven't given up, and warn against expecting a quick breakthrough.",
           "when": {
             "entry": 33626
           }
@@ -1143,27 +1036,6 @@
         }
       ],
       "title": "Senior Siege Engineer"
-    },
-    {
-      "entry": 33661,
-      "name": "Armsweep Stalker Kologarn",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:33661:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:90bc3e97592e4e1157ef6e0b",
-            "source:b30492272ad906718cf45d02"
-          ],
-          "text": "Armsweep Stalker Kologarn is found in Ulduar.",
-          "when": {
-            "entry": 33661
-          }
-        }
-      ],
-      "title": ""
     },
     {
       "entry": 33662,
@@ -1361,7 +1233,7 @@
             "source:a6325b1ee2a6aeb4f967e037",
             "source:e915b1e08b6bce0814b2dc8b"
           ],
-          "text": "A Dark Rune Thunderer is an elite Dark Rune combatant in Ulduar.",
+          "text": "A powerful Dark Rune fighter in Ulduar.",
           "when": {
             "entry": 33754
           }
@@ -1382,7 +1254,7 @@
             "source:4678670c704d9f8681d7b575",
             "source:4e1ffdba521e0382a919eb8a"
           ],
-          "text": "A Dark Rune Ravager is an elite Dark Rune combatant in Ulduar.",
+          "text": "A powerful Dark Rune fighter in Ulduar.",
           "when": {
             "entry": 33755
           }
@@ -1404,7 +1276,7 @@
             "source:2eb282b027aa6e8836d4397f",
             "source:7954548df5d3bcca7a536db7"
           ],
-          "text": "A Faceless Horror is a powerful hostile creature encountered in Ulduar. Its combat behavior includes casting a spell.",
+          "text": "A hostile Faceless Horror lurking in Ulduar.",
           "when": {
             "entry": 33772
           }
@@ -1425,7 +1297,7 @@
             "source:6e9df9c1a2cdd19e8b55b92c",
             "source:f016f85048549a428d5c319b"
           ],
-          "text": "A Twilight Adherent is one of the combatants found in Ulduar.",
+          "text": "A Twilight Adherent in Ulduar that fights with Arcane Burst.",
           "when": {
             "entry": 33818
           }
@@ -1446,7 +1318,7 @@
             "source:f4924666944a8b9347d83c6f",
             "source:438947b0c3e6439b77fa73a6"
           ],
-          "text": "A Twilight Frost Mage is one of the combatants found in Ulduar.",
+          "text": "A Twilight Frost Mage in Ulduar that fights with Arcane Burst.",
           "when": {
             "entry": 33819
           }
@@ -1467,7 +1339,7 @@
             "source:051ec4b1123f4f142a412128",
             "source:cd87dddaa6104cc43ce91a39"
           ],
-          "text": "A Twilight Pyromancer is a combatant that casts Arcane Burst.",
+          "text": "A Twilight spellcaster in Ulduar that bursts foes with arcane magic.",
           "when": {
             "entry": 33820
           }
@@ -1488,7 +1360,7 @@
             "source:c7f382cb1ba800306f9e9ec0",
             "source:e8259dac6d938a456da5c50f"
           ],
-          "text": "A Twilight Guardian is a combatant that casts Concussion Blow.",
+          "text": "A Twilight guardian in Ulduar that stuns foes with concussive blows.",
           "when": {
             "entry": 33822
           }
@@ -1509,7 +1381,7 @@
             "source:7b24096c3969ba5f8b2e674c",
             "source:26b6bd216340c662e9910754"
           ],
-          "text": "A Twilight Slayer is a combatant that casts Bladestorm.",
+          "text": "A Twilight slayer in Ulduar that whirls into a Bladestorm.",
           "when": {
             "entry": 33823
           }
@@ -1531,7 +1403,7 @@
             "source:b14f78b7df5feb4297393579",
             "source:54bcc082c1a13bd7aaa126b5"
           ],
-          "text": "Twilight Shadowblade is a combatant that casts Backstab and Fan of Knives.",
+          "text": "A Twilight blade in Ulduar that backstabs and throws a fan of knives.",
           "when": {
             "entry": 33824
           }
@@ -1629,7 +1501,7 @@
             "source:ee924bfd41cd7a9d963fce8b",
             "source:b0af5476aa74b5bbcd157910"
           ],
-          "text": "Sanctum Sentry is a creature whose name places it among the sanctum's guards.",
+          "text": "Sanctum Sentry is a beast that guards the sanctum.",
           "when": {
             "entry": 34014
           }
@@ -1676,7 +1548,7 @@
             "source:65ff3fdb09c5605ed281abca",
             "source:d15365538f4aef09aec9ce31"
           ],
-          "text": "Molten Colossus is a molten giant that casts Earthquake and Pyroblast.",
+          "text": "A molten giant that shakes the earth and hurls Pyroblast.",
           "when": {
             "entry": 34069
           }
@@ -1698,7 +1570,7 @@
             "source:1d041f4fe46dcb6cab9f9f46",
             "source:6a49225a6ae1f257a0e6377b"
           ],
-          "text": "Forge Construct is a construct in Ulduar's forge environment that casts Flame Emission.",
+          "text": "A construct of Ulduar's forge that spews flame.",
           "when": {
             "entry": 34085
           }
@@ -1720,30 +1592,9 @@
             "source:4864a9f74465e6b7ee24c37a",
             "source:77cdb0a82a6eab7f1d37d9e4"
           ],
-          "text": "Magma Rager is a magma creature that casts Fire Blast.",
+          "text": "A magma creature that lashes out with Fire Blast.",
           "when": {
             "entry": 34086
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 34096,
-      "name": "Auriaya Feral Defender Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34096:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:b5b29b56405340ad3d16dff5",
-            "source:b2ce52081786c2a0847c30e1"
-          ],
-          "text": "Auriaya Feral Defender Stalker.",
-          "when": {
-            "entry": 34096
           }
         }
       ],
@@ -1764,7 +1615,7 @@
             "source:22773b425836873e18e26d2d",
             "source:9a11b9217b3a6a72d6e60f5d"
           ],
-          "text": "Champion of Hodir is a named combatant in Ulduar's Halls of Winter. It uses Stomp and Freezing Breath in combat, marking it as a formidable encounter foe rather than a conversational figure.",
+          "text": "A champion of Hodir in Ulduar's Halls of Winter that stomps and breathes freezing cold.",
           "when": {
             "entry": 34133
           }
@@ -1786,7 +1637,7 @@
             "source:8f9fac0aaa5855ec0368ba61",
             "source:0879246c5117a135ce0deb1f"
           ],
-          "text": "Winter Revenant is a Ulduar Halls of Winter combatant. It casts Blizzard.",
+          "text": "A revenant of Ulduar's Halls of Winter that calls down blizzards.",
           "when": {
             "entry": 34134
           }
@@ -1808,7 +1659,7 @@
             "source:791d5f781d6b2640dea3ed20",
             "source:4d34d3d4df95267f3f02919e"
           ],
-          "text": "Winter Rumbler is a Ulduar Halls of Winter combatant. It casts Cone of Cold.",
+          "text": "A rumbler of Ulduar's Halls of Winter that blasts foes with a cone of cold.",
           "when": {
             "entry": 34135
           }
@@ -1916,7 +1767,7 @@
             "source:9f2276d9c546624467feb120",
             "source:914db5e3196481e2d74256d5"
           ],
-          "text": "Boomer XP-500 is a mechanical combat construct found in Ulduar.",
+          "text": "A mechanical construct in Ulduar.",
           "when": {
             "entry": 34192
           }
@@ -1939,7 +1790,7 @@
             "source:c4a26e033329c52b8fe02537",
             "source:0d3eb3495a21ac4717181ba2"
           ],
-          "text": "A Clockwork Sapper, a mechanical combatant found in Ulduar. It casts Energy Sap.",
+          "text": "A clockwork machine in Ulduar that saps its foes' energy.",
           "when": {
             "entry": 34193
           }
@@ -2005,7 +1856,7 @@
             "source:53d49b86bb19a00219ca2b69",
             "source:6f74ee5eeb817485513692eb"
           ],
-          "text": "Iron Menders are mechanical guardians in Ulduar. They cast Electro Shock.",
+          "text": "A mechanical guardian in Ulduar that shocks foes with electricity.",
           "when": {
             "entry": 34198
           }
@@ -2027,7 +1878,7 @@
             "source:d083008b2037f716d3c4c52d",
             "source:147fc0b599d591dac67b118e"
           ],
-          "text": "These Iron Dwarves are charged with lightning in Ulduar and use that charged power in combat.",
+          "text": "An Iron Dwarf in Ulduar, charged with lightning that powers its attacks.",
           "when": {
             "entry": 34199
           }
@@ -2071,7 +1922,7 @@
             "source:3ed241f651070f545d1ee052",
             "source:e4aeb4aed6e0f314c1540940"
           ],
-          "text": "Parts Recovery Technicians are mechanical figures in Ulduar's salvage area. Their combat repertoire includes a Mechano Kick.",
+          "text": "A mechanical technician in Ulduar's salvage area that kicks foes with a Mechano Kick.",
           "when": {
             "entry": 34267
           }
@@ -2431,11 +2282,6 @@
       "reference": "evidence:sha256:da6fb350b7b4fe1e0581f40eb3a424e2eebd3f69baa8bd8b84c2af266569b840",
       "revision": "c8f074746a7b03201f93128eb173656ac8e73313ef14eace7d8482b7d34b5548"
     },
-    "source:09bae50ff59df48d6c00ade9": {
-      "kind": "research",
-      "reference": "evidence:sha256:fd07341517ea0763f46bc52f8c0ee9de2b76473f5fc0cc453002809d5e115104",
-      "revision": "ba3c722c41d062fd12b4818e4744a376daa6be511d1fc8d0673ac18131d9f86d"
-    },
     "source:09cf1a4fad0a2a44500fe4e7": {
       "kind": "research",
       "reference": "evidence:sha256:0863ef6d443a3285e79f15a6876f6a753b69b35261672504a5945e099a0ab16f",
@@ -2761,11 +2607,6 @@
       "reference": "evidence:sha256:65c7e015d192f0349ecd80fb54b4e2db39094ee0e7d53198656f485c37d4e6e6",
       "revision": "2e73441f06ff3797ad6a3aa0f0474d726c4bf9e60e2a46aa210949ef0d4f503f"
     },
-    "source:3a1cb54e616418b657cd1440": {
-      "kind": "research",
-      "reference": "evidence:sha256:2f4397c53e6ab5d87109c9dfecf81bfd2117acd8e3496ab811f77ec434860027",
-      "revision": "a91fb935f90b4e40028acc9243c58c0c924847924a69535426218d622ac15c3a"
-    },
     "source:3a372cf32ba37b81a7850399": {
       "kind": "research",
       "reference": "evidence:sha256:fc6565062bea32bd28997f528ad64e42ad800a40cf3ce68ee20537c0f9cf17c2",
@@ -2801,20 +2642,10 @@
       "reference": "evidence:sha256:3ab451ff405f27d33b81e09a6d7f2f62c9126a0fe7a612ce4471af551f8dd0f7",
       "revision": "1e3b198f21c2afe2ce35d6089c3d7793c226b1cf75582c5ea28a71a831ac12ec"
     },
-    "source:4248c26f208bf591d8c74d39": {
-      "kind": "research",
-      "reference": "evidence:sha256:e07755db1e29da512c0207f345575fc47887c0db2208fd80ec565a73304aaeca",
-      "revision": "a91fb935f90b4e40028acc9243c58c0c924847924a69535426218d622ac15c3a"
-    },
     "source:42643284f8c9db96a9af7165": {
       "kind": "research",
       "reference": "evidence:sha256:bc03fe8a5139c50a07903c66dd565239c39453f259b32ec95be3062ece893380",
       "revision": "eb98a467bf40ecb49eab15534e5d13d2da8b32e2c9ff381124655671c3628bcb"
-    },
-    "source:42648bfb6ef8d90ee2621ad4": {
-      "kind": "research",
-      "reference": "evidence:sha256:caa40651a0cbc4671fff600eea579e2385ac4aa96eaff7d2458c3cfdecaad398",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:4281757bc7c7c89d2b3a52f6": {
       "kind": "research",
@@ -2936,11 +2767,6 @@
       "reference": "evidence:sha256:b41909bf56418e4f473b4c8a49d57d18fc84b57fc244499e0b15606457d6396b",
       "revision": "1e3b198f21c2afe2ce35d6089c3d7793c226b1cf75582c5ea28a71a831ac12ec"
     },
-    "source:55749ad04e6f1a4b42a24824": {
-      "kind": "research",
-      "reference": "evidence:sha256:c196b19dcf1c6c6ffad96b42e0f96e737f8d9d40869f4b639d1778b3e7e93b91",
-      "revision": "3ede096c7bc419f9c20740e91df8ee869afedb5c8819b942525490a76be4fe66"
-    },
     "source:55c51c196e4f17194fc76163": {
       "kind": "research",
       "reference": "evidence:sha256:a2bd264e4bd5caf4b9e44526118f08734c5382343cdaf9c80bd0c634a8168acc",
@@ -2990,11 +2816,6 @@
       "kind": "research",
       "reference": "evidence:sha256:05ca63e7f30644d3fb906923ae55761f43d99124d972c4d4f5f9b700bf29ae97",
       "revision": "be2ab0f3e8c2ce526bc22d51efb33e54efb5864871c20144cdbd0eef6c9c710e"
-    },
-    "source:5f2f7ff441b3ccea4512cfa1": {
-      "kind": "research",
-      "reference": "evidence:sha256:2683ecdce345045e925051d75d12c282ad759ba62b6be0477b031d91d8b75d96",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:607f82ced1447b1fb05fd75b": {
       "kind": "research",
@@ -3281,11 +3102,6 @@
       "reference": "evidence:sha256:50617aab55fec7b9b98b7d666371014c7f3741aff26c3179c0a4a524f65d0c1f",
       "revision": "bc0cfa2fd273b1a8985769dee9558c0540d555ae30c599065adf3886228778bd"
     },
-    "source:8b45e69e31a50ca9c2a4508a": {
-      "kind": "research",
-      "reference": "evidence:sha256:75b9765c50618553e8f0bc18b1ac67e191a8b27bd6f296d0fdd5ba97794a3c09",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:8d2f74841b947de77be5eded": {
       "kind": "research",
       "reference": "evidence:sha256:064cf0c8a7ae50925221bdbd029cb55b105168b61fc713c951432e3c564de637",
@@ -3320,11 +3136,6 @@
       "kind": "research",
       "reference": "evidence:sha256:3bf8b288f1350e3385426deb1e81015429cab438f4ed4e921d615d3213d0de00",
       "revision": "2e73441f06ff3797ad6a3aa0f0474d726c4bf9e60e2a46aa210949ef0d4f503f"
-    },
-    "source:90bc3e97592e4e1157ef6e0b": {
-      "kind": "research",
-      "reference": "evidence:sha256:4250976e4776f415910d3da2b662fce6d6f1f903e03cc05f04f4f603ad295317",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:914db5e3196481e2d74256d5": {
       "kind": "research",
@@ -3516,11 +3327,6 @@
       "reference": "evidence:sha256:7f7fe8ccf3f3a28268619907f668f17d6dafb5b3100c650f2289b6b5daca8197",
       "revision": "be2ab0f3e8c2ce526bc22d51efb33e54efb5864871c20144cdbd0eef6c9c710e"
     },
-    "source:b2ce52081786c2a0847c30e1": {
-      "kind": "research",
-      "reference": "evidence:sha256:1d258b7f435b342cad0ee08da35e2cb8a177bab1a856c198a0ab0d8aabae1adb",
-      "revision": "5e8949175aef33cf836add1f1426c772d2be35c6c37d62e9844af89a20469136"
-    },
     "source:b30492272ad906718cf45d02": {
       "kind": "research",
       "reference": "evidence:sha256:bf74bb4031a80a4244072b7514956fc8adf1b02a075452eddba962868b48f109",
@@ -3540,11 +3346,6 @@
       "kind": "research",
       "reference": "evidence:sha256:2fceb95fc7c386a9657ea0f8740758b98aec2c7e7c32d634ecbadfc6c4f9985d",
       "revision": "ba3c722c41d062fd12b4818e4744a376daa6be511d1fc8d0673ac18131d9f86d"
-    },
-    "source:b5b29b56405340ad3d16dff5": {
-      "kind": "research",
-      "reference": "evidence:sha256:daa99f74cd73632cee2a75ff8065e238a30bfded2ec235065103cdcd2f4d5a89",
-      "revision": "5e8949175aef33cf836add1f1426c772d2be35c6c37d62e9844af89a20469136"
     },
     "source:b6ed86ba907124163d2eb208": {
       "kind": "research",
@@ -3831,11 +3632,6 @@
       "reference": "evidence:sha256:cbd60c35b89a195aadc412a9629add46f7f5f32652b8f5fb7c88909f973537f1",
       "revision": "bc0cfa2fd273b1a8985769dee9558c0540d555ae30c599065adf3886228778bd"
     },
-    "source:df3cbb738bfeac1e688453ea": {
-      "kind": "research",
-      "reference": "evidence:sha256:dc82b6f3bc7663df92fb86b1d738cc4ccce2503b65d27831f3e0c24435f168b5",
-      "revision": "f0546fc20317835c2326bb5cd661e4f6b936146bbcb0a52db5a55a105cbbda3e"
-    },
     "source:dfc5dbf71ba5e5eb49ab04c7": {
       "kind": "research",
       "reference": "evidence:sha256:34a5238c4afb34c5d232f751e5340cf1b90418f9fbb8adb36d8cbf2179dd5a22",
@@ -4044,11 +3840,6 @@
     "source:fa7025f5fce3b03f45ecd5ae": {
       "kind": "research",
       "reference": "evidence:sha256:c25840c5b6ee9a511ffd35b95d137debb2f7d52853a8268b2bd9962b94867672",
-      "revision": "f0546fc20317835c2326bb5cd661e4f6b936146bbcb0a52db5a55a105cbbda3e"
-    },
-    "source:faf1f11ddc67dc278831894c": {
-      "kind": "research",
-      "reference": "evidence:sha256:3f694d887d7cce9de05eba8ad21ad07e1dcd70808c08c7ca6368ac8af3d8fc55",
       "revision": "f0546fc20317835c2326bb5cd661e4f6b936146bbcb0a52db5a55a105cbbda3e"
     },
     "source:fb0927cdf2fb98b716618054": {

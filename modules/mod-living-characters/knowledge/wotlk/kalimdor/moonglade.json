@@ -19,7 +19,7 @@
             "source:d0ce381fe0d5dc26b5a6f141",
             "source:53c90457451a42326ee43ba6"
           ],
-          "text": "Geenia Sunshadow is a specialty dress maker in the tailoring trade. She offers goods and can help with quests.",
+          "text": "Geenia Sunshadow is a specialty dress maker in the tailoring trade, selling her wares in Moonglade.",
           "when": {
             "entry": 4184
           }
@@ -88,7 +88,7 @@
             "source:1fab2b9b05d56659986c0967",
             "source:6ed859077caa232c23dba596"
           ],
-          "text": "Celes Earthborne is a quest-giver.",
+          "text": "Celes Earthborne is a resident of Moonglade who has work to give to visitors.",
           "when": {
             "entry": 11716
           }
@@ -376,7 +376,7 @@
             "source:329ced0378d45140e08e964e",
             "source:917afd9119a0bdc6121797a0"
           ],
-          "text": "Great Bear Spirit is a bear-shaped spiritual presence associated with a question about what it represents. It is calm and patient, saying nothing.",
+          "text": "Great Bear Spirit is a bear-shaped spirit that looks calmly and patiently at those who ask what it represents, and says nothing.",
           "when": {
             "entry": 11956
           }
@@ -465,7 +465,7 @@
             "source:43e4ff1300e0267c0a7e7fdd",
             "source:1e56127a6528bd75cf0998ec"
           ],
-          "text": "Lorelae Wintersong is a trade supplies merchant. Her listed services include browsing her goods, alongside her questgiver role.",
+          "text": "Lorelae Wintersong sells trade supplies in Moonglade.",
           "when": {
             "entry": 12022
           }
@@ -535,7 +535,7 @@
             "source:6114d27bd3222b5f09bada17",
             "source:10f3064933ca6cc5017173c0"
           ],
-          "text": "Malvor is an herbalism trainer. His listed training services also include options concerning talent specialization and unlearning talents or a pet's skills.",
+          "text": "Malvor is an herbalism trainer in Moonglade who teaches herbalism.",
           "when": {
             "entry": 12025
           }
@@ -558,7 +558,7 @@
             "source:43e4ff1300e0267c0a7e7fdd",
             "source:1e56127a6528bd75cf0998ec"
           ],
-          "text": "My'lanna is a food and drink merchant, offering provisions for travelers. Her listed services also include browsing her goods and quest assistance.",
+          "text": "My'lanna sells food and drink to travelers in Moonglade.",
           "when": {
             "entry": 12026
           }
@@ -626,7 +626,7 @@
             "source:8f7fa1cb3e1c504e32df57ad",
             "source:7f250cdb61038686f14a0162"
           ],
-          "text": "Faustron serves as a wind rider master in the Barrens and offers travelers fast flight.",
+          "text": "Faustron is a wind rider master in Moonglade who offers travelers fast flight.",
           "when": {
             "entry": 12740
           }
@@ -674,7 +674,7 @@
             "source:32cfb02fd95d2e087c9e8b79",
             "source:6502d9d75bac9b91336c84d0"
           ],
-          "text": "Lunar Festival Vendors offer goods for visitors to browse during the Lunar Festival. The same familiar vendor role appears in many regions.",
+          "text": "Lunar Festival Vendors sell festival goods during the Lunar Festival, and are found in many regions.",
           "when": {
             "entry": 15898
           }
@@ -696,7 +696,7 @@
             "source:93c0e0087f1b7e6868edc8b0",
             "source:af15ba3b66c8103c6e349615"
           ],
-          "text": "Fariel Starsong is a Coin of Ancestry Collector who says that, like a brother, Fariel honors those who honor their ancestors and takes joy in sharing crafting secrets with Lunar Festival disciples.",
+          "text": "Fariel Starsong is a Coin of Ancestry Collector who honors those who honor their ancestors and gladly shares crafting secrets with disciples of the Lunar Festival.",
           "when": {
             "entry": 15909
           }
@@ -717,7 +717,7 @@
             "source:0df91fd7aa214920c48ebe5f",
             "source:8942ae68f020068fb9ddfa00"
           ],
-          "text": "Lunar Festival Sentinels are elite humanoid guards stationed around festival grounds in several areas.",
+          "text": "Lunar Festival Sentinels are humanoid guards stationed around festival grounds in several areas.",
           "when": {
             "entry": 15961
           }
@@ -817,27 +817,6 @@
       "title": ""
     },
     {
-      "entry": 22902,
-      "name": "Phantasmal Lash",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:22902:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:02b1f246e0039eb5250dd007",
-            "source:4c2e02ba6ba7a7e054f7be4e"
-          ],
-          "text": "Phantasmal Lash is a named presence in Moonglade.",
-          "when": {
-            "entry": 22902
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 22916,
       "name": "Clintar Dreamwalker's Spirit",
       "records": [
@@ -850,7 +829,7 @@
             "source:72526d160f996b5249814b16",
             "source:e4939b07dc22522e0f3b18ba"
           ],
-          "text": "Clintar Dreamwalker's Spirit is a fragile fragment of Clintar, sent from the Emerald Dream to guide a search for the Relics of Aviana. It entrusts the relics to the player to carry to Morthis Whisperwing, then returns completely to the Dream. Clintar describes the spirit as fearful and vulnerable, and the Dream as alien and dangerous.",
+          "text": "Clintar Dreamwalker's Spirit is a fragile fragment of Clintar, sent from the Emerald Dream to guide a search for the Relics of Aviana. It entrusts the relics to a helper to carry to Morthis Whisperwing, then returns completely to the Dream. Clintar describes the spirit as fearful and vulnerable, and the Dream as alien and dangerous.",
           "when": {
             "entry": 22916
           }
@@ -1001,11 +980,6 @@
       "kind": "research",
       "reference": "evidence:sha256:bd6fcea5898660db00931db827a9d046dbd030968000a31a46747b4b22103c34",
       "revision": "5623df47d2797ac585fb93d6cb1a85e9271662647f3457eed2f9f3cd3b15089c"
-    },
-    "source:02b1f246e0039eb5250dd007": {
-      "kind": "research",
-      "reference": "evidence:sha256:a548f76fc30f6dccc028f5fdff243e41b2151b988ee3b33e82346fcc48c5e9f2",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:0622cda4f7793d8e02fe24f7": {
       "kind": "research",

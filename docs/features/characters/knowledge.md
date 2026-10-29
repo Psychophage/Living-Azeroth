@@ -7,7 +7,7 @@ API call. Ordinary dialogue, memory processing and selection use the shared budg
 
 ## The NPC summaries
 
-`modules/mod-living-characters/knowledge/wotlk/` holds a summary for 25,530 NPCs, one file per place:
+`modules/mod-living-characters/knowledge/wotlk/` holds a summary for 25,009 NPCs, one file per place:
 
 | Path | Holds |
 | --- | --- |
@@ -15,7 +15,7 @@ API call. Ordinary dialogue, memory processing and selection use the shared budg
 | `dungeons/`, `raids/`, `battlegrounds/`, `arenas/` | One file per instance |
 | `travel/` | Ships, zeppelins and the Deeprun Tram |
 | `no-fixed-place/` | NPCs with no static spawn (summoned, scripted, quest creatures), by entry ID |
-| `without-summary.json` | 4,417 NPCs deliberately left without one (`native only` or `excluded`), with the reason |
+| `without-summary.json` | 4,938 NPCs deliberately left without one (`native only` or `excluded`), with the reason |
 
 An NPC is filed under the zone the server reports for most of its spawns (the server's own lookup, which
 sees buildings such as Ironforge, Undercity and Dalaran; the terrain under them says Dun Morogh, Tirisfal
@@ -49,7 +49,9 @@ the place records were written by Claude Haiku from evidence packets built from 
 map data (2026-10-15; the cities, buildings and caves the map data could not see, and the dungeons, raids and
 battlegrounds with their encounter lists and entrances, were added on 2026-10-28 from the server's own placement
 of every spawn), each checked for citations, size, game terms and names not
-in the evidence.
+in the evidence. On 2026-10-29 Claude Sonnet polished the summaries: a reading pass flagged game language, spell
+lists, filler and unclear lines, a second pass rewrote 6,716 of them from their cited evidence only (same checks),
+and 521 hidden helpers, vehicles, objects and test creatures moved to `without-summary.json`.
 Neither has been play-tested broadly. Some are deliberately short where nothing more was supported;
 `authored: true` marks invented personality or policy rather than sourced fact. The research behind
 them (evidence, review decisions, the authoring tools and planning) is archived outside the
@@ -153,7 +155,7 @@ gameplay and information-sharing policy, not more generated lore.
 
 Northshire passed recorded-server checks for quest accept, completion and reward, per-player quest
 isolation, guild membership and shared reports, guard recall across watches, language comprehension
-and local context changes. With all summaries loaded the server holds 25,554 records; the recorded
+and local context changes. With all summaries and place records loaded the server holds 26,743 records; the recorded
 knowledge tests pass on it. Broad quest and zone knowledge (beyond NPC summaries) is not written yet:
 quest overlays need relevance selection before they can scale, because many matching overlays crowd
 out geography.

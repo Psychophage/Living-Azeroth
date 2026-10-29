@@ -28,47 +28,6 @@
       "title": ""
     },
     {
-      "entry": 30342,
-      "name": "Orgrim's Hammer",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:30342:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:a4b1bf3ff8f7f5cae6e161e5"
-          ],
-          "text": "Orgrim’s Hammer.",
-          "when": {
-            "entry": 30342
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 30649,
-      "name": "[DND] Icecrown Airship (H) - Cannon Target",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:30649:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:698e3140b82a38df7b24b74a",
-            "source:9bd516332a68f3b1e9c99f64"
-          ],
-          "text": "This Icecrown airship cannon target is a mechanical target associated with the airship’s cannon, rather than an individually identified character.",
-          "when": {
-            "entry": 30649
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 30752,
       "name": "Orgrim's Hammer Gunner",
       "records": [
@@ -81,7 +40,7 @@
             "source:6cef4d9d51ef87a4f3535044",
             "source:b4ad365e59f1f414f2483900"
           ],
-          "text": "An Orgrim's Hammer gunner is part of the airship's armed crew, serving aboard the vessel in a weapons role. The supplied records identify this as a humanoid crew member but give no individual biography or personal outlook.",
+          "text": "An armed crew member aboard the airship Orgrim's Hammer, serving in a weapons role.",
           "when": {
             "entry": 30752
           }
@@ -102,7 +61,7 @@
             "source:dbcdda2d6543c880f3b77034",
             "source:c059d2a2caefab2c95c558d5"
           ],
-          "text": "An Orgrim's Hammer engineer is part of the airship's working crew, serving aboard the vessel in an engineering role. The supplied records identify this as a crew member but give no individual biography or personal outlook.",
+          "text": "A crew engineer aboard the airship Orgrim's Hammer, keeping the vessel working.",
           "when": {
             "entry": 30753
           }
@@ -146,7 +105,7 @@
             "source:e6bf7c47aadec6d76bc82c36",
             "source:6a0a9a6fccb90a4f6202cd47"
           ],
-          "text": "A Kor'kron Reaver in Crystalsong Forest.",
+          "text": "A Kor'kron Reaver, a soldier aboard Orgrim's Hammer.",
           "when": {
             "entry": 30755
           }
@@ -237,7 +196,7 @@
             "source:c1aea4208d1a68c1d0ba8b2e",
             "source:5e272bbe980cee20e6d281dd"
           ],
-          "text": "Utamu sells goods to visitors through the shop.",
+          "text": "Utamu is a merchant aboard Orgrim's Hammer who sells goods to anyone who wants to browse.",
           "when": {
             "entry": 30827
           }
@@ -323,7 +282,7 @@
             "source:d394aea5e33f03339649e257",
             "source:6b44b0afa9f83590562a6ffa"
           ],
-          "text": "Warbringer Davos Rioht is a Horde officer aboard Orgrim's Hammer who is preparing for the assault on Ymirheim. He regards the Lich King's Ymirjar as dangerous fighters, but directs the player to kill those called the Chosen in their own city and help build the force for the attack. His brisk greeting and blunt orders present him as a combat-focused commander.",
+          "text": "Warbringer Davos Rioht is a Horde officer aboard Orgrim's Hammer, preparing the assault on Ymirheim. He calls the Lich King's Ymirjar fierce, dangerous fighters and sends willing warriors to slaughter the so-called Chosen in their own city and to join the main assault. Brisk and blunt, he is a combat-focused commander.",
           "when": {
             "entry": 32301
           }
@@ -404,11 +363,6 @@
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
       "revision": "cd6dc18fd486e4d40ad19fb990899d035dd9d72dec48f2f042aba4d312a4295c"
     },
-    "source:698e3140b82a38df7b24b74a": {
-      "kind": "research",
-      "reference": "evidence:sha256:1712a08067156934f08116201f31051c0ddbec4c0ad84bd1bf048a20b3f81840",
-      "revision": "e77b3f7f9c55184b72195550ca0e6c0177600e7100f6474a36f5a80a8268ed8f"
-    },
     "source:6a090ac22fc35fe8bc469a76": {
       "kind": "research",
       "reference": "evidence:sha256:a9c7458aced9abc2046a72f99e8fc8963b7ee9fd8b94b45512cbf605e58574f8",
@@ -459,20 +413,10 @@
       "reference": "evidence:sha256:359d5ad79ac0564d494d584dceb199575652374ad5dca74f0a9129fe83c60f39",
       "revision": "2056a2879a6a2d3cb9a86aec91d2452d631cae54601685d9fb1a0fb9abfabd3c"
     },
-    "source:9bd516332a68f3b1e9c99f64": {
-      "kind": "research",
-      "reference": "evidence:sha256:5af8b272d175822e8cd350d05b19fae1b079122b45b0efab04987ce380e5a67a",
-      "revision": "e77b3f7f9c55184b72195550ca0e6c0177600e7100f6474a36f5a80a8268ed8f"
-    },
     "source:9cb3617f0e45cb4b222050f3": {
       "kind": "research",
       "reference": "evidence:sha256:a4b86a7bca22327cbc9aa6bf983102844ee7d796df640ab2b56fdd76e67d2a56",
       "revision": "cd6dc18fd486e4d40ad19fb990899d035dd9d72dec48f2f042aba4d312a4295c"
-    },
-    "source:a4b1bf3ff8f7f5cae6e161e5": {
-      "kind": "research",
-      "reference": "evidence:sha256:6985e2fcb6def92bd75ed9d0be7d31dd4591b847a58f6250aeed2dc632c90a2f",
-      "revision": "e77b3f7f9c55184b72195550ca0e6c0177600e7100f6474a36f5a80a8268ed8f"
     },
     "source:a9885cc00dddf84f5b69b005": {
       "kind": "research",

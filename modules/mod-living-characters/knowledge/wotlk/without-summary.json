@@ -109,6 +109,20 @@
     },
     {
       "decision": "excluded",
+      "entry": 129,
+      "name": "Angry Programmer Tweedle Dum",
+      "reason": "Developer test creature.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 130,
+      "name": "Programmer Vendor",
+      "reason": "Developer test vendor, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 149,
       "name": "[UNUSED] Small Black Dragon Whelp",
       "reason": "The template is explicitly marked [UNUSED], with no static spawn.",
@@ -120,6 +134,13 @@
       "name": "[UNUSED] Brother Milius",
       "reason": "The template is explicitly marked [UNUSED], with no static spawn.",
       "title": "Bowyer"
+    },
+    {
+      "decision": "native only",
+      "entry": 153,
+      "name": "Bethina",
+      "reason": "Redemption merchant is a game system with no evidence about a person.",
+      "title": "Baby Murloc Redemption Merchant"
     },
     {
       "decision": "native only",
@@ -442,6 +463,13 @@
       "name": "Winter Wolf",
       "reason": "The name and creature type identify an ordinary wolf beast; its template has no gossip flag or assigned script.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 365,
+      "name": "Scott's Flying Mount",
+      "reason": "A mount; never speaks.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -1424,6 +1452,13 @@
       "title": "Miner <Temp>"
     },
     {
+      "decision": "excluded",
+      "entry": 1574,
+      "name": "Mage 1",
+      "reason": "Generic placeholder mage template.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 1587,
       "name": "Warlock 40",
@@ -1512,6 +1547,90 @@
       "entry": 1601,
       "name": "Slim's Test Rogue",
       "reason": "The native name explicitly identifies a test rogue, and the record has no static spawn or native interaction flags.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1619,
+      "name": "Druid 40",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1626,
+      "name": "Priest 10",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1627,
+      "name": "Priest 15",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1628,
+      "name": "Hunter 30",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1629,
+      "name": "Priest 20",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1631,
+      "name": "Hunter 40",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1633,
+      "name": "Priest 30",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1634,
+      "name": "Priest 40",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1635,
+      "name": "Warrior 1",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1636,
+      "name": "Warrior 5",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1637,
+      "name": "Warrior 10",
+      "reason": "Generic placeholder template.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 1638,
+      "name": "Warrior 15",
+      "reason": "Generic placeholder template.",
       "title": ""
     },
     {
@@ -1705,6 +1824,13 @@
     },
     {
       "decision": "excluded",
+      "entry": 1858,
+      "name": "Pissed not a Vendor",
+      "reason": "Developer test vendor, not a character.",
+      "title": "Pissed Vendor"
+    },
+    {
+      "decision": "excluded",
       "entry": 1859,
       "name": "[UNUSED] Nyein Longwind",
       "reason": "The name is explicitly marked [UNUSED], while the temporary bowyer title is not backed by vendor interaction.",
@@ -1730,6 +1856,27 @@
       "name": "Bloodsnout Worg",
       "reason": "The name and native beast type positively identify an ordinary worg; no conversational role is indicated.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 1925,
+      "name": "Heat Miser",
+      "reason": "Developer test dummy defined by an immunity title.",
+      "title": "Immune to Fire"
+    },
+    {
+      "decision": "excluded",
+      "entry": 1926,
+      "name": "Snow Miser",
+      "reason": "Developer test dummy defined by an immunity title.",
+      "title": "Immune to Frost"
+    },
+    {
+      "decision": "excluded",
+      "entry": 1927,
+      "name": "Good Miser",
+      "reason": "Developer test dummy defined by an immunity title.",
+      "title": "Immune to Holy"
     },
     {
       "decision": "native only",
@@ -2916,6 +3063,13 @@
     },
     {
       "decision": "excluded",
+      "entry": 3200,
+      "name": "Eric's AAA Special Vendor",
+      "reason": "Developer test vendor, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 3202,
       "name": "[UNUSED] Josh Test",
       "reason": "The entry is explicitly labeled [UNUSED] and NPCTEST, identifying it as a test record rather than a character for summary.",
@@ -3069,11 +3223,25 @@
       "title": "Poison Supplies"
     },
     {
+      "decision": "excluded",
+      "entry": 3559,
+      "name": "Temp Poisoning Vendor Dwarf",
+      "reason": "Temporary developer test vendor.",
+      "title": "Poison Supplies"
+    },
+    {
       "decision": "native only",
       "entry": 3560,
       "name": "Healing Ward",
       "reason": "The entry is explicitly a Healing Ward and its native creature type identifies it as a totem construct.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 3564,
+      "name": "Temp Reagent Vendor Dwarf",
+      "reason": "Temporary developer test vendor.",
+      "title": "Reagents"
     },
     {
       "decision": "native only",
@@ -3347,6 +3515,27 @@
       "name": "Sentry Totem",
       "reason": "The entry is explicitly named Sentry Totem and its native creature type is totem, positively identifying it as a placed construct rather than a character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 3971,
+      "name": "Agro 5",
+      "reason": "Hidden helper (Agro marker).",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 3972,
+      "name": "Agro 7",
+      "reason": "Hidden helper (Agro marker).",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 3973,
+      "name": "Agro 10",
+      "reason": "Hidden helper (Agro marker).",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -3678,6 +3867,20 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 4445,
+      "name": "Griznak",
+      "reason": "Test-style race vendor with no evidence about a character.",
+      "title": "Race Vendor"
+    },
+    {
+      "decision": "excluded",
+      "entry": 4446,
+      "name": "Mazzer Stripscrew",
+      "reason": "Test-style race vendor with no evidence about a character.",
+      "title": "Race Vendor"
+    },
+    {
       "decision": "native only",
       "entry": 4475,
       "name": "Blighted Zombie",
@@ -3767,6 +3970,20 @@
       "name": "Test Petition Giver",
       "reason": "The native name and title identify this as a test petition-giver helper, rather than an in-world character.",
       "title": "Test"
+    },
+    {
+      "decision": "native only",
+      "entry": 4945,
+      "name": "Goblin Drag Car",
+      "reason": "A drag car vehicle that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 4946,
+      "name": "Gnome Drag Car",
+      "reason": "A drag car vehicle that never speaks.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -4064,6 +4281,20 @@
     },
     {
       "decision": "excluded",
+      "entry": 5587,
+      "name": "[PH] Alliance Mine Boss",
+      "reason": "Placeholder entry, not a real character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 5589,
+      "name": "[PH] Horde Mine Boss",
+      "reason": "Placeholder entry, not a real character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 5596,
       "name": "Twain Test Prop",
       "reason": "The native name identifies this as a test prop, indicating a test helper rather than a character for summary.",
@@ -4166,6 +4397,13 @@
       "name": "Silithid Creeper Egg",
       "reason": "Its native text describes the egg cracking and splitting open, and its AI summons a Silithid Grub, establishing an encounter prop role.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 5801,
+      "name": "[PH] Party Bot",
+      "reason": "Placeholder test bot.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -4609,6 +4847,34 @@
       "title": null
     },
     {
+      "decision": "excluded",
+      "entry": 7186,
+      "name": "A",
+      "reason": "Placeholder test critter.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 7209,
+      "name": "Obsidian Shard",
+      "reason": "An object (shard); never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 7226,
+      "name": "Sand Storm",
+      "reason": "A storm effect with no AI; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 7236,
+      "name": "Test Anubisath",
+      "reason": "A test creature, not a real character.",
+      "title": "I am a test, don't bug me"
+    },
+    {
       "decision": "native only",
       "entry": 7273,
       "name": "Gahz'rilla",
@@ -4876,6 +5142,13 @@
     },
     {
       "decision": "native only",
+      "entry": 7503,
+      "name": "Curse of the Eye (Male)",
+      "reason": "A curse form variant, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 7507,
       "name": "Brown Snake",
       "reason": "Positive ordinary snake identity and beast type support an animal no-profile decision.",
@@ -4966,6 +5239,20 @@
       "title": null
     },
     {
+      "decision": "excluded",
+      "entry": 7732,
+      "name": "Dupe Bug",
+      "reason": "Test creature that despawns itself.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 7785,
+      "name": "Ward of Zum'rah",
+      "reason": "A ward object; never speaks.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 7844,
       "name": "Fire Nova Totem IV",
@@ -5006,6 +5293,13 @@
       "name": "Walking Bomb",
       "reason": "Positive mechanical bomb identity and own attack-start action establish an animated weapon role; hinted fall/explosion behavior is not cited.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 7919,
+      "name": "Gnomeregan - Matrix Punchograph 3005-A",
+      "reason": "A machine object; never speaks.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -5050,6 +5344,13 @@
       "title": null
     },
     {
+      "decision": "native only",
+      "entry": 8316,
+      "name": "Paladin 10 Alternate",
+      "reason": "An alternate-variant label for a paladin model, not a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 8408,
       "name": "Warlord Krellian",
@@ -5062,6 +5363,13 @@
       "name": "Hakkari Minion",
       "reason": "The explicit minion role and reset movement behavior support a summoned combat helper, with no individual character portrayal in the supplied evidence.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 8446,
+      "name": "Xiggs Fuselighter's Flyingmachine",
+      "reason": "A flying machine, an object that never speaks.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -5096,6 +5404,13 @@
       "entry": 8502,
       "name": "TEST Uber Human",
       "reason": "Correct administrative test-label narration into an exclusion on positive explicit native test-purpose naming. TEST Uber and Swimming Murloc Test identify testing actors rather than public character roles; no absence-of-dialogue, placement, faction or type inference is used. Preserve the exact baseline classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 8505,
+      "name": "Hex of Jammal'an",
+      "reason": "A hex effect, not a character.",
       "title": ""
     },
     {
@@ -5260,11 +5575,25 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 9218,
+      "name": "Spirestone Battle Lord",
+      "reason": "Despawns instantly on spawn; a scripted placeholder, not a character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 9256,
       "name": "Farm Chicken",
       "reason": "Correct to no-profile on positive exact generic animal identity and native non-combat-pet purpose, independently grounded by the category definition; no personality, biography, ownership or spell effects inferred. Baseline classification uncertainty retained.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 9496,
+      "name": "Gorishi Egg",
+      "reason": "An egg; an object that never speaks.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -5484,6 +5813,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 10290,
+      "name": "Captured Felwood Ooze",
+      "reason": "A scripted ooze that follows, vanishes and despawns; not a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 10362,
       "name": "[UNUSED] Gethuxxuz",
@@ -5625,6 +5961,13 @@
     },
     {
       "decision": "native only",
+      "entry": 10509,
+      "name": "Jed Runewatcher",
+      "reason": "Despawns half a second after appearing; a scripted, momentary creature that never speaks.",
+      "title": "Blackhand Legion"
+    },
+    {
+      "decision": "native only",
       "entry": 10536,
       "name": "Plagued Maggot",
       "reason": "Its SmartAI entry specifies an in-combat cast of Maggot Slime, supporting an ordinary combat-creature role with no established conversational identity.",
@@ -5695,6 +6038,20 @@
     },
     {
       "decision": "native only",
+      "entry": 10718,
+      "name": "Shahram",
+      "reason": "A temporary summoned helper that follows its owner and despawns.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 10736,
+      "name": "Unkillable Test Dummy 60 Mage",
+      "reason": "A test dummy, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 10737,
       "name": "Shy-Rotam",
       "reason": "The supplied records identify Shy-Rotam as a non-humanoid creature whose roar calls for her mate and whose combat behavior is to use Terrifying Roar; this is animal behavior rather than conversational character material.",
@@ -5713,6 +6070,13 @@
       "name": "Infected Squirrel",
       "reason": "The native creature template identifies Infected Squirrel as a type 8 critter, supporting a nonconversational animal entry.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 10783,
+      "name": "Orb of Deception (Orc, Male)",
+      "reason": "A form variant of an object.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -5839,6 +6203,13 @@
       "name": "Mana Tide Totem III",
       "reason": "Its name identifies a mana tide totem, and its native creature type is totem; the records establish a summoned helper object rather than a speaking character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 11151,
+      "name": "Riding MechaStrider (Yellow/Green)",
+      "reason": "A riding mount; never speaks.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -6135,6 +6506,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 11599,
+      "name": "Irondeep Geomancer UNUSED",
+      "reason": "Marked UNUSED; not a live character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 11614,
       "name": "Bloodshot",
@@ -6199,6 +6577,13 @@
     },
     {
       "decision": "excluded",
+      "entry": 11926,
+      "name": "[PH] Northshire Gift Dispenser",
+      "reason": "Placeholder dispenser.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 11959,
       "name": "[UNUSED] Obsidian Watcher",
       "reason": "The native name explicitly marks this entry as [UNUSED].",
@@ -6224,6 +6609,27 @@
       "name": "Mammoth Shark",
       "reason": "Positive ordinary animal-population evidence: explicit shark name, beast type and nine placements. Retain native elite animal context without a separate personal profile.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 12145,
+      "name": "Riding Kodo (Black)",
+      "reason": "A riding mount; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 12146,
+      "name": "Riding Kodo (Olive)",
+      "reason": "A riding mount; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 12147,
+      "name": "Riding Kodo (White)",
+      "reason": "A riding mount; never speaks.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -6339,6 +6745,13 @@
     },
     {
       "decision": "native only",
+      "entry": 12344,
+      "name": "Swift Green Skeletal Horse",
+      "reason": "A riding mount; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 12347,
       "name": "Enraged Reef Crawler",
       "reason": "Native fields show no gossip or quest flag, and the supplied SmartAI/text records show only an in-combat enrage response.",
@@ -6415,6 +6828,13 @@
       "title": null
     },
     {
+      "decision": "native only",
+      "entry": 12434,
+      "name": "Monster Generator (Blackwing)",
+      "reason": "A monster generator object, not a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 12462,
       "name": "[NOT USED] Blackwing Warlord",
@@ -6472,6 +6892,13 @@
     },
     {
       "decision": "native only",
+      "entry": 12537,
+      "name": "Morph Firemane Scalebane",
+      "reason": "A morph helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 12677,
       "name": "Shadumbra",
       "reason": "The entry is a wild nightsaber with combat behavior; its apparent questgiver flag has no matching quest attribution, and the supplied quest text is narrator text about claiming its head as a trophy.",
@@ -6483,6 +6910,13 @@
       "name": "Ursangous",
       "reason": "The entry is a wild bear with combat behavior; its apparent questgiver flag has no matching quest attribution, and the supplied quest text is narrator text about claiming its paw as a trophy.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 12741,
+      "name": "Warrior 40 (More Leash)",
+      "reason": "A test/leash variant, not a character.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -6532,6 +6966,20 @@
       "name": "Silverwing Warrior",
       "reason": "The entry has no NPC service flags, and its supplied SmartAI action casts Rend at close range, supporting a combat-only warrior role.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 12916,
+      "name": "Unkillable Test Dummy 60 Low Magic Resistances",
+      "reason": "A test dummy, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 12917,
+      "name": "Unkillable Test Dummy 60 High Magic Resistances",
+      "reason": "A test dummy, not a character.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -6598,9 +7046,30 @@
     },
     {
       "decision": "native only",
+      "entry": 13856,
+      "name": "Alliance Res Fixer",
+      "reason": "A utility marker for clearing resurrection effects, not a character.",
+      "title": "Click me to clear res effects"
+    },
+    {
+      "decision": "native only",
+      "entry": 13857,
+      "name": "Horde Res Fixer",
+      "reason": "A utility marker for clearing resurrection effects, not a character.",
+      "title": "Click me to clear res effects"
+    },
+    {
+      "decision": "native only",
       "entry": 13876,
       "name": "Mekgineer Trigger",
       "reason": "The database identifies Mekgineer Trigger as a level-one type-10 creature with no gossip or other NPC service flags, supporting a mechanical helper/prop role rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 13916,
+      "name": "Dire Maul Crystal Totem",
+      "reason": "A totem object that never speaks.",
       "title": ""
     },
     {
@@ -6665,6 +7134,13 @@
       "name": "Massive Geyser",
       "reason": "The named Massive Geyser is a type-10 entry with no conversational flags, supporting an environmental effect role rather than a speaking character.",
       "title": null
+    },
+    {
+      "decision": "excluded",
+      "entry": 14162,
+      "name": "RaidMage",
+      "reason": "A test raid dummy label, not a real character.",
+      "title": "100FR Arcane"
     },
     {
       "decision": "excluded",
@@ -6756,6 +7232,13 @@
       "name": "Warpwood Spores",
       "reason": "Its defined behavior is a fixed hazard action: casting Choking Spores on reset, with no individual characterization supported.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 14391,
+      "name": "Dire Maul Reaver Post",
+      "reason": "A post marker object.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -7032,6 +7515,13 @@
     },
     {
       "decision": "native only",
+      "entry": 14987,
+      "name": "Powerful Healing Ward",
+      "reason": "A healing ward helper object that never speaks as a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 14989,
       "name": "Poisonous Cloud",
       "reason": "A scripted cloud hazard casts Poisonous Blood on update; the supplied evidence supports a mechanical hazard role without conversational identity.",
@@ -7109,6 +7599,13 @@
     },
     {
       "decision": "excluded",
+      "entry": 15073,
+      "name": "Pat's Hellfire Guy",
+      "reason": "Test effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 15081,
       "name": "Gri'lek [UNUSED]",
       "reason": "The explicit [UNUSED] marker identifies this as an unused record.",
@@ -7130,6 +7627,13 @@
     },
     {
       "decision": "native only",
+      "entry": 15112,
+      "name": "Brain Wash Totem",
+      "reason": "A totem object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 15133,
       "name": "Killable Test Dummy 60 Warrior",
       "reason": "Its explicit test-dummy name identifies a combat testing helper rather than a character.",
@@ -7140,6 +7644,13 @@
       "entry": 15134,
       "name": "Outlands Test Dummy Warrior 70",
       "reason": "Its explicit test-dummy name identifies a combat testing helper rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 15140,
+      "name": "Pat's Splash Guy",
+      "reason": "Test effect helper.",
       "title": ""
     },
     {
@@ -7269,6 +7780,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 15173,
+      "name": "Outlands Test Dummy Warrior 54",
+      "reason": "A test dummy, not a character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 15186,
       "name": "Murky",
@@ -7309,6 +7827,13 @@
       "name": "[PH] [UNUSED] Lord Inquisitor Opalezzix",
       "reason": "The native designation explicitly marks this Lord Inquisitor template as an unused placeholder. Exclude that placeholder without constructing an Abyssal Council biography or relying on absence of spawns.",
       "title": "Abyssal Council"
+    },
+    {
+      "decision": "native only",
+      "entry": 15224,
+      "name": "Dream Fog",
+      "reason": "A fog helper object, not a character.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -7592,6 +8117,20 @@
     },
     {
       "decision": "native only",
+      "entry": 15415,
+      "name": "Southshore Stink Bomb Counter",
+      "reason": "A quest objective counter, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 15425,
+      "name": "Debug Point",
+      "reason": "A debug marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 15426,
       "name": "Ahn'Qiraj Trigger",
       "reason": "The database identifies this as a level-60 mechanical type with no NPC flags or gossip, and its explicit Trigger name plus multi-region placement support a non-speaking helper role.",
@@ -7837,6 +8376,13 @@
     },
     {
       "decision": "native only",
+      "entry": 15553,
+      "name": "Doctor Weavil's Flying Machine",
+      "reason": "A vehicle object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 15590,
       "name": "Ossirian Crystal Trigger",
       "reason": "The explicit Crystal Trigger name and mechanical type identify a helper prop without a conversational profile.",
@@ -7928,9 +8474,23 @@
     },
     {
       "decision": "native only",
+      "entry": 15802,
+      "name": "Flesh Tentacle",
+      "reason": "A boss tentacle, not a speaker.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 15803,
       "name": "Tranquil Air Totem",
       "reason": "Named Tranquil Air Totem and classified as a totem helper; the record supports a functional object summary rather than a conversational identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 15804,
+      "name": "Lesser Resonating Crystal",
+      "reason": "A crystal object.",
       "title": ""
     },
     {
@@ -8092,6 +8652,13 @@
       "entry": 15897,
       "name": "Large Spotlight",
       "reason": "The supplied record identifies a Large Spotlight fixture and gives it no NPC service flags; it supplies no conversational character identity.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 15899,
+      "name": "Lunar Festival NE Vendor (PH)",
+      "reason": "A placeholder vendor (PH) with no real identity.",
       "title": ""
     },
     {
@@ -8439,6 +9006,13 @@
     },
     {
       "decision": "native only",
+      "entry": 16121,
+      "name": "Mortar",
+      "reason": "A mortar, an object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 16129,
       "name": "Shadow Fissure",
       "reason": "The entry is bound to the periodic-trigger script, which identifies it as a functional encounter trigger rather than a character.",
@@ -8582,6 +9156,13 @@
       "entry": 16338,
       "name": "Scourge Invasion Minion, spawner, Ghoul/Skeleton",
       "reason": "Its assigned native script is npc_minion_spawner, and the template labels it as a minion spawner; this establishes a specific functional role without a separate conversational profile.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 16356,
+      "name": "Scourge Invasion Minion, finder",
+      "reason": "A hidden event helper (finder).",
       "title": ""
     },
     {
@@ -9132,6 +9713,13 @@
     },
     {
       "decision": "native only",
+      "entry": 17165,
+      "name": "",
+      "reason": "Unnamed helper creature.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17168,
       "name": "Shade of Aran Teleport N",
       "reason": "The native designation identifies a north-side teleport marker, a functional technical object rather than a personal character.",
@@ -9230,6 +9818,13 @@
     },
     {
       "decision": "native only",
+      "entry": 17231,
+      "name": "Garden Gas",
+      "reason": "A gas cloud effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17234,
       "name": "[Unused] Tunneler Visual",
       "reason": "The explicit unused label and visual name identify a nonconversational visual helper.",
@@ -9265,9 +9860,30 @@
     },
     {
       "decision": "native only",
+      "entry": 17274,
+      "name": "Temper's Target",
+      "reason": "A target object for a trial, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17283,
       "name": "Astral Spark",
       "reason": "Reset scripts cast its passive and detonation spells, then despawn it, establishing a transient scripted effect rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17284,
+      "name": "Lottery Commissioner [DND]",
+      "reason": "Do-not-disturb helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17286,
+      "name": "Invisible Man",
+      "reason": "Invisible helper.",
       "title": ""
     },
     {
@@ -9289,6 +9905,13 @@
       "entry": 17313,
       "name": "Slim's Unkillable Test Dummy",
       "reason": "The explicit Test Dummy designation identifies a testing template. Exclude it without treating Unkillable as a verified runtime property or inventing a personal identity for Slim.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17315,
+      "name": "Tree Disguse",
+      "reason": "A disguise helper.",
       "title": ""
     },
     {
@@ -9377,6 +10000,13 @@
     },
     {
       "decision": "native only",
+      "entry": 17378,
+      "name": "Swamp Gas",
+      "reason": "A gas cloud hazard, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17394,
       "name": "Stillpine Ancestor Tikti Snake Visual",
       "reason": "The explicit Snake Visual designation supplies positive appearance-effect purpose. Do not treat this visual as an independently speaking snake or claim an actual transformation of Tikti without a caller binding.",
@@ -9391,9 +10021,30 @@
     },
     {
       "decision": "native only",
+      "entry": 17419,
+      "name": "Rocket",
+      "reason": "A rocket object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17428,
       "name": "Invisible Test Aggressor",
       "reason": "The template is explicitly named an invisible test aggressor and is flagged as a possible helper, supporting a test-only combat role rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17437,
+      "name": "Stillpine Defender Corpse",
+      "reason": "A corpse object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17438,
+      "name": "Crazed Wildkin Corpse",
+      "reason": "A corpse object that never speaks.",
       "title": ""
     },
     {
@@ -9558,6 +10209,13 @@
       "title": null
     },
     {
+      "decision": "native only",
+      "entry": 17582,
+      "name": "",
+      "reason": "Unnamed helper creature.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 17590,
       "name": "Sandworm Missile Target (DND)",
@@ -9671,6 +10329,20 @@
     },
     {
       "decision": "native only",
+      "entry": 17689,
+      "name": "<TXT>Crown Guard Capture Quest Doodad",
+      "reason": "A capture-point marker object for a tower, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17690,
+      "name": "<TXT>Eastwall Capture Quest Doodad",
+      "reason": "A capture-point marker object for a tower, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17691,
       "name": "Eastwall Horde Capture Quest Doodad",
       "reason": "The entry is explicitly named as a Horde capture quest doodad, identifying it as a quest mechanic rather than a conversational character.",
@@ -9678,9 +10350,23 @@
     },
     {
       "decision": "native only",
+      "entry": 17696,
+      "name": "<TXT>Northpass Capture Quest Doodad",
+      "reason": "A capture-point marker object for a tower, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 17697,
       "name": "Northpass Horde Capture Quest Doodad",
       "reason": "The entry is explicitly named as a Horde capture quest doodad, identifying it as a quest mechanic rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 17698,
+      "name": "<TXT>Plaguewood Capture Quest Doodad",
+      "reason": "A capture-point marker object for a tower, never speaks.",
       "title": ""
     },
     {
@@ -9752,6 +10438,13 @@
       "name": "[UNUSED] Lost Goblin [PH]",
       "reason": "The native name explicitly marks this placeholder as [UNUSED] and [PH], identifying it as an unused placeholder rather than a conversational character.",
       "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 17828,
+      "name": "[UNUSED] Fnort",
+      "reason": "Marked unused.",
+      "title": "Swamplord Musel'ek's Pet"
     },
     {
       "decision": "native only",
@@ -10049,6 +10742,13 @@
     },
     {
       "decision": "native only",
+      "entry": 18085,
+      "name": "Elemental Throne Event Handler",
+      "reason": "A system event handler, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 18108,
       "name": "Coilfang Underbog Hydra Trigger",
       "reason": "The explicit “Trigger” designation and totem type identify a mechanical encounter helper.",
@@ -10161,9 +10861,37 @@
     },
     {
       "decision": "native only",
+      "entry": 18161,
+      "name": "Underground Well Credit Marker",
+      "reason": "A quest credit marker for a scrying spot, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 18162,
+      "name": "Underground Pond Credit Marker",
+      "reason": "A quest credit marker for a scrying spot, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 18163,
       "name": "Cannon Test",
       "reason": "The explicit Cannon Test name and mechanical type identify it as a test prop, with no character evidence.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 18164,
+      "name": "Cannon Test Target",
+      "reason": "A mechanical test target, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 18173,
+      "name": "Bloodmyst Elekk Dismounter",
+      "reason": "Likely a hidden helper that dismounts riders; no creature data.",
       "title": ""
     },
     {
@@ -10214,6 +10942,13 @@
       "name": "Gurok Event Controller",
       "reason": "The native designation identifies an event controller, a technical role; no character profile is warranted.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 18199,
+      "name": "Silithus Dust Turnin Quest Doodad Horde",
+      "reason": "An unseen quest turn-in doodad, not a character.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -10391,6 +11126,13 @@
       "title": null
     },
     {
+      "decision": "native only",
+      "entry": 18308,
+      "name": "Burning Blade Pyre (04)",
+      "reason": "A pyre, an object that never speaks.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 18329,
       "name": "[UNUSED] Sethekk Magelord",
@@ -10542,6 +11284,13 @@
       "entry": 18410,
       "name": "Hyjal Despawn Trigger Unit",
       "reason": "The explicit name “Hyjal Despawn Trigger Unit” and helper designation establish a mechanical helper role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 18412,
+      "name": "Cyclone (The Crone)",
+      "reason": "A cyclone helper for The Crone's fight; no speech or character to describe.",
       "title": ""
     },
     {
@@ -11147,6 +11896,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 19067,
+      "name": "Fel Cannon: Hate",
+      "reason": "A cannon object used as a kill-credit helper; never speaks.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 19078,
       "name": "[PH] Gossip NPC Dwarf Female, Christmas",
@@ -11484,6 +12240,13 @@
     },
     {
       "decision": "native only",
+      "entry": 19399,
+      "name": "Fel Cannon",
+      "reason": "A fel cannon is a war machine that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 19405,
       "name": "Steam Tonk",
       "reason": "Its native binding assigns the npc_controller script; supplied records show no conversational or service function.",
@@ -11582,9 +12345,30 @@
     },
     {
       "decision": "native only",
+      "entry": 19555,
+      "name": "TK Atrium Channel Target",
+      "reason": "A channel target used by an event script; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 19563,
       "name": "Dimensius Quest Enabler",
       "reason": "The native designation identifies a quest-enabling technical entry; no personal character profile is supported.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 19565,
+      "name": "Enormous Void Storm",
+      "reason": "A storm effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 19577,
+      "name": "Arcane Orb Target",
+      "reason": "A target helper.",
       "title": ""
     },
     {
@@ -11939,10 +12723,24 @@
     },
     {
       "decision": "native only",
+      "entry": 19922,
+      "name": "Tornado",
+      "reason": "A tornado effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 19924,
       "name": "Invis Ritual Crystal",
       "reason": "The entry is an invisible ritual crystal game object, with object type 10 and level 1; the supplied evidence supports a world object rather than a conversational character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 19927,
+      "name": "Time Watcher Transform",
+      "reason": "A transform helper.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -12190,6 +12988,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 20214,
+      "name": "Arakkoa Egg",
+      "reason": "An egg that never speaks; only triggers a debuff on itself.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 20219,
       "name": "Mask of Deception (Test)",
@@ -12216,6 +13021,20 @@
       "name": "Neutralizing Emote Placeholder",
       "reason": "Its explicit placeholder name and ambient narration describe the lake's visible response to the neutralizing agent; they provide no individual character identity.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 20246,
+      "name": "Manny",
+      "reason": "A non-combat pet critter with no speech or role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20247,
+      "name": "Kitty",
+      "reason": "A non-combat pet critter with no speech or role.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -12306,6 +13125,13 @@
       "entry": 20307,
       "name": "Flying Raging Soul (1)",
       "reason": "Difficulty alias of base entry 18726; this record does not establish a separate stable NPC identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20314,
+      "name": "Pool of Souls (1)",
+      "reason": "A pool of souls, an object that never speaks.",
       "title": ""
     },
     {
@@ -12442,6 +13268,20 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 20560,
+      "name": "Arakkoa Ward",
+      "reason": "A ward object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20562,
+      "name": "Invisible Stalker (Scale x5)",
+      "reason": "An invisible script helper that never speaks.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 20593,
       "name": "Shattered Hand Sentry (1)",
@@ -12481,6 +13321,13 @@
       "entry": 20598,
       "name": "Wild Shadow Fissure (1)",
       "reason": "The record is explicitly marked as a difficulty alias of entry 18370 and has no static spawn, so it does not establish a separate stable identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20602,
+      "name": "Flame Patch (Al'ar)",
+      "reason": "A hazard patch of fire, not a character.",
       "title": ""
     },
     {
@@ -12537,6 +13384,13 @@
       "entry": 20630,
       "name": "Mekgineer Steamrigger (1)",
       "reason": "Explicitly marked as a difficulty alias of entry 17796, with no static spawn; this row does not establish a separate character identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20635,
+      "name": "Razaani Light Orb",
+      "reason": "A magical orb used as a scripted prop; not a character.",
       "title": ""
     },
     {
@@ -12603,6 +13457,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 20733,
+      "name": "Walla's Damage Dealer",
+      "reason": "A test placeholder.",
+      "title": "Lord of Stuff"
+    },
+    {
       "decision": "native only",
       "entry": 20734,
       "name": "Daggermaw Raptor",
@@ -12615,6 +13476,13 @@
       "name": "Blade's Edge - Legion - Invis Bunny",
       "reason": "Its explicitly named invisible bunny helper role, level-one neutral setup, and NullCreatureAI support a nonconversational helper rather than a character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 20764,
+      "name": "Ethereum Target",
+      "reason": "A target marker.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -12671,6 +13539,13 @@
       "name": "Netherstorm Target",
       "reason": "The explicit “Netherstorm Target” name, type 10, distributed target-area placement, and lack of interaction flags identify a target entry rather than a conversational character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 20804,
+      "name": "Netherstorm Moarg Work Target",
+      "reason": "A work target marker.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -12835,9 +13710,23 @@
     },
     {
       "decision": "native only",
+      "entry": 20858,
+      "name": "Arena Event Controller",
+      "reason": "An arena event controller, a hidden helper that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 20863,
       "name": "Pet Book DEM",
       "reason": "Remove native-entry/name methodology and use no-profile on the explicit functional Pet Book object designation; no DEM acronym, magical effect or personal identity is invented.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 20889,
+      "name": "Ethereum Prisoner (Group Energy Ball)",
+      "reason": "An energy ball helper.",
       "title": ""
     },
     {
@@ -12846,6 +13735,13 @@
       "name": "Void Conduit",
       "reason": "A Void Conduit is the technical target of the phase-disruptor mission at Ultris; its SmartAI disables health regeneration. The supplied evidence supports an environmental objective, not a speaking character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 20926,
+      "name": "Coilfang Door Controller",
+      "reason": "A door-control device that never speaks; only sound-effect text.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -12866,6 +13762,13 @@
       "entry": 20935,
       "name": "TestOgreBeige01",
       "reason": "Explicit native TestOgreBeige01 designation positively identifies technical testing, target, or trigger purpose; no personal profile is appropriate. No exact mechanism or retirement is inferred.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 20936,
+      "name": "TestOgreBeige02",
+      "reason": "A test placeholder.",
       "title": ""
     },
     {
@@ -12912,6 +13815,13 @@
     },
     {
       "decision": "native only",
+      "entry": 20978,
+      "name": "Wrath-Scryer's Felfire",
+      "reason": "A fire effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 20979,
       "name": "Stormwind Flavor - Alliance Portal - Invisible Stalker",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -12929,6 +13839,13 @@
       "entry": 20991,
       "name": "Invis Dome Caster",
       "reason": "Exact own invisible dome-caster designation positively establishes technical purpose; no particular dome effect is inferred.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21002,
+      "name": "Nether Vapor",
+      "reason": "A vapor effect.",
       "title": ""
     },
     {
@@ -13073,6 +13990,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21093,
+      "name": "Dancing Sword",
+      "reason": "A weapon object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21094,
       "name": "Credit Marker: Fire",
       "reason": "Named as a credit marker, mechanically typed, and used as an objective target in Torlok's totem task; this is a quest helper representing fire-soul credit, not an individual character.",
@@ -13098,6 +14022,13 @@
       "name": "Unbound Void Zone",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 21119,
+      "name": "Doomsaw",
+      "reason": "A weapon object.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -13192,6 +14123,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21203,
+      "name": "Blade's Edge - Rock Flayer Target",
+      "reason": "A target dummy, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21206,
       "name": "Designer Island Murloc Boss [PH]",
       "reason": "Explicit native Designer Island Murloc Boss [PH] designation positively identifies technical testing, target, or trigger purpose; no personal profile is appropriate. No exact mechanism or retirement is inferred.",
@@ -13206,6 +14144,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21210,
+      "name": "Invis Deathforge Caster",
+      "reason": "Invisible script caster.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21211,
       "name": "Invis Deathforge Target",
       "reason": "Explicit native Invis Deathforge Target designation positively identifies technical testing or target purpose; no personal profile is appropriate.",
@@ -13216,6 +14161,13 @@
       "entry": 21219,
       "name": "Coilfang Warlock (UNUSED)",
       "reason": "The entry is explicitly marked UNUSED, with no spawn or service flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21234,
+      "name": "Blade's Edge Invisible Stalker",
+      "reason": "An invisible stalker helper, not a character.",
       "title": ""
     },
     {
@@ -13311,6 +14263,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21286,
+      "name": "Ethereum Mace",
+      "reason": "A weapon object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21290,
       "name": "Arcane Explosion",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -13321,6 +14280,13 @@
       "entry": 21297,
       "name": "Invis Invisibility Caster",
       "reason": "The native name identifies an invisibility caster, a technical role; the evidence supports no separate character profile.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21303,
+      "name": "Defender Corpse",
+      "reason": "A scripted corpse that never speaks; not a character.",
       "title": ""
     },
     {
@@ -13363,6 +14329,13 @@
       "entry": 21321,
       "name": "Vision Guide Kill Credit Trigger",
       "reason": "The entry is explicitly named a kill credit trigger and has no NPC flags, supporting a mechanical helper role rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21322,
+      "name": "Warp Storm",
+      "reason": "A storm effect.",
       "title": ""
     },
     {
@@ -13471,6 +14444,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 21367,
+      "name": "Designer Island Battle Participant A [PH]",
+      "reason": "A placeholder.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 21369,
       "name": "Flame Strike Trigger (Kael)",
@@ -13489,6 +14469,13 @@
       "entry": 21378,
       "name": "[UNUSED]Test Nether Whelp",
       "reason": "The explicit [UNUSED]Test name identifies this dragon-type entry as an unused test entity rather than a character for summary.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21391,
+      "name": "Scarab Bunny",
+      "reason": "A bunny, a hidden helper.",
       "title": ""
     },
     {
@@ -13518,6 +14505,13 @@
       "name": "Felfire Diemetradon",
       "reason": "Positive ordinary diemetradon beast identity and54 native placements establish an animal population; unnamed numeric spell36247 does not establish an individual conversational exception.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 21417,
+      "name": "Invis Infernal Caster",
+      "reason": "Invisible script caster.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -13745,6 +14739,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21659,
+      "name": "Floaty Flavor Eye",
+      "reason": "A decorative flavor object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21674,
       "name": "Outland Rock Flayer Elite GreenGreen",
       "reason": "Native fields identify a beast creature with no NPC service flag, gossip menu, or assigned script.",
@@ -13791,6 +14792,13 @@
       "name": "Human Conjurer",
       "reason": "The native chesspiece binding and fixed description of the conjurer's appearance identify a playable game piece whose supplied text belongs to its chess role.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 21689,
+      "name": "Coilfang Frenzy Corpse",
+      "reason": "A corpse prop.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -13840,6 +14848,13 @@
       "name": "Orc Warlock",
       "reason": "The npc_chesspiece binding and its warlock appearance text identify this as a fixed playable chess piece whose supplied behavior is game-piece presentation, with no separate conversational identity.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 21756,
+      "name": "Shadowmoon Mark of Kael",
+      "reason": "A mark object.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -13920,9 +14935,23 @@
     },
     {
       "decision": "native only",
+      "entry": 21798,
+      "name": "Singing Ridge Void Storm",
+      "reason": "A storm effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21800,
       "name": "Singing Ridge Summon Bunny",
       "reason": "A summon helper with no conversational or service behavior is identified by its helper name and native creature fields.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21807,
+      "name": "Invis Legion Teleporter",
+      "reason": "Invisible teleporter helper.",
       "title": ""
     },
     {
@@ -14116,6 +15145,13 @@
     },
     {
       "decision": "native only",
+      "entry": 21935,
+      "name": "Gnome Cannon Shooter #Shattrath",
+      "reason": "A hidden shooter helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21939,
       "name": "Invis Illidari Blade Target",
       "reason": "Its explicit name identifies it as an invisible Illidari blade target, a technical encounter role rather than a conversational character identity.",
@@ -14130,9 +15166,30 @@
     },
     {
       "decision": "native only",
+      "entry": 21942,
+      "name": "Gnome Cannon Shooter #Singing Ridge",
+      "reason": "A hidden shooter helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21944,
+      "name": "Gnome Cannon Shooter #Ruuan",
+      "reason": "A hidden shooter helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 21947,
       "name": "Collection of Souls Glow Trigger",
       "reason": "The entry is explicitly named a glow trigger and has an unspecified creature type, supporting a mechanical helper role without a supported conversational identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21957,
+      "name": "Terokkar Forest - Shadow Council Invisible Stalker",
+      "reason": "An invisible stalker, a hidden script helper.",
       "title": ""
     },
     {
@@ -14154,6 +15211,13 @@
       "entry": 21973,
       "name": "Shadowy Disguise Female Transform",
       "reason": "The entry is explicitly designated as a female disguise transform, identifying it as a transformation form rather than an individual conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21978,
+      "name": "Shadowmoon Valley Wildlife",
+      "reason": "A quest target category, not a character.",
       "title": ""
     },
     {
@@ -14186,6 +15250,34 @@
     },
     {
       "decision": "native only",
+      "entry": 21996,
+      "name": "Air Force Guard Post (Alliance - Gryphon)",
+      "reason": "Invisible scripted guard-post marker.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 21999,
+      "name": "Air Force Trip Wire - Rooftop (Alliance)",
+      "reason": "Scripted trip wire marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22002,
+      "name": "Air Force Trip Wire - Ground (Horde)",
+      "reason": "A trip-wire device, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22003,
+      "name": "Air Force Trip Wire - Ground (Alliance)",
+      "reason": "Scripted trip wire marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22008,
       "name": "Sky Marker",
       "reason": "The name Sky Marker and mechanical creature type identify a marker-like mechanical template, with no conversational or service role evidenced.",
@@ -14207,9 +15299,30 @@
     },
     {
       "decision": "excluded",
+      "entry": 22039,
+      "name": "[PH] bat target",
+      "reason": "A placeholder target.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 22040,
+      "name": "[PH] Cave Bat JZB",
+      "reason": "A placeholder creature.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 22041,
       "name": "Corrupted Spectre[PH]",
       "reason": "The native name carries the explicit [PH] placeholder marker, and the record has no interaction flags or script; this identifies it as a placeholder helper rather than an established character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 22046,
+      "name": "[PH] Cave Bat",
+      "reason": "A placeholder creature.",
       "title": ""
     },
     {
@@ -14284,6 +15397,13 @@
     },
     {
       "decision": "native only",
+      "entry": 22104,
+      "name": "Cyclone (Karathress)",
+      "reason": "A spell effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22109,
       "name": "Skald Bunny",
       "reason": "The native helper review marker, bunny name, and flagless entry support a mechanical helper role without a conversational identity.",
@@ -14343,6 +15463,13 @@
       "entry": 22145,
       "name": "Barrier Hills Felboar [PH] not used",
       "reason": "The native name explicitly marks this Barrier Hills Felboar placeholder as not used.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22146,
+      "name": "Summoning Voidstorm",
+      "reason": "A storm effect used for summoning, not a character.",
       "title": ""
     },
     {
@@ -14459,6 +15586,13 @@
     },
     {
       "decision": "native only",
+      "entry": 22288,
+      "name": "Terokkar Quest Target",
+      "reason": "An invisible quest target marker that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22290,
       "name": "High Astromancer Solarian Transform Visual",
       "reason": "The explicit Transform Visual name identifies a visual effect helper rather than an independently characterized speaker.",
@@ -14469,6 +15603,13 @@
       "entry": 22296,
       "name": "<NOT USED>Mystery Mask Summon Bunny",
       "reason": "The explicit not-used Mystery Mask Summon Bunny name and miscellaneous type identify an unused summon helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22315,
+      "name": "Deathforge Mine",
+      "reason": "A mine that only explodes; never speaks.",
       "title": ""
     },
     {
@@ -14532,6 +15673,13 @@
       "entry": 22336,
       "name": "Demon Portal (Zuluhed)",
       "reason": "The entry is explicitly a demon portal and its SmartAI runs an action list when summoned, establishing a scripted environmental entity rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22340,
+      "name": "Terokkar Arakkoa Fly Target",
+      "reason": "An invisible fly-target marker used for scripting.",
       "title": ""
     },
     {
@@ -14661,6 +15809,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 22417,
+      "name": "[PH]Altar of Shadows caster",
+      "reason": "Placeholder caster.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 22418,
       "name": "Archimonde Channel Target",
@@ -14760,6 +15915,20 @@
     },
     {
       "decision": "native only",
+      "entry": 22471,
+      "name": "Death's Door North Warp-Gate",
+      "reason": "A warp-gate structure, not a character; the 'beast' type is a database label.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 22472,
+      "name": "Death's Door South Warp-Gate",
+      "reason": "A warp-gate structure, not a character; the 'beast' type is a database label.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22495,
       "name": "Death's Door Fel Cannon Target Bunny",
       "reason": "The entry is explicitly named as a Fel Cannon target bunny and its native script is named for that target role, establishing a mechanical helper rather than a speaking character.",
@@ -14809,6 +15978,13 @@
     },
     {
       "decision": "native only",
+      "entry": 22515,
+      "name": "World Trigger",
+      "reason": "A world trigger helper that only announces events.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22517,
       "name": "World Trigger (Large AOI)",
       "reason": "The record identifies a technical World Trigger with NullCreatureAI and no character subname; its many spawns across unrelated areas support treating it as a world helper rather than an individual character.",
@@ -14848,6 +16024,13 @@
       "name": "Karazhan - Chess, Victory Dummy Tool",
       "reason": "The entry is explicitly named a chess victory dummy tool and is a mechanical creature with no interaction flags, identifying it as an event helper prop.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 22524,
+      "name": "Karazhan - Chess, Victory Controller",
+      "reason": "A mechanical controller, not a character.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -15180,6 +16363,13 @@
     },
     {
       "decision": "native only",
+      "entry": 22902,
+      "name": "Phantasmal Lash",
+      "reason": "A visual effect object, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 22903,
       "name": "Unkillable Test Dummy 72 Warrior",
       "reason": "Explicit Unkillable Test Dummy native designation positively identifies a technical testing purpose; no personal profile is appropriate.",
@@ -15292,6 +16482,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23004,
+      "name": "Skyguard Nether Ray (Flying Mount)",
+      "reason": "A flying mount, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23020,
       "name": "Shadow Serpent",
       "reason": "The entry is explicitly typed as a beast and named Shadow Serpent, supporting animal-context native handling.",
@@ -15302,6 +16499,13 @@
       "entry": 23023,
       "name": "Scryer Reveler",
       "reason": "The name and records describe a Scryer reveler role in a world event, with random emotes, and provide no distinct individual identity to summarize.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23025,
+      "name": "Rizzle's Depth Charge",
+      "reason": "A summoned depth charge object that never speaks.",
       "title": ""
     },
     {
@@ -15411,6 +16615,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23076,
+      "name": "Legion Flak Cannon",
+      "reason": "A cannon, an object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23077,
       "name": "[PH]Knockdown Fel Cannon Dummy",
       "reason": "The PH Knockdown Fel Cannon Dummy responds to a spell hit by casting the cannon's aggro-burst spell, establishing a mechanical helper role.",
@@ -15446,6 +16657,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23090,
+      "name": "Troll Roof Stalker",
+      "reason": "A roof stalker, a hidden helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23095,
       "name": "Supremus Punch Invis Stalker",
       "reason": "Own native ScriptName exactly matches the registered npc_supremus_punch_invisible_stalker. Its summon callback applies Molten Flame and follows the summoner-selected target; native comments explicitly describe trigger creatures. This supports encounter trigger purpose, not a personal character.",
@@ -15456,6 +16674,13 @@
       "entry": 23102,
       "name": "Terokkar Trigger",
       "reason": "Named Terokkar Trigger; helper review and mechanical creature type support a trigger/helper role, with no conversational identity evidence.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23118,
+      "name": "Bombing Run Target Bunny",
+      "reason": "A target marker (bunny) for a bombing exercise; never speaks.",
       "title": ""
     },
     {
@@ -15495,6 +16720,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23155,
+      "name": "Invisible Stalker (Scale x3)",
+      "reason": "An invisible stalker, a hidden helper that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23203,
       "name": "Gan'arg Minion Transform",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -15505,6 +16737,20 @@
       "entry": 23209,
       "name": "Dragonmaw Peon Kill Credit",
       "reason": "The entry is explicitly labeled as kill credit and appears as quest 11020's objective target, identifying it as objective bookkeeping rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23210,
+      "name": "Creature Generator (Akama)",
+      "reason": "A creature generator helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 23211,
+      "name": "Aldor Faction Tester",
+      "reason": "A faction test figure, not a world character.",
       "title": ""
     },
     {
@@ -15537,6 +16783,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23259,
+      "name": "Blaze",
+      "reason": "A fire effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23260,
       "name": "Legion Ring Event InvisMan Lg",
       "reason": "The explicit Event InvisMan Lg implementation designation positively identifies an invisible event helper rather than a personal Legion character. No particular ring encounter or action inferred.",
@@ -15561,6 +16814,27 @@
       "entry": 23279,
       "name": "Portable Fel Cannon Transform",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23286,
+      "name": "Black Blood of Draenor",
+      "reason": "A substance, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23288,
+      "name": "Akama Event Stalker",
+      "reason": "An event stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23289,
+      "name": "Mine Car",
+      "reason": "An object, a mine car.",
       "title": ""
     },
     {
@@ -15691,6 +16965,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23322,
+      "name": "Banishing Crystal Bunny 01",
+      "reason": "A bunny helper that only applies banishment auras.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23325,
       "name": "Dragonmaw Flight Instructor Target",
       "reason": "The native name identifies this as a target entry, and its level-one creature record has no gossip or service flags.",
@@ -15739,10 +17020,59 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 23356,
+      "name": "Dragonmaw Race: Oldie's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23357,
+      "name": "Dragonmaw Race: Trope's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23358,
+      "name": "Dragonmaw Race: Corlok's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23359,
+      "name": "Dragonmaw Race: Ichman's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23360,
+      "name": "Dragonmaw Race: Mulverick's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23361,
+      "name": "Dragonmaw Race: Skyshatter's Target",
+      "reason": "A summoned race target marker that only cross-casts a spell.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 23366,
       "name": "Test Shroom",
       "reason": "The explicit Test name identifies this as a testing entry, and the supplied native record provides no separate character role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23372,
+      "name": "Mine Cart (Taxi)",
+      "reason": "A mine cart.",
       "title": ""
     },
     {
@@ -15785,6 +17115,13 @@
       "entry": 23412,
       "name": "Illidan Door Trigger",
       "reason": "The supplied identity is explicitly a door trigger, and it has NullCreatureAI with no interaction flag or conversation evidence; the packet supports treating it as a native helper record rather than a characterized person.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23416,
+      "name": "Reth'hedron's Target",
+      "reason": "A target helper.",
       "title": ""
     },
     {
@@ -15936,6 +17273,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23506,
+      "name": "Broken Illusion",
+      "reason": "An illusion helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23507,
       "name": "Elwynn Pink Elekk",
       "reason": "The native row identifies a level-5 Pink Elekk with no NPC flags; retain its native presentation without a personal summary.",
@@ -15950,9 +17294,23 @@
     },
     {
       "decision": "excluded",
+      "entry": 23515,
+      "name": "UNUSED Northrend Yeti (Red)",
+      "reason": "Marked unused.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 23532,
       "name": "[PH] Brewfest Garden D Vendor",
       "reason": "The explicit [PH] placeholder marker identifies this as a placeholder vendor entry rather than a character to summarize.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23537,
+      "name": "Headless Horseman - Fire (DND)",
+      "reason": "A hidden fire hazard used as a scripted game helper.",
       "title": ""
     },
     {
@@ -15964,9 +17322,23 @@
     },
     {
       "decision": "native only",
+      "entry": 23556,
+      "name": "Vrykul Proto-dragon Mount",
+      "reason": "A mount, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23583,
       "name": "Evidence Marker",
       "reason": "The entry is an Evidence Marker with mechanical object type and level-one, rank-zero fields, supporting a marker prop rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23585,
+      "name": "Witch Light",
+      "reason": "A light object, not a character.",
       "title": ""
     },
     {
@@ -16100,6 +17472,13 @@
       "entry": 23695,
       "name": "Tuskarr (Northrend Size Model)",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23697,
+      "name": "Beer Goggles Gnome Male",
+      "reason": "A costume helper.",
       "title": ""
     },
     {
@@ -16286,6 +17665,13 @@
     },
     {
       "decision": "native only",
+      "entry": 23821,
+      "name": "Valgarde Harpoon Target",
+      "reason": "A mechanical target dummy that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 23830,
       "name": "[DNT] L70ETC FX Controller",
       "reason": "The DNT-named type-10 controller has no interaction flags; its SmartAI casts a named area-effect spell out of combat.",
@@ -16408,6 +17794,13 @@
       "entry": 23901,
       "name": "Invisible Giant Trigger",
       "reason": "The entry is explicitly a giant trigger helper, has no NPC interaction flags, and has no static spawn; the supplied evidence supports a mechanical helper role without an individual identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 23907,
+      "name": "Theramore Cannon",
+      "reason": "A cannon emplacement, an object that never speaks.",
       "title": ""
     },
     {
@@ -16573,6 +17966,20 @@
     },
     {
       "decision": "native only",
+      "entry": 24009,
+      "name": "Alliance Corpse",
+      "reason": "A corpse object used for a burning interaction; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24010,
+      "name": "Forsaken Corpse",
+      "reason": "A corpse object used for a burning interaction; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24012,
       "name": "Ingvar Res Ground Visual",
       "reason": "The entry is explicitly identified as a ground visual helper for Ingvar's resurrection.",
@@ -16597,6 +18004,13 @@
       "entry": 24025,
       "name": "Invis Firework Helper",
       "reason": "The native name identifies an invisible firework helper, a technical support function rather than an individually characterized person.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24034,
+      "name": "Headless Horseman - Wisp Invis",
+      "reason": "An invisible wisp helper.",
       "title": ""
     },
     {
@@ -16685,6 +18099,13 @@
     },
     {
       "decision": "native only",
+      "entry": 24108,
+      "name": "Self-Turning and Oscillating Utility Target",
+      "reason": "A practice target object that never speaks.",
+      "title": "S.T.O.U.T."
+    },
+    {
+      "decision": "native only",
       "entry": 24109,
       "name": "[DND] Brewfest Target Dummy Move To Target",
       "reason": "Its explicit DND target-dummy name and mechanical type identify a Brewfest movement helper, not a speaking character.",
@@ -16731,6 +18152,13 @@
       "name": "Mary Darrow",
       "reason": "The supplied records identify Mary as a stablemaster and provide only conditional, generic greetings about stabling pets and recovering companions; they establish services but no individual character to summarize.",
       "title": "Stable Master"
+    },
+    {
+      "decision": "native only",
+      "entry": 24158,
+      "name": "Dragonflayer Oracle Target",
+      "reason": "A target marker.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -16825,6 +18253,27 @@
     },
     {
       "decision": "native only",
+      "entry": 24203,
+      "name": "[DND] Brewfest Barker Bunny 2",
+      "reason": "An invisible Brewfest bark trigger, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24204,
+      "name": "[DND] Brewfest Barker Bunny 3",
+      "reason": "An invisible Brewfest bark trigger, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24205,
+      "name": "[DND] Brewfest Barker Bunny 4",
+      "reason": "An invisible Brewfest bark trigger, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24206,
       "name": "Prowling Worg",
       "reason": "Its ordinary worg name and native animal type positively establish a wildlife role with no supported conversational identity.",
@@ -16881,9 +18330,23 @@
     },
     {
       "decision": "native only",
+      "entry": 24237,
+      "name": "Vrykul Proto-dragon Mount (White)",
+      "reason": "A mount, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24259,
       "name": "Soul Destination",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24260,
+      "name": "Val'kyr Soul Target",
+      "reason": "A target marker.",
       "title": ""
     },
     {
@@ -17126,6 +18589,13 @@
     },
     {
       "decision": "native only",
+      "entry": 24335,
+      "name": "Runed Orb",
+      "reason": "A runed orb that only casts a spell when it appears; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24336,
       "name": "Orb Target",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -17206,6 +18676,13 @@
       "entry": 24378,
       "name": "[UNUSED]Nazan Kill Credit",
       "reason": "The native name explicitly marks this as an unused Nazan kill-credit entry, identifying an internal credit marker rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24382,
+      "name": "[VO]Nalorakk",
+      "reason": "A voice-over helper.",
       "title": ""
     },
     {
@@ -17308,6 +18785,13 @@
     },
     {
       "decision": "native only",
+      "entry": 24464,
+      "name": "Scourging Crystal",
+      "reason": "A shielded crystal structure; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24465,
       "name": "Blue Floating Rune Channel Bunny 01",
       "reason": "The explicit floating rune channel bunny name and totem-type native record identify a channeling helper or visual prop, with no character evidence.",
@@ -17357,6 +18841,13 @@
     },
     {
       "decision": "native only",
+      "entry": 24506,
+      "name": "ZP - Medium (DND)",
+      "reason": "A do-not-disturb helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24512,
       "name": "Vrykul Harpoon Gun (OLD)",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -17381,6 +18872,13 @@
       "entry": 24538,
       "name": "Dragonflayer Installation I",
       "reason": "The named installation is an environmental building targeted for destruction with a harpoon; its spell-hit script grants kill credit, supporting a technical objective rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24550,
+      "name": "Throw Targeting (mob)",
+      "reason": "A targeting helper.",
       "title": ""
     },
     {
@@ -17434,6 +18932,13 @@
     },
     {
       "decision": "native only",
+      "entry": 24640,
+      "name": "Alliance Banner",
+      "reason": "An object (banner) that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24641,
       "name": "Alliance Standard Kill Credit",
       "reason": "Its explicit “Kill Credit” identity and use as the objective target identify it as a quest-tracking marker.",
@@ -17465,6 +18970,27 @@
       "entry": 24648,
       "name": "Invisible Stalker (Scale x2)",
       "reason": "The explicit “Invisible Stalker (Scale x2)” helper label supports treating this as a non-person helper entry.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24651,
+      "name": "Reflection of Flame",
+      "reason": "An effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24652,
+      "name": "Harpoon Surfboard",
+      "reason": "A surfboard object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24653,
+      "name": "Flying Machine",
+      "reason": "A vehicle.",
       "title": ""
     },
     {
@@ -17679,6 +19205,69 @@
     },
     {
       "decision": "native only",
+      "entry": 24820,
+      "name": "Iron Dwarf Relic",
+      "reason": "A relic crystal object used as a data target; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24824,
+      "name": "Iron Dwarf Relic",
+      "reason": "A relic crystal object used as a data target; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24826,
+      "name": "Transport Bot A1->A2",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24827,
+      "name": "Transport Bot B1->B2",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24828,
+      "name": "Transport Bot C1->C2",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24829,
+      "name": "Transport Bot D1->D2",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24831,
+      "name": "Transport Bot D2",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24832,
+      "name": "Transport Bot D3",
+      "reason": "A scripted transport marker bot; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24845,
+      "name": "Baelgun's Event Generator (Cave)",
+      "reason": "An invisible event generator trigger; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24851,
       "name": "Kiz Coilspanner",
       "reason": "The supplied evidence positively identifies Kiz as a named Flight Master and shows the fast-travel service option; it supports the native service role without character-specific narrative detail.",
@@ -17696,6 +19285,13 @@
       "entry": 24854,
       "name": "Sister of Torment Image",
       "reason": "The entry is explicitly named an image and is configured as a scripted creature with no NPC interaction flags; the supplied evidence supports a technical image role rather than a character identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24861,
+      "name": "Crystal Beam",
+      "reason": "A beam helper object.",
       "title": ""
     },
     {
@@ -17798,9 +19394,23 @@
     },
     {
       "decision": "native only",
+      "entry": 24961,
+      "name": "Sanctum Rift",
+      "reason": "A rift effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 24973,
       "name": "Ellis Crew Trigger",
       "reason": "The native trigger flag and explicit helper designation establish a technical helper purpose, without a supported named speaker or character role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 24980,
+      "name": "Crystal Ward",
+      "reason": "A ward object that never speaks.",
       "title": ""
     },
     {
@@ -17920,6 +19530,13 @@
       "entry": 25092,
       "name": "Dawnchaser Credit",
       "reason": "The entry is explicitly named as a credit record, and its supplied script grants kill credit on a spell hit; the evidence supports an objective-credit role rather than a distinct character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25114,
+      "name": "Hauthaa's Anvil Bunny",
+      "reason": "An anvil bunny helper.",
       "title": ""
     },
     {
@@ -18078,6 +19695,20 @@
     },
     {
       "decision": "native only",
+      "entry": 25265,
+      "name": "Demonic Vapor",
+      "reason": "A vapor effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25267,
+      "name": "Demonic Vapor (Trail)",
+      "reason": "A vapor trail effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 25269,
       "name": "Horde Zeppelin (Northrend)",
       "reason": "The native designation explicitly identifies a Horde zeppelin in Northrend, a transport vessel rather than a personal character. This positive vehicle identity supports no profile without asserting an active route or loader functionality.",
@@ -18109,6 +19740,13 @@
       "entry": 25303,
       "name": "Ribbon Pole Fire Spiral Bunny",
       "reason": "The entry is explicitly named as a ribbon-pole fire spiral bunny and is a level-one, type-10 creature with no NPC flags, gossip menu, or script; the records identify a festival prop/helper rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25305,
+      "name": "Dancing Flames",
+      "reason": "A flame effect.",
       "title": ""
     },
     {
@@ -18231,6 +19869,41 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 25406,
+      "name": "Craig Steele2",
+      "reason": "Developer test entry with a real-world title; not an in-world character.",
+      "title": "Software Engineer"
+    },
+    {
+      "decision": "excluded",
+      "entry": 25410,
+      "name": "Craig Steele (1)",
+      "reason": "Developer test entry with a real-world title; not an in-world character.",
+      "title": "Software Engineer"
+    },
+    {
+      "decision": "excluded",
+      "entry": 25411,
+      "name": "Craig Steele3",
+      "reason": "Developer test entry with a real-world title; not an in-world character.",
+      "title": "Software Engineer"
+    },
+    {
+      "decision": "excluded",
+      "entry": 25412,
+      "name": "Craig Steele (2)",
+      "reason": "Developer test entry with a real-world title; not an in-world character.",
+      "title": "Software Engineer"
+    },
+    {
+      "decision": "excluded",
+      "entry": 25413,
+      "name": "Craig Steele2 (1)",
+      "reason": "Developer test entry with a real-world title; not an in-world character.",
+      "title": "Software Engineer"
+    },
+    {
       "decision": "native only",
       "entry": 25441,
       "name": "North Platform",
@@ -18281,9 +19954,51 @@
     },
     {
       "decision": "native only",
+      "entry": 25471,
+      "name": "Temple A",
+      "reason": "A spire used as a scouting objective marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25472,
+      "name": "Temple B",
+      "reason": "A spire used as a scouting objective marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25473,
+      "name": "Temple C",
+      "reason": "A spire used as a scouting objective marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25491,
+      "name": "Boss Whisperer",
+      "reason": "Level 1 helper with no flags or evidence; not a real character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 25494,
       "name": "Purifying Totem",
       "reason": "The native entry identifies a purifying totem, a helper prop rather than a speaking character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25495,
+      "name": "Scourge Proxy Unit",
+      "reason": "Proxy unit used only for kill credit; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25499,
+      "name": "PattyMacks Dummy",
+      "reason": "A dummy target; not a character.",
       "title": ""
     },
     {
@@ -18333,6 +20048,13 @@
       "entry": 25513,
       "name": "4th Kvaldir Vessel (Bor's Anvil)",
       "reason": "This is a named Kvaldir vessel used as a burning objective; its spell-hit interaction grants quest credit and displays a ship message. It is an environmental target, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25518,
+      "name": "Ground Flower",
+      "reason": "A decorative ground flower that never speaks.",
       "title": ""
     },
     {
@@ -18389,6 +20111,13 @@
       "entry": 25537,
       "name": "Craig's Test Human A",
       "reason": "Correct the disposition on positive native technical-purpose designation Craig's Test Human A. Omit testing/debug-method narration from runtime text; do not convert a developer name, PTR target, testing mount or placeholder public title into a personal character. No placement/flag/biography absence inference is needed. Exact baseline classification question remains separate.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 25538,
+      "name": "(PH) Shattered Sun Badge Vendor",
+      "reason": "Placeholder entry with no vendor flag or evidence.",
       "title": ""
     },
     {
@@ -18637,6 +20366,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 25656,
+      "name": "The Helmsman's Ship",
+      "reason": "A ship object.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 25664,
       "name": "South Sinkhole",
@@ -18683,6 +20419,13 @@
       "entry": 25672,
       "name": "Warsong Slaughterhouse Credit",
       "reason": "Named as a slaughterhouse credit and used as a required objective target; the record supports a quest-credit proxy rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25673,
+      "name": "Mammoth Mount",
+      "reason": "A mount, never speaks.",
       "title": ""
     },
     {
@@ -18869,6 +20612,13 @@
     },
     {
       "decision": "native only",
+      "entry": 25796,
+      "name": "Spectral Realm",
+      "reason": "A zone effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 25813,
       "name": "(Deprecated) Sunwell FX",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -18932,6 +20682,13 @@
     },
     {
       "decision": "native only",
+      "entry": 25879,
+      "name": "Darkness",
+      "reason": "Inert effect with no behaviour.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 25882,
       "name": "Multiphase Disturbance",
       "reason": "The type-13 entry is used as a survey target: it respawns with concealment effects, grants reading credit when struck by the survey spell, and despawns afterward. This supports an environmental disturbance rather than a speaking character.",
@@ -18949,6 +20706,13 @@
       "entry": 25953,
       "name": "Fel Crystal Spell Target",
       "reason": "Its native name explicitly identifies it as a spell target, and the supplied template has no NPC interaction flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25960,
+      "name": "M'uru Sunwell",
+      "reason": "The Sunwell, an object that never speaks.",
       "title": ""
     },
     {
@@ -18998,6 +20762,13 @@
       "entry": 25973,
       "name": "Shaman Bonfire Bunny 002",
       "reason": "This level-one type-10 helper responds to a spell hit by casting Bonfire Disguise, indicating a mechanical disguise effect rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 25985,
+      "name": "Ahune Ice Spear Bunny",
+      "reason": "Hidden bunny helper.",
       "title": ""
     },
     {
@@ -19110,6 +20881,13 @@
       "entry": 26043,
       "name": "Steam Burst",
       "reason": "The name “Steam Burst,” native type 10, no character subname or interaction flags, and NullCreatureAI identify an environmental/technical entry rather than a supported individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26048,
+      "name": "Storm Totem",
+      "reason": "A totem object that never speaks; it only triggers a spawn when used.",
       "title": ""
     },
     {
@@ -19246,6 +21024,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 26162,
+      "name": "Transborea Generator 001",
+      "reason": "A scripted generator for an evacuation event, not a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 26164,
       "name": "X-51 Nether-Rocket X-TREME",
@@ -19376,6 +21161,20 @@
       "entry": 26258,
       "name": "[DND] Midsummer Bonfire Faction Bunny - A",
       "reason": "The explicit [DND] faction-bunny name identifies a Midsummer event helper, and its level-one critter record has no conversational service flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26262,
+      "name": "The Core of Entropius",
+      "reason": "Inert object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26264,
+      "name": "Boulder Target",
+      "reason": "A target marker, not a character.",
       "title": ""
     },
     {
@@ -19625,6 +21424,13 @@
     },
     {
       "decision": "native only",
+      "entry": 26498,
+      "name": "Drakuru's Bunny 01",
+      "reason": "A scripted helper bunny that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 26513,
       "name": "Drakkari Shaman Corpse",
       "reason": "The entry is explicitly a Drakkari shaman corpse; its native record identifies it as a creature corpse rather than a speaking character.",
@@ -19639,9 +21445,23 @@
     },
     {
       "decision": "native only",
+      "entry": 26523,
+      "name": "Forsaken Blight Spreader",
+      "reason": "A rideable blight-spreading vehicle, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 26534,
       "name": "Totemic Beacon",
       "reason": "SmartAI labels this entry a Totemic Beacon and summons an NPC; the supplied evidence supports a technical summon beacon rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 26535,
+      "name": "[Demo] Craig Amai",
+      "reason": "Developer demo placeholder with no evidence of a character.",
       "title": ""
     },
     {
@@ -19649,6 +21469,13 @@
       "entry": 26559,
       "name": "Drakuru's Bunny 02",
       "reason": "A helper named as Drakuru's Bunny, with creature type 10, is triggered by a spell hit to cast the summon-image script; the evidence supports a summoned visual helper, not an independently characterized person.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 26576,
+      "name": "[PH] Justin's Test NPC",
+      "reason": "Placeholder test NPC, not a character.",
       "title": ""
     },
     {
@@ -19754,6 +21581,13 @@
       "entry": 26685,
       "name": "Massive Jormungar",
       "reason": "The named Jormungar has a dedicated encounter script and no interaction flags, supporting an environmental creature role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26688,
+      "name": "Statis orb",
+      "reason": "Object, not a character.",
       "title": ""
     },
     {
@@ -19877,9 +21711,23 @@
     },
     {
       "decision": "native only",
+      "entry": 26751,
+      "name": "[DND] TAR Pedestal - Trainer, Druid",
+      "reason": "A hidden pedestal helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 26752,
       "name": "[DND] TAR Pedestal - Trainer, Hunter",
       "reason": "Replace the personal profile with no-profile on the explicit DND technical training-pedestal designation; generic goods menus and missing speech do not establish a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26753,
+      "name": "[DND] TAR Pedestal - Trainer, Mage",
+      "reason": "A hidden pedestal helper, not a character.",
       "title": ""
     },
     {
@@ -19901,6 +21749,34 @@
       "entry": 26756,
       "name": "[DND] TAR Pedestal - Trainer, Rogue",
       "reason": "Explicit internal TAR pedestal designation identifies a trainer/service fixture; the multi-location world-event pedestal evidence supports no personal profile without inventing a trainer identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26757,
+      "name": "[DND] TAR Pedestal - Trainer, Shaman",
+      "reason": "A hidden pedestal helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26758,
+      "name": "[DND] TAR Pedestal - Trainer, Warlock",
+      "reason": "A hidden pedestal helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26759,
+      "name": "[DND] TAR Pedestal - Trainer, Warrior",
+      "reason": "A hidden pedestal helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 26765,
+      "name": "[DND] TAR Pedestal - Fight Promoter",
+      "reason": "A hidden pedestal helper, not a character.",
       "title": ""
     },
     {
@@ -19939,6 +21815,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 26781,
+      "name": "2.4 Sunwell Daily Gem Vendor [PH]",
+      "reason": "Placeholder vendor entry, not a character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 26784,
       "name": "Dan's Test Dummy",
@@ -19947,10 +21830,24 @@
     },
     {
       "decision": "native only",
+      "entry": 26785,
+      "name": "Directional Rune",
+      "reason": "A rune marker, an object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 26789,
       "name": "Drakuru's Bunny 04",
       "reason": "This named bunny is a spell-hit helper that casts the summon-image script; the evidence supports a technical trigger role, not an individual character summary.",
       "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 26791,
+      "name": "Scott Keenan",
+      "reason": "Joke/developer entry named after a real person, not a character.",
+      "title": "Thug Life"
     },
     {
       "decision": "native only",
@@ -20030,6 +21927,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 26895,
+      "name": "Snowfall Elk Credit",
+      "reason": "Quest credit entry, not an elk or a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 26927,
       "name": "Warlord Jin'gom Kill Credit",
@@ -20062,6 +21966,13 @@
       "entry": 27048,
       "name": "Breath Caster",
       "reason": "Its native type is explicitly the unusual type 10 and its only supplied behavior is an automatic Frost Breath cast, supporting a technical/environmental role rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27064,
+      "name": "Abandoned Fuel Tank",
+      "reason": "An inanimate fuel tank hazard that never speaks.",
       "title": ""
     },
     {
@@ -20139,6 +22050,13 @@
       "entry": 27165,
       "name": "Drained Moonrest Highborne",
       "reason": "This is a level-70 undead named for its drained state and Moonrest origin, placed among the Moonrest ruins; its native record marks it as a creature rather than an interactive service character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 27168,
+      "name": "7th Legion Test Unit",
+      "reason": "Test unit.",
       "title": ""
     },
     {
@@ -20255,9 +22173,37 @@
     },
     {
       "decision": "native only",
+      "entry": 27304,
+      "name": "King Bjorn Visual",
+      "reason": "Visual stand-in helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27306,
       "name": "Transitus Shield Invisible Bunny",
       "reason": "The explicitly named invisible bunny is a level-1 mechanical helper with no NPC services or authored dialogue, so it has no character summary.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27310,
+      "name": "King Haldor Visual",
+      "reason": "Visual stand-in helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27311,
+      "name": "King Ranulf Visual",
+      "reason": "Visual stand-in helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27312,
+      "name": "King Tor Visual",
+      "reason": "Visual stand-in helper.",
       "title": ""
     },
     {
@@ -20272,6 +22218,13 @@
       "entry": 27322,
       "name": "Orsonn Conversation Credit",
       "reason": "Explicit Conversation Credit naming and exact quest objective establish a progress helper for speaking with Orsonn, rather than Orsonn’s personal identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27323,
+      "name": "Outhouse Stalker",
+      "reason": "Hidden stalker helper.",
       "title": ""
     },
     {
@@ -20307,6 +22260,13 @@
       "entry": 27353,
       "name": "Levine Family Termite Bunny",
       "reason": "A helper creature whose spawn script summons Foreman Kaleiki; its name identifies the helper role, not an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27354,
+      "name": "Broken-down Shredder",
+      "reason": "A vehicle object that never speaks.",
       "title": ""
     },
     {
@@ -20370,6 +22330,20 @@
       "entry": 27397,
       "name": "Rocket Mount (Log Ride Test)",
       "reason": "The native name identifies a rocket mount log-ride test; no separate in-world role or identity is established.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27402,
+      "name": "Bone Target Bunny",
+      "reason": "A target bunny, a hidden helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27403,
+      "name": "Strange Ore Target",
+      "reason": "A target marker, not a character.",
       "title": ""
     },
     {
@@ -20472,6 +22446,20 @@
     },
     {
       "decision": "native only",
+      "entry": 27442,
+      "name": "Scarlet Raven Priest Image - Female Transform",
+      "reason": "Appearance stand-in used for a transformation, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27443,
+      "name": "Scarlet Raven Priest Image - Male Transform",
+      "reason": "Appearance stand-in used for a transformation, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27444,
       "name": "A Fall from Grace High Abbot Kill Credit Bunny",
       "reason": "Its explicit kill-credit-bunny name and miscellaneous type identify it as a quest credit helper rather than a conversational character.",
@@ -20489,6 +22477,13 @@
       "entry": 27446,
       "name": "High Abbot Landgren's Jump Vehicle",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27448,
+      "name": "Serinar's Presence",
+      "reason": "A presence marker for a scripted dragon effect, not a speaking character.",
       "title": ""
     },
     {
@@ -20524,6 +22519,13 @@
       "entry": 27454,
       "name": "Zelig Spell Target",
       "reason": "The supplied native name identifies this as a spell target; its fields show no NPC interaction flags or scripted character role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27457,
+      "name": "Skirmisher Corpse",
+      "reason": "A corpse prop, never speaks.",
       "title": ""
     },
     {
@@ -20591,6 +22593,13 @@
     },
     {
       "decision": "native only",
+      "entry": 27496,
+      "name": "Refurbished Shredder",
+      "reason": "A vehicle object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27513,
       "name": "Covetous Geist",
       "reason": "The evidence identifies four spawns of the same generically named undead creature type in Wintergarde Crypt, establishing an archetype rather than a distinct individual identity.",
@@ -20654,6 +22663,13 @@
     },
     {
       "decision": "native only",
+      "entry": 27587,
+      "name": "Alliance Steam Tank",
+      "reason": "A drivable vehicle with a credit script; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27589,
       "name": "Ruby Strafe Bunny",
       "reason": "The level-one critter template and the explicit Ruby Strafe Bunny helper name identify a mechanical helper rather than an individual conversational character.",
@@ -20682,6 +22698,13 @@
     },
     {
       "decision": "native only",
+      "entry": 27593,
+      "name": "Rocket Propelled Warhead",
+      "reason": "A vehicle object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27595,
       "name": "QA Test Dummy 80 High Magic Resist",
       "reason": "The entry is explicitly a QA test dummy named and labeled as a punching bag, with no NPC service flag; its supplied identity is a testing target.",
@@ -20707,6 +22730,13 @@
       "name": "QA Test Dummy 83 Fixed Damage",
       "reason": "The explicit QA test dummy name and QA Punching Bag subname identify a test prop.",
       "title": "QA Punching Bag"
+    },
+    {
+      "decision": "native only",
+      "entry": 27607,
+      "name": "Plague Wagon",
+      "reason": "A vehicle machine with an aura script; never speaks.",
+      "title": ""
     },
     {
       "decision": "native only",
@@ -20786,6 +22816,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 27694,
+      "name": "Player Skeleton [PH]",
+      "reason": "Placeholder skeleton entry, not a character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 27698,
       "name": "Defending Wyrmrest Temple Kill Credit Bunny",
@@ -20818,6 +22855,13 @@
       "entry": 27723,
       "name": "[DND] Aldor Mailbox Malfunction Bunny",
       "reason": "The explicit [DND] helper name and totem type identify a mechanical helper prop, with no character identity.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 27741,
+      "name": "Currency Token Test Wizard",
+      "reason": "Test creature.",
       "title": ""
     },
     {
@@ -20888,6 +22932,13 @@
       "entry": 27802,
       "name": "Orb Target Credit",
       "reason": "The explicit target-credit label and its link to the March of the Giants objective support an objective-credit function, not an individual character summary.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27825,
+      "name": "Mausoleum Scourge Proxy",
+      "reason": "Proxy target helper for a quest, not a character.",
       "title": ""
     },
     {
@@ -20969,6 +23020,13 @@
     },
     {
       "decision": "native only",
+      "entry": 27864,
+      "name": "Fanggore Worg Disguise",
+      "reason": "Disguise helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27866,
       "name": "Honeybee",
       "reason": "Honeybee is explicitly an animal name, and the supplied level-one native creature fields support an environmental creature rather than an individual character.",
@@ -21032,6 +23090,13 @@
     },
     {
       "decision": "native only",
+      "entry": 27881,
+      "name": "Wintergrasp Catapult",
+      "reason": "Siege vehicle, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27882,
       "name": "Brew Bubble",
       "reason": "The level-1, miscellaneous-type Brew Bubble has a dedicated script but no conversational or character evidence; the supplied evidence supports an environmental/scripted entity.",
@@ -21063,6 +23128,13 @@
       "entry": 27894,
       "name": "Antipersonnel Cannon",
       "reason": "The native entry is an antipersonnel cannon with a spell-click flag and NullCreatureAI, supporting its use as a mechanical interactable rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27905,
+      "name": "Wintergrasp Bomber Cockpit",
+      "reason": "Vehicle component, never speaks.",
       "title": ""
     },
     {
@@ -21102,6 +23174,20 @@
     },
     {
       "decision": "native only",
+      "entry": 27932,
+      "name": "Harry's Bomber",
+      "reason": "Vehicle, never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27939,
+      "name": "The Helmsman's Ship",
+      "reason": "Ship object, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 27942,
       "name": "Ice Spike Trigger",
       "reason": "Its explicit trigger designation and mechanical type identify it as an Ice Spike effect helper.",
@@ -21136,6 +23222,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 27959,
+      "name": "Your Inner Turmoil",
+      "reason": "Quest-target helper entry, not a real character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 27967,
       "name": "Dark Rune Guardian [PH]",
@@ -21161,6 +23254,13 @@
       "entry": 27988,
       "name": "Dalson's Outhouse Bunny",
       "reason": "The name identifies an outhouse bunny helper, while the native record gives it no NPC interaction flags or attached script.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 27989,
+      "name": "D.I.S.C.O.",
+      "reason": "Object, not a character.",
       "title": ""
     },
     {
@@ -21196,6 +23296,13 @@
       "entry": 27999,
       "name": "Rock Shield Trigger (Borean Tundra)",
       "reason": "Its explicit trigger name and totem-type native record identify it as a mechanical helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28000,
+      "name": "Ethereal Mutagen - Player",
+      "reason": "Player-effect helper entry, not a character.",
       "title": ""
     },
     {
@@ -21298,6 +23405,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28130,
+      "name": "Invis Lightning Stalker",
+      "reason": "An invisible stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28137,
       "name": "Leave No One Behind Bunny",
       "reason": "Own native Leave No One Behind Bunny helper designation and directly bound quest-credit cast establish a technical quest helper, rather than a personal profile; creature type alone is not the basis.",
@@ -21308,6 +23422,13 @@
       "entry": 28150,
       "name": "Destroyed Siege Tank",
       "reason": "The entry is explicitly a destroyed siege tank and its native type is mechanical, supporting an environmental wreck identity rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28162,
+      "name": "Drakkari Corpse",
+      "reason": "A corpse prop that is not a character.",
       "title": ""
     },
     {
@@ -21364,6 +23485,34 @@
       "entry": 28224,
       "name": "Trapdoor Crawler Bunny",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28230,
+      "name": "Nozronn's Eye",
+      "reason": "Scrying eye object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28235,
+      "name": "Dark Matter",
+      "reason": "A scripted effect creature, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28237,
+      "name": "Dark Matter Target",
+      "reason": "An inert target for an encounter.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28239,
+      "name": "Arcane Beam",
+      "reason": "Beam helper.",
       "title": ""
     },
     {
@@ -21431,6 +23580,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28265,
+      "name": "Searing Gaze",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28269,
       "name": "Flying Machine Vehicle",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -21448,6 +23604,13 @@
       "entry": 28271,
       "name": "Glacial Breach Scourge Credit",
       "reason": "This named credit entry is an objective target for a Scourge-minion kill objective, with no separate character identity evidenced.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28273,
+      "name": "Arranged Crystal Formation Bunny",
+      "reason": "A bunny helper.",
       "title": ""
     },
     {
@@ -21536,6 +23699,20 @@
     },
     {
       "decision": "native only",
+      "entry": 28304,
+      "name": "Drakkari Pedestal 02",
+      "reason": "A banner pedestal, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28305,
+      "name": "Drakkari Pedestal 03",
+      "reason": "A banner pedestal, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28306,
       "name": "Anti-Magic Zone",
       "reason": "Anti-Magic Zone is a technical environmental name with miscellaneous type and no NPC services, supporting treatment as a nonconversational entity.",
@@ -21619,6 +23796,20 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 28364,
+      "name": "Slim's Test Mage",
+      "reason": "Test creature.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 28365,
+      "name": "Slim's Test Warlock",
+      "reason": "Test creature.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 28366,
       "name": "Wintergrasp Tower Cannon",
@@ -21641,6 +23832,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28389,
+      "name": "Primordial Hatchling",
+      "reason": "A pick-up hatchling that never speaks; vanishes when collected.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28403,
       "name": "Har'koan Subduer",
       "reason": "The supplied native behavior is combat-only: the subduer runs an out-of-combat script and casts Frostbolt in combat, with no conversational role shown.",
@@ -21655,6 +23853,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28413,
+      "name": "Nerubian Cocoon",
+      "reason": "A cocoon, an object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28439,
       "name": "Time Rift (CoT Stratholme, Large)",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
@@ -21665,6 +23870,13 @@
       "entry": 28441,
       "name": "Great Horned Owl Hover Bunny",
       "reason": "The explicit hover-bunny helper name and mechanical type identify a helper prop rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28452,
+      "name": "Elemental Rift",
+      "reason": "A rift, an object that never speaks.",
       "title": ""
     },
     {
@@ -21745,6 +23957,20 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 28464,
+      "name": "Cultist Corpse",
+      "reason": "A burnt corpse, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28466,
+      "name": "Fruit Tosser",
+      "reason": "A scripted fruit-tossing helper.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 28469,
       "name": "[UNUSED]Altar of Quetz'lun Gateway - Real World",
@@ -21753,9 +23979,30 @@
     },
     {
       "decision": "native only",
+      "entry": 28475,
+      "name": "Runebladed Axe",
+      "reason": "Weapon object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28476,
+      "name": "Runebladed Sword",
+      "reason": "A sword, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28478,
       "name": "Altar of Quetz'lun Gateway",
       "reason": "Its native name identifies an altar and gateway feature, an environmental object rather than a character identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28481,
+      "name": "Runeforge (SE)",
+      "reason": "A runeforge, an object that never speaks.",
       "title": ""
     },
     {
@@ -21770,6 +24017,13 @@
       "entry": 28483,
       "name": "Runeforge (SW)",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28485,
+      "name": "Blood Vat Bunny",
+      "reason": "A bunny helper that only casts a script spell.",
       "title": ""
     },
     {
@@ -21823,6 +24077,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28537,
+      "name": "Wants Banana",
+      "reason": "A scripted trigger.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28542,
       "name": "Scarlet Hold",
       "reason": "The named hold is an environmental fortification that the quest explicitly identifies as a structure to analyze; its native record supplies no character or conversational role.",
@@ -21851,9 +24112,30 @@
     },
     {
       "decision": "native only",
+      "entry": 28567,
+      "name": "Water Spout",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28591,
       "name": "Ghoul Feeding KC Bunny",
       "reason": "Quest-target helper script sends a target, sets data, grants kill credit, and despawns the helper; the evidence supports a quest mechanic rather than an independent character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28595,
+      "name": "Freya's Horn Credit",
+      "reason": "A credit marker for a quest objective.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28617,
+      "name": "Drakuramas Teleport Bunny 01",
+      "reason": "A teleport bunny helper.",
       "title": ""
     },
     {
@@ -21970,10 +24252,38 @@
     },
     {
       "decision": "native only",
+      "entry": 28664,
+      "name": "Seat Squatter - LAB",
+      "reason": "Helper object.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 28712,
+      "name": "Basic Loot Pinata",
+      "reason": "A test pinata object, not a character.",
+      "title": "Hit Me!"
+    },
+    {
+      "decision": "native only",
       "entry": 28713,
       "name": "Quetz'lun Troll Worshipper Kill Credit Bunny",
       "reason": "The name identifies a kill-credit bunny and the native creature record classifies it as a miscellaneous helper; it serves as the objective target for Foundation for Revenge, rather than as a characterized speaker.",
       "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28719,
+      "name": "Soul Font Void Zone",
+      "reason": "A void-zone effect.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 28720,
+      "name": "First Aid Loot Pinata",
+      "reason": "A test pinata object, not a character.",
+      "title": "Hit Me!"
     },
     {
       "decision": "native only",
@@ -22103,6 +24413,13 @@
     },
     {
       "decision": "native only",
+      "entry": 28775,
+      "name": "Dark Rider Target",
+      "reason": "A target marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28777,
       "name": "Catapult KC Bunny",
       "reason": "A catapult-related bunny helper with no conversational or service flags; the quest objective identifies this entry as a required target during the sabotage task, not as its giver.",
@@ -22117,9 +24434,23 @@
     },
     {
       "decision": "native only",
+      "entry": 28780,
+      "name": "Explosive Charges Bunny",
+      "reason": "A helper bunny for a scripted countdown.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28786,
       "name": "Drakuru KC Bunny 03",
       "reason": "Its mechanical type and explicitly named KC Bunny helper designation support a mechanical quest helper role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28789,
+      "name": "Explosion Guy",
+      "reason": "A hidden effect helper.",
       "title": ""
     },
     {
@@ -22148,6 +24479,13 @@
       "entry": 28820,
       "name": "Destructive Ward Kill Credit",
       "reason": "The explicit Kill Credit designation and use as the ward-placement quest objective identify a functional objective marker.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28821,
+      "name": "Mine Car",
+      "reason": "A mine car, an object that never speaks.",
       "title": ""
     },
     {
@@ -22229,9 +24567,23 @@
     },
     {
       "decision": "native only",
+      "entry": 28935,
+      "name": "Acherus Dummy",
+      "reason": "A practice dummy, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 28938,
       "name": "Charged Sentry Totem",
       "reason": "This is a charged sentry totem with passive AI initialization, a deployed technical helper rather than an evidenced conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 28947,
+      "name": "Ionar Invis Stalker",
+      "reason": "Invisible stalker.",
       "title": ""
     },
     {
@@ -22313,9 +24665,30 @@
     },
     {
       "decision": "native only",
+      "entry": 29010,
+      "name": "Anti-Magic Barrier (Quest)",
+      "reason": "Totem object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29025,
       "name": "[609] Ebon Hold Duel Credit",
       "reason": "The entry is explicitly named a duel-credit record and is directly required as a quest objective for Death's Challenge, whose description defines the task as winning duels; its native fields have no NPC interaction flag.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29027,
+      "name": "Wild Growth Stalker",
+      "reason": "A hidden stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29038,
+      "name": "[Chapter II] Torch Toss Dummy",
+      "reason": "An event target dummy, not a character.",
       "title": ""
     },
     {
@@ -22323,6 +24696,13 @@
       "entry": 29039,
       "name": "[UNUSED] [ph] Stormwind Gryphon",
       "reason": "The supplied name explicitly marks this Stormwind Gryphon as unused and a placeholder.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29052,
+      "name": "Outhouse Invisible Woman",
+      "reason": "Invisible helper.",
       "title": ""
     },
     {
@@ -22502,6 +24882,13 @@
     },
     {
       "decision": "native only",
+      "entry": 29184,
+      "name": "Impale Target",
+      "reason": "A target marker for a spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29192,
       "name": "[Chapter IV] Chapter IV Dummy",
       "reason": "The explicit Chapter IV Dummy designation and mechanical type identify a chapter helper prop, not a conversational character.",
@@ -22512,6 +24899,13 @@
       "entry": 29202,
       "name": "Knight of the Ebon Blade",
       "reason": "The record names a shared Knight of the Ebon Blade role represented by 45 spawns, with no evidence identifying this entry as a distinct individual.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29218,
+      "name": "Portal to the Shadow Realm",
+      "reason": "Portal object.",
       "title": ""
     },
     {
@@ -22568,6 +24962,20 @@
       "entry": 29256,
       "name": "Crypt Guard (1)",
       "reason": "This entry is explicitly a difficulty alias of creature 16573, so it does not establish a separate stable character identity.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 29257,
+      "name": "Omar the Test Dragon Gen2",
+      "reason": "A test creature.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29258,
+      "name": "Omar's accumulator bunny",
+      "reason": "A helper bunny.",
       "title": ""
     },
     {
@@ -22712,6 +25120,13 @@
     },
     {
       "decision": "native only",
+      "entry": 29401,
+      "name": "Argent Tome",
+      "reason": "A summoned rooted tome object that does not speak.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29406,
       "name": "You'll Need a Gryphon Kill Credit Bunny",
       "reason": "The native record identifies a level-one kill-credit bunny with no NPC functions; quest 12814 uses it as an objective target in a gryphon-recovery task.",
@@ -22722,6 +25137,13 @@
       "entry": 29416,
       "name": "Argent Stand Dummy",
       "reason": "Its explicit Argent Stand Dummy name and mechanical type identify it as a helper prop.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 29423,
+      "name": "Summon Tester",
+      "reason": "A test creature.",
       "title": ""
     },
     {
@@ -22782,6 +25204,13 @@
     },
     {
       "decision": "native only",
+      "entry": 29484,
+      "name": "Skeletal Gryphon, Mount",
+      "reason": "A mount prop.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29485,
       "name": "Dolomite Giant",
       "reason": "The entry is an elite giant creature with eight placements under the generic population label Dolomite Giant; the supplied evidence establishes no individual identity.",
@@ -22834,6 +25263,20 @@
       "entry": 29577,
       "name": "Landgren's Soul Moveto Target Bunny",
       "reason": "The explicit Moveto Target Bunny helper name and miscellaneous type identify a mechanical helper prop.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29580,
+      "name": "Teleport - Hall -> Heart",
+      "reason": "A teleport marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29581,
+      "name": "Teleport - Heart -> Hall",
+      "reason": "A teleport marker, not a character.",
       "title": ""
     },
     {
@@ -22943,9 +25386,23 @@
     },
     {
       "decision": "native only",
+      "entry": 29681,
+      "name": "Gal'darah Rhino",
+      "reason": "Level 1 null-AI helper whose name and humanoid type contradict each other.",
+      "title": "High Prophet of Akali"
+    },
+    {
+      "decision": "native only",
       "entry": 29682,
       "name": "Slad'ran Summon Target",
       "reason": "A summon target with NullCreatureAI, no gossip menu, and no NPC flags is a summoned mechanical target rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29684,
+      "name": "Ticking Bomb",
+      "reason": "A bomb object that does not speak.",
       "title": ""
     },
     {
@@ -22974,6 +25431,13 @@
       "entry": 29700,
       "name": "Drakuru Shackles",
       "reason": "The entry is named Drakuru Shackles and is scripted to cast Chains of the Scourge when struck by that spell, supporting an environmental object rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29737,
+      "name": "Barrel o' Fun",
+      "reason": "Object, not a character.",
       "title": ""
     },
     {
@@ -23237,6 +25701,13 @@
     },
     {
       "decision": "native only",
+      "entry": 29856,
+      "name": "Gooey Ghoul Drool",
+      "reason": "A clickable droplet that exists only for a spell effect; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29870,
       "name": "Persistence Waypoint 00",
       "reason": "Its numbered Waypoint name and non-service native record identify a movement marker rather than a conversational character.",
@@ -23300,6 +25771,13 @@
     },
     {
       "decision": "native only",
+      "entry": 29888,
+      "name": "Herbalism Flower",
+      "reason": "Harvestable plant object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 29902,
       "name": "Kill Credit Test",
       "reason": "The explicit test designation identifies this as a kill-credit test helper rather than a character.",
@@ -23310,6 +25788,27 @@
       "entry": 29913,
       "name": "Dan's Test Dummy (Large AOI)",
       "reason": "The explicit test-dummy designation identifies this as a testing object rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29916,
+      "name": "Field Corpse (Type A)",
+      "reason": "A corpse prop.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29917,
+      "name": "Field Corpse (Type B)",
+      "reason": "A corpse prop.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 29921,
+      "name": "GGOODMAN 2",
+      "reason": "Test creature.",
       "title": ""
     },
     {
@@ -23338,6 +25837,20 @@
       "entry": 29936,
       "name": "Algar's Frost Wyrm Mount",
       "reason": "The entry is explicitly an Algar's Frost Wyrm Mount, with no NPC service flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29939,
+      "name": "Storm Cloud",
+      "reason": "A weather effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 29943,
+      "name": "SCOURGE PROXY (PHASED)",
+      "reason": "A phased proxy marker used as an objective.",
       "title": ""
     },
     {
@@ -23419,9 +25932,30 @@
     },
     {
       "decision": "native only",
+      "entry": 29999,
+      "name": "Cave Explosion Bunny",
+      "reason": "A hidden helper for a scripted cave collapse.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30000,
+      "name": "Blizzard (1)",
+      "reason": "Spell effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 30038,
       "name": "Mjordin Combatant Kill Credit Bunny",
       "reason": "The explicit kill-credit bunny name and its required-objective use establish a mechanical helper role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30050,
+      "name": "Earthen Stone State",
+      "reason": "Visual state helper.",
       "title": ""
     },
     {
@@ -23478,6 +26012,13 @@
       "entry": 30079,
       "name": "ELM General Purpose Bunny (Phase II)",
       "reason": "Its native name identifies it as a general-purpose phase helper, and its creature type is mechanical; the supplied evidence gives it no character identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30090,
+      "name": "Vortex",
+      "reason": "A boss-fight effect, not a character.",
       "title": ""
     },
     {
@@ -23587,6 +26128,20 @@
     },
     {
       "decision": "native only",
+      "entry": 30138,
+      "name": "Frost Giant Ghost KC",
+      "reason": "Kill-credit marker (KC) for a quest objective; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30139,
+      "name": "Frost Dwarf Ghost KC",
+      "reason": "Kill-credit marker (KC) for a quest objective; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 30153,
       "name": "Last Chapter Dialogue Bunny",
       "reason": "Its explicit Last Chapter Dialogue Bunny designation and helper-prop evidence identify an event dialogue prop rather than a character summary.",
@@ -23597,6 +26152,13 @@
       "entry": 30156,
       "name": "[DND] Anguish Spectator Bunny",
       "reason": "The explicit DND spectator-bunny name and mechanical NPC type support a helper prop, with no interaction flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30169,
+      "name": "Smoldering Scrap Bunny",
+      "reason": "A scrap bunny, an invisible helper.",
       "title": ""
     },
     {
@@ -23618,6 +26180,20 @@
       "entry": 30179,
       "name": "Twilight Apostle",
       "reason": "The apostle has no NPC interaction flags, and its supplied SmartAI behavior only casts Lightning Shield on respawn.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30181,
+      "name": "Jedoga Controller",
+      "reason": "Controller helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30183,
+      "name": "Web Wrap (1)",
+      "reason": "Web effect object.",
       "title": ""
     },
     {
@@ -23702,6 +26278,13 @@
       "entry": 30236,
       "name": "Argent Cannon",
       "reason": "Explicit cannon designation identifies an artillery fixture, supplying positive non-person purpose despite the humanoid enum. Do not infer this template’s precise tower binding, quest credit or the blessing from a matching name alone.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30246,
+      "name": "Dun Niffelem Spear Chain Bunny (Phase 2)",
+      "reason": "A spear chain bunny, an invisible sequence helper.",
       "title": ""
     },
     {
@@ -23832,6 +26415,13 @@
     },
     {
       "decision": "native only",
+      "entry": 30334,
+      "name": "Surge of Power",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 30337,
       "name": "Jotunheim Rapid-Fire Harpoon",
       "reason": "Its name identifies it as a rapid-fire harpoon and its creature type is mechanical, supporting a weapon entity rather than a speaking character.",
@@ -23842,6 +26432,20 @@
       "entry": 30339,
       "name": "Frigid Tomb Controller Bunny",
       "reason": "Explicit Controller Bunny designation establishes a Frigid Tomb technical helper rather than an independent character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30342,
+      "name": "Orgrim's Hammer",
+      "reason": "A ship, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30343,
+      "name": "The Skybreaker",
+      "reason": "A ship, an object that never speaks.",
       "title": ""
     },
     {
@@ -23863,6 +26467,13 @@
       "entry": 30379,
       "name": "Westfall Chicken",
       "reason": "The entry is a level-one chicken of critter type with no NPC interaction flags or static spawn; the supplied evidence supports an animal actor, not a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30383,
+      "name": "Brann's Flying Machine",
+      "reason": "A vehicle.",
       "title": ""
     },
     {
@@ -23950,10 +26561,31 @@
       "title": "Banshee Queen"
     },
     {
+      "decision": "excluded",
+      "entry": 30428,
+      "name": "Lady Sylvanas Windrunner (Test 03)",
+      "reason": "Test copy.",
+      "title": "Banshee Queen"
+    },
+    {
+      "decision": "native only",
+      "entry": 30435,
+      "name": "Poisonous Mushroom",
+      "reason": "Plant object.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 30442,
       "name": "Phase 1 Generic Bunny",
       "reason": "The explicit generic-bunny name, helper review flag, and NullCreatureAI identify a phase helper rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30444,
+      "name": "The Chieftain's Totem",
+      "reason": "An object (a totem) that never speaks.",
       "title": ""
     },
     {
@@ -23968,6 +26600,20 @@
       "entry": 30448,
       "name": "Plains Mammoth",
       "reason": "The ordinary mammoth name and native beast type establish wildlife, with no conversational or story hook.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30454,
+      "name": "Frostfloe Deep Stalker",
+      "reason": "A hidden stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 30465,
+      "name": "Dan's Test Void Sentry",
+      "reason": "A test creature, not a real character.",
       "title": ""
     },
     {
@@ -24090,10 +26736,24 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 30546,
+      "name": "[UNUSED] Reanimated Crusader",
+      "reason": "Unused placeholder with a placeholder model; the summary was borrowed from another speaker.",
+      "title": "PH MODEL: Task 25946"
+    },
+    {
       "decision": "native only",
       "entry": 30559,
       "name": "[DND] Icecrown Flight To Airship Bunny (A) Teleport Target",
       "reason": "Its explicit DND name identifies it as the teleport target helper for the Icecrown flight-to-airship bunny; the supplied record gives no character identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30560,
+      "name": "The RP-GG",
+      "reason": "A named object operated by clicking; never speaks.",
       "title": ""
     },
     {
@@ -24167,6 +26827,27 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 30615,
+      "name": "Dan's Test Dummy (Non Vehicle)",
+      "reason": "Test dummy.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30616,
+      "name": "Flame Tsunami",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30628,
+      "name": "Eye of Acherus (DK)",
+      "reason": "Eye object.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 30640,
       "name": "[DND] Icecrown Airship (A) - Cannon Target",
@@ -24199,6 +26880,13 @@
       "entry": 30647,
       "name": "Strength of Earth Totem VII",
       "reason": "The entry is explicitly a Strength of Earth Totem, and its native totem type identifies it as a summoned aid rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30649,
+      "name": "[DND] Icecrown Airship (H) - Cannon Target",
+      "reason": "A cannon target marker, not a character.",
       "title": ""
     },
     {
@@ -24311,6 +26999,13 @@
       "entry": 30742,
       "name": "First Summoning Altar",
       "reason": "Quest 13119 explicitly binds this separate altar objective ID to a summoning structure to be destroyed. This provides positive environmental-fixture purpose; retain baseline uncertainty and do not claim completed destruction or infer exact script parameters.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 30743,
+      "name": "Succubus Transform 01",
+      "reason": "A transformation-form label, not an individual character.",
       "title": ""
     },
     {
@@ -24630,6 +27325,13 @@
     },
     {
       "decision": "native only",
+      "entry": 30896,
+      "name": "Prison Door Seal",
+      "reason": "A prison door seal, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 30948,
       "name": "Tenebron Egg (Twilight)",
       "reason": "The name identifies this entry as a twilight egg associated with Tenebron, supporting an egg entity rather than an individually characterized speaker.",
@@ -24889,6 +27591,13 @@
     },
     {
       "decision": "native only",
+      "entry": 31131,
+      "name": "Containment Crystal",
+      "reason": "A crystal object that only grants credit and despawns when hit; never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31132,
       "name": "Flametongue Totem VI",
       "reason": "Named Flametongue Totem VI; the native template is a totem type with no NPC flags, gossip menu, AI, or script, consistent with a summoned helper object rather than a speaking identity.",
@@ -24994,6 +27703,13 @@
     },
     {
       "decision": "native only",
+      "entry": 31168,
+      "name": "V",
+      "reason": "Totem object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31169,
       "name": "Fire Resistance Totem V",
       "reason": "The named entity is a Fire Resistance Totem and its supplied miscellaneous type supports a totem prop role, with no evidence of an individual conversational identity.",
@@ -25092,6 +27808,13 @@
     },
     {
       "decision": "native only",
+      "entry": 31204,
+      "name": "Sartharion Twilight Egg",
+      "reason": "Egg object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31216,
       "name": "Mirror Image",
       "reason": "The assigned script identifies this entry as the mage Mirror Image pet, with no gossip menu or NPC interaction flags.",
@@ -25165,6 +27888,13 @@
       "entry": 31312,
       "name": "Dying Soldier KC Bunny",
       "reason": "The explicit KC Bunny name and mechanical type, together with its quest-objective target binding, identify a mechanical helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31329,
+      "name": "Skeletal Footsoldier Credit",
+      "reason": "A credit marker for an army-raising objective, never speaks.",
       "title": ""
     },
     {
@@ -25435,6 +28165,13 @@
     },
     {
       "decision": "native only",
+      "entry": 31638,
+      "name": "Alliance Siege Vehicle",
+      "reason": "A siege vehicle, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31640,
       "name": "Portal to Stormwind",
       "reason": "Its name identifies a portal to Stormwind, an environmental transport object rather than an individual character.",
@@ -25501,6 +28238,13 @@
       "entry": 31684,
       "name": "Wrath Gate Dummy (Undercity)",
       "reason": "The native name identifies an Undercity Wrath Gate dummy, a mechanical scene prop without a supported character role.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 31690,
+      "name": "Infra-Green Flight Master",
+      "reason": "Not a speaking character; unspecified-type placeholder.",
       "title": ""
     },
     {
@@ -25610,6 +28354,13 @@
     },
     {
       "decision": "native only",
+      "entry": 31744,
+      "name": "Cooking Loot Pinata",
+      "reason": "A piñata object, not a character.",
+      "title": "Hit Me!"
+    },
+    {
+      "decision": "native only",
       "entry": 31745,
       "name": "Icecrown Bomber - Bindsight Bunny",
       "reason": "The native name designates a Bindsight Bunny helper, and its miscellaneous type supports a helper role rather than an individual character.",
@@ -25652,9 +28403,23 @@
     },
     {
       "decision": "native only",
+      "entry": 31773,
+      "name": "Plague Cauldron Target",
+      "reason": "A cauldron target object that only boils on a spell effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31777,
       "name": "Cloak Dome Bunny",
       "reason": "Explicit Cloak Dome Bunny designation establishes an environmental helper; unspecified creature type is supporting context, not independent proof of personhood or an exact effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31786,
+      "name": "Oil Slick",
+      "reason": "An oil slick, an object.",
       "title": ""
     },
     {
@@ -25694,6 +28459,20 @@
     },
     {
       "decision": "native only",
+      "entry": 31830,
+      "name": "Refurbished Demolisher",
+      "reason": "A vehicle that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31831,
+      "name": "Blight Spreader",
+      "reason": "A vehicle that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31835,
       "name": "Ingvar Throw Dummy (1)",
       "reason": "The explicit “Throw Dummy” designation and helper variant record identify a mechanical combat prop, rather than a conversational character.",
@@ -25729,9 +28508,30 @@
     },
     {
       "decision": "native only",
+      "entry": 31869,
+      "name": "Cyclone",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 31873,
       "name": "Fetid Troll Corpse (1)",
       "reason": "The explicit “Fetid Troll Corpse” identity describes a corpse, not a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31874,
+      "name": "Dark Matter (1)",
+      "reason": "Effect helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31878,
+      "name": "Searing Gaze (1)",
+      "reason": "Effect helper.",
       "title": ""
     },
     {
@@ -25760,6 +28560,13 @@
       "entry": 31884,
       "name": "Kor'kron Suppression Turret",
       "reason": "Explicit suppression-turret designation, mechanical vehicle fields and passenger-boarded data action positively establish a operated combat apparatus; no autonomous persona or firing mechanics are inferred.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 31887,
+      "name": "Ebon Blade Marker",
+      "reason": "A marker object for building barricades; never speaks.",
       "title": ""
     },
     {
@@ -25946,6 +28753,13 @@
     },
     {
       "decision": "native only",
+      "entry": 32152,
+      "name": "Horde Engineering Seat",
+      "reason": "A seat object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32166,
       "name": "Twilight Drake Mount (Purple)",
       "reason": "The native name identifies a mount and its creature type is mount; the row supplies no conversational identity.",
@@ -26072,6 +28886,13 @@
     },
     {
       "decision": "native only",
+      "entry": 32218,
+      "name": "Snake Wrap (1)",
+      "reason": "Wrap effect object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32221,
       "name": "Banner Bunny, Side, Alliance",
       "reason": "An Alliance-side banner helper with NullCreatureAI and no NPC functions, represented as a functional object rather than an individual character.",
@@ -26114,6 +28935,13 @@
     },
     {
       "decision": "native only",
+      "entry": 32242,
+      "name": "Blue Sample KC Bunny",
+      "reason": "A kill-credit bunny helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32244,
       "name": "Green Sample KC Bunny",
       "reason": "Named as a sample-credit bunny helper; its SmartAI grants kill credit on spell hit, and the native entry has no gossip or NPC service flags.",
@@ -26124,6 +28952,13 @@
       "entry": 32245,
       "name": "Dark Sample KC Bunny",
       "reason": "Named as a sample-credit bunny helper; its SmartAI grants kill credit on spell hit, and the native entry has no gossip or NPC service flags.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32246,
+      "name": "Ticking Time Bomb",
+      "reason": "A bomb that only casts its spell, not a character.",
       "title": ""
     },
     {
@@ -26160,6 +28995,13 @@
       "name": "Mekgineer's Chopper",
       "reason": "The entry is named Mekgineer's Chopper and has the native mechanical vehicle type; supplied evidence gives it no individual character identity.",
       "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32293,
+      "name": "Dark Subjugator Transform",
+      "reason": "A technical transform helper, not a character.",
+      "title": "Cult of the Damned"
     },
     {
       "decision": "native only",
@@ -26268,9 +29110,23 @@
     },
     {
       "decision": "native only",
+      "entry": 32442,
+      "name": "Plague Cauldron Target 02",
+      "reason": "A cauldron target object that only boils on a spell hit.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32445,
       "name": "Summoned Plague Cauldron Bunny 02",
       "reason": "Explicit Summoned Plague Cauldron Bunny 02 designation and environmental cauldron announcements establish a technical event helper, not a speaking person; no unsupported cast execution asserted.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 32452,
+      "name": "Valley of Lost Hope Vehicle",
+      "reason": "A vehicle placeholder, not a character.",
       "title": ""
     },
     {
@@ -26289,9 +29145,23 @@
     },
     {
       "decision": "native only",
+      "entry": 32522,
+      "name": "Cinder Cloud",
+      "reason": "A gas cloud effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32525,
       "name": "Alliance Infra-green Bomber, Parked",
       "reason": "The name identifies it as parked and its native creature type is a vehicle, supporting an inanimate construct rather than a conversational character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32527,
+      "name": "Thaddius Tap List",
+      "reason": "Tap list helper.",
       "title": ""
     },
     {
@@ -26338,9 +29208,23 @@
     },
     {
       "decision": "native only",
+      "entry": 32541,
+      "name": "Initiate's Training Dummy",
+      "reason": "A training dummy, an object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32544,
       "name": "Steam Cloud",
       "reason": "Its native creature type is gas cloud (type 13), a nonconversational environmental creature.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32547,
+      "name": "Highlord's Nemesis Trainer",
+      "reason": "A training dummy, not a character.",
       "title": ""
     },
     {
@@ -26390,6 +29274,13 @@
       "entry": 32574,
       "name": "Test Flying Machine",
       "reason": "Correct the disposition on positive native technical-purpose designation Test Flying Machine. Omit testing/debug-method narration from runtime text; do not convert a developer name, PTR target, testing mount or placeholder public title into a personal character. No placement/flag/biography absence inference is needed. Exact baseline classification question remains separate.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32575,
+      "name": "Four Horsemen Tap List",
+      "reason": "Tap list helper.",
       "title": ""
     },
     {
@@ -26513,6 +29404,13 @@
     },
     {
       "decision": "native only",
+      "entry": 32742,
+      "name": "Your Corpse",
+      "reason": "A cosmetic corpse stand-in summoned for an effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 32775,
       "name": "Fire Nova Totem IX",
       "reason": "Its name identifies a Fire Nova Totem and its native type is totem, establishing a summoned combat device rather than a character profile.",
@@ -26523,6 +29421,13 @@
       "entry": 32776,
       "name": "Fire Nova Totem VIII",
       "reason": "Its name identifies a Fire Nova Totem and its native type is totem, establishing a summoned combat device rather than a character profile.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32780,
+      "name": "Invisible Stalker (All Phases)",
+      "reason": "An invisible stalker helper.",
       "title": ""
     },
     {
@@ -26687,6 +29592,13 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 32842,
+      "name": "The WoW Dev Team",
+      "reason": "A developer-team joke entry that breaks the world, not an in-world character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 32847,
       "name": "Unkillable Test Dummy 80 Warrior (Bonus Armor)",
@@ -26775,6 +29687,13 @@
       "entry": 32944,
       "name": "Red Dragonhawk",
       "reason": "The ordinary animal name and native beast type identify wildlife, with no individual character hook in the supplied evidence.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 32953,
+      "name": "Black Hole",
+      "reason": "Effect helper.",
       "title": ""
     },
     {
@@ -26919,6 +29838,13 @@
     },
     {
       "decision": "native only",
+      "entry": 33089,
+      "name": "Dark Matter",
+      "reason": "A boss-fight effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33090,
       "name": "Pool of Tar",
       "reason": "The named Pool of Tar entry is bound to its dedicated pool script, establishing a scripted environmental mechanic.",
@@ -26989,6 +29915,13 @@
     },
     {
       "decision": "native only",
+      "entry": 33170,
+      "name": "Sun Beam",
+      "reason": "A visual beam effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33174,
       "name": "Snowpacked Icicle Target",
       "reason": "The entry is explicitly a target, has NullCreatureAI, and has no NPC interaction flags or static placement; the evidence identifies a target record rather than a speaking character.",
@@ -27023,10 +29956,24 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 33192,
+      "name": "Icecrown Scourge Proxy",
+      "reason": "A stand-in marker for counting Scourge kills, not a character.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 33218,
       "name": "Pyrite Safety Container",
       "reason": "Its name identifies a pyrite safety container and its script binding is for Flame Leviathan's safety container, supporting a technical encounter object rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33229,
+      "name": "Melee Target",
+      "reason": "A training dummy, not a character.",
       "title": ""
     },
     {
@@ -27073,6 +30020,20 @@
     },
     {
       "decision": "native only",
+      "entry": 33308,
+      "name": "Crystalsong Oak",
+      "reason": "A tree that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33337,
+      "name": "XT-Toy Pile",
+      "reason": "A pile of toys, an object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33339,
       "name": "[DND] Tournament - Ranged Target Dummy - Bunny",
       "reason": "The explicit DND ranged target dummy designation and the training quest's required target record establish a mechanical practice prop, not a character.",
@@ -27090,6 +30051,13 @@
       "entry": 33341,
       "name": "[DND] Tournament - Mounted Melee - Target Dummy - Block Bunny",
       "reason": "The explicit DND block target dummy designation and the training quest's required target record establish a mechanical practice prop, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33342,
+      "name": "Toasty Fire",
+      "reason": "A scripted environmental fire, not a character.",
       "title": ""
     },
     {
@@ -27132,6 +30100,13 @@
       "entry": 33377,
       "name": "Mortar Targetting Device",
       "reason": "The entry is explicitly a mortar targeting device, a technical device rather than an independently characterized character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33378,
+      "name": "Thunder Orb",
+      "reason": "A boss-fight orb, not a character.",
       "title": ""
     },
     {
@@ -27241,6 +30216,13 @@
     },
     {
       "decision": "excluded",
+      "entry": 33501,
+      "name": "[ph] Tournament - Daily Combatant Summoner",
+      "reason": "Placeholder summoner.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
       "entry": 33503,
       "name": "Horde Commander [PH]",
       "reason": "The [PH] label identifies this as a Horde Commander placeholder rather than an individual character.",
@@ -27297,6 +30279,13 @@
     },
     {
       "decision": "native only",
+      "entry": 33571,
+      "name": "Ulduar Gauntlet Generator",
+      "reason": "A scripted spawner mechanism, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33572,
       "name": "Steelforged Defender",
       "reason": "Its SmartAI behavior schedules an immediate out-of-combat despawn, supporting a temporary scripted unit role.",
@@ -27314,6 +30303,27 @@
       "entry": 33576,
       "name": "Mimiron DB Target",
       "reason": "Explicit Mimiron DB Target designation and NullCreatureAI establish a technical target, not a personal portrayal of Mimiron.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33609,
+      "name": "Blacksmithing",
+      "reason": "A profession-named trainer marker with no speech or person behind it.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33610,
+      "name": "Enchanting",
+      "reason": "A profession-named trainer marker with no speech or person behind it.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33611,
+      "name": "Engineering",
+      "reason": "A profession-named trainer marker with no speech or person behind it.",
       "title": ""
     },
     {
@@ -27395,6 +30405,13 @@
     },
     {
       "decision": "native only",
+      "entry": 33661,
+      "name": "Armsweep Stalker Kologarn",
+      "reason": "A stalker, a hidden helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33663,
       "name": "Patchwerk (PTR DPS Test)",
       "reason": "The entry is explicitly named as a PTR DPS test, and its level-one, non-service record supports a testing helper role rather than a conversational NPC.",
@@ -27426,6 +30443,13 @@
       "entry": 33690,
       "name": "Overload Visual (1)",
       "reason": "Explicit Overload Visual designation establishes a technical visual helper rather than a personal identity; do not infer magical effects.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33691,
+      "name": "Rune of Summoning (1)",
+      "reason": "Rune object.",
       "title": ""
     },
     {
@@ -27619,6 +30643,13 @@
     },
     {
       "decision": "native only",
+      "entry": 33906,
+      "name": "Focused Eyebeam (1)",
+      "reason": "A beam effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 33949,
       "name": "Giant Black Wolf",
       "reason": "The name identifies a giant black wolf and the native creature type is beast.",
@@ -27643,6 +30674,13 @@
       "entry": 33952,
       "name": "Giant Red Wolf",
       "reason": "The name identifies a giant red wolf and the native creature type is beast.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 33953,
+      "name": "Small Stone Summoner",
+      "reason": "A hidden summoning helper, not a character.",
       "title": ""
     },
     {
@@ -27776,6 +30814,13 @@
       "entry": 34072,
       "name": "Descend Into Madness",
       "reason": "Its script binding identifies it as Yogg-Saron's Descend Into Madness portal, and its spellclick flag supports an environmental interaction role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 34096,
+      "name": "Auriaya Feral Defender Stalker",
+      "reason": "A stalker, a hidden helper.",
       "title": ""
     },
     {
@@ -27941,9 +30986,37 @@
     },
     {
       "decision": "native only",
+      "entry": 34246,
+      "name": "Azeroth",
+      "reason": "Null-AI helper with no character evidence.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 34281,
       "name": "[DND]Azeroth Children's Week Trigger",
       "reason": "The DND Children's Week trigger designation and totem type identify a helper object rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 34286,
+      "name": "Orbital Support",
+      "reason": "A support effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 34307,
+      "name": "Time Bomb",
+      "reason": "A bomb device that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 34313,
+      "name": "Sara (Transform Only)",
+      "reason": "A transform-only helper.",
       "title": ""
     },
     {
@@ -28304,6 +31377,41 @@
       "title": ""
     },
     {
+      "decision": "excluded",
+      "entry": 34905,
+      "name": "[ph] Argent Raid Spectator - FX - Undead",
+      "reason": "Placeholder crowd effect helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 34906,
+      "name": "[ph] Argent Raid Spectator - FX - Dwarf",
+      "reason": "Placeholder crowd effect helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 34908,
+      "name": "[ph] Argent Raid Spectator - FX - Draenei",
+      "reason": "Placeholder crowd effect helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 34909,
+      "name": "[ph] Argent Raid Spectator - FX - Night Elf",
+      "reason": "Placeholder crowd effect helper, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 34910,
+      "name": "[ph] Argent Raid Spectator - FX - Gnome",
+      "reason": "Placeholder crowd effect helper, not a character.",
+      "title": ""
+    },
+    {
       "decision": "native only",
       "entry": 34929,
       "name": "Alliance Gunship Cannon",
@@ -28315,6 +31423,13 @@
       "entry": 34930,
       "name": "Jade Tiger",
       "reason": "Ordinary tiger designation with native noncombat-pet type12 supports companion-animal function rather than a separate personal profile; no owner or powers inferred.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 34935,
+      "name": "Horde Gunship Cannon",
+      "reason": "A gunship cannon, an object that never speaks.",
       "title": ""
     },
     {
@@ -28347,9 +31462,37 @@
     },
     {
       "decision": "native only",
+      "entry": 35015,
+      "name": "Burning Breath Koralon Stalker",
+      "reason": "A stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 35016,
       "name": "[ph] Argent Raid Spectator - Generic Bunny",
       "reason": "The explicit [ph] generic bunny name and NullCreatureAI identify this as a non-character helper placeholder, with no profile evidence.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35018,
+      "name": "Stalker Koralon",
+      "reason": "A stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35055,
+      "name": "Fallen Hero's Spirit Proxy",
+      "reason": "A proxy object used only to count spirits for a task; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35062,
+      "name": "Furious Charge Stalker",
+      "reason": "A stalker helper.",
       "title": ""
     },
     {
@@ -28413,6 +31556,13 @@
       "entry": 35105,
       "name": "Wavecrest Mariner Male (Dead)",
       "reason": "The entry is explicitly labeled a dead mariner and uses NullCreatureAI, supporting a static dead-body role rather than a speaking character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35106,
+      "name": "Black Knight Caster",
+      "reason": "Unspecified-type scenery caster, never speaks.",
       "title": ""
     },
     {
@@ -28501,6 +31651,13 @@
     },
     {
       "decision": "native only",
+      "entry": 35297,
+      "name": "Icecrown Cultist Proxy",
+      "reason": "A proxy object used only to count cultists for a task; not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 35311,
       "name": "Fountain of Light",
       "reason": "The native record identifies a totem-type Fountain of Light (type 11) with NullCreatureAI, supporting a non-character entity rather than a conversational character.",
@@ -28543,6 +31700,20 @@
     },
     {
       "decision": "native only",
+      "entry": 35341,
+      "name": "Bountiful Barrel",
+      "reason": "A supply barrel, an object that never speaks.",
+      "title": "Pilgrim's Bounty Supplies"
+    },
+    {
+      "decision": "native only",
+      "entry": 35342,
+      "name": "Bountiful Barrel",
+      "reason": "A barrel vending event supplies; an object that never speaks.",
+      "title": "Pilgrim's Bounty Supplies"
+    },
+    {
+      "decision": "native only",
       "entry": 35343,
       "name": "Bountiful Barrel",
       "reason": "Explicit barrel container designation and Pilgrim’s Bounty supply title establish a functional supply fixture despite vendor access. Browsing is an interaction with the container, not proof of a personal merchant identity.",
@@ -28553,6 +31724,20 @@
       "entry": 35358,
       "name": "Concentrated Light (3)",
       "reason": "Explicit concentrated-light effect designation with no actor title or dialogue supports environmental light rather than a personal character; no power, creator or event inheritance inferred.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35376,
+      "name": "Jump Target",
+      "reason": "An invisible helper target.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35377,
+      "name": "Door Fire",
+      "reason": "An invisible helper object.",
       "title": ""
     },
     {
@@ -28574,6 +31759,13 @@
       "entry": 35468,
       "name": "Onyx Panther",
       "reason": "The native creature type identifies Onyx Panther as a level-one non-combat pet.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 35473,
+      "name": "Argent Tournament Post",
+      "reason": "A tournament post, an object.",
       "title": ""
     },
     {
@@ -28759,6 +31951,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 36093,
+      "name": "Vault Stalker",
+      "reason": "A stalker, a hidden helper.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 36099,
       "name": "Anub'arak Tap List",
@@ -28914,6 +32113,41 @@
     },
     {
       "decision": "native only",
+      "entry": 36598,
+      "name": "Strangulate Vehicle",
+      "reason": "A vehicle helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36605,
+      "name": "Unstable Lightwell",
+      "reason": "An object-like totem that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36610,
+      "name": "Exploding Orb",
+      "reason": "An orb effect that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36619,
+      "name": "Bone Spike",
+      "reason": "A spike hazard that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36633,
+      "name": "Ice Sphere",
+      "reason": "A sphere effect that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 36643,
       "name": "[DND] Valentine Boss Manager",
       "reason": "The [DND] name explicitly marks this level-1 boss-manager entry as an internal helper, and its native record has no NPC interaction flags.",
@@ -28949,6 +32183,13 @@
     },
     {
       "decision": "native only",
+      "entry": 36731,
+      "name": "Icy Blast",
+      "reason": "A spell effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 36736,
       "name": "Invisible Stalker (Icecrown Dungeon Trap)",
       "reason": "The entry is explicitly identified as an invisible stalker for an Icecrown dungeon trap and has no NPC services.",
@@ -28973,6 +32214,20 @@
       "entry": 36817,
       "name": "[DND] Love Boat Summoner",
       "reason": "The native name marks a DND Love Boat Summoner and its scripts cast the Love Boat summon and activate it on respawn; no stable NPC identity summary is useful.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36839,
+      "name": "Horde Gunship Cannon",
+      "reason": "A gunship cannon, an object that only shows an overheat warning.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36847,
+      "name": "Collapsing Icicle",
+      "reason": "A scripted environmental hazard, not a character.",
       "title": ""
     },
     {
@@ -29012,6 +32267,55 @@
     },
     {
       "decision": "native only",
+      "entry": 36944,
+      "name": "Wants Shirts",
+      "reason": "A marker helper named for a request.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36945,
+      "name": "Wants Pants",
+      "reason": "A marker helper named for a request.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36946,
+      "name": "Wants Unmentionables",
+      "reason": "A marker helper named for a request.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 36947,
+      "name": "Wants Water",
+      "reason": "A marker helper named for a request.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 36949,
+      "name": "[PH] Scaling Fire Elemental",
+      "reason": "A placeholder creature with no identity.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 36963,
+      "name": "[PH] Scaling Earth Elemental",
+      "reason": "A placeholder creature.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 36964,
+      "name": "[PH] Scaling Air Elemental",
+      "reason": "A placeholder creature.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 36966,
       "name": "[DND] Town Bunny",
       "reason": "The explicit [DND] designation identifies a town bunny helper/prop entry without a supported conversational identity.",
@@ -29043,6 +32347,13 @@
       "entry": 37000,
       "name": "Sunwell Visual Bunny",
       "reason": "Its name identifies it as a Sunwell visual helper, and its NullCreatureAI binding supports a visual rather than character role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37013,
+      "name": "Puddle Stalker",
+      "reason": "A stalker, a hidden helper.",
       "title": ""
     },
     {
@@ -29103,9 +32414,23 @@
     },
     {
       "decision": "native only",
+      "entry": 37118,
+      "name": "Elemental Stone",
+      "reason": "An object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 37127,
       "name": "Ymirjar Frostbinder",
       "reason": "The shared Ymirjar Frostbinder label, two spawns under one entry, and the npc_frostwing_vrykul script identify a creature role rather than an individually evidenced person.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37130,
+      "name": "Mirror Image",
+      "reason": "A conjured copy, not a character of its own.",
       "title": ""
     },
     {
@@ -29120,6 +32445,13 @@
       "entry": 37168,
       "name": "[DND] Summon Bunny 1",
       "reason": "Its explicit DND summon-bunny name and miscellaneous type identify it as a summoned helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37186,
+      "name": "Frost Bomb",
+      "reason": "A bomb effect that never speaks.",
       "title": ""
     },
     {
@@ -29155,6 +32487,13 @@
       "entry": 37215,
       "name": "Orgrim's Hammer",
       "reason": "The entry is named for the gunship itself and uses the npc_gunship script, which identifies it as the vessel rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37222,
+      "name": "Pit of Saron Front Formation Bunny",
+      "reason": "A formation helper bunny, not a character.",
       "title": ""
     },
     {
@@ -29348,6 +32687,20 @@
     },
     {
       "decision": "native only",
+      "entry": 37610,
+      "name": "Exploding Orb (1)",
+      "reason": "An orb effect that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37611,
+      "name": "Eye of the Lich King (1)",
+      "reason": "A visual effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 37634,
       "name": "Pit of Saron Front Formation Bunny (1)",
       "reason": "The name identifies a formation bunny helper, and the native record marks it as mechanical with no gossip or NPC flags; this is a formation prop rather than a speaking character.",
@@ -29414,6 +32767,27 @@
       "entry": 37702,
       "name": "Runeforge Bunny",
       "reason": "The Runeforge Bunny is a spell-triggered helper: on the Mograine Forge Beam spell hit, its script casts Summon Shadows Edge Bunny.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37704,
+      "name": "Frostmourne Altar Bunny (Quel'Delar)",
+      "reason": "A bunny helper for a scripted event.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37744,
+      "name": "Frost Freeze Trap",
+      "reason": "A fixed trap object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37745,
+      "name": "Quel'Delar",
+      "reason": "A sword object that never speaks.",
       "title": ""
     },
     {
@@ -29543,10 +32917,31 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 37824,
+      "name": "Abomination Wing Mad Scientist Stalker",
+      "reason": "A stalker, a hidden helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37827,
+      "name": "Light's Vengeance Vehicle Bunny",
+      "reason": "A vehicle helper bunny that never speaks.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 37831,
       "name": "[PH] Captain",
       "reason": "The [PH] prefix explicitly marks this captain entry as a placeholder; the record provides no individual identity to summarize.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37832,
+      "name": "Lich King Stun Bunny",
+      "reason": "A scripted helper bunny that never speaks.",
       "title": ""
     },
     {
@@ -29561,6 +32956,13 @@
       "entry": 37871,
       "name": "Event Fail Bunny",
       "reason": "The entry is explicitly designated as an event-failure helper, with no conversational or character hook.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37878,
+      "name": "AoD Impact Bunny",
+      "reason": "A scripted helper bunny that never speaks.",
       "title": ""
     },
     {
@@ -29582,6 +32984,13 @@
       "entry": 37894,
       "name": "Vegard Bunny",
       "reason": "A single-spawn helper named Vegard Bunny reacts to a spell by casting Summon Vegard; the evidence supports a scripted summon target rather than an individual character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 37945,
+      "name": "Dream Portal",
+      "reason": "A portal object.",
       "title": ""
     },
     {
@@ -29656,9 +33065,30 @@
     },
     {
       "decision": "native only",
+      "entry": 38107,
+      "name": "Unstable Ooze Explosion Stalker",
+      "reason": "A stalker for an encounter effect, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38121,
       "name": "Soul Feast Kill Credit Bunny",
       "reason": "The explicit kill-credit-bunny designation and its use as the objective target for A Feast of Souls establish a mechanical helper role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38128,
+      "name": "The Skybreaker (1)",
+      "reason": "A ship vehicle.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38129,
+      "name": "Orgrim's Hammer (1)",
+      "reason": "A ship vehicle.",
       "title": ""
     },
     {
@@ -29698,6 +33128,13 @@
     },
     {
       "decision": "native only",
+      "entry": 38186,
+      "name": "Dream Portal (Pre-effect)",
+      "reason": "A portal effect object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38199,
       "name": "Frostblade",
       "reason": "Positive functional purpose: exact own technical/helper, object or objective-proxy designation plus native trigger flag, interpreted through the accepted native trigger mechanism. No character biography, namesake identity, spell effect, active event or completed quest outcome inferred.",
@@ -29712,6 +33149,13 @@
     },
     {
       "decision": "native only",
+      "entry": 38223,
+      "name": "Icy Blast",
+      "reason": "A spell effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38226,
       "name": "[DND] Fire Wall - No Scaling",
       "reason": "The DND-labelled fire-wall entry is a level-1 type-10 entity with no spawn evidence, supporting a technical helper rather than a conversational identity.",
@@ -29722,6 +33166,13 @@
       "entry": 38230,
       "name": "[DND] Fire Wall",
       "reason": "The DND-labelled fire-wall entry is a level-1 type-10 entity with no spawn evidence, supporting a technical helper rather than a conversational identity.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38233,
+      "name": "Bone Spike (1)",
+      "reason": "A spike hazard that never speaks.",
       "title": ""
     },
     {
@@ -29754,6 +33205,13 @@
     },
     {
       "decision": "native only",
+      "entry": 38288,
+      "name": "Love Guard Perfume Bunny",
+      "reason": "A perfume bunny helper that only casts a periodic spell.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38289,
       "name": "Unholy Infusion KC Bunny",
       "reason": "The native record identifies it as a bunny helper for Unholy Infusion KC, indicating a mechanical prop rather than a conversational character.",
@@ -29772,6 +33230,20 @@
       "name": "Melee Trinket - Taunka",
       "reason": "The native designation identifies a Taunka melee trinket template, a technical combat object rather than a personal character.",
       "title": null
+    },
+    {
+      "decision": "native only",
+      "entry": 38310,
+      "name": "Invisible Stalker (Float,Uninteractible,LargeAOI) (3.00)",
+      "reason": "An invisible stalker helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38317,
+      "name": "Tear Gas Target Stalker",
+      "reason": "A stalker helper.",
+      "title": ""
     },
     {
       "decision": "excluded",
@@ -29838,6 +33310,20 @@
     },
     {
       "decision": "native only",
+      "entry": 38353,
+      "name": "Blood Queen Orb",
+      "reason": "An orb effect that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38369,
+      "name": "Dark Nucleus",
+      "reason": "A scripted orb that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38386,
       "name": "Patchwerk (PTR All-Around Test)",
       "reason": "Explicit PTR All-Around Test designation establishes a technical testing purpose; do not merge its personal portrayal with canonical Patchwerk.",
@@ -29848,6 +33334,13 @@
       "entry": 38388,
       "name": "Patchwerk (PTR All-Around Test) (1)",
       "reason": "Explicit PTR All-Around Test designation establishes a technical testing purpose; do not merge its personal portrayal with canonical Patchwerk.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38421,
+      "name": "Nightmare Cloud",
+      "reason": "A cloud effect used as an encounter helper.",
       "title": ""
     },
     {
@@ -29960,6 +33453,13 @@
       "entry": 38528,
       "name": "Shadowmourne Axe Bunny",
       "reason": "The native name identifies an axe bunny helper and the miscellaneous creature type supports a prop role.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38529,
+      "name": "Shadowmourne",
+      "reason": "A weapon object.",
       "title": ""
     },
     {
@@ -30230,6 +33730,13 @@
     },
     {
       "decision": "native only",
+      "entry": 38712,
+      "name": "Bone Spike",
+      "reason": "A scripted bone spike object that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38751,
       "name": "Black Knight Shield Proxy",
       "reason": "Correct an unhelpful proxy-name runtime record to no-profile: exact own Shield Proxy designation positively identifies technical proxy purpose. Do not transfer Black Knight personhood, memories or shield effects.",
@@ -30240,6 +33747,13 @@
       "entry": 38752,
       "name": "Green Dragon Combat Trigger",
       "reason": "The combat-trigger name and dedicated green-dragon trigger script identify a gameplay helper rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38757,
+      "name": "Defile",
+      "reason": "A ground effect.",
       "title": ""
     },
     {
@@ -30314,6 +33828,13 @@
     },
     {
       "decision": "native only",
+      "entry": 38879,
+      "name": "Putricide's Trap",
+      "reason": "A scripted trap object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 38882,
       "name": "[DND] Mole Machine Spawner",
       "reason": "The explicit DND name and creature type identify a mole machine spawner, a mechanical helper rather than a characterized person.",
@@ -30331,6 +33852,13 @@
       "entry": 38903,
       "name": "Queue trigger",
       "reason": "The native name identifies a queue trigger, and the mechanical NPC type supports a functional helper role rather than a character.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 38905,
+      "name": "[PH] Grimtotem Vendor",
+      "reason": "A placeholder vendor with no vendor function or details.",
       "title": ""
     },
     {
@@ -30384,6 +33912,27 @@
     },
     {
       "decision": "native only",
+      "entry": 38973,
+      "name": "Bone Spike (1)",
+      "reason": "A spike hazard that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38974,
+      "name": "Bone Spike (2)",
+      "reason": "A spike hazard that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 38975,
+      "name": "Bone Spike (3)",
+      "reason": "A spike hazard that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 39019,
       "name": "Quest - Wintergrasp - PvP Kill - Horde",
       "reason": "Positive technical purpose: the explicit Quest/PvP Kill target designation and exact quest objective identify an aggregate Horde-kill counter rather than one combatant.",
@@ -30394,6 +33943,13 @@
       "entry": 39023,
       "name": "[DND] TB Event Bunny",
       "reason": "The explicit [DND] event-bunny designation, level 1 and lack of service flags support a mechanical event helper.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 39048,
+      "name": "Sylvanas' Lamenter",
+      "reason": "A hidden music and aura helper, not a character.",
       "title": ""
     },
     {
@@ -30443,6 +33999,27 @@
       "entry": 39137,
       "name": "Shadow Trap",
       "reason": "The entry is a Shadow Trap using NullCreatureAI, supporting a mechanical trap role without conversational characterization.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 39189,
+      "name": "Spirit Bomb",
+      "reason": "A bomb effect that never speaks.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 39259,
+      "name": "Gnomeregan Flying Machine",
+      "reason": "A vehicle object.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 39263,
+      "name": "Disassembled Mechano-Tank",
+      "reason": "A disassembled machine prop, not a character.",
       "title": ""
     },
     {
@@ -30552,6 +34129,13 @@
     },
     {
       "decision": "native only",
+      "entry": 39711,
+      "name": "Mechano-Tank Attack Target",
+      "reason": "An attack target dummy, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 39743,
       "name": "[DND] GT Bomber Bunny",
       "reason": "Its explicit DND helper designation and mechanical creature type identify it as a bomber helper prop, with no supplied conversational hook.",
@@ -30569,6 +34153,13 @@
       "entry": 39794,
       "name": "Zarithrian Spawn Stalker",
       "reason": "The spawn-helper name and NullCreatureAI indicate an environmental creature rather than an autonomous character profile.",
+      "title": ""
+    },
+    {
+      "decision": "excluded",
+      "entry": 39798,
+      "name": "[PH] Mother Trogg",
+      "reason": "A placeholder creature.",
       "title": ""
     },
     {
@@ -30671,6 +34262,13 @@
     },
     {
       "decision": "native only",
+      "entry": 40081,
+      "name": "Orb Carrier",
+      "reason": "A functional encounter helper that carries an orb; no character of its own.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 40091,
       "name": "Orb Rotation Focus",
       "reason": "This is an environmental rotation focus: it is a type-10 totem-like creature using NullCreatureAI, with no autonomous character role.",
@@ -30685,6 +34283,34 @@
     },
     {
       "decision": "native only",
+      "entry": 40101,
+      "name": "Valley of Heroes Credit",
+      "reason": "A quest visit credit marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 40102,
+      "name": "Westbrook Garrison Credit",
+      "reason": "A quest visit credit marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 40103,
+      "name": "Goldshire Credit",
+      "reason": "A quest visit credit marker, not a character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 40135,
+      "name": "Consumption",
+      "reason": "A null-AI effect.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
       "entry": 40138,
       "name": "Stormwind City Guard (Corpse)",
       "reason": "The entry is explicitly named Stormwind City Guard (Corpse), with no NPC flags or conversational binding in the supplied native fields.",
@@ -30695,6 +34321,13 @@
       "entry": 40146,
       "name": "Halion Controller",
       "reason": "This is a type-10 controller object bound to the Halion controller script, indicating encounter control rather than an autonomous character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 40151,
+      "name": "Combat Stalker",
+      "reason": "A stalker helper.",
       "title": ""
     },
     {
@@ -30754,6 +34387,13 @@
       "title": ""
     },
     {
+      "decision": "native only",
+      "entry": 40368,
+      "name": "Zalazane's Remains",
+      "reason": "Remains object that never speaks.",
+      "title": ""
+    },
+    {
       "decision": "excluded",
       "entry": 40387,
       "name": "Omen Event Credit",
@@ -30765,6 +34405,13 @@
       "entry": 40426,
       "name": "Tiny Mooncloth Carpet",
       "reason": "Replace the accepted old deferral with the newer supported native designation or positive functional-purpose decision; preserve exact classification uncertainty separately. Positive exclusion purpose from the validated author result: The native designation identifies a mooncloth carpet, an object rather than a personal character.",
+      "title": ""
+    },
+    {
+      "decision": "native only",
+      "entry": 40428,
+      "name": "[DND] Quest Credit Bunny - ET Battle",
+      "reason": "A hidden quest-credit helper, not a character.",
       "title": ""
     },
     {

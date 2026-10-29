@@ -344,28 +344,6 @@
       "title": ""
     },
     {
-      "entry": 26264,
-      "name": "Boulder Target",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:26264:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:d077c17888dd92dc1147cc2a",
-            "source:02ba3c70227dda0f301083c6",
-            "source:22c63c991dc0eb73be8c13f4"
-          ],
-          "text": "A boulder target near Thor Modan, used in the effort to disrupt the iron dwarves’ work there.",
-          "when": {
-            "entry": 26264
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 26268,
       "name": "Rune Reaver",
       "records": [
@@ -379,7 +357,7 @@
             "source:cde91ec1531d2fa62987153e",
             "source:f0f8f3acf9c1f8acb8599cc1"
           ],
-          "text": "Rune Reavers are hostile rune-wielding combatants in the Thor Modan area. This one casts Rune of Retribution when it enters combat.",
+          "text": "Rune Reavers are hostile rune-wielding humanoids in the Thor Modan area. They call on a Rune of Retribution as a fight begins.",
           "when": {
             "entry": 26268
           }
@@ -497,7 +475,7 @@
             "source:2307f0597872f9795e7a5af8",
             "source:5a93c266cf2b63c2576137a6"
           ],
-          "text": "A mortally wounded Earthen warrior at Thor Modan, its stone body cracked and gouged. It begs the player to find Kurun, whom it identifies as the leader commanding the Earthen on the hill, and reports that they cannot take the city.",
+          "text": "A mortally wounded Earthen warrior at Thor Modan, its stone body cracked and gouged. It begs passersby to find Kurun, the leader commanding the Earthen on the hill, and tell him they cannot take the city.",
           "when": {
             "entry": 26335
           }
@@ -565,7 +543,7 @@
             "source:11fcb3e7a67b9707fdd0e5c8",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Redfang Hunters are hunters found across Grizzly Hills. When out of combat, they hold their ground.",
+          "text": "Redfang Hunters are hunters found across Grizzly Hills.",
           "when": {
             "entry": 26356
           }
@@ -587,7 +565,7 @@
             "source:528ce4f436d96755a9b2a717",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Frostpaw Warriors are warriors found across Grizzly Hills. They use Rend in combat, fitting the direct martial role named for them.",
+          "text": "Frostpaw Warriors are fighters found across Grizzly Hills who tear at their foes with Rend.",
           "when": {
             "entry": 26357
           }
@@ -680,7 +658,7 @@
             "source:29df89d744852fd141e47946",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Entropic Oozes are slime creatures encountered across Grizzly Hills. In combat they use Crude Ooze, giving them a direct combat role among the region's creatures.",
+          "text": "Entropic Oozes are slime creatures found across Grizzly Hills that attack with Crude Ooze.",
           "when": {
             "entry": 26366
           }
@@ -703,7 +681,7 @@
             "source:0afbd3d4096fa208364dd876",
             "source:ad607b134746bdc84cc5659e"
           ],
-          "text": "Imperial Eagles soar through Grizzly Hills. Local investigators found that the Horde was binding its sight to these birds to spy on the camp; in combat, an eagle can swoop at its attacker.",
+          "text": "Imperial Eagles soar through Grizzly Hills. The Horde binds its sight to these birds to spy on the camp, and an eagle swoops at its attacker.",
           "when": {
             "entry": 26369
           }
@@ -749,7 +727,7 @@
             "source:0749403e39ff71b0fabde562",
             "source:5a5890d5abca8bd623bf065e"
           ],
-          "text": "Maevin Farmoon is the Westfall Brigade Encampment's Trade Goods vendor. Visitors can browse the goods he offers.",
+          "text": "Maevin Farmoon sells trade goods at the Westfall Brigade Encampment.",
           "when": {
             "entry": 26374
           }
@@ -821,7 +799,7 @@
             "source:29d7b8d9535fc9bc06cab41e",
             "source:94e9c7a15c5d72bbe60ead99"
           ],
-          "text": "Balfour Blackblade is the Westfall Brigade Encampment's Reagents and Poisons vendor, with a trade focused on those goods.",
+          "text": "Balfour Blackblade sells reagents and poisons at the Westfall Brigade Encampment.",
           "when": {
             "entry": 26382
           }
@@ -887,7 +865,7 @@
             "source:4712583e1849ca1b0e5f2fba",
             "source:4f6046f417320e9e823de04c"
           ],
-          "text": "Sasha's Hunt describes the Solstice Hunters as victims of a curse that turns people into beasts, and frames killing them as mercy because they are too far gone. Sasha also says the people of Silverbrook and Solstice Village listened to the wolfcult.",
+          "text": "Solstice Hunters are people of Solstice Village twisted into beasts by a curse. Sasha says they listened to the wolfcult, are too far gone, and that putting them down is a mercy.",
           "when": {
             "entry": 26389
           }
@@ -955,7 +933,7 @@
             "source:ea3b30f924b3081c01eda43a",
             "source:1fbf40345cf18dd43d560fbb"
           ],
-          "text": "Known as Furyhammer's Guardian, the figure called The Anvil is a hostile combatant that answers combat with a Molten Blast.",
+          "text": "The Anvil is Furyhammer's Guardian, a hostile elemental that hits back with Molten Blast.",
           "when": {
             "entry": 26406
           }
@@ -977,7 +955,7 @@
             "source:615bdd6299df62cbc981cc7e",
             "source:840f10364ede9f6f5cba9417"
           ],
-          "text": "Lightning Sentries are hostile sentry creatures. In combat, they cast a Charged Sentry Totem.",
+          "text": "Lightning Sentries are hostile elemental guardians that raise a Charged Sentry Totem in a fight.",
           "when": {
             "entry": 26407
           }
@@ -1023,7 +1001,7 @@
             "source:e26036ec32d2c45c602b46e4",
             "source:8af5b895b33996054abe2b90"
           ],
-          "text": "Rune-Smith Durar is one of the rune-smiths who manufactures a power cell for the war golem. His workshop is on Dun Argol's central level; in combat, he uses Lightning Charged.",
+          "text": "Rune-Smith Durar is a rune-smith who makes one of the power cells needed to run a war golem. His workshop is on the central level of Dun Argol, and he fights with Lightning Charged.",
           "when": {
             "entry": 26409
           }
@@ -1069,7 +1047,7 @@
             "source:53e62980525479527650cfee",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "A Runic Lightning Gunner is a runic gunner encountered in the Grizzly Hills. It holds its ground outside combat.",
+          "text": "A Runic Lightning Gunner, a humanoid gunner in Grizzly Hills.",
           "when": {
             "entry": 26414
           }
@@ -1116,7 +1094,7 @@
             "source:a1d157aba54e89f11d69bda2",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Runed Giants are large, runed combatants found across several parts of the Grizzly Hills. One calls on the children of iron and iron masters for aid, and urges them to attack a smaller foe.",
+          "text": "Runed Giants are large, runed giants found across several parts of the Grizzly Hills. In battle one calls on the children of iron and the iron masters to lend their blades and aid, and urges them to crush a smaller foe.",
           "when": {
             "entry": 26417
           }
@@ -1139,7 +1117,7 @@
             "source:520195155f00f8348cda974f",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Longhoof Grazers are beasts found in several parts of the Grizzly Hills. They use a head butt when fighting.",
+          "text": "Longhoof Grazers are beasts found in several parts of the Grizzly Hills. They butt heads with their foes.",
           "when": {
             "entry": 26418
           }
@@ -1262,7 +1240,7 @@
             "source:0c277611ded4c4cdac4b888c",
             "source:5a65d18625465e2b673a0a01"
           ],
-          "text": "A Drakkari warrior encountered in the region, this humanoid uses a combat spell when its health changes.",
+          "text": "A Drakkari warrior, a humanoid fighter found in the region.",
           "when": {
             "entry": 26425
           }
@@ -1284,7 +1262,7 @@
             "source:08cccb94d6f3da4c214241a0",
             "source:37f1e832574bb6e573a9a5bf"
           ],
-          "text": "A Frostpaw shaman, this humanoid has a shamanic role among the local wildlife and stands its ground outside combat.",
+          "text": "A humanoid Frostpaw shaman.",
           "when": {
             "entry": 26428
           }
@@ -1307,7 +1285,7 @@
             "source:128ee3224e84b4c1289090a4",
             "source:20f22f675b40b58323c3c887"
           ],
-          "text": "The Redfang Elder is a humanoid spellcaster who uses Hurricane in combat and casts Chain Heal on a friendly target when badly hurt, giving it a supporting role alongside its attacks.",
+          "text": "The Redfang Elder is a humanoid spellcaster who calls down Hurricane in battle and heals an ally with Chain Heal when the ally is badly hurt.",
           "when": {
             "entry": 26436
           }
@@ -1329,7 +1307,7 @@
             "source:49de25ba9e3b6365456b9ec9",
             "source:ff22705aadcb1cbd38be9219"
           ],
-          "text": "An ice serpent found in the region, this animal uses Ice Slash at close range.",
+          "text": "An ice serpent found in the region, an animal that slashes with ice at close range.",
           "when": {
             "entry": 26446
           }
@@ -1351,7 +1329,7 @@
             "source:ceba759c06190590fdde46e5",
             "source:475e07e97275794ba8957f98"
           ],
-          "text": "A Drakkari shaman encountered in the region, this humanoid uses a combat spell during combat.",
+          "text": "A Drakkari shaman, a humanoid spellcaster found in the region.",
           "when": {
             "entry": 26447
           }
@@ -1373,7 +1351,7 @@
             "source:7b29edead38405ac4e30cec8",
             "source:d86bfd9352d710584f6b195d"
           ],
-          "text": "A diseased Drakkari encountered in the Northrend region. Its fevered disease makes it a threat in combat.",
+          "text": "A diseased undead Drakkari found in the Northrend region, whose Fevered Disease spreads to its foes.",
           "when": {
             "entry": 26457
           }
@@ -1394,7 +1372,7 @@
             "source:5b740a56718e3367f196ed9d",
             "source:49a0aa894b86c82ba5a66040"
           ],
-          "text": "A Drakkari plaguebringer among the Scourge encountered in Northrend. This veteran foe carries the plaguebringer role into combat.",
+          "text": "An undead Drakkari plaguebringer of the Scourge.",
           "when": {
             "entry": 26458
           }
@@ -1415,7 +1393,7 @@
             "source:cf848ba6ff5c1fbeea812227",
             "source:cf224293f325a8c157d29ee2"
           ],
-          "text": "A Scourge corpserender encountered in Northrend, with sightings in two local areas.",
+          "text": "An undead Scourge corpserender.",
           "when": {
             "entry": 26461
           }
@@ -1437,7 +1415,7 @@
             "source:14608c7e283f54ef0031cf5c",
             "source:8936496303056d7fbfa3ca84"
           ],
-          "text": "Highland Mustangs are a horse population found across several areas of the Grizzly Hills. When hit by a spell, the creature casts a spell at the caster.",
+          "text": "Highland Mustangs are wild horses found across several areas of the Grizzly Hills. When struck by a spell, a mustang answers the caster with a spell of its own.",
           "when": {
             "entry": 26472
           }
@@ -1459,7 +1437,7 @@
             "source:3036c5af15176d1b4123c844",
             "source:814e0aed605095f609b829ff"
           ],
-          "text": "Ameenah is a reagent vendor in the Grizzly Hills. Her nameplate identifies her specialty, and visitors can browse her goods.",
+          "text": "Ameenah sells reagents in the Grizzly Hills.",
           "when": {
             "entry": 26474
           }
@@ -1510,28 +1488,6 @@
         }
       ],
       "title": "Hugh's Pet"
-    },
-    {
-      "entry": 26498,
-      "name": "Drakuru's Bunny 01",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:26498:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:d37b0adfac5655d5ec468087",
-            "source:e999c1242cd6e4cf7d96bb31",
-            "source:58ea4a41ca14bf9988b33b02"
-          ],
-          "text": "Drakuru’s Bunny 01 casts Script Cast Summon Image of Drakuru when hit by Summon Drakuru's Image.",
-          "when": {
-            "entry": 26498
-          }
-        }
-      ],
-      "title": ""
     },
     {
       "entry": 26500,
@@ -1689,7 +1645,7 @@
             "source:9e433191825930fc10bab5ae",
             "source:f2cb8a3e1c8ef5332af2ba17"
           ],
-          "text": "A famished Scourge troll encountered around Drak'Tharon. It is a target in the Burninate task.",
+          "text": "A famished undead Scourge troll found around Drak'Tharon.",
           "when": {
             "entry": 26570
           }
@@ -1856,7 +1812,7 @@
             "source:d70a6c3da1a1dc0c1ee379f0",
             "source:237d0e50cc44102dce189701"
           ],
-          "text": "An Ursus mauler found in Grizzly Hills, it uses Maul against nearby opponents.",
+          "text": "An Ursus mauler found in Grizzly Hills that mauls nearby foes.",
           "when": {
             "entry": 26644
           }
@@ -1878,7 +1834,7 @@
             "source:5d31d4135a93a3a94ab75fab",
             "source:00f02c39d31ce0eb2c3d388e"
           ],
-          "text": "A saronite horror found in Grizzly Hills, it uses Seething Evil once combat begins.",
+          "text": "A saronite horror found in Grizzly Hills that unleashes Seething Evil once a fight begins.",
           "when": {
             "entry": 26646
           }
@@ -1977,7 +1933,7 @@
             "source:b0858a504502de547765e119",
             "source:640ac536873fd9c513ffa111"
           ],
-          "text": "Grumbald One-Eye is a Redfang furbolg shaman devoted to Ursoc. He is associated with Spiritsbreath, an herb used by experienced mystics in incense for seeking ancestral wisdom; he should carry it for his devotions. In combat, he uses frostfire, fire and frost magic, and can call on Elemental Enlightenment.",
+          "text": "Grumbald One-Eye is a Redfang furbolg shaman devoted to Ursoc. He should carry Spiritsbreath, an herb experienced mystics burn as incense to seek ancestral wisdom. He fights with frostfire, fire and frost magic, and calls on Elemental Enlightenment when badly hurt.",
           "when": {
             "entry": 26681
           }
@@ -2002,7 +1958,7 @@
             "source:4b2fff0c08d33b739f92fb6c",
             "source:8ac2b1275e812c4c4e2a05a2"
           ],
-          "text": "This is Drakuru appearing through a summoned image. He wants the Drakkari Tablets and sacred mojo so he can read the tablets, and later watches the player through the Eye of the Prophets. He directs the player to summon him at a brazier with the Heart of the Ancients and desperate mojo, saying he intends to avenge his brothers by cleansing Drak'Tharon and claim its greatest treasure.",
+          "text": "This is Drakuru appearing through a summoned image. He wants the Drakkari Tablets and sacred mojo so he can read the tablets, and watches through the Eye of the Prophets. He is summoned at a brazier with the Heart of the Ancients and desperate mojo, and says he will avenge his brothers by cleansing Drak'Tharon and award his helper its greatest treasure.",
           "when": {
             "entry": 26701
           }
@@ -2092,31 +2048,9 @@
             "source:38ee52357a10ad6a6c1e3f0c",
             "source:a8387a881aebb6d08c565de6"
           ],
-          "text": "Silverbrook Villagers are hostile combatants. Their native combat actions include Chop and, when wounded, Worgen Transform.",
+          "text": "Silverbrook Villagers are hostile people who chop at their foes and turn into worgen when badly wounded.",
           "when": {
             "entry": 26708
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 26785,
-      "name": "Directional Rune",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:26785:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:cf0212ab5dfb4b7023ee80f1",
-            "source:3aa46ff13e6781cfaa8432fd",
-            "source:076880bf3255f294513ec6ed"
-          ],
-          "text": "A Directional Rune in Grizzly Hills.",
-          "when": {
-            "entry": 26785
           }
         }
       ],
@@ -2863,7 +2797,7 @@
             "source:1ed9a7b5f08d73e6ca924173",
             "source:bad77f3d085234551b853502"
           ],
-          "text": "Chaska Frosthoof is a general goods vendor in the Westfall Brigade’s Northrend region.",
+          "text": "Chaska Frosthoof sells general goods in the Grizzly Hills.",
           "when": {
             "entry": 26936
           }
@@ -2885,7 +2819,7 @@
             "source:c8831647c59940da09d149d2",
             "source:9c5a04b803a81be831676717"
           ],
-          "text": "At Camp Oneqwah, Koro the Wanderer is identified as a Trade Goods vendor, and visitors can browse his goods.",
+          "text": "Koro the Wanderer sells trade goods at Camp Oneqwah.",
           "when": {
             "entry": 26939
           }
@@ -2932,7 +2866,7 @@
             "source:88e36c793b20ef186553ab18",
             "source:acd932954b38b583598c5c63"
           ],
-          "text": "At Camp Oneqwah, Sanut Swiftspear is identified as the Reagents and Poisons vendor.",
+          "text": "Sanut Swiftspear sells reagents and poisons at Camp Oneqwah.",
           "when": {
             "entry": 26950
           }
@@ -2998,7 +2932,7 @@
             "source:0a19e4db14353af2be989b9b",
             "source:51c311c25e494beacc4de2d7"
           ],
-          "text": "Bloodmoon Worgen are worgen found around Bloodmoon Isle. In combat, they use an infected worgen bite.",
+          "text": "Bloodmoon Worgen are worgen found around Bloodmoon Isle whose bite carries infection.",
           "when": {
             "entry": 27020
           }
@@ -3019,7 +2953,7 @@
             "source:4404f6424172b594f7193fd9",
             "source:2d4d72ce7d91e6f759deac33"
           ],
-          "text": "Bloodmoon Cultists are cultists found around Bloodmoon Isle. In combat, they use an infected worgen bite.",
+          "text": "Bloodmoon Cultists are cultists found around Bloodmoon Isle who fight with a worgen bite that infects.",
           "when": {
             "entry": 27024
           }
@@ -3426,7 +3360,7 @@
             "source:5339387646f94a4eec0f0fc6",
             "source:e3e6cccaca5b4bfeb0f415d4"
           ],
-          "text": "Camp Oneqwah Brave is an elite fighter at Camp Oneqwah in Grizzly Hills. It uses Cleave against nearby targets and can enrage when badly wounded.",
+          "text": "Camp Oneqwah Brave is a tough fighter at Camp Oneqwah in Grizzly Hills. It cleaves nearby foes and rages when badly wounded.",
           "when": {
             "entry": 27126
           }
@@ -3448,7 +3382,7 @@
             "source:552f5a1317771adb118a3fc1",
             "source:5c0ed2d662fa32c576bc94a0"
           ],
-          "text": "Grizzly Bears roam the Grizzly Hills area. These level 73–74 beasts have an out-of-combat script and can be interacted with through a spell-click action.",
+          "text": "Grizzly Bears are beasts that roam the Grizzly Hills.",
           "when": {
             "entry": 27131
           }
@@ -3470,7 +3404,7 @@
             "source:da8be5464ec6fe9569059cf7",
             "source:af3a13171c72ebdd216dd737"
           ],
-          "text": "Sani'i is the Trade Goods vendor in the Grizzly Hills settlement at area 4206. Speak with this named trader to browse goods.",
+          "text": "Sani'i sells trade goods in the Grizzly Hills.",
           "when": {
             "entry": 27132
           }
@@ -3491,7 +3425,7 @@
             "source:6fccab5e1145367eab299a78",
             "source:e70eede69b147d985d32f5b7"
           ],
-          "text": "Seer Yagnar serves as the Poison & Reagents vendor in the Grizzly Hills settlement at area 4206, specializing in those supplies.",
+          "text": "Seer Yagnar sells poisons and reagents in the Grizzly Hills.",
           "when": {
             "entry": 27133
           }
@@ -3535,7 +3469,7 @@
             "source:76fccb7b62386456147dbcac",
             "source:eb6c1e53e8ae8ff87a069191"
           ],
-          "text": "Iron Rune Overseers are level 74–75 figures stationed in area 4220 of Grizzly Hills. Their combat movement is disabled while out of combat.",
+          "text": "Iron Rune Overseers are humanoid overseers stationed in Grizzly Hills who hold their ground rather than chase foes.",
           "when": {
             "entry": 27177
           }
@@ -3721,7 +3655,7 @@
             "source:47c87a4726286f83d91a39df",
             "source:d327b7c6355b717f8e396c27"
           ],
-          "text": "Sergeant Thurkin directs people to Samir for the work called Good Troll Hunting.",
+          "text": "Sergeant Thurkin is bitter toward the ice trolls who would not give passage through Drak'Tharon, and says they will be destroyed. He sends those who want in on the action to Samir at Granite Springs, whose gang delivers captured trolls.",
           "when": {
             "entry": 27266
           }
@@ -3884,33 +3818,9 @@
             "source:67c5521d5bffa0cb8d17fdb1",
             "source:ec162ff94e6fa7b363996976"
           ],
-          "text": "Tur Ragepaw is a furbolg who came north to learn about his relatives and found tribes at war, contrary to their nature. He has lost hope after seeing Ursoc tainted, but still fights to save him. He offers to protect the player and their allies, and calls Ursoc brother of Ursol and guardian of the furbolg tribes.",
+          "text": "Tur Ragepaw is a furbolg who came north to learn about his relatives and found tribes at war, contrary to their nature. He has lost hope after seeing Ursoc tainted, but still fights to save him. He offers to protect those beside him and their allies, and calls Ursoc brother of Ursol and guardian of the furbolg tribes.",
           "when": {
             "entry": 27328
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 27354,
-      "name": "Broken-down Shredder",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27354:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:22a36ff8d869955bf5869776",
-            "source:20249f29f2015fe991a2f7c1",
-            "source:30a6b1e82fe3092dec942a5a",
-            "source:076880bf3255f294513ec6ed",
-            "source:b4e9309b2178b24b416dc3e1"
-          ],
-          "text": "A broken-down mechanical Shredder in Grizzly Hills, configured as a vehicle.",
-          "when": {
-            "entry": 27354
           }
         }
       ],
@@ -3932,7 +3842,7 @@
             "source:6eadd3fa7c448713b9b584ab",
             "source:899f07ac4419477815b7cca7"
           ],
-          "text": "Synipus is a questgiver at Blue Sky Logging Grounds who needs broken-down shredders repaired for Venture Bay. He sends the player to recover them and sees the refurbished machines as a possible way to shift the Alliance's fortunes. His brisk, work-focused manner leaves little room for chit-chat.",
+          "text": "Synipus works at Blue Sky Logging Grounds, where he needs broken-down shredders brought in, repaired and sent to Venture Bay. He sees the refurbished machines as a way to tip the balance for the Alliance. He is brisk and work-focused, with no time for chit-chat.",
           "when": {
             "entry": 27371
           }
@@ -4234,28 +4144,6 @@
       "title": ""
     },
     {
-      "entry": 27457,
-      "name": "Skirmisher Corpse",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27457:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:34bf02ad72d761a9783b1921",
-            "source:398cc34e8a3159abeeb1362f",
-            "source:076880bf3255f294513ec6ed"
-          ],
-          "text": "A skirmisher's corpse in Grizzly Hills.",
-          "when": {
-            "entry": 27457
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 27458,
       "name": "Flora",
       "records": [
@@ -4269,7 +4157,7 @@
             "source:840a6fa453ff6741fc7e3ecc",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Flora is a named creature in the Grizzly Hills area.",
+          "text": "Flora is a small critter in Grizzly Hills.",
           "when": {
             "entry": 27458
           }
@@ -4291,7 +4179,7 @@
             "source:5f7ead12e5fea449cad6ee69",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Thudder is a named creature in the Grizzly Hills area.",
+          "text": "Thudder is a small critter in Grizzly Hills.",
           "when": {
             "entry": 27459
           }
@@ -4339,7 +4227,7 @@
             "source:7d85243ff615e3036df611ec",
             "source:c76f8f95466881d2db94efa3"
           ],
-          "text": "Bambina is a creature who cries, “NOOOOO! Mother! We’ll avenge you!” She becomes passive just after being summoned.",
+          "text": "Bambina is a small creature who cries out, “NOOOOO! Mother! We’ll avenge you!” and holds back from fighting.",
           "when": {
             "entry": 27461
           }
@@ -4363,7 +4251,7 @@
             "source:6c6075ebe2711b1aaf33abd4",
             "source:b860a5681aeea8c5121a1cc9"
           ],
-          "text": "The Wounded Skirmisher is a wounded humanoid who thanks the player after receiving help, saying, “Ahh.... better,” “Whoa - I nearly died there. Thank you!” or “Thank you.”",
+          "text": "The Wounded Skirmisher is a wounded humanoid who thanks whoever helps, saying “Ahh.... better,” “Whoa - I nearly died there. Thank you!” or “Thank you.”",
           "when": {
             "entry": 27463
           }
@@ -4572,7 +4460,7 @@
             "source:04c8bd1ae65ef3a174f38f82",
             "source:ae6eca90b10f4d53ee4ac1f0"
           ],
-          "text": "The marauders attacking Silverbrook answer to Sergeant Bonesnap, whom Sergei sends the player to find for a test of courage involving a skinning knife. Bonesnap fights with Demoralizing Shout and Intercept.",
+          "text": "Sergeant Bonesnap leads the orcs attacking Silverbrook from a camp northwest of the town, and the hunters there want him skinned as a test of courage. He fights with Demoralizing Shout and Intercept.",
           "when": {
             "entry": 27493
           }
@@ -4604,30 +4492,6 @@
       "title": ""
     },
     {
-      "entry": 27496,
-      "name": "Refurbished Shredder",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27496:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:9889d75195d16d350be6eb68",
-            "source:bdfed9eef4339a291923e9f4",
-            "source:6a4aad4d58601da561f162a0",
-            "source:076880bf3255f294513ec6ed",
-            "source:b4e9309b2178b24b416dc3e1"
-          ],
-          "text": "A refurbished mechanical Shredder in Grizzly Hills, configured as a vehicle.",
-          "when": {
-            "entry": 27496
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 27497,
       "name": "Captured Trapper",
       "records": [
@@ -4642,7 +4506,7 @@
             "source:71b3f1bfd35eb939e92e6061",
             "source:3e12edca064dda60a603dcb1"
           ],
-          "text": "Sasha is a captured trapper who distrusts the people she once called her own. She warns that their test is meant to draw the player into becoming like them and urges caution. She says monsters killed her father and took her sister, and she wants to avoid trouble while she deals with that loss.",
+          "text": "Sasha is a captured trapper who distrusts the people she once called her own. She warns that their test is meant to turn others into people like them and urges caution. She says monsters killed her father and took her sister, and she wants to avoid trouble while she deals with that loss.",
           "when": {
             "entry": 27497
           }
@@ -4665,7 +4529,7 @@
             "source:854816e0529055f42b68dba0",
             "source:7f5efcd3a7ea4617f0c2939c"
           ],
-          "text": "The Caged Prisoner is a frightened Alliance captive held in Silverbrook. On being approached, the prisoner pleads not to be killed; a rescue quest can free an Alliance Scout from the cage.",
+          "text": "The Caged Prisoner is a frightened Alliance captive held in Silverbrook who pleads not to be killed when approached.",
           "when": {
             "entry": 27499
           }
@@ -4887,7 +4751,7 @@
             "source:b8b95c797ee56393c2e979f0",
             "source:2f88082b29d1cd9bd45e6232"
           ],
-          "text": "An elite soldier of the Westfall Brigade, this combatant represents the unit’s field strength in Grizzly Hills.",
+          "text": "A seasoned soldier of the Westfall Brigade in Grizzly Hills.",
           "when": {
             "entry": 27549
           }
@@ -4908,7 +4772,7 @@
             "source:94376a6f778d331b5844b665",
             "source:1db40aa99e7ca24ef4caae39"
           ],
-          "text": "A champion of Conquest Hold, this combatant stands among the hold’s elite fighters in Grizzly Hills.",
+          "text": "A champion of Conquest Hold, one of the hold's chosen fighters in Grizzly Hills.",
           "when": {
             "entry": 27550
           }
@@ -4951,7 +4815,7 @@
             "source:6f4f6d53ed20aa0ebc5000bc",
             "source:68c71915e5182a1e0fe82a45"
           ],
-          "text": "A Drakkari witch doctor who uses Voodoo Doll magic in combat.",
+          "text": "A Drakkari witch doctor who curses foes with a Voodoo Doll.",
           "when": {
             "entry": 27555
           }
@@ -4997,7 +4861,7 @@
             "source:7d05c8c93fd6c50bdbe87e3e",
             "source:1bb6c3bc7753fbf8838d7491"
           ],
-          "text": "Centurion Kaggrum serves the Horde at Venture Bay, where he directs the campaign against the Westfall Brigade. He sends the player to kill Alliance forces as part of the effort to seize the port, and expects a report when the task is complete.",
+          "text": "Centurion Kaggrum serves the Horde at Venture Bay, where he directs the campaign against the Westfall Brigade. He sends willing fighters to slaughter the Alliance marines and break the stalemate so the port can be taken, and expects a report when it is done.",
           "when": {
             "entry": 27563
           }
@@ -5064,7 +4928,7 @@
             "source:e7ee0a2d2d2115f52e031520",
             "source:854728d2d0aac8590ee66767"
           ],
-          "text": "Goremaw is a powerful creature counted among Arugal's lieutenants on Bloodmoon Isle. Sasha identifies Goremaw as one of the targets in her plan to strike Arugal's forces before confronting Arugal himself. In combat, Goremaw uses carnivorous and infected worgen bites.",
+          "text": "Goremaw is a powerful creature counted among Arugal's lieutenants on Bloodmoon Isle, marked for death in Sasha's plan to strike Arugal's forces before confronting Arugal himself. He fights with carnivorous and infected worgen bites.",
           "when": {
             "entry": 27578
           }
@@ -5109,7 +4973,7 @@
             "source:5568a7279230a18a9a67a94c",
             "source:fe9580f32bd53057e36ab4ea"
           ],
-          "text": "Selas is one of Arugal's lieutenants on Bloodmoon Isle. Sasha includes Selas among the targets in her plan to strike Arugal's forces before confronting Arugal himself. Selas uses an axe volley and can enter a killing rage when badly hurt.",
+          "text": "Selas is one of Arugal's lieutenants on Bloodmoon Isle, marked for death in Sasha's plan to strike Arugal's forces before confronting Arugal himself. He hurls volleys of axes and flies into a killing rage when badly hurt.",
           "when": {
             "entry": 27580
           }
@@ -5154,31 +5018,9 @@
             "source:d4eecacc1abe4f8de596c94a",
             "source:b73913b022db4d77398cea13"
           ],
-          "text": "Private Arun has overheard the player speaking with a captain and cautions that matters in Northrend are not simple: the dead may remain relevant. He points the player toward Ruuna the Blind, whom people say speaks with the dead and sees the past and future, as a possible source of insight.",
+          "text": "Private Arun overheard talk with a captain and cautions that matters in Northrend are not simple: the dead may still matter. He points people to Ruuna the Blind, whom they say speaks with the dead and sees the past and future, as a possible source of insight.",
           "when": {
             "entry": 27582
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 27593,
-      "name": "Rocket Propelled Warhead",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:27593:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:f5d8e661e15afd305cb53bf4",
-            "source:b17a258c75cfc3de8fc90855",
-            "source:1183d15984e842cf59e4b50a"
-          ],
-          "text": "This rocket-propelled warhead serves as a vehicle. When a passenger boards, it casts Vehicle: Warhead Fuse.",
-          "when": {
-            "entry": 27593
           }
         }
       ],
@@ -5244,7 +5086,7 @@
             "source:69c64cba6a748663dc8deed8",
             "source:e233d319284d9f1d6cb36d8b"
           ],
-          "text": "A slain Drakkari humanoid whose remains can yield a Super Mana Potion.",
+          "text": "A slain Drakkari humanoid.",
           "when": {
             "entry": 27613
           }
@@ -5309,7 +5151,7 @@
             "source:49dda3b30e677f534c2115ce",
             "source:a3d3f16fcb302e6dd4a7dafc"
           ],
-          "text": "Tatjana's Horse is a horse associated with Tatjana. On spawning, it removes the aura named “Mount Tatjana's Horse.”",
+          "text": "Tatjana's Horse is a horse associated with Tatjana.",
           "when": {
             "entry": 27626
           }
@@ -5493,7 +5335,7 @@
             "source:d3297a8791620c8f5743ae06",
             "source:03aa901f220697e18ac59d60"
           ],
-          "text": "Purkom is a Venture Coin vendor in the Grizzly Hills, offering goods to browse.",
+          "text": "Purkom sells goods for Venture Coin in the Grizzly Hills.",
           "when": {
             "entry": 27730
           }
@@ -5587,7 +5429,7 @@
             "source:ac53153e34455a2b797de33c",
             "source:d3297a8791620c8f5743ae06"
           ],
-          "text": "“Grizzly” D. Adams is a Venture Coin vendor with goods available to browse.",
+          "text": "“Grizzly” D. Adams sells goods for Venture Coin.",
           "when": {
             "entry": 27760
           }
@@ -5613,7 +5455,7 @@
             "source:d535148f8b9f2f7517788937",
             "source:e13ad89ef251a034712b15c7"
           ],
-          "text": "Scout Captain Carter is a field leader concerned with control of the logging sites around Venture Bay. He calls Blackriver the smallest camp but still considers it worth defending, since the Horde could turn its lumber into weapons. He directs the player to drive Horde forces from the camp and responds warmly to a successful effort, while urging others to join the fight.",
+          "text": "Scout Captain Carter is a field leader concerned with control of the logging sites around Venture Bay. He calls Blackriver the smallest camp but still worth defending, since the Horde could turn its lumber into weapons. He wants Horde forces driven from the camp, responds warmly to those who help, and urges more to join the fight.",
           "when": {
             "entry": 27783
           }
@@ -5821,7 +5663,7 @@
             "source:3d2e35b971aaacc6df8eccef",
             "source:33ad42549dc408d62e22d215"
           ],
-          "text": "Jason Riggins is listed as a Blacksmithing Supplies vendor. He offers goods for browsing and repairs.",
+          "text": "Jason Riggins sells blacksmithing supplies and repairs gear.",
           "when": {
             "entry": 29252
           }
@@ -5889,7 +5731,7 @@
             "source:be7658e55db83ba6c65481ea",
             "source:e545283212edae94cbb6e42c"
           ],
-          "text": "Aspen Grove Trader is a Trade Goods vendor.",
+          "text": "The Aspen Grove Trader sells trade goods.",
           "when": {
             "entry": 29270
           }
@@ -5911,7 +5753,7 @@
             "source:f77961fed911660cf3e8dc3f",
             "source:34930523cbcd797d8968498f"
           ],
-          "text": "Aspen Grove Supplier is a vendor at Aspen Grove, offering food and drink.",
+          "text": "The Aspen Grove Supplier sells food and drink at Aspen Grove.",
           "when": {
             "entry": 29275
           }
@@ -5933,7 +5775,7 @@
             "source:d6f36b6d7eff06024800a2a3",
             "source:f4e790a50bdbb3561b6c4969"
           ],
-          "text": "Datalore Smallsphere is a vendor at Aspen Grove dealing in trade goods.",
+          "text": "Datalore Smallsphere deals in trade goods at Aspen Grove.",
           "when": {
             "entry": 29277
           }
@@ -6169,7 +6011,7 @@
             "source:4149c0742b04ac4fa2684f8f",
             "source:ffec9c7c61341af8f8e9822e"
           ],
-          "text": "Grocklar is a rare elite humanoid found in Grizzly Hills. In combat, Grocklar uses Stone Stomp and Stone Fist.",
+          "text": "Grocklar is a rare giant found in Grizzly Hills who stomps and strikes with a stone fist.",
           "when": {
             "entry": 32422
           }
@@ -6191,7 +6033,7 @@
             "source:88e34a1c60ec1b2a1a0b6409",
             "source:123132e0fa3ee8c62ff7857a"
           ],
-          "text": "Seething Hate is an elite entity found in Grizzly Hills. It casts Seething Evil when attacked.",
+          "text": "Seething Hate is a rare, hate-filled entity found in Grizzly Hills that lashes out with Seething Evil when attacked.",
           "when": {
             "entry": 32429
           }
@@ -6214,7 +6056,7 @@
             "source:a778bc8eb8ad21bb8a04b5c1",
             "source:7f63d86d313584fa2be958e2"
           ],
-          "text": "Syreian the Bonecarver is a rare elite in Grizzly Hills who fights with ranged attacks, including Shoot and Frost Arrow.",
+          "text": "Syreian the Bonecarver is a rare humanoid archer in Grizzly Hills who shoots and looses frost arrows.",
           "when": {
             "entry": 32438
           }
@@ -6323,7 +6165,7 @@
             "source:5e7ddac5cdd630beacf22199",
             "source:cfbab247b62cb431efe46e59"
           ],
-          "text": "Arcturis is a named elite beast found in Grizzly Hills.",
+          "text": "Arcturis is a rare beast found in Grizzly Hills.",
           "when": {
             "entry": 38453
           }
@@ -7259,11 +7101,6 @@
       "reference": "evidence:sha256:1e31520c76f89efe27cd4273d6e291c691544176922dce385ec50b70adcf977d",
       "revision": "79f71689bc552b9cc4b9e50988bea08c9e588d75fed1c7c1616244c19e15e6a2"
     },
-    "source:02ba3c70227dda0f301083c6": {
-      "kind": "research",
-      "reference": "evidence:sha256:3354eeeba76ae6780d2077a0b75cf4cee2e0ca95c640636273f66ae0e5b75d19",
-      "revision": "92df2bbb24b74c6fc28ba896ec717d6ad2df97d4d4cf80978c8b50c6e7d710e7"
-    },
     "source:02d306aa12e4028f29819482": {
       "kind": "research",
       "reference": "evidence:sha256:4b916eed86084d19a3037f07443d6046b3dda30915153e1c9ee937634cadb461",
@@ -7534,11 +7371,6 @@
       "reference": "evidence:sha256:7083d93e01fd12d1ff794a73060b3de62bda0e9fefebf467d50d28b9ffd32ea6",
       "revision": "8af78e3197746381ffca1b67469c13f858f9c75d08c2f09b81f73b4a096872a3"
     },
-    "source:1183d15984e842cf59e4b50a": {
-      "kind": "research",
-      "reference": "evidence:sha256:5fb4cf7188e2650cf393bf5a62e271916aa3cda328348a493b38b31bf831aec6",
-      "revision": "bb8bb88bcb97b3d5f5b5e83faff6ecec8d91e520af6e086888ebd304f3f5e5a4"
-    },
     "source:11b715ba5f69844f8dc30133": {
       "kind": "research",
       "reference": "evidence:sha256:51be9104b72d89193f5dbbb61ee5fe6e06dc1c895070febf90ce9a23d2793c04",
@@ -7779,11 +7611,6 @@
       "reference": "evidence:sha256:b835287e4e1c4e152cac8e06136fbd357d2141bf4e342e0f936f226ee6854e89",
       "revision": "d81ecd86dfc745beb29a80af51d8545d916970302cb0916a71b65beeba91dfff"
     },
-    "source:20249f29f2015fe991a2f7c1": {
-      "kind": "research",
-      "reference": "evidence:sha256:079ce59b326176e52ac56a8876501d20c745fcc4d9fe87752b145a3770fb0070",
-      "revision": "1be5c4ec6f84f1a5790d5a280f0b5ae9475a9b3a0f6878a7740e7401e2c37bab"
-    },
     "source:20254840b607f490956d0924": {
       "kind": "research",
       "reference": "evidence:sha256:f980c66f47e0abe334d32cad04b3e2457b40aa2a21803c790f0d8c5ee1cd1106",
@@ -7819,11 +7646,6 @@
       "reference": "evidence:sha256:a8fdd8ea3f1fda38b1ea46b723fcd6ece7a66e990766be9db92a8b32455c9bfd",
       "revision": "6c9258d2971e5abf3a6706d13bb0afd421a6b8af03ce655fd747b57b63a8147c"
     },
-    "source:22a36ff8d869955bf5869776": {
-      "kind": "research",
-      "reference": "evidence:sha256:9a1380d7eb8fc94973c165ef6a73332d66a3821c277aee9ae292fda70924107f",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:22a37fe4dec7ada0a4ceb744": {
       "kind": "research",
       "reference": "evidence:sha256:b267e5dec10d815a7086d213455c5e2f59eb153b42b2640065535d2ae592d2be",
@@ -7838,11 +7660,6 @@
       "kind": "research",
       "reference": "evidence:sha256:2cd5ae5f1e49c1300869c43bb30b7892832db98ca9cb65443d6f73185cee3264",
       "revision": "8e2169b408736ff1a0a9d0da0d15b4b5c3af17d5f8c15e87c68fcc6da4d641c6"
-    },
-    "source:22c63c991dc0eb73be8c13f4": {
-      "kind": "research",
-      "reference": "evidence:sha256:23511843acc550e9508680b6aaf96532e7caa437e2b02a45b9af0519f8939c64",
-      "revision": "92df2bbb24b74c6fc28ba896ec717d6ad2df97d4d4cf80978c8b50c6e7d710e7"
     },
     "source:22e81fe87cab23eedfb98e48": {
       "kind": "research",
@@ -8129,11 +7946,6 @@
       "reference": "evidence:sha256:5e6a3ea1d2ed3c88fdd74d97e57ddbc83151f9ce29a8084f8e29d53679cf569e",
       "revision": "92df2bbb24b74c6fc28ba896ec717d6ad2df97d4d4cf80978c8b50c6e7d710e7"
     },
-    "source:30a6b1e82fe3092dec942a5a": {
-      "kind": "research",
-      "reference": "evidence:sha256:f252b96963b70d3cb94e1b763314756300e3f9153d062dcaad9d5ad9f0d7a8ea",
-      "revision": "9728efc6e6b6626fc21b4136e4122f6969b18e453f865978cefb7d60ca0c781e"
-    },
     "source:30e86c5b41b3591bcc9b63e4": {
       "kind": "research",
       "reference": "evidence:sha256:83ebede227a9834fccbf5876534feedb6b115580b96f63bd62dc0d239cbd3950",
@@ -8203,11 +8015,6 @@
       "kind": "research",
       "reference": "evidence:sha256:7afd119d31df07acc0313a33f53df72be33ca04b7b06c992aebfb6fc59a88c8b",
       "revision": "2c30f4392fceb9346db77479531de01073e74d51060ac8f140d18de7fe0d9357"
-    },
-    "source:34bf02ad72d761a9783b1921": {
-      "kind": "research",
-      "reference": "evidence:sha256:b776c2c1441069010c10054922b8335c871f0a59f29bcbea0f0019664a420ced",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:34d3e1c1841edcfc74d06edb": {
       "kind": "research",
@@ -8299,11 +8106,6 @@
       "reference": "evidence:sha256:eb5f723f1ff50f893eab2cd89087b1408e3ef9b01242c246cc6bd3136c51641f",
       "revision": "6e95fb07dd0713839ee0c3d1f782e73b8323d4787746bf1cf4fc402474e5b7e7"
     },
-    "source:398cc34e8a3159abeeb1362f": {
-      "kind": "research",
-      "reference": "evidence:sha256:79c5096ffdd9da5b8fc7b6bd1180d20781b8d0739b5b0d1deba06a3feb53f65b",
-      "revision": "8af78e3197746381ffca1b67469c13f858f9c75d08c2f09b81f73b4a096872a3"
-    },
     "source:3a3e4cf32ff04ff6823548d8": {
       "kind": "research",
       "reference": "evidence:sha256:1dab8c15d53e7a3e8a9c05bc30266d8a49b8e139e6906655b913178b90035cc7",
@@ -8313,11 +8115,6 @@
       "kind": "research",
       "reference": "evidence:sha256:5dae64da024468514113b309eb89a35219698512a8c19cc56a36252235f7f20b",
       "revision": "1290b15f72444824d4fbc9541289d1c5f53396e532ce1edc007b479811368cc2"
-    },
-    "source:3aa46ff13e6781cfaa8432fd": {
-      "kind": "research",
-      "reference": "evidence:sha256:f331a785b80d38f19ac36f3755baf45826cc923099cf70d4a472812aad675727",
-      "revision": "24f278452694b9c7963467b547b99d568d94cc1e13844572d26f8cc81245cb59"
     },
     "source:3b3ff460ca7ebaa1ed47b548": {
       "kind": "research",
@@ -8904,11 +8701,6 @@
       "reference": "evidence:sha256:7d047d2a9bb726e41ddcdd24b00cd306e9c7be5521f652c8bc162fdf09acfe2b",
       "revision": "13dfd44da1033e4e7dda8a81415c81b9e9f81737dcef312a6b4ca2c4355ca65b"
     },
-    "source:58ea4a41ca14bf9988b33b02": {
-      "kind": "research",
-      "reference": "evidence:sha256:28260969dade14e4e5fb8b455f66b510017bb7370fc8a03c93a8856b120c19e1",
-      "revision": "3ae231e1fdd30e84b2b7d25d3116c6a012bba926963aa628ae8386d0534dfbd5"
-    },
     "source:5981a71052639fc9f9629ad9": {
       "kind": "research",
       "reference": "evidence:sha256:e32017d272ceb91822534bb26c045666f6209f870a404967d069542d52889ace",
@@ -9253,11 +9045,6 @@
       "kind": "research",
       "reference": "evidence:sha256:21f70861c787f727a912df514abf181f1a9e677aecf1d95524466722c734c0cb",
       "revision": "5dfd631df15942cfcd1914593d4b70d1d7e65c921a21bc234212d744ad1de045"
-    },
-    "source:6a4aad4d58601da561f162a0": {
-      "kind": "research",
-      "reference": "evidence:sha256:a6aed1f4ec6fca7c7322bba8f11b6e6b08ca257274aabd9eb14bf16d57aafec6",
-      "revision": "17a60ab1ba0ec7fb4442b2b06b2a3cfe35662e18cc049765040652e481f884b3"
     },
     "source:6a5f0fb4b6608ea699190390": {
       "kind": "research",
@@ -10174,11 +9961,6 @@
       "reference": "evidence:sha256:025ce0dbcc0c6163c4ac957e9d38c67e40498e0f1abe4b04560448ffa5499b43",
       "revision": "a2ea4442e840bfc9607b5eba5ff7bda73af9a1aa94b7460dca11c52a3a0d49a8"
     },
-    "source:9889d75195d16d350be6eb68": {
-      "kind": "research",
-      "reference": "evidence:sha256:bcd496ad298ee69c55dfd7a3fb08368e1d14f2a0337af41826e1b94c7cfdad2b",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:989336a4eea896c3070f6d22": {
       "kind": "research",
       "reference": "evidence:sha256:3a03a69ed74271d7e1a9e1eb90c9decb5b2611e29a2a804649992f8f67f45b78",
@@ -10654,11 +10436,6 @@
       "reference": "evidence:sha256:d407bdc42e76f8baaa7030fa4f4ab99160ca6eb136861e5ae40a116dc8c1ce93",
       "revision": "4d1855f85cb70322921db0451bee2b334246d2317cac7af8f5630688db545673"
     },
-    "source:b17a258c75cfc3de8fc90855": {
-      "kind": "research",
-      "reference": "evidence:sha256:55304a746641f3b69c44a5f34013a9a30f2c0bf5997d9b030358993af905012c",
-      "revision": "bb8bb88bcb97b3d5f5b5e83faff6ecec8d91e520af6e086888ebd304f3f5e5a4"
-    },
     "source:b191fb9d13c7a03e9689f526": {
       "kind": "research",
       "reference": "evidence:sha256:a98be1ae06b7889442f7df106efe4b9526b11795dd67494f9a54e8fa8ca61328",
@@ -10738,11 +10515,6 @@
       "kind": "research",
       "reference": "evidence:sha256:1860eec7f7317fa798486f65a0ee0c5770dc88d584d980159ce5265bfd0e3430",
       "revision": "14d723585e1eb5ee6d830d3274b49d646ab3ffac5cdb5c9c96d76c93f992ca98"
-    },
-    "source:b4e9309b2178b24b416dc3e1": {
-      "kind": "research",
-      "reference": "evidence:sha256:4af1ab80bfa0e29a80868069f526b2c6ddf58f2484f966237b827b26c7e332cc",
-      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
     "source:b50fb796b0f85a60cae8918f": {
       "kind": "research",
@@ -10943,11 +10715,6 @@
       "kind": "research",
       "reference": "evidence:sha256:3acde8b24510c190fcd1ff67c07a5d8dbeb43eae4bd5b5a1d23434d87c504394",
       "revision": "5efb9f7a744e983bfeafdd6b12457fdfc8a600abab4591e91467b4cb12f55d82"
-    },
-    "source:bdfed9eef4339a291923e9f4": {
-      "kind": "research",
-      "reference": "evidence:sha256:03b71b3d0817eb7f2be3a3dd468545bc7182f32b663487071d1964b49927a879",
-      "revision": "e60596e58cf20b45a54b8958c05ed5e88f40f867107b8b84ea791ccd395dd0ec"
     },
     "source:be52c60e5a57793090105d92": {
       "kind": "research",
@@ -11269,11 +11036,6 @@
       "reference": "evidence:sha256:ba0a26f8d5a0af068a232f718186a5d8f41ac2d36b44088ab4aa2aebb516e164",
       "revision": "b1e44e8f70e041b943d5c9ce28abb3f18883146df58aab471a96d0bf7aaf19f2"
     },
-    "source:cf0212ab5dfb4b7023ee80f1": {
-      "kind": "research",
-      "reference": "evidence:sha256:de8b7252e35372db81947cc94e5d11c4821a0c756f1fd43a1327e58a4fc248ca",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:cf224293f325a8c157d29ee2": {
       "kind": "research",
       "reference": "evidence:sha256:8a539b395c0903ccd72a06c8c698bd56a4a2384e93534d2bfd6b904fc01f9313",
@@ -11353,11 +11115,6 @@
       "kind": "research",
       "reference": "evidence:sha256:bf7b03d54a11f0f4679966118fad85cfb04da30e007df3ae2098867a0bda39bc",
       "revision": "e534bf79af42bf4aa858105a6b0025b20820c56a5bb0ce38b8ae07afacbea68e"
-    },
-    "source:d37b0adfac5655d5ec468087": {
-      "kind": "research",
-      "reference": "evidence:sha256:947c6b1cef59dbefa5835f160ca3bd9c8501fe615b1d95f01ea049abd9f069bf",
-      "revision": "3ae231e1fdd30e84b2b7d25d3116c6a012bba926963aa628ae8386d0534dfbd5"
     },
     "source:d3c92881a5eb27cf53102b6e": {
       "kind": "research",
@@ -11814,11 +11571,6 @@
       "reference": "evidence:sha256:bb8cf174b73f31a06014cdbdcedc8403566e841ead0b08bc47ce29dd9220dda0",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
-    "source:e999c1242cd6e4cf7d96bb31": {
-      "kind": "research",
-      "reference": "evidence:sha256:65c34c2b6bb2d5b65e62d4fa212ee04e3da44671bc67934303c7b27fc594547a",
-      "revision": "3ae231e1fdd30e84b2b7d25d3116c6a012bba926963aa628ae8386d0534dfbd5"
-    },
     "source:e9b45ecaff209850c08f645e": {
       "kind": "research",
       "reference": "evidence:sha256:30b2aead0ad85bf31d72d7a36ca73d53f89311aa06d409daaecbf86ac61972e6",
@@ -12053,11 +11805,6 @@
       "kind": "research",
       "reference": "evidence:sha256:714829756eb9552f31f6ad510dbc6c6b5687804d980420cca7bfd35f78b67206",
       "revision": "5dfd631df15942cfcd1914593d4b70d1d7e65c921a21bc234212d744ad1de045"
-    },
-    "source:f5d8e661e15afd305cb53bf4": {
-      "kind": "research",
-      "reference": "evidence:sha256:f2fafcb583cacb94ba7d4b37c8683ee9e8750c4aec4261d7bea26753e60c2b92",
-      "revision": "bb8bb88bcb97b3d5f5b5e83faff6ecec8d91e520af6e086888ebd304f3f5e5a4"
     },
     "source:f5f05d7debbe33b32529712e": {
       "kind": "research",

@@ -40,7 +40,7 @@
             "source:94700cc705c7e2edcdbf8550",
             "source:88697e14213f00b6073b9cb7"
           ],
-          "text": "A Goblin Demolisher Engineer at Wintergrasp offers construction of catapults and demolishers, with both options represented in the dialogue.",
+          "text": "A goblin Demolisher Engineer at Wintergrasp who offers to build catapults and demolishers.",
           "when": {
             "entry": 30400
           }
@@ -117,27 +117,6 @@
       "title": "Demolisher Engineer"
     },
     {
-      "entry": 30560,
-      "name": "The RP-GG",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:30560:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:185c5da918cdf6a47581b7d2",
-            "source:8aef66c2b87e33ad891c9ed4"
-          ],
-          "text": "The RP-GG is a named non-humanoid entity that can be activated through a spell-click interaction.",
-          "when": {
-            "entry": 30560
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 30842,
       "name": "Wandering Shadow",
       "records": [
@@ -152,7 +131,7 @@
             "source:9c8d38fff1b9804a0510e56f",
             "source:2084510ee916842f18846945"
           ],
-          "text": "Wandering Shadow is a shadow creature whose combat abilities include Chilling Touch and Curse of Weakness.",
+          "text": "Wandering Shadow is a shadow creature that chills its foes with Chilling Touch and saps them with Curse of Weakness.",
           "when": {
             "entry": 30842
           }
@@ -174,7 +153,7 @@
             "source:2e93dc5006e455e9c49037e4",
             "source:cdb27feca4ff64f86b6f3c3d"
           ],
-          "text": "Living Lasher is an elemental.",
+          "text": "Living Lasher is an elemental that lies submerged.",
           "when": {
             "entry": 30845
           }
@@ -335,7 +314,7 @@
             "source:12d5de9902765963608b6e81",
             "source:9c3d02e1554b928a6b2258b2"
           ],
-          "text": "A Water Revenant is an elemental creature encountered across Wintergrasp. Its presence is part of the region’s elemental dangers amid the fighting and its aftermath.",
+          "text": "A Water Revenant is an elemental found across Wintergrasp, one of the elementals that slay adventurers in the Glacial Falls.",
           "when": {
             "entry": 30877
           }
@@ -597,7 +576,7 @@
             "source:3792cfbc066e55ea4c234e8d",
             "source:0f8fe71475d9f802988c35ce"
           ],
-          "text": "Siege Master Stouthandle oversees preparation for Wintergrasp's next battle, including gathering embers to fuel demolishers and siege engines. His orders are blunt and openly hostile toward the Horde, whom he wants kept from gaining an advantage. He taunts anyone who returns without the embers.",
+          "text": "Siege Master Stouthandle oversees preparation for Wintergrasp's next battle, including gathering eternal embers to fuel demolishers and siege engines. He is openly hostile to the Horde, urging that any found gathering embers be slain so they gain no advantage. He taunts anyone who returns without the embers.",
           "when": {
             "entry": 31108
           }
@@ -721,27 +700,6 @@
       "title": ""
     },
     {
-      "entry": 32522,
-      "name": "Cinder Cloud",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:32522:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:c1cd425d3d10fc27a289e8ee",
-            "source:a237bd6adf20cd151008754f"
-          ],
-          "text": "Cinder Cloud is a gas cloud.",
-          "when": {
-            "entry": 32522
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 34300,
       "name": "Mature Lasher",
       "records": [
@@ -758,7 +716,7 @@
             "source:91b9d36191433a26e7e5cf5f",
             "source:3dca8972550bad080d83e7a9"
           ],
-          "text": "A Mature Lasher is an elemental that stays submerged at home between fights. It surfaces when it gains an enemy’s attention, can move in combat, and uses Dream Lash.",
+          "text": "A Mature Lasher is an elemental that lies submerged at home between fights. It surfaces when an enemy draws its attention, can move in combat, and lashes out with Dream Lash.",
           "when": {
             "entry": 34300
           }
@@ -1101,11 +1059,6 @@
       "reference": "evidence:sha256:585c39c3b28643b151c31a81c53fdeeacbd5bf3566ba1bad4c7dbdd49e13ce20",
       "revision": "28246b228f9c05a524d08e051c57f3b1dfdbbf0b63c1424092c0bd5c20afb5a3"
     },
-    "source:185c5da918cdf6a47581b7d2": {
-      "kind": "research",
-      "reference": "evidence:sha256:f6670024cc15e583fe4debc6addb3f9216a6cd52b17a2f3af6907a8a775f1185",
-      "revision": "73abf95546a7fea1cf66d8278bee48468dc10f300d415cd2a4a439a686166026"
-    },
     "source:1b94cae3197f1541b8b7bf66": {
       "kind": "research",
       "reference": "evidence:sha256:1bc9b1c2afdadaa32566c87bc4006ff44f7ac76ec1b7c37333a6b038d56b1c03",
@@ -1396,11 +1349,6 @@
       "reference": "evidence:sha256:f67286074d838ec90905e4ba1ca3912990fa249eadb24a7f013932daf23297e5",
       "revision": "ed1a7a84a713dadfbc9583b0ac840b0886f03efd45cd4dbf2de6cef42aaeaae2"
     },
-    "source:8aef66c2b87e33ad891c9ed4": {
-      "kind": "research",
-      "reference": "evidence:sha256:aed19577247b580537b2da065ec0741022d6919bb2674073cc73ec28b358df85",
-      "revision": "73abf95546a7fea1cf66d8278bee48468dc10f300d415cd2a4a439a686166026"
-    },
     "source:8b269fa3ac1a565cfedc6d55": {
       "kind": "research",
       "reference": "evidence:sha256:bfe9f8faf5a7f15e94407095464ee74e9413d6a931482985ebfb129f662f4ffe",
@@ -1470,11 +1418,6 @@
       "kind": "research",
       "reference": "evidence:sha256:f6a47af63220ecdf1b770cb1d2f567d89854d1a4303048c6c62203850868987c",
       "revision": "a590a4df3dd48da67c251d6a7c4f28c4d7443a14f92750bbd8344376d5b34eec"
-    },
-    "source:a237bd6adf20cd151008754f": {
-      "kind": "research",
-      "reference": "evidence:sha256:926eb26abed12f971704a2d79e59ee7c717bd8f7899eeeaf23c20cf1afbed02f",
-      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
     "source:a34feb86c3bb66235c9f29ae": {
       "kind": "research",
@@ -1560,11 +1503,6 @@
       "kind": "research",
       "reference": "evidence:sha256:dbf5a7c8c9bd438ec07dd4d27f4d56c80839f4e448b94f987914335256e03758",
       "revision": "f99b6fb4aee220033bb9106ca91dce7fe24549f7c91076cbab65606a7f944305"
-    },
-    "source:c1cd425d3d10fc27a289e8ee": {
-      "kind": "research",
-      "reference": "evidence:sha256:b24d1992cbdc724c498616b2df3d06b893ec1b93a212bbe65728a881b2d5986a",
-      "revision": "362a5403f48eabc12771534879cf0e8f900e22cd13727ee9a34d6627fc81993f"
     },
     "source:c3f220f39a28aa2ad65a7636": {
       "kind": "research",

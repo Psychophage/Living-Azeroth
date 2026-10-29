@@ -101,27 +101,6 @@
       "title": "The Twilight Destroyer"
     },
     {
-      "entry": 40081,
-      "name": "Orb Carrier",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:40081:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:dcc11079819864cf89b4f878",
-            "source:3945b1adbe47aba71092556b"
-          ],
-          "text": "Orb Carrier is a functional Ruby Sanctum encounter creature assigned to carry an orb.",
-          "when": {
-            "entry": 40081
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 40417,
       "name": "Charscale Invoker",
       "records": [
@@ -135,7 +114,7 @@
             "source:08be800f67352e9ad90a34b2",
             "source:0e682e668946032a5eedb632"
           ],
-          "text": "Charscale Invokers are dragonkin spellcasters in the Ruby Sanctum. In combat, they cast Scorch, marking them as the Charscale force’s magical attackers.",
+          "text": "Charscale Invokers are dragonkin spellcasters in the Ruby Sanctum who scorch their foes.",
           "when": {
             "entry": 40417
           }
@@ -157,7 +136,7 @@
             "source:2487829ea68ce1194de883f2",
             "source:3e6ceea9773616c44a64a273"
           ],
-          "text": "Charscale Assaulters are dragonkin combatants that use Shockwave in battle.",
+          "text": "Charscale Assaulters are dragonkin fighters who send shockwaves through their foes.",
           "when": {
             "entry": 40419
           }
@@ -178,7 +157,7 @@
             "source:2cca29148e0d46eb9a70a692",
             "source:749942899608af2133d1726c"
           ],
-          "text": "Charscale Elites are elite dragonkin combatants in the Ruby Sanctum. Their rank marks them as a more formidable part of the Charscale force than its ordinary combat roles.",
+          "text": "A dragonkin fighter of the Charscale force in the Ruby Sanctum, of higher standing than its ordinary soldiers.",
           "when": {
             "entry": 40421
           }
@@ -319,11 +298,6 @@
       "reference": "evidence:sha256:520076e95882e353fad190725abca4e30a7eff020e49e09a651c8019c650f1bc",
       "revision": "52654b34495d3123437b0d7977686b5488fe245e8be5247e6352c661e0fd7ed7"
     },
-    "source:3945b1adbe47aba71092556b": {
-      "kind": "research",
-      "reference": "evidence:sha256:170e6c76916f947a3641a569216237c9966f86b8020775ef307e991dbef98ba5",
-      "revision": "2208ffbd1ab80be2d8bb89af25d7c35024b682911ce49c0e8dab9509c7102c5d"
-    },
     "source:3b04be234b7de1505c5a62ce": {
       "kind": "research",
       "reference": "evidence:sha256:8cfea01dd912eb6fe67a25d895aef7df7b562db57a42b3889a55dec04c936b9c",
@@ -437,11 +411,6 @@
     "source:d42a56ac28575fd8bced3a2b": {
       "kind": "research",
       "reference": "evidence:sha256:6be04e6b8e63fa21a9f0f676d05c08f191de76d664ca7319b96851de89311870",
-      "revision": "2208ffbd1ab80be2d8bb89af25d7c35024b682911ce49c0e8dab9509c7102c5d"
-    },
-    "source:dcc11079819864cf89b4f878": {
-      "kind": "research",
-      "reference": "evidence:sha256:adf098c54bf7ea54187f3db9364ff7db85b2d8be2db419a0fbd42a946d75ecec",
       "revision": "2208ffbd1ab80be2d8bb89af25d7c35024b682911ce49c0e8dab9509c7102c5d"
     },
     "source:e15df1f474ed38edcde46faa": {

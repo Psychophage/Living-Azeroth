@@ -230,116 +230,6 @@
       "title": ""
     },
     {
-      "entry": 34905,
-      "name": "[ph] Argent Raid Spectator - FX - Undead",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34905:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:af2791dbb2e52dba88f9015a",
-            "source:1e6e4003d98e7737f160059b",
-            "source:565b35bb6e8f3724a6ba43dd"
-          ],
-          "text": "A Forsaken crowd spectator whose cheer calls on the Forsaken of the Undercity to celebrate.",
-          "when": {
-            "entry": 34905
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 34906,
-      "name": "[ph] Argent Raid Spectator - FX - Dwarf",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34906:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:ab46d30ec0ef528452c52eea",
-            "source:9facf8cbd8253db512cebbe4",
-            "source:b815ddd78662b34d258c555d"
-          ],
-          "text": "A dwarf crowd spectator whose cheer has the dwarves of Ironforge begin celebrating $n. This entry is a placeholder-style raid spectator recorded in one mapped area.",
-          "when": {
-            "entry": 34906
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 34908,
-      "name": "[ph] Argent Raid Spectator - FX - Draenei",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34908:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:4f9aceb5a1efd3a8f64cb38f",
-            "source:8bcb3baba9c58164a1d63189",
-            "source:e125f40d36a0564f42d99fad"
-          ],
-          "text": "A draenei crowd spectator whose cheer has the draenei of the Exodar celebrate $n. This entry is a placeholder-style raid spectator recorded in one mapped area.",
-          "when": {
-            "entry": 34908
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 34909,
-      "name": "[ph] Argent Raid Spectator - FX - Night Elf",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34909:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:cac5bf1186053933efce9ec4",
-            "source:a6381244f69bfb3c1f69e387",
-            "source:d3e08f533711c4a86758f19e"
-          ],
-          "text": "A night elf crowd spectator whose cheer has the night elves of Darnassus celebrate $n. This entry is a placeholder-style raid spectator recorded in one mapped area.",
-          "when": {
-            "entry": 34909
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 34910,
-      "name": "[ph] Argent Raid Spectator - FX - Gnome",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:34910:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:88d38007b84b407cd02c4158",
-            "source:ad343ceb7854a4fd7077fee0",
-            "source:6ded3168fa26df04a11599ff"
-          ],
-          "text": "A gnome crowd spectator whose cheer has the gnomes of Gnomeregan celebrate $n. This entry is a placeholder-style raid spectator recorded in one mapped area.",
-          "when": {
-            "entry": 34910
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 34970,
       "name": "Argent Crusade Spectator",
       "records": [
@@ -352,7 +242,7 @@
             "source:4503eaca1f8f6d303ec11295",
             "source:2dae13f095b5000ccbaa9da8"
           ],
-          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid. Six instances are recorded across two mapped areas, placing this crowd presence in more than one area.",
+          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid.",
           "when": {
             "entry": 34970
           }
@@ -373,7 +263,7 @@
             "source:eba21bedb7ebaedf8408d47a",
             "source:16cce53d0d550492e7659fb3"
           ],
-          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid. Four instances are recorded across two mapped areas, placing this crowd presence in more than one area.",
+          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid.",
           "when": {
             "entry": 34974
           }
@@ -394,7 +284,7 @@
             "source:64442c214f89112f294eaac1",
             "source:1f362785f4ff9c710c167109"
           ],
-          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid. Five instances are recorded across two mapped areas, placing this crowd presence in more than one area.",
+          "text": "An Argent Crusade spectator, part of the crowd gathered to watch the raid.",
           "when": {
             "entry": 34975
           }
@@ -596,11 +486,6 @@
       "reference": "evidence:sha256:4f460202c6f497681a1333132590b138a88f08e6c307e5eccc2d912338b7c9f4",
       "revision": "bd622d9de5fd36a31695bf1082f256a158b8b1cec29ca31950fb53489971572e"
     },
-    "source:1e6e4003d98e7737f160059b": {
-      "kind": "research",
-      "reference": "evidence:sha256:4361b2a854f6e9f700bad193f03678e7cdad0777cc415aa6e5a7d9907e256b27",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:1f362785f4ff9c710c167109": {
       "kind": "research",
       "reference": "evidence:sha256:ae76f55a04970b4b4fcd4314b6ca5e8535c44167fe15df086453f45cc39e77c7",
@@ -671,20 +556,10 @@
       "reference": "evidence:sha256:2522a2a5989012673d8e3d5c2c40d599fb3e1c10dbb0b03a45e44d57a4eb8024",
       "revision": "c3ceaba1011c629b16710b685d4964cf8bec0745de97b034d81980b62d8cad67"
     },
-    "source:4f9aceb5a1efd3a8f64cb38f": {
-      "kind": "research",
-      "reference": "evidence:sha256:1ea97fb2bc6bd3e34ae7bb3a3b9d6507e1930373f7e46c03775266d671e97b8e",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:5116c20a42b1d704c3cd5b86": {
       "kind": "research",
       "reference": "evidence:sha256:4c1ed8fab0139e87425bee004e26c94f19482f19d84033bf1fbfdfa7635639fa",
       "revision": "bd622d9de5fd36a31695bf1082f256a158b8b1cec29ca31950fb53489971572e"
-    },
-    "source:565b35bb6e8f3724a6ba43dd": {
-      "kind": "research",
-      "reference": "evidence:sha256:eec47bb3d325b276bd98ead70d45e8bc2d3eebdecc568a326efa3e450c361fa2",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
     },
     "source:5c41534f5362bb3da218d29a": {
       "kind": "research",
@@ -711,11 +586,6 @@
       "reference": "evidence:sha256:61ba98493e23765b97a77af8aac34eb57a55c7a4fee938b5bbbd22a0db92a805",
       "revision": "cddf14d450d12c92fd0d64098df1236d50c78a5bb05529e8cf447880887ba90e"
     },
-    "source:6ded3168fa26df04a11599ff": {
-      "kind": "research",
-      "reference": "evidence:sha256:bfc3f6b8f0942c280b0825453e51a381afcc3aafd92f6bce0cb3bbdac6ff3239",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:6f3873f3fe4304b3c30ae094": {
       "kind": "research",
       "reference": "evidence:sha256:d3d49de2a02affc82b62b591e0fa1ab8bd6dd482b0b6fa5c810d50e6adf9b799",
@@ -741,20 +611,10 @@
       "reference": "evidence:sha256:c2e341abe290fb1d3f33a5bb239de280c0809adc22d36a7bebf0fea544421d3a",
       "revision": "c3ceaba1011c629b16710b685d4964cf8bec0745de97b034d81980b62d8cad67"
     },
-    "source:88d38007b84b407cd02c4158": {
-      "kind": "research",
-      "reference": "evidence:sha256:87267afa7460256030acce15f5a68b2f149b30a79b57da0474270a4abd8aee2e",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:8962d4cd2b9161d89c451820": {
       "kind": "research",
       "reference": "evidence:sha256:149168755899c4e9fda1da17e86e04b9c8964cb5da2f64882aa8866641b3ad9b",
       "revision": "c3ceaba1011c629b16710b685d4964cf8bec0745de97b034d81980b62d8cad67"
-    },
-    "source:8bcb3baba9c58164a1d63189": {
-      "kind": "research",
-      "reference": "evidence:sha256:67bc00ee1525cd49f1a4f4fb1450bf13476fae5725efb55c533773b5fa702c4d",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
     },
     "source:8f851ebbf1fa8599e4145db5": {
       "kind": "research",
@@ -771,11 +631,6 @@
       "reference": "evidence:sha256:3099a37f75dba2310b15530186b28964819990c2af23d50d34fda8e5497213f9",
       "revision": "bd622d9de5fd36a31695bf1082f256a158b8b1cec29ca31950fb53489971572e"
     },
-    "source:9facf8cbd8253db512cebbe4": {
-      "kind": "research",
-      "reference": "evidence:sha256:6bd15c85da197b9c6f27e48bb0f4710095375d19dc15ebe84f62bb4bf30c63f4",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:a0bc051b52d9ff302fabb9fa": {
       "kind": "research",
       "reference": "evidence:sha256:b0518568a89e37e1f4480a0b8be8f07702ec2c2442759838bdab657c215b283b",
@@ -786,30 +641,10 @@
       "reference": "evidence:sha256:4550f027f31390e41dde60223039997defe15df16c4bbdbd8c5baa9fcc4b737d",
       "revision": "cddf14d450d12c92fd0d64098df1236d50c78a5bb05529e8cf447880887ba90e"
     },
-    "source:a6381244f69bfb3c1f69e387": {
-      "kind": "research",
-      "reference": "evidence:sha256:7bfb8152d4b7c53501fc7375f926e8280d215d059d1247b417558aaf8936ade1",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:a80257b63621c31ee3ef67f0": {
       "kind": "research",
       "reference": "evidence:sha256:9f53299eee137d48967e8d0fcd2193e6991754e10e0caa9ad0b781a772cf9c01",
       "revision": "648c80a7c9e570531bdd550adb5993af16b00edf5153a2a6ed6adba06ef652f0"
-    },
-    "source:ab46d30ec0ef528452c52eea": {
-      "kind": "research",
-      "reference": "evidence:sha256:6fc76fd50bc24110a707e4cee87ff0c3dd628fdb9b9f720c0405b6891319634f",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
-    "source:ad343ceb7854a4fd7077fee0": {
-      "kind": "research",
-      "reference": "evidence:sha256:e587a4c0c47452fa6fc95550ca13c640c76eb2d6e4087494ed305ab43bb34005",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
-    "source:af2791dbb2e52dba88f9015a": {
-      "kind": "research",
-      "reference": "evidence:sha256:78805dddb07371196296d3eb292c31656f2e6e7876e78efacce517424f2dca2f",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
     },
     "source:af6594f19c9868119682c1aa": {
       "kind": "research",
@@ -826,11 +661,6 @@
       "reference": "evidence:sha256:72018d2ea8376fdba7d87d6978c5baab1a848fc6835907f1ff30465fb29ee2a7",
       "revision": "bd622d9de5fd36a31695bf1082f256a158b8b1cec29ca31950fb53489971572e"
     },
-    "source:b815ddd78662b34d258c555d": {
-      "kind": "research",
-      "reference": "evidence:sha256:f7bd61a772013685a1773a3426e0f3422ed00e773246503a32cc89cf5b04c562",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:ba2269fccbe347f2d8d2f12d": {
       "kind": "research",
       "reference": "evidence:sha256:253417679fb1ff7470b7a16e98d7d29460b066da223a5b1734ab6bb22865be64",
@@ -841,16 +671,6 @@
       "reference": "evidence:sha256:2d7964d66d81aaa5d996eba30ed49ded18f395eb1fab1c90d09d4a9cabf268b2",
       "revision": "648c80a7c9e570531bdd550adb5993af16b00edf5153a2a6ed6adba06ef652f0"
     },
-    "source:cac5bf1186053933efce9ec4": {
-      "kind": "research",
-      "reference": "evidence:sha256:f8ae4a99516615bfaf6aad568e4c5822cf6496dfc63d4372c49fd8dda15e5c6b",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
-    "source:d3e08f533711c4a86758f19e": {
-      "kind": "research",
-      "reference": "evidence:sha256:85b40b5698a6e6c010824a6c9f473b1dc8bc56fe785872cde36a6e3aecbe1eb5",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
-    },
     "source:d3f3f9904208733107aa145e": {
       "kind": "research",
       "reference": "evidence:sha256:e51072840a446793a0bd84807f56eb49bc80ad79e328e0495593133eeabe623d",
@@ -860,11 +680,6 @@
       "kind": "research",
       "reference": "evidence:sha256:787e193e52daab03f6a9c860abb510f60b4f943565a67bb5fe869e160de6e172",
       "revision": "c3ceaba1011c629b16710b685d4964cf8bec0745de97b034d81980b62d8cad67"
-    },
-    "source:e125f40d36a0564f42d99fad": {
-      "kind": "research",
-      "reference": "evidence:sha256:a5871d4c218347e67d637b7ba75d994ff53afefc701cedc073f99de6142365c2",
-      "revision": "b5dbfa827b6e1ef8f52e3597babbacd7ba1f632f6c7aa7f12ab8a4b7fee6cd12"
     },
     "source:e24dc87017642411fca76e3a": {
       "kind": "research",

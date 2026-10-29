@@ -4,28 +4,6 @@
   "map": 530,
   "npcs": [
     {
-      "entry": 17378,
-      "name": "Swamp Gas",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:17378:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:54d6dbe3f4f7662dc8fea0b5",
-            "source:843d59559b2c4b2fa37e4c2c",
-            "source:a237bd6adf20cd151008754f"
-          ],
-          "text": "Swamp Gas is a gas cloud.",
-          "when": {
-            "entry": 17378
-          }
-        }
-      ],
-      "title": null
-    },
-    {
       "entry": 17634,
       "name": "K. Lee Smallfry",
       "records": [
@@ -666,7 +644,7 @@
             "source:cd17ec95d67672a7f3d6d44a",
             "source:703a63c6b69fabefbc107fda"
           ],
-          "text": "Ruam cultivates fulgor mushrooms to supply Telredor with light, preferring them to confining the marsh’s glowing creatures. He also investigates how the drying Dead Mire is affecting its wildlife: the withering bog giants may no longer be able to spawn, and his examination of hydra and bog lord samples points to damage spreading among creatures dependent on swampy conditions. He intends to keep monitoring the area with the Cenarion Expedition.",
+          "text": "Ruam cultivates fulgor mushrooms to light Telredor, preferring them to confining the marsh's glowing creatures. He also studies how the drying Dead Mire is affecting its wildlife: the withering bog giants may no longer be able to spore, and samples from hydra and bog lords show damage spreading among creatures that depend on swampy conditions. He means to keep monitoring the area with the Cenarion Expedition.",
           "when": {
             "entry": 18007
           }
@@ -1063,7 +1041,7 @@
             "source:10c0b62d52338b741f815899",
             "source:a4a5a1e0b898f311a81a49ee"
           ],
-          "text": "Kataru is named by Ikeyen as the leader of the Lost Ones of the Umbrafen tribe, described as cruel users of dark magic who trap and enslave others. Ikeyen calls for Kataru’s death at Umbrafen Village. In combat, Kataru uses Earth Shield and Chain Lightning.",
+          "text": "Kataru is the leader of the Lost Ones of the Umbrafen tribe at Umbrafen Village, whom Ikeyen describes as cruel users of dark magic who trap and enslave others. Ikeyen wants him dead. He shields himself with earth and strikes with Chain Lightning.",
           "when": {
             "entry": 18080
           }
@@ -1084,7 +1062,7 @@
             "source:da5f3d20857ad176fbb594bb",
             "source:ddcb86070b86dceb5579b946"
           ],
-          "text": "Darkcrest Taskmasters are found in Zangarmarsh and use Tail Lash in combat.",
+          "text": "Darkcrest Taskmasters are found in Zangarmarsh and lash out with their tails in a fight.",
           "when": {
             "entry": 18086
           }
@@ -1107,7 +1085,7 @@
             "source:0f09b078efb74b8824cd30f3",
             "source:f1b15a9fce62cb49ee030980"
           ],
-          "text": "Darkcrest Sirens use Frostbolt, Frost Nova and Silence in combat. When badly wounded, they flee for assistance.",
+          "text": "Darkcrest Sirens wield frost magic and can silence a foe; badly hurt, they flee to find help.",
           "when": {
             "entry": 18087
           }
@@ -1129,7 +1107,7 @@
             "source:ca564e8f79a186f6b8957301",
             "source:e8b8715ca1451ed9af7f0f34"
           ],
-          "text": "Bloodscale Enchantresses of the Bloodscale Enclave are among the naga whose attacks on Sporeggar prompt calls to teach them a lesson. They use Arcane Missiles and Ice Barrier in combat.",
+          "text": "Bloodscale Enchantresses of the Bloodscale Enclave are among the naga whose attacks on Sporeggar prompt calls to teach them a lesson. They fling Arcane Missiles and shield themselves with ice.",
           "when": {
             "entry": 18088
           }
@@ -1150,7 +1128,7 @@
             "source:60796d05d8813cf9787a837b",
             "source:3041e4d78577a17dc15dd0c0"
           ],
-          "text": "Bloodscale Slavedrivers of the Bloodscale Enclave are targeted alongside the Enchantresses in Sporeggar’s response to continuing attacks on its people. They use Battle Shout when attacked.",
+          "text": "Bloodscale Slavedrivers of the Bloodscale Enclave are among the naga whose continuing attacks on Sporeggar's people prompt calls to teach them a lesson. They bellow a Battle Shout when attacked.",
           "when": {
             "entry": 18089
           }
@@ -1194,7 +1172,7 @@
             "source:25b46c44acac12f7493cef14",
             "source:2e46b23c5fd011af1060cb08"
           ],
-          "text": "A Feralfen hunter in Zangarmarsh, this creature is equipped for ranged combat and summons a sporebat while out of combat.",
+          "text": "A Feralfen hunter in Zangarmarsh, equipped for ranged fighting and accompanied by a sporebat it summons.",
           "when": {
             "entry": 18113
           }
@@ -1216,7 +1194,7 @@
             "source:a6a657e0274aabff1f28eaa1",
             "source:043144af3bf3437f08d147d6"
           ],
-          "text": "A Feralfen mystic found in Zangarmarsh, this creature is equipped for combat.",
+          "text": "A humanoid Feralfen mystic of Zangarmarsh that casts from a distance.",
           "when": {
             "entry": 18114
           }
@@ -1240,7 +1218,7 @@
             "source:1d5036add483942989ece5b6",
             "source:e499e41174b6cc6018c137ae"
           ],
-          "text": "A Daggerfen Lost One in Zangarmarsh, the Muckdweller is among the tribe’s organized, aggressive forces threatening roads and Zabra’jin. It uses paralytic poison in combat and may flee for help when badly wounded.",
+          "text": "A Daggerfen Lost One in Zangarmarsh, the Muckdweller is among the tribe's organized, aggressive forces threatening roads and Zabra'jin. It fights with paralytic poison and flees to find help when badly wounded.",
           "when": {
             "entry": 18115
           }
@@ -1287,7 +1265,7 @@
             "source:8f0359ad9943e978f30239af",
             "source:5175796e982218debfdea953"
           ],
-          "text": "An Ango’rosh ogre in the Hewn Bog, this member of the advancing force threatens a Kurenai refuge and the group’s effort to strengthen ties with Telredor. In combat it can become enraged and uses a kick.",
+          "text": "An Ango'rosh ogre in the Hewn Bog, part of an advancing force that threatens a Kurenai refuge and the Kurenai effort to strengthen ties with Telredor. It kicks and can fly into a rage.",
           "when": {
             "entry": 18117
           }
@@ -1356,7 +1334,7 @@
             "source:81fc6192b0429b5c1a86c371",
             "source:b4623ecb90789fe286414530"
           ],
-          "text": "An Ango'rosh mauler of the Stronghold, this hostile ogre can unleash an overpowering strike when wounded. Zabra'jin's campaign names maulers among the Ango'rosh forces it seeks to defeat.",
+          "text": "An Ango'rosh mauler of the Stronghold, a hostile ogre who delivers an overpowering blow when wounded. Zabra'jin seeks to defeat the maulers among the Ango'rosh forces.",
           "when": {
             "entry": 18120
           }
@@ -1380,7 +1358,7 @@
             "source:9b986fc741be9c83bc31829f",
             "source:37bf07c1303bcc93f74e2b3a"
           ],
-          "text": "An Ango'rosh Souleater of the Stronghold, this hostile spellcaster hurls shadow bolts and can drain life when badly wounded. Zabra'jin's campaign counts Souleaters among the Ango'rosh forces it seeks to defeat.",
+          "text": "An Ango'rosh Souleater of the Stronghold, a hostile ogre spellcaster who hurls shadow bolts and siphons life when badly wounded. Zabra'jin seeks to defeat the Souleaters among the Ango'rosh forces.",
           "when": {
             "entry": 18121
           }
@@ -1424,7 +1402,7 @@
             "source:b38288eda4651139350a6bb2",
             "source:03f4c0314718163b09e3c33b"
           ],
-          "text": "A Wrekt Slave encountered around the marsh, this hostile humanoid responds to attack with Shared Bonds.",
+          "text": "A Wrekt Slave encountered around the marsh, a hostile humanoid who lashes out with Shared Bonds when attacked.",
           "when": {
             "entry": 18123
           }
@@ -1467,7 +1445,7 @@
             "source:b0905b5e33a4c517d2494b30",
             "source:01c15254e5a0beb42c0d1b36"
           ],
-          "text": "A starving fungal giant found in the Dead Mire and nearby marshland. It attacks with choking vines, a threat that suits the overgrown wetlands it inhabits.",
+          "text": "A starving fungal giant found in the Dead Mire and nearby marshland, which strangles its foes with choking vines.",
           "when": {
             "entry": 18125
           }
@@ -1489,7 +1467,7 @@
             "source:1ef717dba96df6e214076860",
             "source:7278ca80a9ebd6a728cb5c49"
           ],
-          "text": "A bog lord of the Zangarmarsh wetlands, encountered in the marsh around the Dead Mire. It fights by striking with a forceful boglord bash.",
+          "text": "A bog lord of the Zangarmarsh wetlands, found in the marsh around the Dead Mire, who smashes its foes with a forceful Boglord Bash.",
           "when": {
             "entry": 18127
           }
@@ -1556,7 +1534,7 @@
             "source:f6e3c995097a66ab7e1bad35",
             "source:dd251180ea85fc18d6840970"
           ],
-          "text": "Fen Striders are creatures found across Zangarmarsh. In combat, they can use Lightning Tether.",
+          "text": "Fen Striders are creatures found across Zangarmarsh that bind foes with Lightning Tether.",
           "when": {
             "entry": 18134
           }
@@ -1578,7 +1556,7 @@
             "source:dd778306f83e1167fcb14bd8",
             "source:c2f10520f4bdf5b7bf4b7ba0"
           ],
-          "text": "Marsh Walkers inhabit the wetlands of Zangarmarsh. They are encountered in several marsh areas and can use Lightning Tether in combat.",
+          "text": "Marsh Walkers inhabit the wetlands of Zangarmarsh, in several marsh areas, and bind foes with Lightning Tether.",
           "when": {
             "entry": 18135
           }
@@ -1623,7 +1601,7 @@
             "source:eca5d09bf2316ff5fc101c9e",
             "source:b64c2d9b3a8e03ed77682cef"
           ],
-          "text": "Marsh Dredgers are marsh beasts encountered in Zangarmarsh, including Funggor Cavern. In combat, a Marsh Dredger can use strangling roots to hinder its foes.",
+          "text": "Marsh Dredgers are marsh beasts found in Zangarmarsh, including Funggor Cavern, where they have invaded the sporeloks' home. They hinder foes with strangling roots.",
           "when": {
             "entry": 18137
           }
@@ -1795,7 +1773,7 @@
             "source:6cde21cb366021535d427ac9",
             "source:43ec6e24c17cafd48ccf0b9f"
           ],
-          "text": "Elder Kuruti is addressed as an elder of the Feralfen. A draenei emissary is directed to speak with him in the guise of an arakkoa spirit, carrying a message that the draenei are ready to welcome his people as long-lost brothers and end their hostility.",
+          "text": "Elder Kuruti is an elder of the Feralfen. He greets arakkoa spirits humbly and welcomes them to his temple. The draenei hope to reach him with word that they are ready to welcome his people as long-lost brothers.",
           "when": {
             "entry": 18197
           }
@@ -1817,7 +1795,7 @@
             "source:4125bd79c2885fb11e0112d4",
             "source:4d8ea8cdbf917e908469afee"
           ],
-          "text": "Mudfin Frenzies are beasts found across two marsh areas.",
+          "text": "Mudfin Frenzies are beasts of Zangarmarsh.",
           "when": {
             "entry": 18212
           }
@@ -1860,7 +1838,7 @@
             "source:01c27088c1796ff7a6fa64ce",
             "source:df91b4efb6cad21480b377e1"
           ],
-          "text": "Lorti is a merchant who lets visitors browse his goods. His established role here is serving customers as a vendor.",
+          "text": "Lorti is a merchant who sells goods to visitors.",
           "when": {
             "entry": 18243
           }
@@ -1932,7 +1910,7 @@
             "source:2d2e4f20182db6364ccc8aa8",
             "source:ee01f531c98c447743885fc2"
           ],
-          "text": "Tayemba is paired with Farbosi in an exchange of throws: Tayemba throws to Farbosi, who throws back to him. What they are throwing and what the exchange means are left unstated.",
+          "text": "Tayemba is paired with Farbosi in a game of throwing: Tayemba throws to Farbosi, who throws back.",
           "when": {
             "entry": 18246
           }
@@ -1955,7 +1933,7 @@
             "source:2d2e4f20182db6364ccc8aa8",
             "source:ee01f531c98c447743885fc2"
           ],
-          "text": "Farbosi is paired with Tayemba in an exchange of throws: Tayemba throws to Farbosi, who throws back to him. What they are throwing and what the exchange means are left unstated.",
+          "text": "Farbosi is paired with Tayemba in a game of throwing: Tayemba throws to Farbosi, who throws back.",
           "when": {
             "entry": 18247
           }
@@ -2025,7 +2003,7 @@
             "source:ee738209dd14022c2280e8be",
             "source:6ac0a1fdb04d901df7cb9b5c"
           ],
-          "text": "Lord Klaq is identified as the leader of the marshbeasts attacking the Cenarion Expedition’s watchers near Funggor Cavern. Warden Hamoot believes killing him will end the attacks; Klaq is also described as using Thorns and Thunderclap in combat.",
+          "text": "Lord Klaq is the leader of the marshbeasts attacking the Cenarion Expedition's watchers near Funggor Cavern. Warden Hamoot believes killing him will end the attacks. He wards himself with Thorns and shakes foes with Thunderclap.",
           "when": {
             "entry": 18282
           }
@@ -2047,7 +2025,7 @@
             "source:5c185d06ee3655a57c7801f8",
             "source:96247b2e2fb6e90a26ef51dd"
           ],
-          "text": "\"Count\" Ungula is a beast whose combat attacks include Tail Swipe.",
+          "text": "\"Count\" Ungula is a named beast that lashes foes with a Tail Swipe.",
           "when": {
             "entry": 18285
           }
@@ -2159,7 +2137,7 @@
             "source:ff2a9487185214d68f213e83",
             "source:68fca450dda45dbc215f666f"
           ],
-          "text": "Sporeggar Spawn is a humanoid creature connected to Sporeggar.",
+          "text": "Sporeggar Spawn is a humanoid of the Sporeggar community.",
           "when": {
             "entry": 18358
           }
@@ -2229,7 +2207,7 @@
             "source:15de48fe249ac09dfa73998c",
             "source:3eb3d02e82cbca90c45d9856"
           ],
-          "text": "Marticar is a powerful named beast. It uses Magnetic Pull when engaged and casts Forked Lightning Tether on nearby foes.",
+          "text": "Marticar is a rare, powerful beast that pulls foes in with Magnetic Pull and shocks those nearby with Forked Lightning Tether.",
           "when": {
             "entry": 18680
           }
@@ -2251,7 +2229,7 @@
             "source:2679cbd44aace4f1fee6a894",
             "source:a3310b28f1b20cfa0cda96be"
           ],
-          "text": "The Coilfang Emissary is an elite creature bearing the Coilfang title; it uses Water Spout in combat.",
+          "text": "The Coilfang Emissary is a rare, powerful Coilfang humanoid that blasts foes with Water Spout.",
           "when": {
             "entry": 18681
           }
@@ -2273,7 +2251,7 @@
             "source:e238bd385b4317cc717fde1e",
             "source:2675ce36d4a572cf81b00a8f"
           ],
-          "text": "The Bog Lurker is a powerful elemental that uses War Stomp when a target comes within close range.",
+          "text": "The Bog Lurker is a rare, powerful elemental that stomps foes who come close.",
           "when": {
             "entry": 18682
           }
@@ -2444,7 +2422,7 @@
             "source:9926b805c72fac76e86f396d",
             "source:444ea03affa2bfe1501498cf"
           ],
-          "text": "Juno Dufrain is a master fishing trainer who teaches fishing and also serves as a vendor.",
+          "text": "Juno Dufrain is a master fishing trainer who teaches fishing skills and also sells goods.",
           "when": {
             "entry": 18911
           }
@@ -2532,7 +2510,7 @@
             "source:6185f0d83bb5651f753cda6c",
             "source:ed8b0f32d54f48d16f365a19"
           ],
-          "text": "Captain Krosh is a named figure in Outland. A Box of Mushrooms can be taken from him, and the item is sought for Watcher Leesa’oh’s effort to find a new food source for the bog lords.",
+          "text": "Captain Krosh is an Ango'rosh captain at the Ango'rosh Stronghold. He may carry a Box of Mushrooms, taken from the harvest; Watcher Leesa'oh wants such boxes to find a new source of food for the bog lords.",
           "when": {
             "entry": 18992
           }
@@ -2578,7 +2556,7 @@
             "source:0de4a4164285f36f35b4a91d",
             "source:3061dad3791acbc8d09de5bd"
           ],
-          "text": "Chieftain Mummaki leads the Daggerfen Lost One tribe and a band described in wanted notices as assassins. The notices blame his group for lethal attacks on nearby settlements; in combat he can vanish when badly wounded.",
+          "text": "Chieftain Mummaki leads the Daggerfen Lost One tribe and a band of assassins. Wanted notices blame his group for lethal attacks on Orebor Harborage and Zabra'jin. When badly wounded he can vanish.",
           "when": {
             "entry": 19174
           }
@@ -2697,7 +2675,7 @@
             "source:25f3b20e3f0a3752f040047d",
             "source:efb8dbc5a08876b809ffc451"
           ],
-          "text": "Loolruna is an armorer in Zangarmarsh. She offers both goods browsing and ammunition, alongside repair service, making her a practical stop for travelers maintaining their equipment.",
+          "text": "Loolruna is an armorer in Zangarmarsh who sells goods and ammunition and repairs gear.",
           "when": {
             "entry": 19694
           }
@@ -2785,7 +2763,7 @@
             "source:48c79f2681aa1fff562c5ed5",
             "source:f5544dbaa19160badcce3061"
           ],
-          "text": "Fungal Giants are large creatures whose combat behavior centers on hazardous fungi. A giant can throw a mushroom spore at its target and summon an unstable mushroom during a fight.",
+          "text": "Fungal Giants are large creatures that fight with fungi, hurling mushroom spores at foes and sprouting unstable mushrooms.",
           "when": {
             "entry": 19734
           }
@@ -2806,7 +2784,7 @@
             "source:28c95d5b80f73b5e0c1486f8",
             "source:38af05654e9e6cfd2728b6b6"
           ],
-          "text": "Darkcrest Slavers are humanoid combatants who use Demoralizing Shout against opponents.",
+          "text": "Darkcrest Slavers are humanoid fighters who bellow a Demoralizing Shout at their opponents.",
           "when": {
             "entry": 19946
           }
@@ -2849,7 +2827,7 @@
             "source:9077cdeb6cd01d6142a71714",
             "source:76a490828a9cb0419d9b51a9"
           ],
-          "text": "Doba is a named vendor whose cooking-supplies counter lets visitors browse goods.",
+          "text": "Doba is a vendor of cooking supplies.",
           "when": {
             "entry": 20028
           }
@@ -2870,7 +2848,7 @@
             "source:c49015845c9e7e4ecabbe771",
             "source:be7484d1f09297013bc4b1c1"
           ],
-          "text": "Darkcrest Sentries are combatants with a watch role, as their name indicates. When badly hurt, a sentry may flee to seek assistance, revealing a defensive response under pressure.",
+          "text": "Darkcrest Sentries are watchful guards; when badly hurt, a sentry flees to find help.",
           "when": {
             "entry": 20079
           }
@@ -2892,7 +2870,7 @@
             "source:f101ddcf4ff54880a409e3ac",
             "source:057e7491e49f7d759ec0ab71"
           ],
-          "text": "Bloodscale Overseers are humanoid enemies found across the Outland marsh areas. This one uses Hamstring in combat.",
+          "text": "Bloodscale Overseers are humanoid enemies found across the Outland marsh areas. This one cripples its foes with Hamstring.",
           "when": {
             "entry": 20088
           }
@@ -2915,7 +2893,7 @@
             "source:54c6330ebdfe502724377ec3",
             "source:9f4911308f9d0b3f18064e35"
           ],
-          "text": "A Bloodscale Wavecaller is a humanoid encountered in the marsh areas of Outland. It maintains Water Shield outside combat and casts Water Bolt in combat, marking it as a spell-using combatant.",
+          "text": "A Bloodscale Wavecaller is a humanoid water-caster found in the marsh areas of Outland. It wards itself with Water Shield and hurls Water Bolt.",
           "when": {
             "entry": 20089
           }
@@ -2937,7 +2915,7 @@
             "source:473ccc2793528dcf4a05a269",
             "source:e567a690cddaf4f416aac99a"
           ],
-          "text": "Bloodscale Sentries are humanoid enemies found in several Outland marsh areas. When badly wounded, this sentry casts a spell.",
+          "text": "Bloodscale Sentries are humanoid enemies found in several Outland marsh areas, watching over them. When badly wounded, a sentry casts a spell.",
           "when": {
             "entry": 20090
           }
@@ -2960,7 +2938,7 @@
             "source:990b81d9107891eb2226955e",
             "source:7614f29bfac2abcab1768556"
           ],
-          "text": "Umbrafen Witchdoctors are among the Lost Ones of the Umbrafen tribe at Umbrafen Village, whom Ikeyen describes as users of dark magic who enslave others. This humanoid casts Shrink in combat; Ikeyen's quest names witchdoctors as targets.",
+          "text": "Umbrafen Witchdoctors are among the Lost Ones of the Umbrafen tribe at Umbrafen Village, whom Ikeyen describes as users of dark magic who enslave others. This humanoid casts Shrink on its foes, and Ikeyen wants the witchdoctors slain.",
           "when": {
             "entry": 20115
           }
@@ -2982,7 +2960,7 @@
             "source:7f57b238afd4cea3c9351c3d",
             "source:6110f8d82b3a7b13ef076129"
           ],
-          "text": "Bloodthirsty Marshfangs are beasts found across the Outland marsh areas. This marshfang uses Drain Mana in combat.",
+          "text": "Bloodthirsty Marshfangs are beasts found across the Outland marsh areas that drain the mana of their foes.",
           "when": {
             "entry": 20196
           }
@@ -3004,7 +2982,7 @@
             "source:760835014061b5d992300a90",
             "source:74423066f0e573a61f8d2ef0"
           ],
-          "text": "Bogflare Needlers are beasts found in the Outland marsh areas. This needler uses Lambent Blood in combat.",
+          "text": "Bogflare Needlers are beasts found in the Outland marsh areas that feed on their foes' blood.",
           "when": {
             "entry": 20197
           }
@@ -3071,7 +3049,7 @@
             "source:cfd59434ee585a193e294188",
             "source:905f8bc85c1d1f94f59b3424"
           ],
-          "text": "A Ragestone Threshalisk is a creature of the Zangarmarsh. It can feign death, then rise and charge forward; in combat it can also enter a frenzy.",
+          "text": "A Ragestone Threshalisk is a creature of the Zangarmarsh. It can play dead, then rise and charge, and goes into a frenzy when badly hurt.",
           "when": {
             "entry": 20279
           }
@@ -3094,7 +3072,7 @@
             "source:e45cea835eba8b0b0dd4aea4",
             "source:38517e6353e8978c7d6388c0"
           ],
-          "text": "A Ragestone Trampler is a creature of the Zangarmarsh. It can feign death, then rise and charge forward, and it uses Frenzy in combat.",
+          "text": "A Ragestone Trampler is a creature of the Zangarmarsh. It can play dead, then rise and charge, and fights in a frenzy.",
           "when": {
             "entry": 20280
           }
@@ -3117,7 +3095,7 @@
             "source:9806b5d8e7d8d845bee10a8b",
             "source:96a63c849d6947e6887f5e99"
           ],
-          "text": "A Marshrock Stomper is a creature found in the Zangarmarsh. It can feign death, then rise and charge forward; in combat it can use a stomping attack.",
+          "text": "A Marshrock Stomper is a creature found in the Zangarmarsh. It can play dead, then rise and charge, and stomps its foes.",
           "when": {
             "entry": 20283
           }
@@ -3161,7 +3139,7 @@
             "source:766611a559de47e6f52c031f",
             "source:3812a4342c46d42f80bb1620"
           ],
-          "text": "Lagoon Walkers are humanoids found around a Zangarmarsh lagoon. They can use an ability when badly hurt in combat.",
+          "text": "Lagoon Walkers are humanoids found around a Zangarmarsh lagoon. They have a special ability they use when hurt.",
           "when": {
             "entry": 20291
           }
@@ -3183,7 +3161,7 @@
             "source:d7e3bec701f529d1d8874d29",
             "source:d601d674a7e6d6cb0593b6b3"
           ],
-          "text": "Marsh Baron Brok is a named marsh creature. When injured in combat, he can cast Wild Regeneration, giving him a way to recover under pressure.",
+          "text": "Marsh Baron Brok is a named marsh creature who heals himself with Wild Regeneration when hurt.",
           "when": {
             "entry": 20292
           }
@@ -3227,7 +3205,7 @@
             "source:9fc7201e2ddf52be7e76358d",
             "source:0e543ca790c44f680908a379"
           ],
-          "text": "Bogstrok Razorclaws are marsh bogstrok that fight with their claws; in combat, this one can inflict Gushing Wound, a threat beyond a simple claw strike.",
+          "text": "Bogstrok Razorclaws are marsh bogstrok that fight with their claws and can tear a Gushing Wound in a foe.",
           "when": {
             "entry": 20294
           }
@@ -3249,7 +3227,7 @@
             "source:9881b0cc870177fc16cf607d",
             "source:39dc05ff5fc0a89f7dd3f32c"
           ],
-          "text": "Bogstrok Crushers are marsh bogstrok built for hard-hitting fights. This one can use Crush Armor in combat, setting it apart from the Razorclaw's wound-inflicting attack.",
+          "text": "Bogstrok Crushers are hard-hitting marsh bogstrok that can break a foe's armor with Crush Armor.",
           "when": {
             "entry": 20295
           }
@@ -3271,7 +3249,7 @@
             "source:7ea3800c0bf3499599cf6c61",
             "source:0d4aee5825117f5e098a77b0"
           ],
-          "text": "Parched Hydras inhabit the dry reaches of the marsh. In combat, this hydra can unleash Heat Wave, a striking danger in its parched surroundings.",
+          "text": "Parched Hydras inhabit the dry reaches of the marsh and can unleash a searing Heat Wave.",
           "when": {
             "entry": 20324
           }
@@ -3337,7 +3315,7 @@
             "source:e8f471b052f35540f7519e5d",
             "source:4ea750708c5a45beb070c96c"
           ],
-          "text": "An Ango'rosh sentry in the Marshlight Lake region, this combatant uses Cleave in combat.",
+          "text": "An Ango'rosh sentry in the Marshlight Lake region, a melee fighter who cleaves his foes.",
           "when": {
             "entry": 20443
           }
@@ -3360,7 +3338,7 @@
             "source:ab94099cd1fa4dbbd5634523",
             "source:407df22b207d11b97dbd5d9f"
           ],
-          "text": "An Ango'rosh Shadowmage in the Marshlight Lake region, this combatant uses Shadow Bolt and Shadow Shell in combat.",
+          "text": "An Ango'rosh Shadowmage of the Marshlight Lake region, who hurls shadow bolts and wards itself with Shadow Shell.",
           "when": {
             "entry": 20444
           }
@@ -3383,7 +3361,7 @@
             "source:59204a85478fd4ad6942ff10",
             "source:f46edbbb593521c5965c275c"
           ],
-          "text": "Mal'druk the Soulrender is a named figure in the Marshlight Lake region. In combat, Mal'druk casts Mind Flay and Summon Shadow Image below half health.",
+          "text": "Mal'druk the Soulrender dwells in the Marshlight Lake region, tormenting foes with Mind Flay and, when badly hurt, summoning a Shadow Image.",
           "when": {
             "entry": 20445
           }
@@ -3498,34 +3476,13 @@
             "source:590f10f09ad5ba33eb3769b6",
             "source:5c6ec8c1759e81ec565b7e8f"
           ],
-          "text": "Sarinei Whitestar is a general-goods vendor at Cenarion Refuge. She offers basic supplies and has a browse-goods option.",
+          "text": "Sarinei Whitestar sells general goods at Cenarion Refuge, offering basic supplies to those who need them.",
           "when": {
             "entry": 21172
           }
         }
       ],
       "title": "General Goods"
-    },
-    {
-      "entry": 22002,
-      "name": "Air Force Trip Wire - Ground (Horde)",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:22002:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:99bc640530e8eb0217b6b619",
-            "source:b96be1ff28c01e6669222677"
-          ],
-          "text": "The Horde Air Force Trip Wire is a mechanical trip-wire device recorded at several locations across Outland.",
-          "when": {
-            "entry": 22002
-          }
-        }
-      ],
-      "title": null
     },
     {
       "entry": 22086,
@@ -3670,7 +3627,7 @@
             "source:fb7e0013a09be7475c148c8b",
             "source:b8d3f256f95cb27daff0e2ea"
           ],
-          "text": "Halu is a hippogryph master whose flightmaster menu offers flight destinations. When attacked, she calls for help and summons an enraged hippogryph.",
+          "text": "Halu is the Hippogryph Master who offers flights to travelers. When attacked, she cries \"Guards! Help me!\" and summons an enraged hippogryph.",
           "when": {
             "entry": 22485
           }
@@ -5505,11 +5462,6 @@
       "reference": "evidence:sha256:ecff4521c6e6295eb306c3e5fd253fc05a25080c1ba9e2242ab1b4f70525b408",
       "revision": "7f57b6b42ab7ba9c8835062626aba8af062c66f44d2a0adac8a38a7ba70cb59a"
     },
-    "source:54d6dbe3f4f7662dc8fea0b5": {
-      "kind": "research",
-      "reference": "evidence:sha256:a95a0bb7c295fe3f8440c34a3a939dc41017a926e1f74f577fcad3b0ee16b2df",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:55552cd749d173c72c6db598": {
       "kind": "research",
       "reference": "evidence:sha256:d8fb5b722116c048980a85c3f945b637373fc226f83e4529d80acf6ecee78c6a",
@@ -6085,11 +6037,6 @@
       "reference": "evidence:sha256:73f1be2ec7648148c34fff209a16f71fc1da22e598d528d718baa9886b229865",
       "revision": "f495d838c4f51faedcd679c6678ff125eed63733247601b0d8b564d28a3c08cb"
     },
-    "source:843d59559b2c4b2fa37e4c2c": {
-      "kind": "research",
-      "reference": "evidence:sha256:86a6afbc9cea652dc10d454b9fa0a1d378d9e522e521e7996249fbebfbf4c404",
-      "revision": "eb1d67b89e13e603f33b1f5e0024e3f70138145043043cec02f93bab25fa3f03"
-    },
     "source:85205483c3077b66d2931e19": {
       "kind": "research",
       "reference": "evidence:sha256:80e170a34645c61d5c9f2c60da9946ee20a8d552b5a3febc0b1fe71c19eec7a8",
@@ -6355,11 +6302,6 @@
       "reference": "evidence:sha256:ef4a83c9975b7d257ecf153b29aeb1d5d9934721c784a7b21937834d1d6c3a1a",
       "revision": "d279b8ea39c3197ed95fb0f810457a8dea050ea2696313a9718612b0cca54042"
     },
-    "source:99bc640530e8eb0217b6b619": {
-      "kind": "research",
-      "reference": "evidence:sha256:82ad2524e7d1f12847b0572fa8a75f24084776ebae61c3368088957487e2fd0f",
-      "revision": "f4e79c1fb4111edb77fd109dfb8940766e955270ea7d0ba0585025e2dda4ef86"
-    },
     "source:9b74bade5441b8a572ccffa7": {
       "kind": "research",
       "reference": "evidence:sha256:b53c13563dfcca182d5195341fb052e8f4bacf93546611ed99364c4ca3f9e589",
@@ -6439,11 +6381,6 @@
       "kind": "research",
       "reference": "evidence:sha256:cb3a649111e79eefa397b366fd4209ad15b98d77d4603ea4a00b80a8522be51a",
       "revision": "057e137768acb4b6f62bdc027afcc5d5c37582fa037577b5271749134407b444"
-    },
-    "source:a237bd6adf20cd151008754f": {
-      "kind": "research",
-      "reference": "evidence:sha256:926eb26abed12f971704a2d79e59ee7c717bd8f7899eeeaf23c20cf1afbed02f",
-      "revision": "6a27baa2ea5a1bfd33f66a98a7ae136f6d555fe822f159e15f37c0cc6f940186"
     },
     "source:a2c8ff96fff9b16dcd679a5a": {
       "kind": "research",
@@ -6709,11 +6646,6 @@
       "kind": "research",
       "reference": "evidence:sha256:41b9942a73a5c0cb44f25a3b32fa0abcf6282fc2c2a916f62731c8cf8e095f18",
       "revision": "cd2c2e81cd77187e36bef5a474d730cf880cfcd00bcd75746d7d0fbd6537065d"
-    },
-    "source:b96be1ff28c01e6669222677": {
-      "kind": "research",
-      "reference": "evidence:sha256:0a9ebbf51eb51c8519d8ccc34aa44ecddb65a36d40c8c2a12fccf8247aa256e0",
-      "revision": "f4e79c1fb4111edb77fd109dfb8940766e955270ea7d0ba0585025e2dda4ef86"
     },
     "source:b97e7717fa2f2333e670b9b3": {
       "kind": "research",

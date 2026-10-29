@@ -40,7 +40,7 @@
             "source:19f244a0e5362014ea402bb0",
             "source:fd7fe96ac9e5f232a7f2f12b"
           ],
-          "text": "Lavanthor is a named beast encountered as a boss.",
+          "text": "Lavanthor is a beast held in the Violet Hold.",
           "when": {
             "entry": 29312
           }
@@ -134,7 +134,7 @@
             "source:21c0c30b09d50bbf53a7d232",
             "source:5881b581793149db8b67fe81"
           ],
-          "text": "Moragg is a named boss creature in Dalaran's prison.",
+          "text": "Moragg is a demon held in the Violet Hold, Dalaran's prison.",
           "when": {
             "entry": 29316
           }
@@ -190,27 +190,6 @@
       "title": ""
     },
     {
-      "entry": 30896,
-      "name": "Prison Door Seal",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:30896:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:d034de5d61b0d9b2d6ca2ad9",
-            "source:1b28a2065a556580c1f53ec7"
-          ],
-          "text": "A named prison-door seal associated with the prison area.",
-          "when": {
-            "entry": 30896
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
       "entry": 31118,
       "name": "Azure Raider",
       "records": [
@@ -223,7 +202,7 @@
             "source:d01671c901388ca3476a2ca9",
             "source:dc1d5628fc31f671e758c6bc"
           ],
-          "text": "An elite dragonkin raider associated with the prison area.",
+          "text": "An Azure Raider, a dragonkin warrior at the Violet Hold.",
           "when": {
             "entry": 31118
           }
@@ -250,7 +229,7 @@
             "source:c2754302c383743cbfb976b8",
             "source:9ad4a7c92a89a258ccc42628"
           ],
-          "text": "Lieutenant Sinclari is associated with an urgent defense against a Blue Dragonflight breach at the prison door. Battle text around her warns of portal guardians and keepers emerging, describes the seal weakening, and urges adventurers to keep fighting.",
+          "text": "Lieutenant Sinclari guards the prison door against a Blue Dragonflight breach, warning as portal guardians and keepers emerge and the seal weakens, and urging the defenders to fight on.",
           "when": {
             "entry": 32204
           }
@@ -342,11 +321,6 @@
       "kind": "research",
       "reference": "evidence:sha256:14314908e42e4033fe84acbcb1f0a9ea78f4e77c152ad2ab792841ff4d3a1166",
       "revision": "660432b1a40c4ffb356cad64045d0f67d56ff2e939811acc2658fab66d06a037"
-    },
-    "source:1b28a2065a556580c1f53ec7": {
-      "kind": "research",
-      "reference": "evidence:sha256:7a54e5e3d67c591c8936517d569eb0018f30bce9359d361241726a4f39494d72",
-      "revision": "0c41b8173d1db57e4d0fafc4aecdc19bda16731f156e39a15cd0272ff25aa8ca"
     },
     "source:1e45eccdc4707994ef8a4111": {
       "kind": "research",
@@ -471,11 +445,6 @@
     "source:d01671c901388ca3476a2ca9": {
       "kind": "research",
       "reference": "evidence:sha256:0f39454226a1ddca086963a32b3c2569592050e40c50eb5cbd8bb92b1b4a8999",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
-    "source:d034de5d61b0d9b2d6ca2ad9": {
-      "kind": "research",
-      "reference": "evidence:sha256:cb60102836e275a569df0e1a883ce7adf34cd5fa9f49d39675fef36635a54d15",
       "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
     },
     "source:d3f66d7058f986a45f4f2503": {

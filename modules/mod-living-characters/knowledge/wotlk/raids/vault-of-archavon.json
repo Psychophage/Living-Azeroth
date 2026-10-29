@@ -18,7 +18,7 @@
             "source:b3388a229871d92f8c024fe8",
             "source:2afa413d1917847e50ee45cd"
           ],
-          "text": "Archavon the Stone Watcher is a singular named boss. During the encounter, he lunges at a target and can enter a berserker rage.",
+          "text": "Archavon the Stone Watcher lunges at his foes and can fly into a berserker rage.",
           "when": {
             "entry": 31125
           }
@@ -42,7 +42,7 @@
             "source:c6ffe6ee799f5928e49f7150",
             "source:205bdf1daed752cdae8ec5e6"
           ],
-          "text": "An Archavon Warder is a warder creature found in the same zone as Archavon the Stone Watcher. In combat, it uses Shield Crush.",
+          "text": "A warder of the Vault of Archavon, near Archavon the Stone Watcher, that crushes shields.",
           "when": {
             "entry": 32353
           }
@@ -66,7 +66,7 @@
             "source:1fe75ae5532d2c4d33d00f66",
             "source:84d60bffb7045ee85bb821f1"
           ],
-          "text": "Emalon the Storm Watcher is a singular named boss whose encounter centers on Tempest Minions: a minion can appear to defend him, and he can overcharge one. He can also enter a berserker rage.",
+          "text": "Emalon the Storm Watcher summons Tempest Minions to defend him and can overcharge one. He can also fly into a berserker rage.",
           "when": {
             "entry": 33993
           }
@@ -91,7 +91,7 @@
             "source:441995557d21dbc73427d0c0",
             "source:b2f8aeb576e47db0060aee90"
           ],
-          "text": "A Tempest Warder is a warder creature found in the same zone as Emalon the Storm Watcher. It crackles and surges with raw energy, and uses Shock in combat.",
+          "text": "A warder of the Vault of Archavon, near Emalon the Storm Watcher, that crackles with raw energy and shocks its foes.",
           "when": {
             "entry": 34015
           }
@@ -112,7 +112,7 @@
             "source:9175f8c64d88f4441f83eabf",
             "source:3d9b203606b807919e248c20"
           ],
-          "text": "Koralon the Flame Watcher is a singular named boss.",
+          "text": "Koralon the Flame Watcher, a lone watcher associated with fire.",
           "when": {
             "entry": 35013
           }
@@ -136,30 +136,9 @@
             "source:de8f7e4589e734a4eaea6065",
             "source:fdb1e5530175d5821b723f2c"
           ],
-          "text": "A Flame Warder is a warder creature found in the same zone as Koralon the Flame Watcher. In combat, it uses Meteor Fists.",
+          "text": "A warder of the Vault of Archavon, near Koralon the Flame Watcher, that strikes with Meteor Fists.",
           "when": {
             "entry": 35143
-          }
-        }
-      ],
-      "title": ""
-    },
-    {
-      "entry": 36093,
-      "name": "Vault Stalker",
-      "records": [
-        {
-          "authored": false,
-          "id": "npc:36093:identity",
-          "layer": "npc",
-          "priority": 80,
-          "sources": [
-            "source:59368c9638eb58e987741eec",
-            "source:b1aa1d1cd27895d9d41a0900"
-          ],
-          "text": "A Vault Stalker.",
-          "when": {
-            "entry": 36093
           }
         }
       ],
@@ -178,7 +157,7 @@
             "source:aa712a75f0ce3f742bf8586c",
             "source:8a0b37396eaa433e8a7d5bd6"
           ],
-          "text": "Toravon the Ice Watcher is a named individual and a formidable boss. His epithet evokes an icy sentinel.",
+          "text": "Toravon the Ice Watcher, a lone watcher associated with ice.",
           "when": {
             "entry": 38433
           }
@@ -201,7 +180,7 @@
             "source:cb5e37af6443f919108734bd",
             "source:f3314e1c8744f2a3cf76a89e"
           ],
-          "text": "Frost Warders are opponents that cast Frost Blast in combat, appearing in both normal and heroic dungeon forms.",
+          "text": "A warder of the Vault of Archavon that blasts its foes with frost.",
           "when": {
             "entry": 38482
           }
@@ -294,11 +273,6 @@
       "reference": "evidence:sha256:8ebd3cee49bf30d2b42288fb9d743e94debba02d8f2704b9636bf16eb6b7b76f",
       "revision": "672bcb53e10c876ef9a3cc046df4a13c56030ae59c93d42def4bfc51c1252de4"
     },
-    "source:59368c9638eb58e987741eec": {
-      "kind": "research",
-      "reference": "evidence:sha256:8b2e4305b9a1b753c2411a8e3f77847e4cf380e420e2168f870564bb28645ba5",
-      "revision": "f68f4149945f8c44a9c52cf339a24d4cc65c74b140975c5caedda113da72f0c7"
-    },
     "source:70888d62effb9c16aec481ef": {
       "kind": "research",
       "reference": "evidence:sha256:dde300bd1f434a3bdbf3a2cd9d716866fb42c727ed3ccee97df483945b7d8585",
@@ -322,11 +296,6 @@
     "source:aa712a75f0ce3f742bf8586c": {
       "kind": "research",
       "reference": "evidence:sha256:698d974296ec72380df797d4c06ad44ab72c3582dfe67ed7537539a2f8822c21",
-      "revision": "fcd7f4af064ab71b02b7860bbcdfdf85ae7dd25fa444a969a5581694d50eacb2"
-    },
-    "source:b1aa1d1cd27895d9d41a0900": {
-      "kind": "research",
-      "reference": "evidence:sha256:ad391a0773a001eb93bac5ba0b6021d18ba2630b52030a2e121e0889ef70bcc0",
       "revision": "fcd7f4af064ab71b02b7860bbcdfdf85ae7dd25fa444a969a5581694d50eacb2"
     },
     "source:b2f8aeb576e47db0060aee90": {
